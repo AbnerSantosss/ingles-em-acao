@@ -14,6 +14,7 @@
  */
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { ExcluirConta } from '@/app/(app)/perfil/ExcluirConta';
@@ -496,6 +497,38 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
                 <LinhaDoCartao key={linha.chave} {...linha} />
               ))}
             </section>
+
+            {/* O admin também estuda com a mesma conta; daqui ele volta ao painel. */}
+            {usuario.role === 'ADMIN' ? (
+              <Link
+                href="/admin"
+                className={`flex w-full items-center gap-4 rounded-[18px] bg-white px-[22px] py-4 text-left no-underline shadow-[0_6px_22px_rgba(11,31,75,.05)] ${FOCO}`}
+              >
+                <span className="grid size-9 flex-none place-items-center rounded-full bg-navy">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#F6C945"
+                    strokeWidth="2.2"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z" />
+                  </svg>
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[18px] font-extrabold text-navy">
+                    Painel do administrador
+                  </span>
+                  <span className="block text-[15px] text-[#6B7C90]">
+                    Aulas, alunos, vídeos e configurações.
+                  </span>
+                </span>
+                <Seta />
+              </Link>
+            ) : null}
 
             <AbreModal
               chave="sair"

@@ -6,7 +6,12 @@
  * `Session`, limpa o cookie e manda para `/entrar`. Reaproveitar a ação em vez
  * de escrever outra evita o pior dos bugs possíveis nesta tela: uma saída que
  * some com o cookie e deixa a sessão viva no banco.
+ *
+ * O admin também é aluno (mesma conta, mesmo login): "Ver como aluno" leva ao
+ * app de estudo, e o perfil de lá tem o caminho de volta para o painel.
  */
+import Link from 'next/link';
+
 import { sairAction } from '@/app/(app)/perfil/actions';
 import { Button } from '@/components/ui/Button';
 import type { SessionUser } from '@/lib/auth/session';
@@ -40,6 +45,16 @@ export function AdminHeader({ usuario }: AdminHeaderProps) {
         >
           {producao ? 'Produção' : 'Desenvolvimento'}
         </span>
+
+        <Link
+          href="/inicio"
+          aria-label="Ver o app como aluno"
+          className="inline-flex h-[46px] flex-none items-center justify-center rounded-pill border-[1.5px] border-solid border-border px-4 text-[15px] font-extrabold tracking-[0.03em] text-navy no-underline transition-colors duration-150 hover:bg-[#EAF2FE] focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-blue sm:px-5"
+        >
+          {/* No celular o cabeçalho divide a linha com nome, ambiente e "Sair". */}
+          <span className="sm:hidden">Aluno</span>
+          <span className="hidden sm:inline">Ver como aluno</span>
+        </Link>
 
         <form action={sairAction} className="flex-none">
           <Button type="submit" variant="ghost" size="md">
