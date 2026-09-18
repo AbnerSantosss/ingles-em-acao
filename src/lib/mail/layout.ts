@@ -197,15 +197,31 @@ function cabecalho(): string {
   ].join('');
 }
 
+/**
+ * Quem recebe o e-mail. O aluno pode não ter pedido nada (alguém digitou o
+ * endereço dele) e precisa saber que ignorar é seguro. O admin, ao contrário,
+ * **não** deve ignorar um alerta do painel: é para isso que ele existe.
+ */
+export type PublicoDoEmail = 'aluno' | 'painel';
+
+const LINHAS_DO_RODAPE: Record<PublicoDoEmail, readonly string[]> = {
+  aluno: [
+    'Você recebeu este e-mail porque alguém usou este endereço no Inglês em Ação.',
+    'Se não foi você, é só ignorar esta mensagem — nada acontece sem a sua confirmação.',
+  ],
+  painel: [
+    'Alerta automático do painel do Inglês em Ação, enviado a todos os admins.',
+    'Não reconhece esta ação? Confira a auditoria do painel agora.',
+  ],
+};
+
 /** Rodapé cinza, fora do card branco. */
-function rodape(): string {
+function rodape(publico: PublicoDoEmail): string {
   return [
     '<tr>',
     `<td style="padding:22px 18px 6px;font-family:${FONTE};font-size:12px;line-height:1.6;`,
     `color:${CORES.terciario};text-align:center;">`,
-    'Você recebeu este e-mail porque alguém usou este endereço no Inglês em Ação.',
-    '<br />',
-    'Se não foi você, é só ignorar esta mensagem — nada acontece sem a sua confirmação.',
+    LINHAS_DO_RODAPE[publico].join('<br />'),
     '</td>',
     '</tr>',
     '<tr>',
@@ -224,10 +240,12 @@ export type OpcoesLayout = {
   preheader: string;
   /** HTML do corpo, já montado com os helpers deste módulo. */
   conteudo: string;
+  /** Define o texto do rodapé. Padrão: `aluno`. */
+  publico?: PublicoDoEmail;
 };
 
 /** Monta o documento HTML completo do e-mail. */
-export function layoutEmail({ assunto, preheader, conteudo }: OpcoesLayout): string {
+export function layoutEmail({ assunto, preheader, conteudo, publico = 'aluno' }: OpcoesLayout): string {
   return [
     '<!DOCTYPE html>',
     '<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">',
@@ -265,7 +283,7 @@ export function layoutEmail({ assunto, preheader, conteudo }: OpcoesLayout): str
     conteudo,
     '</td>',
     '</tr>',
-    rodape(),
+    rodape(publico),
     '</table>',
     '</td>',
     '</tr>',
@@ -275,15 +293,11 @@ export function layoutEmail({ assunto, preheader, conteudo }: OpcoesLayout): str
   ].join('\n');
 }
 
-/** Rodapé equivalente da versão em texto puro — usado pelos dois templates. */
-export function rodapeEmTexto(): string {
-  return [
-    '--',
-    'Inglês em Ação',
-    'Você recebeu este e-mail porque alguém usou este endereço no Inglês em Ação.',
-    'Se não foi você, é só ignorar esta mensagem.',
-    'Mensagem automática — não é preciso responder.',
-  ].join('\n');
+/** Rodapé equivalente da versão em texto puro. */
+export function rodapeEmTexto(publico: PublicoDoEmail = 'aluno'): string {
+  return ['--', 'Inglês em Ação', ...LINHAS_DO_RODAPE[publico], 'Mensagem automática — não é preciso responder.'].join(
+    '\n',
+  );
 }
 
 export default layoutEmail;

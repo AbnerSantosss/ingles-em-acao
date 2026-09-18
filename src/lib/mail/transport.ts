@@ -110,6 +110,19 @@ export function mascararEmail(endereco: string): string {
   return `${visivel}****${dominio}`;
 }
 
+/**
+ * O Google mostra a senha de app em 4 grupos de 4 letras ("abcd efgh ijkl
+ * mnop"), e é assim que ela costuma ser colada no Portainer. Os espaços são só
+ * de exibição; a senha real são as 16 letras juntas. Por isso, no Gmail, os
+ * espaços saem. Nos outros servidores a senha segue intacta, porque lá um
+ * espaço pode fazer parte dela.
+ */
+export function senhaParaOServidor(host: string, senha: string): string {
+  const servidor = host.trim().toLowerCase();
+  const ehGmail = servidor === 'smtp.gmail.com' || servidor === 'smtp.googlemail.com';
+  return ehGmail ? senha.replace(/\s+/g, '') : senha;
+}
+
 function configuracaoSimulada(motivo: string): ConfiguracaoResolvida {
   registrar('warn', `modo simulado (${motivo}) — nenhum e-mail sai desta máquina`);
 
@@ -143,7 +156,7 @@ async function resolverConfiguracao(): Promise<ConfiguracaoResolvida> {
         porta: env.SMTP_PORT,
         seguro: env.SMTP_SECURE,
         usuario: env.SMTP_USER,
-        senha: env.SMTP_PASSWORD,
+        senha: senhaParaOServidor(env.SMTP_HOST, env.SMTP_PASSWORD),
       },
     };
   } catch (erro) {

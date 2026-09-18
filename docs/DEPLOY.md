@@ -115,8 +115,12 @@ para cada linha abaixo (ou use **Advanced mode** e cole tudo no formato `NOME=va
 | `SMTP_PORT` | `465` | Porta do SMTP com TLS. |
 | `SMTP_SECURE` | `true` | `true` para a porta 465. |
 | `SMTP_USER` | `voce@gmail.com` | A conta que envia. |
-| `SMTP_PASSWORD` | a senha de app, 16 letras | **A senha de app**, não a senha do Gmail. Cadastre só aqui, no Portainer. |
+| `SMTP_PASSWORD` | a senha de app, 16 letras | **A senha de app**, não a senha do Gmail. Cadastre só aqui, no Portainer. Pode colar com os espaços que o Google mostra: no Gmail, o app os tira. |
 | `MAIL_FROM` | `Inglês em Ação <voce@gmail.com>` | Remetente que o aluno vê. |
+
+> ⚠️ No Gmail, o endereço de `MAIL_FROM` tem de ser o mesmo de `SMTP_USER`. Com outro endereço,
+> o Google troca o remetente ou manda para o spam. A conta gratuita envia até cerca de 500
+> e-mails por dia.
 
 ### Opcionais
 

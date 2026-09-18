@@ -137,7 +137,7 @@ async function despachar(
     return { enviado: false, destinatarios: 0, falhas: 0, motivo: 'nenhum admin cadastrado' };
   }
 
-  const html = layoutEmail({ assunto, preheader, conteudo });
+  const html = layoutEmail({ assunto, preheader, conteudo, publico: 'painel' });
   let falhas = 0;
   let ultimoErro = '';
 
@@ -224,7 +224,7 @@ export async function alertarMudancaDePlano(dados: AlertaDePlano): Promise<Resul
       '',
       `Detalhe do aluno: ${link}`,
       '',
-      rodapeEmTexto(),
+      rodapeEmTexto('painel'),
     ].join('\n');
 
     return await despachar(assunto, `${dados.alunoNome}: ${de} → ${para}`, conteudo, texto);
@@ -295,7 +295,7 @@ export async function alertarTrocaDeCheckout(dados: AlertaDeCheckout): Promise<R
       '',
       `Configurações: ${link}`,
       '',
-      rodapeEmTexto(),
+      rodapeEmTexto('painel'),
     ].join('\n');
 
     return await despachar(assunto, `checkout (${escopos})`, conteudo, texto);
