@@ -87,6 +87,14 @@ RUN rm -rf \
       node_modules/tailwindcss \
       node_modules/@tailwindcss \
       node_modules/@types \
+      node_modules/vitest \
+      node_modules/@vitest \
+      node_modules/vite \
+      node_modules/rolldown \
+      node_modules/@rolldown \
+      node_modules/@playwright \
+      node_modules/playwright \
+      node_modules/playwright-core \
       node_modules/.cache
 
 # ------------------------------------------------------------------------------

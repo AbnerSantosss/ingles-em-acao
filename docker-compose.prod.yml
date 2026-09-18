@@ -61,6 +61,13 @@ services:
       S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:-}
       S3_REGION: ${S3_REGION:-auto}
 
+      # --- Pagamentos e tarefas agendadas -------------------------------------
+      # Opcionais: vazias, o webhook de pagamento e a rota de limpeza respondem
+      # 503 e não fazem nada. Segredos longos e aleatórios (docs/DEPLOY.md).
+      PAYMENT_PROVIDER: ${PAYMENT_PROVIDER:-}
+      PAYMENT_WEBHOOK_SECRET: ${PAYMENT_WEBHOOK_SECRET:-}
+      CRON_SECRET: ${CRON_SECRET:-}
+
     volumes:
       # ⚠️ Este volume entra no backup NO MESMO DIA em que a primeira imagem subir.
       # Volume sem backup é disco com aparência de segurança: o pg_dump traz os

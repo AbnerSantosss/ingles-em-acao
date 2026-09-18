@@ -2,6 +2,7 @@
 
 /**
  * Botões "Entrar como aluno" / "Entrar como admin" — TEMPORÁRIO, só em dev.
+ * "Entrar como aluno" é o Premium; a linha de baixo entra nos outros planos.
  * A página só renderiza este bloco fora de produção, e a ação recusa em
  * produção de qualquer forma (ver `../dev-actions.ts`).
  */
@@ -11,10 +12,16 @@ import { Button } from '@/components/ui/Button';
 
 import { entradaDemoAction } from '../dev-actions';
 
-function Botao({ children }: { children: React.ReactNode }) {
+function Botao({
+  children,
+  variant = 'accent',
+}: {
+  children: React.ReactNode;
+  variant?: 'accent' | 'ghost';
+}) {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" variant="accent" size="md" fullWidth loading={pending} loadingLabel="ENTRANDO...">
+    <Button type="submit" variant={variant} size="md" fullWidth loading={pending} loadingLabel="ENTRANDO...">
       {children}
     </Button>
   );
@@ -35,6 +42,14 @@ export function EntradaDemo() {
         </form>
         <form action={entradaDemoAction.bind(null, 'admin')} className="flex-1">
           <Botao>ENTRAR COMO ADMIN</Botao>
+        </form>
+      </div>
+      <div className="mt-2 flex flex-col gap-2 sm:flex-row">
+        <form action={entradaDemoAction.bind(null, 'completo')} className="flex-1">
+          <Botao variant="ghost">ALUNO COMPLETO</Botao>
+        </form>
+        <form action={entradaDemoAction.bind(null, 'essencial')} className="flex-1">
+          <Botao variant="ghost">ALUNO ESSENCIAL</Botao>
         </form>
       </div>
     </section>

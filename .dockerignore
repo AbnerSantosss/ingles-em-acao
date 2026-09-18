@@ -10,6 +10,15 @@ out
 build
 coverage
 *.tsbuildinfo
+
+# testes: rodam na máquina/CI, nunca dentro da imagem
+tests
+e2e
+test-results
+playwright-report
+blob-report
+vitest.config.*
+playwright.config.*
 next-env.d.ts
 
 # segredos: NUNCA vão para dentro da imagem — em produção as variáveis vêm do Portainer
