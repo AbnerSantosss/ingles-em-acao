@@ -2,7 +2,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { layoutEmail, rodapeEmTexto } from '@/lib/mail/layout';
-import { resetPasswordTemplate, verifyEmailTemplate } from '@/lib/mail/templates';
+import { resetPasswordTemplate, verifyEmailTemplate, welcomeTemplate } from '@/lib/mail/templates';
 import { montarRemetente, senhaParaOServidor } from '@/lib/mail/transport';
 
 const URL_COM_TOKEN = 'https://app.exemplo.com/verificar-email?token=abc&x=1';
@@ -40,6 +40,31 @@ describe('templates do aluno', () => {
 
     expect(email.html).toContain('é só ignorar esta mensagem');
     expect(email.text).toContain('é só ignorar esta mensagem');
+  });
+});
+
+describe('boas-vindas de conta criada pela equipe', () => {
+  const appUrl = 'https://app.exemplo.com';
+
+  it('admin: entrar, criar senha e onde fica o painel', () => {
+    const email = welcomeTemplate({ name: 'Joana Lima', appUrl, admin: true });
+
+    expect(email.subject).toBe('Boas-vindas! Sua conta já está pronta');
+    expect(email.html).toContain('Olá, <strong>Joana</strong>!');
+    expect(email.html).toContain('href="https://app.exemplo.com/entrar"');
+    expect(email.html).toContain('href="https://app.exemplo.com/esqueci-senha"');
+    expect(email.html).toContain('Painel do administrador');
+    expect(email.text).toContain('https://app.exemplo.com/esqueci-senha');
+    expect(email.text).toContain('Painel do administrador');
+  });
+
+  it('aluno: sem menção ao painel, rodapé diz que a equipe criou a conta', () => {
+    const email = welcomeTemplate({ name: '', appUrl, admin: false });
+
+    expect(email.html).not.toContain('Painel do administrador');
+    expect(email.html).toContain('Olá!');
+    expect(email.html).toContain('a equipe do Inglês em Ação criou uma conta');
+    expect(email.text).toContain('a equipe do Inglês em Ação criou uma conta');
   });
 });
 

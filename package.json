@@ -16,7 +16,8 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "prisma studio",
     "admin:create": "tsx scripts/admin-create.ts",
-    "admin:promote": "tsx scripts/admin-promote.ts"
+    "admin:promote": "tsx scripts/admin-promote.ts",
+    "email:boas-vindas": "tsx scripts/enviar-boas-vindas.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

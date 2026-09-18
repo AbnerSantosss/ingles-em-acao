@@ -200,9 +200,11 @@ function cabecalho(): string {
 /**
  * Quem recebe o e-mail. O aluno pode não ter pedido nada (alguém digitou o
  * endereço dele) e precisa saber que ignorar é seguro. O admin, ao contrário,
- * **não** deve ignorar um alerta do painel: é para isso que ele existe.
+ * **não** deve ignorar um alerta do painel: é para isso que ele existe. E quem
+ * ganhou uma conta criada pela equipe (`conta`) não se cadastrou, então o
+ * rodapé diz de onde a conta veio.
  */
-export type PublicoDoEmail = 'aluno' | 'painel';
+export type PublicoDoEmail = 'aluno' | 'painel' | 'conta';
 
 const LINHAS_DO_RODAPE: Record<PublicoDoEmail, readonly string[]> = {
   aluno: [
@@ -212,6 +214,10 @@ const LINHAS_DO_RODAPE: Record<PublicoDoEmail, readonly string[]> = {
   painel: [
     'Alerta automático do painel do Inglês em Ação, enviado a todos os admins.',
     'Não reconhece esta ação? Confira a auditoria do painel agora.',
+  ],
+  conta: [
+    'Você recebeu este e-mail porque a equipe do Inglês em Ação criou uma conta com este endereço.',
+    'Não esperava por ele? É só ignorar esta mensagem.',
   ],
 };
 

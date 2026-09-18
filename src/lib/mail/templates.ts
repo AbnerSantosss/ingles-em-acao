@@ -178,3 +178,100 @@ export function resetPasswordTemplate({ name, url }: DadosDoTemplate): EmailRend
 
   return { subject, html, text };
 }
+
+export type DadosDeBoasVindas = {
+  /** Nome para a saudação. Pode vir vazio. */
+  name: string;
+  /** Base pública do app, sem barra no fim. */
+  appUrl: string;
+  /** Conta de admin: o e-mail também explica onde fica o painel. */
+  admin: boolean;
+};
+
+/**
+ * Boas-vindas para uma conta criada pela equipe (contas do MVP, admin novo),
+ * que não passou pelo cadastro e por isso nunca recebeu e-mail nenhum.
+ *
+ * Não leva token de senha: esse link vence em 1 hora, e um e-mail de
+ * boas-vindas costuma ser aberto dias depois. Quem não tem senha cria a sua
+ * pelo "Esqueci minha senha", que manda um link novo na hora.
+ */
+export function welcomeTemplate({ name, appUrl, admin }: DadosDeBoasVindas): EmailRenderizado {
+  const subject = 'Boas-vindas! Sua conta já está pronta';
+  const oi = saudacao(name);
+  const entrar = `${appUrl}/entrar`;
+  const esqueci = `${appUrl}/esqueci-senha`;
+
+  const acesso = admin
+    ? 'Ela tem acesso de <strong>aluno</strong>, com as 42 aulas liberadas, e de ' +
+      '<strong>administrador</strong>, para cuidar das aulas, dos alunos e dos vídeos.'
+    : 'As <strong>42 aulas</strong> já estão liberadas para você.';
+
+  const conteudo = [
+    titulo('Boas-vindas ao Inglês em Ação!'),
+    paragrafo(`${oi.html} Sua conta já está pronta.`, { cor: CORES.texto, margem: 12 }),
+    paragrafo(acesso),
+    botao({ href: entrar, rotulo: 'Entrar no app' }),
+    aviso(
+      '<strong>Primeiro acesso?</strong> Se você ainda não tem senha, ou quer criar uma só sua, ' +
+        `use <a href="${escaparHtml(esqueci)}" target="_blank" rel="noopener" ` +
+        `style="color:${CORES.link};font-weight:700;text-decoration:underline;">Esqueci minha senha</a> ` +
+        'com este e-mail. O link para criar a senha chega aqui em seguida.',
+    ),
+    ...(admin
+      ? [
+          separador(),
+          paragrafo('<strong>Onde fica cada coisa</strong>', { cor: CORES.texto, margem: 8 }),
+          paragrafo(
+            'Depois de entrar, você começa na área do aluno. Para abrir o painel, toque em ' +
+              '<strong>Perfil</strong> e depois em <strong>Painel do administrador</strong>. ' +
+              'No painel, <strong>Ver como aluno</strong> traz você de volta.',
+            { tamanho: 15, margem: 0 },
+          ),
+        ]
+      : []),
+    assinaturaManuscrita('Small steps, big results.'),
+  ].join('\n');
+
+  const html = layoutEmail({
+    assunto: subject,
+    preheader: admin
+      ? 'Acesso de aluno e de administrador liberado. Veja como entrar.'
+      : 'As 42 aulas já estão liberadas. Veja como entrar.',
+    conteudo,
+    publico: 'conta',
+  });
+
+  const text = montarTexto([
+    'BOAS-VINDAS AO INGLÊS EM AÇÃO!',
+    '',
+    oi.texto,
+    '',
+    'Sua conta já está pronta.',
+    admin
+      ? 'Ela tem acesso de aluno, com as 42 aulas liberadas, e de administrador,\npara cuidar das aulas, dos alunos e dos vídeos.'
+      : 'As 42 aulas já estão liberadas para você.',
+    '',
+    'Entre no app:',
+    entrar,
+    '',
+    'Primeiro acesso? Se você ainda não tem senha, ou quer criar uma só sua,',
+    'use "Esqueci minha senha" com este e-mail:',
+    esqueci,
+    ...(admin
+      ? [
+          '',
+          'ONDE FICA CADA COISA',
+          'Depois de entrar, você começa na área do aluno. Para abrir o painel, toque',
+          'em Perfil e depois em Painel do administrador. No painel, "Ver como aluno"',
+          'traz você de volta.',
+        ]
+      : []),
+    '',
+    'Small steps, big results.',
+    '',
+    rodapeEmTexto('conta'),
+  ]);
+
+  return { subject, html, text };
+}
