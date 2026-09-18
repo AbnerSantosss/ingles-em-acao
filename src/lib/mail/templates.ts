@@ -62,7 +62,8 @@ function montarTexto(linhas: string[]): string {
  * pode ser usada — confirmar só garante a recuperação de acesso depois.
  */
 export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRenderizado {
-  const subject = 'Confirme seu e-mail — Inglês em Ação';
+  // O remetente já mostra a marca; o assunto diz só do que se trata.
+  const subject = 'Boas-vindas! Confirme seu e-mail';
   const oi = saudacao(name);
 
   const conteudo = [
@@ -92,7 +93,7 @@ export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRender
 
   const html = layoutEmail({
     assunto: subject,
-    preheader: 'Confirme seu e-mail e garanta a recuperação do seu acesso.',
+    preheader: 'Sua conta já está pronta. Falta só confirmar que este endereço é seu.',
     conteudo,
   });
 
@@ -127,7 +128,7 @@ export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRender
  * rápido, e quem não pediu precisa entender em uma frase que está tudo bem.
  */
 export function resetPasswordTemplate({ name, url }: DadosDoTemplate): EmailRenderizado {
-  const subject = 'Redefinir sua senha — Inglês em Ação';
+  const subject = 'Seu link para criar uma nova senha';
   const oi = saudacao(name);
 
   const conteudo = [

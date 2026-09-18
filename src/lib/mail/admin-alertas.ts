@@ -37,7 +37,7 @@ import {
   separador,
   titulo,
 } from './layout';
-import { ambienteDeEmail, descreverErro, enviarMensagem, mascararEmail } from './transport';
+import { ambienteDeEmail, descreverErro, enviarMensagem, MARCA, mascararEmail } from './transport';
 
 // ───────────────────────────────── tipos ─────────────────────────────────
 
@@ -83,6 +83,13 @@ const ROTULO_DO_PLANO: Record<Plan, string> = {
   COMPLETO: 'Completo',
   PREMIUM: 'Premium',
 };
+
+/**
+ * Remetente dos alertas. Na caixa de entrada, o admin distingue de relance um
+ * alerta do painel de um e-mail comum do app, e o assunto fica livre para dizer
+ * só o que aconteceu.
+ */
+const REMETENTE_DO_PAINEL = `${MARCA} · Painel`;
 
 const FORMATO_DE_DATA = new Intl.DateTimeFormat('pt-BR', {
   dateStyle: 'short',
@@ -143,7 +150,7 @@ async function despachar(
 
   for (const para of lista) {
     try {
-      await enviarMensagem({ para, assunto, html, texto });
+      await enviarMensagem({ para, assunto, html, texto, nomeDoRemetente: REMETENTE_DO_PAINEL });
     } catch (erro: unknown) {
       falhas += 1;
       ultimoErro = descreverErro(erro);
@@ -187,7 +194,7 @@ export async function alertarMudancaDePlano(dados: AlertaDePlano): Promise<Resul
     const para = ROTULO_DO_PLANO[dados.para];
     const quando = FORMATO_DE_DATA.format(new Date());
 
-    const assunto = `[Painel] Plano de aluno alterado: ${de} → ${para}`;
+    const assunto = `Plano de aluno alterado: ${de} → ${para}`;
 
     const conteudo = [
       titulo('Plano de aluno alterado'),
@@ -258,7 +265,7 @@ export async function alertarTrocaDeCheckout(dados: AlertaDeCheckout): Promise<R
     const antes = (troca: TrocaDeLink): string => troca.de ?? '(não havia link)';
     const agora = (troca: TrocaDeLink): string => troca.para ?? '(removido)';
 
-    const assunto = `[Painel] Link de checkout alterado (${escopos})`;
+    const assunto = `Link de checkout alterado (${escopos})`;
 
     const conteudo = [
       titulo('Link de checkout alterado'),

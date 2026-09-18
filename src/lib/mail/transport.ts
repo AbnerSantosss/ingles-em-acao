@@ -43,6 +43,11 @@ export type MensagemDeEmail = {
   html: string;
   /** Alternativa em texto puro. Obrigatória: sem ela o e-mail cai em spam. */
   texto: string;
+  /**
+   * Nome que a caixa de entrada mostra como remetente. Sem ele, vale o nome de
+   * `MAIL_FROM` e, se `MAIL_FROM` não tiver nome, a {@link MARCA}.
+   */
+  nomeDoRemetente?: string;
 };
 
 export type ResultadoDoTransporte = {
@@ -56,6 +61,9 @@ export type Transportador = {
   verify(): Promise<boolean>;
   close(): void;
 };
+
+/** Nome de remetente quando nada mais diz qual é. */
+export const MARCA = 'Inglês em Ação';
 
 /** Remetente usado quando não há `MAIL_FROM` (só acontece em modo simulado). */
 const REMETENTE_SIMULADO = 'Inglês em Ação <nao-responda@localhost>';
@@ -121,6 +129,22 @@ export function senhaParaOServidor(host: string, senha: string): string {
   const servidor = host.trim().toLowerCase();
   const ehGmail = servidor === 'smtp.gmail.com' || servidor === 'smtp.googlemail.com';
   return ehGmail ? senha.replace(/\s+/g, '') : senha;
+}
+
+/**
+ * Separa o remetente em nome e endereço.
+ *
+ * `MAIL_FROM` pode vir como `Inglês em Ação <conta@gmail.com>` ou só como
+ * `conta@gmail.com`. O endereço sai sempre dele (no Gmail, tem de ser a conta
+ * que faz login). O nome pode mudar por tipo de e-mail, e nunca fica vazio:
+ * sem nome, a caixa de entrada mostra o endereço cru, e o e-mail parece spam.
+ */
+export function montarRemetente(mailFrom: string, nome?: string): { name: string; address: string } {
+  const limpo = mailFrom.trim();
+  const comNome = /^(.*)<([^<>]+)>$/.exec(limpo);
+  const address = (comNome ? (comNome[2] ?? '') : limpo).trim();
+  const nomeDoMailFrom = comNome ? (comNome[1] ?? '').trim().replace(/^"(.*)"$/, '$1').trim() : '';
+  return { name: nome?.trim() || nomeDoMailFrom || MARCA, address };
 }
 
 function configuracaoSimulada(motivo: string): ConfiguracaoResolvida {
@@ -224,7 +248,7 @@ export async function enviarMensagem(mensagem: MensagemDeEmail): Promise<Resulta
   const transportador = await obterTransportador();
 
   const info = await transportador.sendMail({
-    from: publico.remetente,
+    from: montarRemetente(publico.remetente, mensagem.nomeDoRemetente),
     to: mensagem.para,
     subject: mensagem.assunto,
     text: mensagem.texto,

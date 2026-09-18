@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 
 import { layoutEmail, rodapeEmTexto } from '@/lib/mail/layout';
 import { resetPasswordTemplate, verifyEmailTemplate } from '@/lib/mail/templates';
-import { senhaParaOServidor } from '@/lib/mail/transport';
+import { montarRemetente, senhaParaOServidor } from '@/lib/mail/transport';
 
 const URL_COM_TOKEN = 'https://app.exemplo.com/verificar-email?token=abc&x=1';
 
@@ -11,7 +11,7 @@ describe('templates do aluno', () => {
   it('confirmação: assunto, link completo no HTML e no texto, validade de 24 h', () => {
     const email = verifyEmailTemplate({ name: 'Maria Souza', url: URL_COM_TOKEN });
 
-    expect(email.subject).toBe('Confirme seu e-mail — Inglês em Ação');
+    expect(email.subject).toBe('Boas-vindas! Confirme seu e-mail');
     expect(email.html).toContain('href="https://app.exemplo.com/verificar-email?token=abc&amp;x=1"');
     expect(email.html).toContain('Olá, <strong>Maria</strong>!');
     expect(email.html).toContain('24 horas');
@@ -22,7 +22,7 @@ describe('templates do aluno', () => {
   it('redefinição: validade de 1 h e recado para quem não pediu', () => {
     const email = resetPasswordTemplate({ name: '', url: URL_COM_TOKEN });
 
-    expect(email.subject).toBe('Redefinir sua senha — Inglês em Ação');
+    expect(email.subject).toBe('Seu link para criar uma nova senha');
     expect(email.html).toContain('1 hora');
     expect(email.html).toContain('Olá!');
     expect(email.text).toContain('sua senha continua a mesma');
@@ -64,5 +64,30 @@ describe('senhaParaOServidor', () => {
 
   it('em outro servidor a senha fica intacta', () => {
     expect(senhaParaOServidor('smtp.exemplo.com', 'senha com espaço')).toBe('senha com espaço');
+  });
+});
+
+describe('montarRemetente', () => {
+  it('usa o nome de MAIL_FROM quando o e-mail não pede outro', () => {
+    expect(montarRemetente('Inglês em Ação <conta@gmail.com>')).toEqual({
+      name: 'Inglês em Ação',
+      address: 'conta@gmail.com',
+    });
+    expect(montarRemetente(' "Inglês em Ação" <conta@gmail.com> ')).toEqual({
+      name: 'Inglês em Ação',
+      address: 'conta@gmail.com',
+    });
+  });
+
+  it('troca só o nome e mantém o endereço de MAIL_FROM', () => {
+    expect(montarRemetente('Inglês em Ação <conta@gmail.com>', 'Inglês em Ação · Painel')).toEqual({
+      name: 'Inglês em Ação · Painel',
+      address: 'conta@gmail.com',
+    });
+  });
+
+  it('com MAIL_FROM sem nome, mostra a marca em vez do endereço cru', () => {
+    expect(montarRemetente('conta@gmail.com')).toEqual({ name: 'Inglês em Ação', address: 'conta@gmail.com' });
+    expect(montarRemetente('conta@gmail.com', '  ')).toEqual({ name: 'Inglês em Ação', address: 'conta@gmail.com' });
   });
 });

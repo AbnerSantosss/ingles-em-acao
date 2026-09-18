@@ -116,11 +116,16 @@ para cada linha abaixo (ou use **Advanced mode** e cole tudo no formato `NOME=va
 | `SMTP_SECURE` | `true` | `true` para a porta 465. |
 | `SMTP_USER` | `voce@gmail.com` | A conta que envia. |
 | `SMTP_PASSWORD` | a senha de app, 16 letras | **A senha de app**, não a senha do Gmail. Cadastre só aqui, no Portainer. Pode colar com os espaços que o Google mostra: no Gmail, o app os tira. |
-| `MAIL_FROM` | `Inglês em Ação <voce@gmail.com>` | Remetente que o aluno vê. |
+| `MAIL_FROM` | `Inglês em Ação <voce@gmail.com>` | Remetente que o aluno vê. Os alertas do painel saem do mesmo endereço com o nome `Inglês em Ação · Painel`. |
 
 > ⚠️ No Gmail, o endereço de `MAIL_FROM` tem de ser o mesmo de `SMTP_USER`. Com outro endereço,
 > o Google troca o remetente ou manda para o spam. A conta gratuita envia até cerca de 500
 > e-mails por dia.
+
+> ⚠️ A foto redonda ao lado do remetente, no Gmail, é a foto de perfil da conta Google que envia.
+> Para mostrar a marca, entre nessa conta em `myaccount.google.com` → **Informações pessoais** e
+> troque a foto pelo logo e o nome para `Inglês em Ação`. O nome da conta também é o que aparece
+> para quem já tem o endereço salvo nos contatos.
 
 ### Opcionais
 
