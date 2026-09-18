@@ -10,8 +10,11 @@
  * *quantas* sessões existem e de onde; a aba "respostas" mostra *quanto* o
  * aluno acertou, nunca o que ele escreveu.
  *
- * ⚠️ **Excluir aluno não existe nesta rodada** (§7). A tela diz isso em vez de
- * oferecer um botão que ninguém sabe o que faz.
+ * ⚠️ **Excluir aluno é anonimizar** (§7): a ação "Anonimizar conta" usa o
+ * núcleo de `src/lib/conta/anonimizar.ts`. Conta anonimizada continua abrindo
+ * aqui (a linha de `User` fica, por causa dos pagamentos), com o selo "Conta
+ * excluída" e sem ações. A data vem de `dataDeExclusao()`, porque
+ * `carregarContaDoAluno()` não traz `deletedAt`.
  *
  * ⚠️ Next 16: `params` e `searchParams` chegam como Promise e precisam de
  * `await`.
@@ -31,6 +34,7 @@ import {
 } from '@/lib/admin/alunos';
 import { auditar } from '@/lib/admin/audit';
 import { requireAdmin } from '@/lib/admin/guard';
+import { dataDeExclusao } from '@/lib/conta/consultas';
 
 import { AcoesDoAluno } from './AcoesDoAluno';
 
@@ -116,7 +120,7 @@ function Dado({ rotulo, children }: { rotulo: string; children: React.ReactNode 
 
 // ─────────────────────────────── aba: conta ──────────────────────────────
 
-function AbaDeConta({ conta }: { conta: ContaDoAluno }) {
+function AbaDeConta({ conta, excluidaEm }: { conta: ContaDoAluno; excluidaEm: Date | null }) {
   return (
     <div className="flex flex-col gap-6">
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
@@ -185,6 +189,8 @@ function AbaDeConta({ conta }: { conta: ContaDoAluno }) {
           limite: conta.reenvio.limite,
           liberaEm: conta.reenvio.liberaEm === null ? null : conta.reenvio.liberaEm.toISOString(),
         }}
+        administrador={conta.admin}
+        excluidaEm={excluidaEm === null ? null : excluidaEm.toISOString()}
       />
     </div>
   );
@@ -383,12 +389,14 @@ export default async function TelaDoAluno({
   const aba: IdDeAba = abaPedida && ehAba(abaPedida) ? abaPedida : 'conta';
 
   let conta: ContaDoAluno | null = null;
+  let excluidaEm: Date | null = null;
   let aprendizagem: AprendizagemDoAluno | null = null;
   let respostas: RespostasDoAluno | null = null;
   let semBanco = false;
 
   try {
     conta = await carregarContaDoAluno(id);
+    if (conta !== null) excluidaEm = await dataDeExclusao(conta.id);
 
     // Só a aba aberta paga a consulta dela.
     if (conta !== null && aba === 'progresso') aprendizagem = await carregarAprendizagemDoAluno(id);
@@ -449,6 +457,9 @@ export default async function TelaDoAluno({
             <Selo texto="Verificado" fundo="#E4F5EA" cor="#136B45" />
           )}
           {conta.admin ? <Selo texto="Administrador" fundo="#EAF2FE" cor="#123A86" /> : null}
+          {excluidaEm !== null ? (
+            <Selo texto="Conta excluída" fundo="#FEF0F2" cor="#B21F31" />
+          ) : null}
         </div>
         <p className="m-0 mt-1.5 text-[14px] font-semibold leading-snug text-muted">
           {conta.email} · criado em {FORMATO_CURTO.format(conta.criadoEm)} ·{' '}
@@ -483,7 +494,7 @@ export default async function TelaDoAluno({
       </nav>
 
       <section className="rounded-card bg-surface p-5 shadow-card lg:p-6">
-        {aba === 'conta' ? <AbaDeConta conta={conta} /> : null}
+        {aba === 'conta' ? <AbaDeConta conta={conta} excluidaEm={excluidaEm} /> : null}
         {aba === 'progresso' && aprendizagem !== null ? (
           <AbaDeProgresso aprendizagem={aprendizagem} />
         ) : null}
@@ -493,9 +504,9 @@ export default async function TelaDoAluno({
       </section>
 
       <p className="m-0 max-w-[62ch] text-[13px] font-semibold leading-snug text-muted-2">
-        Excluir aluno não existe nesta rodada: apagar a conta levaria junto progresso e respostas
-        por cascata, e o caminho decidido é anonimização — que ainda vai ser desenhada. Até lá,
-        para encerrar um acesso, derrube as sessões e mude o plano.
+        {excluidaEm !== null
+          ? `Conta excluída em ${FORMATO_DE_DATA.format(excluidaEm)}. A ficha continua aqui porque os pagamentos apontam para ela; o que identificava a pessoa e o progresso já saíram.`
+          : 'Excluir aluno é anonimizar: a linha da conta fica (os pagamentos apontam para ela), mas nome, e-mail, senha, sessões e progresso saem, e o e-mail fica livre para um cadastro novo. É a mesma coisa que o aluno faz sozinho em "Excluir minha conta", no perfil.'}
       </p>
     </div>
   );

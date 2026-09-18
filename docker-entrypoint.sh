@@ -161,6 +161,19 @@ else
 fi
 
 # ------------------------------------------------------------------------------
+# 4b. Contas de validação do MVP (admin + aluno) — só quando as variáveis existem
+#     Só cria conta que falta; nunca altera uma existente. Falha aqui NÃO derruba
+#     o app: sem as contas, o site continua no ar e o log diz o que faltou.
+# ------------------------------------------------------------------------------
+if [ -n "${ADMIN_EMAIL:-}${ALUNO_EMAIL:-}" ]; then
+  if [ -x /app/node_modules/.bin/tsx ] && [ -f /app/scripts/contas-mvp.ts ]; then
+    /app/node_modules/.bin/tsx /app/scripts/contas-mvp.ts || log "AVISO: as contas do MVP não foram todas criadas — veja as linhas [contas-mvp] acima."
+  else
+    log "AVISO: scripts/contas-mvp.ts ou o tsx não estão na imagem — contas do MVP não criadas."
+  fi
+fi
+
+# ------------------------------------------------------------------------------
 # 5. Servidor
 # ------------------------------------------------------------------------------
 if [ "$#" -eq 0 ]; then

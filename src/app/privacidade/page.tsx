@@ -140,6 +140,18 @@ export default function PrivacidadePage() {
           a partir do e-mail cadastrado. Respondemos em até 15 dias. Você também pode procurar a Autoridade
           Nacional de Proteção de Dados (ANPD).
         </p>
+        <p>
+          <strong>Excluir sua conta:</strong> em Perfil → Excluir minha conta, com a sua senha, você apaga a
+          sua conta a qualquer momento. Na hora, apagamos seu nome, e-mail, foto e senha, as aulas
+          concluídas, as respostas dos exercícios, os dias de estudo, as tentativas de login e todas as
+          sessões abertas, em todos os aparelhos. Guardamos apenas o registro das suas compras, sem nome nem
+          e-mail, ligado a uma conta anônima, porque a lei fiscal nos obriga a manter esses registros (LGPD,
+          art. 16, I), e o registro de que o pedido de exclusão foi feito e atendido, para podermos comprovar
+          isso. O acesso ao plano termina junto com a conta. A exclusão não pode ser desfeita, mas o seu
+          e-mail fica livre: se quiser voltar, pode criar uma conta nova, que começa do zero. Se preferir,
+          também pode pedir a exclusão pelo nosso contato; nesse caso quem faz é a nossa equipe, e o motivo
+          fica registrado.
+        </p>
       </SecaoLegal>
 
       <SecaoLegal titulo="9. Mudanças nesta política">

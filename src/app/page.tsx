@@ -25,6 +25,11 @@ export default async function RaizPage() {
   const usuario = await getCurrentUser();
   if (usuario) redirect('/inicio');
 
+  // ⚠️ Os links daqui saem **sem** a referência do aluno (`lerLinksDeCompra`):
+  // quem tem sessão nunca chega a esta linha (vai para `/inicio`) e o visitante
+  // anônimo ainda não tem conta a que a compra possa voltar. Pagamento que chega
+  // por aqui é gravado órfão pelo webhook e liberado pelo suporte, à mão — o
+  // que a landing e os termos prometem hoje ("liberado pela equipe").
   const checkout = await lerLinksDeCheckout();
 
   return (

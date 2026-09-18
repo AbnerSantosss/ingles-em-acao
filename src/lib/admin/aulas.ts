@@ -5,6 +5,9 @@
  *
  * Consultas e regras puras. As mutações moram nas Server Actions de
  * `src/app/(admin)/admin/aulas/actions.ts`, com `requireAdmin()` e `auditar()`.
+ * A exceção é {@link duplicarAula}: o núcleo mora aqui para ser testável contra
+ * o banco, recebe o admin já autenticado e grava a própria auditoria — a action
+ * continua sendo quem chama `requireAdmin()`.
  *
  * ## O que este arquivo **não** carrega
  *
@@ -16,7 +19,13 @@
 import { Prisma } from '@prisma/client';
 import { z } from 'zod';
 
+import { auditar } from '@/lib/admin/audit';
+import { regenerarIdsInterativos } from '@/lib/admin/editor';
+import { carregarContextoDoCurso } from '@/lib/admin/publicacao';
+import type { SessionUser } from '@/lib/auth/session';
+import { validarPaginas, type Page } from '@/lib/content/blocks';
 import { prisma } from '@/lib/db';
+import { sincronizarUsosDaAula } from '@/lib/media/consultas';
 
 // ───────────────────────────────── tipos ─────────────────────────────────
 
@@ -375,4 +384,263 @@ export async function slugLivre(base: string, ignorarId?: string): Promise<strin
 export function paginaInicial(titulo: string, subtitulo: string): Prisma.InputJsonValue {
   const pt = subtitulo.trim() === '' ? titulo : subtitulo.trim();
   return [{ blocks: [{ t: 'title', en: titulo, pt }] }];
+}
+
+// ──────────────────────────────── duplicar ───────────────────────────────
+
+const SUFIXO_DA_COPIA = ' (cópia)';
+const TITULO_MAXIMO = 120;
+
+/** "Verb To Be" vira "Verb To Be (cópia)", sem passar do limite do título. */
+export function tituloDaCopia(titulo: string): string {
+  const espaco = TITULO_MAXIMO - SUFIXO_DA_COPIA.length;
+  return `${titulo.trim().slice(0, espaco).trimEnd()}${SUFIXO_DA_COPIA}`;
+}
+
+const SUFIXO_DO_SLUG_DA_COPIA = '-copia';
+/** O limite do slug em {@link esquemaDeDados}. */
+const SLUG_MAXIMO = 120;
+/** O que {@link slugLivre} pode acrescentar: `-50` ou `-<Date.now() em base 36>`. */
+const FOLGA_DO_SLUG_LIVRE = 10;
+
+/**
+ * A base do slug da cópia: `<slug>-copia`, cortada para caber no limite.
+ *
+ * ⚠️ Sem o corte, a cópia de um slug longo (ou a cópia da cópia da cópia…)
+ * nasceria com um slug que a própria aba Dados recusa ("o slug passou de 120
+ * caracteres") — e o admin só descobriria ao salvar outra coisa.
+ */
+export function baseDoSlugDaCopia(slug: string): string {
+  const espaco = SLUG_MAXIMO - SUFIXO_DO_SLUG_DA_COPIA.length - FOLGA_DO_SLUG_LIVRE;
+  return `${slug.slice(0, espaco)}${SUFIXO_DO_SLUG_DA_COPIA}`;
+}
+
+/**
+ * Todo id de bloco `a{numero}…` que aparece numa chave de resposta gravada.
+ *
+ * Não deveria haver nenhum para um número que ainda não tem aula — respostas
+ * morrem junto com a aula (cascade). Mas uma chave órfã com o id que a cópia
+ * está para ganhar faria a cópia **herdar** a resposta de alguém; conferir custa
+ * uma consulta.
+ */
+async function idsEmRespostasGravadas(numero: number): Promise<string[]> {
+  const respostas = await prisma.exerciseAnswer.findMany({
+    where: { answerKey: { contains: `:a${numero}` } },
+    select: { answerKey: true },
+    distinct: ['answerKey'],
+  });
+  const formato = new RegExp(`^a${numero}[a-z]+\\d+[a-z]*$`);
+  const ids = new Set<string>();
+  for (const { answerKey } of respostas) {
+    for (const parte of answerKey.split(':')) if (formato.test(parte)) ids.add(parte);
+  }
+  return [...ids];
+}
+
+function ehConflitoDeUnicidade(erro: unknown): boolean {
+  return erro instanceof Prisma.PrismaClientKnownRequestError && erro.code === 'P2002';
+}
+
+export type ResultadoDaDuplicacao =
+  | {
+      ok: true;
+      origem: { id: string; number: number; title: string };
+      copia: { id: string; number: number; code: string; slug: string; title: string };
+      /** De-para "id original → id novo" de todo bloco interativo. */
+      idsNovos: Record<string, string>;
+      temRascunho: boolean;
+      /** `null` quando o índice de uso de mídia não pôde ser gravado. */
+      midias: { registrados: number; ignorados: number } | null;
+    }
+  | { ok: false; motivo: string };
+
+/**
+ * Duplica uma aula como **rascunho despublicado**, no fim da fila.
+ *
+ * O que a cópia leva:
+ * - `pages` e `draftPages` (se houver), com **todo** bloco interativo (`mc`,
+ *   `fill`, `match`, `dnd`, `check`, `free`) com id novo — as chaves de resposta
+ *   `fill:`/`free:`/`match:`/`dnd:`/`chk:` dependem só do id do bloco, e uma
+ *   cópia com o id do original passaria a dividir a resposta do aluno (§6.2).
+ *   O mesmo bloco ganha o mesmo id novo nos dois conteúdos;
+ * - título + " (cópia)", subtítulo, tempo estimado e módulo;
+ * - número = próximo livre, `code` recalculado, slug livre `<slug>-copia`.
+ *
+ * O que a cópia **não** leva (decisão):
+ * - **capa**: a arte da capa traz o número da aula de origem ("AULA 01") — na
+ *   cópia seria informação errada. A cópia nasce "sem capa";
+ * - **vídeo**: a videoaula foi gravada para a aula de origem. A cópia nasce
+ *   "sem vídeo"; o vídeo próprio (ou o padrão) é aplicado pela aba Vídeo ou em
+ *   /admin/videos;
+ * - progresso, respostas, versões e publicação: nada disso é conteúdo.
+ *
+ * Imagem e perfil mantêm o id (é o nome da arte legada). Blocos `badge`/`next`
+ * que citam o número da origem continuam citando — o editor é quem ajusta.
+ * Aula arquivada também pode ser duplicada: a cópia nasce rascunho, não arquivada.
+ *
+ * `numero` força o número da cópia (os testes usam, para ficar na sua faixa);
+ * sem ele vale {@link proximoNumeroDeAula}, com nova tentativa se outra aula
+ * pegar o número ou o slug no meio do caminho.
+ */
+export async function duplicarAula(entrada: {
+  ator: SessionUser;
+  origemId: string;
+  numero?: number;
+}): Promise<ResultadoDaDuplicacao> {
+  const origem = await prisma.lesson.findUnique({ where: { id: entrada.origemId } });
+  if (!origem) return { ok: false, motivo: 'A aula de origem não existe mais.' };
+
+  const negar = async (motivo: string): Promise<ResultadoDaDuplicacao> => {
+    await auditar({
+      actor: entrada.ator,
+      action: 'lesson.duplicate',
+      resource: `Lesson:${origem.number}`,
+      outcome: 'DENY',
+      reason: motivo,
+    });
+    return { ok: false, motivo };
+  };
+
+  // Só se duplica conteúdo que se sabe ler: trocar ids num JSON torto poderia
+  // deixar um exercício com o id do original escondido num canto.
+  const publicadas = validarPaginas(origem.pages);
+  if (!publicadas.ok) {
+    return negar(
+      `O conteúdo publicado da aula ${origem.number} não passa no esquema; corrija antes de duplicar.`,
+    );
+  }
+  let rascunho: Page[] | null = null;
+  if (origem.draftPages !== null) {
+    const lido = validarPaginas(origem.draftPages);
+    if (!lido.ok) {
+      return negar(
+        `O rascunho da aula ${origem.number} não passa no esquema; corrija ou descarte antes de duplicar.`,
+      );
+    }
+    rascunho = lido.pages;
+  }
+
+  const TENTATIVAS = entrada.numero === undefined ? 3 : 1;
+
+  for (let tentativa = 1; tentativa <= TENTATIVAS; tentativa += 1) {
+    const numero = entrada.numero ?? (await proximoNumeroDeAula());
+    if (!esquemaDeNumero.safeParse(numero).success) {
+      return {
+        ok: false,
+        motivo:
+          entrada.numero === undefined
+            ? 'Não há número livre para a cópia (o limite é a aula 999).'
+            : 'Número de aula inválido para a cópia.',
+      };
+    }
+
+    const [contexto, orfaos, slug] = await Promise.all([
+      carregarContextoDoCurso(origem.id),
+      idsEmRespostasGravadas(numero),
+      slugLivre(baseDoSlugDaCopia(origem.slug)),
+    ]);
+    const usados = new Set([...contexto.idsUsados, ...orfaos]);
+    const mapa = new Map<string, string>();
+    const paginas = regenerarIdsInterativos(publicadas.pages, numero, usados, mapa);
+    const paginasDoRascunho = rascunho
+      ? regenerarIdsInterativos(rascunho, numero, usados, mapa)
+      : null;
+
+    let copia;
+    try {
+      copia = await prisma.lesson.create({
+        data: {
+          number: numero,
+          code: codigoDaAula(numero),
+          slug,
+          title: tituloDaCopia(origem.title),
+          subtitle: origem.subtitle,
+          estimatedTime: origem.estimatedTime,
+          moduleId: origem.moduleId,
+          coverUrl: null,
+          pages: paginas as unknown as Prisma.InputJsonValue,
+          draftPages: paginasDoRascunho
+            ? (paginasDoRascunho as unknown as Prisma.InputJsonValue)
+            : Prisma.DbNull,
+          published: false,
+          publishedAt: null,
+          updatedById: entrada.ator.id,
+        },
+        select: { id: true, number: true, code: true, slug: true, title: true, moduleId: true },
+      });
+    } catch (erro: unknown) {
+      if (ehConflitoDeUnicidade(erro)) {
+        if (entrada.numero !== undefined) {
+          return {
+            ok: false,
+            motivo: `O número ${numero} (ou o endereço ${slug}) já é de outra aula.`,
+          };
+        }
+        if (tentativa < TENTATIVAS) continue;
+        return {
+          ok: false,
+          motivo: 'Outra aula foi criada ao mesmo tempo e ocupou o número. Tente de novo.',
+        };
+      }
+      throw erro;
+    }
+
+    // A cópia usa as mesmas imagens da biblioteca: sem o índice, uma imagem
+    // usada só por ela apareceria "sem uso" em /admin/midia e poderia ser
+    // arquivada. Falhar aqui não desfaz a cópia (mesma regra da publicação).
+    let midias: { registrados: number; ignorados: number } | null = null;
+    try {
+      midias = await sincronizarUsosDaAula({ lessonId: copia.id, capa: null, pages: paginas });
+    } catch (erro: unknown) {
+      const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
+      console.error(`[painel] MediaUsage da cópia não sincronizado: ${motivo}`);
+    }
+
+    const idsNovos = Object.fromEntries(mapa);
+    const dadosDaOrigem = {
+      id: origem.id,
+      number: origem.number,
+      slug: origem.slug,
+      title: origem.title,
+      published: origem.published,
+      contentVersion: origem.contentVersion,
+    };
+
+    await auditar({
+      actor: entrada.ator,
+      action: 'lesson.duplicate',
+      resource: `Lesson:${copia.number}`,
+      before: { origem: dadosDaOrigem },
+      after: {
+        number: copia.number,
+        code: copia.code,
+        slug: copia.slug,
+        title: copia.title,
+        moduleId: copia.moduleId,
+        published: false,
+        coverUrl: null,
+        video: null,
+        temRascunho: paginasDoRascunho !== null,
+        origem: origem.number,
+        idsNovos,
+      },
+    });
+
+    return {
+      ok: true,
+      origem: { id: origem.id, number: origem.number, title: origem.title },
+      copia: {
+        id: copia.id,
+        number: copia.number,
+        code: copia.code,
+        slug: copia.slug,
+        title: copia.title,
+      },
+      idsNovos,
+      temRascunho: paginasDoRascunho !== null,
+      midias,
+    };
+  }
+
+  return { ok: false, motivo: 'Não foi possível reservar um número para a cópia. Tente de novo.' };
 }

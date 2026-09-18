@@ -12,6 +12,11 @@
  *   ficou além da última página e reescreve `MediaUsage`. Tudo o que toca o
  *   banco numa transação só — ou publica inteiro, ou nada muda.
  *
+ * - **Colocar no ar / tirar do ar** ({@link publicarAula}, {@link despublicarAula},
+ *   {@link alterarPublicacaoEmLote}) só liga e desliga `Lesson.published` com o
+ *   conteúdo que já está em `pages` — o mesmo núcleo para a aba Dados e para o
+ *   lote da lista.
+ *
  * O que a publicação **nunca** faz (§6.4, D10):
  *
  * - apagar `ExerciseAnswer` — resposta de bloco removido vira órfã, preservada;
@@ -22,6 +27,7 @@ import { createHash } from 'node:crypto';
 
 import { Prisma } from '@prisma/client';
 
+import { auditar } from '@/lib/admin/audit';
 import {
   blocosInterativos,
   chavePertenceAoBloco,
@@ -35,6 +41,7 @@ import {
   type DiferencasDoConteudo,
   type TipoInterativo,
 } from '@/lib/admin/editor';
+import type { SessionUser } from '@/lib/auth/session';
 import { validarPaginas, type Page } from '@/lib/content/blocks';
 import { prisma } from '@/lib/db';
 import { sincronizarUsosDaAula } from '@/lib/media/consultas';
@@ -104,11 +111,23 @@ function todosOsIdsSoltos(valor: unknown): string[] {
 }
 
 /**
- * Tudo o que a validação e o gerador de ids precisam saber sobre o resto do
- * curso. Varre `pages`, `draftPages` e **todas** as `LessonVersion` — um id
- * que só existe numa versão antiga continua reservado (§6.2: nunca reutilizar).
+ * O curso inteiro, já varrido uma vez: de quem é cada conteúdo e que ids ele
+ * tem. É o que deixa uma operação em lote (publicar 40 aulas) ler o banco **uma**
+ * vez em vez de 40 — cada aula só deriva o seu {@link ContextoDoCurso} daqui.
  */
-export async function carregarContextoDoCurso(lessonId: string): Promise<ContextoDoCurso> {
+export type BaseDoCurso = {
+  /** Um registro por conteúdo (publicado, rascunho ou versão) com os ids que ele tem. */
+  conteudos: { dono: string; todos: string[]; interativos: string[] }[];
+  numeroPorAula: Map<string, number>;
+  aulasExistentes: { numero: number; titulo: string }[];
+  mediaDePaginas: number;
+};
+
+/**
+ * Varre `pages`, `draftPages` e **todas** as `LessonVersion` — um id que só
+ * existe numa versão antiga continua reservado (§6.2: nunca reutilizar).
+ */
+export async function carregarBaseDoCurso(): Promise<BaseDoCurso> {
   const [aulas, versoes] = await Promise.all([
     prisma.lesson.findMany({
       select: { id: true, number: true, title: true, pages: true, draftPages: true, archivedAt: true },
@@ -116,17 +135,13 @@ export async function carregarContextoDoCurso(lessonId: string): Promise<Context
     prisma.lessonVersion.findMany({ select: { lessonId: true, pages: true } }),
   ]);
 
-  const numeroPorAula = new Map(aulas.map((aula) => [aula.id, aula.number]));
-  const idsUsados = new Set<string>();
-  const idsDeOutrasAulas = new Map<string, number>();
-  const idsHistoricosDaAula = new Set<string>();
-
+  const conteudos: BaseDoCurso['conteudos'] = [];
   const registrar = (dono: string, conteudo: unknown): void => {
-    for (const id of todosOsIdsSoltos(conteudo)) idsUsados.add(id);
-    for (const id of idsInterativosSoltos(conteudo)) {
-      if (dono === lessonId) idsHistoricosDaAula.add(id);
-      else idsDeOutrasAulas.set(id, numeroPorAula.get(dono) ?? 0);
-    }
+    conteudos.push({
+      dono,
+      todos: todosOsIdsSoltos(conteudo),
+      interativos: idsInterativosSoltos(conteudo),
+    });
   };
 
   for (const aula of aulas) {
@@ -142,12 +157,42 @@ export async function carregarContextoDoCurso(lessonId: string): Promise<Context
   );
 
   return {
-    idsUsados: [...idsUsados],
-    idsDeOutrasAulas,
-    idsHistoricosDaAula,
+    conteudos,
+    numeroPorAula: new Map(aulas.map((aula) => [aula.id, aula.number])),
     aulasExistentes: ativas.map((aula) => ({ numero: aula.number, titulo: aula.title })),
     mediaDePaginas: ativas.length > 0 ? somaDePaginas / ativas.length : 0,
   };
+}
+
+/** O contexto de **uma** aula, derivado da base (sem ir ao banco). */
+export function contextoDaAula(base: BaseDoCurso, lessonId: string): ContextoDoCurso {
+  const idsUsados = new Set<string>();
+  const idsDeOutrasAulas = new Map<string, number>();
+  const idsHistoricosDaAula = new Set<string>();
+
+  for (const conteudo of base.conteudos) {
+    for (const id of conteudo.todos) idsUsados.add(id);
+    for (const id of conteudo.interativos) {
+      if (conteudo.dono === lessonId) idsHistoricosDaAula.add(id);
+      else idsDeOutrasAulas.set(id, base.numeroPorAula.get(conteudo.dono) ?? 0);
+    }
+  }
+
+  return {
+    idsUsados: [...idsUsados],
+    idsDeOutrasAulas,
+    idsHistoricosDaAula,
+    aulasExistentes: base.aulasExistentes,
+    mediaDePaginas: base.mediaDePaginas,
+  };
+}
+
+/**
+ * Tudo o que a validação e o gerador de ids precisam saber sobre o resto do
+ * curso, do ponto de vista de uma aula.
+ */
+export async function carregarContextoDoCurso(lessonId: string): Promise<ContextoDoCurso> {
+  return contextoDaAula(await carregarBaseDoCurso(), lessonId);
 }
 
 // ─────────────────────────── respostas por bloco ───────────────────────────
@@ -574,6 +619,355 @@ export async function publicarRascunho(entrada: {
     progressosReposicionados: resultado.progressosReposicionados,
     midias,
   };
+}
+
+// ─────────────────── colocar no ar e tirar do ar (aula inteira) ───────────────────
+
+/*
+ * "Publicar aula" (aba Dados e lote na lista) ≠ "publicar rascunho" (aba
+ * Páginas). Aqui só se liga/desliga `Lesson.published` com o conteúdo que **já
+ * está** em `pages`; o rascunho não entra no ar por este caminho.
+ *
+ * Um núcleo só para a ação individual e para o lote — as regras abaixo valem
+ * igual nos dois, e cada aula tem a sua linha de auditoria:
+ *
+ * Publicar:
+ * 1. aula arquivada → bloqueada (restaure antes);
+ * 2. `pages` fora do esquema (zod) → bloqueada;
+ * 3. erro da §3.5 (`validarSemantica`) → bloqueada; avisos **não** bloqueiam,
+ *    voltam no resultado;
+ * 4. senão: `published = true`, `publishedAt` só na primeira vez, clamp de
+ *    `currentPage` (§6.4, regra 2 — `status` intocado, D10).
+ *
+ * Despublicar: aula que já está fora do ar → bloqueada; senão `published = false`.
+ *
+ * Toda recusa de uma aula que existe grava `outcome: DENY` (ação negada também
+ * é auditada). Id que não existe não tem número para virar `Lesson:N` e não
+ * gera linha.
+ */
+
+export type OperacaoDePublicacao = 'publicar' | 'despublicar';
+
+export type DesfechoDaPublicacao = 'publicada' | 'despublicada' | 'bloqueada';
+
+export type ResultadoDaPublicacaoDaAula = {
+  lessonId: string;
+  /** `null` quando a aula não existe (mais). */
+  numero: number | null;
+  titulo: string | null;
+  slug: string | null;
+  desfecho: DesfechoDaPublicacao;
+  /** Por que foi bloqueada — ou, se passou, o que aconteceu. Sempre preenchido. */
+  motivo: string;
+  /** Erros de validação que bloquearam (vazio se não foi a validação). */
+  erros: string[];
+  /** Avisos da §3.5. Não bloqueiam. */
+  avisos: string[];
+  /** Alunos movidos para a última página (só ao publicar). */
+  progressosReposicionados: number;
+  /** A aula tem rascunho na aba Páginas que **não** entrou no ar. */
+  rascunhoPendente: boolean;
+};
+
+/** Teto de um lote. Selecionar o curso inteiro (42) cabe com folga. */
+export const LIMITE_DO_LOTE = 100;
+
+const CAMPOS_DA_PUBLICACAO = {
+  id: true,
+  number: true,
+  title: true,
+  slug: true,
+  pages: true,
+  draftPages: true,
+  published: true,
+  publishedAt: true,
+  archivedAt: true,
+} as const;
+
+type AulaParaPublicar = Prisma.LessonGetPayload<{ select: typeof CAMPOS_DA_PUBLICACAO }>;
+
+function resultadoDe(
+  aula: AulaParaPublicar,
+  desfecho: DesfechoDaPublicacao,
+  motivo: string,
+  extra: Partial<Pick<ResultadoDaPublicacaoDaAula, 'erros' | 'avisos' | 'progressosReposicionados'>> = {},
+): ResultadoDaPublicacaoDaAula {
+  return {
+    lessonId: aula.id,
+    numero: aula.number,
+    titulo: aula.title,
+    slug: aula.slug,
+    desfecho,
+    motivo,
+    erros: extra.erros ?? [],
+    avisos: extra.avisos ?? [],
+    progressosReposicionados: extra.progressosReposicionados ?? 0,
+    rascunhoPendente: aula.draftPages !== null,
+  };
+}
+
+function aulaInexistente(lessonId: string, motivo: string): ResultadoDaPublicacaoDaAula {
+  return {
+    lessonId,
+    numero: null,
+    titulo: null,
+    slug: null,
+    desfecho: 'bloqueada',
+    motivo,
+    erros: [],
+    avisos: [],
+    progressosReposicionados: 0,
+    rascunhoPendente: false,
+  };
+}
+
+function motivoDoErro(erro: unknown): string {
+  return erro instanceof Error ? erro.message : 'erro desconhecido';
+}
+
+async function publicarUma(
+  ator: SessionUser,
+  lessonId: string,
+  base: BaseDoCurso,
+  emLote: boolean,
+): Promise<ResultadoDaPublicacaoDaAula> {
+  const antes = await prisma.lesson.findUnique({
+    where: { id: lessonId },
+    select: CAMPOS_DA_PUBLICACAO,
+  });
+  if (!antes) return aulaInexistente(lessonId, 'a aula não existe mais');
+
+  const recurso = `Lesson:${antes.number}`;
+  const negar = async (
+    motivo: string,
+    razaoDaAuditoria: string,
+    extra: { erros?: string[]; avisos?: string[] } = {},
+  ): Promise<ResultadoDaPublicacaoDaAula> => {
+    await auditar({
+      actor: ator,
+      action: 'lesson.publish',
+      resource: recurso,
+      outcome: 'DENY',
+      reason: razaoDaAuditoria,
+      ...(emLote ? { after: { emLote: true } } : {}),
+    });
+    return resultadoDe(antes, 'bloqueada', motivo, extra);
+  };
+
+  if (antes.archivedAt !== null) {
+    return negar('a aula está arquivada — restaure antes de publicar', 'aula arquivada');
+  }
+
+  // ⚠️ A porta: conteúdo que não passa no esquema não é publicado. Sem isto,
+  // um `pages` torto viraria aula quebrada na tela do aluno em vez de erro
+  // aqui, onde alguém pode consertar.
+  const forma = validarPaginas(antes.pages);
+  if (!forma.ok) {
+    return negar(
+      `o conteúdo não passou no esquema (${plural(forma.erros.length, 'erro', 'erros')})`,
+      `conteúdo inválido (${forma.erros.length} erro(s))`,
+      { erros: forma.erros },
+    );
+  }
+
+  // §3.5: o que o zod não enxerga (gabarito fora do intervalo, id de outra
+  // aula, `next` para aula inexistente…). ERRO bloqueia; AVISO só informa.
+  const contexto = contextoDaAula(base, antes.id);
+  const semantica = validarSemantica(forma.pages, {
+    numero: antes.number,
+    idsDeOutrasAulas: contexto.idsDeOutrasAulas,
+    aulasExistentes: contexto.aulasExistentes,
+    mediaDePaginas: contexto.mediaDePaginas,
+  });
+  if (semantica.erros.length > 0) {
+    return negar(
+      `o conteúdo tem ${plural(semantica.erros.length, 'erro', 'erros')} de validação (§3.5)`,
+      `conteúdo com ${semantica.erros.length} erro(s) de validação (§3.5)`,
+      { erros: semantica.erros, avisos: semantica.avisos },
+    );
+  }
+
+  const ultimaPagina = forma.pages.length - 1;
+
+  let ajustados: number | null;
+  try {
+    ajustados = await prisma.$transaction(async (tx) => {
+      // Condicional: se alguém arquivou a aula entre a leitura e aqui, nada muda.
+      const alterada = await tx.lesson.updateMany({
+        where: { id: antes.id, archivedAt: null },
+        data: {
+          published: true,
+          publishedAt: antes.publishedAt ?? new Date(),
+          updatedById: ator.id,
+        },
+      });
+      if (alterada.count === 0) return null;
+
+      // §6.4, regra 2: se o conteúdo encurtou, o aluno que estava na página 9
+      // de uma aula que agora tem 7 não pode ficar apontando para o vazio. O
+      // clamp **não** mexe em `status`: aula concluída continua concluída (D10).
+      const clamp = await tx.lessonProgress.updateMany({
+        where: { lessonId: antes.id, currentPage: { gt: ultimaPagina } },
+        data: { currentPage: ultimaPagina },
+      });
+      return clamp.count;
+    });
+  } catch (erro: unknown) {
+    console.error(`[publicação] aula ${antes.number} não publicada: ${motivoDoErro(erro)}`);
+    return negar(
+      'o banco de dados não completou a operação — nada mudou nesta aula',
+      'falha no banco de dados',
+    );
+  }
+
+  if (ajustados === null) {
+    return negar('a aula foi arquivada durante a operação', 'aula arquivada durante a operação');
+  }
+
+  await auditar({
+    actor: ator,
+    action: 'lesson.publish',
+    resource: recurso,
+    before: { published: antes.published },
+    after: { published: true, paginas: forma.pages.length, ...(emLote ? { emLote: true } : {}) },
+    reason:
+      ajustados > 0 ? `${ajustados} progresso(s) reposicionado(s) na última página` : undefined,
+  });
+
+  const partes = [antes.published ? 'já estava no ar; conteúdo conferido de novo' : 'foi ao ar'];
+  if (ajustados > 0) {
+    partes.push(`${plural(ajustados, 'aluno reposicionado', 'alunos reposicionados')} na última página`);
+  }
+  if (antes.draftPages !== null) partes.push('o rascunho da aba Páginas NÃO entrou no ar');
+
+  return resultadoDe(antes, 'publicada', partes.join('; '), {
+    avisos: semantica.avisos,
+    progressosReposicionados: ajustados,
+  });
+}
+
+async function despublicarUma(
+  ator: SessionUser,
+  lessonId: string,
+  motivo: string | undefined,
+  emLote: boolean,
+): Promise<ResultadoDaPublicacaoDaAula> {
+  const antes = await prisma.lesson.findUnique({
+    where: { id: lessonId },
+    select: CAMPOS_DA_PUBLICACAO,
+  });
+  if (!antes) return aulaInexistente(lessonId, 'a aula não existe mais');
+
+  const recurso = `Lesson:${antes.number}`;
+  const negar = async (texto: string, razao: string): Promise<ResultadoDaPublicacaoDaAula> => {
+    await auditar({
+      actor: ator,
+      action: 'lesson.unpublish',
+      resource: recurso,
+      outcome: 'DENY',
+      reason: razao,
+      ...(emLote ? { after: { emLote: true } } : {}),
+    });
+    return resultadoDe(antes, 'bloqueada', texto);
+  };
+
+  if (!antes.published) return negar('a aula já está despublicada', 'já estava despublicada');
+
+  let alterada: number;
+  try {
+    const resultado = await prisma.lesson.updateMany({
+      where: { id: antes.id, published: true },
+      data: { published: false, updatedById: ator.id },
+    });
+    alterada = resultado.count;
+  } catch (erro: unknown) {
+    console.error(`[publicação] aula ${antes.number} não despublicada: ${motivoDoErro(erro)}`);
+    return negar(
+      'o banco de dados não completou a operação — nada mudou nesta aula',
+      'falha no banco de dados',
+    );
+  }
+  if (alterada === 0) return negar('a aula já está despublicada', 'já estava despublicada');
+
+  await auditar({
+    actor: ator,
+    action: 'lesson.unpublish',
+    resource: recurso,
+    before: { published: true },
+    after: { published: false, ...(emLote ? { emLote: true } : {}) },
+    reason: motivo || undefined,
+  });
+
+  // ⚠️ Despublicada, a aula responde 404 para o aluno — ela **não** cai no
+  // conteúdo estático (`src/lib/content/publicado.ts`). O progresso fica.
+  return resultadoDe(antes, 'despublicada', 'saiu do ar; o progresso dos alunos continua guardado');
+}
+
+/** Coloca uma aula no ar. Ver as regras no topo desta seção. */
+export async function publicarAula(entrada: {
+  ator: SessionUser;
+  lessonId: string;
+}): Promise<ResultadoDaPublicacaoDaAula> {
+  return publicarUma(entrada.ator, entrada.lessonId, await carregarBaseDoCurso(), false);
+}
+
+/** Tira uma aula do ar. `motivo` (opcional) vai para a auditoria. */
+export async function despublicarAula(entrada: {
+  ator: SessionUser;
+  lessonId: string;
+  motivo?: string;
+}): Promise<ResultadoDaPublicacaoDaAula> {
+  return despublicarUma(entrada.ator, entrada.lessonId, entrada.motivo, false);
+}
+
+/**
+ * Publica ou despublica várias aulas — **cada uma por si**: uma aula bloqueada
+ * (arquivada, conteúdo inválido, erro de banco) não segura as outras, e cada
+ * aula grava exatamente uma linha de auditoria (ALLOW ou DENY).
+ *
+ * As regras são as mesmas da ação individual — é o mesmo código. O curso é lido
+ * uma vez só para a validação da §3.5 de todas as aulas do lote.
+ *
+ * Devolve um resultado por id (repetidos contam uma vez), na ordem do número da
+ * aula. Lança `RangeError` acima de {@link LIMITE_DO_LOTE}.
+ */
+export async function alterarPublicacaoEmLote(entrada: {
+  ator: SessionUser;
+  ids: ReadonlyArray<string>;
+  operacao: OperacaoDePublicacao;
+  motivo?: string;
+}): Promise<ResultadoDaPublicacaoDaAula[]> {
+  const ids = [...new Set(entrada.ids.map((id) => id.trim()).filter((id) => id !== ''))];
+  if (ids.length > LIMITE_DO_LOTE) {
+    throw new RangeError(`lote com ${ids.length} aulas; o limite é ${LIMITE_DO_LOTE}`);
+  }
+  if (ids.length === 0) return [];
+
+  const base = entrada.operacao === 'publicar' ? await carregarBaseDoCurso() : null;
+  const resultados: ResultadoDaPublicacaoDaAula[] = [];
+
+  // Em série, de propósito: são poucas aulas, e a trilha de auditoria sai na
+  // ordem em que as coisas aconteceram.
+  for (const id of ids) {
+    try {
+      resultados.push(
+        base
+          ? await publicarUma(entrada.ator, id, base, true)
+          : await despublicarUma(entrada.ator, id, entrada.motivo, true),
+      );
+    } catch (erro: unknown) {
+      // Só chega aqui se a própria leitura da aula falhar: não há número para
+      // auditar, mas o relatório diz que esta aula não andou.
+      console.error(`[publicação] lote: aula ${id} não processada: ${motivoDoErro(erro)}`);
+      resultados.push(
+        aulaInexistente(id, 'o banco de dados não respondeu — nada mudou nesta aula'),
+      );
+    }
+  }
+
+  return resultados.sort(
+    (a, b) => (a.numero ?? Number.MAX_SAFE_INTEGER) - (b.numero ?? Number.MAX_SAFE_INTEGER),
+  );
 }
 
 // ─────────────────────────────── versões ───────────────────────────────

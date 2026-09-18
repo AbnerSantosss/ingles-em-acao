@@ -148,7 +148,9 @@ const carregarUsuarioAtual = cache(async (): Promise<SessionUser | null> => {
     if (!pareceToken(bruto)) return null;
 
     const sessao = await prisma.session.findUnique({
-      where: { tokenHash: hashToken(bruto) },
+      // Conta excluída (anonimizada) não entra, nem com uma sessão que escapou
+      // da exclusão por corrida com um login no mesmo instante.
+      where: { tokenHash: hashToken(bruto), user: { deletedAt: null } },
       select: {
         id: true,
         expiresAt: true,

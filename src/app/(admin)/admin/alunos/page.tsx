@@ -12,6 +12,12 @@
  *
  * ⚠️ **Sem exportação.** Não existe botão de CSV aqui (§2.7): a lista pagina de
  * 50 em 50 e as ações moram no detalhe.
+ *
+ * Conta anonimizada ("Excluir minha conta" ou "Anonimizar conta") continua na
+ * lista — a linha de `User` fica por causa dos pagamentos — com o selo "Conta
+ * excluída" no lugar do de verificação. A data vem de `datasDeExclusao()`
+ * (uma consulta só, pelos ids da página), porque `listarAlunos()` não traz
+ * `deletedAt`; se essa consulta falhar, a lista aparece sem o selo.
  */
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -26,6 +32,7 @@ import {
   type FiltroDeVerificacao,
   type ListaDeAlunos,
 } from '@/lib/admin/alunos';
+import { datasDeExclusao } from '@/lib/conta/consultas';
 
 export const metadata: Metadata = {
   title: 'Alunos',
@@ -211,7 +218,7 @@ function Filtros({
   );
 }
 
-function Linha({ aluno }: { aluno: AlunoDaLista }) {
+function Linha({ aluno, excluidaEm }: { aluno: AlunoDaLista; excluidaEm: Date | null }) {
   const plano = CORES_DO_PLANO[aluno.plano] ?? CORES_DO_PLANO.ESSENCIAL;
 
   return (
@@ -226,7 +233,9 @@ function Linha({ aluno }: { aluno: AlunoDaLista }) {
               {aluno.nome}
             </Link>
             <Selo texto={aluno.plano} fundo={plano.fundo} cor={plano.cor} />
-            {aluno.verificado ? (
+            {excluidaEm !== null ? (
+              <Selo texto="Conta excluída" fundo="#FEF0F2" cor="#B21F31" />
+            ) : aluno.verificado ? (
               <Selo texto="Verificado" fundo="#E4F5EA" cor="#136B45" />
             ) : (
               <Selo texto="Verificação pendente" fundo="#FEF7E0" cor="#6B520A" />
@@ -262,6 +271,12 @@ function Linha({ aluno }: { aluno: AlunoDaLista }) {
               {FORMATO_CURTO.format(aluno.criadoEm)}
             </time>
           </p>
+          {excluidaEm !== null ? (
+            <p className="m-0 mt-1 text-[12px] font-bold text-[#B21F31]">
+              excluída em{' '}
+              <time dateTime={excluidaEm.toISOString()}>{FORMATO_CURTO.format(excluidaEm)}</time>
+            </p>
+          ) : null}
         </div>
       </div>
     </li>
@@ -313,6 +328,7 @@ export default async function TelaDeAlunos({ searchParams }: { searchParams: Pro
   const pagina = Number.isInteger(paginaBruta) && paginaBruta > 0 ? paginaBruta : 1;
 
   let lista: ListaDeAlunos | null = null;
+  let excluidas = new Map<string, Date>();
 
   try {
     lista = await listarAlunos({ busca: q, plano, verificado, atividade, pagina });
@@ -320,6 +336,16 @@ export default async function TelaDeAlunos({ searchParams }: { searchParams: Pro
     // ⚠️ Log sem dado pessoal: só o motivo técnico.
     const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
     console.error(`[painel] alunos sem banco: ${motivo}`);
+  }
+
+  if (lista !== null && lista.alunos.length > 0) {
+    try {
+      excluidas = await datasDeExclusao(lista.alunos.map((aluno) => aluno.id));
+    } catch (erro: unknown) {
+      // O selo "Conta excluída" é complemento: sem ele, a lista ainda serve.
+      const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
+      console.error(`[painel] alunos sem data de exclusão: ${motivo}`);
+    }
   }
 
   return (
@@ -362,7 +388,7 @@ export default async function TelaDeAlunos({ searchParams }: { searchParams: Pro
             ) : (
               <ul className="m-0 flex list-none flex-col gap-3 p-0">
                 {lista.alunos.map((aluno) => (
-                  <Linha key={aluno.id} aluno={aluno} />
+                  <Linha key={aluno.id} aluno={aluno} excluidaEm={excluidas.get(aluno.id) ?? null} />
                 ))}
               </ul>
             )}

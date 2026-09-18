@@ -279,10 +279,11 @@ export async function carregarAulaPublicadaPorSlug(slug: string): Promise<AulaPu
     return decidir(null, estatico);
   }
 
-  // A linha achada pelo slug pedido manda; se só houve casamento por número, é
-  // porque o slug mudou — e essa linha, escolhida aqui, é justamente a que faz a
-  // regra 3 devolver 404 para o link antigo.
+  // A linha achada pelo slug pedido manda. Se só houve casamento por número, o
+  // slug mudou no painel: o link antigo dá 404 (§6.7), senão a mesma aula ficaria
+  // em dois endereços e o aviso do painel ("links salvos quebram") seria falso.
   const linha = linhas.find((l) => l.slug === slug) ?? linhas[0] ?? null;
+  if (linha !== null && linha.slug !== slug) return null;
   return decidir(linha, estatico);
 }
 

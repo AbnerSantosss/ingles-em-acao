@@ -189,25 +189,47 @@ export function blocosInterativos(pages: ReadonlyArray<Page>): OcorrenciaInterat
  * Imagem e perfil mantêm o id: ali ele é o nome do arquivo de arte legado
  * (`public/lessons/art/{id}.png`), não chave de resposta — trocar faria a
  * cópia perder a imagem.
+ *
+ * `mapa` (opcional) é o de-para "id original → id novo". Quando vem, um id que
+ * já foi trocado reaproveita a troca: é o que faz o mesmo bloco ganhar o
+ * **mesmo** id novo em `pages` e em `draftPages` ao duplicar uma aula — senão
+ * o rascunho da cópia pareceria ter removido todos os exercícios publicados.
  */
-export function regenerarIds(bloco: Block, numero: number, usados: Set<string>): Block {
+export function regenerarIds(
+  bloco: Block,
+  numero: number,
+  usados: Set<string>,
+  mapa?: Map<string, string>,
+): Block {
   if (!ehBlocoInterativo(bloco)) return bloco;
+  const jaTrocado = mapa?.get(bloco.id);
+  if (jaTrocado !== undefined) return { ...bloco, id: jaTrocado };
   const novo = gerarIdDeBloco(numero, bloco.t, usados);
   usados.add(novo);
+  mapa?.set(bloco.id, novo);
   return { ...bloco, id: novo };
 }
 
-export function regenerarIdsDaPagina(pagina: Page, numero: number, usados: Set<string>): Page {
-  return { blocks: pagina.blocks.map((bloco) => regenerarIds(bloco, numero, usados)) };
+export function regenerarIdsDaPagina(
+  pagina: Page,
+  numero: number,
+  usados: Set<string>,
+  mapa?: Map<string, string>,
+): Page {
+  return { blocks: pagina.blocks.map((bloco) => regenerarIds(bloco, numero, usados, mapa)) };
 }
 
-/** Para "Duplicar aula" (tela de lista): todas as páginas, todos os ids novos. */
+/**
+ * Para "Duplicar aula": todas as páginas, todos os ids interativos novos.
+ * Passe o mesmo `mapa` para `pages` e `draftPages` da mesma aula.
+ */
 export function regenerarIdsInterativos(
   pages: ReadonlyArray<Page>,
   numero: number,
   usados: Set<string>,
+  mapa?: Map<string, string>,
 ): Page[] {
-  return pages.map((pagina) => regenerarIdsDaPagina(pagina, numero, usados));
+  return pages.map((pagina) => regenerarIdsDaPagina(pagina, numero, usados, mapa));
 }
 
 // ─────────────────────────── modelos de bloco ───────────────────────────

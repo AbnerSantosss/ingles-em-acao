@@ -1,6 +1,6 @@
 /**
- * A aba "Dados" de uma aula: o que a aula é, se está no ar e as duas ações
- * perigosas (arquivar e renumerar).
+ * A aba "Dados" de uma aula: o que a aula é, se está no ar, duplicar e as duas
+ * ações perigosas (arquivar e renumerar).
  *
  * ⚠️ Três formulários separados, de propósito. Salvar título não pode publicar
  * junto, e publicar não pode salvar um campo que o admin estava no meio de
@@ -26,6 +26,7 @@ import {
   restaurarAulaAction,
   salvarDadosAction,
 } from '../actions';
+import { DuplicarAula } from '../DuplicarAula';
 import { FORMULARIO_INICIAL, type EstadoDoFormulario } from '../tipos';
 
 const SELECT = [
@@ -283,14 +284,31 @@ function Publicacao({ aula }: { aula: AulaDoPainel }) {
       <input type="hidden" name="id" value={aula.id} />
       <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
         A aula está em rascunho: ela não aparece na trilha e o endereço responde 404. Publicar
-        valida o conteúdo antes — se algum bloco não passar no esquema, a aula não vai ao ar e o
-        erro aparece aqui.
+        valida o conteúdo antes — se algum bloco não passar no esquema ou tiver erro na
+        validação da §3.5 (gabarito fora do intervalo, id de outra aula…), a aula não vai ao ar
+        e o erro aparece aqui. Avisos não bloqueiam.
       </p>
       <Recado estado={estadoPublicar} />
       <div>
         <Enviar>Publicar aula</Enviar>
       </div>
     </form>
+  );
+}
+
+// ──────────────────────────────── duplicar ───────────────────────────────
+
+function Duplicacao({ aula }: { aula: AulaDoPainel }) {
+  const [aberto, setAberto] = useState(false);
+
+  if (aberto) return <DuplicarAula aula={aula} aoFechar={() => setAberto(false)} />;
+
+  return (
+    <div>
+      <Button type="button" size="md" variant="ghost" onClick={() => setAberto(true)}>
+        Duplicar aula…
+      </Button>
+    </div>
   );
 }
 
@@ -424,6 +442,13 @@ export function AbaDeDados({
 
       <Bloco titulo="Publicação" descricao="Só aula publicada chega ao aluno.">
         <Publicacao aula={aula} />
+      </Bloco>
+
+      <Bloco
+        titulo="Duplicar"
+        descricao="Uma aula nova, em rascunho, com o conteúdo desta — para usar de ponto de partida."
+      >
+        <Duplicacao aula={aula} />
       </Bloco>
 
       <Bloco titulo="Arquivar" tom="risco">

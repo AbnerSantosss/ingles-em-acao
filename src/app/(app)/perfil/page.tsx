@@ -2,6 +2,8 @@
  * `/perfil` — réplica do `<sc-if value="{{ isProfile }}">` do design (Claude
  * Designer): cartão de apresentação com avatar, quatro números, e duas colunas
  * (Configurações da conta + Apagar progresso | Seu plano + Seu aprendizado + Sair).
+ * No fim, fora do design original, a zona de risco "Excluir minha conta"
+ * (`./ExcluirConta.tsx`, LGPD).
  *
  * Toda linha abre o modal de informação (`./modal.tsx`), como no protótipo. O que
  * tem backend faz a coisa real lá dentro; o resto diz "em breve".
@@ -14,6 +16,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import type { ReactNode } from 'react';
 
+import { ExcluirConta } from '@/app/(app)/perfil/ExcluirConta';
 import { AbreModal, ProvedorDoModal, type ChaveDoModal } from '@/app/(app)/perfil/modal';
 import { lerLinksDeCompra } from '@/lib/admin/settings';
 import { requireUser, type SessionUser } from '@/lib/auth/session';
@@ -206,7 +209,7 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
     getStreak(usuario.id),
     contarRespostas(usuario.id),
     searchParams,
-    lerLinksDeCompra(),
+    lerLinksDeCompra(usuario.id),
   ]);
 
   // Convite para o próximo plano, com o link que o painel configurou para ele.
@@ -416,7 +419,7 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
                   APAGAR PROGRESSO
                 </span>
                 <span className="block text-[15px] text-[#C4606C]">
-                  Essa ação não pode ser desfeita.
+                  Zera suas aulas e exercícios; a conta continua.
                 </span>
               </span>
               <Seta cor="#E03B4C" />
@@ -515,6 +518,9 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
             </AbreModal>
           </div>
         </div>
+
+        {/* Zona de risco, sozinha no fim da página e fora das duas colunas. */}
+        <ExcluirConta administrador={usuario.role === 'ADMIN'} />
       </div>
     </ProvedorDoModal>
   );

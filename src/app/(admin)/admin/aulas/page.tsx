@@ -16,10 +16,11 @@ import {
   listarAulas,
   type AulaDaLista,
   type EstadoDaAula,
-  type ListaDeAulas,
+  type ListaDeAulas as ResultadoDaLista,
 } from '@/lib/admin/aulas';
 import { listarModulosParaSelecao, type OpcaoDeModulo } from '@/lib/admin/modulos';
 
+import { ListaDeAulas, type LinhaDaTela } from './ListaDeAulas';
 import { NovaAula } from './NovaAula';
 
 export const metadata: Metadata = { title: 'Aulas' };
@@ -50,22 +51,28 @@ const FORMATO_DE_DATA = new Intl.DateTimeFormat('pt-BR', {
   timeZone: 'America/Sao_Paulo',
 });
 
-const CORES_DO_ESTADO: Record<EstadoDaAula, { fundo: string; cor: string; rotulo: string }> = {
-  publicada: { fundo: '#E4F5EA', cor: '#136B45', rotulo: 'Publicada' },
-  rascunho: { fundo: '#FEF7E0', cor: '#6B520A', rotulo: 'Rascunho' },
-  arquivada: { fundo: '#EEF3FA', cor: '#5B6B86', rotulo: 'Arquivada' },
-};
-
-function Selo({ estado }: { estado: EstadoDaAula }) {
-  const { fundo, cor, rotulo } = CORES_DO_ESTADO[estado];
-  return (
-    <span
-      className="inline-block rounded-pill px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em]"
-      style={{ background: fundo, color: cor }}
-    >
-      {rotulo}
-    </span>
-  );
+/**
+ * A linha que vai para o componente de cliente. A data sai formatada daqui: o
+ * `Intl` do Node e o do navegador nem sempre escrevem igual, e formatar dos dois
+ * lados daria diferença de hidratação.
+ */
+function paraATela(aula: AulaDaLista): LinhaDaTela {
+  return {
+    id: aula.id,
+    number: aula.number,
+    code: aula.code,
+    slug: aula.slug,
+    title: aula.title,
+    subtitle: aula.subtitle,
+    estimatedTime: aula.estimatedTime,
+    modulo: aula.moduloTitulo ?? `módulo ${aula.moduleId}`,
+    estado: aula.estado,
+    temCapa: aula.coverUrl !== null,
+    temVideo: aula.temVideo,
+    temRascunho: aula.temRascunho,
+    atualizadaEmIso: aula.atualizadaEm.toISOString(),
+    atualizadaEmTexto: FORMATO_DE_DATA.format(aula.atualizadaEm),
+  };
 }
 
 const CAMPO_DE_FILTRO = [
@@ -154,63 +161,6 @@ function Filtros({
   );
 }
 
-function Linha({ aula }: { aula: AulaDaLista }) {
-  return (
-    <li className="rounded-[18px] border border-solid border-border p-4">
-      <div className="flex flex-wrap items-start gap-4">
-        <span
-          aria-hidden="true"
-          className="grid h-11 w-11 flex-none place-items-center rounded-field bg-[#F1F5FA] text-[17px] font-black text-navy"
-        >
-          {aula.number}
-        </span>
-
-        <div className="min-w-0 flex-1">
-          <p className="m-0 flex flex-wrap items-center gap-2">
-            <Link
-              href={`/admin/aulas/${aula.number}`}
-              className="text-[17px] font-black leading-tight text-navy underline-offset-4 hover:underline"
-            >
-              {aula.title}
-            </Link>
-            <Selo estado={aula.estado} />
-            {aula.temRascunho ? (
-              <span
-                className="inline-block rounded-pill px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em]"
-                style={{ background: '#FEF7E0', color: '#6B520A' }}
-              >
-                Rascunho pendente
-              </span>
-            ) : null}
-            {aula.coverUrl === null ? (
-              <span className="text-[12px] font-bold text-muted-2">sem capa</span>
-            ) : null}
-            {aula.temVideo ? null : (
-              <span className="text-[12px] font-bold text-muted-2">sem vídeo</span>
-            )}
-          </p>
-          <p className="m-0 mt-1 text-[13px] font-semibold leading-snug text-muted">
-            {aula.code} · {aula.moduloTitulo ?? `módulo ${aula.moduleId}`} · {aula.estimatedTime}{' '}
-            · /aula/{aula.slug}
-          </p>
-          {aula.subtitle ? (
-            <p className="m-0 mt-1 truncate text-[13px] font-semibold leading-snug text-muted-2">
-              {aula.subtitle}
-            </p>
-          ) : null}
-        </div>
-
-        <time
-          dateTime={aula.atualizadaEm.toISOString()}
-          className="flex-none text-[12px] font-semibold text-muted-2"
-        >
-          {FORMATO_DE_DATA.format(aula.atualizadaEm)}
-        </time>
-      </div>
-    </li>
-  );
-}
-
 function Degradado() {
   return (
     <div
@@ -260,7 +210,7 @@ export default async function TelaDeAulas({
   const estado = ehEstado(estadoBruto) ? estadoBruto : 'todas';
   const pagina = Number.isInteger(paginaBruta) && paginaBruta > 0 ? paginaBruta : 1;
 
-  let lista: ListaDeAulas | null = null;
+  let lista: ResultadoDaLista | null = null;
   let modulos: OpcaoDeModulo[] = [];
 
   try {
@@ -282,7 +232,9 @@ export default async function TelaDeAulas({
         </h1>
         <p className="m-0 mt-1.5 max-w-[62ch] text-[14px] font-semibold leading-snug text-muted">
           Todas as aulas do curso, publicadas ou não. Clique no título para abrir os dados, e
-          publique quando o conteúdo estiver pronto — só aula publicada chega ao aluno.
+          publique quando o conteúdo estiver pronto — só aula publicada chega ao aluno. Marque
+          várias para publicar ou despublicar de uma vez; &ldquo;Duplicar&rdquo; cria uma cópia em
+          rascunho.
         </p>
         <p className="m-0 mt-2 text-[14px] font-extrabold leading-snug">
           <Link href="/admin/midia/pendencias" className="text-link">
@@ -314,17 +266,13 @@ export default async function TelaDeAulas({
               ) : null}
             </div>
 
-            {lista.aulas.length === 0 ? (
-              <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
-                Nenhuma aula bate com esses filtros.
-              </p>
-            ) : (
-              <ul className="m-0 flex list-none flex-col gap-3 p-0">
-                {lista.aulas.map((aula) => (
-                  <Linha key={aula.id} aula={aula} />
-                ))}
-              </ul>
-            )}
+            {/*
+              A `key` é o endereço: outra página ou outro filtro remonta a lista e
+              zera a seleção (ver `ListaDeAulas`). ⚠️ A lista fica montada mesmo
+              vazia — é ela que guarda o relatório do lote, e um lote que esvazia o
+              filtro ("Rascunhos" → publicar todas) não pode sumir com o relatório.
+            */}
+            <ListaDeAulas key={linkDaPagina(busca, pagina)} aulas={lista.aulas.map(paraATela)} />
 
             {lista.paginas > 1 ? (
               <nav className="mt-4 flex items-center gap-3" aria-label="Paginação">

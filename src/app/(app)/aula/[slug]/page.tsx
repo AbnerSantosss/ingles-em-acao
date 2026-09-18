@@ -65,11 +65,13 @@ export default async function AulaPage({ params }: ParametrosDaAula) {
   const { aula, resumo } = publicada;
 
   // Links de compra: nunca jogam (sem banco, os botões de compra só somem).
+  // Com o webhook de pagamento ligado, levam a referência opaca do aluno — é
+  // por ela que a compra volta para esta conta (`@/lib/pagamento`).
   const [respostas, progresso, video, compra] = await Promise.all([
     carregarRespostasDaAula(usuario.id, aula.id),
     carregarProgressoDaAula(usuario.id, aula.id, aula.pages.length),
     carregarVideoDaAula(aula.id),
-    lerLinksDeCompra(),
+    lerLinksDeCompra(usuario.id),
   ]);
 
   // Arquivo enviado: o link de 15 minutos é assinado aqui, e **só** para quem

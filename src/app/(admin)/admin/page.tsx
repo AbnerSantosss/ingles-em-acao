@@ -88,14 +88,14 @@ async function carregarPanorama(): Promise<Panorama | null> {
       semVideo,
       atividade,
     ] = await Promise.all([
-      prisma.user.count({ where: { role: 'STUDENT' } }),
-      prisma.user.count({ where: { role: 'STUDENT', emailVerifiedAt: { not: null } } }),
+      prisma.user.count({ where: { role: 'STUDENT', deletedAt: null } }),
+      prisma.user.count({ where: { role: 'STUDENT', deletedAt: null, emailVerifiedAt: { not: null } } }),
       prisma.user.count({
-        where: { role: 'STUDENT', sessions: { some: { lastSeenAt: { gte: desde } } } },
+        where: { role: 'STUDENT', deletedAt: null, sessions: { some: { lastSeenAt: { gte: desde } } } },
       }),
       prisma.user.groupBy({
         by: ['plan'],
-        where: { role: 'STUDENT' },
+        where: { role: 'STUDENT', deletedAt: null },
         _count: { _all: true },
       }),
       prisma.lesson.count({ where: { archivedAt: null } }),

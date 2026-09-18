@@ -125,6 +125,25 @@ para cada linha abaixo (ou use **Advanced mode** e cole tudo no formato `NOME=va
 | `DB_WAIT_RETRIES` | `60` | Quantas vezes o container tenta falar com o banco antes de desistir. |
 | `DB_WAIT_DELAY` | `2` | Segundos entre as tentativas. |
 
+### Contas de validação do MVP (opcional)
+
+Com estas variáveis preenchidas, o start do container cria **um admin e um aluno** (plano
+PREMIUM, e-mail já verificado) pelo `scripts/contas-mvp.ts`. Ele só cria a conta que ainda não
+existe; uma conta existente nunca é alterada, e a senha nunca aparece no log.
+
+| Variável | Exemplo | Para que serve |
+|---|---|---|
+| `ADMIN_EMAIL` | `admin@seudominio.com.br` | E-mail do admin (entra em `/admin`). |
+| `ADMIN_NAME` | `Administrador` | Nome mostrado no painel. |
+| `ADMIN_PASSWORD` | — | **Você digita, no Portainer.** 12 caracteres ou mais. |
+| `ALUNO_EMAIL` | `aluno@seudominio.com.br` | E-mail do aluno de teste. |
+| `ALUNO_NAME` | `Aluno MVP` | Nome mostrado no app. |
+| `ALUNO_PASSWORD` | — | **Você digita, no Portainer.** 8 caracteres ou mais. |
+
+No log do primeiro start aparece `[contas-mvp] conta de admin criada` (e a do aluno). Depois
+disso, **apague `ADMIN_PASSWORD` e `ALUNO_PASSWORD` da stack** e faça o update: as contas ficam no
+banco, e a senha não precisa ficar guardada no Portainer.
+
 ### Vídeos enviados pelo painel (opcional — Cloudflare R2)
 
 Em `/admin/videos` cada aula aceita **um link** (YouTube, Vimeo, arquivo .mp4/.webm por
@@ -387,6 +406,85 @@ temporariamente, nunca de forma permanente.
 
 **Recriar tudo do zero (apaga os dados!):** Stacks → ingles-em-acao → Delete, marcando a opção
 de remover volumes. Só com um backup na mão.
+
+### Limpeza diária (cron)
+
+O banco guarda coisas que vencem e ninguém mais usa: sessões expiradas, links de e-mail
+(verificação e redefinição de senha) usados ou vencidos, e o registro de cada tentativa de
+login. Sem poda, a tabela de tentativas vira a maior do banco em poucos meses. Quem poda é a
+rota `POST /api/cron/limpeza`, e quem chama a rota uma vez por dia é o **crontab da VPS**.
+
+| O que sai | A partir de quando |
+|---|---|
+| Sessões | assim que vencem |
+| Links de e-mail | 7 dias depois de usados ou vencidos (dá para investigar "o link não abriu") |
+| Tentativas de login | 30 dias depois (dá para investigar "invadiram minha conta?") |
+
+**1. Crie o segredo.** Gere um valor aleatório (no seu computador ou na VPS):
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
+No Portainer → Stacks → ingles-em-acao → **Environment variables**, cadastre `CRON_SECRET`
+com esse valor e clique em **Update the stack**. Sem a variável a rota responde `503` e não
+apaga nada; com ela, só quem manda `Authorization: Bearer <CRON_SECRET>` passa.
+
+**2. Teste à mão, no terminal da VPS:**
+
+```bash
+docker exec ingles-em-acao-app-1 node -e "fetch('http://127.0.0.1:'+(process.env.PORT||3000)+'/api/cron/limpeza',{method:'POST',headers:{Authorization:'Bearer '+process.env.CRON_SECRET}}).then(async r=>{console.log(new Date().toISOString(),r.status,await r.text());process.exit(r.ok?0:1)}).catch(e=>{console.log(new Date().toISOString(),'falhou:',e.message);process.exit(1)})"
+```
+
+A resposta esperada é algo como
+`2026-09-18T07:15:00.000Z 200 {"ok":true,"sessoes":3,"tokens":0,"tentativas":41}`: quantas
+linhas saíram de cada tabela. Se o nome do container for outro, confira com
+`docker ps --format '{{.Names}}'`.
+
+> **Por que esse comando e não um `curl` com o segredo?** O `node -e` roda **dentro** do
+> container e lê o `CRON_SECRET` do ambiente do próprio container. O segredo nunca aparece
+> no crontab, no histórico do shell nem na lista de processos da VPS, e a chamada nem passa
+> pelo proxy reverso (vai direto para `127.0.0.1` dentro do container). A imagem não tem
+> `curl` nem `wget`; é o mesmo truque do healthcheck.
+
+**3. Agende.** Na VPS, abra o crontab do root (`sudo crontab -e`) e acrescente **uma linha**
+(é uma linha só, mesmo que pareça longa):
+
+```cron
+15 4 * * * docker exec ingles-em-acao-app-1 node -e "fetch('http://127.0.0.1:'+(process.env.PORT||3000)+'/api/cron/limpeza',{method:'POST',headers:{Authorization:'Bearer '+process.env.CRON_SECRET}}).then(async r=>{console.log(new Date().toISOString(),r.status,await r.text());process.exit(r.ok?0:1)}).catch(e=>{console.log(new Date().toISOString(),'falhou:',e.message);process.exit(1)})" >> /var/log/iea-limpeza.log 2>&1
+```
+
+Roda todo dia às 4h15 (no fuso da VPS; confira com `timedatectl`), num horário sem aluno.
+O arquivo de log cresce uma linha por dia, cerca de 40 KB por ano, então não precisa de
+rotação.
+
+**4. Como saber que rodou.**
+
+- O resultado de cada dia, com data e hora:
+
+  ```bash
+  tail -n 7 /var/log/iea-limpeza.log
+  ```
+
+- O que o app registrou (uma linha por execução, só com contagens):
+
+  ```bash
+  docker logs ingles-em-acao-app-1 2>&1 | grep "\[cron\] limpeza"
+  ```
+
+  Exemplo: `[cron] limpeza ok: 3 sessão(ões), 0 token(s), 41 tentativa(s) de login em 18 ms`.
+
+- Se o arquivo de log nem existe, o cron não disparou: confira com `sudo crontab -l` e, no
+  Ubuntu/Debian, com `grep CRON /var/log/syslog`.
+
+| O log mostra | O que é | O que fazer |
+|---|---|---|
+| `200 {"ok":true,...}` | Rodou. | Nada. |
+| `503 ... Limpeza desligada neste ambiente.` | `CRON_SECRET` vazio na stack | Faça o passo 1 e atualize a stack. |
+| `401 ... Não autorizado.` | O cabeçalho não bateu com o segredo | Pelo comando acima isso não acontece, porque os dois lados leem a mesma variável. Veja se a linha do crontab não foi alterada. |
+| `500 ... A limpeza falhou.` | O banco não respondeu | `docker logs` mostra `[cron] limpeza falhou:` com o motivo. |
+| `falhou: fetch failed` | O app não estava de pé (deploy ou reinício naquela hora) | Rode o passo 2 à mão. Um dia perdido não faz diferença: a próxima execução apaga o acumulado. |
+| `Error response from daemon: No such container` | O nome do container mudou | Ajuste o nome na linha do crontab. |
 
 ---
 

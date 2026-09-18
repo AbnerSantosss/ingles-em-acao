@@ -42,6 +42,18 @@ services:
       # "true" só no primeiro deploy (popula módulos e as 42 aulas). Depois volte para "false".
       RUN_SEED: ${RUN_SEED:-false}
 
+      # --- Contas de validação do MVP (scripts/contas-mvp.ts) -----------------
+      # Opcionais. Com e-mail e senha preenchidos, o start cria o admin e o aluno
+      # (plano PREMIUM) SE ainda não existirem; conta existente nunca é alterada.
+      # Senha do admin: 12+ caracteres; do aluno: 8+. Depois do primeiro deploy
+      # as duas senhas podem sair daqui — as contas ficam no banco.
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-}
+      ADMIN_NAME: ${ADMIN_NAME:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      ALUNO_EMAIL: ${ALUNO_EMAIL:-}
+      ALUNO_NAME: ${ALUNO_NAME:-}
+      ALUNO_PASSWORD: ${ALUNO_PASSWORD:-}
+
       # --- Biblioteca de mídia (imagens das aulas) ----------------------------
       # Decisão D6: imagem vai para VOLUME DOCKER, não para bucket. São ~150
       # arquivos, 30–80 MB, e um volume nomeado sobrevive a `down && up`, a troca

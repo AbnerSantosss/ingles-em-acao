@@ -6,6 +6,8 @@
  * | Item                  | Nesta tela                                              |
  * |-----------------------|---------------------------------------------------------|
  * | Link de checkout      | **grava** (motivo obrigatório + alerta por e-mail)      |
+ * | Produtos → plano      | **grava** (motivo obrigatório); mapa do webhook         |
+ * | Últimos pagamentos    | mostra; quem grava é o webhook de pagamento             |
  * | Aviso de manutenção   | **grava**                                               |
  * | Vídeo padrão          | mostra; quem grava é `/admin/videos` (dono da chave)    |
  * | Allowlist de embed    | mostra; fixa no MVP porque vira o `frame-src` do CSP    |
@@ -15,21 +17,38 @@
  *
  * ⚠️ **Sem banco, a tela não cai.** As seções que dependem do banco viram um
  * aviso; o estado do e-mail (que vem do ambiente) continua aparecendo.
+ *
+ * ⚠️ Do webhook de pagamento a tela mostra se está ligado, o nome do provedor
+ * e o endereço a colar na plataforma — **nunca** o segredo de assinatura, que
+ * só existe no ambiente.
  */
+import type { PaymentStatus } from '@prisma/client';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import {
   CHAVE_CHECKOUT,
   CHAVE_MANUTENCAO,
+  CHAVE_PRODUTOS,
   CHAVE_VIDEO,
   carregarConfiguracoes,
   estadoDoEmail,
   type Configuracoes,
   type EstadoDoEmail,
 } from '@/lib/admin/settings';
+import { resumoDePagamentos, type ResumoDePagamentos } from '@/lib/pagamento/consultas';
+import {
+  CAMINHO_DO_WEBHOOK,
+  enderecoDoWebhook,
+  estadoDoPagamento,
+  type EstadoDoPagamento,
+} from '@/lib/pagamento/provedor';
 
-import { FormularioDeCheckout, FormularioDeManutencao } from './PainelDeConfiguracoes';
+import {
+  FormularioDeCheckout,
+  FormularioDeManutencao,
+  FormularioDeProdutos,
+} from './PainelDeConfiguracoes';
 
 export const metadata: Metadata = {
   title: 'Configurações',
@@ -135,6 +154,139 @@ function Avisos({ avisos }: { avisos: readonly string[] }) {
         A tela está usando o padrão no lugar deles. Salvar de novo a seção corrige o valor.
       </p>
     </div>
+  );
+}
+
+// ─────────────────────────── pagamento (webhook) ─────────────────────────
+
+function SecaoDeProdutos({
+  config,
+  pagamento,
+  webhook,
+}: {
+  config: Configuracoes;
+  pagamento: EstadoDoPagamento;
+  /** `enderecoDoWebhook()`: `null` quando `APP_URL` falta ou é inválida. */
+  webhook: string | null;
+}) {
+  const atualizadoEm = config.atualizadoEm[CHAVE_PRODUTOS];
+  return (
+    <Secao
+      titulo="Produtos da plataforma de pagamento"
+      selo={
+        pagamento.ligado ? (
+          <Selo tom="ok">webhook ligado · {pagamento.provedor}</Selo>
+        ) : (
+          <Selo tom="alerta">webhook desligado</Selo>
+        )
+      }
+      descricao="Qual plano cada produto da plataforma de venda libera quando o pagamento é aprovado. O código tem de ser idêntico ao da plataforma (maiúsculas contam). Produto fora desta lista não libera nada: o pagamento fica registrado abaixo para o suporte. Pagamento nunca rebaixa plano, e estorno ou cancelamento não tira acesso sozinho — quem decide é um admin, na ficha do aluno. A alteração exige motivo e fica na auditoria."
+      atualizadoEm={atualizadoEm}
+    >
+      {pagamento.ligado ? null : (
+        <p className="m-0 mb-4 text-[14px] font-semibold leading-snug" style={{ color: '#6B520A' }}>
+          O webhook responde 503 e os links de compra saem sem a referência do aluno:{' '}
+          {pagamento.motivo}. O mapa pode ser preparado mesmo assim.
+        </p>
+      )}
+      <dl className="m-0 mb-4 grid gap-x-6 gap-y-2 text-[14px] sm:grid-cols-[max-content_1fr]">
+        <dt className="font-extrabold text-muted">Endereço do webhook</dt>
+        <dd className="m-0 font-bold text-navy">
+          <span className="break-all">{webhook ?? CAMINHO_DO_WEBHOOK}</span>
+          <span className="mt-0.5 block text-[13px] font-semibold leading-snug text-muted">
+            {webhook
+              ? 'Cole no painel da plataforma de venda, no campo de notificação (webhook) de vendas.'
+              : 'APP_URL não está configurada no ambiente: cole o endereço público do app seguido deste caminho.'}
+          </span>
+        </dd>
+      </dl>
+      <FormularioDeProdutos
+        inicial={config.produtos}
+        versao={atualizadoEm ? atualizadoEm.toISOString() : 'nunca'}
+      />
+    </Secao>
+  );
+}
+
+const ROTULO_DO_STATUS: Record<PaymentStatus, string> = {
+  PENDING: 'pendente',
+  APPROVED: 'aprovado',
+  REFUNDED: 'estornado',
+  CANCELED: 'cancelado',
+};
+
+const ROTULO_DO_PLANO = { ESSENCIAL: 'Essencial', COMPLETO: 'Completo', PREMIUM: 'Premium' } as const;
+
+const FORMATO_DE_VALOR = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+
+function SecaoDePagamentos({ resumo }: { resumo: ResumoDePagamentos | null }) {
+  return (
+    <Secao
+      titulo="Últimos pagamentos recebidos"
+      selo={
+        resumo === null ? (
+          <Selo tom="erro">indisponível</Selo>
+        ) : resumo.aprovadosSemLiberacao > 0 ? (
+          <Selo tom="erro">{resumo.aprovadosSemLiberacao} aprovado(s) sem liberação</Selo>
+        ) : null
+      }
+      descricao="O que o webhook gravou, do mais novo para o mais antigo. Aprovado sem liberação é pagamento que espera o suporte: sem conta (a referência não casou com nenhum aluno ativo) ou com produto fora do mapa. Libere o plano na ficha do aluno, com motivo."
+    >
+      {resumo === null ? (
+        <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
+          Não foi possível ler os pagamentos. O detalhe técnico está no log do servidor.
+        </p>
+      ) : resumo.recentes.length === 0 ? (
+        <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
+          Nenhum pagamento recebido ainda.
+        </p>
+      ) : (
+        <ul className="m-0 flex list-none flex-col gap-2 p-0">
+          {resumo.recentes.map((pagamento) => {
+            const aprovado = pagamento.status === 'APPROVED';
+            return (
+              <li
+                key={pagamento.id}
+                className="flex flex-col gap-1.5 rounded-field border border-solid border-border px-4 py-3"
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[14px] font-extrabold text-navy">
+                    {FORMATO_DE_DATA.format(pagamento.createdAt)}
+                  </span>
+                  <Selo tom={aprovado ? 'ok' : 'neutro'}>{ROTULO_DO_STATUS[pagamento.status]}</Selo>
+                  {pagamento.grantedAt ? <Selo tom="ok">plano liberado</Selo> : null}
+                  {pagamento.aluno === null ? (
+                    <Selo tom={aprovado ? 'erro' : 'alerta'}>órfão — sem conta</Selo>
+                  ) : null}
+                  {pagamento.planCode === null ? (
+                    <Selo tom={aprovado ? 'erro' : 'alerta'}>produto fora do mapa</Selo>
+                  ) : null}
+                </div>
+                <p className="m-0 break-all text-[13px] font-semibold leading-snug text-muted">
+                  Produto <span className="font-extrabold text-navy">{pagamento.productCode}</span>
+                  {pagamento.planCode ? ` → ${ROTULO_DO_PLANO[pagamento.planCode]}` : ''}
+                  {pagamento.amountCents !== null
+                    ? ` · ${FORMATO_DE_VALOR.format(pagamento.amountCents / 100)}`
+                    : ''}
+                  {' · '}evento {pagamento.provider}:{pagamento.externalId}
+                  {pagamento.aluno ? (
+                    <>
+                      {' · '}
+                      <Link
+                        href={`/admin/alunos/${pagamento.aluno.id}`}
+                        className="font-extrabold text-[#123A86] underline underline-offset-2"
+                      >
+                        {pagamento.aluno.email}
+                      </Link>
+                    </>
+                  ) : null}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </Secao>
   );
 }
 
@@ -255,12 +407,22 @@ function SecaoDeEmail({ email }: { email: EstadoDoEmail | null }) {
 export default async function TelaDeConfiguracoes() {
   let config: Configuracoes | null = null;
   let email: EstadoDoEmail | null = null;
+  let pagamentos: ResumoDePagamentos | null = null;
 
   try {
     config = await carregarConfiguracoes();
   } catch (erro: unknown) {
     const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
     console.error(`[painel] configurações sem banco: ${motivo}`);
+  }
+
+  if (config !== null) {
+    try {
+      pagamentos = await resumoDePagamentos();
+    } catch (erro: unknown) {
+      const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
+      console.error(`[painel] pagamentos ilegíveis: ${motivo}`);
+    }
   }
 
   try {
@@ -278,9 +440,9 @@ export default async function TelaDeConfiguracoes() {
           Configurações
         </h1>
         <p className="m-0 mt-1.5 max-w-[62ch] text-[14px] font-semibold leading-snug text-muted">
-          O que vale para o app inteiro: para onde vão os botões de compra, o aviso que aparece na
-          Home do aluno e o estado das peças que o painel não edita. Toda alteração fica na
-          auditoria.
+          O que vale para o app inteiro: para onde vão os botões de compra, qual plano cada
+          produto vendido libera, o aviso que aparece na Home do aluno e o estado das peças que o
+          painel não edita. Toda alteração fica na auditoria.
         </p>
       </header>
 
@@ -305,6 +467,13 @@ export default async function TelaDeConfiguracoes() {
           >
             <FormularioDeCheckout inicial={config.checkout} />
           </Secao>
+
+          <SecaoDeProdutos
+            config={config}
+            pagamento={estadoDoPagamento()}
+            webhook={enderecoDoWebhook()}
+          />
+          <SecaoDePagamentos resumo={pagamentos} />
 
           <Secao
             titulo="Aviso de manutenção"

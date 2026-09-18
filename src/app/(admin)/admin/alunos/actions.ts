@@ -8,11 +8,12 @@
  * ⚠️ **Nada de dado pessoal no log.** O que vai para `console.error` é id,
  * quantidade e mensagem do driver. Nome e e-mail de aluno, nunca.
  *
- * ⚠️ **Excluir aluno não existe nesta rodada** (§7). Não há action de exclusão
- * aqui, e não é esquecimento: apagar um aluno levaria junto progresso e
- * respostas por cascata. O caminho decidido é anonimização, e ele ainda não foi
- * desenhado. A tela diz isso com todas as letras em vez de oferecer um botão
- * que ninguém sabe o que faz.
+ * ⚠️ **Não existe "excluir aluno" com `DELETE`** (§7). O que existe é
+ * **anonimizar** (`anonimizarContaAction`), com o mesmo núcleo que o próprio
+ * aluno usa em "Excluir minha conta" no `/perfil`: `src/lib/conta/anonimizar.ts`.
+ * A linha de `User` fica (os pagamentos apontam para ela); o que identifica a
+ * pessoa e todo o progresso saem. O cabeçalho daquele módulo lista o que sai e
+ * o que fica, e por quê.
  *
  * ⚠️ **Não existe campo para digitar nota.** O que existe é recálculo (§6.5),
  * que roda `pontuar()` de novo contra o conteúdo publicado.
@@ -33,6 +34,7 @@ import { requireAdmin } from '@/lib/admin/guard';
 import type { SessionUser } from '@/lib/auth/session';
 import { destroyOtherSessions } from '@/lib/auth/session';
 import { createVerificationToken } from '@/lib/auth/tokens';
+import { anonimizarConta, type DadosApagados } from '@/lib/conta/anonimizar';
 import { prisma } from '@/lib/db';
 import { alertarMudancaDePlano } from '@/lib/mail/admin-alertas';
 import { sendVerificationEmail } from '@/lib/mail/send';
@@ -95,6 +97,19 @@ const FORMATO_DE_HORA = new Intl.DateTimeFormat('pt-BR', {
   timeZone: 'America/Sao_Paulo',
 });
 
+const FORMATO_DE_DATA = new Intl.DateTimeFormat('pt-BR', {
+  dateStyle: 'short',
+  timeStyle: 'short',
+  timeZone: 'America/Sao_Paulo',
+});
+
+/**
+ * Recusa das actions que mexem numa conta já anonimizada. A tela esconde esses
+ * botões, mas uma action é um POST público: a página aberta antes da exclusão
+ * (ou um POST montado à mão) ainda chega aqui.
+ */
+const CONTA_ANONIMIZADA = 'Esta conta foi anonimizada. Não há mais o que alterar nela.';
+
 // ────────────────────────────── mudar plano ──────────────────────────────
 
 /**
@@ -132,9 +147,10 @@ export async function mudarPlanoAction(
   try {
     const antes = await prisma.user.findUnique({
       where: { id: id.data },
-      select: { id: true, name: true, email: true, plan: true, role: true },
+      select: { id: true, name: true, email: true, plan: true, role: true, deletedAt: true },
     });
     if (!antes) return falha('Esse aluno não existe mais.');
+    if (antes.deletedAt !== null) return falha(CONTA_ANONIMIZADA);
 
     if (antes.plan === plano.data) {
       return falha(`O aluno já está no plano ${plano.data}.`, {
@@ -217,9 +233,12 @@ export async function reenviarVerificacaoAction(
   try {
     const aluno = await prisma.user.findUnique({
       where: { id: id.data },
-      select: { id: true, name: true, email: true, emailVerifiedAt: true },
+      select: { id: true, name: true, email: true, emailVerifiedAt: true, deletedAt: true },
     });
     if (!aluno) return falha('Esse aluno não existe mais.');
+    // Sem esta tranca, o reenvio criaria um token novo para a conta excluída e
+    // tentaria mandar e-mail para o endereço-marcador.
+    if (aluno.deletedAt !== null) return falha(CONTA_ANONIMIZADA);
 
     if (aluno.emailVerifiedAt !== null) {
       return falha('O e-mail deste aluno já está verificado — não há o que reenviar.');
@@ -384,5 +403,129 @@ export async function recalcularProgressoAction(
     return sucesso(`${resultado.ajustes.length} aula(s) recalculada(s): ${numeros}.${ignoradas}`);
   } catch (erro: unknown) {
     return erroDeBanco('recalcular progresso', erro);
+  }
+}
+
+// ─────────────────────────── anonimizar conta ────────────────────────────
+
+/** Valor que o checkbox "entendo que é irreversível" manda quando marcado. */
+const CONFIRMACAO_DE_ANONIMIZACAO = 'sim';
+
+function totalApagado(apagados: DadosApagados): number {
+  return (
+    apagados.sessoes +
+    apagados.tokens +
+    apagados.progresso +
+    apagados.respostas +
+    apagados.diasDeEstudo +
+    apagados.tentativasDeLogin
+  );
+}
+
+/**
+ * Anonimiza a conta de um aluno — o pedido de exclusão que chegou pelo suporte
+ * (e-mail, WhatsApp) em vez de pelo `/perfil`. **Irreversível.**
+ *
+ * Exige **motivo** (vai para a auditoria, como na troca de plano) e a caixa de
+ * **confirmação** marcada — conferida aqui, não só na tela: um POST montado à
+ * mão sem a caixa não passa.
+ *
+ * ⚠️ Administrador não é anonimizado (o núcleo recusa). Nem outro, nem o
+ * próprio: rebaixar é feito no banco, por quem cuida do servidor.
+ *
+ * ⚠️ A auditoria leva **só números** (plano, quantas linhas saíram de cada
+ * tabela) — nada de nome ou e-mail do aluno, que é justamente o que acabou de
+ * ser apagado. O `resource` (`User:<id>`) é o vínculo.
+ *
+ * Conta que já estava anonimizada: o núcleo repassa a varredura. Se algo
+ * sobrou (um login concorrente, por exemplo) e saiu agora, isso é auditado;
+ * se não havia nada, a resposta só informa, sem linha nova na auditoria.
+ */
+export async function anonimizarContaAction(
+  _estado: EstadoDoFormulario,
+  dados: FormData,
+): Promise<EstadoDoFormulario> {
+  const sessao = await autenticar();
+  if (!sessao.ok) return sessao.estado;
+
+  const id = esquemaDeId.safeParse(texto(dados, 'id'));
+  if (!id.success) return falha('Aluno não identificado. Recarregue a página.');
+
+  const motivo = esquemaDeMotivo.safeParse(texto(dados, 'motivo'));
+  const confirmou = texto(dados, 'confirmacao') === CONFIRMACAO_DE_ANONIMIZACAO;
+
+  if (!motivo.success || !confirmou) {
+    const campos: Record<string, string> = {};
+    if (!motivo.success) campos.motivo = motivo.error.issues[0]?.message ?? 'motivo inválido';
+    if (!confirmou) campos.confirmacao = 'marque a caixa para confirmar';
+    return falha('Confira os campos marcados.', campos);
+  }
+
+  try {
+    const antes = await prisma.user.findUnique({
+      where: { id: id.data },
+      select: { id: true, plan: true, role: true, emailVerifiedAt: true, deletedAt: true },
+    });
+    if (!antes) return falha('Esse aluno não existe mais.');
+
+    if (antes.role === 'ADMIN') {
+      await auditar({
+        actor: sessao.admin,
+        action: 'user.anonymize',
+        resource: `User:${antes.id}`,
+        outcome: 'DENY',
+        reason: 'conta de administrador',
+      });
+      return falha(
+        'Conta de administrador não pode ser anonimizada pelo painel. O acesso de administrador precisa ser retirado no banco antes.',
+      );
+    }
+
+    const resultado = await anonimizarConta(antes.id);
+
+    if (!resultado.ok) {
+      return resultado.motivo === 'administrador'
+        ? falha('Esta conta virou administradora no meio do caminho. Nada foi apagado.')
+        : falha('Esse aluno não existe mais.');
+    }
+
+    const quando = FORMATO_DE_DATA.format(resultado.excluidaEm);
+
+    if (resultado.jaEstavaExcluida) {
+      const sobras = totalApagado(resultado.apagados);
+      if (sobras === 0) {
+        return falha(`Esta conta já estava anonimizada desde ${quando}. Não havia nada a apagar.`);
+      }
+
+      await auditar({
+        actor: sessao.admin,
+        action: 'user.anonymize',
+        resource: `User:${antes.id}`,
+        after: { repasse: true, apagados: resultado.apagados },
+        reason: motivo.data,
+      });
+      revalidar(antes.id);
+      return sucesso(
+        `Esta conta já estava anonimizada desde ${quando}. Sobras apagadas agora: ${sobras} linha(s).`,
+      );
+    }
+
+    await auditar({
+      actor: sessao.admin,
+      action: 'user.anonymize',
+      resource: `User:${antes.id}`,
+      before: { plan: antes.plan, emailVerificado: antes.emailVerifiedAt !== null },
+      after: { excluida: true, apagados: resultado.apagados },
+      reason: motivo.data,
+    });
+
+    revalidar(antes.id);
+    const { apagados } = resultado;
+    return sucesso(
+      `Conta anonimizada. Saíram ${apagados.progresso} registro(s) de aula, ${apagados.respostas} resposta(s), ` +
+        `${apagados.diasDeEstudo} dia(s) de estudo e ${apagados.sessoes} sessão(ões). Os pagamentos ficaram.`,
+    );
+  } catch (erro: unknown) {
+    return erroDeBanco('anonimizar conta', erro);
   }
 }

@@ -14,9 +14,11 @@
  *    conteúdo publicado encurta (§6.4, regra 2) — e mesmo isso nunca faz uma
  *    aula concluída deixar de estar concluída. `score`/`total` são cache
  *    recalculável e ficam como estão.
- * 3. **Publicar valida antes.** `validarPaginas` é a porta: conteúdo que não
- *    passa no esquema não vira aula publicada. É a diferença entre "aula
- *    indisponível" e "aula renderizada torta na cara do aluno".
+ * 3. **Publicar valida antes.** `validarPaginas` (esquema) e `validarSemantica`
+ *    (§3.5) são a porta: conteúdo com erro não vira aula publicada. É a
+ *    diferença entre "aula indisponível" e "aula renderizada torta na cara do
+ *    aluno". As regras moram em `@/lib/admin/publicacao`, as mesmas para o botão
+ *    da aula e para o lote da lista.
  */
 'use server';
 
@@ -25,6 +27,7 @@ import { revalidatePath } from 'next/cache';
 import { auditar } from '@/lib/admin/audit';
 import {
   codigoDaAula,
+  duplicarAula,
   esquemaDeDados,
   esquemaDeNumero,
   numeroDoFormulario,
@@ -33,12 +36,23 @@ import {
   slugLivre,
 } from '@/lib/admin/aulas';
 import { requireAdmin } from '@/lib/admin/guard';
+import {
+  alterarPublicacaoEmLote,
+  despublicarAula,
+  LIMITE_DO_LOTE,
+  publicarAula,
+} from '@/lib/admin/publicacao';
 import type { SessionUser } from '@/lib/auth/session';
-import { validarPaginas } from '@/lib/content/blocks';
 import { prisma } from '@/lib/db';
 import { sincronizarUsosDaAula } from '@/lib/media/consultas';
 
-import type { ErrosDeCampo, EstadoDoFormulario } from './tipos';
+import type {
+  ErrosDeCampo,
+  EstadoDaDuplicacao,
+  EstadoDoFormulario,
+  EstadoDoLote,
+  LinhaDoRelatorioDoLote,
+} from './tipos';
 
 // ─────────────────────────── utilidades locais ───────────────────────────
 
@@ -247,6 +261,18 @@ export async function salvarDadosAction(
 
 // ─────────────────────── publicar e despublicar ──────────────────────────
 
+/*
+ * As regras de publicar/despublicar (arquivada, esquema, §3.5, clamp, auditoria)
+ * moram em `@/lib/admin/publicacao` — um núcleo só para o botão da aba Dados e
+ * para o lote da lista. Aqui fica o que é da tela: sessão, revalidação e texto.
+ */
+
+/** Até 3 erros de validação, para a mensagem não virar um relatório. */
+function primeirosErros(erros: readonly string[]): string {
+  const resto = erros.length > 3 ? ` (e mais ${erros.length - 3})` : '';
+  return erros.slice(0, 3).join(' · ') + resto;
+}
+
 export async function publicarAulaAction(
   _estado: EstadoDoFormulario,
   dados: FormData,
@@ -254,77 +280,35 @@ export async function publicarAulaAction(
   const sessao = await autenticar();
   if (!sessao.ok) return sessao.estado;
 
+  const id = texto(dados, 'id');
+  if (id === '') return falha('Esta aula não existe mais. Recarregue a página.');
+
   try {
-    const antes = await aulaDoFormulario(dados);
-    if (!antes) return falha('Esta aula não existe mais. Recarregue a página.');
+    const resultado = await publicarAula({ ator: sessao.admin, lessonId: id });
+    if (resultado.numero === null) return falha('Esta aula não existe mais. Recarregue a página.');
 
-    if (antes.archivedAt !== null) {
-      return falha('Esta aula está arquivada. Restaure a aula antes de publicá-la.');
-    }
-
-    // ⚠️ A porta: conteúdo que não passa no esquema não é publicado. Sem isto,
-    // um `pages` torto viraria aula quebrada na tela do aluno em vez de erro
-    // aqui, onde alguém pode consertar.
-    const conferido = validarPaginas(antes.pages);
-    if (!conferido.ok) {
-      await auditar({
-        actor: sessao.admin,
-        action: 'lesson.publish',
-        resource: `Lesson:${antes.number}`,
-        outcome: 'DENY',
-        reason: `conteúdo inválido (${conferido.erros.length} erro(s))`,
-      });
-      const primeiros = conferido.erros.slice(0, 3).join(' · ');
+    if (resultado.desfecho === 'bloqueada') {
       return falha(
-        `O conteúdo desta aula não passou na validação e por isso ela não foi publicada: ${primeiros}`,
+        resultado.erros.length > 0
+          ? `A aula ${resultado.numero} não foi publicada: ${resultado.motivo}. ${primeirosErros(resultado.erros)}`
+          : `A aula ${resultado.numero} não foi publicada: ${resultado.motivo}.`,
       );
     }
 
-    const ultimaPagina = conferido.pages.length - 1;
-
-    await prisma.lesson.update({
-      where: { id: antes.id },
-      data: {
-        published: true,
-        publishedAt: antes.publishedAt ?? new Date(),
-        updatedById: sessao.admin.id,
-      },
-    });
-
-    // §6.4, regra 2: se o conteúdo encurtou, o aluno que estava na página 9 de
-    // uma aula que agora tem 7 não pode ficar apontando para o vazio. O clamp
-    // **não** mexe em `status`: aula concluída continua concluída (D10).
-    const ajustados = await prisma.lessonProgress.updateMany({
-      where: { lessonId: antes.id, currentPage: { gt: ultimaPagina } },
-      data: { currentPage: ultimaPagina },
-    });
-
-    await auditar({
-      actor: sessao.admin,
-      action: 'lesson.publish',
-      resource: `Lesson:${antes.number}`,
-      before: { published: antes.published },
-      after: { published: true, paginas: conferido.pages.length },
-      reason:
-        ajustados.count > 0
-          ? `${ajustados.count} progresso(s) reposicionado(s) na última página`
-          : undefined,
-    });
-
-    revalidar([antes.slug]);
+    revalidar(resultado.slug ? [resultado.slug] : []);
 
     // ⚠️ Este botão liga a aula com o conteúdo que já está publicado — ele não
     // publica o rascunho da aba Páginas (esse passa pelo relatório de impacto e
     // cria versão). Com rascunho pendente, a mensagem diz isso com todas as letras.
-    const avisoDeRascunho =
-      antes.draftPages !== null
-        ? ' Atenção: o rascunho da aba Páginas continua pendente e NÃO entrou no ar — publique-o por lá.'
-        : '';
+    const avisoDeRascunho = resultado.rascunhoPendente
+      ? ' Atenção: o rascunho da aba Páginas continua pendente e NÃO entrou no ar — publique-o por lá.'
+      : '';
+    const ajustados = resultado.progressosReposicionados;
 
     return sucesso(
-      (ajustados.count > 0
-        ? `Aula ${antes.number} publicada. ${ajustados.count} aluno(s) estavam além da última página e foram reposicionados no fim — nenhuma conclusão foi desfeita.`
-        : `Aula ${antes.number} publicada. Ela já aparece para os alunos.`) + avisoDeRascunho,
+      (ajustados > 0
+        ? `Aula ${resultado.numero} publicada. ${ajustados} aluno(s) estavam além da última página e foram reposicionados no fim — nenhuma conclusão foi desfeita.`
+        : `Aula ${resultado.numero} publicada. Ela já aparece para os alunos.`) + avisoDeRascunho,
     );
   } catch (erro: unknown) {
     return erroDeBanco('publicar', erro);
@@ -338,37 +322,177 @@ export async function despublicarAulaAction(
   const sessao = await autenticar();
   if (!sessao.ok) return sessao.estado;
 
-  const motivo = texto(dados, 'motivo');
+  const id = texto(dados, 'id');
+  if (id === '') return falha('Esta aula não existe mais. Recarregue a página.');
+  const motivo = texto(dados, 'motivo').slice(0, 140);
 
   try {
-    const antes = await aulaDoFormulario(dados);
-    if (!antes) return falha('Esta aula não existe mais. Recarregue a página.');
-    if (!antes.published) return falha('Esta aula já está despublicada.');
+    const resultado = await despublicarAula({ ator: sessao.admin, lessonId: id, motivo });
+    if (resultado.numero === null) return falha('Esta aula não existe mais. Recarregue a página.');
+    if (resultado.desfecho === 'bloqueada') {
+      return falha(`A aula ${resultado.numero} não foi despublicada: ${resultado.motivo}.`);
+    }
 
-    await prisma.lesson.update({
-      where: { id: antes.id },
-      data: { published: false, updatedById: sessao.admin.id },
-    });
-
-    await auditar({
-      actor: sessao.admin,
-      action: 'lesson.unpublish',
-      resource: `Lesson:${antes.number}`,
-      before: { published: true },
-      after: { published: false },
-      reason: motivo || undefined,
-    });
-
-    revalidar([antes.slug]);
+    revalidar(resultado.slug ? [resultado.slug] : []);
 
     // ⚠️ Despublicada, a aula responde 404 para o aluno — ela **não** cai no
     // conteúdo estático. É a terceira regra de `src/lib/content/publicado.ts`:
     // despublicar precisa realmente tirar do ar.
     return sucesso(
-      `Aula ${antes.number} despublicada. Ela some da trilha e o endereço passa a responder 404. O progresso de quem já fez continua guardado.`,
+      `Aula ${resultado.numero} despublicada. Ela some da trilha e o endereço passa a responder 404. O progresso de quem já fez continua guardado.`,
     );
   } catch (erro: unknown) {
     return erroDeBanco('despublicar', erro);
+  }
+}
+
+// ─────────────────────── publicar/despublicar em lote ─────────────────────
+
+function loteComErro(mensagem: string): EstadoDoLote {
+  return { estado: 'erro', mensagem };
+}
+
+/**
+ * Publica ou despublica as aulas marcadas na lista.
+ *
+ * Mesmas regras da ação individual (é o mesmo núcleo), aula a aula: uma aula
+ * bloqueada não segura as outras, e cada uma grava a sua linha de auditoria. O
+ * retorno é o relatório — publicada, despublicada ou bloqueada, com o motivo.
+ */
+export async function alterarPublicacaoEmLoteAction(
+  _estado: EstadoDoLote,
+  dados: FormData,
+): Promise<EstadoDoLote> {
+  let admin: SessionUser;
+  try {
+    admin = await requireAdmin();
+  } catch {
+    return loteComErro(
+      'Sua sessão administrativa não vale mais. Recarregue a página e entre de novo.',
+    );
+  }
+
+  const operacao = texto(dados, 'operacao');
+  if (operacao !== 'publicar' && operacao !== 'despublicar') {
+    return loteComErro('Operação desconhecida. Recarregue a página.');
+  }
+
+  const ids = [
+    ...new Set(
+      dados
+        .getAll('ids')
+        .filter((valor): valor is string => typeof valor === 'string')
+        .map((valor) => valor.trim())
+        .filter((valor) => valor !== ''),
+    ),
+  ];
+  if (ids.length === 0) return loteComErro('Selecione pelo menos uma aula.');
+  if (ids.length > LIMITE_DO_LOTE) {
+    return loteComErro(`Selecione no máximo ${LIMITE_DO_LOTE} aulas por vez.`);
+  }
+
+  const motivo = operacao === 'despublicar' ? texto(dados, 'motivo').slice(0, 140) : '';
+
+  let resultados;
+  try {
+    resultados = await alterarPublicacaoEmLote({
+      ator: admin,
+      ids,
+      operacao,
+      motivo: motivo || undefined,
+    });
+  } catch (erro: unknown) {
+    const detalhe = erro instanceof Error ? erro.message : 'erro desconhecido';
+    console.error(`[painel] aulas (lote ${operacao}): ${detalhe}`);
+    return loteComErro(
+      'O banco de dados não completou a operação. Confira a lista antes de tentar de novo: as aulas já processadas ficaram como estão.',
+    );
+  }
+
+  const mudaram = resultados.filter((r) => r.desfecho !== 'bloqueada');
+  revalidar(mudaram.map((r) => r.slug).filter((slug): slug is string => slug !== null));
+  for (const r of mudaram) if (r.numero !== null) revalidatePath(`/admin/aulas/${r.numero}`);
+
+  const relatorio: LinhaDoRelatorioDoLote[] = resultados.map((r) => ({
+    numero: r.numero,
+    titulo: r.titulo ?? '(aula não encontrada)',
+    desfecho: r.desfecho,
+    motivo: r.motivo,
+    erros: r.erros.slice(0, 3),
+    totalDeErros: r.erros.length,
+    avisos: r.avisos.length,
+  }));
+
+  const bloqueadas = resultados.length - mudaram.length;
+  const verbo = operacao === 'publicar' ? 'publicada(s)' : 'despublicada(s)';
+  const mensagem =
+    bloqueadas === 0
+      ? `${mudaram.length} aula(s) ${verbo}.`
+      : `${mudaram.length} aula(s) ${verbo} e ${bloqueadas} bloqueada(s) — veja o motivo de cada uma abaixo.`;
+
+  return { estado: 'ok', mensagem, operacao, relatorio };
+}
+
+// ──────────────────────────────── duplicar ───────────────────────────────
+
+/**
+ * Duplica uma aula como rascunho despublicado, no fim da fila, com ids novos em
+ * todo bloco de exercício (ver `duplicarAula` para o que a cópia leva e o que
+ * não leva). O `redirect` para a aula nova fica de fora pelo mesmo motivo do
+ * renumerar: a tela mostra o link.
+ */
+export async function duplicarAulaAction(
+  _estado: EstadoDaDuplicacao,
+  dados: FormData,
+): Promise<EstadoDaDuplicacao> {
+  let admin: SessionUser;
+  try {
+    admin = await requireAdmin();
+  } catch {
+    return {
+      estado: 'erro',
+      mensagem: 'Sua sessão administrativa não vale mais. Recarregue a página e entre de novo.',
+    };
+  }
+
+  const id = texto(dados, 'id');
+  if (id === '') return { estado: 'erro', mensagem: 'Esta aula não existe mais. Recarregue a página.' };
+
+  try {
+    const resultado = await duplicarAula({ ator: admin, origemId: id });
+    if (!resultado.ok) return { estado: 'erro', mensagem: resultado.motivo };
+
+    revalidar([]);
+    revalidatePath('/admin/midia');
+
+    const { origem, copia } = resultado;
+    const exercicios = Object.keys(resultado.idsNovos).length;
+    const partes = [
+      `Aula ${copia.number} criada como cópia da aula ${origem.number}, em rascunho (fora do ar).`,
+      exercicios > 0
+        ? `Os ${exercicios} bloco(s) de exercício ganharam ids novos — nenhuma resposta de aluno é compartilhada com a original.`
+        : 'A aula não tem blocos de exercício.',
+      resultado.temRascunho ? 'O rascunho pendente da original veio junto, também com ids novos.' : '',
+      'A cópia nasce sem capa e sem vídeo.',
+      `Selos e blocos de "próxima aula" que citam a aula ${origem.number} não mudam sozinhos: revise na aba Páginas.`,
+    ];
+    if (resultado.midias === null) {
+      partes.push('Atenção: o índice de uso de mídia da cópia não foi gravado.');
+    }
+
+    return {
+      estado: 'ok',
+      mensagem: partes.filter((parte) => parte !== '').join(' '),
+      numero: copia.number,
+      titulo: copia.title,
+    };
+  } catch (erro: unknown) {
+    const detalhe = erro instanceof Error ? erro.message : 'erro desconhecido';
+    console.error(`[painel] aulas (duplicar): ${detalhe}`);
+    return {
+      estado: 'erro',
+      mensagem: 'O banco de dados não completou a operação. Tente de novo em instantes.',
+    };
   }
 }
 

@@ -84,6 +84,14 @@ Abra <http://localhost:3000>. Sem sessão, a raiz leva para `/entrar`.
 | `npm run build` | build de produção (gera também `.next/standalone`) |
 | `npm run start` | roda o build de produção localmente |
 | `npm run lint` | ESLint |
+| `npm test` | testes unitários e de integração (Vitest) num banco **separado**, o `<nome do banco>_test`, criado e migrado sozinho na primeira rodada |
+| `npm run test:watch` | Vitest em modo observação |
+| `npm run test:e2e` | testes de ponta a ponta (Playwright, no Chrome instalado) contra `http://localhost:3000`; reaproveita o `npm run dev` que já estiver no ar |
+
+> ⚠️ Os testes E2E rodam contra o banco de **desenvolvimento**, porque usam o app de verdade e os
+> botões de entrada de dev (`/entrar`). Eles zeram o progresso das contas `*@dev.local` e mais nada.
+> O Vitest nunca toca o banco de desenvolvimento: `tests/support/banco.ts` recusa qualquer nome
+> que não termine em `_test`.
 
 Comandos de banco (CLI do Prisma, funcionam independentemente de atalhos no `package.json`):
 
@@ -113,6 +121,8 @@ app-web/
 │     ├─ auth/             sessão, hash de senha, rate limit, tokens
 │     ├─ mail/             Nodemailer + templates de e-mail
 │     └─ content/          leitura do conteúdo do curso
+├─ tests/                  Vitest: unitários e integração com o banco _test (tests/support/ = infraestrutura)
+├─ e2e/                    Playwright: jornadas do aluno e do admin no navegador
 ├─ prisma/                 schema.prisma, migrations/ e seed
 ├─ content/course-data.mjs conteúdo das 42 aulas (fonte de verdade do curso)
 ├─ public/                 capas, ilustrações, ícones e arte de marca

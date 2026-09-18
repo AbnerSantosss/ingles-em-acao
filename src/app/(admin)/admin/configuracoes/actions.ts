@@ -5,9 +5,10 @@
  * `requireAdmin()` (o layout do painel protege a *renderização*, não o POST de
  * uma action) e termina por `auditar()` com `setting.change`.
  *
- * ⚠️ **Duas chaves são gravadas aqui, e só duas:** o link de checkout e o aviso
- * de manutenção. O vídeo padrão é da área de vídeos e a allowlist de embed é
- * fixa no MVP — o porquê está no cabeçalho de `@/lib/admin/settings`.
+ * ⚠️ **Três chaves são gravadas aqui, e só três:** o link de checkout, o aviso
+ * de manutenção e o mapa produto→plano do webhook de pagamento. O vídeo padrão
+ * é da área de vídeos e a allowlist de embed é fixa no MVP — o porquê está no
+ * cabeçalho de `@/lib/admin/settings`.
  *
  * ⚠️ **Link de checkout é a ação mais sensível do painel depois de mexer em
  * aluno**: é para lá que o aluno leva o cartão. Por isso: motivo obrigatório,
@@ -28,6 +29,7 @@ import { requireAdmin } from '@/lib/admin/guard';
 import {
   CHAVE_CHECKOUT,
   CHAVE_MANUTENCAO,
+  CHAVE_PRODUTOS,
   esquemaDeAviso,
   gravarConfiguracao,
   lerCheckoutAtual,
@@ -38,6 +40,16 @@ import {
 } from '@/lib/admin/settings';
 import type { SessionUser } from '@/lib/auth/session';
 import { alertarTrocaDeCheckout, type TrocaDeLink } from '@/lib/mail/admin-alertas';
+import {
+  MAXIMO_DE_PRODUTOS,
+  esquemaDoCodigo,
+  esquemaDoPlano,
+  lerMapaDeProdutos,
+  mapasIguais,
+  ordenarMapa,
+  paraGravar,
+  type ProdutoMapeado,
+} from '@/lib/pagamento/produtos';
 
 import type { ErrosDeCampo, EstadoDoFormulario } from './tipos';
 
@@ -256,5 +268,100 @@ export async function salvarManutencaoAction(
     );
   } catch (erro: unknown) {
     return erroDeBanco('manutenção', erro);
+  }
+}
+
+// ───────────────────────── produtos → plano (webhook) ────────────────────
+
+/** Um campo repetido do formulário, na ordem das linhas. */
+function textos(dados: FormData, campo: string): string[] {
+  return dados.getAll(campo).map((valor) => (typeof valor === 'string' ? valor.trim() : ''));
+}
+
+/**
+ * Salva o mapa produto→plano que o webhook de pagamento usa
+ * (`@/lib/pagamento/produtos`).
+ *
+ * Campos: `produto` e `plano` repetidos, uma dupla por linha, e `motivo`. Linha
+ * com o código vazio é ignorada — é assim que se tira um produto do mapa. Os
+ * erros voltam por linha (`produto-<i>`, `plano-<i>`).
+ *
+ * ⚠️ **É a configuração que decide qual plano um pagamento libera.** Por isso:
+ * motivo obrigatório e auditoria com o mapa antes e depois. Salvar sem mudar
+ * nada não grava nem audita — a não ser que o valor guardado esteja torto, e aí
+ * salvar é justamente o conserto.
+ */
+export async function salvarProdutosAction(
+  _estado: EstadoDoFormulario,
+  dados: FormData,
+): Promise<EstadoDoFormulario> {
+  const sessao = await autenticar();
+  if (!sessao.ok) return sessao.estado;
+
+  const codigos = textos(dados, 'produto');
+  const planos = textos(dados, 'plano');
+
+  const campos: Record<string, string> = {};
+  const novo: ProdutoMapeado[] = [];
+  const vistos = new Set<string>();
+
+  codigos.forEach((bruto, indice) => {
+    if (bruto === '') return;
+
+    const codigo = esquemaDoCodigo.safeParse(bruto);
+    const plano = esquemaDoPlano.safeParse(planos[indice] ?? '');
+    if (!codigo.success) {
+      campos[`produto-${indice}`] = codigo.error.issues[0]?.message ?? 'código inválido';
+    } else if (vistos.has(codigo.data)) {
+      campos[`produto-${indice}`] = 'este código já está em outra linha';
+    }
+    if (!plano.success) {
+      campos[`plano-${indice}`] = plano.error.issues[0]?.message ?? 'plano inválido';
+    }
+    if (codigo.success && plano.success && !vistos.has(codigo.data)) {
+      vistos.add(codigo.data);
+      novo.push({ codigo: codigo.data, plano: plano.data });
+    }
+  });
+
+  const motivo = esquemaDeMotivo.safeParse(texto(dados, 'motivo'));
+  if (!motivo.success) campos.motivo = motivo.error.issues[0]?.message ?? 'motivo inválido';
+
+  if (!motivo.success || Object.keys(campos).length > 0) {
+    return falha('Confira os campos marcados.', campos);
+  }
+  if (novo.length > MAXIMO_DE_PRODUTOS) {
+    return falha(`No máximo ${MAXIMO_DE_PRODUTOS} produtos. Nada foi gravado.`);
+  }
+
+  const ordenado = ordenarMapa(novo);
+
+  try {
+    const atual = await lerMapaDeProdutos();
+    if (atual.valido && mapasIguais(atual.produtos, ordenado)) {
+      return falha('Nenhum produto mudou. Nada foi gravado.');
+    }
+
+    const valor = paraGravar(ordenado);
+    const { antes } = await gravarConfiguracao(CHAVE_PRODUTOS, valor, sessao.admin.id);
+
+    await auditar({
+      actor: sessao.admin,
+      action: 'setting.change',
+      resource: `AppSetting:${CHAVE_PRODUTOS}`,
+      before: antes,
+      after: valor,
+      reason: motivo.data,
+    });
+
+    // Só o painel mostra o mapa; o webhook lê do banco a cada evento.
+    revalidatePath('/admin/configuracoes');
+    return sucesso(
+      ordenado.length === 0
+        ? 'Mapa salvo sem produtos: nenhum pagamento libera plano até um produto ser mapeado.'
+        : `Mapa salvo com ${ordenado.length} produto(s). Vale para o próximo evento que chegar.`,
+    );
+  } catch (erro: unknown) {
+    return erroDeBanco('produtos', erro);
   }
 }

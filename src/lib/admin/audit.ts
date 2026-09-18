@@ -68,6 +68,28 @@ export type NegativaDeAuditoria = {
   reason?: string;
 };
 
+/**
+ * Uma ação feita pelo próprio sistema, sem pessoa nem sessão do outro lado: o
+ * webhook de pagamento liberando plano, uma rotina agendada.
+ *
+ * - `sistema`: quem agiu, em texto curto — `webhook fake`, `webhook appmax`. Vira
+ *   o `actorEmail` entre parênteses, `(webhook fake)`, no mesmo espírito de
+ *   {@link ATOR_SEM_SESSAO}: um carimbo fixo, nunca um e-mail inventado.
+ * - `actorId` fica nulo.
+ */
+export type EntradaDeSistema = {
+  sistema: string;
+  action: string;
+  resource: string;
+  before?: unknown;
+  after?: unknown;
+  reason?: string;
+  outcome?: ResultadoAuditado;
+};
+
+/** Teto do carimbo de sistema — é um rótulo, não um texto livre. */
+const TAMANHO_MAXIMO_DO_SISTEMA = 60;
+
 /** Teto do JSON gravado em `before`/`after`. Acima disso vira só o tamanho. */
 const TAMANHO_MAXIMO_SNAPSHOT = 8_000;
 
@@ -263,5 +285,34 @@ export async function auditarNegativa(entrada: NegativaDeAuditoria): Promise<voi
     resource: entrada.resource,
     outcome: 'DENY',
     reason: entrada.reason,
+  });
+}
+
+/**
+ * Registra uma ação do **sistema** — a porta de quem age sem sessão (o webhook
+ * de pagamento é o primeiro caso).
+ *
+ * Mesmas regras de {@link auditar}: chame depois da mutação dar certo (depois do
+ * commit, quando houver transação) e sem `try` — esta função não lança. Escreve
+ * pela mesma função privada, então o "um caminho só" continua valendo.
+ *
+ * ⚠️ Por que não gravar a linha dentro da transação de quem chama: numa
+ * transação do Postgres, um INSERT que falha aborta tudo o que veio antes — a
+ * auditoria passaria a poder derrubar a operação auditada, o contrário da
+ * garantia 3 do cabeçalho. Quem precisa de registro transacional grava na
+ * própria tabela (o `Payment` guarda `grantedAt`, plano e referência); a trilha
+ * vem logo depois, como em toda ação do painel.
+ */
+export async function auditarSistema(entrada: EntradaDeSistema): Promise<void> {
+  const sistema = entrada.sistema.trim().slice(0, TAMANHO_MAXIMO_DO_SISTEMA) || 'sistema';
+  await gravar({
+    actorId: null,
+    actorEmail: `(${sistema})`,
+    action: entrada.action,
+    resource: entrada.resource,
+    outcome: entrada.outcome ?? 'ALLOW',
+    reason: entrada.reason,
+    before: entrada.before,
+    after: entrada.after,
   });
 }

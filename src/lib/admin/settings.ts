@@ -20,9 +20,10 @@
  *
  * ## Quem escreve o quê
  *
- * Esta tela **grava** duas chaves: o link de checkout e o aviso de manutenção.
- * As outras duas coisas que a §2.9 lista aparecem aqui **só para leitura**, e
- * de propósito:
+ * Esta tela **grava** três chaves: o link de checkout, o aviso de manutenção e
+ * o mapa produto→plano do webhook de pagamento (`@/lib/pagamento/produtos`,
+ * dono do formato e da validação). As outras duas coisas que a §2.9 lista
+ * aparecem aqui **só para leitura**, e de propósito:
  *
  * - **Vídeo padrão** (`video.padrao`) é gravado pela área de vídeos
  *   (`/admin/videos`, `@/lib/video/aula`), no formato `{ kind, ref }` que o
@@ -44,6 +45,14 @@ import { z } from 'zod';
 
 import { prisma } from '@/lib/db';
 import { ambienteDeEmail } from '@/lib/mail/transport';
+import {
+  CHAVE_PRODUTOS,
+  interpretarMapa,
+  ordenarMapa,
+  type ProdutoMapeado,
+} from '@/lib/pagamento/produtos';
+import { obterProvedor } from '@/lib/pagamento/provedor';
+import { garantirReferenciaDePagamento, linkComReferencia } from '@/lib/pagamento/referencia';
 import { CHAVE_VIDEO_PADRAO, interpretarPadrao } from '@/lib/video/aula';
 import { HOSTS_ACEITOS, ORIGENS_LIBERADAS, descreverFonte, linkPublico } from '@/lib/video/fonte';
 
@@ -53,14 +62,19 @@ export const CHAVE_CHECKOUT = 'checkout.link';
 export const CHAVE_MANUTENCAO = 'manutencao.aviso';
 /** Reexportada para a tela: a dona da chave é a área de vídeos. */
 export const CHAVE_VIDEO = CHAVE_VIDEO_PADRAO;
+/** Reexportada para a tela: o formato mora em `@/lib/pagamento/produtos`. */
+export { CHAVE_PRODUTOS };
 
 /** Todas as chaves que esta tela mostra. */
-export const CHAVES = [CHAVE_CHECKOUT, CHAVE_VIDEO, CHAVE_MANUTENCAO] as const;
+export const CHAVES = [CHAVE_CHECKOUT, CHAVE_VIDEO, CHAVE_MANUTENCAO, CHAVE_PRODUTOS] as const;
 
 export type ChaveDeConfiguracao = (typeof CHAVES)[number];
 
 /** As chaves que **esta** tela grava. */
-export type ChaveEditavel = typeof CHAVE_CHECKOUT | typeof CHAVE_MANUTENCAO;
+export type ChaveEditavel =
+  | typeof CHAVE_CHECKOUT
+  | typeof CHAVE_MANUTENCAO
+  | typeof CHAVE_PRODUTOS;
 
 // ───────────────────────────────── tipos ─────────────────────────────────
 
@@ -105,6 +119,8 @@ export type Configuracoes = {
   video: VideoPadrao;
   allowlist: AllowlistDeEmbed;
   manutencao: AvisoDeManutencao;
+  /** O mapa produto→plano do webhook de pagamento, em ordem de código. */
+  produtos: ProdutoMapeado[];
   /** Quando cada chave foi mexida pela última vez. */
   atualizadoEm: Record<ChaveDeConfiguracao, Date | null>;
   /** Valores tortos encontrados no banco, em PT-BR, para a tela avisar. */
@@ -115,6 +131,7 @@ export type Configuracoes = {
 type ValorPorChave = {
   [CHAVE_CHECKOUT]: LinksDeCheckout;
   [CHAVE_MANUTENCAO]: AvisoDeManutencao;
+  [CHAVE_PRODUTOS]: { produtos: ProdutoMapeado[] };
 };
 
 // ──────────────────────────────── padrões ────────────────────────────────
@@ -256,6 +273,22 @@ function manutencaoDe(bruto: Prisma.JsonValue | undefined, avisos: string[]): Av
   };
 }
 
+/**
+ * O mapa produto→plano, lido pelo mesmo `interpretarMapa` que o webhook usa.
+ *
+ * ⚠️ Mapa torto = **nenhum** produto mapeado também no webhook: pagamento
+ * aprovado fica gravado sem liberar plano até alguém salvar o mapa de novo.
+ */
+function produtosDe(bruto: Prisma.JsonValue | undefined, avisos: string[]): ProdutoMapeado[] {
+  const lido = interpretarMapa(bruto);
+  if (!lido.valido) {
+    avisos.push(
+      'Produtos da plataforma de pagamento: o valor guardado não está no formato esperado e foi ignorado — nenhum pagamento libera plano até o mapa ser salvo de novo.',
+    );
+  }
+  return ordenarMapa(lido.produtos);
+}
+
 /** O vídeo padrão, lido pelo mesmo `interpretarPadrao` que o player usa. */
 function videoDe(bruto: Prisma.JsonValue | undefined, avisos: string[]): VideoPadrao {
   if (bruto === undefined || bruto === null) {
@@ -296,10 +329,12 @@ export async function carregarConfiguracoes(): Promise<Configuracoes> {
     video: videoDe(porChave.get(CHAVE_VIDEO)?.value, avisos),
     allowlist: { hosts: HOSTS_ACEITOS, origens: ORIGENS_LIBERADAS },
     manutencao: manutencaoDe(porChave.get(CHAVE_MANUTENCAO)?.value, avisos),
+    produtos: produtosDe(porChave.get(CHAVE_PRODUTOS)?.value, avisos),
     atualizadoEm: {
       [CHAVE_CHECKOUT]: porChave.get(CHAVE_CHECKOUT)?.updatedAt ?? null,
       [CHAVE_VIDEO]: porChave.get(CHAVE_VIDEO)?.updatedAt ?? null,
       [CHAVE_MANUTENCAO]: porChave.get(CHAVE_MANUTENCAO)?.updatedAt ?? null,
+      [CHAVE_PRODUTOS]: porChave.get(CHAVE_PRODUTOS)?.updatedAt ?? null,
     },
     avisos,
   };
@@ -366,14 +401,49 @@ export type LinksDeCompra = { COMPLETO: string | null; PREMIUM: string | null };
  *
  * O Essencial fica de fora: quem está logado já tem, no mínimo, o Essencial.
  *
- * ⚠️ Nunca joga — herda de {@link lerLinksDeCheckout}.
+ * ## A referência do aluno
+ *
+ * Com `userId` **e** um provedor de pagamento configurado (`PAYMENT_PROVIDER`),
+ * cada link leva a `User.paymentRef` do aluno no parâmetro que a plataforma
+ * devolve no webhook (`ref` no Fake) — é só por ela que o pagamento acha quem
+ * comprou (`@/lib/pagamento/processar`). A query que o link já tinha fica; um
+ * parâmetro de mesmo nome colado no painel é substituído.
+ *
+ * Sem `userId` (quem chama sem sessão) ou sem provedor, os links saem como
+ * estão no painel.
+ *
+ * ⚠️ Nunca joga — herda de {@link lerLinksDeCheckout}. Se a referência não
+ * puder ser lida/gerada (banco caiu no meio), o link sai **sem** ela: a compra
+ * chega órfã e o suporte libera à mão, em vez de o botão sumir.
  */
-export async function lerLinksDeCompra(): Promise<LinksDeCompra> {
+export async function lerLinksDeCompra(userId?: string): Promise<LinksDeCompra> {
   const checkout = await lerLinksDeCheckout();
-  return {
+  const links: LinksDeCompra = {
     COMPLETO: linkDoPlano(checkout, 'COMPLETO'),
     PREMIUM: linkDoPlano(checkout, 'PREMIUM'),
   };
+
+  if (!userId || (links.COMPLETO === null && links.PREMIUM === null)) return links;
+  return comReferenciaDoAluno(links, userId);
+}
+
+async function comReferenciaDoAluno(links: LinksDeCompra, userId: string): Promise<LinksDeCompra> {
+  const leitura = obterProvedor();
+  if (!leitura.ok) return links;
+  const parametro = leitura.provedor.parametroDeReferencia;
+
+  try {
+    const referencia = await garantirReferenciaDePagamento(userId);
+    if (referencia === null) return links;
+
+    const comReferencia = (link: string | null) =>
+      link === null ? null : linkComReferencia(link, parametro, referencia);
+    return { COMPLETO: comReferencia(links.COMPLETO), PREMIUM: comReferencia(links.PREMIUM) };
+  } catch (erro: unknown) {
+    const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
+    console.error(`[pagamento] referência do checkout indisponível: link segue sem ela. ${motivo}`);
+    return links;
+  }
 }
 
 /**
@@ -402,7 +472,9 @@ export async function estadoDoEmail(): Promise<EstadoDoEmail> {
  * nunca foi criada por migração, ela aparece no primeiro salvamento.
  *
  * ⚠️ Só aceita as chaves que esta tela é dona ({@link ChaveEditavel}). O vídeo
- * padrão não passa por aqui — ver o cabeçalho do arquivo.
+ * padrão não passa por aqui — ver o cabeçalho do arquivo. O mapa produto→plano
+ * chega já validado por `esquemaDoMapa` e no formato de `paraGravar`
+ * (`@/lib/pagamento/produtos`).
  */
 export async function gravarConfiguracao<K extends ChaveEditavel>(
   chave: K,

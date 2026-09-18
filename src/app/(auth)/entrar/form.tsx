@@ -23,6 +23,7 @@ export type FormularioDeEntradaProps = {
   next: string;
   /** Chegou aqui porque a sessão venceu, não por um clique. */
   sessaoExpirada: boolean;
+  contaExcluida: boolean;
   linkCriarConta: string;
   linkEsqueciSenha: string;
 };
@@ -62,6 +63,7 @@ function BotaoEntrar() {
 export function FormularioDeEntrada({
   next,
   sessaoExpirada,
+  contaExcluida,
   linkCriarConta,
   linkEsqueciSenha,
 }: FormularioDeEntradaProps) {
@@ -114,6 +116,16 @@ export function FormularioDeEntrada({
           style={{ background: V.cream.bg, borderColor: V.cream.bd, color: V.cream.fg }}
         >
           Sua sessão expirou por segurança. Entre de novo para continuar.
+        </p>
+      ) : null}
+
+      {contaExcluida ? (
+        <p
+          role="status"
+          className="mt-5 rounded-[16px] border-[1.5px] px-4 py-3 text-[15px] font-semibold leading-snug"
+          style={{ background: V.cream.bg, borderColor: V.cream.bd, color: V.cream.fg }}
+        >
+          Sua conta foi excluída. Seus dados pessoais e seu progresso foram apagados.
         </p>
       ) : null}
 

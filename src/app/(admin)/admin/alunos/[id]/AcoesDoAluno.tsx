@@ -1,19 +1,24 @@
 /**
- * As quatro ações do detalhe do aluno (BACKOFFICE §2.7).
+ * As ações do detalhe do aluno (BACKOFFICE §2.7): as quatro do dia a dia e,
+ * por último, "Anonimizar conta".
  *
  * ⚠️ `'use client'` porque existe interatividade de verdade: o estado de cada
  * envio (`useActionState`) e a confirmação em dois toques de "encerrar
- * sessões". Este arquivo não fala com o banco — só com as Server Actions.
+ * sessões" e de "anonimizar". Este arquivo não fala com o banco — só com as
+ * Server Actions.
  *
  * ⚠️ **Não existe campo de nota aqui.** "Recalcular progresso" manda o servidor
  * recontar a partir das respostas gravadas (§6.5); o admin não digita placar.
  *
- * ⚠️ "Mudar de plano" usa `onSubmit` + `startTransition`, não `action={...}`:
+ * ⚠️ "Mudar de plano" e "Anonimizar conta" usam `onSubmit` + `startTransition`,
+ * não `action={...}`:
  * no React 19 um `<form action>` limpa os campos depois de cada envio, até
  * quando a action devolve erro — e o admin perderia o motivo que escreveu.
  *
- * ⚠️ **Não existe "excluir aluno"** nesta rodada (§7). Em vez de um botão que
- * ninguém sabe o que faz, a tela explica por quê.
+ * ⚠️ **Não existe "excluir aluno" com `DELETE`** (§7). "Anonimizar conta" usa o
+ * mesmo núcleo do "Excluir minha conta" do aluno (`src/lib/conta/anonimizar.ts`)
+ * e o bloco diz, antes do botão, o que sai e o que fica. Conta já anonimizada
+ * não mostra ação nenhuma — não há mais plano, e-mail nem sessão para mexer.
  */
 'use client';
 
@@ -24,6 +29,7 @@ import { Button } from '@/components/ui/Button';
 import { Field } from '@/components/ui/Field';
 
 import {
+  anonimizarContaAction,
   encerrarSessoesAction,
   mudarPlanoAction,
   recalcularProgressoAction,
@@ -52,6 +58,12 @@ const PLANOS = [
 ] as const;
 
 const FORMATO_DE_HORA = new Intl.DateTimeFormat('pt-BR', {
+  timeStyle: 'short',
+  timeZone: 'America/Sao_Paulo',
+});
+
+const FORMATO_DE_DATA = new Intl.DateTimeFormat('pt-BR', {
+  dateStyle: 'short',
   timeStyle: 'short',
   timeZone: 'America/Sao_Paulo',
 });
@@ -300,6 +312,90 @@ function RecalcularProgresso({ id }: { id: string }) {
   );
 }
 
+// ──────────────────────────── anonimizar conta ───────────────────────────
+
+function AnonimizarConta({ id, administrador }: { id: string; administrador: boolean }) {
+  const [estado, enviar, pendente] = useActionState(anonimizarContaAction, FORMULARIO_INICIAL);
+  const [confirmando, setConfirmando] = useState(false);
+  const erroDaCaixa = erroDoCampo(estado, 'confirmacao');
+
+  return (
+    <Bloco
+      tom="risco"
+      titulo="Anonimizar conta"
+      descricao="Para pedido de exclusão que chegou pelo suporte. Irreversível: saem nome, e-mail, foto, senha, sessões e todo o progresso (aulas, respostas e dias de estudo); o e-mail fica livre para um cadastro novo. Ficam os pagamentos (obrigação fiscal) e a auditoria."
+    >
+      {administrador ? (
+        <p className="m-0 text-[13px] font-bold leading-snug text-muted">
+          Conta de administrador não é anonimizada pelo painel. O acesso de administrador precisa ser
+          retirado no banco antes.
+        </p>
+      ) : confirmando ? (
+        <form onSubmit={enviarSemLimpar(enviar)} className="flex flex-col gap-3" noValidate>
+          <input type="hidden" name="id" value={id} />
+
+          <Field
+            label="Motivo"
+            required
+            hint="Fica na auditoria. Ex.: pedido de exclusão recebido por e-mail em 12/09, protocolo 123."
+            error={erroDoCampo(estado, 'motivo')}
+          >
+            <textarea name="motivo" maxLength={300} className={TEXTAREA} />
+          </Field>
+
+          <div className="flex flex-col gap-1">
+            <label className="flex cursor-pointer items-start gap-2.5 text-[14px] font-bold leading-snug text-navy">
+              <input
+                type="checkbox"
+                name="confirmacao"
+                value="sim"
+                aria-invalid={erroDaCaixa ? true : undefined}
+                aria-describedby={erroDaCaixa ? `erro-confirmacao-${id}` : undefined}
+                className="mt-0.5 size-[18px] flex-none cursor-pointer accent-[#E03B4C]"
+              />
+              Entendo que a anonimização não pode ser desfeita.
+            </label>
+            {erroDaCaixa ? (
+              <p
+                id={`erro-confirmacao-${id}`}
+                className="m-0 text-[13px] font-bold leading-snug text-[#B21F31]"
+              >
+                {erroDaCaixa}
+              </p>
+            ) : null}
+          </div>
+
+          <Recado estado={estado} />
+
+          <div className="flex flex-wrap items-center gap-3">
+            <Button type="submit" size="md" variant="danger" loading={pendente}>
+              Anonimizar agora
+            </Button>
+            <Button
+              type="button"
+              size="md"
+              variant="ghost"
+              disabled={pendente}
+              onClick={() => setConfirmando(false)}
+            >
+              Cancelar
+            </Button>
+          </div>
+        </form>
+      ) : (
+        <div className="flex flex-col gap-3">
+          <Recado estado={estado} />
+          <div className="flex">
+            <Button type="button" size="md" variant="ghost" onClick={() => setConfirmando(true)}>
+              Anonimizar conta
+            </Button>
+          </div>
+        </div>
+      )}
+    </Bloco>
+  );
+}
+
 // ──────────────────────────────── o painel ───────────────────────────────
 
 export function AcoesDoAluno({
@@ -308,13 +404,37 @@ export function AcoesDoAluno({
   verificado,
   sessoes,
   reenvio,
+  administrador,
+  excluidaEm,
 }: {
   id: string;
   plano: string;
   verificado: boolean;
   sessoes: number;
   reenvio: { permitido: boolean; enviados: number; limite: number; liberaEm: string | null };
+  /** A conta é de administrador (não pode ser anonimizada pelo painel). */
+  administrador: boolean;
+  /** Data (ISO) em que a conta foi anonimizada, ou `null` se está ativa. */
+  excluidaEm: string | null;
 }) {
+  if (excluidaEm !== null) {
+    return (
+      <div>
+        <h3 className="m-0 mb-2 text-[15px] font-black tracking-[-0.01em] text-navy">Ações</h3>
+        <Bloco
+          tom="risco"
+          titulo="Conta anonimizada"
+          descricao={`Excluída em ${FORMATO_DE_DATA.format(new Date(excluidaEm))}. Nome, e-mail, senha, sessões e progresso já saíram; ficaram os pagamentos e a auditoria.`}
+        >
+          <p className="m-0 text-[13px] font-bold leading-snug text-muted">
+            Não há ação para uma conta anonimizada: ninguém entra nela, e o e-mail original já está
+            livre para um cadastro novo.
+          </p>
+        </Bloco>
+      </div>
+    );
+  }
+
   return (
     <div>
       <h3 className="m-0 mb-2 text-[15px] font-black tracking-[-0.01em] text-navy">Ações</h3>
@@ -323,6 +443,7 @@ export function AcoesDoAluno({
         <ReenviarVerificacao id={id} verificado={verificado} reenvio={reenvio} />
         <RecalcularProgresso id={id} />
         <EncerrarSessoes id={id} sessoes={sessoes} />
+        <AnonimizarConta id={id} administrador={administrador} />
       </div>
     </div>
   );

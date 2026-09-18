@@ -45,6 +45,9 @@ export default async function PaginaEntrar({
   // também usa esse parâmetro para não devolver quem chegou assim ao app.
   const sessaoExpirada = primeiro(busca[PARAM_SESSAO]) === VALOR_SESSAO_EXPIRADA;
 
+  // `excluirContaAction` (/perfil) termina aqui: a pessoa precisa saber que deu certo.
+  const contaExcluida = primeiro(busca.conta) === 'excluida';
+
   // O destino viaja junto nos links de saída: quem veio de `/aula/7`, clicou em
   // "criar conta" e se cadastrou continua indo parar em `/aula/7`.
   const carona = destino !== DESTINO_PADRAO ? `?next=${encodeURIComponent(destino)}` : '';
@@ -54,6 +57,7 @@ export default async function PaginaEntrar({
       <FormularioDeEntrada
         next={destino}
         sessaoExpirada={sessaoExpirada}
+        contaExcluida={contaExcluida}
         linkCriarConta={`/criar-conta${carona}`}
         linkEsqueciSenha={`/esqueci-senha${carona}`}
       />

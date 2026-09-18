@@ -8,9 +8,11 @@
 export function iniciaisDe(nome: string): string {
   const partes = nome.trim().split(/\s+/).filter(Boolean);
   if (partes.length === 0) return 'A';
-  if (partes.length === 1) return partes[0].slice(0, 2).toUpperCase();
+  // Por code point (Array.from), não por unidade UTF-16: um emoji no começo do
+  // nome não pode virar meio par substituto ('�' no avatar).
+  if (partes.length === 1) return Array.from(partes[0]).slice(0, 2).join('').toUpperCase();
 
-  const primeira = partes[0][0];
-  const ultima = partes[partes.length - 1][0];
+  const primeira = Array.from(partes[0])[0];
+  const ultima = Array.from(partes[partes.length - 1])[0];
   return `${primeira}${ultima}`.toUpperCase();
 }

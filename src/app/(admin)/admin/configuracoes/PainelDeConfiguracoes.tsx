@@ -1,6 +1,7 @@
 /**
- * A parte interativa de `/admin/configuracoes`: os dois formulários que esta
- * tela grava (link de checkout e aviso de manutenção).
+ * A parte interativa de `/admin/configuracoes`: os três formulários que esta
+ * tela grava (link de checkout, mapa produto→plano do webhook de pagamento e
+ * aviso de manutenção).
  *
  * ⚠️ `'use client'` por causa do estado de envio (`useActionState`). A leitura
  * continua no Server Component ao lado; este arquivo não fala com o banco, só
@@ -20,7 +21,7 @@ import { Button } from '@/components/ui/Button';
 import { Field } from '@/components/ui/Field';
 import { Input } from '@/components/ui/Input';
 
-import { salvarCheckoutAction, salvarManutencaoAction } from './actions';
+import { salvarCheckoutAction, salvarManutencaoAction, salvarProdutosAction } from './actions';
 import { FORMULARIO_INICIAL, type EstadoDoFormulario } from './tipos';
 
 const TEXTAREA = [
@@ -30,9 +31,18 @@ const TEXTAREA = [
   'aria-invalid:border-danger',
 ].join(' ');
 
+const SELECT = [
+  'block h-[52px] w-full rounded-field border-[1.5px] border-border bg-bg px-4',
+  'text-[17px] font-bold text-navy',
+  'focus:border-blue focus:shadow-[0_0_0_3px_rgba(27,107,227,0.22)] focus-visible:outline-hidden',
+  'aria-invalid:border-danger',
+].join(' ');
+
 /** Limites espelhados de `@/lib/admin/settings` (não dá para importar de lá: é módulo de servidor). */
 const TAMANHO_MAXIMO_DE_URL = 500;
 const TAMANHO_MAXIMO_DO_AVISO = 280;
+/** Espelhado de `@/lib/pagamento/produtos` (módulo de servidor, pelo mesmo motivo). */
+const TAMANHO_MAXIMO_DO_CODIGO = 100;
 
 type Plano = 'ESSENCIAL' | 'COMPLETO' | 'PREMIUM';
 
@@ -151,6 +161,103 @@ export function FormularioDeCheckout({ inicial }: { inicial: CheckoutInicial }) 
       <div className="flex">
         <Button type="submit" size="md" variant="primary" loading={pendente}>
           Salvar links de checkout
+        </Button>
+      </div>
+    </form>
+  );
+}
+
+// ───────────────────────── produtos → plano (webhook) ────────────────────
+
+export type ProdutoInicial = { codigo: string; plano: Plano };
+
+/** Linhas vazias no fim da lista, para mapear produtos novos. */
+const LINHAS_EM_BRANCO = 3;
+
+/**
+ * O mapa produto→plano do webhook: uma linha por produto da plataforma de
+ * venda. Apagar o código de uma linha tira o produto do mapa.
+ *
+ * `versao` muda a cada salvamento (é o `updatedAt` da chave): o `key` abaixo
+ * remonta as linhas com o mapa novo e o motivo limpo. Com erro de validação a
+ * versão não muda e o que o admin digitou fica.
+ */
+export function FormularioDeProdutos({
+  inicial,
+  versao,
+}: {
+  inicial: readonly ProdutoInicial[];
+  versao: string;
+}) {
+  const [estado, enviar, pendente] = useActionState(salvarProdutosAction, FORMULARIO_INICIAL);
+  const linhas: (ProdutoInicial | null)[] = [
+    ...inicial,
+    ...Array.from({ length: LINHAS_EM_BRANCO }, () => null),
+  ];
+
+  return (
+    <form onSubmit={enviarSemLimpar(enviar)} className="flex flex-col gap-4" noValidate>
+      <div key={versao} className="flex flex-col gap-4">
+        <ul className="m-0 flex list-none flex-col gap-3 p-0">
+          {linhas.map((linha, indice) => {
+            // Só a primeira linha mostra os rótulos; nas outras eles ficam para
+            // o leitor de tela, com o número da linha.
+            const rotuloVisivel = indice === 0 ? undefined : 'sr-only';
+            return (
+              <li key={indice} className="grid gap-3 sm:grid-cols-[1fr_220px]">
+                <Field
+                  label={indice === 0 ? 'Código do produto' : `Código do produto, linha ${indice + 1}`}
+                  labelClassName={rotuloVisivel}
+                  error={erroDoCampo(estado, `produto-${indice}`)}
+                >
+                  <Input
+                    name="produto"
+                    autoComplete="off"
+                    spellCheck={false}
+                    maxLength={TAMANHO_MAXIMO_DO_CODIGO}
+                    placeholder={linha ? undefined : 'código na plataforma'}
+                    defaultValue={linha?.codigo ?? ''}
+                  />
+                </Field>
+                <Field
+                  label={indice === 0 ? 'Plano liberado' : `Plano liberado, linha ${indice + 1}`}
+                  labelClassName={rotuloVisivel}
+                  error={erroDoCampo(estado, `plano-${indice}`)}
+                >
+                  <select name="plano" defaultValue={linha?.plano ?? ''} className={SELECT}>
+                    <option value="">Escolha…</option>
+                    {PLANOS.map(({ plano, rotulo }) => (
+                      <option key={plano} value={plano}>
+                        {rotulo}
+                      </option>
+                    ))}
+                  </select>
+                </Field>
+              </li>
+            );
+          })}
+        </ul>
+
+        <p className="m-0 text-[14px] leading-snug text-muted-2">
+          Para tirar um produto do mapa, apague o código e salve. Precisa de mais linhas? Salve e
+          outras {LINHAS_EM_BRANCO} aparecem vazias.
+        </p>
+
+        <Field
+          label="Motivo da alteração"
+          required
+          hint="Obrigatório. Vai para a auditoria junto com o mapa de antes e o de depois."
+          error={erroDoCampo(estado, 'motivo')}
+        >
+          <textarea name="motivo" maxLength={300} className={TEXTAREA} />
+        </Field>
+      </div>
+
+      <Recado estado={estado} />
+
+      <div className="flex">
+        <Button type="submit" size="md" variant="primary" loading={pendente}>
+          Salvar produtos
         </Button>
       </div>
     </form>

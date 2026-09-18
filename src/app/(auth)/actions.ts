@@ -188,7 +188,7 @@ export async function entrarAction(
     }
 
     const usuario = await prisma.user.findUnique({
-      where: { email },
+      where: { email, deletedAt: null },
       select: { id: true, passwordHash: true, role: true },
     });
 
@@ -337,7 +337,7 @@ export async function esqueciSenhaAction(
 
   try {
     const usuario = await prisma.user.findUnique({
-      where: { email },
+      where: { email, deletedAt: null },
       select: { id: true, name: true, email: true },
     });
 
