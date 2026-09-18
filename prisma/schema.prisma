@@ -1,0 +1,362 @@
+// Esquema de dados do "Inglês em Ação" — ver seção 4 do docs/CONTRACT.md.
+// O estado que o protótipo guardava em localStorage (ingles-em-acao-v1) vira banco aqui.
+// As tabelas do painel administrativo seguem docs/BACKOFFICE.md §5.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Prisma 7: a URL de conexão não mora mais aqui — ela vem de prisma.config.ts
+// (CLI: migrate/studio/seed) e do adapter passado ao PrismaClient (runtime).
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Enums
+// ---------------------------------------------------------------------------
+
+enum Role {
+  STUDENT
+  ADMIN
+}
+
+enum Plan {
+  ESSENCIAL
+  COMPLETO
+  PREMIUM
+}
+
+enum TokenType {
+  EMAIL_VERIFY
+  PASSWORD_RESET
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+/// Origem do vídeo da aula (BACKOFFICE §2.6). UPLOAD aponta para um MediaAsset.
+enum VideoKind {
+  YOUTUBE
+  VIMEO
+  URL
+  UPLOAD
+}
+
+enum MediaKind {
+  IMAGE
+  VIDEO
+}
+
+enum AuditOutcome {
+  ALLOW
+  DENY
+}
+
+// ---------------------------------------------------------------------------
+// Conta e autenticação
+// ---------------------------------------------------------------------------
+
+model User {
+  id              String    @id @default(cuid())
+  name            String
+  /// Sempre gravado em minúsculo (normalizado na camada de auth).
+  email           String    @unique
+  passwordHash    String
+  photoUrl        String?
+  emailVerifiedAt DateTime?
+  role            Role      @default(STUDENT)
+  plan            Plan      @default(ESSENCIAL)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  sessions  Session[]
+  tokens    VerificationToken[]
+  progress  LessonProgress[]
+  answers   ExerciseAnswer[]
+  studyDays StudyDay[]
+
+  /// Única relação do painel com User: quem editou a aula por último.
+  /// A auditoria (AuditLog, MediaAsset, LessonVersion, AppSetting) guarda o id
+  /// solto, sem FK, para que apagar um usuário nunca arraste a trilha junto.
+  aulasEditadas Lesson[] @relation("AulasEditadas")
+}
+
+model Session {
+  id String @id @default(cuid())
+
+  /// SHA-256 do token opaco. O token cru só existe no cookie iea_session.
+  tokenHash  String   @unique
+  userId     String
+  expiresAt  DateTime
+  remember   Boolean  @default(false)
+  userAgent  String?
+  ip         String?
+  createdAt  DateTime @default(now())
+  lastSeenAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model VerificationToken {
+  id String @id @default(cuid())
+
+  /// SHA-256 do token enviado por e-mail.
+  tokenHash String    @unique
+  userId    String
+  type      TokenType
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, type])
+  @@index([expiresAt])
+}
+
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  email     String
+  ip        String
+  success   Boolean
+  createdAt DateTime @default(now())
+
+  @@index([email, ip, createdAt])
+}
+
+// ---------------------------------------------------------------------------
+// Conteúdo do curso
+// ---------------------------------------------------------------------------
+
+model Module {
+  /// 1 a 7 — definido pelo seed, igual ao `order` (o app referencia o módulo por número).
+  id         Int       @id
+  order      Int       @unique
+  title      String
+  fromLesson Int
+  toLesson   Int
+  /// Soft delete — o app filtra archivedAt: null.
+  archivedAt DateTime?
+
+  lessons Lesson[]
+}
+
+model Lesson {
+  id String @id @default(cuid())
+
+  /// 1 a 42 — o número visível da aula.
+  number        Int      @unique
+  /// "AULA 01"
+  code          String
+  slug          String   @unique
+  title         String
+  subtitle      String
+  estimatedTime String
+  coverUrl      String?
+  videoUrl      String?
+  moduleId      Int
+  /// Array de páginas com os blocos tipados, exatamente como em content/course-data.mjs.
+  /// Este é o conteúdo **publicado** — é o que o aluno vê.
+  pages         Json
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  published      Boolean   @default(false)
+  publishedAt    DateTime?
+  /// Rascunho do editor; null = rascunho igual ao publicado.
+  draftPages     Json?
+  /// Sobe a cada publicação; invalida cache de score.
+  contentVersion Int       @default(1)
+  updatedById    String?
+  /// Soft delete — o app filtra archivedAt: null.
+  archivedAt     DateTime?
+
+  /// Vídeo normalizado (BACKOFFICE §2.6). videoRef guarda o id do YouTube/Vimeo,
+  /// a URL, ou o id do MediaAsset quando videoKind = UPLOAD.
+  videoKind      VideoKind?
+  videoRef       String?
+  videoIsDefault Boolean    @default(false)
+  videoUpdatedAt DateTime?
+
+  module    Module           @relation(fields: [moduleId], references: [id])
+  updatedBy User?            @relation("AulasEditadas", fields: [updatedById], references: [id])
+  progress  LessonProgress[]
+  answers   ExerciseAnswer[]
+  versions  LessonVersion[]
+
+  @@index([moduleId])
+  @@index([published, number])
+  @@index([archivedAt])
+}
+
+/// Histórico de publicações — dá diff e rollback (BACKOFFICE §5).
+model LessonVersion {
+  id       String @id @default(cuid())
+  lessonId String
+  version  Int
+  /// Snapshot do que foi publicado.
+  pages    Json
+  title    String
+  subtitle String
+
+  publishedAt   DateTime @default(now())
+  /// Sem FK de propósito: o histórico sobrevive à exclusão do usuário.
+  publishedById String?
+  /// "3 páginas alteradas, 1 bloco novo"
+  resumo        String?
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([lessonId, version])
+  @@index([lessonId, publishedAt])
+}
+
+// ---------------------------------------------------------------------------
+// Biblioteca de mídia
+// ---------------------------------------------------------------------------
+
+model MediaAsset {
+  id       String    @id @default(cuid())
+  kind     MediaKind
+  /// Caminho no storage; NUNCA concatenado com input do usuário.
+  path     String    @unique
+  /// Nome original, só para exibir.
+  filename String
+  mime     String
+  bytes    Int
+  width    Int?
+  height   Int?
+  /// Acessibilidade — obrigatório em imagem pedagógica.
+  alt      String?
+
+  /// Sem FK de propósito (ver User.aulasEditadas).
+  uploadedById String?
+  createdAt    DateTime  @default(now())
+  /// Nunca apagamos de verdade.
+  archivedAt   DateTime?
+
+  usos MediaUsage[]
+
+  @@index([kind, archivedAt])
+}
+
+/// Índice de uso: é o que torna "não apagar asset em uso" possível de responder rápido.
+/// Reescrito por inteiro a cada publicação da aula.
+model MediaUsage {
+  id       String @id @default(cuid())
+  assetId  String
+  lessonId String
+  /// "capa" | "pagina:3:bloco:a6p2"
+  contexto String
+
+  asset MediaAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@unique([assetId, lessonId, contexto])
+  @@index([lessonId])
+}
+
+// ---------------------------------------------------------------------------
+// Auditoria e configuração
+// ---------------------------------------------------------------------------
+
+/// Trilha append-only. A aplicação nunca faz UPDATE nem DELETE aqui.
+model AuditLog {
+  id String @id @default(cuid())
+
+  /// Sem FK de propósito: um ON DELETE de usuário não pode arrastar a auditoria.
+  actorId    String?
+  /// Congelado no momento da ação — o usuário pode sumir depois.
+  actorEmail String
+  /// "lesson.publish", "user.plan.change", "admin.denied"
+  action     String
+  /// "Lesson:42", "User:ckx..."
+  resource   String
+  outcome    AuditOutcome @default(ALLOW)
+  /// Obrigatório em ações sensíveis (validado na aplicação).
+  reason     String?
+  before     Json?
+  after      Json?
+  ip         String?
+  userAgent  String?
+  createdAt  DateTime     @default(now())
+
+  @@index([createdAt])
+  @@index([resource, createdAt])
+  @@index([actorId, createdAt])
+}
+
+/// Configurações do app: "checkout.link", "video.padrao", "embed.allowlist".
+model AppSetting {
+  key         String   @id
+  value       Json
+  updatedAt   DateTime @updatedAt
+  /// Sem FK de propósito (ver User.aulasEditadas).
+  updatedById String?
+}
+
+// ---------------------------------------------------------------------------
+// Progresso do aluno
+// ---------------------------------------------------------------------------
+
+model LessonProgress {
+  id          String         @id @default(cuid())
+  userId      String
+  lessonId    String
+  status      ProgressStatus @default(NOT_STARTED)
+  currentPage Int            @default(0)
+  score       Int?
+  total       Int?
+  completedAt DateTime?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+  @@index([userId, status])
+  @@index([lessonId])
+}
+
+model ExerciseAnswer {
+  id String @id @default(cuid())
+
+  userId    String
+  /// Aula a que a resposta pertence (denormalizado para consultar por aula sem varrer a chave).
+  lessonId  String
+  /// Chave do protótipo: mc:{lessonId}:{blockTitle}:{i}, fill:{blockId}:{i},
+  /// match:{blockTitle}, dnd:{blockId}, chk:{blockId}:{i}
+  answerKey String
+  value     String
+  checked   Boolean  @default(false)
+  correct   Boolean?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, answerKey])
+  @@index([userId, lessonId])
+  @@index([lessonId])
+}
+
+model StudyDay {
+  id String @id @default(cuid())
+
+  userId    String
+  /// Dia de estudo (sem hora) — alimenta o streak da Home.
+  date      DateTime @db.Date
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+}

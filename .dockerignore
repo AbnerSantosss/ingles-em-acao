@@ -1,0 +1,59 @@
+# Contexto de build enxuto: tudo que não entra na imagem.
+# Regra de ouro — se o `next build`, o `prisma generate` ou o seed não precisam, fica de fora.
+
+# dependências e artefatos de build (são reinstalados/reconstruídos dentro da imagem)
+node_modules
+**/node_modules
+.next
+**/.next
+out
+build
+coverage
+*.tsbuildinfo
+next-env.d.ts
+
+# segredos: NUNCA vão para dentro da imagem — em produção as variáveis vêm do Portainer
+.env
+.env.*
+!.env.example
+*.key
+*.dump
+
+# dados locais que nunca entram na imagem: backups (pg_dump com dados reais), uploads de
+# desenvolvimento (var/uploads/) e cache de ferramentas com dados pessoais
+backups
+var
+.impeccable
+*.log
+
+# git e metadados
+.git
+.github
+.gitignore
+.gitattributes
+
+# arquivos do próprio Docker (não são necessários dentro da imagem)
+# ATENÇÃO: docker-entrypoint.sh NÃO pode entrar nesta lista — o Dockerfile o copia.
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.prod.yml
+
+# material de referência / planejamento — pesado e sem uso em runtime
+prototype
+docs
+Páginas do App
+**/Páginas do App
+*.md
+**/*.md
+
+# logs e lixo de editor/SO
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.pem

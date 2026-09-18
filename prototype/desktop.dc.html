@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  *{ box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#F7F9FC; }
+  body { font-family:'Figtree', system-ui, sans-serif; color:#1F2430; -webkit-font-smoothing:antialiased; }
+  a { color:#0E9BAE; text-decoration:none; }
+  a:hover { color:#0F2050; }
+  input, button, textarea { font-family:inherit; }
+  input:focus-visible, button:focus-visible, textarea:focus-visible { outline:2px solid #0E9BAE; outline-offset:2px; }
+  ::selection { background:#CDEFF3; }
+</style>
+</helmet>
+
+<div style="min-height:100vh; background:#F7F9FC; padding-bottom:64px">
+
+  <sc-if value="{{ isLogin }}" hint-placeholder-val="{{ true }}">
+    <div style="min-height:100vh; display:grid; place-items:center; padding:24px">
+      <div style="width:100%; max-width:460px; background:#FFFFFF; border-radius:26px; padding:38px 34px; box-shadow:0 18px 48px rgba(11,31,75,.1)">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:26px">
+          <div style="width:58px; height:58px; flex:none; border-radius:16px; background:linear-gradient(160deg,#123A86,#0A1F4E); color:#F6C945; font-weight:900; font-size:23px; display:grid; place-items:center; box-shadow:0 8px 18px rgba(11,31,75,.22)">IA</div>
+          <span style="font-weight:900; color:#0A1F4E; font-size:22px; line-height:1.05">Inglês<br />em Ação</span>
+        </div>
+        <h1 style="font-size:40px; line-height:1.03; font-weight:900; letter-spacing:-.025em; color:#0A1F4E; margin:0 0 8px">Bem-vindo(a)<br /><span style="color:#1B6BE3">de volta</span></h1>
+        <p style="font-size:18px; line-height:1.45; color:#5B6B7F; margin:0 0 26px">Entre para continuar sua trilha de 42 aulas.</p>
+        <label style="display:block; font-size:13px; font-weight:800; letter-spacing:.1em; color:#5B6B7F; margin-bottom:8px">SEU NOME</label>
+        <input value="{{ nameDraft }}" onInput="{{ onName }}" placeholder="ex.: Maria" style="width:100%; padding:15px 20px; font-size:17px; font-weight:700; color:#0A1F4E; border:1.5px solid #DCE6F2; border-radius:999px; background:#F7F9FC; margin-bottom:18px" />
+        <button onClick="{{ onLogin }}" style="display:flex; align-items:center; justify-content:center; gap:12px; width:100%; padding:17px; font-size:17px; font-weight:800; letter-spacing:.03em; color:#FFFFFF; background:#0A1F4E; border:none; border-radius:999px; cursor:pointer" style-hover="background:#123A86">
+          ENTRAR
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"></path><path d="m13 6 6 6-6 6"></path></svg>
+        </button>
+        <p style="font-size:15px; color:#8A96A8; margin:20px 0 0; text-align:center">Seu progresso fica salvo neste navegador.</p>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isApp }}" hint-placeholder-val="{{ false }}">
+    <div>
+      <div style="position:sticky; top:0; z-index:20; background:rgba(247,249,252,.92); backdrop-filter:blur(10px)">
+        <div style="max-width:1024px; margin:0 auto; padding:16px 20px; display:flex; align-items:center; gap:20px; flex-wrap:wrap">
+          <div onClick="{{ goHome }}" style="display:flex; align-items:center; gap:12px; cursor:pointer">
+            <div style="width:54px; height:54px; flex:none; border-radius:15px; background:linear-gradient(160deg,#123A86,#0A1F4E); color:#F6C945; font-weight:900; font-size:21px; letter-spacing:.02em; display:grid; place-items:center; box-shadow:0 8px 18px rgba(11,31,75,.22)">IA</div>
+            <span style="font-weight:900; color:#0A1F4E; font-size:21px; line-height:1.05; letter-spacing:-.01em">Inglês<br />em Ação</span>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:4px; margin:0 auto; background:#FFFFFF; border-radius:999px; padding:7px; box-shadow:0 6px 20px rgba(11,31,75,.08)">
+            <button onClick="{{ goHome }}" style="display:flex; align-items:center; gap:9px; padding:12px 24px; border:none; border-radius:999px; font-size:16px; font-weight:800; cursor:pointer; background: {{ navHomeBg }}; color: {{ navHomeFg }}">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg>
+              Início
+            </button>
+            <button onClick="{{ goProgress }}" style="display:flex; align-items:center; gap:9px; padding:12px 24px; border:none; border-radius:999px; font-size:16px; font-weight:700; cursor:pointer; background: {{ navProgBg }}; color: {{ navProgFg }}">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 20V11"></path><path d="M12 20V4"></path><path d="M18 20v-6"></path></svg>
+              Progresso
+            </button>
+            <button onClick="{{ goProfile }}" style="display:flex; align-items:center; gap:9px; padding:12px 24px; border:none; border-radius:999px; font-size:16px; font-weight:700; cursor:pointer; background: {{ navProfBg }}; color: {{ navProfFg }}">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="8" r="3.6"></circle><path d="M5 20c1.2-3.6 4-5.4 7-5.4s5.8 1.8 7 5.4"></path></svg>
+              Perfil
+            </button>
+          </div>
+
+          <div onClick="{{ goProfile }}" style="display:flex; align-items:center; gap:8px; cursor:pointer">
+            <div style="width:56px; height:56px; border-radius:50%; background:#D8F0E6; color:#0A1F4E; font-weight:800; font-size:19px; display:grid; place-items:center">{{ initials }}</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B6B7F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </div>
+        </div>
+      </div>
+
+      <sc-if value="{{ isHome }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:1024px; margin:0 auto; padding:14px 20px 60px">
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:24px; align-items:start; margin-bottom:28px">
+            <div style="padding-top:8px">
+              <p style="font-size:19px; font-weight:700; letter-spacing:.18em; color:#5B6B7F; margin:0 0 10px">OLÁ, {{ upperName }} 👋</p>
+              <h1 style="font-size:58px; line-height:1.02; font-weight:900; letter-spacing:-.025em; color:#0A1F4E; margin:0 0 18px; text-wrap:pretty">Continue de<br /><span style="color:#1B6BE3">onde parou</span></h1>
+              <p style="font-size:20px; line-height:1.45; color:#5B6B7F; margin:0; text-wrap:pretty">O inglês que você usa de verdade,<br />no seu ritmo e com objetivos reais.</p>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:14px">
+              <div style="background:#FFFFFF; border-radius:20px; padding:22px 26px; display:flex; align-items:center; gap:22px; box-shadow:0 8px 26px rgba(11,31,75,.07); flex-wrap:wrap">
+                <div style="position:relative; width:118px; height:118px; flex:none">
+                  <svg width="118" height="118" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#DCE6F2" stroke-width="13"></circle>
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#12A594" stroke-width="13" stroke-linecap="{{ ringCap }}" stroke-dasharray="{{ ringDash }}" transform="rotate(-90 60 60)"></circle>
+                  </svg>
+                  <div style="position:absolute; inset:0; display:grid; place-items:center; font-size:26px; font-weight:900; color:#0A1F4E">{{ overallPct }}</div>
+                </div>
+                <div style="flex:1; min-width:170px">
+                  <div style="font-size:14px; font-weight:800; letter-spacing:.13em; color:#5B6B7F; margin-bottom:6px">SEU PROGRESSO</div>
+                  <div style="font-size:27px; font-weight:900; color:#0A1F4E; margin-bottom:12px">{{ doneCount }} de 42 aulas</div>
+                  <div style="display:flex; align-items:center; gap:10px">
+                    <div style="width:38px; height:38px; flex:none; border-radius:11px; background:#DFF3EC; display:grid; place-items:center">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12A594" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 9.5 10.5l3.5 3.5L21 6"></path><path d="M15 6h6v6"></path></svg>
+                    </div>
+                    <div style="font-size:16px; line-height:1.3; color:#3C4A5C">{{ encourage }}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:#E4F3EC; border-radius:20px; padding:22px 26px; display:flex; gap:14px">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="#12A594" style="flex:none; margin-top:2px"><path d="M9.5 5C6.6 6.3 4.8 9 4.8 12.2c0 3 1.9 4.9 4.2 4.9 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.2-3.1-3.2-.4 0-.8.1-1 .2.4-1.6 1.7-3 3.4-3.8L9.5 5Zm9 0c-2.9 1.3-4.7 4-4.7 7.2 0 3 1.9 4.9 4.2 4.9 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.2-3.1-3.2-.4 0-.8.1-1 .2.4-1.6 1.7-3 3.4-3.8L18.5 5Z"></path></svg>
+                <div style="font-size:19px; line-height:1.45; color:#1B3A32">A disciplina de hoje<br />é o resultado de amanhã.<br /><em style="font-weight:600">Keep going!</em> 🚀</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="position:relative; border-radius:22px; overflow:hidden; background:#0A1F4E; margin-bottom:30px; box-shadow:0 14px 40px rgba(11,31,75,.18)">
+            <div style="position:absolute; inset:0; background-image:url({{ nextCover }}); background-size:cover; background-position:center 70%"></div>
+            <div style="position:absolute; inset:0; background:linear-gradient(90deg,#0A1F4E 30%, rgba(10,31,78,.72) 52%, rgba(10,31,78,.18) 78%, rgba(10,31,78,.05))"></div>
+            <div style="position:relative; padding:34px 34px 36px; display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap">
+              <div style="flex:1; min-width:260px">
+                <p style="font-size:17px; font-weight:800; letter-spacing:.14em; color:#F6C945; margin:0 0 12px">PRÓXIMA AULA</p>
+                <h2 style="font-size:40px; line-height:1.08; font-weight:900; color:#FFFFFF; margin:0 0 8px; letter-spacing:-.02em; text-wrap:pretty">{{ nextLessonTitle }}</h2>
+                <p style="font-size:19px; color:#C9D6EC; margin:0 0 26px">{{ nextLessonSub }}</p>
+                <button onClick="{{ onContinue }}" style="display:flex; align-items:center; gap:16px; padding:18px 26px; border:none; border-radius:999px; background:#F6C945; color:#0A1F4E; font-weight:900; font-size:19px; letter-spacing:.02em; cursor:pointer; box-shadow:0 10px 26px rgba(246,201,69,.34)" style-hover="background:#FFD75C">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A1F4E"><path d="M7 4.5v15l13-7.5-13-7.5Z"></path></svg>
+                  CONTINUAR AULA
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A1F4E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="margin-left:10px"><path d="M4 12h15"></path><path d="m13 6 6 6-6 6"></path></svg>
+                </button>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:flex-end; gap:34px; margin-left:auto">
+                <div style="display:flex; align-items:center; gap:10px; background:rgba(12,38,92,.82); border:1px solid rgba(255,255,255,.18); border-radius:999px; padding:11px 20px">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+                  <span style="font-size:17px; font-weight:800; color:#FFFFFF; white-space:nowrap">{{ nextLessonTime }}</span>
+                </div>
+                <div style="text-align:center; transform:rotate(-7deg)">
+                  <div style="font-family:'Caveat', cursive; font-size:38px; line-height:1.05; color:#FFFFFF">Small<br />steps<br />big results</div>
+                  <div style="height:4px; width:150px; background:#F6C945; border-radius:999px; margin-top:4px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:18px">
+            <h3 style="font-size:21px; font-weight:800; letter-spacing:.14em; color:#0A1F4E; margin:0">TRILHA · 42 AULAS</h3>
+            <div style="display:flex; gap:4px; margin-left:auto; background:#FFFFFF; border-radius:999px; padding:7px; box-shadow:0 6px 20px rgba(11,31,75,.08)">
+              <button onClick="{{ onViewList }}" style="display:flex; align-items:center; gap:9px; padding:12px 24px; border:none; border-radius:999px; font-size:17px; font-weight:800; cursor:pointer; background: {{ listBg }}; color: {{ listFg }}">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6h11"></path><path d="M9 12h11"></path><path d="M9 18h11"></path><path d="M4 6h.01"></path><path d="M4 12h.01"></path><path d="M4 18h.01"></path></svg>
+                Lista
+              </button>
+              <button onClick="{{ onViewModules }}" style="display:flex; align-items:center; gap:9px; padding:12px 24px; border:none; border-radius:999px; font-size:17px; font-weight:700; cursor:pointer; background: {{ modBg }}; color: {{ modFg }}">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"></rect></svg>
+                Módulos
+              </button>
+            </div>
+          </div>
+
+          <sc-if value="{{ isListView }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:26px">
+              <sc-for list="{{ track }}" as="l" hint-placeholder-count="6">
+                <div onClick="{{ l.onClick }}" style="display:flex; align-items:center; gap:20px; padding:16px 22px; border-radius:18px; border:2px solid {{ l.bd }}; background: {{ l.bg }}; cursor: {{ l.cursor }}; box-shadow: {{ l.shadow }}">
+                  <div style="width:68px; height:68px; flex:none; border-radius:15px; display:grid; place-items:center; font-weight:900; font-size:24px; background: {{ l.numBg }}; color: {{ l.numFg }}">{{ l.num }}</div>
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:14px; font-weight:800; letter-spacing:.1em; color: {{ l.tagFg }}; margin-bottom:3px">{{ l.tag }}</div>
+                    <div style="font-size:21px; font-weight:800; color: {{ l.titleFg }}; text-wrap:pretty">{{ l.t }}</div>
+                    <div style="font-size:16px; color: {{ l.subFg }}; margin-top:2px">{{ l.sub }}</div>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:9px; color: {{ l.timeFg }}">
+                    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+                    <span style="font-size:17px; font-weight:600; white-space:nowrap">{{ l.time }}</span>
+                  </div>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ l.timeFg }}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isModuleView }}" hint-placeholder-val="{{ false }}">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:14px; margin-bottom:26px">
+              <sc-for list="{{ modules }}" as="m" hint-placeholder-count="4">
+                <div onClick="{{ m.onClick }}" style="background:#FFFFFF; border:2px solid {{ m.bd }}; border-radius:18px; padding:22px; cursor: {{ m.cursor }}">
+                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px">
+                    <div style="width:46px; height:46px; flex:none; border-radius:13px; display:grid; place-items:center; font-weight:900; font-size:18px; background: {{ m.numBg }}; color: {{ m.numFg }}">{{ m.n }}</div>
+                    <div>
+                      <div style="font-size:13px; font-weight:800; letter-spacing:.1em; color: {{ m.tagFg }}">{{ m.tag }}</div>
+                      <div style="font-size:19px; font-weight:800; color:#0A1F4E; text-wrap:pretty">{{ m.title }}</div>
+                    </div>
+                  </div>
+                  <div style="font-size:15px; color:#5B6B7F; margin-bottom:12px">{{ m.range }}</div>
+                  <div style="height:9px; background:#EAF0F7; border-radius:999px; overflow:hidden">
+                    <div style="height:100%; border-radius:999px; background:#12A594; width: {{ m.pct }}"></div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <div onClick="{{ onContinue }}" style="position:relative; overflow:hidden; background:linear-gradient(100deg,#0A1F4E,#123A86); border-radius:20px; padding:24px 28px; display:flex; align-items:center; gap:22px; cursor:pointer; flex-wrap:wrap">
+            <div style="width:58px; height:58px; flex:none; border-radius:50%; border:2.5px solid rgba(255,255,255,.55); display:grid; place-items:center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3.4"></circle><path d="M17 7 21 3"></path></svg>
+            </div>
+            <div style="width:1px; align-self:stretch; background:rgba(255,255,255,.25)"></div>
+            <div style="flex:1; min-width:200px">
+              <div style="font-size:21px; font-weight:800; color:#FFFFFF">Seu objetivo é fluência.</div>
+              <div style="font-size:18px; color:#C9D6EC; margin-top:2px">E cada aula te aproxima disso.</div>
+            </div>
+            <div style="text-align:center">
+              <div style="font-family:'Caveat', cursive; font-size:32px; color:#FFFFFF">Keep learning! 💪</div>
+              <div style="height:3px; width:120px; background:#F6C945; border-radius:999px; margin:2px auto 0"></div>
+            </div>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isProgress }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:1160px; margin:0 auto; padding:8px 20px 60px; display:flex; flex-direction:column; gap:16px">
+
+          <div style="background:#FFFFFF; border-radius:22px; padding:30px 34px; display:flex; align-items:center; gap:34px; flex-wrap:wrap; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+            <div style="position:relative; width:150px; height:150px; flex:none">
+              <svg width="150" height="150" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#DCE6F2" stroke-width="13"></circle>
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#12A594" stroke-width="13" stroke-linecap="{{ ringCap }}" stroke-dasharray="{{ ringDash }}" transform="rotate(-90 60 60)"></circle>
+              </svg>
+              <div style="position:absolute; inset:0; display:grid; place-items:center; font-size:34px; font-weight:900; color:#0A1F4E">{{ overallPct }}</div>
+            </div>
+            <div style="flex:1; min-width:250px">
+              <p style="font-size:15px; font-weight:800; letter-spacing:.14em; color:#5B6B7F; margin:0 0 8px">SEU PROGRESSO</p>
+              <h1 style="font-size:42px; line-height:1.04; font-weight:900; letter-spacing:-.025em; color:#0A1F4E; margin:0 0 10px">{{ doneCount }} de 42 aulas</h1>
+              <p style="font-size:19px; line-height:1.45; color:#5B6B7F; margin:0">{{ encourage }}</p>
+            </div>
+            <div style="flex:none; text-align:center; transform:rotate(-6deg)">
+              <div style="font-family:'Caveat', cursive; font-size:30px; line-height:1.15; color:#1B3A6B; max-width:210px">Um passo por dia já é progresso!</div>
+              <svg width="180" height="16" viewBox="0 0 180 16" fill="none" style="margin-top:2px"><path d="M6 11C44 4 136 2 174 8" stroke="#8FBEF5" stroke-width="5" stroke-linecap="round"></path></svg>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:14px">
+            <div style="background:#EAF7F1; border:1px solid #D3EDE2; border-radius:18px; padding:20px 22px">
+              <div style="font-size:34px; font-weight:900; color:#0F8F7A; line-height:1">{{ doneCount }}</div>
+              <div style="font-size:13px; font-weight:800; letter-spacing:.07em; color:#0A1F4E; margin-top:6px">AULAS CONCLUÍDAS</div>
+            </div>
+            <div style="background:#F2EFFD; border:1px solid #E3DCF9; border-radius:18px; padding:20px 22px">
+              <div style="font-size:34px; font-weight:900; color:#5B21B6; line-height:1">{{ answeredCount }}</div>
+              <div style="font-size:13px; font-weight:800; letter-spacing:.07em; color:#5B21B6; margin-top:6px">RESPOSTAS SALVAS</div>
+            </div>
+            <div style="background:#FEF7E0; border:1px solid #F8E7B4; border-radius:18px; padding:20px 22px">
+              <div style="font-size:34px; font-weight:900; color:#E39C10; line-height:1">{{ overallPct }}</div>
+              <div style="font-size:13px; font-weight:800; letter-spacing:.07em; color:#0A1F4E; margin-top:6px">DA TRILHA</div>
+            </div>
+            <div style="background:#EAF2FE; border:1px solid #D6E5FB; border-radius:18px; padding:20px 22px">
+              <div style="font-size:34px; font-weight:900; color:#1B6BE3; line-height:1">{{ streakLabel }}</div>
+              <div style="font-size:13px; font-weight:800; letter-spacing:.07em; color:#0A1F4E; margin-top:6px">SEQUÊNCIA</div>
+            </div>
+          </div>
+
+          <div style="background:#FFFFFF; border-radius:20px; padding:24px; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+            <h3 style="font-size:19px; font-weight:900; letter-spacing:-.01em; color:#0A1F4E; margin:0 0 4px">Desempenho por aula</h3>
+            <p style="font-size:16px; color:#5B6B7F; margin:0 0 18px">Acertos nos exercícios de cada aula concluída.</p>
+            <sc-for list="{{ perLesson }}" as="p" hint-placeholder-count="3">
+              <div style="padding:14px 0; border-top:1px solid #EEF2F8">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:10px; flex-wrap:wrap">
+                  <span style="font-weight:800; color:#0A1F4E; font-size:18px">{{ p.title }}</span>
+                  <span style="font-size:16px; font-weight:800; color: {{ p.fg }}">{{ p.label }}</span>
+                </div>
+                <div style="height:10px; background:#EAF0F7; border-radius:999px; overflow:hidden">
+                  <div style="height:100%; border-radius:999px; background: {{ p.fg }}; width: {{ p.pct }}"></div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="background:#FFFFFF; border-radius:20px; padding:24px; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+            <h3 style="font-size:19px; font-weight:900; letter-spacing:-.01em; color:#0A1F4E; margin:0 0 4px">Progresso por módulo</h3>
+            <p style="font-size:16px; color:#5B6B7F; margin:0 0 18px">Sete módulos, seis aulas cada.</p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:14px">
+              <sc-for list="{{ modules }}" as="m" hint-placeholder-count="4">
+                <div style="border:1.5px solid {{ m.bd }}; border-radius:16px; padding:18px">
+                  <div style="font-size:13px; font-weight:800; letter-spacing:.1em; color: {{ m.tagFg }}">MÓDULO {{ m.n }}</div>
+                  <div style="font-size:18px; font-weight:800; color:#0A1F4E; margin:2px 0 8px; text-wrap:pretty">{{ m.title }}</div>
+                  <div style="height:9px; background:#EAF0F7; border-radius:999px; overflow:hidden; margin-bottom:8px">
+                    <div style="height:100%; border-radius:999px; background:#12A594; width: {{ m.pct }}"></div>
+                  </div>
+                  <div style="font-size:14px; color:#5B6B7F">{{ m.range }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isProfile }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:1160px; margin:0 auto; padding:8px 20px 60px; display:flex; flex-direction:column; gap:16px">
+
+          <div style="background:#FFFFFF; border-radius:22px; padding:30px 34px; display:flex; align-items:center; gap:34px; flex-wrap:wrap; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+            <div style="position:relative; width:158px; height:158px; flex:none">
+              <div style="position:absolute; inset:0; border-radius:50%; background:#0A1F4E; border:7px solid #E8F0FB; display:grid; place-items:center; overflow:hidden">
+                <span style="font-size:46px; font-weight:900; color:#F6C945; display: {{ initialsShow }}">{{ initials }}</span>
+                {{ photoEl }}
+              </div>
+              <button onClick="{{ onPhoto }}" style="position:absolute; right:6px; bottom:8px; width:48px; height:48px; border-radius:50%; border:4px solid #FFFFFF; background:#FFFFFF; box-shadow:0 4px 12px rgba(11,31,75,.18); cursor:pointer; padding:6px">
+                <img src="assets/ico/camera.png" alt="Trocar foto" style="width:100%; height:100%; object-fit:contain" />
+              </button>
+            </div>
+
+            <div style="flex:1; min-width:260px">
+              <h1 style="font-size:36px; font-weight:900; letter-spacing:-.02em; color:#0A1F4E; margin:0 0 6px">Olá, {{ firstName }}! 👋</h1>
+              <p style="font-size:19px; font-weight:700; color:#1F3A6E; margin:0 0 14px">Plano Completo — Inglês em Ação</p>
+              <p style="font-size:18px; line-height:1.45; color:#5B6B7F; margin:0; text-wrap:pretty">Continue firme na sua jornada. Cada pequeno passo te aproxima de grandes conquistas!</p>
+            </div>
+
+            <div style="flex:none; text-align:center; transform:rotate(-7deg); padding-right:8px">
+              <div style="font-family:'Caveat', cursive; font-size:31px; line-height:1.15; color:#1B3A6B; max-width:230px">Pequenos passos, grandes conquistas!</div>
+              <svg width="200" height="18" viewBox="0 0 200 18" fill="none" style="margin-top:2px"><path d="M6 12C48 4 150 2 194 9" stroke="#8FBEF5" stroke-width="5" stroke-linecap="round"></path></svg>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:14px">
+            <div style="background:#EAF7F1; border:1px solid #D3EDE2; border-radius:18px; padding:18px 20px; display:flex; align-items:center; gap:16px">
+              <div style="width:56px; height:56px; flex:none; border-radius:15px; background:#D6F0E5; display:grid; place-items:center">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#0F8F7A"><path d="M12 3 23 8.2 12 13.4 1 8.2 12 3Z"></path><path d="M6 11.6V16c0 1.9 2.7 3.4 6 3.4s6-1.5 6-3.4v-4.4l-6 2.8-6-2.8Z"></path></svg>
+              </div>
+              <div style="min-width:0">
+                <div style="font-size:28px; font-weight:900; color:#0F8F7A; line-height:1.05">{{ doneCount }}</div>
+                <div style="font-size:13px; font-weight:800; letter-spacing:.07em; line-height:1.3; color:#0A1F4E; margin-top:4px">AULAS CONCLUÍDAS</div>
+                <div style="font-size:14px; line-height:1.35; color:#6B7C90; margin-top:4px">Continue aprendendo!</div>
+              </div>
+            </div>
+            <div style="background:#F2EFFD; border:1px solid #E3DCF9; border-radius:18px; padding:18px 20px; display:flex; align-items:center; gap:16px">
+              <div style="width:56px; height:56px; flex:none; border-radius:15px; background:#E5DEFA; display:grid; place-items:center">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#5B21B6"><path d="M6 2.5h8.5L19.5 7.5V21a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 21V4A1.5 1.5 0 0 1 6 2.5Z" opacity=".35"></path><rect x="7.5" y="9" width="9" height="1.9" rx=".95"></rect><rect x="7.5" y="13" width="9" height="1.9" rx=".95"></rect><rect x="7.5" y="17" width="6" height="1.9" rx=".95"></rect></svg>
+              </div>
+              <div style="min-width:0">
+                <div style="font-size:28px; font-weight:900; color:#5B21B6; line-height:1.05">{{ answeredCount }}</div>
+                <div style="font-size:13px; font-weight:800; letter-spacing:.07em; line-height:1.3; color:#5B21B6; margin-top:4px">EXERCÍCIOS RESPONDIDOS</div>
+                <div style="font-size:14px; line-height:1.35; color:#6B7C90; margin-top:4px">Suas anotações estão seguras.</div>
+              </div>
+            </div>
+            <div style="background:#FEF7E0; border:1px solid #F8E7B4; border-radius:18px; padding:18px 20px; display:flex; align-items:center; gap:16px">
+              <div style="width:56px; height:56px; flex:none; border-radius:15px; background:#FBEFC6; display:grid; place-items:center">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#E39C10"><rect x="3.5" y="12" width="4.4" height="8.5" rx="1.6"></rect><rect x="9.8" y="7" width="4.4" height="13.5" rx="1.6"></rect><rect x="16.1" y="3.5" width="4.4" height="17" rx="1.6"></rect></svg>
+              </div>
+              <div style="min-width:0">
+                <div style="font-size:28px; font-weight:900; color:#E39C10; line-height:1.05">{{ overallPct }}</div>
+                <div style="font-size:13px; font-weight:800; letter-spacing:.07em; line-height:1.3; color:#0A1F4E; margin-top:4px">DA TRILHA</div>
+                <div style="font-size:14px; line-height:1.35; color:#6B7C90; margin-top:4px">Muito bem! Vamos em frente!</div>
+              </div>
+            </div>
+            <div style="background:#EAF2FE; border:1px solid #D6E5FB; border-radius:18px; padding:18px 20px; display:flex; align-items:center; gap:16px">
+              <div style="width:56px; height:56px; flex:none; border-radius:15px; background:#DCE9FC; display:grid; place-items:center">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#1B6BE3"><path d="M13 2c.6 3.2-1.1 4.8-2.7 6.3C8.6 9.9 7 11.4 7 14.3A5.9 5.9 0 0 0 12.9 20 5.9 5.9 0 0 0 19 14.3c0-4-2.3-6.4-4.1-8.1C13.9 5.3 13.2 3.9 13 2Z"></path></svg>
+              </div>
+              <div style="min-width:0">
+                <div style="font-size:28px; font-weight:900; color:#1B6BE3; line-height:1.05">{{ streakLabel }}</div>
+                <div style="font-size:13px; font-weight:800; letter-spacing:.07em; line-height:1.3; color:#0A1F4E; margin-top:4px">SEQUÊNCIA</div>
+                <div style="font-size:14px; line-height:1.35; color:#6B7C90; margin-top:4px">Todo dia conta!</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px,1fr)); gap:16px; align-items:start">
+
+            <div style="display:flex; flex-direction:column; gap:16px">
+              <div style="background:#FFFFFF; border-radius:20px; padding:22px 24px; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+                <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px">
+                  <div style="width:54px; height:54px; flex:none; border-radius:15px; background:#E8F0FB; display:grid; place-items:center">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#1B4FA8"><path d="M12 8.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Zm9 3.4c0-.6-.05-1.15-.14-1.7l2.02-1.5-2.1-3.63-2.35.98a8.9 8.9 0 0 0-2.94-1.7L15.2 1.8h-4.2l-.3 2.65a8.9 8.9 0 0 0-2.94 1.7l-2.35-.98-2.1 3.63 2.02 1.5c-.09.55-.14 1.1-.14 1.7s.05 1.15.14 1.7l-2.02 1.5 2.1 3.63 2.35-.98a8.9 8.9 0 0 0 2.94 1.7l.3 2.65h4.2l.3-2.65a8.9 8.9 0 0 0 2.94-1.7l2.35.98 2.1-3.63-2.02-1.5c.09-.55.14-1.1.14-1.7Z"></path></svg>
+                  </div>
+                  <div>
+                    <div style="font-size:23px; font-weight:900; color:#0A1F4E; letter-spacing:-.01em">Configurações da conta</div>
+                    <div style="font-size:16px; color:#5B6B7F">Gerencie suas informações e preferências.</div>
+                  </div>
+                </div>
+                <div onClick="{{ openEdit }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/perfil.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Editar perfil</div>
+                    <div style="font-size:15px; color:#6B7C90">Altere seu nome e informações pessoais</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ onPhoto }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/camera.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Trocar foto</div>
+                    <div style="font-size:15px; color:#6B7C90">Escolha uma nova foto de perfil</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openSenha }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/cadeado.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Alterar senha</div>
+                    <div style="font-size:15px; color:#6B7C90">Mantenha sua conta segura</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openEmail }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/email.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">E-mail e segurança</div>
+                    <div style="font-size:15px; color:#6B7C90">Gerencie seu e-mail e verificação em duas etapas</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openNotif }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/sino.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Notificações</div>
+                    <div style="font-size:15px; color:#6B7C90">Escolha o que você quer receber</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openIdioma }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/globo.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Idioma do app</div>
+                    <div style="font-size:15px; color:#6B7C90">Defina o idioma da interface</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openPriv }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/escudo.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Privacidade</div>
+                    <div style="font-size:15px; color:#6B7C90">Gerencie seus dados e privacidade</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+              </div>
+
+              <div onClick="{{ onAskReset }}" style="background:#FEF0F2; border:1.5px solid #F9D3D9; border-radius:18px; padding:16px 22px; display:flex; align-items:center; gap:16px; cursor:pointer">
+                <img src="assets/ico/lixeira.png" alt="" style="width:36px; height:36px; flex:none; object-fit:contain" />
+                <div style="flex:1; min-width:0">
+                  <div style="font-size:17px; font-weight:800; letter-spacing:.03em; color:#E03B4C">APAGAR PROGRESSO</div>
+                  <div style="font-size:15px; color:#C4606C">Essa ação não pode ser desfeita.</div>
+                </div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E03B4C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:16px">
+              <div style="background:#FFFFFF; border-radius:20px; padding:22px 24px; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+                <div style="display:flex; align-items:center; gap:14px; margin-bottom:16px">
+                  <div style="width:54px; height:54px; flex:none; border-radius:15px; background:#E8F0FB; display:grid; place-items:center">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#0A1F4E"><path d="M3 7.5 7.2 11 12 4.5 16.8 11 21 7.5 19.2 18H4.8L3 7.5Z"></path></svg>
+                  </div>
+                  <div>
+                    <div style="font-size:23px; font-weight:900; color:#0A1F4E; letter-spacing:-.01em">Seu plano</div>
+                    <div style="font-size:16px; color:#5B6B7F">Aproveite todos os recursos do Inglês em Ação.</div>
+                  </div>
+                </div>
+                <div style="background:linear-gradient(100deg,#FEF6DC,#FBF3E6); border-radius:16px; padding:18px 20px; display:flex; align-items:center; gap:18px; flex-wrap:wrap">
+                  <div style="width:78px; height:78px; flex:none; border-radius:50%; background:#FBE29A; display:grid; place-items:center">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#E39C10"><path d="M3 7.5 7.2 11 12 4.5 16.8 11 21 7.5 19.2 18H4.8L3 7.5Z"></path></svg>
+                  </div>
+                  <div style="flex:1; min-width:180px">
+                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px; flex-wrap:wrap">
+                      <span style="font-size:20px; font-weight:900; color:#0A1F4E">Plano Completo</span>
+                      <span style="background:#CFEFDF; color:#136B45; font-size:14px; font-weight:800; padding:5px 13px; border-radius:999px">Ativo</span>
+                    </div>
+                    <div style="font-size:16px; line-height:1.4; color:#5B6B7F">Acesso a todas as aulas e recursos do Inglês em Ação.</div>
+                  </div>
+                  <button onClick="{{ onPlan }}" style="display:flex; align-items:center; gap:10px; padding:14px 22px; border:none; border-radius:999px; background:#0A1F4E; color:#FFFFFF; font-size:17px; font-weight:800; white-space:nowrap; cursor:pointer" style-hover="background:#123A86">
+                    Ver plano
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"></path><path d="m13 6 6 6-6 6"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div style="background:#FFFFFF; border-radius:20px; padding:22px 24px; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+                <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px">
+                  <div style="width:54px; height:54px; flex:none; border-radius:15px; background:#E8F0FB; display:grid; place-items:center">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="#1B6BE3"><rect x="3.5" y="12" width="4.4" height="8" rx="1.6"></rect><rect x="9.8" y="7" width="4.4" height="13" rx="1.6"></rect><rect x="16.1" y="3.5" width="4.4" height="16.5" rx="1.6"></rect></svg>
+                  </div>
+                  <div>
+                    <div style="font-size:23px; font-weight:900; color:#0A1F4E; letter-spacing:-.01em">Seu aprendizado</div>
+                    <div style="font-size:16px; color:#5B6B7F">Ferramentas para você evoluir ainda mais.</div>
+                  </div>
+                </div>
+                <div onClick="{{ openMetas }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/alvo.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Metas de estudo</div>
+                    <div style="font-size:15px; color:#6B7C90">Defina seu objetivo e mantenha o foco</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openLembretes }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/relogio.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Lembretes de estudo</div>
+                    <div style="font-size:15px; color:#6B7C90">Nunca perca o ritmo</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openConquistas }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/trofeu.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Minhas conquistas</div>
+                    <div style="font-size:15px; color:#6B7C90">Veja seus badges e marcos</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+                <div onClick="{{ openCertificado }}" style="display:flex; align-items:center; gap:16px; padding:15px 4px; border-top:1px solid #EEF2F8; cursor:pointer">
+                  <img src="assets/ico/certificado.png" alt="" style="width:34px; height:34px; flex:none; object-fit:contain" />
+                  <div style="flex:1; min-width:0">
+                    <div style="font-size:18px; font-weight:800; color:#0A1F4E">Baixar certificado</div>
+                    <div style="font-size:15px; color:#6B7C90">Comprove seu progresso</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+                </div>
+              </div>
+
+              <div onClick="{{ onAskLogout }}" style="background:#FFFFFF; border-radius:18px; padding:16px 22px; display:flex; align-items:center; gap:16px; cursor:pointer; box-shadow:0 6px 22px rgba(11,31,75,.05)">
+                <img src="assets/ico/sair.png" alt="" style="width:36px; height:36px; flex:none; object-fit:contain" />
+                <div style="flex:1; min-width:0">
+                  <div style="font-size:18px; font-weight:800; color:#0A1F4E">Sair</div>
+                  <div style="font-size:15px; color:#6B7C90">Encerrar sua sessão no Inglês em Ação.</div>
+                </div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9BA9BC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="m9 6 6 6-6 6"></path></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+        <div onClick="{{ closeModal }}" style="position:fixed; inset:0; z-index:60; background:rgba(10,31,78,.48); display:grid; place-items:center; padding:20px">
+          <div onClick="{{ stopProp }}" style="width:100%; max-width:440px; background:#FFFFFF; border-radius:24px; padding:28px 28px 24px; box-shadow:0 24px 60px rgba(10,31,78,.3)">
+            <div style="display:flex; align-items:center; gap:14px; margin-bottom:12px">
+              {{ modalIconEl }}
+              <h2 style="font-size:25px; font-weight:900; color:#0A1F4E; margin:0; letter-spacing:-.01em">{{ modalTitle }}</h2>
+            </div>
+            <p style="font-size:17px; line-height:1.45; color:#5B6B7F; margin:0 0 18px">{{ modalBody }}</p>
+            <div style="display: {{ modalInputShow }}; margin-bottom:18px">
+              <input value="{{ modalName }}" onInput="{{ onModalName }}" placeholder="Seu nome" style="width:100%; padding:14px 18px; font-size:17px; font-weight:700; color:#0A1F4E; border:1.5px solid #DCE6F2; border-radius:999px; background:#F7F9FC" />
+            </div>
+            <div style="display: {{ modalFileShow }}; margin-bottom:18px">
+              <input type="file" accept="image/*" onChange="{{ onPickPhoto }}" style="width:100%; font-size:15px; color:#5B6B7F" />
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <button onClick="{{ onModalPrimary }}" style="flex:1; min-width:140px; padding:14px; border:none; border-radius:999px; background: {{ modalBtnBg }}; color:#FFFFFF; font-size:16px; font-weight:800; cursor:pointer">{{ modalBtn }}</button>
+              <button onClick="{{ closeModal }}" style="flex:none; padding:14px 22px; border:1.5px solid #DCE6F2; border-radius:999px; background:#FFFFFF; color:#5B6B7F; font-size:16px; font-weight:800; cursor:pointer">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isResult }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:640px; margin:0 auto; padding:30px 20px 60px">
+          <div style="background:#FFFFFF; border-radius:26px; padding:36px 34px; text-align:center; box-shadow:0 10px 32px rgba(11,31,75,.08)">
+            <div style="position:relative; width:170px; height:170px; margin:0 auto 20px">
+              <svg width="170" height="170" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#DCE6F2" stroke-width="13"></circle>
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#12A594" stroke-width="13" stroke-linecap="{{ resultCap }}" stroke-dasharray="{{ resultDash }}" transform="rotate(-90 60 60)"></circle>
+              </svg>
+              <div style="position:absolute; inset:0; display:grid; place-items:center; font-size:36px; font-weight:900; color:#0A1F4E">{{ resultPct }}</div>
+            </div>
+            <p style="font-size:15px; font-weight:800; letter-spacing:.14em; color:#12A594; margin:0 0 8px">AULA CONCLUÍDA 🎉</p>
+            <h1 style="font-size:34px; line-height:1.05; font-weight:900; letter-spacing:-.02em; color:#0A1F4E; margin:0 0 10px; text-wrap:pretty">{{ resultTitle }}</h1>
+            <p style="font-size:19px; color:#5B6B7F; margin:0 0 6px">Você acertou <strong style="color:#0A1F4E">{{ resultScore }}</strong> de <strong style="color:#0A1F4E">{{ resultTotal }}</strong> itens.</p>
+            <p style="font-size:17px; color:#5B6B7F; margin:0 0 26px">{{ resultMessage }}</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <button onClick="{{ onNextLesson }}" style="flex:1; min-width:200px; display:flex; align-items:center; justify-content:center; gap:12px; padding:17px; border:none; border-radius:999px; background:#0A1F4E; color:#FFFFFF; font-weight:800; font-size:17px; cursor:pointer" style-hover="background:#123A86">
+                PRÓXIMA AULA
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"></path><path d="m13 6 6 6-6 6"></path></svg>
+              </button>
+              <button onClick="{{ onReviewLesson }}" style="flex:none; padding:17px 24px; border:1.5px solid #DCE6F2; border-radius:999px; background:#FFFFFF; color:#0A1F4E; font-weight:800; font-size:17px; cursor:pointer">REVISAR</button>
+            </div>
+            <div style="font-family:'Caveat', cursive; font-size:30px; color:#1B3A6B; margin-top:22px">Keep going! 🚀</div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isLesson }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:820px; margin:0 auto; padding:14px 20px 40px">
+          <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px">
+            <button onClick="{{ goHome }}" style="width:48px; height:48px; flex:none; border-radius:15px; border:none; background:#FFFFFF; color:#0A1F4E; cursor:pointer; display:grid; place-items:center; box-shadow:0 4px 14px rgba(11,31,75,.08)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0A1F4E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m11 6-6 6 6 6"></path></svg>
+            </button>
+            <div style="flex:1; min-width:0">
+              <div style="font-size:13px; font-weight:800; letter-spacing:.11em; color:#1B6BE3">{{ lessonCode }} · PÁGINA {{ pageNum }} DE {{ pageTotal }}</div>
+              <div style="font-size:19px; font-weight:900; color:#0A1F4E; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">{{ lessonTitle }}</div>
+            </div>
+            <div style="display:flex; align-items:center; gap:9px; flex:none; background:#FFFFFF; border-radius:999px; padding:10px 18px; box-shadow:0 4px 14px rgba(11,31,75,.08)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A1F4E" stroke-width="2.3" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+              <span style="font-size:16px; font-weight:800; color:#0A1F4E; white-space:nowrap">{{ lessonTime }}</span>
+            </div>
+          </div>
+          <div style="height:10px; background:#E3EAF3; border-radius:999px; overflow:hidden; margin-bottom:20px">
+            <div style="height:100%; border-radius:999px; background:#12A594; width: {{ pagePct }}"></div>
+          </div>
+
+          <div style="background:#FFFFFF; border-radius:24px; padding:30px 28px; display:flex; flex-direction:column; gap:18px; box-shadow:0 10px 34px rgba(11,31,75,.06)">
+            <sc-for list="{{ blocks }}" as="b" hint-placeholder-count="5">
+              <div>
+
+                <sc-if value="{{ b.isBadge }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; justify-content:space-between; align-items:center; gap:12px">
+                    <span style="display:inline-block; background:#F2C230; color:#0F2050; font-weight:800; font-size:12px; letter-spacing:.07em; padding:8px 14px; border-radius:9px">{{ b.label }}</span>
+                    <span style="font-size:11px; font-weight:800; letter-spacing:.08em; color:#9AA1AE">{{ b.page }}</span>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isTitle }}" hint-placeholder-val="{{ false }}">
+                  <div>
+                    <h1 style="font-size:38px; line-height:1.03; font-weight:900; color:#0F2050; margin:0 0 6px; text-wrap:pretty">{{ b.en }}</h1>
+                    <p style="font-size:19px; font-weight:800; color:#0E9BAE; margin:0; text-wrap:pretty">{{ b.pt }}</p>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isSec }}" hint-placeholder-val="{{ false }}">
+                  <h3 style="font-size:13px; font-weight:800; letter-spacing:.09em; margin:0; color: {{ b.fg }}">{{ b.text }}</h3>
+                </sc-if>
+
+                <sc-if value="{{ b.isNote }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: {{ b.bg }}; border:1px solid {{ b.bd }}; border-left: {{ b.barW }} solid {{ b.barC }}; border-radius:14px; padding:16px 18px; text-align: {{ b.align }}">
+                    <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color:#5B21B6; margin-bottom:6px">{{ b.kicker }}</div>
+                    <p style="margin:0; font-size:16px; line-height:1.5; white-space:pre-line; font-weight: {{ b.weight }}; color: {{ b.fg }}">{{ b.text }}</p>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isImage }}" hint-placeholder-val="{{ false }}">
+                  <div style="width:100%; aspect-ratio:16/9; border-radius:18px; overflow:hidden; background:#F0F1F5">
+                    <image-slot id="{{ b.id }}" shape="rounded" radius="18" placeholder="{{ b.ph }}"></image-slot>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isChips }}" hint-placeholder-val="{{ false }}">
+                  <div>
+                    <div style="font-size:13px; font-weight:800; letter-spacing:.08em; color:#6B7280; margin-bottom:10px">{{ b.title }}</div>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px">
+                      <sc-for list="{{ b.items }}" as="c" hint-placeholder-count="5">
+                        <span style="padding:9px 16px; border-radius:999px; font-weight:800; font-size:14px; background: {{ c.bg }}; color: {{ c.fg }}">{{ c.t }}</span>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isPron }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; gap:14px; align-items:stretch; background: {{ b.bg }}; border-radius:18px; overflow:hidden">
+                    <div style="flex:none; min-width:104px; padding:18px 14px; background: {{ b.cBg }}; color: {{ b.cFg }}; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; text-align:center">
+                      <span style="font-size:26px; font-weight:900; line-height:1.05">{{ b.code }}</span>
+                      <span style="font-size:11px; font-weight:800; letter-spacing:.08em; opacity:.85">{{ b.pt }}</span>
+                    </div>
+                    <div style="padding:16px 18px 16px 2px; display:flex; flex-direction:column; justify-content:center; gap:4px">
+                      <div style="font-size:17px; font-weight:800; color:#0F2050; text-wrap:pretty">{{ b.title }}</div>
+                      <div style="font-size:15px; color:#6B7280">{{ b.body }}</div>
+                      <div style="font-size:13px; font-weight:800; color:#5B21B6">{{ b.foot }}</div>
+                      <span style="align-self:flex-start; margin-top:4px; font-size:11px; font-weight:800; letter-spacing:.06em; background:#FFFFFF; color:#0F2050; padding:6px 12px; border-radius:999px; display: {{ b.tagShow }}">{{ b.tag }}</span>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isObjective }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: {{ b.bg }}; border:1px solid {{ b.bd }}; border-radius:18px; padding:20px 22px">
+                    <span style="display: {{ b.tagShow }}; background:#F2C230; color:#0F2050; font-size:11px; font-weight:800; letter-spacing:.07em; padding:6px 12px; border-radius:8px; margin-bottom:10px">{{ b.tag }}</span>
+                    <div style="font-size:13px; font-weight:800; letter-spacing:.08em; color: {{ b.kickFg }}; margin-bottom:8px">{{ b.title }}</div>
+                    <p style="margin:0; font-size:16px; line-height:1.5; font-weight:700; white-space:pre-line; color: {{ b.fg }}">{{ b.text }}</p>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isMeta }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:inline-flex; align-items:center; gap:12px; border:1px solid #E6E8EE; background:#FFFFFF; border-radius:16px; padding:12px 18px">
+                    <div style="width:34px; height:34px; border-radius:50%; background:#5B21B6; color:#FFFFFF; display:grid; place-items:center; font-size:15px">◷</div>
+                    <div>
+                      <div style="font-size:11px; font-weight:800; letter-spacing:.08em; color:#6B7280">{{ b.label }}</div>
+                      <div style="font-size:17px; font-weight:900; color:#0F2050">{{ b.value }}</div>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isGrid }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:grid; gap:12px; grid-template-columns: {{ b.cols }}">
+                    <sc-for list="{{ b.items }}" as="g" hint-placeholder-count="2">
+                      <div style="background: {{ g.bg }}; border:1px solid {{ g.bd }}; border-radius:18px; padding:18px">
+                        <div style="display:flex; align-items:center; gap:9px; margin-bottom:8px">
+                          <span style="display: {{ g.nShow }}; width:26px; height:26px; border-radius:50%; background: {{ g.accent }}; color:#FFFFFF; font-size:13px; font-weight:800; text-align:center; line-height:26px">{{ g.n }}</span>
+                          <span style="font-size:12px; font-weight:800; letter-spacing:.08em; color: {{ g.kickFg }}">{{ g.kicker }}</span>
+                        </div>
+                        <div style="font-size:19px; font-weight:900; color:#0F2050; text-wrap:pretty">{{ g.title }}</div>
+                        <div style="font-size:14px; color:#6B7280; margin-top:4px">{{ g.body }}</div>
+                        <div style="font-size:13px; font-weight:800; color: {{ g.kickFg }}; margin-top:6px">{{ g.foot }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isTable }}" hint-placeholder-val="{{ false }}">
+                  <div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px">
+                      <div style="background:#0F2050; color:#FFFFFF; font-size:12px; font-weight:800; letter-spacing:.08em; padding:12px 16px; border-radius:12px">{{ b.headA }}</div>
+                      <div style="background:#0E9BAE; color:#FFFFFF; font-size:12px; font-weight:800; letter-spacing:.08em; padding:12px 16px; border-radius:12px; text-align:center">{{ b.headB }}</div>
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:8px">
+                      <sc-for list="{{ b.rows }}" as="r" hint-placeholder-count="4">
+                        <div style="display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:10px; background: {{ r.bg }}; border-radius:14px; padding:14px 18px">
+                          <span style="font-size:17px; font-weight:800; color:#0F2050">{{ r.a }} <span style="font-size:12px; font-weight:700; color:#9AA1AE">{{ r.note }}</span></span>
+                          <span style="font-size:16px; color: {{ r.arrow }}; font-weight:800">⟶</span>
+                          <span style="font-size:17px; font-weight:800; color: {{ r.arrow }}; text-align:center">{{ r.b }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isRule }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: {{ b.bg }}; border-left:6px solid {{ b.accent }}; border-radius:16px; padding:18px 20px">
+                    <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color: {{ b.accent }}; margin-bottom:12px">{{ b.kicker }}</div>
+                    <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap">
+                      <span style="background:#FFFFFF; border-radius:14px; padding:14px 22px; font-size:22px; font-weight:900; color:#0F2050">{{ b.from }}</span>
+                      <span style="font-size:20px; color: {{ b.accent }}; font-weight:900">⟶</span>
+                      <span style="background: {{ b.accent }}; color:#FFFFFF; border-radius:14px; padding:14px 22px; font-size:22px; font-weight:900">{{ b.to }}</span>
+                    </div>
+                    <div style="margin-top:12px; font-size:15px; font-weight:800; color:#0F2050">{{ b.ex }} <span style="font-weight:600; color:#6B7280">{{ b.tr }}</span></div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isMc }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: {{ b.bg }}; border:1px solid {{ b.bd }}; border-radius:18px; padding:20px">
+                    <div style="font-size:13px; font-weight:800; letter-spacing:.08em; color:#0F2050; margin-bottom:14px">{{ b.title }}</div>
+                    <div style="display:flex; flex-direction:column; gap:16px">
+                      <sc-for list="{{ b.questions }}" as="q" hint-placeholder-count="2">
+                        <div>
+                          <div style="font-size:16px; font-weight:700; color:#1F2430; margin-bottom:8px">{{ q.q }}</div>
+                          <div style="display:flex; flex-wrap:wrap; gap:8px">
+                            <sc-for list="{{ q.options }}" as="o" hint-placeholder-count="2">
+                              <button onClick="{{ o.onClick }}" style="padding:11px 20px; border-radius:999px; border:2px solid {{ o.bd }}; background: {{ o.bg }}; color: {{ o.fg }}; font-weight:800; font-size:14px; cursor:pointer">{{ o.label }} {{ o.mark }}</button>
+                            </sc-for>
+                          </div>
+                          <div style="display: {{ q.expShow }}; margin-top:9px; font-size:14px; font-weight:700; color: {{ q.expFg }}">{{ q.explain }}</div>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isFill }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: {{ b.bg }}; border:1px solid {{ b.bd }}; border-radius:18px; padding:20px">
+                    <div style="font-size:13px; font-weight:800; letter-spacing:.08em; color:#0F2050; margin-bottom:4px">{{ b.title }}</div>
+                    <div style="font-size:14px; color:#6B7280; margin-bottom:14px">{{ b.sub }}</div>
+                    <div style="display:flex; flex-direction:column; gap:9px">
+                      <sc-for list="{{ b.items }}" as="it" hint-placeholder-count="4">
+                        <div style="background: {{ it.bg }}; border:1.5px solid {{ it.bd }}; border-radius:14px; padding:12px 14px; display:flex; align-items:center; gap:10px; flex-wrap:wrap">
+                          <span style="font-size:15px; font-weight:800; color:#0F2050; flex:1; min-width:150px">{{ it.pre }}</span>
+                          <input value="{{ it.value }}" onInput="{{ it.onInput }}" placeholder="{{ it.ph }}" style="flex: {{ it.grow }}; min-width:120px; padding:10px 14px; font-size:15px; font-weight:700; color:#0F2050; background:#FFFFFF; border:1.5px solid {{ it.inBd }}; border-radius:999px" />
+                          <span style="font-size:15px; font-weight:800; color:#0F2050">{{ it.post }}</span>
+                          <span style="font-size:18px; font-weight:900; color: {{ it.markFg }}">{{ it.mark }}</span>
+                          <div style="flex-basis:100%; font-size:12px; font-weight:700; color:#9AA1AE">{{ it.note }}</div>
+                        </div>
+                      </sc-for>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:12px; margin-top:14px; flex-wrap:wrap">
+                      <button onClick="{{ b.onCheck }}" style="padding:11px 22px; border:none; border-radius:999px; background:#0F2050; color:#FFFFFF; font-weight:800; font-size:13px; letter-spacing:.04em; cursor:pointer">VERIFICAR</button>
+                      <span style="font-size:14px; font-weight:800; color: {{ b.scoreFg }}">{{ b.score }}</span>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isMatch }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#FFFFFF; border:1px solid #E6E8EE; border-radius:18px; padding:20px">
+                    <div style="font-size:13px; font-weight:800; letter-spacing:.08em; color:#0F2050; margin-bottom:4px">{{ b.title }}</div>
+                    <div style="font-size:14px; color:#6B7280; margin-bottom:14px">Toque em um pronome e depois no significado.</div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px">
+                      <div style="display:flex; flex-direction:column; gap:8px">
+                        <sc-for list="{{ b.left }}" as="L" hint-placeholder-count="4">
+                          <button onClick="{{ L.onClick }}" style="padding:11px 14px; border-radius:12px; border:2px solid {{ L.bd }}; background: {{ L.bg }}; color: {{ L.fg }}; font-weight:800; font-size:15px; cursor:pointer; text-align:left">{{ L.label }} {{ L.mark }}</button>
+                        </sc-for>
+                      </div>
+                      <div style="display:flex; flex-direction:column; gap:8px">
+                        <sc-for list="{{ b.right }}" as="R" hint-placeholder-count="4">
+                          <button onClick="{{ R.onClick }}" style="padding:11px 14px; border-radius:12px; border:2px solid {{ R.bd }}; background: {{ R.bg }}; color: {{ R.fg }}; font-weight:700; font-size:15px; cursor:pointer; text-align:left">{{ R.label }}</button>
+                        </sc-for>
+                      </div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:12px; margin-top:14px; flex-wrap:wrap">
+                      <button onClick="{{ b.onCheck }}" style="padding:11px 22px; border:none; border-radius:999px; background:#0F2050; color:#FFFFFF; font-weight:800; font-size:13px; letter-spacing:.04em; cursor:pointer">VERIFICAR</button>
+                      <button onClick="{{ b.onClear }}" style="padding:11px 22px; border:1.5px solid #E6E8EE; border-radius:999px; background:#FFFFFF; color:#6B7280; font-weight:800; font-size:13px; cursor:pointer">LIMPAR</button>
+                      <span style="font-size:14px; font-weight:800; color: {{ b.scoreFg }}">{{ b.score }}</span>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isDnd }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#0F2050; border-radius:18px; padding:22px">
+                    <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color:#F2C230; margin-bottom:4px">{{ b.title }}</div>
+                    <div style="font-size:14px; color:#B9C3DA; margin-bottom:16px">{{ b.sub }}</div>
+                    <div style="display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap; margin-bottom:16px">
+                      <sc-for list="{{ b.slots }}" as="s" hint-placeholder-count="3">
+                        <div onClick="{{ s.onClick }}" onDrop="{{ s.onDrop }}" onDragOver="{{ s.onDragOver }}" style="flex:1; min-width:120px; cursor:pointer">
+                          <div style="background: {{ s.bg }}; border:2px dashed {{ s.bd }}; border-radius:14px; padding:16px 10px; text-align:center; font-size:17px; font-weight:900; color: {{ s.fg }}; min-height:56px">{{ s.text }}</div>
+                          <div style="font-size:11px; font-weight:800; letter-spacing:.06em; color:#B9C3DA; margin-top:6px; text-align:center">{{ s.label }}</div>
+                        </div>
+                      </sc-for>
+                    </div>
+                    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px">
+                      <sc-for list="{{ b.tokens }}" as="t" hint-placeholder-count="3">
+                        <button draggable="true" onDragStart="{{ t.onDragStart }}" onClick="{{ t.onClick }}" style="padding:11px 18px; border-radius:12px; border:none; background: {{ t.bg }}; color: {{ t.fg }}; font-weight:800; font-size:15px; cursor:grab; opacity: {{ t.op }}">{{ t.label }}</button>
+                      </sc-for>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
+                      <button onClick="{{ b.onCheck }}" style="padding:11px 22px; border:none; border-radius:999px; background:#F2C230; color:#0F2050; font-weight:800; font-size:13px; letter-spacing:.04em; cursor:pointer">VERIFICAR</button>
+                      <button onClick="{{ b.onClear }}" style="padding:11px 22px; border:1.5px solid #33427A; border-radius:999px; background:transparent; color:#B9C3DA; font-weight:800; font-size:13px; cursor:pointer">LIMPAR</button>
+                      <span style="font-size:14px; font-weight:800; color: {{ b.scoreFg }}">{{ b.score }}</span>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isCheck }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#F4F5F7; border:1px solid #E6E8EE; border-radius:18px; padding:20px">
+                    <div style="font-size:13px; font-weight:800; letter-spacing:.08em; color:#5B21B6; margin-bottom:14px">{{ b.title }}</div>
+                    <div style="display:flex; flex-direction:column; gap:10px">
+                      <sc-for list="{{ b.items }}" as="c" hint-placeholder-count="3">
+                        <div onClick="{{ c.onClick }}" style="display:flex; align-items:center; gap:12px; cursor:pointer">
+                          <span style="width:26px; height:26px; flex:none; border-radius:8px; border:2px solid {{ c.bd }}; background: {{ c.bg }}; color:#FFFFFF; font-size:15px; font-weight:900; display:grid; place-items:center">{{ c.mark }}</span>
+                          <span style="font-size:16px; font-weight:700; color:#1F2430">{{ c.label }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isFree }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:grid; gap:12px; grid-template-columns: {{ b.cols }}">
+                    <sc-for list="{{ b.items }}" as="f" hint-placeholder-count="2">
+                      <div style="background: {{ f.bg }}; border-left:6px solid {{ f.accent }}; border-radius:16px; padding:16px 18px">
+                        <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color: {{ f.accent }}; margin-bottom:8px">{{ f.n }} · {{ f.kicker }}</div>
+                        <div style="font-size:17px; font-weight:900; color:#0F2050; margin-bottom:8px">{{ f.prefix }}</div>
+                        <input value="{{ f.value }}" onInput="{{ f.onInput }}" placeholder="escreva aqui…" style="width:100%; padding:11px 14px; font-size:15px; font-weight:700; color:#0F2050; background:#FFFFFF; border:1.5px solid #E6E8EE; border-radius:999px" />
+                        <div style="font-size:12px; font-weight:700; color:#6B7280; margin-top:8px">{{ f.ideas }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isCompare }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; flex-direction:column; gap:10px">
+                    <sc-for list="{{ b.items }}" as="c" hint-placeholder-count="2">
+                      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px">
+                        <div style="background:#FDE8EA; border-radius:14px; padding:14px 16px">
+                          <div style="font-size:11px; font-weight:800; letter-spacing:.07em; color:#9B1C2E; margin-bottom:6px">ERRADO ✕</div>
+                          <div style="font-size:16px; font-weight:800; color:#1F2430">{{ c.wrong }}</div>
+                          <div style="font-size:13px; color:#9B1C2E; margin-top:4px">{{ c.note }}</div>
+                        </div>
+                        <div style="background:#E4F5EA; border-radius:14px; padding:14px 16px">
+                          <div style="font-size:11px; font-weight:800; letter-spacing:.07em; color:#1B6B3A; margin-bottom:6px">CORRETO ✓</div>
+                          <div style="font-size:16px; font-weight:800; color:#1F2430">{{ c.right }}</div>
+                          <div style="font-size:13px; color:#1B6B3A; margin-top:4px">{{ c.rnote }}</div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isProfileCard }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#0F2050; border-radius:18px; padding:18px; display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:center">
+                    <div>
+                      <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color:#F2C230; margin-bottom:10px">{{ b.name }}</div>
+                      <div style="background:#FFFFFF; border-radius:14px; padding:14px 16px">
+                        <div style="font-size:11px; font-weight:800; letter-spacing:.07em; color:#5B21B6; margin-bottom:8px">INFORMAÇÕES VERDADEIRAS</div>
+                        <sc-for list="{{ b.facts }}" as="f" hint-placeholder-count="3">
+                          <div style="font-size:15px; font-weight:800; color:#0F2050; margin-bottom:4px">• {{ f.t }}</div>
+                        </sc-for>
+                      </div>
+                    </div>
+                    <div style="height:190px; border-radius:14px; overflow:hidden">
+                      <image-slot id="{{ b.id }}" shape="rounded" radius="14" placeholder="{{ b.ph }}"></image-slot>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isCta }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; flex-direction:column; gap:12px">
+                    <sc-for list="{{ b.items }}" as="c" hint-placeholder-count="2">
+                      <div style="background: {{ c.bg }}; border-radius:18px; padding:20px; display:flex; gap:16px; align-items:flex-start">
+                        <div style="width:46px; height:46px; flex:none; border-radius:50%; background: {{ c.iconBg }}; color: {{ c.iconFg }}; display:grid; place-items:center; font-size:19px">{{ c.icon }}</div>
+                        <div style="flex:1">
+                          <div style="font-size:17px; font-weight:900; color: {{ c.fg }}; margin-bottom:4px">{{ c.title }}</div>
+                          <div style="font-size:14px; color: {{ c.subFg }}; margin-bottom:8px">{{ c.body }}</div>
+                          <div style="font-size:11px; font-weight:800; letter-spacing:.05em; color: {{ c.planFg }}; margin-bottom:12px">{{ c.plan }}</div>
+                          <button onClick="{{ c.onClick }}" style="padding:12px 22px; border:none; border-radius:999px; background: {{ c.btnBg }}; color: {{ c.btnFg }}; font-weight:800; font-size:13px; letter-spacing:.04em; cursor:pointer">{{ c.btn }}</button>
+                          <div style="display: {{ c.msgShow }}; font-size:13px; font-weight:700; color: {{ c.subFg }}; margin-top:10px">{{ c.msg }}</div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isNext }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#0F2050; border-radius:18px; padding:22px; text-align:center">
+                    <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color:#F2C230; margin-bottom:6px">{{ b.kicker }}</div>
+                    <div style="font-size:22px; font-weight:900; color:#FFFFFF">{{ b.title }}</div>
+                    <div style="font-size:14px; color:#B9C3DA; margin-top:6px">{{ b.body }}</div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isCards }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:grid; gap:12px; grid-template-columns: {{ b.cols }}">
+                    <sc-for list="{{ b.items }}" as="c" hint-placeholder-count="2">
+                      <div style="background: {{ c.bg }}; border:1px solid {{ c.bd }}; border-radius:18px; overflow:hidden">
+                        <div style="background: {{ c.tagBg }}; color:#FFFFFF; font-size:13px; font-weight:800; letter-spacing:.07em; padding:11px 16px">{{ c.tag }}</div>
+                        <div style="padding:14px; display:flex; flex-direction:column; gap:10px">
+                          <div style="width:100%; aspect-ratio:16/10; border-radius:14px; overflow:hidden; background:#EDEFF4; display: {{ c.imgShow }}">
+                            <image-slot id="{{ c.id }}" shape="rounded" radius="14" placeholder="{{ c.ph }}"></image-slot>
+                          </div>
+                          <sc-for list="{{ c.lines }}" as="L" hint-placeholder-count="2">
+                            <div style="background:#FFFFFF; border:1px solid #E6E8EE; border-radius:12px; padding:12px 14px; font-size:15px; font-weight:700; line-height:1.4; color:#0F2050">{{ L.t }}</div>
+                          </sc-for>
+                          <div style="display: {{ c.noteShow }}; font-size:13px; font-weight:700; line-height:1.4; color: {{ c.tagBg }}">{{ c.note }}</div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isRows }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; flex-direction:column; gap:10px">
+                    <sc-for list="{{ b.items }}" as="r" hint-placeholder-count="3">
+                      <div style="display:flex; align-items:center; gap:12px; background:#FFFFFF; border:1px solid #E6E8EE; border-radius:16px; padding:12px 14px; box-shadow:0 3px 10px rgba(11,31,75,.04)">
+                        <span style="width:34px; height:34px; flex:none; border-radius:50%; background: {{ r.dot }}; color:#FFFFFF; font-size:14px; font-weight:900; display:grid; place-items:center">{{ r.n }}</span>
+                        <span style="font-size:15px; font-weight:700; line-height:1.4; color:#0F2050">{{ r.text }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isSteps }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex; flex-direction:column; gap:12px">
+                    <sc-for list="{{ b.items }}" as="s" hint-placeholder-count="3">
+                      <div style="background: {{ s.bg }}; border:1px solid {{ s.bd }}; border-radius:18px; padding:14px">
+                        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px">
+                          <span style="width:28px; height:28px; flex:none; border-radius:50%; background: {{ s.accent }}; color:#FFFFFF; font-size:14px; font-weight:900; display:grid; place-items:center">{{ s.n }}</span>
+                          <span style="background:#0F2050; color:#FFFFFF; font-size:12px; font-weight:800; letter-spacing:.07em; padding:7px 13px; border-radius:8px">{{ s.tag }}</span>
+                        </div>
+                        <sc-for list="{{ s.lines }}" as="L" hint-placeholder-count="1">
+                          <div style="font-size:15px; font-weight:700; line-height:1.45; color:#0F2050; margin-bottom:6px">{{ L.t }}</div>
+                        </sc-for>
+                        <div style="width:100%; aspect-ratio:16/10; border-radius:14px; overflow:hidden; background:#EDEFF4; margin-top:8px; display: {{ s.imgShow }}">
+                          <image-slot id="{{ s.id }}" shape="rounded" radius="14" placeholder="{{ s.ph }}"></image-slot>
+                        </div>
+                        <div style="display: {{ s.noteShow }}; background:#FFFFFF; border:1px solid #E6E8EE; border-radius:12px; padding:10px 12px; margin-top:10px; font-size:13px; font-weight:700; line-height:1.4; color:#3C4A5C">{{ s.note }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isDialogue }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#FFFFFF; border:1px solid #E6E8EE; border-radius:18px; padding:16px 14px; display:flex; flex-direction:column; gap:10px">
+                    <sc-for list="{{ b.items }}" as="d" hint-placeholder-count="4">
+                      <div style="display:flex; align-items:flex-start; gap:8px; flex-direction: {{ d.dir }}; align-self: {{ d.align }}; max-width:92%">
+                        <span style="width:16px; height:16px; flex:none; border-radius:50%; background: {{ d.dot }}; margin-top:12px"></span>
+                        <div style="background: {{ d.bg }}; border:1.5px solid {{ d.bd }}; border-radius:16px; padding:11px 14px; font-size:15px; line-height:1.4; color:#1F2430">{{ d.text }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isBar }}" hint-placeholder-val="{{ false }}">
+                  <div style="background:#FEF7E0; border:1px solid #F8E7B4; border-radius:18px; padding:16px 18px">
+                    <div style="font-size:12px; font-weight:800; letter-spacing:.08em; color:#B67F0C; margin-bottom:4px">{{ b.label }}</div>
+                    <div style="font-size:19px; font-weight:900; color:#0F8F7A; margin-bottom:10px">{{ b.value }}</div>
+                    <div style="height:10px; background:#EFE6CC; border-radius:999px; overflow:hidden">
+                      <div style="height:100%; border-radius:999px; background:#12A594; width: {{ b.pct }}"></div>
+                    </div>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ b.isKey }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: {{ b.bg }}; border-radius:16px; padding:18px 20px; text-align:center; font-size:16px; font-weight:800; line-height:1.45; color: {{ b.fg }}">{{ b.text }}</div>
+                </sc-if>
+
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="display:flex; gap:10px; margin-top:20px">
+            <button onClick="{{ onPrev }}" style="flex:none; display:flex; align-items:center; gap:10px; padding:16px 24px; border:1.5px solid #DCE6F2; border-radius:999px; background:#FFFFFF; color:#0A1F4E; font-weight:800; font-size:16px; cursor:pointer; opacity: {{ prevOp }}">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A1F4E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m11 6-6 6 6 6"></path></svg>
+              ANTERIOR
+            </button>
+            <button onClick="{{ onNext }}" style="flex:1; display:flex; align-items:center; justify-content:center; gap:12px; padding:16px 24px; border:none; border-radius:999px; background:#0A1F4E; color:#FFFFFF; font-weight:800; font-size:16px; letter-spacing:.02em; cursor:pointer" style-hover="background:#123A86">
+              {{ nextLabel }}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"></path><path d="m13 6 6 6-6 6"></path></svg>
+            </button>
+          </div>
+        </div>
+      </sc-if>
+
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:900,&quot;height&quot;:1100}}">
+const V = {
+  gray:   { bg:"#F1F5FA", fg:"#1F2937", bd:"#E3EAF3", kick:"#5B6B7F" },
+  white:  { bg:"#FFFFFF", fg:"#1F2937", bd:"#E3EAF3", kick:"#5B6B7F" },
+  mint:   { bg:"#E6F6F0", fg:"#0F5D50", bd:"#CFEDE2", kick:"#0F8F7A" },
+  lilac:  { bg:"#F1EDFD", fg:"#3A1A80", bd:"#E2DAFA", kick:"#5B21B6" },
+  cream:  { bg:"#FEF7E0", fg:"#6B520A", bd:"#F8E7B4", kick:"#B67F0C" },
+  navy:   { bg:"#0A1F4E", fg:"#FFFFFF", bd:"#0A1F4E", kick:"#F6C945" },
+  teal:   { bg:"#12A594", fg:"#FFFFFF", bd:"#12A594", kick:"#FFFFFF" },
+  purple: { bg:"#5B21B6", fg:"#FFFFFF", bd:"#5B21B6", kick:"#F6C945" },
+  yellow: { bg:"#F6C945", fg:"#0A1F4E", bd:"#F6C945", kick:"#0A1F4E" },
+  blue:   { bg:"#EAF2FE", fg:"#123A86", bd:"#D6E5FB", kick:"#1B6BE3" },
+  red:    { bg:"#FEF0F2", fg:"#B21F31", bd:"#F9D3D9", kick:"#E03B4C" },
+  green:  { bg:"#E4F5EA", fg:"#136B45", bd:"#C6E9D2", kick:"#136B45" },
+  plain:  { bg:"transparent", fg:"#1F2937", bd:"transparent", kick:"#5B6B7F" }
+};
+const SOLID = { navy:"#0A1F4E", teal:"#12A594", purple:"#5B21B6", yellow:"#F6C945", blue:"#1B6BE3", white:"#FFFFFF", orange:"#E8820C", red:"#E03B4C" };
+const KEY = "ingles-em-acao-v1";
+const COVERS = { 1:"assets/capas/01.png", 2:"assets/capas/02.png", 3:"assets/capas/03.png", 4:"assets/capas/04.png",
+  5:"assets/capas/05.png", 6:"assets/capas/06.png", 7:"assets/capas/07.png", 8:"assets/capas/08.png",
+  9:"assets/capas/09.png", 10:"assets/capas/10.png" };
+const TIMES = { 1: "12 min", 2: "15 min", 3: "14 min", 4: "13 min", 5: "16 min", 6: "14 min",
+  7: "13 min", 8: "15 min", 9: "13 min", 10: "12 min", 11: "14 min", 12: "15 min",
+  13: "13 min", 14: "13 min", 15: "14 min", 16: "13 min", 17: "16 min", 18: "15 min",
+  19: "15 min", 20: "13 min", 21: "14 min", 22: "13 min", 23: "14 min", 24: "14 min",
+  25: "14 min", 26: "15 min", 27: "14 min", 28: "13 min", 29: "13 min", 30: "14 min",
+  31: "16 min", 32: "16 min", 33: "18 min", 34: "16 min", 35: "18 min", 36: "18 min",
+  37: "20 min", 38: "20 min", 39: "20 min", 40: "20 min", 41: "20 min", 42: "22 min" };
+const SUBS = {
+  4: "Verbo to be no interrogativo", 5: "Revisão do verbo to be", 6: "Países e nacionalidades",
+  7: "Família", 8: "Números de 1 a 100", 9: "Dias e meses", 10: "Cores e formas",
+  11: "Artigos a / an / the", 12: "Substantivos no plural", 13: "Este, esse, estes, esses",
+  14: "Adjetivos possessivos", 15: "Há / existe", 16: "Preposições de lugar",
+  17: "Presente simples no afirmativo", 18: "Presente simples no negativo", 19: "Perguntas no presente simples",
+  20: "Advérbios de frequência", 21: "Rotina diária", 22: "Dizendo as horas", 23: "Comidas e bebidas",
+  24: "Poder e não poder", 25: "Imperativo", 26: "Presente contínuo", 27: "Perguntas no presente contínuo",
+  28: "Roupas", 29: "Clima", 30: "Profissões", 31: "Passado do verbo to be",
+  32: "Passado simples — verbos regulares", 33: "Passado simples — verbos irregulares",
+  34: "Perguntas no passado", 35: "Contáveis e incontáveis", 36: "Some / any",
+  37: "Comparativos", 38: "Superlativos", 39: "Futuro com going to", 40: "Futuro com will",
+  41: "Pronomes objeto", 42: "Revisão final"
+};
+const BLANK = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+const svgIcon = (color, body) => "data:image/svg+xml;utf8," + encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="' + color + '">' + body + '</svg>');
+const MODAL = {
+  edit:        { title: "Editar perfil", body: "Altere o nome que aparece no seu app.", icon: "assets/ico/perfil.png", input: true, btn: "Salvar" },
+  photo:       { title: "Trocar foto", body: "Escolha uma imagem do seu dispositivo para usar como foto de perfil.", icon: "assets/ico/camera.png", file: true, btn: "Concluir" },
+  senha:       { title: "Alterar senha", body: "A troca de senha estará disponível na versão conectada à sua conta.", icon: "assets/ico/cadeado.png", btn: "Entendi" },
+  email:       { title: "E-mail e segurança", body: "Gerencie seu e-mail e a verificação em duas etapas na versão conectada.", icon: "assets/ico/email.png", btn: "Entendi" },
+  notif:       { title: "Notificações", body: "Escolha o que quer receber: lembretes de estudo, novidades e conquistas.", icon: "assets/ico/sino.png", btn: "Entendi" },
+  idioma:      { title: "Idioma do app", body: "A interface está em Português (Brasil). Mais idiomas em breve.", icon: "assets/ico/globo.png", btn: "Entendi" },
+  privacidade: { title: "Privacidade", body: "Seus dados de estudo ficam salvos apenas neste navegador.", icon: "assets/ico/escudo.png", btn: "Entendi" },
+  metas:       { title: "Metas de estudo", body: "Defina quantas aulas quer concluir por semana e mantenha o foco.", icon: "assets/ico/alvo.png", btn: "Entendi" },
+  lembretes:   { title: "Lembretes de estudo", body: "Receba um lembrete diário no horário que combina com sua rotina.", icon: "assets/ico/relogio.png", btn: "Entendi" },
+  conquistas:  { title: "Minhas conquistas", body: "Seus badges e marcos aparecem aqui conforme você avança na trilha.", icon: "assets/ico/trofeu.png", btn: "Entendi" },
+  certificado: { title: "Baixar certificado", body: "O certificado fica disponível ao concluir as 42 aulas da trilha.", icon: "assets/ico/certificado.png", btn: "Entendi" },
+  plano:       { title: "Plano Completo", body: "Seu plano está ativo: todas as aulas, videoaulas e recursos liberados.", btn: "Entendi" },
+  apagar:      { title: "Apagar progresso", body: "Todas as respostas, aulas concluídas e anotações serão removidas. Essa ação não pode ser desfeita.", icon: "assets/ico/lixeira.png", btn: "Apagar tudo", danger: true },
+  sair:        { title: "Sair da conta", body: "Você encerrará a sessão. Seu progresso continua salvo neste navegador.", icon: "assets/ico/sair.png", btn: "Sair" }
+};
+const MODULES = [
+  { from: 1, to: 6, title: "Fundamentos" },
+  { from: 7, to: 12, title: "Vocabulário essencial" },
+  { from: 13, to: 18, title: "Referência e lugar" },
+  { from: 19, to: 24, title: "Presente simples" },
+  { from: 25, to: 30, title: "Ações e rotina" },
+  { from: 31, to: 36, title: "Passado" },
+  { from: 37, to: 42, title: "Comparar e futuro" }
+];
+const norm = (s) => (s || "").toString().trim().toLowerCase().replace(/[’']/g, "'").replace(/\s+/g, " ");
+
+class Component extends DCLogic {
+  state = {
+    ready: false, lessons: [], track: [],
+    screen: "login", nameDraft: "", user: "",
+    lesson: null, page: 0, view: "list", modal: null, modalName: "", photo: "",
+    ans: {}, checked: {}, sel: {}, done: {}, result: null
+  };
+
+  componentDidMount() {
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+    import("./course-data.js").then((m) => {
+      this.setState({
+        ready: true, lessons: m.LESSONS, track: m.TRACK,
+        user: saved.user || "", screen: saved.user ? (saved.screen || "home") : "login",
+        ans: saved.ans || {}, checked: saved.checked || {}, sel: saved.sel || {}, done: saved.done || {},
+        lesson: saved.lesson || null, page: saved.page || 0, photo: saved.photo || "", days: saved.days || []
+      });
+    });
+  }
+
+  save(next) {
+    const s = Object.assign({}, this.state, next);
+    try {
+      localStorage.setItem(KEY, JSON.stringify({
+        user: s.user, screen: s.screen === "login" ? "home" : s.screen,
+        ans: s.ans, checked: s.checked, sel: s.sel, done: s.done, lesson: s.lesson, page: s.page, photo: s.photo, days: s.days || []
+      }));
+    } catch (e) {}
+  }
+  set(next) { this.save(next); this.setState(next); }
+  put(bag, k, v) {
+    const copy = Object.assign({}, this.state[bag]); copy[k] = v;
+    this.set({ [bag]: copy });
+  }
+
+  lessonById(id) { return this.state.lessons.find((l) => l.id === id) || null; }
+
+  openModal(key) { this.setState({ modal: key, modalName: this.state.user }); }
+
+  readPhoto(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const im = new Image();
+      im.onload = () => {
+        const size = 256;
+        const cv = document.createElement("canvas"); cv.width = size; cv.height = size;
+        const side = Math.min(im.width, im.height);
+        cv.getContext("2d").drawImage(im, (im.width - side) / 2, (im.height - side) / 2, side, side, 0, 0, size, size);
+        this.set({ photo: cv.toDataURL("image/jpeg", 0.82), modal: null });
+      };
+      im.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  streakDays() {
+    const days = this.state.days || [];
+    if (!days.length) return 0;
+    const set = {}; days.forEach((d) => { set[d] = true; });
+    const day = 86400000;
+    let t = new Date(); t.setHours(0, 0, 0, 0);
+    const iso = (d) => new Date(d).toISOString().slice(0, 10);
+    if (!set[iso(t)]) { t = new Date(t.getTime() - day); if (!set[iso(t)]) return 0; }
+    let n = 0;
+    while (set[iso(t)]) { n++; t = new Date(t.getTime() - day); }
+    return n;
+  }
+
+  scoreLesson(id) {
+    const L = this.lessonById(id); if (!L) return { got: 0, total: 0 };
+    let got = 0, total = 0;
+    L.pages.forEach((p) => p.blocks.forEach((b) => {
+      if (b.t === "mc") b.questions.forEach((q, i) => {
+        total++; if (this.state.ans["mc:" + id + ":" + b.title + ":" + i] === q.answer) got++;
+      });
+      if (b.t === "fill") b.items.forEach((it, i) => {
+        total++; if (it.answers.some((a) => norm(a) === norm(this.state.ans["fill:" + b.id + ":" + i]))) got++;
+      });
+      if (b.t === "match") { total++; if (this.state.ans["match:" + b.title] === "ok") got++; }
+      if (b.t === "dnd") { total++; if (this.state.ans["dnd:" + b.id] === "ok") got++; }
+      if (b.t === "check") b.items.forEach((_, i) => { total++; if (this.state.ans["chk:" + b.id + ":" + i]) got++; });
+    }));
+    return { got, total };
+  }
+
+  // ---------- block resolvers ----------
+  resolve(block, lessonId) {
+    const b = Object.assign({}, block);
+    const o = { key: Math.random() };
+    const t = b.t;
+    const v = V[b.v || "gray"] || V.gray;
+
+    if (t === "badge") return { isBadge: true, label: b.label, page: b.page || "" };
+    if (t === "title") return { isTitle: true, en: b.en, pt: b.pt };
+    if (t === "sec") return { isSec: true, text: b.text, fg: b.c === "purple" ? "#5B21B6" : "#6B7280" };
+    if (t === "kicker") return { isSec: true, text: b.text, fg: "#5B21B6" };
+    if (t === "lead") return { isNote: true, text: b.text, bg: "transparent", bd: "transparent", barW: "0px", barC: "transparent", align: "left", weight: 600, fg: "#1F2430", kicker: "" };
+    if (t === "note") return {
+      isNote: true, text: b.text, kicker: b.kicker || "", bg: v.bg, bd: v.bd,
+      barW: b.bar ? "6px" : "1px", barC: b.bar ? "#F2C230" : v.bd,
+      align: b.center ? "center" : "left", weight: b.bold ? 800 : 500, fg: v.fg
+    };
+    if (t === "image") return { isImage: true, id: b.id, ph: b.ph };
+    if (t === "chips") return {
+      isChips: true, title: b.title || "",
+      items: b.items.map((c) => {
+        const s = SOLID[c.c]; const cv = V[c.c] || V.gray;
+        return { t: c.t, bg: s || cv.bg, fg: s ? (c.c === "yellow" ? "#0F2050" : "#FFFFFF") : cv.fg };
+      })
+    };
+    if (t === "answers") return {
+      isChips: true, title: b.title,
+      items: b.items.map((it) => ({ t: it.k + " · " + it.a, bg: SOLID[it.c], fg: it.c === "yellow" ? "#0F2050" : "#FFFFFF" }))
+    };
+    if (t === "pron") {
+      const c = SOLID[b.c] || "#0F2050";
+      return {
+        isPron: true, code: b.code, pt: b.pt, cBg: c, cFg: b.c === "yellow" ? "#0F2050" : "#FFFFFF",
+        bg: v.bg, title: b.title, body: b.body || "", foot: b.foot || "",
+        tag: b.tag || "", tagShow: b.tag ? "inline-block" : "none"
+      };
+    }
+    if (t === "objective") return {
+      isObjective: true, bg: v.bg, bd: v.bd, fg: v.fg, kickFg: v.kick,
+      title: b.title, text: b.text, tag: b.tag || "", tagShow: b.tag ? "inline-block" : "none"
+    };
+    if (t === "meta") return { isMeta: true, label: b.label, value: b.value };
+    if (t === "grid") return {
+      isGrid: true, cols: b.cols === 1 ? "1fr" : "repeat(auto-fit, minmax(" + (b.cols === 3 ? "190" : "230") + "px, 1fr))",
+      items: b.items.map((g) => {
+        const gv = V[g.v || "gray"] || V.gray;
+        return {
+          n: g.n || "", nShow: g.n ? "grid" : "none", kicker: g.kicker || "", title: g.title,
+          body: g.body || "", foot: g.foot || "", bg: gv.bg, bd: gv.bd,
+          kickFg: gv.kick, accent: SOLID[g.c] || "#0E9BAE"
+        };
+      })
+    };
+    if (t === "table") return {
+      isTable: true, headA: b.head[0], headB: b.head[1],
+      rows: b.rows.map((r) => {
+        const rv = V[r.v || "gray"] || V.gray;
+        return { a: r.a, b: r.b, note: r.note || "", bg: rv.bg, arrow: rv.kick };
+      })
+    };
+    if (t === "rule") return {
+      isRule: true, kicker: b.kicker, from: b.from, to: b.to, ex: b.ex, tr: b.tr,
+      bg: v.bg, accent: SOLID[b.c] || "#0E9BAE"
+    };
+    if (t === "compare") return { isCompare: true, items: b.items.map((c) => ({ wrong: c.wrong, note: c.note || "", right: c.right, rnote: c.rnote || "" })) };
+    if (t === "profile") return { isProfileCard: true, name: b.name, id: b.id, ph: b.ph, facts: b.facts.map((f) => ({ t: f })) };
+    if (t === "next") return { isNext: true, kicker: b.kicker, title: b.title, body: b.body || "" };
+    if (t === "key") return { isKey: true, text: b.text, bg: v.bg, fg: v.fg };
+
+    if (t === "cards") return {
+      isCards: true, cols: b.cols === 2 ? "repeat(auto-fit, minmax(160px,1fr))" : "1fr",
+      items: b.items.map((c) => {
+        const cv = V[c.v || "gray"] || V.gray;
+        return {
+          tag: c.tag, tagBg: SOLID[c.c] || "#0E9BAE", bg: cv.bg, bd: cv.bd,
+          id: c.id || "", ph: c.ph || "", imgShow: c.id ? "block" : "none",
+          lines: (c.lines || []).map((t2) => ({ t: t2 })),
+          note: c.note || "", noteShow: c.note ? "block" : "none"
+        };
+      })
+    };
+
+    if (t === "rows") return {
+      isRows: true,
+      items: b.items.map((r, i) => ({ n: r.n || i + 1, text: r.text, dot: SOLID[r.c] || "#0E9BAE" }))
+    };
+
+    if (t === "steps") return {
+      isSteps: true,
+      items: b.items.map((sp, i) => {
+        const sv = V[sp.v || "gray"] || V.gray;
+        return {
+          n: sp.n || i + 1, tag: sp.tag, accent: SOLID[sp.c] || "#0E9BAE", bg: sv.bg, bd: sv.bd,
+          lines: (sp.lines || []).map((t2) => ({ t: t2 })),
+          id: sp.id || "", ph: sp.ph || "", imgShow: sp.id ? "block" : "none",
+          note: sp.note || "", noteShow: sp.note ? "block" : "none"
+        };
+      })
+    };
+
+    if (t === "dialogue") return {
+      isDialogue: true,
+      items: b.items.map((d) => {
+        const a = d.s === "b";
+        return {
+          text: d.text, dir: a ? "row-reverse" : "row", align: a ? "flex-end" : "flex-start",
+          dot: a ? "#5B21B6" : "#12A594", bg: a ? "#F7F4FE" : "#F0FAF8", bd: a ? "#DCD2F6" : "#C7EBEE"
+        };
+      })
+    };
+
+    if (t === "bar") return { isBar: true, label: b.label, value: b.value, pct: b.pct };
+
+
+    if (t === "mc") return {
+      isMc: true, title: b.title, bg: v.bg, bd: v.bd,
+      questions: b.questions.map((q, qi) => {
+        const key = "mc:" + lessonId + ":" + b.title + ":" + qi;
+        const picked = this.state.ans[key];
+        const has = picked !== undefined;
+        return {
+          q: q.q, explain: q.explain || (picked === q.answer ? "Correto!" : "Tente novamente."),
+          expShow: has ? "block" : "none", expFg: picked === q.answer ? "#1B6B3A" : "#9B1C2E",
+          options: q.options.map((label, oi) => {
+            const chosen = picked === oi;
+            const ok = oi === q.answer;
+            let bg = "#FFFFFF", fg = "#0F2050", bd = "#E6E8EE", mark = "";
+            if (has && chosen && ok) { bg = "#E4F5EA"; fg = "#1B6B3A"; bd = "#1B6B3A"; mark = "✓"; }
+            else if (has && chosen && !ok) { bg = "#FDE8EA"; fg = "#9B1C2E"; bd = "#9B1C2E"; mark = "✕"; }
+            else if (has && ok) { bg = "#E4F5EA"; fg = "#1B6B3A"; bd = "#C6E9D2"; }
+            return { label, bg, fg, bd, mark, onClick: () => this.put("ans", key, oi) };
+          })
+        };
+      })
+    };
+
+    if (t === "fill") {
+      const done = !!this.state.checked["fill:" + b.id];
+      let got = 0;
+      const items = b.items.map((it, i) => {
+        const key = "fill:" + b.id + ":" + i;
+        const val = this.state.ans[key] || "";
+        const ok = it.answers.some((a) => norm(a) === norm(val));
+        if (ok) got++;
+        const iv = V[it.v || "gray"] || V.gray;
+        return {
+          pre: it.pre, post: it.post || "", note: it.note || "", value: val,
+          ph: b.wide ? "escreva a frase completa" : "?",
+          grow: b.wide ? "3" : "0",
+          bg: iv.bg, bd: iv.bd,
+          inBd: done ? (ok ? "#1B6B3A" : "#9B1C2E") : "#E6E8EE",
+          mark: done ? (ok ? "✓" : "✕") : "",
+          markFg: ok ? "#1B6B3A" : "#9B1C2E",
+          onInput: (e) => this.put("ans", key, e.target.value)
+        };
+      });
+      return {
+        isFill: true, title: b.title || "", sub: b.sub || "", bg: v.bg, bd: v.bd, items,
+        score: done ? got + " de " + b.items.length + " corretos" : "",
+        scoreFg: got === b.items.length ? "#1B6B3A" : "#9B1C2E",
+        onCheck: () => this.put("checked", "fill:" + b.id, true)
+      };
+    }
+
+    if (t === "match") {
+      const key = "matchsel:" + b.title;
+      const sel = this.state.sel[key] || { pairs: {}, active: null };
+      const done = !!this.state.checked["match:" + b.title];
+      let got = 0;
+      b.left.forEach((_, i) => { if (sel.pairs[i] === b.answer[i]) got++; });
+      const pick = (side, i) => {
+        const next = { pairs: Object.assign({}, sel.pairs), active: sel.active };
+        if (side === "L") next.active = next.active === i ? null : i;
+        else if (next.active !== null && next.active !== undefined) { next.pairs[next.active] = i; next.active = null; }
+        this.put("sel", key, next);
+      };
+      return {
+        isMatch: true, title: b.title,
+        left: b.left.map((label, i) => {
+          const linked = sel.pairs[i] !== undefined;
+          const ok = sel.pairs[i] === b.answer[i];
+          let bg = "#FFFFFF", fg = "#0F2050", bd = "#E6E8EE";
+          if (sel.active === i) { bg = "#0F2050"; fg = "#FFFFFF"; bd = "#0F2050"; }
+          else if (done && linked) { bg = ok ? "#E4F5EA" : "#FDE8EA"; fg = ok ? "#1B6B3A" : "#9B1C2E"; bd = fg; }
+          else if (linked) { bg = "#E4F6F7"; fg = "#0B5563"; bd = "#C7EBEE"; }
+          return { label, bg, fg, bd, mark: linked ? "→ " + b.right[sel.pairs[i]] : "", onClick: () => pick("L", i) };
+        }),
+        right: b.right.map((label, i) => {
+          const used = Object.values(sel.pairs).indexOf(i) >= 0;
+          return { label, bg: used ? "#EFEAFB" : "#FFFFFF", fg: used ? "#3C1D80" : "#1F2430", bd: used ? "#DCD2F6" : "#E6E8EE", onClick: () => pick("R", i) };
+        }),
+        score: done ? got + " de " + b.left.length + " corretos" : "",
+        scoreFg: got === b.left.length ? "#1B6B3A" : "#9B1C2E",
+        onCheck: () => { this.put("checked", "match:" + b.title, true); this.put("ans", "match:" + b.title, got === b.left.length ? "ok" : "no"); },
+        onClear: () => { this.put("sel", key, { pairs: {}, active: null }); this.put("checked", "match:" + b.title, false); }
+      };
+    }
+
+    if (t === "dnd") {
+      const key = "dnd:" + b.id;
+      const placed = this.state.sel[key] || [];
+      const done = !!this.state.checked[key];
+      const ok = b.answer.every((a, i) => placed[i] === a);
+      const setPlaced = (arr) => this.put("sel", key, arr);
+      const place = (label) => {
+        const arr = placed.slice();
+        if (arr.indexOf(label) >= 0) return;
+        const idx = arr.findIndex((x) => !x);
+        if (idx >= 0) arr[idx] = label; else if (arr.length < b.slots.length) arr.push(label); else return;
+        setPlaced(arr);
+      };
+      return {
+        isDnd: true, title: b.title, sub: b.sub,
+        slots: b.slots.map((label, i) => {
+          const txt = placed[i] || "";
+          let bg = "rgba(255,255,255,.08)", bd = "#33427A", fg = "#FFFFFF";
+          if (txt) { bg = "#FFFFFF"; bd = "#FFFFFF"; fg = "#0F2050"; }
+          if (done && txt) { bg = b.answer[i] === txt ? "#E4F5EA" : "#FDE8EA"; fg = b.answer[i] === txt ? "#1B6B3A" : "#9B1C2E"; bd = fg; }
+          return {
+            label, text: txt || "—", bg, bd, fg,
+            onClick: () => { const arr = placed.slice(); arr[i] = ""; setPlaced(arr); },
+            onDragOver: (e) => e.preventDefault(),
+            onDrop: (e) => { e.preventDefault(); const lbl = e.dataTransfer.getData("text/plain"); const arr = placed.slice(); while (arr.length < b.slots.length) arr.push(""); arr[i] = lbl; setPlaced(arr); }
+          };
+        }),
+        tokens: b.tokens.map((label) => {
+          const used = placed.indexOf(label) >= 0;
+          return {
+            label, bg: used ? "#33427A" : "#F2C230", fg: used ? "#8A97C0" : "#0F2050", op: used ? ".6" : "1",
+            onClick: () => place(label),
+            onDragStart: (e) => e.dataTransfer.setData("text/plain", label)
+          };
+        }),
+        score: done ? (ok ? "Perfeito!" : "Ainda não. Tente de novo.") : "",
+        scoreFg: ok ? "#7BE3A0" : "#FFB3BD",
+        onCheck: () => { this.put("checked", key, true); this.put("ans", key, ok ? "ok" : "no"); },
+        onClear: () => { setPlaced([]); this.put("checked", key, false); }
+      };
+    }
+
+    if (t === "check") return {
+      isCheck: true, title: b.title,
+      items: b.items.map((label, i) => {
+        const k = "chk:" + b.id + ":" + i;
+        const on = !!this.state.ans[k];
+        return { label, mark: on ? "✓" : "", bg: on ? "#0E9BAE" : "#FFFFFF", bd: on ? "#0E9BAE" : "#C7CBD6", onClick: () => this.put("ans", k, !on) };
+      })
+    };
+
+    if (t === "free") return {
+      isFree: true, cols: b.cols === 2 ? "repeat(auto-fit, minmax(240px,1fr))" : "1fr",
+      items: b.items.map((f, i) => {
+        const k = "free:" + b.id + ":" + i;
+        const fv = V[f.v || "gray"] || V.gray;
+        return {
+          n: f.n, kicker: f.kicker, prefix: f.prefix, ideas: f.ideas,
+          bg: fv.bg, accent: SOLID[f.c] || "#0E9BAE",
+          value: this.state.ans[k] || "", onInput: (e) => this.put("ans", k, e.target.value)
+        };
+      })
+    };
+
+    if (t === "cta") return {
+      isCta: true,
+      items: b.items.map((c, i) => {
+        const cv = V[c.v || "gray"] || V.gray;
+        const dark = c.v === "teal" || c.v === "purple" || c.v === "navy";
+        const k = "cta:" + lessonId + ":" + i;
+        return {
+          icon: c.icon === "mic" ? "🎙" : "▶",
+          iconBg: dark ? "#F2C230" : (c.icon === "mic" ? "#5B21B6" : "#0E9BAE"),
+          iconFg: dark ? "#0F2050" : "#FFFFFF",
+          bg: cv.bg, fg: dark ? "#FFFFFF" : "#0F2050",
+          subFg: dark ? "#E3E8F5" : "#6B7280", planFg: dark ? "#F2C230" : (c.icon === "mic" ? "#5B21B6" : "#0E7A8B"),
+          title: c.title, body: c.body, plan: c.plan, btn: c.btn,
+          btnBg: SOLID[c.c] || "#0F2050", btnFg: (c.c === "yellow" || c.c === "white") ? "#0F2050" : "#FFFFFF",
+          msg: c.icon === "mic" ? "Prática oral disponível no Plano Premium — em breve no seu app." : "Videoaula disponível no Plano Completo — em breve no seu app.",
+          msgShow: this.state.ans[k] ? "block" : "none",
+          onClick: () => this.put("ans", k, true)
+        };
+      })
+    };
+
+    return { isKey: true, text: "", bg: "transparent", fg: "transparent" };
+  }
+
+  renderVals() {
+    const s = this.state;
+    const screen = s.screen;
+    const tabDef = [["home", "Início"], ["progress", "Progresso"], ["profile", "Perfil"]];
+    const out = {
+      isLogin: screen === "login", isApp: screen !== "login",
+      isHome: screen === "home", isProgress: screen === "progress",
+      isProfile: screen === "profile", isLesson: screen === "lesson", isResult: screen === "result",
+      nameDraft: s.nameDraft, userName: s.user || "Aluno(a)",
+      upperName: (s.user || "aluno(a)").toUpperCase(),
+      initials: (s.user || "A").trim().slice(0, 2).toUpperCase(),
+      onName: (e) => this.setState({ nameDraft: e.target.value }),
+      onLogin: () => this.set({ user: (s.nameDraft || "Aluno(a)").trim(), screen: "home" }),
+      onLogout: () => this.set({ screen: "login", user: "", nameDraft: "" }),
+      onReset: () => { try { localStorage.removeItem(KEY); } catch (e) {} this.setState({ ans: {}, checked: {}, sel: {}, done: {}, screen: "home" }); },
+      goHome: () => this.set({ screen: "home" }),
+      goProgress: () => this.set({ screen: "progress" }),
+      goProfile: () => this.set({ screen: "profile" }),
+      navHomeBg: screen === "home" ? "#0A1F4E" : "transparent",
+      navHomeFg: screen === "home" ? "#FFFFFF" : "#5B6B7F",
+      navProgBg: screen === "progress" ? "#0A1F4E" : "transparent",
+      navProgFg: screen === "progress" ? "#FFFFFF" : "#5B6B7F",
+      navProfBg: screen === "profile" ? "#0A1F4E" : "transparent",
+      navProfFg: screen === "profile" ? "#FFFFFF" : "#5B6B7F",
+      isListView: s.view === "list", isModuleView: s.view === "modules",
+      onViewList: () => this.set({ view: "list" }),
+      onViewModules: () => this.set({ view: "modules" })
+    };
+
+    const doneCount = Object.keys(s.done).filter((k) => s.done[k]).length;
+    const pct = Math.round((doneCount / 42) * 100);
+    const streak = this.streakDays();
+    out.doneCount = doneCount;
+    out.overallPct = pct + "%";
+    out.ringDash = (pct / 100) * 314.16 + " 314.16";
+    out.ringCap = pct > 0 ? "round" : "butt";
+    out.encourage = pct >= 60 ? "Ótimo! Você está no caminho certo."
+      : pct > 0 ? "Bom ritmo! Siga uma aula por dia."
+      : "Comece hoje. A primeira aula leva 12 min.";
+    out.answeredCount = Object.keys(s.ans).length;
+
+    const available = s.lessons.map((l) => l.id);
+    const firstOpen = available.find((id) => !s.done[id]) || available[available.length - 1] || 1;
+    const nextL = this.lessonById(firstOpen);
+    out.nextLessonTitle = nextL ? nextL.code + " — " + nextL.title : "AULA 01 — Subject Pronouns";
+    out.nextLessonSub = nextL ? nextL.sub : "";
+    out.nextLessonTime = TIMES[firstOpen] || "12 min";
+    out.nextCover = COVERS[firstOpen] || "assets/bigben.png";
+
+    out.onContinue = () => { this.set({ screen: "lesson", lesson: firstOpen, page: 0 }); window.scrollTo(0, 0); };
+
+    out.listBg = s.view === "list" ? "#0A1F4E" : "transparent";
+    out.listFg = s.view === "list" ? "#FFFFFF" : "#5B6B7F";
+    out.modBg = s.view === "modules" ? "#0A1F4E" : "transparent";
+    out.modFg = s.view === "modules" ? "#FFFFFF" : "#5B6B7F";
+
+    out.track = s.track.map((l) => {
+      const open = available.indexOf(l.n) >= 0;
+      const isDone = !!s.done[l.n];
+      const isNext = l.n === firstOpen;
+      const lesson = this.lessonById(l.n);
+      return {
+        num: l.n < 10 ? "0" + l.n : "" + l.n, t: l.t,
+        sub: (lesson && lesson.sub) || SUBS[l.n] || "",
+        time: open ? (TIMES[l.n] || "12 min") : "Em breve",
+        tag: isDone ? "CONCLUÍDA" : open ? "DISPONÍVEL" : "EM BREVE",
+        tagFg: isDone ? "#12A594" : open ? "#1B6BE3" : "#A9B4C4",
+        bg: open ? "#FFFFFF" : "#F1F4F9",
+        bd: isNext && open ? "#7EAEF5" : "transparent",
+        shadow: open ? "0 4px 16px rgba(11,31,75,.05)" : "none",
+        numBg: isDone ? "linear-gradient(160deg,#12A594,#0C7A6D)" : open ? "linear-gradient(160deg,#123A86,#0A1F4E)" : "#E4EAF2",
+        numFg: open || isDone ? "#FFFFFF" : "#A9B4C4",
+        titleFg: open ? "#0A1F4E" : "#8A96A8",
+        subFg: open ? "#5B6B7F" : "#A9B4C4",
+        timeFg: open ? "#0A1F4E" : "#A9B4C4",
+        cursor: open ? "pointer" : "default",
+        onClick: open ? () => { this.set({ screen: "lesson", lesson: l.n, page: 0 }); window.scrollTo(0, 0); } : () => {}
+      };
+    });
+
+    out.modules = MODULES.map((m, i) => {
+      const ids = []; for (let n = m.from; n <= m.to; n++) ids.push(n);
+      const open = ids.some((n) => available.indexOf(n) >= 0);
+      const dn = ids.filter((n) => s.done[n]).length;
+      return {
+        n: i + 1 < 10 ? "0" + (i + 1) : "" + (i + 1), title: m.title,
+        tag: open ? "DISPONÍVEL" : "EM BREVE", tagFg: open ? "#1B6BE3" : "#A9B4C4",
+        range: "Aulas " + m.from + "–" + m.to + " · " + dn + " de " + ids.length + " concluídas",
+        bd: open ? "#DCE6F2" : "#EDF1F7",
+        numBg: open ? "linear-gradient(160deg,#123A86,#0A1F4E)" : "#E4EAF2", numFg: open ? "#FFFFFF" : "#A9B4C4",
+        pct: Math.round((dn / ids.length) * 100) + "%",
+        cursor: open ? "pointer" : "default",
+        onClick: open ? () => this.set({ view: "list" }) : () => {}
+      };
+    });
+
+    out.stats = [
+      { value: doneCount, label: "AULAS CONCLUÍDAS", bg: "#E4F6F7", bd: "#C7EBEE", fg: "#0B5563" },
+      { value: out.answeredCount, label: "RESPOSTAS SALVAS", bg: "#EFEAFB", bd: "#DCD2F6", fg: "#3C1D80" },
+      { value: Math.round((doneCount / 42) * 100) + "%", label: "DA TRILHA", bg: "#FDF4D8", bd: "#F6E3A8", fg: "#5E4A0E" }
+    ];
+    out.perLesson = s.lessons.map((l) => {
+      const sc = this.scoreLesson(l.id);
+      const pct = sc.total ? Math.round((sc.got / sc.total) * 100) : 0;
+      return { title: l.code + " — " + l.title, label: sc.got + "/" + sc.total, pct: pct + "%", fg: pct >= 70 ? "#1B6B3A" : pct > 0 ? "#0E9BAE" : "#C7CBD6" };
+    });
+
+    out.firstName = (s.user || "Aluno").trim().split(" ")[0];
+    out.photoEl = s.photo ? React.createElement("img", { src: s.photo, alt: "",
+      style: { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" } }) : null;
+    out.photoShow = s.photo ? "block" : "none";
+    out.initialsShow = s.photo ? "none" : "block";
+
+    out.streakLabel = streak === 1 ? "1 dia" : streak + " dias";
+
+    out.openEdit = () => this.openModal("edit");
+    out.openSenha = () => this.openModal("senha");
+    out.openEmail = () => this.openModal("email");
+    out.openNotif = () => this.openModal("notif");
+    out.openIdioma = () => this.openModal("idioma");
+    out.openPriv = () => this.openModal("privacidade");
+    out.openMetas = () => this.openModal("metas");
+    out.openLembretes = () => this.openModal("lembretes");
+    out.openConquistas = () => this.openModal("conquistas");
+    out.openCertificado = () => this.openModal("certificado");
+    out.onPhoto = () => this.openModal("photo");
+    out.onPlan = () => this.openModal("plano");
+    out.onAskReset = () => this.openModal("apagar");
+    out.onAskLogout = () => this.openModal("sair");
+
+    const m = s.modal ? MODAL[s.modal] : null;
+    out.modalOpen = !!m;
+    out.modalTitle = m ? m.title : "";
+    out.modalBody = m ? m.body : "";
+    out.modalIconEl = m && m.icon ? React.createElement("img", { src: m.icon, alt: "",
+      style: { width: 44, height: 44, objectFit: "contain" } }) : null;
+    out.modalInputShow = m && m.input ? "block" : "none";
+    out.modalFileShow = m && m.file ? "block" : "none";
+    out.modalBtn = m ? m.btn : "";
+    out.modalBtnBg = m && m.danger ? "#E03B4C" : "#0A1F4E";
+    out.modalName = s.modalName;
+    out.onModalName = (e) => this.setState({ modalName: e.target.value });
+    out.closeModal = () => this.setState({ modal: null });
+    out.stopProp = (e) => e.stopPropagation();
+    out.onPickPhoto = (e) => this.readPhoto(e.target.files && e.target.files[0]);
+    out.onModalPrimary = () => {
+      const k = s.modal;
+      if (k === "edit") this.set({ user: (s.modalName || s.user || "Aluno(a)").trim(), modal: null });
+      else if (k === "apagar") { try { localStorage.removeItem(KEY); } catch (err) {} this.setState({ ans: {}, checked: {}, sel: {}, done: {}, modal: null }); }
+      else if (k === "sair") this.set({ screen: "login", user: "", nameDraft: "", modal: null });
+      else this.setState({ modal: null });
+    };
+
+    const L = s.lesson ? this.lessonById(s.lesson) : null;
+    if (L) {
+      const page = Math.min(s.page, L.pages.length - 1);
+      out.lessonCode = L.code; out.lessonTitle = L.title; out.lessonTime = TIMES[L.id] || "12 min";
+      out.pageNum = page + 1; out.pageTotal = L.pages.length;
+      out.pagePct = Math.round(((page + 1) / L.pages.length) * 100) + "%";
+      out.blocks = L.pages[page].blocks.map((b) => this.resolve(b, L.id));
+      out.prevOp = page === 0 ? ".45" : "1";
+      out.nextLabel = page === L.pages.length - 1 ? "CONCLUIR AULA" : "PRÓXIMA PÁGINA";
+      out.onPrev = () => { if (page > 0) this.set({ page: page - 1 }); };
+      out.onNext = () => {
+        if (page < L.pages.length - 1) { this.set({ page: page + 1 }); window.scrollTo(0, 0); }
+        else {
+          const done = Object.assign({}, s.done); done[L.id] = true;
+          const sc = this.scoreLesson(L.id);
+          const today = new Date().toISOString().slice(0, 10);
+          const days = (s.days || []).indexOf(today) >= 0 ? (s.days || []) : (s.days || []).concat([today]);
+          this.set({ done, days, screen: "result", result: { id: L.id, got: sc.got, total: sc.total } });
+          window.scrollTo(0, 0);
+        }
+      };
+    } else {
+      out.blocks = []; out.pageNum = 1; out.pageTotal = 1; out.pagePct = "0%"; out.prevOp = ".45";
+      out.nextLabel = "PRÓXIMA PÁGINA"; out.onPrev = () => {}; out.onNext = () => {};
+      out.lessonCode = ""; out.lessonTitle = ""; out.lessonTime = "";
+    }
+
+    const r = s.result;
+    const rl = r ? this.lessonById(r.id) : null;
+    out.resultTitle = rl ? rl.code + " — " + rl.title : "";
+    out.resultScore = r ? r.got : 0;
+    out.resultTotal = r ? r.total : 0;
+    const rp = r && r.total ? Math.round((r.got / r.total) * 100) : 0;
+    out.resultPct = rp + "%";
+    out.resultDash = (rp / 100) * 314.16 + " 314.16";
+    out.resultCap = rp > 0 ? "round" : "butt";
+    out.resultMessage = rp >= 80 ? "Excelente! Você dominou esta aula."
+      : rp >= 50 ? "Bom trabalho. Vale revisar os itens que ficaram."
+      : "Tudo bem errar. Revise a aula com calma e tente de novo.";
+    out.onReviewLesson = () => this.set({ screen: "lesson", lesson: r ? r.id : 1, page: 0 });
+    out.onNextLesson = () => {
+      const nid = r ? r.id + 1 : 1;
+      if (available.indexOf(nid) >= 0) this.set({ screen: "lesson", lesson: nid, page: 0 });
+      else this.set({ screen: "home" });
+    };
+
+    return out;
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   Inglês em Ação — camada de tokens
+   Valores extraídos do protótipo (prototype/mobile.dc.html) e fixados na
+   seção 3 do CONTRACT.md. Os nomes crus vivem no :root com os nomes do
+   contrato (--bg, --navy, ...); o bloco @theme inline os expõe ao Tailwind
+   como --color-* / --radius-* / --shadow-* para virarem utilitários
+   (bg-navy, text-muted, rounded-card, shadow-hero, font-hand, ...).
+   ========================================================================= */
+
+:root {
+  color-scheme: light;
+
+  /* superfícies */
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --text: #1f2430;
+  --muted: #5b6b7f;
+  --muted-2: #8a96a8;
+  --muted-3: #3c4a5c;
+  --border: #dce6f2;
+  --border-2: #c9d6ec;
+  --selection: #cdeff3;
+
+  /* trilho neutro de barras de progresso (protótipo) */
+  --rail: #eaf0f7;
+
+  /* marca */
+  --navy: #0a1f4e;
+  --navy-light: #123a86;
+  --blue: #1b6be3;
+  --link: #0e9bae;
+  --link-hover: #0f2050;
+  --yellow: #f6c945;
+  --teal: #12a594;
+  --mint-1: #dff3ec;
+  --mint-2: #e4f3ec;
+  --mint-3: #d8f0e6;
+
+  /* sólidos usados por chips e estados (constante SOLID do protótipo) */
+  --purple: #5b21b6;
+  --orange: #e8820c;
+  --danger: #e03b4c;
+
+  /* estados derivados (hover do protótipo / escurecimento do danger) */
+  --yellow-hover: #ffd75c;
+  --danger-hover: #c7303f;
+}
+
+@theme inline {
+  /* --- cores ------------------------------------------------------------ */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-muted-3: var(--muted-3);
+  --color-border: var(--border);
+  --color-border-2: var(--border-2);
+  --color-selection: var(--selection);
+  --color-rail: var(--rail);
+
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-blue: var(--blue);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+  --color-yellow: var(--yellow);
+  --color-yellow-hover: var(--yellow-hover);
+  --color-teal: var(--teal);
+  --color-mint-1: var(--mint-1);
+  --color-mint-2: var(--mint-2);
+  --color-mint-3: var(--mint-3);
+  --color-purple: var(--purple);
+  --color-orange: var(--orange);
+  --color-danger: var(--danger);
+  --color-danger-hover: var(--danger-hover);
+
+  /* --- raios ------------------------------------------------------------ */
+  --radius-field: 14px;
+  --radius-card: 22px;
+  --radius-hero: 26px;
+  --radius-pill: 999px;
+
+  /* --- sombras ---------------------------------------------------------- */
+  --shadow-card: 0 8px 26px rgba(11, 31, 75, 0.07);
+  --shadow-raised: 0 14px 40px rgba(11, 31, 75, 0.18);
+  --shadow-hero: 0 18px 48px rgba(11, 31, 75, 0.1);
+
+  /* --- tipografia (variáveis vindas do next/font em layout.tsx) --------- */
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-hand: var(--font-caveat), "Segoe Script", cursive;
+}
+
+/* =========================================================================
+   Base
+   ========================================================================= */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-figtree), ui-sans-serif, system-ui, -apple-system,
+      "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--selection);
+    color: var(--navy);
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--link-hover);
+  }
+
+  /* Foco sempre visível: nada que receba teclado fica sem anel. */
+  :focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+  }
+
+  /* Títulos herdam o peso do protótipo (900) via classes; aqui só o corte. */
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+    text-wrap: pretty;
+  }
+
+  /* Imagens e mídia nunca estouram a coluna de 430px. */
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+}
+
+/* =========================================================================
+   Componentes utilitários
+   ========================================================================= */
+
+@layer components {
+  /* Coluna do app: mobile-first ocupa tudo; a partir de 460px centraliza. */
+  .tela {
+    width: 100%;
+    max-width: 460px;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+
+  /* Desktop (design do Claude Designer): coluna de 1024px, sem barra inferior. */
+  @media (width >= 1024px) {
+    .tela {
+      max-width: 1024px;
+      padding-inline: 20px;
+    }
+  }
+
+  /* Altura da BottomNav (= ALTURA_NAV). Zero no desktop, onde ela some: o que
+     fica colado acima dela (barra do leitor, aviso de gravação) desce junto. */
+  :root {
+    --altura-nav: 74px;
+  }
+  @media (width >= 1024px) {
+    :root {
+      --altura-nav: 0px;
+    }
+  }
+
+  /* Frases manuscritas de incentivo ("Small steps, big results"). */
+  .manuscrito {
+    font-family: var(--font-caveat), "Segoe Script", cursive;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  /* Rótulo de campo / kicker: 13px, 800, caixa alta espaçada. */
+  .kicker {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+}
+
+/* =========================================================================
+   Movimento
+   ========================================================================= */
+
+@keyframes iea-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.iea-spinner {
+  animation: iea-spin 0.7s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* O spinner é o único sinal de "carregando": desacelera, não congela. */
+  .iea-spinner {
+    animation: iea-spin 2.4s linear infinite !important;
+  }
+}

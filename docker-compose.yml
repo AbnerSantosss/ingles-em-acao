@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: iea-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: wsa
+      POSTGRES_PASSWORD: wsa_dev_password
+      POSTGRES_DB: wsa_english
+    ports:
+      # Só na própria máquina: a senha de dev está no repositório.
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - wsa_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wsa -d wsa_english"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  wsa_pgdata:
+# Biblioteca de mídia em desenvolvimento: aqui não existe serviço `app`, o Next
+# roda na máquina (`npm run dev`), e as imagens enviadas pelo painel vão para
+# `var/uploads/` na raiz do projeto — o padrão de MEDIA_ROOT. Não há volume a
+# declarar. Em produção é outra história: veja `iea_uploads` em
+# docker-compose.prod.yml, e mantenha `var/uploads/` fora do Git.
