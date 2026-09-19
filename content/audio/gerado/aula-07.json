@@ -2,7 +2,7 @@
   "aula": 7,
   "clips": [
     {
-      "pagina": 1,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_001",
         "alvo": "texto",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "pagina": 1,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_002",
         "alvo": "texto",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "pagina": 1,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_003",
         "alvo": "texto",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "pagina": 2,
+      "pagina": 4,
       "clip": {
         "id": "lesson_007_audio_006",
         "alvo": "texto",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "pagina": 2,
+      "pagina": 4,
       "clip": {
         "id": "lesson_007_audio_007",
         "alvo": "texto",
@@ -80,7 +80,7 @@
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_008",
         "alvo": "texto",
@@ -91,7 +91,7 @@
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_009",
         "alvo": "texto",

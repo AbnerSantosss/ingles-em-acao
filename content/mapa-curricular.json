@@ -128,13 +128,24 @@
       },
       "reutiliza": ["you", "are", "Brazilian", "France", "I'm", "he's", "she's"],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
+        { "pagina": 1, "bloco": 5, "tipoDeTexto": "dialogo" },
+        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
         { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "exemplo" }
+        { "pagina": 2, "bloco": 7, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 7, "tipoDeTexto": "exemplo" },
+        { "pagina": 4, "bloco": 4, "tipoDeTexto": "lista" },
+        { "pagina": 4, "bloco": 9, "tipoDeTexto": "exemplo" },
+        { "pagina": 5, "bloco": 4, "tipoDeTexto": "lista" },
+        { "pagina": 5, "bloco": 6, "tipoDeTexto": "exemplo" },
+        { "pagina": 5, "bloco": 9, "tipoDeTexto": "dialogo" },
+        { "pagina": 6, "bloco": 4, "tipoDeTexto": "lista" },
+        { "pagina": 6, "bloco": 7, "tipoDeTexto": "lista" },
+        { "pagina": 6, "bloco": 10, "tipoDeTexto": "lista" },
+        { "pagina": 6, "bloco": 13, "tipoDeTexto": "dialogo" },
+        { "pagina": 7, "bloco": 6, "tipoDeTexto": "dialogo" },
+        { "pagina": 7, "bloco": 9, "tipoDeTexto": "dialogo" },
+        { "pagina": 7, "bloco": 11, "tipoDeTexto": "dialogo" }
       ]
     },
     {
@@ -150,10 +161,22 @@
       },
       "reutiliza": ["he", "they", "is", "are", "a doctor", "he / she / it + is + ___", "you / we / they + are + ___"],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" }
+        { "pagina": 1, "bloco": 5, "tipoDeTexto": "dialogo" },
+        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
+        { "pagina": 2, "bloco": 6, "tipoDeTexto": "texto" },
+        { "pagina": 2, "bloco": 7, "tipoDeTexto": "lista" },
+        { "pagina": 2, "bloco": 9, "tipoDeTexto": "exemplo" },
+        { "pagina": 3, "bloco": 5, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 7, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 9, "tipoDeTexto": "exemplo" },
+        { "pagina": 4, "bloco": 5, "tipoDeTexto": "lista" },
+        { "pagina": 4, "bloco": 7, "tipoDeTexto": "exemplo" },
+        { "pagina": 5, "bloco": 5, "tipoDeTexto": "lista" },
+        { "pagina": 5, "bloco": 6, "tipoDeTexto": "exemplo" },
+        { "pagina": 6, "bloco": 5, "tipoDeTexto": "dialogo" },
+        { "pagina": 6, "bloco": 10, "tipoDeTexto": "lista" },
+        { "pagina": 7, "bloco": 5, "tipoDeTexto": "texto" },
+        { "pagina": 7, "bloco": 9, "tipoDeTexto": "lista" }
       ]
     },
     {

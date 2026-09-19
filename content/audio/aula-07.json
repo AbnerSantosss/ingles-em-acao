@@ -5,8 +5,8 @@
   "clips": [
     {
       "id": "lesson_007_audio_001",
-      "pagina": 1,
-      "local": "Página 1 · grid · b5",
+      "pagina": 2,
+      "local": "Página 2 · cards · b9",
       "alvo": "texto",
       "ancora": "This is my mother.",
       "texto": "This is my mother.",
@@ -17,12 +17,12 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "ÓRFÃO: a frase não existe mais no conteúdo fiel ao e-book (a página 02 usa \"She is my mother.\"). Aguarda decisão do dono."
     },
     {
       "id": "lesson_007_audio_002",
-      "pagina": 1,
-      "local": "Página 1 · grid · b5",
+      "pagina": 2,
+      "local": "Página 2 · cards · b9",
       "alvo": "texto",
       "ancora": "He is my brother.",
       "texto": "He is my brother.",
@@ -37,8 +37,8 @@
     },
     {
       "id": "lesson_007_audio_003",
-      "pagina": 1,
-      "local": "Página 1 · grid · b5",
+      "pagina": 2,
+      "local": "Página 2 · cards · b9",
       "alvo": "texto",
       "ancora": "They are my parents.",
       "texto": "They are my parents.",
@@ -49,12 +49,12 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "ÓRFÃO: a frase não existe no e-book da Aula 07. Aguarda decisão do dono."
     },
     {
       "id": "lesson_007_audio_004",
       "pagina": 2,
-      "local": "Página 2 · table · b3",
+      "local": "Página 2 · table · b5",
       "alvo": "texto",
       "ancora": "sister",
       "texto": "sister",
@@ -70,7 +70,7 @@
     {
       "id": "lesson_007_audio_005",
       "pagina": 2,
-      "local": "Página 2 · table · b3",
+      "local": "Página 2 · table · b5",
       "alvo": "texto",
       "ancora": "brother",
       "texto": "brother",
@@ -85,8 +85,8 @@
     },
     {
       "id": "lesson_007_audio_006",
-      "pagina": 2,
-      "local": "Página 2 · table · b3",
+      "pagina": 4,
+      "local": "Página 4 · table · b5",
       "alvo": "texto",
       "ancora": "son",
       "texto": "son",
@@ -101,8 +101,8 @@
     },
     {
       "id": "lesson_007_audio_007",
-      "pagina": 2,
-      "local": "Página 2 · table · b3",
+      "pagina": 4,
+      "local": "Página 4 · table · b5",
       "alvo": "texto",
       "ancora": "daughter",
       "texto": "daughter",
@@ -117,8 +117,8 @@
     },
     {
       "id": "lesson_007_audio_008",
-      "pagina": 3,
-      "local": "Página 3 · rule · b3 · 1 · POSSE COM ADJETIVO",
+      "pagina": 2,
+      "local": "Página 2 · cards · b9",
       "alvo": "texto",
       "ancora": "This is my sister.",
       "texto": "This is my sister.",
@@ -129,12 +129,12 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "ÓRFÃO: a frase não existe mais no conteúdo fiel ao e-book (a página 02 usa \"She is my sister.\"). Aguarda decisão do dono."
     },
     {
       "id": "lesson_007_audio_009",
-      "pagina": 3,
-      "local": "Página 3 · rule · b4 · 2 · POSSE COM ’S",
+      "pagina": 2,
+      "local": "Página 2 · cards · b9",
       "alvo": "texto",
       "ancora": "Ana’s brother is a doctor.",
       "texto": "Ana's brother is a doctor.",
@@ -145,7 +145,7 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: estruturas)."
+      "motivo": "ÓRFÃO: o possessivo ’s é conteúdo da Aula 08 no e-book, não da Aula 07. Aguarda decisão do dono."
     }
   ]
 }

@@ -5,8 +5,8 @@
   "clips": [
     {
       "id": "lesson_006_audio_001",
-      "pagina": 1,
-      "local": "Página 1 · grid · b5",
+      "pagina": 2,
+      "local": "Página 2 · cards · b5",
       "alvo": "texto",
       "ancora": "I’m from Brazil.",
       "texto": "I'm from Brazil.",
@@ -21,8 +21,8 @@
     },
     {
       "id": "lesson_006_audio_002",
-      "pagina": 1,
-      "local": "Página 1 · grid · b5",
+      "pagina": 3,
+      "local": "Página 3 · cards · b7",
       "alvo": "texto",
       "ancora": "She’s from Japan.",
       "texto": "She's from Japan.",
@@ -53,8 +53,8 @@
     },
     {
       "id": "lesson_006_audio_004",
-      "pagina": 2,
-      "local": "Página 2 · rule · b4 · ORIGEM (LUGAR)",
+      "pagina": 5,
+      "local": "Página 5 · table · b4",
       "alvo": "texto",
       "ancora": "Where are you from?",
       "texto": "Where are you from?",

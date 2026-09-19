@@ -2,7 +2,7 @@
   "aula": 6,
   "clips": [
     {
-      "pagina": 1,
+      "pagina": 2,
       "clip": {
         "id": "lesson_006_audio_001",
         "alvo": "texto",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "pagina": 1,
+      "pagina": 3,
       "clip": {
         "id": "lesson_006_audio_002",
         "alvo": "texto",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_006_audio_004",
         "alvo": "texto",

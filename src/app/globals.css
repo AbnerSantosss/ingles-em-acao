@@ -295,6 +295,7 @@
   --alt-progresso: 6px; /* espessura da barra de progresso do topo */
   --esp-miolo: 16px; /* respiro acima e abaixo do cartão, dentro do miolo */
   --fundo-aula: #f4f7fc; /* cor de espera enquanto a imagem de fundo carrega */
+  --fundo-acesso: #012060; /* o mesmo azul do miolo da arte das telas de acesso */
 }
 @media (min-width: 640px) {
   :root {
@@ -485,6 +486,56 @@
     }
   }
 
+  /* O fundo das telas de acesso (FundoDeAcesso.tsx): a arte navy parada atrás
+     do card branco. Mesmo desenho do fundo da aula, arte e cor de espera
+     próprias; de propósito em regras separadas, para mexer numa não mexer na
+     outra. */
+  .fundo-acesso {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: var(--fundo-acesso, #012060);
+  }
+  .fundo-acesso > picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .fundo-acesso__imagem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  /* Aqui some só a imagem, não o elemento: o texto de fora do card é claro e
+     precisa do azul liso por baixo. Em cores forçadas o sistema troca o fundo
+     e o texto pelo par dele, e a arte sairia da frente de qualquer jeito. */
+  @media (prefers-contrast: more), (forced-colors: active) {
+    .fundo-acesso__imagem {
+      display: none;
+    }
+  }
+
+  /* O rodapé de fora do card (lema e link de voltar), direto sobre a arte.
+     A cor do texto já passa de AA sobre o navy, mas no celular esse bloco cai
+     em cima dos livros e do balão dourado, que são claros. Daí o véu: um
+     gradiente do mesmo azul que some antes da borda, invisível sobre o miolo
+     liso e só o suficiente para apagar os brilhos por baixo da frase. A sombra
+     fecha a conta nas letras finas. Em cores forçadas e na impressão o
+     navegador descarta os dois sozinho. */
+  .rodape-acesso {
+    background: radial-gradient(
+      72% 130% at 50% 45%,
+      rgb(1 20 48 / 0.62) 0%,
+      rgb(1 20 48 / 0.34) 46%,
+      rgb(1 20 48 / 0) 78%
+    );
+    text-shadow: 0 1px 2px rgb(1 20 48 / 0.7);
+  }
+
   /* Anel do resultado: menor em tela baixa, para o cartão caber sem rolar. */
   .anel-do-resultado {
     width: 136px;
@@ -520,10 +571,17 @@
   }
 }
 
-/* Impressão: a aula inteira no papel, sem casca nem fundo. */
+/* Impressão: a aula inteira no papel, sem casca nem fundo. O fundo das telas
+   de acesso também sai: no papel vale o branco, e o texto de fora do card tem
+   variante `print:` para voltar ao navy. */
 @media print {
-  .fundo-aula {
+  .fundo-aula,
+  .fundo-acesso {
     display: none;
+  }
+  .rodape-acesso {
+    background: none;
+    text-shadow: none;
   }
   .casca-aula {
     display: block;
