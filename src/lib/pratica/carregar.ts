@@ -16,7 +16,6 @@ import path from 'node:path';
 
 import type { Prisma, PrismaClient } from '@prisma/client';
 
-import { auditarSistema } from '@/lib/admin/audit';
 import { validarFicha } from './esquema';
 
 export interface ResultadoDaCarga {
@@ -107,12 +106,16 @@ export async function carregarPratica(
       data: { practice: validacao.ficha as unknown as Prisma.InputJsonValue },
     });
     // A ficha não tem LessonVersion: a auditoria guarda o antes e o depois inteiros.
-    await auditarSistema({
-      sistema: opcoes.sistema ?? 'carregar-pratica',
-      action: 'lesson.practice.load',
-      resource: `Lesson:${numero}`,
-      before: aula.practice ?? undefined,
-      after: validacao.ficha,
+    // Grava pelo `prisma` recebido, não por `@/lib/admin/audit`: aquele módulo importa
+    // `next/headers`, que não existe fora do servidor do Next (seed e script no container).
+    await prisma.auditLog.create({
+      data: {
+        actorEmail: `(${opcoes.sistema ?? 'carregar-pratica'})`,
+        action: 'lesson.practice.load',
+        resource: `Lesson:${numero}`,
+        before: (aula.practice ?? undefined) as Prisma.InputJsonValue | undefined,
+        after: validacao.ficha as unknown as Prisma.InputJsonValue,
+      },
     });
     resultado.gravadas += 1;
   }
