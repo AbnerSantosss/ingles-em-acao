@@ -1,0 +1,93 @@
+{
+  "aula": 26,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_001",
+        "alvo": "texto",
+        "ancora": "I’m working now.",
+        "texto": "I'm working now.",
+        "src": "/audio/aula-26/lesson_026_audio_001.567c80d5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_002",
+        "alvo": "texto",
+        "ancora": "It is raining.",
+        "texto": "It is raining.",
+        "src": "/audio/aula-26/lesson_026_audio_002.f12ce96a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_003",
+        "alvo": "texto",
+        "ancora": "We’re waiting.",
+        "texto": "We're waiting.",
+        "src": "/audio/aula-26/lesson_026_audio_003.4d154560.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_004",
+        "alvo": "texto",
+        "ancora": "work → working",
+        "texto": "work. working",
+        "src": "/audio/aula-26/lesson_026_audio_004.678187c0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_005",
+        "alvo": "texto",
+        "ancora": "write → writing",
+        "texto": "write. writing",
+        "src": "/audio/aula-26/lesson_026_audio_005.fe1eb2ca.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_006",
+        "alvo": "texto",
+        "ancora": "run → running · sit → sitting",
+        "texto": "run. running. sit. sitting",
+        "src": "/audio/aula-26/lesson_026_audio_006.20081c14.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_007",
+        "alvo": "texto",
+        "ancora": "lie → lying",
+        "texto": "lie. lying",
+        "src": "/audio/aula-26/lesson_026_audio_007.0b96b308.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_026_audio_008",
+        "alvo": "texto",
+        "ancora": "I am working now.",
+        "texto": "I am working now.",
+        "src": "/audio/aula-26/lesson_026_audio_008.e64d9182.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

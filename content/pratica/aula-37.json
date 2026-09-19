@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Separar o que se conta do que não se conta e usar \"a/an\", \"some\" e \"any\" ao falar de comida e compras.",
+  "conteudoAlvo": [
+    "I have + some + ___, I don't have + any + ___",
+    "Do you have + any + ___?, Would you like + ___?",
+    "a bag of rice, a can of soda, a slice of bread",
+    "apples, bananas, grapes, sugar, flour, money"
+  ],
+  "expressoesFixas": [
+    "Yes, please."
+  ],
+  "comoIntegrar": [
+    "Use \"there is\" e \"there are\" que já sei: \"There are some bananas on the table.\"",
+    "Use a comida e o restaurante que já sei: \"Would you like some soup?\", \"Yes, please.\""
+  ],
+  "regrasDaAula": [
+    "\"some\" na afirmativa; \"any\" na negativa e na pergunta: \"I don't have any water.\""
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "mini-dialogo"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual destas palavras não se conta: \"apple\", \"chair\" ou \"sugar\"?",
+      "respostaDeReferencia": "sugar"
+    },
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"some\" ou \"any\": \"Do you have ___ lemons?\"",
+      "respostaDeReferencia": "Do you have any lemons?"
+    },
+    {
+      "tipo": "mini-dialogo",
+      "enunciado": "Responda aceitando: \"Would you like some soup?\"",
+      "respostaDeReferencia": "Yes, please."
+    }
+  ],
+  "limites": [
+    "Sem \"many\", \"much\", \"a lot of\" e \"How much\": ainda não estudei.",
+    "Sem o passado: só o presente, na loja ou no restaurante."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"a\" e \"an\". Complete: \"I have ___ apple.\" Entra \"a\" ou \"an\" no espaço?",
+  "resumoAutorizado": [
+    "Contável tem plural: \"an apple\", \"two apples\"; \"rice\", \"water\", \"sugar\" não têm.",
+    "\"some\" e \"any\": \"I have some bananas.\", \"I don't have any water.\"",
+    "Unidades: \"a bag of rice\", \"a can of soda\", \"a slice of bread\"."
+  ],
+  "resumoCurto": "Contável e incontável: \"an apple\", \"some water\", \"any bananas\", \"a bag of rice\"."
+}

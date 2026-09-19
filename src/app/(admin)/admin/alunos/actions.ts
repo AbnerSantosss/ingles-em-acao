@@ -202,7 +202,7 @@ export async function mudarPlanoAction(
     return sucesso(
       alerta.enviado
         ? `Plano alterado para ${depois.plan}. Alerta enviado para ${alerta.destinatarios} admin(s).`
-        : `Plano alterado para ${depois.plan}. O alerta por e-mail não saiu (${alerta.motivo ?? 'sem detalhe'}) — a mudança e a falha estão na auditoria.`,
+        : `Plano alterado para ${depois.plan}. O alerta por e-mail não saiu (${alerta.motivo ?? 'sem detalhe'}). A mudança e a falha estão na auditoria.`,
     );
   } catch (erro: unknown) {
     return erroDeBanco('mudar plano', erro);
@@ -375,7 +375,7 @@ export async function reenviarVerificacaoAction(
     if (aluno.deletedAt !== null) return falha(CONTA_ANONIMIZADA);
 
     if (aluno.emailVerifiedAt !== null) {
-      return falha('O e-mail deste aluno já está verificado — não há o que reenviar.');
+      return falha('O e-mail deste aluno já está verificado. Não há o que reenviar.');
     }
 
     const limite = await limiteDeReenvio(aluno.id);
@@ -511,7 +511,7 @@ export async function recalcularProgressoAction(
         criadas: resultado.criadas,
         ajustes: resultado.ajustes.map((ajuste) => ({
           aula: ajuste.numero,
-          antes: `${ajuste.antes.score ?? '—'}/${ajuste.antes.total ?? '—'}`,
+          antes: `${ajuste.antes.score ?? '-'}/${ajuste.antes.total ?? '-'}`,
           depois: `${ajuste.depois.score}/${ajuste.depois.total}`,
         })),
         ignoradas: resultado.ignoradas,

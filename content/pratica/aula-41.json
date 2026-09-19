@@ -1,0 +1,53 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Contar o que eu fiz no passado com os verbos irregulares mais comuns, em frases afirmativas.",
+  "conteudoAlvo": [
+    "went, had, saw, made, met, got, took, came",
+    "drank, found, heard, knew, became, read, cost",
+    "I / you / he / she / we / they + could + ___",
+    "a long time ago, together, keys, outside"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Misture com os regulares que já sei: \"I went to the mall and watched a movie.\"",
+    "Use \"yesterday\", \"last\" e \"ago\" que já sei: \"They saw a great movie last night.\""
+  ],
+  "regrasDaAula": [
+    "O irregular tem forma própria e é igual para todos: \"I went\", \"She went\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "completar",
+    "transformar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual destas palavras está no passado: \"see\", \"saw\" ou \"meet\"?",
+      "respostaDeReferencia": "saw"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com o passado de \"find\": \"I ___ my keys under the sofa.\"",
+      "respostaDeReferencia": "I found my keys under the sofa."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para o passado: \"We go to the mall.\" (use \"last Saturday\")",
+      "respostaDeReferencia": "We went to the mall last Saturday."
+    }
+  ],
+  "limites": [
+    "Só afirmativas: sem negativa e pergunta com os verbos irregulares.",
+    "Só os verbos irregulares da aula; nada de \"have been\" ou outros tempos."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"go\". Complete: \"I ___ to the mall yesterday.\" Qual é o passado de \"go\"?",
+  "resumoAutorizado": [
+    "Irregulares: \"go\" vira \"went\", \"have\" vira \"had\", \"see\" vira \"saw\".",
+    "\"They made lunch together.\", \"Lisa met her best friend a long time ago.\"",
+    "\"could\" é o passado de \"can\": \"I could swim very well when I was a child.\""
+  ],
+  "resumoCurto": "Passado irregular: \"went\", \"had\", \"saw\", \"made\", \"met\", \"could\", \"found\"."
+}

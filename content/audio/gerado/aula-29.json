@@ -1,0 +1,115 @@
+{
+  "aula": 29,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_001",
+        "alvo": "texto",
+        "ancora": "It’s cold. · It’s hot.",
+        "texto": "It's cold. It's hot.",
+        "src": "/audio/aula-29/lesson_029_audio_001.fdc19b97.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_002",
+        "alvo": "texto",
+        "ancora": "It’s snowing.",
+        "texto": "It's snowing.",
+        "src": "/audio/aula-29/lesson_029_audio_002.8664084c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_003",
+        "alvo": "texto",
+        "ancora": "sunny",
+        "texto": "sunny",
+        "src": "/audio/aula-29/lesson_029_audio_003.5d36eefc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_004",
+        "alvo": "texto",
+        "ancora": "cloudy",
+        "texto": "cloudy",
+        "src": "/audio/aula-29/lesson_029_audio_004.bef4453b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_005",
+        "alvo": "texto",
+        "ancora": "rainy",
+        "texto": "rainy",
+        "src": "/audio/aula-29/lesson_029_audio_005.3eb389b5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_006",
+        "alvo": "texto",
+        "ancora": "windy",
+        "texto": "windy",
+        "src": "/audio/aula-29/lesson_029_audio_006.90dad1c0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_007",
+        "alvo": "texto",
+        "ancora": "hot",
+        "texto": "hot",
+        "src": "/audio/aula-29/lesson_029_audio_007.767ea326.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_008",
+        "alvo": "texto",
+        "ancora": "warm",
+        "texto": "warm",
+        "src": "/audio/aula-29/lesson_029_audio_008.241821c8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_009",
+        "alvo": "texto",
+        "ancora": "cold",
+        "texto": "cold",
+        "src": "/audio/aula-29/lesson_029_audio_009.37d46c21.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_029_audio_010",
+        "alvo": "texto",
+        "ancora": "cool",
+        "texto": "cool",
+        "src": "/audio/aula-29/lesson_029_audio_010.c303524d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

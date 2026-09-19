@@ -1,11 +1,13 @@
 'use client';
 
 /**
- * Cabeçalho fixo do app: logo de 44px à esquerda, avatar à direita.
+ * Cabeçalho fixo do app: logo WSA English à esquerda, avatar à direita. A logo
+ * tem 28px de altura no celular (só o globo abaixo de 360px de largura, ver a
+ * prop `compacta` de `LogoWSA`) e 40px a partir de 1024px.
  *
- * A partir de 1024px (`lg`) segue o design desktop do Claude Designer: logo de
- * 54px, a navegação principal numa pílula centralizada (a barra inferior some)
- * e avatar de 56px.
+ * A partir de 1024px (`lg`) segue o design desktop do Claude Designer: a
+ * navegação principal numa pílula centralizada (a barra inferior some) e avatar
+ * de 56px.
  *
  * É um Client Component por um motivo só: a sombra que aparece quando a página
  * rola. Sem ela o cabeçalho "flutua" sobre o conteúdo sem nenhuma separação —
@@ -17,7 +19,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { Logo } from '@/components/ui/Logo';
+import { LogoWSA } from '@/components/ui/LogoWSA';
 import { cn } from '@/lib/ui/cn';
 import { iniciaisDe } from '@/lib/ui/iniciais';
 
@@ -62,24 +64,24 @@ export function AppHeader({ name, photoUrl }: AppHeaderProps) {
     <header
       className={cn(
         'fixed inset-x-0 top-0 z-30 bg-surface transition-shadow duration-200',
+        // Celular com recorte na tela (app instalado ou deitado): o conteúdo desce
+        // abaixo do recorte. As laterais ficam na linha de dentro. Pedido do 05.
+        'pt-[env(safe-area-inset-top)]',
         'lg:bg-[rgba(247,249,252,0.92)] lg:backdrop-blur-[10px]',
         rolou
           ? 'shadow-[0_6px_20px_rgba(11,31,75,0.08)]'
           : 'shadow-[0_1px_0_var(--border)] lg:shadow-none',
       )}
     >
-      <div className="tela flex h-[68px] items-center gap-3 py-3 lg:h-[88px] lg:gap-5 lg:py-4">
+      <div className="tela flex h-[68px] items-center gap-3 py-3 pl-[max(16px,env(safe-area-inset-left))] pr-[max(16px,env(safe-area-inset-right))] lg:h-[88px] lg:gap-5 lg:py-4 lg:pl-[max(20px,env(safe-area-inset-left))] lg:pr-[max(20px,env(safe-area-inset-right))]">
         <Link
           href="/inicio"
-          aria-label="Ir para o início"
+          aria-label="WSA English, início"
           className="-m-1 rounded-field p-1"
         >
-          <Logo size={44} className="lg:hidden" />
-          {/* O `hidden` fica no invólucro: no próprio Logo ele empataria com o
-              `inline-flex` base (o `cn` não faz merge de utilitários) e perderia. */}
-          <span className="hidden lg:inline-flex">
-            <Logo size={54} />
-          </span>
+          {/* 28px no celular, 40px a partir de 1024px; abaixo de 360px de largura,
+              só o globo (`compacta`). A classe com `!` vence a altura inline. */}
+          <LogoWSA fundo="claro" altura={40} compacta prioridade className="h-7! lg:h-10!" />
         </Link>
 
         <nav

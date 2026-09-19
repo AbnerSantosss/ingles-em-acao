@@ -671,7 +671,7 @@ subir.** Volume sem backup é disco com aparência de segurança.
 1. **Banda.** Um mp4 de 200 MB servido pela VPS para 50 alunos simultâneos é a VPS inteira
    ocupada em I/O e banda; o app do aluno fica lento por causa do player.
 2. **Proteção do acervo.** Arquivo servido por caminho estático é arquivo público: basta o
-   link. Videoaula é o produto do Plano Completo. URL assinada de vida curta é o que impede
+   link. Videoaula é o produto do WSA Premium. URL assinada de vida curta é o que impede
    que o link circule, e é o modo de operar natural do S3-compatível.
 
 > **Decisão do PO (2026-09-17): as duas formas já na primeira rodada.** Em `/admin/videos`,
@@ -683,8 +683,8 @@ subir.** Volume sem backup é disco com aparência de segurança.
 > Assinatura SigV4 própria (sem o SDK da AWS); o arquivo vira `MediaAsset` com `kind VIDEO`,
 > fora de `MediaUsage` e fora da biblioteca de mídia (que é só de imagem); trocar ou remover
 > o vídeo **não apaga** o objeto do bucket; o arquivo recusado na conferência (tamanho, tipo,
-> bytes iniciais) é apagado na hora. O link assinado só é gerado para aluno do Plano Completo
-> para cima — o HTML do Essencial nunca recebe URL.
+> bytes iniciais) é apagado na hora. O link assinado só é gerado para aluno do WSA Premium:
+> o HTML do WSA Essencial nunca recebe URL.
 
 Texto original da recomendação: **vídeo no MVP = link externo** (YouTube não listado / Vimeo) pelo normalizador da
 §2.6; **vídeo em produção paga = bucket S3-compatível, recomendação Cloudflare R2** — mesmo
@@ -1225,7 +1225,7 @@ para o aluno.
 
 - `parseVideoSource` + allowlist + `frame-src` no CSP.
 - `/admin/videos` com preview no player do aluno e "aplicar padrão".
-- Bloco/painel de vídeo na tela da aula, respeitando o plano (Essencial não vê).
+- Bloco/painel de vídeo na tela da aula, respeitando o plano (o WSA Essencial não vê).
 
 **Entregue:** videoaulas ligadas às aulas, trocáveis sem deploy.
 

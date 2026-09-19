@@ -36,7 +36,7 @@ import { pontuar } from '@/lib/lesson/score';
 type Resultado = { ok: boolean; erro?: string };
 
 const NAO_GRAVOU =
-  'Não conseguimos salvar sua resposta agora. Ela continua aqui na tela — tentamos de novo no próximo toque.';
+  'Não conseguimos salvar sua resposta agora. Ela continua aqui na tela. Tentamos de novo no próximo toque.';
 
 const AULA_INVALIDA = 'Esta aula não está mais disponível.';
 
@@ -137,7 +137,7 @@ export async function concluirAulaAction(slug: string): Promise<Resultado> {
     return {
       ok: false,
       erro:
-        'Não conseguimos registrar sua conclusão agora. Sua aula continua aqui — tente de novo em instantes.',
+        'Não conseguimos registrar sua conclusão agora. Sua aula continua aqui. Tente de novo em instantes.',
     };
   }
 

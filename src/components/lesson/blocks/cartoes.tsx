@@ -6,10 +6,16 @@
  * resolvers ~1157–1436). Cor vinda do dado entra em `style` inline via
  * `@/lib/ui/palette`; cor fixa fica no `className` com o hex exato do
  * protótipo. Toda imagem passa pelo `Ilustracao`, que decide entre mídia do
- * admin, arte legada e placeholder. Server Components puros, sem estado.
+ * admin, arte legada e placeholder. Nenhum bloco daqui tem estado próprio. Os
+ * botões de ouvir e o player de bloco vêm de `OuvirTexto` e `OuvirBloco`
+ * (Client Components, pacote 08) e só aparecem quando a página tem clipe para
+ * aquele texto.
  */
 
 import { Ilustracao } from "./Ilustracao";
+import { OuvirBloco } from "@/components/lesson/audio/OuvirBloco";
+import { OuvirTexto } from "@/components/lesson/audio/OuvirTexto";
+import { ROTULO_OUVIR_TODOS } from "@/components/lesson/audio/rotulos";
 import { SOLID_FG, isSolidName, solid, variant } from "@/lib/ui/palette";
 import type {
   AccentName,
@@ -60,110 +66,122 @@ export function BlocoCards({ bloco }: { bloco: CardsBlock }) {
   const colunas = bloco.cols === 2 ? "repeat(auto-fit, minmax(160px,1fr))" : "1fr";
 
   return (
-    <div className="grid gap-3" style={{ gridTemplateColumns: colunas }}>
-      {bloco.items.map((c, i) => {
-        const v = variant(c.v);
-        const etiqueta = solid(c.c);
-        return (
-          <div
-            key={i}
-            className="overflow-hidden rounded-[18px] border border-solid"
-            style={{ background: v.bg, borderColor: v.bd }}
-          >
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <div className="grid gap-3" style={{ gridTemplateColumns: colunas }}>
+        {bloco.items.map((c, i) => {
+          const v = variant(c.v);
+          const etiqueta = solid(c.c);
+          return (
             <div
-              className="px-4 py-[11px] text-[13px] font-extrabold tracking-[0.07em]"
-              style={{ background: etiqueta, color: corDeTexto(c.c) }}
+              key={i}
+              className="overflow-hidden rounded-[18px] border border-solid"
+              style={{ background: v.bg, borderColor: v.bd }}
             >
-              {c.tag}
+              <div
+                className="px-4 py-[11px] text-[13px] font-extrabold tracking-[0.07em]"
+                style={{ background: etiqueta, color: corDeTexto(c.c) }}
+              >
+                <OuvirTexto texto={c.tag} compacto>
+                  {c.tag}
+                </OuvirTexto>
+              </div>
+              <div className="flex flex-col gap-2.5 p-3.5">
+                {c.id || c.src ? (
+                  <Ilustracao
+                    id={c.id}
+                    ph={c.ph}
+                    src={c.src}
+                    alt={c.alt}
+                    proporcao="16 / 10"
+                    raio={14}
+                  />
+                ) : null}
+                {(c.lines ?? []).map((linha, j) => (
+                  <div
+                    key={j}
+                    className="rounded-[12px] border border-[#E6E8EE] bg-white px-3.5 py-3 fs-leitura font-bold leading-[1.4] text-[#0F2050]"
+                  >
+                    <OuvirTexto texto={linha} forma="lado" compacto>
+                      {linha}
+                    </OuvirTexto>
+                  </div>
+                ))}
+                {c.note ? (
+                  <div
+                    className="fs-apoio font-bold leading-[1.4]"
+                    style={{ color: etiqueta }}
+                  >
+                    {c.note}
+                  </div>
+                ) : null}
+              </div>
             </div>
-            <div className="flex flex-col gap-2.5 p-3.5">
-              {c.id || c.src ? (
-                <Ilustracao
-                  id={c.id}
-                  ph={c.ph}
-                  src={c.src}
-                  alt={c.alt}
-                  proporcao="16 / 10"
-                  raio={14}
-                />
-              ) : null}
-              {(c.lines ?? []).map((linha, j) => (
-                <div
-                  key={j}
-                  className="rounded-[12px] border border-[#E6E8EE] bg-white px-3.5 py-3 text-[15px] font-bold leading-[1.4] text-[#0F2050]"
-                >
-                  {linha}
-                </div>
-              ))}
-              {c.note ? (
-                <div
-                  className="text-[13px] font-bold leading-[1.4]"
-                  style={{ color: etiqueta }}
-                >
-                  {c.note}
-                </div>
-              ) : null}
-            </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </OuvirBloco>
   );
 }
 
 /** Passo a passo numerado, com etiqueta, frases, foto e nota opcionais. */
 export function BlocoSteps({ bloco }: { bloco: StepsBlock }) {
   return (
-    <ol className="m-0 flex list-none flex-col gap-3 p-0">
-      {bloco.items.map((s, i) => {
-        const v = variant(s.v);
-        return (
-          <li
-            key={i}
-            className="rounded-[18px] border border-solid p-3.5"
-            style={{ background: v.bg, borderColor: v.bd }}
-          >
-            <div className="mb-2.5 flex items-center gap-2.5">
-              <span
-                aria-hidden="true"
-                className="grid h-7 w-7 flex-none place-items-center rounded-full text-[14px] font-black text-white"
-                style={{ background: solid(s.c) }}
-              >
-                {numero(s.n, i)}
-              </span>
-              <span className="rounded-[8px] bg-[#0F2050] px-[13px] py-[7px] text-[12px] font-extrabold tracking-[0.07em] text-white">
-                {s.tag}
-              </span>
-            </div>
-            {(s.lines ?? []).map((linha, j) => (
-              <div
-                key={j}
-                className="mb-1.5 text-[15px] font-bold leading-[1.45] text-[#0F2050]"
-              >
-                {linha}
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <ol className="m-0 flex list-none flex-col gap-3 p-0">
+        {bloco.items.map((s, i) => {
+          const v = variant(s.v);
+          return (
+            <li
+              key={i}
+              className="rounded-[18px] border border-solid p-3.5"
+              style={{ background: v.bg, borderColor: v.bd }}
+            >
+              <div className="mb-2.5 flex items-center gap-2.5">
+                <span
+                  aria-hidden="true"
+                  className="grid h-7 w-7 flex-none place-items-center rounded-full text-[14px] font-black text-white"
+                  style={{ background: solid(s.c) }}
+                >
+                  {numero(s.n, i)}
+                </span>
+                <OuvirTexto texto={s.tag} compacto>
+                  <span className="rounded-[8px] bg-[#0F2050] px-[13px] py-[7px] fs-rotulo font-extrabold tracking-[0.07em] text-white">
+                    {s.tag}
+                  </span>
+                </OuvirTexto>
               </div>
-            ))}
-            {s.id || s.src ? (
-              <div className="mt-2">
-                <Ilustracao
-                  id={s.id}
-                  ph={s.ph}
-                  src={s.src}
-                  alt={s.alt}
-                  proporcao="16 / 10"
-                  raio={14}
-                />
-              </div>
-            ) : null}
-            {s.note ? (
-              <div className="mt-2.5 rounded-[12px] border border-[#E6E8EE] bg-white px-3 py-2.5 text-[13px] font-bold leading-[1.4] text-[#3C4A5C]">
-                {s.note}
-              </div>
-            ) : null}
-          </li>
-        );
-      })}
-    </ol>
+              {(s.lines ?? []).map((linha, j) => (
+                <div
+                  key={j}
+                  className="mb-1.5 fs-leitura font-bold leading-[1.45] text-[#0F2050]"
+                >
+                  <OuvirTexto texto={linha} forma="lado" compacto>
+                    {linha}
+                  </OuvirTexto>
+                </div>
+              ))}
+              {s.id || s.src ? (
+                <div className="mt-2">
+                  <Ilustracao
+                    id={s.id}
+                    ph={s.ph}
+                    src={s.src}
+                    alt={s.alt}
+                    proporcao="16 / 10"
+                    raio={14}
+                  />
+                </div>
+              ) : null}
+              {s.note ? (
+                <div className="mt-2.5 rounded-[12px] border border-[#E6E8EE] bg-white px-3 py-2.5 fs-apoio font-bold leading-[1.4] text-[#3C4A5C]">
+                  {s.note}
+                </div>
+              ) : null}
+            </li>
+          );
+        })}
+      </ol>
+    </OuvirBloco>
   );
 }
 
@@ -203,9 +221,11 @@ export function BlocoPron({ bloco }: { bloco: PronBlock }) {
               : "text-[22px] font-black leading-[1.05] lg:text-[26px]"
           }
         >
-          {bloco.code}
+          <OuvirTexto texto={bloco.code} compacto>
+            {bloco.code}
+          </OuvirTexto>
         </span>
-        <span className="text-[11px] font-extrabold tracking-[0.08em] opacity-85">
+        <span className="fs-rotulo font-extrabold tracking-[0.08em] opacity-85">
           {bloco.pt}
         </span>
       </div>
@@ -220,13 +240,13 @@ export function BlocoPron({ bloco }: { bloco: PronBlock }) {
           {bloco.title}
         </div>
         {bloco.body ? (
-          <div className="text-[15px] text-[#6B7280]">{bloco.body}</div>
+          <div className="fs-leitura text-[#6B7280]">{bloco.body}</div>
         ) : null}
         {bloco.foot ? (
-          <div className="text-[13px] font-extrabold text-purple">{bloco.foot}</div>
+          <div className="fs-apoio font-extrabold text-purple">{bloco.foot}</div>
         ) : null}
         {bloco.tag ? (
-          <span className="mt-1 self-start rounded-pill bg-white px-3 py-1.5 text-[11px] font-extrabold tracking-[0.06em] text-[#0F2050]">
+          <span className="mt-1 self-start rounded-pill bg-white px-3 py-1.5 fs-rotulo font-extrabold tracking-[0.06em] text-[#0F2050]">
             {bloco.tag}
           </span>
         ) : null}
@@ -245,7 +265,7 @@ export function BlocoObjective({ bloco }: { bloco: ObjectiveBlock }) {
       style={{ background: v.bg, borderColor: v.bd }}
     >
       {bloco.tag ? (
-        <span className="mb-2.5 inline-block rounded-[8px] bg-[#F2C230] px-3 py-1.5 text-[11px] font-extrabold tracking-[0.07em] text-[#0F2050]">
+        <span className="mb-2.5 inline-block rounded-[8px] bg-[#F2C230] px-3 py-1.5 fs-rotulo font-extrabold tracking-[0.07em] text-[#0F2050]">
           {bloco.tag}
         </span>
       ) : null}
@@ -256,7 +276,7 @@ export function BlocoObjective({ bloco }: { bloco: ObjectiveBlock }) {
         {bloco.title}
       </div>
       <p
-        className="m-0 whitespace-pre-line text-[16px] font-bold leading-[1.5]"
+        className="m-0 whitespace-pre-line fs-leitura font-bold leading-[1.5]"
         style={{ color: v.fg }}
       >
         {bloco.text}
@@ -280,7 +300,7 @@ export function BlocoRule({ bloco }: { bloco: RuleBlock }) {
       style={{ background: v.bg, borderLeftColor: destaque }}
     >
       <div
-        className="mb-3 text-[12px] font-extrabold tracking-[0.08em]"
+        className="mb-3 fs-rotulo font-extrabold tracking-[0.08em]"
         style={{ color: destaque }}
       >
         {bloco.kicker}
@@ -300,8 +320,9 @@ export function BlocoRule({ bloco }: { bloco: RuleBlock }) {
           {bloco.to}
         </span>
       </div>
-      <div className="mt-3 text-[15px] font-extrabold text-[#0F2050]">
-        {bloco.ex} <span className="font-semibold text-[#6B7280]">{bloco.tr}</span>
+      <div className="mt-3 fs-leitura font-extrabold text-[#0F2050]">
+        <OuvirTexto texto={bloco.ex}>{bloco.ex}</OuvirTexto>{" "}
+        <span className="font-semibold text-[#6B7280]">{bloco.tr}</span>
       </div>
     </div>
   );
@@ -311,12 +332,12 @@ export function BlocoRule({ bloco }: { bloco: RuleBlock }) {
 export function BlocoNext({ bloco }: { bloco: NextBlock }) {
   return (
     <div className="rounded-[18px] bg-[#0F2050] p-[22px] text-center">
-      <div className="mb-1.5 text-[12px] font-extrabold tracking-[0.08em] text-[#F2C230]">
+      <div className="mb-1.5 fs-rotulo font-extrabold tracking-[0.08em] text-[#F2C230]">
         {bloco.kicker}
       </div>
       <div className="text-[22px] font-black text-white">{bloco.title}</div>
       {bloco.body ? (
-        <div className="mt-1.5 text-[14px] text-[#B9C3DA]">{bloco.body}</div>
+        <div className="mt-1.5 fs-apoio text-[#B9C3DA]">{bloco.body}</div>
       ) : null}
     </div>
   );
@@ -325,36 +346,40 @@ export function BlocoNext({ bloco }: { bloco: NextBlock }) {
 /** Cartão de personagem: nome, fatos verdadeiros em inglês e foto de 190px. */
 export function BlocoProfile({ bloco }: { bloco: ProfileBlock }) {
   return (
-    <div className="grid grid-cols-2 items-center gap-4 rounded-[18px] bg-[#0F2050] p-[18px]">
-      <div>
-        <div className="mb-2.5 text-[12px] font-extrabold tracking-[0.08em] text-[#F2C230]">
-          {bloco.name}
-        </div>
-        <div className="rounded-[14px] bg-white px-4 py-3.5">
-          <div className="mb-2 text-[11px] font-extrabold tracking-[0.07em] text-purple">
-            INFORMAÇÕES VERDADEIRAS
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <div className="grid grid-cols-2 items-center gap-4 rounded-[18px] bg-[#0F2050] p-[18px]">
+        <div>
+          <div className="mb-2.5 fs-rotulo font-extrabold tracking-[0.08em] text-[#F2C230]">
+            {bloco.name}
           </div>
-          <ul className="m-0 list-none p-0">
-            {bloco.facts.map((f, i) => (
-              <li
-                key={i}
-                className="mb-1 text-[15px] font-extrabold text-[#0F2050]"
-              >
-                <span aria-hidden="true">• </span>
-                {f}
-              </li>
-            ))}
-          </ul>
+          <div className="rounded-[14px] bg-white px-4 py-3.5">
+            <div className="mb-2 fs-rotulo font-extrabold tracking-[0.07em] text-purple">
+              INFORMAÇÕES VERDADEIRAS
+            </div>
+            <ul className="m-0 list-none p-0">
+              {bloco.facts.map((f, i) => (
+                <li
+                  key={i}
+                  className="mb-1 fs-leitura font-extrabold text-[#0F2050]"
+                >
+                  <span aria-hidden="true">• </span>
+                  <OuvirTexto texto={f} compacto>
+                    {f}
+                  </OuvirTexto>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+        <Ilustracao
+          id={bloco.id}
+          ph={bloco.ph}
+          src={bloco.src}
+          alt={bloco.alt}
+          altura={190}
+          raio={14}
+        />
       </div>
-      <Ilustracao
-        id={bloco.id}
-        ph={bloco.ph}
-        src={bloco.src}
-        alt={bloco.alt}
-        altura={190}
-        raio={14}
-      />
-    </div>
+    </OuvirBloco>
   );
 }

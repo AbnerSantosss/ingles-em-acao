@@ -1,0 +1,83 @@
+{
+  "aula": 1,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_001_audio_001",
+        "alvo": "texto",
+        "ancora": "I",
+        "texto": "I",
+        "src": "/audio/aula-01/lesson_001_audio_001.b679b00c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_001_audio_002",
+        "alvo": "texto",
+        "ancora": "YOU",
+        "texto": "you",
+        "src": "/audio/aula-01/lesson_001_audio_002.f4fdec65.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_001_audio_003",
+        "alvo": "texto",
+        "ancora": "HE",
+        "texto": "he",
+        "src": "/audio/aula-01/lesson_001_audio_003.92b87823.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_001_audio_004",
+        "alvo": "texto",
+        "ancora": "SHE",
+        "texto": "she",
+        "src": "/audio/aula-01/lesson_001_audio_004.50f33d4c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_001_audio_005",
+        "alvo": "texto",
+        "ancora": "IT",
+        "texto": "it",
+        "src": "/audio/aula-01/lesson_001_audio_005.dd0dc568.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_001_audio_006",
+        "alvo": "texto",
+        "ancora": "WE",
+        "texto": "we",
+        "src": "/audio/aula-01/lesson_001_audio_006.1cd4ae76.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_001_audio_007",
+        "alvo": "texto",
+        "ancora": "THEY",
+        "texto": "they",
+        "src": "/audio/aula-01/lesson_001_audio_007.57df293b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    }
+  ]
+}

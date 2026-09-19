@@ -1,0 +1,259 @@
+{
+  "aula": 34,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_034_audio_001",
+        "alvo": "texto",
+        "ancora": "PAINT",
+        "texto": "paint",
+        "src": "/audio/aula-34/lesson_034_audio_001.f39bdde1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_034_audio_002",
+        "alvo": "texto",
+        "ancora": "She can paint the wall.",
+        "texto": "She can paint the wall.",
+        "src": "/audio/aula-34/lesson_034_audio_002.c0d9aaa3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_034_audio_003",
+        "alvo": "texto",
+        "ancora": "She can’t play tennis.",
+        "texto": "She can't play tennis.",
+        "src": "/audio/aula-34/lesson_034_audio_003.192190b5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_034_audio_004",
+        "alvo": "texto",
+        "ancora": "CAN HE PLAY TENNIS?",
+        "texto": "Can he play tennis?",
+        "src": "/audio/aula-34/lesson_034_audio_004.cf10006e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_034_audio_005",
+        "alvo": "texto",
+        "ancora": "CAN EAGLES FLY?",
+        "texto": "Can eagles fly?",
+        "src": "/audio/aula-34/lesson_034_audio_005.437b7ae8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_006",
+        "alvo": "texto",
+        "ancora": "very well",
+        "texto": "very well",
+        "src": "/audio/aula-34/lesson_034_audio_006.8a4c7692.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_007",
+        "alvo": "texto",
+        "ancora": "well",
+        "texto": "well",
+        "src": "/audio/aula-34/lesson_034_audio_007.3fd85d2d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_008",
+        "alvo": "texto",
+        "ancora": "quite well",
+        "texto": "quite well",
+        "src": "/audio/aula-34/lesson_034_audio_008.7b4382fd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_009",
+        "alvo": "texto",
+        "ancora": "not very well",
+        "texto": "not very well",
+        "src": "/audio/aula-34/lesson_034_audio_009.8580b46c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_010",
+        "alvo": "texto",
+        "ancora": "not at all",
+        "texto": "not at all",
+        "src": "/audio/aula-34/lesson_034_audio_010.e42d81ec.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_011",
+        "alvo": "texto",
+        "ancora": "James can ride a horse very well.",
+        "texto": "James can ride a horse very well.",
+        "src": "/audio/aula-34/lesson_034_audio_011.45a83146.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_012",
+        "alvo": "texto",
+        "ancora": "SKATEBOARD",
+        "texto": "skateboard",
+        "src": "/audio/aula-34/lesson_034_audio_012.ce3f2e65.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_013",
+        "alvo": "texto",
+        "ancora": "My brother can skateboard well.",
+        "texto": "My brother can skateboard well.",
+        "src": "/audio/aula-34/lesson_034_audio_013.c8f4198d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_014",
+        "alvo": "texto",
+        "ancora": "SING",
+        "texto": "sing",
+        "src": "/audio/aula-34/lesson_034_audio_014.02386703.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_015",
+        "alvo": "texto",
+        "ancora": "I can sing quite well.",
+        "texto": "I can sing quite well.",
+        "src": "/audio/aula-34/lesson_034_audio_015.deb262a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_034_audio_016",
+        "alvo": "texto",
+        "ancora": "I can’t sing at all.",
+        "texto": "I can't sing at all.",
+        "src": "/audio/aula-34/lesson_034_audio_016.514a92cc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_034_audio_017",
+        "alvo": "texto",
+        "ancora": "My daughter can draw very well.",
+        "texto": "My daughter can draw very well.",
+        "src": "/audio/aula-34/lesson_034_audio_017.ad57c1b0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_034_audio_018",
+        "alvo": "texto",
+        "ancora": "My daughter is good at drawing.",
+        "texto": "My daughter is good at drawing.",
+        "src": "/audio/aula-34/lesson_034_audio_018.4781f10c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_034_audio_019",
+        "alvo": "texto",
+        "ancora": "draw",
+        "texto": "draw",
+        "src": "/audio/aula-34/lesson_034_audio_019.1df3907f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_034_audio_020",
+        "alvo": "texto",
+        "ancora": "drawing",
+        "texto": "drawing",
+        "src": "/audio/aula-34/lesson_034_audio_020.fdd78ea5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_034_audio_021",
+        "alvo": "texto",
+        "ancora": "biking",
+        "texto": "biking",
+        "src": "/audio/aula-34/lesson_034_audio_021.0aed6d66.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_034_audio_022",
+        "alvo": "texto",
+        "ancora": "swimming",
+        "texto": "swimming",
+        "src": "/audio/aula-34/lesson_034_audio_022.89d1d5a8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_034_audio_023",
+        "alvo": "bloco",
+        "ancora": "Can you play the guitar?",
+        "texto": "Can you play the guitar?\nYes, I can. I can play quite well.\nHow often do you play the guitar?\nI usually play three times a week. Can you sing?\nYes, I can. I can sing well.\nCan you dance?\nNo, I can't. I can't dance at all.",
+        "src": "/audio/aula-34/lesson_034_audio_023.1b69c7b9.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
+}

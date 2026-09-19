@@ -260,8 +260,8 @@ export default async function TelaDePendenciasDeMidia({
         </h1>
         <p className="m-0 mt-1.5 max-w-[70ch] text-[14px] font-semibold leading-snug text-muted">
           O que falta de imagem e de vídeo em cada aula: espaços de ilustração sem imagem, capa e
-          vídeo. A lista é calculada na hora a partir do conteúdo (o rascunho, quando existe) —
-          ao pôr a imagem no bloco e salvar, o item some daqui. Espaço sem imagem não quebra a
+          vídeo. A lista é calculada na hora a partir do conteúdo (o rascunho, quando existe).
+          Ao pôr a imagem no bloco e salvar, o item some daqui. Espaço sem imagem não quebra a
           aula: o aluno vê o quadro desenhado até a imagem chegar.
         </p>
       </header>

@@ -136,7 +136,7 @@ function FormularioDeModulo({
 
       <p className="m-0 text-[13px] font-semibold leading-snug text-muted">
         A faixa é descritiva: ela não move aula nenhuma. Quem liga uma aula a um módulo é a
-        tela de Aulas — se os dois discordarem, o aviso aparece aqui na lista.
+        tela de Aulas. Se os dois discordarem, o aviso aparece aqui na lista.
       </p>
 
       <Recado estado={estado} />
@@ -204,7 +204,7 @@ function LinhaDeModulo({
             {modulo.arquivado ? <Etiqueta tom="neutro">Arquivado</Etiqueta> : null}
           </h3>
           <p className="m-0 mt-1 text-[13px] font-semibold leading-snug text-muted">
-            Aulas {modulo.fromLesson}–{modulo.toLesson} · {modulo.aulas} aula(s) neste módulo ·
+            Aulas {modulo.fromLesson} a {modulo.toLesson} · {modulo.aulas} aula(s) neste módulo ·
             id {modulo.id}
           </p>
           {modulo.divergencia ? (

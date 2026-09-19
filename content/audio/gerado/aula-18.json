@@ -1,0 +1,49 @@
+{
+  "aula": 18,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_001",
+        "alvo": "texto",
+        "ancora": "I don’t work on Sunday.",
+        "texto": "I don't work on Sunday.",
+        "src": "/audio/aula-18/lesson_018_audio_001.c9c9e1ce.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_002",
+        "alvo": "texto",
+        "ancora": "She doesn’t work here.",
+        "texto": "She doesn't work here.",
+        "src": "/audio/aula-18/lesson_018_audio_002.7db095a1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_003",
+        "alvo": "texto",
+        "ancora": "He doesn’t work here.",
+        "texto": "He doesn't work here.",
+        "src": "/audio/aula-18/lesson_018_audio_003.c772ed69.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_004",
+        "alvo": "texto",
+        "ancora": "I don’t like coffee.",
+        "texto": "I don't like coffee.",
+        "src": "/audio/aula-18/lesson_018_audio_004.8deba7ae.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

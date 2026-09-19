@@ -45,6 +45,7 @@ import { z } from 'zod';
 
 import { prisma } from '@/lib/db';
 import { ambienteDeEmail } from '@/lib/mail/transport';
+import type { LinksDeCompra } from '@/lib/planos';
 import {
   CHAVE_PRODUTOS,
   interpretarMapa,
@@ -138,7 +139,7 @@ type ValorPorChave = {
 
 const CHECKOUT_VAZIO: LinksDeCheckout = {
   global: null,
-  porPlano: { ESSENCIAL: null, COMPLETO: null, PREMIUM: null },
+  porPlano: { ESSENCIAL: null, PREMIUM: null },
 };
 
 const MANUTENCAO_DESLIGADA: AvisoDeManutencao = { ligado: false, texto: '' };
@@ -173,7 +174,7 @@ export function analisarUrlHttps(
   try {
     url = new URL(texto);
   } catch {
-    return { ok: false, motivo: 'endereço inválido — comece com https://' };
+    return { ok: false, motivo: 'endereço inválido: comece com https://' };
   }
 
   if (url.protocol !== 'https:') return { ok: false, motivo: 'use um endereço https://' };
@@ -217,7 +218,6 @@ const EsquemaCheckout = z.object({
   porPlano: z
     .object({
       ESSENCIAL: urlGuardada.nullable().optional(),
-      COMPLETO: urlGuardada.nullable().optional(),
       PREMIUM: urlGuardada.nullable().optional(),
     })
     .optional(),
@@ -259,7 +259,6 @@ function checkoutDe(bruto: Prisma.JsonValue | undefined, avisos: string[]): Link
     global: lido.global ?? CHECKOUT_VAZIO.global,
     porPlano: {
       ESSENCIAL: lido.porPlano?.ESSENCIAL ?? null,
-      COMPLETO: lido.porPlano?.COMPLETO ?? null,
       PREMIUM: lido.porPlano?.PREMIUM ?? null,
     },
   };
@@ -283,7 +282,7 @@ function produtosDe(bruto: Prisma.JsonValue | undefined, avisos: string[]): Prod
   const lido = interpretarMapa(bruto);
   if (!lido.valido) {
     avisos.push(
-      'Produtos da plataforma de pagamento: o valor guardado não está no formato esperado e foi ignorado — nenhum pagamento libera plano até o mapa ser salvo de novo.',
+      'Produtos da plataforma de pagamento: o valor guardado não está no formato esperado e foi ignorado. Nenhum pagamento libera plano até o mapa ser salvo de novo.',
     );
   }
   return ordenarMapa(lido.produtos);
@@ -390,14 +389,14 @@ export function linkDoPlano(checkout: LinksDeCheckout, plano: Plan): string | nu
   return checkout.porPlano[plano] ?? checkout.global;
 }
 
-/** Os links que os botões de compra do app do aluno usam. */
-export type LinksDeCompra = { COMPLETO: string | null; PREMIUM: string | null };
+/** Os links que os botões de compra do app do aluno usam (o tipo mora em `@/lib/planos`). */
+export type { LinksDeCompra };
 
 /**
- * Os links de compra das telas do aluno, **por plano de destino**: a videoaula
- * vende o Completo, a prática oral vende o Premium, o perfil oferece o degrau
- * seguinte. O campo "Plano Completo" do painel é o checkout de quem quer o
- * Completo — vazio, cai no global; sem global, `null` e o botão não aparece.
+ * Os links de compra das telas do aluno. Videoaula e prática oral vendem o mesmo
+ * plano, o WSA Premium, e o perfil oferece o Premium a quem está no Essencial.
+ * O campo "Premium" do painel é o checkout de quem quer o
+ * Premium — vazio, cai no global; sem global, `null` e o botão não aparece.
  *
  * O Essencial fica de fora: quem está logado já tem, no mínimo, o Essencial.
  *
@@ -419,11 +418,10 @@ export type LinksDeCompra = { COMPLETO: string | null; PREMIUM: string | null };
 export async function lerLinksDeCompra(userId?: string): Promise<LinksDeCompra> {
   const checkout = await lerLinksDeCheckout();
   const links: LinksDeCompra = {
-    COMPLETO: linkDoPlano(checkout, 'COMPLETO'),
     PREMIUM: linkDoPlano(checkout, 'PREMIUM'),
   };
 
-  if (!userId || (links.COMPLETO === null && links.PREMIUM === null)) return links;
+  if (!userId || links.PREMIUM === null) return links;
   return comReferenciaDoAluno(links, userId);
 }
 
@@ -438,7 +436,7 @@ async function comReferenciaDoAluno(links: LinksDeCompra, userId: string): Promi
 
     const comReferencia = (link: string | null) =>
       link === null ? null : linkComReferencia(link, parametro, referencia);
-    return { COMPLETO: comReferencia(links.COMPLETO), PREMIUM: comReferencia(links.PREMIUM) };
+    return { PREMIUM: comReferencia(links.PREMIUM) };
   } catch (erro: unknown) {
     const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
     console.error(`[pagamento] referência do checkout indisponível: link segue sem ela. ${motivo}`);

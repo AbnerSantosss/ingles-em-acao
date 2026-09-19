@@ -104,7 +104,7 @@ function enviarAoBucket(
         cancelado: false,
         mensagem:
           pedido.status === 403
-            ? 'O armazenamento recusou o envio (403). A autorização pode ter vencido — escolha o arquivo e envie de novo.'
+            ? 'O armazenamento recusou o envio (403). A autorização pode ter vencido. Escolha o arquivo e envie de novo.'
             : `O armazenamento recusou o envio (HTTP ${pedido.status}). Tente de novo.`,
       });
     };
@@ -115,7 +115,7 @@ function enviarAoBucket(
         cancelado: false,
         mensagem:
           'Não consegui falar com o armazenamento. Se a conexão está boa e isto se repete, o bucket ' +
-          'não está liberando envios a partir deste endereço (CORS) — veja docs/DEPLOY.md, seção de vídeos.',
+          'não está liberando envios a partir deste endereço (CORS). Veja docs/DEPLOY.md, seção de vídeos.',
       });
     };
     pedido.onabort = () => {
@@ -282,7 +282,7 @@ export function EnvioDeVideo({
       setFase({
         tipo: 'erro',
         mensagem:
-          'O arquivo subiu, mas o servidor não confirmou. Tente enviar de novo — a aula não mudou.',
+          'O arquivo subiu, mas o servidor não confirmou. Tente enviar de novo. A aula não mudou.',
       });
     }
   }
@@ -356,7 +356,7 @@ export function EnvioDeVideo({
             <div className="h-full bg-teal transition-[width]" style={{ width: `${porcentagem}%` }} />
           </div>
           <p className="m-0 text-[13px] font-semibold text-muted">
-            Enviando… {porcentagem}% — não feche esta página.
+            Enviando… {porcentagem}%. Não feche esta página.
           </p>
         </div>
       ) : null}
@@ -401,7 +401,7 @@ export function EnvioDeVideo({
       </div>
 
       <p className="m-0 max-w-[62ch] text-[12px] font-semibold leading-snug text-muted">
-        Trocar ou remover o vídeo depois não apaga o arquivo do armazenamento — ele fica guardado,
+        Trocar ou remover o vídeo depois não apaga o arquivo do armazenamento. Ele fica guardado,
         como as imagens da biblioteca.
       </p>
     </div>

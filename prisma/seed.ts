@@ -34,8 +34,12 @@
  *   npm run db:seed -- --dry-run          confere o conteúdo sem tocar no banco
  *   npm run db:seed -- --ressincronizar   sobrescreve o conteúdo das aulas existentes
  */
+import fs from 'node:fs';
+import path from 'node:path';
+
 import type { Prisma, PrismaClient } from '@prisma/client';
 
+import { aplicarAudios, validarManifesto, type ManifestoDeAudio } from '../src/lib/audio/aplicar';
 import { CourseSchema, descreverErros } from '../src/lib/content/blocks';
 import type { Lesson } from '../src/lib/content/blocks';
 
@@ -111,8 +115,33 @@ type LinhaDeAula = {
   pages: Prisma.InputJsonValue;
 };
 
+/**
+ * Lê os manifestos de áudio gerados (`content/audio/gerado/aula-NN.json`, contrato 2.3).
+ * Pasta ausente = nenhuma aula tem áudio ainda. Arquivo inválido para o seed com a lista
+ * de erros: áudio torto não pode entrar no banco em silêncio.
+ */
+function lerAudiosGerados(): Map<number, ManifestoDeAudio> {
+  const pasta = path.join(process.cwd(), 'content', 'audio', 'gerado');
+  const manifestos = new Map<number, ManifestoDeAudio>();
+  if (!fs.existsSync(pasta)) return manifestos;
+
+  for (const nome of fs.readdirSync(pasta).sort()) {
+    if (!/^aula-\d{2}\.json$/.test(nome)) continue;
+    const bruto: unknown = JSON.parse(fs.readFileSync(path.join(pasta, nome), 'utf8'));
+    const lido = validarManifesto(bruto);
+    if (!lido.ok) {
+      throw new Error(`content/audio/gerado/${nome} é inválido:\n  ${lido.erros.join('\n  ')}`);
+    }
+    manifestos.set(lido.manifesto.aula, lido.manifesto);
+  }
+  return manifestos;
+}
+
 /** Monta (e confere) as linhas da tabela Lesson a partir do conteúdo cru. */
-function montarLinhas(aulas: AulaCrua[]): { linhas: LinhaDeAula[]; paginas: number } {
+function montarLinhas(
+  aulas: AulaCrua[],
+  audios: Map<number, ManifestoDeAudio>,
+): { linhas: LinhaDeAula[]; paginas: number } {
   const slugsUsados = new Map<string, number>();
   const numerosUsados = new Set<number>();
   let paginas = 0;
@@ -144,8 +173,9 @@ function montarLinhas(aulas: AulaCrua[]): { linhas: LinhaDeAula[]; paginas: numb
       estimatedTime: aula.time,
       coverUrl: capaDaAula(aula.id),
       moduleId: moduloDaAula(aula.id),
-      // O array de páginas vai cru para o banco: o motor de aulas lê os blocos daqui.
-      pages: aula.pages as unknown as Prisma.InputJsonValue,
+      // O array de páginas vai para o banco com os áudios gerados já aplicados (contrato 10.4):
+      // o motor de aulas lê os blocos e os áudios daqui.
+      pages: aplicarAudios(aula.pages, audios.get(aula.id)) as unknown as Prisma.InputJsonValue,
     };
   });
 
@@ -300,7 +330,7 @@ async function main(): Promise<void> {
   }
 
   const aulas = await carregarConteudo();
-  const { linhas, paginas } = montarLinhas(aulas);
+  const { linhas, paginas } = montarLinhas(aulas, lerAudiosGerados());
   const comCapa = linhas.filter((linha) => linha.coverUrl !== null).length;
   const primeira = linhas[0];
   const ultima = linhas[linhas.length - 1];
@@ -338,6 +368,14 @@ async function main(): Promise<void> {
         '[seed] aulas existentes não foram tocadas. Use --ressincronizar para reimportar o conteúdo.',
       );
     }
+    // Fichas de prática com IA (content/pratica/aula-NN.json) em Lesson.practice.
+    // Ficha inválida não para o seed: aparece no aviso e a aula fica sem ficha.
+    const { carregarPratica } = await import('../src/lib/pratica/carregar');
+    const pratica = await carregarPratica(prisma, { sistema: 'seed' });
+    console.log(
+      `[seed] fichas de prática: lidas ${pratica.lidas} · gravadas ${pratica.gravadas} · iguais ${pratica.iguais} · inválidas ${pratica.invalidas} · sem aula ${pratica.semAula}`,
+    );
+    for (const erro of pratica.erros) console.warn(`[seed] prática: ${erro}`);
     console.log('[seed] concluído.');
   } finally {
     await prisma.$disconnect();

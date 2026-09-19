@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Falar do que sei e não sei fazer com \"can\" e \"can't\", pedir ajuda e pedir permissão.",
+  "conteudoAlvo": [
+    "I + can + ___; I + can't + ___ (cannot)",
+    "Can + I / you + ___? Yes, I can. No, I can't.",
+    "swim, drive, cook, help, go out",
+    "She can speak English."
+  ],
+  "expressoesFixas": [
+    "Can you help me?"
+  ],
+  "comoIntegrar": [
+    "Troque o sujeito com os pronomes da Aula 01: \"can\" nunca ganha \"-s\", nem com \"she\".",
+    "Use verbos que já sei depois de \"can\": \"I can speak English.\", \"He can't cook rice.\""
+  ],
+  "regrasDaAula": [
+    "Depois de \"can\" o verbo fica na forma básica, sem \"to\": \"She can swim.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"can\" ou \"can't\" (ele sabe): \"He ___ drive.\"",
+      "respostaDeReferencia": "He can drive."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Faça a pergunta: \"You can swim.\"",
+      "respostaDeReferencia": "Can you swim?"
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda de forma curta, com \"no\": \"Can you cook?\"",
+      "respostaDeReferencia": "No, I can't."
+    }
+  ],
+  "limites": [
+    "Sem \"could\", \"may\" e \"be able to\": só \"can\", \"can't\" e \"cannot\".",
+    "Palavras só as que já vi: \"come\", \"repeat\", \"yet\" e \"languages\" ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ swim.\" (eu sei) Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "\"I can swim.\", \"She can speak English.\"; \"He can't drive.\" (\"can't\" = \"cannot\").",
+    "\"Can you swim?\" \"Yes, I can.\" / \"No, I can't.\"",
+    "\"I can cook.\", \"Can I go out?\", \"Can you help me?\""
+  ],
+  "resumoCurto": "\"can\" e \"can't\" para habilidade, permissão e pedido: \"I can swim.\", \"Can you help me?\""
+}

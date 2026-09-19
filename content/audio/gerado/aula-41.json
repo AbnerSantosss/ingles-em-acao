@@ -1,0 +1,417 @@
+{
+  "aula": 41,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_041_audio_001",
+        "alvo": "texto",
+        "ancora": "go → went",
+        "texto": "go. went",
+        "src": "/audio/aula-41/lesson_041_audio_001.502dd401.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_041_audio_002",
+        "alvo": "texto",
+        "ancora": "have → had",
+        "texto": "have. had",
+        "src": "/audio/aula-41/lesson_041_audio_002.5d6f9fc4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_041_audio_003",
+        "alvo": "texto",
+        "ancora": "see → saw",
+        "texto": "see. saw",
+        "src": "/audio/aula-41/lesson_041_audio_003.a60bc1eb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_004",
+        "alvo": "bloco",
+        "ancora": "become",
+        "texto": "become\nbecame\ncan\ncould\ncost\ncost\ndo\ndid\ndrink\ndrank\nfind\nfound\nget\ngot",
+        "src": "/audio/aula-41/lesson_041_audio_004.673369f6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_005",
+        "alvo": "texto",
+        "ancora": "Suzy became a mother four years ago.",
+        "texto": "Suzy became a mother four years ago.",
+        "src": "/audio/aula-41/lesson_041_audio_005.14454560.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_006",
+        "alvo": "texto",
+        "ancora": "My uncle could run really fast when he was young.",
+        "texto": "My uncle could run really fast when he was young.",
+        "src": "/audio/aula-41/lesson_041_audio_006.3485e782.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_007",
+        "alvo": "texto",
+        "ancora": "It cost only $40.00.",
+        "texto": "It cost only forty dollars.",
+        "src": "/audio/aula-41/lesson_041_audio_007.8bd546ff.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_008",
+        "alvo": "texto",
+        "ancora": "My wife and I did housework yesterday.",
+        "texto": "My wife and I did housework yesterday.",
+        "src": "/audio/aula-41/lesson_041_audio_008.e8b2a27a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_009",
+        "alvo": "texto",
+        "ancora": "They drank orange juice for breakfast.",
+        "texto": "They drank orange juice for breakfast.",
+        "src": "/audio/aula-41/lesson_041_audio_009.e2877688.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_010",
+        "alvo": "texto",
+        "ancora": "I found my keys under the boxes.",
+        "texto": "I found my keys under the boxes.",
+        "src": "/audio/aula-41/lesson_041_audio_010.881918e3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_011",
+        "alvo": "texto",
+        "ancora": "They got married two years ago.",
+        "texto": "They got married two years ago.",
+        "src": "/audio/aula-41/lesson_041_audio_011.3679d1be.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_041_audio_012",
+        "alvo": "texto",
+        "ancora": "CAN → COULD = PAST ABILITY",
+        "texto": "can. could",
+        "src": "/audio/aula-41/lesson_041_audio_012.8e110ce2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_013",
+        "alvo": "texto",
+        "ancora": "went",
+        "texto": "went",
+        "src": "/audio/aula-41/lesson_041_audio_013.a699a739.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_014",
+        "alvo": "texto",
+        "ancora": "had",
+        "texto": "had",
+        "src": "/audio/aula-41/lesson_041_audio_014.b9d3de6d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_015",
+        "alvo": "texto",
+        "ancora": "hear",
+        "texto": "hear",
+        "src": "/audio/aula-41/lesson_041_audio_015.1524d112.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_016",
+        "alvo": "texto",
+        "ancora": "heard",
+        "texto": "heard",
+        "src": "/audio/aula-41/lesson_041_audio_016.44519202.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_017",
+        "alvo": "texto",
+        "ancora": "knew",
+        "texto": "knew",
+        "src": "/audio/aula-41/lesson_041_audio_017.61d4a3ad.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_018",
+        "alvo": "texto",
+        "ancora": "make",
+        "texto": "make",
+        "src": "/audio/aula-41/lesson_041_audio_018.fd565d80.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_019",
+        "alvo": "texto",
+        "ancora": "made",
+        "texto": "made",
+        "src": "/audio/aula-41/lesson_041_audio_019.50931a43.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_020",
+        "alvo": "texto",
+        "ancora": "meet",
+        "texto": "meet",
+        "src": "/audio/aula-41/lesson_041_audio_020.b6354c48.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_021",
+        "alvo": "texto",
+        "ancora": "met",
+        "texto": "met",
+        "src": "/audio/aula-41/lesson_041_audio_021.33c5bfc5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_022",
+        "alvo": "texto",
+        "ancora": "see",
+        "texto": "see",
+        "src": "/audio/aula-41/lesson_041_audio_022.89279365.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_023",
+        "alvo": "texto",
+        "ancora": "saw",
+        "texto": "saw",
+        "src": "/audio/aula-41/lesson_041_audio_023.ead8f1dc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_024",
+        "alvo": "texto",
+        "ancora": "They went to the shopping mall together.",
+        "texto": "They went to the shopping mall together.",
+        "src": "/audio/aula-41/lesson_041_audio_024.a202cbfe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_025",
+        "alvo": "texto",
+        "ancora": "I had a lot of friends when I was a child.",
+        "texto": "I had a lot of friends when I was a child.",
+        "src": "/audio/aula-41/lesson_041_audio_025.fa6ffc9e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_026",
+        "alvo": "texto",
+        "ancora": "Their mom heard when they talked to each other.",
+        "texto": "Their mom heard when they talked to each other.",
+        "src": "/audio/aula-41/lesson_041_audio_026.b79b9b16.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_027",
+        "alvo": "texto",
+        "ancora": "She knew very well what she wanted.",
+        "texto": "She knew very well what she wanted.",
+        "src": "/audio/aula-41/lesson_041_audio_027.e519cc5b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_028",
+        "alvo": "texto",
+        "ancora": "They made lunch together.",
+        "texto": "They made lunch together.",
+        "src": "/audio/aula-41/lesson_041_audio_028.2b01ffef.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_029",
+        "alvo": "texto",
+        "ancora": "Lisa met her best friend a long time ago.",
+        "texto": "Lisa met her best friend a long time ago.",
+        "src": "/audio/aula-41/lesson_041_audio_029.72f4f8a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_041_audio_030",
+        "alvo": "texto",
+        "ancora": "They saw a great movie last night.",
+        "texto": "They saw a great movie last night.",
+        "src": "/audio/aula-41/lesson_041_audio_030.c54f0b78.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_041_audio_031",
+        "alvo": "texto",
+        "ancora": "TAKE → TOOK",
+        "texto": "take. took",
+        "src": "/audio/aula-41/lesson_041_audio_031.476d4697.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_041_audio_032",
+        "alvo": "texto",
+        "ancora": "My son took a shower a few minutes ago.",
+        "texto": "My son took a shower a few minutes ago.",
+        "src": "/audio/aula-41/lesson_041_audio_032.4ebebcbf.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_041_audio_033",
+        "alvo": "texto",
+        "ancora": "COME → CAME",
+        "texto": "come. came",
+        "src": "/audio/aula-41/lesson_041_audio_033.908a5bce.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_041_audio_034",
+        "alvo": "texto",
+        "ancora": "They came to my house last Friday.",
+        "texto": "They came to my house last Friday.",
+        "src": "/audio/aula-41/lesson_041_audio_034.bc980af9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_041_audio_035",
+        "alvo": "texto",
+        "ancora": "She read those books last year.",
+        "texto": "She read those books last year.",
+        "src": "/audio/aula-41/lesson_041_audio_035.0c2c74fb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_041_audio_036",
+        "alvo": "texto",
+        "ancora": "took",
+        "texto": "took",
+        "src": "/audio/aula-41/lesson_041_audio_036.e4c1284f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_041_audio_037",
+        "alvo": "texto",
+        "ancora": "came",
+        "texto": "came",
+        "src": "/audio/aula-41/lesson_041_audio_037.73845d05.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

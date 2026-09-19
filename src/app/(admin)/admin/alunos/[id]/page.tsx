@@ -73,7 +73,6 @@ const FORMATO_CURTO = new Intl.DateTimeFormat('pt-BR', {
 
 const CORES_DO_PLANO: Record<string, { fundo: string; cor: string }> = {
   ESSENCIAL: { fundo: '#EEF3FA', cor: '#5B6B86' },
-  COMPLETO: { fundo: '#EAF2FE', cor: '#123A86' },
   PREMIUM: { fundo: '#FEF7E0', cor: '#6B520A' },
 };
 
@@ -292,7 +291,7 @@ function AbaDeProgresso({ aprendizagem }: { aprendizagem: AprendizagemDoAluno })
 
       <p className="m-0 rounded-field bg-[#EEF3FA] px-3 py-2 text-[13px] font-semibold leading-snug text-muted">
         Não existe edição livre de progresso. O que o painel faz é recalcular o placar a partir
-        das respostas gravadas — o botão está na aba Conta.
+        das respostas gravadas. O botão está na aba Conta.
       </p>
     </div>
   );
@@ -342,7 +341,7 @@ function AbaDeRespostas({ respostas }: { respostas: RespostasDoAluno }) {
               </span>
               <span className="flex-none text-right">
                 <span className="block text-[15px] font-black text-navy">
-                  {aula.recontado ? `${aula.recontado.acertos}/${aula.recontado.total}` : '—'}
+                  {aula.recontado ? `${aula.recontado.acertos}/${aula.recontado.total}` : '-'}
                 </span>
                 <span className="block text-[11px] font-extrabold uppercase tracking-[0.08em] text-muted-2">
                   recontado
@@ -350,7 +349,7 @@ function AbaDeRespostas({ respostas }: { respostas: RespostasDoAluno }) {
               </span>
               {aula.divergente ? (
                 <Selo
-                  texto={`guardado ${aula.guardado?.score ?? '—'}/${aula.guardado?.total ?? '—'}`}
+                  texto={`guardado ${aula.guardado?.score ?? '-'}/${aula.guardado?.total ?? '-'}`}
                   fundo="#FEF7E0"
                   cor="#6B520A"
                 />
@@ -362,7 +361,7 @@ function AbaDeRespostas({ respostas }: { respostas: RespostasDoAluno }) {
 
       <p className="m-0 rounded-field bg-[#EEF3FA] px-3 py-2 text-[13px] font-semibold leading-snug text-muted">
         O painel mostra quanto o aluno acertou, não o que ele escreveu: produção livre é dele. O
-        placar guardado é cache — a verdade é a recontagem, feita agora com o conteúdo publicado.
+        placar guardado é cache. O valor que vale é a recontagem, feita agora com o conteúdo publicado.
       </p>
     </div>
   );

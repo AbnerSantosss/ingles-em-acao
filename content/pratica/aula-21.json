@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Contar a minha rotina em ordem, com as ações do dia e \"first\", \"then\", \"after that\" e \"finally\".",
+  "conteudoAlvo": [
+    "wake up, get up, take a shower, go to bed",
+    "have breakfast / lunch / dinner, get home",
+    "go to work, go to school",
+    "First, I wake up at 6. then, after that, finally"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use o presente simples com \"he\" e \"she\": \"She wakes up.\", \"He has lunch.\"",
+    "Misture os advérbios da Aula 20: \"I always have breakfast.\", \"I never get up late.\""
+  ],
+  "regrasDaAula": [
+    "Conte em ordem: \"First\", \"Then\", \"After that\", \"Finally\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a ação que vem primeiro: \"go to bed\" ou \"wake up\"?",
+      "respostaDeReferencia": "wake up"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"depois disso\": \"___, I have breakfast.\"",
+      "respostaDeReferencia": "After that, I have breakfast."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: tomar banho.",
+      "respostaDeReferencia": "take a shower"
+    }
+  ],
+  "limites": [
+    "Sem horas: \"at 6\" pode, mas \"o'clock\", \"half past\" e \"in the morning\" ainda não estudei.",
+    "Só o presente: nada de \"yesterday\" nem de verbos no passado."
+  ],
+  "primeiraQuestao": "Vamos começar pelo começo do dia. Como se diz \"acordar\" em inglês?",
+  "resumoAutorizado": [
+    "\"wake up\", \"get up\", \"take a shower\", \"have breakfast\", \"go to work\".",
+    "\"have lunch\", \"have dinner\", \"get home\", \"go to bed\".",
+    "\"First, I wake up at 6. Then I take a shower. After that, ... Finally, ...\""
+  ],
+  "resumoCurto": "Rotina diária: \"wake up\", \"have breakfast\", \"go to work\", \"go to bed\" e \"first\", \"then\", \"finally\"."
+}

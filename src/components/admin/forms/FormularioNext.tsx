@@ -25,7 +25,7 @@ export function FormularioNext({ valor, aoMudar, erros }: PropsDoFormulario) {
         aoMudar={definir('title')}
         obrigatorio
         erros={erros.em('title')}
-        placeholder="Ex.: Aula 08 — Daily routine"
+        placeholder="Ex.: Aula 08: Daily routine"
         ajuda="A publicação confere se a aula citada aqui existe."
       />
       <CampoTexto

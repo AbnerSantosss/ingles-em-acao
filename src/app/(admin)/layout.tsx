@@ -17,9 +17,13 @@ import type { ReactNode } from 'react';
 
 import { AdminShell } from '@/components/admin/AdminShell';
 import { requireAdminNaTela } from '@/lib/admin/guard';
+import { MODELO_DE_TITULO_DO_PAINEL, TITULO_PADRAO_DO_PAINEL } from '@/lib/marca';
 
 export const metadata: Metadata = {
-  title: { template: '%s · Painel · Inglês em Ação', default: 'Painel · Inglês em Ação' },
+  // `absolute`, e não `default`: com `default`, o modelo do layout raiz se
+  // aplicaria a ele e a marca sairia dobrada. As telas do painel dão só o nome
+  // ("Dashboard") e o modelo daqui completa: "Dashboard · Painel · WSA English".
+  title: { template: MODELO_DE_TITULO_DO_PAINEL, absolute: TITULO_PADRAO_DO_PAINEL },
   // O painel nunca deve aparecer em buscador — nem a existência dele.
   robots: { index: false, follow: false },
 };

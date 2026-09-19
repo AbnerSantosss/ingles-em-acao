@@ -68,14 +68,14 @@ export function DuplicarAula({
         <strong className="text-navy">
           Aula {aula.number} · {aula.title}
         </strong>{' '}
-        — publicado e rascunho pendente, se houver. A cópia nasce{' '}
+        (o publicado e o rascunho pendente, se houver). A cópia é criada{' '}
         <strong className="text-navy">em rascunho, fora do ar</strong>, e todo bloco de exercício
         ganha um id novo, para nenhuma resposta de aluno ser compartilhada com a original.
       </p>
       <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
         Não vão para a cópia: capa e vídeo (os dois mostram o número da aula de origem), progresso,
         respostas e versões. Selos e blocos de &ldquo;próxima aula&rdquo; que citam a aula{' '}
-        {aula.number} ficam como estão — revise na aba Páginas.
+        {aula.number} ficam como estão. Revise na aba Páginas.
       </p>
       {estado.estado === 'erro' ? (
         <p

@@ -31,7 +31,6 @@ import {
   RESULTADO_ERRO,
   RESULTADO_OK,
   chaveCheck,
-  chaveCta,
   chaveDnd,
   chaveFill,
   chaveFree,
@@ -40,10 +39,9 @@ import {
   estaMarcado,
   normalizar,
 } from '@/lib/lesson/keys';
-import { SOLID, isSolidName, solid, variant } from '@/lib/ui/palette';
+import { solid, variant } from '@/lib/ui/palette';
 import type {
   CheckBlock,
-  CtaBlock,
   DndBlock,
   FillBlock,
   FreeBlock,
@@ -51,10 +49,11 @@ import type {
   MatchBlock,
   McBlock,
 } from '@/lib/content/types';
-
-import { ID_DA_VIDEOAULA } from '@/lib/video/acesso';
+import type { LinksDeCompra, Plano } from '@/lib/planos';
+import type { ResultadoDoPrompt } from '@/lib/pratica/tipos';
 
 import { useInteracao } from '../interacao';
+import { BlocoCta } from './BlocoCta';
 import { GRADE_FLEXIVEL } from './listas';
 
 // ─────────────────────────── cores de correção ───────────────────────────
@@ -73,26 +72,6 @@ const NEUTRO_BD = '#E6E8EE';
 /** Botão de ação dos exercícios (VERIFICAR / LIMPAR), com alvo de toque de 44px. */
 const CLASSE_ACAO =
   'inline-flex min-h-[44px] items-center justify-center rounded-pill px-[22px] py-[11px] text-[13px] font-extrabold tracking-[.04em]';
-
-/** Plano comercial do aluno — o `cta` usa para saber se o recurso já é dele. */
-export type Plano = 'ESSENCIAL' | 'COMPLETO' | 'PREMIUM';
-
-/**
- * Links de checkout por plano de destino, lidos pelo servidor de
- * `/admin/configuracoes` (`lerLinksDeCompra`). Ausente ou `null` = sem link, e o
- * botão de compra não aparece — nunca um `href` vazio.
- */
-export type LinksDeCompra = Partial<Record<'COMPLETO' | 'PREMIUM', string | null>>;
-
-const NIVEL_DO_PLANO: Record<Plano, number> = { ESSENCIAL: 0, COMPLETO: 1, PREMIUM: 2 };
-
-/** Rola até o painel de videoaula, sem animação para quem pediu menos movimento. */
-function irParaAVideoaula() {
-  const painel = document.getElementById(ID_DA_VIDEOAULA);
-  if (!painel) return;
-  const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  painel.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' });
-}
 
 // ══════════════════════════════════ mc ═══════════════════════════════════
 
@@ -127,7 +106,7 @@ export function BlocoMc({ bloco, lessonId }: { bloco: McBlock; lessonId: number 
 
           return (
             <div key={idPergunta}>
-              <p id={idPergunta} className="mb-2 text-[16px] font-bold text-[#1F2430]">
+              <p id={idPergunta} className="mb-2 fs-leitura font-bold text-[#1F2430]">
                 {questao.q}
               </p>
 
@@ -147,18 +126,18 @@ export function BlocoMc({ bloco, lessonId }: { bloco: McBlock; lessonId: number 
                     frente = VERDE_FG;
                     borda = VERDE_FG;
                     marca = '✓';
-                    leitura = ' — sua resposta, correta';
+                    leitura = ', sua resposta, correta';
                   } else if (estaEscolhida && !ehCerta) {
                     fundo = VERMELHO_BG;
                     frente = VERMELHO_FG;
                     borda = VERMELHO_FG;
                     marca = '✕';
-                    leitura = ' — sua resposta, incorreta';
+                    leitura = ', sua resposta, incorreta';
                   } else if (respondeu && ehCerta) {
                     fundo = VERDE_BG;
                     frente = VERDE_FG;
                     borda = VERDE_BD;
-                    leitura = ' — esta era a resposta correta';
+                    leitura = ', esta era a resposta correta';
                   }
 
                   return (
@@ -170,7 +149,7 @@ export function BlocoMc({ bloco, lessonId }: { bloco: McBlock; lessonId: number 
                         interacao.definir(chave, String(oi));
                         interacao.conferir(chave, ehCerta);
                       }}
-                      className="min-h-[44px] rounded-pill border-2 px-5 py-[13px] text-[14px] font-extrabold"
+                      className="min-h-[44px] rounded-pill border-2 px-5 py-[13px] fs-leitura font-extrabold"
                       style={{ background: fundo, color: frente, borderColor: borda }}
                     >
                       {rotulo}
@@ -183,7 +162,7 @@ export function BlocoMc({ bloco, lessonId }: { bloco: McBlock; lessonId: number 
 
               <p
                 aria-live="polite"
-                className={respondeu ? 'mt-[9px] text-[14px] font-bold' : undefined}
+                className={respondeu ? 'mt-[9px] fs-apoio font-bold' : undefined}
                 style={respondeu ? { color: acertou ? VERDE_FG : VERMELHO_FG } : undefined}
               >
                 {respondeu ? (
@@ -243,7 +222,7 @@ export function BlocoFill({ bloco }: { bloco: FillBlock }) {
           {bloco.title}
         </h3>
       ) : null}
-      {bloco.sub ? <p className="mb-[14px] text-[14px] text-[#6B7280]">{bloco.sub}</p> : null}
+      {bloco.sub ? <p className="mb-[14px] fs-apoio text-[#6B7280]">{bloco.sub}</p> : null}
 
       <div className="flex flex-col gap-[9px]">
         {bloco.items.map((item, i) => {
@@ -261,7 +240,7 @@ export function BlocoFill({ bloco }: { bloco: FillBlock }) {
             >
               <label
                 htmlFor={idCampo}
-                className="min-w-[150px] flex-1 text-[15px] font-extrabold text-[#0F2050]"
+                className="min-w-[150px] flex-1 fs-leitura font-extrabold text-[#0F2050]"
               >
                 {item.pre}
               </label>
@@ -278,7 +257,7 @@ export function BlocoFill({ bloco }: { bloco: FillBlock }) {
                 spellCheck={false}
                 aria-invalid={conferido && !certo ? true : undefined}
                 aria-describedby={item.note ? idNota : undefined}
-                className="min-h-[44px] min-w-[110px] rounded-pill border-[1.5px] bg-white px-[14px] py-3 text-[15px] font-bold text-[#0F2050]"
+                className="min-h-[44px] min-w-[110px] rounded-pill border-[1.5px] bg-white px-[14px] py-3 fs-leitura font-bold text-[#0F2050]"
                 style={{
                   flex: bloco.wide ? '3' : '0',
                   borderColor: conferido ? (certo ? VERDE_FG : VERMELHO_FG) : NEUTRO_BD,
@@ -286,7 +265,7 @@ export function BlocoFill({ bloco }: { bloco: FillBlock }) {
               />
 
               {item.post ? (
-                <span className="text-[15px] font-extrabold text-[#0F2050]">{item.post}</span>
+                <span className="fs-leitura font-extrabold text-[#0F2050]">{item.post}</span>
               ) : null}
 
               {conferido ? (
@@ -300,7 +279,7 @@ export function BlocoFill({ bloco }: { bloco: FillBlock }) {
               ) : null}
 
               {item.note ? (
-                <p id={idNota} className="basis-full text-[12px] font-bold text-[#9AA1AE]">
+                <p id={idNota} className="basis-full fs-apoio font-bold text-[#9AA1AE]">
                   {item.note}
                 </p>
               ) : null}
@@ -315,7 +294,7 @@ export function BlocoFill({ bloco }: { bloco: FillBlock }) {
         </button>
         <p
           aria-live="polite"
-          className="text-[14px] font-extrabold"
+          className="fs-apoio font-extrabold"
           style={{ color: tudoCerto ? VERDE_FG : VERMELHO_FG }}
         >
           {conferido ? `${acertos} de ${bloco.items.length} corretos` : ''}
@@ -395,7 +374,7 @@ export function BlocoMatch({ bloco }: { bloco: MatchBlock }) {
       <h3 className="mb-1 text-[13px] font-extrabold tracking-[.08em] text-[#0F2050]">
         {bloco.title}
       </h3>
-      <p className="mb-[14px] text-[14px] text-[#6B7280]">
+      <p className="mb-[14px] fs-apoio text-[#6B7280]">
         Selecione um item à esquerda e depois o par correspondente à direita.
       </p>
 
@@ -430,7 +409,7 @@ export function BlocoMatch({ bloco }: { bloco: MatchBlock }) {
                 type="button"
                 aria-pressed={ativo === i}
                 onClick={() => escolher('esquerda', i)}
-                className="min-h-[44px] rounded-xl border-2 px-3 py-[13px] text-left text-[15px] font-extrabold"
+                className="min-h-[44px] rounded-xl border-2 px-3 py-[13px] text-left fs-leitura font-extrabold"
                 style={{ background: fundo, color: frente, borderColor: borda }}
               >
                 {rotulo}
@@ -457,7 +436,7 @@ export function BlocoMatch({ bloco }: { bloco: MatchBlock }) {
                 key={i}
                 type="button"
                 onClick={() => escolher('direita', i)}
-                className="min-h-[44px] rounded-xl border-2 px-3 py-[13px] text-left text-[15px] font-bold"
+                className="min-h-[44px] rounded-xl border-2 px-3 py-[13px] text-left fs-leitura font-bold"
                 style={{
                   background: usado ? '#EFEAFB' : NEUTRO_BG,
                   color: usado ? '#3C1D80' : '#1F2430',
@@ -489,7 +468,7 @@ export function BlocoMatch({ bloco }: { bloco: MatchBlock }) {
         </button>
         <p
           aria-live="polite"
-          className="text-[14px] font-extrabold"
+          className="fs-apoio font-extrabold"
           style={{ color: tudoCerto ? VERDE_FG : VERMELHO_FG }}
         >
           {conferido ? `${acertos} de ${bloco.left.length} corretos` : ''}
@@ -561,10 +540,10 @@ export function BlocoDnd({ bloco }: { bloco: DndBlock }) {
 
   return (
     <div className="rounded-[18px] bg-[#0F2050] p-[22px]" aria-busy={interacao.gravando || undefined}>
-      <h3 className="mb-1 text-[12px] font-extrabold tracking-[.08em] text-[#F2C230]">
+      <h3 className="mb-1 fs-rotulo font-extrabold tracking-[.08em] text-[#F2C230]">
         {bloco.title}
       </h3>
-      <p className="mb-4 text-[14px] text-[#B9C3DA]">{bloco.sub}</p>
+      <p className="mb-4 fs-apoio text-[#B9C3DA]">{bloco.sub}</p>
 
       <div className="mb-4 flex flex-wrap items-start gap-[10px]">
         {bloco.slots.map((rotuloDaLacuna, i) => {
@@ -611,11 +590,11 @@ export function BlocoDnd({ bloco }: { bloco: DndBlock }) {
                 </button>
               ) : (
                 <div className={caixa} style={estilo}>
-                  <span aria-hidden="true">—</span>
+                  <span aria-hidden="true">-</span>
                   <span className="sr-only">{`Lacuna ${i + 1}, ${rotuloDaLacuna}: vazia.`}</span>
                 </div>
               )}
-              <p className="mt-[6px] text-center text-[11px] font-extrabold tracking-[.06em] text-[#B9C3DA]">
+              <p className="mt-[6px] text-center fs-rotulo font-extrabold tracking-[.06em] text-[#B9C3DA]">
                 {rotuloDaLacuna}
               </p>
             </div>
@@ -633,7 +612,7 @@ export function BlocoDnd({ bloco }: { bloco: DndBlock }) {
               draggable
               onDragStart={(evento) => evento.dataTransfer.setData('text/plain', rotulo)}
               onClick={() => colocar(rotulo)}
-              className="min-h-[44px] cursor-grab rounded-xl px-[18px] py-[11px] text-[15px] font-extrabold"
+              className="min-h-[44px] cursor-grab rounded-xl px-[18px] py-[11px] fs-leitura font-extrabold"
               style={{
                 background: usada ? '#33427A' : '#F2C230',
                 color: usada ? '#8A97C0' : '#0F2050',
@@ -664,7 +643,7 @@ export function BlocoDnd({ bloco }: { bloco: DndBlock }) {
         </button>
         <p
           aria-live="polite"
-          className="text-[14px] font-extrabold"
+          className="fs-apoio font-extrabold"
           style={{ color: certo ? '#7BE3A0' : '#FFB3BD' }}
         >
           {conferido ? (certo ? 'Perfeito!' : 'Ainda não. Tente de novo.') : ''}
@@ -719,7 +698,7 @@ export function BlocoCheck({ bloco }: { bloco: CheckBlock }) {
               >
                 {marcado ? '✓' : ''}
               </span>
-              <span className="text-[16px] font-bold text-[#1F2430]">{rotulo}</span>
+              <span className="fs-leitura font-bold text-[#1F2430]">{rotulo}</span>
             </label>
           );
         })}
@@ -764,7 +743,7 @@ export function BlocoFree({ bloco }: { bloco: FreeBlock }) {
           >
             <p
               id={idMissao}
-              className="mb-2 text-[12px] font-extrabold tracking-[.08em]"
+              className="mb-2 fs-rotulo font-extrabold tracking-[.08em]"
               style={{ color: destaque }}
             >
               {item.n} · {item.kicker}
@@ -784,164 +763,14 @@ export function BlocoFree({ bloco }: { bloco: FreeBlock }) {
               autoComplete="off"
               autoCapitalize="sentences"
               aria-describedby={item.ideas ? `${idMissao} ${idIdeias}` : idMissao}
-              className="min-h-[44px] w-full rounded-pill border-[1.5px] border-[#E6E8EE] bg-white px-[14px] py-[11px] text-[15px] font-bold text-[#0F2050]"
+              className="min-h-[44px] w-full rounded-pill border-[1.5px] border-[#E6E8EE] bg-white px-[14px] py-[11px] fs-leitura font-bold text-[#0F2050]"
             />
 
             {item.ideas ? (
-              <p id={idIdeias} className="mt-2 text-[12px] font-bold text-[#6B7280]">
+              <p id={idIdeias} className="mt-2 fs-apoio font-bold text-[#6B7280]">
                 {item.ideas}
               </p>
             ) : null}
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-// ═════════════════════════════════ cta ═══════════════════════════════════
-
-/**
- * Videoaula (Plano Completo) e prática oral com IA (Plano Premium).
- *
- * O botão revela uma mensagem. Com o `plano` do aluno em mãos, ela muda de tom: quem
- * já paga pelo recurso ouve que ele está a caminho; quem ainda não, vê de que plano ele
- * é. Sem a prop, é exatamente o protótipo.
- *
- * Com `temVideoaula` (a aula tem o painel de vídeo na tela), o item de vídeo deixa de
- * dizer "em produção": para quem tem o plano, o botão leva ao player; para quem não
- * tem, a mensagem diz de que plano é, sem "em breve" — o vídeo já existe. A prática
- * oral continua "em breve" em qualquer caso.
- *
- * Com `linksDeCompra`, quem ainda não tem o plano ganha, junto da mensagem, o link
- * para o checkout do plano que o item vende (Completo para vídeo, Premium para a
- * prática oral). Sem link configurado no painel, fica só a mensagem.
- */
-export function BlocoCta({
-  bloco,
-  lessonId,
-  plano,
-  temVideoaula = false,
-  linksDeCompra,
-}: {
-  bloco: CtaBlock;
-  lessonId: number;
-  plano?: Plano;
-  temVideoaula?: boolean;
-  linksDeCompra?: LinksDeCompra;
-}) {
-  const interacao = useInteracao();
-
-  return (
-    <div className="flex flex-col gap-3" aria-busy={interacao.gravando || undefined}>
-      {bloco.items.map((item, i) => {
-        const chave = chaveCta(lessonId, i);
-        const aberto = estaMarcado(interacao.valor(chave));
-        const cv = variant(item.v);
-        const escuro = item.v === 'teal' || item.v === 'purple' || item.v === 'navy';
-        const microfone = item.icon === 'mic';
-
-        // `SOLID[c.c] || "#0F2050"` do protótipo — o fallback aqui é navy, não o teal.
-        const corDoBotao = item.c && isSolidName(item.c) ? SOLID[item.c] : '#0F2050';
-        const corDoTextoDoBotao =
-          item.c === 'yellow' || item.c === 'white' ? '#0F2050' : '#FFFFFF';
-
-        const nivelExigido = microfone ? NIVEL_DO_PLANO.PREMIUM : NIVEL_DO_PLANO.COMPLETO;
-        const incluso = plano !== undefined && NIVEL_DO_PLANO[plano] >= nivelExigido;
-
-        const videoPronto = !microfone && temVideoaula;
-        const levaAoPlayer = videoPronto && incluso;
-
-        const planoVendido = microfone ? 'PREMIUM' : 'COMPLETO';
-        const linkDeCompra = incluso ? null : (linksDeCompra?.[planoVendido] ?? null);
-
-        const mensagem = levaAoPlayer
-          ? 'Sua videoaula está no topo desta aula.'
-          : videoPronto
-            ? 'A videoaula desta aula faz parte do Plano Completo.'
-            : incluso
-              ? microfone
-                ? 'Sua prática oral com IA está em produção — em breve no seu app.'
-                : 'Sua videoaula está em produção — em breve no seu app.'
-              : microfone
-                ? 'Prática oral disponível no Plano Premium — em breve no seu app.'
-                : 'Videoaula disponível no Plano Completo — em breve no seu app.';
-
-        const idMensagem = `${chave}-msg`;
-
-        return (
-          <div
-            key={chave}
-            className="flex items-start gap-4 rounded-[18px] p-5"
-            style={{ background: cv.bg }}
-          >
-            <span
-              aria-hidden="true"
-              className="grid h-[46px] w-[46px] flex-none place-items-center rounded-full text-[19px]"
-              style={{
-                background: escuro ? '#F2C230' : microfone ? '#5B21B6' : '#0E9BAE',
-                color: escuro ? '#0F2050' : '#FFFFFF',
-              }}
-            >
-              {microfone ? '🎙' : '▶'}
-            </span>
-
-            <div className="flex-1">
-              <h3
-                className="mb-1 text-[17px] font-black"
-                style={{ color: escuro ? '#FFFFFF' : '#0F2050' }}
-              >
-                {item.title}
-              </h3>
-              <p className="mb-2 text-[14px]" style={{ color: escuro ? '#E3E8F5' : '#6B7280' }}>
-                {item.body}
-              </p>
-              <p
-                className="mb-3 text-[11px] font-extrabold tracking-[.05em]"
-                style={{
-                  color: escuro ? '#F2C230' : microfone ? '#5B21B6' : '#0E7A8B',
-                }}
-              >
-                {item.plan}
-              </p>
-
-              <button
-                type="button"
-                onClick={() => {
-                  interacao.definir(chave, MARCADO);
-                  interacao.conferir(chave, true);
-                  if (levaAoPlayer) irParaAVideoaula();
-                }}
-                aria-expanded={aberto}
-                aria-controls={idMensagem}
-                className="inline-flex min-h-[44px] items-center justify-center rounded-pill px-[22px] py-3 text-[13px] font-extrabold tracking-[.04em]"
-                style={{ background: corDoBotao, color: corDoTextoDoBotao }}
-              >
-                {item.btn}
-              </button>
-
-              <p
-                id={idMensagem}
-                aria-live="polite"
-                className={aberto ? 'mt-[10px] text-[13px] font-bold' : undefined}
-                style={aberto ? { color: escuro ? '#E3E8F5' : '#6B7280' } : undefined}
-              >
-                {aberto ? mensagem : ''}
-              </p>
-
-              {aberto && linkDeCompra ? (
-                <a
-                  href={linkDeCompra}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-flex min-h-[44px] items-center text-[13px] font-extrabold underline underline-offset-4"
-                  style={{ color: escuro ? '#FFFFFF' : '#0F2050' }}
-                >
-                  {microfone ? 'Conhecer o Plano Premium' : 'Conhecer o Plano Completo'}
-                  <span className="sr-only"> (abre em outra aba)</span>
-                </a>
-              ) : null}
-            </div>
           </div>
         );
       })}
@@ -962,12 +791,15 @@ export function BlocoInterativo({
   plano,
   temVideoaula,
   linksDeCompra,
+  pratica,
 }: {
   bloco: InteractiveBlock;
   lessonId: number;
   plano?: Plano;
   temVideoaula?: boolean;
   linksDeCompra?: LinksDeCompra;
+  /** Prompt da prática com IA (contrato 3.3). Só o `cta` usa. */
+  pratica?: ResultadoDoPrompt;
 }) {
   switch (bloco.t) {
     case 'mc':
@@ -990,6 +822,7 @@ export function BlocoInterativo({
           plano={plano}
           temVideoaula={temVideoaula}
           linksDeCompra={linksDeCompra}
+          pratica={pratica}
         />
       );
   }

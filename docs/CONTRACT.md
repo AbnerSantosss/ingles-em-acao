@@ -1,9 +1,8 @@
-# CONTRATO DO APP — "Inglês em Ação" (app-web)
+# Contrato do app WSA English (app-web)
 
-Documento único de verdade para todos os agentes desta entrega. **Leia inteiro antes de escrever
-qualquer linha.** Se algo aqui conflitar com a wiki do vault (`../wiki/**`), **este documento vence**:
-o usuário decidiu transformar o protótipo do Claude Designer em app real, e o protótipo tem
-identidade visual própria ("Inglês em Ação", não "WSA English").
+O produto é o WSA English, vendido em dois planos: WSA Essencial e WSA Premium (os
+nomes e as regras de acesso estão em `src/lib/planos.ts`). Em conflito com este
+contrato, vale o plano em `docs/plano-v2/`. A referência de produto é a wiki do projeto.
 
 ---
 
@@ -98,9 +97,8 @@ Não implemente o motor de aulas agora — mas o **schema e os tipos já nascem 
 - Alvos de toque no mínimo 44px; botões primários 52–56px de altura.
 
 ### Logo
-Quadrado arredondado com `linear-gradient(160deg,#123A86,#0A1F4E)`, letras **"IA"** em `#F6C945`,
-`font-weight:900`. 58px na tela de login, 44px dentro do app. Ao lado, a marca "Inglês em Ação"
-em duas linhas, `font-weight:900`, cor navy.
+O logo oficial é o componente `src/components/ui/LogoWSA.tsx`, com os arquivos de
+`public/brand/`. Tamanho e uso: ver o pacote 04 e a §5 de `docs/plano-v2/01-CONTRATOS.md`.
 
 ## 4. Modelo de dados (Prisma + PostgreSQL)
 
@@ -130,7 +128,7 @@ Entidades obrigatórias:
 
 - **User** — `id`, `name`, `email` (unique, sempre minúsculo), `passwordHash`, `photoUrl?`,
   `emailVerifiedAt?`, `role` (`STUDENT` | `ADMIN`, default STUDENT),
-  `plan` (`ESSENCIAL` | `COMPLETO` | `PREMIUM`, default ESSENCIAL), `createdAt`, `updatedAt`
+  `plan` (`ESSENCIAL` | `PREMIUM`, default ESSENCIAL), `createdAt`, `updatedAt`
 - **Session** — `id`, `tokenHash` (unique), `userId`, `expiresAt`, `remember` (bool),
   `userAgent?`, `ip?`, `createdAt`, `lastSeenAt`
 - **VerificationToken** — `id`, `tokenHash` (unique), `userId`,
@@ -237,7 +235,7 @@ export async function createSession(userId: string, remember: boolean): Promise<
 export async function destroyCurrentSession(): Promise<void>
 export type SessionUser = {
   id: string; name: string; email: string; photoUrl: string | null
-  role: 'STUDENT' | 'ADMIN'; plan: 'ESSENCIAL' | 'COMPLETO' | 'PREMIUM'
+  role: 'STUDENT' | 'ADMIN'; plan: Plano // de @/lib/planos
   emailVerifiedAt: Date | null
 }
 

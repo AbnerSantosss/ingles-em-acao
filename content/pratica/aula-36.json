@@ -1,0 +1,57 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer o que como em cada refeição e pedir comida e bebida num restaurante em inglês.",
+  "conteudoAlvo": [
+    "have + ___ + for breakfast / lunch / dinner",
+    "Could I have + ___, please?",
+    "pancakes, pasta, pizza, soup, cake, ice cream",
+    "appetizers, desserts, a glass of, the bill"
+  ],
+  "expressoesFixas": [
+    "Are you ready to order?",
+    "Anything to drink?"
+  ],
+  "comoIntegrar": [
+    "Use \"I'd like\" que já sei junto com \"Could I have\": \"I'd like a pizza, please.\"",
+    "Misture com os advérbios que já sei: \"I usually have pasta for lunch.\""
+  ],
+  "regrasDaAula": [
+    "Refeição vem com \"for\": \"I have fruit for breakfast.\""
+  ],
+  "tiposDeExercicio": [
+    "completar",
+    "responder",
+    "mini-dialogo",
+    "situacao"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete: \"I have fruit ___ breakfast.\"",
+      "respostaDeReferencia": "I have fruit for breakfast."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda: \"What do you usually have for lunch?\"",
+      "respostaDeReferencia": "I usually have rice and beans."
+    },
+    {
+      "tipo": "mini-dialogo",
+      "enunciado": "Sou o cliente. Responda ao garçom: \"Anything to drink?\"",
+      "respostaDeReferencia": "I'd like a glass of soda, please."
+    }
+  ],
+  "limites": [
+    "Sem \"some\", \"any\" e \"a bag of\" nem contável e incontável: ainda não estudei.",
+    "Sem gorjeta, reserva ou reclamação: só pedir a comida, a bebida e a conta."
+  ],
+  "primeiraQuestao": "Vamos começar pelo café da manhã. Como digo \"café da manhã\" em inglês: \"breakfast\" ou \"dinner\"?",
+  "resumoAutorizado": [
+    "Refeições: \"I have fruit for breakfast.\", \"What do you usually have for lunch?\"",
+    "Comida: \"pancakes\", \"pasta\", \"soup\", \"pizza\", \"cake\", \"ice cream\", \"desserts\".",
+    "Pedir: \"Could I have a glass of soda, please?\", \"Just the bill, please.\""
+  ],
+  "resumoCurto": "Refeições e restaurante: \"for lunch\", \"Are you ready to order?\", \"Could I have...?\", \"the bill\"."
+}

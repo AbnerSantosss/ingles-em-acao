@@ -8,14 +8,12 @@ import { expect, type Page } from '@playwright/test';
 export type ContaDeDemonstracao =
   | 'ENTRAR COMO ALUNO'
   | 'ENTRAR COMO ADMIN'
-  | 'ALUNO COMPLETO'
   | 'ALUNO ESSENCIAL';
 
 /** Para onde cada botão leva depois de entrar. */
 const DESTINO: Record<ContaDeDemonstracao, RegExp> = {
   'ENTRAR COMO ALUNO': /\/inicio$/,
   'ENTRAR COMO ADMIN': /\/admin$/,
-  'ALUNO COMPLETO': /\/inicio$/,
   'ALUNO ESSENCIAL': /\/inicio$/,
 };
 

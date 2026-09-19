@@ -157,7 +157,7 @@ function FormularioDeEnvio({ habilitado }: { habilitado: boolean }) {
           </select>
         </Field>
         <QuadroDeEspecificacoes
-          titulo={`Especificações — ${ESPECIFICACOES_DE_IMAGEM[uso].rotulo}`}
+          titulo={`Especificações: ${ESPECIFICACOES_DE_IMAGEM[uso].rotulo}`}
           linhas={linhasDaEspecificacaoDeImagem(uso)}
         />
       </div>
@@ -263,7 +263,7 @@ function FormularioDeEdicao({
         label="Texto alternativo"
         required
         error={erroDoCampo(estado, 'alt')}
-        hint="O arquivo no disco não muda — o caminho de uma imagem nunca é editável."
+        hint="O arquivo no disco não muda. O caminho de uma imagem nunca é editável."
       >
         <Input
           name="alt"

@@ -1,0 +1,236 @@
+{
+  "aula": 10,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_010_audio_001",
+        "alvo": "texto",
+        "ancora": "It’s a red car.",
+        "texto": "It's a red car.",
+        "src": "/audio/aula-10/lesson_010_audio_001.4558a205.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_010_audio_002",
+        "alvo": "texto",
+        "ancora": "The circle is blue.",
+        "texto": "The circle is blue.",
+        "src": "/audio/aula-10/lesson_010_audio_002.e74141ba.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_010_audio_003",
+        "alvo": "texto",
+        "ancora": "They are green.",
+        "texto": "They are green.",
+        "src": "/audio/aula-10/lesson_010_audio_003.d1ca721b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_004",
+        "alvo": "texto",
+        "ancora": "red",
+        "texto": "red",
+        "src": "/audio/aula-10/lesson_010_audio_004.e81ced52.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_005",
+        "alvo": "texto",
+        "ancora": "blue",
+        "texto": "blue",
+        "src": "/audio/aula-10/lesson_010_audio_005.056c89ae.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_006",
+        "alvo": "texto",
+        "ancora": "green",
+        "texto": "green",
+        "src": "/audio/aula-10/lesson_010_audio_006.d745aa19.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_007",
+        "alvo": "texto",
+        "ancora": "yellow",
+        "texto": "yellow",
+        "src": "/audio/aula-10/lesson_010_audio_007.ff1cc6c4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_008",
+        "alvo": "texto",
+        "ancora": "black",
+        "texto": "black",
+        "src": "/audio/aula-10/lesson_010_audio_008.b6fe6455.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_009",
+        "alvo": "texto",
+        "ancora": "white",
+        "texto": "white",
+        "src": "/audio/aula-10/lesson_010_audio_009.5056d994.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_010",
+        "alvo": "texto",
+        "ancora": "orange",
+        "texto": "orange",
+        "src": "/audio/aula-10/lesson_010_audio_010.c85b72db.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_011",
+        "alvo": "texto",
+        "ancora": "purple",
+        "texto": "purple",
+        "src": "/audio/aula-10/lesson_010_audio_011.f9bcfbfd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_012",
+        "alvo": "texto",
+        "ancora": "pink",
+        "texto": "pink",
+        "src": "/audio/aula-10/lesson_010_audio_012.1446cc01.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_013",
+        "alvo": "texto",
+        "ancora": "brown",
+        "texto": "brown",
+        "src": "/audio/aula-10/lesson_010_audio_013.faeff51c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_014",
+        "alvo": "texto",
+        "ancora": "gray",
+        "texto": "gray",
+        "src": "/audio/aula-10/lesson_010_audio_014.4752c757.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_010_audio_015",
+        "alvo": "texto",
+        "ancora": "a blue house · a white shirt",
+        "texto": "a blue house. a white shirt",
+        "src": "/audio/aula-10/lesson_010_audio_015.b306f50a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_010_audio_016",
+        "alvo": "texto",
+        "ancora": "circle",
+        "texto": "circle",
+        "src": "/audio/aula-10/lesson_010_audio_016.3df70b03.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_010_audio_017",
+        "alvo": "texto",
+        "ancora": "square",
+        "texto": "square",
+        "src": "/audio/aula-10/lesson_010_audio_017.2f03b9f3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_010_audio_018",
+        "alvo": "texto",
+        "ancora": "triangle",
+        "texto": "triangle",
+        "src": "/audio/aula-10/lesson_010_audio_018.151678a7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_010_audio_019",
+        "alvo": "texto",
+        "ancora": "rectangle",
+        "texto": "rectangle",
+        "src": "/audio/aula-10/lesson_010_audio_019.f5ae9242.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_010_audio_020",
+        "alvo": "texto",
+        "ancora": "star",
+        "texto": "star",
+        "src": "/audio/aula-10/lesson_010_audio_020.c58e14e9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_010_audio_021",
+        "alvo": "texto",
+        "ancora": "heart",
+        "texto": "heart",
+        "src": "/audio/aula-10/lesson_010_audio_021.e20cf162.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Frases afirmativas com o verbo ser/estar: \"am\", \"is\" e \"are\", na forma completa e na forma curta.",
+  "conteudoAlvo": [
+    "I am / he, she, it is / you, we, they are",
+    "I'm, you're, he's, she's, it's, we're, they're",
+    "Brazilian, ready, happy, friends, a doctor",
+    "the Eiffel Tower, France: It is in France."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use os sete pronomes da Aula 01 como sujeito e troque o sujeito a cada questão.",
+    "Misture forma completa e forma curta: \"I am\" e \"I'm\", \"they are\" e \"they're\"."
+  ],
+  "regrasDaAula": [
+    "A forma curta sempre tem apóstrofo: \"I'm\", \"she's\", \"they're\"."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"am\", \"is\" ou \"are\": \"She ___ happy.\"",
+      "respostaDeReferencia": "She is happy."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Escreva na forma curta: \"They are friends.\"",
+      "respostaDeReferencia": "They're friends."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Ele é médico.",
+      "respostaDeReferencia": "He is a doctor."
+    }
+  ],
+  "limites": [
+    "Só a afirmativa: a negativa com \"not\" e as perguntas vêm nas próximas aulas.",
+    "Sem \"from\", \"my\" e \"this\", e profissão só \"a doctor\": o resto ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ ready.\" Qual forma do verbo entra no espaço?",
+  "resumoAutorizado": [
+    "\"am\" com \"I\", \"is\" com \"he\", \"she\", \"it\", \"are\" com \"you\", \"we\", \"they\".",
+    "Formas curtas: \"I'm\", \"you're\", \"he's\", \"she's\", \"it's\", \"we're\", \"they're\".",
+    "Frases: \"I am Brazilian.\", \"He is a doctor.\", \"It is in France.\""
+  ],
+  "resumoCurto": "Verbo ser/estar na afirmativa: \"I am\", \"he/she/it is\", \"you/we/they are\" e as formas curtas."
+}

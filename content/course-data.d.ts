@@ -1,11 +1,11 @@
 /**
- * Declaração de tipos para `content/course-data.mjs` — o conteúdo do curso
+ * Declaração de tipos para `content/course-data.mjs`, o conteúdo do curso
  * (42 aulas, 309 páginas) exportado pelo protótipo do Claude Designer.
  *
  * O arquivo real é JavaScript puro e continua sendo a fonte de verdade do conteúdo:
  * este `.d.ts` só descreve o formato do que ele exporta.
  *
- * COMO CONSUMIR — o TypeScript não usa um `.d.ts` para um import escrito com a
+ * COMO CONSUMIR: o TypeScript não usa um `.d.ts` para um import escrito com a
  * extensão `.mjs` (para `.mjs` ele procura `.d.mts`) e, com `allowJs` ligado, acaba
  * inferindo tipos do próprio JavaScript. Por isso `src/lib/content/lessons.ts` importa
  * o valor pelo caminho com extensão (que os bundlers sempre resolvem) e traz o tipo

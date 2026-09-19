@@ -1,0 +1,390 @@
+{
+  "aula": 33,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_033_audio_001",
+        "alvo": "texto",
+        "ancora": "HOW OFTEN DOES HE VISIT HIS GRANDPA?",
+        "texto": "How often does he visit his grandpa?",
+        "src": "/audio/aula-33/lesson_033_audio_001.15286254.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_033_audio_002",
+        "alvo": "texto",
+        "ancora": "EXPRESSION · He visits his grandpa once a week.",
+        "texto": "He visits his grandpa once a week.",
+        "src": "/audio/aula-33/lesson_033_audio_002.4490f5a8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_033_audio_003",
+        "alvo": "texto",
+        "ancora": "EXPRESSION · He visits his grandpa every Sunday.",
+        "texto": "He visits his grandpa every Sunday.",
+        "src": "/audio/aula-33/lesson_033_audio_003.5430940f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_033_audio_004",
+        "alvo": "texto",
+        "ancora": "HOW OFTEN DO YOU GO TO THE BEACH?",
+        "texto": "How often do you go to the beach?",
+        "src": "/audio/aula-33/lesson_033_audio_004.1326a9ea.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_033_audio_005",
+        "alvo": "texto",
+        "ancora": "EXPRESSION · I go to the beach twice a year.",
+        "texto": "I go to the beach twice a year.",
+        "src": "/audio/aula-33/lesson_033_audio_005.d2e234b9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_033_audio_006",
+        "alvo": "texto",
+        "ancora": "NOT OFTEN",
+        "texto": "not often",
+        "src": "/audio/aula-33/lesson_033_audio_006.4f164c26.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_033_audio_007",
+        "alvo": "texto",
+        "ancora": "She always reads books in the morning.",
+        "texto": "She always reads books in the morning.",
+        "src": "/audio/aula-33/lesson_033_audio_007.b61efb1f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_033_audio_008",
+        "alvo": "texto",
+        "ancora": "They usually have dinner together.",
+        "texto": "They usually have dinner together.",
+        "src": "/audio/aula-33/lesson_033_audio_008.01c9ee4c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_033_audio_009",
+        "alvo": "texto",
+        "ancora": "She rarely travels on business.",
+        "texto": "She rarely travels on business.",
+        "src": "/audio/aula-33/lesson_033_audio_009.8aaa9d94.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_033_audio_010",
+        "alvo": "texto",
+        "ancora": "He never eats junk food.",
+        "texto": "He never eats junk food.",
+        "src": "/audio/aula-33/lesson_033_audio_010.3fcbe640.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_033_audio_011",
+        "alvo": "texto",
+        "ancora": "They usually eat chocolate.",
+        "texto": "They usually eat chocolate.",
+        "src": "/audio/aula-33/lesson_033_audio_011.3552c8a2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_033_audio_012",
+        "alvo": "texto",
+        "ancora": "He often drinks fruit juice for breakfast.",
+        "texto": "He often drinks fruit juice for breakfast.",
+        "src": "/audio/aula-33/lesson_033_audio_012.f1857f35.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_033_audio_013",
+        "alvo": "texto",
+        "ancora": "She often gets up late on weekends.",
+        "texto": "She often gets up late on weekends.",
+        "src": "/audio/aula-33/lesson_033_audio_013.e926d072.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_033_audio_014",
+        "alvo": "texto",
+        "ancora": "My cousin is often sick in the winter.",
+        "texto": "My cousin is often sick in the winter.",
+        "src": "/audio/aula-33/lesson_033_audio_014.a66a695b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_033_audio_015",
+        "alvo": "texto",
+        "ancora": "Sometimes I listen to music at night.",
+        "texto": "Sometimes I listen to music at night.",
+        "src": "/audio/aula-33/lesson_033_audio_015.f9688089.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_016",
+        "alvo": "texto",
+        "ancora": "every hour",
+        "texto": "every hour",
+        "src": "/audio/aula-33/lesson_033_audio_016.089b0f61.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_017",
+        "alvo": "texto",
+        "ancora": "every week",
+        "texto": "every week",
+        "src": "/audio/aula-33/lesson_033_audio_017.dfc1f536.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_018",
+        "alvo": "texto",
+        "ancora": "every month",
+        "texto": "every month",
+        "src": "/audio/aula-33/lesson_033_audio_018.fa0c3bb3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_019",
+        "alvo": "texto",
+        "ancora": "every year",
+        "texto": "every year",
+        "src": "/audio/aula-33/lesson_033_audio_019.987d6780.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_020",
+        "alvo": "texto",
+        "ancora": "once a day",
+        "texto": "once a day",
+        "src": "/audio/aula-33/lesson_033_audio_020.1070ffd0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_021",
+        "alvo": "texto",
+        "ancora": "once a week",
+        "texto": "once a week",
+        "src": "/audio/aula-33/lesson_033_audio_021.ef2f7ded.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_022",
+        "alvo": "texto",
+        "ancora": "once a month",
+        "texto": "once a month",
+        "src": "/audio/aula-33/lesson_033_audio_022.b9544292.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_023",
+        "alvo": "texto",
+        "ancora": "once a year",
+        "texto": "once a year",
+        "src": "/audio/aula-33/lesson_033_audio_023.c186e31a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_024",
+        "alvo": "texto",
+        "ancora": "twice a day",
+        "texto": "twice a day",
+        "src": "/audio/aula-33/lesson_033_audio_024.36e25852.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_025",
+        "alvo": "texto",
+        "ancora": "twice a week",
+        "texto": "twice a week",
+        "src": "/audio/aula-33/lesson_033_audio_025.f3faff0d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_026",
+        "alvo": "texto",
+        "ancora": "twice a month",
+        "texto": "twice a month",
+        "src": "/audio/aula-33/lesson_033_audio_026.4a612a60.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_027",
+        "alvo": "texto",
+        "ancora": "twice a year",
+        "texto": "twice a year",
+        "src": "/audio/aula-33/lesson_033_audio_027.ce46bbba.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_028",
+        "alvo": "texto",
+        "ancora": "three times a week",
+        "texto": "three times a week",
+        "src": "/audio/aula-33/lesson_033_audio_028.08d98ded.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_029",
+        "alvo": "texto",
+        "ancora": "four times a year",
+        "texto": "four times a year",
+        "src": "/audio/aula-33/lesson_033_audio_029.a0b99b84.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_033_audio_030",
+        "alvo": "texto",
+        "ancora": "every hour = once an hour",
+        "texto": "every hour. once an hour",
+        "src": "/audio/aula-33/lesson_033_audio_030.26aeeb1a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_033_audio_031",
+        "alvo": "texto",
+        "ancora": "My friends and I play soccer once a week.",
+        "texto": "My friends and I play soccer once a week.",
+        "src": "/audio/aula-33/lesson_033_audio_031.661b2e54.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_033_audio_032",
+        "alvo": "texto",
+        "ancora": "Sarah rides her bike twice a month.",
+        "texto": "Sarah rides her bike twice a month.",
+        "src": "/audio/aula-33/lesson_033_audio_032.e5402e53.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_033_audio_033",
+        "alvo": "texto",
+        "ancora": "They go to the gym three times a week.",
+        "texto": "They go to the gym three times a week.",
+        "src": "/audio/aula-33/lesson_033_audio_033.a811540a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_033_audio_034",
+        "alvo": "bloco",
+        "ancora": "How often do you go to the gym?",
+        "texto": "How often do you go to the gym?\nI usually go in the evening. I go three times a week.\nHow often do you play soccer?\nI often play soccer on Saturdays. What about you?\nI rarely play soccer, but I ride my bike twice a month.",
+        "src": "/audio/aula-33/lesson_033_audio_034.88404280.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
+}

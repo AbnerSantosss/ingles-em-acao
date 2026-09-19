@@ -31,13 +31,13 @@ const ICONES: readonly Opcao[] = [
   {
     chave: 'play',
     rotulo: 'Videoaula',
-    detalhe: 'ícone ▶ · Plano Completo',
+    detalhe: 'ícone ▶ · WSA Premium',
     amostra: <Amostra simbolo="▶" fundo="#0E9BAE" />,
   },
   {
     chave: 'mic',
     rotulo: 'Prática oral com IA',
-    detalhe: 'ícone 🎙 · Plano Premium',
+    detalhe: 'ícone 🎙 · WSA Premium',
     amostra: <Amostra simbolo="🎙" fundo="#5B21B6" />,
   },
 ];
@@ -119,7 +119,7 @@ function Chamada({
         aoMudar={definir('plan')}
         obrigatorio
         erros={erros.em('plan')}
-        placeholder="Ex.: Disponível no Plano Completo — Inglês em Ação."
+        placeholder="Ex.: EXCLUSIVO DO WSA PREMIUM"
       />
       <CampoTexto
         rotulo="Texto do botão"

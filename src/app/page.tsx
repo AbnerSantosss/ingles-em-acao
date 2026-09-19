@@ -16,7 +16,7 @@ import { getCurrentUser } from '@/lib/auth/session';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Inglês em Ação — inglês do zero em 42 aulas curtas',
+  title: 'WSA English: inglês do zero em 42 aulas curtas',
   description:
     'Do zero a falar de você em inglês: se apresentar, falar da família e da rotina, contar o que fez ontem. 42 aulas curtas do método WSA English, no seu ritmo.',
 };
@@ -36,7 +36,6 @@ export default async function RaizPage() {
     <Landing
       ofertas={{
         ESSENCIAL: linkDoPlano(checkout, 'ESSENCIAL'),
-        COMPLETO: linkDoPlano(checkout, 'COMPLETO'),
         PREMIUM: linkDoPlano(checkout, 'PREMIUM'),
       }}
     />

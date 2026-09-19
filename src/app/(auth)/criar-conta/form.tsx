@@ -186,7 +186,7 @@ export function FormularioDeCadastro({ next, linkEntrar }: FormularioDeCadastroP
               >
                 política de privacidade<span className="sr-only"> (abre em outra aba)</span>
               </a>{' '}
-              do Inglês em Ação.
+              do WSA English.
             </span>
           </label>
 

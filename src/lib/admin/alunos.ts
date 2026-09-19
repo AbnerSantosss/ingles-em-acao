@@ -200,9 +200,9 @@ export type ResultadoDoRecalculo = {
 
 // ──────────────────────────────── validação ──────────────────────────────
 
-/** Os três planos, como valor de formulário. */
-export const esquemaDePlano = z.enum(['ESSENCIAL', 'COMPLETO', 'PREMIUM'], {
-  error: 'escolha um dos três planos',
+/** Os dois planos, como valor de formulário. */
+export const esquemaDePlano = z.enum(['ESSENCIAL', 'PREMIUM'], {
+  error: 'escolha o WSA Essencial ou o WSA Premium',
 });
 
 /**
@@ -215,7 +215,7 @@ export const esquemaDePlano = z.enum(['ESSENCIAL', 'COMPLETO', 'PREMIUM'], {
 export const esquemaDeMotivo = z
   .string()
   .trim()
-  .min(5, 'escreva o motivo — a auditoria guarda este texto')
+  .min(5, 'escreva o motivo, porque a auditoria guarda este texto')
   .max(300, 'o motivo passou de 300 caracteres');
 
 /** O id de um aluno vindo do formulário. */
@@ -647,10 +647,10 @@ function montarAulaPontuavel(
   linha: LinhaPontuavel,
 ): { ok: true; aula: Lesson } | { ok: false; motivo: string } {
   if (linha.archivedAt !== null) {
-    return { ok: false, motivo: 'aula arquivada — o placar guardado foi preservado' };
+    return { ok: false, motivo: 'aula arquivada: o placar guardado foi preservado' };
   }
   if (!linha.published) {
-    return { ok: false, motivo: 'aula não publicada — o placar guardado foi preservado' };
+    return { ok: false, motivo: 'aula não publicada: o placar guardado foi preservado' };
   }
 
   const conferido = validarPaginas(linha.pages);

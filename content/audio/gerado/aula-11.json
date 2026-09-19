@@ -1,0 +1,61 @@
+{
+  "aula": 11,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_011_audio_001",
+        "alvo": "texto",
+        "ancora": "a university",
+        "texto": "a university",
+        "src": "/audio/aula-11/lesson_011_audio_001.cea95203.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_011_audio_002",
+        "alvo": "texto",
+        "ancora": "an hour",
+        "texto": "an hour",
+        "src": "/audio/aula-11/lesson_011_audio_002.e6043069.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_003",
+        "alvo": "texto",
+        "ancora": "I have a dog. The dog is small.",
+        "texto": "I have a dog. The dog is small.",
+        "src": "/audio/aula-11/lesson_011_audio_003.2dcab119.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_004",
+        "alvo": "texto",
+        "ancora": "The sun · The Eiffel Tower",
+        "texto": "The sun. The Eiffel Tower",
+        "src": "/audio/aula-11/lesson_011_audio_004.0f980203.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_005",
+        "alvo": "texto",
+        "ancora": "The book on the table.",
+        "texto": "The book on the table.",
+        "src": "/audio/aula-11/lesson_011_audio_005.c91c27d7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

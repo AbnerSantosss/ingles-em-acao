@@ -11,8 +11,8 @@ import { EMAIL_DE_CONTATO, ListaLegal, PaginaLegal, SecaoLegal } from '@/compone
  * prazo (LOCK 25). Ao mudar o produto, mude o texto junto.
  */
 export const metadata: Metadata = {
-  title: 'Termos de uso — Inglês em Ação',
-  description: 'As regras de uso do Inglês em Ação, o curso de inglês do zero da WSA English.',
+  title: 'Termos de uso',
+  description: 'As regras de uso do WSA English, o curso de inglês do zero.',
 };
 
 const link = 'font-bold text-navy underline underline-offset-4';
@@ -58,7 +58,7 @@ export default function TermosPage() {
       <SecaoLegal titulo="4. Planos e pagamento">
         <ListaLegal
           itens={[
-            'O curso é oferecido em três planos: Essencial, Completo e Premium. O que cada um inclui está descrito na página inicial.',
+            'O curso é oferecido em dois planos: WSA Essencial e WSA Premium. O que cada um inclui está descrito na página inicial.',
             'O pagamento é feito na página de uma plataforma de pagamento parceira, que tem os próprios termos. Nós não recebemos nem guardamos os dados do seu cartão.',
             'Depois da confirmação do pagamento, o plano é liberado na sua conta pela nossa equipe.',
             <>
@@ -73,7 +73,7 @@ export default function TermosPage() {
         />
       </SecaoLegal>
 
-      <SecaoLegal titulo="5. O que prometemos — e o que não prometemos">
+      <SecaoLegal titulo="5. O que prometemos e o que não prometemos">
         <p>
           Prometemos um caminho claro, do zero até conseguir falar de você, da sua rotina e do que fez
           ontem, com prática em cada aula. Não prometemos fluência nem resultado em prazo determinado:

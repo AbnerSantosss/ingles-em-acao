@@ -104,7 +104,7 @@ export function conferirArquivoDeVideo(
       ok: false,
       erro:
         `Só entram arquivos ${FORMATOS_DE_VIDEO.map((f) => f.rotulo).join(' ou ')} ` +
-        `(até ${formatarBytes(TAMANHO_MAXIMO_VIDEO)}) — os dois formatos que qualquer navegador toca. ` +
+        `(até ${formatarBytes(TAMANHO_MAXIMO_VIDEO)}), os dois formatos que qualquer navegador toca. ` +
         'Exporte em MP4 com vídeo H.264 e áudio AAC.',
     };
   }

@@ -1,0 +1,52 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer onde pessoas e objetos estão com \"in\", \"on\", \"at\" e as outras preposições de lugar.",
+  "conteudoAlvo": [
+    "in, on, at, the wall, school, the door, under",
+    "behind, in front of, next to, beside, between",
+    "near, above, below"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Junte \"there is\" e \"there are\" às preposições: \"There is a book on the table.\"",
+    "Use \"is\" e \"are\" com coisas que já sei: \"The dog is under the table.\""
+  ],
+  "regrasDaAula": [
+    "\"in\" para espaço fechado e país, \"on\" para superfície, \"at\" para um ponto."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual é a preposição em \"The book is on the table.\"?",
+      "respostaDeReferencia": "on"
+    },
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"in\" ou \"on\": \"The dog is ___ the box.\"",
+      "respostaDeReferencia": "The dog is in the box."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"ao lado de\": \"The bank is ___ the school.\"",
+      "respostaDeReferencia": "The bank is next to the school."
+    }
+  ],
+  "limites": [
+    "Só frases com \"is\", \"are\" e \"there is\": verbos como \"live\" e \"work\" ainda não estudei.",
+    "Objetos só os que já vi: \"cat\", \"bag\", \"phone\" e \"photo\" ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"on\". Complete: \"The book is ___ the table.\" Qual preposição entra no espaço?",
+  "resumoAutorizado": [
+    "\"in the box\" (dentro), \"on the table\" (sobre), \"at home\" (ponto).",
+    "\"under\", \"behind\", \"in front of\", \"next to\", \"beside\", \"between\", \"near\".",
+    "\"above\", \"below\"; \"in Brazil\", \"on the wall\", \"at school\", \"at the door\"."
+  ],
+  "resumoCurto": "Preposições de lugar: \"in\", \"on\", \"at\", \"under\", \"behind\", \"next to\", \"between\" e outras."
+}

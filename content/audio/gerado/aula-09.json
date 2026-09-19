@@ -1,0 +1,248 @@
+{
+  "aula": 9,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_001",
+        "alvo": "texto",
+        "ancora": "Monday",
+        "texto": "Monday",
+        "src": "/audio/aula-09/lesson_009_audio_001.35d9daa4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_002",
+        "alvo": "texto",
+        "ancora": "Tuesday",
+        "texto": "Tuesday",
+        "src": "/audio/aula-09/lesson_009_audio_002.2226b4b1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_003",
+        "alvo": "texto",
+        "ancora": "Wednesday",
+        "texto": "Wednesday",
+        "src": "/audio/aula-09/lesson_009_audio_003.34cb95cf.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_004",
+        "alvo": "texto",
+        "ancora": "Thursday",
+        "texto": "Thursday",
+        "src": "/audio/aula-09/lesson_009_audio_004.5b8b754e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_005",
+        "alvo": "texto",
+        "ancora": "Friday",
+        "texto": "Friday",
+        "src": "/audio/aula-09/lesson_009_audio_005.c66c700a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_006",
+        "alvo": "texto",
+        "ancora": "Saturday",
+        "texto": "Saturday",
+        "src": "/audio/aula-09/lesson_009_audio_006.00e069b2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_007",
+        "alvo": "texto",
+        "ancora": "Sunday",
+        "texto": "Sunday",
+        "src": "/audio/aula-09/lesson_009_audio_007.a63b2790.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_009_audio_008",
+        "alvo": "texto",
+        "ancora": "I study on Monday.",
+        "texto": "I study on Monday.",
+        "src": "/audio/aula-09/lesson_009_audio_008.bcf499cd.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_009",
+        "alvo": "texto",
+        "ancora": "January",
+        "texto": "January",
+        "src": "/audio/aula-09/lesson_009_audio_009.d19de08f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_010",
+        "alvo": "texto",
+        "ancora": "February",
+        "texto": "February",
+        "src": "/audio/aula-09/lesson_009_audio_010.e3ff2efe.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_011",
+        "alvo": "texto",
+        "ancora": "March",
+        "texto": "March",
+        "src": "/audio/aula-09/lesson_009_audio_011.41223cf8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_012",
+        "alvo": "texto",
+        "ancora": "April",
+        "texto": "April",
+        "src": "/audio/aula-09/lesson_009_audio_012.672d1ab8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_013",
+        "alvo": "texto",
+        "ancora": "May",
+        "texto": "May",
+        "src": "/audio/aula-09/lesson_009_audio_013.714c82b3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_014",
+        "alvo": "texto",
+        "ancora": "June",
+        "texto": "June",
+        "src": "/audio/aula-09/lesson_009_audio_014.bfb11cc2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_015",
+        "alvo": "texto",
+        "ancora": "July",
+        "texto": "July",
+        "src": "/audio/aula-09/lesson_009_audio_015.2cc96d6e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_016",
+        "alvo": "texto",
+        "ancora": "August",
+        "texto": "August",
+        "src": "/audio/aula-09/lesson_009_audio_016.a6febd04.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_017",
+        "alvo": "texto",
+        "ancora": "September",
+        "texto": "September",
+        "src": "/audio/aula-09/lesson_009_audio_017.22abc989.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_018",
+        "alvo": "texto",
+        "ancora": "October",
+        "texto": "October",
+        "src": "/audio/aula-09/lesson_009_audio_018.e21f5bf2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_019",
+        "alvo": "texto",
+        "ancora": "November",
+        "texto": "November",
+        "src": "/audio/aula-09/lesson_009_audio_019.7cecce39.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_020",
+        "alvo": "texto",
+        "ancora": "December",
+        "texto": "December",
+        "src": "/audio/aula-09/lesson_009_audio_020.ca889f1e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_021",
+        "alvo": "texto",
+        "ancora": "My birthday is in July.",
+        "texto": "My birthday is in July.",
+        "src": "/audio/aula-09/lesson_009_audio_021.e554d4a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_009_audio_022",
+        "alvo": "texto",
+        "ancora": "The class is on May 3rd.",
+        "texto": "The class is on May third.",
+        "src": "/audio/aula-09/lesson_009_audio_022.5f78fdeb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

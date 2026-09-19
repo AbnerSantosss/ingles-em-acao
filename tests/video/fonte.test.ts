@@ -245,7 +245,6 @@ describe('textos e listas auxiliares', () => {
 describe('planoVeVideoaula', () => {
   it.each([
     ['ESSENCIAL', false],
-    ['COMPLETO', true],
     ['PREMIUM', true],
   ] as const)('%s → %s', (plano, esperado) => {
     expect(planoVeVideoaula(plano)).toBe(esperado);

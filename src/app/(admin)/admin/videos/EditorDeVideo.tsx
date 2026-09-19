@@ -21,12 +21,12 @@ import { useActionState, useCallback, useState } from 'react';
 import { useFormStatus } from 'react-dom';
 
 import { QuadroDeEspecificacoes } from '@/components/admin/QuadroDeEspecificacoes';
-import type { Plano } from '@/components/lesson/blocks/interativos';
 import { PainelDeVideo, type ArquivoDoPainel } from '@/components/lesson/PainelDeVideo';
 import { Button } from '@/components/ui/Button';
 import { Field } from '@/components/ui/Field';
 import { Input } from '@/components/ui/Input';
 import { linhasDaEspecificacaoDeLink } from '@/lib/media/especificacoes';
+import { NOME_DO_PLANO, type Plano } from '@/lib/planos';
 import type { EstadoDoEnvio } from '@/lib/video/bucket';
 import {
   ehErroDeFonte,
@@ -138,7 +138,7 @@ export function EditorDeVideo({ aula, envio }: { aula: AulaDoEditor; envio: Esta
   const [bruto, setBruto] = useState(
     () => (aula.fonte ? (linkPublico(aula.fonte) ?? '') : (aula.refBruta ?? '')),
   );
-  const [planoDaPrevia, setPlanoDaPrevia] = useState<Plano>('COMPLETO');
+  const [planoDaPrevia, setPlanoDaPrevia] = useState<Plano>('PREMIUM');
 
   const [estadoSalvar, salvar] = useActionState(salvarVideoAction, FORMULARIO_INICIAL);
   const [estadoRemover, remover] = useActionState(removerVideoAction, FORMULARIO_INICIAL);
@@ -175,7 +175,7 @@ export function EditorDeVideo({ aula, envio }: { aula: AulaDoEditor; envio: Esta
           <span className="text-[13px] font-extrabold tracking-[0.04em] text-muted uppercase">
             Ver como
           </span>
-          {(['COMPLETO', 'ESSENCIAL'] as const).map((plano) => (
+          {(['PREMIUM', 'ESSENCIAL'] as const).map((plano) => (
             <button
               key={plano}
               type="button"
@@ -187,7 +187,7 @@ export function EditorDeVideo({ aula, envio }: { aula: AulaDoEditor; envio: Esta
                   : 'h-9 rounded-pill border border-border px-3 text-[13px] font-extrabold text-navy hover:bg-[#EAF2FE]'
               }
             >
-              {plano === 'COMPLETO' ? 'Plano Completo' : 'Plano Essencial'}
+              {NOME_DO_PLANO[plano]}
             </button>
           ))}
         </div>
@@ -227,7 +227,7 @@ export function EditorDeVideo({ aula, envio }: { aula: AulaDoEditor; envio: Esta
         <Field
           label="Endereço do vídeo"
           error={erroDoCampo ?? erroAoDigitar ?? undefined}
-          hint="Cole o link do YouTube ou do Vimeo — serve o link curto, o de compartilhar e o código de incorporação (do iframe a gente guarda só o endereço). Um arquivo .mp4/.webm por https também entra."
+          hint="Cole o link do YouTube ou do Vimeo. Serve o link curto, o de compartilhar e o código de incorporação (do iframe, o painel guarda só o endereço). Um arquivo .mp4/.webm por https também entra."
         >
           <Input
             name="fonte"

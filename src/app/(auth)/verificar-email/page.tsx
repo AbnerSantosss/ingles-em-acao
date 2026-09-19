@@ -19,7 +19,7 @@ import { V } from '@/lib/ui/palette';
 
 export const metadata: Metadata = {
   title: 'Confirmar e-mail',
-  description: 'Confirmação do e-mail da sua conta do Inglês em Ação.',
+  description: 'Confirmação do e-mail da sua conta do WSA English.',
 };
 
 type Busca = Record<string, string | string[] | undefined>;
@@ -68,7 +68,7 @@ const TEXTOS: Record<
     titulo: 'E-mail confirmado!',
     corpo:
       'Tudo certo com o seu endereço. Agora a gente consegue te ajudar a recuperar a conta se você esquecer a senha.',
-    rodape: 'Bons estudos — small steps, big results.',
+    rodape: 'Bons estudos. Small steps, big results.',
     cor: 'mint',
   },
   'ja-confirmado': {
@@ -94,7 +94,7 @@ const TEXTOS: Record<
   erro: {
     titulo: 'Não conseguimos confirmar agora',
     corpo:
-      'Deu algum problema do nosso lado ao conferir o link. Ele continua valendo — tente abrir de novo em alguns minutos.',
+      'Deu algum problema do nosso lado ao conferir o link. Ele continua valendo. Tente abrir de novo em alguns minutos.',
     rodape: 'Seu acesso ao app não foi afetado.',
     cor: 'red',
   },

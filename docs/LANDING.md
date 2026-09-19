@@ -40,17 +40,17 @@ pessoa vai conseguir fazer, e não quanto tempo vai levar. O conteúdo das 42 au
 | pedir direções, dizer do que gosta e falar das refeições | 31–39 |
 | contar o que fez no passado | 40–42 |
 
-**H1:** "Do zero a falar de você em inglês — em 42 aulas curtas."
+**H1:** "Do zero a falar de você em inglês, em 42 aulas curtas."
 
 **Subtítulo:** "Se apresentar, falar da família e da rotina, pedir no restaurante,
-contar o que fez ontem. Cada aula termina com algo que você já consegue dizer —
+contar o que fez ontem. Cada aula termina com algo que você já consegue dizer,
 e o app mostra isso para você."
 
 **CTA 1:** "QUERO COMEÇAR PELA AULA 01", com a nota "Cadastro em menos de um minuto.
 A Aula 01 abre logo em seguida."
 
 **Três garantias sob o CTA:**
-- começa do zero de verdade;
+- começa do zero;
 - aulas de 8 a 15 minutos;
 - você retoma de onde parou.
 
@@ -71,11 +71,11 @@ A promessa fica visível sem rolar a página.
 | 3 | **O que você vai conseguir dizer** | A promessa detalhada: 6 marcos da trilha | Trilha de 42 pontos com 6 marcos |
 | 4 | Como funciona | Aprenda → Pratique → Avance | 3 ícones |
 | 5 | O método | Estrutura, progresso, aplicação e continuidade, mais o "Future Firewall" em destaque | Ícones e escudo |
-| 6 | O que você recebe | 6 itens, com o plano indicado em cada um | Visto |
+| 6 | O que você recebe | 7 itens, com o plano indicado em cada um | Visto |
 | 7 | O professor | Walber Santana e o método de sala de aula | Retrato **ilustrado** em SVG (não é foto) |
-| 8 | Planos | Essencial, Completo e Premium, com CTA 2 | Livro, play e microfone |
+| 8 | Planos | WSA Essencial e WSA Premium, com CTA 2 | Livro e microfone |
 | 9 | Garantia | 7 dias do CDC (**só quando há link de compra**) | Escudo |
-| 10 | Perguntas | 6 objeções respondidas | — |
+| 10 | Perguntas | 8 objeções respondidas | — |
 | 11 | Fecho | Última chamada, CTA 3 | Skyline de Londres com o Big Ben em SVG |
 | 12 | Rodapé | Seções, conta e contato | Logo |
 
@@ -92,7 +92,7 @@ A promessa fica visível sem rolar a página.
   - nada de contador, "vagas limitadas" ou urgência falsa;
   - "Entrar" é uma alternativa neutra.
 - **D26, dois modos e uma condição:**
-  - **Sem link de checkout:** a nota diz que preço e pagamento entram em breve, e o
+  - **Sem link de checkout:** a nota diz que preço e forma de pagamento aparecem quando a compra estiver aberta, e o
     CTA de planos leva a `/criar-conta`.
   - **Com link:** cada card ganha botão de compra (abre em outra aba, com aviso para
     leitor de tela), a nota explica o pagamento externo e a garantia aparece.
@@ -102,7 +102,7 @@ A promessa fica visível sem rolar a página.
 
   | Recurso | O que a página diz |
   |---|---|
-  | Prática de fala com IA | "em breve" |
+  | Prática com IA (WSA Premium) | um prompt pronto, levado para a IA que o aluno preferir |
   | Revisão espaçada | não é citada (não existe no app) |
   | App instalável e offline | não é prometido (não há PWA) |
   | Liberação do plano após o pagamento | "o plano é liberado na sua conta" (hoje é manual, pelo admin; não há webhook) |

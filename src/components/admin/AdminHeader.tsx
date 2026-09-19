@@ -9,10 +9,20 @@
  *
  * O admin também é aluno (mesma conta, mesmo login): "Ver como aluno" leva ao
  * app de estudo, e o perfil de lá tem o caminho de volta para o painel.
+ *
+ * Visual: cartão branco preso ao topo, com os cantos de baixo arredondados em
+ * telas largas. O avatar é só a inicial do nome e é decorativo (`aria-hidden`):
+ * o nome completo está escrito ao lado.
+ *
+ * ⚠️ Os rótulos "Ver como aluno", "Sair" e o `aria-label` do link são usados
+ * por quem navega com leitor de tela e podem virar seletor de teste e2e. Mudar
+ * o visual não é motivo para mudar esses textos.
  */
 import Link from 'next/link';
 
 import { sairAction } from '@/app/(app)/perfil/actions';
+import { IconeDaArea } from '@/components/admin/IconeDaArea';
+import { ICONES } from '@/components/admin/icones';
 import { Button } from '@/components/ui/Button';
 import type { SessionUser } from '@/lib/auth/session';
 
@@ -22,11 +32,23 @@ export type AdminHeaderProps = {
 
 export function AdminHeader({ usuario }: AdminHeaderProps) {
   const producao = process.env.NODE_ENV === 'production';
+  const inicial = usuario.name.trim().charAt(0).toUpperCase() || '?';
 
   return (
-    <header className="sticky top-0 z-20 border-b border-solid border-border bg-surface/95 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-[1180px] items-center gap-4 px-4 py-3 lg:px-8">
-        <div className="min-w-0">
+    <header className="sticky top-0 z-20 border-b border-solid border-border bg-surface/95 shadow-card backdrop-blur lg:rounded-b-card">
+      <div className="mx-auto flex w-full max-w-[1180px] flex-wrap items-center gap-x-3 gap-y-2 px-4 py-3 sm:flex-nowrap sm:gap-4 lg:px-8">
+        <span
+          aria-hidden="true"
+          className="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-solid border-border-2 bg-[#EAF2FE] text-[17px] font-black leading-none text-navy"
+        >
+          {inicial}
+        </span>
+
+        {/*
+          No celular são duas linhas: nome e "Sair" em cima, selo e "Aluno" embaixo.
+          A ordem no HTML (e a do foco) não muda; só a visual, por `order`.
+        */}
+        <div className="min-w-0 flex-1 sm:flex-none">
           <p className="m-0 truncate text-[15px] font-extrabold leading-tight text-navy">
             {usuario.name}
           </p>
@@ -35,29 +57,46 @@ export function AdminHeader({ usuario }: AdminHeaderProps) {
           </p>
         </div>
 
+        {/*
+          A bolinha é reforço: o ambiente está escrito no selo, então a cor
+          (verde em produção, amarela em desenvolvimento) não é o único sinal.
+        */}
         <span
-          className="ml-auto flex-none rounded-pill border border-solid px-3 py-1.5 text-[11px] font-extrabold uppercase leading-none tracking-[0.1em]"
+          className="order-3 mr-auto inline-flex flex-none items-center gap-2 rounded-pill border border-solid px-3 sm:order-none sm:mr-0 sm:ml-auto py-1.5 text-[11px] font-extrabold uppercase leading-none tracking-[0.1em]"
           style={
             producao
               ? { background: '#EAF2FE', borderColor: '#D6E5FB', color: '#123A86' }
               : { background: '#FEF7E0', borderColor: '#F8E7B4', color: '#6B520A' }
           }
         >
+          <span
+            aria-hidden="true"
+            className="block h-2 w-2 flex-none rounded-full"
+            style={{ background: producao ? '#1BA35F' : '#E0A800' }}
+          />
           {producao ? 'Produção' : 'Desenvolvimento'}
         </span>
 
         <Link
           href="/inicio"
           aria-label="Ver o app como aluno"
-          className="inline-flex h-[46px] flex-none items-center justify-center rounded-pill border-[1.5px] border-solid border-border px-4 text-[15px] font-extrabold tracking-[0.03em] text-navy no-underline transition-colors duration-150 hover:bg-[#EAF2FE] focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-blue sm:px-5"
+          className="order-3 inline-flex h-[46px] flex-none items-center justify-center gap-2 rounded-pill border-[1.5px] border-solid border-border px-4 text-[15px] font-extrabold tracking-[0.03em] text-navy no-underline transition-colors duration-150 hover:bg-[#EAF2FE] focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-blue sm:order-none sm:px-5"
         >
-          {/* No celular o cabeçalho divide a linha com nome, ambiente e "Sair". */}
-          <span className="sm:hidden">Aluno</span>
+          <span className="hidden sm:contents">
+            <IconeDaArea d={ICONES.olho} />
+          </span>
+                    <span className="sm:hidden">Aluno</span>
           <span className="hidden sm:inline">Ver como aluno</span>
         </Link>
 
-        <form action={sairAction} className="flex-none">
+        <span aria-hidden="true" className="order-2 basis-full sm:hidden" />
+
+        <form
+          action={sairAction}
+          className="order-1 flex-none border-0 border-solid border-border sm:order-none sm:border-l sm:pl-2"
+        >
           <Button type="submit" variant="ghost" size="md">
+            <IconeDaArea d={ICONES.sair} />
             Sair
           </Button>
         </form>

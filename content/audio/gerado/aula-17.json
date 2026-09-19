@@ -1,0 +1,82 @@
+{
+  "aula": 17,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_017_audio_001",
+        "alvo": "texto",
+        "ancora": "They study every day.",
+        "texto": "They study every day.",
+        "src": "/audio/aula-17/lesson_017_audio_001.e330d744.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_017_audio_002",
+        "alvo": "texto",
+        "ancora": "She studies. · It rains.",
+        "texto": "She studies. It rains.",
+        "src": "/audio/aula-17/lesson_017_audio_002.6c7fd897.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_003",
+        "alvo": "texto",
+        "ancora": "work → works",
+        "texto": "work. works",
+        "src": "/audio/aula-17/lesson_017_audio_003.9977e137.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_004",
+        "alvo": "texto",
+        "ancora": "watch → watches · go → goes",
+        "texto": "watch. watches. go. goes",
+        "src": "/audio/aula-17/lesson_017_audio_004.5d55fead.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_005",
+        "alvo": "texto",
+        "ancora": "study → studies",
+        "texto": "study. studies",
+        "src": "/audio/aula-17/lesson_017_audio_005.a01e306a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_006",
+        "alvo": "texto",
+        "ancora": "play → plays",
+        "texto": "play. plays",
+        "src": "/audio/aula-17/lesson_017_audio_006.85038d23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_007",
+        "alvo": "texto",
+        "ancora": "have → has",
+        "texto": "have. has",
+        "src": "/audio/aula-17/lesson_017_audio_007.1758c06b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

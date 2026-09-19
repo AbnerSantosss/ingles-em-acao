@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Frases negativas no presente simples com \"don't\" e \"doesn't\", sem misturar com o \"isn't\".",
+  "conteudoAlvo": [
+    "I / you / we / they + don't + ___",
+    "he / she / it + doesn't + ___",
+    "I don't work on Sunday. She doesn't work here.",
+    "I don't like coffee."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Pegue frases afirmativas da Aula 17 e peça que eu passe para a negativa.",
+    "Misture com a negativa de ser/estar:\"She isn't a doctor.\" e \"She doesn't work here.\""
+  ],
+  "regrasDaAula": [
+    "Depois de \"doesn't\" o verbo fica sem \"-s\": \"She doesn't work.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"don't\" ou \"doesn't\": \"He ___ work on Sunday.\"",
+      "respostaDeReferencia": "He doesn't work on Sunday."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"She studies every day.\"",
+      "respostaDeReferencia": "She doesn't study every day."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Eu não gosto de café.",
+      "respostaDeReferencia": "I don't like coffee."
+    }
+  ],
+  "limites": [
+    "Só a negativa: perguntas com \"do\" e \"does\" ainda não estudei.",
+    "Verbos só os que já vi: \"live\", \"speak\" e \"drink\" ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ work on Sunday.\" Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "\"don't\" com \"I\", \"you\", \"we\", \"they\"; \"doesn't\" com \"he\", \"she\", \"it\".",
+    "Verbo sem \"-s\" depois de \"doesn't\": \"She doesn't work here.\"",
+    "\"I don't work on Sunday.\", \"I don't like coffee.\", \"She isn't a doctor.\""
+  ],
+  "resumoCurto": "Presente simples negativo: \"I don't work\", \"she doesn't work\", verbo sem \"-s\" depois de \"doesn't\"."
+}

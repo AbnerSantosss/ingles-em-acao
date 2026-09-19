@@ -1,0 +1,93 @@
+{
+  "aula": 16,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_016_audio_001",
+        "alvo": "texto",
+        "ancora": "in Brazil · in the room",
+        "texto": "in Brazil. in the room",
+        "src": "/audio/aula-16/lesson_016_audio_001.149f779e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_016_audio_002",
+        "alvo": "texto",
+        "ancora": "on the wall · on the bus",
+        "texto": "on the wall. on the bus",
+        "src": "/audio/aula-16/lesson_016_audio_002.09a594e2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_016_audio_003",
+        "alvo": "texto",
+        "ancora": "at school · at the door",
+        "texto": "at school. at the door",
+        "src": "/audio/aula-16/lesson_016_audio_003.b514500f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_016_audio_004",
+        "alvo": "texto",
+        "ancora": "under",
+        "texto": "under",
+        "src": "/audio/aula-16/lesson_016_audio_004.16422232.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_016_audio_005",
+        "alvo": "texto",
+        "ancora": "behind",
+        "texto": "behind",
+        "src": "/audio/aula-16/lesson_016_audio_005.0226d0c2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_016_audio_006",
+        "alvo": "texto",
+        "ancora": "in front of",
+        "texto": "in front of",
+        "src": "/audio/aula-16/lesson_016_audio_006.e3ab3e81.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_016_audio_007",
+        "alvo": "texto",
+        "ancora": "between",
+        "texto": "between",
+        "src": "/audio/aula-16/lesson_016_audio_007.7b0f4f83.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_016_audio_008",
+        "alvo": "texto",
+        "ancora": "near",
+        "texto": "near",
+        "src": "/audio/aula-16/lesson_016_audio_008.18743dce.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

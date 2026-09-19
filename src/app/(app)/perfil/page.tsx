@@ -18,11 +18,13 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { ExcluirConta } from '@/app/(app)/perfil/ExcluirConta';
+import { sairAction } from '@/app/(app)/perfil/actions';
 import { AbreModal, ProvedorDoModal, type ChaveDoModal } from '@/app/(app)/perfil/modal';
 import { lerLinksDeCompra } from '@/lib/admin/settings';
-import { requireUser, type SessionUser } from '@/lib/auth/session';
+import { requireUser } from '@/lib/auth/session';
 import { prisma } from '@/lib/db';
 import { getStreak, getUserProgress, rotuloDeSequencia } from '@/lib/progress';
+import { NOME_DO_PLANO, type Plano } from '@/lib/planos';
 import { iniciaisDe } from '@/lib/ui/iniciais';
 
 export const metadata: Metadata = { title: 'Perfil' };
@@ -33,22 +35,14 @@ type PerfilProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
-const NOME_DO_PLANO: Record<SessionUser['plan'], string> = {
-  ESSENCIAL: 'Plano Essencial',
-  COMPLETO: 'Plano Completo',
-  PREMIUM: 'Plano Premium',
+const DESCRICAO_DO_PLANO: Record<Plano, string> = {
+  ESSENCIAL: 'As 42 aulas no app, com exercícios, áudios, revisões e progresso.',
+  PREMIUM: 'Tudo do WSA Essencial, mais as videoaulas e os prompts prontos de prática com IA.',
 };
 
-const DESCRICAO_DO_PLANO: Record<SessionUser['plan'], string> = {
-  ESSENCIAL: 'E-book completo das 42 aulas e exercícios interativos.',
-  COMPLETO: 'Tudo do Essencial mais as videoaulas de cada aula.',
-  PREMIUM: 'Tudo do Completo mais a prática oral com o professor de IA.',
-};
-
-/** O degrau seguinte de cada plano. O Premium não tem para onde subir. */
-const PROXIMO_PLANO: Record<SessionUser['plan'], 'COMPLETO' | 'PREMIUM' | null> = {
-  ESSENCIAL: 'COMPLETO',
-  COMPLETO: 'PREMIUM',
+/** O degrau seguinte de cada plano. O WSA Premium não tem para onde subir. */
+const PROXIMO_PLANO: Record<Plano, 'PREMIUM' | null> = {
+  ESSENCIAL: 'PREMIUM',
   PREMIUM: null,
 };
 
@@ -293,7 +287,7 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
               Olá, {primeiroNome(usuario.name)}! 👋
             </h1>
             <p className="m-0 mb-[14px] text-[19px] font-bold text-[#1F3A6E]">
-              {NOME_DO_PLANO[usuario.plan]} — Inglês em Ação
+              {NOME_DO_PLANO[usuario.plan]}
             </p>
             <p className="m-0 text-[18px] leading-[1.45] text-[#5B6B7F] text-pretty">
               Continue firme na sua jornada. Cada pequeno passo te aproxima de grandes conquistas!
@@ -348,7 +342,7 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
                 <rect x="7.5" y="17" width="6" height="1.9" rx=".95" />
               </svg>
             }
-            valor={respostas ?? '—'}
+            valor={respostas ?? '-'}
             rotulo="EXERCÍCIOS RESPONDIDOS"
             apoio="Suas anotações estão seguras."
           />
@@ -437,7 +431,7 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
                   </svg>
                 }
                 titulo="Seu plano"
-                descricao="Aproveite todos os recursos do Inglês em Ação."
+                descricao="Aproveite todos os recursos do WSA English."
               />
               <div className="flex flex-wrap items-center gap-[18px] rounded-[16px] bg-[linear-gradient(100deg,#FEF6DC,#FBF3E6)] px-5 py-[18px]">
                 <div className="grid size-[78px] flex-none place-items-center rounded-full bg-[#FBE29A]">
@@ -530,25 +524,30 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
               </Link>
             ) : null}
 
-            <AbreModal
-              chave="sair"
-              className={`flex w-full cursor-pointer items-center gap-4 rounded-[18px] border-0 bg-white px-[22px] py-4 text-left shadow-[0_6px_22px_rgba(11,31,75,.05)] ${FOCO}`}
-            >
-              <Image
-                src="/icons/sair.png"
-                alt=""
-                width={36}
-                height={36}
-                className="size-9 flex-none object-contain"
-              />
-              <span className="min-w-0 flex-1">
-                <span className="block text-[18px] font-extrabold text-navy">Sair</span>
-                <span className="block text-[15px] text-[#6B7C90]">
-                  Encerrar sua sessão no Inglês em Ação.
+            {/* O `<form>` é a rede de segurança: sem JavaScript o botão envia e sai
+                direto; com ele, o clique só abre o modal de confirmação. */}
+            <form action={sairAction}>
+              <AbreModal
+                chave="sair"
+                enviaSemModal
+                className={`flex w-full cursor-pointer items-center gap-4 rounded-[18px] border-0 bg-white px-[22px] py-4 text-left shadow-[0_6px_22px_rgba(11,31,75,.05)] ${FOCO}`}
+              >
+                <Image
+                  src="/icons/sair.png"
+                  alt=""
+                  width={36}
+                  height={36}
+                  className="size-9 flex-none object-contain"
+                />
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[18px] font-extrabold text-navy">Sair</span>
+                  <span className="block text-[15px] text-[#6B7C90]">
+                    Encerrar sua sessão no WSA English.
+                  </span>
                 </span>
-              </span>
-              <Seta />
-            </AbreModal>
+                <Seta />
+              </AbreModal>
+            </form>
           </div>
         </div>
 

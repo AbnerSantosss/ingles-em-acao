@@ -51,7 +51,7 @@ referência do aluno e auditoria não mudam.
 5. **Webhook na plataforma.** Em `/admin/configuracoes`, copie o **Endereço do webhook** e cole
    no painel da plataforma de venda.
 6. **Produtos.** Ainda em `/admin/configuracoes`, ligue cada código de produto da plataforma a
-   um plano (`ESSENCIAL`, `COMPLETO` ou `PREMIUM`) e salve.
+   um plano (WSA Essencial ou WSA Premium; no banco, `ESSENCIAL` ou `PREMIUM`) e salve.
 7. **Venda de teste.** Compre com uma conta de aluno pelo link do app e confira:
    - o plano do aluno em `/admin/alunos`;
    - a linha nova na auditoria.

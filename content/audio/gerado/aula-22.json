@@ -1,0 +1,95 @@
+{
+  "aula": 22,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_022_audio_001",
+        "alvo": "texto",
+        "ancora": "8:45 → It’s a quarter to nine.",
+        "texto": "It's a quarter to nine.",
+        "src": "/audio/aula-22/lesson_022_audio_001.cef40ddc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_022_audio_002",
+        "alvo": "texto",
+        "ancora": "It’s seven o’clock.",
+        "texto": "It's seven o'clock.",
+        "src": "/audio/aula-22/lesson_022_audio_002.2ce39adb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_022_audio_003",
+        "alvo": "texto",
+        "ancora": "It’s a quarter past seven.",
+        "texto": "It's a quarter past seven.",
+        "src": "/audio/aula-22/lesson_022_audio_003.cada6fae.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_022_audio_004",
+        "alvo": "texto",
+        "ancora": "It’s half past seven.",
+        "texto": "It's half past seven.",
+        "src": "/audio/aula-22/lesson_022_audio_004.d247ac67.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_022_audio_005",
+        "alvo": "texto",
+        "ancora": "It’s a quarter to eight.",
+        "texto": "It's a quarter to eight.",
+        "src": "/audio/aula-22/lesson_022_audio_005.d252c8eb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_022_audio_006",
+        "alvo": "texto",
+        "ancora": "in the morning",
+        "texto": "in the morning",
+        "src": "/audio/aula-22/lesson_022_audio_006.a89ad34e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_022_audio_007",
+        "alvo": "texto",
+        "ancora": "in the afternoon",
+        "texto": "in the afternoon",
+        "src": "/audio/aula-22/lesson_022_audio_007.8bd75ec9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_022_audio_008",
+        "alvo": "texto",
+        "ancora": "at night",
+        "texto": "at night",
+        "src": "/audio/aula-22/lesson_022_audio_008.ff48fe6a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

@@ -278,7 +278,7 @@ describe('publicar em lote', () => {
 
     expect(esquema.motivo).toMatch(/^o conteúdo não passou no esquema \(\d+ erros?\)$/);
     expect(esquema.erros.length).toBeGreaterThan(0);
-    expect(arquivada.motivo).toBe('a aula está arquivada — restaure antes de publicar');
+    expect(arquivada.motivo).toBe('a aula está arquivada. Restaure antes de publicar');
     expect(inexistente.lessonId).toBe('nao-existe-a2');
     expect(inexistente.motivo).toBe('a aula não existe mais');
 

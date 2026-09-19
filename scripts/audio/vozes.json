@@ -1,0 +1,29 @@
+{
+  "vozes": {
+    "F1": "af_heart",
+    "F2": "af_bella",
+    "M1": "am_michael",
+    "M2": "am_fenrir"
+  },
+  "velocidades": {
+    "natural": 0.92,
+    "reduzida": 0.8
+  },
+  "pausaEntreFalasMs": 350,
+  "pausaEntreItensMs": 600,
+  "escolha": {
+    "data": "2026-09-19",
+    "criterio": "acerto de palavras na transcricao do faster-whisper base.en int8",
+    "frases": 10,
+    "acertoPorVoz": {
+      "af_heart": 100.0,
+      "af_bella": 100.0,
+      "af_sarah": 93.83,
+      "af_nicole": 100.0,
+      "am_michael": 100.0,
+      "am_fenrir": 100.0,
+      "am_puck": 100.0,
+      "am_adam": 100.0
+    }
+  }
+}

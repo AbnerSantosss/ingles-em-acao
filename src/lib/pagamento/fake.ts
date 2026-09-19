@@ -15,7 +15,7 @@
  * {
  *   "id": "evt-2026-0001",
  *   "status": "APPROVED",
- *   "produto": "curso-completo",
+ *   "produto": "wsa-premium",
  *   "referencia": "q3Jb0v5mX1c8o4kS2pYt9A",
  *   "valorCentavos": 19700
  * }

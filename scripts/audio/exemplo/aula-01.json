@@ -1,0 +1,95 @@
+{
+  "aula": 1,
+  "titulo": "Exemplo do pipeline (não é conteúdo real)",
+  "status": "pronta",
+  "clips": [
+    {
+      "id": "lesson_001_audio_001",
+      "pagina": 1,
+      "local": "Página 1 · rule · EXEMPLO",
+      "alvo": "texto",
+      "ancora": "I am ready.",
+      "texto": "I am ready.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Frase de uma voz só."
+    },
+    {
+      "id": "lesson_001_audio_002",
+      "pagina": 1,
+      "local": "Página 1 · chips",
+      "alvo": "texto",
+      "ancora": "HE",
+      "texto": "he",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Palavra curta: a tela mostra em maiúsculas, o áudio fala em minúsculas."
+    },
+    {
+      "id": "lesson_001_audio_003",
+      "pagina": 1,
+      "local": "Página 1 · table",
+      "alvo": "texto",
+      "ancora": "9:30",
+      "texto": "nine thirty",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "M1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P1",
+      "obrigatorio": false,
+      "motivo": "Horário: a tela mostra algarismos, o áudio fala por extenso."
+    },
+    {
+      "id": "lesson_001_audio_004",
+      "pagina": 1,
+      "local": "Página 1 · dialogue",
+      "alvo": "bloco",
+      "ancora": "Hi! I am Ana.",
+      "texto": "Hi! I am Ana.\nHello, Ana. I am Tom.",
+      "falas": [
+        { "voz": "F1", "texto": "Hi! I am Ana." },
+        { "voz": "M1", "texto": "Hello, Ana. I am Tom." }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo com duas vozes."
+    },
+    {
+      "id": "lesson_001_audio_005",
+      "pagina": 2,
+      "local": "Página 2 · chips · ouvir todos",
+      "alvo": "bloco",
+      "ancora": "I",
+      "texto": "I\nyou\nhe\nshe",
+      "falas": [
+        { "voz": "F1", "texto": "I" },
+        { "voz": "F1", "texto": "you" },
+        { "voz": "F1", "texto": "he" },
+        { "voz": "F1", "texto": "she" }
+      ],
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": null,
+      "velocidade": "reduzida",
+      "lento": false,
+      "prioridade": "P2",
+      "obrigatorio": false,
+      "motivo": "Ouvir todos: lista de palavras com pausa entre os itens."
+    }
+  ]
+}

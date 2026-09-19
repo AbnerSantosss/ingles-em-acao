@@ -12,7 +12,7 @@ import { FormularioDeCadastro } from './form';
 
 export const metadata: Metadata = {
   title: 'Criar conta',
-  description: 'Crie sua conta do Inglês em Ação e comece a trilha de 42 aulas.',
+  description: 'Crie sua conta do WSA English e comece a trilha de 42 aulas.',
 };
 
 type Busca = Record<string, string | string[] | undefined>;

@@ -89,7 +89,7 @@ const EMAIL_JA_CADASTRADO =
   'Já existe uma conta com esse e-mail. Entre na sua conta ou recupere a senha.';
 
 const TOKEN_DE_SENHA_INVALIDO =
-  'Este link de redefinição não vale mais — ele expira em 1 hora e só pode ser usado uma vez.';
+  'Este link de redefinição não vale mais. Ele expira em 1 hora e só pode ser usado uma vez.';
 
 const ERRO_INESPERADO = 'Não conseguimos concluir agora. Tente novamente em alguns instantes.';
 

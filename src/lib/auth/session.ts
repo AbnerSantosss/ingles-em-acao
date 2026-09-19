@@ -30,6 +30,7 @@ import {
   VALOR_SESSAO_EXPIRADA,
   urlDeLogin,
 } from '@/lib/auth/next-url';
+import type { Plano } from '@/lib/planos';
 
 export { NOME_COOKIE_SESSAO } from '@/lib/auth/next-url';
 
@@ -40,7 +41,7 @@ export type SessionUser = {
   email: string;
   photoUrl: string | null;
   role: 'STUDENT' | 'ADMIN';
-  plan: 'ESSENCIAL' | 'COMPLETO' | 'PREMIUM';
+  plan: Plano;
   emailVerifiedAt: Date | null;
 };
 

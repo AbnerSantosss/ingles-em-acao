@@ -436,9 +436,40 @@ export const BlockSchema = z.discriminatedUnion('t', [
   CtaSchema,
 ]);
 
-/** Uma página da aula: unidade de navegação e de progresso. Página sem bloco é erro. */
+// ─────────────────────────────── áudio ────────────────────────────────
+
+/** Função pedagógica do áudio. Espelha `CategoriaDeAudio` de `./types.ts`. */
+const categoriaDeAudio = z.enum([
+  'VOCABULARY_PRONUNCIATION',
+  'GRAMMAR_IN_CONTEXT',
+  'FIXED_CHUNK',
+  'DIALOGUE',
+  'TEXT_LISTENING',
+  'LISTENING_PRACTICE',
+  'PRONUNCIATION_MODEL',
+]);
+
+/**
+ * Um áudio de uma página da aula (docs/plano-v2/01-CONTRATOS.md, seção 2.1).
+ * `id` segue "lesson_NNN_audio_MMM"; `src` segue "/audio/aula-NN/<id>.<hash8>.mp3".
+ */
+export const AudioClipSchema = z.strictObject({
+  id: z.string().regex(/^lesson_\d{3}_audio_\d{3}$/),
+  alvo: z.enum(['texto', 'bloco']),
+  ancora: texto,
+  texto: texto,
+  src: z.string().regex(/^\/audio\/aula-\d{2}\/lesson_\d{3}_audio_\d{3}\.[0-9a-f]{8}\.mp3$/),
+  categoria: categoriaDeAudio,
+  lento: z.boolean().optional(),
+});
+
+/**
+ * Uma página da aula: unidade de navegação e de progresso. Página sem bloco é erro.
+ * `audios` é opcional: página sem áudio não tem o campo.
+ */
 export const PageSchema = z.strictObject({
   blocks: z.array(BlockSchema).min(1),
+  audios: z.array(AudioClipSchema).optional(),
 });
 
 /** Uma aula como vem do `course-data.mjs`. Aula sem página é erro. */
@@ -478,6 +509,7 @@ export type Page = z.infer<typeof PageSchema>;
 export type Lesson = z.infer<typeof LessonSchema>;
 export type TrackItem = z.infer<typeof TrackItemSchema>;
 export type Course = z.infer<typeof CourseSchema>;
+export type AudioClip = z.infer<typeof AudioClipSchema>;
 
 // ──────────────────────────── erros legíveis ───────────────────────────
 
@@ -513,7 +545,7 @@ function frase(problema: Problema): string {
         ? 'ausente'
         : `deveria ser ${problema.expected}, mas veio ${nomeDoTipo(problema.input)}`;
     case 'invalid_value':
-      return `tem valor inválido — aceitos: ${problema.values.map((v) => JSON.stringify(v)).join(' | ')}`;
+      return `tem valor inválido. Aceitos: ${problema.values.map((v) => JSON.stringify(v)).join(' | ')}`;
     case 'too_small':
       return problema.origin === 'string' && Number(problema.minimum) <= 1
         ? 'não pode ficar vazio'
@@ -662,4 +694,5 @@ export type ConferenciaDeTipos = [
   Confere<Identico<Page, T.LessonPage>>,
   Confere<Identico<Lesson, T.Lesson>>,
   Confere<Identico<TrackItem, T.TrackItem>>,
+  Confere<Identico<AudioClip, T.AudioClip>>,
 ];

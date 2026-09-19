@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Ler, escrever e dizer os números de 1 a 100 em inglês e usá-los para dizer idade e preço.",
+  "conteudoAlvo": [
+    "one, two, three, four, five, six, seven, eight",
+    "nine, ten, eleven, twelve, thirteen, fifteen",
+    "thirty, forty, fifty, one hundred, twenty-one",
+    "I'm ___ years old, It's ___ dollars"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"I'm\" e \"it's\" da Aula 02 para idade e preço: \"I'm thirty years old.\"",
+    "Misture números de 1 a 20 com dezenas e compostos, como \"forty-two\" e \"eighty-seven\"."
+  ],
+  "regrasDaAula": [
+    "Idade usa o verbo ser/estar, e não o verbo ter: \"I'm thirty years old.\""
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha o número certo para 13: \"thirty\" ou \"thirteen\".",
+      "respostaDeReferencia": "thirteen"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com 25 por extenso: \"I'm ___ years old.\"",
+      "respostaDeReferencia": "I'm twenty-five years old."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Custa 15 dólares.",
+      "respostaDeReferencia": "It's fifteen dollars."
+    }
+  ],
+  "limites": [
+    "Sem números acima de 100, sem horas e sem datas: ainda não estudei.",
+    "Sem \"lucky\", \"reais\" e \"have\" para idade: use só o verbo ser/estar."
+  ],
+  "primeiraQuestao": "Vamos começar pelo começo. Como se diz o número 1 em inglês?",
+  "resumoAutorizado": [
+    "De 1 a 20: \"one\", \"two\", \"three\", \"thirteen\", \"fifteen\", \"twenty\".",
+    "Dezenas: \"thirty\", \"forty\", \"fifty\", \"one hundred\"; compostos: \"forty-two\".",
+    "Idade e preço: \"I'm thirty years old.\", \"It's fifteen dollars.\""
+  ],
+  "resumoCurto": "Números de 1 a 100, com hífen nos compostos, para idade (\"I'm thirty years old.\") e preço."
+}

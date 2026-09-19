@@ -20,6 +20,7 @@ import { startTransition, useActionState, type FormEvent } from 'react';
 import { Button } from '@/components/ui/Button';
 import { Field } from '@/components/ui/Field';
 import { Input } from '@/components/ui/Input';
+import type { Plano } from '@/lib/planos';
 
 import { salvarCheckoutAction, salvarManutencaoAction, salvarProdutosAction } from './actions';
 import { FORMULARIO_INICIAL, type EstadoDoFormulario } from './tipos';
@@ -44,11 +45,8 @@ const TAMANHO_MAXIMO_DO_AVISO = 280;
 /** Espelhado de `@/lib/pagamento/produtos` (módulo de servidor, pelo mesmo motivo). */
 const TAMANHO_MAXIMO_DO_CODIGO = 100;
 
-type Plano = 'ESSENCIAL' | 'COMPLETO' | 'PREMIUM';
-
 const PLANOS: readonly { plano: Plano; rotulo: string }[] = [
   { plano: 'ESSENCIAL', rotulo: 'Essencial' },
-  { plano: 'COMPLETO', rotulo: 'Completo' },
   { plano: 'PREMIUM', rotulo: 'Premium' },
 ];
 

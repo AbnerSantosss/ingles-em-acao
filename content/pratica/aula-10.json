@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Nomear cores e formas e descrever objetos simples, com a cor antes do objeto: \"a red car\".",
+  "conteudoAlvo": [
+    "red, blue, green, yellow, black, white, orange",
+    "purple, pink, brown, gray, car, house, shirt",
+    "circle, square, triangle, rectangle, star, heart",
+    "It's a red car. The circle is blue."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"it's\", \"is\" e \"are\" da Aula 02: \"It's a red car.\", \"They are green.\"",
+    "Junte cor e forma na mesma frase: \"The star is yellow.\", \"It's a red heart.\""
+  ],
+  "regrasDaAula": [
+    "A cor vem antes do objeto: \"a red car\", nunca \"a car red\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a ordem certa: \"a house white\" ou \"a white house\".",
+      "respostaDeReferencia": "a white house"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com a cor azul: \"The circle is ___.\"",
+      "respostaDeReferencia": "The circle is blue."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: É um carro vermelho.",
+      "respostaDeReferencia": "It's a red car."
+    }
+  ],
+  "limites": [
+    "Sem \"an\", \"favorite\", \"phone\" e \"table\": ainda não estudei.",
+    "Sem plural de objetos, como \"cars\" e \"stars\": um objeto por frase, ou \"they\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelas cores. Como se diz vermelho em inglês?",
+  "resumoAutorizado": [
+    "Cores: \"red\", \"blue\", \"green\", \"yellow\", \"black\", \"white\", \"pink\", \"gray\".",
+    "Formas: \"circle\", \"square\", \"triangle\", \"rectangle\", \"star\", \"heart\".",
+    "Cor antes do objeto: \"It's a red car.\", \"a blue house\", \"The circle is blue.\""
+  ],
+  "resumoCurto": "Cores e formas, com a cor antes do objeto: \"It's a red car.\", \"The circle is blue.\""
+}

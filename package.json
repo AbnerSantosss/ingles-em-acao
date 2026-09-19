@@ -18,7 +18,10 @@
     "admin:create": "tsx scripts/admin-create.ts",
     "admin:promote": "tsx scripts/admin-promote.ts",
     "email:boas-vindas": "tsx scripts/enviar-boas-vindas.ts",
-    "conta:renomear": "tsx scripts/renomear-conta.ts"
+    "conta:renomear": "tsx scripts/renomear-conta.ts",
+    "audio:gerar": "scripts\\audio\\.venv\\Scripts\\python.exe -B scripts\\audio\\gerar.py",
+    "audio:conferir": "scripts\\audio\\.venv\\Scripts\\python.exe -B scripts\\audio\\conferir.py",
+    "pratica:carregar": "tsx scripts/carregar-pratica.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

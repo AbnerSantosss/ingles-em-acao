@@ -1,0 +1,52 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer a minha profissão com \"I'm a / an\" e perguntar a de outra pessoa com \"What do you do?\".",
+  "conteudoAlvo": [
+    "nurse, driver, salesperson, chef, lawyer, student",
+    "a teacher, a doctor, an engineer, a cook",
+    "I'm + a / an + ___, I work in a school."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Pergunte \"What do you do?\" e peça a resposta com \"I'm a\" ou \"I'm an\" + profissão.",
+    "Troque o sujeito com o verbo ser que já sei: \"She's a nurse.\", \"He's a lawyer.\""
+  ],
+  "regrasDaAula": [
+    "Antes da profissão sempre vem \"a\" ou \"an\": \"I'm a doctor.\", nunca \"I'm doctor.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"a\" ou \"an\": \"I'm ___ engineer.\"",
+      "respostaDeReferencia": "I'm an engineer."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com o lugar de trabalho do professor: \"I work in a ___.\"",
+      "respostaDeReferencia": "I work in a school."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Ela é advogada.",
+      "respostaDeReferencia": "She's a lawyer."
+    }
+  ],
+  "limites": [
+    "Só as profissões da aula: sem \"office\", \"hospital\" nem outras profissões.",
+    "Sem o passado (\"I was a student.\"): só o presente."
+  ],
+  "primeiraQuestao": "Vamos começar por mim. Complete: \"I'm ___ student.\" Entra \"a\" ou \"an\" no espaço?",
+  "resumoAutorizado": [
+    "Profissões: \"nurse\", \"driver\", \"salesperson\", \"chef\", \"lawyer\", \"student\".",
+    "\"What do you do?\" e a resposta \"I'm a teacher.\", \"I'm an engineer.\"",
+    "Onde trabalho: \"I work in a school.\""
+  ],
+  "resumoCurto": "Profissões: \"What do you do?\", \"I'm a nurse.\", \"I'm an engineer.\", \"I work in a school.\""
+}

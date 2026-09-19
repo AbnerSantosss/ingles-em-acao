@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Perguntar no presente simples com \"do\" e \"does\", responder curto e usar \"where\", \"what\", \"when\", \"how\".",
+  "conteudoAlvo": [
+    "Do + I / you / we / they + ___? live, speak",
+    "Does + he / she / it + ___? English, what, when",
+    "Yes / No, we do / don't; it does / doesn't",
+    "Where do you live? How do you go to work?"
+  ],
+  "expressoesFixas": [
+    "What do you do?"
+  ],
+  "comoIntegrar": [
+    "Pegue frases das Aulas 17 e 18 e peça que eu faça a pergunta com \"do\" ou \"does\".",
+    "Use dias, lugares e comida que já sei: \"on Sunday\", \"at home\", \"coffee\"."
+  ],
+  "regrasDaAula": [
+    "Depois de \"does\" o verbo fica sem \"-s\": \"Does she work?\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"do\" ou \"does\": \"___ he work here?\"",
+      "respostaDeReferencia": "Does he work here?"
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Faça a pergunta: \"They study English.\"",
+      "respostaDeReferencia": "Do they study English?"
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda de forma curta, com \"yes\": \"Do you like coffee?\"",
+      "respostaDeReferencia": "Yes, I do."
+    }
+  ],
+  "limites": [
+    "Palavras só as que já vi: \"music\", \"pizza\", \"soccer\" e \"what time\" ainda não estudei.",
+    "Sem perguntas com \"who\", \"why\" ou \"how much\": só \"where\", \"what\", \"when\" e \"how\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"you\". Complete: \"___ you work?\" Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "\"Do you work?\", \"Do they live here?\"; \"Does he work?\", \"Does she study English?\"",
+    "Curtas: \"Yes, I do.\", \"No, I don't.\", \"Yes, he does.\", \"No, he doesn't.\"",
+    "\"Where do you live?\", \"What do you do?\", \"How do you go to work?\""
+  ],
+  "resumoCurto": "Perguntas no presente simples com \"do\"/\"does\", respostas curtas e \"where\", \"what\", \"when\", \"how\"."
+}

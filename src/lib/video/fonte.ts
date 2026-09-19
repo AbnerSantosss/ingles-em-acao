@@ -150,7 +150,7 @@ export function parseVideoSource(bruto: string): VideoSource | ErroDeFonte {
 
   return {
     erro:
-      `O site "${host}" não está na lista permitida. Neste app o vídeo precisa estar no YouTube ou no Vimeo — ` +
+      `O site "${host}" não está na lista permitida. Neste app o vídeo precisa estar no YouTube ou no Vimeo, ` +
       'ou ser um arquivo .mp4/.webm servido por https.',
   };
 }

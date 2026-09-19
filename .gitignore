@@ -83,3 +83,12 @@ logs/
 
 # mockups de referência com dados pessoais (nome do dono na tela) — não usados pelo app
 /public/lessons/art/ChatGPT Image*.png
+
+# Pipeline de áudio (scripts/audio): o Python e os modelos ficam só na máquina de quem gera os MP3
+/scripts/audio/.venv/
+/scripts/audio/modelos/
+__pycache__/
+*.pyc
+
+# Planejamento interno do plano v2 (briefings com caminhos locais): fica só na máquina
+/docs/plano-v2/

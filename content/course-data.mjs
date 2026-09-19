@@ -104,14 +104,14 @@ export const LESSONS = [
           { k: "7", a: "THEY", c: "purple" }, { k: "A", a: "WE", c: "teal" }, { k: "B", a: "THEY", c: "purple" } ] },
         { t: "objective", v: "gray", title: "Terminou? Ótimo trabalho.", text: "Agora consolide o conteúdo com uma das experiências abaixo." },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "ASSISTA À VIDEOAULA", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO PARA O PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE FALANDO COM A IA", body: "Escute, responda e receba sugestões para melhorar.", plan: "EXCLUSIVO PARA O PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Verb be — Affirmative" } ] }
+          { icon: "play", v: "mint", title: "ASSISTA À VIDEOAULA", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Escute, responda e receba sugestões para melhorar.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Verb be: Affirmative" } ] }
     ]
   },
 
   {
-    id: 2, code: "AULA 02", title: "Verb to be — Affirmative", sub: "Frases afirmativas com am, is e are.",
+    id: 2, code: "AULA 02", title: "Verb to be: Affirmative", sub: "Frases afirmativas com am, is e are.",
     time: "12 a 15 minutos",
     pages: [
       { blocks: [
@@ -125,12 +125,12 @@ export const LESSONS = [
           { title: "She is happy.", body: "Ela está feliz.", v: "lilac" },
           { title: "They are friends.", body: "Eles são amigos.", v: "cream" } ] },
         { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Criar frases afirmativas básicas com o verb to be." },
-        { t: "meta", label: "TEMPO ESTIMADO", value: "12–15 min" },
+        { t: "meta", label: "TEMPO ESTIMADO", value: "12 a 15 min" },
         { t: "note", v: "gray", bold: true, text: "Siga com calma.\nVocê não precisa decorar tudo agora: primeiro, observe as combinações." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "O VERBO MUDA", pt: "O subject pronoun decide a forma de to be." },
         { t: "note", v: "gray", kicker: "A IDEIA-CHAVE", bold: true, text: "Primeiro vem quem é. Depois, a forma correta do verbo." },
         { t: "rule", v: "mint", c: "teal", kicker: "PARA FALAR DE MIM", from: "I", to: "am", ex: "I am ready.", tr: "Eu estou pronto(a)." },
@@ -143,7 +143,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "FORMA COMPLETA OU CURTA?", pt: "As duas estão corretas. A forma curta é muito comum na fala." },
         { t: "note", v: "gray", kicker: "O QUE É UMA CONTRAÇÃO?", bold: true, text: "É uma maneira curta de unir o pronome + o verb to be." },
         { t: "table", head: ["FORMA COMPLETA", "FORMA CURTA"], rows: [
@@ -155,12 +155,12 @@ export const LESSONS = [
           { a: "We are", b: "We’re", v: "cream" },
           { a: "You are", note: "plural", b: "You’re", v: "mint" },
           { a: "They are", b: "They’re", v: "lilac" } ] },
-        { t: "objective", v: "navy", title: "ATENÇÃO AO APÓSTROFO", text: "Ele faz parte da forma curta. Escreva I’m — não Im. Escreva She’s — não Shes." },
+        { t: "objective", v: "navy", title: "ATENÇÃO AO APÓSTROFO", text: "Ele faz parte da forma curta. Escreva I’m, não Im. Escreva She’s, não Shes." },
         { t: "note", v: "gray", kicker: "PARA LEMBRAR", bold: true, text: "Em uma conversa, You’re, He’s e We’re soam mais naturais." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "O QUE VOCÊ PODE DIZER?", pt: "Depois de am, is ou are, acrescente uma informação." },
         { t: "note", v: "gray", kicker: "PENSE NO VERBO COMO UMA PONTE", bold: true, text: "Ele conecta uma pessoa ou coisa a uma informação sobre ela." },
         { t: "grid", cols: 2, items: [
@@ -173,7 +173,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "PRÁTICA GUIADA", pt: "Complete com am, is ou are." },
         { t: "objective", v: "navy", title: "COMO FAZER", text: "1. Observe o subject pronoun. 2. Escolha a forma correta." },
         { t: "note", v: "gray", bold: true, text: "LEMBRETE:   I → am      he / she / it → is      you / we / they → are" },
@@ -190,7 +190,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "CONFIRA E FALE", pt: "Gabarito da prática guiada" },
         { t: "objective", v: "navy", title: "COMO CONFERIR", text: "Veja o verbo em destaque. Depois, leia a frase inteira em voz alta." },
         { t: "pron", code: "I + am", pt: "PADRÃO 1", c: "teal", v: "mint", title: "I am Brazilian.", body: "I / am / Brazilian." },
@@ -200,7 +200,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "AGORA É COM VOCÊ", pt: "Escreva 4 frases afirmativas sobre o seu mundo." },
         { t: "objective", v: "navy", title: "A ESTRUTURA NÃO MUDA", text: "subject pronoun + am / is / are + informação. Use suas ideias reais." },
         { t: "free", id: "a2f1", items: [
@@ -212,21 +212,21 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 02" },
-        { t: "kicker", text: "VERB TO BE — AFFIRMATIVE" },
+        { t: "kicker", text: "VERB TO BE: AFFIRMATIVE" },
         { t: "title", en: "AULA CONCLUÍDA!", pt: "Você já pode formar frases afirmativas com o verb to be." },
         { t: "check", id: "a2c1", title: "EU CONSIGO...", items: [
           "Escolher am, is ou are conforme o sujeito.",
           "Reconhecer e usar formas curtas, como I’m e They’re.",
           "Escrever quatro frases afirmativas sobre o meu mundo." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 02", body: "Acompanhe os exemplos e revise o conteúdo no seu ritmo.", plan: "Disponível no Plano Completo — Inglês em Ação.", btn: "TOQUE PARA ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE POR VOZ", body: "Diga suas quatro frases e receba feedback de pronúncia e clareza.", plan: "Disponível no Plano Premium — Inglês Prático com IA.", btn: "TOQUE PARA PRATICAR COM A IA", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO PASSO", title: "Aula 03 — Verb to be: Negative", body: "Você aprenderá a dizer o que alguém não é, não está ou não tem." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 02", body: "Acompanhe os exemplos e revise o conteúdo no seu ritmo.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "TOQUE PARA ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga suas quatro frases e receba feedback de pronúncia e clareza.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "TOQUE PARA PRATICAR COM A IA", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMO PASSO", title: "Aula 03 · Verb to be: Negative", body: "Você aprenderá a dizer o que alguém não é, não está ou não tem." } ] }
     ]
   },
 
   {
-    id: 3, code: "AULA 03", title: "Verb to be — Negative", sub: "Frases negativas com am not, isn’t e aren’t.",
+    id: 3, code: "AULA 03", title: "Verb to be: Negative", sub: "Frases negativas com am not, isn’t e aren’t.",
     time: "15 a 18 minutos",
     pages: [
       { blocks: [
@@ -240,7 +240,7 @@ export const LESSONS = [
           { title: "She isn’t a singer.", body: "Ela não é cantora.", v: "lilac" },
           { title: "They aren’t friends.", body: "Eles não são amigos.", v: "cream" } ] },
         { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Negar informações de forma correta usando o verb to be." },
-        { t: "meta", label: "TEMPO ESTIMADO", value: "15–18 min" },
+        { t: "meta", label: "TEMPO ESTIMADO", value: "15 a 18 min" },
         { t: "note", v: "gray", bold: true, text: "Uma palavra faz a diferença.\nVocê vai aprender a inserir not no lugar certo e a falar com segurança." } ] },
 
       { blocks: [
@@ -287,9 +287,9 @@ export const LESSONS = [
           { wrong: "She doesn’t is a singer.", note: "Não misture doesn’t com is.", right: "She isn’t a singer.", rnote: "Ela não é cantora." },
           { wrong: "They don’t are ready.", right: "They aren’t ready." } ] },
         { t: "mc", id: "a3mc2", title: "ESCOLHA A FRASE CORRETA", v: "gray", questions: [
-          { q: "Ele não é meu irmão.", options: ["He doesn’t is my brother.", "He isn’t my brother."], answer: 1, explain: "Com o verb to be, use not — nunca don’t/doesn’t." },
+          { q: "Ele não é meu irmão.", options: ["He doesn’t is my brother.", "He isn’t my brother."], answer: 1, explain: "Com o verb to be, use not, nunca don’t/doesn’t." },
           { q: "Nós não estamos em casa.", options: ["We aren’t at home.", "We don’t are at home."], answer: 0 } ] },
-        { t: "key", v: "navy", text: "Viu am, is ou are? Use not — e não don’t/doesn’t." } ] },
+        { t: "key", v: "navy", text: "Viu am, is ou are? Use not, e não don’t/doesn’t." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 03", page: "PÁGINA 06" },
@@ -336,13 +336,13 @@ export const LESSONS = [
           "não usar don’t / doesn’t com verb to be." ] },
         { t: "objective", v: "red", title: "REVISE AS PÁGINAS 2 A 5", text: "se ainda erra a posição de not ou usa don’t/doesn’t." },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 03", body: "Aprofunde com o professor.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga três frases negativas. Peça que a IA confirme se você usou a forma correta.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 04 — Verb to be: Interrogative", body: "Você aprenderá a fazer perguntas com am, is e are." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 03", body: "Aprofunde com o professor.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga três frases negativas. Peça que a IA confirme se você usou a forma correta.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 04 · Verb to be: Interrogative", body: "Você aprenderá a fazer perguntas com am, is e are." } ] }
     ]
   }
   ,{
-    id: 4, code: "AULA 04", title: "Verb to be — Interrogative", sub: "Perguntas com am, is e are.",
+    id: 4, code: "AULA 04", title: "Verb to be: Interrogative", sub: "Perguntas com am, is e are.",
     time: "13 minutos",
     pages: [
       { blocks: [
@@ -384,7 +384,7 @@ export const LESSONS = [
           { a: "Is it new?", b: "Yes, it is. / No, it isn’t.", v: "cream" },
           { a: "Are we ready?", b: "Yes, we are. / No, we aren’t.", v: "lilac" },
           { a: "Are they friends?", b: "Yes, they are. / No, they aren’t.", v: "mint" } ] },
-        { t: "objective", v: "red", title: "ATENÇÃO À CONTRAÇÃO", text: "Na resposta afirmativa, não contraia. Diga: Yes, I am. — nunca Yes, I’m." },
+        { t: "objective", v: "red", title: "ATENÇÃO À CONTRAÇÃO", text: "Na resposta afirmativa, não contraia. Diga: Yes, I am. Nunca: Yes, I’m." },
         { t: "match", id: "a4match1", title: "LIGUE A PERGUNTA À RESPOSTA CURTA (AULA 04)",
           left: ["Are you tired?", "Is he your brother?", "Are they students?", "Is it expensive?"],
           right: ["Yes, they are.", "Yes, I am.", "No, it isn’t.", "Yes, he is."],
@@ -437,14 +437,14 @@ export const LESSONS = [
           "não usar do / does com o verb to be.",
           "perguntar sobre pessoas, grupos e coisas." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 04", body: "Veja a entonação das perguntas com o professor.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça três perguntas e receba feedback de pronúncia.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 05 — Verb to be: Review", body: "As três formas juntas: afirmativa, negativa e interrogativa." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 04", body: "Veja a entonação das perguntas com o professor.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça três perguntas e receba feedback de pronúncia.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 05 · Verb to be: Review", body: "As três formas juntas: afirmativa, negativa e interrogativa." } ] }
     ]
   },
 
   {
-    id: 5, code: "AULA 05", title: "Verb to be — Review", sub: "Afirmativa, negativa e interrogativa juntas.",
+    id: 5, code: "AULA 05", title: "Verb to be: Review", sub: "Afirmativa, negativa e interrogativa juntas.",
     time: "16 minutos",
     pages: [
       { blocks: [
@@ -527,9 +527,9 @@ export const LESSONS = [
           "perguntar invertendo verbo e sujeito.",
           "responder com Yes, I am. / No, I’m not." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 05", body: "Uma revisão guiada das três formas.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Converse usando as três formas em um diálogo curto.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 06 — Countries and Nationalities", body: "Diga de onde você é e qual é a sua nacionalidade." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 05", body: "Uma revisão guiada das três formas.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Converse usando as três formas em um diálogo curto.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 06 · Countries and Nationalities", body: "Diga de onde você é e qual é a sua nacionalidade." } ] }
     ]
   },
 
@@ -597,7 +597,7 @@ export const LESSONS = [
           { n: "2", kicker: "SUA NACIONALIDADE", prefix: "I’m…", ideas: "Ex.: Brazilian", v: "lilac", c: "purple" },
           { n: "3", kicker: "UMA PESSOA FAMOSA", prefix: "He’s / She’s from…", ideas: "Pense em alguém que você admira.", v: "cream", c: "yellow" },
           { n: "4", kicker: "UMA PERGUNTA", prefix: "Where are you from?", ideas: "Escreva a resposta que você daria.", v: "gray", c: "navy" } ] },
-        { t: "objective", v: "navy", title: "DIÁLOGO DE 4 LINHAS", text: "— Where are you from?\n— I’m from Brazil. And you?\n— I’m from Italy.\n— Nice to meet you!" } ] },
+        { t: "objective", v: "navy", title: "DIÁLOGO DE 4 LINHAS", text: "Where are you from?\nI’m from Brazil. And you?\nI’m from Italy.\nNice to meet you!" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 06", page: "PÁGINA 07" },
@@ -608,9 +608,9 @@ export const LESSONS = [
           "reconhecer os finais -ian, -ish e -ese.",
           "perguntar: Where are you from?" ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 06", body: "Pronúncia de países e nacionalidades.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça o diálogo de apresentação com a IA.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 2 — Vocabulário essencial", body: "Família, números, dias, meses, cores e muito mais." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 06", body: "Pronúncia de países e nacionalidades.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça o diálogo de apresentação com a IA.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 2 · Vocabulário essencial", body: "Família, números, dias, meses, cores e muito mais." } ] }
     ]
   }
   ,{
@@ -645,7 +645,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 07", page: "PÁGINA 03" },
-        { t: "title", en: "DE QUEM É?", pt: "Use my, your, his, her — e o ’s de posse." },
+        { t: "title", en: "DE QUEM É?", pt: "Use my, your, his, her e o ’s de posse." },
         { t: "rule", v: "mint", c: "teal", kicker: "1 · POSSE COM ADJETIVO", from: "my · your · his · her", to: "my sister", ex: "This is my sister.", tr: "Esta é minha irmã." },
         { t: "rule", v: "lilac", c: "purple", kicker: "2 · POSSE COM ’S", from: "nome + ’s", to: "Ana’s brother", ex: "Ana’s brother is a doctor.", tr: "O irmão da Ana é médico." },
         { t: "objective", v: "red", title: "CUIDADO", text: "Em inglês, a ordem é invertida: “o irmão da Ana” vira Ana’s brother." },
@@ -687,19 +687,19 @@ export const LESSONS = [
           "usar my, your, his e her.",
           "usar o ’s para indicar posse." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 07", body: "Pronúncia das palavras da família.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Apresente sua família em voz alta.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 08 — Numbers 1–100" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 07", body: "Pronúncia das palavras da família.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Apresente sua família em voz alta.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 08 · Numbers 1-100" } ] }
     ]
   },
 
   {
-    id: 8, code: "AULA 08", title: "Numbers 1–100", sub: "Contar, dizer idade e preços.",
+    id: 8, code: "AULA 08", title: "Numbers 1-100", sub: "Contar, dizer idade e preços.",
     time: "15 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 08" },
-        { t: "title", en: "NUMBERS 1–100", pt: "Os números que você mais usa." },
+        { t: "title", en: "NUMBERS 1-100", pt: "Os números que você mais usa." },
         { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Telefone, idade, preço, horário.\nTudo começa nos números." },
         { t: "image", id: "a8p1", ph: "Ilustração: números e pessoas contando" },
         { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Ler e escrever os números de 1 a 100 em inglês." },
@@ -726,7 +726,7 @@ export const LESSONS = [
           { a: "80 / 90", b: "eighty / ninety", v: "mint" },
           { a: "100", b: "one hundred", v: "lilac" } ] },
         { t: "rule", v: "cream", c: "yellow", kicker: "NÚMEROS COMPOSTOS", from: "20 + 1", to: "twenty-one", ex: "42 → forty-two · 87 → eighty-seven", tr: "Sempre com hífen." },
-        { t: "objective", v: "red", title: "ERRO COMUM", text: "Escreva forty (40) — não fourty." } ] },
+        { t: "objective", v: "red", title: "ERRO COMUM", text: "Escreva forty (40), não fourty." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 08", page: "PÁGINA 04" },
@@ -763,9 +763,9 @@ export const LESSONS = [
           "formar números compostos com hífen.",
           "dizer minha idade com o verb to be." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 08", body: "Pronúncia dos números e dos pares difíceis (13 × 30).", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga números aleatórios e confira sua pronúncia.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 09 — Days and Months" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 08", body: "Pronúncia dos números e dos pares difíceis (13 × 30).", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga números aleatórios e confira sua pronúncia.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 09 · Days and Months" } ] }
     ]
   },
 
@@ -832,9 +832,9 @@ export const LESSONS = [
           "usar on para dias e in para meses.",
           "escrever dias e meses com maiúscula." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 09", body: "Pronúncia dos dias e meses.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Marque um encontro fictício em inglês.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 10 — Colors and Shapes" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 09", body: "Pronúncia dos dias e meses.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Marque um encontro fictício em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 10 · Colors and Shapes" } ] }
     ]
   },
 
@@ -903,9 +903,9 @@ export const LESSONS = [
           "nomear as formas básicas.",
           "colocar a cor antes do substantivo." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 10", body: "Cores, formas e descrições no dia a dia.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva o que está na sua mesa agora.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 11 — Articles a / an / the" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 10", body: "Cores, formas e descrições no dia a dia.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva o que está na sua mesa agora.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 11 · Articles a / an / the" } ] }
     ]
   },
 
@@ -964,9 +964,9 @@ export const LESSONS = [
           "usar an antes de som de vogal.",
           "usar the para algo específico ou único." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 11", body: "Exemplos reais de a, an e the.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva objetos usando artigos.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 12 — Plural Nouns" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 11", body: "Exemplos reais de a, an e the.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva objetos usando artigos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 12 · Plural Nouns" } ] }
     ]
   },
 
@@ -1001,7 +1001,7 @@ export const LESSONS = [
           { a: "foot", b: "feet", v: "lilac" },
           { a: "tooth", b: "teeth", v: "cream" },
           { a: "life", b: "lives", v: "mint" } ] },
-        { t: "objective", v: "red", title: "NÃO ACRESCENTE -S NOS IRREGULARES", text: "Diga children — nunca childrens. Diga people — nunca peoples." } ] },
+        { t: "objective", v: "red", title: "NÃO ACRESCENTE -S NOS IRREGULARES", text: "Diga children, nunca childrens. Diga people, nunca peoples." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 12", page: "PÁGINA 04" },
@@ -1037,9 +1037,9 @@ export const LESSONS = [
           "trocar y por -ies depois de consoante.",
           "reconhecer os plurais irregulares." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 12", body: "Pronúncia dos plurais: /s/, /z/ e /ɪz/.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Fale sobre quantidades usando plurais.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 3 — Referência e lugar", body: "This/That, possessivos, there is/are e preposições." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 12", body: "Pronúncia dos plurais: /s/, /z/ e /ɪz/.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Fale sobre quantidades usando plurais.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 3 · Referência e lugar", body: "This/That, possessivos, there is/are e preposições." } ] }
     ]
   }
   ,{
@@ -1100,9 +1100,9 @@ export const LESSONS = [
           "escolher entre singular e plural.",
           "usar is com this/that e are com these/those." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 13", body: "Exemplos práticos com objetos reais.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva o que está perto e longe de você.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 14 — Possessive Adjectives" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 13", body: "Exemplos práticos com objetos reais.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva o que está perto e longe de você.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 14 · Possessive Adjectives" } ] }
     ]
   },
 
@@ -1122,13 +1122,13 @@ export const LESSONS = [
         { t: "badge", label: "AULA 14", page: "PÁGINA 02" },
         { t: "title", en: "O MAPA DOS POSSESSIVOS", pt: "Um para cada subject pronoun." },
         { t: "table", head: ["PRONOME", "POSSESSIVO"], rows: [
-          { a: "I", b: "my — meu / minha", v: "mint" },
-          { a: "you", b: "your — seu / sua", v: "lilac" },
-          { a: "he", b: "his — dele", v: "cream" },
-          { a: "she", b: "her — dela", v: "mint" },
-          { a: "it", b: "its — dele/dela (coisa)", v: "lilac" },
-          { a: "we", b: "our — nosso / nossa", v: "cream" },
-          { a: "they", b: "their — deles / delas", v: "mint" } ] },
+          { a: "I", b: "my: meu / minha", v: "mint" },
+          { a: "you", b: "your: seu / sua", v: "lilac" },
+          { a: "he", b: "his: dele", v: "cream" },
+          { a: "she", b: "her: dela", v: "mint" },
+          { a: "it", b: "its: dele/dela (coisa)", v: "lilac" },
+          { a: "we", b: "our: nosso / nossa", v: "cream" },
+          { a: "they", b: "their: deles / delas", v: "mint" } ] },
         { t: "objective", v: "red", title: "NÃO CONFUNDA", text: "its = posse (its name) · it’s = it is (it’s new)" } ] },
 
       { blocks: [
@@ -1165,9 +1165,9 @@ export const LESSONS = [
           "diferenciar its de it’s.",
           "usar our e their com grupos." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 14", body: "Possessivos em diálogos curtos.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Fale sobre suas coisas e as de sua família.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 15 — There is / There are" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 14", body: "Possessivos em diálogos curtos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Fale sobre suas coisas e as de sua família.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 15 · There is / There are" } ] }
     ]
   },
 
@@ -1224,9 +1224,9 @@ export const LESSONS = [
           "usar there are com plural.",
           "negar e perguntar sobre o que existe." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 15", body: "Descrevendo ambientes em inglês.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva sua casa em voz alta.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 16 — Prepositions of Place" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 15", body: "Descrevendo ambientes em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva sua casa em voz alta.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 16 · Prepositions of Place" } ] }
     ]
   },
 
@@ -1289,20 +1289,20 @@ export const LESSONS = [
           "usar under, behind, next to e between.",
           "descrever a posição de objetos." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 16", body: "Preposições com exemplos visuais.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva seu quarto item por item.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 17 — Simple Present: Affirmative" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 16", body: "Preposições com exemplos visuais.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva seu quarto item por item.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 17 · Simple Present: Affirmative" } ] }
     ]
   },
 
   {
-    id: 17, code: "AULA 17", title: "Simple Present — Affirmative", sub: "Rotinas e fatos no presente.",
+    id: 17, code: "AULA 17", title: "Simple Present: Affirmative", sub: "Rotinas e fatos no presente.",
     time: "16 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 17" },
         { t: "title", en: "SIMPLE PRESENT", pt: "O tempo da rotina e dos fatos." },
-        { t: "image", id: "a17p1", ph: "Ilustração: rotina diária — acordar, estudar, trabalhar" },
+        { t: "image", id: "a17p1", ph: "Ilustração: rotina diária (acordar, estudar, trabalhar)" },
         { t: "note", v: "gray", bar: true, kicker: "QUANDO USAR", bold: true, text: "Hábitos: I work every day.\nFatos: Water boils at 100°C." },
         { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Formar frases afirmativas no presente simples." },
         { t: "meta", label: "TEMPO ESTIMADO", value: "16 min" } ] },
@@ -1354,21 +1354,21 @@ export const LESSONS = [
           "acrescentar -s com he, she e it.",
           "usar goes, has e studies corretamente." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 17", body: "A regra do -s explicada com exemplos.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte sua rotina em voz alta.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 18 — Simple Present: Negative" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 17", body: "A regra do -s explicada com exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte sua rotina em voz alta.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 18 · Simple Present: Negative" } ] }
     ]
   },
 
   {
-    id: 18, code: "AULA 18", title: "Simple Present — Negative", sub: "Don’t e doesn’t.",
+    id: 18, code: "AULA 18", title: "Simple Present: Negative", sub: "Don’t e doesn’t.",
     time: "15 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 18" },
         { t: "title", en: "DON’T / DOESN’T", pt: "Negar rotinas e fatos." },
         { t: "image", id: "a18p1", ph: "Ilustração: pessoa dizendo não com gesto" },
-        { t: "note", v: "gray", bar: true, kicker: "A IDEIA-CHAVE", bold: true, text: "Aqui o auxiliar do / does entra em cena —\ne o verbo principal volta à forma básica." },
+        { t: "note", v: "gray", bar: true, kicker: "A IDEIA-CHAVE", bold: true, text: "Aqui o auxiliar do / does entra em cena,\ne o verbo principal volta à forma básica." },
         { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Formar frases negativas no presente simples." },
         { t: "meta", label: "TEMPO ESTIMADO", value: "15 min" } ] },
 
@@ -1377,7 +1377,7 @@ export const LESSONS = [
         { t: "title", en: "A REGRA", pt: "O -s passa para o auxiliar." },
         { t: "rule", v: "mint", c: "teal", kicker: "I · YOU · WE · THEY", from: "do not", to: "don’t + verbo", ex: "I don’t work on Sunday.", tr: "Eu não trabalho no domingo." },
         { t: "rule", v: "lilac", c: "purple", kicker: "HE · SHE · IT", from: "does not", to: "doesn’t + verbo", ex: "She doesn’t work here.", tr: "Ela não trabalha aqui." },
-        { t: "objective", v: "red", title: "ERRO CLÁSSICO", text: "Depois de doesn’t, o verbo perde o -s. Diga: She doesn’t work. — nunca She doesn’t works." },
+        { t: "objective", v: "red", title: "ERRO CLÁSSICO", text: "Depois de doesn’t, o verbo perde o -s. Diga: She doesn’t work. Nunca: She doesn’t works." },
         { t: "compare", items: [
           { wrong: "He doesn’t works here.", note: "O -s já está em doesn’t.", right: "He doesn’t work here.", rnote: "Ele não trabalha aqui." },
           { wrong: "I no like coffee.", right: "I don’t like coffee." } ] } ] },
@@ -1386,7 +1386,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 18", page: "PÁGINA 03" },
         { t: "title", en: "VERB TO BE × OUTROS VERBOS", pt: "Não misture as duas negativas." },
         { t: "grid", cols: 2, items: [
-          { kicker: "COM VERB TO BE", title: "She isn’t a doctor.", body: "Use not — sem do/does.", v: "mint", c: "teal" },
+          { kicker: "COM VERB TO BE", title: "She isn’t a doctor.", body: "Use not, sem do/does.", v: "mint", c: "teal" },
           { kicker: "COM OUTROS VERBOS", title: "She doesn’t work here.", body: "Use doesn’t + verbo.", v: "lilac", c: "purple" } ] },
         { t: "mc", id: "a18mc1", title: "QUAL É A CORRETA?", v: "gray", questions: [
           { q: "Ela não é professora.", options: ["She doesn’t be a teacher.", "She isn’t a teacher."], answer: 1 },
@@ -1415,13 +1415,13 @@ export const LESSONS = [
           "deixar o verbo sem -s depois de doesn’t.",
           "não misturar isn’t com doesn’t." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 18", body: "Negativas do presente simples na prática.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga cinco coisas que você não faz.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 4 — Presente simples", body: "Perguntas, frequência, rotina, horas e comida." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 18", body: "Negativas do presente simples na prática.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga cinco coisas que você não faz.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 4 · Presente simples", body: "Perguntas, frequência, rotina, horas e comida." } ] }
     ]
   }
   ,{
-    id: 19, code: "AULA 19", title: "Simple Present — Questions", sub: "Perguntas com do e does.",
+    id: 19, code: "AULA 19", title: "Simple Present: Questions", sub: "Perguntas com do e does.",
     time: "15 minutos",
     pages: [
       { blocks: [
@@ -1439,7 +1439,7 @@ export const LESSONS = [
           { t: "DO / DOES", c: "lilac" }, { t: "SUJEITO", c: "mint" }, { t: "VERBO", c: "cream" }, { t: "?", c: "yellow" } ] },
         { t: "rule", v: "mint", c: "teal", kicker: "I · YOU · WE · THEY", from: "do", to: "Do you work?", ex: "Do they live here?", tr: "Você trabalha?" },
         { t: "rule", v: "lilac", c: "purple", kicker: "HE · SHE · IT", from: "does", to: "Does he work?", ex: "Does she study English?", tr: "Ele trabalha?" },
-        { t: "objective", v: "red", title: "ATENÇÃO", text: "Depois de does, o verbo não leva -s: Does she work? — nunca Does she works?" } ] },
+        { t: "objective", v: "red", title: "ATENÇÃO", text: "Depois de does, o verbo não leva -s: Does she work? Nunca: Does she works?" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 19", page: "PÁGINA 03" },
@@ -1487,9 +1487,9 @@ export const LESSONS = [
           "responder com Yes, I do. / No, he doesn’t.",
           "usar where, what, when e how." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 19", body: "Perguntas do dia a dia com do e does.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Entreviste a IA com cinco perguntas.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 20 — Adverbs of Frequency" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 19", body: "Perguntas do dia a dia com do e does.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Entreviste a IA com cinco perguntas.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 20 · Adverbs of Frequency" } ] }
     ]
   },
 
@@ -1508,17 +1508,17 @@ export const LESSONS = [
         { t: "badge", label: "AULA 20", page: "PÁGINA 02" },
         { t: "title", en: "A ESCALA DA FREQUÊNCIA", pt: "De 100% a 0%." },
         { t: "table", head: ["ADVÉRBIO", "FREQUÊNCIA"], rows: [
-          { a: "always", b: "100% — sempre", v: "mint" },
-          { a: "usually", b: "80% — geralmente", v: "lilac" },
-          { a: "often", b: "60% — frequentemente", v: "cream" },
-          { a: "sometimes", b: "40% — às vezes", v: "mint" },
-          { a: "rarely / seldom", b: "10% — raramente", v: "lilac" },
-          { a: "never", b: "0% — nunca", v: "cream" } ] },
+          { a: "always", b: "100%: sempre", v: "mint" },
+          { a: "usually", b: "80%: geralmente", v: "lilac" },
+          { a: "often", b: "60%: frequentemente", v: "cream" },
+          { a: "sometimes", b: "40%: às vezes", v: "mint" },
+          { a: "rarely / seldom", b: "10%: raramente", v: "lilac" },
+          { a: "never", b: "0%: nunca", v: "cream" } ] },
         { t: "note", v: "gray", bold: true, text: "never já é negativo: diga I never drink coffee. (não: I don’t never…)" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 20", page: "PÁGINA 03" },
-        { t: "title", en: "ONDE COLOCAR", pt: "Antes do verbo — mas depois do verb to be." },
+        { t: "title", en: "ONDE COLOCAR", pt: "Antes do verbo, mas depois do verb to be." },
         { t: "rule", v: "mint", c: "teal", kicker: "COM VERBO NORMAL", from: "antes do verbo", to: "I always study.", ex: "She never works on Sunday.", tr: "Sujeito + advérbio + verbo." },
         { t: "rule", v: "lilac", c: "purple", kicker: "COM VERB TO BE", from: "depois do verbo", to: "I am always late.", ex: "He is usually happy.", tr: "Sujeito + to be + advérbio." },
         { t: "dnd", id: "a20d1", title: "MONTE A FRASE", sub: "Arraste ou toque nas peças na ordem correta.",
@@ -1548,9 +1548,9 @@ export const LESSONS = [
           "colocar o advérbio antes do verbo comum.",
           "colocar o advérbio depois do verb to be." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 20", body: "Frequência na fala natural.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte seus hábitos da semana.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 21 — Daily Routine" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 20", body: "Frequência na fala natural.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte seus hábitos da semana.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 21 · Daily Routine" } ] }
     ]
   },
 
@@ -1612,9 +1612,9 @@ export const LESSONS = [
           "usar first, then, after that e finally.",
           "contar minha rotina em ordem." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 21", body: "Uma rotina completa narrada em inglês.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte seu dia de ontem até hoje.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 22 — Telling the Time" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 21", body: "Uma rotina completa narrada em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte seu dia de ontem até hoje.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 22 · Telling the Time" } ] }
     ]
   },
 
@@ -1644,8 +1644,8 @@ export const LESSONS = [
         { t: "badge", label: "AULA 22", page: "PÁGINA 03" },
         { t: "title", en: "MANHÃ, TARDE E NOITE", pt: "a.m., p.m. e as preposições." },
         { t: "grid", cols: 3, items: [
-          { kicker: "MANHÃ", title: "in the morning", body: "6 a.m. – 12 p.m.", v: "mint" },
-          { kicker: "TARDE", title: "in the afternoon", body: "12 p.m. – 6 p.m.", v: "lilac" },
+          { kicker: "MANHÃ", title: "in the morning", body: "das 6 a.m. às 12 p.m.", v: "mint" },
+          { kicker: "TARDE", title: "in the afternoon", body: "das 12 p.m. às 6 p.m.", v: "lilac" },
           { kicker: "NOITE", title: "at night", body: "depois das 9 p.m.", v: "cream" } ] },
         { t: "objective", v: "navy", title: "PREPOSIÇÃO DE HORÁRIO", text: "Use at com hora exata: The class is at 7 p.m." },
         { t: "mc", id: "a22mc1", title: "ESCOLHA A OPÇÃO CORRETA", v: "gray", questions: [
@@ -1672,9 +1672,9 @@ export const LESSONS = [
           "usar past, to, half e quarter.",
           "usar at antes do horário." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 22", body: "Horas na prática, com relógios reais.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Marque um horário com a IA.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 23 — Food and Drinks" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 22", body: "Horas na prática, com relógios reais.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Marque um horário com a IA.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 23 · Food and Drinks" } ] }
     ]
   },
 
@@ -1737,9 +1737,9 @@ export const LESSONS = [
           "pedir algo com I’d like.",
           "dizer do que gosto e do que não gosto." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 23", body: "Um diálogo completo em um café.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça um pedido em um restaurante fictício.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 24 — Can / Can’t" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 23", body: "Um diálogo completo em um café.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça um pedido em um restaurante fictício.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 24 · Can / Can’t" } ] }
     ]
   },
 
@@ -1797,9 +1797,9 @@ export const LESSONS = [
           "perguntar com Can…? e responder curto.",
           "usar can para habilidade, permissão e pedido." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 24", body: "Can no dia a dia: pedidos e permissões.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga cinco coisas que você sabe fazer.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 5 — Ações e rotina", body: "Imperativo, presente contínuo, roupas, clima e profissões." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 24", body: "Can no dia a dia: pedidos e permissões.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga cinco coisas que você sabe fazer.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 5 · Ações e rotina", body: "Imperativo, presente contínuo, roupas, clima e profissões." } ] }
     ]
   }
   ,{
@@ -1855,9 +1855,9 @@ export const LESSONS = [
           "negar com Don’t.",
           "suavizar o pedido com please." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 25", body: "Instruções em situações reais.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Dê instruções para uma receita simples.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 26 — Present Continuous" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 25", body: "Instruções em situações reais.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Dê instruções para uma receita simples.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 26 · Present Continuous" } ] }
     ]
   },
 
@@ -1881,7 +1881,7 @@ export const LESSONS = [
         { t: "rule", v: "cream", c: "yellow", kicker: "EU", from: "I am", to: "I am studying.", ex: "I’m working now.", tr: "Estou estudando." },
         { t: "rule", v: "mint", c: "teal", kicker: "HE · SHE · IT", from: "is", to: "She is reading.", ex: "It is raining.", tr: "Ela está lendo." },
         { t: "rule", v: "lilac", c: "purple", kicker: "YOU · WE · THEY", from: "are", to: "They are playing.", ex: "We’re waiting.", tr: "Eles estão jogando." },
-        { t: "objective", v: "red", title: "NÃO ESQUEÇA O VERB TO BE", text: "Diga She is working. — nunca She working." } ] },
+        { t: "objective", v: "red", title: "NÃO ESQUEÇA O VERB TO BE", text: "Diga: She is working. Nunca: She working." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 26", page: "PÁGINA 03" },
@@ -1928,14 +1928,14 @@ export const LESSONS = [
           "escrever o -ing corretamente.",
           "diferenciar agora de rotina." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 26", body: "Descrevendo cenas em tempo real.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Narre o que você está fazendo agora.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 27 — Present Continuous: Questions" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 26", body: "Descrevendo cenas em tempo real.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Narre o que você está fazendo agora.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 27 · Present Continuous: Questions" } ] }
     ]
   },
 
   {
-    id: 27, code: "AULA 27", title: "Present Continuous — Questions", sub: "Perguntar o que está acontecendo.",
+    id: 27, code: "AULA 27", title: "Present Continuous: Questions", sub: "Perguntar o que está acontecendo.",
     time: "13 minutos",
     pages: [
       { blocks: [
@@ -1986,9 +1986,9 @@ export const LESSONS = [
           "negar com not depois do to be.",
           "responder de forma curta." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 27", body: "Diálogos em tempo real.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Pergunte à IA o que ela está fazendo.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 28 — Clothes" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 27", body: "Diálogos em tempo real.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Pergunte à IA o que ela está fazendo.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 28 · Clothes" } ] }
     ]
   },
 
@@ -2044,9 +2044,9 @@ export const LESSONS = [
           "usar wear para rotina e be wearing para agora.",
           "colocar a cor antes da peça." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 28", body: "Roupas e compras em inglês.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva sua roupa de hoje.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 29 — Weather" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 28", body: "Roupas e compras em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Descreva sua roupa de hoje.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 29 · Weather" } ] }
     ]
   },
 
@@ -2106,9 +2106,9 @@ export const LESSONS = [
           "usar It’s + verbo -ing.",
           "nomear as quatro estações." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 29", body: "Previsão do tempo em inglês.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça uma previsão do tempo de 30 segundos.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 30 — Jobs" } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 29", body: "Previsão do tempo em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça uma previsão do tempo de 30 segundos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 30 · Jobs" } ] }
     ]
   },
 
@@ -2143,7 +2143,7 @@ export const LESSONS = [
           { n: "1", kicker: "PERGUNTAR", title: "What do you do?", body: "O que você faz? (profissão)", v: "mint", c: "teal" },
           { n: "2", kicker: "RESPONDER", title: "I’m a teacher.", body: "Não esqueça o a / an.", v: "lilac", c: "purple" },
           { n: "3", kicker: "ONDE TRABALHA", title: "I work in a school.", body: "Eu trabalho em uma escola.", v: "cream", c: "yellow" } ] },
-        { t: "objective", v: "red", title: "ERRO COMUM", text: "Diga I’m a doctor. — não I’m doctor." } ] },
+        { t: "objective", v: "red", title: "ERRO COMUM", text: "Diga: I’m a doctor. Não: I’m doctor." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 30", page: "PÁGINA 04" },
@@ -2167,9 +2167,9 @@ export const LESSONS = [
           "perguntar What do you do?",
           "usar a / an antes da profissão." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 30", body: "Apresentações profissionais em inglês.", plan: "Exclusivo do Plano Completo — Inglês em Ação.", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Apresente-se profissionalmente em 30 segundos.", plan: "Exclusivo do Plano Premium — Inglês Prático com IA.", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 6 — Passado", body: "O passado do verb to be e dos verbos regulares e irregulares." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 30", body: "Apresentações profissionais em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Apresente-se profissionalmente em 30 segundos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 6 · Passado", body: "O passado do verb to be e dos verbos regulares e irregulares." } ] }
     ]
   },
   {
@@ -2189,7 +2189,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 31" },
         { t: "title", en: "ASKING FOR DIRECTIONS", pt: "Três formas de pedir informação na rua." },
-        { t: "image", id: "a31p2", ph: "Foto: mulher pedindo informação a um homem na rua — balão “Excuse me.”" },
+        { t: "image", id: "a31p2", ph: "Foto: mulher pedindo informação a um homem na rua. Balão: “Excuse me.”" },
         { t: "rows", items: [
           { text: "Where is the drugstore?", c: "teal" },
           { text: "Is there a drugstore near here?", c: "purple" },
@@ -2301,10 +2301,10 @@ export const LESSONS = [
           "seguir instruções usando traffic light e roundabout",
           "dar uma rota curta em inglês" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 31: DIRECTIONS", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Peça uma direção e dê uma rota curta usando pelo menos quatro instruções da Aula 31.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 31 · DIRECTIONS", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Peça uma direção e dê uma rota curta usando pelo menos quatro instruções da Aula 31.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "31 DE 42 AULAS", pct: "74%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 32 — Like / Love / Dislike / Hate + -ing" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 32 · Like / Love / Dislike / Hate + -ing" } ] }
     ]
   },
   {
@@ -2341,18 +2341,18 @@ export const LESSONS = [
         { t: "badge", label: "AULA 32 · UNIT 8" },
         { t: "title", en: "HOW TO FORM -ING", pt: "We add -ing to verbs to talk about activities." },
         { t: "note", v: "mint", bar: true, text: "The spelling of -ing changes a little depending on the verb. Look below!" },
-        { t: "sec", text: "1 · MOST VERBS — JUST ADD -ING" },
+        { t: "sec", text: "1 · MOST VERBS: JUST ADD -ING" },
         { t: "table", head: ["BASE VERB", "+ -ING"], rows: [
           { a: "buy", b: "buying", v: "lilac" }, { a: "play", b: "playing", v: "lilac" }, { a: "do", b: "doing", v: "lilac" },
           { a: "cook", b: "cooking", v: "lilac" }, { a: "eat", b: "eating", v: "lilac" }, { a: "speak", b: "speaking", v: "lilac" } ] },
         { t: "image", id: "a32p3a", ph: "Foto: mulher cozinhando e mexendo uma salada" },
         { t: "note", v: "lilac", text: "These are very common verbs. Try to remember them!" },
-        { t: "sec", text: "2 · VERBS ENDING IN -E — DROP THE -E AND ADD -ING" },
+        { t: "sec", text: "2 · VERBS ENDING IN -E: DROP THE -E AND ADD -ING" },
         { t: "table", head: ["BASE VERB", "-ING FORM"], rows: [
           { a: "dance", b: "dancing", v: "blue" }, { a: "live", b: "living", v: "blue" }, { a: "have", b: "having", v: "blue" },
           { a: "write", b: "writing", v: "blue" }, { a: "take", b: "taking", v: "blue" }, { a: "drive", b: "driving", v: "blue" } ] },
         { t: "note", v: "blue", text: "We remove the final -e before adding -ing." },
-        { t: "sec", text: "3 · CVC VERBS — DOUBLE THE FINAL CONSONANT AND ADD -ING" },
+        { t: "sec", text: "3 · CVC VERBS: DOUBLE THE FINAL CONSONANT AND ADD -ING" },
         { t: "table", head: ["BASE VERB", "-ING FORM"], rows: [
           { a: "stop", b: "stopping", v: "cream" }, { a: "sit", b: "sitting", v: "cream" }, { a: "get", b: "getting", v: "cream" },
           { a: "plan", b: "planning", v: "cream" }, { a: "run", b: "running", v: "cream" } ] },
@@ -2433,14 +2433,14 @@ export const LESSONS = [
           "responder com Yes, … do/does e No, … don’t/doesn’t",
           "falar brevemente sobre atividades de que gosto ou não gosto" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 32: LIKE / LOVE / DISLIKE / HATE + -ING", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral: diga quatro preferências sobre atividades e faça duas perguntas usando Do you like…?", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 32 · LIKE / LOVE / DISLIKE / HATE + -ING", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral: diga quatro preferências sobre atividades e faça duas perguntas usando Do you like…?", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "32 DE 42 AULAS", pct: "76%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 33 — Adverbs and Expressions of Frequency" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 33 · Adverbs and Expressions of Frequency" } ] }
     ]
   },
   {
-    id: 33, code: "AULA 33", title: "How Often? — Frequency", sub: "Advérbios e expressões de frequência.",
+    id: 33, code: "AULA 33", title: "How Often? Frequency", sub: "Advérbios e expressões de frequência.",
     time: "15 a 20 minutos",
     pages: [
       { blocks: [
@@ -2580,14 +2580,14 @@ export const LESSONS = [
           "colocar expressions of frequency normalmente no final da frase",
           "falar sobre minha rotina e a frequência das minhas atividades" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 33: ADVERBS AND EXPRESSIONS OF FREQUENCY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Fale sobre sua rotina usando pelo menos três advérbios de frequência e três expressões de frequência. Depois, responda a perguntas com How often…?", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 33 · ADVERBS AND EXPRESSIONS OF FREQUENCY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Fale sobre sua rotina usando pelo menos três advérbios de frequência e três expressões de frequência. Depois, responda a perguntas com How often…?", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "33 DE 42 AULAS", pct: "79%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 34 — Can / Can’t" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 34 · Can / Can’t" } ] }
     ]
   },
   {
-    id: 34, code: "AULA 34", title: "Can — Abilities", sub: "Can e can’t: habilidades e limitações.",
+    id: 34, code: "AULA 34", title: "Can: Abilities", sub: "Can e can’t: habilidades e limitações.",
     time: "14 a 18 minutos",
     pages: [
       { blocks: [
@@ -2691,10 +2691,10 @@ export const LESSONS = [
           "ask and answer questions with can",
           "describe degrees of ability" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 34: CAN / CAN’T", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Talk about three things you can do, two things you can’t do, and one thing you can do very well.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 34 · CAN / CAN’T", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Talk about three things you can do, two things you can’t do, and one thing you can do very well.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "34 DE 42 AULAS", pct: "81%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 35 — Object Pronouns" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 35 · Object Pronouns" } ] }
     ]
   },
   {
@@ -2819,10 +2819,10 @@ export const LESSONS = [
           "distinguir her objeto de her possessivo",
           "substituir pessoas e coisas sem repetir o substantivo" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 35: OBJECT PRONOUNS", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Substitua pessoas e objetos por object pronouns em cinco frases e use pelo menos duas delas depois de preposições.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 35 · OBJECT PRONOUNS", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Substitua pessoas e objetos por object pronouns em cinco frases e use pelo menos duas delas depois de preposições.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "35 DE 42 AULAS", pct: "83%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 36 — Menu / Meals" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 36 · Menu / Meals" } ] }
     ]
   },
   {
@@ -2833,9 +2833,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "MEALS AND RESTAURANT VOCABULARY", pt: "BREAKFAST · LUNCH · DINNER · SNACK" },
         { t: "cards", cols: 2, items: [
-          { tag: "BREAKFAST — MORNING", c: "teal", v: "mint", id: "a36p1a", ph: "Foto: café, torrada, ovos mexidos e tigela de cereal com frutas" },
-          { tag: "LUNCH — AFTERNOON", c: "purple", v: "lilac", id: "a36p1b", ph: "Foto: prato de arroz, feijão e salada" },
-          { tag: "DINNER — EVENING", c: "navy", v: "gray", id: "a36p1c", ph: "Foto: salmão grelhado com brócolis e purê" },
+          { tag: "BREAKFAST · MORNING", c: "teal", v: "mint", id: "a36p1a", ph: "Foto: café, torrada, ovos mexidos e tigela de cereal com frutas" },
+          { tag: "LUNCH · AFTERNOON", c: "purple", v: "lilac", id: "a36p1b", ph: "Foto: prato de arroz, feijão e salada" },
+          { tag: "DINNER · EVENING", c: "navy", v: "gray", id: "a36p1c", ph: "Foto: salmão grelhado com brócolis e purê" },
           { tag: "SNACK", c: "yellow", v: "cream", id: "a36p1d", ph: "Foto: tigela de frutas com cereais" } ] } ] },
 
       { blocks: [
@@ -2861,7 +2861,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "LUNCH", pt: "WHAT DO YOU USUALLY HAVE?" },
-        { t: "image", id: "a36p4", ph: "Foto: almoço completo — arroz, feijão, carne, salada, batata frita, macarrão" },
+        { t: "image", id: "a36p4", ph: "Foto: almoço completo (arroz, feijão, carne, salada, batata frita, macarrão)" },
         { t: "chips", title: "LUNCH WORDS", items: [
           { t: "rice", c: "teal" }, { t: "carrots", c: "purple" }, { t: "beans", c: "teal" }, { t: "pasta", c: "purple" },
           { t: "salad", c: "teal" }, { t: "French fries", c: "purple" }, { t: "meat", c: "teal" }, { t: "stroganoff", c: "purple" } ] },
@@ -2951,10 +2951,10 @@ export const LESSONS = [
           "pedir comida e bebida educadamente em um restaurante",
           "compreender um diálogo básico de pedido e pagamento" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 36: MEALS AND RESTAURANT VOCABULARY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Faça um pedido completo em um restaurante: escolha uma comida, uma bebida e uma sobremesa e finalize pedindo a conta.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 36 · MEALS AND RESTAURANT VOCABULARY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Faça um pedido completo em um restaurante: escolha uma comida, uma bebida e uma sobremesa e finalize pedindo a conta.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "36 DE 42 AULAS", pct: "86%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 37 — Count and Noncount Nouns; a/an, some, any" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 37 · Count and Noncount Nouns; a/an, some, any" } ] }
     ]
   },
   {
@@ -3022,8 +3022,8 @@ export const LESSONS = [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "SOME / ANY", pt: "Afirmativas × negativas e perguntas." },
         { t: "cards", cols: 2, items: [
-          { tag: "SOME — FOR AFFIRMATIVE SENTENCES", c: "teal", v: "mint", id: "a37p7a", ph: "Foto: copo de água na cozinha", lines: ["I usually drink some water when I go to the kitchen."] },
-          { tag: "ANY — FOR NEGATIVES AND QUESTIONS", c: "purple", v: "lilac", id: "a37p7b", ph: "Foto: cesta de frutas vazia", lines: ["There aren’t any bananas in this basket."] },
+          { tag: "SOME: FOR AFFIRMATIVE SENTENCES", c: "teal", v: "mint", id: "a37p7a", ph: "Foto: copo de água na cozinha", lines: ["I usually drink some water when I go to the kitchen."] },
+          { tag: "ANY: FOR NEGATIVES AND QUESTIONS", c: "purple", v: "lilac", id: "a37p7b", ph: "Foto: cesta de frutas vazia", lines: ["There aren’t any bananas in this basket."] },
           { tag: "SOME BANANAS", c: "teal", v: "mint", id: "a37p7c", ph: "Foto: bananas no prato", lines: ["There are some bananas on the table."] },
           { tag: "ANY ORANGE JUICE", c: "purple", v: "lilac", id: "a37p7d", ph: "Foto: caneca de suco de laranja", lines: ["Is there any orange juice in this cup?"] } ] } ] },
 
@@ -3096,10 +3096,10 @@ export const LESSONS = [
           "escolher a/an/some/any em situações básicas",
           "fazer uma compra ou pedido simples usando essas estruturas" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 37: COUNT AND NONCOUNT NOUNS; A/AN, SOME, ANY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Monte uma pequena lista de compras e faça um pedido usando um substantivo contável singular, um plural, um não contável e pelo menos uma unidade como bag, bottle, can ou slice.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 37 · COUNT AND NONCOUNT NOUNS; A/AN, SOME, ANY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Monte uma pequena lista de compras e faça um pedido usando um substantivo contável singular, um plural, um não contável e pelo menos uma unidade como bag, bottle, can ou slice.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "37 DE 42 AULAS", pct: "88%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 38 — A lot of / Many / Much" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 38 · A lot of / Many / Much" } ] }
     ]
   },
   {
@@ -3125,8 +3125,8 @@ export const LESSONS = [
         { t: "badge", label: "AULA 38" },
         { t: "title", en: "MANY OR MUCH?", pt: "COUNTABLE × UNCOUNTABLE" },
         { t: "cards", items: [
-          { tag: "MANY / NOT MANY — PLURAL COUNTABLE", c: "purple", v: "lilac", id: "a38p3a", ph: "Foto: hambúrgueres e cesta de legumes", lines: ["I don’t eat many hamburgers.", "Are there many vegetables in the basket?"] },
-          { tag: "MUCH / NOT MUCH — UNCOUNTABLE", c: "teal", v: "mint", id: "a38p3b", ph: "Foto: suco, café e açúcar sobre a mesa", lines: ["I don’t drink much coffee in the morning.", "Is there much sugar in this orange juice?"] } ] } ] },
+          { tag: "MANY / NOT MANY: PLURAL COUNTABLE", c: "purple", v: "lilac", id: "a38p3a", ph: "Foto: hambúrgueres e cesta de legumes", lines: ["I don’t eat many hamburgers.", "Are there many vegetables in the basket?"] },
+          { tag: "MUCH / NOT MUCH: UNCOUNTABLE", c: "teal", v: "mint", id: "a38p3b", ph: "Foto: suco, café e açúcar sobre a mesa", lines: ["I don’t drink much coffee in the morning.", "Is there much sugar in this orange juice?"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 38" },
@@ -3179,7 +3179,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 38 · PRATIQUE" },
-        { t: "title", en: "CORRECT THE MISTAKES — 1", pt: "Reescreva as frases corrigidas." },
+        { t: "title", en: "CORRECT THE MISTAKES (1)", pt: "Reescreva as frases corrigidas." },
         { t: "free", id: "a38f1", items: [
           { n: "1", kicker: "CORRIJA", prefix: "I drink much water in the morning.", ideas: "", c: "teal", v: "mint" },
           { n: "2", kicker: "CORRIJA", prefix: "Would you like any fruit for dessert?", ideas: "", c: "purple", v: "lilac" },
@@ -3191,7 +3191,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 38 · PRATIQUE" },
-        { t: "title", en: "CORRECT THE MISTAKES — 2", pt: "Continue corrigindo." },
+        { t: "title", en: "CORRECT THE MISTAKES (2)", pt: "Continue corrigindo." },
         { t: "free", id: "a38f2", items: [
           { n: "8", kicker: "CORRIJA", prefix: "Would you like any appetizers?", ideas: "", c: "teal", v: "mint" },
           { n: "9", kicker: "CORRIJA", prefix: "Molly always eats a lot of apple after lunch.", ideas: "", c: "purple", v: "lilac" },
@@ -3250,19 +3250,19 @@ export const LESSONS = [
           "corrigir erros comuns de quantidade",
           "falar sobre quantidades da minha rotina" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 38: A LOT OF / MANY / MUCH", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral sobre alimentação e rotina usando a lot of, many, much, how many e how much.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 38 · A LOT OF / MANY / MUCH", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral sobre alimentação e rotina usando a lot of, many, much, how many e how much.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "38 DE 42 AULAS", pct: "90%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 39 — Simple Past — Verb to be" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 39 · Simple Past: Verb to be" } ] }
     ]
   },
   {
-    id: 39, code: "AULA 39", title: "Simple Past — Verb to be", sub: "Was, were, wasn’t e weren’t.",
+    id: 39, code: "AULA 39", title: "Simple Past: Verb to be", sub: "Was, were, wasn’t e weren’t.",
     time: "18 a 22 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 39" },
-        { t: "title", en: "SIMPLE PAST — VERB TO BE", pt: "WAS & WERE" },
+        { t: "title", en: "SIMPLE PAST: VERB TO BE", pt: "WAS & WERE" },
         { t: "note", v: "mint", bar: true, text: "Usamos was e were para falar de estados e lugares no passado." },
         { t: "image", id: "a39p1", ph: "Foto de abertura da Aula 39 (página 01 não estava na pasta enviada)" },
         { t: "cards", cols: 2, items: [
@@ -3412,19 +3412,19 @@ export const LESSONS = [
           "usar wasn’t e weren’t em frases negativas",
           "fazer perguntas e dar respostas curtas com was e were" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 39: SIMPLE PAST — VERB TO BE", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral: falar sobre onde você e outras pessoas estavam ontem, usando was, were, wasn’t, weren’t e perguntas com was/were.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 39 · SIMPLE PAST: VERB TO BE", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral: falar sobre onde você e outras pessoas estavam ontem, usando was, were, wasn’t, weren’t e perguntas com was/were.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "39 DE 42 AULAS", pct: "93%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 40 — Simple Past — Regular Verbs: Affirmative" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 40 · Simple Past: Regular Verbs (Affirmative)" } ] }
     ]
   },
   {
-    id: 40, code: "AULA 40", title: "Simple Past — Regular Verbs", sub: "Afirmativas com verbos regulares (-ed).",
+    id: 40, code: "AULA 40", title: "Simple Past: Regular Verbs", sub: "Afirmativas com verbos regulares (-ed).",
     time: "18 a 22 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 40" },
-        { t: "title", en: "SIMPLE PAST — REGULAR VERBS", pt: "AFFIRMATIVE" },
+        { t: "title", en: "SIMPLE PAST: REGULAR VERBS", pt: "AFFIRMATIVE" },
         { t: "image", id: "a40p1", ph: "Foto: mulher olhando o relógio a caminho do trabalho" },
         { t: "cards", items: [
           { tag: "QUANDO USAR", c: "teal", v: "mint", lines: ["We use the Simple Past to talk about actions that started and finished in the past."] },
@@ -3492,9 +3492,9 @@ export const LESSONS = [
         { t: "title", en: "THE -ED SOUNDS", pt: "/d/ · /t/ · /ɪd/" },
         { t: "image", id: "a40p7", ph: "Foto: mulher ouvindo música com fones" },
         { t: "cards", items: [
-          { tag: "/d/ — AFTER A VOICED SOUND, EXCEPT /d/", c: "teal", v: "mint", lines: ["arrived", "listened", "loved", "planned"] },
-          { tag: "/t/ — AFTER A VOICELESS SOUND, EXCEPT /t/", c: "purple", v: "lilac", lines: ["liked", "stopped", "watched", "washed"] },
-          { tag: "/ɪd/ — AFTER /d/ OR /t/", c: "navy", v: "gray", lines: ["decided", "hated", "wanted", "started"] } ] } ] },
+          { tag: "/d/: AFTER A VOICED SOUND, EXCEPT /d/", c: "teal", v: "mint", lines: ["arrived", "listened", "loved", "planned"] },
+          { tag: "/t/: AFTER A VOICELESS SOUND, EXCEPT /t/", c: "purple", v: "lilac", lines: ["liked", "stopped", "watched", "washed"] },
+          { tag: "/ɪd/: AFTER /d/ OR /t/", c: "navy", v: "gray", lines: ["decided", "hated", "wanted", "started"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 40" },
@@ -3507,7 +3507,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 40 · PRATIQUE" },
-        { t: "title", en: "YOUR TURN — 1", pt: "PUT THE VERBS IN PARENTHESES INTO THE SIMPLE PAST" },
+        { t: "title", en: "YOUR TURN (1)", pt: "PUT THE VERBS IN PARENTHESES INTO THE SIMPLE PAST" },
         { t: "image", id: "a40p9", ph: "Foto: mulher escrevendo no caderno junto à janela" },
         { t: "fill", id: "a40e1", title: "COMPLETE COM O SIMPLE PAST", v: "cream", items: [
           { pre: "1. I", answers: ["visited"], post: "a farm two weeks ago. (visit)", v: "white" },
@@ -3517,7 +3517,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 40 · PRATIQUE" },
-        { t: "title", en: "YOUR TURN — 2", pt: "PUT THE VERBS IN PARENTHESES INTO THE SIMPLE PAST" },
+        { t: "title", en: "YOUR TURN (2)", pt: "PUT THE VERBS IN PARENTHESES INTO THE SIMPLE PAST" },
         { t: "fill", id: "a40e2", title: "CONTINUE COMPLETANDO", v: "cream", items: [
           { pre: "5. My sister", answers: ["moved"], post: "to a new house. (move)", v: "white" },
           { pre: "6. Nancy", answers: ["watched"], post: "TV last night. (watch)", v: "white" },
@@ -3562,19 +3562,19 @@ export const LESSONS = [
           { tag: "6 · DID THEY ARRIVE ON TIME?", c: "purple", v: "lilac", lines: ["Yes, they did.", "No, they didn’t."] } ] },
         { t: "note", v: "cream", bar: true, bold: true, kicker: "REMEMBER!", text: "Use DID (did + base form) para todas as pessoas no passado.\nRespostas curtas com DID deixam a conversa mais natural." },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 40: SIMPLE PAST — REGULAR VERBS", body: "Assista à videoaula completa desta aula e pratique ainda mais!", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Converse com a IA sobre o tema e pratique seu inglês falando!", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 40 · SIMPLE PAST: REGULAR VERBS", body: "Assista à videoaula completa desta aula e pratique ainda mais!", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Converse com a IA sobre o tema e pratique seu inglês falando!", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "40 DE 42 AULAS", pct: "95%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 41 — Simple Past — Irregular Verbs: Affirmative" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 41 · Simple Past: Irregular Verbs (Affirmative)" } ] }
     ]
   },
   {
-    id: 41, code: "AULA 41", title: "Simple Past — Irregular Verbs", sub: "Afirmativas com verbos irregulares.",
+    id: 41, code: "AULA 41", title: "Simple Past: Irregular Verbs", sub: "Afirmativas com verbos irregulares.",
     time: "18 a 22 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 41" },
-        { t: "title", en: "SIMPLE PAST — IRREGULAR VERBS", pt: "AFFIRMATIVE" },
+        { t: "title", en: "SIMPLE PAST: IRREGULAR VERBS", pt: "AFFIRMATIVE" },
         { t: "image", id: "a41p1", ph: "Foto de abertura: pessoas conversando sobre o fim de semana" },
         { t: "cards", items: [
           { tag: "REGULAR × IRREGULAR", c: "teal", v: "mint", lines: ["Verbos regulares: base form + -ed.", "Verbos irregulares: forma própria no passado."] },
@@ -3582,7 +3582,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 41" },
-        { t: "title", en: "IRREGULAR VERBS — 1", pt: "BASE FORM → PAST" },
+        { t: "title", en: "IRREGULAR VERBS (1)", pt: "BASE FORM → PAST" },
         { t: "table", head: ["BASE FORM", "SIMPLE PAST"], rows: [
           { a: "become", b: "became", v: "mint" }, { a: "can", b: "could", v: "lilac" },
           { a: "cost", b: "cost", v: "mint" }, { a: "do", b: "did", v: "lilac" },
@@ -3595,7 +3595,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 41" },
-        { t: "title", en: "IRREGULAR VERBS — 2", pt: "BASE FORM → PAST" },
+        { t: "title", en: "IRREGULAR VERBS (2)", pt: "BASE FORM → PAST" },
         { t: "table", head: ["BASE FORM", "SIMPLE PAST"], rows: [
           { a: "go", b: "went", v: "mint" }, { a: "have", b: "had", v: "lilac" },
           { a: "hear", b: "heard", v: "mint" }, { a: "know", b: "knew", v: "lilac" },
@@ -3621,7 +3621,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 41 · PRATIQUE" },
-        { t: "title", en: "YOUR TURN — 1", pt: "COMPLETE WITH THE SIMPLE PAST" },
+        { t: "title", en: "YOUR TURN (1)", pt: "COMPLETE WITH THE SIMPLE PAST" },
         { t: "image", id: "a41p6", ph: "Foto: mulher segurando as chaves de casa" },
         { t: "fill", id: "a41e1", title: "COMPLETE COM O SIMPLE PAST", v: "cream", items: [
           { pre: "1. My son", answers: ["took"], post: "a shower a few minutes ago. (take)", v: "white" },
@@ -3633,7 +3633,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 41 · PRATIQUE" },
-        { t: "title", en: "YOUR TURN — 2", pt: "COMPLETE WITH THE SIMPLE PAST" },
+        { t: "title", en: "YOUR TURN (2)", pt: "COMPLETE WITH THE SIMPLE PAST" },
         { t: "image", id: "a41p7", ph: "Foto: mulher com a mão no ouvido, escutando" },
         { t: "fill", id: "a41e2", title: "CONTINUE COMPLETANDO", v: "cream", items: [
           { pre: "7. They", answers: ["came"], post: "to my house last Friday. (come)", v: "white" },
@@ -3645,7 +3645,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 41 · GABARITO" },
-        { t: "title", en: "CHECK YOUR ANSWERS — 1", pt: "Confira as respostas." },
+        { t: "title", en: "CHECK YOUR ANSWERS (1)", pt: "Confira as respostas." },
         { t: "rows", items: [
           { text: "1. My son took a shower a few minutes ago.", c: "teal" },
           { text: "2. We did nothing the whole day.", c: "purple" },
@@ -3656,7 +3656,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 41 · GABARITO" },
-        { t: "title", en: "CHECK YOUR ANSWERS — 2", pt: "Confira as respostas." },
+        { t: "title", en: "CHECK YOUR ANSWERS (2)", pt: "Confira as respostas." },
         { t: "rows", items: [
           { text: "7. They came to my house last Friday.", c: "teal" },
           { text: "8. Julian became a doctor last month.", c: "purple" },
@@ -3687,10 +3687,10 @@ export const LESSONS = [
           "falar sobre ações concluídas usando verbos irregulares em frases afirmativas",
           "usar could para habilidade no passado e reconhecer read no passado com pronúncia /red/" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 41: SIMPLE PAST — IRREGULAR VERBS: AFFIRMATIVE", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral sobre acontecimentos passados usando formas irregulares trabalhadas na aula.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 41 · SIMPLE PAST: IRREGULAR VERBS (AFFIRMATIVE)", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral sobre acontecimentos passados usando formas irregulares trabalhadas na aula.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "41 DE 42 AULAS", pct: "98%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 42 — Unit Review 2" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 42 · Unit Review 2" } ] }
     ]
   },
   {
@@ -3740,7 +3740,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42" },
-        { t: "title", en: "BRIAN’S WEEKDAY", pt: "READING — DAILY ROUTINE" },
+        { t: "title", en: "BRIAN’S WEEKDAY", pt: "READING: DAILY ROUTINE" },
         { t: "image", id: "a42p3", ph: "Foto: rapaz no cinema com pipoca" },
         { t: "key", v: "gray", text: "My name is Brian. I’m 16 years old. On a weekday I usually get up at 6:00 a.m. I take a shower, get dressed, brush my teeth and have breakfast. I don’t drink coffee, but I sometimes drink orange juice for breakfast. I always have a cheese and ham sandwich. After breakfast I go to school. I study near my house at ABC School." },
         { t: "rows", items: [
@@ -3777,7 +3777,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
-        { t: "title", en: "CHOOSE THE BEST OPTION — 1", pt: "Escolha a melhor opção." },
+        { t: "title", en: "CHOOSE THE BEST OPTION (1)", pt: "Escolha a melhor opção." },
         { t: "mc", id: "a42mc1", title: "PARTE 1", v: "cream", questions: [
           { q: "1. I live ________ the gym.", options: ["next", "near"], answer: 1 },
           { q: "2a. If you take my street ________ the shopping mall…", options: ["tower", "toward"], answer: 1 },
@@ -3790,7 +3790,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
-        { t: "title", en: "CHOOSE THE BEST OPTION — 2", pt: "Continue escolhendo." },
+        { t: "title", en: "CHOOSE THE BEST OPTION (2)", pt: "Continue escolhendo." },
         { t: "mc", id: "a42mc2", title: "PARTE 2", v: "cream", questions: [
           { q: "7a. She learns fast and ________ love…", options: ["I", "me"], answer: 0 },
           { q: "7b. …________ to ________ when she plays.", options: ["listen / she", "listening / her"], answer: 1 },
@@ -3809,7 +3809,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
-        { t: "title", en: "PUT IT IN THE PAST — 1", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
+        { t: "title", en: "PUT IT IN THE PAST (1)", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
         { t: "image", id: "a42p9", ph: "Foto: moça pensativa" },
         { t: "free", id: "a42f2", items: [
           { n: "1", kicker: "REESCREVA NO PASSADO", prefix: "I’m Molly. Yesterday I have a really busy day. I get up at 7:00, take a shower, get dressed, brush my teeth and have breakfast.", ideas: "", c: "teal", v: "mint" },
@@ -3818,7 +3818,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
-        { t: "title", en: "PUT IT IN THE PAST — 2", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
+        { t: "title", en: "PUT IT IN THE PAST (2)", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
         { t: "image", id: "a42p10", ph: "Fotos: casal no shopping, cinema e pai e filha cozinhando" },
         { t: "free", id: "a42f3", items: [
           { n: "4", kicker: "REESCREVA NO PASSADO", prefix: "I do a lot of homework after lunch. I work on my homework the whole afternoon. But when I finish it I can play video games.", ideas: "", c: "teal", v: "mint" },
@@ -3827,7 +3827,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42 · GABARITO" },
-        { t: "title", en: "YESTERDAY — ANSWERS 1", pt: "MOLLY’S BUSY DAY" },
+        { t: "title", en: "YESTERDAY: ANSWERS 1", pt: "MOLLY’S BUSY DAY" },
         { t: "image", id: "a42p11", ph: "Foto: moça pensativa" },
         { t: "rows", items: [
           { text: "I’m Molly. Yesterday I had a really busy day. I got up at 7:00, took a shower, got dressed, brushed my teeth and had breakfast.", c: "teal" },
@@ -3836,7 +3836,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 42 · GABARITO" },
-        { t: "title", en: "YESTERDAY — ANSWERS 2", pt: "MOLLY’S BUSY DAY" },
+        { t: "title", en: "YESTERDAY: ANSWERS 2", pt: "MOLLY’S BUSY DAY" },
         { t: "image", id: "a42p12", ph: "Fotos: moça pensativa e plateia no cinema" },
         { t: "rows", items: [
           { text: "I did a lot of homework after lunch. I worked on my homework the whole afternoon. But when I finished it I could play video games.", c: "teal" },
@@ -3864,8 +3864,8 @@ export const LESSONS = [
           "usar quantificadores, preposições, pronomes e estruturas já estudadas",
           "falar e escrever sobre ações no passado usando was/were e verbos regulares e irregulares" ] },
         { t: "cta", items: [
-          { icon: "play", v: "mint", title: "VIDEOAULA — AULA 42: UNIT REVIEW 2", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO PLANO COMPLETO — INGLÊS EM AÇÃO", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
-          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral final integrando restaurante, rotina, quantidades, localização e passado simples.", plan: "EXCLUSIVO DO PLANO PREMIUM — INGLÊS PRÁTICO COM IA", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
+          { icon: "play", v: "mint", title: "VIDEOAULA · AULA 42 · UNIT REVIEW 2", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
+          { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral final integrando restaurante, rotina, quantidades, localização e passado simples.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "42 DE 42 AULAS", pct: "100%" },
         { t: "key", v: "navy", text: "Você concluiu a trilha completa. Congratulations!" } ] }
     ]
@@ -3873,17 +3873,17 @@ export const LESSONS = [
 ];
 
 export const TRACK = [
-  { n: 1, t: "Subject Pronouns" }, { n: 2, t: "Verb to be — Affirmative" }, { n: 3, t: "Verb to be — Negative" },
-  { n: 4, t: "Verb to be — Interrogative" }, { n: 5, t: "Verb to be — Review" }, { n: 6, t: "Countries and Nationalities" },
-  { n: 7, t: "Family" }, { n: 8, t: "Numbers 1–100" }, { n: 9, t: "Days and Months" }, { n: 10, t: "Colors and Shapes" },
+  { n: 1, t: "Subject Pronouns" }, { n: 2, t: "Verb to be: Affirmative" }, { n: 3, t: "Verb to be: Negative" },
+  { n: 4, t: "Verb to be: Interrogative" }, { n: 5, t: "Verb to be: Review" }, { n: 6, t: "Countries and Nationalities" },
+  { n: 7, t: "Family" }, { n: 8, t: "Numbers 1-100" }, { n: 9, t: "Days and Months" }, { n: 10, t: "Colors and Shapes" },
   { n: 11, t: "Articles a / an / the" }, { n: 12, t: "Plural Nouns" }, { n: 13, t: "This / That / These / Those" },
   { n: 14, t: "Possessive Adjectives" }, { n: 15, t: "There is / There are" }, { n: 16, t: "Prepositions of Place" },
-  { n: 17, t: "Simple Present — Affirmative" }, { n: 18, t: "Simple Present — Negative" }, { n: 19, t: "Simple Present — Questions" },
+  { n: 17, t: "Simple Present: Affirmative" }, { n: 18, t: "Simple Present: Negative" }, { n: 19, t: "Simple Present: Questions" },
   { n: 20, t: "Adverbs of Frequency" }, { n: 21, t: "Daily Routine" }, { n: 22, t: "Telling the Time" },
   { n: 23, t: "Food and Drinks" }, { n: 24, t: "Can / Can’t" }, { n: 25, t: "Imperatives" }, { n: 26, t: "Present Continuous" },
-  { n: 27, t: "Present Continuous — Questions" }, { n: 28, t: "Clothes" }, { n: 29, t: "Weather" }, { n: 30, t: "Jobs" },
-  { n: 31, t: "Directions" }, { n: 32, t: "Like, Love, Dislike & Hate" }, { n: 33, t: "How Often? — Frequency" },
-  { n: 34, t: "Can — Abilities" }, { n: 35, t: "Object Pronouns" }, { n: 36, t: "Meals and Restaurant" },
-  { n: 37, t: "Count and Noncount Nouns" }, { n: 38, t: "A lot of / Many / Much" }, { n: 39, t: "Simple Past — Verb to be" }, { n: 40, t: "Simple Past — Regular Verbs" },
-  { n: 41, t: "Simple Past — Irregular Verbs" }, { n: 42, t: "Unit Review 2" }
+  { n: 27, t: "Present Continuous: Questions" }, { n: 28, t: "Clothes" }, { n: 29, t: "Weather" }, { n: 30, t: "Jobs" },
+  { n: 31, t: "Directions" }, { n: 32, t: "Like, Love, Dislike & Hate" }, { n: 33, t: "How Often? Frequency" },
+  { n: 34, t: "Can: Abilities" }, { n: 35, t: "Object Pronouns" }, { n: 36, t: "Meals and Restaurant" },
+  { n: 37, t: "Count and Noncount Nouns" }, { n: 38, t: "A lot of / Many / Much" }, { n: 39, t: "Simple Past: Verb to be" }, { n: 40, t: "Simple Past: Regular Verbs" },
+  { n: 41, t: "Simple Past: Irregular Verbs" }, { n: 42, t: "Unit Review 2" }
 ];

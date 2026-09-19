@@ -202,7 +202,7 @@ function registrarFalhaDeAuditoria(
 ): void {
   const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
   console.error(
-    `[auditoria] FALHA AO GRAVAR — action=${action} resource=${resource} outcome=${outcome}: ${motivo}`,
+    `[auditoria] FALHA AO GRAVAR: action=${action} resource=${resource} outcome=${outcome}: ${motivo}`,
   );
 }
 

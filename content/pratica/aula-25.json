@@ -1,0 +1,55 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dar instruções, ordens e conselhos com o verbo sem sujeito, na afirmativa e com \"Don't\".",
+  "conteudoAlvo": [
+    "open, sit down, listen, add, smoke",
+    "Open the door. Sit down, please.",
+    "Don't + ___; Don't be late."
+  ],
+  "expressoesFixas": [
+    "Don't worry"
+  ],
+  "comoIntegrar": [
+    "Use verbos que já sei como instrução: \"Go to bed.\", \"Help me, please.\", \"Don't cook.\"",
+    "Misture com coisas e lugares que já sei: \"Open your book.\", \"Add the milk.\""
+  ],
+  "regrasDaAula": [
+    "Sem sujeito: \"Open the door.\", nunca \"You open the door.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "transformar",
+    "traduzir",
+    "corrigir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"Open the door.\"",
+      "respostaDeReferencia": "Don't open the door."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Sente-se, por favor.",
+      "respostaDeReferencia": "Sit down, please."
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Corrija: \"You don't worry.\"",
+      "respostaDeReferencia": "Don't worry."
+    }
+  ],
+  "limites": [
+    "Palavras só as que já vi: \"window\", \"close\", \"talk\" e \"repeat\" ainda não estudei.",
+    "Sem \"let's\" e sem frases com \"must\" ou \"should\": só o imperativo."
+  ],
+  "primeiraQuestao": "Vamos começar pela porta. Complete a ordem para abrir a porta:\"___ the door.\" Qual verbo entra no espaço?",
+  "resumoAutorizado": [
+    "Verbo sem sujeito: \"Open the door.\", \"Sit down.\", \"Listen.\"",
+    "Negativa com \"Don't\": \"Don't worry.\", \"Don't be late.\", \"Don't smoke.\"",
+    "\"Sit down, please.\", \"Open your book.\", \"Add the milk.\""
+  ],
+  "resumoCurto": "Imperativo: verbo sem sujeito (\"Open the door.\"), negativa com \"Don't\" e \"please\" para suavizar."
+}

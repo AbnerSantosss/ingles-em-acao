@@ -140,7 +140,7 @@ const CAMPOS_COMPLETOS = { ...CAMPOS_DE_LISTA, pages: true } as const;
  */
 function avisarBancoFora(onde: string, erro: unknown): void {
   const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
-  console.error(`[conteudo] ${onde}: banco indisponível, usando o conteúdo estático — ${motivo}`);
+  console.error(`[conteudo] ${onde}: banco indisponível, usando o conteúdo estático (${motivo})`);
 }
 
 /**

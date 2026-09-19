@@ -14,7 +14,7 @@
  *
  * - **Sem vídeo configurado, não há painel.** Devolve `null` — nunca um quadro
  *   vazio, nunca um "em breve" que o aluno não pediu.
- * - **Essencial não vê a videoaula** (§2.6 e o bloco `cta`). Quem não tem o
+ * - **O WSA Essencial não vê a videoaula** (§2.6 e o bloco `cta`). Quem não tem o
  *   plano recebe a chamada de upgrade, não o player. A trava é de renderização:
  *   o endereço do vídeo não chega ao HTML de quem não tem direito a ele.
  * - **Arquivo enviado toca por link assinado de 15 minutos** (§4.3). Quem
@@ -23,7 +23,7 @@
  *   Sem `arquivo` (bucket fora do ar, arquivo removido), o painel some — nunca
  *   um player que não toca.
  */
-import type { Plano } from '@/components/lesson/blocks/interativos';
+import { NOME_DO_PLANO, type Plano } from '@/lib/planos';
 import { planoVeVideoaula } from '@/lib/video/acesso';
 import type { LinkAssinado } from '@/lib/video/envio';
 import { montarReproducao, rotuloDaOrigem, type VideoSource } from '@/lib/video/fonte';
@@ -48,11 +48,11 @@ export type PropsDoPainelDeVideo = {
   titulo?: string;
   /**
    * Só para `fonte.kind === 'upload'`. ⚠️ Quem monta a página só preenche isto
-   * para quem tem o plano — o link assinado não pode ir ao HTML do Essencial.
+   * para quem tem o plano: o link assinado não pode ir ao HTML do WSA Essencial.
    */
   arquivo?: ArquivoDoPainel;
   /**
-   * Checkout do Plano Completo (`/admin/configuracoes`), para a chamada de
+   * Checkout do WSA Premium (`/admin/configuracoes`), para a chamada de
    * upgrade. Ausente ou `null` = a chamada fica sem botão. A pré-visualização do
    * painel não passa.
    */
@@ -132,10 +132,10 @@ export function PainelDeVideo({
 }
 
 /**
- * O que o Essencial vê no lugar do player.
+ * O que o WSA Essencial vê no lugar do player.
  *
  * O botão só aparece com link de checkout configurado (`/admin/configuracoes`:
- * o campo do Plano Completo ou, vazio, o global) — um botão que não leva a
+ * o campo do WSA Premium ou, vazio, o global). Um botão que não leva a
  * lugar nenhum é pior do que não ter botão. O texto conta o que existe e o que o
  * plano atual continua entregando.
  */
@@ -148,8 +148,7 @@ function ChamadaDeUpgrade({ linkDeCompra }: { linkDeCompra?: string | null }) {
       <p className="kicker text-teal">Videoaula</p>
       <p className="mt-2 text-[15px] font-bold text-navy">Esta aula tem videoaula gravada.</p>
       <p className="mt-1 text-[14px] leading-relaxed text-muted">
-        A videoaula faz parte do Plano Completo. No seu plano, a leitura e os exercícios desta aula
-        continuam liberados do começo ao fim.
+        {`A videoaula faz parte do ${NOME_DO_PLANO.PREMIUM}. No seu plano, a leitura, os exercícios e os áudios desta aula continuam liberados do começo ao fim.`}
       </p>
       {linkDeCompra ? (
         <a
@@ -158,7 +157,7 @@ function ChamadaDeUpgrade({ linkDeCompra }: { linkDeCompra?: string | null }) {
           rel="noopener noreferrer"
           className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-pill bg-navy px-[22px] py-3 text-[13px] font-extrabold tracking-[.04em] text-white"
         >
-          Conhecer o Plano Completo
+          {`Conhecer o ${NOME_DO_PLANO.PREMIUM}`}
           <span className="sr-only"> (abre em outra aba)</span>
         </a>
       ) : null}

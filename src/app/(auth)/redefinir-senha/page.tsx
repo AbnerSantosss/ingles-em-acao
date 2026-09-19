@@ -22,7 +22,7 @@ import { FormularioDeNovaSenha } from './form';
 
 export const metadata: Metadata = {
   title: 'Criar uma nova senha',
-  description: 'Escolha a nova senha da sua conta do Inglês em Ação.',
+  description: 'Escolha a nova senha da sua conta do WSA English.',
 };
 
 type Busca = Record<string, string | string[] | undefined>;

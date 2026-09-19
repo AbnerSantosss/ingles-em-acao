@@ -10,9 +10,12 @@
  * #6B7280, #F2C230, #9AA1AE) e por isso aparecem literais — mudá-los para o
  * token mais próximo alteraria o desenho.
  *
- * Nenhum bloco daqui tem estado: são Server Components puros.
+ * Nenhum bloco daqui tem estado próprio. O botão de ouvir de `lead`, `note` e
+ * `key` vem do `OuvirTexto` (Client Component, pacote 08).
  */
 
+// OuvirTexto é Client Component: o botão só aparece quando a página tem um clipe para este texto.
+import { OuvirTexto } from "@/components/lesson/audio/OuvirTexto";
 import { cn } from "@/lib/ui/cn";
 import { variant } from "@/lib/ui/palette";
 import type {
@@ -31,11 +34,11 @@ import type {
 export function BlocoBadge({ bloco }: { bloco: BadgeBlock }) {
   return (
     <div className="flex items-center justify-between gap-3">
-      <span className="inline-block rounded-[9px] bg-[#F2C230] px-[14px] py-2 text-[12px] font-extrabold tracking-[0.07em] text-[#0F2050]">
+      <span className="inline-block rounded-[9px] bg-[#F2C230] px-[14px] py-2 fs-rotulo font-extrabold tracking-[0.07em] text-[#0F2050]">
         {bloco.label}
       </span>
       {bloco.page ? (
-        <span className="text-[11px] font-extrabold tracking-[0.08em] text-[#9AA1AE]">
+        <span className="fs-rotulo font-extrabold tracking-[0.08em] text-[#9AA1AE]">
           {bloco.page}
         </span>
       ) : null}
@@ -50,7 +53,7 @@ export function BlocoBadge({ bloco }: { bloco: BadgeBlock }) {
 export function BlocoTitle({ bloco }: { bloco: TitleBlock }) {
   return (
     <div>
-      <h1 className="m-0 mb-1.5 text-[clamp(26px,8vw,36px)] font-black leading-[1.05] text-[#0F2050] [text-wrap:pretty] lg:text-[38px] lg:leading-[1.03]">
+      <h1 className="m-0 mb-1.5 fs-titulo font-black leading-[1.05] text-[#0F2050] [text-wrap:pretty] lg:leading-[1.03]">
         {bloco.en}
       </h1>
       <p className="m-0 text-[17px] font-extrabold text-[#0E9BAE] [text-wrap:pretty] lg:text-[19px]">
@@ -89,9 +92,11 @@ export function BlocoKicker({ bloco }: { bloco: KickerBlock }) {
 export function BlocoLead({ bloco }: { bloco: LeadBlock }) {
   return (
     <div className="rounded-[14px] px-[18px] py-4">
-      <p className="m-0 whitespace-pre-line text-[16px] font-semibold leading-[1.5] text-[#1F2430]">
-        {bloco.text}
-      </p>
+      <OuvirTexto texto={bloco.text} forma="lado">
+        <p className="m-0 whitespace-pre-line fs-leitura font-semibold leading-[1.5] text-[#1F2430]">
+          {bloco.text}
+        </p>
+      </OuvirTexto>
     </div>
   );
 }
@@ -114,16 +119,18 @@ export function BlocoNote({ bloco }: { bloco: NoteBlock }) {
       }}
     >
       {bloco.kicker ? (
-        <div className="mb-1.5 text-[12px] font-extrabold tracking-[0.08em] text-purple">
+        <div className="mb-1.5 fs-rotulo font-extrabold tracking-[0.08em] text-purple">
           {bloco.kicker}
         </div>
       ) : null}
-      <p
-        className="m-0 whitespace-pre-line text-[16px] leading-[1.5]"
-        style={{ fontWeight: bloco.bold ? 800 : 500, color: v.fg }}
-      >
-        {bloco.text}
-      </p>
+      <OuvirTexto texto={bloco.text} forma="lado">
+        <p
+          className="m-0 whitespace-pre-line fs-leitura leading-[1.5]"
+          style={{ fontWeight: bloco.bold ? 800 : 500, color: v.fg }}
+        >
+          {bloco.text}
+        </p>
+      </OuvirTexto>
     </div>
   );
 }
@@ -134,10 +141,10 @@ export function BlocoKey({ bloco }: { bloco: KeyBlock }) {
 
   return (
     <div
-      className="rounded-[16px] px-5 py-[18px] text-center text-[16px] font-extrabold leading-[1.45]"
+      className="rounded-[16px] px-5 py-[18px] text-center fs-leitura font-extrabold leading-[1.45]"
       style={{ background: v.bg, color: v.fg }}
     >
-      {bloco.text}
+      <OuvirTexto texto={bloco.text}>{bloco.text}</OuvirTexto>
     </div>
   );
 }
@@ -153,7 +160,7 @@ export function BlocoMeta({ bloco }: { bloco: MetaBlock }) {
         ◷
       </div>
       <div>
-        <div className="text-[11px] font-extrabold tracking-[0.08em] text-[#6B7280]">
+        <div className="fs-rotulo font-extrabold tracking-[0.08em] text-[#6B7280]">
           {bloco.label}
         </div>
         <div className="text-[17px] font-black text-[#0F2050]">{bloco.value}</div>
@@ -170,13 +177,13 @@ export function BlocoMeta({ bloco }: { bloco: MetaBlock }) {
 export function BlocoBar({ bloco }: { bloco: BarBlock }) {
   return (
     <div className="rounded-[18px] border border-[#F8E7B4] bg-[#FEF7E0] px-[18px] py-4">
-      <div className="mb-1 text-[12px] font-extrabold tracking-[0.08em] text-[#B67F0C]">
+      <div className="mb-1 fs-rotulo font-extrabold tracking-[0.08em] text-[#B67F0C]">
         {bloco.label}
       </div>
       <div className="mb-2.5 text-[19px] font-black text-[#0F8F7A]">{bloco.value}</div>
       <div
         role="img"
-        aria-label={`${bloco.label}: ${bloco.value} — ${bloco.pct}`}
+        aria-label={`${bloco.label}: ${bloco.value}, ${bloco.pct}`}
         className="h-2.5 overflow-hidden rounded-pill bg-[#EFE6CC]"
       >
         <div className="h-full rounded-pill bg-teal" style={{ width: bloco.pct }} />

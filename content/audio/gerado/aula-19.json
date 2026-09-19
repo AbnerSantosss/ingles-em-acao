@@ -1,0 +1,93 @@
+{
+  "aula": 19,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_019_audio_001",
+        "alvo": "texto",
+        "ancora": "Do they live here?",
+        "texto": "Do they live here?",
+        "src": "/audio/aula-19/lesson_019_audio_001.c7327cf8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_019_audio_002",
+        "alvo": "texto",
+        "ancora": "Does she study English?",
+        "texto": "Does she study English?",
+        "src": "/audio/aula-19/lesson_019_audio_002.19cc4b07.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_019_audio_003",
+        "alvo": "texto",
+        "ancora": "Do they study English?",
+        "texto": "Do they study English?",
+        "src": "/audio/aula-19/lesson_019_audio_003.3fc6b96c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_019_audio_004",
+        "alvo": "texto",
+        "ancora": "Does she speak French?",
+        "texto": "Does she speak French?",
+        "src": "/audio/aula-19/lesson_019_audio_004.e03bec82.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_005",
+        "alvo": "texto",
+        "ancora": "Where do you live?",
+        "texto": "Where do you live?",
+        "src": "/audio/aula-19/lesson_019_audio_005.33ff0c53.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_006",
+        "alvo": "texto",
+        "ancora": "What do you do?",
+        "texto": "What do you do?",
+        "src": "/audio/aula-19/lesson_019_audio_006.3099eba3.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_007",
+        "alvo": "texto",
+        "ancora": "When does she study?",
+        "texto": "When does she study?",
+        "src": "/audio/aula-19/lesson_019_audio_007.0f165fef.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_008",
+        "alvo": "texto",
+        "ancora": "How do you go to work?",
+        "texto": "How do you go to work?",
+        "src": "/audio/aula-19/lesson_019_audio_008.0c67b16c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

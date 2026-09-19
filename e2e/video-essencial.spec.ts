@@ -1,12 +1,12 @@
 /**
- * Videoaula e plano (BACKOFFICE §2.6, CONTRACT §3): o Essencial não recebe o
+ * Videoaula e plano (BACKOFFICE §2.6, CONTRACT §3): o WSA Essencial não recebe o
  * endereço do vídeo — nem no HTML, nem no payload RSC da navegação no cliente.
  * Ele vê a chamada de upgrade no lugar do player.
  *
  * Nenhuma aula do seed tem vídeo, então o teste aponta a Aula 02 para um vídeo
  * do YouTube de mentira (`A1e2eVideo0`) direto no banco de dev e devolve os
- * campos como estavam no `afterAll`. O controle positivo (Plano Completo vê o
- * player com esse id) garante que a ausência no Essencial não é só "a aula
+ * campos como estavam no `afterAll`. O controle positivo (o WSA Premium vê o
+ * player com esse id) garante que a ausência no WSA Essencial não é só "a aula
  * ficou sem vídeo".
  */
 import { expect, test, type Page, type Response } from '@playwright/test';
@@ -30,7 +30,7 @@ const ID_DO_VIDEO = 'A1e2eVideo0';
  * "não incluída" chegaria como "nÃ£o incluÃ­da". Nada acentuado nas buscas em
  * corpo de resposta.
  */
-const MARCA_DA_CHAMADA = 'A videoaula faz parte do Plano Completo';
+const MARCA_DA_CHAMADA = 'A videoaula faz parte do WSA Premium';
 
 let foto: FotoDaAula | null = null;
 
@@ -71,9 +71,9 @@ function capturarCorpos(page: Page, baseURL: string): { corpos: () => Promise<st
   return { corpos: () => Promise.all(pendentes) };
 }
 
-test('Plano Completo (controle): a Aula 02 mostra o player com o vídeo configurado', async ({ page }) => {
+test('WSA Premium (controle): a Aula 02 mostra o player com o vídeo configurado', async ({ page }) => {
   await bloquearPlayers(page);
-  await entrarComo(page, 'ALUNO COMPLETO');
+  await entrarComo(page, 'ENTRAR COMO ALUNO');
 
   const resposta = await page.goto(AULA_02);
   expect(resposta?.status()).toBe(200);
@@ -86,7 +86,7 @@ test('Plano Completo (controle): a Aula 02 mostra o player com o vídeo configur
   );
 });
 
-test('Essencial: a Aula 02 não entrega o endereço do vídeo (HTML e RSC)', async ({ page, baseURL }) => {
+test('WSA Essencial: a Aula 02 não entrega o endereço do vídeo (HTML e RSC)', async ({ page, baseURL }) => {
   await bloquearPlayers(page);
   await entrarComo(page, 'ALUNO ESSENCIAL');
 

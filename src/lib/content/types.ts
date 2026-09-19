@@ -540,7 +540,7 @@ export interface CtaBlock {
   items: CtaItem[]
 }
 
-/** Chamada: `play` é videoaula (Plano Completo), `mic` é prática oral com IA (Plano Premium). */
+/** Chamada: `play` é videoaula, `mic` é prática oral com IA. Os dois são do WSA Premium. */
 export interface CtaItem {
   icon: 'play' | 'mic'
   title: string
@@ -600,9 +600,49 @@ export type Block = StaticBlock | InteractiveBlock
 /** O literal do campo `t` de qualquer bloco — útil para mapas de renderizadores. */
 export type BlockType = Block['t']
 
+/** Função pedagógica do áudio (prompt-mestre de áudios, seção 18). */
+export type CategoriaDeAudio =
+  | 'VOCABULARY_PRONUNCIATION'
+  | 'GRAMMAR_IN_CONTEXT'
+  | 'FIXED_CHUNK'
+  | 'DIALOGUE'
+  | 'TEXT_LISTENING'
+  | 'LISTENING_PRACTICE'
+  | 'PRONUNCIATION_MODEL'
+
+/** Um áudio de uma página da aula. */
+export interface AudioClip {
+  /** "lesson_005_audio_003". Único no curso inteiro. */
+  id: string
+  /**
+   * 'texto' → botão de ouvir ao lado de UMA frase ou palavra.
+   * 'bloco' → um player para o bloco inteiro (diálogo completo, "ouvir todos" de uma lista).
+   */
+  alvo: 'texto' | 'bloco'
+  /**
+   * O texto EXIBIDO na tela que recebe o botão, caractere por caractere.
+   * Para `alvo: 'bloco'`, é o texto do PRIMEIRO item do bloco (primeira fala do diálogo,
+   * primeira palavra da lista).
+   */
+  ancora: string
+  /**
+   * Transcrição literal do que é falado. Pode diferir da âncora: a tela mostra "HE", o áudio
+   * diz "he"; a tela mostra "Yes, I am. / No, I’m not.", o áudio diz as duas frases.
+   * Em diálogo, as falas vêm separadas por "\n".
+   */
+  texto: string
+  /** Caminho público: "/audio/aula-05/lesson_005_audio_003.1a2b3c4d.mp3". */
+  src: string
+  categoria: CategoriaDeAudio
+  /** `true` → o botão "ouvir mais devagar" aparece (reprodução a 80%, mesmo arquivo). */
+  lento?: boolean
+}
+
 /** Uma página da aula: unidade de navegação e de progresso (`LessonProgress.currentPage`). */
 export interface LessonPage {
   blocks: Block[]
+  /** Áudios da página. Ausente ou vazio → a página não tem áudio. */
+  audios?: AudioClip[]
 }
 
 /** Uma aula como vem do `course-data.mjs` — a forma crua, sem os campos derivados. */

@@ -82,7 +82,7 @@ function AnelDeProgresso({ pct, done, total }: { pct: number; done: number; tota
     <div
       className="relative h-[150px] w-[150px] flex-none"
       role="img"
-      aria-label={`${percentual}% da trilha concluída — ${done} de ${total} aulas`}
+      aria-label={`${percentual}% da trilha concluída, ${done} de ${total} aulas`}
     >
       {/* Mesmo `href` do ProgressRing: o React deduplica a folha no <head>. */}
       <style href="iea-anel-entrada" precedence="default">
@@ -129,7 +129,7 @@ function faixaDeAulas(aulas: readonly ResumoPublicado[]): string {
   if (primeiro === undefined || ultimo === undefined) return '';
   if (numeros.length === 1) return `Aula ${primeiro}`;
   const seguidos = numeros.every((n, i) => n === primeiro + i);
-  return seguidos ? `Aulas ${primeiro}–${ultimo}` : `Aulas ${numeros.join(', ')}`;
+  return seguidos ? `Aulas ${primeiro} a ${ultimo}` : `Aulas ${numeros.join(', ')}`;
 }
 
 /** Aula concluída com placar — o que a seção "Desempenho por aula" lista. */
@@ -273,7 +273,7 @@ export default async function ProgressoPage() {
         </h2>
         {desempenho.length === 0 ? (
           <p className="m-0 text-[16px] leading-snug text-[#5B6B7F]">
-            Conclua uma aula com exercícios e os seus acertos aparecem aqui — o placar de cada
+            Conclua uma aula com exercícios e os seus acertos aparecem aqui: o placar de cada
             aula, do jeito que ficou ao terminar.
           </p>
         ) : (
@@ -289,12 +289,12 @@ export default async function ProgressoPage() {
                   <li key={aula.id} className="border-t border-solid border-[#EEF2F8]">
                     <Link
                       href={`/aula/${aula.slug}/resultado`}
-                      aria-label={`${aula.code} — ${aula.title}: ${acertos} de ${totalDaAula} acertos (${percentual}%)`}
+                      aria-label={`${aula.code}, ${aula.title}: ${acertos} de ${totalDaAula} acertos (${percentual}%)`}
                       className="-mx-2 block rounded-[12px] px-2 py-3.5 transition-colors hover:bg-[#F5F8FC]"
                     >
                       <span className="mb-2.5 flex flex-wrap items-baseline justify-between gap-3">
                         <span className="text-[18px] font-extrabold text-[#0A1F4E]">
-                          {aula.code} — {aula.title}
+                          {aula.code}: {aula.title}
                         </span>
                         <span className="text-[16px] font-extrabold" style={{ color: cor }}>
                           {acertos}/{totalDaAula}

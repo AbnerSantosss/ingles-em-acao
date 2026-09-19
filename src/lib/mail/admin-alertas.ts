@@ -93,7 +93,6 @@ export type AlertaDeCheckout = {
 
 const ROTULO_DO_PLANO: Record<Plan, string> = {
   ESSENCIAL: 'Essencial',
-  COMPLETO: 'Completo',
   PREMIUM: 'Premium',
 };
 
@@ -157,7 +156,8 @@ async function despachar(
     return { enviado: false, destinatarios: 0, falhas: 0, motivo: 'nenhum admin cadastrado' };
   }
 
-  const html = layoutEmail({ assunto, preheader, conteudo, publico: 'painel' });
+  const { appUrl } = await ambienteDeEmail();
+  const html = layoutEmail({ assunto, preheader, conteudo, publico: 'painel', appUrl });
   let falhas = 0;
   let ultimoErro = '';
 
@@ -226,7 +226,7 @@ export async function alertarMudancaDePlano(dados: AlertaDePlano): Promise<Resul
       separador(),
       botao({ href: link, rotulo: 'Abrir o aluno no painel' }),
       aviso(
-        'Mudança de plano não cobra e não estorna nada — ela só muda o acesso. ' +
+        'Mudança de plano não cobra e não estorna nada. Ela só muda o acesso. ' +
           'A cobrança continua sendo assunto do checkout.',
       ),
     ].join('');

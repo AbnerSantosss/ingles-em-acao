@@ -173,7 +173,7 @@ async function registrarImagem(
     return {
       ok: false,
       estado: falha(conferencia.mensagem, {
-        arquivo: `Arquivo recusado — só ${FORMATOS_EM_TEXTO}, até ${formatarBytes(TAMANHO_MAXIMO_IMAGEM)}.`,
+        arquivo: `Arquivo recusado: só ${FORMATOS_EM_TEXTO}, até ${formatarBytes(TAMANHO_MAXIMO_IMAGEM)}.`,
       }),
     };
   }
@@ -424,7 +424,7 @@ export async function arquivarMidiaAction(
     });
 
     revalidar();
-    return sucesso(`"${item.filename}" foi arquivada. Nada foi apagado — dá para restaurar.`);
+    return sucesso(`"${item.filename}" foi arquivada. Nada foi apagado e dá para restaurar.`);
   } catch (erro: unknown) {
     return erroInesperado('arquivar', erro);
   }

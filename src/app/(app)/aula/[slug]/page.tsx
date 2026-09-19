@@ -1,7 +1,7 @@
 /**
  * O leitor da aula. Server Component: confere a sessão, carrega a aula
  * **publicada** e as respostas/progresso do banco, e entrega tudo pronto ao
- * cliente — que a partir daí vira páginas sem ir ao servidor de novo.
+ * cliente, que a partir daí vira páginas sem ir ao servidor de novo.
  *
  * A aula inteira vai junto de propósito: são 5 a 12 páginas, e paginar pelo
  * servidor trocaria uma virada instantânea por um ida-e-volta de rede a cada
@@ -9,7 +9,7 @@
  *
  * ⚠️ **A porta de leitura é `@/lib/content/publicado`, não `content/lessons`.**
  * É ela que aplica as três regras: linha publicada manda; linha inexistente cai
- * no conteúdo estático; linha despublicada ou arquivada é 404 — nunca um
+ * no conteúdo estático; linha despublicada ou arquivada é 404, nunca um
  * silencioso retorno ao estático, que faria "despublicar" não despublicar nada.
  */
 import { cache } from 'react';
@@ -23,6 +23,7 @@ import { lerLinksDeCompra } from '@/lib/admin/settings';
 import { requireUser } from '@/lib/auth/session';
 import { carregarAulaPublicadaPorSlug } from '@/lib/content/publicado';
 import { carregarProgressoDaAula, carregarRespostasDaAula } from '@/lib/lesson/respostas';
+import { promptDaAula } from '@/lib/pratica/servidor';
 import { ID_DA_VIDEOAULA, planoVeVideoaula } from '@/lib/video/acesso';
 import { renovarVideoDaAulaAction } from '@/lib/video/acoes';
 import { assinarVideoEnviado, carregarVideoDaAula } from '@/lib/video/aula';
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: ParametrosDaAula): Promise<Me
   const publicada = await carregarAula(slug);
   return {
     title: publicada
-      ? `${publicada.resumo.code} — ${publicada.resumo.title}`
+      ? `${publicada.resumo.code} · ${publicada.resumo.title}`
       : 'Aula não encontrada',
   };
 }
@@ -65,13 +66,17 @@ export default async function AulaPage({ params }: ParametrosDaAula) {
   const { aula, resumo } = publicada;
 
   // Links de compra: nunca jogam (sem banco, os botões de compra só somem).
-  // Com o webhook de pagamento ligado, levam a referência opaca do aluno — é
+  // Com o webhook de pagamento ligado, levam a referência opaca do aluno: é
   // por ela que a compra volta para esta conta (`@/lib/pagamento`).
-  const [respostas, progresso, video, compra] = await Promise.all([
+  // Prática com IA: o prompt é montado aqui, no servidor, e desce pronto até o
+  // cartão do fim da aula. Sem o plano vem só `sem-plano`, e o texto do prompt
+  // nunca sai do servidor. `aula.id` é o NÚMERO da aula. `promptDaAula` nunca joga.
+  const [respostas, progresso, video, compra, pratica] = await Promise.all([
     carregarRespostasDaAula(usuario.id, aula.id),
     carregarProgressoDaAula(usuario.id, aula.id, aula.pages.length),
     carregarVideoDaAula(aula.id),
     lerLinksDeCompra(usuario.id),
+    promptDaAula(aula.id, usuario.plan),
   ]);
 
   // Arquivo enviado: o link de 15 minutos é assinado aqui, e **só** para quem
@@ -83,45 +88,41 @@ export default async function AulaPage({ params }: ParametrosDaAula) {
       : null;
 
   // O painel aparece? Arquivo enviado que não conseguiu link some para quem tem
-  // o plano (o painel devolve null) — e aí o `cta` não pode mandar o aluno para
+  // o plano (o painel devolve null), e aí o `cta` não pode mandar o aluno para
   // um player que não está na tela.
   const videoNaTela =
     video !== null &&
     (video.fonte.kind !== 'upload' || !planoVeVideoaula(usuario.plan) || linkDoArquivo !== null);
 
-  // Aula concluída abre do começo — REVISAR no resultado e a trilha levam à
+  // Aula concluída abre do começo: REVISAR no resultado e a trilha levam à
   // página 1, como no design do Claude Designer (`onReviewLesson` → page: 0).
   // A concluída grava `currentPage` na última página; retomar de onde parou
   // só vale para aula em andamento.
   const paginaInicial = progresso.status === 'COMPLETED' ? 0 : progresso.currentPage;
 
-  // Coluna do leitor (design do Claude Designer): 820px com 20px de respiro de
-  // cada lado — 780px de conteúdo. A `.tela` do layout já dá os 20px no
-  // desktop, então aqui só se estreita e centraliza. No celular, nada muda.
-  return (
-    <div className="lg:mx-auto lg:max-w-[780px]">
-      {/*
-        Videoaula desta aula (BACKOFFICE §2.6). Aula sem vídeo não mostra nada;
-        quem não tem o Plano Completo recebe a chamada de upgrade em vez do
-        player — as duas regras moram no próprio painel.
-      */}
-      {video ? (
-        <div id={ID_DA_VIDEOAULA} className="mb-4 scroll-mt-4">
-          <PainelDeVideo
-            fonte={video.fonte}
-            plano={usuario.plan}
-            legenda={`${resumo.code} · ${resumo.title}`}
-            titulo={`Videoaula — ${resumo.code}: ${resumo.title}`}
-            arquivo={
-              linkDoArquivo
-                ? { inicial: linkDoArquivo, renovar: renovarVideoDaAulaAction.bind(null, aula.id) }
-                : undefined
-            }
-            linkDeCompra={compra.COMPLETO}
-          />
-        </div>
-      ) : null}
+  // Videoaula desta aula (BACKOFFICE §2.6). Aula sem vídeo não mostra nada;
+  // quem não tem o WSA Premium recebe a chamada de upgrade em vez do player,
+  // e as duas regras moram no próprio painel. O painel entra pela prop
+  // `videoaula` e rola junto com o miolo do leitor (casca da aula, pacote 05).
+  const videoaula = video ? (
+    <div id={ID_DA_VIDEOAULA} className="scroll-mt-4">
+      <PainelDeVideo
+        fonte={video.fonte}
+        plano={usuario.plan}
+        legenda={`${resumo.code} · ${resumo.title}`}
+        titulo={`Videoaula ${resumo.code}: ${resumo.title}`}
+        arquivo={
+          linkDoArquivo
+            ? { inicial: linkDoArquivo, renovar: renovarVideoDaAulaAction.bind(null, aula.id) }
+            : undefined
+        }
+        linkDeCompra={compra.PREMIUM}
+      />
+    </div>
+  ) : null;
 
+  return (
+    <>
       <ProvedorPersistente
         iniciais={respostas.valores}
         conferidos={respostas.conferidos}
@@ -135,10 +136,12 @@ export default async function AulaPage({ params }: ParametrosDaAula) {
           plano={usuario.plan}
           temVideoaula={videoNaTela}
           linksDeCompra={compra}
+          pratica={pratica}
+          videoaula={videoaula}
           aoVirarPagina={salvarPaginaAction.bind(null, slug)}
           aoConcluir={concluirAulaAction.bind(null, slug)}
         />
       </ProvedorPersistente>
-    </div>
+    </>
   );
 }

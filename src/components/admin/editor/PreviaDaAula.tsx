@@ -122,7 +122,7 @@ export function PreviaDaAula({
                       className="rounded-field border-[1.5px] border-dashed px-3 py-4 text-center text-[13px] font-extrabold"
                       style={{ borderColor: '#F9D3D9', background: '#FEF0F2', color: '#B21F31' }}
                     >
-                      Bloco {i + 1} com erro — corrija o JSON para ver aqui.
+                      Bloco {i + 1} com erro. Corrija o JSON para ver aqui.
                     </div>
                   ) : (
                     <div key={`${atual}-${i}`}>

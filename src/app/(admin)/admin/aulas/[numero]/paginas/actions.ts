@@ -284,7 +284,7 @@ export async function publicarRascunhoAction(
     }
     if (resultado.midias === null) {
       partes.push(
-        'Atenção: o índice de uso de mídia não foi atualizado — publique de novo mais tarde ou avise o suporte.',
+        'Atenção: o índice de uso de mídia não foi atualizado. Publique de novo mais tarde ou avise o suporte.',
       );
     }
     if (!aula.published) {

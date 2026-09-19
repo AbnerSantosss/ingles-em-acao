@@ -59,7 +59,7 @@ export function ProgressRing({
     <div
       className={cn('flex flex-col items-center gap-2', className)}
       role="img"
-      aria-label={`${percentual}% da trilha concluída — ${done} de ${total} aulas`}
+      aria-label={`${percentual}% da trilha concluída, ${done} de ${total} aulas`}
     >
       {/*
         Keyframes locais do componente. O React 19 move esta folha para o

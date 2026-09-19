@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
-import { Logo } from '@/components/ui/Logo';
+import { LogoWSA } from '@/components/ui/LogoWSA';
 
 /** Caixa de contato citada nos textos legais e no rodapé da landing. */
 export const EMAIL_DE_CONTATO = 'contato@wsaenglish.com.br';
@@ -30,9 +30,9 @@ export function PaginaLegal({ titulo, atualizadoEm, introducao, children }: Pagi
       </a>
 
       <header className="border-b border-border bg-surface">
-        <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <Link href="/" aria-label="Inglês em Ação — página inicial" className="inline-flex min-h-11 items-center">
-            <Logo size={40} />
+        <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:py-5">
+          <Link href="/" aria-label="WSA English, página inicial" className="inline-flex min-h-11 items-center">
+            <LogoWSA fundo="claro" altura={40} compacta className="h-8! lg:h-10!" />
           </Link>
           <Link
             href="/entrar"

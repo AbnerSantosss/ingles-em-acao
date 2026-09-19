@@ -1,0 +1,60 @@
+{
+  "aula": 30,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_030_audio_001",
+        "alvo": "texto",
+        "ancora": "driver",
+        "texto": "driver",
+        "src": "/audio/aula-30/lesson_030_audio_001.b29ef2a1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_030_audio_002",
+        "alvo": "texto",
+        "ancora": "salesperson",
+        "texto": "salesperson",
+        "src": "/audio/aula-30/lesson_030_audio_002.c09fdbcb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_030_audio_003",
+        "alvo": "texto",
+        "ancora": "lawyer",
+        "texto": "lawyer",
+        "src": "/audio/aula-30/lesson_030_audio_003.f2fed4b0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_030_audio_004",
+        "alvo": "texto",
+        "ancora": "student",
+        "texto": "student",
+        "src": "/audio/aula-30/lesson_030_audio_004.5608f4d1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_030_audio_005",
+        "alvo": "texto",
+        "ancora": "I work in a school.",
+        "texto": "I work in a school.",
+        "src": "/audio/aula-30/lesson_030_audio_005.00747a7e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

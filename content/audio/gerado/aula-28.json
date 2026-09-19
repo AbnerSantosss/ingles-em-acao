@@ -1,0 +1,148 @@
+{
+  "aula": 28,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_001",
+        "alvo": "texto",
+        "ancora": "t-shirt",
+        "texto": "t-shirt",
+        "src": "/audio/aula-28/lesson_028_audio_001.b5aa50a9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_002",
+        "alvo": "texto",
+        "ancora": "pants",
+        "texto": "pants",
+        "src": "/audio/aula-28/lesson_028_audio_002.dab306d9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_003",
+        "alvo": "texto",
+        "ancora": "jeans",
+        "texto": "jeans",
+        "src": "/audio/aula-28/lesson_028_audio_003.f7c9f3b7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_004",
+        "alvo": "texto",
+        "ancora": "dress",
+        "texto": "dress",
+        "src": "/audio/aula-28/lesson_028_audio_004.f0f13972.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_005",
+        "alvo": "texto",
+        "ancora": "skirt",
+        "texto": "skirt",
+        "src": "/audio/aula-28/lesson_028_audio_005.c955c48b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_006",
+        "alvo": "texto",
+        "ancora": "shoes",
+        "texto": "shoes",
+        "src": "/audio/aula-28/lesson_028_audio_006.79f7608d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_007",
+        "alvo": "texto",
+        "ancora": "socks",
+        "texto": "socks",
+        "src": "/audio/aula-28/lesson_028_audio_007.67236a4b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_008",
+        "alvo": "texto",
+        "ancora": "jacket",
+        "texto": "jacket",
+        "src": "/audio/aula-28/lesson_028_audio_008.bb21eafd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_009",
+        "alvo": "texto",
+        "ancora": "coat",
+        "texto": "coat",
+        "src": "/audio/aula-28/lesson_028_audio_009.9d8cc39c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_010",
+        "alvo": "texto",
+        "ancora": "hat",
+        "texto": "hat",
+        "src": "/audio/aula-28/lesson_028_audio_010.c3c975d1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_011",
+        "alvo": "texto",
+        "ancora": "shorts",
+        "texto": "shorts",
+        "src": "/audio/aula-28/lesson_028_audio_011.552015f7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_028_audio_012",
+        "alvo": "texto",
+        "ancora": "She wears glasses.",
+        "texto": "She wears glasses.",
+        "src": "/audio/aula-28/lesson_028_audio_012.97e672f6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_028_audio_013",
+        "alvo": "texto",
+        "ancora": "He is wearing a blue shirt.",
+        "texto": "He is wearing a blue shirt.",
+        "src": "/audio/aula-28/lesson_028_audio_013.92604349.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

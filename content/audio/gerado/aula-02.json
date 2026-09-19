@@ -1,0 +1,138 @@
+{
+  "aula": 2,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_002_audio_001",
+        "alvo": "texto",
+        "ancora": "I am ready.",
+        "texto": "I am ready.",
+        "src": "/audio/aula-02/lesson_002_audio_001.d5e6ff22.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_002_audio_002",
+        "alvo": "texto",
+        "ancora": "She is happy.",
+        "texto": "She is happy.",
+        "src": "/audio/aula-02/lesson_002_audio_002.6ae35129.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_002_audio_003",
+        "alvo": "texto",
+        "ancora": "They are friends.",
+        "texto": "They are friends.",
+        "src": "/audio/aula-02/lesson_002_audio_003.e5df2c0f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_004",
+        "alvo": "texto",
+        "ancora": "I’m",
+        "texto": "I'm",
+        "src": "/audio/aula-02/lesson_002_audio_004.63486682.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_005",
+        "alvo": "texto",
+        "ancora": "You’re",
+        "texto": "You're",
+        "src": "/audio/aula-02/lesson_002_audio_005.f10be0c4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_006",
+        "alvo": "texto",
+        "ancora": "He’s",
+        "texto": "He's",
+        "src": "/audio/aula-02/lesson_002_audio_006.fdb1e807.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_007",
+        "alvo": "texto",
+        "ancora": "She’s",
+        "texto": "She's",
+        "src": "/audio/aula-02/lesson_002_audio_007.2dfac7be.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_008",
+        "alvo": "texto",
+        "ancora": "It’s",
+        "texto": "It's",
+        "src": "/audio/aula-02/lesson_002_audio_008.56fb377b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_009",
+        "alvo": "texto",
+        "ancora": "We’re",
+        "texto": "We're",
+        "src": "/audio/aula-02/lesson_002_audio_009.b24c83e4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_002_audio_010",
+        "alvo": "texto",
+        "ancora": "They’re",
+        "texto": "They're",
+        "src": "/audio/aula-02/lesson_002_audio_010.5254b10a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_002_audio_011",
+        "alvo": "texto",
+        "ancora": "I am Brazilian.",
+        "texto": "I am Brazilian.",
+        "src": "/audio/aula-02/lesson_002_audio_011.10669a63.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_002_audio_012",
+        "alvo": "texto",
+        "ancora": "He is a doctor.",
+        "texto": "He is a doctor.",
+        "src": "/audio/aula-02/lesson_002_audio_012.6d48baa7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

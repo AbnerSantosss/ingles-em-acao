@@ -1,0 +1,93 @@
+{
+  "aula": 6,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_006_audio_001",
+        "alvo": "texto",
+        "ancora": "I’m from Brazil.",
+        "texto": "I'm from Brazil.",
+        "src": "/audio/aula-06/lesson_006_audio_001.078f0473.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_006_audio_002",
+        "alvo": "texto",
+        "ancora": "She’s from Japan.",
+        "texto": "She's from Japan.",
+        "src": "/audio/aula-06/lesson_006_audio_002.37e1658d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_003",
+        "alvo": "texto",
+        "ancora": "I’m from Brazil.  =  I’m Brazilian.",
+        "texto": "I'm from Brazil. I'm Brazilian.",
+        "src": "/audio/aula-06/lesson_006_audio_003.2684e1b1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_004",
+        "alvo": "texto",
+        "ancora": "Where are you from?",
+        "texto": "Where are you from?",
+        "src": "/audio/aula-06/lesson_006_audio_004.0a744f7a.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_005",
+        "alvo": "texto",
+        "ancora": "He’s Italian.",
+        "texto": "He's Italian.",
+        "src": "/audio/aula-06/lesson_006_audio_005.10af2c5b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_006",
+        "alvo": "texto",
+        "ancora": "Egypt → Egyptian",
+        "texto": "Egypt. Egyptian",
+        "src": "/audio/aula-06/lesson_006_audio_006.d453b2a2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_007",
+        "alvo": "texto",
+        "ancora": "Ireland → Irish",
+        "texto": "Ireland. Irish",
+        "src": "/audio/aula-06/lesson_006_audio_007.ee9880f8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_008",
+        "alvo": "texto",
+        "ancora": "Portugal → Portuguese",
+        "texto": "Portugal. Portuguese",
+        "src": "/audio/aula-06/lesson_006_audio_008.37cf1210.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

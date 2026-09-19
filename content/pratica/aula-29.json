@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Descrever o tempo com \"It's sunny.\" e \"It's raining.\" e nomear as quatro estações do ano.",
+  "conteudoAlvo": [
+    "sunny, cloudy, rainy, windy, hot, warm, cold, cool",
+    "snowing, spring, summer, fall, autumn, winter",
+    "It's + ___, It's + ___ing"
+  ],
+  "expressoesFixas": [
+    "What's the weather like today?"
+  ],
+  "comoIntegrar": [
+    "Misture o tempo com os advérbios de frequência que já sei: \"It's always hot in summer.\"",
+    "Use o presente contínuo que já sei para o tempo de agora: \"It's raining now.\""
+  ],
+  "regrasDaAula": [
+    "Para falar do tempo, o sujeito é sempre \"it\": \"It's sunny.\", \"It's raining.\""
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual destas palavras fala de frio: \"hot\", \"cold\" ou \"sunny\"?",
+      "respostaDeReferencia": "cold"
+    },
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a frase certa: \"It's rain.\" ou \"It's raining.\"?",
+      "respostaDeReferencia": "It's raining."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com a palavra de frio: \"In winter, it's ___.\"",
+      "respostaDeReferencia": "In winter, it's cold."
+    }
+  ],
+  "limites": [
+    "Só as palavras de tempo da aula: sem \"foggy\", \"stormy\" nem temperatura em graus.",
+    "Sem o passado (\"It was cold.\"): o tempo fica sempre no presente."
+  ],
+  "primeiraQuestao": "Vamos começar pelo sol. Complete: \"It's ___.\" (está ensolarado). Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "\"It's\" + adjetivo: \"It's sunny.\", \"It's cloudy.\", \"It's cold.\", \"It's hot.\"",
+    "\"It's\" + \"-ing\": \"It's raining.\", \"It's snowing.\"",
+    "Estações: \"spring\", \"summer\", \"fall\" ou \"autumn\", \"winter\"."
+  ],
+  "resumoCurto": "Tempo e estações: \"It's sunny.\", \"It's raining.\", \"spring\", \"summer\", \"fall\", \"winter\"."
+}

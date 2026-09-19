@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Pipeline de áudio: Python e modelos, nada para o ESLint ler.
+    "scripts/audio/.venv/**",
+    "scripts/audio/modelos/**",
   ]),
 ]);
 

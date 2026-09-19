@@ -140,7 +140,7 @@ export function ExcluirConta({ administrador }: { administrador: boolean }) {
           <Lista
             titulo="O que fica, e por quê"
             itens={[
-              'O registro das suas compras, sem o seu nome nem o seu e-mail — é obrigação fiscal.',
+              'O registro das suas compras, sem o seu nome nem o seu e-mail (é obrigação fiscal).',
               'O registro deste pedido de exclusão, para comprovar que ele foi atendido.',
             ]}
           />

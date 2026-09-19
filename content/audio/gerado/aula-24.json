@@ -1,0 +1,71 @@
+{
+  "aula": 24,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_024_audio_001",
+        "alvo": "texto",
+        "ancora": "She can speak English.",
+        "texto": "She can speak English.",
+        "src": "/audio/aula-24/lesson_024_audio_001.d133e095.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_024_audio_002",
+        "alvo": "texto",
+        "ancora": "He can’t drive.",
+        "texto": "He can't drive.",
+        "src": "/audio/aula-24/lesson_024_audio_002.03c3b44b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_024_audio_003",
+        "alvo": "texto",
+        "ancora": "Yes, I can. / No, I can’t.",
+        "texto": "Yes, I can. No, I can't.",
+        "src": "/audio/aula-24/lesson_024_audio_003.a70e8ab4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_004",
+        "alvo": "texto",
+        "ancora": "I can cook.",
+        "texto": "I can cook.",
+        "src": "/audio/aula-24/lesson_024_audio_004.3df3a4a5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_005",
+        "alvo": "texto",
+        "ancora": "Can I go out?",
+        "texto": "Can I go out?",
+        "src": "/audio/aula-24/lesson_024_audio_005.0f4571b3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_006",
+        "alvo": "texto",
+        "ancora": "Can you help me?",
+        "texto": "Can you help me?",
+        "src": "/audio/aula-24/lesson_024_audio_006.d1172e81.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    }
+  ]
+}

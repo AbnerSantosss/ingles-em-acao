@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer os dias da semana, os meses e datas simples, com \"on\" para dias e \"in\" para meses.",
+  "conteudoAlvo": [
+    "Monday, Tuesday, Wednesday, Thursday, Friday",
+    "Saturday, Sunday, weekend, weekdays, birthday",
+    "January, February, March, April, May, June, July",
+    "on Monday, in July, The class is on May 3rd."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"my\" da Aula 07 e os números da Aula 08: \"My birthday is in July.\"",
+    "Misture dias e meses nas questões e me faça escolher entre \"on\" e \"in\"."
+  ],
+  "regrasDaAula": [
+    "\"on\" com dia da semana ou data exata (\"on Monday\"); \"in\" com mês (\"in July\")."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"in\" ou \"on\": \"___ March\".",
+      "respostaDeReferencia": "in March"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com a preposição: \"I study ___ Saturday.\"",
+      "respostaDeReferencia": "I study on Saturday."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Meu aniversário é em maio.",
+      "respostaDeReferencia": "My birthday is in May."
+    }
+  ],
+  "limites": [
+    "Sem horas e sem outros verbos além de \"study\": ainda não estudei.",
+    "Sem \"favorite\", sem \"at\" e sem perguntas com \"when\" ou \"what day\"."
+  ],
+  "primeiraQuestao": "Vamos começar pela semana. Como se diz segunda-feira em inglês?",
+  "resumoAutorizado": [
+    "Dias: \"Monday\", \"Tuesday\", \"Friday\", \"Sunday\"; \"weekend\" e \"weekdays\".",
+    "Meses: \"January\", \"March\", \"May\", \"July\", \"December\"; \"birthday\".",
+    "\"I study on Monday.\", \"My birthday is in July.\", \"The class is on May 3rd.\""
+  ],
+  "resumoCurto": "Dias da semana e meses com maiúscula, \"on Monday\", \"in July\" e datas como \"on May 3rd\"."
+}

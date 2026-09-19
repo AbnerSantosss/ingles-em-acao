@@ -1,0 +1,427 @@
+{
+  "aula": 36,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_036_audio_001",
+        "alvo": "texto",
+        "ancora": "BREAKFAST · MORNING",
+        "texto": "breakfast. morning",
+        "src": "/audio/aula-36/lesson_036_audio_001.15d21cb6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_036_audio_002",
+        "alvo": "texto",
+        "ancora": "LUNCH · AFTERNOON",
+        "texto": "lunch. afternoon",
+        "src": "/audio/aula-36/lesson_036_audio_002.86b5fa77.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_036_audio_003",
+        "alvo": "texto",
+        "ancora": "DINNER · EVENING",
+        "texto": "dinner. evening",
+        "src": "/audio/aula-36/lesson_036_audio_003.c79638b8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_036_audio_004",
+        "alvo": "texto",
+        "ancora": "waffles",
+        "texto": "waffles",
+        "src": "/audio/aula-36/lesson_036_audio_004.ae1944e7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_036_audio_005",
+        "alvo": "texto",
+        "ancora": "pancakes",
+        "texto": "pancakes",
+        "src": "/audio/aula-36/lesson_036_audio_005.cc4e7ac5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_036_audio_006",
+        "alvo": "texto",
+        "ancora": "sausage",
+        "texto": "sausage",
+        "src": "/audio/aula-36/lesson_036_audio_006.b37dd061.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_036_audio_007",
+        "alvo": "texto",
+        "ancora": "cereal",
+        "texto": "cereal",
+        "src": "/audio/aula-36/lesson_036_audio_007.dbeb9382.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_036_audio_008",
+        "alvo": "texto",
+        "ancora": "I have fruit for breakfast.",
+        "texto": "I have fruit for breakfast.",
+        "src": "/audio/aula-36/lesson_036_audio_008.74a4156e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_036_audio_009",
+        "alvo": "texto",
+        "ancora": "CROISSANT",
+        "texto": "croissant",
+        "src": "/audio/aula-36/lesson_036_audio_009.2e3e63c0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_036_audio_010",
+        "alvo": "texto",
+        "ancora": "She has croissants and coffee for breakfast.",
+        "texto": "She has croissants and coffee for breakfast.",
+        "src": "/audio/aula-36/lesson_036_audio_010.690a4a5c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_036_audio_011",
+        "alvo": "texto",
+        "ancora": "A HAMBURGER BUN",
+        "texto": "a hamburger bun",
+        "src": "/audio/aula-36/lesson_036_audio_011.50724cff.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_036_audio_012",
+        "alvo": "texto",
+        "ancora": "A ROLL",
+        "texto": "a roll",
+        "src": "/audio/aula-36/lesson_036_audio_012.aa31fa96.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_036_audio_013",
+        "alvo": "texto",
+        "ancora": "FRENCH BREAD / A BAGUETTE",
+        "texto": "French bread. a baguette",
+        "src": "/audio/aula-36/lesson_036_audio_013.9cb0f448.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_036_audio_014",
+        "alvo": "texto",
+        "ancora": "carrots",
+        "texto": "carrots",
+        "src": "/audio/aula-36/lesson_036_audio_014.edc55824.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_036_audio_015",
+        "alvo": "texto",
+        "ancora": "pasta",
+        "texto": "pasta",
+        "src": "/audio/aula-36/lesson_036_audio_015.abb3b8a0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_036_audio_016",
+        "alvo": "texto",
+        "ancora": "French fries",
+        "texto": "French fries",
+        "src": "/audio/aula-36/lesson_036_audio_016.79944447.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_036_audio_017",
+        "alvo": "texto",
+        "ancora": "stroganoff",
+        "texto": "stroganoff",
+        "src": "/audio/aula-36/lesson_036_audio_017.e12e700d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_036_audio_018",
+        "alvo": "bloco",
+        "ancora": "What do you usually have for lunch?",
+        "texto": "What do you usually have for lunch?\nI usually have rice, beans and meat for lunch.",
+        "src": "/audio/aula-36/lesson_036_audio_018.a5256100.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_036_audio_019",
+        "alvo": "texto",
+        "ancora": "A BLT",
+        "texto": "a BLT",
+        "src": "/audio/aula-36/lesson_036_audio_019.bd8c2e96.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_036_audio_020",
+        "alvo": "texto",
+        "ancora": "CAKE",
+        "texto": "cake",
+        "src": "/audio/aula-36/lesson_036_audio_020.9226f5bc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_036_audio_021",
+        "alvo": "texto",
+        "ancora": "COOKIES",
+        "texto": "cookies",
+        "src": "/audio/aula-36/lesson_036_audio_021.8dbcbd8d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_036_audio_022",
+        "alvo": "texto",
+        "ancora": "PIZZA",
+        "texto": "pizza",
+        "src": "/audio/aula-36/lesson_036_audio_022.94cb9ea7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_036_audio_023",
+        "alvo": "texto",
+        "ancora": "SOUP",
+        "texto": "soup",
+        "src": "/audio/aula-36/lesson_036_audio_023.b5b86f16.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_036_audio_024",
+        "alvo": "texto",
+        "ancora": "HAMBURGER",
+        "texto": "hamburger",
+        "src": "/audio/aula-36/lesson_036_audio_024.d76ffe0f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_036_audio_025",
+        "alvo": "texto",
+        "ancora": "APPETIZERS",
+        "texto": "appetizers",
+        "src": "/audio/aula-36/lesson_036_audio_025.cab0f48f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_036_audio_026",
+        "alvo": "texto",
+        "ancora": "DESSERTS",
+        "texto": "desserts",
+        "src": "/audio/aula-36/lesson_036_audio_026.b649bcaf.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_036_audio_027",
+        "alvo": "texto",
+        "ancora": "ice cream",
+        "texto": "ice cream",
+        "src": "/audio/aula-36/lesson_036_audio_027.1d3f8b64.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_036_audio_028",
+        "alvo": "texto",
+        "ancora": "chocolate cake",
+        "texto": "chocolate cake",
+        "src": "/audio/aula-36/lesson_036_audio_028.a485401f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_036_audio_029",
+        "alvo": "texto",
+        "ancora": "pudding",
+        "texto": "pudding",
+        "src": "/audio/aula-36/lesson_036_audio_029.931a61df.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_036_audio_030",
+        "alvo": "texto",
+        "ancora": "beer",
+        "texto": "beer",
+        "src": "/audio/aula-36/lesson_036_audio_030.8b018d46.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_036_audio_031",
+        "alvo": "texto",
+        "ancora": "CHICKEN LEGS",
+        "texto": "chicken legs",
+        "src": "/audio/aula-36/lesson_036_audio_031.5ffde7b6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_036_audio_032",
+        "alvo": "texto",
+        "ancora": "CHICKEN BREAST",
+        "texto": "chicken breast",
+        "src": "/audio/aula-36/lesson_036_audio_032.1db16d2c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_036_audio_033",
+        "alvo": "texto",
+        "ancora": "GRILLED SKEWERS WITH MEAT AND VEGETABLES",
+        "texto": "grilled skewers with meat and vegetables",
+        "src": "/audio/aula-36/lesson_036_audio_033.19ec381f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_036_audio_034",
+        "alvo": "bloco",
+        "ancora": "SERVER: Are you ready to order?",
+        "texto": "Are you ready to order?\nYes. I'd like a cheeseburger, please.\nAnything to drink?\nI'd like a glass of soda, please.",
+        "src": "/audio/aula-36/lesson_036_audio_034.5cce30d2.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_036_audio_035",
+        "alvo": "bloco",
+        "ancora": "SERVER: Can I bring you anything else?",
+        "texto": "Can I bring you anything else?\nNo, thanks. Just the bill, please.",
+        "src": "/audio/aula-36/lesson_036_audio_035.1c2c9ebe.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_036_audio_036",
+        "alvo": "texto",
+        "ancora": "Could I have a glass of soda, please?",
+        "texto": "Could I have a glass of soda, please?",
+        "src": "/audio/aula-36/lesson_036_audio_036.42c83124.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_036_audio_037",
+        "alvo": "texto",
+        "ancora": "cheeseburger",
+        "texto": "cheeseburger",
+        "src": "/audio/aula-36/lesson_036_audio_037.a816fb16.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_036_audio_038",
+        "alvo": "texto",
+        "ancora": "B: No, thanks. Just the bill, please.",
+        "texto": "No, thanks. Just the bill, please.",
+        "src": "/audio/aula-36/lesson_036_audio_038.09eec3f6.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    }
+  ]
+}

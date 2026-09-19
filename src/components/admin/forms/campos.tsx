@@ -115,7 +115,7 @@ export function AvisoDeFormato({
         style={{ background: COR_AVISO.fundo, borderColor: COR_AVISO.borda, color: COR_AVISO.texto }}
       >
         Formato inesperado ({resumirValor(bruto)}). O formulário não mexe neste campo para não
-        apagar nada — corrija no modo JSON.
+        apagar nada. Corrija no modo JSON.
       </div>
       <MensagemDeErro texto={juntarErros(erros)} />
     </div>

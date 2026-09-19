@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Apresentar minha família em inglês com \"This is my ___\", os nomes dos parentes e o \"'s\" de posse.",
+  "conteudoAlvo": [
+    "my, your, his, her, mother, mom, father, dad",
+    "sister, brother, son, daughter, husband, wife",
+    "grandmother, grandfather, parents, children",
+    "siblings, This is my ___, Ana's brother"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"is\" e \"are\" da Aula 02: \"He is my brother.\", \"They are my parents.\"",
+    "Junte parente e profissão já vista: \"My sister is a doctor.\", \"Ana's father is a teacher.\""
+  ],
+  "regrasDaAula": [
+    "O dono vem primeiro: \"o irmão da Ana\" vira \"Ana's brother\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Para dizer o pai da Ana, escolha: \"Ana's father\" ou \"father's Ana\".",
+      "respostaDeReferencia": "Ana's father"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"minha\": \"This is ___ sister.\"",
+      "respostaDeReferencia": "This is my sister."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: O irmão da Ana é médico.",
+      "respostaDeReferencia": "Ana's brother is a doctor."
+    }
+  ],
+  "limites": [
+    "Sem \"its\", \"our\", \"their\" e \"name\": ainda não estudei.",
+    "Sem números e idades: só parentes, \"my\", \"your\", \"his\", \"her\" e o \"'s\"."
+  ],
+  "primeiraQuestao": "Vamos começar pela família. Como se diz mãe em inglês?",
+  "resumoAutorizado": [
+    "Parentes: \"mother\", \"father\", \"sister\", \"brother\", \"son\", \"daughter\", \"wife\".",
+    "Grupos: \"parents\", \"children\", \"siblings\"; posse: \"my\", \"your\", \"his\", \"her\".",
+    "Frases: \"This is my mother.\", \"Ana's brother is a doctor.\""
+  ],
+  "resumoCurto": "Família: parentes, \"my\", \"your\", \"his\", \"her\", \"This is my mother.\" e \"Ana's brother\"."
+}

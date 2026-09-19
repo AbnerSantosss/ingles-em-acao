@@ -143,7 +143,7 @@ export function ListaDeVersoes({
               numero={numero}
               pagina={pagina}
               aoTrocarPagina={setPagina}
-              faixa={`Versão ${carregada.version} — só visualização`}
+              faixa={`Versão ${carregada.version} · só visualização`}
             />
           ) : (
             <>

@@ -1,0 +1,57 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer meu país com \"from\" e minha nacionalidade, e perguntar a origem: \"Where are you from?\"",
+  "conteudoAlvo": [
+    "am / is / are + from + Brazil, Japan, Spain",
+    "Italy, Italian, Egypt, Egyptian, Australian",
+    "Spanish, Polish, Irish, Japanese, Portuguese",
+    "French, German, Greek, the United States, American"
+  ],
+  "expressoesFixas": [
+    "Where are you from?",
+    "Nice to meet you"
+  ],
+  "comoIntegrar": [
+    "Use as formas curtas da Aula 02 com a origem: \"I'm from Brazil.\", \"She's Japanese.\"",
+    "Misture país e nacionalidade com sujeitos diferentes e me peça para trocar um pelo outro."
+  ],
+  "regrasDaAula": [
+    "Depois de \"from\" vem o país: \"I'm from Brazil.\", nunca \"I'm from Brazilian.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a frase certa: \"She's from Japan.\" ou \"She's from Japanese.\"",
+      "respostaDeReferencia": "She's from Japan."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com a nacionalidade: \"He's from Spain. He's ___.\"",
+      "respostaDeReferencia": "He's Spanish."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda sobre você: \"Where are you from?\"",
+      "respostaDeReferencia": "I'm from Brazil."
+    }
+  ],
+  "limites": [
+    "Sem perguntas com \"what\" ou \"how\" e sem \"my\" e \"your\": ainda não estudei.",
+    "Use só os países e nacionalidades desta aula, sem nomes de línguas nem de cidades."
+  ],
+  "primeiraQuestao": "Vamos começar pelo Brasil. Complete: \"I'm from ___.\" Qual é o nome do país em inglês?",
+  "resumoAutorizado": [
+    "Origem com \"from\": \"I'm from Brazil.\", \"Where are you from?\", \"And you?\"",
+    "Finais: \"Italian\", \"Egyptian\", \"Spanish\", \"Irish\", \"Japanese\", \"Chinese\".",
+    "Fora do padrão: \"French\", \"German\", \"Greek\", \"American\"; \"Nice to meet you!\""
+  ],
+  "resumoCurto": "Países e nacionalidades: \"I'm from Brazil.\", \"I'm Brazilian.\" e a pergunta \"Where are you from?\""
+}

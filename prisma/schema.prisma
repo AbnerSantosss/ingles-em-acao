@@ -23,7 +23,6 @@ enum Role {
 
 enum Plan {
   ESSENCIAL
-  COMPLETO
   PREMIUM
 }
 
@@ -198,6 +197,10 @@ model Lesson {
   videoRef       String?
   videoIsDefault Boolean    @default(false)
   videoUpdatedAt DateTime?
+
+  /// Ficha de prática com IA (FichaDePratica, src/lib/pratica/tipos.ts). Grava direto, sem
+  /// rascunho nem LessonVersion. null = aula sem ficha.
+  practice Json?
 
   module    Module           @relation(fields: [moduleId], references: [id])
   updatedBy User?            @relation("AulasEditadas", fields: [updatedById], references: [id])

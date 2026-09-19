@@ -9,7 +9,7 @@
  * nulo e não libera nada — nunca "o plano que o payload disse".
  *
  * Guardado em `AppSetting` na chave {@link CHAVE_PRODUTOS}, no formato
- * `{ "produtos": [{ "codigo": "curso-completo", "plano": "COMPLETO" }] }`.
+ * `{ "produtos": [{ "codigo": "wsa-premium", "plano": "PREMIUM" }] }`.
  * Lista, e não objeto `{ codigo: plano }`, para que um código vindo do painel
  * nunca vire nome de propriedade (`__proto__`, `constructor`…).
  *
@@ -20,6 +20,7 @@ import type { Plan, Prisma } from '@prisma/client';
 import { z } from 'zod';
 
 import { prisma } from '@/lib/db';
+import { PLANOS } from '@/lib/planos';
 
 export const CHAVE_PRODUTOS = 'pagamento.produtos';
 
@@ -41,7 +42,7 @@ const FORMATO_DO_CODIGO = /^[A-Za-z0-9][A-Za-z0-9._:-]*$/;
 export type ProdutoMapeado = { codigo: string; plano: Plan };
 
 /** Os planos, do menor para o maior. A régua do "nunca rebaixa". */
-export const ORDEM_DOS_PLANOS: readonly Plan[] = ['ESSENCIAL', 'COMPLETO', 'PREMIUM'];
+export const ORDEM_DOS_PLANOS: readonly Plan[] = PLANOS;
 
 /** O maior entre dois planos. */
 export function maiorPlano(a: Plan, b: Plan): Plan {
@@ -57,7 +58,7 @@ export const esquemaDoCodigo = z
   .max(TAMANHO_MAXIMO_DO_CODIGO, `o código passou de ${TAMANHO_MAXIMO_DO_CODIGO} caracteres`)
   .regex(FORMATO_DO_CODIGO, 'use só letras, números e . _ : - (sem espaço)');
 
-export const esquemaDoPlano = z.enum(['ESSENCIAL', 'COMPLETO', 'PREMIUM'], {
+export const esquemaDoPlano = z.enum(['ESSENCIAL', 'PREMIUM'], {
   error: 'escolha o plano que o produto libera',
 });
 

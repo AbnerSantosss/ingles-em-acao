@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer o que existe num lugar com \"there is\" e \"there are\", e também negar e perguntar.",
+  "conteudoAlvo": [
+    "there is, there are, there's, many, any",
+    "a problem, chairs, a bank, restaurants, a TV",
+    "the kitchen, room, windows, near here",
+    "there isn't, there aren't, Is there, Are there"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use os números da Aula 08 e os plurais da Aula 12: \"There are three books.\"",
+    "Use \"my\" e \"the table\" já vistos: \"There isn't a TV in my room.\""
+  ],
+  "regrasDaAula": [
+    "Um só: \"there is\"; mais de um: \"there are\" (\"There are many people.\")."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"is\" ou \"are\": \"There ___ three books.\"",
+      "respostaDeReferencia": "There are three books."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a pergunta: \"There is a bank near here.\"",
+      "respostaDeReferencia": "Is there a bank near here?"
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Não há cadeiras.",
+      "respostaDeReferencia": "There aren't any chairs."
+    }
+  ],
+  "limites": [
+    "Sem \"sofa\", \"living room\", \"park\" e \"big\": ainda não estudei.",
+    "Sem \"on\", \"under\" e \"next to\" para lugar: só \"in\" e \"near here\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelo singular. Complete: \"___ a table in the kitchen.\" Entra \"There is\" ou \"There are\"?",
+  "resumoAutorizado": [
+    "Singular: \"There is a problem.\", \"There's a book.\", \"There isn't a TV.\"",
+    "Plural: \"There are many people.\", \"There aren't any chairs.\"",
+    "Pergunta: \"Is there a bank near here?\", \"Are there any windows?\""
+  ],
+  "resumoCurto": "\"There is\" para um, \"there are\" para mais de um, com negativa e pergunta: \"Is there a bank near here?\""
+}

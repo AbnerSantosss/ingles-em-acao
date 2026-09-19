@@ -1,0 +1,82 @@
+{
+  "aula": 20,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_020_audio_001",
+        "alvo": "texto",
+        "ancora": "always",
+        "texto": "always",
+        "src": "/audio/aula-20/lesson_020_audio_001.b6f141dc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_020_audio_002",
+        "alvo": "texto",
+        "ancora": "usually",
+        "texto": "usually",
+        "src": "/audio/aula-20/lesson_020_audio_002.b4df4d13.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_020_audio_003",
+        "alvo": "texto",
+        "ancora": "often",
+        "texto": "often",
+        "src": "/audio/aula-20/lesson_020_audio_003.6313b99a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_020_audio_004",
+        "alvo": "texto",
+        "ancora": "sometimes",
+        "texto": "sometimes",
+        "src": "/audio/aula-20/lesson_020_audio_004.7f522ec6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_020_audio_005",
+        "alvo": "texto",
+        "ancora": "never",
+        "texto": "never",
+        "src": "/audio/aula-20/lesson_020_audio_005.3d058a8b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_020_audio_006",
+        "alvo": "texto",
+        "ancora": "She never works on Sunday.",
+        "texto": "She never works on Sunday.",
+        "src": "/audio/aula-20/lesson_020_audio_006.365bfcf2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_020_audio_007",
+        "alvo": "texto",
+        "ancora": "He is usually happy.",
+        "texto": "He is usually happy.",
+        "src": "/audio/aula-20/lesson_020_audio_007.085851e8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

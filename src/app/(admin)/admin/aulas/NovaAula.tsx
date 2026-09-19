@@ -80,7 +80,7 @@ export function NovaAula({ modulos }: { modulos: OpcaoDeModulo[] }) {
       </div>
 
       <p className="m-0 text-[13px] font-semibold leading-snug text-muted">
-        A aula recebe o próximo número livre e nasce como rascunho, com uma página de partida —
+        A aula recebe o próximo número livre e é criada como rascunho, com uma página de partida, porque
         o esquema do conteúdo não aceita aula sem nenhuma página. O slug sai do título e pode ser
         ajustado na aba Dados.
       </p>

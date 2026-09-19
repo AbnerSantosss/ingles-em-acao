@@ -300,7 +300,7 @@ export async function arquivarModuloAction(
     });
 
     revalidarTudo();
-    return sucesso(`Módulo ${id} arquivado. Nada foi apagado — dá para restaurar.`);
+    return sucesso(`Módulo ${id} arquivado. Nada foi apagado, e dá para restaurar.`);
   } catch (erro: unknown) {
     return erroDeBanco('arquivar', erro);
   }

@@ -222,7 +222,7 @@ export function SeletorDeVariante({
           </>
         ) : (
           <>
-            <code className="font-mono">{valor}</code> · fora da paleta — a aula mostra gray
+            <code className="font-mono">{valor}</code> · fora da paleta: a aula mostra gray
           </>
         )
       }
@@ -312,7 +312,7 @@ export function SeletorDeSolido({
           </>
         ) : soDeVariante ? (
           <>
-            <code className="font-mono">{valor}</code> · não é cor sólida — a aula mostra a cor
+            <code className="font-mono">{valor}</code> · não é cor sólida: a aula mostra a cor
             padrão ({padrao.descricao})
           </>
         ) : (

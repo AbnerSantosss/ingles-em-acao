@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer o que está acontecendo agora com \"am\", \"is\", \"are\" e o verbo com \"-ing\".",
+  "conteudoAlvo": [
+    "I + am + ___ing; he / she / it + is + ___ing",
+    "you / we / they + are + ___ing; now, waiting",
+    "studying, working, reading, raining, playing",
+    "write, writing, run, running, sitting, lie, lying"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Compare com a rotina da Aula 17: \"I work every day.\" e \"I am working now.\"",
+    "Use as formas curtas da Aula 02: \"I'm working now.\", \"We're waiting.\""
+  ],
+  "regrasDaAula": [
+    "Nunca tire o \"am\", \"is\" ou \"are\": \"She is working.\", nunca \"She working.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"study\" no \"-ing\": \"I am ___ now.\"",
+      "respostaDeReferencia": "I am studying now."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Diga que está acontecendo agora: \"She works.\"",
+      "respostaDeReferencia": "She is working now."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Está chovendo.",
+      "respostaDeReferencia": "It is raining."
+    }
+  ],
+  "limites": [
+    "Só a afirmativa: a negativa e as perguntas no \"-ing\" ainda não estudei.",
+    "Palavras só as que já vi: \"park\", \"letter\", \"soccer\" e \"watching TV\" ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ studying.\" Qual forma do verbo entra no espaço?",
+  "resumoAutorizado": [
+    "\"I am studying.\", \"She is reading.\", \"They are playing.\", \"It is raining.\"",
+    "\"-ing\": \"working\", \"writing\", \"running\", \"sitting\", \"lying\", \"waiting\".",
+    "Agora ou rotina: \"I am working now.\" e \"I work every day.\""
+  ],
+  "resumoCurto": "Presente contínuo: \"am/is/are\" + verbo com \"-ing\" para o que acontece agora: \"I am working now.\""
+}

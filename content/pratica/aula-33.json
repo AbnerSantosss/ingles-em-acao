@@ -1,0 +1,53 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Perguntar e dizer com que frequência faço as coisas, com advérbios e com \"once a week\", \"every day\".",
+  "conteudoAlvo": [
+    "How often + do / does + ___?",
+    "every hour, every week, every month, every year",
+    "once / twice / three times + a + ___",
+    "not often, visit, the beach, sleep, weekends"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Misture os advérbios que já sei (\"always\", \"never\") com \"twice a week\".",
+    "Use as rotinas e os gostos que já sei: \"I go to the gym three times a week.\""
+  ],
+  "regrasDaAula": [
+    "O advérbio vem antes do verbo principal e depois de \"is\"; a expressão vai no fim da frase."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a ordem certa: \"He is always late.\" ou \"He always is late.\"?",
+      "respostaDeReferencia": "He is always late."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"duas vezes por semana\": \"I play soccer ___.\"",
+      "respostaDeReferencia": "I play soccer twice a week."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com uma expressão de frequência: \"How often do you go to the beach?\"",
+      "respostaDeReferencia": "I go to the beach once a year."
+    }
+  ],
+  "limites": [
+    "Sem \"can\" para habilidades nem \"good at\": ainda não estudei.",
+    "Sem o passado (\"last week\", \"went\"): só rotina no presente."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"every\". Como digo \"toda semana\" em inglês: \"every week\" ou \"once week\"?",
+  "resumoAutorizado": [
+    "\"How often do you go to the gym?\", \"How often does he visit his grandpa?\"",
+    "Expressões: \"every week\", \"once a week\", \"twice a month\", \"three times a year\".",
+    "Ordem: \"She always reads books.\", \"He is always late.\", \"I sleep every day.\""
+  ],
+  "resumoCurto": "Frequência: \"How often do you...?\", \"always\", \"never\", \"once a week\", \"twice a month\", \"every day\"."
+}

@@ -1,0 +1,172 @@
+{
+  "aula": 35,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_035_audio_001",
+        "alvo": "texto",
+        "ancora": "→ I love her.",
+        "texto": "I love her.",
+        "src": "/audio/aula-35/lesson_035_audio_001.761d87fe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_035_audio_002",
+        "alvo": "texto",
+        "ancora": "I live with my grandma.",
+        "texto": "I live with my grandma.",
+        "src": "/audio/aula-35/lesson_035_audio_002.7c426273.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_035_audio_003",
+        "alvo": "texto",
+        "ancora": "→ I live with her.",
+        "texto": "I live with her.",
+        "src": "/audio/aula-35/lesson_035_audio_003.1b4c5504.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_035_audio_004",
+        "alvo": "texto",
+        "ancora": "me",
+        "texto": "me",
+        "src": "/audio/aula-35/lesson_035_audio_004.de28d241.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_035_audio_005",
+        "alvo": "texto",
+        "ancora": "him",
+        "texto": "him",
+        "src": "/audio/aula-35/lesson_035_audio_005.d767f4bd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_035_audio_006",
+        "alvo": "texto",
+        "ancora": "us",
+        "texto": "us",
+        "src": "/audio/aula-35/lesson_035_audio_006.fca5260d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_035_audio_007",
+        "alvo": "texto",
+        "ancora": "them",
+        "texto": "them",
+        "src": "/audio/aula-35/lesson_035_audio_007.557c3ba3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_008",
+        "alvo": "texto",
+        "ancora": "He doesn’t like his neighbors.",
+        "texto": "He doesn't like his neighbors.",
+        "src": "/audio/aula-35/lesson_035_audio_008.13a9179f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_009",
+        "alvo": "texto",
+        "ancora": "→ He doesn’t like them.",
+        "texto": "He doesn't like them.",
+        "src": "/audio/aula-35/lesson_035_audio_009.8f8a682c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_010",
+        "alvo": "texto",
+        "ancora": "Can you help my boyfriend and me?",
+        "texto": "Can you help my boyfriend and me?",
+        "src": "/audio/aula-35/lesson_035_audio_010.1fa2abe8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_011",
+        "alvo": "texto",
+        "ancora": "→ Can you help us?",
+        "texto": "Can you help us?",
+        "src": "/audio/aula-35/lesson_035_audio_011.18d68884.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_012",
+        "alvo": "texto",
+        "ancora": "My grandpa is awesome.",
+        "texto": "My grandpa is awesome.",
+        "src": "/audio/aula-35/lesson_035_audio_012.06ca5c3e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_013",
+        "alvo": "texto",
+        "ancora": "→ I love him.",
+        "texto": "I love him.",
+        "src": "/audio/aula-35/lesson_035_audio_013.6f886367.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_035_audio_014",
+        "alvo": "texto",
+        "ancora": "Let’s help him.",
+        "texto": "Let's help him.",
+        "src": "/audio/aula-35/lesson_035_audio_014.5fa8cfbd.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_035_audio_015",
+        "alvo": "bloco",
+        "ancora": "Do you know Anna and Leo?",
+        "texto": "Do you know Anna and Leo?\nYes, I know them. I work with them.\nCan you help Leo today?\nYes, I can help him. What about Anna?\nI can talk to her after class.\nGreat. Can you call me later?\nYes, I can call you at six.",
+        "src": "/audio/aula-35/lesson_035_audio_015.8d0041ac.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
+}

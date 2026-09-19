@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Perguntar e negar ações que estão acontecendo agora, e responder de forma curta.",
+  "conteudoAlvo": [
+    "Is + he / she / it + ___ing?",
+    "Are + you / we / they + ___ing?",
+    "I'm not + ___ing; he / she / it + isn't + ___ing",
+    "doing, going; Where is he going?"
+  ],
+  "expressoesFixas": [
+    "What are you doing?"
+  ],
+  "comoIntegrar": [
+    "Pegue frases da Aula 26 e peça que eu faça a pergunta ou a negativa.",
+    "Use as respostas curtas da Aula 04: \"Yes, I am.\", \"No, I'm not.\", \"No, he isn't.\""
+  ],
+  "regrasDaAula": [
+    "Pergunta com \"am\", \"is\" ou \"are\" na frente, nunca com \"do\": \"Is she working?\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a certa: \"Does she working?\" ou \"Is she working?\"",
+      "respostaDeReferencia": "Is she working?"
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"He is studying.\"",
+      "respostaDeReferencia": "He isn't studying."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda de forma curta, com \"yes\": \"Are you working?\"",
+      "respostaDeReferencia": "Yes, I am."
+    }
+  ],
+  "limites": [
+    "Palavras só as que já vi: \"sleeping\", \"today\" e \"listening\" ainda não estudei.",
+    "Sem \"who\" e \"why\": perguntas com \"-ing\" só com \"what\" e \"where\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"you\". Complete: \"___ you working?\" Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "Pergunta: \"Are you working?\", \"Is she studying?\"; \"Yes, she is.\"",
+    "Negativa: \"I'm not working.\", \"He isn't studying.\"; \"No, she isn't.\"",
+    "\"What are you doing?\", \"Where is he going?\""
+  ],
+  "resumoCurto": "Presente contínuo: perguntas (\"Are you working?\"), negativas (\"I'm not working.\") e \"What are you doing?\""
+}

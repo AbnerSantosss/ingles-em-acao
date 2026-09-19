@@ -1,0 +1,436 @@
+{
+  "aula": 32,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_032_audio_001",
+        "alvo": "texto",
+        "ancora": "He loves books.",
+        "texto": "He loves books.",
+        "src": "/audio/aula-32/lesson_032_audio_001.635bfd52.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_032_audio_002",
+        "alvo": "texto",
+        "ancora": "He likes animals.",
+        "texto": "He likes animals.",
+        "src": "/audio/aula-32/lesson_032_audio_002.a27b3ff8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_032_audio_003",
+        "alvo": "texto",
+        "ancora": "She dislikes coffee.",
+        "texto": "She dislikes coffee.",
+        "src": "/audio/aula-32/lesson_032_audio_003.547ed92c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_032_audio_004",
+        "alvo": "texto",
+        "ancora": "He hates onions.",
+        "texto": "He hates onions.",
+        "src": "/audio/aula-32/lesson_032_audio_004.8e78fa24.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_032_audio_005",
+        "alvo": "texto",
+        "ancora": "Mike loves listening to music.",
+        "texto": "Mike loves listening to music.",
+        "src": "/audio/aula-32/lesson_032_audio_005.4c1acc0c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_032_audio_006",
+        "alvo": "texto",
+        "ancora": "Mike likes listening to music.",
+        "texto": "Mike likes listening to music.",
+        "src": "/audio/aula-32/lesson_032_audio_006.69d1afe9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_032_audio_007",
+        "alvo": "texto",
+        "ancora": "Mike dislikes listening to music.",
+        "texto": "Mike dislikes listening to music.",
+        "src": "/audio/aula-32/lesson_032_audio_007.0378b948.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_032_audio_008",
+        "alvo": "texto",
+        "ancora": "Mike hates listening to music.",
+        "texto": "Mike hates listening to music.",
+        "src": "/audio/aula-32/lesson_032_audio_008.ded6c425.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_009",
+        "alvo": "bloco",
+        "ancora": "buy",
+        "texto": "buy\nbuying\nplay\nplaying\ndo\ndoing\ncook\ncooking\neat\neating\nspeak\nspeaking",
+        "src": "/audio/aula-32/lesson_032_audio_009.8fd29264.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_010",
+        "alvo": "texto",
+        "ancora": "dance",
+        "texto": "dance",
+        "src": "/audio/aula-32/lesson_032_audio_010.9865be90.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_011",
+        "alvo": "texto",
+        "ancora": "dancing",
+        "texto": "dancing",
+        "src": "/audio/aula-32/lesson_032_audio_011.02a45b15.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_012",
+        "alvo": "texto",
+        "ancora": "living",
+        "texto": "living",
+        "src": "/audio/aula-32/lesson_032_audio_012.d0a59140.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_013",
+        "alvo": "texto",
+        "ancora": "having",
+        "texto": "having",
+        "src": "/audio/aula-32/lesson_032_audio_013.9adc9032.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_014",
+        "alvo": "texto",
+        "ancora": "taking",
+        "texto": "taking",
+        "src": "/audio/aula-32/lesson_032_audio_014.d37529bc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_015",
+        "alvo": "texto",
+        "ancora": "driving",
+        "texto": "driving",
+        "src": "/audio/aula-32/lesson_032_audio_015.f3d7d38e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_016",
+        "alvo": "texto",
+        "ancora": "stop",
+        "texto": "stop",
+        "src": "/audio/aula-32/lesson_032_audio_016.b2e0e171.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_017",
+        "alvo": "texto",
+        "ancora": "stopping",
+        "texto": "stopping",
+        "src": "/audio/aula-32/lesson_032_audio_017.463971e6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_018",
+        "alvo": "texto",
+        "ancora": "getting",
+        "texto": "getting",
+        "src": "/audio/aula-32/lesson_032_audio_018.183e7129.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_019",
+        "alvo": "texto",
+        "ancora": "plan",
+        "texto": "plan",
+        "src": "/audio/aula-32/lesson_032_audio_019.62b33faf.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_032_audio_020",
+        "alvo": "texto",
+        "ancora": "planning",
+        "texto": "planning",
+        "src": "/audio/aula-32/lesson_032_audio_020.17cb9d22.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_021",
+        "alvo": "texto",
+        "ancora": "LIKE",
+        "texto": "like",
+        "src": "/audio/aula-32/lesson_032_audio_021.14cb9430.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_022",
+        "alvo": "texto",
+        "ancora": "She likes riding a bike.",
+        "texto": "She likes riding a bike.",
+        "src": "/audio/aula-32/lesson_032_audio_022.b9ce7106.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_023",
+        "alvo": "texto",
+        "ancora": "LOVE",
+        "texto": "love",
+        "src": "/audio/aula-32/lesson_032_audio_023.55e0d8ca.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_024",
+        "alvo": "texto",
+        "ancora": "My friends and I love playing soccer.",
+        "texto": "My friends and I love playing soccer.",
+        "src": "/audio/aula-32/lesson_032_audio_024.4473f2d5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_025",
+        "alvo": "texto",
+        "ancora": "Anthony is a baker.",
+        "texto": "Anthony is a baker.",
+        "src": "/audio/aula-32/lesson_032_audio_025.304d54fe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_026",
+        "alvo": "texto",
+        "ancora": "He likes making bread.",
+        "texto": "He likes making bread.",
+        "src": "/audio/aula-32/lesson_032_audio_026.b2dbab83.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_027",
+        "alvo": "texto",
+        "ancora": "HATE",
+        "texto": "hate",
+        "src": "/audio/aula-32/lesson_032_audio_027.ab652186.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_028",
+        "alvo": "texto",
+        "ancora": "I hate going to the gym.",
+        "texto": "I hate going to the gym.",
+        "src": "/audio/aula-32/lesson_032_audio_028.9fd18926.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_029",
+        "alvo": "texto",
+        "ancora": "DISLIKE",
+        "texto": "dislike",
+        "src": "/audio/aula-32/lesson_032_audio_029.ac5abe27.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_030",
+        "alvo": "texto",
+        "ancora": "My cousin is very shy.",
+        "texto": "My cousin is very shy.",
+        "src": "/audio/aula-32/lesson_032_audio_030.140f5e43.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_032_audio_031",
+        "alvo": "texto",
+        "ancora": "She dislikes meeting new people.",
+        "texto": "She dislikes meeting new people.",
+        "src": "/audio/aula-32/lesson_032_audio_031.5401be2e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_032_audio_032",
+        "alvo": "texto",
+        "ancora": "William doesn’t like watching TV.",
+        "texto": "William doesn't like watching TV.",
+        "src": "/audio/aula-32/lesson_032_audio_032.14bbeca7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_032_audio_033",
+        "alvo": "texto",
+        "ancora": "He doesn’t like singing.",
+        "texto": "He doesn't like singing.",
+        "src": "/audio/aula-32/lesson_032_audio_033.e1c55846.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_032_audio_034",
+        "alvo": "texto",
+        "ancora": "He likes playing the guitar.",
+        "texto": "He likes playing the guitar.",
+        "src": "/audio/aula-32/lesson_032_audio_034.52104da6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_032_audio_035",
+        "alvo": "texto",
+        "ancora": "My friends don’t like sending letters.",
+        "texto": "My friends don't like sending letters.",
+        "src": "/audio/aula-32/lesson_032_audio_035.625577e1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_032_audio_036",
+        "alvo": "texto",
+        "ancora": "He doesn’t hate vegetables. He just doesn’t like eating vegetables.",
+        "texto": "He doesn't hate vegetables. He just doesn't like eating vegetables.",
+        "src": "/audio/aula-32/lesson_032_audio_036.96524235.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_032_audio_037",
+        "alvo": "texto",
+        "ancora": "1 · DOES HE LIKE DRINKING COFFEE?",
+        "texto": "Does he like drinking coffee?",
+        "src": "/audio/aula-32/lesson_032_audio_037.1042d26c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_032_audio_038",
+        "alvo": "texto",
+        "ancora": "2 · DO THEY LIKE PLAYING VIDEO GAMES?",
+        "texto": "Do they like playing video games?",
+        "src": "/audio/aula-32/lesson_032_audio_038.70ae11c0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_032_audio_039",
+        "alvo": "bloco",
+        "ancora": "What do you like doing in your free time?",
+        "texto": "What do you like doing in your free time?\nI like listening to music and cooking. I love playing soccer on Saturdays.\nDo you like going to the gym?\nNo, I don't. I hate going to the gym. What about you?\nI like riding a bike, but I don't like watching TV.",
+        "src": "/audio/aula-32/lesson_032_audio_039.1b7bb0e2.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
+}

@@ -41,7 +41,7 @@ beforeAll(async () => {
   checkoutOriginal = linha?.value ?? null;
   const checkout = {
     global: LINK_GLOBAL,
-    porPlano: { ESSENCIAL: null, COMPLETO: null, PREMIUM: LINK_PREMIUM },
+    porPlano: { ESSENCIAL: null, PREMIUM: LINK_PREMIUM },
   };
   await prisma.appSetting.upsert({
     where: { key: CHAVE_CHECKOUT },
@@ -122,12 +122,6 @@ describe('lerLinksDeCompra(userId)', () => {
     const referencia = await referenciaGuardada(aluno.id);
     expect(referencia).toMatch(/^[A-Za-z0-9_-]{22}$/);
 
-    const completo = new URL(links.COMPLETO ?? '');
-    expect(completo.origin + completo.pathname).toBe('https://checkout.exemplo.test/comprar');
-    expect(completo.searchParams.get('origem')).toBe('app');
-    expect(completo.searchParams.get('utm_source')).toBe('wsa');
-    expect(completo.searchParams.get(PARAMETRO_DE_REFERENCIA_FAKE)).toBe(referencia);
-
     const premium = new URL(links.PREMIUM ?? '');
     expect(premium.searchParams.get('cupom')).toBe('BEMVINDO');
     expect(premium.searchParams.get(PARAMETRO_DE_REFERENCIA_FAKE)).toBe(referencia);
@@ -151,7 +145,7 @@ describe('lerLinksDeCompra(userId)', () => {
   });
 
   it('sem userId, os links saem como estão no painel', async () => {
-    expect(await lerLinksDeCompra()).toEqual({ COMPLETO: LINK_GLOBAL, PREMIUM: LINK_PREMIUM });
+    expect(await lerLinksDeCompra()).toEqual({ PREMIUM: LINK_PREMIUM });
   });
 
   it('sem provedor configurado, os links saem como estão e nenhuma referência é criada', async () => {
@@ -159,7 +153,6 @@ describe('lerLinksDeCompra(userId)', () => {
     try {
       delete process.env.PAYMENT_PROVIDER;
       expect(await lerLinksDeCompra(aluno.id)).toEqual({
-        COMPLETO: LINK_GLOBAL,
         PREMIUM: LINK_PREMIUM,
       });
       expect(await referenciaGuardada(aluno.id)).toBeNull();
@@ -171,7 +164,6 @@ describe('lerLinksDeCompra(userId)', () => {
   it('conta excluída recebe os links sem referência', async () => {
     const aluno = await criarAluno({ excluido: true });
     expect(await lerLinksDeCompra(aluno.id)).toEqual({
-      COMPLETO: LINK_GLOBAL,
       PREMIUM: LINK_PREMIUM,
     });
     expect(await referenciaGuardada(aluno.id)).toBeNull();

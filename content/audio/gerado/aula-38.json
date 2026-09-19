@@ -1,0 +1,237 @@
+{
+  "aula": 38,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_038_audio_001",
+        "alvo": "texto",
+        "ancora": "There are a lot of / lots of good hotels near here.",
+        "texto": "There are a lot of good hotels near here.",
+        "src": "/audio/aula-38/lesson_038_audio_001.0a35f248.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_038_audio_002",
+        "alvo": "texto",
+        "ancora": "I drink a lot of water during the day.",
+        "texto": "I drink a lot of water during the day.",
+        "src": "/audio/aula-38/lesson_038_audio_002.b35ef238.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_038_audio_003",
+        "alvo": "texto",
+        "ancora": "We eat a lot of fish.",
+        "texto": "We eat a lot of fish.",
+        "src": "/audio/aula-38/lesson_038_audio_003.18c81fcb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_038_audio_004",
+        "alvo": "texto",
+        "ancora": "My uncle puts a lot of / lots of sugar in his coffee.",
+        "texto": "My uncle puts a lot of sugar in his coffee.",
+        "src": "/audio/aula-38/lesson_038_audio_004.cc3a0338.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_038_audio_005",
+        "alvo": "texto",
+        "ancora": "I don’t eat many hamburgers.",
+        "texto": "I don't eat many hamburgers.",
+        "src": "/audio/aula-38/lesson_038_audio_005.f7083b22.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_038_audio_006",
+        "alvo": "texto",
+        "ancora": "Are there many vegetables in the basket?",
+        "texto": "Are there many vegetables in the basket?",
+        "src": "/audio/aula-38/lesson_038_audio_006.5c04ba32.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_038_audio_007",
+        "alvo": "texto",
+        "ancora": "I don’t drink much coffee in the morning.",
+        "texto": "I don't drink much coffee in the morning.",
+        "src": "/audio/aula-38/lesson_038_audio_007.74468a03.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_038_audio_008",
+        "alvo": "texto",
+        "ancora": "Is there much sugar in this orange juice?",
+        "texto": "Is there much sugar in this orange juice?",
+        "src": "/audio/aula-38/lesson_038_audio_008.b68f0d43.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_038_audio_009",
+        "alvo": "texto",
+        "ancora": "How many strawberries are there in this basket?",
+        "texto": "How many strawberries are there in this basket?",
+        "src": "/audio/aula-38/lesson_038_audio_009.2538c5bc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_038_audio_010",
+        "alvo": "texto",
+        "ancora": "How many children do you have?",
+        "texto": "How many children do you have?",
+        "src": "/audio/aula-38/lesson_038_audio_010.a9c43e77.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_038_audio_011",
+        "alvo": "texto",
+        "ancora": "How much sugar do you put in your coffee?",
+        "texto": "How much sugar do you put in your coffee?",
+        "src": "/audio/aula-38/lesson_038_audio_011.c1ceb1b0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_038_audio_012",
+        "alvo": "texto",
+        "ancora": "How much is this book?",
+        "texto": "How much is this book?",
+        "src": "/audio/aula-38/lesson_038_audio_012.9c945be5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_038_audio_013",
+        "alvo": "bloco",
+        "ancora": "Mia: We need a lot of food for dinner.",
+        "texto": "We need a lot of food for dinner.\nHow many tomatoes do we need?\nSix. We also need some bread.\nDo we need much sugar?\nNo, not much. How much water do we have?\nWe have a lot of water.",
+        "src": "/audio/aula-38/lesson_038_audio_013.6fa6bce1.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_014",
+        "alvo": "texto",
+        "ancora": "How much water do you drink during the day?",
+        "texto": "How much water do you drink during the day?",
+        "src": "/audio/aula-38/lesson_038_audio_014.0f047d35.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_015",
+        "alvo": "texto",
+        "ancora": "How many cups of coffee do you drink every day?",
+        "texto": "How many cups of coffee do you drink every day?",
+        "src": "/audio/aula-38/lesson_038_audio_015.26d01968.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_016",
+        "alvo": "texto",
+        "ancora": "Do you eat much bread?",
+        "texto": "Do you eat much bread?",
+        "src": "/audio/aula-38/lesson_038_audio_016.0ffb6063.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_017",
+        "alvo": "texto",
+        "ancora": "How many bottles of water do you drink a day?",
+        "texto": "How many bottles of water do you drink a day?",
+        "src": "/audio/aula-38/lesson_038_audio_017.f617c79b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_018",
+        "alvo": "texto",
+        "ancora": "Do you have a lot of time to study?",
+        "texto": "Do you have a lot of time to study?",
+        "src": "/audio/aula-38/lesson_038_audio_018.827aeb8f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_019",
+        "alvo": "texto",
+        "ancora": "I drink a lot of water.",
+        "texto": "I drink a lot of water.",
+        "src": "/audio/aula-38/lesson_038_audio_019.ffcf038d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_038_audio_020",
+        "alvo": "texto",
+        "ancora": "I drink two cups of coffee.",
+        "texto": "I drink two cups of coffee.",
+        "src": "/audio/aula-38/lesson_038_audio_020.eb8dce32.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

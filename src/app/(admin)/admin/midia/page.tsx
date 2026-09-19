@@ -239,7 +239,7 @@ export default async function TelaDeMidia({
         </h1>
         <p className="m-0 mt-1.5 max-w-[68ch] text-[14px] font-semibold leading-snug text-muted">
           As imagens do curso, onde cada uma aparece e o texto alternativo de cada uma. Uma
-          imagem em uso não pode ser arquivada — a tela mostra em que aula ela está antes de
+          imagem em uso não pode ser arquivada: a tela mostra em que aula ela está antes de
           deixar você tentar. Limite de {formatarBytes(TAMANHO_MAXIMO_IMAGEM)} por arquivo,{' '}
           {FORMATOS_EM_TEXTO}.
         </p>
@@ -262,7 +262,7 @@ export default async function TelaDeMidia({
             O armazenamento de mídia não está pronto.
           </p>
           <p className="m-0 mt-1.5 text-[14px] font-semibold leading-snug text-navy">
-            {armazenamento.problema} Enquanto isso, o envio de novas imagens vai falhar — o que
+            {armazenamento.problema} Enquanto isso, o envio de novas imagens vai falhar. O que
             já está na biblioteca continua sendo servido normalmente.
           </p>
         </div>

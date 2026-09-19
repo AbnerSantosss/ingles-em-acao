@@ -63,8 +63,8 @@ describe('boas-vindas de conta criada pela equipe', () => {
 
     expect(email.html).not.toContain('Painel do administrador');
     expect(email.html).toContain('Olá!');
-    expect(email.html).toContain('a equipe do Inglês em Ação criou uma conta');
-    expect(email.text).toContain('a equipe do Inglês em Ação criou uma conta');
+    expect(email.html).toContain('a equipe do WSA English criou uma conta');
+    expect(email.text).toContain('a equipe do WSA English criou uma conta');
   });
 });
 
@@ -94,25 +94,25 @@ describe('senhaParaOServidor', () => {
 
 describe('montarRemetente', () => {
   it('usa o nome de MAIL_FROM quando o e-mail não pede outro', () => {
-    expect(montarRemetente('Inglês em Ação <conta@gmail.com>')).toEqual({
-      name: 'Inglês em Ação',
+    expect(montarRemetente('WSA English <conta@gmail.com>')).toEqual({
+      name: 'WSA English',
       address: 'conta@gmail.com',
     });
-    expect(montarRemetente(' "Inglês em Ação" <conta@gmail.com> ')).toEqual({
-      name: 'Inglês em Ação',
+    expect(montarRemetente(' "WSA English" <conta@gmail.com> ')).toEqual({
+      name: 'WSA English',
       address: 'conta@gmail.com',
     });
   });
 
   it('troca só o nome e mantém o endereço de MAIL_FROM', () => {
-    expect(montarRemetente('Inglês em Ação <conta@gmail.com>', 'Inglês em Ação · Painel')).toEqual({
-      name: 'Inglês em Ação · Painel',
+    expect(montarRemetente('WSA English <conta@gmail.com>', 'WSA English · Painel')).toEqual({
+      name: 'WSA English · Painel',
       address: 'conta@gmail.com',
     });
   });
 
   it('com MAIL_FROM sem nome, mostra a marca em vez do endereço cru', () => {
-    expect(montarRemetente('conta@gmail.com')).toEqual({ name: 'Inglês em Ação', address: 'conta@gmail.com' });
-    expect(montarRemetente('conta@gmail.com', '  ')).toEqual({ name: 'Inglês em Ação', address: 'conta@gmail.com' });
+    expect(montarRemetente('conta@gmail.com')).toEqual({ name: 'WSA English', address: 'conta@gmail.com' });
+    expect(montarRemetente('conta@gmail.com', '  ')).toEqual({ name: 'WSA English', address: 'conta@gmail.com' });
   });
 });

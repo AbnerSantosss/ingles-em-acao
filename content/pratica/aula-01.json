@@ -1,0 +1,50 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Trocar nomes de pessoas, grupos, animais e objetos pelo pronome sujeito certo em inglês.",
+  "conteudoAlvo": [
+    "I, you, he, she, it, we, they"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Misture os sete pronomes e mude a ordem a cada rodada, para eu escolher pelo sentido.",
+    "Dê nomes de pessoas, objetos e grupos em português e me peça só o pronome em inglês."
+  ],
+  "regrasDaAula": [
+    "\"we\" inclui quem fala no grupo. \"they\" deixa quem fala de fora."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual pronome em inglês substitui \"Marina\"?",
+      "respostaDeReferencia": "she"
+    },
+    {
+      "tipo": "escolher",
+      "enunciado": "Rafael + Marina, sem você no grupo: \"we\" ou \"they\"?",
+      "respostaDeReferencia": "they"
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Como se diz nós em inglês, quando você faz parte do grupo?",
+      "respostaDeReferencia": "we"
+    }
+  ],
+  "limites": [
+    "Sem \"am\", \"is\" e \"are\": o verbo vem na próxima aula. Respondo só com o pronome.",
+    "Sem \"me\", \"him\", \"us\", \"them\" e sem \"my\", \"your\": ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar. Qual pronome em inglês você usa para falar de você mesmo?",
+  "resumoAutorizado": [
+    "Pronomes sujeito: \"I\", \"you\", \"he\", \"she\", \"it\", \"we\", \"they\".",
+    "\"he\" homem, \"she\" mulher, \"it\" coisa ou animal, \"you\" com quem falo.",
+    "\"we\" me inclui no grupo. \"they\" me deixa de fora."
+  ],
+  "resumoCurto": "Pronomes sujeito \"I\", \"you\", \"he\", \"she\", \"it\", \"we\" e \"they\" no lugar de nomes."
+}

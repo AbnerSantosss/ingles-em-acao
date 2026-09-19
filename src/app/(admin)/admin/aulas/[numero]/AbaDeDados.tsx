@@ -225,7 +225,7 @@ function FormularioDeDados({
           label="Slug"
           required
           error={erroDoCampo(estado, 'slug')}
-          hint={`Endereço atual: /aula/${aula.slug}. Mudar o slug quebra todo link já compartilhado — o antigo passa a responder 404.`}
+          hint={`Endereço atual: /aula/${aula.slug}. Mudar o slug quebra todo link já compartilhado: o antigo passa a responder 404.`}
         >
           <Input name="slug" defaultValue={aula.slug} maxLength={120} autoComplete="off" />
         </Field>
@@ -284,7 +284,7 @@ function Publicacao({ aula }: { aula: AulaDoPainel }) {
       <input type="hidden" name="id" value={aula.id} />
       <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
         A aula está em rascunho: ela não aparece na trilha e o endereço responde 404. Publicar
-        valida o conteúdo antes — se algum bloco não passar no esquema ou tiver erro na
+        valida o conteúdo antes. Se algum bloco não passar no esquema ou tiver erro na
         validação da §3.5 (gabarito fora do intervalo, id de outra aula…), a aula não vai ao ar
         e o erro aparece aqui. Avisos não bloqueiam.
       </p>
@@ -326,7 +326,7 @@ function Arquivamento({ aula }: { aula: AulaDoPainel }) {
         <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
           Arquivada em{' '}
           {aula.archivedAt ? aula.archivedAt.toLocaleDateString('pt-BR') : 'data desconhecida'}.
-          Restaurar devolve a aula ao estado anterior — se ela estava publicada, volta ao ar.
+          Restaurar devolve a aula ao estado anterior. Se ela estava publicada, volta ao ar.
         </p>
         <Recado estado={estadoRestaurar} />
         <div>
@@ -382,7 +382,7 @@ function Renumeracao({ aula }: { aula: AulaDoPainel }) {
       <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
         Esta aula é a número {aula.number}. Mudar o número muda o código exibido (&ldquo;
         {aula.code}&rdquo;) e a posição dela na trilha. <strong>Não muda</strong> o slug, a capa
-        nem os blocos do conteúdo que citam o número — isso fica para revisão à mão. O progresso
+        nem os blocos do conteúdo que citam o número. Isso fica para revisão à mão. O progresso
         de {aula.alunosComProgresso} aluno(s) não se perde: ele aponta para a aula, não para o
         número.
       </p>
@@ -446,7 +446,7 @@ export function AbaDeDados({
 
       <Bloco
         titulo="Duplicar"
-        descricao="Uma aula nova, em rascunho, com o conteúdo desta — para usar de ponto de partida."
+        descricao="Uma aula nova, em rascunho, com o conteúdo desta, para usar de ponto de partida."
       >
         <Duplicacao aula={aula} />
       </Bloco>

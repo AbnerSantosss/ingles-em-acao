@@ -43,7 +43,7 @@ export function BottomNav() {
                   'transition-colors duration-150',
                   ativo
                     ? 'bg-navy text-white'
-                    : 'text-muted-2 hover:bg-[#F1F5FA] hover:text-navy',
+                    : 'text-muted hover:bg-[#F1F5FA] hover:text-navy',
                 )}
               >
                 {destino.icone}

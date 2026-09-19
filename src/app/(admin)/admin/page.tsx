@@ -8,12 +8,20 @@
  * ⚠️ Se o banco não responder, a tela mostra o **estado degradado** — um aviso
  * no lugar dos números — em vez de estourar. Um dashboard que vira página de
  * erro esconde justamente a informação de que algo está errado.
+ *
+ * Apresentação: a tela abre com a faixa-hero (`HeroDoPainel`, só daqui) e a
+ * primeira seção sobe um pouco sobre ela. Os cartões de número têm ícone e um
+ * tom de fundo por assunto; o tom é decorativo, quem marca pendência é o
+ * `destaque` (ver `Numero`).
  */
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { Prisma, type Plan } from '@prisma/client';
 
+import { HeroDoPainel } from '@/components/admin/HeroDoPainel';
+import { IconeDoNumero, TONS, type TomDoNumero } from '@/components/admin/IconeDoNumero';
+import type { NomeDoIcone } from '@/components/admin/icones';
 import { AREAS } from '@/components/admin/nav';
 import { carregarPendenciasDeMidia } from '@/lib/admin/pendencias';
 import { prisma } from '@/lib/db';
@@ -32,8 +40,13 @@ const LINHAS_DE_ATIVIDADE = 10;
 
 const ROTULO_DO_PLANO: Record<Plan, string> = {
   ESSENCIAL: 'Essencial',
-  COMPLETO: 'Completo',
   PREMIUM: 'Premium',
+};
+
+/** Ícone e tom do cartão de cada plano. Só apresentação. */
+const VISUAL_DO_PLANO: Record<Plan, { icone: NomeDoIcone; tom: TomDoNumero }> = {
+  ESSENCIAL: { icone: 'diamante', tom: 'lilas' },
+  PREMIUM: { icone: 'coroa', tom: 'azul' },
 };
 
 type LinhaDeAtividade = {
@@ -120,7 +133,7 @@ async function carregarPanorama(): Promise<Panorama | null> {
       }),
     ]);
 
-    const porPlano: Record<Plan, number> = { ESSENCIAL: 0, COMPLETO: 0, PREMIUM: 0 };
+    const porPlano: Record<Plan, number> = { ESSENCIAL: 0, PREMIUM: 0 };
     for (const linha of porPlanoBruto) porPlano[linha.plan] = linha._count._all;
 
     // Conta separada: lê o JSON das 42 aulas. Se falhar, só o número some.
@@ -157,54 +170,96 @@ const FORMATO_DE_DATA = new Intl.DateTimeFormat('pt-BR', {
 
 function Secao({
   titulo,
+  subtitulo,
+  icone,
+  tom = 'azul',
   children,
   acao,
 }: {
   titulo: string;
+  /** Uma linha dizendo o que a seção mostra. */
+  subtitulo: string;
+  icone: NomeDoIcone;
+  tom?: TomDoNumero;
   children: React.ReactNode;
   acao?: React.ReactNode;
 }) {
   return (
     <section className="rounded-card bg-surface p-5 shadow-card lg:p-6">
       <div className="mb-4 flex items-center gap-3">
-        <h2 className="m-0 text-[17px] font-black tracking-[-0.01em] text-navy">{titulo}</h2>
-        {acao ? <div className="ml-auto flex-none">{acao}</div> : null}
+        <IconeDoNumero icone={icone} tom={tom} size={40} />
+        <div className="min-w-0 flex-1">
+          <h2 className="m-0 text-[18px] font-black leading-tight tracking-[-0.01em] text-navy">
+            {titulo}
+          </h2>
+          <p className="m-0 mt-0.5 text-[13px] font-semibold leading-snug text-muted">
+            {subtitulo}
+          </p>
+        </div>
+        {acao ? <div className="flex-none">{acao}</div> : null}
       </div>
       {children}
     </section>
   );
 }
 
+/**
+ * Cartão de um número.
+ *
+ * ⚠️ O tom (azul, verde, âmbar...) é decorativo e NÃO significa pendência: um
+ * cartão âmbar com zero está tudo certo. Pendência é o `destaque`, que tem três
+ * sinais que não dependem de matiz: borda de 2px, o rótulo "Pendente" escrito e
+ * o número na cor forte do tom. Não troque isso por "pintar de amarelo".
+ */
 function Numero({
   valor,
   rotulo,
   detalhe,
+  icone,
+  tom,
   destaque = false,
 }: {
   valor: number | string;
   rotulo: string;
   detalhe?: string;
+  icone: NomeDoIcone;
+  tom: TomDoNumero;
   destaque?: boolean;
 }) {
+  const cores = TONS[tom];
+
   return (
     <div
-      className="rounded-[18px] border border-solid p-4"
-      style={
-        destaque
-          ? { background: '#FEF7E0', borderColor: '#F8E7B4' }
-          : { background: '#F1F5FA', borderColor: '#E3EAF3' }
-      }
+      className="flex h-full items-start gap-3 rounded-[18px] border-solid p-4"
+      style={{
+        background: cores.fundo,
+        borderColor: destaque ? cores.forte : cores.borda,
+        borderWidth: destaque ? 2 : 1,
+      }}
     >
-      <p
-        className="m-0 text-[28px] font-black leading-none"
-        style={{ color: destaque ? '#6B520A' : '#0A1F4E' }}
-      >
-        {valor}
-      </p>
-      <p className="m-0 mt-2 text-[13px] font-extrabold leading-tight text-navy">{rotulo}</p>
-      {detalhe ? (
-        <p className="m-0 mt-1 text-[12px] font-semibold leading-tight text-muted">{detalhe}</p>
-      ) : null}
+      <IconeDoNumero icone={icone} tom={tom} />
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+          <p
+            className="m-0 text-[28px] font-black leading-none"
+            style={{ color: destaque ? cores.forte : '#0A1F4E' }}
+          >
+            {valor}
+          </p>
+          {destaque ? (
+            <span
+              className="flex-none rounded-pill px-2 py-0.5 text-[10px] font-extrabold uppercase leading-tight tracking-[0.08em] text-white"
+              style={{ background: cores.forte }}
+            >
+              Pendente
+            </span>
+          ) : null}
+        </div>
+        <p className="m-0 mt-2 text-[13px] font-extrabold leading-tight text-navy">{rotulo}</p>
+        {detalhe ? (
+          <p className="m-0 mt-1 text-[12px] font-semibold leading-tight text-muted">{detalhe}</p>
+        ) : null}
+      </div>
     </div>
   );
 }
@@ -219,8 +274,8 @@ function Degradado() {
         Os números não puderam ser carregados.
       </p>
       <p className="m-0 mt-1.5 text-[14px] font-semibold leading-snug" style={{ color: '#B21F31' }}>
-        O banco de dados não respondeu a esta consulta. O painel continua de pé; recarregue a
-        página em alguns instantes. Se persistir, o detalhe técnico está no log do servidor.
+        O banco de dados não respondeu a esta consulta. Recarregue a página em alguns instantes.
+        Se o erro continuar, o detalhe técnico está no log do servidor.
       </p>
     </div>
   );
@@ -230,8 +285,8 @@ function Atividade({ linhas }: { linhas: LinhaDeAtividade[] }) {
   if (linhas.length === 0) {
     return (
       <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
-        Nada registrado ainda. A partir daqui, toda ação do painel deixa uma linha — inclusive
-        as tentativas negadas.
+        Nada registrado ainda. Toda ação feita no painel aparece aqui, inclusive as tentativas
+        negadas.
       </p>
     );
   }
@@ -327,110 +382,146 @@ export default async function DashboardDoPainel() {
   const panorama = await carregarPanorama();
 
   return (
-    <div className="flex flex-col gap-5">
-      <header>
-        <p className="kicker m-0">Painel</p>
-        <h1 className="m-0 mt-1 text-[26px] font-black leading-tight tracking-[-0.02em] text-navy">
-          O estado do produto
-        </h1>
-        <p className="m-0 mt-1.5 max-w-[62ch] text-[14px] font-semibold leading-snug text-muted">
-          Quantos alunos existem e em que pé está o conteúdo. Esta tela não muda nada — as
-          alterações moram nas áreas da barra lateral.
-        </p>
-      </header>
+    <div className="flex flex-col">
+      <HeroDoPainel>
+        Quantos alunos existem e em que pé está o conteúdo. Esta tela é só de consulta: as
+        alterações são feitas nas áreas do menu.
+      </HeroDoPainel>
 
-      {panorama === null ? (
-        <Degradado />
-      ) : (
-        <>
-          <Secao titulo="Alunos">
-            <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
-              <Numero valor={panorama.alunos.total} rotulo="Contas de aluno" />
-              <Numero
-                valor={panorama.alunos.verificados}
-                rotulo="E-mail verificado"
-                detalhe={`${panorama.alunos.total - panorama.alunos.verificados} sem verificar`}
-              />
-              <Numero
-                valor={panorama.alunos.ativos}
-                rotulo="Ativos em 7 dias"
-                detalhe="sessão usada na última semana"
-              />
-            </div>
-
-            <div className="mt-3 grid grid-cols-3 gap-3">
-              {(Object.keys(ROTULO_DO_PLANO) as Plan[]).map((plano) => (
+      {/*
+        A margem negativa faz a primeira seção subir sobre a faixa; o `pb` do
+        hero já reserva esse espaço. O `relative` põe as seções acima da imagem.
+      */}
+      <div className="relative -mt-12 flex flex-col gap-5 px-2 lg:-mt-14 lg:px-4">
+        {panorama === null ? (
+          <Degradado />
+        ) : (
+          <>
+            <Secao
+              titulo="Alunos"
+              subtitulo="Contas, verificação de e-mail e plano de cada aluno."
+              icone="alunos"
+              tom="ambar"
+            >
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
                 <Numero
-                  key={plano}
-                  valor={panorama.alunos.porPlano[plano]}
-                  rotulo={`Plano ${ROTULO_DO_PLANO[plano]}`}
+                  valor={panorama.alunos.total}
+                  rotulo="Contas de aluno"
+                  icone="alunos"
+                  tom="azul"
                 />
-              ))}
-            </div>
-          </Secao>
-
-          <Secao
-            titulo="Conteúdo"
-            acao={
-              <Link
-                href="/admin/midia/pendencias"
-                className="text-[13px] font-extrabold text-link no-underline hover:underline"
-              >
-                Pendências de mídia →
-              </Link>
-            }
-          >
-            <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
-              <Numero
-                valor={`${panorama.aulas.publicadas}/${panorama.aulas.total}`}
-                rotulo="Aulas publicadas"
-                detalhe={
-                  panorama.aulas.total === AULAS_PREVISTAS
-                    ? `${AULAS_PREVISTAS} aulas no curso`
-                    : `⚠ o curso prevê ${AULAS_PREVISTAS} aulas`
-                }
-              />
-              <Numero
-                valor={panorama.aulas.comRascunho}
-                rotulo="Com rascunho pendente"
-                detalhe="salvo, ainda não publicado"
-                destaque={panorama.aulas.comRascunho > 0}
-              />
-              <Numero
-                valor={panorama.aulas.total - panorama.aulas.publicadas}
-                rotulo="Ainda em rascunho"
-                detalhe="invisíveis para o aluno"
-              />
-              <Numero
-                valor={panorama.aulas.semCapa}
-                rotulo="Sem capa"
-                destaque={panorama.aulas.semCapa > 0}
-              />
-              <Numero
-                valor={panorama.aulas.semVideo}
-                rotulo="Sem vídeo"
-                destaque={panorama.aulas.semVideo > 0}
-              />
-              {panorama.ilustracoesSemImagem !== null ? (
                 <Numero
-                  valor={panorama.ilustracoesSemImagem}
-                  rotulo="Ilustrações sem imagem"
-                  detalhe="espaços que ainda mostram o placeholder"
-                  destaque={panorama.ilustracoesSemImagem > 0}
+                  valor={panorama.alunos.verificados}
+                  rotulo="E-mail verificado"
+                  detalhe={`${panorama.alunos.total - panorama.alunos.verificados} sem verificar`}
+                  icone="email"
+                  tom="verde"
                 />
-              ) : null}
-            </div>
-          </Secao>
+                <Numero
+                  valor={panorama.alunos.ativos}
+                  rotulo="Ativos em 7 dias"
+                  detalhe="sessão usada na última semana"
+                  icone="relogio"
+                  tom="ambar"
+                />
+                {(Object.keys(ROTULO_DO_PLANO) as Plan[]).map((plano) => (
+                  <Numero
+                    key={plano}
+                    valor={panorama.alunos.porPlano[plano]}
+                    rotulo={`Plano ${ROTULO_DO_PLANO[plano]}`}
+                    icone={VISUAL_DO_PLANO[plano].icone}
+                    tom={VISUAL_DO_PLANO[plano].tom}
+                  />
+                ))}
+              </div>
+            </Secao>
 
-          <Secao titulo="Atividade recente">
-            <Atividade linhas={panorama.atividade} />
-          </Secao>
-        </>
-      )}
+            <Secao
+              titulo="Conteúdo"
+              subtitulo="Publicação das aulas e mídia que ainda falta."
+              icone="documento"
+              tom="ambar"
+              acao={
+                <Link
+                  href="/admin/midia/pendencias"
+                  className="text-[13px] font-extrabold text-link no-underline hover:underline"
+                >
+                  Pendências de mídia →
+                </Link>
+              }
+            >
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                <Numero
+                  valor={`${panorama.aulas.publicadas}/${panorama.aulas.total}`}
+                  rotulo="Aulas publicadas"
+                  detalhe={
+                    panorama.aulas.total === AULAS_PREVISTAS
+                      ? `${AULAS_PREVISTAS} aulas no curso`
+                      : `⚠ o curso prevê ${AULAS_PREVISTAS} aulas`
+                  }
+                  icone="play"
+                  tom="azul"
+                />
+                <Numero
+                  valor={panorama.aulas.comRascunho}
+                  rotulo="Com rascunho pendente"
+                  detalhe="salvo, ainda não publicado"
+                  icone="documento"
+                  tom="azul"
+                  destaque={panorama.aulas.comRascunho > 0}
+                />
+                <Numero
+                  valor={panorama.aulas.total - panorama.aulas.publicadas}
+                  rotulo="Ainda em rascunho"
+                  detalhe="invisíveis para o aluno"
+                  icone="olhoRiscado"
+                  tom="azul"
+                />
+                <Numero
+                  valor={panorama.aulas.semCapa}
+                  rotulo="Sem capa"
+                  icone="imagem"
+                  tom="ambar"
+                  destaque={panorama.aulas.semCapa > 0}
+                />
+                <Numero
+                  valor={panorama.aulas.semVideo}
+                  rotulo="Sem vídeo"
+                  icone="video"
+                  tom="rosa"
+                  destaque={panorama.aulas.semVideo > 0}
+                />
+                {panorama.ilustracoesSemImagem !== null ? (
+                  <Numero
+                    valor={panorama.ilustracoesSemImagem}
+                    rotulo="Ilustrações sem imagem"
+                    detalhe="espaços que ainda mostram o placeholder"
+                    icone="paleta"
+                    tom="lilas"
+                    destaque={panorama.ilustracoesSemImagem > 0}
+                  />
+                ) : null}
+              </div>
+            </Secao>
 
-      <Secao titulo="Áreas do painel">
-        <Areas />
-      </Secao>
+            <Secao
+              titulo="Atividade recente"
+              subtitulo={`As ${LINHAS_DE_ATIVIDADE} últimas ações registradas no painel.`}
+              icone="atividade"
+            >
+              <Atividade linhas={panorama.atividade} />
+            </Secao>
+          </>
+        )}
+
+        <Secao
+          titulo="Áreas do painel"
+          subtitulo="Atalhos para as outras telas."
+          icone="grade"
+        >
+          <Areas />
+        </Secao>
+      </div>
     </div>
   );
 }

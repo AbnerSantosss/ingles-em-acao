@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Falar de quantidade com \"a lot of\", \"many\" e \"much\" e perguntar com \"How many\" e \"How much\".",
+  "conteudoAlvo": [
+    "a lot of / lots of + ___",
+    "don't + ___ + many / much + ___",
+    "How many + ___?, How much + ___?",
+    "How much is this book?, need, tomatoes, cups"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"some\" e \"any\" que já sei junto: \"We need some bread.\", \"Do we need much sugar?\"",
+    "Use a comida e a rotina que já sei: \"How many cups of coffee do you drink every day?\""
+  ],
+  "regrasDaAula": [
+    "\"many\" com plural que se conta; \"much\" com o que não se conta; \"a lot of\" com os dois."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "responder",
+    "corrigir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"many\" ou \"much\": \"I don't drink ___ coffee in the morning.\"",
+      "respostaDeReferencia": "I don't drink much coffee."
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Corrija: \"How much siblings do you have?\"",
+      "respostaDeReferencia": "How many siblings do you have?"
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda: \"How much water do you drink during the day?\"",
+      "respostaDeReferencia": "I drink a lot of water."
+    }
+  ],
+  "limites": [
+    "Sem \"a few\", \"a little\" e \"too much\": ainda não estudei.",
+    "Sem o passado (\"was\", \"were\"): isso é da próxima aula."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"a lot of\". Complete: \"I drink ___ water.\" (muita água). O que entra no espaço?",
+  "resumoAutorizado": [
+    "\"a lot of\" com os dois: \"a lot of hotels\", \"a lot of water\".",
+    "\"many\" e \"much\" na negativa e na pergunta: \"I don't eat many hamburgers.\"",
+    "Perguntas: \"How many children do you have?\", \"How much is this book?\""
+  ],
+  "resumoCurto": "Quantidade: \"a lot of\", \"many\", \"much\", \"How many...?\", \"How much...?\"."
+}

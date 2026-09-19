@@ -149,7 +149,7 @@ export const FORMULARIO_INICIAL: EstadoDoFormulario = { estado: 'inicial' };
 
 /** Tamanho de arquivo em português ("482 KB", "1,7 MB"). */
 export function formatarBytes(bytes: number): string {
-  if (!Number.isFinite(bytes) || bytes < 0) return '—';
+  if (!Number.isFinite(bytes) || bytes < 0) return '-';
   if (bytes < 1024) return `${bytes} B`;
 
   const kb = bytes / 1024;

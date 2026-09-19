@@ -46,101 +46,128 @@ export default async function InicioPage() {
 
   return (
     <div className="flex flex-col gap-7 pt-1 lg:pt-3.5">
-      {avisoDeManutencao ? (
-        <section
-          aria-label="Aviso da equipe"
-          className="rounded-card border-[1.5px] border-solid border-[#F8E7B4] bg-[#FEF7E0] p-4"
-        >
-          <p className="m-0 mb-1 text-[12px] font-extrabold uppercase tracking-[0.12em] text-[#6B520A]">
-            Aviso
-          </p>
-          <p className="m-0 whitespace-pre-line text-[15px] leading-[1.45] text-[#3D2F06]">
-            {avisoDeManutencao}
-          </p>
-        </section>
-      ) : null}
-
-      {usuario.emailVerifiedAt ? null : <VerifyEmailBanner email={usuario.email} />}
-
       {/*
-        Layout do design do Claude Designer: saudação à esquerda e, à direita,
-        progresso + frase; quando não cabem lado a lado (mobile) empilham.
+        Primeira dobra sobre a mesma arte escura da landing (globo e Big Ben).
+        O fundo sangra até as bordas da janela (`w-screen`; o layout do app corta
+        a sobra horizontal) e sobe até colar no cabeçalho: 20px no celular
+        (84 - 68 do cabeçalho + 4 do `pt-1`) e 28px no desktop (102 - 88 + 14).
+        `bg-navy` é o fallback: o texto fica legível antes de a arte chegar.
       */}
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-start gap-6">
-        <header className="pt-2">
-          <p className="m-0 mb-2.5 text-[15px] font-bold tracking-[0.18em] text-muted lg:text-[19px]">
-            OLÁ, {primeiroNome(usuario.name)} 👋
-          </p>
-          <h1 className="m-0 mb-[18px] text-[clamp(38px,10.5vw,58px)] font-black leading-[1.02] tracking-[-0.025em] text-navy text-pretty">
-            Continue de
-            <br />
-            <span className="text-blue">onde parou</span>
-          </h1>
-          <p className="m-0 text-[17px] leading-[1.45] text-muted text-pretty lg:text-[20px]">
-            O inglês que você usa de verdade,
-            <br />
-            no seu ritmo e com objetivos reais.
-          </p>
-        </header>
+      <div className="relative isolate flex flex-col gap-6 pb-9 pt-4 lg:pb-16 lg:pt-8">
+        <div
+          aria-hidden="true"
+          className="absolute bottom-0 -top-5 left-1/2 -z-10 w-screen -translate-x-1/2 overflow-hidden bg-navy lg:-top-7"
+        >
+          <picture>
+            <source media="(min-width: 1024px)" srcSet="/brand/hero-desktop.webp" />
+            <img
+              src="/brand/hero-mobile.webp"
+              alt=""
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 size-full max-w-none object-cover object-right-top lg:object-[right_78%]"
+            />
+          </picture>
+          {/* ⚠️ CONTRASTE AA: véu sobre o lado do texto; no desktop some antes do globo. */}
+          <div className="absolute inset-0 bg-navy/70 lg:bg-transparent lg:bg-linear-to-r lg:from-navy/85 lg:from-35% lg:via-navy/40 lg:via-55% lg:to-transparent lg:to-70%" />
+        </div>
 
-        <div className="flex flex-col gap-3.5">
+        {avisoDeManutencao ? (
           <section
-            aria-label="Seu progresso"
-            className="flex flex-wrap items-center gap-[22px] rounded-[20px] bg-surface px-[26px] py-[22px] shadow-[0_8px_26px_rgba(11,31,75,0.07)]"
+            aria-label="Aviso da equipe"
+            className="rounded-card border-[1.5px] border-solid border-[#F8E7B4] bg-[#FEF7E0] p-4"
           >
-            <ProgressRing pct={pct} done={done} total={total} size={118} caption={false} />
-
-            <div className="min-w-[170px] flex-1">
-              <p className="m-0 mb-1.5 text-[14px] font-extrabold tracking-[0.13em] text-muted">
-                SEU PROGRESSO
-              </p>
-              <p className="m-0 mb-3 text-[27px] font-black leading-tight text-navy">
-                {done} de {total} aulas
-              </p>
-              <div className="flex items-center gap-2.5">
-                <span
-                  aria-hidden="true"
-                  className="grid size-[38px] flex-none place-items-center rounded-[11px] bg-[#DFF3EC]"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="var(--teal)"
-                    strokeWidth="2.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M3 17 9.5 10.5l3.5 3.5L21 6" />
-                    <path d="M15 6h6v6" />
-                  </svg>
-                </span>
-                <p className="m-0 text-[16px] leading-[1.3] text-[#3C4A5C]">
-                  {fraseDeIncentivo(pct, sequencia)}
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="flex gap-3.5 rounded-[20px] bg-[#E4F3EC] px-[26px] py-[22px]">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="var(--teal)"
-              aria-hidden="true"
-              className="mt-0.5 flex-none"
-            >
-              <path d="M9.5 5C6.6 6.3 4.8 9 4.8 12.2c0 3 1.9 4.9 4.2 4.9 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.2-3.1-3.2-.4 0-.8.1-1 .2.4-1.6 1.7-3 3.4-3.8L9.5 5Zm9 0c-2.9 1.3-4.7 4-4.7 7.2 0 3 1.9 4.9 4.2 4.9 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.2-3.1-3.2-.4 0-.8.1-1 .2.4-1.6 1.7-3 3.4-3.8L18.5 5Z" />
-            </svg>
-            <p className="m-0 text-[17px] leading-[1.45] text-[#1B3A32] lg:text-[19px]">
-              A disciplina de hoje
-              <br />é o resultado de amanhã.
-              <br />
-              <em className="font-semibold">Keep going!</em> 🚀
+            <p className="m-0 mb-1 text-[12px] font-extrabold uppercase tracking-[0.12em] text-[#6B520A]">
+              Aviso
+            </p>
+            <p className="m-0 whitespace-pre-line text-[15px] leading-[1.45] text-[#3D2F06]">
+              {avisoDeManutencao}
             </p>
           </section>
+        ) : null}
+
+        {usuario.emailVerifiedAt ? null : <VerifyEmailBanner email={usuario.email} />}
+
+        {/*
+          Layout do design do Claude Designer: saudação à esquerda e, à direita,
+          progresso + frase; quando não cabem lado a lado (mobile) empilham.
+        */}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-start gap-6">
+          <header className="pt-2">
+            <p className="m-0 mb-2.5 text-[15px] font-bold tracking-[0.18em] text-yellow lg:text-[19px]">
+              OLÁ, {primeiroNome(usuario.name)} 👋
+            </p>
+            <h1 className="m-0 mb-[18px] text-[clamp(38px,10.5vw,58px)] font-black leading-[1.02] tracking-[-0.025em] text-white text-pretty">
+              Continue de
+              <br />
+              <span className="text-yellow">onde parou</span>
+            </h1>
+            <p className="m-0 text-[17px] leading-[1.45] text-white/90 text-pretty lg:text-[20px]">
+              O inglês que você usa de verdade,
+              <br />
+              no seu ritmo e com objetivos reais.
+            </p>
+          </header>
+
+          <div className="flex flex-col gap-3.5">
+            <section
+              aria-label="Seu progresso"
+              className="flex flex-wrap items-center gap-[22px] rounded-[20px] bg-surface px-[26px] py-[22px] shadow-[0_8px_26px_rgba(11,31,75,0.07)]"
+            >
+              <ProgressRing pct={pct} done={done} total={total} size={118} caption={false} />
+
+              <div className="min-w-[170px] flex-1">
+                <p className="m-0 mb-1.5 text-[14px] font-extrabold tracking-[0.13em] text-muted">
+                  SEU PROGRESSO
+                </p>
+                <p className="m-0 mb-3 text-[27px] font-black leading-tight text-navy">
+                  {done} de {total} aulas
+                </p>
+                <div className="flex items-center gap-2.5">
+                  <span
+                    aria-hidden="true"
+                    className="grid size-[38px] flex-none place-items-center rounded-[11px] bg-[#DFF3EC]"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="var(--teal)"
+                      strokeWidth="2.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M3 17 9.5 10.5l3.5 3.5L21 6" />
+                      <path d="M15 6h6v6" />
+                    </svg>
+                  </span>
+                  <p className="m-0 text-[16px] leading-[1.3] text-[#3C4A5C]">
+                    {fraseDeIncentivo(pct, sequencia)}
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="flex gap-3.5 rounded-[20px] bg-[#E4F3EC] px-[26px] py-[22px]">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="var(--teal)"
+                aria-hidden="true"
+                className="mt-0.5 flex-none"
+              >
+                <path d="M9.5 5C6.6 6.3 4.8 9 4.8 12.2c0 3 1.9 4.9 4.2 4.9 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.2-3.1-3.2-.4 0-.8.1-1 .2.4-1.6 1.7-3 3.4-3.8L9.5 5Zm9 0c-2.9 1.3-4.7 4-4.7 7.2 0 3 1.9 4.9 4.2 4.9 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.2-3.1-3.2-.4 0-.8.1-1 .2.4-1.6 1.7-3 3.4-3.8L18.5 5Z" />
+              </svg>
+              <p className="m-0 text-[17px] leading-[1.45] text-[#1B3A32] lg:text-[19px]">
+                A disciplina de hoje
+                <br />é o resultado de amanhã.
+                <br />
+                <em className="font-semibold">Keep going!</em> 🚀
+              </p>
+            </section>
+          </div>
         </div>
       </div>
 

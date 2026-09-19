@@ -29,11 +29,7 @@ import {
   BlocoRule,
   BlocoSteps,
 } from '@/components/lesson/blocks/cartoes';
-import {
-  BlocoInterativo,
-  type LinksDeCompra,
-  type Plano,
-} from '@/components/lesson/blocks/interativos';
+import { BlocoInterativo } from '@/components/lesson/blocks/interativos';
 import {
   BlocoAnswers,
   BlocoChips,
@@ -55,6 +51,8 @@ import {
   BlocoTitle,
 } from '@/components/lesson/blocks/texto';
 import type { Block } from '@/lib/content/types';
+import type { LinksDeCompra, Plano } from '@/lib/planos';
+import type { ResultadoDoPrompt } from '@/lib/pratica/tipos';
 
 export type PropsDoBlockRenderer = {
   bloco: Block;
@@ -66,6 +64,8 @@ export type PropsDoBlockRenderer = {
   temVideoaula?: boolean;
   /** Checkout por plano — só o `cta` usa. Ausente = sem botão de compra. */
   linksDeCompra?: LinksDeCompra;
+  /** Prompt da prática com IA (contrato 3.3). Só o `cta` usa. Ausente = sem ficha. */
+  pratica?: ResultadoDoPrompt;
 };
 
 export function BlockRenderer({
@@ -74,6 +74,7 @@ export function BlockRenderer({
   plano,
   temVideoaula,
   linksDeCompra,
+  pratica,
 }: PropsDoBlockRenderer) {
   switch (bloco.t) {
     // ───────────────────────── os 24 estáticos ─────────────────────────
@@ -143,6 +144,7 @@ export function BlockRenderer({
           plano={plano}
           temVideoaula={temVideoaula}
           linksDeCompra={linksDeCompra}
+          pratica={pratica}
         />
       );
 

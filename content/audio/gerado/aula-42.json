@@ -1,0 +1,29 @@
+{
+  "aula": 42,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_042_audio_001",
+        "alvo": "bloco",
+        "ancora": "W: Good evening. Are you ready to order?",
+        "texto": "Good evening. Are you ready to order?\nYes, please. I'd like a ham and cheese sandwich, please.\nIs it for here or to go?\nIt's for here.\nCan I get you anything to drink?\nYes, I'd like a bottle of water.\nSparkling or still?\nSparkling.\nAny appetizers?\nNo, thanks. I'm fine.",
+        "src": "/audio/aula-42/lesson_042_audio_001.18224890.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_042_audio_002",
+        "alvo": "bloco",
+        "ancora": "W: How was your sandwich?",
+        "texto": "How was your sandwich?\nIt was great.\nCan I get you anything else?\nNo, thanks. Could I have the check, please?\nSure. That's eight fifty.\nHere you go. Keep the change.\nThanks.",
+        "src": "/audio/aula-42/lesson_042_audio_002.b1ac916b.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
+}

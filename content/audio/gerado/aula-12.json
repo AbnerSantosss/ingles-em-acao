@@ -1,0 +1,183 @@
+{
+  "aula": 12,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_012_audio_001",
+        "alvo": "texto",
+        "ancora": "car → cars · house → houses",
+        "texto": "car. cars. house. houses",
+        "src": "/audio/aula-12/lesson_012_audio_001.2e1c33e6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_012_audio_002",
+        "alvo": "texto",
+        "ancora": "watch → watches · potato → potatoes",
+        "texto": "watch. watches. potato. potatoes",
+        "src": "/audio/aula-12/lesson_012_audio_002.9c1db4dc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_012_audio_003",
+        "alvo": "texto",
+        "ancora": "baby → babies",
+        "texto": "baby. babies",
+        "src": "/audio/aula-12/lesson_012_audio_003.896b4c90.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_004",
+        "alvo": "texto",
+        "ancora": "man",
+        "texto": "man",
+        "src": "/audio/aula-12/lesson_012_audio_004.68de2fe5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_005",
+        "alvo": "texto",
+        "ancora": "men",
+        "texto": "men",
+        "src": "/audio/aula-12/lesson_012_audio_005.fca20f0e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_006",
+        "alvo": "texto",
+        "ancora": "woman",
+        "texto": "woman",
+        "src": "/audio/aula-12/lesson_012_audio_006.5e04dc82.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_007",
+        "alvo": "texto",
+        "ancora": "women",
+        "texto": "women",
+        "src": "/audio/aula-12/lesson_012_audio_007.27e5c07f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_008",
+        "alvo": "texto",
+        "ancora": "child",
+        "texto": "child",
+        "src": "/audio/aula-12/lesson_012_audio_008.4dc5249b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_009",
+        "alvo": "texto",
+        "ancora": "person",
+        "texto": "person",
+        "src": "/audio/aula-12/lesson_012_audio_009.4e6be7d8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_010",
+        "alvo": "texto",
+        "ancora": "people",
+        "texto": "people",
+        "src": "/audio/aula-12/lesson_012_audio_010.2ff945b2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_011",
+        "alvo": "texto",
+        "ancora": "foot",
+        "texto": "foot",
+        "src": "/audio/aula-12/lesson_012_audio_011.f4e4b2c6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_012",
+        "alvo": "texto",
+        "ancora": "feet",
+        "texto": "feet",
+        "src": "/audio/aula-12/lesson_012_audio_012.58a38561.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_013",
+        "alvo": "texto",
+        "ancora": "tooth",
+        "texto": "tooth",
+        "src": "/audio/aula-12/lesson_012_audio_013.bc2f223b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_014",
+        "alvo": "texto",
+        "ancora": "teeth",
+        "texto": "teeth",
+        "src": "/audio/aula-12/lesson_012_audio_014.289952f6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_015",
+        "alvo": "texto",
+        "ancora": "life",
+        "texto": "life",
+        "src": "/audio/aula-12/lesson_012_audio_015.94c2d161.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_012_audio_016",
+        "alvo": "texto",
+        "ancora": "lives",
+        "texto": "lives",
+        "src": "/audio/aula-12/lesson_012_audio_016.0bac87ac.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

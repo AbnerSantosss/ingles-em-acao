@@ -33,7 +33,7 @@ export const AREAS: readonly AreaDoPainel[] = [
   {
     href: '/admin',
     rotulo: 'Dashboard',
-    descricao: 'O estado do produto num relance.',
+    descricao: 'Visão geral do produto.',
     icone: 'M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z',
     pronta: true,
   },

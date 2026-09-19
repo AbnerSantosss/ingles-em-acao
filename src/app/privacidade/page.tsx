@@ -15,8 +15,8 @@ import { EMAIL_DE_CONTATO, ListaLegal, PaginaLegal, SecaoLegal } from '@/compone
  * Mudou o código? Mude este texto junto.
  */
 export const metadata: Metadata = {
-  title: 'Política de privacidade — Inglês em Ação',
-  description: 'Quais dados o Inglês em Ação coleta, para que usa e como você exerce seus direitos pela LGPD.',
+  title: 'Política de privacidade',
+  description: 'Quais dados o WSA English coleta, para que usa e como você exerce seus direitos pela LGPD.',
 };
 
 const link = 'font-bold text-navy underline underline-offset-4';

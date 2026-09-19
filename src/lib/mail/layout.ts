@@ -1,5 +1,5 @@
 /**
- * Moldura HTML compartilhada pelos e-mails do "Inglês em Ação".
+ * Moldura HTML compartilhada pelos e-mails do "WSA English".
  *
  * Por que tudo em tabela e com CSS inline: o Gmail descarta `<style>` em boa
  * parte dos casos, o Outlook (motor do Word) ignora `flex`, `max-width` em
@@ -7,10 +7,15 @@
  * de maior uso (Gmail, Outlook e Apple Mail) é tabela + atributos + estilo
  * inline.
  *
- * Nenhuma imagem externa é usada: o logo é um quadrado amarelo com as letras
- * "IA" desenhado numa célula de tabela, então o e-mail continua com a cara da
- * marca mesmo com o bloqueio de imagens ligado (padrão do Outlook).
+ * Logo: PNG `public/brand/email/wsa-logo-email.png` (300x96, exibido em 150x48),
+ * buscado em `${APP_URL}/brand/email/wsa-logo-email.png`. PNG e não WebP porque
+ * Outlook e clientes antigos não abrem WebP. A base vem de `ambienteDeEmail().appUrl`
+ * (`transport.ts`), que lê `APP_URL`; no modo simulado sem `APP_URL`, cai em
+ * `http://localhost:3000`. Com imagens bloqueadas (padrão do Outlook) aparece o
+ * `alt` "WSA English" em branco sobre o navy. Sem `appUrl`, só o nome em texto.
  */
+
+import { CAMINHO_DA_LOGO_DO_EMAIL, NOME_DO_PRODUTO } from '../marca';
 
 /** Cores da marca (CONTRACT §3), repetidas aqui porque cliente de e-mail não lê o CSS do app. */
 export const CORES = {
@@ -170,28 +175,22 @@ function preheaderOculto(texto: string): string {
   );
 }
 
-/** Cabeçalho navy com o logo (quadrado amarelo "IA") e a marca em texto. */
-function cabecalho(): string {
+/** Cabeçalho navy com a logo WSA English. Com `appUrl` (http ou https), a logo PNG; sem ele, o nome em texto branco. */
+function cabecalho(appUrl?: string): string {
+  const base = (appUrl ?? '').trim().replace(/\/+$/, '');
+  const marca = /^https?:\/\//i.test(base)
+    ? `<img src="${escaparHtml(base + CAMINHO_DA_LOGO_DO_EMAIL)}" width="150" height="48"` +
+      ` alt="${NOME_DO_PRODUTO}" border="0"` +
+      ' style="display:block;width:150px;max-width:150px;height:48px;border:0;outline:none;' +
+      `text-decoration:none;font-family:${FONTE};font-size:18px;line-height:48px;` +
+      'font-weight:800;color:#FFFFFF;" />'
+    : `<span style="display:block;font-family:${FONTE};font-size:22px;line-height:48px;` +
+      `font-weight:800;color:#FFFFFF;">${NOME_DO_PRODUTO}</span>`;
   return [
     '<tr>',
     `<td bgcolor="${CORES.navy}" style="padding:26px 28px;background-color:${CORES.navy};`,
     'border-radius:16px 16px 0 0;">',
-    '<table role="presentation" cellpadding="0" cellspacing="0" border="0">',
-    '<tr>',
-    `<td width="46" height="46" align="center" valign="middle" bgcolor="${CORES.amarelo}"`,
-    ` style="width:46px;height:46px;background-color:${CORES.amarelo};border-radius:14px;`,
-    `font-family:${FONTE};font-size:19px;line-height:46px;font-weight:900;`,
-    `letter-spacing:0.02em;color:${CORES.navy};text-align:center;">IA</td>`,
-    '<td width="14" style="width:14px;font-size:0;line-height:0;">&nbsp;</td>',
-    `<td valign="middle" style="font-family:${FONTE};font-size:18px;line-height:1.25;`,
-    'font-weight:800;color:#FFFFFF;">',
-    'Inglês em Ação',
-    '<span style="display:block;font-size:12px;font-weight:600;line-height:1.4;',
-    'color:#AFC3E6;letter-spacing:0.04em;text-transform:uppercase;">',
-    'Seu inglês, uma aula por vez</span>',
-    '</td>',
-    '</tr>',
-    '</table>',
+    marca,
     '</td>',
     '</tr>',
   ].join('');
@@ -208,15 +207,15 @@ export type PublicoDoEmail = 'aluno' | 'painel' | 'conta';
 
 const LINHAS_DO_RODAPE: Record<PublicoDoEmail, readonly string[]> = {
   aluno: [
-    'Você recebeu este e-mail porque alguém usou este endereço no Inglês em Ação.',
-    'Se não foi você, é só ignorar esta mensagem — nada acontece sem a sua confirmação.',
+    'Você recebeu este e-mail porque alguém usou este endereço no WSA English.',
+    'Se não foi você, é só ignorar esta mensagem. Nada acontece sem a sua confirmação.',
   ],
   painel: [
-    'Alerta automático do painel do Inglês em Ação, enviado a todos os admins.',
+    'Alerta automático do painel do WSA English, enviado a todos os admins.',
     'Não reconhece esta ação? Confira a auditoria do painel agora.',
   ],
   conta: [
-    'Você recebeu este e-mail porque a equipe do Inglês em Ação criou uma conta com este endereço.',
+    'Você recebeu este e-mail porque a equipe do WSA English criou uma conta com este endereço.',
     'Não esperava por ele? É só ignorar esta mensagem.',
   ],
 };
@@ -233,7 +232,7 @@ function rodape(publico: PublicoDoEmail): string {
     '<tr>',
     `<td style="padding:0 18px 4px;font-family:${FONTE};font-size:12px;line-height:1.6;`,
     `color:${CORES.terciario};text-align:center;">`,
-    '© Inglês em Ação · mensagem automática, não é preciso responder.',
+    '© WSA English · mensagem automática, não é preciso responder.',
     '</td>',
     '</tr>',
   ].join('');
@@ -248,10 +247,12 @@ export type OpcoesLayout = {
   conteudo: string;
   /** Define o texto do rodapé. Padrão: `aluno`. */
   publico?: PublicoDoEmail;
+  /** Base pública do app (APP_URL), sem barra no fim. Liga a logo PNG no cabeçalho. Sem ela, só o nome em texto. */
+  appUrl?: string;
 };
 
 /** Monta o documento HTML completo do e-mail. */
-export function layoutEmail({ assunto, preheader, conteudo, publico = 'aluno' }: OpcoesLayout): string {
+export function layoutEmail({ assunto, preheader, conteudo, publico = 'aluno', appUrl }: OpcoesLayout): string {
   return [
     '<!DOCTYPE html>',
     '<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">',
@@ -280,7 +281,7 @@ export function layoutEmail({ assunto, preheader, conteudo, publico = 'aluno' }:
     '<td align="center" style="padding:28px 14px 34px;">',
     `<table role="presentation" width="${LARGURA}" cellpadding="0" cellspacing="0" border="0"` +
       ` style="width:100%;max-width:${LARGURA}px;margin:0 auto;">`,
-    cabecalho(),
+    cabecalho(appUrl),
     '<tr>',
     `<td bgcolor="${CORES.superficie}" style="padding:30px 28px 32px;` +
       `background-color:${CORES.superficie};border-radius:0 0 16px 16px;` +
@@ -301,7 +302,7 @@ export function layoutEmail({ assunto, preheader, conteudo, publico = 'aluno' }:
 
 /** Rodapé equivalente da versão em texto puro. */
 export function rodapeEmTexto(publico: PublicoDoEmail = 'aluno'): string {
-  return ['--', 'Inglês em Ação', ...LINHAS_DO_RODAPE[publico], 'Mensagem automática — não é preciso responder.'].join(
+  return ['--', 'WSA English', ...LINHAS_DO_RODAPE[publico], 'Mensagem automática, não é preciso responder.'].join(
     '\n',
   );
 }

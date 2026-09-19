@@ -39,10 +39,19 @@ const nextConfig: NextConfig = {
   // completa (script-src, style-src...) é outra tarefa: escrita às pressas aqui,
   // ela quebraria telas que nada têm a ver com vídeo.
   async headers() {
-    return ROTAS_COM_VIDEO.map((source) => ({
-      source,
-      headers: [{ key: "Content-Security-Policy", value: CSP_DE_VIDEO }],
-    }));
+    return [
+      ...ROTAS_COM_VIDEO.map((source) => ({
+        source,
+        headers: [{ key: "Content-Security-Policy", value: CSP_DE_VIDEO }],
+      })),
+      // Áudio das aulas (pacote 08): o nome de cada MP3 leva o hash do conteúdo
+      // (lesson_031_audio_004.3f9a1c2e.mp3). Áudio novo tem nome novo, então o
+      // navegador pode guardar o arquivo por um ano sem nunca tocar a versão velha.
+      {
+        source: "/audio/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
+      },
+    ];
   },
 };
 

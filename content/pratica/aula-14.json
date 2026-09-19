@@ -1,0 +1,50 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Escolher o possessivo pelo dono, não pelo objeto: \"my\", \"your\", \"his\", \"her\", \"its\", \"our\" e \"their\".",
+  "conteudoAlvo": [
+    "its, our, their, name"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Parta dos pronomes da Aula 01: \"I\" vira \"my\", \"we\" vira \"our\", \"they\" vira \"their\".",
+    "Use família e objetos já vistos: \"his sister\", \"her brother\", \"our house\", \"their car\"."
+  ],
+  "regrasDaAula": [
+    "\"its\" é posse (\"its name\"); \"it's\" é \"it is\" (\"it's new\")."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Em \"It's new.\" e \"its name\", qual deles é posse?",
+      "respostaDeReferencia": "its name"
+    },
+    {
+      "tipo": "escolher",
+      "enunciado": "Marina e o irmão dela. Escolha: \"his brother\" ou \"her brother\".",
+      "respostaDeReferencia": "her brother"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete: \"He is my friend. ___ name is Lucas.\"",
+      "respostaDeReferencia": "His name is Lucas."
+    }
+  ],
+  "limites": [
+    "Sem \"big\", \"students\", \"school\" e \"parents\": ainda não estudei.",
+    "Sem \"mine\", \"yours\" e \"theirs\": só o possessivo antes do objeto."
+  ],
+  "primeiraQuestao": "Vamos começar pelo dono. Rafael e a irmã dele: \"his sister\" ou \"her sister\"?",
+  "resumoAutorizado": [
+    "\"I\" e \"my\", \"you\" e \"your\", \"he\" e \"his\", \"she\" e \"her\".",
+    "\"it\" e \"its\", \"we\" e \"our\", \"they\" e \"their\": \"our house\", \"their car\".",
+    "O possessivo segue o dono: \"his sister\", \"her brother\"; \"its name\", \"it's new\"."
+  ],
+  "resumoCurto": "Possessivos pelo dono (\"his sister\", \"her brother\") e a diferença entre \"its\" e \"it's\"."
+}

@@ -1,0 +1,75 @@
+{
+  "aula": 13,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_013_audio_001",
+        "alvo": "texto",
+        "ancora": "THIS",
+        "texto": "this",
+        "src": "/audio/aula-13/lesson_013_audio_001.8ab607ed.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_013_audio_002",
+        "alvo": "texto",
+        "ancora": "THAT",
+        "texto": "that",
+        "src": "/audio/aula-13/lesson_013_audio_002.e13d590a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_013_audio_003",
+        "alvo": "texto",
+        "ancora": "THESE",
+        "texto": "these",
+        "src": "/audio/aula-13/lesson_013_audio_003.2fe0ba8c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_013_audio_004",
+        "alvo": "texto",
+        "ancora": "THOSE",
+        "texto": "those",
+        "src": "/audio/aula-13/lesson_013_audio_004.797a2c23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_013_audio_005",
+        "alvo": "texto",
+        "ancora": "This is a pen.",
+        "texto": "This is a pen.",
+        "src": "/audio/aula-13/lesson_013_audio_005.939e1b84.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_013_audio_006",
+        "alvo": "texto",
+        "ancora": "These are pens.",
+        "texto": "These are pens.",
+        "src": "/audio/aula-13/lesson_013_audio_006.2de193a5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

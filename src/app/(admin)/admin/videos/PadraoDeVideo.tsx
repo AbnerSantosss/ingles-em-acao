@@ -12,7 +12,7 @@
 import { useActionState, useState } from 'react';
 import { useFormStatus } from 'react-dom';
 
-import type { Plano } from '@/components/lesson/blocks/interativos';
+import type { Plano } from '@/lib/planos';
 import { PainelDeVideo } from '@/components/lesson/PainelDeVideo';
 import { Button } from '@/components/ui/Button';
 import { Field } from '@/components/ui/Field';
@@ -31,7 +31,7 @@ import { SeletorDeModo, useArquivoDaPrevia, type ModoDoVideo } from './EditorDeV
 import { EnvioDeVideo } from './EnvioDeVideo';
 import { FORMULARIO_INICIAL, type EstadoDoFormulario } from './tipos';
 
-const PLANO_DA_PREVIA: Plano = 'COMPLETO';
+const PLANO_DA_PREVIA: Plano = 'PREMIUM';
 
 function Recado({ estado }: { estado: EstadoDoFormulario }) {
   if (estado.estado === 'inicial') return null;
@@ -99,7 +99,7 @@ export function PadraoDeVideo({
         {padrao
           ? `Padrão guardado: ${descricao ?? descreverFonte(padrao)}.`
           : 'Nenhum vídeo padrão guardado ainda.'}{' '}
-        Guardar aqui não muda aula nenhuma — use o botão de aplicar para copiá-lo para as aulas que
+        Guardar aqui não muda aula nenhuma. Use o botão de aplicar para copiá-lo para as aulas que
         estão sem vídeo.
       </p>
 

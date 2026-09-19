@@ -1,12 +1,14 @@
 /**
- * Ícone de uma área do painel.
+ * Ícone de traço do painel.
  *
- * Os desenhos são `path` de traço num viewBox 24×24, guardados como dado em
- * `nav.ts` — assim a lista de áreas continua sendo um arquivo `.ts` simples, que
- * outra área pode ler sem arrastar JSX junto.
+ * Os desenhos são `path` de traço num viewBox 24×24, guardados como dado: os das
+ * áreas em `nav.ts`, os do cabeçalho e do dashboard em `icones.ts`. Assim essas
+ * listas continuam sendo arquivos `.ts` simples, que outra área pode ler sem
+ * arrastar JSX junto.
  *
- * `currentColor` de propósito: o ícone acompanha a cor do link (navy quando
- * ativo, `--muted` quando não), e nenhuma cor precisa ser repetida aqui.
+ * `currentColor` de propósito: o ícone acompanha a cor de quem o envolve (branco
+ * na barra lateral escura, navy no cabeçalho, a cor do tom nos cartões de
+ * número), e nenhuma cor precisa ser repetida aqui.
  */
 export type IconeDaAreaProps = {
   /** `d` do path (campo `icone` de `AreaDoPainel`). */

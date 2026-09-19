@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Nomear roupas e dizer o que uso na rotina (\"wear\") e o que estou vestindo agora (\"I'm wearing\").",
+  "conteudoAlvo": [
+    "t-shirt, pants, jeans, dress, skirt, shoes, socks",
+    "jacket, coat, hat, shorts, glasses, a uniform",
+    "I + wear + ___; she wears",
+    "I'm + wearing + ___"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use as cores da Aula 10 antes da roupa: \"a white t-shirt\", \"black shoes\".",
+    "Misture rotina e agora: \"I wear a uniform.\" e \"I'm wearing jeans.\""
+  ],
+  "regrasDaAula": [
+    "A cor vem antes da roupa: \"a blue shirt\", nunca \"a shirt blue\"."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "traduzir",
+    "responder",
+    "corrigir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a certa: \"She wear glasses.\" ou \"She wears glasses.\"",
+      "respostaDeReferencia": "She wears glasses."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Estou usando uma camiseta branca.",
+      "respostaDeReferencia": "I'm wearing a white t-shirt."
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Corrija: \"He is wearing a shirt blue.\"",
+      "respostaDeReferencia": "He is wearing a blue shirt."
+    }
+  ],
+  "limites": [
+    "Só \"wear\" e \"wearing\": \"put on\", \"favorite\" e \"trousers\" ainda não estudei.",
+    "Sem clima e sem compras: só roupas, cores e o que eu visto."
+  ],
+  "primeiraQuestao": "Vamos começar pelos pés. Como se diz sapatos em inglês?",
+  "resumoAutorizado": [
+    "\"t-shirt\", \"pants\", \"jeans\", \"dress\", \"skirt\", \"shoes\", \"socks\", \"jacket\".",
+    "\"coat\", \"hat\", \"shorts\", \"glasses\", \"a uniform\"; cor antes: \"a white t-shirt\".",
+    "\"I wear a uniform.\", \"She wears glasses.\", \"I'm wearing jeans.\""
+  ],
+  "resumoCurto": "Roupas (\"t-shirt\", \"jeans\", \"shoes\", \"jacket\") com \"I wear\" para rotina e \"I'm wearing\" para agora."
+}

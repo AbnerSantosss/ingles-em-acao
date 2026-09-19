@@ -119,7 +119,7 @@ export function VideoAssinado({ inicial, renovar, titulo }: PropsDoVideoAssinado
     return (
       <div className="absolute inset-0 flex items-center justify-center p-6 text-center">
         <p className="max-w-sm text-[14px] leading-relaxed text-white/80">
-          Não conseguimos carregar a videoaula agora. Recarregue a página para tentar de novo — a
+          Não conseguimos carregar a videoaula agora. Recarregue a página para tentar de novo. A
           leitura e os exercícios da aula continuam aqui embaixo.
         </p>
       </div>

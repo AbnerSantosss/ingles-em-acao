@@ -12,7 +12,7 @@ import { FormularioDeRecuperacao } from './form';
 
 export const metadata: Metadata = {
   title: 'Esqueci minha senha',
-  description: 'Receba um link para criar uma nova senha do Inglês em Ação.',
+  description: 'Receba um link para criar uma nova senha do WSA English.',
 };
 
 type Busca = Record<string, string | string[] | undefined>;

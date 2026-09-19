@@ -109,7 +109,7 @@ export async function restaurarVersaoAction(
 
     if (aula.draftPages !== null && campo(dados, 'substituirRascunho') !== 'sim') {
       return falha(
-        'Esta aula já tem um rascunho pendente. Marque que você quer substituí-lo pela versão restaurada — o rascunho atual será perdido.',
+        'Esta aula já tem um rascunho pendente. Marque que você quer substituí-lo pela versão restaurada. O rascunho atual será perdido.',
       );
     }
 

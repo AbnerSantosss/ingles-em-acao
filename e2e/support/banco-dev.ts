@@ -21,7 +21,6 @@ import { PrismaClient, type VideoKind } from '@prisma/client';
 export const DOMINIO_DE_DEV = '@dev.local';
 
 export const EMAIL_ALUNO = `aluno${DOMINIO_DE_DEV}`;
-export const EMAIL_COMPLETO = `completo${DOMINIO_DE_DEV}`;
 export const EMAIL_ESSENCIAL = `essencial${DOMINIO_DE_DEV}`;
 export const EMAIL_ADMIN = `admin${DOMINIO_DE_DEV}`;
 

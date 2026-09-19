@@ -1,0 +1,93 @@
+{
+  "aula": 4,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_004_audio_001",
+        "alvo": "texto",
+        "ancora": "Am I late?",
+        "texto": "Am I late?",
+        "src": "/audio/aula-04/lesson_004_audio_001.405ba70e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_002",
+        "alvo": "texto",
+        "ancora": "Yes, you are. / No, you aren’t.",
+        "texto": "Yes, you are. No, you aren't.",
+        "src": "/audio/aula-04/lesson_004_audio_002.ef216f92.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_003",
+        "alvo": "texto",
+        "ancora": "Yes, I am. / No, I’m not.",
+        "texto": "Yes, I am. No, I'm not.",
+        "src": "/audio/aula-04/lesson_004_audio_003.66da646e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_004",
+        "alvo": "texto",
+        "ancora": "Yes, he is. / No, he isn’t.",
+        "texto": "Yes, he is. No, he isn't.",
+        "src": "/audio/aula-04/lesson_004_audio_004.072a5db6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_005",
+        "alvo": "texto",
+        "ancora": "Yes, she is. / No, she isn’t.",
+        "texto": "Yes, she is. No, she isn't.",
+        "src": "/audio/aula-04/lesson_004_audio_005.a459fff3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_006",
+        "alvo": "texto",
+        "ancora": "Yes, it is. / No, it isn’t.",
+        "texto": "Yes, it is. No, it isn't.",
+        "src": "/audio/aula-04/lesson_004_audio_006.6652cd82.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_007",
+        "alvo": "texto",
+        "ancora": "Yes, we are. / No, we aren’t.",
+        "texto": "Yes, we are. No, we aren't.",
+        "src": "/audio/aula-04/lesson_004_audio_007.3ec211b5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_004_audio_008",
+        "alvo": "texto",
+        "ancora": "Yes, they are. / No, they aren’t.",
+        "texto": "Yes, they are. No, they aren't.",
+        "src": "/audio/aula-04/lesson_004_audio_008.5d93a346.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

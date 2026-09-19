@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer com que frequência faço algo, com o advérbio antes do verbo comum e depois de \"am\", \"is\" e \"are\".",
+  "conteudoAlvo": [
+    "always, usually, often, sometimes",
+    "rarely, seldom, never",
+    "I + always + ___; I + am + always + ___",
+    "I never drink coffee."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use o presente simples das Aulas 17 e 18: \"She never works on Sunday.\"",
+    "Misture com \"am\", \"is\" e \"are\" e o que já sei: \"He is usually happy.\""
+  ],
+  "regrasDaAula": [
+    "\"never\" já é negativo: \"I never drink coffee.\", nunca junto com \"don't\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "transformar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a frase certa: \"She always is happy.\" ou \"She is always happy.\"",
+      "respostaDeReferencia": "She is always happy."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"nunca\": \"I ___ drink coffee.\"",
+      "respostaDeReferencia": "I never drink coffee."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Coloque \"sometimes\" na frase: \"They work on Saturday.\"",
+      "respostaDeReferencia": "They sometimes work on Saturday."
+    }
+  ],
+  "limites": [
+    "Sem horas e períodos do dia: \"at night\" e \"in the morning\" ainda não estudei.",
+    "Verbos só os que já vi: \"arrive\" e \"watch TV\" ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"always\". Complete com \"sempre\": \"I ___ study.\" Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "\"always\", \"usually\", \"often\", \"sometimes\", \"rarely\", \"seldom\", \"never\".",
+    "Antes do verbo comum: \"I always study.\", \"She never works on Sunday.\"",
+    "Depois de \"am\"/\"is\"/\"are\": \"I am always late.\", \"He is usually happy.\""
+  ],
+  "resumoCurto": "Advérbios de frequência: \"always\", \"usually\", \"sometimes\", \"never\", antes do verbo e depois de \"is\"."
+}

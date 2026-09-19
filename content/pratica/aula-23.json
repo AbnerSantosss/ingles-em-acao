@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Nomear comidas e bebidas comuns, fazer um pedido educado com \"I'd like\" e perguntar o preço.",
+  "conteudoAlvo": [
+    "bread, rice, beans, chicken, meat, fish, cheese",
+    "egg, fruit, salad, snack",
+    "water, tea, juice, milk, soda",
+    "I'd like + ___; I'd like a coffee, please."
+  ],
+  "expressoesFixas": [
+    "How much is it?"
+  ],
+  "comoIntegrar": [
+    "Junte com as refeições da Aula 21: \"I have breakfast at 7.\", \"I have lunch at home.\"",
+    "Use \"like\" e \"don't like\" da Aula 18: \"I like fish.\", \"I don't like soda.\""
+  ],
+  "regrasDaAula": [
+    "Para pedir, \"I'd like\" é mais educado: \"I'd like a coffee, please.\""
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "traduzir",
+    "situacao"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Qual é a bebida: \"rice\", \"juice\" ou \"bread\"?",
+      "respostaDeReferencia": "juice"
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Eu gostaria de um chá, por favor.",
+      "respostaDeReferencia": "I'd like a tea, please."
+    },
+    {
+      "tipo": "situacao",
+      "enunciado": "Estou num café e quero saber o preço. O que eu pergunto?",
+      "respostaDeReferencia": "How much is it?"
+    }
+  ],
+  "limites": [
+    "Sem \"I want\", \"some\" e \"can I have\": para pedir, só \"I'd like\".",
+    "Preço só em números até \"one hundred\" com \"dollars\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelo café da manhã. Como se diz \"pão\" em inglês?",
+  "resumoAutorizado": [
+    "Comida: \"bread\", \"rice\", \"beans\", \"chicken\", \"meat\", \"fish\", \"cheese\", \"egg\".",
+    "Bebida: \"water\", \"tea\", \"juice\", \"milk\", \"soda\"; \"fruit\", \"salad\", \"snack\".",
+    "\"I'd like a coffee, please.\", \"How much is it?\""
+  ],
+  "resumoCurto": "Comidas e bebidas (\"bread\", \"rice\", \"water\", \"juice\") e pedido: \"I'd like..., please.\", \"How much is it?\""
+}

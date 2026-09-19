@@ -27,7 +27,7 @@ import { CAMINHO_DO_WEBHOOK, enderecoDoWebhook } from '@/lib/pagamento/provedor'
 const SUFIXO = randomBytes(5).toString('hex');
 const SEGREDO = randomBytes(32).toString('hex');
 
-const PRODUTO_COMPLETO = `pag-${SUFIXO}-completo`;
+const PRODUTO_ESSENCIAL = `pag-${SUFIXO}-essencial`;
 const PRODUTO_PREMIUM = `pag-${SUFIXO}-premium`;
 const PRODUTO_FORA_DO_MAPA = `pag-${SUFIXO}-desconhecido`;
 
@@ -66,7 +66,7 @@ beforeAll(async () => {
   mapaOriginal = linha?.value ?? null;
   const mapa = {
     produtos: [
-      { codigo: PRODUTO_COMPLETO, plano: 'COMPLETO' },
+      { codigo: PRODUTO_ESSENCIAL, plano: 'ESSENCIAL' },
       { codigo: PRODUTO_PREMIUM, plano: 'PREMIUM' },
     ],
   };
@@ -179,7 +179,7 @@ describe('webhook de pagamento — concessão', () => {
     const corpo = corpoDoEvento({
       id,
       status: 'APPROVED',
-      produto: PRODUTO_COMPLETO,
+      produto: PRODUTO_PREMIUM,
       referencia: aluno.paymentRef,
       valorCentavos: 19700,
     });
@@ -188,13 +188,13 @@ describe('webhook de pagamento — concessão', () => {
 
     expect(status).toBe(200);
     expect(json).toEqual({ ok: true, resultado: 'concedido' });
-    expect(await planoDe(aluno.id)).toBe('COMPLETO');
+    expect(await planoDe(aluno.id)).toBe('PREMIUM');
 
     const pagamento = await pagamentoDo(id);
     expect(pagamento).toMatchObject({
       status: 'APPROVED',
-      productCode: PRODUTO_COMPLETO,
-      planCode: 'COMPLETO',
+      productCode: PRODUTO_PREMIUM,
+      planCode: 'PREMIUM',
       userId: aluno.id,
       externalReference: aluno.paymentRef,
       amountCents: 19700,
@@ -209,7 +209,7 @@ describe('webhook de pagamento — concessão', () => {
       actorEmail: '(webhook fake)',
       outcome: 'ALLOW',
       before: { plan: 'ESSENCIAL' },
-      after: { plan: 'COMPLETO' },
+      after: { plan: 'PREMIUM' },
     });
     expect(auditoria[0]?.reason).toContain(`fake:${id}`);
   });
@@ -220,12 +220,12 @@ describe('webhook de pagamento — concessão', () => {
     const corpo = corpoDoEvento({
       id,
       status: 'APPROVED',
-      produto: PRODUTO_COMPLETO,
+      produto: PRODUTO_PREMIUM,
       referencia: aluno.paymentRef,
     });
 
     expect((await enviar(corpo)).json.resultado).toBe('concedido');
-    expect(await planoDe(aluno.id)).toBe('COMPLETO');
+    expect(await planoDe(aluno.id)).toBe('PREMIUM');
 
     // Um admin rebaixou o aluno depois da compra. O reenvio do mesmo evento não
     // pode desfazer a decisão dele liberando o plano outra vez.
@@ -273,12 +273,12 @@ describe('webhook de pagamento — concessão', () => {
     expect(await planoDe(aluno.id)).toBe('PREMIUM');
   });
 
-  it('nunca rebaixa: Premium que compra o Completo continua Premium', async () => {
+  it('nunca rebaixa: Premium que compra o Essencial continua Premium', async () => {
     const aluno = await criarAluno('PREMIUM');
     const id = novoEventoId();
 
     const { status, json } = await enviar(
-      corpoDoEvento({ id, status: 'APPROVED', produto: PRODUTO_COMPLETO, referencia: aluno.paymentRef }),
+      corpoDoEvento({ id, status: 'APPROVED', produto: PRODUTO_ESSENCIAL, referencia: aluno.paymentRef }),
     );
 
     expect(status).toBe(200);
@@ -286,27 +286,13 @@ describe('webhook de pagamento — concessão', () => {
     expect(await planoDe(aluno.id)).toBe('PREMIUM');
 
     const pagamento = await pagamentoDo(id);
-    expect(pagamento?.planCode).toBe('COMPLETO');
+    expect(pagamento?.planCode).toBe('ESSENCIAL');
     // O pagamento foi honrado (o plano atual já cobria): não fica na fila do suporte.
     expect(pagamento?.grantedAt).toBeInstanceOf(Date);
 
     const auditoria = await concessoesDo(aluno.id);
     expect(auditoria).toHaveLength(1);
     expect(auditoria[0]).toMatchObject({ before: { plan: 'PREMIUM' }, after: { plan: 'PREMIUM' } });
-  });
-
-  it('Completo que compra o Premium sobe para Premium', async () => {
-    const aluno = await criarAluno('COMPLETO');
-    const { json } = await enviar(
-      corpoDoEvento({
-        id: novoEventoId(),
-        status: 'APPROVED',
-        produto: PRODUTO_PREMIUM,
-        referencia: aluno.paymentRef,
-      }),
-    );
-    expect(json.resultado).toBe('concedido');
-    expect(await planoDe(aluno.id)).toBe('PREMIUM');
   });
 });
 
@@ -552,7 +538,7 @@ describe('webhook de pagamento — trancas da rota', () => {
         corpoDoEvento({
           id: novoEventoId(),
           status: 'APPROVED',
-          produto: PRODUTO_COMPLETO,
+          produto: PRODUTO_PREMIUM,
           referencia: aluno.paymentRef,
         }),
       ),

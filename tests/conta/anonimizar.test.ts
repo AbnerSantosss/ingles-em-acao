@@ -53,7 +53,7 @@ async function criarUsuario(dados: { role?: 'STUDENT' | 'ADMIN'; email?: string 
       email: dados.email ?? novoEmail(),
       passwordHash: hashDaSenha,
       role: dados.role ?? 'STUDENT',
-      plan: 'COMPLETO',
+      plan: 'PREMIUM',
       photoUrl: 'https://exemplo.invalid/foto.png',
       emailVerifiedAt: new Date(),
       paymentRef: `${PREFIXO}-ref-${randomBytes(6).toString('hex')}`,
@@ -105,8 +105,8 @@ async function criarAlunoCompleto() {
       provider: PROVEDOR,
       externalId: `${PREFIXO}-pg-${randomBytes(6).toString('hex')}`,
       status: 'APPROVED',
-      productCode: 'curso-completo',
-      planCode: 'COMPLETO',
+      productCode: 'wsa-premium',
+      planCode: 'PREMIUM',
       externalReference: usuario.paymentRef,
       userId: usuario.id,
       amountCents: 19700,
@@ -193,7 +193,7 @@ describe('anonimizarConta', () => {
     expect(depois.deletedAt).toEqual(resultado.excluidaEm);
     // Ficam: papel, plano e data de criação.
     expect(depois.role).toBe('STUDENT');
-    expect(depois.plan).toBe('COMPLETO');
+    expect(depois.plan).toBe('PREMIUM');
     expect(depois.createdAt).toEqual(usuario.createdAt);
 
     // A senha antiga não entra mais.

@@ -18,7 +18,7 @@ import { createSession } from '@/lib/auth/session';
 import { generateToken } from '@/lib/auth/tokens';
 import { prisma } from '@/lib/db';
 
-export type PapelDemo = 'aluno' | 'completo' | 'essencial' | 'admin';
+export type PapelDemo = 'aluno' | 'essencial' | 'admin';
 
 const CONTAS_DEMO = {
   aluno: {
@@ -26,13 +26,6 @@ const CONTAS_DEMO = {
     name: 'Aluno Demo',
     role: 'STUDENT',
     plan: 'PREMIUM',
-    destino: '/inicio',
-  },
-  completo: {
-    email: 'completo@dev.local',
-    name: 'Aluno Completo',
-    role: 'STUDENT',
-    plan: 'COMPLETO',
     destino: '/inicio',
   },
   essencial: {

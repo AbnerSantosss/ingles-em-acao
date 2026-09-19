@@ -232,7 +232,7 @@ export default async function TelaDeAulas({
         </h1>
         <p className="m-0 mt-1.5 max-w-[62ch] text-[14px] font-semibold leading-snug text-muted">
           Todas as aulas do curso, publicadas ou não. Clique no título para abrir os dados, e
-          publique quando o conteúdo estiver pronto — só aula publicada chega ao aluno. Marque
+          publique quando o conteúdo estiver pronto. Só aula publicada chega ao aluno. Marque
           várias para publicar ou despublicar de uma vez; &ldquo;Duplicar&rdquo; cria uma cópia em
           rascunho.
         </p>

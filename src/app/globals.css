@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* =========================================================================
-   Inglês em Ação — camada de tokens
+   WSA English: camada de tokens
    Valores extraídos do protótipo (prototype/mobile.dc.html) e fixados na
    seção 3 do CONTRACT.md. Os nomes crus vivem no :root com os nomes do
    contrato (--bg, --navy, ...); o bloco @theme inline os expõe ao Tailwind
@@ -156,24 +156,30 @@
    ========================================================================= */
 
 @layer components {
-  /* Coluna do app: mobile-first ocupa tudo; a partir de 460px centraliza. */
+  /* Coluna do app: mobile-first ocupa tudo; a partir de 460px centraliza.
+     O respiro lateral nunca fica menor que a área segura: com
+     viewport-fit=cover (layout do app), o iPhone deitado põe o entalhe
+     dentro da tela. */
   .tela {
     width: 100%;
     max-width: 460px;
     margin-inline: auto;
-    padding-inline: 16px;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
   }
 
   /* Desktop (design do Claude Designer): coluna de 1024px, sem barra inferior. */
   @media (width >= 1024px) {
     .tela {
       max-width: 1024px;
-      padding-inline: 20px;
+      padding-left: max(20px, env(safe-area-inset-left));
+      padding-right: max(20px, env(safe-area-inset-right));
     }
   }
 
   /* Altura da BottomNav (= ALTURA_NAV). Zero no desktop, onde ela some: o que
-     fica colado acima dela (barra do leitor, aviso de gravação) desce junto. */
+     fica colado acima dela (aviso de gravação) desce junto. Na aula e no
+     resultado não há BottomNav: .modo-foco também zera (fim do arquivo). */
   :root {
     --altura-nav: 74px;
   }
@@ -227,5 +233,304 @@
   /* O spinner é o único sinal de "carregando": desacelera, não congela. */
   .iea-spinner {
     animation: iea-spin 2.4s linear infinite !important;
+  }
+}
+
+/* =========================================================================
+   Tela cheia da aula (plano v2, pacote 05; 01-CONTRATOS §4)
+   A aula e o resultado ocupam exatamente a altura da tela: topo e base
+   fixos, só o miolo rola. Os tokens de tamanho (--fs-*, --alt-*, --esp-casca)
+   nascem no :root do pacote 02; aqui ficam os ajustes do pacote 05, os
+   utilitários que os aplicam (com piso que nenhum token fura) e a casca.
+   ========================================================================= */
+
+/* Tokens de escala por dispositivo (01-CONTRATOS §4). O pacote 02 não os
+   criou; nascem aqui, com os valores do contrato. --fs-titulo fica no bloco
+   de ajustes logo abaixo (26/30/34/38px, 01-CONTRATOS §10.2). */
+:root {
+  --fs-leitura: 16px; /* texto corrido da aula */
+  --fs-apoio: 14px; /* tradução, nota, rodapé */
+  --fs-botao: 16px;
+  --alt-botao: 48px; /* altura do botão principal. Nunca abaixo de 44px */
+  --esp-casca: 16px; /* respiro lateral da casca */
+  --alt-cabecalho: 64px;
+  --alt-navegacao: 76px;
+}
+@media (min-width: 640px) {
+  :root {
+    --fs-leitura: 17px;
+    --esp-casca: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --fs-leitura: 18px;
+    --fs-apoio: 15px;
+    --fs-botao: 17px;
+    --alt-botao: 52px;
+    --esp-casca: 32px;
+  }
+}
+@media (min-width: 1536px) {
+  :root {
+    --fs-leitura: 19px;
+  }
+}
+/* Telas baixas: notebook 1366x768, celular 320x568. */
+@media (max-height: 700px) {
+  :root {
+    --alt-cabecalho: 56px;
+    --alt-navegacao: 64px;
+    --alt-botao: 44px;
+  }
+}
+
+/* Ajustes e complementos dos tokens. Fora de @layer de propósito: CSS sem
+   camada vence CSS com camada, então estes valores valem mesmo que os do
+   pacote 02 estejam dentro de uma. */
+:root {
+  --fs-rotulo: 12px; /* rótulo em caixa alta: kicker, selo, "PÁGINA 2 DE 7" */
+  --fs-titulo: 26px; /* título da página da aula (BlocoTitle) e do resultado */
+  --largura-leitura: 780px; /* coluna de leitura no desktop (design: 820 - 2x20) */
+  --alt-progresso: 6px; /* espessura da barra de progresso do topo */
+  --esp-miolo: 16px; /* respiro acima e abaixo do cartão, dentro do miolo */
+  --fundo-aula: #f4f7fc; /* cor de espera enquanto a imagem de fundo carrega */
+}
+@media (min-width: 640px) {
+  :root {
+    --fs-titulo: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --fs-rotulo: 13px;
+    --fs-titulo: 34px;
+    --esp-miolo: 24px;
+  }
+}
+@media (min-width: 1536px) {
+  :root {
+    --fs-titulo: 38px;
+  }
+}
+/* Telas baixas (notebook 1366x768 com a barra do navegador, celular 320x568). */
+@media (max-height: 700px) {
+  :root {
+    --alt-progresso: 4px;
+    --esp-miolo: 12px;
+  }
+}
+
+/* Utilitários de escala. Use estes, nunca text-[Npx], em texto da aula.
+   O max() é o piso: nenhum token, nem errado, desce abaixo dele.
+   Nunca junte text-[Npx] e fs-* no mesmo elemento. */
+@utility fs-leitura {
+  font-size: max(15px, var(--fs-leitura, 16px));
+}
+@utility fs-apoio {
+  font-size: max(14px, var(--fs-apoio, 14px));
+}
+@utility fs-rotulo {
+  font-size: max(12px, var(--fs-rotulo, 12px));
+}
+@utility fs-titulo {
+  font-size: max(24px, var(--fs-titulo, 26px));
+}
+@utility fs-botao {
+  font-size: max(15px, var(--fs-botao, 16px));
+}
+@utility alt-botao {
+  min-height: max(44px, var(--alt-botao, 48px));
+}
+@utility alvo-toque {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@layer components {
+  /* Modo foco (aula e resultado): sem BottomNav, então nada sobe por ela.
+     O aviso de gravação (interacao.tsx) pousa logo acima da base da casca. */
+  .modo-foco {
+    --altura-nav: 0px;
+  }
+
+  /* A casca: três faixas na altura exata da tela. 100vh é o piso para
+     navegador antigo; 100dvh acompanha a barra de endereço do celular.
+     Teclado aberto: dvh não muda. A casca mantém a altura, o navegador
+     desloca a vista até o campo e a base fica atrás do teclado. */
+  .casca-aula {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .casca-aula__topo {
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--alt-cabecalho, 64px) + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
+    border-bottom: 1px solid #e3eaf3;
+    background: rgb(255 255 255 / 0.92);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .casca-aula__controles {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    gap: 10px;
+    min-height: 0;
+  }
+
+  .casca-aula__progresso {
+    flex: none;
+    height: calc(var(--alt-progresso, 6px) + 8px);
+    padding-bottom: 8px;
+  }
+
+  /* A única parte que rola. overscroll-behavior: contain impede que o fim da
+     rolagem arraste a página por trás (e o "puxar para atualizar"). */
+  .casca-aula__miolo {
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-padding-block: 16px;
+  }
+
+  .casca-aula__conteudo {
+    padding-block: var(--esp-miolo, 16px);
+  }
+
+  .casca-aula__base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(var(--alt-navegacao, 76px) + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid #e3eaf3;
+    background: rgb(255 255 255 / 0.92);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .casca-aula__acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-block: 10px;
+  }
+
+  /* A coluna do topo, do miolo e da base: a mesma largura nas três faixas.
+     Até 780px de texto, com --esp-casca de respiro e a área segura do
+     iPhone deitado. */
+  .coluna-aula {
+    width: 100%;
+    max-width: calc(var(--largura-leitura, 780px) + 2 * var(--esp-casca, 16px));
+    margin-inline: auto;
+    padding-left: max(var(--esp-casca, 16px), env(safe-area-inset-left));
+    padding-right: max(var(--esp-casca, 16px), env(safe-area-inset-right));
+  }
+
+  /* Desktop: a barra de rolagem não empurra a coluna quando aparece. */
+  @media (min-width: 1024px) {
+    .casca-aula__controles {
+      gap: 14px;
+    }
+    .casca-aula__miolo {
+      scrollbar-gutter: stable both-edges;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .casca-aula__progresso {
+      height: calc(var(--alt-progresso, 4px) + 6px);
+      padding-bottom: 6px;
+    }
+    .casca-aula__acoes {
+      padding-block: 8px;
+    }
+  }
+
+  /* O fundo da WSA (FundoDaAula.tsx): parado atrás da casca. Elemento fixo,
+     não background-attachment, que o Safari do iPhone ignora. */
+  .fundo-aula {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: var(--fundo-aula, #f4f7fc);
+  }
+  .fundo-aula > picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .fundo-aula__imagem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  /* Quem pede mais contraste ou usa cores forçadas lê sobre a cor lisa. */
+  @media (prefers-contrast: more), (forced-colors: active) {
+    .fundo-aula {
+      display: none;
+    }
+  }
+
+  /* Anel do resultado: menor em tela baixa, para o cartão caber sem rolar. */
+  .anel-do-resultado {
+    width: 136px;
+    height: 136px;
+  }
+  .anel-do-resultado__valor {
+    font-size: 29px;
+  }
+  @media (min-width: 1024px) {
+    .anel-do-resultado {
+      width: 170px;
+      height: 170px;
+    }
+    .anel-do-resultado__valor {
+      font-size: 36px;
+    }
+  }
+  @media (max-height: 700px) {
+    .anel-do-resultado {
+      width: 104px;
+      height: 104px;
+    }
+    .anel-do-resultado__valor {
+      font-size: 24px;
+    }
+  }
+}
+
+/* Fora de @layer: vence o height: 100vh acima quando o navegador entende dvh. */
+@supports (height: 100dvh) {
+  .casca-aula {
+    height: 100dvh;
+  }
+}
+
+/* Impressão: a aula inteira no papel, sem casca nem fundo. */
+@media print {
+  .fundo-aula {
+    display: none;
+  }
+  .casca-aula {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+  .casca-aula__miolo {
+    overflow: visible;
   }
 }

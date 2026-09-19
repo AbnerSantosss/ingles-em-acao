@@ -92,7 +92,7 @@ export function CartaoDoBloco({
             </span>
             {!valido ? (
               <span className="block text-[12px] font-extrabold" style={{ color: COR_ERRO.texto }}>
-                {leitura.erros.length} erro(s) — não pode ser salvo assim
+                {leitura.erros.length} erro(s): não pode ser salvo assim
               </span>
             ) : null}
           </span>

@@ -1,0 +1,53 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Frases afirmativas no presente simples para hábitos e fatos, com o \"-s\" em \"he\", \"she\" e \"it\".",
+  "conteudoAlvo": [
+    "I / you / we / they + work; he / she / it + works",
+    "study, studies, go, goes, play, plays, have, has",
+    "rains, every day",
+    "I work every day. Water boils at 100°C."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Troque o sujeito entre os sete pronomes da Aula 01 para eu decidir se o verbo leva \"-s\".",
+    "Use dias e lugares que já sei: \"on Sunday\", \"at home\", \"at school\"."
+  ],
+  "regrasDaAula": [
+    "Com \"he\", \"she\" e \"it\" o verbo ganha \"-s\": \"works\", \"goes\", \"studies\", \"has\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual é o verbo em \"She studies every day.\"?",
+      "respostaDeReferencia": "studies"
+    },
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"have\" ou \"has\": \"He ___ a car.\"",
+      "respostaDeReferencia": "He has a car."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"go\": \"She ___ to school every day.\"",
+      "respostaDeReferencia": "She goes to school every day."
+    }
+  ],
+  "limites": [
+    "Só a afirmativa: frases com \"don't\", \"doesn't\" e perguntas com \"do\" ainda não estudei.",
+    "Verbos só os da aula: \"live\", \"drink\" e \"watch TV\" ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"he\". Complete: \"He ___ every day.\" (work) Qual forma do verbo entra no espaço?",
+  "resumoAutorizado": [
+    "\"I work\", \"you work\", \"we work\", \"they work\"; \"he works\", \"she works\".",
+    "Com \"-s\": \"goes\", \"studies\", \"plays\", \"has\", \"It rains.\"",
+    "Hábitos e fatos: \"I work every day.\", \"Water boils at 100°C.\""
+  ],
+  "resumoCurto": "Presente simples afirmativo: \"I work\", \"she works\", \"he goes\", \"it has\", o \"-s\" com \"he/she/it\"."
+}

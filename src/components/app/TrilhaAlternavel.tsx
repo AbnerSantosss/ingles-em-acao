@@ -125,7 +125,7 @@ export function TrilhaAlternavel({
 
       {itens.length === 0 ? (
         <p className="m-0 rounded-[18px] bg-surface p-5 text-[16px] leading-snug text-muted shadow-[0_4px_16px_rgba(11,31,75,0.05)]">
-          Nenhuma aula está disponível no momento. Estamos preparando o conteúdo — volte em
+          Nenhuma aula está disponível no momento. Estamos preparando o conteúdo. Volte em
           instantes.
         </p>
       ) : visao === 'lista' ? (
@@ -217,7 +217,7 @@ export function TrilhaAlternavel({
                     </span>
                   </span>
                   <span className="mb-3 block text-[15px] text-muted">
-                    Aulas {modulo.de}–{modulo.ate} · {modulo.concluidas} de {modulo.total} concluídas
+                    Aulas {modulo.de} a {modulo.ate} · {modulo.concluidas} de {modulo.total} concluídas
                   </span>
                   <span className="block h-[9px] overflow-hidden rounded-pill bg-[#EAF0F7]">
                     <span className="block h-full rounded-pill bg-teal" style={{ width: `${pct}%` }} />

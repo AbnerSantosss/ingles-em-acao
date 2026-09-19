@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Escolher entre \"a\", \"an\" e \"the\": \"a\" e \"an\" pelo som da palavra, \"the\" para algo específico.",
+  "conteudoAlvo": [
+    "a, an, the",
+    "a book, a university, an apple, an engineer",
+    "an hour, a dog, small, the sun, the table",
+    "I have a dog. The dog is small. I like dogs."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use cores e objetos da Aula 10 com artigo: \"a red car\", \"an orange car\".",
+    "Use profissões já vistas com \"he is\" e \"she is\": \"a teacher\", \"a doctor\", \"an engineer\"."
+  ],
+  "regrasDaAula": [
+    "\"an\" antes de som de vogal (\"an hour\"); \"a\" antes de som de consoante (\"a university\")."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"a\" ou \"an\": \"___ hour\".",
+      "respostaDeReferencia": "an hour"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"a\", \"an\" ou \"the\": \"I have a dog. ___ dog is small.\"",
+      "respostaDeReferencia": "The dog is small."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Ela é engenheira.",
+      "respostaDeReferencia": "She is an engineer."
+    }
+  ],
+  "limites": [
+    "Plural só em \"I like dogs.\": as outras formas de plural ainda não estudei.",
+    "Verbos só em \"I have\" e \"I like\": sem \"eat\", \"old\", \"big\" e \"hot\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"a\". Complete: \"___ book\". Entra \"a\" ou \"an\"?",
+  "resumoAutorizado": [
+    "\"a\" antes de som de consoante: \"a book\", \"a university\", \"a dog\".",
+    "\"an\" antes de som de vogal: \"an apple\", \"an engineer\", \"an hour\".",
+    "\"the\" para algo específico ou único: \"The dog is small.\", \"the sun\"."
+  ],
+  "resumoCurto": "Artigos: \"a\" e \"an\" pelo som (\"a university\", \"an hour\") e \"the\" para algo específico ou único."
+}

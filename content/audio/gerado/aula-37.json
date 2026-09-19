@@ -1,0 +1,305 @@
+{
+  "aula": 37,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_037_audio_001",
+        "alvo": "texto",
+        "ancora": "A CHAIR → TWO CHAIRS",
+        "texto": "a chair. two chairs",
+        "src": "/audio/aula-37/lesson_037_audio_001.66eaaf13.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_037_audio_002",
+        "alvo": "texto",
+        "ancora": "SUGAR",
+        "texto": "sugar",
+        "src": "/audio/aula-37/lesson_037_audio_002.d5bbafd0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_037_audio_003",
+        "alvo": "texto",
+        "ancora": "orange juice",
+        "texto": "orange juice",
+        "src": "/audio/aula-37/lesson_037_audio_003.892e9527.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_037_audio_004",
+        "alvo": "texto",
+        "ancora": "grapes",
+        "texto": "grapes",
+        "src": "/audio/aula-37/lesson_037_audio_004.889b1346.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_037_audio_005",
+        "alvo": "texto",
+        "ancora": "flour",
+        "texto": "flour",
+        "src": "/audio/aula-37/lesson_037_audio_005.76897952.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_037_audio_006",
+        "alvo": "texto",
+        "ancora": "tomato sauce",
+        "texto": "tomato sauce",
+        "src": "/audio/aula-37/lesson_037_audio_006.04ac23c2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_037_audio_007",
+        "alvo": "texto",
+        "ancora": "money",
+        "texto": "money",
+        "src": "/audio/aula-37/lesson_037_audio_007.8f19b20f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_037_audio_008",
+        "alvo": "texto",
+        "ancora": "RICE → A BAG OF RICE",
+        "texto": "rice. a bag of rice",
+        "src": "/audio/aula-37/lesson_037_audio_008.6de2cefd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_037_audio_009",
+        "alvo": "texto",
+        "ancora": "WATER → TWO BOTTLES OF WATER",
+        "texto": "water. two bottles of water",
+        "src": "/audio/aula-37/lesson_037_audio_009.d8e4d7eb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_037_audio_010",
+        "alvo": "texto",
+        "ancora": "SODA → A CAN OF SODA",
+        "texto": "soda. a can of soda",
+        "src": "/audio/aula-37/lesson_037_audio_010.db31d393.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_037_audio_011",
+        "alvo": "texto",
+        "ancora": "BREAD → A SLICE OF BREAD",
+        "texto": "bread. a slice of bread",
+        "src": "/audio/aula-37/lesson_037_audio_011.f56f5bc7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_037_audio_012",
+        "alvo": "texto",
+        "ancora": "a pencil",
+        "texto": "a pencil",
+        "src": "/audio/aula-37/lesson_037_audio_012.6ad7bad9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_037_audio_013",
+        "alvo": "texto",
+        "ancora": "an eraser",
+        "texto": "an eraser",
+        "src": "/audio/aula-37/lesson_037_audio_013.22b31626.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_037_audio_014",
+        "alvo": "texto",
+        "ancora": "I usually drink some water when I go to the kitchen.",
+        "texto": "I usually drink some water when I go to the kitchen.",
+        "src": "/audio/aula-37/lesson_037_audio_014.5eef89ad.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_037_audio_015",
+        "alvo": "texto",
+        "ancora": "There aren’t any bananas in this basket.",
+        "texto": "There aren't any bananas in this basket.",
+        "src": "/audio/aula-37/lesson_037_audio_015.59ec1aa3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_037_audio_016",
+        "alvo": "texto",
+        "ancora": "There are some bananas on the table.",
+        "texto": "There are some bananas on the table.",
+        "src": "/audio/aula-37/lesson_037_audio_016.44c25964.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_037_audio_017",
+        "alvo": "texto",
+        "ancora": "Is there any orange juice in this cup?",
+        "texto": "Is there any orange juice in this cup?",
+        "src": "/audio/aula-37/lesson_037_audio_017.55b7c4ae.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_037_audio_018",
+        "alvo": "texto",
+        "ancora": "Do you have any lemons?",
+        "texto": "Do you have any lemons?",
+        "src": "/audio/aula-37/lesson_037_audio_018.9b151be8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_037_audio_019",
+        "alvo": "texto",
+        "ancora": "Question: Do you have any bananas?",
+        "texto": "Do you have any bananas?",
+        "src": "/audio/aula-37/lesson_037_audio_019.497798c9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_037_audio_020",
+        "alvo": "texto",
+        "ancora": "Question: Do you have any water?",
+        "texto": "Do you have any water?",
+        "src": "/audio/aula-37/lesson_037_audio_020.9775e76b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_021",
+        "alvo": "texto",
+        "ancora": "A: Do you have any grapes?",
+        "texto": "Do you have any grapes?",
+        "src": "/audio/aula-37/lesson_037_audio_021.9ba227b1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_022",
+        "alvo": "texto",
+        "ancora": "B: Yes, we have some grapes.",
+        "texto": "Yes, we have some grapes.",
+        "src": "/audio/aula-37/lesson_037_audio_022.6de439e6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_023",
+        "alvo": "texto",
+        "ancora": "A: I’d like a bag of rice, please.",
+        "texto": "I'd like a bag of rice, please.",
+        "src": "/audio/aula-37/lesson_037_audio_023.e3feac26.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_024",
+        "alvo": "texto",
+        "ancora": "A: Would you like some soup?",
+        "texto": "Would you like some soup?",
+        "src": "/audio/aula-37/lesson_037_audio_024.339ba0c2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_025",
+        "alvo": "texto",
+        "ancora": "B: Yes, please.",
+        "texto": "Yes, please.",
+        "src": "/audio/aula-37/lesson_037_audio_025.206f4597.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_026",
+        "alvo": "texto",
+        "ancora": "B: Can I have some water, please?",
+        "texto": "Can I have some water, please?",
+        "src": "/audio/aula-37/lesson_037_audio_026.0e7747fc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_027",
+        "alvo": "texto",
+        "ancora": "lemons",
+        "texto": "lemons",
+        "src": "/audio/aula-37/lesson_037_audio_027.016a01fd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

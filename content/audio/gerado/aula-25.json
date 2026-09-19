@@ -1,0 +1,60 @@
+{
+  "aula": 25,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_025_audio_001",
+        "alvo": "texto",
+        "ancora": "Sit down. · Listen.",
+        "texto": "Sit down. Listen.",
+        "src": "/audio/aula-25/lesson_025_audio_001.8dc214e7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_025_audio_002",
+        "alvo": "texto",
+        "ancora": "Don’t worry. · Don’t be late.",
+        "texto": "Don't worry. Don't be late.",
+        "src": "/audio/aula-25/lesson_025_audio_002.3a17bbc9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_003",
+        "alvo": "texto",
+        "ancora": "Open your book.",
+        "texto": "Open your book.",
+        "src": "/audio/aula-25/lesson_025_audio_003.acdbbd24.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_004",
+        "alvo": "texto",
+        "ancora": "Add the milk.",
+        "texto": "Add the milk.",
+        "src": "/audio/aula-25/lesson_025_audio_004.d421ef10.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_005",
+        "alvo": "texto",
+        "ancora": "Don’t smoke.",
+        "texto": "Don't smoke.",
+        "src": "/audio/aula-25/lesson_025_audio_005.a1acc7ce.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

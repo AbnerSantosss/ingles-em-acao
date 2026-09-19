@@ -1,0 +1,71 @@
+{
+  "aula": 15,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_015_audio_001",
+        "alvo": "texto",
+        "ancora": "There is a problem.",
+        "texto": "There is a problem.",
+        "src": "/audio/aula-15/lesson_015_audio_001.d0f7c677.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_015_audio_002",
+        "alvo": "texto",
+        "ancora": "There are many people.",
+        "texto": "There are many people.",
+        "src": "/audio/aula-15/lesson_015_audio_002.58d7a1af.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_015_audio_003",
+        "alvo": "texto",
+        "ancora": "There aren’t any chairs.",
+        "texto": "There aren't any chairs.",
+        "src": "/audio/aula-15/lesson_015_audio_003.dc141850.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_015_audio_004",
+        "alvo": "texto",
+        "ancora": "There is a table in the kitchen.",
+        "texto": "There is a table in the kitchen.",
+        "src": "/audio/aula-15/lesson_015_audio_004.e737c63e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_015_audio_005",
+        "alvo": "texto",
+        "ancora": "There isn’t a TV in my room.",
+        "texto": "There isn't a TV in my room.",
+        "src": "/audio/aula-15/lesson_015_audio_005.eccc2564.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_015_audio_006",
+        "alvo": "texto",
+        "ancora": "Are there any windows?",
+        "texto": "Are there any windows?",
+        "src": "/audio/aula-15/lesson_015_audio_006.d05dc7db.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

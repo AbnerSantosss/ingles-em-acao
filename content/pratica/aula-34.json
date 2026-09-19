@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer o que eu e outras pessoas sabemos fazer, e quão bem, com \"can\", \"can't\" e \"good at\".",
+  "conteudoAlvo": [
+    "I / you / he / she / it / we / they + can + ___",
+    "very well, quite well, not very well, not at all",
+    "am / is / are + good at + ___",
+    "paint, sing, draw, fly, tennis, the piano"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Troque o sujeito e cobre \"can\" sem \"-s\": \"She can paint.\", nunca \"She cans paint.\"",
+    "Misture com \"How often\" que já sei: \"Can you sing?\", \"How often do you sing?\""
+  ],
+  "regrasDaAula": [
+    "\"can\" não muda com o sujeito e vem com o verbo na forma base: \"He can swim.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a frase certa: \"He can plays tennis.\" ou \"He can play tennis.\"?",
+      "respostaDeReferencia": "He can play tennis."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Troque \"can\" por \"good at\": \"My daughter can draw very well.\"",
+      "respostaDeReferencia": "My daughter is good at drawing."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com \"No\": \"Can you dance?\"",
+      "respostaDeReferencia": "No, I can't."
+    }
+  ],
+  "limites": [
+    "Sem \"could\" e sem o passado: só habilidades de agora.",
+    "Sem \"me\", \"him\", \"us\" e \"them\" depois do verbo: ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar por mim. Complete: \"I ___ swim.\" (eu sei nadar). Qual palavra entra no espaço?",
+  "resumoAutorizado": [
+    "\"can\" e \"can't\" + verbo: \"She can paint.\", \"I can't speak Japanese.\"",
+    "Pergunta: \"Can he play tennis?\", \"Yes, he can.\", \"No, he can't.\"",
+    "Quão bem: \"very well\", \"quite well\", \"not at all\"; \"She is good at drawing.\""
+  ],
+  "resumoCurto": "Habilidades: \"I can sing quite well.\", \"I can't dance at all.\", \"She is good at drawing.\""
+}

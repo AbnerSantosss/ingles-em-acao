@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Pedir uma direção na rua, dizer se um lugar é perto ou longe e dar uma rota curta em inglês.",
+  "conteudoAlvo": [
+    "close to, far from, across from, on the corner of",
+    "museum, park, hotel, drugstore, bookstore, street",
+    "turn right/left, go straight ahead, go past, cross",
+    "Where is + ___?, How do I get to + ___?"
+  ],
+  "expressoesFixas": [
+    "Excuse me",
+    "Thank you"
+  ],
+  "comoIntegrar": [
+    "Misture com \"there is\" que já sei: \"Is there a drugstore near here?\"",
+    "Use os números e \"first\", \"then\" que já sei na rota: \"Go straight for two blocks.\""
+  ],
+  "regrasDaAula": [
+    "Na rota, diga primeiro a direção e no fim onde o lugar fica: \"It's on your left.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "mini-dialogo"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"near\" ou \"far from\": \"The hotel is ___ the aquarium.\" (é longe)",
+      "respostaDeReferencia": "The hotel is far from the aquarium."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete a rota: \"Go ___ for two blocks.\"",
+      "respostaDeReferencia": "Go straight for two blocks."
+    },
+    {
+      "tipo": "mini-dialogo",
+      "enunciado": "Responda: \"Excuse me, where is the museum?\" (vire à direita na primeira rua)",
+      "respostaDeReferencia": "Turn right at the first street."
+    }
+  ],
+  "limites": [
+    "Sem \"roundabout\", \"block\" no singular nem nomes de ruas difíceis: só a rota da aula.",
+    "Sem gostos com \"like\" + \"-ing\" e sem o passado: ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pela mão direita. Como digo \"vire à direita\": \"turn right\" ou \"turn left\"?",
+  "resumoAutorizado": [
+    "Perto e longe: \"close to\", \"far from\", \"across from\", \"on the corner of\".",
+    "Pedir: \"Excuse me, where is the museum?\", \"How do I get to the bookstore?\"",
+    "Rota: \"Go straight.\", \"Turn left at the traffic light.\", \"Go past the park.\""
+  ],
+  "resumoCurto": "Direções: \"Where is the museum?\", \"Go straight.\", \"Turn right.\", \"It's far from here.\""
+}

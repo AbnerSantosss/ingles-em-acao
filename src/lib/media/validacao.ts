@@ -330,7 +330,7 @@ export function nomeParaExibir(nomeOriginal: string, ext: ExtensaoDeImagem): str
  * entra imagem sem alt**.
  */
 export const esquemaDeAlt = z
-  .string({ error: 'Descreva a imagem em uma frase — é o texto lido em voz alta.' })
+  .string({ error: 'Descreva a imagem em uma frase. É o texto lido em voz alta.' })
   .trim()
   .min(TAMANHO_MINIMO_ALT, 'Descreva a imagem em uma frase curta (mínimo 3 caracteres).')
   .max(TAMANHO_MAXIMO_ALT, `No máximo ${TAMANHO_MAXIMO_ALT} caracteres.`);

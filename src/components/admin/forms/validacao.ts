@@ -94,7 +94,7 @@ function traduzir(problema: z.core.$ZodIssue, candidato: Objeto): Entrada[] {
       const bruto = valorEm(candidato, problema.path);
       const mensagem =
         bruto === undefined
-          ? 'Obrigatório — preencha este campo.'
+          ? 'Obrigatório. Preencha este campo.'
           : `Formato errado: aqui vai ${TIPO_ESPERADO[problema.expected] ?? problema.expected}.`;
       return [{ caminho, mensagem }];
     }
@@ -119,7 +119,7 @@ function traduzir(problema: z.core.$ZodIssue, candidato: Objeto): Entrada[] {
         {
           caminho,
           mensagem: ehListaDeCores(problema.values)
-            ? 'Cor fora da paleta — escolha uma das opções.'
+            ? 'Cor fora da paleta. Escolha uma das opções.'
             : `Valor fora da lista: use ${listarValores(problema.values)}.`,
         },
       ];
@@ -157,7 +157,7 @@ function regrasDoFormulario(t: TipoDeBloco, objeto: Objeto): Entrada[] {
         if (typeof resposta === 'string' && resposta.length > 0 && resposta.trim() === '') {
           saida.push({
             caminho: ['items', i, 'answers', j],
-            mensagem: 'Resposta só com espaços — escreva a forma aceita.',
+            mensagem: 'Resposta só com espaços. Escreva a forma aceita.',
           });
         }
       });
@@ -177,14 +177,14 @@ export function validarFormulario(t: TipoDeBloco, id: string | undefined, objeto
   if (temCampo(objeto, 't')) {
     entradas.push({
       caminho: ['t'],
-      mensagem: 'O tipo do bloco é fixo e não pode estar no conteúdo — remova este campo.',
+      mensagem: 'O tipo do bloco é fixo e não pode estar no conteúdo. Remova este campo.',
     });
   }
   if (interativo && temCampo(objeto, 'id')) {
     entradas.push({
       caminho: ['id'],
       mensagem:
-        'O `id` é permanente e fica fora do conteúdo (é a chave das respostas) — remova este campo.',
+        'O `id` é permanente e fica fora do conteúdo (é a chave das respostas). Remova este campo.',
     });
   }
 

@@ -1,0 +1,53 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Contar o que eu fiz no passado com verbos regulares em \"-ed\" e responder \"Did you...?\" com respostas curtas.",
+  "conteudoAlvo": [
+    "I / you / he / she / we / they + ___ed",
+    "studied, stopped, decided, liked, watched",
+    "Did + you / he / she / they + ___?, didn't",
+    "yesterday morning, an hour ago, a week ago"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"was\" e \"were\" que já sei junto: \"Yesterday was a busy day. I worked in the morning.\"",
+    "Use \"yesterday\", \"last\" e \"ago\" que já sei: \"I visited a farm two weeks ago.\""
+  ],
+  "regrasDaAula": [
+    "O passado regular é igual para todos: \"I worked\", \"She worked\"; \"study\" vira \"studied\"."
+  ],
+  "tiposDeExercicio": [
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com o passado de \"watch\": \"Nancy ___ TV last night.\"",
+      "respostaDeReferencia": "Nancy watched TV last night."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para o passado: \"I study English.\" (use \"yesterday\")",
+      "respostaDeReferencia": "I studied English yesterday."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com resposta curta: \"Did you study last night?\"",
+      "respostaDeReferencia": "Yes, I did."
+    }
+  ],
+  "limites": [
+    "Sem verbos irregulares (\"went\", \"had\", \"saw\"): ficam para a próxima aula.",
+    "Com \"did\", só perguntas e respostas curtas, como \"Yes, I did.\" e \"No, I didn't.\""
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"work\". Complete: \"I ___ yesterday.\" Qual é o passado de \"work\"?",
+  "resumoAutorizado": [
+    "Passado com \"-ed\": \"I worked\", \"She walked 5 km.\", \"I listened to music.\"",
+    "Escrita: \"study\" vira \"studied\", \"stop\" vira \"stopped\", \"like\" vira \"liked\".",
+    "\"Did you study last night?\", \"Yes, I did.\", \"No, I didn't.\""
+  ],
+  "resumoCurto": "Passado regular: \"worked\", \"studied\", \"stopped\", \"Did you...?\", \"Yes, I did.\"."
+}

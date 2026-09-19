@@ -1,0 +1,509 @@
+{
+  "aula": 40,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_040_audio_001",
+        "alvo": "texto",
+        "ancora": "She arrived ten minutes late for work.",
+        "texto": "She arrived ten minutes late for work.",
+        "src": "/audio/aula-40/lesson_040_audio_001.e9d826c4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_002",
+        "alvo": "texto",
+        "ancora": "yesterday morning",
+        "texto": "yesterday morning",
+        "src": "/audio/aula-40/lesson_040_audio_002.0f03fdad.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_003",
+        "alvo": "texto",
+        "ancora": "yesterday afternoon",
+        "texto": "yesterday afternoon",
+        "src": "/audio/aula-40/lesson_040_audio_003.62f15432.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_004",
+        "alvo": "texto",
+        "ancora": "yesterday evening",
+        "texto": "yesterday evening",
+        "src": "/audio/aula-40/lesson_040_audio_004.b7f52545.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_005",
+        "alvo": "texto",
+        "ancora": "last Christmas",
+        "texto": "last Christmas",
+        "src": "/audio/aula-40/lesson_040_audio_005.a35fd9a2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_006",
+        "alvo": "texto",
+        "ancora": "ten minutes ago",
+        "texto": "ten minutes ago",
+        "src": "/audio/aula-40/lesson_040_audio_006.1bc595ce.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_007",
+        "alvo": "texto",
+        "ancora": "an hour ago",
+        "texto": "an hour ago",
+        "src": "/audio/aula-40/lesson_040_audio_007.800bbf59.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_008",
+        "alvo": "texto",
+        "ancora": "a week ago",
+        "texto": "a week ago",
+        "src": "/audio/aula-40/lesson_040_audio_008.8898d77c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_009",
+        "alvo": "texto",
+        "ancora": "a month ago",
+        "texto": "a month ago",
+        "src": "/audio/aula-40/lesson_040_audio_009.6c71ccdf.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_040_audio_010",
+        "alvo": "texto",
+        "ancora": "a year ago",
+        "texto": "a year ago",
+        "src": "/audio/aula-40/lesson_040_audio_010.1b104aee.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_040_audio_011",
+        "alvo": "texto",
+        "ancora": "WORK → WORKED",
+        "texto": "work. worked",
+        "src": "/audio/aula-40/lesson_040_audio_011.bddf8d29.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_040_audio_012",
+        "alvo": "texto",
+        "ancora": "Patricia showed a beautiful photo to her family.",
+        "texto": "Patricia showed a beautiful photo to her family.",
+        "src": "/audio/aula-40/lesson_040_audio_012.b4db5a65.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_040_audio_013",
+        "alvo": "texto",
+        "ancora": "She walked 5 km this morning.",
+        "texto": "She walked five kilometers this morning.",
+        "src": "/audio/aula-40/lesson_040_audio_013.a9bed744.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_040_audio_014",
+        "alvo": "bloco",
+        "ancora": "decide",
+        "texto": "decide\ndecided\ndie\ndied\nreceive\nreceived\nlike\nliked",
+        "src": "/audio/aula-40/lesson_040_audio_014.52169cb3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_040_audio_015",
+        "alvo": "texto",
+        "ancora": "She received some flowers from her daughter.",
+        "texto": "She received some flowers from her daughter.",
+        "src": "/audio/aula-40/lesson_040_audio_015.c0876529.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_040_audio_016",
+        "alvo": "texto",
+        "ancora": "I lived in Brazil when I was a child.",
+        "texto": "I lived in Brazil when I was a child.",
+        "src": "/audio/aula-40/lesson_040_audio_016.c0f32cbc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_040_audio_017",
+        "alvo": "texto",
+        "ancora": "Ana’s grandma died two years ago.",
+        "texto": "Ana's grandma died two years ago.",
+        "src": "/audio/aula-40/lesson_040_audio_017.7d34e36e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_040_audio_018",
+        "alvo": "bloco",
+        "ancora": "study",
+        "texto": "study\nstudied\ntry\ntried\ncry\ncried\nplay\nplayed",
+        "src": "/audio/aula-40/lesson_040_audio_018.2a5aafdd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_040_audio_019",
+        "alvo": "texto",
+        "ancora": "He cried because he watched a sad movie.",
+        "texto": "He cried because he watched a sad movie.",
+        "src": "/audio/aula-40/lesson_040_audio_019.f1968d0c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_040_audio_020",
+        "alvo": "texto",
+        "ancora": "She studied a lot this morning.",
+        "texto": "She studied a lot this morning.",
+        "src": "/audio/aula-40/lesson_040_audio_020.74d414a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_040_audio_021",
+        "alvo": "bloco",
+        "ancora": "stop",
+        "texto": "stop\nstopped\nplan\nplanned\nprefer\npreferred\nadmit\nadmitted\nlisten\nlistened",
+        "src": "/audio/aula-40/lesson_040_audio_021.1b37633a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_040_audio_022",
+        "alvo": "texto",
+        "ancora": "The bus stopped at the bus stop.",
+        "texto": "The bus stopped at the bus stop.",
+        "src": "/audio/aula-40/lesson_040_audio_022.a0a2f5e1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_040_audio_023",
+        "alvo": "texto",
+        "ancora": "He admitted that he was wrong.",
+        "texto": "He admitted that he was wrong.",
+        "src": "/audio/aula-40/lesson_040_audio_023.cfdd9ab3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_040_audio_024",
+        "alvo": "texto",
+        "ancora": "When Mary was a student, she preferred math to history.",
+        "texto": "When Mary was a student, she preferred math to history.",
+        "src": "/audio/aula-40/lesson_040_audio_024.72f0d186.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_040_audio_025",
+        "alvo": "texto",
+        "ancora": "I listened to music this morning.",
+        "texto": "I listened to music this morning.",
+        "src": "/audio/aula-40/lesson_040_audio_025.50ba3003.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_026",
+        "alvo": "texto",
+        "ancora": "arrived",
+        "texto": "arrived",
+        "src": "/audio/aula-40/lesson_040_audio_026.8ae36757.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_027",
+        "alvo": "texto",
+        "ancora": "loved",
+        "texto": "loved",
+        "src": "/audio/aula-40/lesson_040_audio_027.159a5d9c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_028",
+        "alvo": "texto",
+        "ancora": "watched",
+        "texto": "watched",
+        "src": "/audio/aula-40/lesson_040_audio_028.a65a3429.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_029",
+        "alvo": "texto",
+        "ancora": "washed",
+        "texto": "washed",
+        "src": "/audio/aula-40/lesson_040_audio_029.c8b6dfba.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_030",
+        "alvo": "texto",
+        "ancora": "hated",
+        "texto": "hated",
+        "src": "/audio/aula-40/lesson_040_audio_030.e949af26.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_031",
+        "alvo": "texto",
+        "ancora": "wanted",
+        "texto": "wanted",
+        "src": "/audio/aula-40/lesson_040_audio_031.a6bd67de.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_040_audio_032",
+        "alvo": "texto",
+        "ancora": "started",
+        "texto": "started",
+        "src": "/audio/aula-40/lesson_040_audio_032.49d78192.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_040_audio_033",
+        "alvo": "texto",
+        "ancora": "Yesterday was a busy day.",
+        "texto": "Yesterday was a busy day.",
+        "src": "/audio/aula-40/lesson_040_audio_033.9565d2e5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_040_audio_034",
+        "alvo": "texto",
+        "ancora": "I worked in the morning.",
+        "texto": "I worked in the morning.",
+        "src": "/audio/aula-40/lesson_040_audio_034.24d8ea79.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_040_audio_035",
+        "alvo": "texto",
+        "ancora": "In the afternoon, I studied English and listened to music.",
+        "texto": "In the afternoon, I studied English and listened to music.",
+        "src": "/audio/aula-40/lesson_040_audio_035.0673dad9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_040_audio_036",
+        "alvo": "texto",
+        "ancora": "In the evening, I watched a movie with my family. I liked the movie.",
+        "texto": "In the evening, I watched a movie with my family. I liked the movie.",
+        "src": "/audio/aula-40/lesson_040_audio_036.fad0a921.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_040_audio_037",
+        "alvo": "bloco",
+        "ancora": "worked",
+        "texto": "worked\nstudied\nlistened\nwatched\nwalked\nvisited\nhelped",
+        "src": "/audio/aula-40/lesson_040_audio_037.c91424f7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_038",
+        "alvo": "texto",
+        "ancora": "1 · DID YOU GO TO THE MOVIES YESTERDAY?",
+        "texto": "Did you go to the movies yesterday?",
+        "src": "/audio/aula-40/lesson_040_audio_038.6be08eac.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_039",
+        "alvo": "texto",
+        "ancora": "Yes, I did.",
+        "texto": "Yes, I did.",
+        "src": "/audio/aula-40/lesson_040_audio_039.f8e306e3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_040",
+        "alvo": "texto",
+        "ancora": "No, I didn’t.",
+        "texto": "No, I didn't.",
+        "src": "/audio/aula-40/lesson_040_audio_040.73baedf2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_041",
+        "alvo": "texto",
+        "ancora": "2 · DID YOU STUDY LAST NIGHT?",
+        "texto": "Did you study last night?",
+        "src": "/audio/aula-40/lesson_040_audio_041.a0ad9c84.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_042",
+        "alvo": "texto",
+        "ancora": "3 · DID THEY VISIT THEIR GRANDPARENTS LAST SUNDAY?",
+        "texto": "Did they visit their grandparents last Sunday?",
+        "src": "/audio/aula-40/lesson_040_audio_042.9cd0cd84.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_043",
+        "alvo": "texto",
+        "ancora": "Yes, they did.",
+        "texto": "Yes, they did.",
+        "src": "/audio/aula-40/lesson_040_audio_043.9003035a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_044",
+        "alvo": "texto",
+        "ancora": "No, they didn’t.",
+        "texto": "No, they didn't.",
+        "src": "/audio/aula-40/lesson_040_audio_044.73acb979.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 13,
+      "clip": {
+        "id": "lesson_040_audio_045",
+        "alvo": "texto",
+        "ancora": "4 · DID HE CALL YOU YESTERDAY?",
+        "texto": "Did he call you yesterday?",
+        "src": "/audio/aula-40/lesson_040_audio_045.1bb777ef.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

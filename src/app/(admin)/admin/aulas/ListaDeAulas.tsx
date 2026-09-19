@@ -75,7 +75,7 @@ function Selo({ fundo, cor, rotulo }: { fundo: string; cor: string; rotulo: stri
 }
 
 function numeroComZero(numero: number | null): string {
-  return numero === null ? '—' : String(numero).padStart(2, '0');
+  return numero === null ? '-' : String(numero).padStart(2, '0');
 }
 
 /**
@@ -87,11 +87,11 @@ function numeroComZero(numero: number | null): string {
 function foraDoLote(aula: LinhaDaTela, operacao: OperacaoDoLote): string | null {
   if (operacao === 'publicar') {
     if (aula.estado === 'publicada') return 'já está no ar';
-    if (aula.estado === 'arquivada') return 'arquivada — restaure antes de publicar';
+    if (aula.estado === 'arquivada') return 'arquivada, restaure antes de publicar';
     return null;
   }
   if (aula.estado === 'rascunho') return 'já está fora do ar';
-  if (aula.estado === 'arquivada') return 'arquivada — já está fora do ar';
+  if (aula.estado === 'arquivada') return 'arquivada, já está fora do ar';
   return null;
 }
 
@@ -159,7 +159,7 @@ function Confirmacao({
 
       <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
         {publicar
-          ? 'Cada aula passa pela mesma conferência do botão “Publicar aula”: o esquema e a validação da §3.5. A que não passar fica fora do ar e aparece no relatório com o motivo — as outras vão ao ar normalmente. O rascunho pendente da aba Páginas não entra no ar por aqui.'
+          ? 'Cada aula passa pela mesma conferência do botão “Publicar aula”: o esquema e a validação da §3.5. A que não passar fica fora do ar e aparece no relatório com o motivo. As outras vão ao ar normalmente. O rascunho pendente da aba Páginas não entra no ar por aqui.'
           : 'Cada aula sai da trilha e o endereço passa a responder 404. O progresso de quem já fez continua guardado, e nenhuma conclusão é desfeita.'}
       </p>
 
@@ -181,7 +181,7 @@ function Confirmacao({
           <ul className="m-0 mt-1 flex list-none flex-col gap-1 p-0">
             {ficam.map(({ aula, motivo }) => (
               <li key={aula.id} className="text-[14px] font-semibold leading-snug text-muted">
-                Aula {numeroComZero(aula.number)} · {aula.title} — {motivo}
+                Aula {numeroComZero(aula.number)} · {aula.title}: {motivo}
               </li>
             ))}
           </ul>
@@ -246,7 +246,7 @@ function Relatorio({
               <span>
                 Aula {numeroComZero(linha.numero)} · {linha.titulo}
               </span>
-              <span className="font-semibold text-muted">— {linha.motivo}</span>
+              <span className="font-semibold text-muted">{linha.motivo}</span>
             </p>
             {linha.erros.length > 0 ? (
               <ul className="m-0 flex flex-col gap-0.5 pl-5 text-[13px] font-semibold leading-snug text-danger">
@@ -255,14 +255,14 @@ function Relatorio({
                 ))}
                 {linha.totalDeErros > linha.erros.length ? (
                   <li>
-                    e mais {linha.totalDeErros - linha.erros.length} — veja todos na aba Páginas
+                    e mais {linha.totalDeErros - linha.erros.length}. Veja todos na aba Páginas
                   </li>
                 ) : null}
               </ul>
             ) : null}
             {linha.desfecho === 'publicada' && linha.avisos > 0 ? (
               <p className="m-0 pl-5 text-[12px] font-semibold leading-snug text-muted-2">
-                {linha.avisos} aviso(s) de revisão da §3.5 — não bloqueiam.
+                {linha.avisos} aviso(s) de revisão da §3.5, que não bloqueiam.
               </p>
             ) : null}
           </li>

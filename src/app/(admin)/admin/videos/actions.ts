@@ -486,7 +486,7 @@ export async function concluirEnvioDeVideoAction(
         : objeto.tipo !== formato.mime
           ? 'O arquivo foi gravado com um tipo diferente do anunciado.'
           : formatoPelosBytes(objeto.inicio) !== formato.ext
-            ? `O conteúdo não é um ${formato.rotulo} de verdade — a extensão não bate com o que está dentro.`
+            ? `O conteúdo do arquivo não é ${formato.rotulo}: a extensão não corresponde ao que está dentro.`
             : null;
   if (recusa) {
     await apagarObjeto(configuracao, chave);

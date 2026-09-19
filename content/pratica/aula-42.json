@@ -1,0 +1,52 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "revisao",
+  "foco": "Revisar a unidade: pedir no restaurante, contar a rotina com frequência e quantidade e falar do passado.",
+  "conteudoAlvo": [
+    "Are you ready to order?, I'd like + ___",
+    "always, usually, twice a week, near, across from",
+    "a lot of, many, much, some, any",
+    "was / were, worked, went, had, saw"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Junte rotina e frequência: \"I usually get up at 6:00 a.m. and go to the gym twice a week.\"",
+    "Troque a rotina de hoje pelo passado: \"I go to school.\" vira \"Yesterday I went to school.\""
+  ],
+  "regrasDaAula": [],
+  "tiposDeExercicio": [
+    "completar",
+    "transformar",
+    "responder",
+    "mini-dialogo"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"many\" ou \"much\": \"I don't have ___ free time.\"",
+      "respostaDeReferencia": "I don't have much free time."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para o passado: \"I have breakfast and go to school.\"",
+      "respostaDeReferencia": "I had breakfast and went to school."
+    },
+    {
+      "tipo": "mini-dialogo",
+      "enunciado": "Sou o cliente. Responda ao garçom: \"Are you ready to order?\"",
+      "respostaDeReferencia": "Yes, I'd like a sandwich, please."
+    }
+  ],
+  "limites": [
+    "Aula de revisão: nada novo, só o que já estudei na unidade.",
+    "Sem negativa e pergunta com verbos irregulares no passado."
+  ],
+  "primeiraQuestao": "Vamos começar pelo restaurante. O garçom pergunta \"Are you ready to order?\". Como peço um sanduíche?",
+  "resumoAutorizado": [
+    "Restaurante: \"Are you ready to order?\", \"I'd like...\", \"Could I have...?\"",
+    "Rotina: \"always\", \"twice a week\", \"a lot of\", \"much\", \"near the gym\".",
+    "Passado: \"I was really tired.\", \"I worked\", \"I went\", \"We saw a movie.\""
+  ],
+  "resumoCurto": "Revisão: restaurante, rotina com frequência e quantidade, e o passado com \"was\", \"-ed\" e irregulares."
+}

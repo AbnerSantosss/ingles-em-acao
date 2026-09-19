@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Fazer perguntas com \"am\", \"is\" e \"are\" e responder de forma curta: \"Yes, I am.\" e \"No, I'm not.\"",
+  "conteudoAlvo": [
+    "Am I? / Is he, she, it? / Are you, we, they?",
+    "Yes, I am. / No, I'm not.",
+    "Yes, he, she, it is. / No, he, she, it isn't.",
+    "Yes, we are. / No, you, we, they aren't."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Transforme frases das Aulas 02 e 03 em perguntas, como \"Are you Brazilian?\".",
+    "Misture respostas com \"yes\" e com \"no\" e troque o sujeito a cada pergunta."
+  ],
+  "regrasDaAula": [
+    "Na resposta com \"yes\" não contraia: \"Yes, I am.\", nunca \"Yes, I'm.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com \"Am\", \"Is\" ou \"Are\": \"___ they friends?\"",
+      "respostaDeReferencia": "Are they friends?"
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para pergunta: \"She is happy.\"",
+      "respostaDeReferencia": "Is she happy?"
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com a forma curta negativa: \"Is he a teacher?\"",
+      "respostaDeReferencia": "No, he isn't."
+    }
+  ],
+  "limites": [
+    "Sem \"do\" e \"does\" nas perguntas, e sem \"where\" ou \"what\": ainda não estudei.",
+    "Sem \"from\", \"my\" e \"your\": use só palavras que já vi até aqui."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"I\". Complete a pergunta: \"___ I late?\" Qual forma do verbo entra no espaço?",
+  "resumoAutorizado": [
+    "Verbo antes do sujeito: \"Am I late?\", \"Is she a doctor?\", \"Are you ready?\"",
+    "Respostas curtas: \"Yes, I am.\", \"No, I'm not.\", \"Yes, he is.\", \"No, he isn't.\"",
+    "Plural: \"Are they friends?\", \"Yes, they are.\", \"No, they aren't.\""
+  ],
+  "resumoCurto": "Perguntas com \"Am I\", \"Is he/she/it\", \"Are you/we/they\" e respostas curtas com \"yes\" e \"no\"."
+}

@@ -55,7 +55,6 @@ const TEXTAREA = [
 
 const PLANOS = [
   { valor: 'ESSENCIAL', rotulo: 'Essencial' },
-  { valor: 'COMPLETO', rotulo: 'Completo' },
   { valor: 'PREMIUM', rotulo: 'Premium' },
 ] as const;
 
@@ -327,7 +326,7 @@ function ReenviarVerificacao({
   return (
     <Bloco
       titulo="Reenviar verificação de e-mail"
-      descricao={`Manda de novo o link de verificação para o e-mail do aluno. No máximo ${reenvio.limite} por hora por aluno — ${reenvio.enviados} já saíram nesta hora.`}
+      descricao={`Manda de novo o link de verificação para o e-mail do aluno. No máximo ${reenvio.limite} por hora por aluno. ${reenvio.enviados} já saíram nesta hora.`}
     >
       <form action={enviar} className="flex flex-col gap-3">
         <input type="hidden" name="id" value={id} />

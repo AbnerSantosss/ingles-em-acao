@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer do que gosto e do que não gosto com \"love\", \"like\", \"dislike\" e \"hate\" + verbo com \"-ing\".",
+  "conteudoAlvo": [
+    "love / like / dislike / hate + ___ing",
+    "don't / doesn't + like + ___ing",
+    "Do you like + ___ing?",
+    "listening, cooking, dancing, stopping, riding"
+  ],
+  "expressoesFixas": [
+    "What about you?"
+  ],
+  "comoIntegrar": [
+    "Use \"do\" e \"does\" que já sei nas perguntas: \"Does he like cooking?\", \"Yes, he does.\"",
+    "Troque o sujeito e cobre o \"-s\" com \"he\" e \"she\": \"She likes riding a bike.\""
+  ],
+  "regrasDaAula": [
+    "Verbo com \"-e\" perde o \"-e\" (\"dancing\"); verbo CVC dobra a consoante (\"stopping\")."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com a forma \"-ing\" de \"dance\": \"I love ___.\"",
+      "respostaDeReferencia": "I love dancing."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"He likes watching TV.\"",
+      "respostaDeReferencia": "He doesn't like watching TV."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com \"Yes\": \"Do you like cooking?\"",
+      "respostaDeReferencia": "Yes, I do."
+    }
+  ],
+  "limites": [
+    "Só verbo com \"-ing\" depois de \"like\": sem \"like to\" nem \"would like\".",
+    "Sem \"how often\" nem \"once a week\": ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"love\". Complete: \"I love ___ to music.\" Qual forma de \"listen\" entra?",
+  "resumoAutorizado": [
+    "\"love\", \"like\", \"dislike\", \"hate\" + \"-ing\": \"I love playing soccer.\"",
+    "Negativa e pergunta: \"I don't like watching TV.\", \"Do you like cooking?\"",
+    "Forma \"-ing\": \"cooking\", \"dancing\" (sem \"-e\"), \"stopping\" (dobra a consoante)."
+  ],
+  "resumoCurto": "Gostos com \"-ing\": \"I love playing soccer.\", \"I don't like watching TV.\", \"Do you like cooking?\""
+}

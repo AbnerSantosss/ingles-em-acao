@@ -1,0 +1,428 @@
+{
+  "aula": 31,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_031_audio_001",
+        "alvo": "texto",
+        "ancora": "The museum is near the park.",
+        "texto": "The museum is near the park.",
+        "src": "/audio/aula-31/lesson_031_audio_001.e1e797d3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_031_audio_002",
+        "alvo": "texto",
+        "ancora": "The museum is close to the park.",
+        "texto": "The museum is close to the park.",
+        "src": "/audio/aula-31/lesson_031_audio_002.8f97d85f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_031_audio_003",
+        "alvo": "texto",
+        "ancora": "FAR FROM / DISTANT FROM",
+        "texto": "far from. distant from",
+        "src": "/audio/aula-31/lesson_031_audio_003.48be4218.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_031_audio_004",
+        "alvo": "texto",
+        "ancora": "The hotel is far from the aquarium.",
+        "texto": "The hotel is far from the aquarium.",
+        "src": "/audio/aula-31/lesson_031_audio_004.0d6c8263.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_031_audio_005",
+        "alvo": "texto",
+        "ancora": "The hotel is distant from the aquarium.",
+        "texto": "The hotel is distant from the aquarium.",
+        "src": "/audio/aula-31/lesson_031_audio_005.a989a52e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_031_audio_006",
+        "alvo": "texto",
+        "ancora": "Where is the drugstore?",
+        "texto": "Where is the drugstore?",
+        "src": "/audio/aula-31/lesson_031_audio_006.3bda5e06.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_031_audio_007",
+        "alvo": "texto",
+        "ancora": "How do I get to the drugstore?",
+        "texto": "How do I get to the drugstore?",
+        "src": "/audio/aula-31/lesson_031_audio_007.2d5ef939.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_008",
+        "alvo": "texto",
+        "ancora": "North",
+        "texto": "North",
+        "src": "/audio/aula-31/lesson_031_audio_008.4253a04f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_009",
+        "alvo": "texto",
+        "ancora": "South",
+        "texto": "South",
+        "src": "/audio/aula-31/lesson_031_audio_009.7a4b8502.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_010",
+        "alvo": "texto",
+        "ancora": "East",
+        "texto": "East",
+        "src": "/audio/aula-31/lesson_031_audio_010.ebe8e3a5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_011",
+        "alvo": "texto",
+        "ancora": "West",
+        "texto": "West",
+        "src": "/audio/aula-31/lesson_031_audio_011.2817353b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_012",
+        "alvo": "texto",
+        "ancora": "ACROSS FROM",
+        "texto": "across from",
+        "src": "/audio/aula-31/lesson_031_audio_012.d4e286f3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_013",
+        "alvo": "texto",
+        "ancora": "The bookstore is across from the museum.",
+        "texto": "The bookstore is across from the museum.",
+        "src": "/audio/aula-31/lesson_031_audio_013.eed66d56.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_031_audio_014",
+        "alvo": "texto",
+        "ancora": "The hotel is on the corner of A Street and 15th Avenue.",
+        "texto": "The hotel is on the corner of A Street and fifteenth Avenue.",
+        "src": "/audio/aula-31/lesson_031_audio_014.8e01fc48.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_015",
+        "alvo": "texto",
+        "ancora": "TURN RIGHT",
+        "texto": "turn right",
+        "src": "/audio/aula-31/lesson_031_audio_015.97ce348d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_016",
+        "alvo": "texto",
+        "ancora": "Turn right after the school.",
+        "texto": "Turn right after the school.",
+        "src": "/audio/aula-31/lesson_031_audio_016.96ae4c67.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_017",
+        "alvo": "texto",
+        "ancora": "TURN LEFT",
+        "texto": "turn left",
+        "src": "/audio/aula-31/lesson_031_audio_017.6eb0d756.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_018",
+        "alvo": "texto",
+        "ancora": "Turn left on the second street.",
+        "texto": "Turn left on the second street.",
+        "src": "/audio/aula-31/lesson_031_audio_018.4245cb83.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_019",
+        "alvo": "texto",
+        "ancora": "GO STRAIGHT",
+        "texto": "go straight",
+        "src": "/audio/aula-31/lesson_031_audio_019.c1de497e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_020",
+        "alvo": "texto",
+        "ancora": "Go straight ahead.",
+        "texto": "Go straight ahead.",
+        "src": "/audio/aula-31/lesson_031_audio_020.bcc1dc10.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_031_audio_021",
+        "alvo": "texto",
+        "ancora": "Take this street and go straight ahead.",
+        "texto": "Take this street and go straight ahead.",
+        "src": "/audio/aula-31/lesson_031_audio_021.57b4bb9c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_031_audio_022",
+        "alvo": "texto",
+        "ancora": "GO TOWARD",
+        "texto": "go toward",
+        "src": "/audio/aula-31/lesson_031_audio_022.21ae5337.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_031_audio_023",
+        "alvo": "texto",
+        "ancora": "Go toward the park.",
+        "texto": "Go toward the park.",
+        "src": "/audio/aula-31/lesson_031_audio_023.c8a06c74.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_031_audio_024",
+        "alvo": "texto",
+        "ancora": "GO PAST",
+        "texto": "go past",
+        "src": "/audio/aula-31/lesson_031_audio_024.acef516c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_031_audio_025",
+        "alvo": "texto",
+        "ancora": "Go past the bookstore.",
+        "texto": "Go past the bookstore.",
+        "src": "/audio/aula-31/lesson_031_audio_025.047e0c7b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_031_audio_026",
+        "alvo": "texto",
+        "ancora": "CROSS",
+        "texto": "cross",
+        "src": "/audio/aula-31/lesson_031_audio_026.07384491.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_031_audio_027",
+        "alvo": "texto",
+        "ancora": "Cross the street.",
+        "texto": "Cross the street.",
+        "src": "/audio/aula-31/lesson_031_audio_027.d504b826.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_028",
+        "alvo": "texto",
+        "ancora": "Turn left at the corner.",
+        "texto": "Turn left at the corner.",
+        "src": "/audio/aula-31/lesson_031_audio_028.c0a99da7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_029",
+        "alvo": "texto",
+        "ancora": "Turn right after the museum.",
+        "texto": "Turn right after the museum.",
+        "src": "/audio/aula-31/lesson_031_audio_029.1c93223f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_030",
+        "alvo": "texto",
+        "ancora": "Go straight for two blocks.",
+        "texto": "Go straight for two blocks.",
+        "src": "/audio/aula-31/lesson_031_audio_030.de87136f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_031",
+        "alvo": "texto",
+        "ancora": "Take Oak Street.",
+        "texto": "Take Oak Street.",
+        "src": "/audio/aula-31/lesson_031_audio_031.6e39bd84.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_032",
+        "alvo": "texto",
+        "ancora": "Take the first street on your right.",
+        "texto": "Take the first street on your right.",
+        "src": "/audio/aula-31/lesson_031_audio_032.2629d14b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_033",
+        "alvo": "texto",
+        "ancora": "Turn right at the first street.",
+        "texto": "Turn right at the first street.",
+        "src": "/audio/aula-31/lesson_031_audio_033.9769081d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_031_audio_034",
+        "alvo": "texto",
+        "ancora": "Turn left at the next street.",
+        "texto": "Turn left at the next street.",
+        "src": "/audio/aula-31/lesson_031_audio_034.e4748748.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_031_audio_035",
+        "alvo": "bloco",
+        "ancora": "Excuse me, where is the museum?",
+        "texto": "Excuse me, where is the museum?\nGo straight for two blocks. Then turn right at the first street. The museum is on your left.",
+        "src": "/audio/aula-31/lesson_031_audio_035.fb1e94cd.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_031_audio_036",
+        "alvo": "texto",
+        "ancora": "first street",
+        "texto": "first street",
+        "src": "/audio/aula-31/lesson_031_audio_036.1d0d2608.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_031_audio_037",
+        "alvo": "texto",
+        "ancora": "on your right",
+        "texto": "on your right",
+        "src": "/audio/aula-31/lesson_031_audio_037.c6e62080.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_031_audio_038",
+        "alvo": "bloco",
+        "ancora": "Excuse me. How do I get to the bookstore?",
+        "texto": "Excuse me. How do I get to the bookstore?\nGo straight ahead. Turn left at the traffic light.\nIs it far from here?\nNo. It's near the park. Go past the supermarket. The bookstore is across from the park.\nThank you.\nYou're welcome.",
+        "src": "/audio/aula-31/lesson_031_audio_038.786bbc1d.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
+}

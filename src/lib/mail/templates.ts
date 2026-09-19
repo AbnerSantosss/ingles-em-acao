@@ -1,5 +1,5 @@
 /**
- * Os dois e-mails transacionais do "Inglês em Ação".
+ * Os dois e-mails transacionais do "WSA English".
  *
  * Cada template devolve `{ subject, html, text }`. A versão `text` não é
  * enfeite: é ela que o cliente mostra quando o HTML é bloqueado, e é ela que
@@ -25,6 +25,8 @@ export type DadosDoTemplate = {
   name: string;
   /** URL absoluta e completa do link de ação (já com o token). */
   url: string;
+  /** Base pública do app, sem barra no fim. Liga a logo no cabeçalho do e-mail. */
+  appUrl?: string;
 };
 
 export type EmailRenderizado = {
@@ -61,14 +63,14 @@ function montarTexto(linhas: string[]): string {
  * E-mail de confirmação de endereço. Tom de boas-vindas: a conta já existe e já
  * pode ser usada — confirmar só garante a recuperação de acesso depois.
  */
-export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRenderizado {
+export function verifyEmailTemplate({ name, url, appUrl }: DadosDoTemplate): EmailRenderizado {
   // O remetente já mostra a marca; o assunto diz só do que se trata.
   const subject = 'Boas-vindas! Confirme seu e-mail';
   const oi = saudacao(name);
 
   const conteudo = [
     titulo('Que bom ter você aqui!'),
-    paragrafo(`${oi.html} Sua conta no Inglês em Ação já está pronta.`, {
+    paragrafo(`${oi.html} Sua conta no WSA English já está pronta.`, {
       cor: CORES.texto,
       margem: 12,
     }),
@@ -93,6 +95,7 @@ export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRender
 
   const html = layoutEmail({
     assunto: subject,
+    appUrl,
     preheader: 'Sua conta já está pronta. Falta só confirmar que este endereço é seu.',
     conteudo,
   });
@@ -102,8 +105,8 @@ export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRender
     '',
     oi.texto,
     '',
-    'Sua conta no Inglês em Ação já está pronta. Falta só confirmar que este',
-    'endereço é seu — é isso que nos permite devolver seu acesso caso você',
+    'Sua conta no WSA English já está pronta. Falta só confirmar que este',
+    'endereço é seu. É isso que nos permite devolver seu acesso caso você',
     'esqueça a senha um dia.',
     '',
     'Confirme seu e-mail abrindo o endereço abaixo no navegador:',
@@ -127,14 +130,14 @@ export function verifyEmailTemplate({ name, url }: DadosDoTemplate): EmailRender
  * E-mail de redefinição de senha. Tom sóbrio e curto: quem pediu quer resolver
  * rápido, e quem não pediu precisa entender em uma frase que está tudo bem.
  */
-export function resetPasswordTemplate({ name, url }: DadosDoTemplate): EmailRenderizado {
+export function resetPasswordTemplate({ name, url, appUrl }: DadosDoTemplate): EmailRenderizado {
   const subject = 'Seu link para criar uma nova senha';
   const oi = saudacao(name);
 
   const conteudo = [
     titulo('Vamos criar uma senha nova'),
     paragrafo(
-      `${oi.html} Recebemos um pedido para redefinir a senha da sua conta no Inglês em Ação.`,
+      `${oi.html} Recebemos um pedido para redefinir a senha da sua conta no WSA English.`,
       { cor: CORES.texto, margem: 12 },
     ),
     paragrafo('Clique no botão abaixo para escolher uma senha nova (mínimo de 8 caracteres).'),
@@ -154,7 +157,8 @@ export function resetPasswordTemplate({ name, url }: DadosDoTemplate): EmailRend
 
   const html = layoutEmail({
     assunto: subject,
-    preheader: 'Link para criar uma senha nova — vale por 1 hora.',
+    appUrl,
+    preheader: 'Link para criar uma senha nova. Vale por 1 hora.',
     conteudo,
   });
 
@@ -163,7 +167,7 @@ export function resetPasswordTemplate({ name, url }: DadosDoTemplate): EmailRend
     '',
     oi.texto,
     '',
-    'Recebemos um pedido para redefinir a senha da sua conta no Inglês em Ação.',
+    'Recebemos um pedido para redefinir a senha da sua conta no WSA English.',
     'Abra o endereço abaixo no navegador para escolher uma senha nova',
     '(mínimo de 8 caracteres):',
     url,
@@ -208,7 +212,7 @@ export function welcomeTemplate({ name, appUrl, admin }: DadosDeBoasVindas): Ema
     : 'As <strong>42 aulas</strong> já estão liberadas para você.';
 
   const conteudo = [
-    titulo('Boas-vindas ao Inglês em Ação!'),
+    titulo('Boas-vindas ao WSA English!'),
     paragrafo(`${oi.html} Sua conta já está pronta.`, { cor: CORES.texto, margem: 12 }),
     paragrafo(acesso),
     botao({ href: entrar, rotulo: 'Entrar no app' }),
@@ -235,6 +239,7 @@ export function welcomeTemplate({ name, appUrl, admin }: DadosDeBoasVindas): Ema
 
   const html = layoutEmail({
     assunto: subject,
+    appUrl,
     preheader: admin
       ? 'Acesso de aluno e de administrador liberado. Veja como entrar.'
       : 'As 42 aulas já estão liberadas. Veja como entrar.',
@@ -243,7 +248,7 @@ export function welcomeTemplate({ name, appUrl, admin }: DadosDeBoasVindas): Ema
   });
 
   const text = montarTexto([
-    'BOAS-VINDAS AO INGLÊS EM AÇÃO!',
+    'BOAS-VINDAS AO WSA ENGLISH!',
     '',
     oi.texto,
     '',

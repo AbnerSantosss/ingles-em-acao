@@ -121,7 +121,7 @@ const ESPERA_TEXTO_MS = 600;
 const PREFIXOS_DE_TEXTO = ['fill:', 'free:'] as const;
 
 const MENSAGEM_DE_FALHA =
-  'Não conseguimos salvar sua resposta agora. Ela continua aqui na tela — tentamos de novo no próximo toque.';
+  'Não conseguimos salvar sua resposta agora. Ela continua aqui na tela. Tentamos de novo no próximo toque.';
 
 /** Constantes estáveis para o provedor efêmero não recriar objeto a cada render. */
 const SEM_INICIAIS: Readonly<Record<string, string>> = Object.freeze({});

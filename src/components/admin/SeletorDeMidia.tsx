@@ -359,7 +359,7 @@ export function SeletorDeMidia({
             </Field>
           ) : (
             <p className="m-0 text-[14px] font-semibold leading-snug text-muted">
-              Sem imagem escolhida — a aula mostra o placeholder cinza com a descrição do bloco.
+              Sem imagem escolhida: a aula mostra o placeholder cinza com a descrição do bloco.
             </p>
           )}
 
@@ -421,7 +421,7 @@ export function SeletorDeMidia({
             hint={
               semAlt
                 ? 'Só para achar a imagem depois na biblioteca.'
-                : 'Uma frase dizendo o que a imagem mostra — é o que o leitor de tela lê.'
+                : 'Uma frase dizendo o que a imagem mostra. É o que o leitor de tela lê.'
             }
           >
             <Input

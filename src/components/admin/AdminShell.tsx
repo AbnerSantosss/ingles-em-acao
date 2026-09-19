@@ -7,6 +7,14 @@
  * §3 — não é um tema à parte. Por isso nada aqui usa `.tela`: aquela classe
  * prende a largura em 460px, que é o certo para o aluno e o errado para uma
  * tabela de 42 aulas.
+ *
+ * Identidade: a barra lateral é escura (navy com o background da marca) e o
+ * cabeçalho é um cartão branco preso ao topo. A área de conteúdo continua clara
+ * (`bg-bg`), igual para todas as telas. A faixa-hero com imagem é só do
+ * dashboard e mora em `HeroDoPainel`, não aqui.
+ *
+ * ⚠️ `lg:items-start` é o que deixa a barra lateral `sticky` funcionar: sem ele
+ * a coluna estica até a altura do conteúdo e não tem para onde "grudar".
  */
 import type { ReactNode } from 'react';
 

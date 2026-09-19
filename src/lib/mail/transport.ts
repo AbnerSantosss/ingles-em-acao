@@ -1,5 +1,5 @@
 /**
- * Transporte de e-mail do "Inglês em Ação" (nodemailer + Gmail SMTP).
+ * Transporte de e-mail do "WSA English" (nodemailer + Gmail SMTP).
  *
  * ⚠️ MÓDULO DE SERVIDOR. Nunca importe de um componente `'use client'`.
  *
@@ -63,10 +63,10 @@ export type Transportador = {
 };
 
 /** Nome de remetente quando nada mais diz qual é. */
-export const MARCA = 'Inglês em Ação';
+export const MARCA = 'WSA English';
 
 /** Remetente usado quando não há `MAIL_FROM` (só acontece em modo simulado). */
-const REMETENTE_SIMULADO = 'Inglês em Ação <nao-responda@localhost>';
+const REMETENTE_SIMULADO = 'WSA English <nao-responda@localhost>';
 
 /** Base usada quando não há `APP_URL` (só acontece em modo simulado). */
 const APP_URL_SIMULADA = 'http://localhost:3000';
@@ -134,7 +134,7 @@ export function senhaParaOServidor(host: string, senha: string): string {
 /**
  * Separa o remetente em nome e endereço.
  *
- * `MAIL_FROM` pode vir como `Inglês em Ação <conta@gmail.com>` ou só como
+ * `MAIL_FROM` pode vir como `WSA English <conta@gmail.com>` ou só como
  * `conta@gmail.com`. O endereço sai sempre dele (no Gmail, tem de ser a conta
  * que faz login). O nome pode mudar por tipo de e-mail, e nunca fica vazio:
  * sem nome, a caixa de entrada mostra o endereço cru, e o e-mail parece spam.
@@ -148,7 +148,7 @@ export function montarRemetente(mailFrom: string, nome?: string): { name: string
 }
 
 function configuracaoSimulada(motivo: string): ConfiguracaoResolvida {
-  registrar('warn', `modo simulado (${motivo}) — nenhum e-mail sai desta máquina`);
+  registrar('warn', `modo simulado (${motivo}): nenhum e-mail sai desta máquina`);
 
   const appUrl = (process.env.APP_URL ?? '').trim().replace(/\/+$/, '') || APP_URL_SIMULADA;
   const remetente = (process.env.MAIL_FROM ?? '').trim() || REMETENTE_SIMULADO;
@@ -185,7 +185,7 @@ async function resolverConfiguracao(): Promise<ConfiguracaoResolvida> {
     };
   } catch (erro) {
     // As mensagens do env.ts citam só o NOME da variável, nunca o valor.
-    registrar('warn', `configuração de ambiente inválida — ${descreverErro(erro)}`);
+    registrar('warn', `configuração de ambiente inválida: ${descreverErro(erro)}`);
     return configuracaoSimulada('variáveis de ambiente incompletas');
   }
 }
@@ -258,7 +258,7 @@ export async function enviarMensagem(mensagem: MensagemDeEmail): Promise<Resulta
   if (publico.modo === 'simulado') {
     registrar(
       'info',
-      `e-mail SERIA enviado para ${mascararEmail(mensagem.para)} — assunto: "${mensagem.assunto}"`,
+      `e-mail SERIA enviado para ${mascararEmail(mensagem.para)}, assunto: "${mensagem.assunto}"`,
     );
   }
 
@@ -282,7 +282,7 @@ export async function verificarTransporte(): Promise<ResultadoDaVerificacao> {
   if (publico.modo === 'simulado') {
     // Em produção, estar simulado não é escolha: é configuração faltando.
     if (process.env.NODE_ENV === 'production') {
-      return { ok: false, modo: 'simulado', erro: 'SMTP não configurado — veja o aviso no log' };
+      return { ok: false, modo: 'simulado', erro: 'SMTP não configurado. Veja o aviso no log' };
     }
     return { ok: true, modo: 'simulado' };
   }

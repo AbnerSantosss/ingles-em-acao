@@ -18,7 +18,7 @@ import { FormularioDeEntrada } from './form';
 
 export const metadata: Metadata = {
   title: 'Entrar',
-  description: 'Entre na sua conta do Inglês em Ação e continue sua trilha de 42 aulas.',
+  description: 'Entre na sua conta do WSA English e continue sua trilha de 42 aulas.',
 };
 
 type Busca = Record<string, string | string[] | undefined>;

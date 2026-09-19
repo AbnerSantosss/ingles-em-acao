@@ -5,11 +5,16 @@
  * Réplica do protótipo (`prototype/mobile.dc.html`: template ~584–958,
  * resolvers ~1157–1436). Cor vinda do dado entra em `style` inline via
  * `@/lib/ui/palette`; cor fixa fica no `className` com o hex exato do
- * protótipo. Server Components puros, sem estado.
+ * protótipo. Nenhum bloco daqui tem estado próprio. Os botões de ouvir e o
+ * player de bloco vêm de `OuvirTexto` e `OuvirBloco` (Client Components,
+ * pacote 08) e só aparecem quando a página tem clipe para aquele texto.
  */
 
 import type { CSSProperties } from "react";
 
+import { OuvirBloco } from "@/components/lesson/audio/OuvirBloco";
+import { OuvirTexto } from "@/components/lesson/audio/OuvirTexto";
+import { ROTULO_OUVIR_DIALOGO, ROTULO_OUVIR_TODOS } from "@/components/lesson/audio/rotulos";
 import { cn } from "@/lib/ui/cn";
 import { SOLID, SOLID_FG, isSolidName, solid, variant } from "@/lib/ui/palette";
 import type {
@@ -64,7 +69,16 @@ function numero(n: string | number | undefined, i: number): string | number {
 type Pastilha = { texto: string; c?: AccentName };
 
 /** Fileira de pastilhas — desenho compartilhado por `chips` e `answers`. */
-function Pastilhas({ title, itens }: { title?: string; itens: Pastilha[] }) {
+function Pastilhas({
+  title,
+  itens,
+  comAudio = false,
+}: {
+  title?: string;
+  itens: Pastilha[];
+  /** `true` só no `chips`: o gabarito (`answers`) não tem áudio. */
+  comAudio?: boolean;
+}) {
   return (
     <div>
       {title ? (
@@ -78,10 +92,16 @@ function Pastilhas({ title, itens }: { title?: string; itens: Pastilha[] }) {
           return (
             <span
               key={i}
-              className="rounded-pill border border-solid px-4 py-[9px] text-[14px] font-extrabold"
+              className="rounded-pill border border-solid px-4 py-[9px] fs-leitura font-extrabold"
               style={{ background: cor.bg, color: cor.fg, borderColor: cor.bd }}
             >
-              {item.texto}
+              {comAudio ? (
+                <OuvirTexto texto={item.texto} compacto>
+                  {item.texto}
+                </OuvirTexto>
+              ) : (
+                item.texto
+              )}
             </span>
           );
         })}
@@ -93,10 +113,13 @@ function Pastilhas({ title, itens }: { title?: string; itens: Pastilha[] }) {
 /** Pastilhas de vocabulário, pronomes e formas verbais. */
 export function BlocoChips({ bloco }: { bloco: ChipsBlock }) {
   return (
-    <Pastilhas
-      title={bloco.title}
-      itens={bloco.items.map((c) => ({ texto: c.t, c: c.c }))}
-    />
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <Pastilhas
+        title={bloco.title}
+        itens={bloco.items.map((c) => ({ texto: c.t, c: c.c }))}
+        comAudio
+      />
+    </OuvirBloco>
   );
 }
 
@@ -118,25 +141,29 @@ export function BlocoAnswers({ bloco }: { bloco: AnswersBlock }) {
 /** Lista numerada de frases, cada uma com a bolinha colorida. */
 export function BlocoRows({ bloco }: { bloco: RowsBlock }) {
   return (
-    <ol className="m-0 flex list-none flex-col gap-2.5 p-0">
-      {bloco.items.map((r, i) => (
-        <li
-          key={i}
-          className="flex items-center gap-3 rounded-[16px] border border-[#E6E8EE] bg-white px-[14px] py-3 shadow-[0_3px_10px_rgba(11,31,75,0.04)]"
-        >
-          <span
-            aria-hidden="true"
-            className="grid h-[34px] w-[34px] flex-none place-items-center rounded-full text-[14px] font-black text-white"
-            style={{ background: solid(r.c) }}
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <ol className="m-0 flex list-none flex-col gap-2.5 p-0">
+        {bloco.items.map((r, i) => (
+          <li
+            key={i}
+            className="flex items-center gap-3 rounded-[16px] border border-[#E6E8EE] bg-white px-[14px] py-3 shadow-[0_3px_10px_rgba(11,31,75,0.04)]"
           >
-            {numero(r.n, i)}
-          </span>
-          <span className="text-[15px] font-bold leading-[1.4] text-[#0F2050]">
-            {r.text}
-          </span>
-        </li>
-      ))}
-    </ol>
+            <span
+              aria-hidden="true"
+              className="grid h-[34px] w-[34px] flex-none place-items-center rounded-full text-[14px] font-black text-white"
+              style={{ background: solid(r.c) }}
+            >
+              {numero(r.n, i)}
+            </span>
+            <OuvirTexto texto={r.text} forma="lado" compacto>
+              <span className="fs-leitura font-bold leading-[1.4] text-[#0F2050]">
+                {r.text}
+              </span>
+            </OuvirTexto>
+          </li>
+        ))}
+      </ol>
+    </OuvirBloco>
   );
 }
 
@@ -148,48 +175,54 @@ export function BlocoRows({ bloco }: { bloco: RowsBlock }) {
  */
 export function BlocoTable({ bloco }: { bloco: TableBlock }) {
   return (
-    <div>
-      <div className="mb-2.5 grid grid-cols-2 gap-2.5">
-        <div className="rounded-[12px] bg-[#0F2050] px-4 py-3 text-[12px] font-extrabold tracking-[0.08em] text-white">
-          {bloco.head[0]}
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <div>
+        <div className="mb-2.5 grid grid-cols-2 gap-2.5">
+          <div className="rounded-[12px] bg-[#0F2050] px-4 py-3 fs-rotulo font-extrabold tracking-[0.08em] text-white">
+            {bloco.head[0]}
+          </div>
+          <div className="rounded-[12px] bg-[#0E9BAE] px-4 py-3 text-center fs-rotulo font-extrabold tracking-[0.08em] text-white">
+            {bloco.head[1]}
+          </div>
         </div>
-        <div className="rounded-[12px] bg-[#0E9BAE] px-4 py-3 text-center text-[12px] font-extrabold tracking-[0.08em] text-white">
-          {bloco.head[1]}
-        </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        {bloco.rows.map((r, i) => {
-          const v = variant(r.v);
-          return (
-            <div
-              key={i}
-              className="grid grid-cols-[1fr_auto_1fr] items-center gap-2.5 rounded-[14px] px-[18px] py-3.5"
-              style={{ background: v.bg }}
-            >
-              <span className="text-[17px] font-extrabold text-[#0F2050]">
-                {r.a}
-                {r.note ? (
-                  <span className="text-[12px] font-bold text-[#9AA1AE]">
-                    {" "}
-                    {r.note}
-                  </span>
-                ) : null}
-              </span>
-              <span className="text-[16px] font-extrabold" style={{ color: v.kick }}>
-                <span aria-hidden="true">⟶</span>
-                <span className="sr-only">vira</span>
-              </span>
-              <span
-                className="text-center text-[17px] font-extrabold"
-                style={{ color: v.kick }}
+        <div className="flex flex-col gap-2">
+          {bloco.rows.map((r, i) => {
+            const v = variant(r.v);
+            return (
+              <div
+                key={i}
+                className="grid grid-cols-[1fr_auto_1fr] items-center gap-2.5 rounded-[14px] px-[18px] py-3.5"
+                style={{ background: v.bg }}
               >
-                {r.b}
-              </span>
-            </div>
-          );
-        })}
+                <span className="text-[17px] font-extrabold text-[#0F2050]">
+                  <OuvirTexto texto={r.a} compacto>
+                    {r.a}
+                  </OuvirTexto>
+                  {r.note ? (
+                    <span className="fs-apoio font-bold text-[#9AA1AE]">
+                      {" "}
+                      {r.note}
+                    </span>
+                  ) : null}
+                </span>
+                <span className="text-[16px] font-extrabold" style={{ color: v.kick }}>
+                  <span aria-hidden="true">⟶</span>
+                  <span className="sr-only">vira</span>
+                </span>
+                <span
+                  className="text-center text-[17px] font-extrabold"
+                  style={{ color: v.kick }}
+                >
+                  <OuvirTexto texto={r.b} compacto>
+                    {r.b}
+                  </OuvirTexto>
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </OuvirBloco>
   );
 }
 
@@ -207,60 +240,62 @@ export function BlocoGrid({ bloco }: { bloco: GridBlock }) {
   } as CSSProperties;
 
   return (
-    <div
-      className={cn(
-        "grid gap-3",
-        umaColuna ? "grid-cols-1" : GRADE_FLEXIVEL,
-      )}
-      style={umaColuna ? undefined : minimos}
-    >
-      {bloco.items.map((g, i) => {
-        const v = variant(g.v);
-        return (
-          <div
-            key={i}
-            className="rounded-[18px] border border-solid p-[18px]"
-            style={{ background: v.bg, borderColor: v.bd }}
-          >
-            {g.n || g.kicker ? (
-              <div className="mb-2 flex items-center gap-[9px]">
-                {g.n ? (
-                  <span
-                    aria-hidden="true"
-                    className="grid h-[26px] w-[26px] flex-none place-items-center rounded-full text-[13px] font-extrabold text-white"
-                    style={{ background: solid(g.c) }}
-                  >
-                    {g.n}
-                  </span>
-                ) : null}
-                {g.kicker ? (
-                  <span
-                    className="text-[12px] font-extrabold tracking-[0.08em]"
-                    style={{ color: v.kick }}
-                  >
-                    {g.kicker}
-                  </span>
-                ) : null}
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <div
+        className={cn(
+          "grid gap-3",
+          umaColuna ? "grid-cols-1" : GRADE_FLEXIVEL,
+        )}
+        style={umaColuna ? undefined : minimos}
+      >
+        {bloco.items.map((g, i) => {
+          const v = variant(g.v);
+          return (
+            <div
+              key={i}
+              className="rounded-[18px] border border-solid p-[18px]"
+              style={{ background: v.bg, borderColor: v.bd }}
+            >
+              {g.n || g.kicker ? (
+                <div className="mb-2 flex items-center gap-[9px]">
+                  {g.n ? (
+                    <span
+                      aria-hidden="true"
+                      className="grid h-[26px] w-[26px] flex-none place-items-center rounded-full text-[13px] font-extrabold text-white"
+                      style={{ background: solid(g.c) }}
+                    >
+                      {g.n}
+                    </span>
+                  ) : null}
+                  {g.kicker ? (
+                    <span
+                      className="fs-rotulo font-extrabold tracking-[0.08em]"
+                      style={{ color: v.kick }}
+                    >
+                      {g.kicker}
+                    </span>
+                  ) : null}
+                </div>
+              ) : null}
+              <div className="text-[19px] font-black text-[#0F2050] [text-wrap:pretty]">
+                <OuvirTexto texto={g.title}>{g.title}</OuvirTexto>
               </div>
-            ) : null}
-            <div className="text-[19px] font-black text-[#0F2050] [text-wrap:pretty]">
-              {g.title}
+              {g.body ? (
+                <div className="mt-1 fs-apoio text-[#6B7280]">{g.body}</div>
+              ) : null}
+              {g.foot ? (
+                <div
+                  className="mt-1.5 fs-apoio font-extrabold"
+                  style={{ color: v.kick }}
+                >
+                  {g.foot}
+                </div>
+              ) : null}
             </div>
-            {g.body ? (
-              <div className="mt-1 text-[14px] text-[#6B7280]">{g.body}</div>
-            ) : null}
-            {g.foot ? (
-              <div
-                className="mt-1.5 text-[13px] font-extrabold"
-                style={{ color: v.kick }}
-              >
-                {g.foot}
-              </div>
-            ) : null}
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </OuvirBloco>
   );
 }
 
@@ -270,67 +305,77 @@ export function BlocoGrid({ bloco }: { bloco: GridBlock }) {
  */
 export function BlocoDialogue({ bloco }: { bloco: DialogueBlock }) {
   return (
-    <div className="flex flex-col gap-2.5 rounded-[18px] border border-[#E6E8EE] bg-white px-3.5 py-4">
-      {bloco.items.map((d, i) => {
-        const segundo = d.s === "b";
-        return (
-          <div
-            key={i}
-            className={cn(
-              "flex max-w-[92%] items-start gap-2",
-              segundo ? "flex-row-reverse self-end" : "flex-row self-start",
-            )}
-          >
-            <span
-              aria-hidden="true"
-              className="mt-3 h-4 w-4 flex-none rounded-full"
-              style={{ background: segundo ? "#5B21B6" : "#12A594" }}
-            />
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_DIALOGO}>
+      <div className="flex flex-col gap-2.5 rounded-[18px] border border-[#E6E8EE] bg-white px-3.5 py-4">
+        {bloco.items.map((d, i) => {
+          const segundo = d.s === "b";
+          return (
             <div
-              className="rounded-[16px] border-[1.5px] border-solid px-3.5 py-[11px] text-[15px] leading-[1.4] text-[#1F2430]"
-              style={{
-                background: segundo ? "#F7F4FE" : "#F0FAF8",
-                borderColor: segundo ? "#DCD2F6" : "#C7EBEE",
-              }}
+              key={i}
+              className={cn(
+                "flex max-w-[92%] items-start gap-2",
+                segundo ? "flex-row-reverse self-end" : "flex-row self-start",
+              )}
             >
-              <span className="sr-only">
-                {segundo ? "Segunda pessoa: " : "Primeira pessoa: "}
-              </span>
-              {d.text}
+              <span
+                aria-hidden="true"
+                className="mt-3 h-4 w-4 flex-none rounded-full"
+                style={{ background: segundo ? "#5B21B6" : "#12A594" }}
+              />
+              <div
+                className="rounded-[16px] border-[1.5px] border-solid px-3.5 py-[11px] fs-leitura leading-[1.4] text-[#1F2430]"
+                style={{
+                  background: segundo ? "#F7F4FE" : "#F0FAF8",
+                  borderColor: segundo ? "#DCD2F6" : "#C7EBEE",
+                }}
+              >
+                <span className="sr-only">
+                  {segundo ? "Segunda pessoa: " : "Primeira pessoa: "}
+                </span>
+                <OuvirTexto texto={d.text} compacto>
+                  {d.text}
+                </OuvirTexto>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </OuvirBloco>
   );
 }
 
 /** Par errado × certo. O rótulo é texto ("ERRADO", "CORRETO"), não só cor. */
 export function BlocoCompare({ bloco }: { bloco: CompareBlock }) {
   return (
-    <div className="flex flex-col gap-2.5">
-      {bloco.items.map((c, i) => (
-        <div key={i} className="grid grid-cols-2 gap-2.5">
-          <div className="rounded-[14px] bg-[#FDE8EA] px-4 py-3.5">
-            <div className="mb-1.5 text-[11px] font-extrabold tracking-[0.07em] text-[#9B1C2E]">
-              ERRADO <span aria-hidden="true">✕</span>
+    <OuvirBloco bloco={bloco} rotulo={ROTULO_OUVIR_TODOS}>
+      <div className="flex flex-col gap-2.5">
+        {bloco.items.map((c, i) => (
+          <div key={i} className="grid grid-cols-2 gap-2.5">
+            <div className="rounded-[14px] bg-[#FDE8EA] px-4 py-3.5">
+              <div className="mb-1.5 fs-rotulo font-extrabold tracking-[0.07em] text-[#9B1C2E]">
+                ERRADO <span aria-hidden="true">✕</span>
+              </div>
+              <div className="fs-leitura font-extrabold text-[#1F2430]">{c.wrong}</div>
+              {c.note ? (
+                <div className="mt-1 fs-apoio text-[#9B1C2E]">{c.note}</div>
+              ) : null}
             </div>
-            <div className="text-[16px] font-extrabold text-[#1F2430]">{c.wrong}</div>
-            {c.note ? (
-              <div className="mt-1 text-[13px] text-[#9B1C2E]">{c.note}</div>
-            ) : null}
-          </div>
-          <div className="rounded-[14px] bg-[#E4F5EA] px-4 py-3.5">
-            <div className="mb-1.5 text-[11px] font-extrabold tracking-[0.07em] text-[#1B6B3A]">
-              CORRETO <span aria-hidden="true">✓</span>
+            <div className="rounded-[14px] bg-[#E4F5EA] px-4 py-3.5">
+              <div className="mb-1.5 fs-rotulo font-extrabold tracking-[0.07em] text-[#1B6B3A]">
+                CORRETO <span aria-hidden="true">✓</span>
+              </div>
+              <div className="fs-leitura font-extrabold text-[#1F2430]">
+                <OuvirTexto texto={c.right} compacto>
+                  {c.right}
+                </OuvirTexto>
+              </div>
+              {c.rnote ? (
+                <div className="mt-1 fs-apoio text-[#1B6B3A]">{c.rnote}</div>
+              ) : null}
             </div>
-            <div className="text-[16px] font-extrabold text-[#1F2430]">{c.right}</div>
-            {c.rnote ? (
-              <div className="mt-1 text-[13px] text-[#1B6B3A]">{c.rnote}</div>
-            ) : null}
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </OuvirBloco>
   );
 }

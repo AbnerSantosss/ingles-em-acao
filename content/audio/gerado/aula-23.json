@@ -1,0 +1,203 @@
+{
+  "aula": 23,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_001",
+        "alvo": "texto",
+        "ancora": "bread",
+        "texto": "bread",
+        "src": "/audio/aula-23/lesson_023_audio_001.4240a720.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_002",
+        "alvo": "texto",
+        "ancora": "rice",
+        "texto": "rice",
+        "src": "/audio/aula-23/lesson_023_audio_002.c39e546a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_003",
+        "alvo": "texto",
+        "ancora": "beans",
+        "texto": "beans",
+        "src": "/audio/aula-23/lesson_023_audio_003.9eea1adf.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_004",
+        "alvo": "texto",
+        "ancora": "chicken",
+        "texto": "chicken",
+        "src": "/audio/aula-23/lesson_023_audio_004.86f80e39.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_005",
+        "alvo": "texto",
+        "ancora": "meat",
+        "texto": "meat",
+        "src": "/audio/aula-23/lesson_023_audio_005.09e8036a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_006",
+        "alvo": "texto",
+        "ancora": "fish",
+        "texto": "fish",
+        "src": "/audio/aula-23/lesson_023_audio_006.5642f8fd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_007",
+        "alvo": "texto",
+        "ancora": "cheese",
+        "texto": "cheese",
+        "src": "/audio/aula-23/lesson_023_audio_007.e5c4269b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_008",
+        "alvo": "texto",
+        "ancora": "egg",
+        "texto": "egg",
+        "src": "/audio/aula-23/lesson_023_audio_008.04fa3934.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_009",
+        "alvo": "texto",
+        "ancora": "fruit",
+        "texto": "fruit",
+        "src": "/audio/aula-23/lesson_023_audio_009.fb56e854.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_010",
+        "alvo": "texto",
+        "ancora": "salad",
+        "texto": "salad",
+        "src": "/audio/aula-23/lesson_023_audio_010.c84e7a66.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_011",
+        "alvo": "texto",
+        "ancora": "water",
+        "texto": "water",
+        "src": "/audio/aula-23/lesson_023_audio_011.91514b38.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_012",
+        "alvo": "texto",
+        "ancora": "tea",
+        "texto": "tea",
+        "src": "/audio/aula-23/lesson_023_audio_012.9a5d9fa6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_013",
+        "alvo": "texto",
+        "ancora": "juice",
+        "texto": "juice",
+        "src": "/audio/aula-23/lesson_023_audio_013.889a4e4b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_014",
+        "alvo": "texto",
+        "ancora": "milk",
+        "texto": "milk",
+        "src": "/audio/aula-23/lesson_023_audio_014.89ebfc3c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_023_audio_015",
+        "alvo": "texto",
+        "ancora": "soda",
+        "texto": "soda",
+        "src": "/audio/aula-23/lesson_023_audio_015.baa7db53.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_023_audio_016",
+        "alvo": "texto",
+        "ancora": "I’d like a coffee, please.",
+        "texto": "I'd like a coffee, please.",
+        "src": "/audio/aula-23/lesson_023_audio_016.abf381f4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_023_audio_017",
+        "alvo": "texto",
+        "ancora": "How much is it?",
+        "texto": "How much is it?",
+        "src": "/audio/aula-23/lesson_023_audio_017.8c7050aa.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_023_audio_018",
+        "alvo": "texto",
+        "ancora": "I like fish. / I don’t like soda.",
+        "texto": "I like fish. I don't like soda.",
+        "src": "/audio/aula-23/lesson_023_audio_018.32920db8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

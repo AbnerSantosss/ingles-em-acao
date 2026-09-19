@@ -252,7 +252,7 @@ export async function salvarDadosAction(
     return sucesso(
       antes.slug === depois.slug
         ? 'Dados salvos.'
-        : `Dados salvos. O endereço da aula agora é /aula/${depois.slug} — quem tiver o link antigo vai cair num 404.`,
+        : `Dados salvos. O endereço da aula agora é /aula/${depois.slug}. Quem tiver o link antigo vai receber erro 404.`,
     );
   } catch (erro: unknown) {
     return erroDeBanco('salvar dados', erro);
@@ -301,13 +301,13 @@ export async function publicarAulaAction(
     // publica o rascunho da aba Páginas (esse passa pelo relatório de impacto e
     // cria versão). Com rascunho pendente, a mensagem diz isso com todas as letras.
     const avisoDeRascunho = resultado.rascunhoPendente
-      ? ' Atenção: o rascunho da aba Páginas continua pendente e NÃO entrou no ar — publique-o por lá.'
+      ? ' Atenção: o rascunho da aba Páginas continua pendente e NÃO entrou no ar. Publique-o por lá.'
       : '';
     const ajustados = resultado.progressosReposicionados;
 
     return sucesso(
       (ajustados > 0
-        ? `Aula ${resultado.numero} publicada. ${ajustados} aluno(s) estavam além da última página e foram reposicionados no fim — nenhuma conclusão foi desfeita.`
+        ? `Aula ${resultado.numero} publicada. ${ajustados} aluno(s) estavam além da última página e foram reposicionados no fim. Nenhuma conclusão foi desfeita.`
         : `Aula ${resultado.numero} publicada. Ela já aparece para os alunos.`) + avisoDeRascunho,
     );
   } catch (erro: unknown) {
@@ -428,7 +428,7 @@ export async function alterarPublicacaoEmLoteAction(
   const mensagem =
     bloqueadas === 0
       ? `${mudaram.length} aula(s) ${verbo}.`
-      : `${mudaram.length} aula(s) ${verbo} e ${bloqueadas} bloqueada(s) — veja o motivo de cada uma abaixo.`;
+      : `${mudaram.length} aula(s) ${verbo} e ${bloqueadas} bloqueada(s). Veja o motivo de cada uma abaixo.`;
 
   return { estado: 'ok', mensagem, operacao, relatorio };
 }
@@ -470,10 +470,10 @@ export async function duplicarAulaAction(
     const partes = [
       `Aula ${copia.number} criada como cópia da aula ${origem.number}, em rascunho (fora do ar).`,
       exercicios > 0
-        ? `Os ${exercicios} bloco(s) de exercício ganharam ids novos — nenhuma resposta de aluno é compartilhada com a original.`
+        ? `Os ${exercicios} bloco(s) de exercício ganharam ids novos: nenhuma resposta de aluno é compartilhada com a original.`
         : 'A aula não tem blocos de exercício.',
       resultado.temRascunho ? 'O rascunho pendente da original veio junto, também com ids novos.' : '',
-      'A cópia nasce sem capa e sem vídeo.',
+      'A cópia é criada sem capa e sem vídeo.',
       `Selos e blocos de "próxima aula" que citam a aula ${origem.number} não mudam sozinhos: revise na aba Páginas.`,
     ];
     if (resultado.midias === null) {
@@ -574,7 +574,7 @@ export async function restaurarAulaAction(
 
     return sucesso(
       antes.published
-        ? `Aula ${antes.number} restaurada — e ela estava publicada, então já voltou para o ar.`
+        ? `Aula ${antes.number} restaurada. Como ela estava publicada, já voltou para o ar.`
         : `Aula ${antes.number} restaurada. Ela continua despublicada.`,
     );
   } catch (erro: unknown) {
@@ -723,7 +723,7 @@ export async function renumerarAulaAction(
         reason: `número ${novo} já é de "${ocupado.title}"`,
       });
       return falha(
-        `O número ${novo} já é da aula "${ocupado.title}". Renumere aquela aula primeiro — esta ação não troca duas aulas de lugar sozinha.`,
+        `O número ${novo} já é da aula "${ocupado.title}". Renumere aquela aula primeiro, porque esta ação não troca duas aulas de lugar.`,
       );
     }
 

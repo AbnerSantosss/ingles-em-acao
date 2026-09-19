@@ -33,7 +33,7 @@ export default async function TrilhaPage() {
         </h1>
         <p className="m-0 mt-2 text-[16px] leading-snug text-muted lg:text-[19px]">
           {trilha.concluidas} de {trilha.total} aulas concluídas ({pct}%). Todas as aulas ficam
-          abertas — estude na ordem que preferir.
+          abertas. Estude na ordem que preferir.
         </p>
       </header>
 

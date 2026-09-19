@@ -1,0 +1,105 @@
+{
+  "aula": 7,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_007_audio_001",
+        "alvo": "texto",
+        "ancora": "This is my mother.",
+        "texto": "This is my mother.",
+        "src": "/audio/aula-07/lesson_007_audio_001.515a85ca.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_007_audio_002",
+        "alvo": "texto",
+        "ancora": "He is my brother.",
+        "texto": "He is my brother.",
+        "src": "/audio/aula-07/lesson_007_audio_002.46d66f3c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_007_audio_003",
+        "alvo": "texto",
+        "ancora": "They are my parents.",
+        "texto": "They are my parents.",
+        "src": "/audio/aula-07/lesson_007_audio_003.0839c8d1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_004",
+        "alvo": "texto",
+        "ancora": "sister",
+        "texto": "sister",
+        "src": "/audio/aula-07/lesson_007_audio_004.a2f24372.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_005",
+        "alvo": "texto",
+        "ancora": "brother",
+        "texto": "brother",
+        "src": "/audio/aula-07/lesson_007_audio_005.7499c06b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_006",
+        "alvo": "texto",
+        "ancora": "son",
+        "texto": "son",
+        "src": "/audio/aula-07/lesson_007_audio_006.b55c1f51.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_007",
+        "alvo": "texto",
+        "ancora": "daughter",
+        "texto": "daughter",
+        "src": "/audio/aula-07/lesson_007_audio_007.ded2efd4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_008",
+        "alvo": "texto",
+        "ancora": "This is my sister.",
+        "texto": "This is my sister.",
+        "src": "/audio/aula-07/lesson_007_audio_008.466e8ed4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_009",
+        "alvo": "texto",
+        "ancora": "Ana’s brother is a doctor.",
+        "texto": "Ana's brother is a doctor.",
+        "src": "/audio/aula-07/lesson_007_audio_009.7b51b986.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

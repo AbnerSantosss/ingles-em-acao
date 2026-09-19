@@ -59,7 +59,7 @@ test('aluno: Home → Aula 01 → responde → recarrega e a resposta persiste �
   await pergunta.getByRole('button', { name: 'I', exact: true }).click();
   const escolhida = pergunta.getByRole('button', { name: /^I\b/ });
   await expect(escolhida).toHaveAttribute('aria-pressed', 'true');
-  await expect(escolhida).toHaveAccessibleName('I — sua resposta, correta');
+  await expect(escolhida).toHaveAccessibleName('I, sua resposta, correta');
 
   // Gravou no banco: a resposta conferida e a página em que o aluno está.
   await expect
@@ -74,7 +74,7 @@ test('aluno: Home → Aula 01 → responde → recarrega e a resposta persiste �
   await expect(page.getByText(/PÁGINA 2 DE 7$/)).toBeVisible();
   const depois = page.getByRole('group', { name: PERGUNTA }).getByRole('button', { name: /^I\b/ });
   await expect(depois).toHaveAttribute('aria-pressed', 'true');
-  await expect(depois).toHaveAccessibleName('I — sua resposta, correta');
+  await expect(depois).toHaveAccessibleName('I, sua resposta, correta');
   await expect(
     page.getByRole('group', { name: PERGUNTA }).getByRole('button', { name: /^YOU\b/ }),
   ).toHaveAttribute('aria-pressed', 'false');

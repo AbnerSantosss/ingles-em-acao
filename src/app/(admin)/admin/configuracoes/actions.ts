@@ -107,7 +107,6 @@ function revalidar(): void {
 
 const PLANOS: readonly { plano: Plan; rotulo: string }[] = [
   { plano: 'ESSENCIAL', rotulo: 'Essencial' },
-  { plano: 'COMPLETO', rotulo: 'Completo' },
   { plano: 'PREMIUM', rotulo: 'Premium' },
 ];
 
@@ -130,7 +129,7 @@ function trocasEntre(antes: LinksDeCheckout, depois: LinksDeCheckout): TrocaDeLi
 /**
  * Salva os links de checkout (global + um por plano, todos opcionais).
  *
- * Campos: `global`, `ESSENCIAL`, `COMPLETO`, `PREMIUM`, `motivo`. Campo vazio
+ * Campos: `global`, `ESSENCIAL`, `PREMIUM`, `motivo`. Campo vazio
  * significa "sem link" — o plano passa a usar o global e, sem global, o botão
  * de compra some.
  *
@@ -149,7 +148,7 @@ export async function salvarCheckoutAction(
   const global = lerLinkOpcional(texto(dados, 'global'));
   if (!global.ok) campos.global = global.motivo;
 
-  const porPlano: Record<Plan, string | null> = { ESSENCIAL: null, COMPLETO: null, PREMIUM: null };
+  const porPlano: Record<Plan, string | null> = { ESSENCIAL: null, PREMIUM: null };
   for (const { plano } of PLANOS) {
     const lido = lerLinkOpcional(texto(dados, plano));
     if (lido.ok) porPlano[plano] = lido.link;
@@ -207,7 +206,7 @@ export async function salvarCheckoutAction(
     return sucesso(
       alerta.enviado
         ? `Link de checkout salvo (${quais}). Alerta enviado para ${alerta.destinatarios} admin(s).`
-        : `Link de checkout salvo (${quais}). O alerta por e-mail não saiu (${alerta.motivo ?? 'sem detalhe'}) — a troca e a falha estão na auditoria.`,
+        : `Link de checkout salvo (${quais}). O alerta por e-mail não saiu (${alerta.motivo ?? 'sem detalhe'}). A troca e a falha estão na auditoria.`,
     );
   } catch (erro: unknown) {
     return erroDeBanco('checkout', erro);

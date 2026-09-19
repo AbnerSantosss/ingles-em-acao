@@ -6,6 +6,13 @@
  *
  * ⚠️ COPY: nenhuma frase nasce aqui — tudo vem de `copy.ts`.
  *
+ * ⚠️ PRIMEIRA DOBRA ESCURA. Cabeçalho e hero dividem um bloco navy com a arte da
+ * marca ao fundo (`public/brand/hero-*.webp`). O `<header>` fica FORA do `<main>`
+ * (landmarks corretos) e é posicionado por cima do hero com `absolute`; por isso o
+ * hero reserva o espaço dele com `pt-24`. Mudou a altura do cabeçalho? Mude lá.
+ * Todo link sobre o escuro leva cor própria de hover e de foco: o `a:hover` global
+ * é navy e o anel de foco global é azul — os dois somem nesse fundo.
+ *
  * ⚠️ TRÊS CTAs, TRÊS RÓTULOS. Um leitor de tela lista os links da página; três
  * "CRIAR CONTA" iguais seriam indistinguíveis. Cada um diz para onde leva.
  *
@@ -13,22 +20,25 @@
  * preço ainda não existe e manda para o cadastro; com link, cada plano ganha o
  * botão de compra, a nota muda e a garantia legal aparece.
  */
+import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
-import { Logo } from '@/components/ui/Logo';
+import { LogoWSA } from '@/components/ui/LogoWSA';
+import { NOME_DO_PLANO, type Plano } from '@/lib/planos';
 
 import { copyDaLanding as copy } from './copy';
 import {
   CelularDaAula,
   Icone,
   type NomeDoIcone,
+  OndaDoHero,
   RetratoDoProfessor,
   SkylineDeLondres,
   TrilhaDas42,
 } from './ilustracoes';
 
-export type PlanoDaLanding = 'ESSENCIAL' | 'COMPLETO' | 'PREMIUM';
+export type PlanoDaLanding = Plano;
 
 /** O link de compra de cada plano, já resolvido (o do plano ou o global). */
 export type OfertasDaLanding = Record<PlanoDaLanding, string | null>;
@@ -45,19 +55,41 @@ const ICONES_DO_METODO: NomeDoIcone[] = ['bussola', 'degraus', 'lapis', 'relogio
 
 const VISUAL_DO_PLANO: Record<PlanoDaLanding, { icone: NomeDoIcone; faixa: string; cartao: string; icon: string }> = {
   ESSENCIAL: { icone: 'livro', faixa: 'bg-navy', cartao: 'border-border bg-surface', icon: 'bg-navy text-white' },
-  COMPLETO: { icone: 'play', faixa: 'bg-teal', cartao: 'border-teal bg-mint-1', icon: 'bg-teal text-white' },
   PREMIUM: { icone: 'microfone', faixa: 'bg-purple', cartao: 'border-purple/50 bg-[#F3EEFC]', icon: 'bg-purple text-white' },
 };
 
 /* ------------------------------------------------------------------ peças */
 
-function CtaPrincipal({ rotulo, className = '' }: { rotulo: string; className?: string }) {
+function CtaPrincipal({
+  rotulo,
+  className = '',
+  comSeta = false,
+}: {
+  rotulo: string;
+  className?: string;
+  /** Seta → à direita do rótulo (hero). Decorativa: o rótulo já diz para onde leva. */
+  comSeta?: boolean;
+}) {
   return (
     <Link
       href="/criar-conta"
-      className={`inline-flex min-h-13 w-full items-center justify-center rounded-pill bg-yellow px-8 text-center text-[15px] font-black tracking-wide text-navy shadow-card transition-colors hover:bg-yellow-hover sm:w-auto ${className}`}
+      className={`inline-flex min-h-13 w-full items-center justify-center gap-3 rounded-pill bg-yellow px-8 text-center text-[15px] font-black tracking-wide text-navy shadow-card transition-colors hover:bg-yellow-hover sm:w-auto ${className}`}
     >
       {rotulo}
+      {comSeta ? (
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2.5}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          className="size-5 shrink-0"
+        >
+          <path d="M4 12h16M14 6l6 6-6 6" />
+        </svg>
+      ) : null}
     </Link>
   );
 }
@@ -85,77 +117,179 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
 
   return (
     <div className="relative flex min-h-dvh flex-col overflow-x-hidden bg-bg">
+      {/* ⚠️ Amarelo, não navy: o que fica atrás dele agora é o hero escuro. */}
       <a
         href="#conteudo"
-        className="absolute top-3 left-3 z-50 inline-flex min-h-11 -translate-y-[200%] items-center rounded-pill bg-navy px-5 text-[15px] font-bold text-white focus:translate-y-0"
+        className="absolute top-3 left-3 z-50 inline-flex min-h-11 -translate-y-[200%] items-center rounded-pill bg-yellow px-5 text-[15px] font-bold text-navy focus:translate-y-0 focus-visible:outline-white"
       >
         {copy.a11y.pular}
       </a>
 
       {/* ------------------------------------------------------- cabeçalho */}
-      <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" aria-label="Inglês em Ação — início" className="rounded-card">
-          <Logo size={44} />
-        </Link>
+      {/* ⚠️ `absolute`: flutua sobre o bloco escuro do hero (ver o topo do arquivo). */}
+      <header className="absolute inset-x-0 top-0 z-20">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8 lg:py-5">
+          <Link
+            href="/"
+            aria-label="WSA English, início"
+            className="inline-flex min-h-11 items-center rounded-card focus-visible:outline-yellow"
+          >
+            {/* ⚠️ A altura vai inline no componente; é o `!` que deixa o `lg:` vencer. */}
+            <LogoWSA fundo="escuro" altura={40} compacta prioridade className="h-8! lg:h-10!" />
+          </Link>
 
-        <nav aria-label={copy.a11y.navegacao} className="hidden lg:block">
-          <ul className="flex items-center gap-1">
-            {copy.nav.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="inline-flex min-h-11 items-center rounded-pill px-3 text-[15px] font-semibold text-navy hover:bg-rail"
-                >
-                  {item.rotulo}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+          <nav aria-label={copy.a11y.navegacao} className="hidden lg:block">
+            <ul className="flex items-center gap-1">
+              {copy.nav.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="inline-flex min-h-11 items-center rounded-pill px-3 text-[15px] font-semibold text-white hover:bg-white/10 hover:text-white focus-visible:outline-yellow"
+                  >
+                    {item.rotulo}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-        <Link
-          href="/entrar"
-          className="inline-flex min-h-11 items-center rounded-pill border-2 border-navy px-5 text-[15px] font-bold text-navy transition-colors hover:bg-rail"
-        >
-          {copy.entrar}
-        </Link>
+          <Link
+            href="/entrar"
+            className="inline-flex min-h-11 items-center rounded-pill border-2 border-yellow bg-navy/85 px-5 text-[15px] font-bold text-white transition-colors hover:bg-navy hover:text-white focus-visible:outline-yellow"
+          >
+            {copy.entrar}
+          </Link>
+        </div>
       </header>
 
       <main id="conteudo" className="relative z-10 flex flex-1 flex-col">
         {/* ------------------------------------------------------------ hero */}
-        <section aria-labelledby="hero-titulo" className="mx-auto w-full max-w-6xl px-4 pt-4 pb-14 sm:px-6 sm:pt-8 lg:px-8">
-          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-12">
-            <div className="flex flex-col items-start gap-5">
-              <span className="inline-flex max-w-full items-center rounded-pill bg-navy px-4 py-2 text-[12px] font-extrabold tracking-[0.08em] text-yellow uppercase">
-                {copy.hero.selo}
-              </span>
+        {/* `bg-navy` é o fallback: o texto já é legível antes de a arte chegar. */}
+        <section aria-labelledby="hero-titulo" className="relative isolate overflow-hidden bg-navy text-white">
+          {/*
+            Arte de fundo, decorativa. `<picture>` puro para o navegador baixar só um
+            dos dois arquivos (já são WebP de ~60 KB; o otimizador não ganharia nada).
+            ⚠️ Ancorada à DIREITA: globo e Big Ben moram lá e não podem ser cortados.
+          */}
+          <picture>
+            <source media="(min-width: 1024px)" srcSet="/brand/hero-desktop.webp" />
+            <img
+              src="/brand/hero-mobile.webp"
+              alt=""
+              aria-hidden="true"
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 -z-20 size-full max-w-none object-cover object-right"
+            />
+          </picture>
+          {/*
+            ⚠️ CONTRASTE AA — véu do desktop: protege só a coluna da esquerda e some
+            antes do globo. O do celular fica dentro da coluna de texto, logo abaixo.
+          */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 -z-10 hidden bg-linear-to-r from-navy/85 from-35% via-navy/40 via-55% to-transparent to-70% lg:block"
+          />
 
-              <h1
-                id="hero-titulo"
-                className="max-w-2xl text-[36px] leading-[1.08] font-black text-balance text-navy sm:text-[48px] lg:text-[56px]"
-              >
-                {copy.hero.titulo}
-              </h1>
+          <div className="mx-auto w-full max-w-6xl px-4 pt-24 sm:px-6 lg:px-8 lg:pt-32">
+            <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-end lg:gap-12">
+              <div className="relative flex flex-col items-start gap-5 lg:self-center lg:pb-20">
+                {/*
+                  ⚠️ CONTRASTE AA — véu do celular. A dobra é mais alta que a arte, o
+                  `cover` amplia o globo e ele passa por baixo do texto. O véu cobre a
+                  largura toda (do cabeçalho ao fim da nota) e esmaece no pé, sem risca.
+                */}
+                <div
+                  aria-hidden="true"
+                  className="absolute -inset-x-4 -top-24 -bottom-10 -z-10 bg-linear-to-r from-navy/90 via-navy/85 to-navy/75 [mask-image:linear-gradient(to_bottom,black_88%,transparent)] sm:-inset-x-6 lg:hidden"
+                />
 
-              <p className="max-w-xl text-[18px] leading-relaxed text-muted-3 text-pretty">{copy.hero.subtitulo}</p>
+                <span className="inline-flex max-w-full items-center rounded-pill border-2 border-yellow/80 px-4 py-2 text-[12px] font-extrabold tracking-[0.08em] text-yellow uppercase">
+                  {copy.hero.selo}
+                </span>
 
-              <div className="flex w-full flex-col items-stretch gap-3 pt-1 sm:w-auto sm:flex-row sm:items-center">
-                <CtaPrincipal rotulo={copy.hero.cta} />
-                <Link
-                  href="/entrar"
-                  className="inline-flex min-h-11 items-center justify-center rounded-pill px-4 text-[15px] font-semibold text-navy underline underline-offset-4"
+                <h1
+                  id="hero-titulo"
+                  className="max-w-2xl text-[36px] leading-[1.08] font-black text-balance text-white sm:text-[48px] lg:text-[52px] xl:text-[58px]"
                 >
-                  {copy.hero.jaTenhoConta}
-                </Link>
+                  {copy.hero.titulo.antes} <span className="text-yellow">{copy.hero.titulo.destaque}</span>
+                </h1>
+
+                <p className="max-w-xl text-[18px] leading-relaxed text-[#C9D6EC] text-pretty">{copy.hero.subtitulo}</p>
+
+                <div className="flex w-full flex-col items-stretch gap-2 pt-1 sm:w-auto sm:flex-row sm:items-center sm:gap-3">
+                  <CtaPrincipal rotulo={copy.hero.cta} comSeta className="focus-visible:outline-white" />
+                  <Link
+                    href="/entrar"
+                    className="inline-flex min-h-11 items-center justify-center rounded-pill px-4 text-[15px] font-semibold text-white underline underline-offset-4 hover:text-yellow focus-visible:outline-yellow"
+                  >
+                    {copy.hero.jaTenhoConta}
+                  </Link>
+                </div>
+
+                <p className="text-[14px] text-[#C9D6EC]">{copy.hero.nota}</p>
               </div>
 
-              <p className="text-[14px] text-muted">{copy.hero.nota}</p>
+              {/* Celular, com as duas assinaturas da marca por cima (em inglês). */}
+              <div className="mx-auto w-full max-w-[420px]">
+                {/* ⚠️ No desktop esta coluna cai em cima do globo dourado: o cartão navy garante o AA. */}
+                <div className="mb-3 flex items-end justify-between gap-4 lg:rounded-card lg:bg-navy/80 lg:px-5 lg:py-4 lg:backdrop-blur-sm">
+                  <p lang="en" className="text-[12px] leading-[1.9] font-semibold tracking-[0.3em] text-[#C9D6EC] uppercase">
+                    {/* Uma palavra por linha é só arte: o leitor de tela ouve a frase inteira. */}
+                    <span className="sr-only">{copy.hero.lema}</span>
+                    <span aria-hidden="true">
+                      {copy.hero.lema.split(' ').map((palavra, i) => (
+                        <span key={`${i}-${palavra}`} className="block">
+                          {palavra.replace(/[.,]/g, '')}
+                        </span>
+                      ))}
+                      <span className="mt-2 block h-0.5 w-10 rounded-pill bg-yellow" />
+                    </span>
+                  </p>
+                  <p
+                    lang="en"
+                    className="manuscrito max-w-[7ch] -rotate-6 border-b-2 border-yellow/70 pb-1 text-center text-[34px] text-[#C9D6EC] sm:text-[40px]"
+                  >
+                    {copy.hero.assinatura}
+                  </p>
+                </div>
+                <CelularDaAula className="block h-auto w-full" />
+              </div>
             </div>
-
-            <CelularDaAula className="mx-auto h-auto w-full max-w-[420px]" />
           </div>
 
-          <ul className="mt-10 grid gap-3 sm:grid-cols-3">
+          {/* Faixa de recursos. ⚠️ `-mt-10`: a onda sobe por cima do pé do celular. */}
+          <div className="relative z-10 -mt-10">
+            <OndaDoHero className="block h-14 w-full" />
+            <div className="bg-navy pt-2 pb-8">
+              {/* ⚠️ 320px: três colunas só cabem com o texto SOB o ícone; lado a lado a partir de 480px. */}
+              <ul className="mx-auto grid w-full max-w-6xl grid-cols-3 gap-2 px-4 sm:gap-6 sm:px-6 lg:px-8">
+                {copy.hero.recursos.map((item) => (
+                  <li
+                    key={item.icone}
+                    className="flex min-w-0 flex-col items-center gap-2 text-center min-[480px]:flex-row min-[480px]:gap-3 min-[480px]:text-left lg:justify-center"
+                  >
+                    <Image
+                      src={`/brand/icone-${item.icone}.webp`}
+                      alt=""
+                      width={48}
+                      height={48}
+                      className="size-11 shrink-0 sm:size-12"
+                    />
+                    <div className="min-w-0">
+                      <p className="text-[13px] leading-tight font-extrabold text-white sm:text-[15px]">{item.titulo}</p>
+                      <p className="mt-0.5 text-[12px] leading-snug text-[#C9D6EC] sm:text-[14px]">{item.corpo}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Garantias: faixa de transição, já no fundo claro, entre o hero e a dor. */}
+        <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+          <ul className="grid gap-3 sm:grid-cols-3">
             {copy.hero.garantias.map((item) => (
               <li key={item.titulo} className="flex gap-3 rounded-card border border-border bg-surface p-4 shadow-card">
                 <Icone nome="check" className="bg-teal text-white" tamanho="size-9" />
@@ -166,7 +300,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
               </li>
             ))}
           </ul>
-        </section>
+        </div>
 
         {/* ------------------------------------------------------------- dor */}
         <section aria-labelledby="dor" className="bg-surface py-14">
@@ -280,7 +414,9 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                 <div>
                   <h3 className="text-[17px] font-extrabold text-navy">{item.titulo}</h3>
                   <p className="mt-1 text-[15px] leading-relaxed text-muted">{item.corpo}</p>
-                  <span className="mt-2 inline-flex rounded-pill bg-rail px-3 py-1 text-[12px] font-bold text-navy">
+                  <span
+                    className={`mt-2 inline-flex rounded-pill px-3 py-1 text-[12px] font-bold ${item.premium ? 'bg-[#F3EEFC] text-purple' : 'bg-rail text-navy'}`}
+                  >
                     {item.plano}
                   </span>
                 </div>
@@ -311,7 +447,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
             <TituloDeSecao id="planos-titulo">{copy.planos.titulo}</TituloDeSecao>
             <Abertura>{copy.planos.corpo}</Abertura>
 
-            <ul className="grid gap-4 md:grid-cols-3">
+            <ul className="grid gap-4 md:grid-cols-2">
               {copy.planos.lista.map((plano) => {
                 const visual = VISUAL_DO_PLANO[plano.chave];
                 const link = ofertas[plano.chave];
@@ -321,11 +457,19 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                     <div className="flex items-center gap-3">
                       <Icone nome={visual.icone} className={visual.icon} />
                       <div>
-                        <h3 className="text-[20px] font-black text-navy">Plano {plano.nome}</h3>
+                        <h3 className="text-[20px] font-black text-navy">{NOME_DO_PLANO[plano.chave]}</h3>
                         <p className="text-[14px] font-semibold text-muted">{plano.subtitulo}</p>
                       </div>
                     </div>
                     <p className="text-[15px] leading-relaxed text-muted-3">{plano.corpo}</p>
+                    <ul className="flex flex-col gap-2">
+                      {plano.itens.map((texto) => (
+                        <li key={texto} className="flex gap-2 text-[15px] leading-relaxed text-navy">
+                          <Icone nome="check" className="mt-0.5 bg-navy text-white" tamanho="size-6" />
+                          <span>{texto}</span>
+                        </li>
+                      ))}
+                    </ul>
                     {link ? (
                       <a
                         href={link}
@@ -335,7 +479,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                       >
                         {copy.planos.comprar}
                         <span className="sr-only">
-                          {' '}— Plano {plano.nome}
+                          {`: ${NOME_DO_PLANO[plano.chave]}`}
                           {copy.a11y.abreEmOutraAba}
                         </span>
                       </a>
@@ -412,8 +556,8 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
       <footer className="border-t border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-            <div className="flex flex-col gap-3">
-              <Logo size={44} />
+            <div className="flex flex-col gap-5">
+              <LogoWSA fundo="claro" altura={40} className="h-8! lg:h-10! self-start" />
               <p className="max-w-xs text-[14px] leading-relaxed text-muted">{copy.rodape.tagline}</p>
             </div>
 

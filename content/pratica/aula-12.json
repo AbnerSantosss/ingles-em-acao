@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Formar o plural das palavras mais comuns: as três regras de final e os plurais irregulares.",
+  "conteudoAlvo": [
+    "books, cars, houses, bus, buses, box, boxes",
+    "watch, watches, potato, potatoes, city, cities",
+    "baby, babies, boy, boys, day, days, man, men",
+    "woman, women, child, person, people, foot, feet"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use os números da Aula 08 com o plural: \"two books\", \"three cars\", \"five boxes\".",
+    "Misture \"the\" da Aula 11 com \"are\": \"The children are happy.\", \"The women are ready.\""
+  ],
+  "regrasDaAula": [
+    "Irregulares mudam a palavra e não ganham s no fim: \"children\", \"people\", \"men\", \"feet\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "transformar"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual palavra está no plural: \"box\" ou \"boxes\"?",
+      "respostaDeReferencia": "boxes"
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Complete com o plural de \"child\": \"two ___\".",
+      "respostaDeReferencia": "two children"
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para o plural: \"city\".",
+      "respostaDeReferencia": "cities"
+    }
+  ],
+  "limites": [
+    "Sem \"There are\" e sem \"many\": ainda não estudei.",
+    "Sem \"country\" e \"countries\": use só os plurais desta aula e palavras já vistas."
+  ],
+  "primeiraQuestao": "Vamos começar pela regra geral. Qual é o plural de \"book\"?",
+  "resumoAutorizado": [
+    "Plural com s: \"books\", \"cars\", \"boys\", \"days\"; com es: \"buses\", \"boxes\".",
+    "Consoante antes do y final vira ies: \"city\" e \"cities\", \"baby\" e \"babies\".",
+    "Irregulares: \"men\", \"women\", \"children\", \"people\", \"feet\", \"teeth\", \"lives\"."
+  ],
+  "resumoCurto": "Plural com s, es e ies (\"books\", \"boxes\", \"cities\") e irregulares como \"people\" e \"children\"."
+}

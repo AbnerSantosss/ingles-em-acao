@@ -1,6 +1,8 @@
 /**
- * Todas as imagens da landing, em SVG inline: nenhuma requisição de rede, nitidez
- * em qualquer tela e cores tiradas dos tokens do app (`globals.css`).
+ * As ilustrações da landing, em SVG inline: nitidez em qualquer tela e cores
+ * tiradas dos tokens do app (`globals.css`). A única requisição de rede é o chapéu
+ * do celular do hero (`public/brand/icone-chapeu.webp`); os fundos e a logo da
+ * primeira dobra ficam em `Landing.tsx`.
  *
  * As decorativas levam `aria-hidden` — o texto ao lado já diz tudo. O retrato do
  * professor é a exceção: tem `role="img"` e rótulo, porque é conteúdo.
@@ -130,45 +132,62 @@ export function Icone({
 /**
  * O celular do hero: a aula aberta, a lista "Eu consigo" e dois balões de fala.
  * É a promessa desenhada — o aluno falando de si mesmo depois das primeiras aulas.
+ *
+ * Vive sobre o fundo escuro da primeira dobra: aro amarelo atrás, aparelho quase
+ * preto e o chapéu de formatura (`public/brand/icone-chapeu.webp`) flutuando no
+ * canto superior direito.
+ *
+ * ⚠️ O aparelho e o aro passam de propósito do fim do `viewBox` (400): o corte reto
+ * é coberto pela `OndaDoHero`, que sobe por cima do pé do celular. Se mudar a
+ * altura do `viewBox`, confira a sobreposição (`-mt-10`) em `Landing.tsx`.
+ *
+ * ⚠️ O `id` do gradiente é fixo: este SVG só pode aparecer uma vez por página.
  */
 export function CelularDaAula({ className }: { className?: string }) {
   const consigo = ['Me apresentar', 'Cumprimentar', 'Dizer de onde sou'];
 
   return (
     <svg
-      viewBox="0 0 400 480"
+      viewBox="0 0 400 400"
       aria-hidden="true"
       className={className}
       fontFamily="var(--font-figtree), system-ui, sans-serif"
     >
-      {/* halo */}
-      <circle cx="200" cy="250" r="190" fill={MENTA} />
-      <circle cx="330" cy="90" r="34" fill={AMARELO} opacity="0.9" />
-      <circle cx="62" cy="400" r="18" fill={TEAL} opacity="0.35" />
+      <defs>
+        <linearGradient id="celular-tela" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor={NAVY_CLARO} />
+          <stop offset="0.45" stopColor="#5E7FB8" />
+          <stop offset="0.8" stopColor={FUNDO} />
+        </linearGradient>
+      </defs>
+
+      {/* aro amarelo atrás do aparelho */}
+      <circle cx="200" cy="270" r="186" fill="none" stroke={AMARELO} strokeWidth="3" />
 
       {/* aparelho */}
-      <rect x="105" y="30" width="190" height="420" rx="34" fill={NAVY} />
-      <rect x="115" y="42" width="170" height="396" rx="26" fill={FUNDO} />
-      <rect x="175" y="50" width="50" height="8" rx="4" fill={NAVY} />
+      <rect x="103" y="18" width="194" height="470" rx="36" fill="#2A3F78" />
+      <rect x="106" y="21" width="188" height="464" rx="33" fill="#050B1F" />
+      <rect x="114" y="29" width="172" height="450" rx="26" fill="url(#celular-tela)" />
+      <rect x="172" y="38" width="56" height="12" rx="6" fill="#050B1F" />
 
       {/* cabeçalho da aula */}
-      <rect x="127" y="72" width="146" height="74" rx="16" fill={NAVY} />
-      <text x="140" y="96" fill={AMARELO} fontSize="11" fontWeight="800" letterSpacing="1">
+      <rect x="125" y="64" width="150" height="78" rx="16" fill={NAVY} />
+      <text x="139" y="90" fill={AMARELO} fontSize="11" fontWeight="800" letterSpacing="1">
         AULA 05
       </text>
-      <text x="140" y="116" fill="#fff" fontSize="16" fontWeight="800">
+      <text x="139" y="111" fill="#fff" fontSize="16" fontWeight="800">
         Greetings
       </text>
-      <rect x="140" y="128" width="120" height="6" rx="3" fill={NAVY_CLARO} />
-      <rect x="140" y="128" width="84" height="6" rx="3" fill={AMARELO} />
+      <rect x="139" y="123" width="122" height="6" rx="3" fill={NAVY_CLARO} />
+      <rect x="139" y="123" width="86" height="6" rx="3" fill={AMARELO} />
 
       {/* Eu consigo */}
-      <rect x="127" y="158" width="146" height="132" rx="16" fill="#fff" stroke={BORDA} />
-      <text x="140" y="181" fill={TEAL} fontSize="11" fontWeight="800" letterSpacing="1">
+      <rect x="125" y="154" width="150" height="134" rx="16" fill="#fff" stroke={BORDA} />
+      <text x="139" y="178" fill={TEAL} fontSize="11" fontWeight="800" letterSpacing="1">
         EU CONSIGO
       </text>
       {consigo.map((item, i) => (
-        <g key={item} transform={`translate(140 ${196 + i * 30})`}>
+        <g key={item} transform={`translate(139 ${193 + i * 30})`}>
           <circle cx="9" cy="9" r="9" fill={TEAL} />
           <path d="M5 9.5 8 12.5 13.5 6.5" stroke="#fff" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
           <text x="25" y="13" fill={NAVY} fontSize="11.5" fontWeight="700">
@@ -178,37 +197,62 @@ export function CelularDaAula({ className }: { className?: string }) {
       ))}
 
       {/* exercício */}
-      <rect x="127" y="302" width="146" height="62" rx="16" fill="#fff" stroke={BORDA} />
-      <text x="140" y="324" fill="#5B6B7F" fontSize="10.5" fontWeight="700">
+      <rect x="125" y="300" width="150" height="62" rx="16" fill="#fff" stroke={BORDA} />
+      <text x="139" y="322" fill="#5B6B7F" fontSize="10.5" fontWeight="700">
         Complete:
       </text>
-      <text x="140" y="346" fill={NAVY} fontSize="13" fontWeight="800">
+      <text x="139" y="344" fill={NAVY} fontSize="13" fontWeight="800">
         I
         <tspan fill={AZUL}> am </tspan>
         from Brazil.
       </text>
 
-      {/* botão */}
-      <rect x="127" y="378" width="146" height="40" rx="20" fill={AMARELO} />
-      <text x="200" y="403" fill={NAVY} fontSize="12" fontWeight="800" textAnchor="middle">
-        PRÓXIMA AULA
-      </text>
+      {/* chapéu de formatura flutuando no canto do aparelho */}
+      <image href="/brand/icone-chapeu.webp" x="290" y="44" width="76" height="76" />
 
       {/* balões de fala */}
       <g>
-        <rect x="8" y="120" width="116" height="44" rx="22" fill="#fff" stroke={BORDA} />
-        <path d="M100 160 112 174 116 158z" fill="#fff" />
-        <text x="66" y="147" fill={NAVY} fontSize="14" fontWeight="800" textAnchor="middle">
+        <rect x="6" y="150" width="118" height="44" rx="22" fill="#fff" />
+        <path d="M100 190 114 206 116 186z" fill="#fff" />
+        <text x="65" y="177" fill={NAVY} fontSize="14" fontWeight="800" textAnchor="middle">
           Hi! I’m Ana.
         </text>
       </g>
       <g>
-        <rect x="276" y="236" width="120" height="44" rx="22" fill={TEAL} />
-        <path d="M292 276 284 292 306 278z" fill={TEAL} />
-        <text x="336" y="263" fill="#fff" fontSize="13" fontWeight="800" textAnchor="middle">
+        <rect x="274" y="246" width="122" height="44" rx="22" fill={TEAL} />
+        <path d="M292 286 282 304 306 288z" fill={TEAL} />
+        <text x="335" y="273" fill="#fff" fontSize="13" fontWeight="800" textAnchor="middle">
           I’m from Brazil.
         </text>
       </g>
+    </svg>
+  );
+}
+
+/**
+ * A onda que fecha a primeira dobra: cobre o pé do celular e entrega um fundo
+ * navy liso para a faixa de recursos, qualquer que seja o recorte do background.
+ * Termina em NAVY puro — quem vem embaixo precisa ser `bg-navy`.
+ */
+export function OndaDoHero({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" className={className}>
+      <defs>
+        <linearGradient id="onda-do-hero" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor={NAVY_CLARO} />
+          <stop offset="1" stopColor={NAVY} />
+        </linearGradient>
+      </defs>
+      {/* ⚠️ A crista nunca desce além de y=34: o pé do celular fica a 40px do topo. */}
+      <path d="M0 30C220 2 420 0 640 18s500 22 800-14V64H0z" fill="url(#onda-do-hero)" />
+      <path
+        d="M0 30C220 2 420 0 640 18s500 22 800-14"
+        fill="none"
+        stroke="#5E7FB8"
+        strokeOpacity="0.7"
+        strokeWidth="1.5"
+        vectorEffect="non-scaling-stroke"
+      />
     </svg>
   );
 }

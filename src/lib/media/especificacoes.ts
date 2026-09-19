@@ -107,7 +107,7 @@ export const ESPECIFICACOES_DE_IMAGEM: Readonly<Record<AlvoDeImagem, Especificac
     razao: 3,
     recomendado: { largura: 2172, altura: 724 },
     minimo: { largura: 1500, altura: 500 },
-    onde: 'Faixa larga de capa da aula — o mesmo formato das capas 01 a 10 (2172 × 724 px).',
+    onde: 'Faixa larga de capa da aula, no mesmo formato das capas 01 a 10 (2172 × 724 px).',
     enquadramento: 'Faixa panorâmica: título e assunto no terço central.',
   },
 };
@@ -130,7 +130,7 @@ export function linhasDaEspecificacaoDeImagem(alvo: AlvoDeImagem): LinhaDeEspeci
     { rotulo: 'Tamanho máximo', valor: `${formatarBytes(TAMANHO_MAXIMO_IMAGEM)} por arquivo` },
     {
       rotulo: 'Proporção',
-      valor: `${espec.proporcao} — ${espec.enquadramento}`,
+      valor: `${espec.proporcao}. ${espec.enquadramento}`,
     },
     {
       rotulo: 'Dimensões',
@@ -140,7 +140,7 @@ export function linhasDaEspecificacaoDeImagem(alvo: AlvoDeImagem): LinhaDeEspeci
     },
     {
       rotulo: 'Peso alvo',
-      valor: `até ${formatarBytes(PESO_ALVO_IMAGEM)} — exporte em ${FORMATO_SUGERIDO_IMAGEM}`,
+      valor: `até ${formatarBytes(PESO_ALVO_IMAGEM)}, exporte em ${FORMATO_SUGERIDO_IMAGEM}`,
     },
     { rotulo: 'Onde aparece', valor: espec.onde },
   ];
@@ -238,7 +238,7 @@ export function linhasDaEspecificacaoDeVideo(): LinhaDeEspecificacao[] {
     { rotulo: 'Tamanho máximo', valor: `${formatarBytes(TAMANHO_MAXIMO_VIDEO)} por arquivo` },
     {
       rotulo: 'Proporção',
-      valor: `${PROPORCAO_DO_VIDEO} (horizontal) — é a caixa do player da aula`,
+      valor: `${PROPORCAO_DO_VIDEO} (horizontal), a caixa do player da aula`,
     },
     {
       rotulo: 'Resolução',
@@ -247,8 +247,8 @@ export function linhasDaEspecificacaoDeVideo(): LinhaDeEspecificacao[] {
     {
       rotulo: 'Taxa e peso alvo',
       valor:
-        `~${ALVO_DO_VIDEO.mbps} Mbps — ${ALVO_DO_VIDEO.mbMinimo} a ${ALVO_DO_VIDEO.mbMaximo} MB ` +
-        `para ${DURACAO_ALVO_DO_VIDEO.minimo}–${DURACAO_ALVO_DO_VIDEO.maximo} min de aula`,
+        `~${ALVO_DO_VIDEO.mbps} Mbps, ${ALVO_DO_VIDEO.mbMinimo} a ${ALVO_DO_VIDEO.mbMaximo} MB ` +
+        `para ${DURACAO_ALVO_DO_VIDEO.minimo} a ${DURACAO_ALVO_DO_VIDEO.maximo} min de aula`,
     },
     {
       rotulo: 'Conversão',
@@ -261,7 +261,7 @@ export function linhasDaEspecificacaoDeVideo(): LinhaDeEspecificacao[] {
 export function linhasDaEspecificacaoDeLink(hosts: readonly string[]): LinhaDeEspecificacao[] {
   return [
     { rotulo: 'Origens aceitas', valor: `${hosts.join(', ')}, ou arquivo .mp4/.webm por https` },
-    { rotulo: 'Proporção', valor: `${PROPORCAO_DO_VIDEO} (horizontal) — é a caixa do player` },
+    { rotulo: 'Proporção', valor: `${PROPORCAO_DO_VIDEO} (horizontal), a caixa do player` },
     { rotulo: 'Privacidade', valor: 'Use “não listado” no YouTube/Vimeo para o conteúdo do curso.' },
   ];
 }

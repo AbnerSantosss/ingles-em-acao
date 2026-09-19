@@ -30,6 +30,7 @@ import {
   chaveMatch,
   chaveMc,
 } from '@/lib/lesson/keys';
+import { ROTULO_EXCLUSIVO_PREMIUM } from '@/lib/planos';
 
 // ───────────────────────────── tipos de bloco ─────────────────────────────
 
@@ -321,7 +322,7 @@ export function modeloDeBloco(tipo: TipoDeBloco, numero: number, usados: Set<str
       return {
         t: 'next',
         kicker: 'PRÓXIMA AULA',
-        title: `Aula ${doisDigitos(numero + 1)} — título da próxima aula`,
+        title: `Aula ${doisDigitos(numero + 1)}: título da próxima aula`,
       };
     case 'image':
       return { t: 'image', id: id('image'), ph: 'Ilustração: descreva a imagem' };
@@ -383,7 +384,7 @@ export function modeloDeBloco(tipo: TipoDeBloco, numero: number, usados: Set<str
             v: 'mint',
             title: 'ASSISTA À VIDEOAULA',
             body: 'Veja a explicação completa e acompanhe os exemplos.',
-            plan: 'EXCLUSIVO PARA O PLANO COMPLETO — INGLÊS EM AÇÃO',
+            plan: ROTULO_EXCLUSIVO_PREMIUM,
             btn: 'ASSISTIR À VIDEOAULA',
             c: 'navy',
           },
@@ -437,7 +438,7 @@ export function lerJsonDoBloco(
   const erros: string[] = [];
   if ('t' in objeto) {
     erros.push(
-      `${onde}: o campo \`t\` (tipo) é fixo — para trocar o tipo, adicione um bloco novo e remova este`,
+      `${onde}: o campo \`t\` (tipo) é fixo. Para trocar o tipo, adicione um bloco novo e remova este`,
     );
   }
   const interativo = ehTipoInterativo(original.t);
@@ -502,7 +503,7 @@ function normalizarTitulo(texto: string): string {
   return texto
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
-    .replace(/^aula\s+\d+\s*[—–-]\s*/i, '')
+    .replace(/^aula\s+\d+\s*[\u2014\u2013:-]\s*/i, '')
     .replace(/[^a-z0-9]+/gi, ' ')
     .trim()
     .toLowerCase();
@@ -559,7 +560,7 @@ export function validarSemantica(
           erros.push(`${onde}: bloco de exercício sem \`id\``);
         } else {
           const anterior = idsNaAula.get(id);
-          if (anterior) erros.push(`${onde}: \`id\` "${id}" repetido — já usado em ${anterior}`);
+          if (anterior) erros.push(`${onde}: \`id\` "${id}" repetido, já usado em ${anterior}`);
           else idsNaAula.set(id, onde);
           const outra = contexto.idsDeOutrasAulas?.get(id);
           if (outra !== undefined && outra !== contexto.numero) {
@@ -681,7 +682,7 @@ export function validarSemantica(
     const limite = Math.ceil(contexto.mediaDePaginas * 2);
     if (pages.length > limite) {
       avisos.push(
-        `A aula tem ${pages.length} páginas — mais que o dobro da média do curso (${contexto.mediaDePaginas.toFixed(1)})`,
+        `A aula tem ${pages.length} páginas, mais que o dobro da média do curso (${contexto.mediaDePaginas.toFixed(1)})`,
       );
     }
   }

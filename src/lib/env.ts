@@ -1,5 +1,5 @@
 /**
- * Validação das variáveis de ambiente do "Inglês em Ação".
+ * Validação das variáveis de ambiente do "WSA English".
  *
  * ⚠️ MÓDULO DE SERVIDOR. Nunca importe este arquivo a partir de um componente
  * `'use client'`: ele expõe segredos (SMTP) e quebraria o bundle do navegador.
@@ -14,7 +14,7 @@ import { z } from 'zod';
 
 /** Texto obrigatório, sem espaços nas pontas. */
 function obrigatorio(descricao: string) {
-  const mensagem = `ausente ou vazia — ${descricao}`;
+  const mensagem = `ausente ou vazia: ${descricao}`;
   return z.string({ error: mensagem }).trim().min(1, mensagem);
 }
 
@@ -24,13 +24,13 @@ const FALSOS = new Set(['false', '0', 'no', 'n', 'nao', 'não', 'off']);
 /** Booleano vindo de texto. `Boolean("false")` é `true`, por isso não usamos z.coerce.boolean(). */
 function booleanoDeTexto(descricao: string, padrao: boolean) {
   return z
-    .string({ error: `ausente — ${descricao}` })
+    .string({ error: `ausente: ${descricao}` })
     .trim()
     .transform((valor, ctx): boolean => {
       const normalizado = valor.toLowerCase();
       if (VERDADEIROS.has(normalizado)) return true;
       if (FALSOS.has(normalizado)) return false;
-      ctx.addIssue({ code: 'custom', message: `use "true" ou "false" — ${descricao}` });
+      ctx.addIssue({ code: 'custom', message: `use "true" ou "false" (${descricao})` });
       return z.NEVER;
     })
     .or(z.undefined().transform(() => padrao));
@@ -43,14 +43,14 @@ const esquemaEnv = z.object({
   ),
 
   APP_URL: z
-    .url({ error: 'ausente ou inválida — URL pública do app, ex.: https://app.exemplo.com' })
+    .url({ error: 'ausente ou inválida: URL pública do app, ex.: https://app.exemplo.com' })
     // Sem barra no fim: os links de e-mail são montados como `${APP_URL}/redefinir-senha`.
     .transform((valor) => valor.replace(/\/+$/, '')),
 
   SMTP_HOST: obrigatorio('servidor SMTP, ex.: smtp.gmail.com'),
 
   SMTP_PORT: z.coerce
-    .number({ error: 'ausente ou não numérica — porta do servidor SMTP, ex.: 465' })
+    .number({ error: 'ausente ou não numérica: porta do servidor SMTP, ex.: 465' })
     .int('deve ser um número inteiro')
     .min(1, 'deve estar entre 1 e 65535')
     .max(65535, 'deve estar entre 1 e 65535'),
@@ -61,7 +61,7 @@ const esquemaEnv = z.object({
 
   SMTP_PASSWORD: obrigatorio('senha de app do SMTP'),
 
-  MAIL_FROM: obrigatorio('remetente dos e-mails, ex.: Inglês em Ação <conta@exemplo.com>'),
+  MAIL_FROM: obrigatorio('remetente dos e-mails, ex.: WSA English <conta@exemplo.com>'),
 
   NODE_ENV: z
     .enum(['development', 'test', 'production'], {

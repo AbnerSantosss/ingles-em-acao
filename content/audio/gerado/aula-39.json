@@ -1,0 +1,430 @@
+{
+  "aula": 39,
+  "clips": [
+    {
+      "pagina": 1,
+      "clip": {
+        "id": "lesson_039_audio_001",
+        "alvo": "texto",
+        "ancora": "I was at home yesterday. They were at work.",
+        "texto": "I was at home yesterday. They were at work.",
+        "src": "/audio/aula-39/lesson_039_audio_001.6554924f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_039_audio_002",
+        "alvo": "texto",
+        "ancora": "WAS",
+        "texto": "was",
+        "src": "/audio/aula-39/lesson_039_audio_002.4323d6af.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_039_audio_003",
+        "alvo": "texto",
+        "ancora": "WERE",
+        "texto": "were",
+        "src": "/audio/aula-39/lesson_039_audio_003.917049cd.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_039_audio_004",
+        "alvo": "texto",
+        "ancora": "I was in Japan two years ago.",
+        "texto": "I was in Japan two years ago.",
+        "src": "/audio/aula-39/lesson_039_audio_004.616e930c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_039_audio_005",
+        "alvo": "texto",
+        "ancora": "Rafaela was sick yesterday.",
+        "texto": "Rafaela was sick yesterday.",
+        "src": "/audio/aula-39/lesson_039_audio_005.2bd5d89d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_039_audio_006",
+        "alvo": "texto",
+        "ancora": "They were in Italy last week.",
+        "texto": "They were in Italy last week.",
+        "src": "/audio/aula-39/lesson_039_audio_006.308a3ec6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_007",
+        "alvo": "texto",
+        "ancora": "YESTERDAY",
+        "texto": "yesterday",
+        "src": "/audio/aula-39/lesson_039_audio_007.2834cbb8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_008",
+        "alvo": "texto",
+        "ancora": "LAST",
+        "texto": "last",
+        "src": "/audio/aula-39/lesson_039_audio_008.9cb38a23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_009",
+        "alvo": "texto",
+        "ancora": "last night",
+        "texto": "last night",
+        "src": "/audio/aula-39/lesson_039_audio_009.07d3f8cc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_010",
+        "alvo": "texto",
+        "ancora": "last Sunday",
+        "texto": "last Sunday",
+        "src": "/audio/aula-39/lesson_039_audio_010.58ed439b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_011",
+        "alvo": "texto",
+        "ancora": "last week",
+        "texto": "last week",
+        "src": "/audio/aula-39/lesson_039_audio_011.8caf78db.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_012",
+        "alvo": "texto",
+        "ancora": "last month",
+        "texto": "last month",
+        "src": "/audio/aula-39/lesson_039_audio_012.c0ec1f39.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_013",
+        "alvo": "texto",
+        "ancora": "last year",
+        "texto": "last year",
+        "src": "/audio/aula-39/lesson_039_audio_013.35701825.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_014",
+        "alvo": "texto",
+        "ancora": "AGO",
+        "texto": "ago",
+        "src": "/audio/aula-39/lesson_039_audio_014.47a65724.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_015",
+        "alvo": "texto",
+        "ancora": "two days ago",
+        "texto": "two days ago",
+        "src": "/audio/aula-39/lesson_039_audio_015.838e43a2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_016",
+        "alvo": "texto",
+        "ancora": "three months ago",
+        "texto": "three months ago",
+        "src": "/audio/aula-39/lesson_039_audio_016.a80f6e10.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_039_audio_017",
+        "alvo": "texto",
+        "ancora": "four years ago",
+        "texto": "four years ago",
+        "src": "/audio/aula-39/lesson_039_audio_017.a108918a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_039_audio_018",
+        "alvo": "texto",
+        "ancora": "WEREN’T",
+        "texto": "weren't",
+        "src": "/audio/aula-39/lesson_039_audio_018.768371b1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_039_audio_019",
+        "alvo": "texto",
+        "ancora": "They weren’t in China last month.",
+        "texto": "They weren't in China last month.",
+        "src": "/audio/aula-39/lesson_039_audio_019.e756d124.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_039_audio_020",
+        "alvo": "texto",
+        "ancora": "I wasn’t at work yesterday.",
+        "texto": "I wasn't at work yesterday.",
+        "src": "/audio/aula-39/lesson_039_audio_020.f64497d0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_039_audio_021",
+        "alvo": "texto",
+        "ancora": "My dog wasn’t ugly when it was a puppy. It was cute.",
+        "texto": "My dog wasn't ugly when it was a puppy. It was cute.",
+        "src": "/audio/aula-39/lesson_039_audio_021.1c3c11b4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_022",
+        "alvo": "texto",
+        "ancora": "1 · WERE KATE AND HER DAUGHTER AT HOME LAST NIGHT?",
+        "texto": "Were Kate and her daughter at home last night?",
+        "src": "/audio/aula-39/lesson_039_audio_022.80bbdd58.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_023",
+        "alvo": "texto",
+        "ancora": "Yes, they were.",
+        "texto": "Yes, they were.",
+        "src": "/audio/aula-39/lesson_039_audio_023.7bcceff7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_024",
+        "alvo": "texto",
+        "ancora": "No, they weren’t.",
+        "texto": "No, they weren't.",
+        "src": "/audio/aula-39/lesson_039_audio_024.8953d658.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_025",
+        "alvo": "texto",
+        "ancora": "2 · WERE THEY AT THE MOVIES LAST SATURDAY EVENING?",
+        "texto": "Were they at the movies last Saturday evening?",
+        "src": "/audio/aula-39/lesson_039_audio_025.0e64a441.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_026",
+        "alvo": "texto",
+        "ancora": "3 · WAS THE CLOWN FUNNY?",
+        "texto": "Was the clown funny?",
+        "src": "/audio/aula-39/lesson_039_audio_026.2fcc8107.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_027",
+        "alvo": "texto",
+        "ancora": "Yes, he was.",
+        "texto": "Yes, he was.",
+        "src": "/audio/aula-39/lesson_039_audio_027.9477f70d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_039_audio_028",
+        "alvo": "texto",
+        "ancora": "No, he wasn’t.",
+        "texto": "No, he wasn't.",
+        "src": "/audio/aula-39/lesson_039_audio_028.112c5cbb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_039_audio_029",
+        "alvo": "texto",
+        "ancora": "WHERE WERE YOU LAST NIGHT?",
+        "texto": "Where were you last night?",
+        "src": "/audio/aula-39/lesson_039_audio_029.b86d63d4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_039_audio_030",
+        "alvo": "texto",
+        "ancora": "I was at a wedding party.",
+        "texto": "I was at a wedding party.",
+        "src": "/audio/aula-39/lesson_039_audio_030.d7c9974c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_039_audio_031",
+        "alvo": "texto",
+        "ancora": "WHEN WERE YOU BORN?",
+        "texto": "When were you born?",
+        "src": "/audio/aula-39/lesson_039_audio_031.7407e334.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_039_audio_032",
+        "alvo": "texto",
+        "ancora": "I was born in 2000.",
+        "texto": "I was born in two thousand.",
+        "src": "/audio/aula-39/lesson_039_audio_032.c3c4da9a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_039_audio_033",
+        "alvo": "bloco",
+        "ancora": "T: Hey Hannah. It was your birthday yesterday, right?",
+        "texto": "Hey Hannah. It was your birthday yesterday, right?\nYes, it was.\nHappy birthday.\nThanks.\nWhen were you born?\nI was born in nineteen ninety-six. What about you?\nI was born in nineteen ninety-four.\nCan I ask you a question?\nSure.\nWhy weren't you at my birthday party yesterday?\nI'm really sorry about that. But yesterday I wasn't free. I was at work until nine p.m.\nNo problem. That's ok.",
+        "src": "/audio/aula-39/lesson_039_audio_033.d8e2fc57.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_039_audio_034",
+        "alvo": "bloco",
+        "ancora": "Where were you yesterday morning?",
+        "texto": "Where were you yesterday morning?\nWhere were you yesterday afternoon?\nWhere were you last night?\nWere you at home last night?\nWere you at work or school yesterday?\nWho was with you?",
+        "src": "/audio/aula-39/lesson_039_audio_034.a47e1f80.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_039_audio_035",
+        "alvo": "texto",
+        "ancora": "I was at home.",
+        "texto": "I was at home.",
+        "src": "/audio/aula-39/lesson_039_audio_035.e224075c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_039_audio_036",
+        "alvo": "texto",
+        "ancora": "I was at work.",
+        "texto": "I was at work.",
+        "src": "/audio/aula-39/lesson_039_audio_036.9fa86ff8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_039_audio_037",
+        "alvo": "texto",
+        "ancora": "I was with my family.",
+        "texto": "I was with my family.",
+        "src": "/audio/aula-39/lesson_039_audio_037.1a5790c9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_039_audio_038",
+        "alvo": "texto",
+        "ancora": "Yes, I was. / No, I wasn’t.",
+        "texto": "Yes, I was. No, I wasn't.",
+        "src": "/audio/aula-39/lesson_039_audio_038.4453df62.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

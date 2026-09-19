@@ -43,7 +43,7 @@ export function BannerDeAmbiente() {
         Desenvolvimento
       </span>
       <span className="text-[12px] font-bold text-navy/75">
-        este não é o ambiente dos alunos — nada daqui chega a eles.
+        este não é o ambiente dos alunos. Nada daqui chega a eles.
       </span>
     </div>
   );

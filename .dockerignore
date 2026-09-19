@@ -66,3 +66,6 @@ Thumbs.db
 .vscode
 .idea
 *.pem
+# Pipeline de áudio: o Python e os modelos (mais de 350 MB) não vão para a imagem
+scripts/audio/.venv
+scripts/audio/modelos

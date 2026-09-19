@@ -56,7 +56,6 @@ function primeiro(valor: string | string[] | undefined): string {
 const PLANOS: readonly { valor: FiltroDePlano; rotulo: string }[] = [
   { valor: 'todos', rotulo: 'Todos os planos' },
   { valor: 'ESSENCIAL', rotulo: 'Essencial' },
-  { valor: 'COMPLETO', rotulo: 'Completo' },
   { valor: 'PREMIUM', rotulo: 'Premium' },
 ];
 
@@ -103,7 +102,6 @@ const CAMPO_DE_FILTRO = [
 
 const CORES_DO_PLANO: Record<string, { fundo: string; cor: string }> = {
   ESSENCIAL: { fundo: '#EEF3FA', cor: '#5B6B86' },
-  COMPLETO: { fundo: '#EAF2FE', cor: '#123A86' },
   PREMIUM: { fundo: '#FEF7E0', cor: '#6B520A' },
 };
 
@@ -410,7 +408,7 @@ export default async function TelaDeAlunos({ searchParams }: { searchParams: Pro
         </h1>
         <p className="m-0 mt-1.5 max-w-[62ch] text-[14px] font-semibold leading-snug text-muted">
           Quem está estudando, em que plano e até onde chegou. Clique no nome para abrir a conta,
-          o progresso e as respostas — as ações moram lá dentro, com o contexto na frente.
+          o progresso e as respostas. As ações sobre o aluno ficam nessa ficha.
         </p>
       </header>
 

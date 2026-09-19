@@ -261,7 +261,7 @@ function conteudoDe(chave: ChaveDoModal, dados: DadosDoPerfil): ConteudoDoModal 
         titulo: 'Apagar progresso',
         icone: '/icons/lixeira.png',
         texto:
-          'Em breve. Quando chegar, esta opção vai remover todas as respostas, aulas concluídas e anotações — e não poderá ser desfeita. Por enquanto, nada é apagado.',
+          'Em breve. Quando chegar, esta opção vai remover todas as respostas, aulas concluídas e anotações, e não poderá ser desfeita. Por enquanto, nada é apagado.',
       };
     case 'sair':
       return {
@@ -367,19 +367,31 @@ export function AbreModal({
   className,
   children,
   'aria-label': rotulo,
+  enviaSemModal = false,
 }: {
   chave: ChaveDoModal;
   className?: string;
   children: ReactNode;
   'aria-label'?: string;
+  /**
+   * Botão de envio do `<form>` em volta (o "Sair"). Com o app hidratado, o
+   * clique só abre o modal de confirmação; se o JavaScript da página não
+   * carregou (ou o modal não existe), o clique envia o formulário e a ação
+   * roda do mesmo jeito. Sem isso, o "Sair" ficava mudo e a sessão aberta.
+   */
+  enviaSemModal?: boolean;
 }) {
   const abrir = useContext(AbrirModal);
   return (
     <button
-      type="button"
+      type={enviaSemModal ? 'submit' : 'button'}
       aria-haspopup="dialog"
       aria-label={rotulo}
-      onClick={() => abrir?.(chave)}
+      onClick={(e) => {
+        if (!abrir) return;
+        if (enviaSemModal) e.preventDefault();
+        abrir(chave);
+      }}
       className={className}
     >
       {children}

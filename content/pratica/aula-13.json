@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Apontar para o que está perto e longe, um ou mais de um: \"this\", \"that\", \"these\" e \"those\".",
+  "conteudoAlvo": [
+    "this, that, these, those",
+    "a pen, pens",
+    "This is a pen. That is a pen.",
+    "These are pens. Those are pens."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use \"my\" e \"your\" da Aula 07 e os plurais da Aula 12: \"These are my books.\"",
+    "Misture perto e longe, singular e plural, e diga em português onde está o objeto."
+  ],
+  "regrasDaAula": [
+    "\"this\" e \"that\" pedem \"is\"; \"these\" e \"those\" pedem \"are\"."
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "escolher",
+    "completar",
+    "traduzir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Longe, um só. Escolha \"That\" ou \"Those\": \"___ is your car.\"",
+      "respostaDeReferencia": "That is your car."
+    },
+    {
+      "tipo": "completar",
+      "enunciado": "Perto, mais de um. Complete: \"___ are my books.\"",
+      "respostaDeReferencia": "These are my books."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Aquelas são canetas.",
+      "respostaDeReferencia": "Those are pens."
+    }
+  ],
+  "limites": [
+    "Sem \"phone\", \"shoes\", \"keys\", \"cup\", \"window\" e \"chairs\": ainda não estudei.",
+    "Sem \"its\", \"our\" e \"their\": use só \"my\", \"your\", \"his\" e \"her\"."
+  ],
+  "primeiraQuestao": "Vamos começar pelo que está perto. Complete: \"___ is a pen.\" Entra \"this\" ou \"that\"?",
+  "resumoAutorizado": [
+    "Perto: \"this\" (um) e \"these\" (mais de um); longe: \"that\" e \"those\".",
+    "Singular com \"is\": \"This is a pen.\", \"That is your car.\"",
+    "Plural com \"are\": \"These are pens.\", \"Those are your cars.\""
+  ],
+  "resumoCurto": "\"this\" e \"that\" com \"is\", \"these\" e \"those\" com \"are\", para coisas perto e longe."
+}

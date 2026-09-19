@@ -96,7 +96,7 @@ async function despachar(
     const { appUrl, modo } = await ambienteDeEmail();
     const url = `${appUrl}${caminho}?token=${encodeURIComponent(token)}`;
 
-    const { subject, html, text } = montarTemplate({ name, url });
+    const { subject, html, text } = montarTemplate({ name, url, appUrl });
 
     await enviarMensagem({ para: to, assunto: subject, html, texto: text });
 

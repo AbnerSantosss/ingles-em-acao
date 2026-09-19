@@ -132,7 +132,7 @@ export async function GET(
     // Registro sem arquivo no volume (volume não montado, backup restaurado pela
     // metade). O log diz qual asset, nunca o caminho absoluto do servidor.
     const motivo = erro instanceof Error ? erro.name : 'erro desconhecido';
-    console.error(`[midia] arquivo ausente ou ilegível — asset=${asset.id}: ${motivo}`);
+    console.error(`[midia] arquivo ausente ou ilegível: asset=${asset.id}: ${motivo}`);
     return naoEncontrado();
   }
 }

@@ -1,0 +1,56 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Dizer onde eu estava e como as coisas eram no passado com \"was\" e \"were\".",
+  "conteudoAlvo": [
+    "I / he / she / it + was / wasn't + ___",
+    "you / we / they + were / weren't + ___",
+    "Was / Were + ___?, Where were you last night?",
+    "yesterday, last week, two days ago, born"
+  ],
+  "expressoesFixas": [
+    "When were you born?"
+  ],
+  "comoIntegrar": [
+    "Troque \"am\", \"is\", \"are\" que já sei pelo passado: \"I am at home.\" vira \"I was at home.\"",
+    "Use os lugares e adjetivos que já sei: \"They were in Italy last week.\", \"It was cute.\""
+  ],
+  "regrasDaAula": [
+    "\"was\" com \"I\", \"he\", \"she\", \"it\"; \"were\" com \"you\", \"we\", \"they\"."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "responder"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"was\" ou \"were\": \"My parents ___ in France.\"",
+      "respostaDeReferencia": "My parents were in France."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"I was at work yesterday.\"",
+      "respostaDeReferencia": "I wasn't at work yesterday."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda: \"Where were you last night?\"",
+      "respostaDeReferencia": "I was at home."
+    }
+  ],
+  "limites": [
+    "Só o passado do verbo \"to be\": sem \"-ed\" e sem \"did\", que ainda não estudei.",
+    "Posso não dizer o ano em que nasci: a pergunta é só para praticar."
+  ],
+  "primeiraQuestao": "Vamos começar por mim. Complete: \"I ___ at home yesterday.\" Entra \"was\" ou \"were\" no espaço?",
+  "resumoAutorizado": [
+    "\"I was at home yesterday.\", \"They were in Italy last week.\"",
+    "Negativa e pergunta: \"I wasn't at work.\", \"Were you at home?\", \"Yes, I was.\"",
+    "Tempo: \"yesterday\", \"last night\", \"two days ago\"; \"When were you born?\""
+  ],
+  "resumoCurto": "Passado do \"to be\": \"was\", \"were\", \"wasn't\", \"weren't\", \"Where were you last night?\"."
+}

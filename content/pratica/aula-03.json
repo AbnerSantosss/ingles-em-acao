@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Negar informações com o verbo ser/estar: \"am not\", \"isn't\" e \"aren't\", com \"not\" no lugar certo.",
+  "conteudoAlvo": [
+    "not, a teacher, a singer, a dentist, a designer",
+    "tired, at home, new, students, late",
+    "I am not/he, she, it is not/you, we, they are not",
+    "I'm not, isn't, aren't, you're/we're/they're not"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Negue frases da Aula 02, como \"I am Brazilian.\", e troque o sujeito a cada questão.",
+    "Misture forma completa e forma curta: \"is not\" e \"isn't\", \"are not\" e \"aren't\"."
+  ],
+  "regrasDaAula": [
+    "\"not\" vem logo depois de \"am\", \"is\" ou \"are\", nunca antes."
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "corrigir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha a frase certa: \"They not are ready.\" ou \"They are not ready.\"",
+      "respostaDeReferencia": "They are not ready."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"We are friends.\"",
+      "respostaDeReferencia": "We aren't friends."
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Ela é designer, não professora. Corrija: \"She is a teacher.\"",
+      "respostaDeReferencia": "She isn't a teacher. She is a designer."
+    }
+  ],
+  "limites": [
+    "Só afirmativa e negativa: as perguntas com \"am\", \"is\" e \"are\" vêm na próxima aula.",
+    "Não use \"don't\" nem \"doesn't\", e sem \"from\" e \"my\": ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ not tired.\" Qual forma do verbo entra no espaço?",
+  "resumoAutorizado": [
+    "Negativa com \"not\" depois do verbo: \"I am not\", \"she is not\", \"they are not\".",
+    "Formas curtas: \"I'm not\", \"isn't\", \"aren't\", \"you're not\", \"we're not\".",
+    "Frases: \"I'm not tired.\", \"She isn't a singer.\", \"We aren't ready.\""
+  ],
+  "resumoCurto": "Verbo ser/estar na negativa: \"I am not\", \"isn't\", \"aren't\", com \"not\" logo depois do verbo."
+}

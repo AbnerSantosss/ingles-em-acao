@@ -388,7 +388,7 @@ export function EditorDePaginas({
 
         {errosDeForma.length > 0 ? (
           <p className="m-0 text-[14px] font-bold leading-snug" style={{ color: COR_ERRO.texto }}>
-            {errosDeForma.length} erro(s) de formato — corrija antes de salvar. Os blocos com erro
+            {errosDeForma.length} erro(s) de formato. Corrija antes de salvar. Os blocos com erro
             estão marcados em vermelho.
           </p>
         ) : null}
@@ -521,7 +521,7 @@ export function EditorDePaginas({
             </p>
             {conteudo === null ? (
               <ListaDeProblemas
-                titulo={`Erros de formato (${errosDeForma.length}) — impedem salvar`}
+                titulo={`Erros de formato (${errosDeForma.length}): impedem salvar`}
                 itens={errosDeForma}
                 tom="erro"
               />
@@ -530,12 +530,12 @@ export function EditorDePaginas({
             ) : (
               <>
                 <ListaDeProblemas
-                  titulo={`Erros (${semantica.erros.length}) — impedem publicar`}
+                  titulo={`Erros (${semantica.erros.length}): impedem publicar`}
                   itens={semantica.erros}
                   tom="erro"
                 />
                 <ListaDeProblemas
-                  titulo={`Avisos (${semantica.avisos.length}) — exigem confirmação ao publicar`}
+                  titulo={`Avisos (${semantica.avisos.length}): exigem confirmação ao publicar`}
                   itens={semantica.avisos}
                   tom="aviso"
                 />
@@ -553,9 +553,9 @@ export function EditorDePaginas({
             aoTrocarPagina={(p) => setPaginaAtual(Math.min(Math.max(p, 0), paginas.length - 1))}
             faixa={
               mudou
-                ? 'Edição não salva — o aluno ainda vê a versão publicada'
+                ? 'Edição não salva: o aluno ainda vê a versão publicada'
                 : temRascunho
-                  ? 'Rascunho — o aluno ainda vê a versão publicada'
+                  ? 'Rascunho: o aluno ainda vê a versão publicada'
                   : `Conteúdo publicado (versão ${versaoAtual})`
             }
           />

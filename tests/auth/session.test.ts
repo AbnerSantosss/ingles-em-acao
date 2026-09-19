@@ -120,7 +120,7 @@ async function urlDoRedirect(fn: () => Promise<unknown>): Promise<URL> {
 
 beforeAll(async () => {
   const usuario = await prisma.user.create({
-    data: { name: 'Fixture Sessão', email: EMAIL, passwordHash: 'fixture-sem-senha', plan: 'COMPLETO' },
+    data: { name: 'Fixture Sessão', email: EMAIL, passwordHash: 'fixture-sem-senha', plan: 'PREMIUM' },
   });
   userId = usuario.id;
   const outro = await prisma.user.create({
@@ -216,7 +216,7 @@ describe('getCurrentUser — a validade é conferida no servidor', () => {
       email: EMAIL,
       photoUrl: null,
       role: 'STUDENT',
-      plan: 'COMPLETO',
+      plan: 'PREMIUM',
       emailVerifiedAt: null,
     });
     expect(usuario).not.toHaveProperty('passwordHash');

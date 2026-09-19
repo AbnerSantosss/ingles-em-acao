@@ -113,8 +113,8 @@ export default async function PaginaDeVideos({ searchParams }: { searchParams: P
         </h1>
         <p className="m-0 mt-1.5 max-w-[62ch] text-[14px] font-semibold leading-snug text-muted">
           A videoaula de cada uma das 42 aulas: cole um link (YouTube, Vimeo) ou envie o arquivo
-          para o armazenamento do app. Quem assiste é o aluno do Plano Completo para cima; no
-          Essencial a aula mostra a chamada de upgrade no lugar do player.
+          para o armazenamento do app. Quem assiste é o aluno do WSA Premium. No WSA Essencial, a aula
+          mostra a chamada de upgrade no lugar do player.
         </p>
       </header>
 
@@ -127,8 +127,8 @@ export default async function PaginaDeVideos({ searchParams }: { searchParams: P
               Vídeo padrão
             </h2>
             <p className="m-0 mb-4 max-w-[62ch] text-[13px] font-semibold leading-snug text-muted">
-              Um vídeo só, para as aulas que ainda não têm o seu — uma apresentação do curso, por
-              exemplo.
+              Um vídeo só, para as aulas que ainda não têm o seu. Por exemplo, uma apresentação
+              do curso.
             </p>
             <PadraoDeVideo
               padrao={padrao}
@@ -298,20 +298,20 @@ function ComoFunciona({ envio }: { envio: EstadoDoEnvio }) {
       </h2>
       <ul className="m-0 flex list-none flex-col gap-2 p-0 text-[14px] font-semibold leading-snug text-muted">
         <li>
-          <strong className="text-navy">Link ou arquivo — a última gravada vale.</strong> O link
-          aponta para um vídeo que mora em outro lugar. O arquivo enviado vai direto do seu navegador
+          <strong className="text-navy">Link ou arquivo: vale a última opção gravada.</strong> O link
+          aponta para um vídeo hospedado em outro lugar. O arquivo enviado vai direto do seu navegador
           para o armazenamento do app (bucket S3/R2), nunca para o servidor, e o aluno assiste por um
           endereço assinado que vence em 15 minutos e é renovado pelo player.{' '}
           {envio.disponivel
             ? `Armazenamento em uso: ${envio.destino}.`
-            : 'O armazenamento ainda não está configurado neste servidor — por enquanto, só link.'}
+            : 'O armazenamento ainda não está configurado neste servidor. Por enquanto, só link.'}
         </li>
         <li>
           <strong className="text-navy">Arquivo: sem conversão.</strong> {FORMATOS_DE_VIDEO_EM_TEXTO}{' '}
           (MP4 com H.264 + AAC é o mais seguro), até {formatarBytes(TAMANHO_MAXIMO_VIDEO)}, em{' '}
-          {PROPORCAO_DO_VIDEO}. O que sobe é o que o aluno baixa — exporte em{' '}
+          {PROPORCAO_DO_VIDEO}. O aluno baixa o mesmo arquivo que você enviar, então exporte em{' '}
           {LARGURA_ALVO_DO_VIDEO}×{ALVO_DO_VIDEO.altura} a ~{ALVO_DO_VIDEO.mbps} Mbps (
-          {ALVO_DO_VIDEO.mbMinimo}–{ALVO_DO_VIDEO.mbMaximo} MB para {DURACAO_ALVO_DO_VIDEO.minimo}–
+          {ALVO_DO_VIDEO.mbMinimo} a {ALVO_DO_VIDEO.mbMaximo} MB para {DURACAO_ALVO_DO_VIDEO.minimo} a{' '}
           {DURACAO_ALVO_DO_VIDEO.maximo} min de aula). Trocar ou remover o vídeo não apaga o arquivo
           guardado.
         </li>
@@ -319,7 +319,7 @@ function ComoFunciona({ envio }: { envio: EstadoDoEnvio }) {
           <strong className="text-navy">Links aceitos:</strong> {HOSTS_ACEITOS.join(', ')}, ou um
           arquivo .mp4/.webm servido por https. Qualquer outro endereço é recusado no servidor e
           bloqueado pelo navegador. Acrescentar uma origem de player nova exige mudança no código e
-          um novo deploy — a lista vale nos dois lugares.
+          um novo deploy, porque a lista vale nos dois lugares.
         </li>
         <li>
           <strong className="text-navy">Vídeo público é público.</strong> Um vídeo do YouTube sem
@@ -328,7 +328,7 @@ function ComoFunciona({ envio }: { envio: EstadoDoEnvio }) {
         </li>
         <li>
           <strong className="text-navy">Aula sem vídeo não mostra nada.</strong> A tela do aluno
-          simplesmente não traz o painel — não fica um quadro vazio no lugar.
+          não traz o painel de vídeo, e não fica um quadro vazio no lugar.
         </li>
       </ul>
     </section>

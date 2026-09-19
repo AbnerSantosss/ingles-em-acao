@@ -1,0 +1,109 @@
+{
+  "aula": 42,
+  "titulo": "Unit Review 2",
+  "status": "pronta",
+  "clips": [
+    {
+      "id": "lesson_042_audio_001",
+      "pagina": 2,
+      "local": "Página 2 · dialogue · b6",
+      "alvo": "bloco",
+      "ancora": "W: Good evening. Are you ready to order?",
+      "texto": "Good evening. Are you ready to order?\nYes, please. I'd like a ham and cheese sandwich, please.\nIs it for here or to go?\nIt's for here.\nCan I get you anything to drink?\nYes, I'd like a bottle of water.\nSparkling or still?\nSparkling.\nAny appetizers?\nNo, thanks. I'm fine.",
+      "falas": [
+        {
+          "voz": "M1",
+          "texto": "Good evening. Are you ready to order?"
+        },
+        {
+          "voz": "F1",
+          "texto": "Yes, please. I'd like a ham and cheese sandwich, please."
+        },
+        {
+          "voz": "M1",
+          "texto": "Is it for here or to go?"
+        },
+        {
+          "voz": "F1",
+          "texto": "It's for here."
+        },
+        {
+          "voz": "M1",
+          "texto": "Can I get you anything to drink?"
+        },
+        {
+          "voz": "F1",
+          "texto": "Yes, I'd like a bottle of water."
+        },
+        {
+          "voz": "M1",
+          "texto": "Sparkling or still?"
+        },
+        {
+          "voz": "F1",
+          "texto": "Sparkling."
+        },
+        {
+          "voz": "M1",
+          "texto": "Any appetizers?"
+        },
+        {
+          "voz": "F1",
+          "texto": "No, thanks. I'm fine."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    },
+    {
+      "id": "lesson_042_audio_002",
+      "pagina": 2,
+      "local": "Página 2 · dialogue · b9",
+      "alvo": "bloco",
+      "ancora": "W: How was your sandwich?",
+      "texto": "How was your sandwich?\nIt was great.\nCan I get you anything else?\nNo, thanks. Could I have the check, please?\nSure. That's eight fifty.\nHere you go. Keep the change.\nThanks.",
+      "falas": [
+        {
+          "voz": "M1",
+          "texto": "How was your sandwich?"
+        },
+        {
+          "voz": "F1",
+          "texto": "It was great."
+        },
+        {
+          "voz": "M1",
+          "texto": "Can I get you anything else?"
+        },
+        {
+          "voz": "F1",
+          "texto": "No, thanks. Could I have the check, please?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Sure. That's eight fifty."
+        },
+        {
+          "voz": "F1",
+          "texto": "Here you go. Keep the change."
+        },
+        {
+          "voz": "M1",
+          "texto": "Thanks."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    }
+  ]
+}

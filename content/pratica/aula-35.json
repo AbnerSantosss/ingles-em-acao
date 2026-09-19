@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "conteudo",
+  "foco": "Trocar o nome de uma pessoa ou coisa por \"me\", \"him\", \"her\", \"it\", \"us\", \"them\" depois do verbo.",
+  "conteudoAlvo": [
+    "___ + me / you / him / her / it / us / them",
+    "I love her., I live with her., Can you help us?",
+    "with, know, talk, call, later, let's",
+    "grandma, neighbors, boyfriend, friend, phone"
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Use com \"can\" que já sei: \"Can you help me?\", \"I can call you later.\"",
+    "Use com \"like\" e \"love\" que já sei: \"My mother likes chicken.\" vira \"She likes it.\""
+  ],
+  "regrasDaAula": [
+    "Depois do verbo ou de \"with\", use o pronome objeto: \"I love him.\", nunca \"I love he.\""
+  ],
+  "tiposDeExercicio": [
+    "escolher",
+    "completar",
+    "transformar",
+    "corrigir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "escolher",
+      "enunciado": "Escolha \"he\" ou \"him\": \"My grandpa is awesome. I love ___.\"",
+      "respostaDeReferencia": "I love him."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Troque o nome pelo pronome: \"He doesn't like his neighbors.\"",
+      "respostaDeReferencia": "He doesn't like them."
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Corrija o pronome: \"I live with she.\"",
+      "respostaDeReferencia": "I live with her."
+    }
+  ],
+  "limites": [
+    "Sem pronome possessivo (\"mine\", \"yours\") e sem o passado: ainda não estudei.",
+    "Sem comida de restaurante (\"pancakes\", \"the bill\"): fica para depois."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"me\". Complete: \"Can you help ___?\" (me ajudar). Qual pronome entra no espaço?",
+  "resumoAutorizado": [
+    "Pronomes objeto: \"me\", \"you\", \"him\", \"her\", \"it\", \"us\", \"them\".",
+    "Depois do verbo: \"I love her.\", \"Can you help us?\", \"He doesn't like them.\"",
+    "Depois de \"with\": \"I live with her.\", \"I work with them.\""
+  ],
+  "resumoCurto": "Pronomes objeto: \"me\", \"him\", \"her\", \"us\", \"them\": \"I love her.\", \"Can you help us?\""
+}

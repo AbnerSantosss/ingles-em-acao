@@ -1,0 +1,117 @@
+{
+  "aula": 21,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_021_audio_001",
+        "alvo": "texto",
+        "ancora": "wake up",
+        "texto": "wake up",
+        "src": "/audio/aula-21/lesson_021_audio_001.2536a003.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_021_audio_002",
+        "alvo": "texto",
+        "ancora": "get up",
+        "texto": "get up",
+        "src": "/audio/aula-21/lesson_021_audio_002.de7a1eea.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_021_audio_003",
+        "alvo": "texto",
+        "ancora": "take a shower",
+        "texto": "take a shower",
+        "src": "/audio/aula-21/lesson_021_audio_003.53eb5409.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_021_audio_004",
+        "alvo": "texto",
+        "ancora": "have breakfast",
+        "texto": "have breakfast",
+        "src": "/audio/aula-21/lesson_021_audio_004.5aa2fcbe.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_021_audio_005",
+        "alvo": "texto",
+        "ancora": "get home",
+        "texto": "get home",
+        "src": "/audio/aula-21/lesson_021_audio_005.fec6af47.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_021_audio_006",
+        "alvo": "texto",
+        "ancora": "go to bed",
+        "texto": "go to bed",
+        "src": "/audio/aula-21/lesson_021_audio_006.7bd4434b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_007",
+        "alvo": "texto",
+        "ancora": "first",
+        "texto": "first",
+        "src": "/audio/aula-21/lesson_021_audio_007.7d50ec76.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_008",
+        "alvo": "texto",
+        "ancora": "then",
+        "texto": "then",
+        "src": "/audio/aula-21/lesson_021_audio_008.3745abef.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_009",
+        "alvo": "texto",
+        "ancora": "after that",
+        "texto": "after that",
+        "src": "/audio/aula-21/lesson_021_audio_009.bfb54d55.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_010",
+        "alvo": "texto",
+        "ancora": "finally",
+        "texto": "finally",
+        "src": "/audio/aula-21/lesson_021_audio_010.6e35d156.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    }
+  ]
+}

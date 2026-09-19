@@ -17,9 +17,9 @@
  * 3. **Plano só pelo mapa** produto→plano do painel. Produto fora do mapa →
  *    `planCode` nulo e nada liberado.
  * 4. **`APPROVED` + produto mapeado + aluno achado → concede**: o plano passa a
- *    ser o maior entre o atual e o mapeado. **Nunca rebaixa** — quem já é
- *    Premium e compra o Completo continua Premium. `grantedAt` marca a concessão
- *    e a auditoria registra `user.plan.grant`.
+ *    ser o maior entre o atual e o mapeado. **Nunca rebaixa**: quem já é
+ *    WSA Premium e compra o WSA Essencial continua no WSA Premium. `grantedAt`
+ *    marca a concessão e a auditoria registra `user.plan.grant`.
  * 5. **`REFUNDED`/`CANCELED` só registram e auditam.** Nada é rebaixado
  *    automaticamente nesta versão: a política de estorno (prazo de
  *    arrependimento do CDC, estorno parcial, chargeback contestado) ainda não
@@ -68,8 +68,8 @@ function ehChaveDuplicada(erro: unknown): boolean {
  * transação do pagamento.
  *
  * ⚠️ Comparar-e-trocar, não ler-e-gravar: o UPDATE só vale se o plano ainda é o
- * que foi lido. Sem isso, duas compras simultâneas (Completo e Premium) podiam
- * terminar com a mais lenta gravando Completo por cima do Premium — um
+ * que foi lido. Sem isso, duas compras simultâneas (WSA Essencial e WSA Premium)
+ * podiam terminar com a mais lenta gravando WSA Essencial por cima do WSA Premium, um
  * rebaixamento. Em READ COMMITTED cada releitura enxerga o que a outra
  * transação acabou de gravar, então o laço converge.
  *
@@ -213,7 +213,7 @@ export async function processarEventoDePagamento(entrada: {
         planCode: planoMapeado,
         payment: pagamentoId,
       },
-      reason: `pagamento ${rotulo}: registrado sem rebaixar o plano — a revisão é humana até a política de estorno estar definida`,
+      reason: `pagamento ${rotulo}: registrado sem rebaixar o plano; a revisão é humana até a política de estorno estar definida`,
     });
   }
 

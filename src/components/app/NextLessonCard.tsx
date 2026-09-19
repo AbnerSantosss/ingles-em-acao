@@ -66,7 +66,7 @@ export function NextLessonCard({
           </p>
 
           <h2 className="m-0 mb-2 text-[clamp(28px,7.5vw,40px)] font-black leading-[1.08] tracking-[-0.02em] text-white text-pretty">
-            {lesson.code} — {lesson.title}
+            {lesson.code}: {lesson.title}
           </h2>
 
           <p className="m-0 mb-[26px] text-[16px] text-[#C9D6EC] lg:text-[19px]">

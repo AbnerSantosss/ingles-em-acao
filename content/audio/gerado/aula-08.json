@@ -1,0 +1,271 @@
+{
+  "aula": 8,
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_001",
+        "alvo": "texto",
+        "ancora": "1 one",
+        "texto": "one",
+        "src": "/audio/aula-08/lesson_008_audio_001.6d623840.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_002",
+        "alvo": "texto",
+        "ancora": "2 two",
+        "texto": "two",
+        "src": "/audio/aula-08/lesson_008_audio_002.48a26cd9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_003",
+        "alvo": "texto",
+        "ancora": "3 three",
+        "texto": "three",
+        "src": "/audio/aula-08/lesson_008_audio_003.2ae8ab40.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_004",
+        "alvo": "texto",
+        "ancora": "4 four",
+        "texto": "four",
+        "src": "/audio/aula-08/lesson_008_audio_004.ec4250ce.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_005",
+        "alvo": "texto",
+        "ancora": "5 five",
+        "texto": "five",
+        "src": "/audio/aula-08/lesson_008_audio_005.1ae2fadb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_006",
+        "alvo": "texto",
+        "ancora": "6 six",
+        "texto": "six",
+        "src": "/audio/aula-08/lesson_008_audio_006.d9c611ea.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_007",
+        "alvo": "texto",
+        "ancora": "7 seven",
+        "texto": "seven",
+        "src": "/audio/aula-08/lesson_008_audio_007.1f698789.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_008",
+        "alvo": "texto",
+        "ancora": "8 eight",
+        "texto": "eight",
+        "src": "/audio/aula-08/lesson_008_audio_008.d6bc1d16.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_009",
+        "alvo": "texto",
+        "ancora": "9 nine",
+        "texto": "nine",
+        "src": "/audio/aula-08/lesson_008_audio_009.0aba72e9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_010",
+        "alvo": "texto",
+        "ancora": "10 ten",
+        "texto": "ten",
+        "src": "/audio/aula-08/lesson_008_audio_010.b70a3fd0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_011",
+        "alvo": "texto",
+        "ancora": "11 eleven",
+        "texto": "eleven",
+        "src": "/audio/aula-08/lesson_008_audio_011.c19f1657.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_012",
+        "alvo": "texto",
+        "ancora": "12 twelve",
+        "texto": "twelve",
+        "src": "/audio/aula-08/lesson_008_audio_012.83b50abe.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_013",
+        "alvo": "texto",
+        "ancora": "13 thirteen",
+        "texto": "thirteen",
+        "src": "/audio/aula-08/lesson_008_audio_013.3bb885a7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_014",
+        "alvo": "texto",
+        "ancora": "14 fourteen",
+        "texto": "fourteen",
+        "src": "/audio/aula-08/lesson_008_audio_014.9fd88243.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_015",
+        "alvo": "texto",
+        "ancora": "15 fifteen",
+        "texto": "fifteen",
+        "src": "/audio/aula-08/lesson_008_audio_015.ec725518.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_016",
+        "alvo": "texto",
+        "ancora": "16 sixteen",
+        "texto": "sixteen",
+        "src": "/audio/aula-08/lesson_008_audio_016.446854ab.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_017",
+        "alvo": "texto",
+        "ancora": "17 seventeen",
+        "texto": "seventeen",
+        "src": "/audio/aula-08/lesson_008_audio_017.27bd21ea.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_018",
+        "alvo": "texto",
+        "ancora": "18 eighteen",
+        "texto": "eighteen",
+        "src": "/audio/aula-08/lesson_008_audio_018.5ba650e6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_019",
+        "alvo": "texto",
+        "ancora": "19 nineteen",
+        "texto": "nineteen",
+        "src": "/audio/aula-08/lesson_008_audio_019.d3aa24c3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_008_audio_020",
+        "alvo": "texto",
+        "ancora": "20 twenty",
+        "texto": "twenty",
+        "src": "/audio/aula-08/lesson_008_audio_020.e18cceed.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_021",
+        "alvo": "texto",
+        "ancora": "one hundred",
+        "texto": "one hundred",
+        "src": "/audio/aula-08/lesson_008_audio_021.e6e57f32.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_022",
+        "alvo": "texto",
+        "ancora": "42 → forty-two · 87 → eighty-seven",
+        "texto": "forty-two. eighty-seven",
+        "src": "/audio/aula-08/lesson_008_audio_022.fa5435d0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_008_audio_023",
+        "alvo": "texto",
+        "ancora": "I’m thirty years old.",
+        "texto": "I'm thirty years old.",
+        "src": "/audio/aula-08/lesson_008_audio_023.d84701a6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_008_audio_024",
+        "alvo": "texto",
+        "ancora": "It’s fifteen dollars.",
+        "texto": "It's fifteen dollars.",
+        "src": "/audio/aula-08/lesson_008_audio_024.4d40666f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    }
+  ]
+}

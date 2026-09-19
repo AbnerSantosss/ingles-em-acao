@@ -75,7 +75,7 @@ export function PainelDePublicacao({
           Publicar rascunho como versão {relatorio.proximaVersao}
         </p>
         <p className="m-0 mt-1 text-[14px] font-semibold leading-snug text-muted">
-          Resumo: {relatorio.resumo || '—'}. Hoje o aluno vê a versão {relatorio.versaoAtual}.
+          Resumo: {relatorio.resumo || 'sem resumo'}. Hoje o aluno vê a versão {relatorio.versaoAtual}.
         </p>
       </div>
 
@@ -177,7 +177,7 @@ export function PainelDePublicacao({
           className="m-0 rounded-field px-3 py-2 text-[14px] font-bold leading-snug"
           style={{ background: COR_AVISO.fundo, color: COR_AVISO.texto }}
         >
-          Há alterações no editor que ainda não foram salvas. Salve o rascunho primeiro — este
+          Há alterações no editor que ainda não foram salvas. Salve o rascunho primeiro, porque este
           relatório é do rascunho gravado.
         </p>
       ) : null}

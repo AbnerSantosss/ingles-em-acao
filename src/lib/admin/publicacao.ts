@@ -265,7 +265,7 @@ export async function conferirRascunho(
     const onde = `página ${bloco.pagina + 1}, bloco ${bloco.bloco + 1} (\`${bloco.t}\`)`;
     const anterior = vistos.get(bloco.id);
     if (anterior) {
-      erros.push(`${onde}: \`id\` "${bloco.id}" repetido — já usado em ${anterior}`);
+      erros.push(`${onde}: \`id\` "${bloco.id}" repetido, já usado em ${anterior}`);
       continue;
     }
     vistos.set(bloco.id, onde);
@@ -294,7 +294,7 @@ export async function conferirRascunho(
     for (const novo of novos) {
       if (existentes.some((linha) => chavePertenceAoBloco(linha.answerKey, novo.chaves))) {
         erros.push(
-          `bloco \`${novo.t}\` "${novo.id}": este id é novo nesta aula, mas já existem respostas de alunos gravadas com ele — use "Adicionar bloco" para gerar um id novo`,
+          `bloco \`${novo.t}\` "${novo.id}": este id é novo nesta aula, mas já existem respostas de alunos gravadas com ele. Use "Adicionar bloco" para gerar um id novo`,
         );
       }
     }
@@ -445,7 +445,7 @@ export async function montarRelatorioDePublicacao(
   }
   if (concluiram > 0) {
     impacto.push(
-      `${plural(concluiram, 'aluno já concluiu', 'alunos já concluíram')} esta aula e ${concluiram === 1 ? 'continua' : 'continuam'} com ela concluída — uma edição nunca desfaz a conclusão.`,
+      `${plural(concluiram, 'aluno já concluiu', 'alunos já concluíram')} esta aula e ${concluiram === 1 ? 'continua' : 'continuam'} com ela concluída. Uma edição nunca desfaz a conclusão.`,
     );
   }
   if (impacto.length === 0) {
@@ -755,7 +755,7 @@ async function publicarUma(
   };
 
   if (antes.archivedAt !== null) {
-    return negar('a aula está arquivada — restaure antes de publicar', 'aula arquivada');
+    return negar('a aula está arquivada. Restaure antes de publicar', 'aula arquivada');
   }
 
   // ⚠️ A porta: conteúdo que não passa no esquema não é publicado. Sem isto,
@@ -815,7 +815,7 @@ async function publicarUma(
   } catch (erro: unknown) {
     console.error(`[publicação] aula ${antes.number} não publicada: ${motivoDoErro(erro)}`);
     return negar(
-      'o banco de dados não completou a operação — nada mudou nesta aula',
+      'o banco de dados não completou a operação. Nada mudou nesta aula',
       'falha no banco de dados',
     );
   }
@@ -883,7 +883,7 @@ async function despublicarUma(
   } catch (erro: unknown) {
     console.error(`[publicação] aula ${antes.number} não despublicada: ${motivoDoErro(erro)}`);
     return negar(
-      'o banco de dados não completou a operação — nada mudou nesta aula',
+      'o banco de dados não completou a operação. Nada mudou nesta aula',
       'falha no banco de dados',
     );
   }
@@ -960,7 +960,7 @@ export async function alterarPublicacaoEmLote(entrada: {
       // auditar, mas o relatório diz que esta aula não andou.
       console.error(`[publicação] lote: aula ${id} não processada: ${motivoDoErro(erro)}`);
       resultados.push(
-        aulaInexistente(id, 'o banco de dados não respondeu — nada mudou nesta aula'),
+        aulaInexistente(id, 'o banco de dados não respondeu. Nada mudou nesta aula'),
       );
     }
   }

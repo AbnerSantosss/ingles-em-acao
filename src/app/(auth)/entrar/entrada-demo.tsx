@@ -2,7 +2,7 @@
 
 /**
  * Botões "Entrar como aluno" / "Entrar como admin" — TEMPORÁRIO, só em dev.
- * "Entrar como aluno" é o Premium; a linha de baixo entra nos outros planos.
+ * "Entrar como aluno" é o WSA Premium; o botão de baixo entra no WSA Essencial.
  * A página só renderiza este bloco fora de produção, e a ação recusa em
  * produção de qualquer forma (ver `../dev-actions.ts`).
  */
@@ -45,9 +45,6 @@ export function EntradaDemo() {
         </form>
       </div>
       <div className="mt-2 flex flex-col gap-2 sm:flex-row">
-        <form action={entradaDemoAction.bind(null, 'completo')} className="flex-1">
-          <Botao variant="ghost">ALUNO COMPLETO</Botao>
-        </form>
         <form action={entradaDemoAction.bind(null, 'essencial')} className="flex-1">
           <Botao variant="ghost">ALUNO ESSENCIAL</Botao>
         </form>

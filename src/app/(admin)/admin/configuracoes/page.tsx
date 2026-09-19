@@ -180,7 +180,7 @@ function SecaoDeProdutos({
           <Selo tom="alerta">webhook desligado</Selo>
         )
       }
-      descricao="Qual plano cada produto da plataforma de venda libera quando o pagamento é aprovado. O código tem de ser idêntico ao da plataforma (maiúsculas contam). Produto fora desta lista não libera nada: o pagamento fica registrado abaixo para o suporte. Pagamento nunca rebaixa plano, e estorno ou cancelamento não tira acesso sozinho — quem decide é um admin, na ficha do aluno. A alteração exige motivo e fica na auditoria."
+      descricao="Qual plano cada produto da plataforma de venda libera quando o pagamento é aprovado. O código tem de ser idêntico ao da plataforma (maiúsculas contam). Produto fora desta lista não libera nada: o pagamento fica registrado abaixo para o suporte. Pagamento nunca rebaixa plano, e estorno ou cancelamento não tira acesso sozinho: quem decide é um admin, na ficha do aluno. A alteração exige motivo e fica na auditoria."
       atualizadoEm={atualizadoEm}
     >
       {pagamento.ligado ? null : (
@@ -215,7 +215,7 @@ const ROTULO_DO_STATUS: Record<PaymentStatus, string> = {
   CANCELED: 'cancelado',
 };
 
-const ROTULO_DO_PLANO = { ESSENCIAL: 'Essencial', COMPLETO: 'Completo', PREMIUM: 'Premium' } as const;
+const ROTULO_DO_PLANO = { ESSENCIAL: 'Essencial', PREMIUM: 'Premium' } as const;
 
 const FORMATO_DE_VALOR = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
 
@@ -256,7 +256,7 @@ function SecaoDePagamentos({ resumo }: { resumo: ResumoDePagamentos | null }) {
                   <Selo tom={aprovado ? 'ok' : 'neutro'}>{ROTULO_DO_STATUS[pagamento.status]}</Selo>
                   {pagamento.grantedAt ? <Selo tom="ok">plano liberado</Selo> : null}
                   {pagamento.aluno === null ? (
-                    <Selo tom={aprovado ? 'erro' : 'alerta'}>órfão — sem conta</Selo>
+                    <Selo tom={aprovado ? 'erro' : 'alerta'}>órfão, sem conta</Selo>
                   ) : null}
                   {pagamento.planCode === null ? (
                     <Selo tom={aprovado ? 'erro' : 'alerta'}>produto fora do mapa</Selo>
@@ -298,7 +298,7 @@ function SecaoDeVideo({ config }: { config: Configuracoes }) {
     <Secao
       titulo="Vídeo padrão"
       selo={video.configurado ? <Selo tom="ok">configurado</Selo> : <Selo tom="neutro">sem vídeo padrão</Selo>}
-      descricao="O vídeo que as aulas sem configuração própria recebem. Ele é gravado na tela de Vídeos, que valida o endereço e sabe aplicá-lo às aulas — aqui ele só aparece."
+      descricao="O vídeo que as aulas sem configuração própria recebem. Ele é gravado na tela de Vídeos, que valida o endereço e sabe aplicá-lo às aulas. Aqui ele só aparece."
       atualizadoEm={config.atualizadoEm[CHAVE_VIDEO]}
     >
       {video.configurado ? (
@@ -394,7 +394,7 @@ function SecaoDeEmail({ email }: { email: EstadoDoEmail | null }) {
           <dd className="m-0 font-bold text-navy">
             {email.configurado
               ? 'Servidor de e-mail configurado.'
-              : 'Simulado: as mensagens vão para o log do servidor e não chegam a ninguém — nem os alertas do painel.'}
+              : 'Simulado: as mensagens vão para o log do servidor e não chegam a ninguém, nem mesmo os alertas do painel.'}
           </dd>
         </dl>
       )}
@@ -459,10 +459,10 @@ export default async function TelaDeConfiguracoes() {
               Object.values(config.checkout.porPlano).some((link) => link !== null) ? (
                 <Selo tom="ok">configurado</Selo>
               ) : (
-                <Selo tom="alerta">sem link — botões de compra ocultos</Selo>
+                <Selo tom="alerta">sem link: botões de compra ocultos</Selo>
               )
             }
-            descricao="Todos os botões de compra do app leem daqui. Só endereços https. A troca exige motivo e dispara um e-mail para todos os admins — se você não reconhecer um desses e-mails, alguém mexeu no lugar para onde o aluno leva o cartão."
+            descricao="Todos os botões de compra do app leem daqui. Só endereços https. A troca exige motivo e dispara um e-mail para todos os admins. Se você não reconhecer um desses e-mails, alguém alterou o endereço em que o aluno paga."
             atualizadoEm={config.atualizadoEm[CHAVE_CHECKOUT]}
           >
             <FormularioDeCheckout inicial={config.checkout} />
@@ -479,7 +479,7 @@ export default async function TelaDeConfiguracoes() {
             titulo="Aviso de manutenção"
             selo={
               config.manutencao.ligado ? (
-                <Selo tom="alerta">ligado — visível para os alunos</Selo>
+                <Selo tom="alerta">ligado: visível para os alunos</Selo>
               ) : (
                 <Selo tom="neutro">desligado</Selo>
               )
