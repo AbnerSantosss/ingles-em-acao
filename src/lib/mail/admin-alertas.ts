@@ -1,11 +1,13 @@
 /**
  * Alertas internos para os admins — BACKOFFICE §2.9.
  *
- * ⚠️ Duas ações do painel mandam e-mail: **troca do link de checkout** e
- * **mudança de plano de aluno**. São as duas que, feitas por engano ou por uma
- * conta comprometida, só apareceriam no faturamento semanas depois. O custo é
- * quase zero (o transporte já existe) e o ganho é transformar "descobri em
- * novembro" em "recebi um e-mail estranho hoje".
+ * ⚠️ Três ações do painel mandam e-mail: **troca do link de checkout**,
+ * **mudança de plano de aluno** e **acesso de administrador dado ou tirado**.
+ * As duas primeiras, feitas por engano ou por uma conta comprometida, só
+ * apareceriam no faturamento semanas depois; a terceira é o primeiro passo de
+ * quem quer ficar com o painel. O custo é quase zero (o transporte já existe)
+ * e o ganho é transformar "descobri em novembro" em "recebi um e-mail estranho
+ * hoje".
  *
  * ⚠️ **Falha de envio não desfaz a ação.** A mudança já foi gravada e já está
  * na auditoria quando este módulo é chamado; se o SMTP estiver fora do ar, a
@@ -60,6 +62,17 @@ export type AlertaDePlano = {
   alunoEmail: string;
   de: Plan;
   para: Plan;
+  motivo: string;
+};
+
+export type AlertaDeAcesso = {
+  /** Quem fez a mudança. */
+  admin: string;
+  contaId: string;
+  contaNome: string;
+  contaEmail: string;
+  /** `true` quando a conta ganhou o acesso; `false` quando perdeu. */
+  deuAcesso: boolean;
   motivo: string;
 };
 
@@ -238,6 +251,74 @@ export async function alertarMudancaDePlano(dados: AlertaDePlano): Promise<Resul
   } catch (erro: unknown) {
     const motivo = descreverErro(erro);
     console.error(`[painel] alerta de plano não pôde ser montado: ${motivo}`);
+    return { enviado: false, destinatarios: 0, falhas: 0, motivo };
+  }
+}
+
+// ────────────────────────── acesso de administrador ──────────────────────
+
+/**
+ * "Alguém ganhou (ou perdeu) o acesso ao painel."
+ *
+ * Sai **depois** da gravação, para a lista de admins daquele momento: quem
+ * acabou de ganhar o acesso também recebe, e quem acabou de perder não recebe
+ * mais. O endereço vai mascarado, como no alerta de plano.
+ */
+export async function alertarMudancaDeAcesso(dados: AlertaDeAcesso): Promise<ResultadoDoAlerta> {
+  try {
+    const { appUrl } = await ambienteDeEmail();
+    const link = `${appUrl}/admin/alunos/${dados.contaId}`;
+    const quando = FORMATO_DE_DATA.format(new Date());
+
+    const assunto = dados.deuAcesso
+      ? 'Novo administrador no painel'
+      : 'Acesso de administrador retirado';
+    const resumo = dados.deuAcesso
+      ? `${dados.contaNome} agora é administrador`
+      : `${dados.contaNome} não é mais administrador`;
+
+    const conteudo = [
+      titulo(assunto),
+      paragrafo(
+        'Esta é uma notificação automática do painel. Se você não reconhece esta ação, ' +
+          'confira a auditoria agora.',
+      ),
+      separador(),
+      linha('Conta', dados.contaNome),
+      linha('E-mail', mascararEmail(dados.contaEmail)),
+      linha('Acesso', dados.deuAcesso ? 'aluno e administrador' : 'só aluno'),
+      linha('Motivo', dados.motivo),
+      linha('Por', dados.admin),
+      linha('Quando', quando),
+      separador(),
+      botao({ href: link, rotulo: 'Abrir a conta no painel' }),
+      aviso(
+        dados.deuAcesso
+          ? 'Administrador vê os dados dos alunos, muda planos e publica aulas. ' +
+              'Se esta pessoa não deveria ter esse acesso, tire-o pelo mesmo botão.'
+          : 'A conta continua existindo e estudando como aluno. Só o painel deixou de abrir para ela.',
+      ),
+    ].join('');
+
+    const texto = [
+      assunto,
+      '',
+      `Conta: ${dados.contaNome}`,
+      `E-mail: ${mascararEmail(dados.contaEmail)}`,
+      `Acesso: ${dados.deuAcesso ? 'aluno e administrador' : 'só aluno'}`,
+      `Motivo: ${dados.motivo}`,
+      `Por: ${dados.admin}`,
+      `Quando: ${quando}`,
+      '',
+      `Conta no painel: ${link}`,
+      '',
+      rodapeEmTexto('painel'),
+    ].join('\n');
+
+    return await despachar(assunto, resumo, conteudo, texto);
+  } catch (erro: unknown) {
+    const motivo = descreverErro(erro);
+    console.error(`[painel] alerta de acesso não pôde ser montado: ${motivo}`);
     return { enviado: false, destinatarios: 0, falhas: 0, motivo };
   }
 }

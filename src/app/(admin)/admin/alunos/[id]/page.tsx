@@ -120,7 +120,15 @@ function Dado({ rotulo, children }: { rotulo: string; children: React.ReactNode 
 
 // ─────────────────────────────── aba: conta ──────────────────────────────
 
-function AbaDeConta({ conta, excluidaEm }: { conta: ContaDoAluno; excluidaEm: Date | null }) {
+function AbaDeConta({
+  conta,
+  excluidaEm,
+  voceMesmo,
+}: {
+  conta: ContaDoAluno;
+  excluidaEm: Date | null;
+  voceMesmo: boolean;
+}) {
   return (
     <div className="flex flex-col gap-6">
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
@@ -190,6 +198,7 @@ function AbaDeConta({ conta, excluidaEm }: { conta: ContaDoAluno; excluidaEm: Da
           liberaEm: conta.reenvio.liberaEm === null ? null : conta.reenvio.liberaEm.toISOString(),
         }}
         administrador={conta.admin}
+        voceMesmo={voceMesmo}
         excluidaEm={excluidaEm === null ? null : excluidaEm.toISOString()}
       />
     </div>
@@ -424,8 +433,12 @@ export default async function TelaDoAluno({
 
   // ⚠️ §2.7: abertura de detalhe individual é auditada. `auditar()` nunca
   // lança, então isto não pode derrubar a tela.
+  // De quebra, sabemos se a conta aberta é a do próprio admin: ele não tira o
+  // próprio acesso, e a tela já avisa em vez de oferecer o botão.
+  let voceMesmo = false;
   try {
     const admin = await requireAdmin();
+    voceMesmo = admin.id === conta.id;
     await auditar({
       actor: admin,
       action: 'user.detail.view',
@@ -494,7 +507,9 @@ export default async function TelaDoAluno({
       </nav>
 
       <section className="rounded-card bg-surface p-5 shadow-card lg:p-6">
-        {aba === 'conta' ? <AbaDeConta conta={conta} excluidaEm={excluidaEm} /> : null}
+        {aba === 'conta' ? (
+          <AbaDeConta conta={conta} excluidaEm={excluidaEm} voceMesmo={voceMesmo} />
+        ) : null}
         {aba === 'progresso' && aprendizagem !== null ? (
           <AbaDeProgresso aprendizagem={aprendizagem} />
         ) : null}

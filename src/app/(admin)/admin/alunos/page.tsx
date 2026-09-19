@@ -18,6 +18,9 @@
  * excluída" no lugar do de verificação. A data vem de `datasDeExclusao()`
  * (uma consulta só, pelos ids da página), porque `listarAlunos()` não traz
  * `deletedAt`; se essa consulta falhar, a lista aparece sem o selo.
+ *
+ * Contas de administrador não entram na lista de alunos. Elas aparecem numa
+ * seção própria, embaixo, para que dê para abrir e tirar o acesso pelo painel.
  */
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -25,7 +28,9 @@ import Link from 'next/link';
 import {
   ALUNOS_POR_PAGINA,
   JANELA_DE_ATIVIDADE_DIAS,
+  listarAdministradores,
   listarAlunos,
+  type AdminDaLista,
   type AlunoDaLista,
   type FiltroDeAtividade,
   type FiltroDePlano,
@@ -283,6 +288,43 @@ function Linha({ aluno, excluidaEm }: { aluno: AlunoDaLista; excluidaEm: Date | 
   );
 }
 
+/**
+ * Quem tem acesso ao painel. A lista de cima mostra só alunos; sem esta seção,
+ * uma conta de admin não teria como ser aberta para perder o acesso.
+ */
+function Administradores({ admins }: { admins: AdminDaLista[] }) {
+  return (
+    <section className="rounded-card bg-surface p-5 shadow-card lg:p-6">
+      <h2 className="m-0 text-[17px] font-black tracking-[-0.01em] text-navy">
+        {admins.length} administrador(es)
+      </h2>
+      <p className="m-0 mb-4 mt-1 max-w-[62ch] text-[13px] font-semibold leading-snug text-muted">
+        Contas que abrem o painel. Para dar o acesso a um aluno, abra a conta dele na lista acima;
+        para tirar de um administrador, abra a conta aqui. Nos dois casos, o bloco é &quot;Acesso de
+        administrador&quot;.
+      </p>
+      <ul className="m-0 flex list-none flex-col gap-2 p-0">
+        {admins.map((admin) => (
+          <li
+            key={admin.id}
+            className="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-[14px] border border-solid border-border px-4 py-3"
+          >
+            <Link
+              href={`/admin/alunos/${admin.id}`}
+              className="text-[15px] font-black leading-tight text-navy underline-offset-4 hover:underline"
+            >
+              {admin.nome}
+            </Link>
+            <span className="min-w-0 truncate text-[13px] font-semibold text-muted">
+              {admin.email}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function Degradado() {
   return (
     <div
@@ -336,6 +378,17 @@ export default async function TelaDeAlunos({ searchParams }: { searchParams: Pro
     // ⚠️ Log sem dado pessoal: só o motivo técnico.
     const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
     console.error(`[painel] alunos sem banco: ${motivo}`);
+  }
+
+  let admins: AdminDaLista[] | null = null;
+  if (lista !== null) {
+    try {
+      admins = await listarAdministradores();
+    } catch (erro: unknown) {
+      // A lista de admins é complemento: sem ela, a de alunos ainda serve.
+      const motivo = erro instanceof Error ? erro.message : 'erro desconhecido';
+      console.error(`[painel] administradores sem banco: ${motivo}`);
+    }
   }
 
   if (lista !== null && lista.alunos.length > 0) {
@@ -414,6 +467,8 @@ export default async function TelaDeAlunos({ searchParams }: { searchParams: Pro
               </nav>
             ) : null}
           </section>
+
+          {admins !== null ? <Administradores admins={admins} /> : null}
 
           <p className="m-0 max-w-[62ch] text-[13px] font-semibold leading-snug text-muted-2">
             Esta tela não exporta lista de alunos e não é indexada por buscador. Cada abertura de

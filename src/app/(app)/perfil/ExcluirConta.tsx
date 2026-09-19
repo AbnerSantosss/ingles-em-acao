@@ -109,8 +109,8 @@ export function ExcluirConta({ administrador }: { administrador: boolean }) {
 
       {administrador ? (
         <p className="m-0 mt-4 text-[15px] leading-[1.45] text-[#5B6B7F]">
-          Esta é uma conta de administrador e não pode ser excluída por aqui. Quem cuida do servidor
-          precisa retirar o acesso de administrador antes.
+          Esta é uma conta de administrador e não pode ser excluída por aqui. Outro administrador
+          precisa tirar o seu acesso de administrador antes, pelo painel.
         </p>
       ) : !aberto ? (
         <button

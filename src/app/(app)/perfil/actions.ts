@@ -167,7 +167,7 @@ export async function excluirContaAction(
     return {
       estado: 'erro',
       mensagem:
-        'Conta de administrador não pode ser excluída por aqui. Quem cuida do servidor precisa retirar o acesso de administrador antes.',
+        'Conta de administrador não pode ser excluída por aqui. Outro administrador precisa tirar o seu acesso de administrador antes, pelo painel.',
     };
   }
 

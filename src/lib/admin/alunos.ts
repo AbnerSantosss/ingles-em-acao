@@ -20,7 +20,7 @@
  * que escreve porque **recalcular é uma operação, não uma leitura** — e mesmo
  * ela só é chamada de dentro de uma action auditada.
  */
-import { Prisma, type Plan, type ProgressStatus } from '@prisma/client';
+import { Prisma, type Plan, type ProgressStatus, type Role } from '@prisma/client';
 import { z } from 'zod';
 
 import { validarPaginas } from '@/lib/content/blocks';
@@ -221,6 +221,63 @@ export const esquemaDeMotivo = z
 /** O id de um aluno vindo do formulário. */
 export const esquemaDeId = z.string().trim().min(1, 'aluno não informado').max(64, 'id inválido');
 
+/** O papel que o formulário "Acesso de administrador" pede para a conta. */
+export const esquemaDePapel = z.enum(['ADMIN', 'STUDENT'], {
+  error: 'escolha entre dar e tirar o acesso',
+});
+
+/** O que a regra de acesso precisa saber da conta. */
+export type ContaParaAcesso = {
+  id: string;
+  role: Role;
+  emailVerificado: boolean;
+};
+
+/**
+ * Por que o acesso de administrador desta conta não pode mudar agora, ou
+ * `null` quando pode.
+ *
+ * ⚠️ As duas travas de "tirar" existem para o painel nunca ficar sem dono:
+ * ninguém tira o próprio acesso (outro admin tira), e a última conta de admin
+ * não perde o acesso. Sem elas, um clique errado só se desfaz no servidor.
+ *
+ * ⚠️ "Dar" exige e-mail confirmado. A confirmação prova que a conta é de quem
+ * tem acesso àquela caixa de entrada; sem ela, qualquer um cadastra o e-mail de
+ * outra pessoa e espera ser promovido por engano.
+ */
+export function bloqueioDeAcesso(dados: {
+  conta: ContaParaAcesso;
+  destino: Role;
+  /** Quem está pedindo a mudança. */
+  adminId: string;
+  /** Contas de admin ativas (não anonimizadas), contando esta. */
+  adminsAtivos: number;
+}): string | null {
+  const { conta, destino, adminId, adminsAtivos } = dados;
+
+  if (conta.role === destino) {
+    return destino === 'ADMIN'
+      ? 'Esta conta já é de administrador.'
+      : 'Esta conta já não é de administrador.';
+  }
+
+  if (destino === 'ADMIN') {
+    return conta.emailVerificado
+      ? null
+      : 'Só quem já confirmou o e-mail pode virar administrador. Assim você tem certeza de que a conta é mesmo da pessoa.';
+  }
+
+  if (conta.id === adminId) {
+    return 'Você não pode tirar o seu próprio acesso. Peça a outro administrador.';
+  }
+
+  if (adminsAtivos <= 1) {
+    return 'Esta é a única conta de administrador. Dê o acesso a outra pessoa antes de tirar este.';
+  }
+
+  return null;
+}
+
 // ─────────────────────────────── consultas ───────────────────────────────
 
 const CAMPOS_DA_LISTA = {
@@ -270,6 +327,36 @@ function filtroDeVerificacao(verificado: FiltroDeVerificacao): Prisma.UserWhereI
     default:
       return {};
   }
+}
+
+/** Uma conta de administrador, no quadro do topo de `/admin/alunos`. */
+export type AdminDaLista = {
+  id: string;
+  nome: string;
+  email: string;
+  plano: Plan;
+};
+
+/**
+ * As contas de administrador ativas.
+ *
+ * A lista de alunos filtra `role: 'STUDENT'`, então sem este quadro um admin
+ * não aparece em lugar nenhum do painel, e não haveria onde clicar para tirar
+ * o acesso dele. São poucas contas: o `take` só impede surpresa.
+ */
+export async function listarAdministradores(): Promise<AdminDaLista[]> {
+  const linhas = await prisma.user.findMany({
+    where: { role: 'ADMIN', deletedAt: null },
+    orderBy: [{ createdAt: 'asc' }, { id: 'asc' }],
+    take: 20,
+    select: { id: true, name: true, email: true, plan: true },
+  });
+  return linhas.map((linha) => ({
+    id: linha.id,
+    nome: linha.name,
+    email: linha.email,
+    plano: linha.plan,
+  }));
 }
 
 /**

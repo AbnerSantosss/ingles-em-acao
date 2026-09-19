@@ -66,7 +66,8 @@ const campoSenhaLogin = z
   .min(1, { error: 'Informe sua senha.' })
   .max(TAMANHO_MAXIMO_SENHA, { error: 'E-mail ou senha incorretos.' });
 
-const campoNome = z
+/** Exportado para o `scripts/renomear-conta.ts` usar a mesma regra do cadastro. */
+export const campoNome = z
   .string({ error: 'Informe seu nome.' })
   .trim()
   .min(TAMANHO_MINIMO_NOME, { error: 'Escreva seu nome com pelo menos 2 letras.' })

@@ -183,7 +183,15 @@ Detalhes que importam:
   admin quando ela se perder.
 - **Em produção via Portainer** a forma prática é `docker exec -it <container> npm run admin:create`
   com as variáveis já no ambiente — a senha não fica no histórico do shell.
-- `admin:promote` faz só `role: 'ADMIN'` num usuário que já existe, sem tocar na senha.
+- `admin:promote` faz só `role: 'ADMIN'` num usuário que já existe, sem tocar na senha. Com
+  `--rebaixar` faz o inverso, e recusa rebaixar a última conta de admin.
+- **Com o painel no ar, o caminho normal é o painel.** Em `/admin/alunos/<id>`, o bloco
+  **Acesso de administrador** dá ou tira o acesso, com motivo obrigatório, auditoria
+  (`user.role.change`) e alerta por e-mail para os admins. Ele recusa: dar a quem não confirmou
+  o e-mail, tirar o próprio acesso e tirar o acesso da última conta de admin. As contas de admin
+  não entram na lista de alunos; aparecem na seção **Administradores**, embaixo dela.
+- `conta:renomear` troca o nome de uma conta que já existe (contas criadas pela equipe nascem
+  com nome provisório): `npm run conta:renomear -- pessoa@exemplo.com --nome "Maria Lima"`.
 
 ### 1.4 O que acontece com um STUDENT que tenta entrar
 

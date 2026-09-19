@@ -153,6 +153,15 @@ No log do primeiro start aparece `[contas-mvp] conta de admin criada` (e a do al
 disso, **apague `ADMIN_PASSWORD` e `ALUNO_PASSWORD` da stack** e faça o update: as contas ficam no
 banco, e a senha não precisa ficar guardada no Portainer.
 
+Trocar estas variáveis depois **não mexe** em conta que já existe. Para o dia a dia, pelo
+Console do container `app`:
+
+- **Nome:** `/app/node_modules/.bin/tsx /app/scripts/renomear-conta.ts <email> --nome "Maria Lima"`.
+- **Acesso de administrador:** pelo painel, no detalhe da conta, no bloco **Acesso de
+  administrador**. Sem ninguém que entre no painel,
+  `/app/node_modules/.bin/tsx /app/scripts/admin-promote.ts --email=<email>`, e com `--rebaixar`
+  para tirar. O script recusa rebaixar a última conta de admin.
+
 ### Vídeos enviados pelo painel (opcional — Cloudflare R2)
 
 Em `/admin/videos` cada aula aceita **um link** (YouTube, Vimeo, arquivo .mp4/.webm por

@@ -1,16 +1,17 @@
 /**
- * As ações do detalhe do aluno (BACKOFFICE §2.7): as quatro do dia a dia e,
- * por último, "Anonimizar conta".
+ * As ações do detalhe do aluno (BACKOFFICE §2.7): as quatro do dia a dia, o
+ * acesso de administrador e, por último, "Anonimizar conta".
  *
  * ⚠️ `'use client'` porque existe interatividade de verdade: o estado de cada
- * envio (`useActionState`) e a confirmação em dois toques de "encerrar
- * sessões" e de "anonimizar". Este arquivo não fala com o banco — só com as
- * Server Actions.
+ * envio (`useActionState`) e a confirmação em dois toques de "acesso de
+ * administrador", "encerrar sessões" e "anonimizar". Este arquivo não fala com
+ * o banco — só com as Server Actions.
  *
  * ⚠️ **Não existe campo de nota aqui.** "Recalcular progresso" manda o servidor
  * recontar a partir das respostas gravadas (§6.5); o admin não digita placar.
  *
- * ⚠️ "Mudar de plano" e "Anonimizar conta" usam `onSubmit` + `startTransition`,
+ * ⚠️ "Mudar de plano", "Acesso de administrador" e "Anonimizar conta" usam
+ * `onSubmit` + `startTransition`,
  * não `action={...}`:
  * no React 19 um `<form action>` limpa os campos depois de cada envio, até
  * quando a action devolve erro — e o admin perderia o motivo que escreveu.
@@ -31,6 +32,7 @@ import { Field } from '@/components/ui/Field';
 import {
   anonimizarContaAction,
   encerrarSessoesAction,
+  mudarAcessoDeAdminAction,
   mudarPlanoAction,
   recalcularProgressoAction,
   reenviarVerificacaoAction,
@@ -190,6 +192,113 @@ function MudarPlano({ id, plano }: { id: string; plano: string }) {
   );
 }
 
+// ───────────────────────── acesso de administrador ───────────────────────
+
+function AcessoDeAdmin({
+  id,
+  administrador,
+  verificado,
+  voceMesmo,
+}: {
+  id: string;
+  administrador: boolean;
+  verificado: boolean;
+  voceMesmo: boolean;
+}) {
+  const [estado, enviar, pendente] = useActionState(mudarAcessoDeAdminAction, FORMULARIO_INICIAL);
+  const [confirmando, setConfirmando] = useState(false);
+
+  // Resposta nova do servidor: se deu certo, fecha a confirmação. Ajuste durante
+  // a renderização, comparando com a última resposta vista (como em ListaDeAulas).
+  const [estadoVisto, setEstadoVisto] = useState(estado);
+  if (estado !== estadoVisto) {
+    setEstadoVisto(estado);
+    if (estado.estado === 'ok') setConfirmando(false);
+  }
+
+  // O servidor confere de novo; aqui é só para não oferecer um botão que vai
+  // ser recusado. A regra de "último admin" cai aqui também: se quem está
+  // vendo é admin, a conta de outra pessoa nunca é a última.
+  const bloqueio =
+    administrador && voceMesmo
+      ? 'Esta é a sua conta. Para tirar o seu próprio acesso, peça a outro administrador.'
+      : !administrador && !verificado
+        ? 'Esta conta ainda não confirmou o e-mail. Só quem confirmou pode virar administrador.'
+        : null;
+
+  return (
+    <Bloco
+      tom="risco"
+      titulo="Acesso de administrador"
+      descricao={
+        administrador
+          ? 'Esta conta abre o painel. Tirar o acesso deixa a conta só como aluno, com o mesmo login, plano e progresso. O motivo é obrigatório e os admins recebem um e-mail avisando.'
+          : 'Esta conta é só de aluno. Dar o acesso abre o painel inteiro para ela: aulas, alunos, planos e configurações. O motivo é obrigatório e os admins recebem um e-mail avisando.'
+      }
+    >
+      {confirmando && bloqueio === null ? (
+        <form onSubmit={enviarSemLimpar(enviar)} className="flex flex-col gap-3" noValidate>
+          <input type="hidden" name="id" value={id} />
+          <input type="hidden" name="papel" value={administrador ? 'STUDENT' : 'ADMIN'} />
+
+          <Field
+            label="Motivo"
+            required
+            hint={
+              administrador
+                ? 'Fica na auditoria. Ex.: saiu da equipe em 18/09.'
+                : 'Fica na auditoria. Ex.: entrou na equipe para cuidar das aulas.'
+            }
+            error={erroDoCampo(estado, 'motivo')}
+          >
+            <textarea name="motivo" maxLength={300} className={TEXTAREA} />
+          </Field>
+
+          <Recado estado={estado} />
+
+          <div className="flex flex-wrap items-center gap-3">
+            <Button
+              type="submit"
+              size="md"
+              variant={administrador ? 'danger' : 'primary'}
+              loading={pendente}
+            >
+              {administrador ? 'Tirar o acesso agora' : 'Dar o acesso agora'}
+            </Button>
+            <Button
+              type="button"
+              size="md"
+              variant="ghost"
+              disabled={pendente}
+              onClick={() => setConfirmando(false)}
+            >
+              Cancelar
+            </Button>
+          </div>
+        </form>
+      ) : (
+        <div className="flex flex-col gap-3">
+          <Recado estado={estado} />
+          <div className="flex">
+            <Button
+              type="button"
+              size="md"
+              variant="ghost"
+              disabled={bloqueio !== null}
+              onClick={() => setConfirmando(true)}
+            >
+              {administrador ? 'Tirar acesso de administrador' : 'Dar acesso de administrador'}
+            </Button>
+          </div>
+          {bloqueio ? (
+            <p className="m-0 text-[13px] font-bold leading-snug text-muted">{bloqueio}</p>
+          ) : null}
+        </div>
+      )}
+    </Bloco>
+  );
+}
+
 // ─────────────────────────── reenviar verificação ────────────────────────
 
 function ReenviarVerificacao({
@@ -327,8 +436,8 @@ function AnonimizarConta({ id, administrador }: { id: string; administrador: boo
     >
       {administrador ? (
         <p className="m-0 text-[13px] font-bold leading-snug text-muted">
-          Conta de administrador não é anonimizada pelo painel. O acesso de administrador precisa ser
-          retirado no banco antes.
+          Conta de administrador não é anonimizada. Tire antes o acesso de administrador, no bloco
+          &quot;Acesso de administrador&quot; acima.
         </p>
       ) : confirmando ? (
         <form onSubmit={enviarSemLimpar(enviar)} className="flex flex-col gap-3" noValidate>
@@ -405,6 +514,7 @@ export function AcoesDoAluno({
   sessoes,
   reenvio,
   administrador,
+  voceMesmo,
   excluidaEm,
 }: {
   id: string;
@@ -412,8 +522,10 @@ export function AcoesDoAluno({
   verificado: boolean;
   sessoes: number;
   reenvio: { permitido: boolean; enviados: number; limite: number; liberaEm: string | null };
-  /** A conta é de administrador (não pode ser anonimizada pelo painel). */
+  /** A conta é de administrador (não pode ser anonimizada antes de perder o acesso). */
   administrador: boolean;
+  /** A conta é a do admin que está vendo a página (não tira o próprio acesso). */
+  voceMesmo: boolean;
   /** Data (ISO) em que a conta foi anonimizada, ou `null` se está ativa. */
   excluidaEm: string | null;
 }) {
@@ -440,6 +552,12 @@ export function AcoesDoAluno({
       <h3 className="m-0 mb-2 text-[15px] font-black tracking-[-0.01em] text-navy">Ações</h3>
       <div className="flex flex-col gap-3">
         <MudarPlano id={id} plano={plano} />
+        <AcessoDeAdmin
+          id={id}
+          administrador={administrador}
+          verificado={verificado}
+          voceMesmo={voceMesmo}
+        />
         <ReenviarVerificacao id={id} verificado={verificado} reenvio={reenvio} />
         <RecalcularProgresso id={id} />
         <EncerrarSessoes id={id} sessoes={sessoes} />

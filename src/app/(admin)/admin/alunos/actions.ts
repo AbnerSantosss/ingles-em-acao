@@ -23,8 +23,10 @@
 import { revalidatePath } from 'next/cache';
 
 import {
+  bloqueioDeAcesso,
   esquemaDeId,
   esquemaDeMotivo,
+  esquemaDePapel,
   esquemaDePlano,
   limiteDeReenvio,
   recalcularProgressoDoAluno,
@@ -36,7 +38,7 @@ import { destroyOtherSessions } from '@/lib/auth/session';
 import { createVerificationToken } from '@/lib/auth/tokens';
 import { anonimizarConta, type DadosApagados } from '@/lib/conta/anonimizar';
 import { prisma } from '@/lib/db';
-import { alertarMudancaDePlano } from '@/lib/mail/admin-alertas';
+import { alertarMudancaDeAcesso, alertarMudancaDePlano } from '@/lib/mail/admin-alertas';
 import { sendVerificationEmail } from '@/lib/mail/send';
 
 import type { ErrosDeCampo, EstadoDoFormulario } from './tipos';
@@ -204,6 +206,138 @@ export async function mudarPlanoAction(
     );
   } catch (erro: unknown) {
     return erroDeBanco('mudar plano', erro);
+  }
+}
+
+// ──────────────────────── acesso de administrador ────────────────────────
+
+/**
+ * Dá ou tira o acesso de administrador de uma conta. A conta continua a mesma:
+ * mesmo login, mesmo plano, mesmo progresso. Muda só se o painel abre para ela.
+ *
+ * As regras (e-mail confirmado para dar; ninguém tira o próprio acesso; a
+ * última conta de admin não perde o acesso) moram em `bloqueioDeAcesso()`.
+ * **Motivo obrigatório** e **alerta por e-mail**, como na troca de plano.
+ *
+ * ⚠️ A leitura e a gravação correm numa transação que trava as linhas de admin
+ * (`FOR UPDATE`). Sem a trava, dois admins tirando o acesso um do outro ao mesmo
+ * tempo passariam os dois pela regra de "último admin" e o painel ficaria sem
+ * dono. Com ela, o segundo espera o primeiro terminar e já conta um admin a
+ * menos.
+ *
+ * ⚠️ Tirar o acesso não derruba as sessões: elas seguem valendo como aluno, e o
+ * painel deixa de abrir na próxima navegação, porque o papel é lido do banco a
+ * cada pedido.
+ */
+export async function mudarAcessoDeAdminAction(
+  _estado: EstadoDoFormulario,
+  dados: FormData,
+): Promise<EstadoDoFormulario> {
+  const sessao = await autenticar();
+  if (!sessao.ok) return sessao.estado;
+
+  const id = esquemaDeId.safeParse(texto(dados, 'id'));
+  if (!id.success) return falha('Conta não identificada. Recarregue a página.');
+
+  const papel = esquemaDePapel.safeParse(texto(dados, 'papel'));
+  if (!papel.success) return falha('Pedido incompleto. Recarregue a página.');
+
+  const motivo = esquemaDeMotivo.safeParse(texto(dados, 'motivo'));
+  if (!motivo.success) {
+    return falha('Confira os campos marcados.', {
+      motivo: motivo.error.issues[0]?.message ?? 'motivo inválido',
+    });
+  }
+
+  const destino = papel.data;
+
+  try {
+    const resultado = await prisma.$transaction(async (tx) => {
+      // Trava as contas de admin até o fim da transação (ver o cabeçalho).
+      const admins = await tx.$queryRaw<{ id: string }[]>`
+        SELECT id FROM "User" WHERE role = 'ADMIN' AND "deletedAt" IS NULL FOR UPDATE`;
+
+      const conta = await tx.user.findUnique({
+        where: { id: id.data },
+        select: { id: true, name: true, email: true, role: true, emailVerifiedAt: true, deletedAt: true },
+      });
+      if (!conta) return { ok: false as const, mensagem: 'Essa conta não existe mais.', antes: null };
+      if (conta.deletedAt !== null) {
+        return { ok: false as const, mensagem: CONTA_ANONIMIZADA, antes: null };
+      }
+
+      const bloqueio = bloqueioDeAcesso({
+        conta: { id: conta.id, role: conta.role, emailVerificado: conta.emailVerifiedAt !== null },
+        destino,
+        adminId: sessao.admin.id,
+        adminsAtivos: admins.length,
+      });
+      if (bloqueio) return { ok: false as const, mensagem: bloqueio, antes: conta.role };
+
+      await tx.user.update({ where: { id: conta.id }, data: { role: destino } });
+      return { ok: true as const, conta };
+    });
+
+    if (!resultado.ok) {
+      // Recusa pela regra é tentativa sobre o acesso ao painel: fica na
+      // auditoria, como as negativas do guarda.
+      if (resultado.antes !== null) {
+        await auditar({
+          actor: sessao.admin,
+          action: 'user.role.change',
+          resource: `User:${id.data}`,
+          outcome: 'DENY',
+          before: { role: resultado.antes },
+          after: { role: destino },
+          reason: resultado.mensagem,
+        });
+      }
+      return falha(resultado.mensagem);
+    }
+
+    const { conta } = resultado;
+    const deuAcesso = destino === 'ADMIN';
+
+    await auditar({
+      actor: sessao.admin,
+      action: 'user.role.change',
+      resource: `User:${conta.id}`,
+      before: { role: conta.role },
+      after: { role: destino },
+      reason: motivo.data,
+    });
+
+    const alerta = await alertarMudancaDeAcesso({
+      admin: sessao.admin.email,
+      contaId: conta.id,
+      contaNome: conta.name,
+      contaEmail: conta.email,
+      deuAcesso,
+      motivo: motivo.data,
+    });
+
+    if (!alerta.enviado) {
+      await auditar({
+        actor: sessao.admin,
+        action: 'user.role.change.alert',
+        resource: `User:${conta.id}`,
+        outcome: 'DENY',
+        after: { destinatarios: alerta.destinatarios, falhas: alerta.falhas },
+        reason: alerta.motivo ?? 'alerta não enviado',
+      });
+    }
+
+    revalidar(conta.id);
+    const feito = deuAcesso
+      ? 'Acesso de administrador liberado. O painel abre para esta conta no próximo acesso.'
+      : 'Acesso de administrador retirado. A conta continua estudando como aluno.';
+    return sucesso(
+      alerta.enviado
+        ? `${feito} Alerta enviado para ${alerta.destinatarios} admin(s).`
+        : `${feito} O alerta por e-mail não saiu (${alerta.motivo ?? 'sem detalhe'}), e a falha está na auditoria.`,
+    );
+  } catch (erro: unknown) {
+    return erroDeBanco('mudar acesso de admin', erro);
   }
 }
 
@@ -477,7 +611,7 @@ export async function anonimizarContaAction(
         reason: 'conta de administrador',
       });
       return falha(
-        'Conta de administrador não pode ser anonimizada pelo painel. O acesso de administrador precisa ser retirado no banco antes.',
+        'Conta de administrador não pode ser anonimizada. Tire antes o acesso de administrador, no bloco "Acesso de administrador" desta página.',
       );
     }
 

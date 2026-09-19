@@ -15,6 +15,11 @@
  *
  * Idempotente: promover quem já é admin (ou rebaixar quem já é aluno) não muda
  * nada e diz isso em voz alta.
+ *
+ * Com o painel no ar, o caminho normal é o bloco "Acesso de administrador" no
+ * detalhe da conta (com motivo, auditoria e alerta). Este script fica para o
+ * primeiro admin e para quando ninguém consegue entrar no painel. Ele também
+ * recusa rebaixar a última conta de admin.
  */
 import type { PrismaClient, Role } from '@prisma/client';
 
@@ -69,6 +74,19 @@ async function main(): Promise<void> {
     if (usuario.role === destino) {
       console.log(`[admin:promote] nada a fazer: ${usuario.email} já é ${destino}.`);
       return;
+    }
+
+    if (destino === 'STUDENT') {
+      // Mesma regra do painel (`bloqueioDeAcesso`): o produto nunca fica sem
+      // admin. Promova outra pessoa antes de rebaixar a última.
+      const outrosAdmins = await prisma.user.count({
+        where: { role: 'ADMIN', deletedAt: null, id: { not: usuario.id } },
+      });
+      if (outrosAdmins === 0) {
+        throw new Error(
+          'Esta é a única conta de administrador. Promova outra pessoa antes de rebaixar esta.',
+        );
+      }
     }
 
     await prisma.user.update({

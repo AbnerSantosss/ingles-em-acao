@@ -57,7 +57,7 @@
  * ## Regras
  *
  * - **ADMIN é recusado.** Um administrador precisa ser rebaixado antes (por
- *   outra pessoa, no banco): anonimizar a própria conta de admin pelo painel
+ *   outro admin, no painel): anonimizar a própria conta de admin pelo painel
  *   poderia deixar o produto sem ninguém que o administre, e apagaria o nome de
  *   quem assina a trilha de auditoria das aulas.
  * - **Idempotente.** Conta já excluída não é reescrita (o marcador e a data da
