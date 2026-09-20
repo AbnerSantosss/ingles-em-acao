@@ -13,6 +13,9 @@ const NAVY = '#0A1F4E';
 const NAVY_CLARO = '#123A86';
 const AMARELO = '#F6C945';
 const TEAL = '#12A594';
+/* O mesmo teal escurecido para texto dentro do SVG: em 11px, os 3,07 do teal da
+   marca sobre branco reprovam nos 4,5 do WCAG AA. Igual ao --teal-texto. */
+const TEAL_TEXTO = '#0D776B';
 const AZUL = '#1B6BE3';
 const MENTA = '#DFF3EC';
 const BORDA = '#DCE6F2';
@@ -183,7 +186,7 @@ export function CelularDaAula({ className }: { className?: string }) {
 
       {/* Eu consigo */}
       <rect x="125" y="154" width="150" height="134" rx="16" fill="#fff" stroke={BORDA} />
-      <text x="139" y="178" fill={TEAL} fontSize="11" fontWeight="800" letterSpacing="1">
+      <text x="139" y="178" fill={TEAL_TEXTO} fontSize="11" fontWeight="800" letterSpacing="1">
         EU CONSIGO
       </text>
       {consigo.map((item, i) => (

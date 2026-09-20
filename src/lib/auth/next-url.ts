@@ -4,7 +4,7 @@
  * "Login é uma PORTA, não um destino: a origem nunca se perde." (contrato §5.7)
  *
  * Este arquivo é a defesa contra **open redirect**. O ataque é sempre o mesmo:
- * mandar a vítima para `https://ingles-em-acao.com/entrar?next=https://sitedoladrao.com/entrar`,
+ * mandar a vítima para `https://wsaenglish.com.br/entrar?next=https://sitedoladrao.com/entrar`,
  * ela confere o domínio, digita a senha de verdade, e o app — obediente — a joga
  * numa cópia idêntica da tela de login hospedada pelo atacante, que pede a senha
  * "de novo". O phishing ganha credibilidade porque o primeiro link era legítimo.

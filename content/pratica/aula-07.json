@@ -2,20 +2,20 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Apresentar minha família em inglês com \"This is my ___\", os nomes dos parentes e o \"'s\" de posse.",
+  "foco": "Apresentar minha família com \"This is my ___\" e os nomes dos parentes em inglês.",
   "conteudoAlvo": [
-    "my, your, his, her, mother, mom, father, dad",
-    "sister, brother, son, daughter, husband, wife",
-    "grandmother, grandfather, parents, children",
-    "siblings, This is my ___, Ana's brother"
+    "This is my mother / father / brother / sister.",
+    "mom, dad, grandma, grandpa, uncle, aunt, cousin",
+    "husband, wife, son, daughter, parents, family",
+    "grandson, granddaughter, grandparents"
   ],
   "expressoesFixas": [],
   "comoIntegrar": [
     "Use \"is\" e \"are\" da Aula 02: \"He is my brother.\", \"They are my parents.\"",
-    "Junte parente e profissão já vista: \"My sister is a doctor.\", \"Ana's father is a teacher.\""
+    "Junte parente e profissão já vista: \"My sister is a doctor.\", \"He is a teacher.\""
   ],
   "regrasDaAula": [
-    "O dono vem primeiro: \"o irmão da Ana\" vira \"Ana's brother\"."
+    "Em inglês \"my\" não muda: \"my father\", \"my mother\", \"my parents\"."
   ],
   "tiposDeExercicio": [
     "identificar",
@@ -26,8 +26,8 @@
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Para dizer o pai da Ana, escolha: \"Ana's father\" ou \"father's Ana\".",
-      "respostaDeReferencia": "Ana's father"
+      "enunciado": "Escolha a frase certa: \"He is my mother.\" ou \"He is my father.\"",
+      "respostaDeReferencia": "He is my father."
     },
     {
       "tipo": "completar",
@@ -36,19 +36,19 @@
     },
     {
       "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: O irmão da Ana é médico.",
-      "respostaDeReferencia": "Ana's brother is a doctor."
+      "enunciado": "Traduza para o inglês: Eles são meus pais.",
+      "respostaDeReferencia": "They are my parents."
     }
   ],
   "limites": [
     "Sem \"its\", \"our\", \"their\" e \"name\": ainda não estudei.",
-    "Sem números e idades: só parentes, \"my\", \"your\", \"his\", \"her\" e o \"'s\"."
+    "Sem números e idades. Só \"my\": \"your\", \"his\" e \"her\" vêm mais adiante."
   ],
   "primeiraQuestao": "Vamos começar pela família. Como se diz mãe em inglês?",
   "resumoAutorizado": [
-    "Parentes: \"mother\", \"father\", \"sister\", \"brother\", \"son\", \"daughter\", \"wife\".",
-    "Grupos: \"parents\", \"children\", \"siblings\"; posse: \"my\", \"your\", \"his\", \"her\".",
-    "Frases: \"This is my mother.\", \"Ana's brother is a doctor.\""
+    "Parentes: \"mother\", \"father\", \"sister\", \"brother\", \"son\", \"daughter\".",
+    "Grupos: \"parents\", \"grandparents\", \"family\"; posse com \"my\".",
+    "Frases: \"This is my mother.\", \"He is my brother.\""
   ],
-  "resumoCurto": "Família: parentes, \"my\", \"your\", \"his\", \"her\", \"This is my mother.\" e \"Ana's brother\"."
+  "resumoCurto": "Família: os parentes, o \"my\" e a frase \"This is my mother.\""
 }

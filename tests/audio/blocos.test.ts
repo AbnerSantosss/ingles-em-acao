@@ -16,7 +16,11 @@ import { jsx } from 'react/jsx-runtime';
 import { describe, expect, it } from 'vitest';
 
 import { ProvedorDeAudio } from '@/components/lesson/audio/ContextoDeAudio';
-import { ROTULO_OUVIR_DIALOGO, ROTULO_OUVIR_TODOS } from '@/components/lesson/audio/rotulos';
+import {
+  ROTULO_OUVIR_DIALOGO,
+  ROTULO_OUVIR_PRONUNCIA,
+  ROTULO_OUVIR_TODOS,
+} from '@/components/lesson/audio/rotulos';
 import { BlocoCards, BlocoProfile, BlocoPron, BlocoRule, BlocoSteps } from '@/components/lesson/blocks/cartoes';
 import {
   BlocoChips,
@@ -133,9 +137,9 @@ describe('bloco sem clipe: nada muda', () => {
 });
 
 describe('bloco com um clipe para cada texto', () => {
-  it.each(CASOS)('%s: um botão "Ouvir: " para cada texto de textosDoBloco', (_t, bloco, criar) => {
+  it.each(CASOS)('%s: um botão "Ouvir pronúncia" para cada texto de textosDoBloco', (_t, bloco, criar) => {
     const html = desenhar(criar(), clipesDoBloco(bloco));
-    expect(contar(html, 'aria-label="Ouvir: ')).toBe(textosDoBloco(bloco).length);
+    expect(contar(html, `aria-label="${ROTULO_OUVIR_PRONUNCIA}: `)).toBe(textosDoBloco(bloco).length);
   });
 
   it.each(CASOS)('%s: o player de bloco aparece só quando o tipo tem âncora de bloco', (t, bloco, criar) => {
@@ -155,8 +159,21 @@ describe('bloco com um clipe para cada texto', () => {
   it('clipe lento: aparece o segundo botão "Devagar"', () => {
     const lento: AudioClip = { ...clip('lesson_002_audio_160', 'texto', 'I am ready.'), lento: true };
     const html = desenhar(createElement(BlocoKey, { bloco: KEY }), [lento]);
-    expect(html).toContain('aria-label="Ouvir: I am ready."');
+    expect(html).toContain('aria-label="Ouvir pronúncia: I am ready."');
     expect(html).toContain('aria-label="Ouvir mais devagar: I am ready."');
+  });
+
+  it('o botão grande mostra o nome na tela; dentro do balão de diálogo fica só o ícone', () => {
+    const grande = desenhar(createElement(BlocoKey, { bloco: KEY }), [
+      clip('lesson_002_audio_170', 'texto', KEY.text),
+    ]);
+    expect(grande).toContain(`>${ROTULO_OUVIR_PRONUNCIA}<`);
+
+    const compacto = desenhar(createElement(BlocoDialogue, { bloco: DIALOGUE }), [
+      clip('lesson_002_audio_171', 'texto', ancoraDoBloco(DIALOGUE) ?? ''),
+    ]);
+    expect(compacto).not.toContain(`>${ROTULO_OUVIR_PRONUNCIA}<`);
+    expect(compacto).toContain(`aria-label="${ROTULO_OUVIR_PRONUNCIA}: `);
   });
 
   it('nenhum botão nasce tocando e nenhum áudio é criado no servidor', () => {

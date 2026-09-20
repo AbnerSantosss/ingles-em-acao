@@ -1,4 +1,41 @@
 {
   "aula": 5,
-  "clips": []
+  "clips": [
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_005_audio_001",
+        "alvo": "bloco",
+        "ancora": "Are you at home?",
+        "texto": "Are you at home?\nNo, I'm not. I'm at work.\nIs your brother home?\nYes, he is.",
+        "src": "/audio/aula-05/lesson_005_audio_001.e2f93606.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_005_audio_002",
+        "alvo": "bloco",
+        "ancora": "Is this coffee hot?",
+        "texto": "Is this coffee hot?\nNo, it isn't. It's warm.\nAre you ready to order?\nYes, we are.",
+        "src": "/audio/aula-05/lesson_005_audio_002.08b79786.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_005_audio_003",
+        "alvo": "bloco",
+        "ancora": "Are they your classmates?",
+        "texto": "Are they your classmates?\nYes, they are.\nIs the class interesting?\nYes, it is!",
+        "src": "/audio/aula-05/lesson_005_audio_003.38b144b4.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    }
+  ]
 }

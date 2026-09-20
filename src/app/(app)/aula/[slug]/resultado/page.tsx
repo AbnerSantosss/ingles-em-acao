@@ -148,7 +148,7 @@ export default async function ResultadoDaAulaPage({ params }: ParametrosDoResult
                 </p>
               </div>
 
-              <p className="m-0 mb-2 text-[15px] font-extrabold tracking-[.14em] text-teal">
+              <p className="m-0 mb-2 text-[15px] font-extrabold tracking-[.14em] text-teal-texto">
                 AULA CONCLUÍDA <span aria-hidden="true">🎉</span>
               </p>
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 # ==============================================================================
-# "Inglês em Ação" — entrypoint de produção
+# WSA English — entrypoint de produção
 #
 #   1. confere as variáveis obrigatórias
 #   2. espera o Postgres aceitar conexão

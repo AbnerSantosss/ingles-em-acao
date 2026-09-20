@@ -1,5 +1,5 @@
 # ==============================================================================
-# "Inglês em Ação" — stack de PRODUÇÃO (Portainer > Stacks > Repository)
+# WSA English: stack de PRODUÇÃO (Portainer > Stacks > Repository)
 #
 # Nenhum segredo mora neste arquivo. Todo ${VARIAVEL} é preenchido pelas variáveis
 # de ambiente cadastradas na stack do Portainer. Passo a passo: docs/DEPLOY.md.
@@ -12,6 +12,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      # As telas pré-renderizadas (/termos, /privacidade, a 404) guardam a URL
+      # do momento do build, e o `env.ts` exige o remetente. Por isso as duas
+      # entram também no build, com o mesmo valor do ambiente logo abaixo.
+      # Mudou a APP_URL? Reconstrua a imagem, não basta reiniciar o container.
+      args:
+        APP_URL: ${APP_URL}
+        MAIL_FROM: ${MAIL_FROM}
     image: ingles-em-acao:latest
     restart: unless-stopped
 

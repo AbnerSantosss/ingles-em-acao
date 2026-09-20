@@ -332,8 +332,12 @@ export function blocosEmIngles(aula) {
  */
 export const AULAS_DE_REVISAO = [5, 42];
 
-/** Aula cujo conteúdo é pendência do dono do produto. */
-export const AULA_PENDENTE = 5;
+/**
+ * Aula cujo conteúdo é pendência do dono do produto. Era a 05, resolvida em 2026-09-19:
+ * a aula foi reescrita com as 9 páginas do e-book e entrou no mapa, na prática e no áudio.
+ * `null` significa "nenhuma aula pendente". Se surgir outra pendência, ponha o número aqui.
+ */
+export const AULA_PENDENTE = null;
 
 export const CATEGORIAS_DO_MAPA = ['vocabulario', 'estruturas', 'expressoesFixas', 'pronuncia'];
 

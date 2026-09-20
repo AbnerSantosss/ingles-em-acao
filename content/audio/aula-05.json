@@ -1,6 +1,106 @@
 {
   "aula": 5,
   "titulo": "Verb to be: Review",
-  "status": "pendente",
-  "clips": []
+  "status": "pronta",
+  "clips": [
+    {
+      "id": "lesson_005_audio_001",
+      "pagina": 5,
+      "local": "Página 5 · dialogue · b6",
+      "alvo": "bloco",
+      "ancora": "Are you at home?",
+      "texto": "Are you at home?\nNo, I'm not. I'm at work.\nIs your brother home?\nYes, he is.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Are you at home?"
+        },
+        {
+          "voz": "M1",
+          "texto": "No, I'm not. I'm at work."
+        },
+        {
+          "voz": "F1",
+          "texto": "Is your brother home?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes, he is."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    },
+    {
+      "id": "lesson_005_audio_002",
+      "pagina": 5,
+      "local": "Página 5 · dialogue · b9",
+      "alvo": "bloco",
+      "ancora": "Is this coffee hot?",
+      "texto": "Is this coffee hot?\nNo, it isn't. It's warm.\nAre you ready to order?\nYes, we are.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Is this coffee hot?"
+        },
+        {
+          "voz": "M1",
+          "texto": "No, it isn't. It's warm."
+        },
+        {
+          "voz": "F1",
+          "texto": "Are you ready to order?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes, we are."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    },
+    {
+      "id": "lesson_005_audio_003",
+      "pagina": 5,
+      "local": "Página 5 · dialogue · b12",
+      "alvo": "bloco",
+      "ancora": "Are they your classmates?",
+      "texto": "Are they your classmates?\nYes, they are.\nIs the class interesting?\nYes, it is!",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Are they your classmates?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes, they are."
+        },
+        {
+          "voz": "F1",
+          "texto": "Is the class interesting?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes, it is!"
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    }
+  ]
 }

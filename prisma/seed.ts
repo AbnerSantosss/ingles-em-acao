@@ -1,5 +1,5 @@
 /**
- * Seed do "Inglês em Ação" — módulos e aulas.
+ * Seed do WSA English: módulos e aulas.
  *
  * Lê o conteúdo de `content/course-data.mjs` (a carga inicial das 42 aulas) e
  * **semeia** as tabelas Module e Lesson. É idempotente: rodar várias vezes não
@@ -53,8 +53,8 @@ const MODULOS = [
   { id: 3, order: 3, title: 'Referência e lugar', fromLesson: 13, toLesson: 18 },
   { id: 4, order: 4, title: 'Presente simples', fromLesson: 19, toLesson: 24 },
   { id: 5, order: 5, title: 'Ações e rotina', fromLesson: 25, toLesson: 30 },
-  { id: 6, order: 6, title: 'Passado', fromLesson: 31, toLesson: 36 },
-  { id: 7, order: 7, title: 'Comparar e futuro', fromLesson: 37, toLesson: 42 },
+  { id: 6, order: 6, title: 'Dia a dia e preferências', fromLesson: 31, toLesson: 36 },
+  { id: 7, order: 7, title: 'Quantidade e passado', fromLesson: 37, toLesson: 42 },
 ] as const;
 
 /** Só as aulas 1 a 10 têm capa desenhada (public/lessons/capas/NN.png). */

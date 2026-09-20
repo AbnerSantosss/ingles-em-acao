@@ -5,8 +5,9 @@
  * estava tocando. Por isso nunca há dois áudios ao mesmo tempo (prompt-mestre de
  * áudios, seção 20), sem coordenação entre os botões.
  *
- * O MVP tem só tocar e parar. O estado "pausado" ficou para depois
- * (docs/plano-v2/PENDENCIAS.md, item 9).
+ * Tem tocar, pausar, continuar de onde parou e parar (pendência 9 do MVP, agora
+ * fechada). Pausar guarda a posição no próprio elemento; parar esvazia o
+ * elemento e zera tudo.
  *
  * Não é componente nem hook: é um módulo com estado e assinantes, no formato que
  * o `useSyncExternalStore` do React espera (`assinar` e `obterEstado`). Os
@@ -25,7 +26,7 @@
  *   só vale se o elemento estiver de fato pausado e não tiver terminado.
  */
 
-export type EstadoDoTocador = 'parado' | 'carregando' | 'tocando' | 'erro';
+export type EstadoDoTocador = 'parado' | 'carregando' | 'tocando' | 'pausado' | 'erro';
 
 export interface InstantaneoDoTocador {
   /** Caminho do clipe atual, igual ao `AudioClip.src`. `null` quando nada foi escolhido. */
@@ -111,9 +112,10 @@ function obterElemento(): HTMLAudioElement | null {
     if (ehDoClipeAtual()) publicar({ estado: 'carregando' });
   });
   el.addEventListener('pause', () => {
-    // Pausa vinda de fora (fone desconectado, controle do sistema): sem estado
-    // "pausado" no MVP, o clipe volta a parado. No fim do arquivo quem decide é o `ended`.
-    if (ehDoClipeAtual() && el.paused && !el.ended) publicar({ estado: 'parado', posicao: 0 });
+    // Vale tanto para o botão "Pausar" quanto para a pausa vinda de fora (fone
+    // desconectado, controle do sistema): o clipe fica pausado e a posição
+    // continua onde estava. No fim do arquivo quem decide é o `ended`.
+    if (ehDoClipeAtual() && el.paused && !el.ended) publicar({ estado: 'pausado' });
   });
   el.addEventListener('ended', () => {
     if (ehDoClipeAtual()) publicar({ estado: 'parado', posicao: 0 });
@@ -154,6 +156,29 @@ export function tocar(src: string, opcoes: { taxa?: number } = {}): void {
   });
 }
 
+/**
+ * Pausa o clipe atual e guarda a posição. O evento `pause` do elemento publica
+ * o estado; aqui a publicação é imediata para o botão trocar de cara no mesmo
+ * toque, mesmo que o navegador demore a mandar o evento.
+ */
+export function pausar(): void {
+  if (!elemento || atual.src === null) return;
+  elemento.pause();
+  publicar({ estado: 'pausado' });
+}
+
+/** Continua o clipe atual de onde parou, na velocidade em que estava. */
+export function continuar(): void {
+  const el = elemento;
+  const src = atual.src;
+  if (!el || src === null) return;
+  publicar({ estado: 'tocando' });
+  el.play().catch((erro: unknown) => {
+    if (ehAbortError(erro)) return;
+    if (atual.src === src) publicar({ estado: 'erro' });
+  });
+}
+
 /** Troca a velocidade do clipe atual sem recomeçar. */
 export function mudarTaxa(taxa: number): void {
   if (!elemento || atual.src === null) return;
@@ -162,7 +187,7 @@ export function mudarTaxa(taxa: number): void {
   publicar({ taxa });
 }
 
-/** Para tudo e esvazia o elemento. Usado no segundo toque, na troca de página e na saída da aula. */
+/** Para tudo e esvazia o elemento. Usado na troca de página e na saída da aula. */
 export function parar(): void {
   const el = elemento;
   if (!el || atual.src === null) return;

@@ -237,7 +237,7 @@ export function SeletorDeVariante({
 /**
  * Campo `c`: as 8 cores sólidas de `SOLID`.
  * `padrao` é a cor que o renderer daquele bloco usa quando `c` falta
- * (`#0E9BAE` na maioria; o `cta` usa marinho).
+ * (`#0E7A8B` na maioria; o `cta` usa marinho).
  */
 export function SeletorDeSolido({
   rotulo = 'Cor de destaque',
@@ -330,7 +330,7 @@ export function SeletorDeSolido({
 }
 
 /** Cor que `solid()` devolve quando `c` falta ou não é sólida (cards, rule, free). */
-export const PADRAO_SOLIDO_TEAL = { hex: '#0E9BAE', texto: '#FFFFFF', descricao: 'teal claro' } as const;
+export const PADRAO_SOLIDO_TEAL = { hex: '#0E7A8B', texto: '#FFFFFF', descricao: 'teal de link' } as const;
 
 /** Cor do botão do `cta` quando `c` falta (`SOLID[c] || "#0F2050"` do protótipo). */
 export const PADRAO_SOLIDO_CTA = { hex: '#0F2050', texto: '#FFFFFF', descricao: 'marinho' } as const;

@@ -1,0 +1,54 @@
+{
+  "versao": 1,
+  "status": "pronta",
+  "tipo": "revisao",
+  "foco": "Escolher entre afirmar, negar e perguntar com a mesma ideia, usando \"am\", \"is\" e \"are\".",
+  "conteudoAlvo": [
+    "I am, he is, she is, it is, we are, they are",
+    "I am not, he isn't, she isn't, they aren't",
+    "Am I?, Is he?, Is she?, Is it?, Are you?",
+    "Yes, I am. / No, he isn't. / Yes, they are."
+  ],
+  "expressoesFixas": [],
+  "comoIntegrar": [
+    "Me dê uma situação e peça as três formas: afirmar, negar e perguntar sobre ela.",
+    "Troque o sujeito a cada rodada, misturando \"I\", \"he\", \"she\", \"it\", \"we\" e \"they\"."
+  ],
+  "regrasDaAula": [
+    "Na pergunta o verbo vem antes do sujeito: \"You are late.\" vira \"Are you late?\""
+  ],
+  "tiposDeExercicio": [
+    "identificar",
+    "completar",
+    "transformar",
+    "corrigir"
+  ],
+  "exemplos": [
+    {
+      "tipo": "identificar",
+      "enunciado": "Qual destas nega? \"They are here.\" ou \"They aren't here.\"",
+      "respostaDeReferencia": "They aren't here."
+    },
+    {
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa e depois para a pergunta: \"She is kind.\"",
+      "respostaDeReferencia": "She isn't kind. Is she kind?"
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Corrija o erro: \"Are he at home?\"",
+      "respostaDeReferencia": "Is he at home?"
+    }
+  ],
+  "limites": [
+    "Sem \"do\", \"does\" e \"doesn't\": o verbo ser/estar nunca usa auxiliar.",
+    "Sem \"where\" e \"what\", sem países e sem nacionalidades: ainda não estudei."
+  ],
+  "primeiraQuestao": "Vamos começar pelo \"she\". Diga \"She is ready.\" negando e depois perguntando. Como ficam as duas frases?",
+  "resumoAutorizado": [
+    "Afirmar: \"I am happy.\", \"He is tall.\", \"They are here.\"",
+    "Negar: \"I am not happy.\", \"He isn't tall.\", \"They aren't here.\"",
+    "Perguntar: \"Am I happy?\", \"Is he tall?\", \"Are they here?\""
+  ],
+  "resumoCurto": "As três formas do verbo ser/estar: afirmar, negar e perguntar com \"am\", \"is\" e \"are\"."
+}

@@ -48,9 +48,10 @@ describe('fichas de prática', () => {
     });
   }
 
-  // Contrato 01, seção 10.8: a Aula 05 continua pendente, sem ficha.
-  it('a Aula 05 não tem ficha', () => {
-    expect(existsSync(caminhoDaFicha(5))).toBe(false);
+  // A pendência da Aula 05 (contrato 01, seção 10.8) foi resolvida em 2026-09-19: a aula
+  // ganhou as 9 páginas do e-book, entrou no mapa e agora tem ficha como as outras.
+  it('a Aula 05 tem ficha', () => {
+    expect(existsSync(caminhoDaFicha(5))).toBe(true);
   });
 });
 
@@ -77,8 +78,8 @@ describe('tabelas de áudio', () => {
     });
   }
 
-  it('a Aula 05 não tem clipes', () => {
+  it('a Aula 05 tem clipes', () => {
     const tabela = lerJson(caminhoDaTabela(5)) as Tabela;
-    expect(tabela.clips).toEqual([]);
+    expect(tabela.clips.length).toBeGreaterThan(0);
   });
 });

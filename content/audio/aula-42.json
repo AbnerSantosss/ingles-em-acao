@@ -66,7 +66,7 @@
       "local": "Página 2 · dialogue · b9",
       "alvo": "bloco",
       "ancora": "W: How was your sandwich?",
-      "texto": "How was your sandwich?\nIt was great.\nCan I get you anything else?\nNo, thanks. Could I have the check, please?\nSure. That's eight fifty.\nHere you go. Keep the change.\nThanks.",
+      "texto": "How was your sandwich?\nIt was great.\nCan I get you anything else?\nNo, thanks. Could I have the bill, please?\nSure. That's eight fifty.\nHere you go. Keep the change.\nThanks.",
       "falas": [
         {
           "voz": "M1",
@@ -82,7 +82,7 @@
         },
         {
           "voz": "F1",
-          "texto": "No, thanks. Could I have the check, please?"
+          "texto": "No, thanks. Could I have the bill, please?"
         },
         {
           "voz": "M1",

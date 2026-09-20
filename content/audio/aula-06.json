@@ -5,6 +5,87 @@
   "clips": [
     {
       "id": "lesson_006_audio_001",
+      "pagina": 1,
+      "local": "Página 1 · dialogue · b5",
+      "alvo": "bloco",
+      "ancora": "Ana: Hi! I’m Ana.",
+      "texto": "Hi! I'm Ana.\nHi! I'm Leo.\nWhere are you from?\nI'm from Brazil.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Hi! I'm Ana."
+        },
+        {
+          "voz": "M2",
+          "texto": "Hi! I'm Leo."
+        },
+        {
+          "voz": "F1",
+          "texto": "Where are you from?"
+        },
+        {
+          "voz": "M2",
+          "texto": "I'm from Brazil."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo de abertura: Ana com voz F1 e Leo com voz M2."
+    },
+    {
+      "id": "lesson_006_audio_002",
+      "pagina": 2,
+      "local": "Página 2 · cards · b3",
+      "alvo": "texto",
+      "ancora": "COUNTRY",
+      "texto": "country",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_003",
+      "pagina": 2,
+      "local": "Página 2 · cards · b3",
+      "alvo": "texto",
+      "ancora": "Brazil",
+      "texto": "Brazil",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_004",
+      "pagina": 2,
+      "local": "Página 2 · cards · b3",
+      "alvo": "texto",
+      "ancora": "NATIONALITY",
+      "texto": "nationality",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_005",
       "pagina": 2,
       "local": "Página 2 · cards · b5",
       "alvo": "texto",
@@ -20,7 +101,279 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_006_audio_002",
+      "id": "lesson_006_audio_006",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "Canada",
+      "texto": "Canada",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_007",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "Canadian",
+      "texto": "Canadian",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_008",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "Japan",
+      "texto": "Japan",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_009",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "Japanese",
+      "texto": "Japanese",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_010",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "Italy",
+      "texto": "Italy",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_011",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "Italian",
+      "texto": "Italian",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_012",
+      "pagina": 2,
+      "local": "Página 2 · table · b7",
+      "alvo": "texto",
+      "ancora": "French",
+      "texto": "French",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_013",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "England",
+      "texto": "England",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_014",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "English",
+      "texto": "English",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_015",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "Belgium",
+      "texto": "Belgium",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_016",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "Belgian",
+      "texto": "Belgian",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_017",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "United Kingdom",
+      "texto": "United Kingdom",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_018",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "British",
+      "texto": "British",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_019",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "Germany",
+      "texto": "Germany",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_020",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "German",
+      "texto": "German",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_021",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "Portugal",
+      "texto": "Portugal",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_022",
+      "pagina": 3,
+      "local": "Página 3 · table · b4",
+      "alvo": "texto",
+      "ancora": "Portuguese",
+      "texto": "Portuguese",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_006_audio_023",
       "pagina": 3,
       "local": "Página 3 · cards · b7",
       "alvo": "texto",
@@ -36,12 +389,12 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_006_audio_003",
-      "pagina": 2,
-      "local": "Página 2 · note · b3 · DUAS MANEIRAS DE DIZER O MESMO",
+      "id": "lesson_006_audio_024",
+      "pagina": 3,
+      "local": "Página 3 · cards · b7",
       "alvo": "texto",
-      "ancora": "I’m from Brazil.  =  I’m Brazilian.",
-      "texto": "I'm from Brazil. I'm Brazilian.",
+      "ancora": "She’s Japanese.",
+      "texto": "She's Japanese.",
       "falas": null,
       "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
@@ -49,10 +402,155 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula: origem e nacionalidade lado a lado."
+      "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_006_audio_004",
+      "id": "lesson_006_audio_025",
+      "pagina": 4,
+      "local": "Página 4 · table · b4",
+      "alvo": "bloco",
+      "ancora": "China",
+      "texto": "China\nChinese\nAustralia\nAustralian\nAustria\nAustrian\nItaly\nItalian\nSpain\nSpanish\nFrance\nFrench\nUnited States\nAmerican\nRussia\nRussian",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "China"
+        },
+        {
+          "voz": "F1",
+          "texto": "Chinese"
+        },
+        {
+          "voz": "F1",
+          "texto": "Australia"
+        },
+        {
+          "voz": "F1",
+          "texto": "Australian"
+        },
+        {
+          "voz": "F1",
+          "texto": "Austria"
+        },
+        {
+          "voz": "F1",
+          "texto": "Austrian"
+        },
+        {
+          "voz": "F1",
+          "texto": "Italy"
+        },
+        {
+          "voz": "F1",
+          "texto": "Italian"
+        },
+        {
+          "voz": "F1",
+          "texto": "Spain"
+        },
+        {
+          "voz": "F1",
+          "texto": "Spanish"
+        },
+        {
+          "voz": "F1",
+          "texto": "France"
+        },
+        {
+          "voz": "F1",
+          "texto": "French"
+        },
+        {
+          "voz": "F1",
+          "texto": "United States"
+        },
+        {
+          "voz": "F1",
+          "texto": "American"
+        },
+        {
+          "voz": "F1",
+          "texto": "Russia"
+        },
+        {
+          "voz": "F1",
+          "texto": "Russian"
+        }
+      ],
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Ouvir todos: a lista inteira, na ordem da tela. Os itens ficam só neste player por causa do teto."
+    },
+    {
+      "id": "lesson_006_audio_026",
+      "pagina": 4,
+      "local": "Página 4 · cards · b9",
+      "alvo": "texto",
+      "ancora": "I’m from Italy.",
+      "texto": "I'm from Italy.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_027",
+      "pagina": 4,
+      "local": "Página 4 · cards · b9",
+      "alvo": "texto",
+      "ancora": "I’m Italian.",
+      "texto": "I'm Italian.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_028",
+      "pagina": 4,
+      "local": "Página 4 · cards · b9",
+      "alvo": "texto",
+      "ancora": "He’s from the United States.",
+      "texto": "He's from the United States.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_029",
+      "pagina": 4,
+      "local": "Página 4 · cards · b9",
+      "alvo": "texto",
+      "ancora": "He’s American.",
+      "texto": "He's American.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_030",
       "pagina": 5,
       "local": "Página 5 · table · b4",
       "alvo": "texto",
@@ -68,12 +566,28 @@
       "motivo": "Primeira apresentação no curso (mapa: expressoesFixas)."
     },
     {
-      "id": "lesson_006_audio_005",
-      "pagina": 2,
-      "local": "Página 2 · rule · b5 · NACIONALIDADE (PESSOA)",
+      "id": "lesson_006_audio_031",
+      "pagina": 5,
+      "local": "Página 5 · table · b4",
       "alvo": "texto",
-      "ancora": "He’s Italian.",
-      "texto": "He's Italian.",
+      "ancora": "What’s your nationality?",
+      "texto": "What's your nationality?",
+      "falas": null,
+      "categoria": "FIXED_CHUNK",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: expressoesFixas)."
+    },
+    {
+      "id": "lesson_006_audio_032",
+      "pagina": 5,
+      "local": "Página 5 · table · b4",
+      "alvo": "texto",
+      "ancora": "I’m from Canada.",
+      "texto": "I'm from Canada.",
       "falas": null,
       "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
@@ -84,52 +598,293 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_006_audio_006",
-      "pagina": 3,
-      "local": "Página 3 · rule · b3 · 1 · TERMINAM EM -IAN",
-      "alvo": "texto",
-      "ancora": "Egypt → Egyptian",
-      "texto": "Egypt. Egyptian",
-      "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
+      "id": "lesson_006_audio_033",
+      "pagina": 5,
+      "local": "Página 5 · dialogue · b9",
+      "alvo": "bloco",
+      "ancora": "Hi! Where are you from?",
+      "texto": "Hi! Where are you from?\nI'm from Canada.\nWhat's your nationality?\nI'm Canadian.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Hi! Where are you from?"
+        },
+        {
+          "voz": "M1",
+          "texto": "I'm from Canada."
+        },
+        {
+          "voz": "F1",
+          "texto": "What's your nationality?"
+        },
+        {
+          "voz": "M1",
+          "texto": "I'm Canadian."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Diálogo da aula, uma voz por personagem."
     },
     {
-      "id": "lesson_006_audio_007",
-      "pagina": 3,
-      "local": "Página 3 · rule · b4 · 2 · TERMINAM EM -ISH",
+      "id": "lesson_006_audio_034",
+      "pagina": 6,
+      "local": "Página 6 · table · b4",
       "alvo": "texto",
-      "ancora": "Ireland → Irish",
-      "texto": "Ireland. Irish",
+      "ancora": "Where is he from?",
+      "texto": "Where is he from?",
       "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
+      "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_006_audio_008",
-      "pagina": 3,
-      "local": "Página 3 · rule · b5 · 3 · TERMINAM EM -ESE",
+      "id": "lesson_006_audio_035",
+      "pagina": 6,
+      "local": "Página 6 · table · b4",
       "alvo": "texto",
-      "ancora": "Portugal → Portuguese",
-      "texto": "Portugal. Portuguese",
+      "ancora": "He’s from the U.K. He’s British.",
+      "texto": "He's from the U.K. He's British.",
       "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
+      "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_036",
+      "pagina": 6,
+      "local": "Página 6 · table · b4",
+      "alvo": "texto",
+      "ancora": "Where is she from?",
+      "texto": "Where is she from?",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_037",
+      "pagina": 6,
+      "local": "Página 6 · table · b4",
+      "alvo": "texto",
+      "ancora": "She’s from Japan. She’s Japanese.",
+      "texto": "She's from Japan. She's Japanese.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_038",
+      "pagina": 6,
+      "local": "Página 6 · table · b4",
+      "alvo": "texto",
+      "ancora": "Where are they from?",
+      "texto": "Where are they from?",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_039",
+      "pagina": 6,
+      "local": "Página 6 · table · b4",
+      "alvo": "texto",
+      "ancora": "They’re from China. They’re Chinese.",
+      "texto": "They're from China. They're Chinese.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_040",
+      "pagina": 6,
+      "local": "Página 6 · table · b7",
+      "alvo": "texto",
+      "ancora": "Where is it from?",
+      "texto": "Where is it from?",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_041",
+      "pagina": 6,
+      "local": "Página 6 · table · b7",
+      "alvo": "texto",
+      "ancora": "It’s from Japan.",
+      "texto": "It's from Japan.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_006_audio_042",
+      "pagina": 6,
+      "local": "Página 6 · dialogue · b13",
+      "alvo": "bloco",
+      "ancora": "Hi! Who is he?",
+      "texto": "Hi! Who is he?\nHe's Ken.\nWhere is he from?\nHe's from Japan.\nHe's Japanese!",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Hi! Who is he?"
+        },
+        {
+          "voz": "M1",
+          "texto": "He's Ken."
+        },
+        {
+          "voz": "F1",
+          "texto": "Where is he from?"
+        },
+        {
+          "voz": "M1",
+          "texto": "He's from Japan."
+        },
+        {
+          "voz": "M1",
+          "texto": "He's Japanese!"
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    },
+    {
+      "id": "lesson_006_audio_043",
+      "pagina": 7,
+      "local": "Página 7 · dialogue · b6",
+      "alvo": "bloco",
+      "ancora": "Sofia: Hi! I’m Sofia. What’s your name?",
+      "texto": "Hi! I'm Sofia. What's your name?\nI'm Daniel. Nice to meet you.\nNice to meet you, too. Where are you from?\nI'm from Canada. I'm Canadian. How about you?\nI'm from Brazil. I'm Brazilian.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Hi! I'm Sofia. What's your name?"
+        },
+        {
+          "voz": "M1",
+          "texto": "I'm Daniel. Nice to meet you."
+        },
+        {
+          "voz": "F1",
+          "texto": "Nice to meet you, too. Where are you from?"
+        },
+        {
+          "voz": "M1",
+          "texto": "I'm from Canada. I'm Canadian. How about you?"
+        },
+        {
+          "voz": "F1",
+          "texto": "I'm from Brazil. I'm Brazilian."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da página 7: Sofia com voz F1 e Daniel com voz M1."
+    },
+    {
+      "id": "lesson_006_audio_044",
+      "pagina": 7,
+      "local": "Página 7 · dialogue · b9",
+      "alvo": "bloco",
+      "ancora": "Who is he?",
+      "texto": "Who is he?\nHe's Ken.\nHe's from Japan. He's Japanese.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Who is he?"
+        },
+        {
+          "voz": "F2",
+          "texto": "He's Ken."
+        },
+        {
+          "voz": "F2",
+          "texto": "He's from Japan. He's Japanese."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da página 7 entre as duas meninas: vozes F1 e F2."
+    },
+    {
+      "id": "lesson_006_audio_045",
+      "pagina": 7,
+      "local": "Página 7 · dialogue · b11",
+      "alvo": "bloco",
+      "ancora": "Where are they from?",
+      "texto": "Where are they from?\nThey're from China. They're Chinese.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Where are they from?"
+        },
+        {
+          "voz": "F2",
+          "texto": "They're from China. They're Chinese."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da página 7 entre as duas meninas: vozes F1 e F2."
     }
   ]
 }

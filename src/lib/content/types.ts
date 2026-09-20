@@ -1,5 +1,5 @@
 /**
- * Camada de tipos do conteúdo do curso "Inglês em Ação".
+ * Camada de tipos do conteúdo do curso WSA English.
  *
  * Extraída de `content/course-data.mjs` (42 aulas, 309 páginas, 1538 blocos) e do
  * renderer do protótipo (`prototype/mobile.dc.html`, método `resolve`, a partir da

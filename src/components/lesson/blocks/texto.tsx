@@ -56,7 +56,9 @@ export function BlocoTitle({ bloco }: { bloco: TitleBlock }) {
       <h1 className="m-0 mb-1.5 fs-titulo font-black leading-[1.05] text-[#0F2050] [text-wrap:pretty] lg:leading-[1.03]">
         {bloco.en}
       </h1>
-      <p className="m-0 text-[17px] font-extrabold text-[#0E9BAE] [text-wrap:pretty] lg:text-[19px]">
+      {/* Teal de link (o `--link` do globals.css). O #0E9BAE do protótipo dava
+          3,32 nesta linha de 17px, que é texto pequeno no celular. */}
+      <p className="m-0 text-[17px] font-extrabold text-[#0E7A8B] [text-wrap:pretty] lg:text-[19px]">
         {bloco.pt}
       </p>
     </div>

@@ -165,7 +165,11 @@ function CascaDoCartao({ item, children }: { item: CtaItem; children: ReactNode 
         <h3 className="mb-1 text-[17px] font-black" style={{ color: escuro ? '#FFFFFF' : '#0F2050' }}>
           {item.title}
         </h3>
-        <p className="mb-2 text-[14px]" style={{ color: escuro ? '#E3E8F5' : '#6B7280' }}>
+        {/* #E3E8F5 era o cinza-azulado do corpo no cartão escuro. Com o teal
+            novo por baixo ele ficava em 4,43, a um passo dos 4,5 de texto
+            pequeno; clareado um degrau dá 4,67 no teal, 13,69 no navy e 7,73
+            no roxo. */}
+        <p className="mb-2 text-[14px]" style={{ color: escuro ? '#E9EEF9' : '#6B7280' }}>
           {item.body}
         </p>
         <p

@@ -37,7 +37,7 @@ type Visao = 'lista' | 'modulos';
 const ESTILO: Record<EstadoDaAula, { tag: string; tagCor: string; borda: string; numero: string }> = {
   concluida: {
     tag: 'CONCLUÍDA',
-    tagCor: 'text-teal',
+    tagCor: 'text-teal-texto',
     borda: 'border-transparent',
     numero: 'linear-gradient(160deg,#12A594,#0C7A6D)',
   },

@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # ==============================================================================
-# "Inglês em Ação" — imagem de produção
+# WSA English: imagem de produção
 # Next.js 16 (output: standalone) + Prisma 7 + PostgreSQL
 #
 # Build multi-stage:
@@ -60,6 +60,24 @@ COPY . .
 ARG DATABASE_URL="postgresql://build:build@127.0.0.1:5432/build?schema=public"
 ENV DATABASE_URL=${DATABASE_URL}
 
+# Estas duas o `next build` congela dentro das telas pré-renderizadas, então têm
+# de valer já aqui, e não só em runtime:
+#
+# - APP_URL vira o `metadataBase` e as URLs absolutas de /termos, /privacidade e
+#   da 404. Sem ela, essas telas saem do build apontando para localhost:3000.
+# - MAIL_FROM é exigida pelo `env.ts`; qualquer rota pré-renderizada que alcance
+#   a camada de e-mail derruba o build sem ela.
+#
+# O docker-compose.prod.yml repassa as duas em `build.args`, com os mesmos
+# valores do ambiente da stack. Vazias, o app cai nos padrões de desenvolvimento.
+# Só variável pública entra aqui: build arg fica gravada no histórico da imagem,
+# então nada de SMTP_PASSWORD ou outro segredo.
+ARG APP_URL=""
+ENV APP_URL=${APP_URL}
+
+ARG MAIL_FROM=""
+ENV MAIL_FROM=${MAIL_FROM}
+
 RUN npx prisma generate
 RUN npm run build
 
@@ -102,7 +120,7 @@ RUN rm -rf \
 # ------------------------------------------------------------------------------
 FROM ${NODE_IMAGE} AS runner
 
-LABEL org.opencontainers.image.title="Inglês em Ação" \
+LABEL org.opencontainers.image.title="WSA English" \
       org.opencontainers.image.description="App web de ensino de inglês (42 aulas)" \
       org.opencontainers.image.licenses="UNLICENSED"
 

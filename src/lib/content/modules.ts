@@ -17,8 +17,8 @@ export const MODULES: CourseModule[] = [
   { id: 3, title: 'Referência e lugar', from: 13, to: 18 },
   { id: 4, title: 'Presente simples', from: 19, to: 24 },
   { id: 5, title: 'Ações e rotina', from: 25, to: 30 },
-  { id: 6, title: 'Passado', from: 31, to: 36 },
-  { id: 7, title: 'Comparar e futuro', from: 37, to: 42 },
+  { id: 6, title: 'Dia a dia e preferências', from: 31, to: 36 },
+  { id: 7, title: 'Quantidade e passado', from: 37, to: 42 },
 ]
 
 /** Quantos módulos o curso tem. */

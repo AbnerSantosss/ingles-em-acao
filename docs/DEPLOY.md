@@ -1,4 +1,4 @@
-# Deploy do "Inglês em Ação" na VPS (GitHub + Portainer)
+# Deploy do WSA English na VPS (GitHub + Portainer)
 
 Guia passo a passo, escrito para ser seguido **sem saber Docker de cor**. No fim você terá:
 
@@ -42,7 +42,7 @@ No seu computador, dentro da pasta `app-web`:
 ```bash
 git init
 git add .
-git commit -m "Primeira versão do Inglês em Ação"
+git commit -m "Primeira versão do WSA English"
 git branch -M main
 git remote add origin https://github.com/SEU-USUARIO/ingles-em-acao.git
 git push -u origin main
@@ -101,7 +101,7 @@ para cada linha abaixo (ou use **Advanced mode** e cole tudo no formato `NOME=va
 
 | Variável | Exemplo | Para que serve |
 |---|---|---|
-| `APP_URL` | `https://app.seudominio.com.br` | URL pública, **com https e sem barra no final**. É o endereço que vai dentro dos links dos e-mails de verificação e de redefinição de senha. |
+| `APP_URL` | `https://app.seudominio.com.br` | URL pública, **com https e sem barra no final**. É o endereço que vai dentro dos links dos e-mails de verificação e de redefinição de senha. **Também entra no build da imagem**: se mudar, reconstrua (seção 7). |
 | `TZ` | `America/Sao_Paulo` | Fuso horário. Afeta a contagem de dias de estudo (streak). |
 | `APP_BIND` | `127.0.0.1` | Em qual endereço do servidor o app escuta. `127.0.0.1` = só o próprio servidor enxerga; quem publica para a internet é o proxy reverso (Passo 6). |
 | `APP_PORT` | `3000` | Porta no servidor que o proxy reverso vai chamar. Se a 3000 já estiver ocupada, use `3001`. |
@@ -116,7 +116,7 @@ para cada linha abaixo (ou use **Advanced mode** e cole tudo no formato `NOME=va
 | `SMTP_SECURE` | `true` | `true` para a porta 465. |
 | `SMTP_USER` | `voce@gmail.com` | A conta que envia. |
 | `SMTP_PASSWORD` | a senha de app, 16 letras | **A senha de app**, não a senha do Gmail. Cadastre só aqui, no Portainer. Pode colar com os espaços que o Google mostra: no Gmail, o app os tira. |
-| `MAIL_FROM` | `Inglês em Ação <voce@gmail.com>` | Remetente que o aluno vê. Os alertas do painel saem do mesmo endereço com o nome `Inglês em Ação · Painel`. |
+| `MAIL_FROM` | `WSA English <voce@gmail.com>` | Remetente que o aluno vê. Os alertas do painel saem do mesmo endereço com o nome `WSA English · Painel`. **Também entra no build da imagem**: se mudar, reconstrua (seção 7). |
 
 > ⚠️ No Gmail, o endereço de `MAIL_FROM` tem de ser o mesmo de `SMTP_USER`. Com outro endereço,
 > o Google troca o remetente ou manda para o spam. A conta gratuita envia até cerca de 500
@@ -124,7 +124,7 @@ para cada linha abaixo (ou use **Advanced mode** e cole tudo no formato `NOME=va
 
 > ⚠️ A foto redonda ao lado do remetente, no Gmail, é a foto de perfil da conta Google que envia.
 > Para mostrar a marca, entre nessa conta em `myaccount.google.com` → **Informações pessoais** e
-> troque a foto pelo logo e o nome para `Inglês em Ação`. O nome da conta também é o que aparece
+> troque a foto pelo logo e o nome para `WSA English`. O nome da conta também é o que aparece
 > para quem já tem o endereço salvo nos contatos.
 
 ### Opcionais
@@ -337,7 +337,8 @@ sudo ufw allow 80/tcp && sudo ufw allow 443/tcp
 ```
 
 Confirme que `APP_URL` na stack é exatamente `https://app.seudominio.com.br` (sem barra no
-fim). Mudou? **Update the stack**, para o container pegar o valor novo.
+fim). Mudou? **Reconstrua a imagem** (seção 7), não basta **Update the stack**: o `APP_URL`
+entra no `next build` e fica gravado nas páginas geradas.
 
 ### Opção B — proxy em container (Nginx Proxy Manager, Traefik, Caddy)
 
@@ -382,9 +383,13 @@ git push
 Na VPS, escolha um caminho:
 
 **Manual (recomendado no começo):** Portainer → **Stacks → ingles-em-acao → Pull and redeploy**.
-Marque a opção de **reconstruir a imagem** (*Re-pull image and redeploy*). O Portainer busca o
-commit mais recente, reconstrói e reinicia os containers. Migrations novas são aplicadas
-sozinhas no start.
+O Portainer busca o commit mais recente, reconstrói e reinicia os containers. Migrations novas
+são aplicadas sozinhas no start.
+
+> ⚠️ **Não marque "Re-pull image and redeploy".** A imagem desta stack é construída na própria
+> VPS a partir deste repositório (`build: context: .`), não é baixada de um registry. Com a
+> opção ligada, o Portainer tenta puxar uma imagem que não existe em lugar nenhum e o deploy
+> falha em silêncio: a stack fica "rodando" com o código antigo e nada no log diz o motivo.
 
 **Automático (GitOps):** na edição da stack, ligue **GitOps updates** e escolha *Polling* (a
 cada 5 minutos, por exemplo) ou *Webhook*. No modo webhook, copie a URL que o Portainer gera e

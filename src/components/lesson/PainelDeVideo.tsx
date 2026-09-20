@@ -145,7 +145,7 @@ function ChamadaDeUpgrade({ linkDeCompra }: { linkDeCompra?: string | null }) {
       className="rounded-card border border-border bg-mint-2 p-5 shadow-card"
       aria-label="Videoaula não incluída no seu plano"
     >
-      <p className="kicker text-teal">Videoaula</p>
+      <p className="kicker text-teal-texto">Videoaula</p>
       <p className="mt-2 text-[15px] font-bold text-navy">Esta aula tem videoaula gravada.</p>
       <p className="mt-1 text-[14px] leading-relaxed text-muted">
         {`A videoaula faz parte do ${NOME_DO_PLANO.PREMIUM}. No seu plano, a leitura, os exercícios e os áudios desta aula continuam liberados do começo ao fim.`}

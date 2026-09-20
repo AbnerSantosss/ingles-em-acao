@@ -75,7 +75,7 @@ export default function LayoutDeAcesso({
             <p className="text-[15px] leading-snug text-white/85 print:text-muted">
               42 aulas de inglês, no seu ritmo.
               <br />
-              <span className="manuscrito text-[19px] text-yellow print:text-teal">
+              <span className="manuscrito text-[19px] text-yellow print:text-teal-texto">
                 Small steps, big results.
               </span>
             </p>

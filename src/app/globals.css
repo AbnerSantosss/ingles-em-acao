@@ -17,7 +17,13 @@
   --surface: #ffffff;
   --text: #1f2430;
   --muted: #5b6b7f;
-  --muted-2: #8a96a8;
+  /* Terciário. Era #8a96a8, que dava 3,00 sobre branco e 2,84 sobre --bg: os
+     dois abaixo dos 4,5 que o WCAG AA pede para texto pequeno, e todo uso deste
+     token é texto (rótulo, ajuda de campo, placeholder). Escurecido no mesmo
+     matiz até 5,06 sobre branco, 4,80 sobre --bg e 4,51 sobre o cinza dos
+     chips do painel. Ele ficou perto do --muted: a hierarquia entre os dois
+     passa a vir do tamanho e do peso da fonte, não da cor. */
+  --muted-2: #676f7d;
   --muted-3: #3c4a5c;
   --border: #dce6f2;
   --border-2: #c9d6ec;
@@ -29,11 +35,34 @@
   /* marca */
   --navy: #0a1f4e;
   --navy-light: #123a86;
+  /* Lavagens do navy. Nasceram soltas dentro do botão de ouvir (#EAF2FE no
+     estado pausado, #DCE9FC no hover) e viram token aqui, para o fundo de
+     estado e o realce de item terem um nome só no app inteiro. Texto navy em
+     cima delas dá 14,13 e 12,97: as duas aceitam texto pequeno. */
+  --navy-suave: #eaf2fe;
+  --navy-suave-2: #dce9fc;
   --blue: #1b6be3;
-  --link: #0e9bae;
+  /* Cor de link. Era #0e9bae, que dava 3,32 sobre branco e 3,15 sobre --bg,
+     abaixo dos 4,5 que o WCAG AA pede para texto pequeno, e link é texto
+     corrido. Escurecido no mesmo matiz (188°) até 5,03 sobre branco, 4,77 sobre
+     --bg e 4,68 sobre o fundo da aula. O mesmo tom serve de fundo chapado sob
+     texto branco (a razão é a mesma nos dois sentidos): é ele que o fallback
+     de `solid()` devolve em `src/lib/ui/palette.ts`. */
+  --link: #0e7a8b;
   --link-hover: #0f2050;
   --yellow: #f6c945;
+  /* Teal da marca. Fica como está: em preenchimento, traço e anel de progresso
+     ele cumpre os 3,0 que o WCAG pede para elemento gráfico (3,07 sobre
+     branco). */
   --teal: #12a594;
+  /* O mesmo teal escurecido para TEXTO pequeno sobre fundo claro, onde os 3,07
+     do teal da marca reprovam. Mesmo matiz (173°), 5,43 sobre branco, 5,15
+     sobre --bg e 4,53 sobre o mais escuro dos mints.
+     Este tom é também o fundo chapado do chip, do selo e do cartão teal: a
+     razão de contraste é a mesma nos dois sentidos, então 5,43 vale tanto para
+     ele escrito sobre branco quanto para branco escrito sobre ele. O valor
+     correspondente em `src/lib/ui/palette.ts` (V.teal e SOLID.teal) é este. */
+  --teal-texto: #0d776b;
   --mint-1: #dff3ec;
   --mint-2: #e4f3ec;
   --mint-3: #d8f0e6;
@@ -63,12 +92,15 @@
 
   --color-navy: var(--navy);
   --color-navy-light: var(--navy-light);
+  --color-navy-suave: var(--navy-suave);
+  --color-navy-suave-2: var(--navy-suave-2);
   --color-blue: var(--blue);
   --color-link: var(--link);
   --color-link-hover: var(--link-hover);
   --color-yellow: var(--yellow);
   --color-yellow-hover: var(--yellow-hover);
   --color-teal: var(--teal);
+  --color-teal-texto: var(--teal-texto);
   --color-mint-1: var(--mint-1);
   --color-mint-2: var(--mint-2);
   --color-mint-3: var(--mint-3);

@@ -114,8 +114,10 @@ describe('sem navegador', () => {
     expect(AudioFalso.criados).toHaveLength(0);
   });
 
-  it('mudarTaxa e parar sem clipe não fazem nada', () => {
+  it('mudarTaxa, pausar, continuar e parar sem clipe não fazem nada', () => {
     t.mudarTaxa(t.TAXA_DEVAGAR);
+    t.pausar();
+    t.continuar();
     t.parar();
     expect(AudioFalso.criados).toHaveLength(0);
     expect(t.obterEstado()).toEqual(t.ESTADO_NO_SERVIDOR);
@@ -185,10 +187,35 @@ describe('tocar', () => {
   });
 });
 
-describe('pausa do sistema, fim e parada', () => {
-  it('não existe pausar nem continuar: o MVP tem só tocar e parar (PENDENCIAS.md, item 9)', () => {
-    expect('pausar' in t).toBe(false);
-    expect('continuar' in t).toBe(false);
+describe('pausar, continuar, fim e parada', () => {
+  it('pausar guarda a posição e continuar volta dali, sem recarregar o arquivo', async () => {
+    t.tocar('/a.mp3');
+    const el = elementoUnico();
+    el.disparar('playing');
+    el.currentTime = 4;
+    el.disparar('timeupdate');
+
+    t.pausar();
+    expect(el.paused).toBe(true);
+    expect(t.obterEstado()).toMatchObject({ src: '/a.mp3', estado: 'pausado', posicao: 4 });
+
+    const antes = el.chamadas.length;
+    t.continuar();
+    await esperar();
+    expect(t.obterEstado()).toMatchObject({ src: '/a.mp3', estado: 'tocando', posicao: 4 });
+    // Só `play`: nenhum `src=` novo, que faria o clipe voltar ao começo.
+    expect(el.chamadas.slice(antes)).toEqual(['play']);
+  });
+
+  it('continuar recusado pelo navegador marca erro no clipe', async () => {
+    t.tocar('/a.mp3');
+    const el = elementoUnico();
+    el.disparar('playing');
+    t.pausar();
+    AudioFalso.proximoPlay = 'recusa';
+    t.continuar();
+    await esperar();
+    expect(t.obterEstado()).toMatchObject({ src: '/a.mp3', estado: 'erro' });
   });
 
   it('pause atrasado, com o elemento já tocando, é ignorado', async () => {
@@ -201,7 +228,7 @@ describe('pausa do sistema, fim e parada', () => {
     expect(t.obterEstado().estado).toBe('tocando');
   });
 
-  it('pause de verdade (pelo sistema, por exemplo) volta o clipe a parado', () => {
+  it('pause vindo de fora (sistema, fone) deixa o clipe pausado na posição', () => {
     t.tocar('/a.mp3');
     const el = elementoUnico();
     el.disparar('playing');
@@ -209,7 +236,18 @@ describe('pausa do sistema, fim e parada', () => {
     el.disparar('timeupdate');
     el.paused = true;
     el.disparar('pause');
-    expect(t.obterEstado()).toMatchObject({ src: '/a.mp3', estado: 'parado', posicao: 0 });
+    expect(t.obterEstado()).toMatchObject({ src: '/a.mp3', estado: 'pausado', posicao: 2 });
+  });
+
+  it('parar depois de pausar zera tudo', () => {
+    t.tocar('/a.mp3');
+    const el = elementoUnico();
+    el.disparar('playing');
+    el.currentTime = 5;
+    el.disparar('timeupdate');
+    t.pausar();
+    t.parar();
+    expect(t.obterEstado()).toEqual(t.ESTADO_NO_SERVIDOR);
   });
 
   it('fim do arquivo: o pause que vem antes do ended não decide nada', () => {

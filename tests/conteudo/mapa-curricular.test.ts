@@ -5,7 +5,6 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 
 import {
-  AULA_PENDENTE,
   carregarAulas,
   caminhoDoMapa,
   lerJson,
@@ -45,13 +44,15 @@ describe('mapa curricular real', () => {
     expect(mapa.aulas.map((e) => e.numero)).toEqual(Array.from({ length: 42 }, (_, i) => i + 1));
   });
 
-  it('deixa a Aula 05 pendente, vazia e com nota', () => {
-    const cinco = mapa.aulas[AULA_PENDENTE - 1];
-    expect(cinco.status).toBe('pendente');
+  // A pendência da Aula 05 foi resolvida em 2026-09-19: a aula tem as 9 páginas do e-book.
+  it('traz a Aula 05 pronta, como revisão que só reutiliza', () => {
+    const cinco = mapa.aulas[4];
+    expect(cinco.tipo).toBe('revisao');
+    expect(cinco.status).toBe('pronta');
     expect(Object.values(cinco.apresenta).flat()).toEqual([]);
-    expect(cinco.reutiliza).toEqual([]);
-    expect(cinco.textosEmIngles).toEqual([]);
-    expect(cinco.nota?.trim()).toBeTruthy();
+    expect(cinco.reutiliza.length).toBeGreaterThan(0);
+    expect(cinco.textosEmIngles.length).toBeGreaterThan(0);
+    expect(cinco.nota).toBeUndefined();
   });
 
   it('traz a Aula 01 exatamente como no exemplo do pacote 11', () => {

@@ -49,7 +49,7 @@ Não implemente o motor de aulas agora — mas o **schema e os tipos já nascem 
 --surface      #FFFFFF   cards
 --text         #1F2430   texto principal
 --muted        #5B6B7F   texto secundário
---muted-2      #8A96A8   texto terciário
+--muted-2      #676F7D   texto terciário (era #8A96A8: 3,00 sobre branco, reprovava AA)
 --muted-3      #3C4A5C
 --border       #DCE6F2   bordas
 --border-2     #C9D6EC
@@ -61,10 +61,13 @@ Não implemente o motor de aulas agora — mas o **schema e os tipos já nascem 
 --navy         #0A1F4E   marca principal / cards escuros
 --navy-light   #123A86   gradiente do logo
 --blue         #1B6BE3   ação/links fortes
---link         #0E9BAE   links
+--navy-suave   #EAF2FE   lavagem de navy: fundo de estado (botão pausado, item marcado)
+--navy-suave-2 #DCE9FC   a mesma lavagem um degrau abaixo: hover do estado
+--link         #0E7A8B   links (era #0E9BAE: 3,32 sobre branco, reprovava AA)
 --link-hover   #0F2050
 --yellow       #F6C945   CTA de destaque (texto sobre amarelo é SEMPRE navy)
---teal         #12A594   sucesso/progresso
+--teal         #12A594   sucesso/progresso: SÓ preenchimento, traço e anel (limite 3,0)
+--teal-texto   #0D776B   o mesmo teal para TEXTO pequeno e para fundo chapado sob texto branco
 --mint-1       #DFF3EC
 --mint-2       #E4F3EC
 --mint-3       #D8F0E6
@@ -79,7 +82,7 @@ Não implemente o motor de aulas agora — mas o **schema e os tipos já nascem 
 | lilac | #F1EDFD | #3A1A80 | #E2DAFA | #5B21B6 |
 | cream | #FEF7E0 | #6B520A | #F8E7B4 | #B67F0C |
 | navy | #0A1F4E | #FFFFFF | #0A1F4E | #F6C945 |
-| teal | #12A594 | #FFFFFF | #12A594 | #FFFFFF |
+| teal | #0D776B | #FFFFFF | #0D776B | #FFFFFF |
 | purple | #5B21B6 | #FFFFFF | #5B21B6 | #F6C945 |
 | yellow | #F6C945 | #0A1F4E | #F6C945 | #0A1F4E |
 | blue | #EAF2FE | #123A86 | #D6E5FB | #1B6BE3 |
@@ -88,7 +91,16 @@ Não implemente o motor de aulas agora — mas o **schema e os tipos já nascem 
 | plain | transparent | #1F2937 | transparent | #5B6B7F |
 
 ### Cores sólidas (constante `SOLID`) — usadas pelos chips
-`navy #0A1F4E · teal #12A594 · purple #5B21B6 · yellow #F6C945 · blue #1B6BE3 · white #FFFFFF · orange #E8820C · red #E03B4C`
+`navy #0A1F4E · teal #0D776B · purple #5B21B6 · yellow #F6C945 · blue #1B6BE3 · white #FFFFFF · orange #E8820C · red #E03B4C`
+
+Quando o bloco não traz `c`, `solid()` devolve **#0E7A8B** (o mesmo valor de `--link`).
+
+> ⚠️ **Contraste.** Estas cores fazem dois papéis: fundo chapado com texto branco por cima
+> (chip, etiqueta, bolinha numerada, selo, cabeçalho de tabela) e cor do próprio texto em
+> rótulo pequeno sobre fundo claro (`kicker` do `rule` e do `free`). Os dois papéis pedem 4,5
+> de contraste. Por isso o teal aqui é o **#0D776B** escurecido, e não o `--teal` #12A594 da
+> marca, que fica reservado a preenchimento, traço e anel de progresso (limite 3,0).
+> `src/lib/ui/palette.ts` é a cópia executável desta seção: mexeu aqui, mexa lá.
 
 ### Forma
 - Raios: pills `999px`; cards grandes `26px`; cards médios `20–22px`; campos `14–16px`

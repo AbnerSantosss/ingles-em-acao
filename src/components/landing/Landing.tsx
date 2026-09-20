@@ -430,7 +430,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
           <div className="flex flex-col items-start gap-6 rounded-hero border border-border bg-surface p-6 shadow-hero sm:flex-row sm:items-center sm:gap-10 sm:p-8">
             <RetratoDoProfessor rotulo={copy.professor.retratoAlt} className="h-auto w-44 shrink-0 sm:w-56" />
             <div className="flex flex-col gap-3">
-              <span className="text-[12px] font-extrabold tracking-[0.08em] text-teal uppercase">{copy.professor.rotulo}</span>
+              <span className="text-[12px] font-extrabold tracking-[0.08em] text-teal-texto uppercase">{copy.professor.rotulo}</span>
               <h2 id="professor-titulo" className="text-[28px] font-black text-navy sm:text-[34px]">
                 {copy.professor.nome}
               </h2>

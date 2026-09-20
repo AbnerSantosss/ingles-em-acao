@@ -8,14 +8,15 @@
  *      enviadas depois pelo backoffice (decisão do produto); até lá o
  *      placeholder mostra a cena descrita com o selo "EM BREVE" — não é defeito.
  *
- * Por que o caminho normal é o placeholder: existem 251 ids de ilustração no
- * `course-data.mjs` e só 14 arquivos em `public/lessons/art/`, nomeados pelo
- * título da aula ("Subject Pronouns.png"), não pelo id do bloco ("a1p1").
- * Nenhum id casa com um arquivo. Por isso o caminho legado só é tentado para
- * ids listados em `ARTE_LEGADA`: apontar `<img>` para um arquivo inexistente
- * renderia ícone de imagem quebrada e 404 no console em ~250 blocos.
- * Quando uma arte for exportada com o nome do id, basta acrescentá-la ao
- * conjunto — ou, melhor, deixar o admin preencher `src`.
+ * Por que o caminho normal é o placeholder: existem 310 ids de ilustração no
+ * `course-data.mjs` (contagem de 2026-09-19) e 15 arquivos em
+ * `public/lessons/art/`, quase todos nomeados pelo título da aula
+ * ("Subject Pronouns.png"), não pelo id do bloco ("a1p1"). Só um id casa com
+ * um arquivo, e é o único registrado em `ARTE_LEGADA`. Por isso o caminho
+ * legado só é tentado para os ids desse mapa: apontar `<img>` para um arquivo
+ * inexistente renderia ícone de imagem quebrada e 404 no console em 309
+ * blocos. Quando uma arte for exportada com o nome do id, basta acrescentá-la
+ * ao conjunto — ou, melhor, deixar o admin preencher `src`.
  *
  * `<img>` em vez de `next/image`: a origem da imagem é um caminho arbitrário
  * vindo do banco (biblioteca de mídia), sem dimensões conhecidas em tempo de
@@ -124,7 +125,7 @@ export function Ilustracao({
         <path d="m3.6 17.2 4.6-4.3a2 2 0 0 1 2.7 0l3 2.8" />
         <path d="m14.6 14.4 1.7-1.6a2 2 0 0 1 2.7 0l1.4 1.3" />
       </svg>
-      <span className="text-[10px] font-extrabold tracking-[0.1em] text-[#8A96A8]">
+      <span className="text-[10px] font-extrabold tracking-[0.1em] text-muted-2">
         {rotulo} · EM BREVE
       </span>
       <span className="line-clamp-3 text-[13px] font-bold leading-[1.35] text-[#3C4A5C]">

@@ -2,14 +2,15 @@
   "aula": 7,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_007_audio_001",
-        "alvo": "texto",
-        "ancora": "This is my mother.",
-        "texto": "This is my mother.",
-        "src": "/audio/aula-07/lesson_007_audio_001.515a85ca.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "alvo": "bloco",
+        "ancora": "Hi! I’m Ana.",
+        "texto": "Hi! I'm Ana.\nThis is my family.",
+        "src": "/audio/aula-07/lesson_007_audio_001.dc084630.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     },
     {
@@ -17,10 +18,10 @@
       "clip": {
         "id": "lesson_007_audio_002",
         "alvo": "texto",
-        "ancora": "He is my brother.",
-        "texto": "He is my brother.",
-        "src": "/audio/aula-07/lesson_007_audio_002.46d66f3c.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "dad",
+        "texto": "dad",
+        "src": "/audio/aula-07/lesson_007_audio_002.d0d03eb6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,10 +29,10 @@
       "clip": {
         "id": "lesson_007_audio_003",
         "alvo": "texto",
-        "ancora": "They are my parents.",
-        "texto": "They are my parents.",
-        "src": "/audio/aula-07/lesson_007_audio_003.0839c8d1.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "mom",
+        "texto": "mom",
+        "src": "/audio/aula-07/lesson_007_audio_003.a45a512a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -39,10 +40,11 @@
       "clip": {
         "id": "lesson_007_audio_004",
         "alvo": "texto",
-        "ancora": "sister",
-        "texto": "sister",
-        "src": "/audio/aula-07/lesson_007_audio_004.a2f24372.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "brother",
+        "texto": "brother",
+        "src": "/audio/aula-07/lesson_007_audio_004.7499c06b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -50,33 +52,33 @@
       "clip": {
         "id": "lesson_007_audio_005",
         "alvo": "texto",
-        "ancora": "brother",
-        "texto": "brother",
-        "src": "/audio/aula-07/lesson_007_audio_005.7499c06b.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "sister",
+        "texto": "sister",
+        "src": "/audio/aula-07/lesson_007_audio_005.a2f24372.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_006",
         "alvo": "texto",
-        "ancora": "son",
-        "texto": "son",
-        "src": "/audio/aula-07/lesson_007_audio_006.b55c1f51.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "We are a family!",
+        "texto": "We are a family!",
+        "src": "/audio/aula-07/lesson_007_audio_006.ef943340.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 2,
       "clip": {
         "id": "lesson_007_audio_007",
         "alvo": "texto",
-        "ancora": "daughter",
-        "texto": "daughter",
-        "src": "/audio/aula-07/lesson_007_audio_007.ded2efd4.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Dad = Father",
+        "texto": "Dad. Father",
+        "src": "/audio/aula-07/lesson_007_audio_007.72053d53.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -84,10 +86,11 @@
       "clip": {
         "id": "lesson_007_audio_008",
         "alvo": "texto",
-        "ancora": "This is my sister.",
-        "texto": "This is my sister.",
-        "src": "/audio/aula-07/lesson_007_audio_008.466e8ed4.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Mom = Mother",
+        "texto": "Mom. Mother",
+        "src": "/audio/aula-07/lesson_007_audio_008.eb8cfa69.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -95,9 +98,412 @@
       "clip": {
         "id": "lesson_007_audio_009",
         "alvo": "texto",
-        "ancora": "Ana’s brother is a doctor.",
-        "texto": "Ana's brother is a doctor.",
-        "src": "/audio/aula-07/lesson_007_audio_009.7b51b986.mp3",
+        "ancora": "FATHER",
+        "texto": "father",
+        "src": "/audio/aula-07/lesson_007_audio_009.baca3804.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_010",
+        "alvo": "texto",
+        "ancora": "He is my father.",
+        "texto": "He is my father.",
+        "src": "/audio/aula-07/lesson_007_audio_010.ccdca7f0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_011",
+        "alvo": "texto",
+        "ancora": "MOTHER",
+        "texto": "mother",
+        "src": "/audio/aula-07/lesson_007_audio_011.a947a44b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_012",
+        "alvo": "texto",
+        "ancora": "She is my mother.",
+        "texto": "She is my mother.",
+        "src": "/audio/aula-07/lesson_007_audio_012.1d47def9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_013",
+        "alvo": "texto",
+        "ancora": "He is my brother.",
+        "texto": "He is my brother.",
+        "src": "/audio/aula-07/lesson_007_audio_013.46d66f3c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_007_audio_014",
+        "alvo": "texto",
+        "ancora": "She is my sister.",
+        "texto": "She is my sister.",
+        "src": "/audio/aula-07/lesson_007_audio_014.ac906990.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_015",
+        "alvo": "texto",
+        "ancora": "grandpa",
+        "texto": "grandpa",
+        "src": "/audio/aula-07/lesson_007_audio_015.ee73f5fb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_016",
+        "alvo": "texto",
+        "ancora": "grandma",
+        "texto": "grandma",
+        "src": "/audio/aula-07/lesson_007_audio_016.be279b58.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_017",
+        "alvo": "texto",
+        "ancora": "uncle",
+        "texto": "uncle",
+        "src": "/audio/aula-07/lesson_007_audio_017.b60cf63e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_018",
+        "alvo": "texto",
+        "ancora": "aunt",
+        "texto": "aunt",
+        "src": "/audio/aula-07/lesson_007_audio_018.4b10a431.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_019",
+        "alvo": "texto",
+        "ancora": "cousin",
+        "texto": "cousin",
+        "src": "/audio/aula-07/lesson_007_audio_019.027945a7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_020",
+        "alvo": "texto",
+        "ancora": "Grandpa = Grandfather",
+        "texto": "Grandpa. Grandfather",
+        "src": "/audio/aula-07/lesson_007_audio_020.531a3103.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_021",
+        "alvo": "texto",
+        "ancora": "Grandma = Grandmother",
+        "texto": "Grandma. Grandmother",
+        "src": "/audio/aula-07/lesson_007_audio_021.f0bbffcf.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_022",
+        "alvo": "texto",
+        "ancora": "GRANDFATHER",
+        "texto": "grandfather",
+        "src": "/audio/aula-07/lesson_007_audio_022.2591e192.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_023",
+        "alvo": "texto",
+        "ancora": "He is my grandfather.",
+        "texto": "He is my grandfather.",
+        "src": "/audio/aula-07/lesson_007_audio_023.e1207e9b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_024",
+        "alvo": "texto",
+        "ancora": "GRANDMOTHER",
+        "texto": "grandmother",
+        "src": "/audio/aula-07/lesson_007_audio_024.cf51143d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_025",
+        "alvo": "texto",
+        "ancora": "She is my grandmother.",
+        "texto": "She is my grandmother.",
+        "src": "/audio/aula-07/lesson_007_audio_025.33e771f9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_026",
+        "alvo": "texto",
+        "ancora": "He is my uncle.",
+        "texto": "He is my uncle.",
+        "src": "/audio/aula-07/lesson_007_audio_026.4e9805d5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_027",
+        "alvo": "texto",
+        "ancora": "She is my aunt.",
+        "texto": "She is my aunt.",
+        "src": "/audio/aula-07/lesson_007_audio_027.52189326.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_028",
+        "alvo": "texto",
+        "ancora": "He is my cousin.",
+        "texto": "He is my cousin.",
+        "src": "/audio/aula-07/lesson_007_audio_028.b0a4735f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_007_audio_029",
+        "alvo": "texto",
+        "ancora": "She is my cousin.",
+        "texto": "She is my cousin.",
+        "src": "/audio/aula-07/lesson_007_audio_029.d50697b6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_030",
+        "alvo": "bloco",
+        "ancora": "husband",
+        "texto": "husband\nwife\nson\ndaughter\ngrandson\ngranddaughter\ngrandchildren",
+        "src": "/audio/aula-07/lesson_007_audio_030.02aa1cd6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_031",
+        "alvo": "texto",
+        "ancora": "He is the husband.",
+        "texto": "He is the husband.",
+        "src": "/audio/aula-07/lesson_007_audio_031.68e9c2b8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_032",
+        "alvo": "texto",
+        "ancora": "She is the wife.",
+        "texto": "She is the wife.",
+        "src": "/audio/aula-07/lesson_007_audio_032.ed5fc6ae.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_033",
+        "alvo": "texto",
+        "ancora": "He is the son.",
+        "texto": "He is the son.",
+        "src": "/audio/aula-07/lesson_007_audio_033.89256846.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_034",
+        "alvo": "texto",
+        "ancora": "She is the daughter.",
+        "texto": "She is the daughter.",
+        "src": "/audio/aula-07/lesson_007_audio_034.35316196.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_035",
+        "alvo": "texto",
+        "ancora": "He is the grandson.",
+        "texto": "He is the grandson.",
+        "src": "/audio/aula-07/lesson_007_audio_035.10b0fa00.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_036",
+        "alvo": "texto",
+        "ancora": "She is the granddaughter.",
+        "texto": "She is the granddaughter.",
+        "src": "/audio/aula-07/lesson_007_audio_036.5fba568a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_007_audio_037",
+        "alvo": "texto",
+        "ancora": "They are the grandchildren.",
+        "texto": "They are the grandchildren.",
+        "src": "/audio/aula-07/lesson_007_audio_037.54da13e3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_007_audio_038",
+        "alvo": "texto",
+        "ancora": "son-in-law",
+        "texto": "son-in-law",
+        "src": "/audio/aula-07/lesson_007_audio_038.1defa255.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_007_audio_039",
+        "alvo": "texto",
+        "ancora": "daughter-in-law",
+        "texto": "daughter-in-law",
+        "src": "/audio/aula-07/lesson_007_audio_039.7a8aa298.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_007_audio_040",
+        "alvo": "texto",
+        "ancora": "He is the son-in-law.",
+        "texto": "He is the son-in-law.",
+        "src": "/audio/aula-07/lesson_007_audio_040.affe4640.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_007_audio_041",
+        "alvo": "texto",
+        "ancora": "She is the daughter-in-law.",
+        "texto": "She is the daughter-in-law.",
+        "src": "/audio/aula-07/lesson_007_audio_041.97573a60.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_007_audio_042",
+        "alvo": "bloco",
+        "ancora": "Emma: Hi! I’m Emma.",
+        "texto": "Hi! I'm Emma.\nI'm from Canada. I'm Canadian.\nHe is my brother, Alex.\nShe is my mother, Lisa.\nHe is my father, Mark.\nThey are my family.",
+        "src": "/audio/aula-07/lesson_007_audio_042.73e78e75.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_007_audio_043",
+        "alvo": "texto",
+        "ancora": "grandparents",
+        "texto": "grandparents",
+        "src": "/audio/aula-07/lesson_007_audio_043.3910cb8d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_007_audio_044",
+        "alvo": "texto",
+        "ancora": "family",
+        "texto": "family",
+        "src": "/audio/aula-07/lesson_007_audio_044.92322e29.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_007_audio_045",
+        "alvo": "texto",
+        "ancora": "That’s our family! We love each other!",
+        "texto": "That's our family! We love each other!",
+        "src": "/audio/aula-07/lesson_007_audio_045.57d1e0af.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     }

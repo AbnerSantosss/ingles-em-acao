@@ -1,4 +1,84 @@
 {
   "aula": 14,
-  "clips": []
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_014_audio_001",
+        "alvo": "texto",
+        "ancora": "his: dele",
+        "texto": "his",
+        "src": "/audio/aula-14/lesson_014_audio_001.1ec47134.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_014_audio_002",
+        "alvo": "texto",
+        "ancora": "her: dela",
+        "texto": "her",
+        "src": "/audio/aula-14/lesson_014_audio_002.72475ede.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_014_audio_003",
+        "alvo": "texto",
+        "ancora": "its: dele/dela (coisa)",
+        "texto": "its",
+        "src": "/audio/aula-14/lesson_014_audio_003.13793da2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_014_audio_004",
+        "alvo": "texto",
+        "ancora": "our: nosso / nossa",
+        "texto": "our",
+        "src": "/audio/aula-14/lesson_014_audio_004.91e07a6a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_014_audio_005",
+        "alvo": "texto",
+        "ancora": "their: deles / delas",
+        "texto": "their",
+        "src": "/audio/aula-14/lesson_014_audio_005.80a267f2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_006",
+        "alvo": "texto",
+        "ancora": "his car · his sister",
+        "texto": "his car. his sister.",
+        "src": "/audio/aula-14/lesson_014_audio_006.c821c352.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_007",
+        "alvo": "texto",
+        "ancora": "her car · her brother",
+        "texto": "her car. her brother.",
+        "src": "/audio/aula-14/lesson_014_audio_007.d93b44f6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    }
+  ]
 }

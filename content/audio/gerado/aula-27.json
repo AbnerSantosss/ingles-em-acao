@@ -1,4 +1,39 @@
 {
   "aula": 27,
-  "clips": []
+  "clips": [
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_001",
+        "alvo": "texto",
+        "ancora": "Is she studying?",
+        "texto": "Is she studying?",
+        "src": "/audio/aula-27/lesson_027_audio_001.e09fc34d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_002",
+        "alvo": "texto",
+        "ancora": "He isn’t studying.",
+        "texto": "He isn't studying.",
+        "src": "/audio/aula-27/lesson_027_audio_002.200be33a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_003",
+        "alvo": "texto",
+        "ancora": "COM WH-\nWhat are you doing? · Where is he going?",
+        "texto": "What are you doing? Where is he going?",
+        "src": "/audio/aula-27/lesson_027_audio_003.f2aefe95.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    }
+  ]
 }

@@ -106,7 +106,7 @@ export const LESSONS = [
         { t: "cta", items: [
           { icon: "play", v: "mint", title: "ASSISTA À VIDEOAULA", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
           { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Escute, responda e receba sugestões para melhorar.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Verb be: Affirmative" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 02 · Verb to be: Affirmative" } ] }
     ]
   },
 
@@ -221,7 +221,7 @@ export const LESSONS = [
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 02", body: "Acompanhe os exemplos e revise o conteúdo no seu ritmo.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "TOQUE PARA ASSISTIR", c: "white" },
           { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga suas quatro frases e receba feedback de pronúncia e clareza.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "TOQUE PARA PRATICAR COM A IA", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO PASSO", title: "Aula 03 · Verb to be: Negative", body: "Você aprenderá a dizer o que alguém não é, não está ou não tem." } ] }
+        { t: "next", kicker: "PRÓXIMO PASSO", title: "Aula 03 · Verb to be: Negative", body: "Você aprenderá a dizer o que alguém não é e o que não está." } ] }
     ]
   },
 
@@ -386,7 +386,7 @@ export const LESSONS = [
           { a: "Are they friends?", b: "Yes, they are. / No, they aren’t.", v: "mint" } ] },
         { t: "objective", v: "red", title: "ATENÇÃO À CONTRAÇÃO", text: "Na resposta afirmativa, não contraia. Diga: Yes, I am. Nunca: Yes, I’m." },
         { t: "match", id: "a4match1", title: "LIGUE A PERGUNTA À RESPOSTA CURTA (AULA 04)",
-          left: ["Are you tired?", "Is he your brother?", "Are they students?", "Is it expensive?"],
+          left: ["Are you tired?", "Is he your brother?", "Are they students?", "Is it new?"],
           right: ["Yes, they are.", "Yes, I am.", "No, it isn’t.", "Yes, he is."],
           answer: [1, 3, 0, 2] } ] },
 
@@ -445,91 +445,315 @@ export const LESSONS = [
 
   {
     id: 5, code: "AULA 05", title: "Verb to be: Review", sub: "Afirmativa, negativa e interrogativa juntas.",
-    time: "16 minutos",
+    time: "18 a 20 minutos",
     pages: [
       { blocks: [
         { t: "badge", label: "AULA 05" },
-        { t: "title", en: "VERB TO BE", pt: "Revisão: as três formas em uma só aula." },
-        { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Você já sabe afirmar, negar e perguntar.\nAgora vamos juntar tudo." },
-        { t: "image", id: "a5p1", ph: "Ilustração: aluno revisando anotações" },
+        { t: "title", en: "VERB TO BE: REVIEW", pt: "As três formas do verb to be em uma só aula." },
+        { t: "kicker", text: "AFFIRMATIVE + NEGATIVE + INTERROGATIVE" },
+        { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Nas aulas anteriores, você aprendeu a usar o verb to be nas formas afirmativa, negativa e interrogativa.\nAgora chegou a hora de juntar tudo e usar as três formas com confiança!" },
+        { t: "image", id: "a5p1", ph: "Foto: um rapaz de jaqueta jeans e uma moça de blusa amarela conversando sentados à mesa de um café, com copos de café e um caderno sobre a mesa." },
+        { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
-          { kicker: "AFIRMATIVA", title: "She is a doctor.", body: "Ela é médica.", v: "mint" },
-          { kicker: "NEGATIVA", title: "She isn’t a doctor.", body: "Ela não é médica.", v: "lilac" },
-          { kicker: "INTERROGATIVA", title: "Is she a doctor?", body: "Ela é médica?", v: "cream" } ] },
-        { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Escolher a forma certa do verb to be em qualquer situação." },
-        { t: "meta", label: "TEMPO ESTIMADO", value: "16 min" } ] },
+          { kicker: "AFIRMAR", title: "I am happy.", body: "Eu sou, ele é, ela é, nós somos, vocês são, eles são.", v: "mint", c: "teal" },
+          { kicker: "NEGAR", title: "I am not tired.", body: "Eu não sou, ele não é, ela não é, nós não somos, vocês não são, eles não são.", v: "red", c: "red" },
+          { kicker: "PERGUNTAR", title: "Are you ready?", body: "Eu sou?, ele é?, ela é?, nós somos?, vocês são?, eles são?", v: "lilac", c: "purple" } ] },
+        { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Ao final desta aula, você será capaz de usar o verb to be para afirmar, negar e perguntar em diferentes situações do dia a dia, de forma natural e correta." },
+        { t: "meta", label: "DURAÇÃO ESTIMADA", value: "18 a 20 minutos" },
+        { t: "meta", label: "VÍDEO DA AULA", value: "Assista à videoaula 05 para revisar e praticar." },
+        { t: "note", v: "cream", bar: true, bold: true, text: "Você já aprendeu muito! Vamos revisar, praticar e dar mais um passo importante na sua jornada no inglês. Conto com você!" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 02" },
-        { t: "title", en: "O MAPA COMPLETO", pt: "Uma linha para cada sujeito." },
-        { t: "table", head: ["SUJEITO", "FORMA DO VERBO"], rows: [
-          { a: "I", b: "am · am not · Am I…?", v: "cream" },
-          { a: "You", b: "are · aren’t · Are you…?", v: "mint" },
-          { a: "He / She / It", b: "is · isn’t · Is he…?", v: "lilac" },
-          { a: "We", b: "are · aren’t · Are we…?", v: "mint" },
-          { a: "They", b: "are · aren’t · Are they…?", v: "lilac" } ] },
-        { t: "objective", v: "mint", title: "TRÊS PERGUNTAS QUE RESOLVEM TUDO", text: "1. Qual é o sujeito? 2. É afirmação, negação ou pergunta? 3. Qual forma do verbo combina?" },
-        { t: "match", id: "a5match1", title: "LIGUE A FRASE AO TIPO (AULA 05)",
-          left: ["We are ready.", "We aren’t ready.", "Are we ready?", "I’m not late."],
-          right: ["pergunta", "afirmativa", "negativa com I", "negativa"],
-          answer: [1, 3, 0, 2] } ] },
+        { t: "title", en: "O MAPA DO VERB TO BE", pt: "O verbo muda de acordo com a intenção da frase." },
+        { t: "lead", text: "O verb to be muda de acordo com a intenção da frase. Veja como usamos nas três formas:" },
+        { t: "sec", text: "1 · AFFIRMATIVE (AFIRMATIVA) · USAMOS PARA AFIRMAR ALGO." },
+        { t: "table", head: ["AFFIRMATIVE · AFIRMATIVA", "TRADUÇÃO"], rows: [
+          { a: "I am happy.", b: "Eu estou feliz.", note: "I", v: "mint" },
+          { a: "He is tall.", b: "Ele é alto.", note: "he", v: "mint" },
+          { a: "She is kind.", b: "Ela é gentil.", note: "she", v: "mint" },
+          { a: "It is a cat.", b: "Isso é um gato.", note: "it", v: "mint" },
+          { a: "You are my friend.", b: "Você é meu amigo.", note: "you", v: "mint" },
+          { a: "We are ready.", b: "Nós estamos prontos.", note: "we", v: "mint" },
+          { a: "They are here.", b: "Eles estão aqui.", note: "they", v: "mint" } ] },
+        { t: "sec", text: "2 · NEGATIVE (NEGATIVA) · USAMOS PARA NEGAR ALGO." },
+        { t: "table", head: ["NEGATIVE · NEGATIVA", "TRADUÇÃO"], rows: [
+          { a: "I am not happy.", b: "Eu não estou feliz.", note: "I", v: "red" },
+          { a: "He isn’t tall.", b: "Ele não é alto.", note: "he", v: "red" },
+          { a: "She isn’t kind.", b: "Ela não é gentil.", note: "she", v: "red" },
+          { a: "It isn’t a cat.", b: "Isso não é um gato.", note: "it", v: "red" },
+          { a: "You aren’t my friend.", b: "Você não é meu amigo.", note: "you", v: "red" },
+          { a: "We aren’t ready.", b: "Nós não estamos prontos.", note: "we", v: "red" },
+          { a: "They aren’t here.", b: "Eles não estão aqui.", note: "they", v: "red" } ] },
+        { t: "sec", text: "3 · INTERROGATIVE (INTERROGATIVA) · USAMOS PARA FAZER PERGUNTAS." },
+        { t: "table", head: ["INTERROGATIVE · INTERROGATIVA", "TRADUÇÃO"], rows: [
+          { a: "Am I happy?", b: "Eu estou feliz?", note: "I", v: "lilac" },
+          { a: "Is he tall?", b: "Ele é alto?", note: "he", v: "lilac" },
+          { a: "Is she kind?", b: "Ela é gentil?", note: "she", v: "lilac" },
+          { a: "Is it a cat?", b: "Isso é um gato?", note: "it", v: "lilac" },
+          { a: "Are you my friend?", b: "Você é meu amigo?", note: "you", v: "lilac" },
+          { a: "Are we ready?", b: "Nós estamos prontos?", note: "we", v: "lilac" },
+          { a: "Are they here?", b: "Eles estão aqui?", note: "they", v: "lilac" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "Na pergunta, o verbo vem antes do sujeito.\nEx.: You are late. → Are you late?" },
+        { t: "sec", text: "LEMBRE-SE!" },
+        { t: "rows", items: [
+          { text: "Affirmative: sujeito + am / is / are + complemento.", c: "teal" },
+          { text: "Negative: sujeito + am / is / are + not + complemento.", c: "red" },
+          { text: "Interrogative: am / is / are + sujeito + complemento?", c: "purple" } ] },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Vamos praticar com frases que mostram as três intenções." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 03" },
-        { t: "title", en: "TRANSFORME A FRASE", pt: "Da afirmativa para a negativa e a pergunta." },
-        { t: "note", v: "gray", bar: true, bold: true, text: "FRASE-BASE\nThey are students. → Eles são estudantes." },
-        { t: "grid", cols: 1, items: [
-          { n: "1", kicker: "NEGATIVA", title: "They aren’t students.", body: "Acrescente not depois de are.", v: "lilac", c: "purple" },
-          { n: "2", kicker: "PERGUNTA", title: "Are they students?", body: "Coloque are na frente do sujeito.", v: "cream", c: "yellow" },
-          { n: "3", kicker: "RESPOSTA CURTA", title: "Yes, they are. / No, they aren’t.", body: "Repita o verbo na resposta.", v: "mint", c: "teal" } ] },
-        { t: "dnd", id: "a5d1", title: "MONTE A PERGUNTA", sub: "Arraste ou toque nas peças na ordem correta.",
-          slots: ["verbo", "sujeito", "informação"],
-          tokens: ["students?", "they", "Are"], answer: ["Are", "they", "students?"] } ] },
+        { t: "title", en: "AM, IS OU ARE?", pt: "O verbo muda de acordo com o sujeito nas três formas." },
+        { t: "lead", text: "O verbo to be muda de acordo com o sujeito em todas as três formas. Veja o resumo abaixo." },
+        { t: "sec", text: "1 · AFFIRMATIVE (AFIRMATIVA)" },
+        { t: "table", head: ["AFFIRMATIVE · AFIRMATIVA", "TRADUÇÃO"], rows: [
+          { a: "I am happy.", b: "Eu estou feliz.", note: "I", v: "mint" },
+          { a: "He is a student.", b: "Ele é um aluno.", note: "he", v: "mint" },
+          { a: "She is kind.", b: "Ela é gentil.", note: "she", v: "mint" },
+          { a: "It is a cat.", b: "Isso é um gato.", note: "it", v: "mint" },
+          { a: "You are my friend.", b: "Você é meu amigo.", note: "you", v: "mint" },
+          { a: "We are ready.", b: "Nós estamos prontos.", note: "we", v: "mint" },
+          { a: "They are here.", b: "Eles estão aqui.", note: "they", v: "mint" } ] },
+        { t: "sec", text: "2 · NEGATIVE (NEGATIVA)" },
+        { t: "table", head: ["NEGATIVE · NEGATIVA", "TRADUÇÃO"], rows: [
+          { a: "I am not happy.", b: "Eu não estou feliz.", note: "I", v: "red" },
+          { a: "He isn’t a student.", b: "Ele não é um aluno.", note: "he", v: "red" },
+          { a: "She isn’t kind.", b: "Ela não é gentil.", note: "she", v: "red" },
+          { a: "It isn’t a cat.", b: "Isso não é um gato.", note: "it", v: "red" },
+          { a: "You aren’t my friend.", b: "Você não é meu amigo.", note: "you", v: "red" },
+          { a: "We aren’t ready.", b: "Nós não estamos prontos.", note: "we", v: "red" },
+          { a: "They aren’t here.", b: "Eles não estão aqui.", note: "they", v: "red" } ] },
+        { t: "sec", text: "3 · INTERROGATIVE (INTERROGATIVA)" },
+        { t: "table", head: ["INTERROGATIVE · INTERROGATIVA", "TRADUÇÃO"], rows: [
+          { a: "Am I happy?", b: "Eu estou feliz?", note: "I", v: "lilac" },
+          { a: "Is he a student?", b: "Ele é um aluno?", note: "he", v: "lilac" },
+          { a: "Is she kind?", b: "Ela é gentil?", note: "she", v: "lilac" },
+          { a: "Is it a cat?", b: "Isso é um gato?", note: "it", v: "lilac" },
+          { a: "Are you my friend?", b: "Você é meu amigo?", note: "you", v: "lilac" },
+          { a: "Are we ready?", b: "Nós estamos prontos?", note: "we", v: "lilac" },
+          { a: "Are they here?", b: "Eles estão aqui?", note: "they", v: "lilac" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "Para escolher entre am, is e are, pense no sujeito da frase." },
+        { t: "image", id: "a5p3", ph: "Ilustração: menino de camiseta azul com a mão no queixo, pensando, e um balão de pensamento ao lado com as palavras I? he? they?" },
+        { t: "rule", v: "cream", c: "yellow", kicker: "DICA RÁPIDA · 1", from: "I", to: "am", ex: "I am happy.", tr: "Eu estou feliz." },
+        { t: "rule", v: "mint", c: "teal", kicker: "DICA RÁPIDA · 2", from: "he · she · it", to: "is", ex: "She is kind.", tr: "Ela é gentil." },
+        { t: "rule", v: "lilac", c: "purple", kicker: "DICA RÁPIDA · 3", from: "you · we · they", to: "are", ex: "They are here.", tr: "Eles estão aqui." },
+        { t: "note", v: "lilac", kicker: "VAMOS PRATICAR?", text: "Nas próximas páginas, você vai usar as três formas do verb to be em diferentes situações do dia a dia." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai ver como mudar a intenção da frase: afirmar, negar e perguntar." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 04" },
-        { t: "title", en: "PRÁTICA GUIADA", pt: "Complete com a forma correta." },
-        { t: "fill", id: "a5e1", title: "COMPLETE AS FRASES", items: [
-          { pre: "1. I", post: "a student. (afirmativa)", answers: ["am"], v: "mint" },
-          { pre: "2. He", post: "my brother. (negativa)", answers: ["is not", "isn't", "isn’t"], v: "lilac" },
-          { pre: "3.", post: "they Brazilian? (pergunta)", answers: ["are"], v: "cream" },
-          { pre: "4. We", post: "at school. (afirmativa)", answers: ["are"], v: "mint" },
-          { pre: "5. It", post: "expensive. (negativa)", answers: ["is not", "isn't", "isn’t"], v: "lilac" },
-          { pre: "6.", post: "she your teacher? (pergunta)", answers: ["is"], v: "cream" } ] },
-        { t: "objective", v: "navy", title: "DICA", text: "Leia o que está entre parênteses antes de escrever." } ] },
+        { t: "title", en: "UMA IDEIA, TRÊS INTENÇÕES", pt: "A mesma situação pode ser afirmada, negada ou perguntada." },
+        { t: "lead", text: "A mesma situação pode ser afirmada, negada ou perguntada. Veja os exemplos abaixo:" },
+        { t: "sec", text: "AFIRMAR (AFFIRMATIVE) · NEGAR (NEGATIVE) · PERGUNTAR (INTERROGATIVE)" },
+        { t: "cards", cols: 1, items: [
+          { tag: "01 · AT HOME", c: "teal", v: "mint", id: "a5p4a", ph: "Foto: sala de estar clara e aconchegante, com sofá bege, almofadas, mesa de centro e plantas.",
+            lines: ["I am at home.", "I am not at home.", "Am I at home?"],
+            note: "Eu estou em casa. · Eu não estou em casa. · Eu estou em casa?" },
+          { tag: "02 · HUNGRY", c: "purple", v: "lilac", id: "a5p4b", ph: "Foto: jovem de blusa amarela sentada à mesa, sorrindo enquanto come uma fatia de pizza.",
+            lines: ["She is hungry.", "She isn’t hungry.", "Is she hungry?"],
+            note: "Ela está com fome. · Ela não está com fome. · Ela está com fome?" },
+          { tag: "03 · FRIENDS", c: "teal", v: "mint", id: "a5p4c", ph: "Foto: dois rapazes sentados frente a frente conversando e sorrindo, um de jaqueta jeans e outro de moletom verde.",
+            lines: ["They are friends.", "They aren’t friends.", "Are they friends?"],
+            note: "Eles são amigos. · Eles não são amigos. · Eles são amigos?" },
+          { tag: "04 · COLD", c: "purple", v: "lilac", id: "a5p4d", ph: "Foto: parque coberto de neve, com árvores sem folhas, um banco e um poste de luz.",
+            lines: ["It is very cold.", "It isn’t very cold.", "Is it very cold?"],
+            note: "Está muito frio. · Não está muito frio. · Está muito frio?" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA IMPORTANTE", bold: true, text: "A intenção da frase muda a estrutura." },
+        { t: "rows", items: [
+          { text: "Afirmar → sujeito + am / is / are + complemento.", c: "teal" },
+          { text: "Negar → sujeito + am / is / are + not + complemento.", c: "red" },
+          { text: "Perguntar → am / is / are + sujeito + complemento?", c: "purple" } ] },
+        { t: "image", id: "a5p4e", ph: "Ilustração: menino de camiseta roxa sorrindo com o dedo indicador levantado e um balão de fala ao lado com a frase Mude a intenção, mude a forma!" },
+        { t: "mc", id: "a5mc2", title: "A · ESCOLHA A INTENÇÃO CORRETA PARA CADA SITUAÇÃO", v: "gray", questions: [
+          { q: "01. Você quer saber se ele é professor.", options: ["Afirmar", "Negar", "Perguntar"], answer: 2, explain: "Você quer saber algo, então a frase vira pergunta: Is he a teacher?" },
+          { q: "02. Você diz que não está cansado.", options: ["Afirmar", "Negar", "Perguntar"], answer: 1, explain: "Você nega algo: I am not tired." },
+          { q: "03. Você diz que eles estão aqui.", options: ["Afirmar", "Negar", "Perguntar"], answer: 0, explain: "Você afirma algo: They are here." },
+          { q: "04. Você pergunta se ela está feliz.", options: ["Afirmar", "Negar", "Perguntar"], answer: 2, explain: "Você quer saber algo: Is she happy?" } ] },
+        { t: "note", v: "lilac", kicker: "VAMOS PRATICAR!", text: "Nas próximas páginas, você vai transformar frases, completar diálogos e escrever com as três formas do verb to be." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Vamos ver diálogos curtos com as três intenções juntas!" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 05" },
-        { t: "title", en: "ENCONTRE O ERRO", pt: "Cada frase tem um problema comum." },
-        { t: "mc", id: "a5mc1", title: "QUAL É A FORMA CORRETA?", v: "gray", questions: [
-          { q: "Eu não estou cansado.", options: ["I amn’t tired.", "I’m not tired."], answer: 1, explain: "amn’t não existe no inglês-padrão." },
-          { q: "Ela não é cantora.", options: ["She doesn’t is a singer.", "She isn’t a singer."], answer: 1, explain: "Com o verb to be, use not." },
-          { q: "Vocês estão prontos?", options: ["Are you ready?", "Do you are ready?"], answer: 0 },
-          { q: "Nós somos amigos.", options: ["We is friends.", "We are friends."], answer: 1, explain: "we → are." } ] },
-        { t: "key", v: "navy", text: "Sujeito certo + forma certa = frase natural." } ] },
+        { t: "title", en: "CONVERSAÇÃO REAL", pt: "As três formas do verb to be nas conversas do dia a dia." },
+        { t: "lead", text: "Nas conversas do dia a dia, usamos as três formas do verb to be o tempo todo. Veja os diálogos abaixo:" },
+        { t: "sec", text: "1 · EM CASA" },
+        { t: "image", id: "a5p5a", ph: "Foto: rapaz de moletom verde falando ao celular na rua, sorrindo, com prédios ao fundo." },
+        { t: "dialogue", items: [
+          { s: "a", text: "Are you at home?" },
+          { s: "b", text: "No, I’m not. I’m at work." },
+          { s: "a", text: "Is your brother home?" },
+          { s: "b", text: "Yes, he is." } ] },
+        { t: "sec", text: "2 · NO CAFÉ" },
+        { t: "image", id: "a5p5b", ph: "Foto: duas jovens conversando e sorrindo em um café, cada uma com um copo de café na mão." },
+        { t: "dialogue", items: [
+          { s: "a", text: "Is this coffee hot?" },
+          { s: "b", text: "No, it isn’t. It’s warm." },
+          { s: "a", text: "Are you ready to order?" },
+          { s: "b", text: "Yes, we are." } ] },
+        { t: "sec", text: "3 · NA ESCOLA" },
+        { t: "image", id: "a5p5c", ph: "Foto: três rapazes sentados à mesa de uma sala de aula, conversando com cadernos abertos à frente." },
+        { t: "dialogue", items: [
+          { s: "a", text: "Are they your classmates?" },
+          { s: "b", text: "Yes, they are." },
+          { s: "a", text: "Is the class interesting?" },
+          { s: "b", text: "Yes, it is!" } ] },
+        { t: "fill", id: "a5e2", title: "A · COMPLETE OS DIÁLOGOS COM A FORMA CORRETA DO VERB TO BE", sub: "Exemplo resolvido: A: Are you from Brazil? → B: Yes, I am.", items: [
+          { pre: "02. A:", answers: ["Is"], post: "your sister a doctor?", v: "mint" },
+          { pre: "02. B: No, she", answers: ["isn’t", "isn't", "is not"], post: ".", v: "mint" },
+          { pre: "03. A:", answers: ["Is"], post: "the weather nice today?", v: "lilac" },
+          { pre: "03. B: Yes, it", answers: ["is"], post: ".", v: "lilac" },
+          { pre: "04. A:", answers: ["Are"], post: "you and your friends free?", v: "cream" },
+          { pre: "04. B: No, we", answers: ["aren’t", "aren't", "are not"], post: ".", v: "cream" },
+          { pre: "05. A:", answers: ["Is"], post: "he at the gym now?", v: "mint" },
+          { pre: "05. B: Yes, he", answers: ["is"], post: ".", v: "mint" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA RÁPIDA", bold: true, text: "Para conversar bem, pratique as três formas: afirmar (.), negar (n’t) e perguntar (?).\nAssim, você se entende em qualquer situação!" },
+        { t: "image", id: "a5p5d", ph: "Ilustração: menina de camiseta roxa com o dedo indicador levantado e um balão de fala ao lado com as frases Yes, I am. No, I’m not. Are you ready?" },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Vamos encontrar e corrigir erros comuns com o verb to be." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 06" },
-        { t: "title", en: "FALE SOBRE VOCÊ", pt: "Três frases, três formas diferentes." },
-        { t: "free", id: "a5f1", cols: 2, items: [
-          { n: "1", kicker: "AFIRMATIVA", prefix: "I am…", ideas: "Algo verdadeiro sobre você agora.", v: "mint", c: "teal" },
-          { n: "2", kicker: "NEGATIVA", prefix: "I’m not…", ideas: "Algo que você não é ou não está.", v: "lilac", c: "purple" },
-          { n: "3", kicker: "PERGUNTA", prefix: "Are you…?", ideas: "Uma pergunta para um colega.", v: "cream", c: "yellow" },
-          { n: "4", kicker: "RESPOSTA CURTA", prefix: "Yes, I am. / No, I’m not.", ideas: "Responda sua própria pergunta.", v: "gray", c: "navy" } ] },
-        { t: "objective", v: "navy", title: "LEITURA ORAL", text: "Leia as quatro frases em sequência, como um pequeno diálogo." } ] },
+        { t: "title", en: "CUIDADO COM OS ERROS MAIS COMUNS", pt: "Veja os erros mais frequentes e como corrigir." },
+        { t: "lead", text: "Muitos alunos ainda confundem o verbo to be com outros verbos. Veja os erros mais frequentes e como corrigir:" },
+        { t: "compare", items: [
+          { wrong: "She are happy.", note: "“She” é terceira pessoa, usa is.", right: "She is happy.", rnote: "“She” + is." },
+          { wrong: "I isn’t tired.", note: "“I” usa am, não is.", right: "I am not tired.", rnote: "“I” + am not." },
+          { wrong: "Are he at home?", note: "Na pergunta, o verbo vem antes do sujeito.", right: "Is he at home?", rnote: "Pergunta com he → is." },
+          { wrong: "They is here.", note: "“They” usa are.", right: "They are here.", rnote: "“They” + are." },
+          { wrong: "Does she is a teacher?", note: "Não usamos does / doesn’t com o verb to be.", right: "Is she a teacher?", rnote: "Pergunta com she → is." } ] },
+        { t: "fill", id: "a5e3", wide: true, title: "A · ENCONTRE E CORRIJA O ERRO EM CADA FRASE", sub: "Reescreva a frase inteira já corrigida.", items: [
+          { pre: "01. Are she a student?", answers: ["Is she a student?"], v: "mint" },
+          { pre: "02. I are from Spain.", answers: ["I am from Spain.", "I’m from Spain.", "I'm from Spain."], v: "lilac" },
+          { pre: "03. He am my brother.", answers: ["He is my brother.", "He’s my brother.", "He's my brother."], v: "cream" },
+          { pre: "04. They isn’t at school.", answers: ["They aren’t at school.", "They aren't at school.", "They are not at school.", "They’re not at school.", "They're not at school."], v: "mint" },
+          { pre: "05. Is you ready?", answers: ["Are you ready?"], v: "lilac" },
+          { pre: "06. We is happy today.", answers: ["We are happy today.", "We’re happy today.", "We're happy today."], v: "cream" },
+          { pre: "07. Are it cold outside?", answers: ["Is it cold outside?"], v: "mint" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "Sempre pense primeiro no sujeito da frase. Depois escolha: am, is ou are." },
+        { t: "chips", title: "OS TRÊS PASSOS", items: [
+          { t: "1. QUEM É O SUJEITO?", c: "blue" },
+          { t: "2. QUAL FORMA USAR?", c: "purple" },
+          { t: "3. AFIRMAR, NEGAR OU PERGUNTAR?", c: "teal" } ] },
+        { t: "image", id: "a5p6", ph: "Ilustração: troféu dourado com brilhos ao redor, ao lado dos três passos para escolher a forma do verb to be." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai escolher a forma correta do verb to be de acordo com a intenção da frase." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 07" },
-        { t: "title", en: "REVISÃO CONCLUÍDA!", pt: "Você domina o verb to be no presente." },
-        { t: "check", id: "a5c1", title: "EU CONSIGO...", items: [
-          "escolher am, is ou are pelo sujeito.",
-          "negar com not e usar as contrações.",
-          "perguntar invertendo verbo e sujeito.",
-          "responder com Yes, I am. / No, I’m not." ] },
+        { t: "title", en: "ESCOLHA A INTENÇÃO CORRETA", pt: "Para cada situação, escolha afirmar, negar ou perguntar." },
+        { t: "lead", text: "Na comunicação, a intenção muda tudo! Para cada situação, escolha se você deve afirmar, negar ou perguntar e complete a frase corretamente." },
+        { t: "grid", cols: 3, items: [
+          { kicker: "AFIRMAR", title: "Você diz que algo é verdade.", v: "mint", c: "teal" },
+          { kicker: "NEGAR", title: "Você diz que algo não é verdade.", v: "red", c: "red" },
+          { kicker: "PERGUNTAR", title: "Você quer saber algo.", v: "lilac", c: "purple" } ] },
+        { t: "note", v: "cream", bar: true, bold: true, text: "Pense na situação e escolha a melhor intenção!" },
+        { t: "steps", items: [
+          { n: "1", tag: "SITUAÇÃO 01", c: "teal", v: "mint", id: "a5p7a", ph: "Foto: mulher sentada no sofá da sala, lendo um livro aberto, com uma planta ao fundo.",
+            lines: ["Você quer dizer que está em casa agora."],
+            note: "A · Afirmar: I ____ at home now.   B · Negar: I ____ at home now.   C · Perguntar: ____ I at home now?" },
+          { n: "2", tag: "SITUAÇÃO 02", c: "purple", v: "lilac", id: "a5p7b", ph: "Foto: rapaz de casaco e mochila em pé na calçada, olhando para o lado, com árvores desfocadas ao fundo.",
+            lines: ["Você quer dizer que não está com fome."],
+            note: "A · Afirmar: I ____ hungry.   B · Negar: I ____ hungry.   C · Perguntar: ____ I hungry?" },
+          { n: "3", tag: "SITUAÇÃO 03", c: "teal", v: "mint", id: "a5p7c", ph: "Foto: duas mulheres conversando e sorrindo em uma mesa de café ao ar livre, uma apontando para a outra.",
+            lines: ["Você quer saber se ela é sua amiga."],
+            note: "A · Afirmar: She ____ your friend.   B · Negar: She ____ your friend.   C · Perguntar: ____ she your friend?" },
+          { n: "4", tag: "SITUAÇÃO 04", c: "purple", v: "lilac", id: "a5p7d", ph: "Foto: homem de óculos e camisa azul trabalhando em um notebook sobre a mesa, concentrado.",
+            lines: ["Você quer dizer que eles não estão no trabalho hoje."],
+            note: "A · Afirmar: They ____ at work today.   B · Negar: They ____ at work today.   C · Perguntar: ____ they at work today?" },
+          { n: "5", tag: "SITUAÇÃO 05", c: "teal", v: "mint", id: "a5p7e", ph: "Foto: mulher de touca e cachecol na rua em um dia de neve, abraçando os próprios braços de frio.",
+            lines: ["Você quer saber se ele está com frio."],
+            note: "A · Afirmar: He ____ cold.   B · Negar: He ____ cold.   C · Perguntar: ____ he cold?" } ] },
+        { t: "mc", id: "a5mc3", title: "1 · ESCOLHA A MELHOR INTENÇÃO PARA CADA SITUAÇÃO", v: "gray", questions: [
+          { q: "01. Você quer dizer que está em casa agora.", options: ["Afirmar", "Negar", "Perguntar"], answer: 0, explain: "Você afirma algo sobre você: I am at home now." },
+          { q: "02. Você quer dizer que não está com fome.", options: ["Afirmar", "Negar", "Perguntar"], answer: 1, explain: "Você nega algo: I am not hungry." },
+          { q: "03. Você quer saber se ela é sua amiga.", options: ["Afirmar", "Negar", "Perguntar"], answer: 2, explain: "Você quer saber algo: Is she your friend?" },
+          { q: "04. Você quer dizer que eles não estão no trabalho hoje.", options: ["Afirmar", "Negar", "Perguntar"], answer: 1, explain: "Você nega algo: They aren’t at work today." },
+          { q: "05. Você quer saber se ele está com frio.", options: ["Afirmar", "Negar", "Perguntar"], answer: 2, explain: "Você quer saber algo: Is he cold?" } ] },
+        { t: "fill", id: "a5e4", title: "2 · AGORA COMPLETE A FRASE DA INTENÇÃO QUE VOCÊ ESCOLHEU", items: [
+          { pre: "01. I", answers: ["am"], post: "at home now.", note: "afirmar · am / is / are", v: "mint" },
+          { pre: "02. I", answers: ["am not"], post: "hungry.", note: "negar · am not / isn’t / aren’t", v: "red" },
+          { pre: "03.", answers: ["Is"], post: "she your friend?", note: "perguntar · Am / Is / Are", v: "lilac" },
+          { pre: "04. They", answers: ["aren’t", "aren't", "are not"], post: "at work today.", note: "negar · am not / isn’t / aren’t", v: "red" },
+          { pre: "05.", answers: ["Is"], post: "he cold?", note: "perguntar · Am / Is / Are", v: "lilac" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "Antes de falar, pense:" },
+        { t: "rows", items: [
+          { text: "Quero afirmar? → uso am / is / are.", c: "teal" },
+          { text: "Quero negar? → uso am not / isn’t / aren’t.", c: "red" },
+          { text: "Quero perguntar? → coloco am / is / are antes do sujeito.", c: "purple" } ] },
+        { t: "image", id: "a5p7f", ph: "Ilustração: menino de camiseta azul com a mão no queixo e um balão de pensamento ao lado com a frase O que eu quero fazer com esta frase?" },
+        { t: "note", v: "lilac", kicker: "VAMOS PRATICAR!", text: "Na próxima página, complete diálogos usando as três formas do verb to be." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai completar diálogos reais com afirmar, negar e perguntar." } ] },
+
+      { blocks: [
+        { t: "badge", label: "AULA 05", page: "PÁGINA 08" },
+        { t: "title", en: "DESAFIO INTEGRADO", pt: "Use tudo junto: complete, transforme e escreva." },
+        { t: "image", id: "a5p8", ph: "Foto: três jovens sentados à mesa de uma biblioteca, conversando e sorrindo, com livros e cadernos abertos e um copo de café sobre a mesa." },
+        { t: "lead", text: "Agora é a hora de usar tudo junto! Complete diálogos, transforme frases e escreva com as três formas do verb to be." },
+        { t: "fill", id: "a5e5", title: "A · COMPLETE OS DIÁLOGOS 01 A 03 COM A FORMA CORRETA DO VERB TO BE", items: [
+          { pre: "01. A:", answers: ["Are"], post: "you a student?", v: "mint" },
+          { pre: "01. B: Yes, I", answers: ["am"], post: ".", v: "mint" },
+          { pre: "01. A:", answers: ["Is"], post: "your school far?", v: "mint" },
+          { pre: "01. B: No, it", answers: ["isn’t", "isn't", "is not"], post: ".", v: "mint" },
+          { pre: "02. A:", answers: ["Is"], post: "this your book?", v: "lilac" },
+          { pre: "02. B: No, it", answers: ["isn’t", "isn't", "is not"], post: ".", v: "lilac" },
+          { pre: "02. A:", answers: ["Are"], post: "they your books?", v: "lilac" },
+          { pre: "02. B: Yes, they", answers: ["are"], post: ".", v: "lilac" },
+          { pre: "03. A:", answers: ["Are"], post: "you tired?", v: "cream" },
+          { pre: "03. B: Yes, I", answers: ["am"], post: ".", v: "cream" },
+          { pre: "03. A:", answers: ["Is"], post: "your friend tired too?", v: "cream" },
+          { pre: "03. B: No, he", answers: ["isn’t", "isn't", "is not"], post: ".", v: "cream" } ] },
+        { t: "fill", id: "a5e6", title: "A · COMPLETE OS DIÁLOGOS 04 A 06 COM A FORMA CORRETA DO VERB TO BE", items: [
+          { pre: "04. A:", answers: ["Is"], post: "the bank near here?", v: "mint" },
+          { pre: "04. B: Yes, it", answers: ["is"], post: ".", v: "mint" },
+          { pre: "04. A:", answers: ["Are"], post: "the restaurants near here?", v: "mint" },
+          { pre: "04. B: Yes, they", answers: ["are"], post: ".", v: "mint" },
+          { pre: "05. A:", answers: ["Are"], post: "they at the gym?", v: "lilac" },
+          { pre: "05. B: No, they", answers: ["aren’t", "aren't", "are not"], post: ".", v: "lilac" },
+          { pre: "05. A:", answers: ["Are"], post: "they at home?", v: "lilac" },
+          { pre: "05. B: Yes, they", answers: ["are"], post: ".", v: "lilac" },
+          { pre: "06. A:", answers: ["Is"], post: "the weather nice today?", v: "cream" },
+          { pre: "06. B: Yes, it", answers: ["is"], post: ".", v: "cream" },
+          { pre: "06. A:", answers: ["Is"], post: "it cold at night?", v: "cream" },
+          { pre: "06. B: No, it", answers: ["isn’t", "isn't", "is not"], post: ".", v: "cream" } ] },
+        { t: "fill", id: "a5e7", wide: true, title: "B · TRANSFORME AS FRASES CONFORME A INDICAÇÃO", sub: "Exemplo resolvido: He is my brother. → He isn’t my brother. → Is he my brother?", items: [
+          { pre: "02. NEGATIVA · They are at the park.", answers: ["They aren’t at the park.", "They aren't at the park.", "They are not at the park.", "They’re not at the park.", "They're not at the park."], v: "mint" },
+          { pre: "02. INTERROGATIVA · They are at the park.", answers: ["Are they at the park?"], v: "mint" },
+          { pre: "03. NEGATIVA · I am happy.", answers: ["I am not happy.", "I’m not happy.", "I'm not happy."], v: "lilac" },
+          { pre: "03. INTERROGATIVA · I am happy.", answers: ["Am I happy?"], v: "lilac" },
+          { pre: "04. NEGATIVA · She is a teacher.", answers: ["She isn’t a teacher.", "She isn't a teacher.", "She is not a teacher.", "She’s not a teacher.", "She's not a teacher."], v: "cream" },
+          { pre: "04. INTERROGATIVA · She is a teacher.", answers: ["Is she a teacher?"], v: "cream" },
+          { pre: "05. NEGATIVA · We are friends.", answers: ["We aren’t friends.", "We aren't friends.", "We are not friends.", "We’re not friends.", "We're not friends."], v: "mint" },
+          { pre: "05. INTERROGATIVA · We are friends.", answers: ["Are we friends?"], v: "mint" } ] },
+        { t: "sec", text: "C · ESCREVA FRASES SUAS USANDO AS TRÊS FORMAS DO VERB TO BE" },
+        { t: "free", id: "a5f2", cols: 2, items: [
+          { n: "1", kicker: "AFIRMATIVA", prefix: "I am…", ideas: "Ex.: I am a student.", v: "mint", c: "teal" },
+          { n: "2", kicker: "AFIRMATIVA", prefix: "She is…", ideas: "Escreva outra frase afirmativa.", v: "mint", c: "teal" },
+          { n: "3", kicker: "NEGATIVA", prefix: "I’m not…", ideas: "Ex.: I am not tired.", v: "red", c: "red" },
+          { n: "4", kicker: "NEGATIVA", prefix: "He isn’t…", ideas: "Escreva outra frase negativa.", v: "red", c: "red" },
+          { n: "5", kicker: "INTERROGATIVA", prefix: "Are you…?", ideas: "Ex.: Are you ready?", v: "lilac", c: "purple" },
+          { n: "6", kicker: "INTERROGATIVA", prefix: "Is she…?", ideas: "Escreva outra pergunta.", v: "lilac", c: "purple" } ] },
+        { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "A intenção da frase define a estrutura. Afirme, negue e pergunte com clareza." },
+        { t: "image", id: "a5p8b", ph: "Ilustração: menina de camiseta roxa com o dedo indicador levantado e um balão de fala ao lado com a frase Você já domina as três formas! Continue praticando!" },
+        { t: "note", v: "lilac", kicker: "VAMOS PRATICAR!", text: "Na próxima página, você vai revisar rapidamente o que aprendeu na Aula 05." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA AULA", text: "Na Aula 06, você vai aprender a falar sobre países e nacionalidades." } ] },
+
+      { blocks: [
+        { t: "badge", label: "AULA 05", page: "PÁGINA 09" },
+        { t: "title", en: "VERB TO BE: REVIEW", pt: "Você já sabe afirmar, negar e perguntar em inglês." },
+        { t: "kicker", text: "AULA CONCLUÍDA · USE ESTE CHECKLIST ANTES DE AVANÇAR" },
+        { t: "check", id: "a5c2", title: "EU CONSIGO...", items: [
+          "escolher am, is ou are pelo sujeito da frase.",
+          "afirmar com sujeito + am / is / are.",
+          "negar com am not, isn’t e aren’t.",
+          "perguntar colocando am, is ou are antes do sujeito.",
+          "responder com Yes, I am. / No, I’m not.",
+          "não usar do, does nem doesn’t com o verb to be." ] },
+        { t: "objective", v: "red", title: "REVISE AS PÁGINAS 02 A 07", text: "Se ainda confunde am, is e are ou a ordem das palavras na pergunta." },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 05", body: "Uma revisão guiada das três formas.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Converse usando as três formas em um diálogo curto.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 06 · Countries and Nationalities", body: "Diga de onde você é e qual é a sua nacionalidade." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 05", body: "Aprofunde com o professor e reveja as três formas.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Microdesafio de fala: diga uma frase afirmativa, uma negativa e uma pergunta com o verb to be. Peça que a IA confirme se você usou a forma correta.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 06 · COUNTRIES AND NATIONALITIES", body: "Você vai aprender a dizer de onde é e qual é a sua nacionalidade." },
+        { t: "bar", label: "PROGRESSO", value: "05 DE 42 AULAS", pct: "12%" },
+        { t: "note", v: "cream", bold: true, text: "Pratique um pouco todo dia. A Aula 06 já está esperando por você." } ] }
     ]
   },
 
@@ -1269,7 +1493,7 @@ export const LESSONS = [
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 12", body: "Pronúncia dos plurais: /s/, /z/ e /ɪz/.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
           { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Fale sobre quantidades usando plurais.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 3 · Referência e lugar", body: "This/That, possessivos, there is/are e preposições." } ] }
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 3 · Referência e lugar", body: "This/That, possessivos, there is/are, preposições e presente simples." } ] }
     ]
   }
   ,{
@@ -1504,8 +1728,8 @@ export const LESSONS = [
           { pre: "4. The bag is", post: "the chair. (embaixo)", answers: ["under"], v: "mint" },
           { pre: "5. The bank is", post: "the school. (ao lado)", answers: ["next to", "beside"], v: "lilac" } ] },
         { t: "mc", id: "a16mc1", title: "ESCOLHA A PREPOSIÇÃO", v: "gray", questions: [
-          { q: "Eu moro no Brasil.", options: ["I live in Brazil.", "I live on Brazil."], answer: 0 },
-          { q: "A foto está na parede.", options: ["The photo is in the wall.", "The photo is on the wall."], answer: 1 } ] } ] },
+          { q: "Eu estou no Brasil.", options: ["I am in Brazil.", "I am on Brazil."], answer: 0 },
+          { q: "A TV está na parede.", options: ["The TV is in the wall.", "The TV is on the wall."], answer: 1 } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 05" },
@@ -1647,7 +1871,7 @@ export const LESSONS = [
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 18", body: "Negativas do presente simples na prática.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
           { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Diga cinco coisas que você não faz.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 4 · Presente simples", body: "Perguntas, frequência, rotina, horas e comida." } ] }
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 4 · Presente simples", body: "Perguntas, frequência, rotina, horas, comida e o verbo can." } ] }
     ]
   }
   ,{
@@ -1680,7 +1904,7 @@ export const LESSONS = [
           { a: "Do they study English?", b: "Yes, they do. / No, they don’t.", v: "cream" },
           { a: "Does she speak French?", b: "Yes, she does. / No, she doesn’t.", v: "mint" } ] },
         { t: "match", id: "a19match1", title: "LIGUE PERGUNTA E RESPOSTA (AULA 19)",
-          left: ["Do you like pizza?", "Does he play soccer?", "Do they work here?", "Does she speak English?"],
+          left: ["Do you like music?", "Does he play soccer?", "Do they work here?", "Does she speak English?"],
           right: ["Yes, he does.", "Yes, I do.", "Yes, she does.", "No, they don’t."],
           answer: [1, 0, 3, 2] } ] },
 
@@ -1843,7 +2067,7 @@ export const LESSONS = [
           "contar minha rotina em ordem." ] },
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 21", body: "Uma rotina completa narrada em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte seu dia de ontem até hoje.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Conte sua rotina do começo ao fim do dia.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
         { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 22 · Telling the Time" } ] }
     ]
   },
@@ -2244,7 +2468,7 @@ export const LESSONS = [
 
       { blocks: [
         { t: "badge", label: "AULA 28", page: "PÁGINA 03" },
-        { t: "title", en: "COMO DESCREVER", pt: "wear, put on e be wearing." },
+        { t: "title", en: "COMO DESCREVER", pt: "wear e be wearing." },
         { t: "rule", v: "mint", c: "teal", kicker: "ROTINA", from: "wear", to: "I wear a uniform.", ex: "She wears glasses.", tr: "Todo dia." },
         { t: "rule", v: "lilac", c: "purple", kicker: "AGORA", from: "be wearing", to: "I’m wearing jeans.", ex: "He is wearing a blue shirt.", tr: "Neste momento." },
         { t: "objective", v: "navy", title: "A ORDEM DAS PALAVRAS", text: "cor antes da peça: a white t-shirt · black shoes" } ] },
@@ -2399,7 +2623,7 @@ export const LESSONS = [
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 30", body: "Apresentações profissionais em inglês.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
           { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Apresente-se profissionalmente em 30 segundos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 6 · Passado", body: "O passado do verb to be e dos verbos regulares e irregulares." } ] }
+        { t: "next", kicker: "PRÓXIMO MÓDULO", title: "Módulo 6 · Dia a dia e preferências", body: "Direções, preferências, frequência, can, pronomes objeto e restaurante." } ] }
     ]
   },
   {
@@ -2666,7 +2890,7 @@ export const LESSONS = [
           { icon: "play", v: "mint", title: "VIDEOAULA · AULA 32 · LIKE / LOVE / DISLIKE / HATE + -ING", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
           { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Missão oral: diga quatro preferências sobre atividades e faça duas perguntas usando Do you like…?", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "32 DE 42 AULAS", pct: "76%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 33 · Adverbs and Expressions of Frequency" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 33 · How Often? Frequency" } ] }
     ]
   },
   {
@@ -2691,8 +2915,8 @@ export const LESSONS = [
           { kicker: "100%", title: "ALWAYS", body: "It happens all the time.", c: "purple", v: "lilac" },
           { kicker: "85%", title: "USUALLY", body: "It happens most of the time.", c: "blue", v: "blue" },
           { kicker: "70%", title: "OFTEN", body: "It happens many times.", c: "teal", v: "mint" },
-          { kicker: "50%", title: "SOMETIMES", body: "It happens sometimes.", c: "teal", v: "green" },
-          { kicker: "20%", title: "NOT OFTEN", body: "It happens few times.", c: "orange", v: "cream" },
+          { kicker: "50%", title: "SOMETIMES", body: "It happens about half the time.", c: "teal", v: "green" },
+          { kicker: "20%", title: "NOT OFTEN", body: "It doesn’t happen very often.", c: "orange", v: "cream" },
           { kicker: "10%", title: "RARELY", body: "It happens almost never.", c: "orange", v: "cream" },
           { kicker: "0%", title: "NEVER", body: "It doesn’t happen.", c: "red", v: "red" } ] },
         { t: "image", id: "a33p2", ph: "Fotos: rotinas do dia a dia (ler, tomar café, correr, assistir TV, dormir)" },
@@ -2703,7 +2927,7 @@ export const LESSONS = [
           { text: "They usually have dinner together.", c: "blue" },
           { text: "He often goes running after work.", c: "teal" },
           { text: "I sometimes drink coffee in the afternoon.", c: "teal" },
-          { text: "We don’t watch TV not often.", c: "orange" },
+          { text: "We don’t watch TV very often.", c: "orange" },
           { text: "She rarely travels on business.", c: "orange" },
           { text: "He never eats junk food.", c: "red" } ] },
         { t: "note", v: "cream", bar: true, bold: true, kicker: "KEY IDEA", text: "Use adverbs of frequency to talk about habits and routines in your life." } ] },
@@ -2769,9 +2993,9 @@ export const LESSONS = [
         { t: "title", en: "PRACTICE B", pt: "CHOOSE THE EXPRESSION" },
         { t: "image", id: "a33p8", ph: "Fotos: homem estudando à noite, mulher na academia, homem assistindo TV" },
         { t: "mc", id: "a33mc2", title: "ESCOLHA A EXPRESSÃO", v: "cream", questions: [
-          { q: "1. He ________ does his homework on time. (≈85%)", options: ["not often", "sometimes", "usually"], answer: 2 },
-          { q: "2. I go to the gym ________. (Monday · Wednesday · Friday)", options: ["once a week", "every day", "three times a week"], answer: 2 },
-          { q: "3. I watch TV ________. (one time every evening)", options: ["once a day", "twice a day", "three times a day"], answer: 0 } ] } ] },
+          { q: "5. He ________ does his homework on time. (≈85%)", options: ["not often", "sometimes", "usually"], answer: 2 },
+          { q: "6. I go to the gym ________. (Monday · Wednesday · Friday)", options: ["once a week", "every day", "three times a week"], answer: 2 },
+          { q: "7. I watch TV ________. (one time every evening)", options: ["once a day", "twice a day", "three times a day"], answer: 0 } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 33 · GABARITO" },
@@ -2813,7 +3037,7 @@ export const LESSONS = [
           { icon: "play", v: "mint", title: "VIDEOAULA · AULA 33 · ADVERBS AND EXPRESSIONS OF FREQUENCY", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
           { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Fale sobre sua rotina usando pelo menos três advérbios de frequência e três expressões de frequência. Depois, responda a perguntas com How often…?", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "33 DE 42 AULAS", pct: "79%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 34 · Can / Can’t" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 34 · Can: Abilities" } ] }
     ]
   },
   {
@@ -3052,7 +3276,7 @@ export const LESSONS = [
           { icon: "play", v: "mint", title: "VIDEOAULA · AULA 35 · OBJECT PRONOUNS", body: "Veja a explicação completa e acompanhe os exemplos.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR À VIDEOAULA", c: "navy" },
           { icon: "mic", v: "lilac", title: "PRATIQUE COM A IA", body: "Substitua pessoas e objetos por object pronouns em cinco frases e use pelo menos duas delas depois de preposições.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "purple" } ] },
         { t: "bar", label: "PROGRESSO", value: "35 DE 42 AULAS", pct: "83%" },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 36 · Menu / Meals" } ] }
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 36 · Meals and Restaurant" } ] }
     ]
   },
   {
@@ -3961,12 +4185,12 @@ export const LESSONS = [
           { s: "b", text: "W: How was your sandwich?" },
           { s: "a", text: "C: It was great." },
           { s: "b", text: "W: Can I get you anything else?" },
-          { s: "a", text: "C: No, thanks. Could I have the check, please?" },
+          { s: "a", text: "C: No, thanks. Could I have the bill, please?" },
           { s: "b", text: "W: Sure. That’s $8.50." },
           { s: "a", text: "C: Here you go. Keep the change." },
           { s: "b", text: "W: Thanks." } ] },
         { t: "cards", items: [
-          { tag: "USEFUL EXPRESSIONS", c: "teal", v: "mint", lines: ["I’d like…", "Is it for here or to go?", "Can I get you anything to drink?", "Sparkling or still?", "Any appetizers?", "How was your…?", "Could I have the check, please?", "Keep the change."] } ] } ] },
+          { tag: "USEFUL EXPRESSIONS", c: "teal", v: "mint", lines: ["I’d like…", "Is it for here or to go?", "Can I get you anything to drink?", "Sparkling or still?", "Any appetizers?", "How was your…?", "Could I have the bill, please?", "Keep the change."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 42" },
@@ -4001,7 +4225,7 @@ export const LESSONS = [
           { text: "3. No, he doesn’t.", c: "teal" },
           { text: "4. He goes to school.", c: "purple" },
           { text: "5. He goes to the gym after dinner.", c: "teal" },
-          { text: "6. She’s Brian’s best friend.", c: "purple" },
+          { text: "6. She’s his best friend.", c: "purple" },
           { text: "7. He goes to bed at 10:00.", c: "teal" },
           { text: "8. He reads.", c: "purple" } ] } ] },
 
@@ -4024,7 +4248,7 @@ export const LESSONS = [
         { t: "mc", id: "a42mc2", title: "PARTE 2", v: "cream", questions: [
           { q: "7a. She learns fast and ________ love…", options: ["I", "me"], answer: 0 },
           { q: "7b. …________ to ________ when she plays.", options: ["listen / she", "listening / her"], answer: 1 },
-          { q: "8. I can’t say the same for ________.", options: ["I", "me"], answer: 1 },
+          { q: "8. The piano is not easy for ________.", options: ["I", "me"], answer: 1 },
           { q: "9. I can’t play ________ songs very well.", options: ["many", "much"], answer: 0 },
           { q: "10a. Our teacher told ________ that ________ have to practice…", options: ["we / us", "us / we"], answer: 1 },
           { q: "10b. …at least ________ a week…", options: ["twice", "two time"], answer: 0 },
@@ -4035,15 +4259,15 @@ export const LESSONS = [
         { t: "badge", label: "AULA 42 · GABARITO" },
         { t: "title", en: "CHECK THE TEXT", pt: "THE BEST OPTIONS" },
         { t: "image", id: "a42p8", ph: "Foto: casal com sacolas no shopping" },
-        { t: "key", v: "gray", text: "I live near the gym. If you take my street toward the shopping mall, you’ll see it on the left after three blocks. It’s across from a big supermarket. I hate going to the gym in the afternoon. That’s why I always go in the evening. Nathaly and I started playing the piano last year. She learns fast, and I love listening to her when she plays. I can’t say the same for myself. I can’t play many songs very well. Our teacher told us that we have to practice at least twice a week, but I don’t have much free time to practice. But Nathaly practices every day. That’s why she can play a lot of songs pretty well." } ] },
+        { t: "key", v: "gray", text: "I live near the gym. If you take my street toward the shopping mall, you’ll see it on the left after three blocks. It’s across from a big supermarket. I hate going to the gym in the afternoon. That’s why I always go in the evening. Nathaly and I started playing the piano last year. She learns fast, and I love listening to her when she plays. The piano is not easy for me. I can’t play many songs very well. Our teacher told us that we have to practice at least twice a week, but I don’t have much free time to practice. But Nathaly practices every day. That’s why she can play a lot of songs pretty well." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
         { t: "title", en: "PUT IT IN THE PAST (1)", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
         { t: "image", id: "a42p9", ph: "Foto: moça pensativa" },
         { t: "free", id: "a42f2", items: [
-          { n: "1", kicker: "REESCREVA NO PASSADO", prefix: "I’m Molly. Yesterday I have a really busy day. I get up at 7:00, take a shower, get dressed, brush my teeth and have breakfast.", ideas: "", c: "teal", v: "mint" },
-          { n: "2", kicker: "REESCREVA NO PASSADO", prefix: "I drink orange juice and eat some fruit and cereal. After breakfast I go to school.", ideas: "", c: "purple", v: "lilac" },
+          { n: "1", kicker: "REESCREVA NO PASSADO", prefix: "I’m Molly. Yesterday I have a really busy day. I get up at 7:00, take a shower, brush my teeth and have breakfast.", ideas: "", c: "teal", v: "mint" },
+          { n: "2", kicker: "REESCREVA NO PASSADO", prefix: "I drink orange juice and have some fruit and cereal. After breakfast I go to school.", ideas: "", c: "purple", v: "lilac" },
           { n: "3", kicker: "REESCREVA NO PASSADO", prefix: "I have math, geography and history classes. At 12:30 I go back home and have lunch.", ideas: "", c: "yellow", v: "cream" } ] } ] },
 
       { blocks: [
@@ -4053,15 +4277,15 @@ export const LESSONS = [
         { t: "free", id: "a42f3", items: [
           { n: "4", kicker: "REESCREVA NO PASSADO", prefix: "I do a lot of homework after lunch. I work on my homework the whole afternoon. But when I finish it I can play video games.", ideas: "", c: "teal", v: "mint" },
           { n: "5", kicker: "REESCREVA NO PASSADO", prefix: "I play for 2 hours, then I meet a friend at the shopping mall. We see a movie together. After the movie, he come to my home for dinner.", ideas: "", c: "purple", v: "lilac" },
-          { n: "6", kicker: "REESCREVA NO PASSADO", prefix: "My mom make some delicious hamburgers. She work in a restaurant some years ago. After that, my friend go home and I read a little. I am really tired, so I sleep around 10:45 p.m.", ideas: "", c: "yellow", v: "cream" } ] } ] },
+          { n: "6", kicker: "REESCREVA NO PASSADO", prefix: "My mom make some delicious hamburgers. She work in a restaurant some years ago. After that, my friend go home and I read a little. I am really tired, so I go to bed around 10:45 p.m.", ideas: "", c: "yellow", v: "cream" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 42 · GABARITO" },
         { t: "title", en: "YESTERDAY: ANSWERS 1", pt: "MOLLY’S BUSY DAY" },
         { t: "image", id: "a42p11", ph: "Foto: moça pensativa" },
         { t: "rows", items: [
-          { text: "I’m Molly. Yesterday I had a really busy day. I got up at 7:00, took a shower, got dressed, brushed my teeth and had breakfast.", c: "teal" },
-          { text: "I drank orange juice and ate some fruit and cereal. After breakfast I went to school.", c: "purple" },
+          { text: "I’m Molly. Yesterday I had a really busy day. I got up at 7:00, took a shower, brushed my teeth and had breakfast.", c: "teal" },
+          { text: "I drank orange juice and had some fruit and cereal. After breakfast I went to school.", c: "purple" },
           { text: "I had math, geography and history classes. At 12:30 I went back home and had lunch.", c: "orange" } ] } ] },
 
       { blocks: [
@@ -4071,7 +4295,7 @@ export const LESSONS = [
         { t: "rows", items: [
           { text: "I did a lot of homework after lunch. I worked on my homework the whole afternoon. But when I finished it I could play video games.", c: "teal" },
           { text: "I played for 2 hours, then I met a friend at the shopping mall. We saw a movie together. After the movie, he came to my home for dinner.", c: "purple" },
-          { text: "My mom made some delicious hamburgers. She worked in a restaurant some years ago. After that, my friend went home and I read a little. I was really tired, so I slept around 10:45 p.m.", c: "orange" } ] } ] },
+          { text: "My mom made some delicious hamburgers. She worked in a restaurant some years ago. After that, my friend went home and I read a little. I was really tired, so I went to bed around 10:45 p.m.", c: "orange" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
@@ -4079,7 +4303,7 @@ export const LESSONS = [
         { t: "image", id: "a42p13", ph: "Fotos: pessoa escutando e casal no shopping" },
         { t: "free", id: "a42f4", items: [
           { n: "1", kicker: "ORDER A MEAL AND A DRINK", prefix: "I’d like…", ideas: "", c: "teal", v: "mint" },
-          { n: "2", kicker: "ASK FOR THE CHECK", prefix: "Could I have the check, please?", ideas: "Escreva sua versão do pedido.", c: "purple", v: "lilac" },
+          { n: "2", kicker: "ASK FOR THE BILL", prefix: "Could I have the bill, please?", ideas: "Escreva sua versão do pedido.", c: "purple", v: "lilac" },
           { n: "3", kicker: "SAY HOW OFTEN YOU DO ONE ACTIVITY", prefix: "I usually…", ideas: "", c: "purple", v: "lilac" },
           { n: "4", kicker: "SAY WHERE A PLACE IS", prefix: "It’s across from…", ideas: "", c: "teal", v: "mint" },
           { n: "5", kicker: "TALK ABOUT A REAL QUANTITY", prefix: "I drink a lot of…", ideas: "", c: "teal", v: "mint" },

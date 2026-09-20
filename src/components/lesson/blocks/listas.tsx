@@ -181,7 +181,9 @@ export function BlocoTable({ bloco }: { bloco: TableBlock }) {
           <div className="rounded-[12px] bg-[#0F2050] px-4 py-3 fs-rotulo font-extrabold tracking-[0.08em] text-white">
             {bloco.head[0]}
           </div>
-          <div className="rounded-[12px] bg-[#0E9BAE] px-4 py-3 text-center fs-rotulo font-extrabold tracking-[0.08em] text-white">
+          {/* Fundo do teal de link (o `--link` do globals.css). O #0E9BAE do
+              protótipo dava 3,07 com este rótulo branco de 12px. */}
+          <div className="rounded-[12px] bg-[#0E7A8B] px-4 py-3 text-center fs-rotulo font-extrabold tracking-[0.08em] text-white">
             {bloco.head[1]}
           </div>
         </div>
@@ -277,8 +279,13 @@ export function BlocoGrid({ bloco }: { bloco: GridBlock }) {
                   ) : null}
                 </div>
               ) : null}
+              {/* Botão compacto: a 390px de tela o cartão de duas colunas fica
+                  com uns 110px, e a pastilha grande quebrava "Ouvir pronúncia"
+                  em duas linhas. O nome continua inteiro no `aria-label`. */}
               <div className="text-[19px] font-black text-[#0F2050] [text-wrap:pretty]">
-                <OuvirTexto texto={g.title}>{g.title}</OuvirTexto>
+                <OuvirTexto texto={g.title} compacto>
+                  {g.title}
+                </OuvirTexto>
               </div>
               {g.body ? (
                 <div className="mt-1 fs-apoio text-[#6B7280]">{g.body}</div>

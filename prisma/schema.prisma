@@ -1,4 +1,4 @@
-// Esquema de dados do "Inglês em Ação" — ver seção 4 do docs/CONTRACT.md.
+// Esquema de dados do WSA English — ver seção 4 do docs/CONTRACT.md.
 // O estado que o protótipo guardava em localStorage (ingles-em-acao-v1) vira banco aqui.
 // As tabelas do painel administrativo seguem docs/BACKOFFICE.md §5.
 

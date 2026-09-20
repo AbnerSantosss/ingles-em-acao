@@ -33,7 +33,7 @@ import type {
  * Texto legível sobre uma cor chapada. O protótipo fixava branco em etiquetas
  * e selos; sobre amarelo isso não passa em contraste, e a regra da marca é
  * texto navy sobre amarelo (CONTRACT §3). Fora da paleta `SOLID` a cor cai no
- * teal padrão (#0E9BAE), que aceita branco.
+ * teal padrão de `solid()` (#0E7A8B), que aceita branco com 5,03.
  */
 function corDeTexto(c: AccentName | undefined): string {
   return c && isSolidName(c) ? SOLID_FG[c] : "#FFFFFF";
@@ -225,7 +225,9 @@ export function BlocoPron({ bloco }: { bloco: PronBlock }) {
             {bloco.code}
           </OuvirTexto>
         </span>
-        <span className="fs-rotulo font-extrabold tracking-[0.08em] opacity-85">
+        {/* A tradução é um degrau abaixo do código, mas 85% de branco sobre o
+            selo teal caía em 4,41. Com 90% fica em 4,71 e o degrau continua. */}
+        <span className="fs-rotulo font-extrabold tracking-[0.08em] opacity-90">
           {bloco.pt}
         </span>
       </div>

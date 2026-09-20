@@ -8,7 +8,15 @@ import { describe, expect, it } from 'vitest';
 
 import * as rotulos from '@/components/lesson/audio/rotulos';
 
-const { formatarTempo, resumirTexto, rotuloDeOuvir, rotuloDeOuvirDevagar, textoDoProgresso } = rotulos;
+const {
+  formatarTempo,
+  resumirTexto,
+  rotuloDeContinuar,
+  rotuloDeOuvir,
+  rotuloDeOuvirDevagar,
+  rotuloDePausar,
+  textoDoProgresso,
+} = rotulos;
 
 describe('resumirTexto', () => {
   it('texto curto passa inteiro, com os espaços e quebras juntados', () => {
@@ -30,9 +38,19 @@ describe('resumirTexto', () => {
 });
 
 describe('nomes acessíveis', () => {
-  it('ouvir e ouvir mais devagar levam o texto exibido', () => {
-    expect(rotuloDeOuvir('I am ready.')).toBe('Ouvir: I am ready.');
+  it('cada estado do botão leva o texto exibido', () => {
+    expect(rotuloDeOuvir('I am ready.')).toBe('Ouvir pronúncia: I am ready.');
+    expect(rotuloDePausar('I am ready.')).toBe('Pausar: I am ready.');
+    expect(rotuloDeContinuar('I am ready.')).toBe('Continuar: I am ready.');
     expect(rotuloDeOuvirDevagar('I am ready.')).toBe('Ouvir mais devagar: I am ready.');
+  });
+
+  it('o nome acessível começa pelo texto que aparece no botão (WCAG 2.5.3)', () => {
+    expect(rotuloDeOuvir('I am ready.').startsWith(rotulos.ROTULO_OUVIR_PRONUNCIA)).toBe(true);
+    expect(rotuloDePausar('I am ready.').startsWith(rotulos.ROTULO_PAUSAR)).toBe(true);
+    expect(rotuloDeContinuar('I am ready.').startsWith(rotulos.ROTULO_CONTINUAR)).toBe(true);
+    // O botão pequeno mostra só "Devagar", que está dentro de "Ouvir mais devagar".
+    expect(rotuloDeOuvirDevagar('I am ready.')).toContain(rotulos.ROTULO_DEVAGAR.toLowerCase());
   });
 });
 
@@ -66,9 +84,11 @@ describe('escrita de tela (docs/ESCRITA.md)', () => {
 
   it('os textos de tela, palavra por palavra', () => {
     expect(rotulos.ERRO_AO_TOCAR).toBe('Não deu para tocar. Tente de novo.');
+    expect(rotulos.ROTULO_OUVIR_PRONUNCIA).toBe('Ouvir pronúncia');
     expect(rotulos.ROTULO_OUVIR_DIALOGO).toBe('Ouvir o diálogo');
     expect(rotulos.ROTULO_OUVIR_TODOS).toBe('Ouvir todos');
-    expect(rotulos.ROTULO_PARAR).toBe('Parar');
+    expect(rotulos.ROTULO_PAUSAR).toBe('Pausar');
+    expect(rotulos.ROTULO_CONTINUAR).toBe('Continuar');
     expect(rotulos.ROTULO_DEVAGAR).toBe('Devagar');
     expect(rotulos.ROTULO_PROGRESSO).toBe('Progresso do áudio');
   });

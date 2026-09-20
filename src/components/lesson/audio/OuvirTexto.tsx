@@ -10,11 +10,20 @@
  *
  * Formas:
  * - 'linha' (padrão): o botão vem logo depois do texto, na mesma linha. Serve
- *   para palavra, célula de tabela, título curto e fala de diálogo.
+ *   para palavra, célula de tabela, título curto e fala de diálogo. Com o botão
+ *   grande a linha pode quebrar, e aí o botão desce inteiro para a linha de
+ *   baixo em vez de espremer a frase.
  * - 'lado': o texto ocupa a largura e o botão fica na coluna da direita. Serve
- *   para parágrafo e linha de lista.
+ *   para parágrafo e linha de lista. Com o botão grande, no celular ele fica
+ *   embaixo do parágrafo, alinhado à esquerda, porque na coluna da direita o
+ *   nome "Ouvir pronúncia" roubaria a largura da leitura.
+ *
+ * Os espaços entre texto e botão moram aqui: 10px no compacto, 12px na linha
+ * com botão grande e 16px na coluna da direita.
  */
 import type { ReactNode } from 'react';
+
+import { cn } from '@/lib/ui/cn';
 
 import { BotaoDeAudio } from './BotaoDeAudio';
 import { useClip } from './ContextoDeAudio';
@@ -54,7 +63,14 @@ export function OuvirTexto({
   if (forma === 'lado') {
     return (
       <div className="min-w-0 flex-1">
-        <div className="flex items-start gap-3">
+        <div
+          className={cn(
+            'flex min-w-0',
+            compacto
+              ? 'items-start gap-3'
+              : 'flex-col items-start gap-3 sm:flex-row sm:items-start sm:gap-4',
+          )}
+        >
           <div className="min-w-0 flex-1">{children}</div>
           <BotaoDeAudio clip={clip} textoExibido={texto} compacto={compacto} />
         </div>
@@ -65,7 +81,12 @@ export function OuvirTexto({
 
   return (
     <>
-      <span className="inline-flex max-w-full items-center gap-2 align-middle">
+      <span
+        className={cn(
+          'inline-flex max-w-full items-center align-middle',
+          compacto ? 'gap-2.5' : 'flex-wrap gap-x-3 gap-y-2',
+        )}
+      >
         <span className="min-w-0">{children}</span>
         <BotaoDeAudio clip={clip} textoExibido={texto} compacto={compacto} />
       </span>

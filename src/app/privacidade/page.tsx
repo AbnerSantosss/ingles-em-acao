@@ -11,7 +11,10 @@ import { EMAIL_DE_CONTATO, ListaLegal, PaginaLegal, SecaoLegal } from '@/compone
  * - senha: argon2id (`src/lib/auth/password.ts`);
  * - sessão: cookie httpOnly `iea_session`, 24 h ou 30 dias com "lembrar de mim";
  * - tokens de e-mail: 1 h (redefinir senha) e 24 h (confirmar e-mail), uso único;
- * - tentativas de login: janela de 15 minutos (`rate-limit.ts`).
+ * - tentativas de login: janela de 15 minutos (`rate-limit.ts`);
+ * - áudios das aulas: arquivos estáticos em `public/audio/`, servidos sem
+ *   sessão, com um hash de 8 dígitos no nome (`src/lib/content/blocks.ts`).
+ *   Proteger esse acesso é decisão futura; enquanto for assim, a seção 6 avisa.
  * Mudou o código? Mude este texto junto.
  */
 export const metadata: Metadata = {
@@ -25,10 +28,10 @@ export default function PrivacidadePage() {
   return (
     <PaginaLegal
       titulo="Política de privacidade"
-      atualizadoEm="18 de setembro de 2026"
+      atualizadoEm="19 de setembro de 2026"
       introducao={
         <p>
-          Aqui explicamos quais dados o <strong>Inglês em Ação</strong> coleta, por que coleta e o que você
+          Aqui explicamos quais dados o <strong>WSA English</strong> coleta, por que coleta e o que você
           pode pedir sobre eles, conforme a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018).
           Coletamos só o necessário para o curso funcionar.
         </p>
@@ -110,6 +113,12 @@ export default function PrivacidadePage() {
             'a plataforma de pagamento, quando você compra um plano.',
           ]}
         />
+        <p>
+          <strong>Sobre os áudios das aulas:</strong> cada áudio fica num endereço próprio, com um código
+          embaralhado no nome do arquivo. Quem tiver o endereço completo abre o áudio sem entrar na conta.
+          Esses endereços aparecem só dentro da aula, para quem tem acesso a ela, e não ficam listados em
+          nenhuma página pública. Ainda assim, evite repassar o link de um áudio para quem não é aluno.
+        </p>
         <p>Também podemos compartilhar dados quando a lei ou uma ordem judicial exigir.</p>
       </SecaoLegal>
 

@@ -104,16 +104,32 @@
       "numero": 5,
       "titulo": "Verb to be: Review",
       "tipo": "revisao",
-      "status": "pendente",
+      "status": "pronta",
       "apresenta": {
         "vocabulario": [],
         "estruturas": [],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": [],
-      "textosEmIngles": [],
-      "nota": "Conteúdo da aula pendente com o dono do produto. Não entra na prática nem no áudio."
+      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "am", "is", "are", "ready", "happy", "friends", "a doctor", "I + am + ___", "he / she / it + is + ___", "you / we / they + are + ___", "I'm", "he's", "she's", "it's", "we're", "they're", "not", "a teacher", "tired", "at home", "students", "late", "I + am + not + ___", "he / she / it + is + not + ___", "you / we / they + are + not + ___", "I'm not", "isn't", "aren't", "we're not", "they're not", "yes", "no", "Am + I + ___?", "Is + he / she / it + ___?", "Are + you / we / they + ___?", "Yes, I am.", "No, I'm not.", "Yes, he / she / it + is.", "No, he / she / it + isn't.", "Yes, you / we / they + are.", "No, you / we / they + aren't."],
+      "textosEmIngles": [
+        { "pagina": 1, "bloco": 7, "tipoDeTexto": "exemplo" },
+        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
+        { "pagina": 2, "bloco": 7, "tipoDeTexto": "lista" },
+        { "pagina": 2, "bloco": 9, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 5, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 7, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 9, "tipoDeTexto": "lista" },
+        { "pagina": 3, "bloco": 12, "tipoDeTexto": "exemplo" },
+        { "pagina": 3, "bloco": 13, "tipoDeTexto": "exemplo" },
+        { "pagina": 3, "bloco": 14, "tipoDeTexto": "exemplo" },
+        { "pagina": 4, "bloco": 5, "tipoDeTexto": "exemplo" },
+        { "pagina": 5, "bloco": 6, "tipoDeTexto": "dialogo" },
+        { "pagina": 5, "bloco": 9, "tipoDeTexto": "dialogo" },
+        { "pagina": 5, "bloco": 12, "tipoDeTexto": "dialogo" },
+        { "pagina": 6, "bloco": 4, "tipoDeTexto": "exemplo" },
+        { "pagina": 7, "bloco": 10, "tipoDeTexto": "exemplo" }
+      ]
     },
     {
       "numero": 6,
@@ -121,12 +137,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["from", "Brazil", "Japan", "Italy", "Italian", "Egypt", "Egyptian", "Australia", "Australian", "Spain", "Spanish", "Poland", "Polish", "Ireland", "Irish", "Turkey", "Turkish", "China", "Chinese", "Japanese", "Portugal", "Portuguese", "Vietnam", "Vietnamese", "French", "Germany", "German", "Greece", "Greek", "the United States", "American"],
-        "estruturas": ["am / is / are + from + ___"],
-        "expressoesFixas": ["Where are you from?", "And you?", "Nice to meet you"],
+        "vocabulario": ["from", "Brazil", "Canada", "Canadian", "Japan", "Japanese", "Italy", "Italian", "French", "England", "English", "Belgium", "Belgian", "the United Kingdom", "British", "Germany", "German", "Portugal", "Portuguese", "China", "Chinese", "Australia", "Australian", "Austria", "Austrian", "Spain", "Spanish", "the United States", "American", "Russia", "Russian", "country", "nationality", "your"],
+        "estruturas": ["am / is / are + from + ___", "Where is + he / she / it + from?", "Where are + you / they + from?"],
+        "expressoesFixas": ["Where are you from?", "What's your nationality?", "Nice to meet you", "How about you?"],
         "pronuncia": []
       },
-      "reutiliza": ["you", "are", "Brazilian", "France", "I'm", "he's", "she's"],
+      "reutiliza": ["you", "he", "she", "it", "they", "is", "are", "Brazilian", "France", "I'm", "he's", "she's", "it's", "they're"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 5, "tipoDeTexto": "dialogo" },
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
@@ -154,12 +170,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["my", "your", "his", "her", "mother", "mom", "father", "dad", "sister", "brother", "son", "daughter", "husband", "wife", "grandmother", "grandfather", "parents", "children", "siblings"],
-        "estruturas": ["This is + ___", "___'s + ___", "Ana's brother is a doctor."],
+        "vocabulario": ["my", "dad", "father", "mom", "mother", "brother", "sister", "grandpa", "grandfather", "grandma", "grandmother", "uncle", "aunt", "cousin", "husband", "wife", "son", "daughter", "grandson", "granddaughter", "grandchildren", "son-in-law", "daughter-in-law", "grandparents", "family", "parents"],
+        "estruturas": ["This is + ___"],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["he", "they", "is", "are", "a doctor", "he / she / it + is + ___", "you / we / they + are + ___"],
+      "reutiliza": ["he", "she", "they", "is", "are", "I'm", "from", "Canada", "Canadian", "he / she / it + is + ___", "you / we / they + are + ___"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 5, "tipoDeTexto": "dialogo" },
         { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
@@ -262,12 +278,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["books", "cars", "houses", "bus", "buses", "box", "boxes", "watch", "watches", "potato", "potatoes", "city", "cities", "baby", "babies", "boy", "boys", "day", "days", "man", "men", "woman", "women", "child", "person", "people", "foot", "feet", "tooth", "teeth", "life", "lives"],
+        "vocabulario": ["books", "cars", "houses", "bus", "buses", "box", "boxes", "watch", "watches", "potato", "potatoes", "city", "cities", "baby", "babies", "boy", "boys", "day", "days", "man", "men", "woman", "women", "child", "person", "people", "foot", "feet", "tooth", "teeth", "life", "lives", "children"],
         "estruturas": [],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["a book", "car", "house", "children"],
+      "reutiliza": ["a book", "car", "house"],
       "textosEmIngles": [
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
         { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
@@ -301,12 +317,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["its", "our", "their", "name"],
+        "vocabulario": ["his", "her", "its", "our", "their", "name"],
         "estruturas": [],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "his", "her", "it's", "is", "new", "car", "sister", "brother"],
+      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "it's", "is", "new", "car", "sister", "brother"],
       "textosEmIngles": [
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
         { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
@@ -356,8 +372,8 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["work", "works", "study", "studies", "rains", "go", "goes", "play", "plays", "have", "has", "every day"],
-        "estruturas": ["I / you / we / they + work", "he / she / it + works", "I work every day.", "Water boils at 100°C."],
+        "vocabulario": ["work", "works", "study", "studies", "rains", "go", "goes", "play", "plays", "have", "has", "every day", "live"],
+        "estruturas": ["I / you / we / they + work", "he / she / it + works", "work + -s = works", "I work every day.", "Water boils at 100°C."],
         "expressoesFixas": [],
         "pronuncia": []
       },
@@ -393,12 +409,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["live", "English", "speak", "where", "what", "when", "how"],
+        "vocabulario": ["speak", "where", "what", "when", "how"],
         "estruturas": ["Do + I / you / we / they + ___?", "Does + he / she / it + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "Yes, he / she / it + does.", "No, he / she / it + doesn't.", "where / what / when / how + do / does + ___?", "Where do you live?", "How do you go to work?"],
         "expressoesFixas": ["What do you do?"],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "they", "he", "she", "it", "work", "study", "coffee", "yes", "no", "don't", "doesn't", "French", "go"],
+      "reutiliza": ["I", "you", "we", "they", "he", "she", "it", "work", "study", "coffee", "yes", "no", "don't", "doesn't", "French", "go", "live", "English"],
       "textosEmIngles": [
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
         { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
@@ -642,12 +658,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["love", "like", "dislike", "hate", "loves", "likes", "dislikes", "hates", "animals", "onions", "music", "a bike", "soccer", "a baker", "the gym", "cousin", "very", "shy", "the guitar", "letters", "vegetables", "video games", "free time", "Saturdays", "but", "just", "listening", "buy", "buying", "cooking", "eat", "eating", "speaking", "dance", "dancing", "living", "having", "taking", "driving", "stop", "stopping", "getting", "plan", "planning", "riding", "making", "meeting", "watching", "singing", "sending", "drinking"],
+        "vocabulario": ["love", "like", "dislike", "hate", "loves", "likes", "dislikes", "hates", "animals", "onions", "music", "a bike", "soccer", "a baker", "the gym", "very", "shy", "the guitar", "letters", "vegetables", "video games", "free time", "Saturdays", "but", "just", "listening", "buy", "buying", "cooking", "eat", "eating", "speaking", "dance", "dancing", "living", "having", "taking", "driving", "stop", "stopping", "getting", "plan", "planning", "riding", "making", "meeting", "watching", "singing", "sending", "drinking"],
         "estruturas": ["love / like / dislike / hate + ___", "love / like / dislike / hate + ___ing", "don't / doesn't + like + ___ing", "Do you like + ___ing?", "What do you like doing in your free time?"],
         "expressoesFixas": ["What about you?"],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "is", "are", "a", "the", "in", "on + ___", "yes", "no", "what", "don't", "doesn't", "friends", "new", "people", "books", "coffee", "bread", "a TV", "play", "playing", "doing", "going", "cook", "speak", "live", "have", "write", "writing", "drive", "sitting", "run", "running", "Do + I / you / we / they + ___?", "Does + he / she / it + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "Yes, he / she / it + does.", "No, he / she / it + doesn't."],
+      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "is", "are", "a", "the", "in", "on + ___", "yes", "no", "what", "don't", "doesn't", "friends", "new", "people", "books", "coffee", "bread", "a TV", "play", "playing", "doing", "going", "cook", "speak", "live", "have", "write", "writing", "drive", "sitting", "run", "running", "Do + I / you / we / they + ___?", "Does + he / she / it + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "Yes, he / she / it + does.", "No, he / she / it + doesn't.", "cousin"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 4, "tipoDeTexto": "texto" },
         { "pagina": 1, "bloco": 5, "tipoDeTexto": "lista" },
@@ -675,12 +691,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["how often", "not often", "visit", "visits", "grandpa", "the beach", "reads", "together", "travels", "on business", "eats", "junk food", "chocolate", "drinks", "gets up", "weekends", "sick", "sleep", "ride", "rides", "in the evening", "every hour", "every week", "every month", "every year", "once a day", "once a week", "once a month", "once a year", "once an hour", "twice a day", "twice a week", "twice a month", "twice a year", "three times a week", "four times a year"],
+        "vocabulario": ["how often", "not often", "visit", "visits", "the beach", "reads", "together", "travels", "on business", "eats", "junk food", "chocolate", "drinks", "gets up", "weekends", "sick", "sleep", "ride", "rides", "in the evening", "every hour", "every week", "every month", "every year", "once a day", "once a week", "once a month", "once a year", "once an hour", "twice a day", "twice a week", "twice a month", "twice a year", "three times a week", "four times a year"],
         "estruturas": ["How often + do / does + ___?", "once / twice / three times + a + ___", "How often do you go to the gym?", "He visits his grandpa once a week.", "Sometimes I listen to music at night."],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "we", "they", "my", "his", "her", "is", "how", "what", "always", "usually", "often", "sometimes", "rarely", "never", "I + always + ___", "I + am + always + ___", "late", "books", "have dinner", "in the morning", "in the afternoon", "at night", "p.m.", "every day", "Sunday", "go", "goes", "running", "work", "coffee", "don't", "watch", "a TV", "eat", "fruit", "juice", "cousin", "winter", "listen", "music", "three", "four", "friends", "play", "soccer", "a bike", "the gym", "Saturdays", "but", "What about you?", "I / you / we / they + don't + ___"],
+      "reutiliza": ["I", "you", "he", "she", "we", "they", "my", "his", "her", "is", "how", "what", "always", "usually", "often", "sometimes", "rarely", "never", "I + always + ___", "I + am + always + ___", "late", "books", "have dinner", "in the morning", "in the afternoon", "at night", "p.m.", "every day", "Sunday", "go", "goes", "running", "work", "coffee", "don't", "watch", "a TV", "eat", "fruit", "juice", "cousin", "winter", "listen", "music", "three", "four", "friends", "play", "soccer", "a bike", "the gym", "Saturdays", "but", "What about you?", "I / you / we / they + don't + ___", "grandpa"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 3, "tipoDeTexto": "exemplo" },
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "texto" },
@@ -731,12 +747,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["me", "him", "us", "them", "with", "grandma", "lessons", "neighbors", "boyfriend", "awesome", "know", "talk", "call", "later", "great", "phone", "friend"],
+        "vocabulario": ["me", "him", "us", "them", "with", "lessons", "neighbors", "boyfriend", "awesome", "know", "talk", "call", "later", "great", "phone", "friend"],
         "estruturas": ["___ + me / you / him / her / it / us / them", "let's", "I love her.", "I live with her.", "Can you help us?"],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "his", "her", "their", "is", "a", "yes", "what", "at", "friends", "love", "like", "likes", "doesn't", "soccer", "watch", "together", "Sunday", "mom", "mother", "grandpa", "live", "chicken", "can", "help", "work", "Yes, I can.", "What about you?", "Can + I / you + ___?", "Do + I / you / we / they + ___?", "love / like / dislike / hate + ___"],
+      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "his", "her", "their", "is", "a", "yes", "what", "at", "friends", "love", "like", "likes", "doesn't", "soccer", "watch", "together", "Sunday", "mom", "mother", "grandpa", "live", "chicken", "can", "help", "work", "Yes, I can.", "What about you?", "Can + I / you + ___?", "Do + I / you / we / they + ___?", "love / like / dislike / hate + ___", "grandma"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 4, "tipoDeTexto": "exemplo" },
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
@@ -815,12 +831,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["a lot of", "lots of", "many", "much", "not many", "not much", "hotels", "during the day", "uncle", "put", "puts", "hamburgers", "strawberries", "need", "tomatoes", "also", "cups"],
+        "vocabulario": ["a lot of", "lots of", "many", "much", "not many", "not much", "hotels", "during the day", "put", "puts", "hamburgers", "strawberries", "need", "tomatoes", "also", "cups"],
         "estruturas": ["a lot of / lots of + ___", "don't + ___ + many / much + ___", "How many + ___?", "How much + ___?", "How many children do you have?", "How much sugar do you put in your coffee?", "How much is this book?"],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "it", "my", "his", "your", "a", "an", "the", "is", "are", "not", "no", "yes", "in", "this", "how", "have", "has", "don't", "doesn't", "some", "any", "eat", "eats", "water", "coffee", "sugar", "fish", "vegetables", "apples", "orange juice", "basket", "children", "a book", "dinner", "lunch", "six", "two", "bread", "fruit", "money", "car", "appetizers", "always", "an apple", "study", "visit", "grandma", "siblings", "near", "every day", "in the morning", "there are + ___", "Is there + ___?", "It's + ___ + dollars", "Do + I / you / we / they + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't."],
+      "reutiliza": ["I", "you", "we", "it", "my", "his", "your", "a", "an", "the", "is", "are", "not", "no", "yes", "in", "this", "how", "have", "has", "don't", "doesn't", "some", "any", "eat", "eats", "water", "coffee", "sugar", "fish", "vegetables", "apples", "orange juice", "basket", "children", "a book", "dinner", "lunch", "six", "two", "bread", "fruit", "money", "car", "appetizers", "always", "an apple", "study", "visit", "grandma", "near", "every day", "in the morning", "there are + ___", "Is there + ___?", "It's + ___ + dollars", "Do + I / you / we / they + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "uncle"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 4, "tipoDeTexto": "lista" },
         { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
@@ -839,12 +855,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["was", "were", "yesterday", "last", "ago", "last night", "last Sunday", "last week", "last month", "last year", "two days ago", "three months ago", "four years ago", "ugly", "a puppy", "cute", "the movies", "the clown", "funny", "a wedding party", "born", "who", "or", "family"],
+        "vocabulario": ["was", "were", "yesterday", "last", "ago", "last night", "last Sunday", "last week", "last month", "last year", "two days ago", "three months ago", "four years ago", "ugly", "a puppy", "cute", "the movies", "the clown", "funny", "a wedding party", "born", "who", "or"],
         "estruturas": ["I / he / she / it + was + ___", "you / we / they + were + ___", "wasn't", "weren't", "I / he / she / it + wasn't + ___", "you / we / they + weren't + ___", "Was + I / he / she / it + ___?", "Were + you / we / they + ___?", "Yes, I / he / she / it + was.", "No, I / he / she / it + wasn't.", "Yes, you / we / they + were.", "No, you / we / they + weren't.", "I was at home yesterday.", "Where were you last night?", "I was born in 2000."],
         "expressoesFixas": ["When were you born?"],
         "pronuncia": []
       },
-      "reutiliza": ["I", "he", "she", "it", "you", "we", "they", "my", "her", "a", "the", "at", "in", "not", "yes", "no", "where", "when", "with", "two", "three", "four", "days", "at home", "work", "school", "Japan", "Italy", "China", "sick", "dog", "daughter", "Sunday", "Saturday", "in + ___"],
+      "reutiliza": ["I", "he", "she", "it", "you", "we", "they", "my", "her", "a", "the", "at", "in", "not", "yes", "no", "where", "when", "with", "two", "three", "four", "days", "at home", "work", "school", "Japan", "Italy", "China", "sick", "dog", "daughter", "Sunday", "Saturday", "in + ___", "family"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 5, "tipoDeTexto": "lista" },
         { "pagina": 1, "bloco": 6, "tipoDeTexto": "texto" },
@@ -869,12 +885,12 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["arrived", "worked", "showed", "walked", "decide", "decided", "die", "died", "receive", "received", "liked", "lived", "studied", "try", "tried", "cry", "cried", "played", "watched", "stopped", "planned", "prefer", "preferred", "admit", "admitted", "listened", "loved", "washed", "hated", "wanted", "started", "visited", "helped", "arrive", "minutes", "yesterday morning", "yesterday afternoon", "yesterday evening", "last Christmas", "ten minutes ago", "an hour ago", "a week ago", "a month ago", "a year ago", "beautiful", "a photo", "flowers", "because", "sad", "a movie", "the bus stop", "wrong", "math", "history", "busy", "grandparents", "on time", "did"],
+        "vocabulario": ["arrived", "worked", "showed", "walked", "decide", "decided", "die", "died", "receive", "received", "liked", "lived", "studied", "try", "tried", "cry", "cried", "played", "watched", "stopped", "planned", "prefer", "preferred", "admit", "admitted", "listened", "loved", "washed", "hated", "wanted", "started", "visited", "helped", "arrive", "minutes", "yesterday morning", "yesterday afternoon", "yesterday evening", "last Christmas", "ten minutes ago", "an hour ago", "a week ago", "a month ago", "a year ago", "beautiful", "a photo", "flowers", "because", "sad", "a movie", "the bus stop", "wrong", "math", "history", "busy", "on time", "did"],
         "estruturas": ["I / you / he / she / it / we / they + ___ed", "didn't", "Did + I / you / he / she / it / we / they + ___?", "Yes, I / you / he / she / it / we / they + did.", "No, I / you / he / she / it / we / they + didn't.", "She arrived ten minutes late for work.", "Yesterday was a busy day.", "Did you go to the movies yesterday?"],
         "expressoesFixas": [],
         "pronuncia": ["-ed /d/ (arrived)", "-ed /t/ (liked)", "-ed /ɪd/ (decided)"]
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "her", "their", "a", "an", "the", "in", "at", "on", "this", "that", "from", "with", "when", "or", "yes", "no", "was", "were", "yesterday", "last", "ago", "last night", "last Sunday", "last week", "last month", "last year", "two days ago", "in the morning", "in the afternoon", "in the evening", "in + ___", "the movies", "ten", "late", "work", "study", "play", "stop", "plan", "listen", "like", "visit", "call", "go", "family", "daughter", "grandma", "child", "student", "Brazil", "bus", "music", "English", "day", "some"],
+      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "her", "their", "a", "an", "the", "in", "at", "on", "this", "that", "from", "with", "when", "or", "yes", "no", "was", "were", "yesterday", "last", "ago", "last night", "last Sunday", "last week", "last month", "last year", "two days ago", "in the morning", "in the afternoon", "in the evening", "in + ___", "the movies", "ten", "late", "work", "study", "play", "stop", "plan", "listen", "like", "visit", "call", "go", "family", "daughter", "grandma", "child", "student", "Brazil", "bus", "music", "English", "day", "some", "grandparents"],
       "textosEmIngles": [
         { "pagina": 1, "bloco": 4, "tipoDeTexto": "exemplo" },
         { "pagina": 1, "bloco": 5, "tipoDeTexto": "lista" },

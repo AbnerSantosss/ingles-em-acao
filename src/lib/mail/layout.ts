@@ -23,7 +23,9 @@ export const CORES = {
   superficie: '#FFFFFF',
   texto: '#1F2430',
   suave: '#5B6B7F',
-  terciario: '#8A96A8',
+  // Escurecido: em 12px sobre branco, o #8A96A8 antigo dava 3,00, abaixo dos
+  // 4,5 do WCAG AA. Mesmo valor do --muted-2 do app.
+  terciario: '#676F7D',
   borda: '#DCE6F2',
   navy: '#0A1F4E',
   navyClaro: '#123A86',

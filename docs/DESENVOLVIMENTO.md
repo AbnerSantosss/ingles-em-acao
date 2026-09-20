@@ -1,4 +1,4 @@
-# Inglês em Ação — guia de desenvolvimento
+# WSA English — guia de desenvolvimento
 
 App web **mobile-first** de ensino de inglês: 42 aulas / 309 páginas, com autenticação
 real (entrar, criar conta, verificar e-mail, esqueci/redefinir senha, "lembrar-me"),

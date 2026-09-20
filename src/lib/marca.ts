@@ -43,7 +43,9 @@ const URL_PADRAO_DO_SITE = 'http://localhost:3000';
  * Base pública do site para o `metadataBase` do Next (URLs absolutas de `og:image`).
  * Lê `APP_URL` direto do `process.env`, sem passar pelo `env.ts`. Atenção: telas
  * estáticas (`/termos`, `/privacidade`, a 404) guardam o valor do momento do
- * build, e o Dockerfile não passa `APP_URL` para o build (pedido ao pacote 14).
+ * build. Por isso o Dockerfile recebe `APP_URL` como `ARG` e o
+ * docker-compose.prod.yml a repassa em `build.args`: mudar a URL pública pede
+ * imagem nova, reiniciar o container não basta.
  */
 export function baseDoSite(): URL {
   const bruto = (process.env.APP_URL ?? '').trim().replace(/\/+$/, '');

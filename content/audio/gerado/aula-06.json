@@ -2,25 +2,26 @@
   "aula": 6,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_006_audio_001",
-        "alvo": "texto",
-        "ancora": "I’m from Brazil.",
-        "texto": "I'm from Brazil.",
-        "src": "/audio/aula-06/lesson_006_audio_001.078f0473.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "alvo": "bloco",
+        "ancora": "Ana: Hi! I’m Ana.",
+        "texto": "Hi! I'm Ana.\nHi! I'm Leo.\nWhere are you from?\nI'm from Brazil.",
+        "src": "/audio/aula-06/lesson_006_audio_001.6fe7258c.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_006_audio_002",
         "alvo": "texto",
-        "ancora": "She’s from Japan.",
-        "texto": "She's from Japan.",
-        "src": "/audio/aula-06/lesson_006_audio_002.37e1658d.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "COUNTRY",
+        "texto": "country",
+        "src": "/audio/aula-06/lesson_006_audio_002.a71c5ea3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,21 +29,21 @@
       "clip": {
         "id": "lesson_006_audio_003",
         "alvo": "texto",
-        "ancora": "I’m from Brazil.  =  I’m Brazilian.",
-        "texto": "I'm from Brazil. I'm Brazilian.",
-        "src": "/audio/aula-06/lesson_006_audio_003.2684e1b1.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Brazil",
+        "texto": "Brazil",
+        "src": "/audio/aula-06/lesson_006_audio_003.f3d2d3f3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 5,
+      "pagina": 2,
       "clip": {
         "id": "lesson_006_audio_004",
         "alvo": "texto",
-        "ancora": "Where are you from?",
-        "texto": "Where are you from?",
-        "src": "/audio/aula-06/lesson_006_audio_004.0a744f7a.mp3",
-        "categoria": "FIXED_CHUNK"
+        "ancora": "NATIONALITY",
+        "texto": "nationality",
+        "src": "/audio/aula-06/lesson_006_audio_004.ce1abd18.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -50,43 +51,455 @@
       "clip": {
         "id": "lesson_006_audio_005",
         "alvo": "texto",
-        "ancora": "He’s Italian.",
-        "texto": "He's Italian.",
-        "src": "/audio/aula-06/lesson_006_audio_005.10af2c5b.mp3",
+        "ancora": "I’m from Brazil.",
+        "texto": "I'm from Brazil.",
+        "src": "/audio/aula-06/lesson_006_audio_005.078f0473.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_006",
+        "alvo": "texto",
+        "ancora": "Canada",
+        "texto": "Canada",
+        "src": "/audio/aula-06/lesson_006_audio_006.4bc385e3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_007",
+        "alvo": "texto",
+        "ancora": "Canadian",
+        "texto": "Canadian",
+        "src": "/audio/aula-06/lesson_006_audio_007.197f947b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_008",
+        "alvo": "texto",
+        "ancora": "Japan",
+        "texto": "Japan",
+        "src": "/audio/aula-06/lesson_006_audio_008.be248583.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_009",
+        "alvo": "texto",
+        "ancora": "Japanese",
+        "texto": "Japanese",
+        "src": "/audio/aula-06/lesson_006_audio_009.6ad42ec0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_010",
+        "alvo": "texto",
+        "ancora": "Italy",
+        "texto": "Italy",
+        "src": "/audio/aula-06/lesson_006_audio_010.15ebf4dc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_011",
+        "alvo": "texto",
+        "ancora": "Italian",
+        "texto": "Italian",
+        "src": "/audio/aula-06/lesson_006_audio_011.788d6c66.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_006_audio_012",
+        "alvo": "texto",
+        "ancora": "French",
+        "texto": "French",
+        "src": "/audio/aula-06/lesson_006_audio_012.a8b5e448.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_013",
+        "alvo": "texto",
+        "ancora": "England",
+        "texto": "England",
+        "src": "/audio/aula-06/lesson_006_audio_013.0e04004e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_014",
+        "alvo": "texto",
+        "ancora": "English",
+        "texto": "English",
+        "src": "/audio/aula-06/lesson_006_audio_014.292445b9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_015",
+        "alvo": "texto",
+        "ancora": "Belgium",
+        "texto": "Belgium",
+        "src": "/audio/aula-06/lesson_006_audio_015.48f5dd18.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_016",
+        "alvo": "texto",
+        "ancora": "Belgian",
+        "texto": "Belgian",
+        "src": "/audio/aula-06/lesson_006_audio_016.a9b4e06c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_017",
+        "alvo": "texto",
+        "ancora": "United Kingdom",
+        "texto": "United Kingdom",
+        "src": "/audio/aula-06/lesson_006_audio_017.b10a6f24.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_018",
+        "alvo": "texto",
+        "ancora": "British",
+        "texto": "British",
+        "src": "/audio/aula-06/lesson_006_audio_018.6234aca8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_019",
+        "alvo": "texto",
+        "ancora": "Germany",
+        "texto": "Germany",
+        "src": "/audio/aula-06/lesson_006_audio_019.1d617422.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_020",
+        "alvo": "texto",
+        "ancora": "German",
+        "texto": "German",
+        "src": "/audio/aula-06/lesson_006_audio_020.364cddd9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_021",
+        "alvo": "texto",
+        "ancora": "Portugal",
+        "texto": "Portugal",
+        "src": "/audio/aula-06/lesson_006_audio_021.8341e91a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_022",
+        "alvo": "texto",
+        "ancora": "Portuguese",
+        "texto": "Portuguese",
+        "src": "/audio/aula-06/lesson_006_audio_022.2ff5e0ff.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_006_audio_023",
+        "alvo": "texto",
+        "ancora": "She’s from Japan.",
+        "texto": "She's from Japan.",
+        "src": "/audio/aula-06/lesson_006_audio_023.37e1658d.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_006_audio_006",
+        "id": "lesson_006_audio_024",
         "alvo": "texto",
-        "ancora": "Egypt → Egyptian",
-        "texto": "Egypt. Egyptian",
-        "src": "/audio/aula-06/lesson_006_audio_006.d453b2a2.mp3",
+        "ancora": "She’s Japanese.",
+        "texto": "She's Japanese.",
+        "src": "/audio/aula-06/lesson_006_audio_024.d47c72a3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_006_audio_025",
+        "alvo": "bloco",
+        "ancora": "China",
+        "texto": "China\nChinese\nAustralia\nAustralian\nAustria\nAustrian\nItaly\nItalian\nSpain\nSpanish\nFrance\nFrench\nUnited States\nAmerican\nRussia\nRussian",
+        "src": "/audio/aula-06/lesson_006_audio_025.55dcaa96.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
-        "id": "lesson_006_audio_007",
+        "id": "lesson_006_audio_026",
         "alvo": "texto",
-        "ancora": "Ireland → Irish",
-        "texto": "Ireland. Irish",
-        "src": "/audio/aula-06/lesson_006_audio_007.ee9880f8.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "I’m from Italy.",
+        "texto": "I'm from Italy.",
+        "src": "/audio/aula-06/lesson_006_audio_026.cef5b4f5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
-        "id": "lesson_006_audio_008",
+        "id": "lesson_006_audio_027",
         "alvo": "texto",
-        "ancora": "Portugal → Portuguese",
-        "texto": "Portugal. Portuguese",
-        "src": "/audio/aula-06/lesson_006_audio_008.37cf1210.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "I’m Italian.",
+        "texto": "I'm Italian.",
+        "src": "/audio/aula-06/lesson_006_audio_027.af7ff63c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_006_audio_028",
+        "alvo": "texto",
+        "ancora": "He’s from the United States.",
+        "texto": "He's from the United States.",
+        "src": "/audio/aula-06/lesson_006_audio_028.fe12266c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_006_audio_029",
+        "alvo": "texto",
+        "ancora": "He’s American.",
+        "texto": "He's American.",
+        "src": "/audio/aula-06/lesson_006_audio_029.80258be3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_006_audio_030",
+        "alvo": "texto",
+        "ancora": "Where are you from?",
+        "texto": "Where are you from?",
+        "src": "/audio/aula-06/lesson_006_audio_030.0a744f7a.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_006_audio_031",
+        "alvo": "texto",
+        "ancora": "What’s your nationality?",
+        "texto": "What's your nationality?",
+        "src": "/audio/aula-06/lesson_006_audio_031.f3b01a40.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_006_audio_032",
+        "alvo": "texto",
+        "ancora": "I’m from Canada.",
+        "texto": "I'm from Canada.",
+        "src": "/audio/aula-06/lesson_006_audio_032.86b78623.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_006_audio_033",
+        "alvo": "bloco",
+        "ancora": "Hi! Where are you from?",
+        "texto": "Hi! Where are you from?\nI'm from Canada.\nWhat's your nationality?\nI'm Canadian.",
+        "src": "/audio/aula-06/lesson_006_audio_033.5e132dab.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_034",
+        "alvo": "texto",
+        "ancora": "Where is he from?",
+        "texto": "Where is he from?",
+        "src": "/audio/aula-06/lesson_006_audio_034.a01046db.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_035",
+        "alvo": "texto",
+        "ancora": "He’s from the U.K. He’s British.",
+        "texto": "He's from the U.K. He's British.",
+        "src": "/audio/aula-06/lesson_006_audio_035.dae9d359.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_036",
+        "alvo": "texto",
+        "ancora": "Where is she from?",
+        "texto": "Where is she from?",
+        "src": "/audio/aula-06/lesson_006_audio_036.72b55745.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_037",
+        "alvo": "texto",
+        "ancora": "She’s from Japan. She’s Japanese.",
+        "texto": "She's from Japan. She's Japanese.",
+        "src": "/audio/aula-06/lesson_006_audio_037.c3d9896b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_038",
+        "alvo": "texto",
+        "ancora": "Where are they from?",
+        "texto": "Where are they from?",
+        "src": "/audio/aula-06/lesson_006_audio_038.00e77efc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_039",
+        "alvo": "texto",
+        "ancora": "They’re from China. They’re Chinese.",
+        "texto": "They're from China. They're Chinese.",
+        "src": "/audio/aula-06/lesson_006_audio_039.57aa9f7d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_040",
+        "alvo": "texto",
+        "ancora": "Where is it from?",
+        "texto": "Where is it from?",
+        "src": "/audio/aula-06/lesson_006_audio_040.5dfd0b06.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_041",
+        "alvo": "texto",
+        "ancora": "It’s from Japan.",
+        "texto": "It's from Japan.",
+        "src": "/audio/aula-06/lesson_006_audio_041.e068690d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_006_audio_042",
+        "alvo": "bloco",
+        "ancora": "Hi! Who is he?",
+        "texto": "Hi! Who is he?\nHe's Ken.\nWhere is he from?\nHe's from Japan.\nHe's Japanese!",
+        "src": "/audio/aula-06/lesson_006_audio_042.2f48fc4d.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_006_audio_043",
+        "alvo": "bloco",
+        "ancora": "Sofia: Hi! I’m Sofia. What’s your name?",
+        "texto": "Hi! I'm Sofia. What's your name?\nI'm Daniel. Nice to meet you.\nNice to meet you, too. Where are you from?\nI'm from Canada. I'm Canadian. How about you?\nI'm from Brazil. I'm Brazilian.",
+        "src": "/audio/aula-06/lesson_006_audio_043.f509277a.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_006_audio_044",
+        "alvo": "bloco",
+        "ancora": "Who is he?",
+        "texto": "Who is he?\nHe's Ken.\nHe's from Japan. He's Japanese.",
+        "src": "/audio/aula-06/lesson_006_audio_044.8662fddf.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_006_audio_045",
+        "alvo": "bloco",
+        "ancora": "Where are they from?",
+        "texto": "Where are they from?\nThey're from China. They're Chinese.",
+        "src": "/audio/aula-06/lesson_006_audio_045.9f1d3750.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

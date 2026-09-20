@@ -3,13 +3,22 @@
  *
  * Tudo o que o aluno lê, ou ouve pelo leitor de tela, sai daqui. Assim a revisão
  * de escrita (`docs/ESCRITA.md`) olha um arquivo só.
+ *
+ * O botão grande mostra o nome na tela ("Ouvir pronúncia") e o nome acessível
+ * começa com essa mesma palavra, porque o texto visível de um botão precisa
+ * estar dentro do nome acessível dele (WCAG 2.5.3, "Label in Name"): quem usa
+ * comando de voz fala o que está vendo.
  */
 
 export const ERRO_AO_TOCAR = 'Não deu para tocar. Tente de novo.';
+/** Texto visível do botão de ouvir uma frase, e começo do nome acessível dele. */
+export const ROTULO_OUVIR_PRONUNCIA = 'Ouvir pronúncia';
 export const ROTULO_OUVIR_DIALOGO = 'Ouvir o diálogo';
 export const ROTULO_OUVIR_TODOS = 'Ouvir todos';
-/** O player tocando mostra "Parar". Pausar e continuar ficaram para depois (PENDENCIAS.md, item 9). */
-export const ROTULO_PARAR = 'Parar';
+/** Enquanto o clipe toca: o toque seguinte pausa e guarda a posição. */
+export const ROTULO_PAUSAR = 'Pausar';
+/** Depois de pausar: o toque seguinte volta de onde parou. */
+export const ROTULO_CONTINUAR = 'Continuar';
 export const ROTULO_DEVAGAR = 'Devagar';
 export const ROTULO_PROGRESSO = 'Progresso do áudio';
 
@@ -29,9 +38,19 @@ export function resumirTexto(texto: string, limite = LIMITE_DO_ROTULO): string {
   return `${base.replace(/[\s.,;:!?]+$/, '')}…`;
 }
 
-/** Nome acessível do botão de ouvir: "Ouvir: I am ready." */
+/** Nome acessível do botão parado: "Ouvir pronúncia: I am ready." */
 export function rotuloDeOuvir(texto: string): string {
-  return `Ouvir: ${resumirTexto(texto)}`;
+  return `${ROTULO_OUVIR_PRONUNCIA}: ${resumirTexto(texto)}`;
+}
+
+/** Nome acessível do mesmo botão enquanto o clipe toca: "Pausar: I am ready." */
+export function rotuloDePausar(texto: string): string {
+  return `${ROTULO_PAUSAR}: ${resumirTexto(texto)}`;
+}
+
+/** Nome acessível do mesmo botão com o clipe pausado: "Continuar: I am ready." */
+export function rotuloDeContinuar(texto: string): string {
+  return `${ROTULO_CONTINUAR}: ${resumirTexto(texto)}`;
 }
 
 /** Nome acessível do botão "Devagar": "Ouvir mais devagar: I am ready." */

@@ -21,16 +21,16 @@ export default function TermosPage() {
   return (
     <PaginaLegal
       titulo="Termos de uso"
-      atualizadoEm="18 de setembro de 2026"
+      atualizadoEm="19 de setembro de 2026"
       introducao={
         <p>
-          Estes termos explicam como funciona o <strong>Inglês em Ação</strong>, o curso de inglês da
-          WSA English, e o que você e nós podemos esperar um do outro. Ao criar sua conta, você concorda
+          Estes termos explicam como funciona o <strong>WSA English</strong>, o curso de inglês do
+          zero, e o que você e nós podemos esperar um do outro. Ao criar sua conta, você concorda
           com eles. Escrevemos em linguagem simples de propósito: se algo não ficar claro, pergunte.
         </p>
       }
     >
-      <SecaoLegal titulo="1. O que é o Inglês em Ação">
+      <SecaoLegal titulo="1. O que é o WSA English">
         <p>
           Um curso de inglês para quem começa do zero, organizado em 42 aulas curtas. Cada aula combina
           leitura (a página do e-book), vídeo e exercícios, e o app guarda o seu progresso.
