@@ -2,13 +2,13 @@
   "aula": 17,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_017_audio_001",
         "alvo": "texto",
-        "ancora": "They study every day.",
-        "texto": "They study every day.",
-        "src": "/audio/aula-17/lesson_017_audio_001.e330d744.mp3",
+        "ancora": "There are chairs.",
+        "texto": "There are chairs.",
+        "src": "/audio/aula-17/lesson_017_audio_001.37848253.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -17,43 +17,44 @@
       "clip": {
         "id": "lesson_017_audio_002",
         "alvo": "texto",
-        "ancora": "She studies. · It rains.",
-        "texto": "She studies. It rains.",
-        "src": "/audio/aula-17/lesson_017_audio_002.6c7fd897.mp3",
+        "ancora": "There is a pencil on this table.",
+        "texto": "There is a pencil on this table.",
+        "src": "/audio/aula-17/lesson_017_audio_002.d12bc8e4.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_017_audio_003",
         "alvo": "texto",
-        "ancora": "work → works",
-        "texto": "work. works",
-        "src": "/audio/aula-17/lesson_017_audio_003.9977e137.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "There is a sofa in the living room.",
+        "texto": "There is a sofa in the living room.",
+        "src": "/audio/aula-17/lesson_017_audio_003.52c71097.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_017_audio_004",
         "alvo": "texto",
-        "ancora": "watch → watches · go → goes",
-        "texto": "watch. watches. go. goes",
-        "src": "/audio/aula-17/lesson_017_audio_004.5d55fead.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "There is a bed in the bedroom.",
+        "texto": "There is a bed in the bedroom.",
+        "src": "/audio/aula-17/lesson_017_audio_004.eb78024a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_017_audio_005",
         "alvo": "texto",
-        "ancora": "study → studies",
-        "texto": "study. studies",
-        "src": "/audio/aula-17/lesson_017_audio_005.a01e306a.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "There is an eraser on this table.",
+        "texto": "There is an eraser on this table.",
+        "src": "/audio/aula-17/lesson_017_audio_005.edb19b3d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -61,10 +62,10 @@
       "clip": {
         "id": "lesson_017_audio_006",
         "alvo": "texto",
-        "ancora": "play → plays",
-        "texto": "play. plays",
-        "src": "/audio/aula-17/lesson_017_audio_006.85038d23.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "There isn’t a book on this table.",
+        "texto": "There isn't a book on this table.",
+        "src": "/audio/aula-17/lesson_017_audio_006.97c0d31b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -72,10 +73,402 @@
       "clip": {
         "id": "lesson_017_audio_007",
         "alvo": "texto",
-        "ancora": "have → has",
-        "texto": "have. has",
-        "src": "/audio/aula-17/lesson_017_audio_007.1758c06b.mp3",
+        "ancora": "There isn’t a bed in the bathroom.",
+        "texto": "There isn't a bed in the bathroom.",
+        "src": "/audio/aula-17/lesson_017_audio_007.9533790f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_008",
+        "alvo": "texto",
+        "ancora": "There isn’t a refrigerator in the living room.",
+        "texto": "There isn't a refrigerator in the living room.",
+        "src": "/audio/aula-17/lesson_017_audio_008.6d1a4ec2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_009",
+        "alvo": "texto",
+        "ancora": "There isn’t a computer in my living room.",
+        "texto": "There isn't a computer in my living room.",
+        "src": "/audio/aula-17/lesson_017_audio_009.13164c51.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_010",
+        "alvo": "texto",
+        "ancora": "There is a bed.",
+        "texto": "There is a bed.",
+        "src": "/audio/aula-17/lesson_017_audio_010.67508bf1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_017_audio_011",
+        "alvo": "texto",
+        "ancora": "There isn’t a bed.",
+        "texto": "There isn't a bed.",
+        "src": "/audio/aula-17/lesson_017_audio_011.8ab23805.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_017_audio_012",
+        "alvo": "texto",
+        "ancora": "Is there an eraser on this table?",
+        "texto": "Is there an eraser on this table?",
+        "src": "/audio/aula-17/lesson_017_audio_012.342aa316.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_017_audio_013",
+        "alvo": "texto",
+        "ancora": "Yes, there is.",
+        "texto": "Yes, there is.",
+        "src": "/audio/aula-17/lesson_017_audio_013.f66c63f0.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_017_audio_014",
+        "alvo": "texto",
+        "ancora": "No, there isn’t.",
+        "texto": "No, there isn't.",
+        "src": "/audio/aula-17/lesson_017_audio_014.f153384d.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_017_audio_015",
+        "alvo": "texto",
+        "ancora": "Is there a sink in the kitchen?",
+        "texto": "Is there a sink in the kitchen?",
+        "src": "/audio/aula-17/lesson_017_audio_015.ce6034f2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_017_audio_016",
+        "alvo": "texto",
+        "ancora": "Is there a shower in the bedroom?",
+        "texto": "Is there a shower in the bedroom?",
+        "src": "/audio/aula-17/lesson_017_audio_016.3c541a08.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_017_audio_017",
+        "alvo": "texto",
+        "ancora": "Yes, there is. / No, there isn’t.",
+        "texto": "Yes, there is. No, there isn't.",
+        "src": "/audio/aula-17/lesson_017_audio_017.0cc847d4.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_017_audio_018",
+        "alvo": "texto",
+        "ancora": "There are some plates in the dishwasher.",
+        "texto": "There are some plates in the dishwasher.",
+        "src": "/audio/aula-17/lesson_017_audio_018.325e1ae3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_017_audio_019",
+        "alvo": "texto",
+        "ancora": "There are some chairs in the dining room.",
+        "texto": "There are some chairs in the dining room.",
+        "src": "/audio/aula-17/lesson_017_audio_019.f8d970ce.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_017_audio_020",
+        "alvo": "texto",
+        "ancora": "There are 4 pencils on this table.",
+        "texto": "There are four pencils on this table.",
+        "src": "/audio/aula-17/lesson_017_audio_020.ba5a7150.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_017_audio_021",
+        "alvo": "texto",
+        "ancora": "There is a chair.\nThere are some chairs.",
+        "texto": "There is a chair. There are some chairs.",
+        "src": "/audio/aula-17/lesson_017_audio_021.f1ec4c50.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_017_audio_022",
+        "alvo": "texto",
+        "ancora": "There aren’t any books on this table.",
+        "texto": "There aren't any books on this table.",
+        "src": "/audio/aula-17/lesson_017_audio_022.31c86a96.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_017_audio_023",
+        "alvo": "texto",
+        "ancora": "There aren’t any people in this photo.",
+        "texto": "There aren't any people in this photo.",
+        "src": "/audio/aula-17/lesson_017_audio_023.8fd7d60c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_017_audio_024",
+        "alvo": "texto",
+        "ancora": "There aren’t any computers in my living room.",
+        "texto": "There aren't any computers in my living room.",
+        "src": "/audio/aula-17/lesson_017_audio_024.f9c9b430.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_017_audio_025",
+        "alvo": "texto",
+        "ancora": "There are some computers.",
+        "texto": "There are some computers.",
+        "src": "/audio/aula-17/lesson_017_audio_025.be317446.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_017_audio_026",
+        "alvo": "texto",
+        "ancora": "There aren’t any computers.",
+        "texto": "There aren't any computers.",
+        "src": "/audio/aula-17/lesson_017_audio_026.2fb325f4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_017_audio_027",
+        "alvo": "texto",
+        "ancora": "Are there any erasers on this table?",
+        "texto": "Are there any erasers on this table?",
+        "src": "/audio/aula-17/lesson_017_audio_027.747a4d8a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_017_audio_028",
+        "alvo": "texto",
+        "ancora": "Yes, there are.",
+        "texto": "Yes, there are.",
+        "src": "/audio/aula-17/lesson_017_audio_028.cb9ec3f3.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_017_audio_029",
+        "alvo": "texto",
+        "ancora": "No, there aren’t.",
+        "texto": "No, there aren't.",
+        "src": "/audio/aula-17/lesson_017_audio_029.4923f67e.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_017_audio_030",
+        "alvo": "texto",
+        "ancora": "Are there any windows in the living room?",
+        "texto": "Are there any windows in the living room?",
+        "src": "/audio/aula-17/lesson_017_audio_030.645a4ffd.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_017_audio_031",
+        "alvo": "texto",
+        "ancora": "Yes, there are.  /  No, there aren’t.",
+        "texto": "Yes, there are. No, there aren't.",
+        "src": "/audio/aula-17/lesson_017_audio_031.a0a2cec2.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_032",
+        "alvo": "texto",
+        "ancora": "There is a sofa.",
+        "texto": "There is a sofa.",
+        "src": "/audio/aula-17/lesson_017_audio_032.415f91d2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_033",
+        "alvo": "texto",
+        "ancora": "There is an eraser.",
+        "texto": "There is an eraser.",
+        "src": "/audio/aula-17/lesson_017_audio_033.91e76040.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_034",
+        "alvo": "texto",
+        "ancora": "some",
+        "texto": "some",
+        "src": "/audio/aula-17/lesson_017_audio_034.91cf0365.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_035",
+        "alvo": "texto",
+        "ancora": "There are some chairs.",
+        "texto": "There are some chairs.",
+        "src": "/audio/aula-17/lesson_017_audio_035.934e60a7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_036",
+        "alvo": "texto",
+        "ancora": "There are some plates.",
+        "texto": "There are some plates.",
+        "src": "/audio/aula-17/lesson_017_audio_036.ab6a08f8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_037",
+        "alvo": "texto",
+        "ancora": "any",
+        "texto": "any",
+        "src": "/audio/aula-17/lesson_017_audio_037.3300fd7a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_038",
+        "alvo": "texto",
+        "ancora": "There aren’t any chairs.",
+        "texto": "There aren't any chairs.",
+        "src": "/audio/aula-17/lesson_017_audio_038.dc141850.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_039",
+        "alvo": "texto",
+        "ancora": "There aren’t any books.",
+        "texto": "There aren't any books.",
+        "src": "/audio/aula-17/lesson_017_audio_039.bf248496.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_040",
+        "alvo": "texto",
+        "ancora": "Are there any chairs?",
+        "texto": "Are there any chairs?",
+        "src": "/audio/aula-17/lesson_017_audio_040.d8d938dc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_017_audio_041",
+        "alvo": "texto",
+        "ancora": "Are there any windows?",
+        "texto": "Are there any windows?",
+        "src": "/audio/aula-17/lesson_017_audio_041.d05dc7db.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_017_audio_042",
+        "alvo": "bloco",
+        "ancora": "Ana: Is there a living room?",
+        "texto": "Is there a living room?\nYes, there is.\nIs there a sofa?\nYes, there is.\nAre there any chairs?\nYes, there are.\nAre there any computers?\nNo, there aren't.\nIs there a desk in the bedroom?\nYes, there is.",
+        "src": "/audio/aula-17/lesson_017_audio_042.c072cb4e.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

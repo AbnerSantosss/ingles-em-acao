@@ -49,16 +49,22 @@ import type { Lesson } from '../src/lib/content/blocks';
 
 const MODULOS = [
   { id: 1, order: 1, title: 'Fundamentos', fromLesson: 1, toLesson: 6 },
-  { id: 2, order: 2, title: 'Vocabulário essencial', fromLesson: 7, toLesson: 12 },
-  { id: 3, order: 3, title: 'Referência e lugar', fromLesson: 13, toLesson: 18 },
-  { id: 4, order: 4, title: 'Presente simples', fromLesson: 19, toLesson: 24 },
-  { id: 5, order: 5, title: 'Ações e rotina', fromLesson: 25, toLesson: 30 },
+  { id: 2, order: 2, title: 'Pessoas, posse e primeiras palavras', fromLesson: 7, toLesson: 12 },
+  { id: 3, order: 3, title: 'Coisas, casa e lugar', fromLesson: 13, toLesson: 18 },
+  { id: 4, order: 4, title: 'Descrever, perguntar e a rotina', fromLesson: 19, toLesson: 24 },
+  { id: 5, order: 5, title: 'Rotina, calendário e cidade', fromLesson: 25, toLesson: 30 },
   { id: 6, order: 6, title: 'Dia a dia e preferências', fromLesson: 31, toLesson: 36 },
   { id: 7, order: 7, title: 'Quantidade e passado', fromLesson: 37, toLesson: 42 },
 ] as const;
 
-/** Só as aulas 1 a 10 têm capa desenhada (public/lessons/capas/NN.png). */
-const ULTIMA_AULA_COM_CAPA = 10;
+/**
+ * As aulas que têm capa desenhada em `public/lessons/capas/NN.png`.
+ * Eram as aulas 1 a 10 em sequência. Em 2026-09-20 as aulas 08 a 30 foram refeitas
+ * seguindo as páginas do e-book e três capas mudaram de dona, porque a arte seguiu o
+ * tema e não o número: números 1-100 foi para a 20, dias e meses para a 26 e cores
+ * para a 12. Espelha `AULAS_COM_CAPA` de `src/lib/content/lessons.ts`.
+ */
+const AULAS_COM_CAPA = new Set([1, 2, 3, 4, 5, 6, 7, 12, 20, 26]);
 
 // ---------------------------------------------------------------------------
 // Validação do conteúdo cru
@@ -97,9 +103,9 @@ export function moduloDaAula(numero: number): number {
   return modulo.id;
 }
 
-/** "/lessons/capas/07.png" para as aulas 1..10, null para as demais. */
+/** "/lessons/capas/07.png" para as 10 aulas com capa, null para as demais. */
 export function capaDaAula(numero: number): string | null {
-  if (numero > ULTIMA_AULA_COM_CAPA) return null;
+  if (!AULAS_COM_CAPA.has(numero)) return null;
   return `/lessons/capas/${String(numero).padStart(2, '0')}.png`;
 }
 
@@ -261,6 +267,29 @@ async function gravar(
   console.log(
     `[seed] módulos — criados: ${modulos.criados} · atualizados: ${modulos.atualizados} · intactos: ${modulos.intactos}`,
   );
+
+  // O slug é único e as aulas são atualizadas uma a uma, pelo número. Quando os
+  // temas trocam de número (a reconstrução das Aulas 08 a 30 levou `possessive-s`
+  // da 20 para a 08), a aula que ainda ocupa o slug novo de outra ganha antes um
+  // slug provisório; a vez dela no laço devolve o slug certo. Aula arquivada não
+  // passa pelo laço e fica com o provisório.
+  if (ressincronizar) {
+    const dono = new Map(linhas.map((linha) => [linha.slug, linha.number]));
+    const atuais = await prisma.lesson.findMany({ select: { number: true, slug: true } });
+    const ocupantes = atuais.filter((aula) => {
+      const numero = dono.get(aula.slug);
+      return numero !== undefined && numero !== aula.number;
+    });
+    for (const aula of ocupantes) {
+      await prisma.lesson.update({
+        where: { number: aula.number },
+        data: { slug: `${aula.slug}--troca-${aula.number}` },
+      });
+    }
+    if (ocupantes.length > 0) {
+      console.log(`[seed] slugs que mudaram de aula: ${ocupantes.length}`);
+    }
+  }
 
   const agora = new Date();
 

@@ -74,6 +74,9 @@ export default async function ResultadoDaAulaPage({ params }: ParametrosDoResult
   const acertos = placar?.acertos ?? progresso.score ?? 0;
   const total = placar?.total ?? progresso.total ?? 0;
   const percentual = total > 0 ? Math.round((acertos / total) * 100) : 0;
+  // Aula sem nenhum exercício pontuável (a 18 é assim no e-book): não há placar para
+  // mostrar, e "0 de 0" com "Tudo bem errar" diria que o aluno foi mal.
+  const semPlacar = total === 0;
 
   const semRegistro = !respostas.disponivel && progresso.score === null;
 
@@ -136,15 +139,22 @@ export default async function ResultadoDaAulaPage({ params }: ParametrosDoResult
                     fill="none"
                     stroke="#12A594"
                     strokeWidth="13"
-                    strokeLinecap={percentual > 0 ? 'round' : 'butt'}
-                    strokeDasharray={`${(percentual / 100) * VOLTA_COMPLETA} ${VOLTA_COMPLETA}`}
+                    strokeLinecap={percentual > 0 || semPlacar ? 'round' : 'butt'}
+                    strokeDasharray={`${((semPlacar ? 100 : percentual) / 100) * VOLTA_COMPLETA} ${VOLTA_COMPLETA}`}
                     transform="rotate(-90 60 60)"
                   />
                 </svg>
                 <p className="anel-do-resultado__valor absolute inset-0 m-0 grid place-items-center font-black text-navy">
-                  <span>
-                    {percentual}%<span className="sr-only"> de aproveitamento</span>
-                  </span>
+                  {semPlacar ? (
+                    <span>
+                      <span aria-hidden="true">✓</span>
+                      <span className="sr-only">Aula concluída</span>
+                    </span>
+                  ) : (
+                    <span>
+                      {percentual}%<span className="sr-only"> de aproveitamento</span>
+                    </span>
+                  )}
                 </p>
               </div>
 
@@ -156,12 +166,20 @@ export default async function ResultadoDaAulaPage({ params }: ParametrosDoResult
                 {aula.code} · {aula.title}
               </h1>
 
-              <p className="m-0 mb-1.5 text-[17px] text-muted lg:text-[19px]">
-                Você acertou <strong className="text-navy">{acertos}</strong> de{' '}
-                <strong className="text-navy">{total}</strong> {total === 1 ? 'item' : 'itens'}.
-              </p>
+              {semPlacar ? (
+                <p className="fs-leitura m-0 text-muted">
+                  Esta aula não tem exercício para corrigir. Responda em voz alta as perguntas das páginas.
+                </p>
+              ) : (
+                <>
+                  <p className="m-0 mb-1.5 text-[17px] text-muted lg:text-[19px]">
+                    Você acertou <strong className="text-navy">{acertos}</strong> de{' '}
+                    <strong className="text-navy">{total}</strong> {total === 1 ? 'item' : 'itens'}.
+                  </p>
 
-              <p className="fs-leitura m-0 text-muted">{mensagemDaFaixa(percentual)}</p>
+                  <p className="fs-leitura m-0 text-muted">{mensagemDaFaixa(percentual)}</p>
+                </>
+              )}
 
               {semRegistro ? (
                 <p

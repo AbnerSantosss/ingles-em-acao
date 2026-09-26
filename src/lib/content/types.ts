@@ -1,7 +1,7 @@
 /**
  * Camada de tipos do conteúdo do curso WSA English.
  *
- * Extraída de `content/course-data.mjs` (42 aulas, 309 páginas, 1538 blocos) e do
+ * Extraída de `content/course-data.mjs` (42 aulas, 414 páginas, 2879 blocos) e do
  * renderer do protótipo (`prototype/mobile.dc.html`, método `resolve`, a partir da
  * linha ~1160). É o alicerce do motor de aulas da próxima rodada.
  *
@@ -669,7 +669,7 @@ export interface LessonSummary {
   title: string
   subtitle: string
   time: string
-  /** "/lessons/capas/NN.png" nas aulas 1 a 10; `null` nas demais (ainda sem capa). */
+  /** "/lessons/capas/NN.png" nas 10 aulas com capa; `null` nas demais (ainda sem capa). */
   cover: string | null
   pageCount: number
   /** Módulo de 1 a 7 ao qual a aula pertence. */

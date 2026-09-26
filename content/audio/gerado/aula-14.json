@@ -6,9 +6,9 @@
       "clip": {
         "id": "lesson_014_audio_001",
         "alvo": "texto",
-        "ancora": "his: dele",
-        "texto": "his",
-        "src": "/audio/aula-14/lesson_014_audio_001.1ec47134.mp3",
+        "ancora": "GIRL",
+        "texto": "girl",
+        "src": "/audio/aula-14/lesson_014_audio_001.12cc0425.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -17,9 +17,9 @@
       "clip": {
         "id": "lesson_014_audio_002",
         "alvo": "texto",
-        "ancora": "her: dela",
-        "texto": "her",
-        "src": "/audio/aula-14/lesson_014_audio_002.72475ede.mp3",
+        "ancora": "girl → girls",
+        "texto": "girl. girls",
+        "src": "/audio/aula-14/lesson_014_audio_002.3d8f4f0a.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -28,9 +28,9 @@
       "clip": {
         "id": "lesson_014_audio_003",
         "alvo": "texto",
-        "ancora": "its: dele/dela (coisa)",
-        "texto": "its",
-        "src": "/audio/aula-14/lesson_014_audio_003.13793da2.mp3",
+        "ancora": "apple → apples",
+        "texto": "apple. apples",
+        "src": "/audio/aula-14/lesson_014_audio_003.11583ab1.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -39,9 +39,9 @@
       "clip": {
         "id": "lesson_014_audio_004",
         "alvo": "texto",
-        "ancora": "our: nosso / nossa",
-        "texto": "our",
-        "src": "/audio/aula-14/lesson_014_audio_004.91e07a6a.mp3",
+        "ancora": "car → cars",
+        "texto": "car. cars",
+        "src": "/audio/aula-14/lesson_014_audio_004.35016424.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -50,33 +50,452 @@
       "clip": {
         "id": "lesson_014_audio_005",
         "alvo": "texto",
-        "ancora": "their: deles / delas",
-        "texto": "their",
-        "src": "/audio/aula-14/lesson_014_audio_005.80a267f2.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "pencil → pencils",
+        "texto": "pencil. pencils",
+        "src": "/audio/aula-14/lesson_014_audio_005.195af968.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_014_audio_006",
         "alvo": "texto",
-        "ancora": "his car · his sister",
-        "texto": "his car. his sister.",
-        "src": "/audio/aula-14/lesson_014_audio_006.c821c352.mp3",
+        "ancora": "They’re cars.",
+        "texto": "They're cars.",
+        "src": "/audio/aula-14/lesson_014_audio_006.0b524dc5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_014_audio_007",
+        "alvo": "texto",
+        "ancora": "They’re pencils.",
+        "texto": "They're pencils.",
+        "src": "/audio/aula-14/lesson_014_audio_007.d9e7b7f6.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_014_audio_007",
+        "id": "lesson_014_audio_008",
         "alvo": "texto",
-        "ancora": "her car · her brother",
-        "texto": "her car. her brother.",
-        "src": "/audio/aula-14/lesson_014_audio_007.d93b44f6.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT",
+        "ancora": "BENCH",
+        "texto": "bench",
+        "src": "/audio/aula-14/lesson_014_audio_008.6cd71a82.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_009",
+        "alvo": "texto",
+        "ancora": "bench → benches",
+        "texto": "bench. benches",
+        "src": "/audio/aula-14/lesson_014_audio_009.7d431570.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_010",
+        "alvo": "texto",
+        "ancora": "DISH",
+        "texto": "dish",
+        "src": "/audio/aula-14/lesson_014_audio_010.7ba1c9a6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_011",
+        "alvo": "texto",
+        "ancora": "dish → dishes",
+        "texto": "dish. dishes",
+        "src": "/audio/aula-14/lesson_014_audio_011.297b0cef.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_012",
+        "alvo": "texto",
+        "ancora": "BUS",
+        "texto": "bus",
+        "src": "/audio/aula-14/lesson_014_audio_012.bfca0a21.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_013",
+        "alvo": "texto",
+        "ancora": "bus → buses",
+        "texto": "bus. buses",
+        "src": "/audio/aula-14/lesson_014_audio_013.07996e0c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_014",
+        "alvo": "texto",
+        "ancora": "BOX",
+        "texto": "box",
+        "src": "/audio/aula-14/lesson_014_audio_014.6253f2b3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_015",
+        "alvo": "texto",
+        "ancora": "box → boxes",
+        "texto": "box. boxes",
+        "src": "/audio/aula-14/lesson_014_audio_015.ddb82394.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_014_audio_016",
+        "alvo": "texto",
+        "ancora": "watch → watches",
+        "texto": "watch. watches",
+        "src": "/audio/aula-14/lesson_014_audio_016.018ffc00.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_017",
+        "alvo": "texto",
+        "ancora": "CANDY",
+        "texto": "candy",
+        "src": "/audio/aula-14/lesson_014_audio_017.c64044d4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_018",
+        "alvo": "texto",
+        "ancora": "candy → candies",
+        "texto": "candy. candies",
+        "src": "/audio/aula-14/lesson_014_audio_018.af9b61d6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_019",
+        "alvo": "texto",
+        "ancora": "toy → toys",
+        "texto": "toy. toys",
+        "src": "/audio/aula-14/lesson_014_audio_019.94fd037a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_020",
+        "alvo": "texto",
+        "ancora": "PUPPY",
+        "texto": "puppy",
+        "src": "/audio/aula-14/lesson_014_audio_020.14cf338c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_021",
+        "alvo": "texto",
+        "ancora": "puppy → puppies",
+        "texto": "puppy. puppies",
+        "src": "/audio/aula-14/lesson_014_audio_021.17a711ac.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_022",
+        "alvo": "texto",
+        "ancora": "MONKEY",
+        "texto": "monkey",
+        "src": "/audio/aula-14/lesson_014_audio_022.893d1f32.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_014_audio_023",
+        "alvo": "texto",
+        "ancora": "monkey → monkeys",
+        "texto": "monkey. monkeys",
+        "src": "/audio/aula-14/lesson_014_audio_023.c3bdbf9a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_024",
+        "alvo": "texto",
+        "ancora": "KNIFE",
+        "texto": "knife",
+        "src": "/audio/aula-14/lesson_014_audio_024.b8880887.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_025",
+        "alvo": "texto",
+        "ancora": "knife → knives",
+        "texto": "knife. knives",
+        "src": "/audio/aula-14/lesson_014_audio_025.55a24cd3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_026",
+        "alvo": "texto",
+        "ancora": "LEAF",
+        "texto": "leaf",
+        "src": "/audio/aula-14/lesson_014_audio_026.a09ee238.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_027",
+        "alvo": "texto",
+        "ancora": "leaf → leaves",
+        "texto": "leaf. leaves",
+        "src": "/audio/aula-14/lesson_014_audio_027.13942eca.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_028",
+        "alvo": "texto",
+        "ancora": "WOLF",
+        "texto": "wolf",
+        "src": "/audio/aula-14/lesson_014_audio_028.fa0ad225.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_029",
+        "alvo": "texto",
+        "ancora": "wolf → wolves",
+        "texto": "wolf. wolves",
+        "src": "/audio/aula-14/lesson_014_audio_029.a0df820f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_030",
+        "alvo": "texto",
+        "ancora": "CALF",
+        "texto": "calf",
+        "src": "/audio/aula-14/lesson_014_audio_030.3872e4d3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_031",
+        "alvo": "texto",
+        "ancora": "calf → calves",
+        "texto": "calf. calves",
+        "src": "/audio/aula-14/lesson_014_audio_031.07ec45e3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_032",
+        "alvo": "texto",
+        "ancora": "shelf → shelves",
+        "texto": "shelf. shelves",
+        "src": "/audio/aula-14/lesson_014_audio_032.311cb527.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_033",
+        "alvo": "texto",
+        "ancora": "THIEF",
+        "texto": "thief",
+        "src": "/audio/aula-14/lesson_014_audio_033.4f57a70a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_034",
+        "alvo": "texto",
+        "ancora": "thief → thieves",
+        "texto": "thief. thieves",
+        "src": "/audio/aula-14/lesson_014_audio_034.88e9c393.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_035",
+        "alvo": "texto",
+        "ancora": "ROOF",
+        "texto": "roof",
+        "src": "/audio/aula-14/lesson_014_audio_035.8c879796.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_036",
+        "alvo": "texto",
+        "ancora": "roof → roofs",
+        "texto": "roof. roofs",
+        "src": "/audio/aula-14/lesson_014_audio_036.0a413dcb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_037",
+        "alvo": "texto",
+        "ancora": "CHIEF",
+        "texto": "chief",
+        "src": "/audio/aula-14/lesson_014_audio_037.cb625549.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_014_audio_038",
+        "alvo": "texto",
+        "ancora": "chief → chiefs",
+        "texto": "chief. chiefs",
+        "src": "/audio/aula-14/lesson_014_audio_038.90251226.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_014_audio_039",
+        "alvo": "texto",
+        "ancora": "CHILD",
+        "texto": "child",
+        "src": "/audio/aula-14/lesson_014_audio_039.4dc5249b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_014_audio_040",
+        "alvo": "texto",
+        "ancora": "child → children",
+        "texto": "child. children",
+        "src": "/audio/aula-14/lesson_014_audio_040.474edaea.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_014_audio_041",
+        "alvo": "texto",
+        "ancora": "MAN",
+        "texto": "man",
+        "src": "/audio/aula-14/lesson_014_audio_041.68de2fe5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_014_audio_042",
+        "alvo": "texto",
+        "ancora": "man → men",
+        "texto": "man. men",
+        "src": "/audio/aula-14/lesson_014_audio_042.95fecba2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_014_audio_043",
+        "alvo": "texto",
+        "ancora": "WOMAN",
+        "texto": "woman",
+        "src": "/audio/aula-14/lesson_014_audio_043.5e04dc82.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_014_audio_044",
+        "alvo": "texto",
+        "ancora": "woman → women",
+        "texto": "woman. women",
+        "src": "/audio/aula-14/lesson_014_audio_044.aae6663b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_014_audio_045",
+        "alvo": "bloco",
+        "ancora": "Ana: What is it?",
+        "texto": "What is it?\nIt's a book.\nAnd what are they?\nThey're books.\nWhat are they?\nThey're pencils.\nAnd the people?\nThey're students.",
+        "src": "/audio/aula-14/lesson_014_audio_045.d0ece038.mp3",
+        "categoria": "DIALOGUE",
         "lento": true
       }
     }

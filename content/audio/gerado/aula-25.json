@@ -5,22 +5,22 @@
       "pagina": 2,
       "clip": {
         "id": "lesson_025_audio_001",
-        "alvo": "texto",
-        "ancora": "Sit down. · Listen.",
-        "texto": "Sit down. Listen.",
-        "src": "/audio/aula-25/lesson_025_audio_001.8dc214e7.mp3",
+        "alvo": "bloco",
+        "ancora": "live in New York.",
+        "texto": "I live in New York.\nYou live in New York.\nHe lives in New York.\nShe lives in New York.\nIt lives.\nWe live in New York.\nThey live in New York.",
+        "src": "/audio/aula-25/lesson_025_audio_001.fc385768.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_025_audio_002",
         "alvo": "texto",
-        "ancora": "Don’t worry. · Don’t be late.",
-        "texto": "Don't worry. Don't be late.",
-        "src": "/audio/aula-25/lesson_025_audio_002.3a17bbc9.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "work → works",
+        "texto": "work. works",
+        "src": "/audio/aula-25/lesson_025_audio_002.9977e137.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,10 +28,10 @@
       "clip": {
         "id": "lesson_025_audio_003",
         "alvo": "texto",
-        "ancora": "Open your book.",
-        "texto": "Open your book.",
-        "src": "/audio/aula-25/lesson_025_audio_003.acdbbd24.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "eat → eats",
+        "texto": "eat. eats",
+        "src": "/audio/aula-25/lesson_025_audio_003.619d9e10.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -39,10 +39,10 @@
       "clip": {
         "id": "lesson_025_audio_004",
         "alvo": "texto",
-        "ancora": "Add the milk.",
-        "texto": "Add the milk.",
-        "src": "/audio/aula-25/lesson_025_audio_004.d421ef10.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "play → plays",
+        "texto": "play. plays",
+        "src": "/audio/aula-25/lesson_025_audio_004.85038d23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -50,9 +50,453 @@
       "clip": {
         "id": "lesson_025_audio_005",
         "alvo": "texto",
-        "ancora": "Don’t smoke.",
-        "texto": "Don't smoke.",
-        "src": "/audio/aula-25/lesson_025_audio_005.a1acc7ce.mp3",
+        "ancora": "study → studies",
+        "texto": "study. studies",
+        "src": "/audio/aula-25/lesson_025_audio_005.a01e306a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_006",
+        "alvo": "texto",
+        "ancora": "cry → cries",
+        "texto": "cry. cries",
+        "src": "/audio/aula-25/lesson_025_audio_006.9e65ca58.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_007",
+        "alvo": "texto",
+        "ancora": "try → tries",
+        "texto": "try. tries",
+        "src": "/audio/aula-25/lesson_025_audio_007.da7f491c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_008",
+        "alvo": "texto",
+        "ancora": "relax → relaxes",
+        "texto": "relax. relaxes",
+        "src": "/audio/aula-25/lesson_025_audio_008.85630657.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_009",
+        "alvo": "texto",
+        "ancora": "do → does",
+        "texto": "do. does",
+        "src": "/audio/aula-25/lesson_025_audio_009.44d0dc4b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_025_audio_010",
+        "alvo": "texto",
+        "ancora": "have → has",
+        "texto": "have. has",
+        "src": "/audio/aula-25/lesson_025_audio_010.1758c06b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_025_audio_011",
+        "alvo": "texto",
+        "ancora": "He works as a police officer.",
+        "texto": "He works as a police officer.",
+        "src": "/audio/aula-25/lesson_025_audio_011.184e15ed.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_025_audio_012",
+        "alvo": "texto",
+        "ancora": "like → likes",
+        "texto": "like. likes",
+        "src": "/audio/aula-25/lesson_025_audio_012.ab0f898b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_025_audio_013",
+        "alvo": "texto",
+        "ancora": "It likes bananas.",
+        "texto": "It likes bananas.",
+        "src": "/audio/aula-25/lesson_025_audio_013.73a95870.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_025_audio_014",
+        "alvo": "texto",
+        "ancora": "My sister studies at home.",
+        "texto": "My sister studies at home.",
+        "src": "/audio/aula-25/lesson_025_audio_014.7cf8e941.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_025_audio_015",
+        "alvo": "texto",
+        "ancora": "Karen cries when she watches sad movies.",
+        "texto": "Karen cries when she watches sad movies.",
+        "src": "/audio/aula-25/lesson_025_audio_015.97b9b4a7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_025_audio_016",
+        "alvo": "texto",
+        "ancora": "wash → washes",
+        "texto": "wash. washes",
+        "src": "/audio/aula-25/lesson_025_audio_016.8c459265.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_025_audio_017",
+        "alvo": "texto",
+        "ancora": "My husband washes the dishes every day.",
+        "texto": "My husband washes the dishes every day.",
+        "src": "/audio/aula-25/lesson_025_audio_017.09b15345.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_025_audio_018",
+        "alvo": "texto",
+        "ancora": "go → goes",
+        "texto": "go. goes",
+        "src": "/audio/aula-25/lesson_025_audio_018.b82652e5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_025_audio_019",
+        "alvo": "texto",
+        "ancora": "My uncle goes scuba diving on the weekends.",
+        "texto": "My uncle goes scuba diving on the weekends.",
+        "src": "/audio/aula-25/lesson_025_audio_019.6fdc8279.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_025_audio_020",
+        "alvo": "texto",
+        "ancora": "He does his homework in the afternoon.",
+        "texto": "He does his homework in the afternoon.",
+        "src": "/audio/aula-25/lesson_025_audio_020.4358747d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_025_audio_021",
+        "alvo": "texto",
+        "ancora": "→ DOESN’T",
+        "texto": "doesn't",
+        "src": "/audio/aula-25/lesson_025_audio_021.4d75c783.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_025_audio_022",
+        "alvo": "texto",
+        "ancora": "He doesn’t have a modern car.",
+        "texto": "He doesn't have a modern car.",
+        "src": "/audio/aula-25/lesson_025_audio_022.54d7f047.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_025_audio_023",
+        "alvo": "texto",
+        "ancora": "She teaches English.",
+        "texto": "She teaches English.",
+        "src": "/audio/aula-25/lesson_025_audio_023.8f44f76e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_025_audio_024",
+        "alvo": "texto",
+        "ancora": "She doesn’t teach Japanese.",
+        "texto": "She doesn't teach Japanese.",
+        "src": "/audio/aula-25/lesson_025_audio_024.5f016390.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_025_audio_025",
+        "alvo": "texto",
+        "ancora": "She doesn’t teach.",
+        "texto": "She doesn't teach.",
+        "src": "/audio/aula-25/lesson_025_audio_025.eef2ff57.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_025_audio_026",
+        "alvo": "texto",
+        "ancora": "She teaches. → She doesn’t teach.",
+        "texto": "She teaches. She doesn't teach.",
+        "src": "/audio/aula-25/lesson_025_audio_026.4adc640f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_027",
+        "alvo": "texto",
+        "ancora": "Do you live in New York? → Does he live in New York?",
+        "texto": "Do you live in New York? Does he live in New York?",
+        "src": "/audio/aula-25/lesson_025_audio_027.7aa443e7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_028",
+        "alvo": "texto",
+        "ancora": "Does she speak English?",
+        "texto": "Does she speak English?",
+        "src": "/audio/aula-25/lesson_025_audio_028.436220c9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_029",
+        "alvo": "texto",
+        "ancora": "Yes, she does.",
+        "texto": "Yes, she does.",
+        "src": "/audio/aula-25/lesson_025_audio_029.420f270b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_030",
+        "alvo": "texto",
+        "ancora": "No, she doesn’t.",
+        "texto": "No, she doesn't.",
+        "src": "/audio/aula-25/lesson_025_audio_030.556d06b1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_031",
+        "alvo": "texto",
+        "ancora": "Does he like coffee?",
+        "texto": "Does he like coffee?",
+        "src": "/audio/aula-25/lesson_025_audio_031.95dadb71.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_032",
+        "alvo": "texto",
+        "ancora": "Yes, he does.",
+        "texto": "Yes, he does.",
+        "src": "/audio/aula-25/lesson_025_audio_032.e794f1ac.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_025_audio_033",
+        "alvo": "texto",
+        "ancora": "No, he doesn’t.",
+        "texto": "No, he doesn't.",
+        "src": "/audio/aula-25/lesson_025_audio_033.4f2e11e2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_034",
+        "alvo": "texto",
+        "ancora": "Where does she work?",
+        "texto": "Where does she work?",
+        "src": "/audio/aula-25/lesson_025_audio_034.77a2e0cc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_035",
+        "alvo": "texto",
+        "ancora": "She works in a restaurant.",
+        "texto": "She works in a restaurant.",
+        "src": "/audio/aula-25/lesson_025_audio_035.11755dd8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_036",
+        "alvo": "texto",
+        "ancora": "What does he do?",
+        "texto": "What does he do?",
+        "src": "/audio/aula-25/lesson_025_audio_036.93710027.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_037",
+        "alvo": "texto",
+        "ancora": "He’s a nurse.",
+        "texto": "He's a nurse.",
+        "src": "/audio/aula-25/lesson_025_audio_037.fcdc4c7b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_038",
+        "alvo": "texto",
+        "ancora": "When does she study English?",
+        "texto": "When does she study English?",
+        "src": "/audio/aula-25/lesson_025_audio_038.42e04c44.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_039",
+        "alvo": "texto",
+        "ancora": "She studies English on Fridays.",
+        "texto": "She studies English on Fridays.",
+        "src": "/audio/aula-25/lesson_025_audio_039.a60584be.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_040",
+        "alvo": "texto",
+        "ancora": "Who does he live with?",
+        "texto": "Who does he live with?",
+        "src": "/audio/aula-25/lesson_025_audio_040.a8b8a33d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_041",
+        "alvo": "texto",
+        "ancora": "He lives with his wife and his children.",
+        "texto": "He lives with his wife and his children.",
+        "src": "/audio/aula-25/lesson_025_audio_041.441f87fb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_025_audio_042",
+        "alvo": "texto",
+        "ancora": "Why does he study English?",
+        "texto": "Why does he study English?",
+        "src": "/audio/aula-25/lesson_025_audio_042.e024d664.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_025_audio_043",
+        "alvo": "bloco",
+        "ancora": "She teaches English.",
+        "texto": "She teaches English.\nShe doesn't teach Japanese.\nHe likes coffee.\nDoes he like coffee?",
+        "src": "/audio/aula-25/lesson_025_audio_043.23fd45ff.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_025_audio_044",
+        "alvo": "bloco",
+        "ancora": "Mia: What does your brother do?",
+        "texto": "What does your brother do?\nHe's a baker.\nWhat time does he go to work?\nHe goes to work at seven.\nDoes he have lunch at work?\nYes, he does.\nDoes he watch TV at night?\nNo, he doesn't. He goes to bed at ten.",
+        "src": "/audio/aula-25/lesson_025_audio_044.49506a80.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 11,
+      "clip": {
+        "id": "lesson_025_audio_045",
+        "alvo": "bloco",
+        "ancora": "What does he/she do?",
+        "texto": "What does he or she do?\nWhat time does he or she get up?\nDoes he or she have lunch at home?\nDoes he or she watch TV?",
+        "src": "/audio/aula-25/lesson_025_audio_045.fba5ef40.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     }

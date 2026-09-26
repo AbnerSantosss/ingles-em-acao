@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dizer as horas do jeito simples e com \"past\" e \"to\", e marcar horários com \"at\".",
+  "foco": "Escolher a \"question word\" certa pelo tipo de informação que a resposta traz e fazer perguntas simples.",
   "conteudoAlvo": [
-    "It's + ___ + o'clock; It's seven thirty.",
-    "It's half past / a quarter past / a quarter to",
-    "in the morning, in the afternoon, at night",
-    "a.m., p.m.; The class is at 7 p.m."
+    "What, What time, When, Who, Where, Why, How old",
+    "Hey, how are you? I'm fine / great, thanks.",
+    "When's your birthday? It's on December 1st.",
+    "Why is pizza famous? Because it is delicious."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What's your favorite kind of food?",
+    "When's your birthday?"
+  ],
   "comoIntegrar": [
-    "Use os números da Aula 08 para as horas: \"It's eight fifteen.\"",
-    "Junte com a rotina da Aula 21: \"I wake up at seven o'clock.\", \"I go to bed at night.\""
+    "Junte a família da Aula 07: \"Who is he?\", \"He's my brother.\", \"How old is he?\"",
+    "Use as horas da Aula 21 com \"What time\": \"What time is it?\", \"It's 9:15.\""
   ],
   "regrasDaAula": [
-    "Hora exata leva \"at\": \"The class is at 7 p.m.\""
+    "Escolho pelo tipo de resposta, não só pela tradução: \"When\" é data, \"What time\" é horário."
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
     "completar",
-    "transformar"
+    "transformar",
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha \"in\" ou \"at\": \"The class is ___ 8.\"",
-      "respostaDeReferencia": "The class is at 8."
+      "enunciado": "Para a resposta \"It's on December 1st.\", eu pergunto com \"When\" ou \"What time\"?",
+      "respostaDeReferencia": "When"
     },
     {
       "tipo": "completar",
-      "enunciado": "Escreva 9:30 com \"half past\": \"It's ___.\"",
-      "respostaDeReferencia": "It's half past nine."
+      "enunciado": "Complete a pergunta: \"___ is pizza famous?\" \"Because it is delicious.\"",
+      "respostaDeReferencia": "Why is pizza famous?"
     },
     {
       "tipo": "transformar",
-      "enunciado": "Diga do jeito simples: \"It's a quarter past eight.\"",
-      "respostaDeReferencia": "It's eight fifteen."
+      "enunciado": "Escreva a pergunta para esta resposta: \"She's 31 years old.\"",
+      "respostaDeReferencia": "How old is she?"
     }
   ],
   "limites": [
-    "Sem a pergunta \"What time is it?\": me dê o horário em número e eu digo em inglês.",
-    "Minutos só com números que já estudei: \"twenty\", \"thirty\", \"forty\", \"fifteen\"."
+    "Nada de montar perguntas com \"do\" e \"does\": isso vem nas próximas aulas.",
+    "Sem \"Which\", \"How much\" e \"How many\": ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pela hora exata. Como eu digo 7:00 em inglês com \"o'clock\"?",
+  "primeiraQuestao": "Vamos começar pela resposta. Se alguém me diz \"I'm from Brazil.\", qual foi a pergunta?",
   "resumoAutorizado": [
-    "Jeito simples: \"It's seven thirty.\", \"It's eight fifteen.\"",
-    "\"It's seven o'clock.\", \"half past seven\", \"a quarter past / to eight\".",
-    "\"in the morning\", \"in the afternoon\", \"at night\"; \"The class is at 7 p.m.\""
+    "\"What\": coisa; \"What time\": horário; \"When\": data; \"Who\": pessoa.",
+    "\"Where\": lugar; \"Why\": motivo, com \"Because\"; \"How\": estado; \"How old\": idade.",
+    "\"When's your birthday?\", \"Why is pizza famous?\", \"How old is she?\""
   ],
-  "resumoCurto": "Horas: \"It's seven o'clock\", \"half past\", \"a quarter to\", \"in the morning\" e \"at 7 p.m.\"."
+  "resumoCurto": "\"Question words\": escolho \"What\", \"When\", \"Where\", \"Who\", \"Why\" ou \"How\" pelo tipo de resposta."
 }

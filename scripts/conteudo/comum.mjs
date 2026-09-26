@@ -326,11 +326,13 @@ export function blocosEmIngles(aula) {
 // ---------------------------------------------------------------- mapa curricular
 
 /**
- * Aulas de revisão no conteúdo REAL de `course-data.mjs`: 05 "Verb to be: Review" e
- * 42 "Unit Review 2". O contrato 01 (seção 3.1) fala em 30 e 42, mas a Aula 30 real é
- * "Jobs", com vocabulário novo. Se o dono do produto decidir outra coisa, troque só aqui.
+ * Aulas de revisão no conteúdo REAL de `course-data.mjs`: 05 "Verb to be: Review",
+ * 29 "Unit Review" e 42 "Unit Review 2". A 29 entrou em 2026-09-20, quando as aulas
+ * 08 a 30 foram refeitas seguindo as páginas do e-book do Walber (antes a revisão do
+ * meio do curso caía na 30, que virou "Places in a City"). O contrato 01 (seção 3.1)
+ * fala em 30 e 42. Se o dono do produto decidir outra coisa, troque só aqui.
  */
-export const AULAS_DE_REVISAO = [5, 42];
+export const AULAS_DE_REVISAO = [5, 29, 42];
 
 /**
  * Aula cujo conteúdo é pendência do dono do produto. Era a 05, resolvida em 2026-09-19:

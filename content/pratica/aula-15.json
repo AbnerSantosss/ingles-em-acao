@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dizer o que existe num lugar com \"there is\" e \"there are\", e também negar e perguntar.",
+  "foco": "Mostrar coisas e pessoas com \"this\", \"that\", \"these\" e \"those\": perto ou longe, um ou mais de um.",
   "conteudoAlvo": [
-    "there is, there are, there's, many, any",
-    "a problem, chairs, a bank, restaurants, a TV",
-    "the kitchen, room, windows, near here",
-    "there isn't, there aren't, Is there, Are there"
+    "This is a triangle. That is a rectangle.",
+    "These are triangles. Those are rectangles.",
+    "Is this a clock? Are those old cars?",
+    "near / far, circle, square, pens"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "Yes, it is.",
+    "Yes, they are."
+  ],
   "comoIntegrar": [
-    "Use os números da Aula 08 e os plurais da Aula 12: \"There are three books.\"",
-    "Use \"my\" e \"the table\" já vistos: \"There isn't a TV in my room.\""
+    "Negue com as respostas curtas da Aula 04: \"No, it isn't.\", \"No, they aren't.\"",
+    "Misture com família, cores e plurais: \"That is my sister.\", \"These are red apples.\""
   ],
   "regrasDaAula": [
-    "Um só: \"there is\"; mais de um: \"there are\" (\"There are many people.\")."
+    "Um só: \"this\" (perto) e \"that\" (longe); mais de um: \"these\" (perto) e \"those\" (longe)."
   ],
   "tiposDeExercicio": [
     "escolher",
     "completar",
     "transformar",
-    "traduzir"
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha \"is\" ou \"are\": \"There ___ three books.\"",
-      "respostaDeReferencia": "There are three books."
+      "enunciado": "O livro está longe de mim. Escolha: \"This is a book.\" ou \"That is a book.\"",
+      "respostaDeReferencia": "That is a book."
     },
     {
       "tipo": "transformar",
-      "enunciado": "Passe para a pergunta: \"There is a bank near here.\"",
-      "respostaDeReferencia": "Is there a bank near here?"
+      "enunciado": "Passe para o plural: \"This is a triangle.\"",
+      "respostaDeReferencia": "These are triangles."
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Não há cadeiras.",
-      "respostaDeReferencia": "There aren't any chairs."
+      "tipo": "responder",
+      "enunciado": "Responda com a resposta curta: \"Are those old cars?\"",
+      "respostaDeReferencia": "Yes, they are."
     }
   ],
   "limites": [
-    "Sem \"sofa\", \"living room\", \"park\" e \"big\": ainda não estudei.",
-    "Sem \"on\", \"under\" e \"next to\" para lugar: só \"in\" e \"near here\"."
+    "Sem \"there\", \"this one\" e \"that one\": ainda não estudei.",
+    "Só frases com \"is\" e \"are\". Móveis da casa, como \"sofa\" e \"bed\", vêm mais adiante."
   ],
-  "primeiraQuestao": "Vamos começar pelo singular. Complete: \"___ a table in the kitchen.\" Entra \"There is\" ou \"There are\"?",
+  "primeiraQuestao": "Vamos começar por uma coisa só. O celular está na minha mão: digo \"This is a phone.\" ou \"That is a phone.\"?",
   "resumoAutorizado": [
-    "Singular: \"There is a problem.\", \"There's a book.\", \"There isn't a TV.\"",
-    "Plural: \"There are many people.\", \"There aren't any chairs.\"",
-    "Pergunta: \"Is there a bank near here?\", \"Are there any windows?\""
+    "Um só: \"This is a phone.\" (perto) e \"That is a bag.\" (longe).",
+    "Mais de um: \"These are books.\" (perto) e \"Those are cars.\" (longe).",
+    "Perguntas: \"Is that a clock? Yes, it is.\" e \"Are these pens? Yes, they are.\""
   ],
-  "resumoCurto": "\"There is\" para um, \"there are\" para mais de um, com negativa e pergunta: \"Is there a bank near here?\""
+  "resumoCurto": "Demonstrativos: \"this\" e \"that\" para um, \"these\" e \"those\" para mais de um, perto ou longe."
 }

@@ -1,15 +1,15 @@
 {
   "aula": 16,
-  "titulo": "Prepositions of Place",
+  "titulo": "House and Furniture",
   "status": "pronta",
   "clips": [
     {
       "id": "lesson_016_audio_001",
-      "pagina": 2,
-      "local": "Página 2 · rule · b3 · IN · DENTRO",
+      "pagina": 1,
+      "local": "Página 1 · grid · b6",
       "alvo": "texto",
-      "ancora": "in Brazil · in the room",
-      "texto": "in Brazil. in the room",
+      "ancora": "That is the kitchen.",
+      "texto": "That is the kitchen.",
       "falas": null,
       "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
@@ -22,26 +22,26 @@
     {
       "id": "lesson_016_audio_002",
       "pagina": 2,
-      "local": "Página 2 · rule · b4 · ON · SOBRE UMA SUPERFÍCIE",
+      "local": "Página 2 · rows · b6",
       "alvo": "texto",
-      "ancora": "on the wall · on the bus",
-      "texto": "on the wall. on the bus",
+      "ancora": "garden = jardim",
+      "texto": "garden. jardim",
       "falas": null,
-      "categoria": "GRAMMAR_IN_CONTEXT",
+      "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_016_audio_003",
-      "pagina": 2,
-      "local": "Página 2 · rule · b5 · AT · EM UM PONTO",
+      "pagina": 3,
+      "local": "Página 3 · note · b4 · VOCAB TIP",
       "alvo": "texto",
-      "ancora": "at school · at the door",
-      "texto": "at school. at the door",
+      "ancora": "Sofa and couch are both correct.",
+      "texto": "Sofa and couch are both correct.",
       "falas": null,
       "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
@@ -49,63 +49,152 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "Dica de vocabulário (VOCAB TIP) em inglês: sofa e couch são sinônimos. É conteúdo, não instrução de exercício."
     },
     {
       "id": "lesson_016_audio_004",
       "pagina": 3,
-      "local": "Página 3 · table · b3",
+      "local": "Página 3 · grid · b6",
       "alvo": "texto",
-      "ancora": "under",
-      "texto": "under",
+      "ancora": "This is a sofa.",
+      "texto": "This is a sofa.",
       "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
+      "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
       "id": "lesson_016_audio_005",
       "pagina": 3,
-      "local": "Página 3 · table · b3",
+      "local": "Página 3 · grid · b6",
       "alvo": "texto",
-      "ancora": "behind",
-      "texto": "behind",
+      "ancora": "That is the coffee table.",
+      "texto": "That is the coffee table.",
       "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
+      "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
       "id": "lesson_016_audio_006",
-      "pagina": 3,
-      "local": "Página 3 · table · b3",
+      "pagina": 4,
+      "local": "Página 4 · grid · b6",
       "alvo": "texto",
-      "ancora": "in front of",
-      "texto": "in front of",
+      "ancora": "This is the refrigerator.",
+      "texto": "This is the refrigerator.",
       "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
+      "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
       "id": "lesson_016_audio_007",
-      "pagina": 3,
-      "local": "Página 3 · table · b3",
+      "pagina": 4,
+      "local": "Página 4 · grid · b6",
       "alvo": "texto",
-      "ancora": "between",
-      "texto": "between",
+      "ancora": "These are cabinets.",
+      "texto": "These are cabinets.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_016_audio_008",
+      "pagina": 4,
+      "local": "Página 4 · grid · b6",
+      "alvo": "texto",
+      "ancora": "That is the dishwasher.",
+      "texto": "That is the dishwasher.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_016_audio_009",
+      "pagina": 5,
+      "local": "Página 5 · grid · b5",
+      "alvo": "texto",
+      "ancora": "This is the bed.",
+      "texto": "This is the bed.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "M2",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_016_audio_010",
+      "pagina": 5,
+      "local": "Página 5 · dialogue · b7",
+      "alvo": "bloco",
+      "ancora": "What’s this?",
+      "texto": "What's this?\nIt's a desk.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "What's this?"
+        },
+        {
+          "voz": "M1",
+          "texto": "It's a desk."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    },
+    {
+      "id": "lesson_016_audio_011",
+      "pagina": 6,
+      "local": "Página 6 · note · b4 · LOOK AND SAY",
+      "alvo": "texto",
+      "ancora": "This is the sink.\nThat is the shower.\nThis is the toilet.",
+      "texto": "This is the sink. That is the shower. This is the toilet.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Modelo LOOK AND SAY com as três frases do banheiro (sink, shower, toilet). É conteúdo, não instrução de exercício."
+    },
+    {
+      "id": "lesson_016_audio_012",
+      "pagina": 6,
+      "local": "Página 6 · rows · b6",
+      "alvo": "texto",
+      "ancora": "shower = chuveiro",
+      "texto": "shower. chuveiro",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
@@ -116,12 +205,12 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_016_audio_008",
-      "pagina": 3,
-      "local": "Página 3 · table · b3",
+      "id": "lesson_016_audio_013",
+      "pagina": 6,
+      "local": "Página 6 · rows · b6",
       "alvo": "texto",
-      "ancora": "near",
-      "texto": "near",
+      "ancora": "sink = pia",
+      "texto": "sink. pia",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
@@ -130,6 +219,55 @@
       "prioridade": "P0",
       "obrigatorio": true,
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_016_audio_014",
+      "pagina": 8,
+      "local": "Página 8 · dialogue · b4",
+      "alvo": "bloco",
+      "ancora": "Ana: Is this the living room?",
+      "texto": "Is this the living room?\nYes, it is.\nIs that a sofa?\nYes, it is.\nWhat are these?\nThey're chairs.\nAnd what's that?\nIt's the kitchen.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Is this the living room?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes, it is."
+        },
+        {
+          "voz": "F1",
+          "texto": "Is that a sofa?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes, it is."
+        },
+        {
+          "voz": "F1",
+          "texto": "What are these?"
+        },
+        {
+          "voz": "M1",
+          "texto": "They're chairs."
+        },
+        {
+          "voz": "F1",
+          "texto": "And what's that?"
+        },
+        {
+          "voz": "M1",
+          "texto": "It's the kitchen."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da página 8: Ana com voz F1 e Daniel com voz M1, as mesmas das aulas anteriores."
     }
   ]
 }

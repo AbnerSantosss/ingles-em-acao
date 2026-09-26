@@ -6,10 +6,11 @@
       "clip": {
         "id": "lesson_015_audio_001",
         "alvo": "texto",
-        "ancora": "There is a problem.",
-        "texto": "There is a problem.",
-        "src": "/audio/aula-15/lesson_015_audio_001.d0f7c677.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "THIS",
+        "texto": "this",
+        "src": "/audio/aula-15/lesson_015_audio_001.8ab607ed.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -17,10 +18,11 @@
       "clip": {
         "id": "lesson_015_audio_002",
         "alvo": "texto",
-        "ancora": "There are many people.",
-        "texto": "There are many people.",
-        "src": "/audio/aula-15/lesson_015_audio_002.58d7a1af.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "THAT",
+        "texto": "that",
+        "src": "/audio/aula-15/lesson_015_audio_002.e13d590a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -28,21 +30,23 @@
       "clip": {
         "id": "lesson_015_audio_003",
         "alvo": "texto",
-        "ancora": "There aren’t any chairs.",
-        "texto": "There aren't any chairs.",
-        "src": "/audio/aula-15/lesson_015_audio_003.dc141850.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "THESE",
+        "texto": "these",
+        "src": "/audio/aula-15/lesson_015_audio_003.2fe0ba8c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_015_audio_004",
         "alvo": "texto",
-        "ancora": "There is a table in the kitchen.",
-        "texto": "There is a table in the kitchen.",
-        "src": "/audio/aula-15/lesson_015_audio_004.e737c63e.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "THOSE",
+        "texto": "those",
+        "src": "/audio/aula-15/lesson_015_audio_004.797a2c23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -50,10 +54,10 @@
       "clip": {
         "id": "lesson_015_audio_005",
         "alvo": "texto",
-        "ancora": "There isn’t a TV in my room.",
-        "texto": "There isn't a TV in my room.",
-        "src": "/audio/aula-15/lesson_015_audio_005.eccc2564.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "NEAR",
+        "texto": "near",
+        "src": "/audio/aula-15/lesson_015_audio_005.18743dce.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -61,10 +65,275 @@
       "clip": {
         "id": "lesson_015_audio_006",
         "alvo": "texto",
-        "ancora": "Are there any windows?",
-        "texto": "Are there any windows?",
-        "src": "/audio/aula-15/lesson_015_audio_006.d05dc7db.mp3",
+        "ancora": "This is a phone.",
+        "texto": "This is a phone.",
+        "src": "/audio/aula-15/lesson_015_audio_006.fcfef2ec.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_015_audio_007",
+        "alvo": "texto",
+        "ancora": "FAR",
+        "texto": "far",
+        "src": "/audio/aula-15/lesson_015_audio_007.c076a59c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_015_audio_008",
+        "alvo": "texto",
+        "ancora": "That is a bag.",
+        "texto": "That is a bag.",
+        "src": "/audio/aula-15/lesson_015_audio_008.0fb8c505.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_015_audio_009",
+        "alvo": "texto",
+        "ancora": "These are books.",
+        "texto": "These are books.",
+        "src": "/audio/aula-15/lesson_015_audio_009.19eee422.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_015_audio_010",
+        "alvo": "texto",
+        "ancora": "Those are cars.",
+        "texto": "Those are cars.",
+        "src": "/audio/aula-15/lesson_015_audio_010.33984265.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_015_audio_011",
+        "alvo": "texto",
+        "ancora": "this, that, these, those.",
+        "texto": "This, that, these, those.",
+        "src": "/audio/aula-15/lesson_015_audio_011.1a232074.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_015_audio_012",
+        "alvo": "texto",
+        "ancora": "This is a triangle.",
+        "texto": "This is a triangle.",
+        "src": "/audio/aula-15/lesson_015_audio_012.5b2502be.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_015_audio_013",
+        "alvo": "texto",
+        "ancora": "That is a rectangle.",
+        "texto": "That is a rectangle.",
+        "src": "/audio/aula-15/lesson_015_audio_013.ef0de503.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_015_audio_014",
+        "alvo": "texto",
+        "ancora": "These are triangles.",
+        "texto": "These are triangles.",
+        "src": "/audio/aula-15/lesson_015_audio_014.70ebc766.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_015_audio_015",
+        "alvo": "texto",
+        "ancora": "Those are rectangles.",
+        "texto": "Those are rectangles.",
+        "src": "/audio/aula-15/lesson_015_audio_015.36f5843e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_015_audio_016",
+        "alvo": "texto",
+        "ancora": "circle.",
+        "texto": "Circle.",
+        "src": "/audio/aula-15/lesson_015_audio_016.ee0cbfd9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_015_audio_017",
+        "alvo": "texto",
+        "ancora": "square.",
+        "texto": "Square.",
+        "src": "/audio/aula-15/lesson_015_audio_017.09c14cbb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_015_audio_018",
+        "alvo": "texto",
+        "ancora": "This is my brother.",
+        "texto": "This is my brother.",
+        "src": "/audio/aula-15/lesson_015_audio_018.d59490f3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_015_audio_019",
+        "alvo": "texto",
+        "ancora": "That is my brother.",
+        "texto": "That is my brother.",
+        "src": "/audio/aula-15/lesson_015_audio_019.7338c69f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_015_audio_020",
+        "alvo": "texto",
+        "ancora": "This is an apple.",
+        "texto": "This is an apple.",
+        "src": "/audio/aula-15/lesson_015_audio_020.a2f5c11d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_015_audio_021",
+        "alvo": "texto",
+        "ancora": "That is an apple.",
+        "texto": "That is an apple.",
+        "src": "/audio/aula-15/lesson_015_audio_021.334ce7de.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_015_audio_022",
+        "alvo": "texto",
+        "ancora": "These are apples.",
+        "texto": "These are apples.",
+        "src": "/audio/aula-15/lesson_015_audio_022.07fdd2ad.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_015_audio_023",
+        "alvo": "texto",
+        "ancora": "Those are apples.",
+        "texto": "Those are apples.",
+        "src": "/audio/aula-15/lesson_015_audio_023.7700cc43.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_015_audio_024",
+        "alvo": "texto",
+        "ancora": "Is this a clock?",
+        "texto": "Is this a clock?",
+        "src": "/audio/aula-15/lesson_015_audio_024.dcf8ec76.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_015_audio_025",
+        "alvo": "texto",
+        "ancora": "Yes, it is.",
+        "texto": "Yes, it is.",
+        "src": "/audio/aula-15/lesson_015_audio_025.fb3c0fca.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_015_audio_026",
+        "alvo": "texto",
+        "ancora": "Is that a clock?",
+        "texto": "Is that a clock?",
+        "src": "/audio/aula-15/lesson_015_audio_026.ca00e263.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_015_audio_027",
+        "alvo": "texto",
+        "ancora": "Are these old cars?",
+        "texto": "Are these old cars?",
+        "src": "/audio/aula-15/lesson_015_audio_027.dbf5d515.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_015_audio_028",
+        "alvo": "texto",
+        "ancora": "Yes, they are.",
+        "texto": "Yes, they are.",
+        "src": "/audio/aula-15/lesson_015_audio_028.cc3b4813.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_015_audio_029",
+        "alvo": "texto",
+        "ancora": "Are those old cars?",
+        "texto": "Are those old cars?",
+        "src": "/audio/aula-15/lesson_015_audio_029.1a659e20.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_015_audio_030",
+        "alvo": "bloco",
+        "ancora": "Ana: Is this your notebook?",
+        "texto": "Is this your notebook?\nYes, it is.\nIs that your bag?\nYes, it is.\nAre these your pens?\nYes, they are.\nAnd those books?\nThey are Julia's books.",
+        "src": "/audio/aula-15/lesson_015_audio_030.d15fcee1.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Escolher entre \"a\", \"an\" e \"the\": \"a\" e \"an\" pelo som da palavra, \"the\" para algo específico.",
+  "foco": "Nomear objetos da sala com \"It's a ___\" e pedir ajuda e permissão com \"Excuse me\" e \"May I ___, please?\".",
   "conteudoAlvo": [
-    "a, an, the",
-    "a book, a university, an apple, an engineer",
-    "an hour, a dog, small, the sun, the table",
-    "I have a dog. The dog is small. I like dogs."
+    "classroom, desk, chair, whiteboard, window, books",
+    "pen, pencil, eraser, ruler, school bag, scissors",
+    "Where's the restroom, bathroom, toilet, WC?",
+    "It's a ___, This is a ___, May I ___, please?"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What's this?",
+    "Excuse me"
+  ],
   "comoIntegrar": [
-    "Use cores e objetos da Aula 10 com artigo: \"a red car\", \"an orange car\".",
-    "Use profissões já vistas com \"he is\" e \"she is\": \"a teacher\", \"a doctor\", \"an engineer\"."
+    "Junte com \"is\" e \"are\" da Aula 02: \"She's the teacher.\", \"They are students.\"",
+    "Soletre os objetos como na Aula 10: \"How do you spell it?\" depois de \"It's a pen.\""
   ],
   "regrasDaAula": [
-    "\"an\" antes de som de vogal (\"an hour\"); \"a\" antes de som de consoante (\"a university\")."
+    "Pedir permissão: \"May I\" + ação + \"please?\", como em \"May I sit here, please?\""
   ],
   "tiposDeExercicio": [
     "identificar",
     "escolher",
     "completar",
-    "traduzir"
+    "mini-dialogo"
   ],
   "exemplos": [
     {
+      "tipo": "identificar",
+      "enunciado": "Responda \"What's this?\" sobre o lápis da mesa, com \"It's a ___\".",
+      "respostaDeReferencia": "It's a pencil."
+    },
+    {
       "tipo": "escolher",
-      "enunciado": "Escolha \"a\" ou \"an\": \"___ hour\".",
-      "respostaDeReferencia": "an hour"
+      "enunciado": "Qual comando manda abrir o livro? \"Open your books.\" ou \"Close your books.\"",
+      "respostaDeReferencia": "Open your books."
     },
     {
-      "tipo": "completar",
-      "enunciado": "Complete com \"a\", \"an\" ou \"the\": \"I have a dog. ___ dog is small.\"",
-      "respostaDeReferencia": "The dog is small."
-    },
-    {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Ela é engenheira.",
-      "respostaDeReferencia": "She is an engineer."
+      "tipo": "mini-dialogo",
+      "enunciado": "Peça para ir ao banheiro com \"Excuse me\" e \"May I\". O professor diz \"Yes, you may.\"",
+      "respostaDeReferencia": "Excuse me, may I go to the bathroom, please?"
     }
   ],
   "limites": [
-    "Plural só em \"I like dogs.\": as outras formas de plural ainda não estudei.",
-    "Verbos só em \"I have\" e \"I like\": sem \"eat\", \"old\", \"big\" e \"hot\"."
+    "Sem cores e sem \"Can I\" para pedir permissão: ainda não estudei.",
+    "No \"May I ___\", só \"go\", \"drink\", \"open\" e \"sit\": sem \"borrow\" e outros verbos."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"a\". Complete: \"___ book\". Entra \"a\" ou \"an\"?",
+  "primeiraQuestao": "Vamos começar pelos objetos da sala. Como se diz cadeira em inglês?",
   "resumoAutorizado": [
-    "\"a\" antes de som de consoante: \"a book\", \"a university\", \"a dog\".",
-    "\"an\" antes de som de vogal: \"an apple\", \"an engineer\", \"an hour\".",
-    "\"the\" para algo específico ou único: \"The dog is small.\", \"the sun\"."
+    "Sala: \"desk\", \"chair\", \"whiteboard\", \"books\"; \"What's this?\" \"It's a desk.\"",
+    "Material: \"pen\", \"pencil\", \"eraser\", \"ruler\", \"school bag\", \"scissors\".",
+    "Pedidos: \"Excuse me\", \"May I ___, please?\", \"Where's the restroom?\""
   ],
-  "resumoCurto": "Artigos: \"a\" e \"an\" pelo som (\"a university\", \"an hour\") e \"the\" para algo específico ou único."
+  "resumoCurto": "Sala de aula: objetos, material escolar, comandos, \"Excuse me\", \"May I ___, please?\" e \"Where's the restroom?\"."
 }

@@ -20,11 +20,17 @@ export const TRACK: TrackItem[] = data.TRACK
 /** Quantas aulas o curso tem (42). */
 export const TOTAL_LESSONS = LESSONS.length
 
-/** Quantas páginas somadas todas as aulas têm (309). */
+/** Quantas páginas somadas todas as aulas têm (414). */
 export const TOTAL_PAGES = LESSONS.reduce((soma, aula) => soma + aula.pages.length, 0)
 
-/** Até que número de aula existe capa em `public/lessons/capas/`. */
-const ULTIMA_AULA_COM_CAPA = 10
+/**
+ * As aulas que têm capa desenhada em `public/lessons/capas/NN.png`.
+ * Eram as aulas 1 a 10 em sequência. Em 2026-09-20 as aulas 08 a 30 foram refeitas
+ * seguindo as páginas do e-book e três capas mudaram de dona, porque a arte seguiu o
+ * tema e não o número: números 1-100 foi para a 20, dias e meses para a 26 e cores
+ * para a 12. As demais 32 aulas seguem sem capa.
+ */
+const AULAS_COM_CAPA = new Set([1, 2, 3, 4, 5, 6, 7, 12, 20, 26])
 
 /**
  * Converte um título de aula em slug de URL.
@@ -43,10 +49,10 @@ export function slugify(title: string): string {
 
 /**
  * A capa da aula, ou `null` quando ela ainda não tem uma.
- * Hoje só as aulas 1 a 10 têm arte de capa; as outras 32 caem no `null`.
+ * Hoje só as 10 aulas de `AULAS_COM_CAPA` têm arte; as outras 32 caem no `null`.
  */
 export function getCoverForLesson(n: number): string | null {
-  if (n < 1 || n > ULTIMA_AULA_COM_CAPA) return null
+  if (!AULAS_COM_CAPA.has(n)) return null
   return `/lessons/capas/${String(n).padStart(2, '0')}.png`
 }
 

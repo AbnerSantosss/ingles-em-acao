@@ -6,10 +6,11 @@
       "clip": {
         "id": "lesson_030_audio_001",
         "alvo": "texto",
-        "ancora": "driver",
-        "texto": "driver",
-        "src": "/audio/aula-30/lesson_030_audio_001.b29ef2a1.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "My sister is a lawyer. She works in an office.",
+        "texto": "My sister is a lawyer. She works in an office.",
+        "src": "/audio/aula-30/lesson_030_audio_001.3ef3c49f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
@@ -17,9 +18,9 @@
       "clip": {
         "id": "lesson_030_audio_002",
         "alvo": "texto",
-        "ancora": "salesperson",
-        "texto": "salesperson",
-        "src": "/audio/aula-30/lesson_030_audio_002.c09fdbcb.mp3",
+        "ancora": "LIBRARY",
+        "texto": "library",
+        "src": "/audio/aula-30/lesson_030_audio_002.f7e29294.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -28,10 +29,10 @@
       "clip": {
         "id": "lesson_030_audio_003",
         "alvo": "texto",
-        "ancora": "lawyer",
-        "texto": "lawyer",
-        "src": "/audio/aula-30/lesson_030_audio_003.f2fed4b0.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "You borrow books from a library.",
+        "texto": "You borrow books from a library.",
+        "src": "/audio/aula-30/lesson_030_audio_003.d74c7005.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -39,21 +40,293 @@
       "clip": {
         "id": "lesson_030_audio_004",
         "alvo": "texto",
-        "ancora": "student",
-        "texto": "student",
-        "src": "/audio/aula-30/lesson_030_audio_004.5608f4d1.mp3",
+        "ancora": "BOOKSTORE",
+        "texto": "bookstore",
+        "src": "/audio/aula-30/lesson_030_audio_004.abb232a9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_030_audio_005",
+        "alvo": "texto",
+        "ancora": "You buy books in a bookstore.",
+        "texto": "You buy books in a bookstore.",
+        "src": "/audio/aula-30/lesson_030_audio_005.68f5c9b2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_030_audio_006",
+        "alvo": "texto",
+        "ancora": "I buy medicine at the drugstore.",
+        "texto": "I buy medicine at the drugstore.",
+        "src": "/audio/aula-30/lesson_030_audio_006.d4bc26f1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_030_audio_007",
+        "alvo": "texto",
+        "ancora": "SUPERMARKET",
+        "texto": "supermarket",
+        "src": "/audio/aula-30/lesson_030_audio_007.de8715d4.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_030_audio_005",
+        "id": "lesson_030_audio_008",
         "alvo": "texto",
-        "ancora": "I work in a school.",
-        "texto": "I work in a school.",
-        "src": "/audio/aula-30/lesson_030_audio_005.00747a7e.mp3",
+        "ancora": "SHOPPING MALL",
+        "texto": "shopping mall",
+        "src": "/audio/aula-30/lesson_030_audio_008.dcc09ed5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_030_audio_009",
+        "alvo": "texto",
+        "ancora": "Sarah goes to the shopping mall on Saturdays.",
+        "texto": "Sarah goes to the shopping mall on Saturdays.",
+        "src": "/audio/aula-30/lesson_030_audio_009.e063bbad.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_030_audio_010",
+        "alvo": "texto",
+        "ancora": "HOTEL",
+        "texto": "hotel",
+        "src": "/audio/aula-30/lesson_030_audio_010.e5636e6f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_030_audio_011",
+        "alvo": "texto",
+        "ancora": "You check in at a hotel.",
+        "texto": "You check in at a hotel.",
+        "src": "/audio/aula-30/lesson_030_audio_011.fbea7f3c.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_012",
+        "alvo": "texto",
+        "ancora": "BUS STOP",
+        "texto": "bus stop",
+        "src": "/audio/aula-30/lesson_030_audio_012.2b53e160.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_013",
+        "alvo": "texto",
+        "ancora": "I take the bus at the bus stop.",
+        "texto": "I take the bus at the bus stop.",
+        "src": "/audio/aula-30/lesson_030_audio_013.a0bb1f65.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_014",
+        "alvo": "texto",
+        "ancora": "PARKING LOT",
+        "texto": "parking lot",
+        "src": "/audio/aula-30/lesson_030_audio_014.15fa1965.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_015",
+        "alvo": "texto",
+        "ancora": "I park my car in the parking lot.",
+        "texto": "I park my car in the parking lot.",
+        "src": "/audio/aula-30/lesson_030_audio_015.fae62727.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_016",
+        "alvo": "texto",
+        "ancora": "I walk in the park in the morning.",
+        "texto": "I walk in the park in the morning.",
+        "src": "/audio/aula-30/lesson_030_audio_016.229f69f1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_017",
+        "alvo": "texto",
+        "ancora": "AQUARIUM",
+        "texto": "aquarium",
+        "src": "/audio/aula-30/lesson_030_audio_017.462cd41d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_030_audio_018",
+        "alvo": "texto",
+        "ancora": "There is a large aquarium in my city.",
+        "texto": "There is a large aquarium in my city.",
+        "src": "/audio/aula-30/lesson_030_audio_018.e92fef49.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_030_audio_019",
+        "alvo": "texto",
+        "ancora": "MOVIE THEATER",
+        "texto": "movie theater",
+        "src": "/audio/aula-30/lesson_030_audio_019.983ad671.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_030_audio_020",
+        "alvo": "texto",
+        "ancora": "We see movies at a movie theater.",
+        "texto": "We see movies at a movie theater.",
+        "src": "/audio/aula-30/lesson_030_audio_020.7e3dd823.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_030_audio_021",
+        "alvo": "texto",
+        "ancora": "THEATER",
+        "texto": "theater",
+        "src": "/audio/aula-30/lesson_030_audio_021.1e1b3bad.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_030_audio_022",
+        "alvo": "texto",
+        "ancora": "We see plays at a theater.",
+        "texto": "We see plays at a theater.",
+        "src": "/audio/aula-30/lesson_030_audio_022.dc74fb4b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_030_audio_023",
+        "alvo": "texto",
+        "ancora": "MUSEUM",
+        "texto": "museum",
+        "src": "/audio/aula-30/lesson_030_audio_023.e12f2b74.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_030_audio_024",
+        "alvo": "texto",
+        "ancora": "Are there good museums in your city?",
+        "texto": "Are there good museums in your city?",
+        "src": "/audio/aula-30/lesson_030_audio_024.bdda70f0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_030_audio_025",
+        "alvo": "texto",
+        "ancora": "Where can you buy food?",
+        "texto": "Where can you buy food?",
+        "src": "/audio/aula-30/lesson_030_audio_025.ca436e16.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_030_audio_026",
+        "alvo": "texto",
+        "ancora": "Where can you work?",
+        "texto": "Where can you work?",
+        "src": "/audio/aula-30/lesson_030_audio_026.df64debc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_030_audio_027",
+        "alvo": "texto",
+        "ancora": "Where can you borrow books?",
+        "texto": "Where can you borrow books?",
+        "src": "/audio/aula-30/lesson_030_audio_027.6b75ec5d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_030_audio_028",
+        "alvo": "texto",
+        "ancora": "Where can you stay when you travel?",
+        "texto": "Where can you stay when you travel?",
+        "src": "/audio/aula-30/lesson_030_audio_028.5bcd0a55.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_030_audio_029",
+        "alvo": "bloco",
+        "ancora": "A: Are there good museums in your city?",
+        "texto": "Are there good museums in your city?\nYes, there are. There is a museum near the park.\nWhere can you buy books?\nIn a bookstore. There is one near the university.\nWhere can you see movies?\nIn a movie theater.\nGreat. I go there on Saturdays.",
+        "src": "/audio/aula-30/lesson_030_audio_029.f5bd4909.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

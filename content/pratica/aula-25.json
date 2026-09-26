@@ -2,54 +2,55 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dar instruções, ordens e conselhos com o verbo sem sujeito, na afirmativa e com \"Don't\".",
+  "foco": "Falar da rotina de outra pessoa com \"he\", \"she\" e \"it\": afirmar, negar com \"doesn't\" e perguntar com \"does\".",
   "conteudoAlvo": [
-    "open, sit down, listen, add, smoke",
-    "Open the door. Sit down, please.",
-    "Don't + ___; Don't be late."
+    "he / she / it: works, studies, watches, goes, has",
+    "She teaches English. She doesn't teach Japanese.",
+    "Does he work? Yes, he does. / No, he doesn't.",
+    "Where does she work? What time does he get up?"
   ],
   "expressoesFixas": [
-    "Don't worry"
+    "What does he do?"
   ],
   "comoIntegrar": [
-    "Use verbos que já sei como instrução: \"Go to bed.\", \"Help me, please.\", \"Don't cook.\"",
-    "Misture com coisas e lugares que já sei: \"Open your book.\", \"Add the milk.\""
+    "Compare com a Aula 23: \"I live in New York.\" vira \"He lives in New York.\"",
+    "Use as horas da Aula 21: \"What time does your brother get up?\", \"He gets up at 6:00.\""
   ],
   "regrasDaAula": [
-    "Sem sujeito: \"Open the door.\", nunca \"You open the door.\""
+    "O verbo muda só na afirmativa: \"She works.\", \"She doesn't work.\", \"Does she work?\""
   ],
   "tiposDeExercicio": [
-    "escolher",
+    "completar",
     "transformar",
-    "traduzir",
+    "responder",
     "corrigir"
   ],
   "exemplos": [
     {
-      "tipo": "transformar",
-      "enunciado": "Passe para a negativa: \"Open the door.\"",
-      "respostaDeReferencia": "Don't open the door."
+      "tipo": "completar",
+      "enunciado": "Complete com o verbo \"study\": \"My sister ___ at home.\"",
+      "respostaDeReferencia": "My sister studies at home."
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Sente-se, por favor.",
-      "respostaDeReferencia": "Sit down, please."
+      "tipo": "transformar",
+      "enunciado": "Passe para a negativa: \"She teaches English.\"",
+      "respostaDeReferencia": "She doesn't teach English."
     },
     {
       "tipo": "corrigir",
-      "enunciado": "Corrija: \"You don't worry.\"",
-      "respostaDeReferencia": "Don't worry."
+      "enunciado": "Corrija: \"Does he likes coffee?\"",
+      "respostaDeReferencia": "Does he like coffee?"
     }
   ],
   "limites": [
-    "Palavras só as que já vi: \"window\", \"close\", \"talk\" e \"repeat\" ainda não estudei.",
-    "Sem \"let's\" e sem frases com \"must\" ou \"should\": só o imperativo."
+    "Dias da semana só \"on Fridays\" e \"on Mondays\": os outros vêm mais adiante.",
+    "Sem \"always\", \"never\", \"How often\" e sem passado: ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pela porta. Complete a ordem para abrir a porta:\"___ the door.\" Qual verbo entra no espaço?",
+  "primeiraQuestao": "Vamos começar pela afirmativa. Eu digo \"I work.\" Como fica essa frase com \"he\"?",
   "resumoAutorizado": [
-    "Verbo sem sujeito: \"Open the door.\", \"Sit down.\", \"Listen.\"",
-    "Negativa com \"Don't\": \"Don't worry.\", \"Don't be late.\", \"Don't smoke.\"",
-    "\"Sit down, please.\", \"Open your book.\", \"Add the milk.\""
+    "Com \"he\", \"she\", \"it\": \"works\", \"studies\", \"watches\", \"goes\", \"has\".",
+    "Negativa: \"She doesn't teach Japanese.\" O verbo volta à forma-base.",
+    "Perguntas: \"Does he like coffee?\", \"Yes, he does.\", \"Where does she work?\""
   ],
-  "resumoCurto": "Imperativo: verbo sem sujeito (\"Open the door.\"), negativa com \"Don't\" e \"please\" para suavizar."
+  "resumoCurto": "Rotina com \"he\", \"she\", \"it\": \"works\", \"studies\", \"watches\", \"has\"; negativa com \"doesn't\"; pergunta com \"does\"."
 }

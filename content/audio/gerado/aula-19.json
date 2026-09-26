@@ -6,9 +6,9 @@
       "clip": {
         "id": "lesson_019_audio_001",
         "alvo": "texto",
-        "ancora": "Do they live here?",
-        "texto": "Do they live here?",
-        "src": "/audio/aula-19/lesson_019_audio_001.c7327cf8.mp3",
+        "ancora": "This is a red strawberry.",
+        "texto": "This is a red strawberry.",
+        "src": "/audio/aula-19/lesson_019_audio_001.6abc6794.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -17,9 +17,9 @@
       "clip": {
         "id": "lesson_019_audio_002",
         "alvo": "texto",
-        "ancora": "Does she study English?",
-        "texto": "Does she study English?",
-        "src": "/audio/aula-19/lesson_019_audio_002.19cc4b07.mp3",
+        "ancora": "This strawberry is red.",
+        "texto": "This strawberry is red.",
+        "src": "/audio/aula-19/lesson_019_audio_002.77b7bf8f.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -28,10 +28,10 @@
       "clip": {
         "id": "lesson_019_audio_003",
         "alvo": "texto",
-        "ancora": "Do they study English?",
-        "texto": "Do they study English?",
-        "src": "/audio/aula-19/lesson_019_audio_003.3fc6b96c.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "BIG",
+        "texto": "big",
+        "src": "/audio/aula-19/lesson_019_audio_003.c800cb64.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -39,54 +39,463 @@
       "clip": {
         "id": "lesson_019_audio_004",
         "alvo": "texto",
-        "ancora": "Does she speak French?",
-        "texto": "Does she speak French?",
-        "src": "/audio/aula-19/lesson_019_audio_004.e03bec82.mp3",
+        "ancora": "This dog is big.",
+        "texto": "This dog is big.",
+        "src": "/audio/aula-19/lesson_019_audio_004.6d71febe.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 3,
       "clip": {
         "id": "lesson_019_audio_005",
         "alvo": "texto",
-        "ancora": "Where do you live?",
-        "texto": "Where do you live?",
-        "src": "/audio/aula-19/lesson_019_audio_005.33ff0c53.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "SMALL",
+        "texto": "small",
+        "src": "/audio/aula-19/lesson_019_audio_005.358a39f5.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 3,
       "clip": {
         "id": "lesson_019_audio_006",
         "alvo": "texto",
-        "ancora": "What do you do?",
-        "texto": "What do you do?",
-        "src": "/audio/aula-19/lesson_019_audio_006.3099eba3.mp3",
-        "categoria": "FIXED_CHUNK"
+        "ancora": "This cat is small.",
+        "texto": "This cat is small.",
+        "src": "/audio/aula-19/lesson_019_audio_006.68be3f41.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 3,
       "clip": {
         "id": "lesson_019_audio_007",
         "alvo": "texto",
-        "ancora": "When does she study?",
-        "texto": "When does she study?",
-        "src": "/audio/aula-19/lesson_019_audio_007.0f165fef.mp3",
+        "ancora": "FAST",
+        "texto": "fast",
+        "src": "/audio/aula-19/lesson_019_audio_007.d4e8ff3d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_019_audio_008",
+        "alvo": "texto",
+        "ancora": "They’re fast cars.",
+        "texto": "They're fast cars.",
+        "src": "/audio/aula-19/lesson_019_audio_008.f9e6b49f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_019_audio_009",
+        "alvo": "texto",
+        "ancora": "SLOW",
+        "texto": "slow",
+        "src": "/audio/aula-19/lesson_019_audio_009.279f9fbb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_019_audio_010",
+        "alvo": "texto",
+        "ancora": "They’re slow cars.",
+        "texto": "They're slow cars.",
+        "src": "/audio/aula-19/lesson_019_audio_010.d3fc0ca0.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
       "pagina": 4,
       "clip": {
-        "id": "lesson_019_audio_008",
+        "id": "lesson_019_audio_011",
         "alvo": "texto",
-        "ancora": "How do you go to work?",
-        "texto": "How do you go to work?",
-        "src": "/audio/aula-19/lesson_019_audio_008.0c67b16c.mp3",
+        "ancora": "HOT",
+        "texto": "hot",
+        "src": "/audio/aula-19/lesson_019_audio_011.767ea326.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_012",
+        "alvo": "texto",
+        "ancora": "COLD",
+        "texto": "cold",
+        "src": "/audio/aula-19/lesson_019_audio_012.37d46c21.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_013",
+        "alvo": "texto",
+        "ancora": "EXPENSIVE",
+        "texto": "expensive",
+        "src": "/audio/aula-19/lesson_019_audio_013.8765350e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_014",
+        "alvo": "texto",
+        "ancora": "They’re expensive sandals.",
+        "texto": "They're expensive sandals.",
+        "src": "/audio/aula-19/lesson_019_audio_014.aca15591.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_015",
+        "alvo": "texto",
+        "ancora": "CHEAP",
+        "texto": "cheap",
+        "src": "/audio/aula-19/lesson_019_audio_015.aa4efee8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_019_audio_016",
+        "alvo": "texto",
+        "ancora": "They’re cheap sandals.",
+        "texto": "They're cheap sandals.",
+        "src": "/audio/aula-19/lesson_019_audio_016.0e93893d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_017",
+        "alvo": "texto",
+        "ancora": "YOUNG",
+        "texto": "young",
+        "src": "/audio/aula-19/lesson_019_audio_017.428ad92d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_018",
+        "alvo": "texto",
+        "ancora": "She is young.",
+        "texto": "She is young.",
+        "src": "/audio/aula-19/lesson_019_audio_018.b6424693.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_019",
+        "alvo": "texto",
+        "ancora": "She is a young woman.",
+        "texto": "She is a young woman.",
+        "src": "/audio/aula-19/lesson_019_audio_019.e4566d3c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_020",
+        "alvo": "texto",
+        "ancora": "TALL",
+        "texto": "tall",
+        "src": "/audio/aula-19/lesson_019_audio_020.a66fd7da.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_021",
+        "alvo": "texto",
+        "ancora": "He is tall.",
+        "texto": "He is tall.",
+        "src": "/audio/aula-19/lesson_019_audio_021.66b93b01.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_022",
+        "alvo": "texto",
+        "ancora": "SHORT",
+        "texto": "short",
+        "src": "/audio/aula-19/lesson_019_audio_022.f35004fb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_023",
+        "alvo": "texto",
+        "ancora": "He is short.",
+        "texto": "He is short.",
+        "src": "/audio/aula-19/lesson_019_audio_023.3ead0751.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_024",
+        "alvo": "texto",
+        "ancora": "Her hair is long.",
+        "texto": "Her hair is long.",
+        "src": "/audio/aula-19/lesson_019_audio_024.8d625a83.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_025",
+        "alvo": "texto",
+        "ancora": "She has long hair.",
+        "texto": "She has long hair.",
+        "src": "/audio/aula-19/lesson_019_audio_025.a5caf234.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_019_audio_026",
+        "alvo": "texto",
+        "ancora": "Her hair is short.",
+        "texto": "Her hair is short.",
+        "src": "/audio/aula-19/lesson_019_audio_026.7d37b8b7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_027",
+        "alvo": "texto",
+        "ancora": "BEAUTIFUL",
+        "texto": "beautiful",
+        "src": "/audio/aula-19/lesson_019_audio_027.398a9e77.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_028",
+        "alvo": "texto",
+        "ancora": "It’s a beautiful house.",
+        "texto": "It's a beautiful house.",
+        "src": "/audio/aula-19/lesson_019_audio_028.e91b02b5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_029",
+        "alvo": "texto",
+        "ancora": "PRETTY",
+        "texto": "pretty",
+        "src": "/audio/aula-19/lesson_019_audio_029.97621ef8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_030",
+        "alvo": "texto",
+        "ancora": "She is pretty.",
+        "texto": "She is pretty.",
+        "src": "/audio/aula-19/lesson_019_audio_030.15239d51.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_031",
+        "alvo": "texto",
+        "ancora": "HANDSOME",
+        "texto": "handsome",
+        "src": "/audio/aula-19/lesson_019_audio_031.1c44670a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_032",
+        "alvo": "texto",
+        "ancora": "He is handsome.",
+        "texto": "He is handsome.",
+        "src": "/audio/aula-19/lesson_019_audio_032.c7f251be.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_033",
+        "alvo": "texto",
+        "ancora": "UGLY",
+        "texto": "ugly",
+        "src": "/audio/aula-19/lesson_019_audio_033.08a1c2a3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_034",
+        "alvo": "texto",
+        "ancora": "This chair is ugly.",
+        "texto": "This chair is ugly.",
+        "src": "/audio/aula-19/lesson_019_audio_034.7adb2f24.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_035",
+        "alvo": "texto",
+        "ancora": "RICH",
+        "texto": "rich",
+        "src": "/audio/aula-19/lesson_019_audio_035.f7f5ba7b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_036",
+        "alvo": "texto",
+        "ancora": "He is rich.",
+        "texto": "He is rich.",
+        "src": "/audio/aula-19/lesson_019_audio_036.9fce1231.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_037",
+        "alvo": "texto",
+        "ancora": "He is a rich man.",
+        "texto": "He is a rich man.",
+        "src": "/audio/aula-19/lesson_019_audio_037.87c9ea20.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_038",
+        "alvo": "texto",
+        "ancora": "POOR",
+        "texto": "poor",
+        "src": "/audio/aula-19/lesson_019_audio_038.a7e47a4e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_039",
+        "alvo": "texto",
+        "ancora": "This man is poor.",
+        "texto": "This man is poor.",
+        "src": "/audio/aula-19/lesson_019_audio_039.61a4d6c6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_019_audio_040",
+        "alvo": "texto",
+        "ancora": "He is a poor man.",
+        "texto": "He is a poor man.",
+        "src": "/audio/aula-19/lesson_019_audio_040.ae587b42.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_019_audio_041",
+        "alvo": "texto",
+        "ancora": "EXPENSIVE stays EXPENSIVE.",
+        "texto": "Expensive stays expensive.",
+        "src": "/audio/aula-19/lesson_019_audio_041.05de1232.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_019_audio_042",
+        "alvo": "texto",
+        "ancora": "BIG stays BIG.",
+        "texto": "Big stays big.",
+        "src": "/audio/aula-19/lesson_019_audio_042.3a175521.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_019_audio_043",
+        "alvo": "texto",
+        "ancora": "I like the yellow smartphone. → I like the yellow one.",
+        "texto": "I like the yellow smartphone. I like the yellow one.",
+        "src": "/audio/aula-19/lesson_019_audio_043.e048010e.mp3",
+        "categoria": "FIXED_CHUNK",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_019_audio_044",
+        "alvo": "texto",
+        "ancora": "These are t-shirts. → I like the black one.",
+        "texto": "These are t-shirts. I like the black one.",
+        "src": "/audio/aula-19/lesson_019_audio_044.cad0d3d8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_019_audio_045",
+        "alvo": "texto",
+        "ancora": "I like the big ones.",
+        "texto": "I like the big ones.",
+        "src": "/audio/aula-19/lesson_019_audio_045.8f5287e7.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     }
   ]

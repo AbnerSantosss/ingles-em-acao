@@ -2,14 +2,14 @@
   "aula": 24,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_024_audio_001",
         "alvo": "texto",
-        "ancora": "She can speak English.",
-        "texto": "She can speak English.",
-        "src": "/audio/aula-24/lesson_024_audio_001.d133e095.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "I teach. I’m a teacher.",
+        "texto": "I teach. I'm a teacher.",
+        "src": "/audio/aula-24/lesson_024_audio_001.4a4db500.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
@@ -17,10 +17,10 @@
       "clip": {
         "id": "lesson_024_audio_002",
         "alvo": "texto",
-        "ancora": "He can’t drive.",
-        "texto": "He can't drive.",
-        "src": "/audio/aula-24/lesson_024_audio_002.03c3b44b.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "student",
+        "texto": "student",
+        "src": "/audio/aula-24/lesson_024_audio_002.5608f4d1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,43 +28,356 @@
       "clip": {
         "id": "lesson_024_audio_003",
         "alvo": "texto",
-        "ancora": "Yes, I can. / No, I can’t.",
-        "texto": "Yes, I can. No, I can't.",
-        "src": "/audio/aula-24/lesson_024_audio_003.a70e8ab4.mp3",
+        "ancora": "I’m a student.",
+        "texto": "I'm a student.",
+        "src": "/audio/aula-24/lesson_024_audio_003.f7db7746.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_024_audio_004",
         "alvo": "texto",
-        "ancora": "I can cook.",
-        "texto": "I can cook.",
-        "src": "/audio/aula-24/lesson_024_audio_004.3df3a4a5.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "manager",
+        "texto": "manager",
+        "src": "/audio/aula-24/lesson_024_audio_004.3faffbc9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_024_audio_005",
         "alvo": "texto",
-        "ancora": "Can I go out?",
-        "texto": "Can I go out?",
-        "src": "/audio/aula-24/lesson_024_audio_005.0f4571b3.mp3",
+        "ancora": "accountant",
+        "texto": "accountant",
+        "src": "/audio/aula-24/lesson_024_audio_005.ff683a5b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_024_audio_006",
+        "alvo": "texto",
+        "ancora": "I’m an accountant.",
+        "texto": "I'm an accountant.",
+        "src": "/audio/aula-24/lesson_024_audio_006.5852ce30.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_024_audio_007",
+        "alvo": "texto",
+        "ancora": "scientist",
+        "texto": "scientist",
+        "src": "/audio/aula-24/lesson_024_audio_007.5cb7b32e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_024_audio_008",
+        "alvo": "texto",
+        "ancora": "I’m a scientist.",
+        "texto": "I'm a scientist.",
+        "src": "/audio/aula-24/lesson_024_audio_008.bd378db9.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_024_audio_006",
+        "id": "lesson_024_audio_009",
         "alvo": "texto",
-        "ancora": "Can you help me?",
-        "texto": "Can you help me?",
-        "src": "/audio/aula-24/lesson_024_audio_006.d1172e81.mp3",
+        "ancora": "explorer",
+        "texto": "explorer",
+        "src": "/audio/aula-24/lesson_024_audio_009.17b747b6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_010",
+        "alvo": "texto",
+        "ancora": "I’m an explorer.",
+        "texto": "I'm an explorer.",
+        "src": "/audio/aula-24/lesson_024_audio_010.f1062753.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_011",
+        "alvo": "texto",
+        "ancora": "I paint. I’m an artist.",
+        "texto": "I paint. I'm an artist.",
+        "src": "/audio/aula-24/lesson_024_audio_011.a5da1a43.mp3",
         "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_012",
+        "alvo": "texto",
+        "ancora": "photographer",
+        "texto": "photographer",
+        "src": "/audio/aula-24/lesson_024_audio_012.15409f74.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_013",
+        "alvo": "texto",
+        "ancora": "I take pictures of people, places and events. I’m a photographer.",
+        "texto": "I take pictures of people, places and events. I'm a photographer.",
+        "src": "/audio/aula-24/lesson_024_audio_013.5b045e4c.mp3",
+        "categoria": "FIXED_CHUNK",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_014",
+        "alvo": "texto",
+        "ancora": "filmmaker",
+        "texto": "filmmaker",
+        "src": "/audio/aula-24/lesson_024_audio_014.94aac46b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_015",
+        "alvo": "texto",
+        "ancora": "I make films. I’m a filmmaker.",
+        "texto": "I make films. I'm a filmmaker.",
+        "src": "/audio/aula-24/lesson_024_audio_015.da6fc84a.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_016",
+        "alvo": "texto",
+        "ancora": "writer",
+        "texto": "writer",
+        "src": "/audio/aula-24/lesson_024_audio_016.4c5b9482.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_024_audio_017",
+        "alvo": "texto",
+        "ancora": "I write books. I’m a writer.",
+        "texto": "I write books. I'm a writer.",
+        "src": "/audio/aula-24/lesson_024_audio_017.c63932a7.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_018",
+        "alvo": "texto",
+        "ancora": "waiter",
+        "texto": "waiter",
+        "src": "/audio/aula-24/lesson_024_audio_018.738e4763.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_019",
+        "alvo": "texto",
+        "ancora": "waitress",
+        "texto": "waitress",
+        "src": "/audio/aula-24/lesson_024_audio_019.7fbf7747.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_020",
+        "alvo": "texto",
+        "ancora": "server",
+        "texto": "server",
+        "src": "/audio/aula-24/lesson_024_audio_020.a03663d6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_021",
+        "alvo": "texto",
+        "ancora": "baker",
+        "texto": "baker",
+        "src": "/audio/aula-24/lesson_024_audio_021.c745bdef.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_022",
+        "alvo": "texto",
+        "ancora": "I work in a bakery. I’m a baker.",
+        "texto": "I work in a bakery. I'm a baker.",
+        "src": "/audio/aula-24/lesson_024_audio_022.7b3165b6.mp3",
+        "categoria": "FIXED_CHUNK",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_023",
+        "alvo": "texto",
+        "ancora": "sailor",
+        "texto": "sailor",
+        "src": "/audio/aula-24/lesson_024_audio_023.659b8a5f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_024",
+        "alvo": "texto",
+        "ancora": "I sail a ship. I’m a sailor.",
+        "texto": "I sail a ship. I'm a sailor.",
+        "src": "/audio/aula-24/lesson_024_audio_024.0e4af554.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_025",
+        "alvo": "texto",
+        "ancora": "pilot",
+        "texto": "pilot",
+        "src": "/audio/aula-24/lesson_024_audio_025.6be49a2d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_026",
+        "alvo": "texto",
+        "ancora": "I fly an airplane. I’m a pilot.",
+        "texto": "I fly an airplane. I'm a pilot.",
+        "src": "/audio/aula-24/lesson_024_audio_026.2c5d9112.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_027",
+        "alvo": "texto",
+        "ancora": "driver",
+        "texto": "driver",
+        "src": "/audio/aula-24/lesson_024_audio_027.b29ef2a1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_028",
+        "alvo": "texto",
+        "ancora": "I drive a truck. I’m a driver.",
+        "texto": "I drive a truck. I'm a driver.",
+        "src": "/audio/aula-24/lesson_024_audio_028.2b23970e.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_029",
+        "alvo": "texto",
+        "ancora": "I plan, design and build buildings. I’m an engineer.",
+        "texto": "I plan, design and build buildings. I'm an engineer.",
+        "src": "/audio/aula-24/lesson_024_audio_029.313c0dc5.mp3",
+        "categoria": "FIXED_CHUNK",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_030",
+        "alvo": "texto",
+        "ancora": "UNEMPLOYED",
+        "texto": "unemployed",
+        "src": "/audio/aula-24/lesson_024_audio_030.7e2f4be9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_024_audio_031",
+        "alvo": "texto",
+        "ancora": "I’m not working right now.",
+        "texto": "I'm not working right now.",
+        "src": "/audio/aula-24/lesson_024_audio_031.cfc5b332.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_024_audio_032",
+        "alvo": "texto",
+        "ancora": "What’s your job?",
+        "texto": "What's your job?",
+        "src": "/audio/aula-24/lesson_024_audio_032.d4aaf633.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_024_audio_033",
+        "alvo": "bloco",
+        "ancora": "Mia: What do you do?",
+        "texto": "What do you do?\nI work in a bakery. I'm a baker.\nAre you a manager?\nNo, I'm not. I'm a baker.\nWhat do you do?\nI take pictures of people, places and events. I'm a photographer.\nAre you a filmmaker?\nNo, I'm not. I'm a photographer.",
+        "src": "/audio/aula-24/lesson_024_audio_033.477849ed.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_024_audio_034",
+        "alvo": "texto",
+        "ancora": "I teach.\nI make films.\nI write books.\nI drive a truck.",
+        "texto": "I teach. I make films. I write books. I drive a truck.",
+        "src": "/audio/aula-24/lesson_024_audio_034.1ae1112b.mp3",
+        "categoria": "FIXED_CHUNK",
+        "lento": true
       }
     }
   ]

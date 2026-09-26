@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Ler, escrever e dizer os números de 1 a 100 em inglês e usá-los para dizer idade e preço.",
+  "foco": "Dizer de quem é algo com \"'s\", como \"Mike's watch\" e \"Anna's brother\", e perguntar \"Whose ___ is this?\"",
   "conteudoAlvo": [
-    "one, two, three, four, five, six, seven, eight",
-    "nine, ten, eleven, twelve, thirteen, fifteen",
-    "thirty, forty, fifty, one hundred, twenty-one",
-    "I'm ___ years old, It's ___ dollars"
+    "Whose ___ is this? It's ___'s ___. Who is ___?",
+    "name / my / the ___'s ___, the ___s' ___",
+    "one baby, two babies, dog, dogs, brother, friend",
+    "When is ___'s birthday? watch, phone, bag, book"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What is this?",
+    "Practice makes progress."
+  ],
   "comoIntegrar": [
-    "Use \"I'm\" e \"it's\" da Aula 02 para idade e preço: \"I'm thirty years old.\"",
-    "Misture números de 1 a 20 com dezenas e compostos, como \"forty-two\" e \"eighty-seven\"."
+    "Junte com a família da Aula 07: \"He is Anna's brother.\", \"my mother's car\".",
+    "Use a pergunta da Aula 04: \"Is it Sarah's bag?\" \"No, it isn't. It's Mike's bag.\""
   ],
   "regrasDaAula": [
-    "Idade usa o verbo ser/estar, e não o verbo ter: \"I'm thirty years old.\""
+    "Um dono: \"the baby's crib\". Vários donos: \"the babies' crib\". Nome em s: \"Lucas's food\"."
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
     "completar",
-    "traduzir"
+    "transformar",
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha o número certo para 13: \"thirty\" ou \"thirteen\".",
-      "respostaDeReferencia": "thirteen"
+      "enunciado": "Escolha a forma certa para dois bebês: \"the babies's crib\" ou \"the babies' crib\".",
+      "respostaDeReferencia": "the babies' crib"
     },
     {
       "tipo": "completar",
-      "enunciado": "Complete com 25 por extenso: \"I'm ___ years old.\"",
-      "respostaDeReferencia": "I'm twenty-five years old."
+      "enunciado": "Complete com o dono, Lucas: \"It's ___ food.\"",
+      "respostaDeReferencia": "It's Lucas's food."
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Custa 15 dólares.",
-      "respostaDeReferencia": "It's fifteen dollars."
+      "tipo": "responder",
+      "enunciado": "Responda que é da Sarah: \"Whose bag is this?\"",
+      "respostaDeReferencia": "It's Sarah's bag."
     }
   ],
   "limites": [
-    "Sem números acima de 100, sem horas e sem datas: ainda não estudei.",
-    "Sem \"lucky\", \"reais\" e \"have\" para idade: use só o verbo ser/estar."
+    "Sem \"his\", \"her\", \"its\", \"our\" e \"their\": esses possessivos vêm mais adiante.",
+    "Sem \"mine\", \"yours\" e \"of\" para posse. Sem datas: de números, só \"one\" e \"two\"."
   ],
-  "primeiraQuestao": "Vamos começar pelo começo. Como se diz o número 1 em inglês?",
+  "primeiraQuestao": "Vamos começar pelo Mike. Como se diz o relógio do Mike em inglês?",
   "resumoAutorizado": [
-    "De 1 a 20: \"one\", \"two\", \"three\", \"thirteen\", \"fifteen\", \"twenty\".",
-    "Dezenas: \"thirty\", \"forty\", \"fifty\", \"one hundred\"; compostos: \"forty-two\".",
-    "Idade e preço: \"I'm thirty years old.\", \"It's fifteen dollars.\""
+    "Posse e relação com \"'s\": \"Mike's watch\", \"Anna's brother\", \"my friend's name\".",
+    "Apóstrofo: \"the baby's crib\", \"the babies' crib\", \"Lucas's food\".",
+    "Pergunta e resposta: \"Whose bag is this?\" \"It's Sarah's bag.\""
   ],
-  "resumoCurto": "Números de 1 a 100, com hífen nos compostos, para idade (\"I'm thirty years old.\") e preço."
+  "resumoCurto": "Posse com \"'s\" e \"s'\": \"Mike's watch\", \"the babies' crib\" e a pergunta \"Whose bag is this?\""
 }

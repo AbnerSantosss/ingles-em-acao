@@ -6,11 +6,10 @@
       "clip": {
         "id": "lesson_013_audio_001",
         "alvo": "texto",
-        "ancora": "THIS",
-        "texto": "this",
-        "src": "/audio/aula-13/lesson_013_audio_001.8ab607ed.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "PAINTER",
+        "texto": "painter",
+        "src": "/audio/aula-13/lesson_013_audio_001.db5af987.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -18,35 +17,32 @@
       "clip": {
         "id": "lesson_013_audio_002",
         "alvo": "texto",
-        "ancora": "THAT",
-        "texto": "that",
-        "src": "/audio/aula-13/lesson_013_audio_002.e13d590a.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "a veterinarian",
+        "texto": "a veterinarian",
+        "src": "/audio/aula-13/lesson_013_audio_002.2c7c5605.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_013_audio_003",
         "alvo": "texto",
-        "ancora": "THESE",
-        "texto": "these",
-        "src": "/audio/aula-13/lesson_013_audio_003.2fe0ba8c.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "APARTMENT",
+        "texto": "apartment",
+        "src": "/audio/aula-13/lesson_013_audio_003.843c8899.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_013_audio_004",
         "alvo": "texto",
-        "ancora": "THOSE",
-        "texto": "those",
-        "src": "/audio/aula-13/lesson_013_audio_004.797a2c23.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "APPLE",
+        "texto": "apple",
+        "src": "/audio/aula-13/lesson_013_audio_004.8df6fe7e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -54,10 +50,10 @@
       "clip": {
         "id": "lesson_013_audio_005",
         "alvo": "texto",
-        "ancora": "This is a pen.",
-        "texto": "This is a pen.",
-        "src": "/audio/aula-13/lesson_013_audio_005.939e1b84.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "ANIMAL",
+        "texto": "animal",
+        "src": "/audio/aula-13/lesson_013_audio_005.000279cb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -65,10 +61,200 @@
       "clip": {
         "id": "lesson_013_audio_006",
         "alvo": "texto",
-        "ancora": "These are pens.",
-        "texto": "These are pens.",
-        "src": "/audio/aula-13/lesson_013_audio_006.2de193a5.mp3",
+        "ancora": "ELEPHANT",
+        "texto": "elephant",
+        "src": "/audio/aula-13/lesson_013_audio_006.b6a5663a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_013_audio_007",
+        "alvo": "texto",
+        "ancora": "UMBRELLA",
+        "texto": "umbrella",
+        "src": "/audio/aula-13/lesson_013_audio_007.c9d9fbb7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_013_audio_008",
+        "alvo": "texto",
+        "ancora": "ENGINEER",
+        "texto": "engineer",
+        "src": "/audio/aula-13/lesson_013_audio_008.14239f5b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_013_audio_009",
+        "alvo": "texto",
+        "ancora": "an artist",
+        "texto": "an artist",
+        "src": "/audio/aula-13/lesson_013_audio_009.439c20d4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_013_audio_010",
+        "alvo": "texto",
+        "ancora": "A UNIVERSITY",
+        "texto": "a university",
+        "src": "/audio/aula-13/lesson_013_audio_010.cea95203.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_013_audio_011",
+        "alvo": "texto",
+        "ancora": "AN HOUR",
+        "texto": "an hour",
+        "src": "/audio/aula-13/lesson_013_audio_011.e6043069.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_013_audio_012",
+        "alvo": "texto",
+        "ancora": "I’m a veterinarian.",
+        "texto": "I'm a veterinarian.",
+        "src": "/audio/aula-13/lesson_013_audio_012.80363d4c.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_013_audio_013",
+        "alvo": "texto",
+        "ancora": "I’m an engineer.",
+        "texto": "I'm an engineer.",
+        "src": "/audio/aula-13/lesson_013_audio_013.5b4be98b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_013_audio_014",
+        "alvo": "texto",
+        "ancora": "I’m a painter.",
+        "texto": "I'm a painter.",
+        "src": "/audio/aula-13/lesson_013_audio_014.9bd825c9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_013_audio_015",
+        "alvo": "texto",
+        "ancora": "She’s an artist.",
+        "texto": "She's an artist.",
+        "src": "/audio/aula-13/lesson_013_audio_015.179cd1bf.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_013_audio_016",
+        "alvo": "texto",
+        "ancora": "What do you do?",
+        "texto": "What do you do?",
+        "src": "/audio/aula-13/lesson_013_audio_016.3099eba3.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_013_audio_017",
+        "alvo": "texto",
+        "ancora": "ORANGE PENCIL CASE",
+        "texto": "orange pencil case",
+        "src": "/audio/aula-13/lesson_013_audio_017.493d4e87.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_013_audio_018",
+        "alvo": "bloco",
+        "ancora": "What is it?",
+        "texto": "What is it?\nIt's a book. It's an umbrella.",
+        "src": "/audio/aula-13/lesson_013_audio_018.cc951934.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_013_audio_019",
+        "alvo": "texto",
+        "ancora": "SUN",
+        "texto": "sun",
+        "src": "/audio/aula-13/lesson_013_audio_019.f0324982.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_013_audio_020",
+        "alvo": "texto",
+        "ancora": "MOON",
+        "texto": "moon",
+        "src": "/audio/aula-13/lesson_013_audio_020.7fdadbc4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_013_audio_021",
+        "alvo": "texto",
+        "ancora": "DOOR",
+        "texto": "door",
+        "src": "/audio/aula-13/lesson_013_audio_021.09711d51.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_013_audio_022",
+        "alvo": "bloco",
+        "ancora": "Ana: What’s this?",
+        "texto": "What's this?\nIt's a pencil case.\nWhat color is it?\nIt's orange.\nIt's an orange pencil case.\nYes!",
+        "src": "/audio/aula-13/lesson_013_audio_022.be937dc0.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_013_audio_023",
+        "alvo": "bloco",
+        "ancora": "Ana: And this?",
+        "texto": "And this?\nIt's an umbrella.",
+        "src": "/audio/aula-13/lesson_013_audio_023.22c57ee0.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

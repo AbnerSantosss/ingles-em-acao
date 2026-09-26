@@ -13,10 +13,10 @@ import type { CourseModule, LessonSummary } from './types'
  */
 export const MODULES: CourseModule[] = [
   { id: 1, title: 'Fundamentos', from: 1, to: 6 },
-  { id: 2, title: 'Vocabulário essencial', from: 7, to: 12 },
-  { id: 3, title: 'Referência e lugar', from: 13, to: 18 },
-  { id: 4, title: 'Presente simples', from: 19, to: 24 },
-  { id: 5, title: 'Ações e rotina', from: 25, to: 30 },
+  { id: 2, title: 'Pessoas, posse e primeiras palavras', from: 7, to: 12 },
+  { id: 3, title: 'Coisas, casa e lugar', from: 13, to: 18 },
+  { id: 4, title: 'Descrever, perguntar e a rotina', from: 19, to: 24 },
+  { id: 5, title: 'Rotina, calendário e cidade', from: 25, to: 30 },
   { id: 6, title: 'Dia a dia e preferências', from: 31, to: 36 },
   { id: 7, title: 'Quantidade e passado', from: 37, to: 42 },
 ]

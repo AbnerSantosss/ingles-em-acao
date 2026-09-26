@@ -6,10 +6,10 @@
       "clip": {
         "id": "lesson_009_audio_001",
         "alvo": "texto",
-        "ancora": "Monday",
-        "texto": "Monday",
-        "src": "/audio/aula-09/lesson_009_audio_001.35d9daa4.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Hi!",
+        "texto": "Hi!",
+        "src": "/audio/aula-09/lesson_009_audio_001.31db2e7f.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
@@ -17,10 +17,10 @@
       "clip": {
         "id": "lesson_009_audio_002",
         "alvo": "texto",
-        "ancora": "Tuesday",
-        "texto": "Tuesday",
-        "src": "/audio/aula-09/lesson_009_audio_002.2226b4b1.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "My last name is Silva.",
+        "texto": "My last name is Silva.",
+        "src": "/audio/aula-09/lesson_009_audio_002.4a6b3cd9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -28,10 +28,10 @@
       "clip": {
         "id": "lesson_009_audio_003",
         "alvo": "texto",
-        "ancora": "Wednesday",
-        "texto": "Wednesday",
-        "src": "/audio/aula-09/lesson_009_audio_003.34cb95cf.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "You have black eyes.",
+        "texto": "You have black eyes.",
+        "src": "/audio/aula-09/lesson_009_audio_003.32c2080e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -39,11 +39,10 @@
       "clip": {
         "id": "lesson_009_audio_004",
         "alvo": "texto",
-        "ancora": "Thursday",
-        "texto": "Thursday",
-        "src": "/audio/aula-09/lesson_009_audio_004.5b8b754e.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "Your eyes are black.",
+        "texto": "Your eyes are black.",
+        "src": "/audio/aula-09/lesson_009_audio_004.b5215d39.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -51,10 +50,10 @@
       "clip": {
         "id": "lesson_009_audio_005",
         "alvo": "texto",
-        "ancora": "Friday",
-        "texto": "Friday",
-        "src": "/audio/aula-09/lesson_009_audio_005.c66c700a.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "My phone is black.",
+        "texto": "My phone is black.",
+        "src": "/audio/aula-09/lesson_009_audio_005.421c6e05.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -62,32 +61,32 @@
       "clip": {
         "id": "lesson_009_audio_006",
         "alvo": "texto",
-        "ancora": "Saturday",
-        "texto": "Saturday",
-        "src": "/audio/aula-09/lesson_009_audio_006.00e069b2.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Your bag is blue.",
+        "texto": "Your bag is blue.",
+        "src": "/audio/aula-09/lesson_009_audio_006.e21fb755.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_009_audio_007",
         "alvo": "texto",
-        "ancora": "Sunday",
-        "texto": "Sunday",
-        "src": "/audio/aula-09/lesson_009_audio_007.a63b2790.mp3",
+        "ancora": "HE → HIS",
+        "texto": "he. his",
+        "src": "/audio/aula-09/lesson_009_audio_007.58f7568e.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_009_audio_008",
         "alvo": "texto",
-        "ancora": "I study on Monday.",
-        "texto": "I study on Monday.",
-        "src": "/audio/aula-09/lesson_009_audio_008.bcf499cd.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "SHE → HER",
+        "texto": "she. her",
+        "src": "/audio/aula-09/lesson_009_audio_008.bc9b0112.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -95,10 +94,10 @@
       "clip": {
         "id": "lesson_009_audio_009",
         "alvo": "texto",
-        "ancora": "January",
-        "texto": "January",
-        "src": "/audio/aula-09/lesson_009_audio_009.d19de08f.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "He’s a taxi driver.",
+        "texto": "He's a taxi driver.",
+        "src": "/audio/aula-09/lesson_009_audio_009.2ba13d08.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -106,10 +105,10 @@
       "clip": {
         "id": "lesson_009_audio_010",
         "alvo": "texto",
-        "ancora": "February",
-        "texto": "February",
-        "src": "/audio/aula-09/lesson_009_audio_010.e3ff2efe.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "His car is yellow.",
+        "texto": "His car is yellow.",
+        "src": "/audio/aula-09/lesson_009_audio_010.57d96abe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -117,131 +116,256 @@
       "clip": {
         "id": "lesson_009_audio_011",
         "alvo": "texto",
-        "ancora": "March",
-        "texto": "March",
-        "src": "/audio/aula-09/lesson_009_audio_011.41223cf8.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Her favorite kind of music is pop.",
+        "texto": "Her favorite kind of music is pop.",
+        "src": "/audio/aula-09/lesson_009_audio_011.24163aea.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_009_audio_012",
         "alvo": "texto",
-        "ancora": "April",
-        "texto": "April",
-        "src": "/audio/aula-09/lesson_009_audio_012.672d1ab8.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s an owl.",
+        "texto": "It's an owl.",
+        "src": "/audio/aula-09/lesson_009_audio_012.646e5919.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_009_audio_013",
         "alvo": "texto",
-        "ancora": "May",
-        "texto": "May",
-        "src": "/audio/aula-09/lesson_009_audio_013.714c82b3.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Its eyes are yellow.",
+        "texto": "Its eyes are yellow.",
+        "src": "/audio/aula-09/lesson_009_audio_013.bf06cc7c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_009_audio_014",
         "alvo": "texto",
-        "ancora": "June",
-        "texto": "June",
-        "src": "/audio/aula-09/lesson_009_audio_014.bfb11cc2.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "The company has a logo.",
+        "texto": "The company has a logo.",
+        "src": "/audio/aula-09/lesson_009_audio_014.d997ab45.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_009_audio_015",
         "alvo": "texto",
-        "ancora": "July",
-        "texto": "July",
-        "src": "/audio/aula-09/lesson_009_audio_015.2cc96d6e.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Its logo is blue.",
+        "texto": "Its logo is blue.",
+        "src": "/audio/aula-09/lesson_009_audio_015.8bd8496d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_009_audio_016",
         "alvo": "texto",
-        "ancora": "August",
-        "texto": "August",
-        "src": "/audio/aula-09/lesson_009_audio_016.a6febd04.mp3",
+        "ancora": "WE → OUR",
+        "texto": "we. our",
+        "src": "/audio/aula-09/lesson_009_audio_016.8552a732.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_009_audio_017",
         "alvo": "texto",
-        "ancora": "September",
-        "texto": "September",
-        "src": "/audio/aula-09/lesson_009_audio_017.22abc989.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Our favorite hobby is playing in the park.",
+        "texto": "Our favorite hobby is playing in the park.",
+        "src": "/audio/aula-09/lesson_009_audio_017.93e923c0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_009_audio_018",
         "alvo": "texto",
-        "ancora": "October",
-        "texto": "October",
-        "src": "/audio/aula-09/lesson_009_audio_018.e21f5bf2.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Your English classes are online.",
+        "texto": "Your English classes are online.",
+        "src": "/audio/aula-09/lesson_009_audio_018.185b7bb4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_009_audio_019",
         "alvo": "texto",
-        "ancora": "November",
-        "texto": "November",
-        "src": "/audio/aula-09/lesson_009_audio_019.7cecce39.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "THEY → THEIR",
+        "texto": "they. their",
+        "src": "/audio/aula-09/lesson_009_audio_019.9af03c86.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_009_audio_020",
         "alvo": "texto",
-        "ancora": "December",
-        "texto": "December",
-        "src": "/audio/aula-09/lesson_009_audio_020.ca889f1e.mp3",
+        "ancora": "Their English teacher is Mr. Peter.",
+        "texto": "Their English teacher is Mr. Peter.",
+        "src": "/audio/aula-09/lesson_009_audio_020.5628a83e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_009_audio_021",
+        "alvo": "texto",
+        "ancora": "Mr.",
+        "texto": "Mr.",
+        "src": "/audio/aula-09/lesson_009_audio_021.d463d024.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
-        "id": "lesson_009_audio_021",
+        "id": "lesson_009_audio_022",
         "alvo": "texto",
-        "ancora": "My birthday is in July.",
-        "texto": "My birthday is in July.",
-        "src": "/audio/aula-09/lesson_009_audio_021.e554d4a4.mp3",
+        "ancora": "Mrs.",
+        "texto": "Mrs.",
+        "src": "/audio/aula-09/lesson_009_audio_022.c951688a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_009_audio_023",
+        "alvo": "texto",
+        "ancora": "Ms.",
+        "texto": "Ms.",
+        "src": "/audio/aula-09/lesson_009_audio_023.a1742639.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_009_audio_024",
+        "alvo": "texto",
+        "ancora": "Miss",
+        "texto": "Miss",
+        "src": "/audio/aula-09/lesson_009_audio_024.f07a73d3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_025",
+        "alvo": "texto",
+        "ancora": "his",
+        "texto": "his",
+        "src": "/audio/aula-09/lesson_009_audio_025.1ec47134.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_026",
+        "alvo": "texto",
+        "ancora": "her",
+        "texto": "her",
+        "src": "/audio/aula-09/lesson_009_audio_026.72475ede.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_027",
+        "alvo": "texto",
+        "ancora": "its",
+        "texto": "its",
+        "src": "/audio/aula-09/lesson_009_audio_027.13793da2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_028",
+        "alvo": "texto",
+        "ancora": "our",
+        "texto": "our",
+        "src": "/audio/aula-09/lesson_009_audio_028.91e07a6a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_029",
+        "alvo": "texto",
+        "ancora": "their",
+        "texto": "their",
+        "src": "/audio/aula-09/lesson_009_audio_029.80a267f2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_030",
+        "alvo": "texto",
+        "ancora": "My name is Ana.",
+        "texto": "My name is Ana.",
+        "src": "/audio/aula-09/lesson_009_audio_030.7de9e868.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 6,
       "clip": {
-        "id": "lesson_009_audio_022",
+        "id": "lesson_009_audio_031",
         "alvo": "texto",
-        "ancora": "The class is on May 3rd.",
-        "texto": "The class is on May third.",
-        "src": "/audio/aula-09/lesson_009_audio_022.5f78fdeb.mp3",
+        "ancora": "Her book is new.",
+        "texto": "Her book is new.",
+        "src": "/audio/aula-09/lesson_009_audio_031.130b3120.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_009_audio_032",
+        "alvo": "texto",
+        "ancora": "Their teacher is Peter.",
+        "texto": "Their teacher is Peter.",
+        "src": "/audio/aula-09/lesson_009_audio_032.bef7cdd0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_009_audio_033",
+        "alvo": "bloco",
+        "ancora": "Ana: Hi, Daniel! Is this your laptop?",
+        "texto": "Hi, Daniel! Is this your laptop?\nYes. My laptop is new.\nAnd who is Emma?\nShe is my sister. Her laptop is black.\nAnd Lucas?\nHe is my friend. His classes are online.",
+        "src": "/audio/aula-09/lesson_009_audio_033.ae14d932.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

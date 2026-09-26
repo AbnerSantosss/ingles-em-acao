@@ -2,14 +2,14 @@
   "aula": 22,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_022_audio_001",
         "alvo": "texto",
-        "ancora": "8:45 → It’s a quarter to nine.",
-        "texto": "It's a quarter to nine.",
-        "src": "/audio/aula-22/lesson_022_audio_001.cef40ddc.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "I’m fine, thanks!",
+        "texto": "I'm fine, thanks!",
+        "src": "/audio/aula-22/lesson_022_audio_001.09eed4cd.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
@@ -17,10 +17,10 @@
       "clip": {
         "id": "lesson_022_audio_002",
         "alvo": "texto",
-        "ancora": "It’s seven o’clock.",
-        "texto": "It's seven o'clock.",
-        "src": "/audio/aula-22/lesson_022_audio_002.2ce39adb.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "What time",
+        "texto": "What time",
+        "src": "/audio/aula-22/lesson_022_audio_002.1f95ba44.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,10 +28,10 @@
       "clip": {
         "id": "lesson_022_audio_003",
         "alvo": "texto",
-        "ancora": "It’s a quarter past seven.",
-        "texto": "It's a quarter past seven.",
-        "src": "/audio/aula-22/lesson_022_audio_003.cada6fae.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Where",
+        "texto": "Where",
+        "src": "/audio/aula-22/lesson_022_audio_003.ef8e3cd1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -39,10 +39,10 @@
       "clip": {
         "id": "lesson_022_audio_004",
         "alvo": "texto",
-        "ancora": "It’s half past seven.",
-        "texto": "It's half past seven.",
-        "src": "/audio/aula-22/lesson_022_audio_004.d247ac67.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Why",
+        "texto": "Why",
+        "src": "/audio/aula-22/lesson_022_audio_004.a5f2ba93.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -50,22 +50,21 @@
       "clip": {
         "id": "lesson_022_audio_005",
         "alvo": "texto",
-        "ancora": "It’s a quarter to eight.",
-        "texto": "It's a quarter to eight.",
-        "src": "/audio/aula-22/lesson_022_audio_005.d252c8eb.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "How",
+        "texto": "How",
+        "src": "/audio/aula-22/lesson_022_audio_005.2bd4392d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_022_audio_006",
         "alvo": "texto",
-        "ancora": "in the morning",
-        "texto": "in the morning",
-        "src": "/audio/aula-22/lesson_022_audio_006.a89ad34e.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "How old",
+        "texto": "How old",
+        "src": "/audio/aula-22/lesson_022_audio_006.a6d6a257.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -73,22 +72,98 @@
       "clip": {
         "id": "lesson_022_audio_007",
         "alvo": "texto",
-        "ancora": "in the afternoon",
-        "texto": "in the afternoon",
-        "src": "/audio/aula-22/lesson_022_audio_007.8bd75ec9.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "What’s your favorite kind of food?",
+        "texto": "What's your favorite kind of food?",
+        "src": "/audio/aula-22/lesson_022_audio_007.d3346012.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_022_audio_008",
         "alvo": "texto",
-        "ancora": "at night",
-        "texto": "at night",
-        "src": "/audio/aula-22/lesson_022_audio_008.ff48fe6a.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "When’s your birthday?",
+        "texto": "When's your birthday?",
+        "src": "/audio/aula-22/lesson_022_audio_008.7b0de6c1.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_022_audio_009",
+        "alvo": "texto",
+        "ancora": "It’s on December 1st.",
+        "texto": "It's on December first.",
+        "src": "/audio/aula-22/lesson_022_audio_009.2e1da69c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_022_audio_010",
+        "alvo": "texto",
+        "ancora": "Because it is delicious.",
+        "texto": "Because it is delicious.",
+        "src": "/audio/aula-22/lesson_022_audio_010.26380acf.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_022_audio_011",
+        "alvo": "texto",
+        "ancora": "Hey, Lis. How are you?",
+        "texto": "Hey, Lis. How are you?",
+        "src": "/audio/aula-22/lesson_022_audio_011.32a84f28.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_022_audio_012",
+        "alvo": "texto",
+        "ancora": "I’m great, thanks.",
+        "texto": "I'm great, thanks.",
+        "src": "/audio/aula-22/lesson_022_audio_012.1068f734.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_022_audio_013",
+        "alvo": "texto",
+        "ancora": "How old is she?",
+        "texto": "How old is she?",
+        "src": "/audio/aula-22/lesson_022_audio_013.4639d5e0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_022_audio_014",
+        "alvo": "texto",
+        "ancora": "She’s 31 years old.",
+        "texto": "She's thirty-one years old.",
+        "src": "/audio/aula-22/lesson_022_audio_014.1ef71d7e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_022_audio_015",
+        "alvo": "texto",
+        "ancora": "How are you?",
+        "texto": "How are you?",
+        "src": "/audio/aula-22/lesson_022_audio_015.9bddfd01.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     }
   ]

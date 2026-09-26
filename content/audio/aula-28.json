@@ -1,31 +1,31 @@
 {
   "aula": 28,
-  "titulo": "Clothes",
+  "titulo": "Ordinal Numbers",
   "status": "pronta",
   "clips": [
     {
       "id": "lesson_028_audio_001",
-      "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "pagina": 1,
+      "local": "Página 1 · grid · b5",
       "alvo": "texto",
-      "ancora": "t-shirt",
-      "texto": "t-shirt",
+      "ancora": "An ordinal number tells the position of something in a sequence.",
+      "texto": "An ordinal number tells the position of something in a sequence.",
       "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
+      "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
       "id": "lesson_028_audio_002",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · steps · b5",
       "alvo": "texto",
-      "ancora": "pants",
-      "texto": "pants",
+      "ancora": "1st · first",
+      "texto": "first. first",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
@@ -33,15 +33,15 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a tela mostra numeral e palavra, a voz lê \"first\" duas vezes. Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_003",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · steps · b5",
       "alvo": "texto",
-      "ancora": "jeans",
-      "texto": "jeans",
+      "ancora": "2nd · second",
+      "texto": "second. second",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
@@ -49,127 +49,496 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a tela mostra numeral e palavra, a voz lê \"second\" duas vezes. Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_004",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · steps · b5",
       "alvo": "texto",
-      "ancora": "dress",
-      "texto": "dress",
+      "ancora": "3rd · third",
+      "texto": "third. third",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a tela mostra numeral e palavra, a voz lê \"third\" duas vezes. Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_005",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · steps · b5",
       "alvo": "texto",
-      "ancora": "skirt",
-      "texto": "skirt",
+      "ancora": "4th · fourth",
+      "texto": "fourth. fourth",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a tela mostra numeral e palavra, a voz lê \"fourth\" duas vezes. Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_006",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · grid · b7",
       "alvo": "texto",
-      "ancora": "shoes",
-      "texto": "shoes",
+      "ancora": "11th",
+      "texto": "eleventh",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a voz lê \"eleventh\". Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_007",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · grid · b7",
       "alvo": "texto",
-      "ancora": "socks",
-      "texto": "socks",
+      "ancora": "12th",
+      "texto": "twelfth",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a voz lê \"twelfth\". Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_008",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · grid · b7",
       "alvo": "texto",
-      "ancora": "jacket",
-      "texto": "jacket",
+      "ancora": "13th",
+      "texto": "thirteenth",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a voz lê \"thirteenth\". Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_009",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
-      "alvo": "texto",
-      "ancora": "coat",
-      "texto": "coat",
-      "falas": null,
+      "local": "Página 2 · table · b9",
+      "alvo": "bloco",
+      "ancora": "1st",
+      "texto": "first\nfirst\nsecond\nsecond\nthird\nthird\nfourth\nfourth\nfifth\nfifth\nsixth\nsixth\nseventh\nseventh\neighth\neighth\nninth\nninth\ntenth\ntenth\neleventh\neleventh\ntwelfth\ntwelfth\nthirteenth\nthirteenth\nfourteenth\nfourteenth\nfifteenth\nfifteenth\nsixteenth\nsixteenth\nseventeenth\nseventeenth\neighteenth\neighteenth\nnineteenth\nnineteenth\ntwentieth\ntwentieth",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "first"
+        },
+        {
+          "voz": "F1",
+          "texto": "first"
+        },
+        {
+          "voz": "F1",
+          "texto": "second"
+        },
+        {
+          "voz": "F1",
+          "texto": "second"
+        },
+        {
+          "voz": "F1",
+          "texto": "third"
+        },
+        {
+          "voz": "F1",
+          "texto": "third"
+        },
+        {
+          "voz": "F1",
+          "texto": "fourth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fourth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fifth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fifth"
+        },
+        {
+          "voz": "F1",
+          "texto": "sixth"
+        },
+        {
+          "voz": "F1",
+          "texto": "sixth"
+        },
+        {
+          "voz": "F1",
+          "texto": "seventh"
+        },
+        {
+          "voz": "F1",
+          "texto": "seventh"
+        },
+        {
+          "voz": "F1",
+          "texto": "eighth"
+        },
+        {
+          "voz": "F1",
+          "texto": "eighth"
+        },
+        {
+          "voz": "F1",
+          "texto": "ninth"
+        },
+        {
+          "voz": "F1",
+          "texto": "ninth"
+        },
+        {
+          "voz": "F1",
+          "texto": "tenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "tenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "eleventh"
+        },
+        {
+          "voz": "F1",
+          "texto": "eleventh"
+        },
+        {
+          "voz": "F1",
+          "texto": "twelfth"
+        },
+        {
+          "voz": "F1",
+          "texto": "twelfth"
+        },
+        {
+          "voz": "F1",
+          "texto": "thirteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "thirteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fourteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fourteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fifteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "fifteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "sixteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "sixteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "seventeenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "seventeenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "eighteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "eighteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "nineteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "nineteenth"
+        },
+        {
+          "voz": "F1",
+          "texto": "twentieth"
+        },
+        {
+          "voz": "F1",
+          "texto": "twentieth"
+        }
+      ],
       "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
+      "voz": null,
       "velocidade": "natural",
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Ouvir todos: a lista inteira, na ordem da tela. Os itens ficam só neste player por causa do teto."
     },
     {
       "id": "lesson_028_audio_010",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · table · b10",
       "alvo": "texto",
-      "ancora": "hat",
-      "texto": "hat",
+      "ancora": "30th",
+      "texto": "thirtieth",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
       "velocidade": "natural",
-      "lento": false,
+      "lento": true,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+      "motivo": "Número por extenso conferido: a voz lê \"thirtieth\". Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
       "id": "lesson_028_audio_011",
       "pagina": 2,
-      "local": "Página 2 · chips · b3",
+      "local": "Página 2 · table · b10",
       "alvo": "texto",
-      "ancora": "shorts",
-      "texto": "shorts",
+      "ancora": "40th",
+      "texto": "fortieth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"fortieth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_012",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "50th",
+      "texto": "fiftieth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"fiftieth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_013",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "60th",
+      "texto": "sixtieth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"sixtieth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_014",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "70th",
+      "texto": "seventieth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"seventieth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_015",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "80th",
+      "texto": "eightieth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"eightieth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_016",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "90th",
+      "texto": "ninetieth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"ninetieth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_017",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "100th",
+      "texto": "one hundredth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"one hundredth\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_018",
+      "pagina": 2,
+      "local": "Página 2 · table · b10",
+      "alvo": "texto",
+      "ancora": "hundredth",
+      "texto": "hundredth",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_019",
+      "pagina": 2,
+      "local": "Página 2 · grid · b11",
+      "alvo": "texto",
+      "ancora": "21st",
+      "texto": "twenty-first",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"twenty-first\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_020",
+      "pagina": 3,
+      "local": "Página 3 · cards · b6",
+      "alvo": "texto",
+      "ancora": "221st",
+      "texto": "two hundred twenty-first",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"two hundred twenty-first\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_021",
+      "pagina": 3,
+      "local": "Página 3 · cards · b8",
+      "alvo": "texto",
+      "ancora": "K is the eleventh letter of the alphabet.",
+      "texto": "K is the eleventh letter of the alphabet.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_028_audio_022",
+      "pagina": 3,
+      "local": "Página 3 · cards · b8",
+      "alvo": "texto",
+      "ancora": "11th · eleventh",
+      "texto": "eleventh. eleventh",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a tela mostra numeral e palavra, a voz lê \"eleventh\" duas vezes. Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_023",
+      "pagina": 3,
+      "local": "Página 3 · cards · b8",
+      "alvo": "texto",
+      "ancora": "I’m the second one.",
+      "texto": "I'm the second one.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_028_audio_024",
+      "pagina": 4,
+      "local": "Página 4 · cards · b5",
+      "alvo": "texto",
+      "ancora": "two thousand twenty-four.",
+      "texto": "Two thousand twenty-four.",
       "falas": null,
       "categoria": "VOCABULARY_PRONUNCIATION",
       "voz": "F1",
@@ -180,12 +549,12 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_028_audio_012",
-      "pagina": 3,
-      "local": "Página 3 · rule · b3 · ROTINA",
+      "id": "lesson_028_audio_025",
+      "pagina": 4,
+      "local": "Página 4 · rows · b7",
       "alvo": "texto",
-      "ancora": "She wears glasses.",
-      "texto": "She wears glasses.",
+      "ancora": "My birthday is on June 2nd.",
+      "texto": "My birthday is on June second.",
       "falas": null,
       "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
@@ -193,15 +562,15 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "Número por extenso conferido (2nd = second, leitura americana). Primeira apresentação no curso (mapa: estruturas)."
     },
     {
-      "id": "lesson_028_audio_013",
-      "pagina": 3,
-      "local": "Página 3 · rule · b4 · AGORA",
+      "id": "lesson_028_audio_026",
+      "pagina": 4,
+      "local": "Página 4 · rows · b7",
       "alvo": "texto",
-      "ancora": "He is wearing a blue shirt.",
-      "texto": "He is wearing a blue shirt.",
+      "ancora": "Christmas is on December 25th.",
+      "texto": "Christmas is on December twenty-fifth.",
       "falas": null,
       "categoria": "GRAMMAR_IN_CONTEXT",
       "voz": "F1",
@@ -209,7 +578,217 @@
       "lento": false,
       "prioridade": "P0",
       "obrigatorio": true,
-      "motivo": "Exemplo com conteúdo novo desta aula."
+      "motivo": "USO NOVO: na Aula 27 a frase ensinava on + data; aqui é o exemplo do inglês americano, lado a lado com a leitura britânica \"the 25th of December\". Número por extenso conferido (25th = twenty-fifth)."
+    },
+    {
+      "id": "lesson_028_audio_027",
+      "pagina": 4,
+      "local": "Página 4 · rows · b7",
+      "alvo": "texto",
+      "ancora": "New Year’s Day is on January 1st.",
+      "texto": "New Year's Day is on January first.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "USO NOVO: na Aula 27 a frase ensinava on + data; aqui é o exemplo do inglês americano, lado a lado com a leitura britânica \"the 1st of January\". Número por extenso conferido (1st = first)."
+    },
+    {
+      "id": "lesson_028_audio_028",
+      "pagina": 4,
+      "local": "Página 4 · rows · b11",
+      "alvo": "texto",
+      "ancora": "My birthday is on the 2nd of June.",
+      "texto": "My birthday is on the second of June.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido (the 2nd of June = the second of June, leitura britânica). Primeira apresentação no curso (mapa: estruturas)."
+    },
+    {
+      "id": "lesson_028_audio_029",
+      "pagina": 4,
+      "local": "Página 4 · rows · b11",
+      "alvo": "texto",
+      "ancora": "Christmas is on the 25th of December.",
+      "texto": "Christmas is on the twenty-fifth of December.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido (the 25th of December = the twenty-fifth of December, leitura britânica). Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_028_audio_030",
+      "pagina": 4,
+      "local": "Página 4 · rows · b11",
+      "alvo": "texto",
+      "ancora": "New Year’s Day is on the 1st of January.",
+      "texto": "New Year's Day is on the first of January.",
+      "falas": null,
+      "categoria": "GRAMMAR_IN_CONTEXT",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido (the 1st of January = the first of January, leitura britânica). Exemplo com conteúdo novo desta aula."
+    },
+    {
+      "id": "lesson_028_audio_031",
+      "pagina": 4,
+      "local": "Página 4 · dialogue · b17",
+      "alvo": "bloco",
+      "ancora": "When is your birthday?",
+      "texto": "When is your birthday?\nMy birthday is on July seventh.\nWhen is Christmas?\nChristmas is on December twenty-fifth.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "When is your birthday?"
+        },
+        {
+          "voz": "M1",
+          "texto": "My birthday is on July seventh."
+        },
+        {
+          "voz": "F1",
+          "texto": "When is Christmas?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Christmas is on December twenty-fifth."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
+    },
+    {
+      "id": "lesson_028_audio_032",
+      "pagina": 5,
+      "local": "Página 5 · cards · b11",
+      "alvo": "texto",
+      "ancora": "21st century",
+      "texto": "twenty-first century",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"twenty-first century\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_033",
+      "pagina": 5,
+      "local": "Página 5 · cards · b14",
+      "alvo": "texto",
+      "ancora": "ground floor",
+      "texto": "ground floor",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_034",
+      "pagina": 5,
+      "local": "Página 5 · cards · b14",
+      "alvo": "texto",
+      "ancora": "1st floor",
+      "texto": "first floor",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"first floor\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_035",
+      "pagina": 5,
+      "local": "Página 5 · cards · b17",
+      "alvo": "texto",
+      "ancora": "2nd floor",
+      "texto": "second floor",
+      "falas": null,
+      "categoria": "VOCABULARY_PRONUNCIATION",
+      "voz": "F1",
+      "velocidade": "natural",
+      "lento": false,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Número por extenso conferido: a voz lê \"second floor\". Primeira apresentação no curso (mapa: vocabulario)."
+    },
+    {
+      "id": "lesson_028_audio_036",
+      "pagina": 6,
+      "local": "Página 6 · dialogue · b9",
+      "alvo": "bloco",
+      "ancora": "Mia: Do you have brothers or sisters?",
+      "texto": "Do you have brothers or sisters?\nYes. I have two sisters.\nAre you the first child?\nNo, I'm not. I'm the second one.\nWhen is your birthday?\nMy birthday is on July seventh.\nWhat floor is your English class on?\nIt's on the third floor.",
+      "falas": [
+        {
+          "voz": "F1",
+          "texto": "Do you have brothers or sisters?"
+        },
+        {
+          "voz": "M1",
+          "texto": "Yes. I have two sisters."
+        },
+        {
+          "voz": "F1",
+          "texto": "Are you the first child?"
+        },
+        {
+          "voz": "M1",
+          "texto": "No, I'm not. I'm the second one."
+        },
+        {
+          "voz": "F1",
+          "texto": "When is your birthday?"
+        },
+        {
+          "voz": "M1",
+          "texto": "My birthday is on July seventh."
+        },
+        {
+          "voz": "F1",
+          "texto": "What floor is your English class on?"
+        },
+        {
+          "voz": "M1",
+          "texto": "It's on the third floor."
+        }
+      ],
+      "categoria": "DIALOGUE",
+      "voz": null,
+      "velocidade": "natural",
+      "lento": true,
+      "prioridade": "P0",
+      "obrigatorio": true,
+      "motivo": "Diálogo da aula, uma voz por personagem."
     }
   ]
 }

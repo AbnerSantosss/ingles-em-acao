@@ -7,26 +7,86 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["I", "you", "he", "she", "it", "we", "they"],
+        "vocabulario": [
+          "I",
+          "you",
+          "he",
+          "she",
+          "it",
+          "we",
+          "they"
+        ],
         "estruturas": [],
         "expressoesFixas": [],
         "pronuncia": []
       },
       "reutiliza": [],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 6, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 7, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 8, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 10, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 11, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 10,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 11,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -35,22 +95,89 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["am", "is", "are", "Brazilian", "ready", "happy", "friends", "a doctor", "the Eiffel Tower", "France"],
-        "estruturas": ["I + am + ___", "he / she / it + is + ___", "you / we / they + are + ___", "I'm", "you're", "he's", "she's", "it's", "we're", "they're", "It is in France."],
+        "vocabulario": [
+          "am",
+          "is",
+          "are",
+          "Brazilian",
+          "ready",
+          "happy",
+          "friends",
+          "a doctor",
+          "the Eiffel Tower",
+          "France"
+        ],
+        "estruturas": [
+          "I + am + ___",
+          "he / she / it + is + ___",
+          "you / we / they + are + ___",
+          "I'm",
+          "you're",
+          "he's",
+          "she's",
+          "it's",
+          "we're",
+          "they're",
+          "It is in France."
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 7, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 7, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -59,23 +186,103 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["not", "a teacher", "a singer", "a dentist", "tired", "at home", "new", "students", "late", "a designer"],
-        "estruturas": ["I + am + not + ___", "he / she / it + is + not + ___", "you / we / they + are + not + ___", "I'm not", "isn't", "aren't", "you're not", "we're not", "they're not"],
+        "vocabulario": [
+          "not",
+          "a teacher",
+          "a singer",
+          "a dentist",
+          "tired",
+          "at home",
+          "new",
+          "students",
+          "late",
+          "a designer"
+        ],
+        "estruturas": [
+          "I + am + not + ___",
+          "he / she / it + is + not + ___",
+          "you / we / they + are + not + ___",
+          "I'm not",
+          "isn't",
+          "aren't",
+          "you're not",
+          "we're not",
+          "they're not"
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "am", "is", "are", "Brazilian", "ready", "friends", "I'm", "you're", "we're", "they're", "he / she / it + is + ___"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "am",
+        "is",
+        "are",
+        "Brazilian",
+        "ready",
+        "friends",
+        "I'm",
+        "you're",
+        "we're",
+        "they're",
+        "he / she / it + is + ___"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 6, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -84,20 +291,88 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["yes", "no"],
-        "estruturas": ["Am + I + ___?", "Is + he / she / it + ___?", "Are + you / we / they + ___?", "Yes, I am.", "No, I'm not.", "Yes, he / she / it + is.", "No, he / she / it + isn't.", "Yes, you / we / they + are.", "No, you / we / they + aren't."],
+        "vocabulario": [
+          "yes",
+          "no"
+        ],
+        "estruturas": [
+          "Am + I + ___?",
+          "Is + he / she / it + ___?",
+          "Are + you / we / they + ___?",
+          "Yes, I am.",
+          "No, I'm not.",
+          "Yes, he / she / it + is.",
+          "No, he / she / it + isn't.",
+          "Yes, you / we / they + are.",
+          "No, you / we / they + aren't."
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "am", "is", "are", "Brazilian", "ready", "happy", "friends", "a doctor", "I'm", "I + am + ___", "he / she / it + is + ___", "you / we / they + are + ___", "not", "a teacher", "new", "late", "I'm not", "isn't", "aren't"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "am",
+        "is",
+        "are",
+        "Brazilian",
+        "ready",
+        "happy",
+        "friends",
+        "a doctor",
+        "I'm",
+        "I + am + ___",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___",
+        "not",
+        "a teacher",
+        "new",
+        "late",
+        "I'm not",
+        "isn't",
+        "aren't"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 7, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 4, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -111,24 +386,137 @@
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "am", "is", "are", "ready", "happy", "friends", "a doctor", "I + am + ___", "he / she / it + is + ___", "you / we / they + are + ___", "I'm", "he's", "she's", "it's", "we're", "they're", "not", "a teacher", "tired", "at home", "students", "late", "I + am + not + ___", "he / she / it + is + not + ___", "you / we / they + are + not + ___", "I'm not", "isn't", "aren't", "we're not", "they're not", "yes", "no", "Am + I + ___?", "Is + he / she / it + ___?", "Are + you / we / they + ___?", "Yes, I am.", "No, I'm not.", "Yes, he / she / it + is.", "No, he / she / it + isn't.", "Yes, you / we / they + are.", "No, you / we / they + aren't."],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "am",
+        "is",
+        "are",
+        "ready",
+        "happy",
+        "friends",
+        "a doctor",
+        "I + am + ___",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___",
+        "I'm",
+        "he's",
+        "she's",
+        "it's",
+        "we're",
+        "they're",
+        "not",
+        "a teacher",
+        "tired",
+        "at home",
+        "students",
+        "late",
+        "I + am + not + ___",
+        "he / she / it + is + not + ___",
+        "you / we / they + are + not + ___",
+        "I'm not",
+        "isn't",
+        "aren't",
+        "we're not",
+        "they're not",
+        "yes",
+        "no",
+        "Am + I + ___?",
+        "Is + he / she / it + ___?",
+        "Are + you / we / they + ___?",
+        "Yes, I am.",
+        "No, I'm not.",
+        "Yes, he / she / it + is.",
+        "No, he / she / it + isn't.",
+        "Yes, you / we / they + are.",
+        "No, you / we / they + aren't."
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 7, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 9, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 9, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 12, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 13, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 14, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 6, "tipoDeTexto": "dialogo" },
-        { "pagina": 5, "bloco": 9, "tipoDeTexto": "dialogo" },
-        { "pagina": 5, "bloco": 12, "tipoDeTexto": "dialogo" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 10, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 12,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 13,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 14,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 12,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 10,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -137,31 +525,162 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["from", "Brazil", "Canada", "Canadian", "Japan", "Japanese", "Italy", "Italian", "French", "England", "English", "Belgium", "Belgian", "the United Kingdom", "British", "Germany", "German", "Portugal", "Portuguese", "China", "Chinese", "Australia", "Australian", "Austria", "Austrian", "Spain", "Spanish", "the United States", "American", "Russia", "Russian", "country", "nationality", "your"],
-        "estruturas": ["am / is / are + from + ___", "Where is + he / she / it + from?", "Where are + you / they + from?"],
-        "expressoesFixas": ["Where are you from?", "What's your nationality?", "Nice to meet you", "How about you?"],
+        "vocabulario": [
+          "from",
+          "Brazil",
+          "Canada",
+          "Canadian",
+          "Japan",
+          "Japanese",
+          "Italy",
+          "Italian",
+          "French",
+          "England",
+          "English",
+          "Belgium",
+          "Belgian",
+          "the United Kingdom",
+          "British",
+          "Germany",
+          "German",
+          "Portugal",
+          "Portuguese",
+          "China",
+          "Chinese",
+          "Australia",
+          "Australian",
+          "Austria",
+          "Austrian",
+          "Spain",
+          "Spanish",
+          "the United States",
+          "American",
+          "Russia",
+          "Russian",
+          "country",
+          "nationality",
+          "your"
+        ],
+        "estruturas": [
+          "am / is / are + from + ___",
+          "Where is + he / she / it + from?",
+          "Where are + you / they + from?"
+        ],
+        "expressoesFixas": [
+          "Where are you from?",
+          "What's your nationality?",
+          "Nice to meet you",
+          "How about you?"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["you", "he", "she", "it", "they", "is", "are", "Brazilian", "France", "I'm", "he's", "she's", "it's", "they're"],
+      "reutiliza": [
+        "you",
+        "he",
+        "she",
+        "it",
+        "they",
+        "is",
+        "are",
+        "Brazilian",
+        "France",
+        "I'm",
+        "he's",
+        "she's",
+        "it's",
+        "they're"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "dialogo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 7, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 9, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 9, "tipoDeTexto": "dialogo" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 10, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 13, "tipoDeTexto": "dialogo" },
-        { "pagina": 7, "bloco": 6, "tipoDeTexto": "dialogo" },
-        { "pagina": 7, "bloco": 9, "tipoDeTexto": "dialogo" },
-        { "pagina": 7, "bloco": 11, "tipoDeTexto": "dialogo" }
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 13,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 11,
+          "tipoDeTexto": "dialogo"
+        }
       ]
     },
     {
@@ -170,458 +689,4091 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["my", "dad", "father", "mom", "mother", "brother", "sister", "grandpa", "grandfather", "grandma", "grandmother", "uncle", "aunt", "cousin", "husband", "wife", "son", "daughter", "grandson", "granddaughter", "grandchildren", "son-in-law", "daughter-in-law", "grandparents", "family", "parents"],
-        "estruturas": ["This is + ___"],
+        "vocabulario": [
+          "my",
+          "dad",
+          "father",
+          "mom",
+          "mother",
+          "brother",
+          "sister",
+          "grandpa",
+          "grandfather",
+          "grandma",
+          "grandmother",
+          "uncle",
+          "aunt",
+          "cousin",
+          "husband",
+          "wife",
+          "son",
+          "daughter",
+          "grandson",
+          "granddaughter",
+          "grandchildren",
+          "son-in-law",
+          "daughter-in-law",
+          "grandparents",
+          "family",
+          "parents"
+        ],
+        "estruturas": [
+          "This is + ___"
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["he", "she", "they", "is", "are", "I'm", "from", "Canada", "Canadian", "he / she / it + is + ___", "you / we / they + are + ___"],
+      "reutiliza": [
+        "he",
+        "she",
+        "they",
+        "is",
+        "are",
+        "I'm",
+        "from",
+        "Canada",
+        "Canadian",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "dialogo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 9, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 9, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 7, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 5, "tipoDeTexto": "dialogo" },
-        { "pagina": 6, "bloco": 10, "tipoDeTexto": "lista" },
-        { "pagina": 7, "bloco": 5, "tipoDeTexto": "texto" },
-        { "pagina": 7, "bloco": 9, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        }
       ]
     },
     {
       "numero": 8,
-      "titulo": "Numbers 1-100",
+      "titulo": "Possessive ’S",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "one hundred", "twenty-one", "forty-two", "eighty-seven", "dollars"],
-        "estruturas": ["I'm + ___ + years old", "It's + ___ + dollars"],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "watch",
+          "smartphone",
+          "dog",
+          "dogs",
+          "house",
+          "book",
+          "laptop",
+          "bag",
+          "car",
+          "friend",
+          "name",
+          "phone",
+          "toy",
+          "movie",
+          "ending",
+          "birthday",
+          "backpack",
+          "notebook",
+          "baby",
+          "babies",
+          "crib",
+          "blanket",
+          "room",
+          "food",
+          "city",
+          "idea",
+          "whose",
+          "who",
+          "what",
+          "when",
+          "May",
+          "one",
+          "two"
+        ],
+        "estruturas": [
+          "name + 's + ___",
+          "the + ___'s + ___",
+          "the + ___s' + ___",
+          "my + ___'s + ___",
+          "Whose + ___ + is this?",
+          "It's + ___'s + ___",
+          "Who is + ___?",
+          "When is + ___?"
+        ],
+        "expressoesFixas": [
+          "What is this?",
+          "Practice makes progress."
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "am", "I'm", "it's", "I + am + ___"],
+      "reutiliza": [
+        "he",
+        "is",
+        "it",
+        "it's",
+        "my",
+        "your",
+        "yes",
+        "brother",
+        "sister",
+        "mother",
+        "he / she / it + is + ___"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 11,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 12,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 11,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 13,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 15,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 12,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 12,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 9,
-      "titulo": "Days and Months",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "weekend", "weekdays", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", "birthday"],
-        "estruturas": ["on + ___", "in + ___", "I study on Monday.", "My birthday is in July.", "The class is on May 3rd."],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["I", "my", "is"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 10,
-      "titulo": "Colors and Shapes",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["red", "blue", "green", "yellow", "black", "white", "orange", "purple", "pink", "brown", "gray", "circle", "square", "triangle", "rectangle", "star", "heart", "car", "house", "shirt"],
-        "estruturas": ["It's a red car.", "The circle is blue."],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["it's", "is", "they", "are"],
-      "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
-      ]
-    },
-    {
-      "numero": 11,
-      "titulo": "Articles a / an / the",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["a", "an", "the", "a book", "a university", "an apple", "an engineer", "an hour", "a dog", "small", "the sun", "the table"],
-        "estruturas": ["I have a dog. The dog is small.", "I like dogs."],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["I", "is", "car", "the Eiffel Tower"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 12,
-      "titulo": "Plural Nouns",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["books", "cars", "houses", "bus", "buses", "box", "boxes", "watch", "watches", "potato", "potatoes", "city", "cities", "baby", "babies", "boy", "boys", "day", "days", "man", "men", "woman", "women", "child", "person", "people", "foot", "feet", "tooth", "teeth", "life", "lives", "children"],
-        "estruturas": [],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["a book", "car", "house"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
-      ]
-    },
-    {
-      "numero": 13,
-      "titulo": "This / That / These / Those",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["this", "that", "these", "those", "a pen", "pens"],
-        "estruturas": ["this / that + is + ___", "these / those + are + ___"],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["is", "are", "my", "your", "friends", "a", "a book", "books", "car", "cars", "This is + ___"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 14,
       "titulo": "Possessive Adjectives",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["his", "her", "its", "our", "their", "name"],
-        "estruturas": [],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "his",
+          "her",
+          "its",
+          "our",
+          "their",
+          "last name",
+          "eyes",
+          "black",
+          "blue",
+          "yellow",
+          "a taxi driver",
+          "favorite",
+          "kind of music",
+          "pop",
+          "an owl",
+          "company",
+          "logo",
+          "hobby",
+          "park",
+          "playing",
+          "classes",
+          "online",
+          "Mr.",
+          "Mrs.",
+          "Ms.",
+          "Miss"
+        ],
+        "estruturas": [
+          "my / your / his / her / its / our / their + ___",
+          "My name is + ___",
+          "My last name is + ___",
+          "you + have + ___",
+          "it + has + ___"
+        ],
+        "expressoesFixas": [
+          "Hi!"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "it's", "is", "new", "car", "sister", "brother"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "am",
+        "is",
+        "are",
+        "I'm",
+        "he's",
+        "it's",
+        "we're",
+        "you're",
+        "friends",
+        "students",
+        "a teacher",
+        "a singer",
+        "new",
+        "yes",
+        "English",
+        "sister",
+        "I + am + ___",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___",
+        "This is + ___",
+        "my",
+        "your",
+        "name",
+        "car",
+        "book",
+        "phone",
+        "bag",
+        "laptop",
+        "friend",
+        "who"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 1,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 12,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "titulo": "The Alphabet",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "alphabet",
+          "A to Z",
+          "vowels",
+          "consonants",
+          "full name",
+          "first name",
+          "middle name",
+          "spell",
+          "ID",
+          "passport",
+          "computer",
+          "mirror"
+        ],
+        "estruturas": [
+          "How do you spell + ___?",
+          "Can you spell + ___?"
+        ],
+        "expressoesFixas": [
+          "What's your name?",
+          "How do you spell that?",
+          "Can you spell that?",
+          "How do you spell it?"
+        ],
+        "pronuncia": [
+          "letter names from A to Z",
+          "see /siː/ x sit /sɪt/",
+          "go /goʊ/ x joke /dʒoʊk/",
+          "M and N are different sounds",
+          "American English: Z = zee",
+          "British English: Z = zed"
+        ]
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "it",
+        "is",
+        "are",
+        "my",
+        "your",
+        "American",
+        "British",
+        "English",
+        "students",
+        "name",
+        "last name",
+        "house",
+        "My name is + ___"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 8,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 9,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 11,
+          "tipoDeTexto": "texto"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "titulo": "School Vocabulary",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "classroom",
+          "window",
+          "shelf",
+          "whiteboard",
+          "world map",
+          "books",
+          "pupils",
+          "desk",
+          "chair",
+          "pen",
+          "pencil",
+          "eraser",
+          "rubber",
+          "ruler",
+          "pencil case",
+          "pencil sharpener",
+          "school bag",
+          "scissors",
+          "restroom",
+          "bathroom",
+          "toilet",
+          "lavatory",
+          "WC",
+          "men's room",
+          "ladies' room"
+        ],
+        "estruturas": [
+          "It's a + ___",
+          "That's an + ___",
+          "This is a + ___",
+          "May I + ___, please?",
+          "Where's the + ___?"
+        ],
+        "expressoesFixas": [
+          "What's this?",
+          "Who's this?",
+          "Sit down",
+          "Stand up",
+          "Open your books",
+          "Close your books",
+          "Excuse me",
+          "How do you say this in English?",
+          "Can you repeat that, please?",
+          "Sure",
+          "Thanks",
+          "Yes, you may"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "they",
+        "it",
+        "is",
+        "are",
+        "it's",
+        "she's",
+        "yes",
+        "your",
+        "teacher",
+        "students",
+        "English",
+        "American",
+        "British",
+        "This is + ___",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___",
+        "How do you spell it?"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        }
+      ]
+    },
+    {
+      "numero": 12,
+      "titulo": "Colors",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "color",
+          "brown",
+          "white",
+          "gray",
+          "green",
+          "orange",
+          "pink",
+          "red"
+        ],
+        "estruturas": [
+          "It's + ___"
+        ],
+        "expressoesFixas": [
+          "What color is it?",
+          "a white lie",
+          "the black sheep",
+          "feeling blue",
+          "give the green light",
+          "red carpet treatment"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "he",
+        "it",
+        "is",
+        "it's",
+        "my",
+        "your",
+        "uncle",
+        "parents",
+        "family",
+        "bag",
+        "notebook",
+        "black",
+        "blue",
+        "yellow"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 1,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        }
+      ]
+    },
+    {
+      "numero": 13,
+      "titulo": "Articles a / an",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "a",
+          "an",
+          "the",
+          "apple",
+          "university",
+          "hour",
+          "orange pencil case",
+          "umbrella",
+          "apartment",
+          "animal",
+          "elephant",
+          "awesome",
+          "sun",
+          "moon",
+          "door",
+          "painter",
+          "artist",
+          "engineer",
+          "veterinarian"
+        ],
+        "estruturas": [
+          "a + ___ (consonant sound)",
+          "an + ___ (vowel sound)",
+          "the + ___ (specific or known)",
+          "I'm + a / an + ___",
+          "It's + a / an + ___",
+          "She's + a / an + ___"
+        ],
+        "expressoesFixas": [
+          "What is it?",
+          "And this?",
+          "What do you do?"
+        ],
+        "pronuncia": [
+          "a university /juː/ = sounds like 'you'",
+          "an hour /aʊər/ = the h is silent"
+        ]
+      },
+      "reutiliza": [
+        "I'm",
+        "it's",
+        "she's",
+        "is",
+        "it",
+        "you",
+        "yes",
+        "pencil",
+        "house",
+        "laptop",
+        "book",
+        "school bag",
+        "pencil case",
+        "dog",
+        "orange",
+        "movie",
+        "What's this?",
+        "What color is it?"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        }
+      ]
+    },
+    {
+      "numero": 14,
+      "titulo": "Plural Nouns",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "girl",
+          "girls",
+          "apples",
+          "cars",
+          "pencils",
+          "bench",
+          "benches",
+          "dish",
+          "dishes",
+          "bus",
+          "buses",
+          "box",
+          "boxes",
+          "watches",
+          "candy",
+          "candies",
+          "toys",
+          "puppy",
+          "puppies",
+          "monkey",
+          "monkeys",
+          "knife",
+          "knives",
+          "leaf",
+          "leaves",
+          "wolf",
+          "wolves",
+          "calf",
+          "calves",
+          "shelves",
+          "thief",
+          "thieves",
+          "roof",
+          "roofs",
+          "chief",
+          "chiefs",
+          "child",
+          "children",
+          "man",
+          "men",
+          "woman",
+          "women",
+          "person",
+          "people",
+          "and"
+        ],
+        "estruturas": [
+          "They're + ___"
+        ],
+        "expressoesFixas": [
+          "What are they?"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "it",
+        "they",
+        "is",
+        "are",
+        "it's",
+        "they're",
+        "a",
+        "an",
+        "the",
+        "students",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___",
+        "apple",
+        "car",
+        "pencil",
+        "watch",
+        "toy",
+        "shelf",
+        "book",
+        "books",
+        "It's a + ___",
+        "What is it?"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 15,
-      "titulo": "There is / There are",
+      "titulo": "Demonstratives",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["any", "a problem", "chairs", "a bank", "restaurants", "the kitchen", "a TV", "room", "windows"],
-        "estruturas": ["there is + ___", "there are + ___", "there's", "there isn't", "there aren't", "Is there + ___?", "Are there + any + ___?", "Is there a bank near here?", "There are many people."],
-        "expressoesFixas": [],
-        "pronuncia": []
+        "vocabulario": [
+          "this",
+          "that",
+          "these",
+          "those",
+          "near",
+          "far",
+          "triangle",
+          "triangles",
+          "rectangle",
+          "rectangles",
+          "circle",
+          "square",
+          "clock",
+          "pens",
+          "old"
+        ],
+        "estruturas": [
+          "That is + ___",
+          "These are + ___",
+          "Those are + ___",
+          "Is this / that + ___?",
+          "Are these / those + ___?"
+        ],
+        "expressoesFixas": [
+          "Yes, it is.",
+          "Yes, they are."
+        ],
+        "pronuncia": [
+          "this /ðɪs/",
+          "that /ðæt/",
+          "these /ði:z/",
+          "those /ðoʊz/",
+          "same first sound in this, that, these and those"
+        ]
       },
-      "reutiliza": ["is", "are", "a", "the", "a book", "books", "three", "people", "not", "no", "isn't", "aren't", "the table", "my"],
+      "reutiliza": [
+        "is",
+        "are",
+        "it",
+        "they",
+        "yes",
+        "my",
+        "brother",
+        "your",
+        "a",
+        "an",
+        "This is + ___",
+        "phone",
+        "bag",
+        "books",
+        "cars",
+        "apple",
+        "apples",
+        "notebook",
+        "and"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 8,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 9,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 9,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        }
       ]
     },
     {
       "numero": 16,
-      "titulo": "Prepositions of Place",
+      "titulo": "House and Furniture",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["in", "on", "at", "the wall", "school", "the door", "under", "behind", "in front of", "next to", "beside", "between", "near", "above", "below"],
-        "estruturas": [],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "garden",
+          "living room",
+          "sofa",
+          "couch",
+          "coffee table",
+          "side table",
+          "kitchen",
+          "cooker hood",
+          "cabinets",
+          "refrigerator",
+          "dishwasher",
+          "bedroom",
+          "bed",
+          "study area",
+          "shower",
+          "sink"
+        ],
+        "estruturas": [
+          "It's + a / the + ___",
+          "Is this + ___?",
+          "Is that + ___?"
+        ],
+        "expressoesFixas": [
+          "What's that?",
+          "What are these?"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["the", "box", "Brazil", "room", "the table", "bus", "at home"],
+      "reutiliza": [
+        "is",
+        "are",
+        "it",
+        "it's",
+        "they're",
+        "a",
+        "the",
+        "This is + ___",
+        "Yes, it is.",
+        "house",
+        "window",
+        "chair",
+        "desk",
+        "computer",
+        "bathroom",
+        "toilet",
+        "That is + ___",
+        "These are + ___",
+        "Those are + ___",
+        "What's this?"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        }
       ]
     },
     {
       "numero": 17,
-      "titulo": "Simple Present: Affirmative",
+      "titulo": "There is / There are",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["work", "works", "study", "studies", "rains", "go", "goes", "play", "plays", "have", "has", "every day", "live"],
-        "estruturas": ["I / you / we / they + work", "he / she / it + works", "work + -s = works", "I work every day.", "Water boils at 100°C."],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "there",
+          "some",
+          "any",
+          "on",
+          "table",
+          "dining room",
+          "plates",
+          "photo",
+          "in"
+        ],
+        "estruturas": [
+          "There is + a / an + ___",
+          "There isn't + a / an + ___",
+          "Is there + a / an + ___?",
+          "There are + some + ___",
+          "There aren't + any + ___",
+          "Are there + any + ___?"
+        ],
+        "expressoesFixas": [
+          "Yes, there is",
+          "No, there isn't",
+          "Yes, there are",
+          "No, there aren't"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "they", "he", "she", "it", "at", "watch", "watches"],
+      "reutiliza": [
+        "is",
+        "are",
+        "isn't",
+        "aren't",
+        "a",
+        "an",
+        "the",
+        "this",
+        "my",
+        "yes",
+        "no",
+        "sofa",
+        "bed",
+        "chair",
+        "refrigerator",
+        "computer",
+        "sink",
+        "shower",
+        "desk",
+        "window",
+        "dishwasher",
+        "living room",
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "pencil",
+        "eraser",
+        "book",
+        "people"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 10,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        }
       ]
     },
     {
       "numero": 18,
-      "titulo": "Simple Present: Negative",
+      "titulo": "Prepositions of Place",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["coffee"],
-        "estruturas": ["I / you / we / they + don't + ___", "he / she / it + doesn't + ___", "don't", "doesn't", "I don't work on Sunday.", "She doesn't work here.", "I don't like coffee."],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "above",
+          "under",
+          "inside",
+          "in front of",
+          "behind",
+          "between",
+          "beside",
+          "opposite",
+          "at",
+          "in the middle of",
+          "into",
+          "out of",
+          "through",
+          "ball",
+          "tunnel",
+          "train",
+          "cat",
+          "rug",
+          "lamp",
+          "vase",
+          "plant",
+          "painting",
+          "wall",
+          "pillows",
+          "TV",
+          "TV stand",
+          "object",
+          "him",
+          "each other"
+        ],
+        "estruturas": [
+          "is / are + on + the + ___",
+          "is / are + above + the + ___",
+          "is / are + under + the + ___",
+          "is / are + in + the + ___",
+          "is / are + in front of + the + ___",
+          "is / are + behind + the + ___",
+          "is / are + between + ___ + and + ___",
+          "is / are + beside + the + ___",
+          "is / are + near + the + ___",
+          "is / are + opposite + the + ___",
+          "is / are + at + the + ___",
+          "is / are + in the middle of + the + ___",
+          "goes + into + the + ___",
+          "comes + out of + the + ___",
+          "goes + through + the + ___",
+          "jumps + into + the + ___",
+          "Where is + the + ___?",
+          "Where are + the + ___?",
+          "What is + on / above / under + the + ___?",
+          "What is + in / beside / near + the + ___?",
+          "Who is + in front of / behind + the + ___?",
+          "Who is + between + ___ + and + ___?"
+        ],
+        "expressoesFixas": [
+          "on the right",
+          "on the left"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "they", "he", "she", "it", "not", "work", "Sunday", "on + ___", "isn't", "a doctor"],
+      "reutiliza": [
+        "is",
+        "are",
+        "they",
+        "it",
+        "a",
+        "an",
+        "the",
+        "some",
+        "two",
+        "There is + a / an + ___",
+        "There are + some + ___",
+        "sofa",
+        "couch",
+        "table",
+        "coffee table",
+        "chair",
+        "window",
+        "book",
+        "books",
+        "photo",
+        "room",
+        "living room",
+        "bedroom",
+        "bed",
+        "desk",
+        "house",
+        "dog",
+        "car",
+        "person",
+        "friends",
+        "on",
+        "in",
+        "near",
+        "box",
+        "side table",
+        "backpack"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 10,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 10,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 19,
-      "titulo": "Simple Present: Questions",
+      "titulo": "Adjectives",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["speak", "where", "what", "when", "how"],
-        "estruturas": ["Do + I / you / we / they + ___?", "Does + he / she / it + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "Yes, he / she / it + does.", "No, he / she / it + doesn't.", "where / what / when / how + do / does + ___?", "Where do you live?", "How do you go to work?"],
-        "expressoesFixas": ["What do you do?"],
+        "vocabulario": [
+          "big",
+          "small",
+          "fast",
+          "slow",
+          "hot",
+          "cold",
+          "expensive",
+          "cheap",
+          "young",
+          "tall",
+          "short",
+          "long",
+          "beautiful",
+          "pretty",
+          "handsome",
+          "ugly",
+          "rich",
+          "poor",
+          "ones",
+          "strawberry",
+          "coffee",
+          "juice",
+          "sandal",
+          "sandals",
+          "hair",
+          "t-shirt",
+          "like"
+        ],
+        "estruturas": [
+          "adjective + noun",
+          "noun + verb to be + adjective",
+          "a / an + ___ + noun",
+          "the + ___ + one",
+          "the + ___ + ones",
+          "I like the + ___ + one",
+          "I like the + ___ + ones",
+          "Her hair is + ___",
+          "has + long / short + hair"
+        ],
+        "expressoesFixas": [
+          "I like the yellow one.",
+          "I like the big ones.",
+          "I like the new ones."
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "they", "he", "she", "it", "work", "study", "coffee", "yes", "no", "don't", "doesn't", "French", "go", "live", "English"],
+      "reutiliza": [
+        "I",
+        "he",
+        "she",
+        "it",
+        "they",
+        "is",
+        "are",
+        "it's",
+        "they're",
+        "this",
+        "these",
+        "a",
+        "an",
+        "the",
+        "her",
+        "new",
+        "red",
+        "yellow",
+        "black",
+        "house",
+        "chair",
+        "computer",
+        "This is + ___",
+        "he / she / it + is + ___",
+        "you / we / they + are + ___",
+        "These are + ___",
+        "old",
+        "one",
+        "dog",
+        "cat",
+        "car",
+        "woman",
+        "man",
+        "smartphone",
+        "bag"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 8,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 11,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 12,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 9,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 10,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 10,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        }
       ]
     },
     {
       "numero": 20,
-      "titulo": "Adverbs of Frequency",
+      "titulo": "Numbers",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["always", "usually", "often", "sometimes", "rarely", "seldom", "never"],
-        "estruturas": ["I + always + ___", "I + am + always + ___", "I never drink coffee."],
-        "expressoesFixas": [],
-        "pronuncia": []
+        "vocabulario": [
+          "three",
+          "four",
+          "five",
+          "six",
+          "seven",
+          "eight",
+          "nine",
+          "ten",
+          "eleven",
+          "twelve",
+          "thirteen",
+          "fourteen",
+          "fifteen",
+          "sixteen",
+          "seventeen",
+          "eighteen",
+          "nineteen",
+          "twenty",
+          "thirty",
+          "forty",
+          "fifty",
+          "sixty",
+          "seventy",
+          "eighty",
+          "ninety",
+          "a hundred",
+          "one hundred",
+          "a thousand",
+          "one thousand",
+          "phone number",
+          "age",
+          "years old",
+          "price",
+          "dollars",
+          "cents",
+          "address",
+          "avenue",
+          "chapter",
+          "lesson",
+          "section",
+          "items",
+          "subscribers",
+          "parks",
+          "countries",
+          "has"
+        ],
+        "estruturas": [
+          "twenty / thirty / ninety + - + ___",
+          "a hundred + ___",
+          "a hundred and + ___",
+          "___ + hundred + ___",
+          "___ + thousand + ___",
+          "I'm + ___ + years old",
+          "It's + ___ + dollars",
+          "Room / Chapter / Lesson + ___"
+        ],
+        "expressoesFixas": [
+          "How old are you?",
+          "What's your phone number?"
+        ],
+        "pronuncia": [
+          "thousand /ˈθaʊ.zənd/",
+          "hundred /ˈhʌn.drəd/",
+          "twenty /ˈtwen.ti/",
+          "thirty /ˈθɜːr.ti/",
+          "forty /ˈfɔːr.ti/",
+          "fifty /ˈfɪf.ti/",
+          "sixty /ˈsɪk.sti/",
+          "ninety /ˈnaɪn.ti/"
+        ]
       },
-      "reutiliza": ["I", "he", "she", "am", "is", "study", "works", "on + ___", "Sunday", "late", "happy", "coffee"],
+      "reutiliza": [
+        "I",
+        "I'm",
+        "it's",
+        "you",
+        "a",
+        "my",
+        "your",
+        "from",
+        "in",
+        "English",
+        "American",
+        "British",
+        "students",
+        "table",
+        "There are + some + ___",
+        "one",
+        "two",
+        "and",
+        "room",
+        "bus",
+        "city",
+        "university"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 11,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 13,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 12,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 14,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 16,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 22,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 15,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 20,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 12,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 20,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 13,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 10,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 14,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 21,
-      "titulo": "Daily Routine",
+      "titulo": "What time is it?",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["wake up", "get up", "take a shower", "have breakfast", "go to work", "go to school", "have lunch", "have dinner", "get home", "go to bed", "first", "then", "after that", "finally"],
-        "estruturas": ["First, I wake up at 6."],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "time",
+          "o'clock",
+          "noon",
+          "midday",
+          "midnight",
+          "morning",
+          "afternoon",
+          "evening",
+          "night",
+          "a.m.",
+          "p.m.",
+          "half past",
+          "a quarter past",
+          "quarter to",
+          "past",
+          "to",
+          "in the morning",
+          "in the evening",
+          "at night",
+          "now",
+          "before",
+          "action",
+          "ask",
+          "look",
+          "say",
+          "get up",
+          "class",
+          "meeting",
+          "school",
+          "work",
+          "the movies",
+          "twenty-five",
+          "forty-five"
+        ],
+        "estruturas": [
+          "It's + ___ + o'clock",
+          "It's + half past + ___",
+          "It's + a quarter past + ___",
+          "It's + quarter to + ___",
+          "It's + ___ + past + ___",
+          "It's + ___ + to + ___",
+          "It's + ___ + a.m. / p.m.",
+          "It's + ___ + o'clock + in the morning / evening",
+          "It's + ___ + o'clock + at night",
+          "At + ___ + o'clock",
+          "It's at + ___",
+          "What time is + the + ___?"
+        ],
+        "expressoesFixas": [
+          "What time is it?",
+          "What's the time?",
+          "It's noon.",
+          "It's midday.",
+          "What time do you get up?"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "a", "have", "go", "work", "school", "at"],
+      "reutiliza": [
+        "it",
+        "is",
+        "it's",
+        "you",
+        "a",
+        "an",
+        "the",
+        "in",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "twelve",
+        "fifteen",
+        "twenty",
+        "thirty",
+        "fifty",
+        "at",
+        "movie"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 22,
-      "titulo": "Telling the Time",
+      "titulo": "Question Words",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["past", "half", "a quarter", "o'clock", "in the morning", "in the afternoon", "at night", "a.m.", "p.m."],
-        "estruturas": ["It's + ___ + o'clock", "It's + half past + ___", "It's + a quarter past + ___", "It's + a quarter to + ___", "It's seven thirty.", "The class is at 7 p.m."],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "What time",
+          "Where",
+          "Why",
+          "How",
+          "How old",
+          "because",
+          "great",
+          "fine",
+          "pizza",
+          "famous",
+          "delicious",
+          "Hey",
+          "December 1st"
+        ],
+        "estruturas": [
+          "What's + ___?",
+          "When's + ___?",
+          "Why is + ___?",
+          "How old is + ___?",
+          "Because + ___",
+          "It's on + ___",
+          "She's + ___ years old"
+        ],
+        "expressoesFixas": [
+          "What's your favorite kind of food?",
+          "When's your birthday?",
+          "How are you?",
+          "I'm fine, thanks!",
+          "I'm great, thanks."
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["it's", "a", "the", "at", "seven", "eight", "nine", "fifteen", "thirty"],
+      "reutiliza": [
+        "I'm",
+        "is",
+        "are",
+        "it",
+        "it's",
+        "she",
+        "she's",
+        "you",
+        "your",
+        "my",
+        "from",
+        "Brazil",
+        "Italian",
+        "Where are you from?",
+        "What time is it?",
+        "What",
+        "When",
+        "Who",
+        "name",
+        "favorite",
+        "food",
+        "birthday",
+        "friend",
+        "thanks",
+        "years old",
+        "My name is + ___",
+        "Who is + ___?",
+        "What's your name?",
+        "How old are you?"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 10,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 23,
-      "titulo": "Food and Drinks",
+      "titulo": "Simple Present: I, You, We, They",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["bread", "rice", "beans", "chicken", "meat", "fish", "cheese", "egg", "fruit", "salad", "water", "tea", "juice", "milk", "soda", "snack", "please"],
-        "estruturas": ["I'd like + ___", "I'd", "I'd like a coffee, please."],
-        "expressoesFixas": ["How much is it?"],
+        "vocabulario": [
+          "routine",
+          "wake up",
+          "take a shower",
+          "take a bath",
+          "have breakfast",
+          "eat",
+          "drink",
+          "get dressed",
+          "brush your hair",
+          "comb your hair",
+          "brush your teeth",
+          "go to work",
+          "go to school",
+          "study",
+          "have lunch",
+          "have a snack",
+          "do homework",
+          "go back home",
+          "go home",
+          "go to my house",
+          "go to my apartment",
+          "meals",
+          "have dinner",
+          "go to bed",
+          "sleep",
+          "go shopping",
+          "go to the shopping mall",
+          "go out with friends",
+          "watch TV",
+          "go biking",
+          "walk the dog",
+          "see a movie",
+          "live",
+          "take the bus",
+          "take photos",
+          "together",
+          "every day",
+          "on Mondays",
+          "New York",
+          "Egypt",
+          "office",
+          "salad"
+        ],
+        "estruturas": [
+          "Subject + verb + complement",
+          "I / you / we / they + verb + ___",
+          "My friends and I + verb + ___",
+          "do not",
+          "don't",
+          "Subject + don't + verb",
+          "I / you / we / they + don't + verb",
+          "Do + subject + verb + ?",
+          "Do + you / we / they + verb + ___?",
+          "Question word + do + subject + verb + ?",
+          "Yes, I / you / we / they + do.",
+          "No, I / you / we / they + don't."
+        ],
+        "expressoesFixas": [
+          "Where do you live?",
+          "When do you study English?",
+          "Do you have breakfast?",
+          "Do you have lunch at home?",
+          "Do you watch TV?",
+          "Do you go out with friends?"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "it", "is", "a", "how", "don't", "coffee", "have breakfast", "have lunch", "have dinner"],
+      "reutiliza": [
+        "I",
+        "you",
+        "we",
+        "they",
+        "my",
+        "your",
+        "friends",
+        "English",
+        "new",
+        "house",
+        "a",
+        "an",
+        "at home",
+        "yes",
+        "no",
+        "what",
+        "what time",
+        "where",
+        "when",
+        "get up",
+        "morning",
+        "afternoon",
+        "work",
+        "like",
+        "child",
+        "What time do you get up?"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 10,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
       "numero": 24,
-      "titulo": "Can / Can’t",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["can", "swim", "drive", "cook", "help", "go out"],
-        "estruturas": ["I + can + ___", "I + can't + ___", "Can + I / you + ___?", "can't", "cannot", "Yes, I can.", "No, I can't.", "She can speak English."],
-        "expressoesFixas": ["Can you help me?"],
-        "pronuncia": []
-      },
-      "reutiliza": ["I", "you", "he", "she", "speak", "English", "yes", "no", "go"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 25,
-      "titulo": "Imperatives",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["open", "sit down", "listen", "add", "smoke"],
-        "estruturas": ["Don't + ___", "Open the door.", "Don't be late.", "Sit down, please."],
-        "expressoesFixas": ["Don't worry"],
-        "pronuncia": []
-      },
-      "reutiliza": ["the", "the door", "don't", "late", "please", "your", "a book", "milk"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 26,
-      "titulo": "Present Continuous",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["now", "studying", "working", "reading", "raining", "playing", "waiting", "write", "writing", "run", "running", "sitting", "lie", "lying"],
-        "estruturas": ["I + am + ___ing", "he / she / it + is + ___ing", "you / we / they + are + ___ing"],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "am", "is", "are", "I'm", "we're", "work", "every day", "I work every day."],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 27,
-      "titulo": "Present Continuous: Questions",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["doing", "going"],
-        "estruturas": ["Is + he / she / it + ___ing?", "Are + you / we / they + ___ing?", "I'm not + ___ing", "he / she / it + isn't + ___ing", "Where is he going?"],
-        "expressoesFixas": ["What are you doing?"],
-        "pronuncia": []
-      },
-      "reutiliza": ["I", "you", "he", "she", "am", "is", "are", "not", "yes", "no", "I'm", "isn't", "I'm not", "Yes, I am.", "No, I'm not.", "Yes, he / she / it + is.", "No, he / she / it + isn't.", "working", "studying", "what", "where"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 28,
-      "titulo": "Clothes",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["t-shirt", "pants", "jeans", "dress", "skirt", "shoes", "socks", "jacket", "coat", "hat", "shorts", "glasses", "wear", "wears", "wearing", "a uniform"],
-        "estruturas": ["I + wear + ___", "I'm + wearing + ___"],
-        "expressoesFixas": [],
-        "pronuncia": []
-      },
-      "reutiliza": ["I", "he", "she", "a", "is", "I'm", "shirt", "blue", "black", "white", "I + am + ___ing"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" }
-      ]
-    },
-    {
-      "numero": 29,
-      "titulo": "Weather",
-      "tipo": "conteudo",
-      "status": "pronta",
-      "apresenta": {
-        "vocabulario": ["sunny", "cloudy", "rainy", "windy", "hot", "warm", "cold", "cool", "snowing", "spring", "summer", "fall", "autumn", "winter"],
-        "estruturas": ["It's + ___", "It's + ___ing"],
-        "expressoesFixas": ["What's the weather like today?"],
-        "pronuncia": []
-      },
-      "reutiliza": ["it's", "the", "raining"],
-      "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" }
-      ]
-    },
-    {
-      "numero": 30,
       "titulo": "Jobs",
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["nurse", "driver", "salesperson", "chef", "lawyer", "student"],
-        "estruturas": ["I'm + a / an + ___", "I work in a school."],
+        "vocabulario": [
+          "job",
+          "student",
+          "manager",
+          "accountant",
+          "scientist",
+          "explorer",
+          "photographer",
+          "filmmaker",
+          "writer",
+          "waiter",
+          "waitress",
+          "server",
+          "baker",
+          "sailor",
+          "pilot",
+          "driver",
+          "unemployed"
+        ],
+        "estruturas": [
+          "I'm a / an + ___",
+          "Are you a / an + ___?",
+          "No, I'm not. I'm a / an + ___."
+        ],
+        "expressoesFixas": [
+          "What's your job?",
+          "I teach.",
+          "I paint.",
+          "I make films.",
+          "I write books.",
+          "I drive a truck.",
+          "I work in a bakery.",
+          "I sail a ship.",
+          "I fly an airplane.",
+          "I take pictures of people, places and events.",
+          "I plan, design and build buildings.",
+          "I'm not working right now."
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "am",
+        "are",
+        "not",
+        "yes",
+        "no",
+        "your",
+        "a",
+        "an",
+        "I'm",
+        "I'm not",
+        "a teacher",
+        "a doctor",
+        "a dentist",
+        "I + am + ___",
+        "Are + you / we / they + ___?",
+        "Yes, I am.",
+        "No, I'm not.",
+        "I / you / we / they + verb + ___",
+        "artist",
+        "engineer",
+        "What do you do?"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 11,
+          "tipoDeTexto": "texto"
+        }
+      ]
+    },
+    {
+      "numero": 25,
+      "titulo": "Simple Present: He, She, It",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "works",
+          "eats",
+          "play",
+          "plays",
+          "studies",
+          "cry",
+          "cries",
+          "try",
+          "tries",
+          "relax",
+          "relaxes",
+          "wash",
+          "washes",
+          "go",
+          "goes",
+          "do",
+          "does",
+          "have",
+          "likes",
+          "lives",
+          "teach",
+          "teaches",
+          "speak",
+          "want",
+          "wants",
+          "bananas",
+          "sad movies",
+          "scuba diving",
+          "on the weekends",
+          "homework",
+          "in the afternoon",
+          "a modern car",
+          "a restaurant",
+          "on Fridays",
+          "lunch",
+          "with",
+          "travel around the world",
+          "police officer",
+          "nurse"
+        ],
+        "estruturas": [
+          "doesn't",
+          "he / she / it + ___ + -s",
+          "he / she / it + ___ + -ies",
+          "he / she / it + ___ + -es",
+          "he / she / it + doesn't + ___",
+          "Does + he / she / it + ___?",
+          "Yes, he / she / it + does.",
+          "No, he / she / it + doesn't.",
+          "question word + does + he / she / it + ___?",
+          "What time does + he / she / it + ___?"
+        ],
+        "expressoesFixas": [
+          "What does he do?"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "he's",
+        "my",
+        "his",
+        "your",
+        "brother",
+        "sister",
+        "husband",
+        "wife",
+        "uncle",
+        "English",
+        "Japanese",
+        "yes",
+        "no",
+        "at home",
+        "house",
+        "beautiful",
+        "What",
+        "Where",
+        "When",
+        "Who",
+        "Why",
+        "What time",
+        "don't",
+        "I / you / we / they + verb + ___",
+        "Do + you / we / they + verb + ___?",
+        "a baker",
+        "work",
+        "eat",
+        "study",
+        "watch",
+        "watches",
+        "has",
+        "like",
+        "live",
+        "get up",
+        "New York",
+        "coffee",
+        "the dishes",
+        "every day",
+        "children",
+        "TV",
+        "at night",
+        "bed",
+        "because",
+        "and"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 8,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 10,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 12,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 13,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 10,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 11,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 11,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        }
+      ]
+    },
+    {
+      "numero": 26,
+      "titulo": "Days of the Week",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Mondays",
+          "Tuesdays",
+          "Wednesdays",
+          "Thursdays",
+          "Fridays",
+          "Saturdays",
+          "Sundays",
+          "MON",
+          "TUE",
+          "WED",
+          "THU",
+          "FRI",
+          "SAT",
+          "day",
+          "week",
+          "weekend",
+          "weekends",
+          "during the week",
+          "on the weekend",
+          "at the weekend",
+          "beach",
+          "English classes",
+          "them",
+          "but",
+          "visit",
+          "visits",
+          "clean",
+          "cleans",
+          "see"
+        ],
+        "estruturas": [
+          "on + ___",
+          "on + ___s",
+          "What do you do on + ___?"
+        ],
+        "expressoesFixas": [
+          "What's your favorite day of the week?",
+          "When do you have English classes?",
+          "Where do you go on the weekends?",
+          "When do you go to the beach?"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "my",
+        "your",
+        "his",
+        "her",
+        "English",
+        "parents",
+        "friends",
+        "house",
+        "no",
+        "and",
+        "with",
+        "when",
+        "work",
+        "works",
+        "go",
+        "goes",
+        "study",
+        "studies",
+        "have",
+        "do",
+        "does",
+        "don't",
+        "doesn't",
+        "I / you / we / they + verb + ___",
+        "he / she / it + ___ + -s",
+        "Subject + don't + verb",
+        "he / she / it + doesn't + ___",
+        "Do + you / we / they + verb + ___?",
+        "Does + he / she / it + ___?",
+        "Question word + do + subject + verb + ?",
+        "SUN",
+        "every day",
+        "favorite"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        }
+      ]
+    },
+    {
+      "numero": 27,
+      "titulo": "Months of the Year",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+          "month",
+          "date",
+          "vacation",
+          "Christmas",
+          "Halloween",
+          "New Year's Day",
+          "Valentine's Day",
+          "International Women's Day",
+          "Independence Day",
+          "Father's Day",
+          "Labor Day",
+          "go out"
+        ],
+        "estruturas": [
+          "in + month",
+          "on + date",
+          "My birthday is in + ___",
+          "My birthday is on + ___",
+          "It's in + ___",
+          "My vacation starts in + ___",
+          "My vacation starts on + ___"
+        ],
+        "expressoesFixas": [
+          "When is your birthday?",
+          "What do you do on your birthday?"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "is",
+        "it's",
+        "my",
+        "your",
+        "Brazil",
+        "family",
+        "friends",
+        "when",
+        "what",
+        "do",
+        "May",
+        "birthday",
+        "have dinner",
+        "It's on + ___",
+        "When's your birthday?"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 7,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 8,
+          "tipoDeTexto": "lista"
+        }
+      ]
+    },
+    {
+      "numero": 28,
+      "titulo": "Ordinal Numbers",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "ordinal number",
+          "position",
+          "sequence",
+          "1st",
+          "2nd",
+          "3rd",
+          "4th",
+          "11th",
+          "12th",
+          "13th",
+          "21st",
+          "100th",
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth",
+          "sixth",
+          "seventh",
+          "eighth",
+          "ninth",
+          "tenth",
+          "eleventh",
+          "twelfth",
+          "thirteenth",
+          "fourteenth",
+          "fifteenth",
+          "sixteenth",
+          "seventeenth",
+          "eighteenth",
+          "nineteenth",
+          "twentieth",
+          "thirtieth",
+          "fortieth",
+          "fiftieth",
+          "sixtieth",
+          "seventieth",
+          "eightieth",
+          "ninetieth",
+          "hundredth",
+          "twenty-first",
+          "two hundred twenty-first",
+          "two thousand twenty-four",
+          "century",
+          "twenty-first century",
+          "floor",
+          "ground floor",
+          "1st floor",
+          "2nd floor",
+          "third floor",
+          "letter"
+        ],
+        "estruturas": [
+          "___ + st / nd / rd / th",
+          "the + ___ + letter of the alphabet",
+          "I'm the + ___ + one.",
+          "Are you the + ___ + child?",
+          "My birthday is on June 2nd.",
+          "My birthday is on the 2nd of June.",
+          "the + ___ + of + ___",
+          "___ + the + First / Second / Third",
+          "the + ___ + century",
+          "It's on the + ___ + floor."
+        ],
+        "expressoesFixas": [
+          "When is Christmas?",
+          "What floor is your English class on?",
+          "Do you have brothers or sisters?"
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "we",
+        "it",
+        "is",
+        "are",
+        "I'm",
+        "it's",
+        "yes",
+        "no",
+        "not",
+        "my",
+        "your",
+        "parents",
+        "brother",
+        "sister",
+        "family",
+        "American",
+        "British",
+        "English",
+        "alphabet",
+        "child",
+        "children",
+        "one",
+        "two",
+        "three",
+        "four",
+        "twenty",
+        "hundred",
+        "thousand",
+        "January",
+        "April",
+        "May",
+        "June",
+        "July",
+        "November",
+        "December",
+        "birthday",
+        "When is your birthday?",
+        "on + ___",
+        "have",
+        "do",
+        "live",
+        "class",
+        "Christmas",
+        "New Year's Day"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 11,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 14,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 8,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 10,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 11,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 14,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 17,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 11,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 14,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 17,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        }
+      ]
+    },
+    {
+      "numero": 29,
+      "titulo": "Unit Review",
+      "tipo": "revisao",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [],
+        "estruturas": [],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "I'm", "a", "an", "in", "work", "school", "cook", "a teacher", "a doctor", "an engineer", "What do you do?"],
+      "reutiliza": [
+        "I",
+        "you",
+        "we",
+        "my",
+        "their",
+        "is",
+        "are",
+        "isn't",
+        "aren't",
+        "I'm",
+        "a",
+        "an",
+        "the",
+        "and",
+        "there",
+        "some",
+        "There is + a / an + ___",
+        "There isn't + a / an + ___",
+        "There are + some + ___",
+        "There aren't + any + ___",
+        "house",
+        "living room",
+        "dining room",
+        "kitchen",
+        "bedroom",
+        "bathroom",
+        "table",
+        "sofa",
+        "coffee table",
+        "bed",
+        "shower",
+        "sink",
+        "toilet",
+        "refrigerator",
+        "cabinets",
+        "on",
+        "in",
+        "at",
+        "TV",
+        "mirror",
+        "rug",
+        "wall",
+        "two",
+        "three",
+        "Thursday",
+        "Saturday",
+        "Sunday",
+        "March",
+        "21st",
+        "morning",
+        "afternoon",
+        "o'clock",
+        "in the morning",
+        "My birthday is on + ___",
+        "What",
+        "What time",
+        "When",
+        "Why",
+        "because",
+        "name",
+        "My name is + ___",
+        "live",
+        "have",
+        "go",
+        "don't",
+        "class",
+        "English",
+        "great"
+      ],
       "textosEmIngles": [
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 11,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 7,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 7,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 11,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 16,
+          "tipoDeTexto": "texto"
+        }
+      ]
+    },
+    {
+      "numero": 30,
+      "titulo": "Places in a City",
+      "tipo": "conteudo",
+      "status": "pronta",
+      "apresenta": {
+        "vocabulario": [
+          "place",
+          "drugstore",
+          "pharmacy",
+          "supermarket",
+          "bus stop",
+          "parking lot",
+          "aquarium",
+          "shopping mall",
+          "movie theater",
+          "theater",
+          "hotel",
+          "museum",
+          "library",
+          "bookstore",
+          "medicine",
+          "buy",
+          "borrow",
+          "take",
+          "walk",
+          "stay",
+          "travel",
+          "check in",
+          "many",
+          "lawyer",
+          "good",
+          "large"
+        ],
+        "estruturas": [
+          "Where can you + ___?",
+          "In a + ___",
+          "We see + ___ + at a + ___"
+        ],
+        "expressoesFixas": [
+          "go to the movies",
+          "Take the bus at the bus stop.",
+          "Park your car in the parking lot.",
+          "Walk in the park.",
+          "Visit the aquarium."
+        ],
+        "pronuncia": []
+      },
+      "reutiliza": [
+        "I",
+        "you",
+        "we",
+        "she",
+        "my",
+        "your",
+        "is",
+        "are",
+        "yes",
+        "a",
+        "an",
+        "sister",
+        "house",
+        "book",
+        "near",
+        "morning",
+        "Saturday",
+        "has",
+        "at home",
+        "There is + a / an + ___",
+        "There are + some + ___",
+        "Are there + any + ___?",
+        "I / you / we / they + verb + ___",
+        "he / she / it + ___ + -s",
+        "city",
+        "university",
+        "park",
+        "office",
+        "bus",
+        "car",
+        "food",
+        "movie",
+        "play",
+        "work",
+        "visit",
+        "watch",
+        "see",
+        "go"
+      ],
+      "textosEmIngles": [
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 1,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        }
       ]
     },
     {
@@ -630,26 +4782,144 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["close to", "far", "far from", "distant from", "the museum", "the park", "the hotel", "the aquarium", "the drugstore", "the bookstore", "the supermarket", "north", "south", "east", "west", "across from", "on the corner of", "the street", "blocks", "turn right", "turn left", "go straight", "go straight ahead", "go toward", "go past", "cross", "the first street", "the second street", "the next street", "on your right", "on your left", "the traffic light"],
-        "estruturas": ["Where is + ___?", "How do I get to + ___?", "Take + ___", "Is it far from here?", "Go straight for two blocks."],
-        "expressoesFixas": ["Excuse me", "Thank you", "You're welcome"],
+        "vocabulario": [
+          "close to",
+          "far from",
+          "distant from",
+          "north",
+          "south",
+          "east",
+          "west",
+          "across from",
+          "on the corner of",
+          "the street",
+          "blocks",
+          "turn right",
+          "turn left",
+          "go straight",
+          "go straight ahead",
+          "go toward",
+          "go past",
+          "cross",
+          "the first street",
+          "the second street",
+          "the next street",
+          "on your right",
+          "on your left",
+          "the traffic light",
+          "then"
+        ],
+        "estruturas": [
+          "Where is + ___?",
+          "How do I get to + ___?",
+          "Take + ___",
+          "Is it far from here?",
+          "Go straight for two blocks."
+        ],
+        "expressoesFixas": [
+          "Thank you",
+          "You're welcome"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "it", "a", "the", "is", "it's", "you're", "no", "near", "where", "how", "at", "on", "two", "school", "go", "this", "your", "first", "then", "Is there + ___?"],
+      "reutiliza": [
+        "I",
+        "you",
+        "it",
+        "a",
+        "the",
+        "is",
+        "it's",
+        "you're",
+        "no",
+        "near",
+        "where",
+        "how",
+        "at",
+        "on",
+        "two",
+        "school",
+        "go",
+        "this",
+        "your",
+        "first",
+        "Is there + a / an + ___?",
+        "far",
+        "the museum",
+        "the park",
+        "the hotel",
+        "the aquarium",
+        "the drugstore",
+        "the bookstore",
+        "the supermarket",
+        "Excuse me"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 7, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 7, "bloco": 7, "tipoDeTexto": "lista" },
-        { "pagina": 8, "bloco": 5, "tipoDeTexto": "dialogo" },
-        { "pagina": 9, "bloco": 5, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 7,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        }
       ]
     },
     {
@@ -658,31 +4928,211 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["love", "like", "dislike", "hate", "loves", "likes", "dislikes", "hates", "animals", "onions", "music", "a bike", "soccer", "a baker", "the gym", "very", "shy", "the guitar", "letters", "vegetables", "video games", "free time", "Saturdays", "but", "just", "listening", "buy", "buying", "cooking", "eat", "eating", "speaking", "dance", "dancing", "living", "having", "taking", "driving", "stop", "stopping", "getting", "plan", "planning", "riding", "making", "meeting", "watching", "singing", "sending", "drinking"],
-        "estruturas": ["love / like / dislike / hate + ___", "love / like / dislike / hate + ___ing", "don't / doesn't + like + ___ing", "Do you like + ___ing?", "What do you like doing in your free time?"],
-        "expressoesFixas": ["What about you?"],
+        "vocabulario": [
+          "love",
+          "dislike",
+          "hate",
+          "loves",
+          "dislikes",
+          "hates",
+          "animals",
+          "onions",
+          "music",
+          "a bike",
+          "soccer",
+          "the gym",
+          "very",
+          "shy",
+          "the guitar",
+          "letters",
+          "vegetables",
+          "video games",
+          "free time",
+          "just",
+          "listening",
+          "buying",
+          "cooking",
+          "eating",
+          "speaking",
+          "dance",
+          "dancing",
+          "living",
+          "having",
+          "taking",
+          "driving",
+          "stop",
+          "stopping",
+          "getting",
+          "plan",
+          "planning",
+          "riding",
+          "making",
+          "watching",
+          "singing",
+          "sending",
+          "drinking",
+          "bread",
+          "doing",
+          "going",
+          "cook",
+          "write",
+          "writing",
+          "drive",
+          "sitting",
+          "run",
+          "running"
+        ],
+        "estruturas": [
+          "love / like / dislike / hate + ___",
+          "love / like / dislike / hate + ___ing",
+          "don't / doesn't + like + ___ing",
+          "Do you like + ___ing?",
+          "What do you like doing in your free time?"
+        ],
+        "expressoesFixas": [
+          "What about you?"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "is", "are", "a", "the", "in", "on + ___", "yes", "no", "what", "don't", "doesn't", "friends", "new", "people", "books", "coffee", "bread", "a TV", "play", "playing", "doing", "going", "cook", "speak", "live", "have", "write", "writing", "drive", "sitting", "run", "running", "Do + I / you / we / they + ___?", "Does + he / she / it + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "Yes, he / she / it + does.", "No, he / she / it + doesn't.", "cousin"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "my",
+        "your",
+        "is",
+        "are",
+        "a",
+        "the",
+        "in",
+        "on + ___",
+        "yes",
+        "no",
+        "what",
+        "don't",
+        "doesn't",
+        "friends",
+        "new",
+        "people",
+        "books",
+        "coffee",
+        "a TV",
+        "play",
+        "playing",
+        "speak",
+        "live",
+        "have",
+        "Do + you / we / they + verb + ___?",
+        "Does + he / she / it + ___?",
+        "Yes, I / you / we / they + do.",
+        "No, I / you / we / they + don't.",
+        "Yes, he / she / it + does.",
+        "No, he / she / it + doesn't.",
+        "cousin",
+        "like",
+        "likes",
+        "a baker",
+        "Saturdays",
+        "but",
+        "buy",
+        "eat",
+        "meeting"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 1, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 7, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 9, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 12, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 14, "tipoDeTexto": "texto" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 8, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 8, "bloco": 5, "tipoDeTexto": "texto" }
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 9,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 12,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 14,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        }
       ]
     },
     {
@@ -691,25 +5141,172 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["how often", "not often", "visit", "visits", "the beach", "reads", "together", "travels", "on business", "eats", "junk food", "chocolate", "drinks", "gets up", "weekends", "sick", "sleep", "ride", "rides", "in the evening", "every hour", "every week", "every month", "every year", "once a day", "once a week", "once a month", "once a year", "once an hour", "twice a day", "twice a week", "twice a month", "twice a year", "three times a week", "four times a year"],
-        "estruturas": ["How often + do / does + ___?", "once / twice / three times + a + ___", "How often do you go to the gym?", "He visits his grandpa once a week.", "Sometimes I listen to music at night."],
+        "vocabulario": [
+          "how often",
+          "not often",
+          "reads",
+          "travels",
+          "on business",
+          "junk food",
+          "chocolate",
+          "drinks",
+          "gets up",
+          "sick",
+          "ride",
+          "rides",
+          "every hour",
+          "every week",
+          "every month",
+          "every year",
+          "once a day",
+          "once a week",
+          "once a month",
+          "once a year",
+          "once an hour",
+          "twice a day",
+          "twice a week",
+          "twice a month",
+          "twice a year",
+          "three times a week",
+          "four times a year",
+          "always",
+          "usually",
+          "often",
+          "sometimes",
+          "rarely",
+          "never",
+          "fruit",
+          "winter",
+          "listen"
+        ],
+        "estruturas": [
+          "How often + do / does + ___?",
+          "once / twice / three times + a + ___",
+          "How often do you go to the gym?",
+          "He visits his grandpa once a week.",
+          "Sometimes I listen to music at night.",
+          "I + always + ___",
+          "I + am + always + ___"
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "we", "they", "my", "his", "her", "is", "how", "what", "always", "usually", "often", "sometimes", "rarely", "never", "I + always + ___", "I + am + always + ___", "late", "books", "have dinner", "in the morning", "in the afternoon", "at night", "p.m.", "every day", "Sunday", "go", "goes", "running", "work", "coffee", "don't", "watch", "a TV", "eat", "fruit", "juice", "cousin", "winter", "listen", "music", "three", "four", "friends", "play", "soccer", "a bike", "the gym", "Saturdays", "but", "What about you?", "I / you / we / they + don't + ___", "grandpa"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "we",
+        "they",
+        "my",
+        "his",
+        "her",
+        "is",
+        "how",
+        "what",
+        "late",
+        "books",
+        "have dinner",
+        "in the morning",
+        "in the afternoon",
+        "at night",
+        "p.m.",
+        "every day",
+        "Sunday",
+        "go",
+        "goes",
+        "running",
+        "work",
+        "coffee",
+        "don't",
+        "watch",
+        "a TV",
+        "eat",
+        "juice",
+        "cousin",
+        "music",
+        "three",
+        "four",
+        "friends",
+        "play",
+        "soccer",
+        "a bike",
+        "the gym",
+        "Saturdays",
+        "but",
+        "What about you?",
+        "I / you / we / they + don't + verb",
+        "grandpa",
+        "visit",
+        "visits",
+        "the beach",
+        "together",
+        "eats",
+        "weekends",
+        "sleep",
+        "in the evening"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 7, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 9, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "texto" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 10, "bloco": 6, "tipoDeTexto": "texto" }
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 10,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        }
       ]
     },
     {
@@ -718,27 +5315,154 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["paint", "tennis", "eagles", "fly", "a horse", "skateboard", "sing", "draw", "drawing", "biking", "the piano", "swimming", "well", "very well", "quite well", "not very well", "not at all"],
-        "estruturas": ["I / you / he / she / it / we / they + can + ___", "Can + I / you / he / she / it / we / they + ___?", "Yes, he / she / it / we / they + can.", "No, he / she / it / we / they + can't.", "am / is / are + good at + ___", "I can sing quite well.", "I can't dance at all.", "My daughter is good at drawing."],
-        "expressoesFixas": [],
+        "vocabulario": [
+          "paint",
+          "tennis",
+          "eagles",
+          "fly",
+          "a horse",
+          "skateboard",
+          "sing",
+          "draw",
+          "drawing",
+          "biking",
+          "the piano",
+          "swimming",
+          "well",
+          "very well",
+          "quite well",
+          "not very well",
+          "not at all",
+          "can",
+          "can't",
+          "cannot",
+          "swim"
+        ],
+        "estruturas": [
+          "I / you / he / she / it / we / they + can + ___",
+          "Can + I / you / he / she / it / we / they + ___?",
+          "Yes, he / she / it / we / they + can.",
+          "No, he / she / it / we / they + can't.",
+          "am / is / are + good at + ___",
+          "I can sing quite well.",
+          "I can't dance at all.",
+          "My daughter is good at drawing.",
+          "I + can + ___",
+          "I + can't + ___",
+          "Can + I / you + ___?"
+        ],
+        "expressoesFixas": [
+          "Yes, I can.",
+          "No, I can't."
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "is", "the", "a", "yes", "no", "not", "very", "can", "can't", "cannot", "I + can + ___", "I + can't + ___", "Can + I / you + ___?", "Yes, I can.", "No, I can't.", "play", "playing", "the guitar", "the wall", "cook", "speak", "Japanese", "run", "swim", "dance", "ride", "a bike", "husband", "brother", "daughter", "how often", "How often + do / does + ___?", "usually", "three times a week"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "my",
+        "is",
+        "the",
+        "a",
+        "yes",
+        "no",
+        "not",
+        "very",
+        "play",
+        "playing",
+        "the guitar",
+        "the wall",
+        "cook",
+        "speak",
+        "Japanese",
+        "run",
+        "dance",
+        "ride",
+        "a bike",
+        "husband",
+        "brother",
+        "daughter",
+        "how often",
+        "How often + do / does + ___?",
+        "usually",
+        "three times a week"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "texto" },
-        { "pagina": 4, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 8, "bloco": 3, "tipoDeTexto": "texto" }
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 4,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        }
       ]
     },
     {
@@ -747,21 +5471,116 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["me", "him", "us", "them", "with", "lessons", "neighbors", "boyfriend", "awesome", "know", "talk", "call", "later", "great", "phone", "friend"],
-        "estruturas": ["___ + me / you / him / her / it / us / them", "let's", "I love her.", "I live with her.", "Can you help us?"],
+        "vocabulario": [
+          "me",
+          "us",
+          "lessons",
+          "neighbors",
+          "boyfriend",
+          "know",
+          "talk",
+          "call",
+          "later",
+          "chicken",
+          "help"
+        ],
+        "estruturas": [
+          "___ + me / you / him / her / it / us / them",
+          "let's",
+          "I love her.",
+          "I live with her.",
+          "Can you help us?"
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "his", "her", "their", "is", "a", "yes", "what", "at", "friends", "love", "like", "likes", "doesn't", "soccer", "watch", "together", "Sunday", "mom", "mother", "grandpa", "live", "chicken", "can", "help", "work", "Yes, I can.", "What about you?", "Can + I / you + ___?", "Do + I / you / we / they + ___?", "love / like / dislike / hate + ___", "grandma"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "my",
+        "his",
+        "her",
+        "their",
+        "is",
+        "a",
+        "yes",
+        "what",
+        "at",
+        "friends",
+        "love",
+        "like",
+        "likes",
+        "doesn't",
+        "soccer",
+        "watch",
+        "together",
+        "Sunday",
+        "mom",
+        "mother",
+        "grandpa",
+        "live",
+        "can",
+        "work",
+        "Yes, I can.",
+        "What about you?",
+        "Can + I / you + ___?",
+        "Do + you / we / they + verb + ___?",
+        "love / like / dislike / hate + ___",
+        "grandma",
+        "him",
+        "them",
+        "with",
+        "awesome",
+        "great",
+        "phone",
+        "friend"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 9, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 10, "bloco": 3, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 10,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        }
       ]
     },
     {
@@ -770,27 +5589,174 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["breakfast", "lunch", "dinner", "waffles", "pancakes", "sausage", "cereal", "croissant", "a hamburger bun", "a roll", "French bread", "a baguette", "carrots", "pasta", "French fries", "stroganoff", "a BLT", "bacon", "lettuce", "tomato", "cake", "cookies", "pizza", "soup", "hamburger", "cheeseburger", "appetizers", "desserts", "ice cream", "chocolate cake", "pudding", "beer", "chicken legs", "chicken breast", "steaks", "grilled skewers", "a glass of", "the bill"],
-        "estruturas": ["have + ___ + for breakfast / lunch / dinner", "Could I have + ___, please?", "What do you usually have for lunch?", "I'd like a glass of soda, please."],
-        "expressoesFixas": ["Are you ready to order?", "Anything to drink?", "Can I bring you anything else?", "No, thanks.", "Just the bill, please."],
+        "vocabulario": [
+          "breakfast",
+          "dinner",
+          "waffles",
+          "pancakes",
+          "sausage",
+          "cereal",
+          "croissant",
+          "a hamburger bun",
+          "a roll",
+          "French bread",
+          "a baguette",
+          "carrots",
+          "pasta",
+          "French fries",
+          "stroganoff",
+          "a BLT",
+          "bacon",
+          "lettuce",
+          "tomato",
+          "cake",
+          "cookies",
+          "soup",
+          "hamburger",
+          "cheeseburger",
+          "appetizers",
+          "desserts",
+          "ice cream",
+          "chocolate cake",
+          "pudding",
+          "beer",
+          "chicken legs",
+          "chicken breast",
+          "steaks",
+          "grilled skewers",
+          "a glass of",
+          "the bill",
+          "please",
+          "snack",
+          "milk",
+          "cheese",
+          "rice",
+          "beans",
+          "meat",
+          "fish",
+          "soda",
+          "water",
+          "I'd"
+        ],
+        "estruturas": [
+          "have + ___ + for breakfast / lunch / dinner",
+          "Could I have + ___, please?",
+          "What do you usually have for lunch?",
+          "I'd like a glass of soda, please.",
+          "I'd like + ___"
+        ],
+        "expressoesFixas": [
+          "Are you ready to order?",
+          "Anything to drink?",
+          "Can I bring you anything else?",
+          "No, thanks.",
+          "Just the bill, please."
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "she", "a", "the", "are", "have", "has", "what", "usually", "yes", "no", "can", "please", "just", "with", "two", "ready", "snack", "coffee", "milk", "cheese", "bread", "fruit", "rice", "beans", "salad", "meat", "chicken", "fish", "chocolate", "vegetables", "drinks", "soda", "water", "juice", "I'd", "I'd like + ___", "Can + I / you + ___?", "Are + you / we / they + ___?"],
+      "reutiliza": [
+        "I",
+        "you",
+        "she",
+        "a",
+        "the",
+        "are",
+        "have",
+        "has",
+        "what",
+        "usually",
+        "yes",
+        "no",
+        "can",
+        "just",
+        "with",
+        "two",
+        "ready",
+        "coffee",
+        "bread",
+        "fruit",
+        "salad",
+        "chicken",
+        "chocolate",
+        "vegetables",
+        "drinks",
+        "juice",
+        "Can + I / you + ___?",
+        "Are + you / we / they + ___?",
+        "lunch",
+        "pizza"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "dialogo" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 7, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 9, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 9, "bloco": 6, "tipoDeTexto": "dialogo" },
-        { "pagina": 9, "bloco": 7, "tipoDeTexto": "texto" },
-        { "pagina": 10, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 10, "bloco": 6, "tipoDeTexto": "texto" }
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 7,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 10,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 10,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        }
       ]
     },
     {
@@ -799,30 +5765,179 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["some", "apples", "oranges", "a chair", "sugar", "grapes", "flour", "orange juice", "tomato sauce", "money", "a bag of rice", "two bottles of water", "a can of soda", "a slice of bread", "a pencil", "an eraser", "bananas", "basket", "cup", "lemons"],
-        "estruturas": ["I have + some + ___", "I don't have + any + ___", "Do you have + any + ___?", "Would you like + ___?", "There are some bananas on the table.", "There aren't any bananas in this basket."],
-        "expressoesFixas": ["Yes, please."],
+        "vocabulario": [
+          "oranges",
+          "sugar",
+          "grapes",
+          "flour",
+          "orange juice",
+          "tomato sauce",
+          "money",
+          "a bag of rice",
+          "two bottles of water",
+          "a can of soda",
+          "a slice of bread",
+          "basket",
+          "cup",
+          "lemons",
+          "there aren't"
+        ],
+        "estruturas": [
+          "I have + some + ___",
+          "I don't have + any + ___",
+          "Do you have + any + ___?",
+          "Would you like + ___?",
+          "There are some bananas on the table.",
+          "There aren't any bananas in this basket."
+        ],
+        "expressoesFixas": [
+          "Yes, please."
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "a", "an", "the", "is", "are", "not", "no", "yes", "two", "have", "usually", "when", "go", "on", "in", "this", "any", "don't", "aren't", "an apple", "a book", "a university", "an hour", "orange", "chairs", "rice", "water", "meat", "chocolate", "juice", "tomato", "dollars", "soda", "can", "bread", "breakfast", "soup", "fruit", "the kitchen", "the table", "please", "there aren't", "there are + ___", "Is there + ___?", "Do + I / you / we / they + ___?", "I'd", "I'd like + ___", "Can + I / you + ___?"],
+      "reutiliza": [
+        "I",
+        "you",
+        "we",
+        "a",
+        "an",
+        "the",
+        "is",
+        "are",
+        "not",
+        "no",
+        "yes",
+        "two",
+        "have",
+        "usually",
+        "when",
+        "go",
+        "on",
+        "in",
+        "this",
+        "any",
+        "don't",
+        "aren't",
+        "an apple",
+        "a book",
+        "a university",
+        "an hour",
+        "orange",
+        "chair",
+        "rice",
+        "water",
+        "meat",
+        "chocolate",
+        "juice",
+        "tomato",
+        "dollars",
+        "soda",
+        "can",
+        "bread",
+        "breakfast",
+        "soup",
+        "fruit",
+        "the kitchen",
+        "the table",
+        "please",
+        "There are + some + ___",
+        "Is there + a / an + ___?",
+        "Do + you / we / they + verb + ___?",
+        "I'd",
+        "I'd like + ___",
+        "Can + I / you + ___?",
+        "some",
+        "apples",
+        "a pencil",
+        "an eraser",
+        "bananas"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 5, "tipoDeTexto": "texto" },
-        { "pagina": 7, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 8, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 9, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 12, "bloco": 5, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 12,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        }
       ]
     },
     {
@@ -831,22 +5946,144 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["a lot of", "lots of", "many", "much", "not many", "not much", "hotels", "during the day", "put", "puts", "hamburgers", "strawberries", "need", "tomatoes", "also", "cups"],
-        "estruturas": ["a lot of / lots of + ___", "don't + ___ + many / much + ___", "How many + ___?", "How much + ___?", "How many children do you have?", "How much sugar do you put in your coffee?", "How much is this book?"],
+        "vocabulario": [
+          "a lot of",
+          "lots of",
+          "much",
+          "not many",
+          "not much",
+          "hotels",
+          "during the day",
+          "put",
+          "puts",
+          "hamburgers",
+          "strawberries",
+          "need",
+          "tomatoes",
+          "also",
+          "cups"
+        ],
+        "estruturas": [
+          "a lot of / lots of + ___",
+          "don't + ___ + many / much + ___",
+          "How many + ___?",
+          "How much + ___?",
+          "How many children do you have?",
+          "How much sugar do you put in your coffee?",
+          "How much is this book?"
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "you", "we", "it", "my", "his", "your", "a", "an", "the", "is", "are", "not", "no", "yes", "in", "this", "how", "have", "has", "don't", "doesn't", "some", "any", "eat", "eats", "water", "coffee", "sugar", "fish", "vegetables", "apples", "orange juice", "basket", "children", "a book", "dinner", "lunch", "six", "two", "bread", "fruit", "money", "car", "appetizers", "always", "an apple", "study", "visit", "grandma", "near", "every day", "in the morning", "there are + ___", "Is there + ___?", "It's + ___ + dollars", "Do + I / you / we / they + ___?", "Yes, I / you / we / they + do.", "No, I / you / we / they + don't.", "uncle"],
+      "reutiliza": [
+        "I",
+        "you",
+        "we",
+        "it",
+        "my",
+        "his",
+        "your",
+        "a",
+        "an",
+        "the",
+        "is",
+        "are",
+        "not",
+        "no",
+        "yes",
+        "in",
+        "this",
+        "how",
+        "have",
+        "has",
+        "don't",
+        "doesn't",
+        "some",
+        "any",
+        "eat",
+        "eats",
+        "water",
+        "coffee",
+        "sugar",
+        "fish",
+        "vegetables",
+        "apples",
+        "orange juice",
+        "basket",
+        "children",
+        "a book",
+        "dinner",
+        "lunch",
+        "six",
+        "two",
+        "bread",
+        "fruit",
+        "money",
+        "car",
+        "appetizers",
+        "always",
+        "an apple",
+        "study",
+        "visit",
+        "grandma",
+        "near",
+        "every day",
+        "in the morning",
+        "There are + some + ___",
+        "Is there + a / an + ___?",
+        "It's + ___ + dollars",
+        "Do + you / we / they + verb + ___?",
+        "Yes, I / you / we / they + do.",
+        "No, I / you / we / they + don't.",
+        "uncle",
+        "many"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 11, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 5, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 11,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -855,28 +6092,167 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["was", "were", "yesterday", "last", "ago", "last night", "last Sunday", "last week", "last month", "last year", "two days ago", "three months ago", "four years ago", "ugly", "a puppy", "cute", "the movies", "the clown", "funny", "a wedding party", "born", "who", "or"],
-        "estruturas": ["I / he / she / it + was + ___", "you / we / they + were + ___", "wasn't", "weren't", "I / he / she / it + wasn't + ___", "you / we / they + weren't + ___", "Was + I / he / she / it + ___?", "Were + you / we / they + ___?", "Yes, I / he / she / it + was.", "No, I / he / she / it + wasn't.", "Yes, you / we / they + were.", "No, you / we / they + weren't.", "I was at home yesterday.", "Where were you last night?", "I was born in 2000."],
-        "expressoesFixas": ["When were you born?"],
+        "vocabulario": [
+          "was",
+          "were",
+          "yesterday",
+          "last",
+          "ago",
+          "last night",
+          "last Sunday",
+          "last week",
+          "last month",
+          "last year",
+          "two days ago",
+          "three months ago",
+          "four years ago",
+          "cute",
+          "the clown",
+          "funny",
+          "a wedding party",
+          "born",
+          "or",
+          "days"
+        ],
+        "estruturas": [
+          "I / he / she / it + was + ___",
+          "you / we / they + were + ___",
+          "wasn't",
+          "weren't",
+          "I / he / she / it + wasn't + ___",
+          "you / we / they + weren't + ___",
+          "Was + I / he / she / it + ___?",
+          "Were + you / we / they + ___?",
+          "Yes, I / he / she / it + was.",
+          "No, I / he / she / it + wasn't.",
+          "Yes, you / we / they + were.",
+          "No, you / we / they + weren't.",
+          "I was at home yesterday.",
+          "Where were you last night?",
+          "I was born in 2000.",
+          "in + ___"
+        ],
+        "expressoesFixas": [
+          "When were you born?"
+        ],
         "pronuncia": []
       },
-      "reutiliza": ["I", "he", "she", "it", "you", "we", "they", "my", "her", "a", "the", "at", "in", "not", "yes", "no", "where", "when", "with", "two", "three", "four", "days", "at home", "work", "school", "Japan", "Italy", "China", "sick", "dog", "daughter", "Sunday", "Saturday", "in + ___", "family"],
+      "reutiliza": [
+        "I",
+        "he",
+        "she",
+        "it",
+        "you",
+        "we",
+        "they",
+        "my",
+        "her",
+        "a",
+        "the",
+        "at",
+        "in",
+        "not",
+        "yes",
+        "no",
+        "where",
+        "when",
+        "with",
+        "two",
+        "three",
+        "four",
+        "at home",
+        "work",
+        "school",
+        "Japan",
+        "Italy",
+        "China",
+        "sick",
+        "dog",
+        "daughter",
+        "Sunday",
+        "Saturday",
+        "family",
+        "ugly",
+        "a puppy",
+        "the movies",
+        "who"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 1, "bloco": 6, "tipoDeTexto": "texto" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 9, "bloco": 4, "tipoDeTexto": "dialogo" },
-        { "pagina": 11, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 5, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 1,
+          "bloco": 6,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 4,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 11,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -885,32 +6261,244 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["arrived", "worked", "showed", "walked", "decide", "decided", "die", "died", "receive", "received", "liked", "lived", "studied", "try", "tried", "cry", "cried", "played", "watched", "stopped", "planned", "prefer", "preferred", "admit", "admitted", "listened", "loved", "washed", "hated", "wanted", "started", "visited", "helped", "arrive", "minutes", "yesterday morning", "yesterday afternoon", "yesterday evening", "last Christmas", "ten minutes ago", "an hour ago", "a week ago", "a month ago", "a year ago", "beautiful", "a photo", "flowers", "because", "sad", "a movie", "the bus stop", "wrong", "math", "history", "busy", "on time", "did"],
-        "estruturas": ["I / you / he / she / it / we / they + ___ed", "didn't", "Did + I / you / he / she / it / we / they + ___?", "Yes, I / you / he / she / it / we / they + did.", "No, I / you / he / she / it / we / they + didn't.", "She arrived ten minutes late for work.", "Yesterday was a busy day.", "Did you go to the movies yesterday?"],
+        "vocabulario": [
+          "arrived",
+          "worked",
+          "showed",
+          "walked",
+          "decide",
+          "decided",
+          "die",
+          "died",
+          "receive",
+          "received",
+          "liked",
+          "lived",
+          "studied",
+          "tried",
+          "cried",
+          "played",
+          "watched",
+          "stopped",
+          "planned",
+          "prefer",
+          "preferred",
+          "admit",
+          "admitted",
+          "listened",
+          "loved",
+          "washed",
+          "hated",
+          "wanted",
+          "started",
+          "visited",
+          "helped",
+          "arrive",
+          "minutes",
+          "yesterday morning",
+          "yesterday afternoon",
+          "yesterday evening",
+          "last Christmas",
+          "ten minutes ago",
+          "an hour ago",
+          "a week ago",
+          "a month ago",
+          "a year ago",
+          "flowers",
+          "sad",
+          "wrong",
+          "math",
+          "history",
+          "busy",
+          "on time",
+          "did"
+        ],
+        "estruturas": [
+          "I / you / he / she / it / we / they + ___ed",
+          "didn't",
+          "Did + I / you / he / she / it / we / they + ___?",
+          "Yes, I / you / he / she / it / we / they + did.",
+          "No, I / you / he / she / it / we / they + didn't.",
+          "She arrived ten minutes late for work.",
+          "Yesterday was a busy day.",
+          "Did you go to the movies yesterday?"
+        ],
         "expressoesFixas": [],
-        "pronuncia": ["-ed /d/ (arrived)", "-ed /t/ (liked)", "-ed /ɪd/ (decided)"]
+        "pronuncia": [
+          "-ed /d/ (arrived)",
+          "-ed /t/ (liked)",
+          "-ed /ɪd/ (decided)"
+        ]
       },
-      "reutiliza": ["I", "you", "he", "she", "it", "we", "they", "my", "her", "their", "a", "an", "the", "in", "at", "on", "this", "that", "from", "with", "when", "or", "yes", "no", "was", "were", "yesterday", "last", "ago", "last night", "last Sunday", "last week", "last month", "last year", "two days ago", "in the morning", "in the afternoon", "in the evening", "in + ___", "the movies", "ten", "late", "work", "study", "play", "stop", "plan", "listen", "like", "visit", "call", "go", "family", "daughter", "grandma", "child", "student", "Brazil", "bus", "music", "English", "day", "some", "grandparents"],
+      "reutiliza": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "my",
+        "her",
+        "their",
+        "a",
+        "an",
+        "the",
+        "in",
+        "at",
+        "on",
+        "this",
+        "that",
+        "from",
+        "with",
+        "when",
+        "or",
+        "yes",
+        "no",
+        "was",
+        "were",
+        "yesterday",
+        "last",
+        "ago",
+        "last night",
+        "last Sunday",
+        "last week",
+        "last month",
+        "last year",
+        "two days ago",
+        "in the morning",
+        "in the afternoon",
+        "in the evening",
+        "in + ___",
+        "the movies",
+        "ten",
+        "late",
+        "work",
+        "study",
+        "play",
+        "stop",
+        "plan",
+        "listen",
+        "like",
+        "visit",
+        "call",
+        "go",
+        "family",
+        "daughter",
+        "grandma",
+        "child",
+        "student",
+        "Brazil",
+        "bus",
+        "music",
+        "English",
+        "day",
+        "some",
+        "grandparents",
+        "try",
+        "cry",
+        "beautiful",
+        "a photo",
+        "because",
+        "a movie",
+        "the bus stop"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 1, "bloco": 5, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 4, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 5, "bloco": 5, "tipoDeTexto": "exemplo" },
-        { "pagina": 6, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 6, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 6, "bloco": 6, "tipoDeTexto": "exemplo" },
-        { "pagina": 7, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 8, "bloco": 3, "tipoDeTexto": "texto" },
-        { "pagina": 8, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 11, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 12, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 13, "bloco": 4, "tipoDeTexto": "exemplo" }
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 1,
+          "bloco": 5,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 4,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 5,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 6,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 7,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 11,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 12,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 13,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        }
       ]
     },
     {
@@ -919,24 +6507,175 @@
       "tipo": "conteudo",
       "status": "pronta",
       "apresenta": {
-        "vocabulario": ["went", "had", "see", "saw", "become", "became", "could", "cost", "do", "drink", "drank", "find", "found", "get", "got", "hear", "heard", "knew", "make", "made", "meet", "met", "take", "took", "come", "came", "read", "talked", "really", "fast", "young", "only", "housework", "keys", "got married", "the shopping mall", "each other", "best friend", "a long time ago", "a few minutes ago", "the sofa", "a noise", "outside"],
-        "estruturas": ["I / you / he / she / it / we / they + could + ___", "They went to the shopping mall together.", "My uncle could run really fast when he was young.", "They saw a great movie last night."],
+        "vocabulario": [
+          "went",
+          "had",
+          "saw",
+          "become",
+          "became",
+          "could",
+          "cost",
+          "drank",
+          "find",
+          "found",
+          "get",
+          "got",
+          "hear",
+          "heard",
+          "knew",
+          "make",
+          "made",
+          "meet",
+          "met",
+          "took",
+          "come",
+          "came",
+          "read",
+          "talked",
+          "really",
+          "only",
+          "housework",
+          "keys",
+          "got married",
+          "best friend",
+          "a long time ago",
+          "a few minutes ago",
+          "a noise",
+          "outside"
+        ],
+        "estruturas": [
+          "I / you / he / she / it / we / they + could + ___",
+          "They went to the shopping mall together.",
+          "My uncle could run really fast when he was young.",
+          "They saw a great movie last night."
+        ],
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "he", "she", "it", "they", "my", "her", "their", "a", "the", "at", "under", "this", "those", "when", "what", "very", "was", "were", "can", "go", "have", "know", "run", "wanted", "yesterday", "last", "ago", "last night", "last year", "four years ago", "two", "together", "a lot of", "very well", "great", "later", "mother", "mom", "wife", "son", "uncle", "friend", "friends", "child", "orange juice", "breakfast", "lunch", "dinner", "boxes", "a movie", "minutes", "house", "books", "Friday", "Saturday", "at home"],
+      "reutiliza": [
+        "I",
+        "he",
+        "she",
+        "it",
+        "they",
+        "my",
+        "her",
+        "their",
+        "a",
+        "the",
+        "at",
+        "under",
+        "this",
+        "those",
+        "when",
+        "what",
+        "very",
+        "was",
+        "were",
+        "can",
+        "go",
+        "have",
+        "know",
+        "run",
+        "wanted",
+        "yesterday",
+        "last",
+        "ago",
+        "last night",
+        "last year",
+        "four years ago",
+        "two",
+        "together",
+        "a lot of",
+        "very well",
+        "great",
+        "later",
+        "mother",
+        "mom",
+        "wife",
+        "son",
+        "uncle",
+        "friend",
+        "friends",
+        "child",
+        "orange juice",
+        "breakfast",
+        "lunch",
+        "dinner",
+        "boxes",
+        "a movie",
+        "minutes",
+        "house",
+        "books",
+        "Friday",
+        "Saturday",
+        "at home",
+        "see",
+        "do",
+        "drink",
+        "take",
+        "fast",
+        "young",
+        "the shopping mall",
+        "each other",
+        "the sofa"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 2, "bloco": 5, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 3, "tipoDeTexto": "lista" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "exemplo" },
-        { "pagina": 4, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 5, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 8, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 9, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 10, "bloco": 4, "tipoDeTexto": "lista" }
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 3,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 4,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 8,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 9,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 10,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        }
       ]
     },
     {
@@ -950,18 +6689,130 @@
         "expressoesFixas": [],
         "pronuncia": []
       },
-      "reutiliza": ["I", "it", "a", "the", "my", "your", "on", "at", "with", "or", "but", "then", "how", "yes", "please", "I'm", "it's", "don't", "can", "was", "always", "usually", "sometimes", "never", "every day", "twice a week", "near", "across from", "go toward", "a lot of", "many", "much", "some", "any", "Are you ready to order?", "I'd", "I'd like + ___", "Can + I / you + ___?", "Anything to drink?", "Yes, please.", "No, thanks.", "Could I have + ___, please?", "appetizers", "drink", "water", "cheese", "coffee", "orange juice", "great", "name", "get up", "take a shower", "teeth", "have breakfast", "go to school", "school", "study", "house", "have lunch", "in the afternoon", "in the evening", "a.m.", "p.m.", "have dinner", "parents", "after that", "the gym", "go out", "best friend", "sleep", "late", "go to bed", "read"],
+      "reutiliza": [
+        "I",
+        "it",
+        "a",
+        "the",
+        "my",
+        "your",
+        "on",
+        "at",
+        "with",
+        "or",
+        "but",
+        "then",
+        "how",
+        "yes",
+        "please",
+        "I'm",
+        "it's",
+        "don't",
+        "can",
+        "was",
+        "always",
+        "usually",
+        "sometimes",
+        "never",
+        "every day",
+        "twice a week",
+        "near",
+        "across from",
+        "go toward",
+        "a lot of",
+        "many",
+        "much",
+        "some",
+        "any",
+        "Are you ready to order?",
+        "I'd",
+        "I'd like + ___",
+        "Can + I / you + ___?",
+        "Anything to drink?",
+        "Yes, please.",
+        "No, thanks.",
+        "Could I have + ___, please?",
+        "appetizers",
+        "drink",
+        "water",
+        "cheese",
+        "coffee",
+        "orange juice",
+        "great",
+        "name",
+        "get up",
+        "take a shower",
+        "have breakfast",
+        "go to school",
+        "school",
+        "study",
+        "house",
+        "have lunch",
+        "in the afternoon",
+        "in the evening",
+        "a.m.",
+        "p.m.",
+        "have dinner",
+        "parents",
+        "the gym",
+        "go out",
+        "best friend",
+        "sleep",
+        "late",
+        "go to bed",
+        "read"
+      ],
       "textosEmIngles": [
-        { "pagina": 1, "bloco": 4, "tipoDeTexto": "lista" },
-        { "pagina": 2, "bloco": 6, "tipoDeTexto": "dialogo" },
-        { "pagina": 2, "bloco": 9, "tipoDeTexto": "dialogo" },
-        { "pagina": 2, "bloco": 10, "tipoDeTexto": "exemplo" },
-        { "pagina": 3, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 3, "bloco": 5, "tipoDeTexto": "texto" },
-        { "pagina": 5, "bloco": 3, "tipoDeTexto": "exemplo" },
-        { "pagina": 8, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 11, "bloco": 4, "tipoDeTexto": "texto" },
-        { "pagina": 12, "bloco": 4, "tipoDeTexto": "texto" }
+        {
+          "pagina": 1,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 2,
+          "bloco": 6,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 9,
+          "tipoDeTexto": "dialogo"
+        },
+        {
+          "pagina": 2,
+          "bloco": 10,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 3,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 3,
+          "bloco": 5,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 5,
+          "bloco": 3,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 8,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 11,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        },
+        {
+          "pagina": 12,
+          "bloco": 4,
+          "tipoDeTexto": "texto"
+        }
       ]
     }
   ]

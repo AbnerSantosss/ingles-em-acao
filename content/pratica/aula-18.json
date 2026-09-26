@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Frases negativas no presente simples com \"don't\" e \"doesn't\", sem misturar com o \"isn't\".",
+  "foco": "Dizer onde as coisas estão com \"on\", \"under\", \"behind\", \"between\", \"opposite\" e perguntar \"Where is the ___?\".",
   "conteudoAlvo": [
-    "I / you / we / they + don't + ___",
-    "he / she / it + doesn't + ___",
-    "I don't work on Sunday. She doesn't work here.",
-    "I don't like coffee."
+    "is / are + on, above, under, in / inside, behind",
+    "in front of, between ___ and ___, beside, near",
+    "opposite, at; goes into, comes out of, through",
+    "Where is the rug? It is in the middle of the room."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "on the right",
+    "on the left"
+  ],
   "comoIntegrar": [
-    "Pegue frases afirmativas da Aula 17 e peça que eu passe para a negativa.",
-    "Misture com a negativa de ser/estar:\"She isn't a doctor.\" e \"She doesn't work here.\""
+    "Use \"There is\" e \"There are\" da Aula 17: \"There is a rug under the coffee table.\"",
+    "Use os móveis da Aula 16: \"The sofa is opposite the TV.\", \"The bed is near the window.\""
   ],
   "regrasDaAula": [
-    "Depois de \"doesn't\" o verbo fica sem \"-s\": \"She doesn't work.\""
+    "\"on\" tem contato; \"above\" fica acima, sem contato; \"under\" fica embaixo."
   ],
   "tiposDeExercicio": [
     "escolher",
     "completar",
-    "transformar",
-    "traduzir"
+    "traduzir",
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha \"don't\" ou \"doesn't\": \"He ___ work on Sunday.\"",
-      "respostaDeReferencia": "He doesn't work on Sunday."
+      "enunciado": "Escolha \"on\" ou \"above\" (sem contato): \"The photo is ___ the side table.\"",
+      "respostaDeReferencia": "The photo is above the side table."
     },
     {
-      "tipo": "transformar",
-      "enunciado": "Passe para a negativa: \"She studies every day.\"",
-      "respostaDeReferencia": "She doesn't study every day."
+      "tipo": "completar",
+      "enunciado": "Complete com \"entre\": \"The books are ___ the plant and the vase.\"",
+      "respostaDeReferencia": "The books are between the plant and the vase."
     },
     {
       "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Eu não gosto de café.",
-      "respostaDeReferencia": "I don't like coffee."
+      "enunciado": "Traduza para o inglês usando \"opposite\": A TV está em frente ao sofá.",
+      "respostaDeReferencia": "The TV is opposite the sofa."
     }
   ],
   "limites": [
-    "Só a negativa: perguntas com \"do\" e \"does\" ainda não estudei.",
-    "Verbos só os que já vi: \"live\", \"speak\" e \"drink\" ainda não estudei."
+    "Sem \"next to\", \"across from\" e direções como \"turn left\": ainda não estudei.",
+    "Sem adjetivos (\"big\", \"small\"); movimento só com \"goes\", \"comes\" e \"jumps\"."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ work on Sunday.\" Qual palavra entra no espaço?",
+  "primeiraQuestao": "Vamos começar pelo \"on\". Como se diz em inglês: o livro está em cima da mesa?",
   "resumoAutorizado": [
-    "\"don't\" com \"I\", \"you\", \"we\", \"they\"; \"doesn't\" com \"he\", \"she\", \"it\".",
-    "Verbo sem \"-s\" depois de \"doesn't\": \"She doesn't work here.\"",
-    "\"I don't work on Sunday.\", \"I don't like coffee.\", \"She isn't a doctor.\""
+    "Lugar: \"on\", \"above\", \"under\", \"in\", \"in front of\", \"behind\", \"between\".",
+    "Também: \"beside\", \"near\", \"opposite\", \"at\", \"in the middle of\", \"on the left\".",
+    "Movimento: \"into\", \"out of\", \"through\". Casa: \"rug\", \"lamp\", \"vase\", \"TV\"."
   ],
-  "resumoCurto": "Presente simples negativo: \"I don't work\", \"she doesn't work\", verbo sem \"-s\" depois de \"doesn't\"."
+  "resumoCurto": "Onde as coisas estão: \"on\", \"under\", \"behind\", \"between\", \"opposite\" e a pergunta \"Where is the ___?\""
 }

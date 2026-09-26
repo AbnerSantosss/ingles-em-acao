@@ -6,10 +6,10 @@
       "clip": {
         "id": "lesson_020_audio_001",
         "alvo": "texto",
-        "ancora": "always",
-        "texto": "always",
-        "src": "/audio/aula-20/lesson_020_audio_001.b6f141dc.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Phone number: It’s 90765-0023.",
+        "texto": "Phone number: It's nine oh seven six five, oh oh two three.",
+        "src": "/audio/aula-20/lesson_020_audio_001.9ef94562.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -17,10 +17,10 @@
       "clip": {
         "id": "lesson_020_audio_002",
         "alvo": "texto",
-        "ancora": "usually",
-        "texto": "usually",
-        "src": "/audio/aula-20/lesson_020_audio_002.b4df4d13.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Age: I’m twenty-four.",
+        "texto": "Age: I'm twenty-four.",
+        "src": "/audio/aula-20/lesson_020_audio_002.e937954a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -28,10 +28,10 @@
       "clip": {
         "id": "lesson_020_audio_003",
         "alvo": "texto",
-        "ancora": "often",
-        "texto": "often",
-        "src": "/audio/aula-20/lesson_020_audio_003.6313b99a.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Price: It’s forty-five dollars.",
+        "texto": "Price: It's forty-five dollars.",
+        "src": "/audio/aula-20/lesson_020_audio_003.d1aac966.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -39,20 +39,20 @@
       "clip": {
         "id": "lesson_020_audio_004",
         "alvo": "texto",
-        "ancora": "sometimes",
-        "texto": "sometimes",
-        "src": "/audio/aula-20/lesson_020_audio_004.7f522ec6.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Address: 250 Brasil Avenue.",
+        "texto": "Address: two hundred fifty Brasil Avenue.",
+        "src": "/audio/aula-20/lesson_020_audio_004.e4f63885.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_020_audio_005",
-        "alvo": "texto",
-        "ancora": "never",
-        "texto": "never",
-        "src": "/audio/aula-20/lesson_020_audio_005.3d058a8b.mp3",
+        "alvo": "bloco",
+        "ancora": "ten",
+        "texto": "ten\neleven\ntwelve\nthirteen\nfourteen\nfifteen\nsixteen\nseventeen\neighteen\nnineteen",
+        "src": "/audio/aula-20/lesson_020_audio_005.30df4715.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -61,9 +61,9 @@
       "clip": {
         "id": "lesson_020_audio_006",
         "alvo": "texto",
-        "ancora": "She never works on Sunday.",
-        "texto": "She never works on Sunday.",
-        "src": "/audio/aula-20/lesson_020_audio_006.365bfcf2.mp3",
+        "ancora": "Room ten.",
+        "texto": "Room ten.",
+        "src": "/audio/aula-20/lesson_020_audio_006.fbcd8726.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -72,9 +72,355 @@
       "clip": {
         "id": "lesson_020_audio_007",
         "alvo": "texto",
-        "ancora": "He is usually happy.",
-        "texto": "He is usually happy.",
-        "src": "/audio/aula-20/lesson_020_audio_007.085851e8.mp3",
+        "ancora": "Chapter thirteen.",
+        "texto": "Chapter thirteen.",
+        "src": "/audio/aula-20/lesson_020_audio_007.dc4a5066.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_020_audio_008",
+        "alvo": "texto",
+        "ancora": "Lesson nineteen.",
+        "texto": "Lesson nineteen.",
+        "src": "/audio/aula-20/lesson_020_audio_008.92361a6f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_009",
+        "alvo": "texto",
+        "ancora": "twenty",
+        "texto": "twenty",
+        "src": "/audio/aula-20/lesson_020_audio_009.e18cceed.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_010",
+        "alvo": "texto",
+        "ancora": "thirty",
+        "texto": "thirty",
+        "src": "/audio/aula-20/lesson_020_audio_010.38807876.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_011",
+        "alvo": "texto",
+        "ancora": "forty",
+        "texto": "forty",
+        "src": "/audio/aula-20/lesson_020_audio_011.e8f38039.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_012",
+        "alvo": "texto",
+        "ancora": "fifty",
+        "texto": "fifty",
+        "src": "/audio/aula-20/lesson_020_audio_012.1208b5cb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_013",
+        "alvo": "texto",
+        "ancora": "sixty",
+        "texto": "sixty",
+        "src": "/audio/aula-20/lesson_020_audio_013.e4de3351.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_014",
+        "alvo": "texto",
+        "ancora": "seventy",
+        "texto": "seventy",
+        "src": "/audio/aula-20/lesson_020_audio_014.f1886bb7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_015",
+        "alvo": "texto",
+        "ancora": "eighty",
+        "texto": "eighty",
+        "src": "/audio/aula-20/lesson_020_audio_015.d7204786.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_016",
+        "alvo": "texto",
+        "ancora": "ninety",
+        "texto": "ninety",
+        "src": "/audio/aula-20/lesson_020_audio_016.6946488c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_017",
+        "alvo": "texto",
+        "ancora": "20 = twenty (dezena) · 7 = seven (unidade)",
+        "texto": "twenty. seven",
+        "src": "/audio/aula-20/lesson_020_audio_017.e2510c63.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_020_audio_018",
+        "alvo": "texto",
+        "ancora": "seventy-nine dollars and ninety cents",
+        "texto": "seventy-nine dollars and ninety cents",
+        "src": "/audio/aula-20/lesson_020_audio_018.bfb319a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_019",
+        "alvo": "bloco",
+        "ancora": "How old are you?",
+        "texto": "How old are you?\nI'm twenty-four.\nI'm twenty-four years old.",
+        "src": "/audio/aula-20/lesson_020_audio_019.d0ea639c.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_020",
+        "alvo": "texto",
+        "ancora": "I’m twenty-four.",
+        "texto": "I'm twenty-four.",
+        "src": "/audio/aula-20/lesson_020_audio_020.c34baed4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_021",
+        "alvo": "texto",
+        "ancora": "I’m twenty-four years old.",
+        "texto": "I'm twenty-four years old.",
+        "src": "/audio/aula-20/lesson_020_audio_021.d0cb3374.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_022",
+        "alvo": "texto",
+        "ancora": "I’m fifteen.",
+        "texto": "I'm fifteen.",
+        "src": "/audio/aula-20/lesson_020_audio_022.b3aef04d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_023",
+        "alvo": "texto",
+        "ancora": "I’m thirty.",
+        "texto": "I'm thirty.",
+        "src": "/audio/aula-20/lesson_020_audio_023.1ac3d239.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_024",
+        "alvo": "texto",
+        "ancora": "I’m forty-two.",
+        "texto": "I'm forty-two.",
+        "src": "/audio/aula-20/lesson_020_audio_024.05b07416.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_025",
+        "alvo": "texto",
+        "ancora": "I’m sixty.",
+        "texto": "I'm sixty.",
+        "src": "/audio/aula-20/lesson_020_audio_025.5dd7b635.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_026",
+        "alvo": "texto",
+        "ancora": "100 = a hundred\n100 = one hundred",
+        "texto": "a hundred. one hundred",
+        "src": "/audio/aula-20/lesson_020_audio_026.eaa70168.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_020_audio_027",
+        "alvo": "texto",
+        "ancora": "one hundred",
+        "texto": "one hundred",
+        "src": "/audio/aula-20/lesson_020_audio_027.e6e57f32.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_020_audio_028",
+        "alvo": "texto",
+        "ancora": "101 = a hundred and one",
+        "texto": "a hundred and one",
+        "src": "/audio/aula-20/lesson_020_audio_028.55d16a7c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_020_audio_029",
+        "alvo": "texto",
+        "ancora": "142 = a hundred and forty-one",
+        "texto": "a hundred and forty-one",
+        "src": "/audio/aula-20/lesson_020_audio_029.80481c8a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_020_audio_030",
+        "alvo": "texto",
+        "ancora": "a thousand / one thousand",
+        "texto": "a thousand. one thousand",
+        "src": "/audio/aula-20/lesson_020_audio_030.001a0610.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_020_audio_031",
+        "alvo": "texto",
+        "ancora": "two thousand three hundred fifty-seven",
+        "texto": "two thousand three hundred fifty-seven",
+        "src": "/audio/aula-20/lesson_020_audio_031.877a6379.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_020_audio_032",
+        "alvo": "texto",
+        "ancora": "four thousand nine hundred twenty-one",
+        "texto": "four thousand nine hundred twenty-one",
+        "src": "/audio/aula-20/lesson_020_audio_032.be8a83f9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_020_audio_033",
+        "alvo": "texto",
+        "ancora": "nine thousand four hundred sixty-five",
+        "texto": "nine thousand four hundred sixty-five",
+        "src": "/audio/aula-20/lesson_020_audio_033.06c39fa9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_020_audio_034",
+        "alvo": "texto",
+        "ancora": "thousand",
+        "texto": "thousand",
+        "src": "/audio/aula-20/lesson_020_audio_034.55f10ef3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_020_audio_035",
+        "alvo": "texto",
+        "ancora": "hundred",
+        "texto": "hundred",
+        "src": "/audio/aula-20/lesson_020_audio_035.f99cceeb.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_020_audio_036",
+        "alvo": "bloco",
+        "ancora": "What’s your phone number?",
+        "texto": "What's your phone number?\nIt's nine oh seven six five, oh oh two three.",
+        "src": "/audio/aula-20/lesson_020_audio_036.0ca2a599.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_020_audio_037",
+        "alvo": "texto",
+        "ancora": "I’m twenty-six.",
+        "texto": "I'm twenty-six.",
+        "src": "/audio/aula-20/lesson_020_audio_037.f3da785a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_020_audio_038",
+        "alvo": "texto",
+        "ancora": "I’m thirty-four years old.",
+        "texto": "I'm thirty-four years old.",
+        "src": "/audio/aula-20/lesson_020_audio_038.29c85647.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     }

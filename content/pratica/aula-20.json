@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dizer com que frequência faço algo, com o advérbio antes do verbo comum e depois de \"am\", \"is\" e \"are\".",
+  "foco": "Ler, dizer e escrever números em inglês até 9,999 e usar esses números para falar de telefone, idade e preços.",
   "conteudoAlvo": [
-    "always, usually, often, sometimes",
-    "rarely, seldom, never",
-    "I + always + ___; I + am + always + ___",
-    "I never drink coffee."
+    "Room twelve, Chapter thirteen, Lesson nineteen",
+    "twenty-four, thirty-five, sixty-seven, ninety-nine",
+    "one hundred, three hundred fifty-six, a thousand",
+    "I'm eighteen years old. It's forty-two dollars."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "How old are you?",
+    "What's your phone number?"
+  ],
   "comoIntegrar": [
-    "Use o presente simples das Aulas 17 e 18: \"She never works on Sunday.\"",
-    "Misture com \"am\", \"is\" e \"are\" e o que já sei: \"He is usually happy.\""
+    "Use \"There are\" da Aula 17: \"There are two thousand students in my university.\"",
+    "Pergunte a idade de parentes (Aula 07): \"How old is your mother?\", \"She is sixty.\""
   ],
   "regrasDaAula": [
-    "\"never\" já é negativo: \"I never drink coffee.\", nunca junto com \"don't\"."
+    "De 21 a 99 uso hífen, menos nas dezenas exatas: \"forty-five\", mas \"forty\"."
   ],
   "tiposDeExercicio": [
     "identificar",
-    "escolher",
     "completar",
-    "transformar"
+    "transformar",
+    "responder"
   ],
   "exemplos": [
     {
-      "tipo": "escolher",
-      "enunciado": "Escolha a frase certa: \"She always is happy.\" ou \"She is always happy.\"",
-      "respostaDeReferencia": "She is always happy."
-    },
-    {
       "tipo": "completar",
-      "enunciado": "Complete com \"nunca\": \"I ___ drink coffee.\"",
-      "respostaDeReferencia": "I never drink coffee."
+      "enunciado": "Complete o preço de $45: \"It's ___ dollars.\"",
+      "respostaDeReferencia": "It's forty-five dollars."
     },
     {
       "tipo": "transformar",
-      "enunciado": "Coloque \"sometimes\" na frase: \"They work on Saturday.\"",
-      "respostaDeReferencia": "They sometimes work on Saturday."
+      "enunciado": "Escreva por extenso, no padrão americano, sem \"and\": 2,357",
+      "respostaDeReferencia": "two thousand three hundred fifty-seven"
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com a idade fictícia de 15 anos: \"How old are you?\"",
+      "respostaDeReferencia": "I'm fifteen years old."
     }
   ],
   "limites": [
-    "Sem horas e períodos do dia: \"at night\" e \"in the morning\" ainda não estudei.",
-    "Verbos só os que já vi: \"arrive\" e \"watch TV\" ainda não estudei."
+    "Sem horas, datas e números acima de 9,999. Não me cobre o \"and\" britânico.",
+    "Telefone e idade só fictícios, sem o dígito 0: ainda não vi \"zero\" nem \"oh\"."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"always\". Complete com \"sempre\": \"I ___ study.\" Qual palavra entra no espaço?",
+  "primeiraQuestao": "Vamos começar pelos números de 10 a 19. Como se diz 13 em inglês?",
   "resumoAutorizado": [
-    "\"always\", \"usually\", \"often\", \"sometimes\", \"rarely\", \"seldom\", \"never\".",
-    "Antes do verbo comum: \"I always study.\", \"She never works on Sunday.\"",
-    "Depois de \"am\"/\"is\"/\"are\": \"I am always late.\", \"He is usually happy.\""
+    "De 10 a 19: \"ten\", \"eleven\", \"twelve\", \"thirteen\"; de 21 a 99: \"forty-five\".",
+    "Centenas e milhares: \"a hundred\", \"one hundred\", \"two thousand\".",
+    "Frases: \"How old are you?\", \"I'm twenty years old.\", \"It's ten dollars.\""
   ],
-  "resumoCurto": "Advérbios de frequência: \"always\", \"usually\", \"sometimes\", \"never\", antes do verbo e depois de \"is\"."
+  "resumoCurto": "Números até 9,999, o hífen de 21 a 99 e o uso em telefone, idade e preços."
 }

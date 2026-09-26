@@ -2,14 +2,15 @@
   "aula": 28,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_028_audio_001",
         "alvo": "texto",
-        "ancora": "t-shirt",
-        "texto": "t-shirt",
-        "src": "/audio/aula-28/lesson_028_audio_001.b5aa50a9.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "An ordinal number tells the position of something in a sequence.",
+        "texto": "An ordinal number tells the position of something in a sequence.",
+        "src": "/audio/aula-28/lesson_028_audio_001.b3de1b75.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
@@ -17,9 +18,9 @@
       "clip": {
         "id": "lesson_028_audio_002",
         "alvo": "texto",
-        "ancora": "pants",
-        "texto": "pants",
-        "src": "/audio/aula-28/lesson_028_audio_002.dab306d9.mp3",
+        "ancora": "1st · first",
+        "texto": "first. first",
+        "src": "/audio/aula-28/lesson_028_audio_002.2c10464f.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -28,9 +29,9 @@
       "clip": {
         "id": "lesson_028_audio_003",
         "alvo": "texto",
-        "ancora": "jeans",
-        "texto": "jeans",
-        "src": "/audio/aula-28/lesson_028_audio_003.f7c9f3b7.mp3",
+        "ancora": "2nd · second",
+        "texto": "second. second",
+        "src": "/audio/aula-28/lesson_028_audio_003.2dc6f3bf.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -39,10 +40,11 @@
       "clip": {
         "id": "lesson_028_audio_004",
         "alvo": "texto",
-        "ancora": "dress",
-        "texto": "dress",
-        "src": "/audio/aula-28/lesson_028_audio_004.f0f13972.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "3rd · third",
+        "texto": "third. third",
+        "src": "/audio/aula-28/lesson_028_audio_004.ee1893c7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -50,10 +52,11 @@
       "clip": {
         "id": "lesson_028_audio_005",
         "alvo": "texto",
-        "ancora": "skirt",
-        "texto": "skirt",
-        "src": "/audio/aula-28/lesson_028_audio_005.c955c48b.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "4th · fourth",
+        "texto": "fourth. fourth",
+        "src": "/audio/aula-28/lesson_028_audio_005.0fbd690e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -61,10 +64,11 @@
       "clip": {
         "id": "lesson_028_audio_006",
         "alvo": "texto",
-        "ancora": "shoes",
-        "texto": "shoes",
-        "src": "/audio/aula-28/lesson_028_audio_006.79f7608d.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "11th",
+        "texto": "eleventh",
+        "src": "/audio/aula-28/lesson_028_audio_006.661d50ca.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -72,10 +76,11 @@
       "clip": {
         "id": "lesson_028_audio_007",
         "alvo": "texto",
-        "ancora": "socks",
-        "texto": "socks",
-        "src": "/audio/aula-28/lesson_028_audio_007.67236a4b.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "12th",
+        "texto": "twelfth",
+        "src": "/audio/aula-28/lesson_028_audio_007.cc27e828.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -83,20 +88,21 @@
       "clip": {
         "id": "lesson_028_audio_008",
         "alvo": "texto",
-        "ancora": "jacket",
-        "texto": "jacket",
-        "src": "/audio/aula-28/lesson_028_audio_008.bb21eafd.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "13th",
+        "texto": "thirteenth",
+        "src": "/audio/aula-28/lesson_028_audio_008.662a874a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
       "pagina": 2,
       "clip": {
         "id": "lesson_028_audio_009",
-        "alvo": "texto",
-        "ancora": "coat",
-        "texto": "coat",
-        "src": "/audio/aula-28/lesson_028_audio_009.9d8cc39c.mp3",
+        "alvo": "bloco",
+        "ancora": "1st",
+        "texto": "first\nfirst\nsecond\nsecond\nthird\nthird\nfourth\nfourth\nfifth\nfifth\nsixth\nsixth\nseventh\nseventh\neighth\neighth\nninth\nninth\ntenth\ntenth\neleventh\neleventh\ntwelfth\ntwelfth\nthirteenth\nthirteenth\nfourteenth\nfourteenth\nfifteenth\nfifteenth\nsixteenth\nsixteenth\nseventeenth\nseventeenth\neighteenth\neighteenth\nnineteenth\nnineteenth\ntwentieth\ntwentieth",
+        "src": "/audio/aula-28/lesson_028_audio_009.fd31f5fd.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -105,10 +111,11 @@
       "clip": {
         "id": "lesson_028_audio_010",
         "alvo": "texto",
-        "ancora": "hat",
-        "texto": "hat",
-        "src": "/audio/aula-28/lesson_028_audio_010.c3c975d1.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "30th",
+        "texto": "thirtieth",
+        "src": "/audio/aula-28/lesson_028_audio_010.74869553.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -116,32 +123,299 @@
       "clip": {
         "id": "lesson_028_audio_011",
         "alvo": "texto",
-        "ancora": "shorts",
-        "texto": "shorts",
-        "src": "/audio/aula-28/lesson_028_audio_011.552015f7.mp3",
+        "ancora": "40th",
+        "texto": "fortieth",
+        "src": "/audio/aula-28/lesson_028_audio_011.e4116c02.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_012",
+        "alvo": "texto",
+        "ancora": "50th",
+        "texto": "fiftieth",
+        "src": "/audio/aula-28/lesson_028_audio_012.d84256d1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_013",
+        "alvo": "texto",
+        "ancora": "60th",
+        "texto": "sixtieth",
+        "src": "/audio/aula-28/lesson_028_audio_013.41a2e409.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_014",
+        "alvo": "texto",
+        "ancora": "70th",
+        "texto": "seventieth",
+        "src": "/audio/aula-28/lesson_028_audio_014.80ed14db.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_015",
+        "alvo": "texto",
+        "ancora": "80th",
+        "texto": "eightieth",
+        "src": "/audio/aula-28/lesson_028_audio_015.b71b8c19.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_016",
+        "alvo": "texto",
+        "ancora": "90th",
+        "texto": "ninetieth",
+        "src": "/audio/aula-28/lesson_028_audio_016.6882a81b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_017",
+        "alvo": "texto",
+        "ancora": "100th",
+        "texto": "one hundredth",
+        "src": "/audio/aula-28/lesson_028_audio_017.4124d324.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_018",
+        "alvo": "texto",
+        "ancora": "hundredth",
+        "texto": "hundredth",
+        "src": "/audio/aula-28/lesson_028_audio_018.73a6107a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_028_audio_019",
+        "alvo": "texto",
+        "ancora": "21st",
+        "texto": "twenty-first",
+        "src": "/audio/aula-28/lesson_028_audio_019.65669ac4.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_028_audio_012",
+        "id": "lesson_028_audio_020",
         "alvo": "texto",
-        "ancora": "She wears glasses.",
-        "texto": "She wears glasses.",
-        "src": "/audio/aula-28/lesson_028_audio_012.97e672f6.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "221st",
+        "texto": "two hundred twenty-first",
+        "src": "/audio/aula-28/lesson_028_audio_020.7746bc6d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_028_audio_013",
+        "id": "lesson_028_audio_021",
         "alvo": "texto",
-        "ancora": "He is wearing a blue shirt.",
-        "texto": "He is wearing a blue shirt.",
-        "src": "/audio/aula-28/lesson_028_audio_013.92604349.mp3",
+        "ancora": "K is the eleventh letter of the alphabet.",
+        "texto": "K is the eleventh letter of the alphabet.",
+        "src": "/audio/aula-28/lesson_028_audio_021.36849544.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_028_audio_022",
+        "alvo": "texto",
+        "ancora": "11th · eleventh",
+        "texto": "eleventh. eleventh",
+        "src": "/audio/aula-28/lesson_028_audio_022.3607a600.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_028_audio_023",
+        "alvo": "texto",
+        "ancora": "I’m the second one.",
+        "texto": "I'm the second one.",
+        "src": "/audio/aula-28/lesson_028_audio_023.cf6170c1.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_024",
+        "alvo": "texto",
+        "ancora": "two thousand twenty-four.",
+        "texto": "Two thousand twenty-four.",
+        "src": "/audio/aula-28/lesson_028_audio_024.cad33bb0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_025",
+        "alvo": "texto",
+        "ancora": "My birthday is on June 2nd.",
+        "texto": "My birthday is on June second.",
+        "src": "/audio/aula-28/lesson_028_audio_025.11286a57.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_026",
+        "alvo": "texto",
+        "ancora": "Christmas is on December 25th.",
+        "texto": "Christmas is on December twenty-fifth.",
+        "src": "/audio/aula-28/lesson_028_audio_026.d3c28999.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_027",
+        "alvo": "texto",
+        "ancora": "New Year’s Day is on January 1st.",
+        "texto": "New Year's Day is on January first.",
+        "src": "/audio/aula-28/lesson_028_audio_027.48a6489a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_028",
+        "alvo": "texto",
+        "ancora": "My birthday is on the 2nd of June.",
+        "texto": "My birthday is on the second of June.",
+        "src": "/audio/aula-28/lesson_028_audio_028.d9a9509f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_029",
+        "alvo": "texto",
+        "ancora": "Christmas is on the 25th of December.",
+        "texto": "Christmas is on the twenty-fifth of December.",
+        "src": "/audio/aula-28/lesson_028_audio_029.5068e94f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_030",
+        "alvo": "texto",
+        "ancora": "New Year’s Day is on the 1st of January.",
+        "texto": "New Year's Day is on the first of January.",
+        "src": "/audio/aula-28/lesson_028_audio_030.509567aa.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_028_audio_031",
+        "alvo": "bloco",
+        "ancora": "When is your birthday?",
+        "texto": "When is your birthday?\nMy birthday is on July seventh.\nWhen is Christmas?\nChristmas is on December twenty-fifth.",
+        "src": "/audio/aula-28/lesson_028_audio_031.ca1bc42d.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_028_audio_032",
+        "alvo": "texto",
+        "ancora": "21st century",
+        "texto": "twenty-first century",
+        "src": "/audio/aula-28/lesson_028_audio_032.3a671cb9.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_028_audio_033",
+        "alvo": "texto",
+        "ancora": "ground floor",
+        "texto": "ground floor",
+        "src": "/audio/aula-28/lesson_028_audio_033.65339a23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_028_audio_034",
+        "alvo": "texto",
+        "ancora": "1st floor",
+        "texto": "first floor",
+        "src": "/audio/aula-28/lesson_028_audio_034.38ca3321.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_028_audio_035",
+        "alvo": "texto",
+        "ancora": "2nd floor",
+        "texto": "second floor",
+        "src": "/audio/aula-28/lesson_028_audio_035.875e5ec3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_028_audio_036",
+        "alvo": "bloco",
+        "ancora": "Mia: Do you have brothers or sisters?",
+        "texto": "Do you have brothers or sisters?\nYes. I have two sisters.\nAre you the first child?\nNo, I'm not. I'm the second one.\nWhen is your birthday?\nMy birthday is on July seventh.\nWhat floor is your English class on?\nIt's on the third floor.",
+        "src": "/audio/aula-28/lesson_028_audio_036.c9a2a431.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

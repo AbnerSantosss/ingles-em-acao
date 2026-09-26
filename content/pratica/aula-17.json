@@ -2,52 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Frases afirmativas no presente simples para hábitos e fatos, com o \"-s\" em \"he\", \"she\" e \"it\".",
+  "foco": "Dizer o que existe ou não existe num lugar com \"There is\" e \"There are\", e fazer perguntas.",
   "conteudoAlvo": [
-    "I / you / we / they + work; he / she / it + works",
-    "study, studies, go, goes, play, plays, have, has",
-    "rains, every day",
-    "I work every day. Water boils at 100°C."
+    "There is / There isn't + a / an + ___",
+    "There are + some / There aren't + any + ___",
+    "Is there + a / an + ___? Are there + any + ___?",
+    "on, in, table, dining room, plates, photo"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "Yes, there is",
+    "No, there isn't"
+  ],
   "comoIntegrar": [
-    "Troque o sujeito entre os sete pronomes da Aula 01 para eu decidir se o verbo leva \"-s\".",
-    "Use dias e lugares que já sei: \"on Sunday\", \"at home\", \"at school\"."
+    "Use cômodos e móveis da Aula 16: \"Is there a coffee table in the living room?\"",
+    "Junte os plurais da Aula 14: \"There are some dishes in the dishwasher.\""
   ],
   "regrasDaAula": [
-    "Com \"he\", \"she\" e \"it\" o verbo ganha \"-s\": \"works\", \"goes\", \"studies\", \"has\"."
+    "Singular: \"There is a\". Plural: \"There are some\"; \"any\" na negativa e na pergunta."
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
-    "completar"
+    "completar",
+    "transformar",
+    "responder"
   ],
   "exemplos": [
     {
-      "tipo": "identificar",
-      "enunciado": "Qual é o verbo em \"She studies every day.\"?",
-      "respostaDeReferencia": "studies"
-    },
-    {
       "tipo": "escolher",
-      "enunciado": "Escolha \"have\" ou \"has\": \"He ___ a car.\"",
-      "respostaDeReferencia": "He has a car."
+      "enunciado": "Escolha \"some\" ou \"any\": \"There aren't ___ books on this table.\"",
+      "respostaDeReferencia": "There aren't any books on this table."
     },
     {
-      "tipo": "completar",
-      "enunciado": "Complete com \"go\": \"She ___ to school every day.\"",
-      "respostaDeReferencia": "She goes to school every day."
+      "tipo": "transformar",
+      "enunciado": "Transforme em pergunta: \"There is a sink in the kitchen.\"",
+      "respostaDeReferencia": "Is there a sink in the kitchen?"
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda que não: \"Are there any people in this photo?\"",
+      "respostaDeReferencia": "No, there aren't."
     }
   ],
   "limites": [
-    "Só a afirmativa: frases com \"don't\", \"doesn't\" e perguntas com \"do\" ainda não estudei.",
-    "Verbos só os da aula: \"live\", \"drink\" e \"watch TV\" ainda não estudei."
+    "Só o uso de \"some\" e \"any\" da aula: nada de \"some\" em pergunta nem \"any\" em afirmativa.",
+    "Sem \"under\", \"behind\", \"next to\": só \"in\" e \"on\". Preposições de lugar vêm mais adiante."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"he\". Complete: \"He ___ every day.\" (work) Qual forma do verbo entra no espaço?",
+  "primeiraQuestao": "Vamos começar pelo singular. Traduza para o inglês a frase: Há um sofá na sala. Como fica?",
   "resumoAutorizado": [
-    "\"I work\", \"you work\", \"we work\", \"they work\"; \"he works\", \"she works\".",
-    "Com \"-s\": \"goes\", \"studies\", \"plays\", \"has\", \"It rains.\"",
-    "Hábitos e fatos: \"I work every day.\", \"Water boils at 100°C.\""
+    "Singular: \"There is a sofa.\", \"There isn't a bed.\", \"Is there a sink?\"",
+    "Plural: \"There are some chairs.\", \"There aren't any books.\"",
+    "\"Are there any windows?\" e respostas: \"Yes, there are.\", \"No, there aren't.\""
   ],
-  "resumoCurto": "Presente simples afirmativo: \"I work\", \"she works\", \"he goes\", \"it has\", o \"-s\" com \"he/she/it\"."
+  "resumoCurto": "O que existe num lugar: \"There is a sofa.\", \"There are some chairs.\", negativas e perguntas."
 }

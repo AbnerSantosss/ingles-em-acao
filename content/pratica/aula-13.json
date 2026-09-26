@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Apontar para o que está perto e longe, um ou mais de um: \"this\", \"that\", \"these\" e \"those\".",
+  "foco": "Escolher entre \"a\" e \"an\" pelo som inicial da palavra, não pela letra: \"a university\", \"an hour\".",
   "conteudoAlvo": [
-    "this, that, these, those",
-    "a pen, pens",
-    "This is a pen. That is a pen.",
-    "These are pens. Those are pens."
+    "a + consonant sound: a painter, a veterinarian",
+    "an + vowel sound: an apple, an animal, an elephant",
+    "a university (sounds like you), an hour (silent h)",
+    "I'm an engineer, she's an artist, it's an umbrella"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What is it?",
+    "What do you do?"
+  ],
   "comoIntegrar": [
-    "Use \"my\" e \"your\" da Aula 07 e os plurais da Aula 12: \"These are my books.\"",
-    "Misture perto e longe, singular e plural, e diga em português onde está o objeto."
+    "Use objetos da Aula 11: \"It's a desk.\", \"It's an eraser.\", \"It's a ruler.\"",
+    "Ponha uma cor da Aula 12 antes do objeto: \"a red apple\", \"an orange umbrella\"."
   ],
   "regrasDaAula": [
-    "\"this\" e \"that\" pedem \"is\"; \"these\" e \"those\" pedem \"are\"."
+    "Vale o som da palavra logo depois: \"a pencil case\", mas \"an orange pencil case\"."
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
     "completar",
-    "traduzir"
+    "responder",
+    "corrigir"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Longe, um só. Escolha \"That\" ou \"Those\": \"___ is your car.\"",
-      "respostaDeReferencia": "That is your car."
+      "enunciado": "Escolha \"a\" ou \"an\" pelo som: \"It's ___ university.\"",
+      "respostaDeReferencia": "It's a university."
     },
     {
       "tipo": "completar",
-      "enunciado": "Perto, mais de um. Complete: \"___ are my books.\"",
-      "respostaDeReferencia": "These are my books."
+      "enunciado": "Complete com \"a\" ou \"an\": \"That's ___ awesome movie.\"",
+      "respostaDeReferencia": "That's an awesome movie."
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Aquelas são canetas.",
-      "respostaDeReferencia": "Those are pens."
+      "tipo": "responder",
+      "enunciado": "Responda como veterinário: \"What do you do?\"",
+      "respostaDeReferencia": "I'm a veterinarian."
     }
   ],
   "limites": [
-    "Sem \"phone\", \"shoes\", \"keys\", \"cup\", \"window\" e \"chairs\": ainda não estudei.",
-    "Sem \"its\", \"our\" e \"their\": use só \"my\", \"your\", \"his\" e \"her\"."
+    "Pegadinha de som só com \"university\" e \"hour\". Sem plurais: isso vem mais adiante.",
+    "Não me cobre \"the\" a fundo: é extra da videoaula. O foco é \"a\" e \"an\"."
   ],
-  "primeiraQuestao": "Vamos começar pelo que está perto. Complete: \"___ is a pen.\" Entra \"this\" ou \"that\"?",
+  "primeiraQuestao": "Vamos começar pelo som. Qual é o certo: \"a apple\" ou \"an apple\"?",
   "resumoAutorizado": [
-    "Perto: \"this\" (um) e \"these\" (mais de um); longe: \"that\" e \"those\".",
-    "Singular com \"is\": \"This is a pen.\", \"That is your car.\"",
-    "Plural com \"are\": \"These are pens.\", \"Those are your cars.\""
+    "\"a\" antes de som de consoante: \"a veterinarian\", \"a university\" (som de \"you\").",
+    "\"an\" antes de som de vogal: \"an apple\", \"an engineer\", \"an hour\" (o \"h\" é mudo).",
+    "Frases: \"I'm a painter.\", \"She's an artist.\", \"It's an orange pencil case.\""
   ],
-  "resumoCurto": "\"this\" e \"that\" com \"is\", \"these\" e \"those\" com \"are\", para coisas perto e longe."
+  "resumoCurto": "Artigos \"a\" e \"an\": o som decide, como em \"a university\", \"an hour\" e \"I'm an engineer.\""
 }

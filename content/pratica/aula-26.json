@@ -2,53 +2,57 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dizer o que está acontecendo agora com \"am\", \"is\", \"are\" e o verbo com \"-ing\".",
+  "foco": "Falar da minha semana com os dias em inglês e \"on\": \"on Monday\", \"on Saturdays\", \"on the weekend\".",
   "conteudoAlvo": [
-    "I + am + ___ing; he / she / it + is + ___ing",
-    "you / we / they + are + ___ing; now, waiting",
-    "studying, working, reading, raining, playing",
-    "write, writing, run, running, sitting, lie, lying"
+    "Monday, Tuesday, Wednesday, Thursday, Friday",
+    "Saturday, Sunday; MON TUE WED THU FRI SAT SUN",
+    "on Mondays, on Saturdays, on / at the weekend",
+    "during the week; What do you do on Sundays?"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What's your favorite day of the week?",
+    "When do you have English classes?"
+  ],
   "comoIntegrar": [
-    "Compare com a rotina da Aula 17: \"I work every day.\" e \"I am working now.\"",
-    "Use as formas curtas da Aula 02: \"I'm working now.\", \"We're waiting.\""
+    "Use a rotina da Aula 23: \"I go shopping on Saturdays.\", \"Do you watch TV on Sundays?\"",
+    "Use \"he\" e \"she\" da Aula 25: \"She works during the week.\", \"He doesn't work on Sundays.\""
   ],
   "regrasDaAula": [
-    "Nunca tire o \"am\", \"is\" ou \"are\": \"She is working.\", nunca \"She working.\""
+    "Dia da semana tem letra maiúscula e vem com \"on\": \"on Monday\", \"on Saturdays\"."
   ],
   "tiposDeExercicio": [
-    "escolher",
+    "identificar",
     "completar",
-    "transformar",
-    "traduzir"
+    "traduzir",
+    "responder"
   ],
   "exemplos": [
     {
+      "tipo": "identificar",
+      "enunciado": "Diga o dia completo desta abreviação: \"WED\".",
+      "respostaDeReferencia": "Wednesday"
+    },
+    {
       "tipo": "completar",
-      "enunciado": "Complete com \"study\" no \"-ing\": \"I am ___ now.\"",
-      "respostaDeReferencia": "I am studying now."
+      "enunciado": "Complete: \"Samantha cleans her house ___ the weekend.\"",
+      "respostaDeReferencia": "Samantha cleans her house on the weekend."
     },
     {
-      "tipo": "transformar",
-      "enunciado": "Diga que está acontecendo agora: \"She works.\"",
-      "respostaDeReferencia": "She is working now."
-    },
-    {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Está chovendo.",
-      "respostaDeReferencia": "It is raining."
+      "tipo": "responder",
+      "enunciado": "Responda com uma frase completa: \"What do you do on Saturdays?\"",
+      "respostaDeReferencia": "I go to the beach on Saturdays."
     }
   ],
   "limites": [
-    "Só a afirmativa: a negativa e as perguntas no \"-ing\" ainda não estudei.",
-    "Palavras só as que já vi: \"park\", \"letter\", \"soccer\" e \"watching TV\" ainda não estudei."
+    "Sem meses e datas: \"January\" e os outros meses vêm mais adiante.",
+    "Sem \"today\", \"tomorrow\", \"next week\", \"always\" e \"never\": ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"I\". Complete: \"I ___ studying.\" Qual forma do verbo entra no espaço?",
+  "primeiraQuestao": "Vamos começar pelos dias. Como se diz segunda-feira em inglês?",
   "resumoAutorizado": [
-    "\"I am studying.\", \"She is reading.\", \"They are playing.\", \"It is raining.\"",
-    "\"-ing\": \"working\", \"writing\", \"running\", \"sitting\", \"lying\", \"waiting\".",
-    "Agora ou rotina: \"I am working now.\" e \"I work every day.\""
+    "Dias: \"Monday\" a \"Sunday\", com letra maiúscula; \"MON\", \"TUE\", \"WED\".",
+    "\"on Monday\", \"on Saturdays\", \"during the week\", \"on the weekend\".",
+    "Rotina: \"Adam studies English on Tuesdays.\", \"What do you do on Saturdays?\""
   ],
-  "resumoCurto": "Presente contínuo: \"am/is/are\" + verbo com \"-ing\" para o que acontece agora: \"I am working now.\""
+  "resumoCurto": "Dias da semana: \"Monday\" a \"Sunday\", abreviações e \"on\": \"on Mondays\", \"on the weekend\"."
 }
+

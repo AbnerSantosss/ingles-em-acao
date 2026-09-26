@@ -238,9 +238,9 @@
       "clip": {
         "id": "lesson_041_audio_022",
         "alvo": "texto",
-        "ancora": "see",
-        "texto": "see",
-        "src": "/audio/aula-41/lesson_041_audio_022.89279365.mp3",
+        "ancora": "saw",
+        "texto": "saw",
+        "src": "/audio/aula-41/lesson_041_audio_022.ead8f1dc.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -249,10 +249,10 @@
       "clip": {
         "id": "lesson_041_audio_023",
         "alvo": "texto",
-        "ancora": "saw",
-        "texto": "saw",
-        "src": "/audio/aula-41/lesson_041_audio_023.ead8f1dc.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "They went to the shopping mall together.",
+        "texto": "They went to the shopping mall together.",
+        "src": "/audio/aula-41/lesson_041_audio_023.a202cbfe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -260,10 +260,11 @@
       "clip": {
         "id": "lesson_041_audio_024",
         "alvo": "texto",
-        "ancora": "They went to the shopping mall together.",
-        "texto": "They went to the shopping mall together.",
-        "src": "/audio/aula-41/lesson_041_audio_024.a202cbfe.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "I had a lot of friends when I was a child.",
+        "texto": "I had a lot of friends when I was a child.",
+        "src": "/audio/aula-41/lesson_041_audio_024.fa6ffc9e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
@@ -271,9 +272,9 @@
       "clip": {
         "id": "lesson_041_audio_025",
         "alvo": "texto",
-        "ancora": "I had a lot of friends when I was a child.",
-        "texto": "I had a lot of friends when I was a child.",
-        "src": "/audio/aula-41/lesson_041_audio_025.fa6ffc9e.mp3",
+        "ancora": "Their mom heard when they talked to each other.",
+        "texto": "Their mom heard when they talked to each other.",
+        "src": "/audio/aula-41/lesson_041_audio_025.b79b9b16.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT",
         "lento": true
       }
@@ -283,11 +284,10 @@
       "clip": {
         "id": "lesson_041_audio_026",
         "alvo": "texto",
-        "ancora": "Their mom heard when they talked to each other.",
-        "texto": "Their mom heard when they talked to each other.",
-        "src": "/audio/aula-41/lesson_041_audio_026.b79b9b16.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT",
-        "lento": true
+        "ancora": "She knew very well what she wanted.",
+        "texto": "She knew very well what she wanted.",
+        "src": "/audio/aula-41/lesson_041_audio_026.e519cc5b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -295,9 +295,9 @@
       "clip": {
         "id": "lesson_041_audio_027",
         "alvo": "texto",
-        "ancora": "She knew very well what she wanted.",
-        "texto": "She knew very well what she wanted.",
-        "src": "/audio/aula-41/lesson_041_audio_027.e519cc5b.mp3",
+        "ancora": "They made lunch together.",
+        "texto": "They made lunch together.",
+        "src": "/audio/aula-41/lesson_041_audio_027.2b01ffef.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -306,10 +306,11 @@
       "clip": {
         "id": "lesson_041_audio_028",
         "alvo": "texto",
-        "ancora": "They made lunch together.",
-        "texto": "They made lunch together.",
-        "src": "/audio/aula-41/lesson_041_audio_028.2b01ffef.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Lisa met her best friend a long time ago.",
+        "texto": "Lisa met her best friend a long time ago.",
+        "src": "/audio/aula-41/lesson_041_audio_028.72f4f8a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
@@ -317,22 +318,21 @@
       "clip": {
         "id": "lesson_041_audio_029",
         "alvo": "texto",
-        "ancora": "Lisa met her best friend a long time ago.",
-        "texto": "Lisa met her best friend a long time ago.",
-        "src": "/audio/aula-41/lesson_041_audio_029.72f4f8a4.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT",
-        "lento": true
+        "ancora": "They saw a great movie last night.",
+        "texto": "They saw a great movie last night.",
+        "src": "/audio/aula-41/lesson_041_audio_029.c54f0b78.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_041_audio_030",
         "alvo": "texto",
-        "ancora": "They saw a great movie last night.",
-        "texto": "They saw a great movie last night.",
-        "src": "/audio/aula-41/lesson_041_audio_030.c54f0b78.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "TAKE → TOOK",
+        "texto": "take. took",
+        "src": "/audio/aula-41/lesson_041_audio_030.476d4697.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -340,20 +340,9 @@
       "clip": {
         "id": "lesson_041_audio_031",
         "alvo": "texto",
-        "ancora": "TAKE → TOOK",
-        "texto": "take. took",
-        "src": "/audio/aula-41/lesson_041_audio_031.476d4697.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 4,
-      "clip": {
-        "id": "lesson_041_audio_032",
-        "alvo": "texto",
         "ancora": "My son took a shower a few minutes ago.",
         "texto": "My son took a shower a few minutes ago.",
-        "src": "/audio/aula-41/lesson_041_audio_032.4ebebcbf.mp3",
+        "src": "/audio/aula-41/lesson_041_audio_031.4ebebcbf.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT",
         "lento": true
       }
@@ -361,12 +350,23 @@
     {
       "pagina": 4,
       "clip": {
-        "id": "lesson_041_audio_033",
+        "id": "lesson_041_audio_032",
         "alvo": "texto",
         "ancora": "COME → CAME",
         "texto": "come. came",
-        "src": "/audio/aula-41/lesson_041_audio_033.908a5bce.mp3",
+        "src": "/audio/aula-41/lesson_041_audio_032.908a5bce.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_041_audio_033",
+        "alvo": "texto",
+        "ancora": "They came to my house last Friday.",
+        "texto": "They came to my house last Friday.",
+        "src": "/audio/aula-41/lesson_041_audio_033.bc980af9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -374,21 +374,21 @@
       "clip": {
         "id": "lesson_041_audio_034",
         "alvo": "texto",
-        "ancora": "They came to my house last Friday.",
-        "texto": "They came to my house last Friday.",
-        "src": "/audio/aula-41/lesson_041_audio_034.bc980af9.mp3",
+        "ancora": "She read those books last year.",
+        "texto": "She read those books last year.",
+        "src": "/audio/aula-41/lesson_041_audio_034.0c2c74fb.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 10,
       "clip": {
         "id": "lesson_041_audio_035",
         "alvo": "texto",
-        "ancora": "She read those books last year.",
-        "texto": "She read those books last year.",
-        "src": "/audio/aula-41/lesson_041_audio_035.0c2c74fb.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "took",
+        "texto": "took",
+        "src": "/audio/aula-41/lesson_041_audio_035.e4c1284f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -396,20 +396,9 @@
       "clip": {
         "id": "lesson_041_audio_036",
         "alvo": "texto",
-        "ancora": "took",
-        "texto": "took",
-        "src": "/audio/aula-41/lesson_041_audio_036.e4c1284f.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 10,
-      "clip": {
-        "id": "lesson_041_audio_037",
-        "alvo": "texto",
         "ancora": "came",
         "texto": "came",
-        "src": "/audio/aula-41/lesson_041_audio_037.73845d05.mp3",
+        "src": "/audio/aula-41/lesson_041_audio_036.73845d05.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     }

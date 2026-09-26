@@ -2,13 +2,13 @@
   "aula": 8,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_008_audio_001",
         "alvo": "texto",
-        "ancora": "1 one",
-        "texto": "one",
-        "src": "/audio/aula-08/lesson_008_audio_001.6d623840.mp3",
+        "ancora": "WATCH",
+        "texto": "watch",
+        "src": "/audio/aula-08/lesson_008_audio_001.2f97f821.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -17,9 +17,9 @@
       "clip": {
         "id": "lesson_008_audio_002",
         "alvo": "texto",
-        "ancora": "2 two",
-        "texto": "two",
-        "src": "/audio/aula-08/lesson_008_audio_002.48a26cd9.mp3",
+        "ancora": "SMARTPHONE",
+        "texto": "smartphone",
+        "src": "/audio/aula-08/lesson_008_audio_002.fc7b4b2a.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -28,11 +28,10 @@
       "clip": {
         "id": "lesson_008_audio_003",
         "alvo": "texto",
-        "ancora": "3 three",
-        "texto": "three",
-        "src": "/audio/aula-08/lesson_008_audio_003.2ae8ab40.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "DOG",
+        "texto": "dog",
+        "src": "/audio/aula-08/lesson_008_audio_003.25d4d040.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -40,9 +39,9 @@
       "clip": {
         "id": "lesson_008_audio_004",
         "alvo": "texto",
-        "ancora": "4 four",
-        "texto": "four",
-        "src": "/audio/aula-08/lesson_008_audio_004.ec4250ce.mp3",
+        "ancora": "HOUSE",
+        "texto": "house",
+        "src": "/audio/aula-08/lesson_008_audio_004.fde5ecc5.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -51,176 +50,177 @@
       "clip": {
         "id": "lesson_008_audio_005",
         "alvo": "texto",
-        "ancora": "5 five",
-        "texto": "five",
-        "src": "/audio/aula-08/lesson_008_audio_005.1ae2fadb.mp3",
+        "ancora": "BOOK",
+        "texto": "book",
+        "src": "/audio/aula-08/lesson_008_audio_005.6213ea91.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_006",
         "alvo": "texto",
-        "ancora": "6 six",
-        "texto": "six",
-        "src": "/audio/aula-08/lesson_008_audio_006.d9c611ea.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose watch is this?",
+        "texto": "Whose watch is this?",
+        "src": "/audio/aula-08/lesson_008_audio_006.af58f82a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_007",
         "alvo": "texto",
-        "ancora": "7 seven",
-        "texto": "seven",
-        "src": "/audio/aula-08/lesson_008_audio_007.1f698789.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s Mike’s watch.",
+        "texto": "It's Mike's watch.",
+        "src": "/audio/aula-08/lesson_008_audio_007.fda0b64f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_008",
-        "alvo": "texto",
-        "ancora": "8 eight",
-        "texto": "eight",
-        "src": "/audio/aula-08/lesson_008_audio_008.d6bc1d16.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 2,
-      "clip": {
-        "id": "lesson_008_audio_009",
-        "alvo": "texto",
-        "ancora": "9 nine",
-        "texto": "nine",
-        "src": "/audio/aula-08/lesson_008_audio_009.0aba72e9.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 2,
-      "clip": {
-        "id": "lesson_008_audio_010",
-        "alvo": "texto",
-        "ancora": "10 ten",
-        "texto": "ten",
-        "src": "/audio/aula-08/lesson_008_audio_010.b70a3fd0.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 2,
-      "clip": {
-        "id": "lesson_008_audio_011",
-        "alvo": "texto",
-        "ancora": "11 eleven",
-        "texto": "eleven",
-        "src": "/audio/aula-08/lesson_008_audio_011.c19f1657.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 2,
-      "clip": {
-        "id": "lesson_008_audio_012",
-        "alvo": "texto",
-        "ancora": "12 twelve",
-        "texto": "twelve",
-        "src": "/audio/aula-08/lesson_008_audio_012.83b50abe.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
-      }
-    },
-    {
-      "pagina": 2,
-      "clip": {
-        "id": "lesson_008_audio_013",
-        "alvo": "texto",
-        "ancora": "13 thirteen",
-        "texto": "thirteen",
-        "src": "/audio/aula-08/lesson_008_audio_013.3bb885a7.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
+        "alvo": "bloco",
+        "ancora": "Ana: Whose watch is this?",
+        "texto": "Whose watch is this?\nIt's Mike's watch.",
+        "src": "/audio/aula-08/lesson_008_audio_008.85ed2b27.mp3",
+        "categoria": "DIALOGUE",
         "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_009",
+        "alvo": "bloco",
+        "ancora": "Ana: Whose smartphone is this?",
+        "texto": "Whose smartphone is this?\nIt's Richard's smartphone.",
+        "src": "/audio/aula-08/lesson_008_audio_009.501b3601.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_010",
+        "alvo": "texto",
+        "ancora": "LAPTOP",
+        "texto": "laptop",
+        "src": "/audio/aula-08/lesson_008_audio_010.74dfe405.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_011",
+        "alvo": "texto",
+        "ancora": "Whose laptop is this?",
+        "texto": "Whose laptop is this?",
+        "src": "/audio/aula-08/lesson_008_audio_011.c76eebbe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_012",
+        "alvo": "texto",
+        "ancora": "It’s Peter’s laptop.",
+        "texto": "It's Peter's laptop.",
+        "src": "/audio/aula-08/lesson_008_audio_012.4cf7f706.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_008_audio_013",
+        "alvo": "texto",
+        "ancora": "BAG",
+        "texto": "bag",
+        "src": "/audio/aula-08/lesson_008_audio_013.7781a59e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_014",
         "alvo": "texto",
-        "ancora": "14 fourteen",
-        "texto": "fourteen",
-        "src": "/audio/aula-08/lesson_008_audio_014.9fd88243.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose bag is this?",
+        "texto": "Whose bag is this?",
+        "src": "/audio/aula-08/lesson_008_audio_014.d91c88a2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_015",
         "alvo": "texto",
-        "ancora": "15 fifteen",
-        "texto": "fifteen",
-        "src": "/audio/aula-08/lesson_008_audio_015.ec725518.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s Sarah’s bag.",
+        "texto": "It's Sarah's bag.",
+        "src": "/audio/aula-08/lesson_008_audio_015.b2144755.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_016",
         "alvo": "texto",
-        "ancora": "16 sixteen",
-        "texto": "sixteen",
-        "src": "/audio/aula-08/lesson_008_audio_016.446854ab.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose book is this?",
+        "texto": "Whose book is this?",
+        "src": "/audio/aula-08/lesson_008_audio_016.29af85df.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_017",
         "alvo": "texto",
-        "ancora": "17 seventeen",
-        "texto": "seventeen",
-        "src": "/audio/aula-08/lesson_008_audio_017.27bd21ea.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s Emma’s book.",
+        "texto": "It's Emma's book.",
+        "src": "/audio/aula-08/lesson_008_audio_017.33b1bebc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_018",
         "alvo": "texto",
-        "ancora": "18 eighteen",
-        "texto": "eighteen",
-        "src": "/audio/aula-08/lesson_008_audio_018.5ba650e6.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose dog is this?",
+        "texto": "Whose dog is this?",
+        "src": "/audio/aula-08/lesson_008_audio_018.e86a5fa4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_019",
         "alvo": "texto",
-        "ancora": "19 nineteen",
-        "texto": "nineteen",
-        "src": "/audio/aula-08/lesson_008_audio_019.d3aa24c3.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s Katie’s dog.",
+        "texto": "It's Katie's dog.",
+        "src": "/audio/aula-08/lesson_008_audio_019.29e89f6c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_008_audio_020",
         "alvo": "texto",
-        "ancora": "20 twenty",
-        "texto": "twenty",
-        "src": "/audio/aula-08/lesson_008_audio_020.e18cceed.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose watch is this? → It’s Mike’s watch.",
+        "texto": "Whose watch is this? It's Mike's watch.",
+        "src": "/audio/aula-08/lesson_008_audio_020.c1e58d42.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -228,10 +228,10 @@
       "clip": {
         "id": "lesson_008_audio_021",
         "alvo": "texto",
-        "ancora": "one hundred",
-        "texto": "one hundred",
-        "src": "/audio/aula-08/lesson_008_audio_021.e6e57f32.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose bag is this? → It’s Sarah’s bag.",
+        "texto": "Whose bag is this? It's Sarah's bag.",
+        "src": "/audio/aula-08/lesson_008_audio_021.63bbf082.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -239,10 +239,10 @@
       "clip": {
         "id": "lesson_008_audio_022",
         "alvo": "texto",
-        "ancora": "42 → forty-two · 87 → eighty-seven",
-        "texto": "forty-two. eighty-seven",
-        "src": "/audio/aula-08/lesson_008_audio_022.fa5435d0.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Whose book is this? → It’s Emma’s book.",
+        "texto": "Whose book is this? It's Emma's book.",
+        "src": "/audio/aula-08/lesson_008_audio_022.fe91b6c8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -250,21 +250,123 @@
       "clip": {
         "id": "lesson_008_audio_023",
         "alvo": "texto",
-        "ancora": "I’m thirty years old.",
-        "texto": "I'm thirty years old.",
-        "src": "/audio/aula-08/lesson_008_audio_023.d84701a6.mp3",
+        "ancora": "THE CAR",
+        "texto": "the car",
+        "src": "/audio/aula-08/lesson_008_audio_023.70297798.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_008_audio_024",
+        "alvo": "bloco",
+        "ancora": "Sara: What is this?",
+        "texto": "What is this?\nIt's Sarah's backpack.\nIs this your notebook?\nYes, it is. It's my notebook.\nWhen is your brother's birthday?\nIt's on May twelfth.",
+        "src": "/audio/aula-08/lesson_008_audio_024.faedac56.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_008_audio_025",
+        "alvo": "texto",
+        "ancora": "one baby → the baby’s crib",
+        "texto": "one baby. the baby's crib",
+        "src": "/audio/aula-08/lesson_008_audio_025.83cc6a36.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 4,
+      "pagina": 6,
       "clip": {
-        "id": "lesson_008_audio_024",
+        "id": "lesson_008_audio_026",
         "alvo": "texto",
-        "ancora": "It’s fifteen dollars.",
-        "texto": "It's fifteen dollars.",
-        "src": "/audio/aula-08/lesson_008_audio_024.4d40666f.mp3",
+        "ancora": "two babies → the babies’ crib",
+        "texto": "two babies. the babies' crib",
+        "src": "/audio/aula-08/lesson_008_audio_026.f924f256.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_008_audio_027",
+        "alvo": "texto",
+        "ancora": "one baby / blanket → the baby’s blanket",
+        "texto": "one baby. blanket. the baby's blanket",
+        "src": "/audio/aula-08/lesson_008_audio_027.724d2fe6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_008_audio_028",
+        "alvo": "texto",
+        "ancora": "two babies / toys → the babies’ toys",
+        "texto": "two babies. toys. the babies' toys",
+        "src": "/audio/aula-08/lesson_008_audio_028.c93fd900.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_008_audio_029",
+        "alvo": "texto",
+        "ancora": "two babies / room → the babies’ room",
+        "texto": "two babies. room. the babies' room",
+        "src": "/audio/aula-08/lesson_008_audio_029.a187cb53.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_008_audio_030",
+        "alvo": "texto",
+        "ancora": "baby",
+        "texto": "baby",
+        "src": "/audio/aula-08/lesson_008_audio_030.6a4563ac.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_008_audio_031",
+        "alvo": "texto",
+        "ancora": "babies",
+        "texto": "babies",
+        "src": "/audio/aula-08/lesson_008_audio_031.1cff2767.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_008_audio_032",
+        "alvo": "texto",
+        "ancora": "dogs",
+        "texto": "dogs",
+        "src": "/audio/aula-08/lesson_008_audio_032.29903360.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_008_audio_033",
+        "alvo": "bloco",
+        "ancora": "Ana: Hi, Daniel!",
+        "texto": "Hi, Daniel!\nHi, Ana!\nWhose backpack is this?\nIt's Lucas's backpack.\nAnd who is Lucas?\nHe is Emma's brother.",
+        "src": "/audio/aula-08/lesson_008_audio_033.589a4abc.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

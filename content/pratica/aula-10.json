@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Nomear cores e formas e descrever objetos simples, com a cor antes do objeto: \"a red car\".",
+  "foco": "Dizer e soletrar meu nome em inglês, com \"first name\", \"middle name\", \"last name\" e as letras de \"A to Z\".",
   "conteudoAlvo": [
-    "red, blue, green, yellow, black, white, orange",
-    "purple, pink, brown, gray, car, house, shirt",
-    "circle, square, triangle, rectangle, star, heart",
-    "It's a red car. The circle is blue."
+    "alphabet: letter names from A to Z, zee x zed",
+    "full name, first name, middle name, last name",
+    "How do you spell + ___?, Can you spell + ___?",
+    "vowels, consonants, ID, passport, computer, mirror"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What's your name?",
+    "How do you spell that?"
+  ],
   "comoIntegrar": [
-    "Use \"it's\", \"is\" e \"are\" da Aula 02: \"It's a red car.\", \"They are green.\"",
-    "Junte cor e forma na mesma frase: \"The star is yellow.\", \"It's a red heart.\""
+    "Use \"his\" e \"her\" da Aula 09 e soletre: \"Her name is Sarah. S-A-R-A-H.\"",
+    "Soletre países da Aula 06: \"I am from Japan.\", \"How do you spell it?\", \"J-A-P-A-N.\""
   ],
   "regrasDaAula": [
-    "A cor vem antes do objeto: \"a red car\", nunca \"a car red\"."
+    "\"Spell\" é soletrar, letra por letra. Vogais: \"A, E, I, O, U\"; as outras são consoantes."
   ],
   "tiposDeExercicio": [
     "identificar",
     "escolher",
     "completar",
-    "traduzir"
+    "responder"
   ],
   "exemplos": [
     {
-      "tipo": "escolher",
-      "enunciado": "Escolha a ordem certa: \"a house white\" ou \"a white house\".",
-      "respostaDeReferencia": "a white house"
+      "tipo": "identificar",
+      "enunciado": "Em \"Robert Clarkson Wilson\", qual é o \"middle name\"?",
+      "respostaDeReferencia": "Clarkson"
     },
     {
       "tipo": "completar",
-      "enunciado": "Complete com a cor azul: \"The circle is ___.\"",
-      "respostaDeReferencia": "The circle is blue."
+      "enunciado": "Complete a pergunta: \"How do you ___ your first name?\"",
+      "respostaDeReferencia": "How do you spell your first name?"
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: É um carro vermelho.",
-      "respostaDeReferencia": "It's a red car."
+      "tipo": "responder",
+      "enunciado": "Responda soletrando letra por letra: \"How do you spell Canada?\"",
+      "respostaDeReferencia": "C-A-N-A-D-A."
     }
   ],
   "limites": [
-    "Sem \"an\", \"favorite\", \"phone\" e \"table\": ainda não estudei.",
-    "Sem plural de objetos, como \"cars\" e \"stars\": um objeto por frase, ou \"they\"."
+    "Sem símbolos de pronúncia: pratico por texto, com as letras escritas e a soletração.",
+    "Só soletro nomes e palavras que já vi. Números e e-mail vêm mais adiante."
   ],
-  "primeiraQuestao": "Vamos começar pelas cores. Como se diz vermelho em inglês?",
+  "primeiraQuestao": "Vamos começar pelo nome. Responda em inglês a \"What's your name?\" e soletre o seu \"first name\".",
   "resumoAutorizado": [
-    "Cores: \"red\", \"blue\", \"green\", \"yellow\", \"black\", \"white\", \"pink\", \"gray\".",
-    "Formas: \"circle\", \"square\", \"triangle\", \"rectangle\", \"star\", \"heart\".",
-    "Cor antes do objeto: \"It's a red car.\", \"a blue house\", \"The circle is blue.\""
+    "Alfabeto de \"A to Z\": \"vowels\" e \"consonants\"; o Z é \"zee\" ou \"zed\".",
+    "Nome: \"full name\", \"first name\", \"middle name\" e \"last name\".",
+    "Soletrar: \"How do you spell that?\", \"Can you spell it?\", \"C-A-N-A-D-A.\""
   ],
-  "resumoCurto": "Cores e formas, com a cor antes do objeto: \"It's a red car.\", \"The circle is blue.\""
+  "resumoCurto": "Alfabeto: as letras de \"A to Z\", as partes do nome e a pergunta \"How do you spell that?\""
 }

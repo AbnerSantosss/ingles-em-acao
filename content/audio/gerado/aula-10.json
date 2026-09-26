@@ -5,231 +5,451 @@
       "pagina": 1,
       "clip": {
         "id": "lesson_010_audio_001",
-        "alvo": "texto",
-        "ancora": "It’s a red car.",
-        "texto": "It's a red car.",
-        "src": "/audio/aula-10/lesson_010_audio_001.4558a205.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "alvo": "bloco",
+        "ancora": "What’s your name?",
+        "texto": "What's your name?\nMy name is Robert Clarkson Wilson.",
+        "src": "/audio/aula-10/lesson_010_audio_001.c7bb6ae6.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     },
     {
-      "pagina": 1,
+      "pagina": 2,
       "clip": {
         "id": "lesson_010_audio_002",
         "alvo": "texto",
-        "ancora": "The circle is blue.",
-        "texto": "The circle is blue.",
-        "src": "/audio/aula-10/lesson_010_audio_002.e74141ba.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Full name (as in your ID or passport)",
+        "texto": "Full name (as in your ID or passport)",
+        "src": "/audio/aula-10/lesson_010_audio_002.5a1b4274.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
-      "pagina": 1,
+      "pagina": 2,
       "clip": {
         "id": "lesson_010_audio_003",
-        "alvo": "texto",
-        "ancora": "They are green.",
-        "texto": "They are green.",
-        "src": "/audio/aula-10/lesson_010_audio_003.d1ca721b.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "alvo": "bloco",
+        "ancora": "What’s your name?",
+        "texto": "What's your name?\nMy name is Robert Clarkson Wilson.",
+        "src": "/audio/aula-10/lesson_010_audio_003.c7bb6ae6.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_010_audio_004",
-        "alvo": "texto",
-        "ancora": "red",
-        "texto": "red",
-        "src": "/audio/aula-10/lesson_010_audio_004.e81ced52.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "alvo": "bloco",
+        "ancora": "What’s your name?",
+        "texto": "What's your name?\nMy name is Robert Clarkson Wilson.\nHow do you spell your first name?\nR, oh, B, ee, R, T.\nHow do you spell your last name?\nW, I, L, S, oh, N.",
+        "src": "/audio/aula-10/lesson_010_audio_004.139ab448.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_005",
         "alvo": "texto",
-        "ancora": "blue",
-        "texto": "blue",
-        "src": "/audio/aula-10/lesson_010_audio_005.056c89ae.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "A",
+        "texto": "A",
+        "src": "/audio/aula-10/lesson_010_audio_005.6728c1f5.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_006",
         "alvo": "texto",
-        "ancora": "green",
-        "texto": "green",
-        "src": "/audio/aula-10/lesson_010_audio_006.d745aa19.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "B",
+        "texto": "B",
+        "src": "/audio/aula-10/lesson_010_audio_006.02d056f8.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_007",
         "alvo": "texto",
-        "ancora": "yellow",
-        "texto": "yellow",
-        "src": "/audio/aula-10/lesson_010_audio_007.ff1cc6c4.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "C",
+        "texto": "C",
+        "src": "/audio/aula-10/lesson_010_audio_007.093f8db5.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_008",
         "alvo": "texto",
-        "ancora": "black",
-        "texto": "black",
-        "src": "/audio/aula-10/lesson_010_audio_008.b6fe6455.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "D",
+        "texto": "D",
+        "src": "/audio/aula-10/lesson_010_audio_008.dd37bb3b.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_009",
         "alvo": "texto",
-        "ancora": "white",
-        "texto": "white",
-        "src": "/audio/aula-10/lesson_010_audio_009.5056d994.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "E",
+        "texto": "ee",
+        "src": "/audio/aula-10/lesson_010_audio_009.6e42c40b.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_010",
         "alvo": "texto",
-        "ancora": "orange",
-        "texto": "orange",
-        "src": "/audio/aula-10/lesson_010_audio_010.c85b72db.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "F",
+        "texto": "F",
+        "src": "/audio/aula-10/lesson_010_audio_010.062c4f2e.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_011",
         "alvo": "texto",
-        "ancora": "purple",
-        "texto": "purple",
-        "src": "/audio/aula-10/lesson_010_audio_011.f9bcfbfd.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "G",
+        "texto": "G",
+        "src": "/audio/aula-10/lesson_010_audio_011.627e88df.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_012",
         "alvo": "texto",
-        "ancora": "pink",
-        "texto": "pink",
-        "src": "/audio/aula-10/lesson_010_audio_012.1446cc01.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "H",
+        "texto": "H",
+        "src": "/audio/aula-10/lesson_010_audio_012.58d27f5d.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_013",
         "alvo": "texto",
-        "ancora": "brown",
-        "texto": "brown",
-        "src": "/audio/aula-10/lesson_010_audio_013.faeff51c.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "I",
+        "texto": "I",
+        "src": "/audio/aula-10/lesson_010_audio_013.b679b00c.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_014",
         "alvo": "texto",
-        "ancora": "gray",
-        "texto": "gray",
-        "src": "/audio/aula-10/lesson_010_audio_014.4752c757.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "J",
+        "texto": "J",
+        "src": "/audio/aula-10/lesson_010_audio_014.fadf8d4e.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 2,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_015",
         "alvo": "texto",
-        "ancora": "a blue house · a white shirt",
-        "texto": "a blue house. a white shirt",
-        "src": "/audio/aula-10/lesson_010_audio_015.b306f50a.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "K",
+        "texto": "K",
+        "src": "/audio/aula-10/lesson_010_audio_015.5651ef8c.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_016",
         "alvo": "texto",
-        "ancora": "circle",
-        "texto": "circle",
-        "src": "/audio/aula-10/lesson_010_audio_016.3df70b03.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "L",
+        "texto": "L",
+        "src": "/audio/aula-10/lesson_010_audio_016.18f660e5.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_017",
         "alvo": "texto",
-        "ancora": "square",
-        "texto": "square",
-        "src": "/audio/aula-10/lesson_010_audio_017.2f03b9f3.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "M",
+        "texto": "M",
+        "src": "/audio/aula-10/lesson_010_audio_017.3ea5b465.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_018",
         "alvo": "texto",
-        "ancora": "triangle",
-        "texto": "triangle",
-        "src": "/audio/aula-10/lesson_010_audio_018.151678a7.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "E × I",
+        "texto": "See, sit.",
+        "src": "/audio/aula-10/lesson_010_audio_018.e4f1863e.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_010_audio_019",
         "alvo": "texto",
-        "ancora": "rectangle",
-        "texto": "rectangle",
-        "src": "/audio/aula-10/lesson_010_audio_019.f5ae9242.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "G × J",
+        "texto": "Go, joke.",
+        "src": "/audio/aula-10/lesson_010_audio_019.c326187b.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 6,
       "clip": {
         "id": "lesson_010_audio_020",
         "alvo": "texto",
-        "ancora": "star",
-        "texto": "star",
-        "src": "/audio/aula-10/lesson_010_audio_020.c58e14e9.mp3",
+        "ancora": "N",
+        "texto": "N",
+        "src": "/audio/aula-10/lesson_010_audio_020.e027af93.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_021",
+        "alvo": "texto",
+        "ancora": "O",
+        "texto": "oh",
+        "src": "/audio/aula-10/lesson_010_audio_021.813ecfe7.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_022",
+        "alvo": "texto",
+        "ancora": "P",
+        "texto": "P",
+        "src": "/audio/aula-10/lesson_010_audio_022.b8ecb71d.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_023",
+        "alvo": "texto",
+        "ancora": "Q",
+        "texto": "Q",
+        "src": "/audio/aula-10/lesson_010_audio_023.d2bbcb88.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_024",
+        "alvo": "texto",
+        "ancora": "R",
+        "texto": "R",
+        "src": "/audio/aula-10/lesson_010_audio_024.d6c6b8ee.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_025",
+        "alvo": "texto",
+        "ancora": "S",
+        "texto": "S",
+        "src": "/audio/aula-10/lesson_010_audio_025.24b7be46.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_026",
+        "alvo": "texto",
+        "ancora": "T",
+        "texto": "T",
+        "src": "/audio/aula-10/lesson_010_audio_026.135a994d.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_027",
+        "alvo": "texto",
+        "ancora": "U",
+        "texto": "U",
+        "src": "/audio/aula-10/lesson_010_audio_027.a7af6cd4.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_028",
+        "alvo": "texto",
+        "ancora": "V",
+        "texto": "V",
+        "src": "/audio/aula-10/lesson_010_audio_028.93f461e5.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_029",
+        "alvo": "texto",
+        "ancora": "W",
+        "texto": "W",
+        "src": "/audio/aula-10/lesson_010_audio_029.52867285.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_030",
+        "alvo": "texto",
+        "ancora": "X",
+        "texto": "X",
+        "src": "/audio/aula-10/lesson_010_audio_030.ee138dee.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_031",
+        "alvo": "texto",
+        "ancora": "Y",
+        "texto": "Y",
+        "src": "/audio/aula-10/lesson_010_audio_031.f4701f74.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_032",
+        "alvo": "texto",
+        "ancora": "Z",
+        "texto": "Z",
+        "src": "/audio/aula-10/lesson_010_audio_032.7b7c7d7c.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_010_audio_033",
+        "alvo": "texto",
+        "ancora": "American English: Z = zee /ziː/\nBritish English: Z = zed /zed/",
+        "texto": "American English: zee. British English: zed.",
+        "src": "/audio/aula-10/lesson_010_audio_033.18192abf.mp3",
+        "categoria": "PRONUNCIATION_MODEL",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_010_audio_034",
+        "alvo": "texto",
+        "ancora": "computer",
+        "texto": "computer",
+        "src": "/audio/aula-10/lesson_010_audio_034.795483b7.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 7,
       "clip": {
-        "id": "lesson_010_audio_021",
+        "id": "lesson_010_audio_035",
         "alvo": "texto",
-        "ancora": "heart",
-        "texto": "heart",
-        "src": "/audio/aula-10/lesson_010_audio_021.e20cf162.mp3",
+        "ancora": "mirror",
+        "texto": "mirror",
+        "src": "/audio/aula-10/lesson_010_audio_035.0fb17f9b.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_010_audio_036",
+        "alvo": "texto",
+        "ancora": "How do you spell that?",
+        "texto": "How do you spell that?",
+        "src": "/audio/aula-10/lesson_010_audio_036.9e058ebe.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_010_audio_037",
+        "alvo": "texto",
+        "ancora": "Can you spell that?",
+        "texto": "Can you spell that?",
+        "src": "/audio/aula-10/lesson_010_audio_037.297a0a4b.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_010_audio_038",
+        "alvo": "texto",
+        "ancora": "How do you spell it?",
+        "texto": "How do you spell it?",
+        "src": "/audio/aula-10/lesson_010_audio_038.c81dc020.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     }
   ]

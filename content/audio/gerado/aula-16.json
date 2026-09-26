@@ -2,13 +2,13 @@
   "aula": 16,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_016_audio_001",
         "alvo": "texto",
-        "ancora": "in Brazil · in the room",
-        "texto": "in Brazil. in the room",
-        "src": "/audio/aula-16/lesson_016_audio_001.149f779e.mp3",
+        "ancora": "That is the kitchen.",
+        "texto": "That is the kitchen.",
+        "src": "/audio/aula-16/lesson_016_audio_001.5912ee76.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -17,20 +17,20 @@
       "clip": {
         "id": "lesson_016_audio_002",
         "alvo": "texto",
-        "ancora": "on the wall · on the bus",
-        "texto": "on the wall. on the bus",
-        "src": "/audio/aula-16/lesson_016_audio_002.09a594e2.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "garden = jardim",
+        "texto": "garden. jardim",
+        "src": "/audio/aula-16/lesson_016_audio_002.f4706901.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_016_audio_003",
         "alvo": "texto",
-        "ancora": "at school · at the door",
-        "texto": "at school. at the door",
-        "src": "/audio/aula-16/lesson_016_audio_003.b514500f.mp3",
+        "ancora": "Sofa and couch are both correct.",
+        "texto": "Sofa and couch are both correct.",
+        "src": "/audio/aula-16/lesson_016_audio_003.2226ac72.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -39,10 +39,10 @@
       "clip": {
         "id": "lesson_016_audio_004",
         "alvo": "texto",
-        "ancora": "under",
-        "texto": "under",
-        "src": "/audio/aula-16/lesson_016_audio_004.16422232.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "This is a sofa.",
+        "texto": "This is a sofa.",
+        "src": "/audio/aula-16/lesson_016_audio_004.5c8a6473.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -50,43 +50,112 @@
       "clip": {
         "id": "lesson_016_audio_005",
         "alvo": "texto",
-        "ancora": "behind",
-        "texto": "behind",
-        "src": "/audio/aula-16/lesson_016_audio_005.0226d0c2.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "That is the coffee table.",
+        "texto": "That is the coffee table.",
+        "src": "/audio/aula-16/lesson_016_audio_005.3f5d1139.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_016_audio_006",
         "alvo": "texto",
-        "ancora": "in front of",
-        "texto": "in front of",
-        "src": "/audio/aula-16/lesson_016_audio_006.e3ab3e81.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "This is the refrigerator.",
+        "texto": "This is the refrigerator.",
+        "src": "/audio/aula-16/lesson_016_audio_006.a2df628e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_016_audio_007",
         "alvo": "texto",
-        "ancora": "between",
-        "texto": "between",
-        "src": "/audio/aula-16/lesson_016_audio_007.7b0f4f83.mp3",
+        "ancora": "These are cabinets.",
+        "texto": "These are cabinets.",
+        "src": "/audio/aula-16/lesson_016_audio_007.a1a908e8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_016_audio_008",
+        "alvo": "texto",
+        "ancora": "That is the dishwasher.",
+        "texto": "That is the dishwasher.",
+        "src": "/audio/aula-16/lesson_016_audio_008.f598abfc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_016_audio_009",
+        "alvo": "texto",
+        "ancora": "This is the bed.",
+        "texto": "This is the bed.",
+        "src": "/audio/aula-16/lesson_016_audio_009.a161e798.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_016_audio_010",
+        "alvo": "bloco",
+        "ancora": "What’s this?",
+        "texto": "What's this?\nIt's a desk.",
+        "src": "/audio/aula-16/lesson_016_audio_010.95d18ead.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_016_audio_011",
+        "alvo": "texto",
+        "ancora": "This is the sink.\nThat is the shower.\nThis is the toilet.",
+        "texto": "This is the sink. That is the shower. This is the toilet.",
+        "src": "/audio/aula-16/lesson_016_audio_011.991a7243.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_016_audio_012",
+        "alvo": "texto",
+        "ancora": "shower = chuveiro",
+        "texto": "shower. chuveiro",
+        "src": "/audio/aula-16/lesson_016_audio_012.97a7cf94.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 6,
       "clip": {
-        "id": "lesson_016_audio_008",
+        "id": "lesson_016_audio_013",
         "alvo": "texto",
-        "ancora": "near",
-        "texto": "near",
-        "src": "/audio/aula-16/lesson_016_audio_008.18743dce.mp3",
+        "ancora": "sink = pia",
+        "texto": "sink. pia",
+        "src": "/audio/aula-16/lesson_016_audio_013.c43abbf6.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_016_audio_014",
+        "alvo": "bloco",
+        "ancora": "Ana: Is this the living room?",
+        "texto": "Is this the living room?\nYes, it is.\nIs that a sofa?\nYes, it is.\nWhat are these?\nThey're chairs.\nAnd what's that?\nIt's the kitchen.",
+        "src": "/audio/aula-16/lesson_016_audio_014.5d30363f.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

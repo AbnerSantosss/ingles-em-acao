@@ -6,10 +6,10 @@
       "clip": {
         "id": "lesson_027_audio_001",
         "alvo": "texto",
-        "ancora": "Is she studying?",
-        "texto": "Is she studying?",
-        "src": "/audio/aula-27/lesson_027_audio_001.e09fc34d.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "JANUARY",
+        "texto": "January",
+        "src": "/audio/aula-27/lesson_027_audio_001.d19de08f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -17,9 +17,9 @@
       "clip": {
         "id": "lesson_027_audio_002",
         "alvo": "texto",
-        "ancora": "He isn’t studying.",
-        "texto": "He isn't studying.",
-        "src": "/audio/aula-27/lesson_027_audio_002.200be33a.mp3",
+        "ancora": "New Year’s Day is on January 1st.",
+        "texto": "New Year's Day is on January first.",
+        "src": "/audio/aula-27/lesson_027_audio_002.48a6489a.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -28,10 +28,410 @@
       "clip": {
         "id": "lesson_027_audio_003",
         "alvo": "texto",
-        "ancora": "COM WH-\nWhat are you doing? · Where is he going?",
-        "texto": "What are you doing? Where is he going?",
-        "src": "/audio/aula-27/lesson_027_audio_003.f2aefe95.mp3",
+        "ancora": "New Year’s Day is in January.",
+        "texto": "New Year's Day is in January.",
+        "src": "/audio/aula-27/lesson_027_audio_003.4d38a76b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_004",
+        "alvo": "texto",
+        "ancora": "FEBRUARY",
+        "texto": "February",
+        "src": "/audio/aula-27/lesson_027_audio_004.e3ff2efe.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_005",
+        "alvo": "texto",
+        "ancora": "Valentine’s Day is on February 14th.",
+        "texto": "Valentine's Day is on February fourteenth.",
+        "src": "/audio/aula-27/lesson_027_audio_005.98b58e1d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_006",
+        "alvo": "texto",
+        "ancora": "Valentine’s Day is in February.",
+        "texto": "Valentine's Day is in February.",
+        "src": "/audio/aula-27/lesson_027_audio_006.0300c44f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_007",
+        "alvo": "texto",
+        "ancora": "MARCH",
+        "texto": "March",
+        "src": "/audio/aula-27/lesson_027_audio_007.41223cf8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_008",
+        "alvo": "texto",
+        "ancora": "International Women’s Day is on March 8th.",
+        "texto": "International Women's Day is on March eighth.",
+        "src": "/audio/aula-27/lesson_027_audio_008.c6816f97.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_009",
+        "alvo": "texto",
+        "ancora": "International Women’s Day is in March.",
+        "texto": "International Women's Day is in March.",
+        "src": "/audio/aula-27/lesson_027_audio_009.e91db21c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_010",
+        "alvo": "texto",
+        "ancora": "APRIL",
+        "texto": "April",
+        "src": "/audio/aula-27/lesson_027_audio_010.672d1ab8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_011",
+        "alvo": "texto",
+        "ancora": "My vacation starts on April 10th.",
+        "texto": "My vacation starts on April tenth.",
+        "src": "/audio/aula-27/lesson_027_audio_011.c9b89a79.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_012",
+        "alvo": "texto",
+        "ancora": "My vacation starts in April.",
+        "texto": "My vacation starts in April.",
+        "src": "/audio/aula-27/lesson_027_audio_012.d88955af.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_013",
+        "alvo": "texto",
+        "ancora": "Labor Day in Brazil is on May 1st.",
+        "texto": "Labor Day in Brazil is on May first.",
+        "src": "/audio/aula-27/lesson_027_audio_013.1383404c.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_014",
+        "alvo": "texto",
+        "ancora": "Labor Day in Brazil is in May.",
+        "texto": "Labor Day in Brazil is in May.",
+        "src": "/audio/aula-27/lesson_027_audio_014.2ae69f4e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_015",
+        "alvo": "texto",
+        "ancora": "JUNE",
+        "texto": "June",
+        "src": "/audio/aula-27/lesson_027_audio_015.bfb11cc2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_016",
+        "alvo": "texto",
+        "ancora": "Valentine’s Day in Brazil is on June 12th.",
+        "texto": "Valentine's Day in Brazil is on June twelfth.",
+        "src": "/audio/aula-27/lesson_027_audio_016.7446b1aa.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_027_audio_017",
+        "alvo": "texto",
+        "ancora": "Valentine’s Day in Brazil is in June.",
+        "texto": "Valentine's Day in Brazil is in June.",
+        "src": "/audio/aula-27/lesson_027_audio_017.0cd58bea.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_018",
+        "alvo": "texto",
+        "ancora": "IN → MONTH",
+        "texto": "in. month",
+        "src": "/audio/aula-27/lesson_027_audio_018.22ec767e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_019",
+        "alvo": "texto",
+        "ancora": "ON → DATE",
+        "texto": "on. date",
+        "src": "/audio/aula-27/lesson_027_audio_019.cb7d305c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_020",
+        "alvo": "texto",
+        "ancora": "JULY",
+        "texto": "July",
+        "src": "/audio/aula-27/lesson_027_audio_020.2cc96d6e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_021",
+        "alvo": "texto",
+        "ancora": "It’s in July.",
+        "texto": "It's in July.",
+        "src": "/audio/aula-27/lesson_027_audio_021.b7ced32b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_022",
+        "alvo": "texto",
+        "ancora": "It’s on July 7th.",
+        "texto": "It's on July seventh.",
+        "src": "/audio/aula-27/lesson_027_audio_022.ba5464db.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_023",
+        "alvo": "texto",
+        "ancora": "AUGUST",
+        "texto": "August",
+        "src": "/audio/aula-27/lesson_027_audio_023.a6febd04.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_024",
+        "alvo": "texto",
+        "ancora": "Father’s Day in Brazil is in August.",
+        "texto": "Father's Day in Brazil is in August.",
+        "src": "/audio/aula-27/lesson_027_audio_024.6f1c65bc.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_025",
+        "alvo": "texto",
+        "ancora": "SEPTEMBER",
+        "texto": "September",
+        "src": "/audio/aula-27/lesson_027_audio_025.22abc989.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_026",
+        "alvo": "texto",
+        "ancora": "Independence Day in Brazil is on September 7th.",
+        "texto": "Independence Day in Brazil is on September seventh.",
+        "src": "/audio/aula-27/lesson_027_audio_026.b70ac236.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_027",
+        "alvo": "texto",
+        "ancora": "Independence Day in Brazil is in September.",
+        "texto": "Independence Day in Brazil is in September.",
+        "src": "/audio/aula-27/lesson_027_audio_027.19093505.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_028",
+        "alvo": "texto",
+        "ancora": "OCTOBER",
+        "texto": "October",
+        "src": "/audio/aula-27/lesson_027_audio_028.e21f5bf2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_029",
+        "alvo": "texto",
+        "ancora": "Halloween is on October 31st.",
+        "texto": "Halloween is on October thirty-first.",
+        "src": "/audio/aula-27/lesson_027_audio_029.a13bacc7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_030",
+        "alvo": "texto",
+        "ancora": "Halloween is in October.",
+        "texto": "Halloween is in October.",
+        "src": "/audio/aula-27/lesson_027_audio_030.1f48e764.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_031",
+        "alvo": "texto",
+        "ancora": "NOVEMBER",
+        "texto": "November",
+        "src": "/audio/aula-27/lesson_027_audio_031.7cecce39.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_032",
+        "alvo": "texto",
+        "ancora": "Katarine’s birthday is on November 2nd.",
+        "texto": "Katarine's birthday is on November second.",
+        "src": "/audio/aula-27/lesson_027_audio_032.1f63f4c7.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_033",
+        "alvo": "texto",
+        "ancora": "Katarine’s birthday is in November.",
+        "texto": "Katarine's birthday is in November.",
+        "src": "/audio/aula-27/lesson_027_audio_033.fcd849e3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_034",
+        "alvo": "texto",
+        "ancora": "DECEMBER",
+        "texto": "December",
+        "src": "/audio/aula-27/lesson_027_audio_034.ca889f1e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_035",
+        "alvo": "texto",
+        "ancora": "Christmas is on December 25th.",
+        "texto": "Christmas is on December twenty-fifth.",
+        "src": "/audio/aula-27/lesson_027_audio_035.d3c28999.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_027_audio_036",
+        "alvo": "texto",
+        "ancora": "Christmas is in December.",
+        "texto": "Christmas is in December.",
+        "src": "/audio/aula-27/lesson_027_audio_036.4593911f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_027_audio_037",
+        "alvo": "texto",
+        "ancora": "My birthday is in December.",
+        "texto": "My birthday is in December.",
+        "src": "/audio/aula-27/lesson_027_audio_037.c5d6a38e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_027_audio_038",
+        "alvo": "texto",
+        "ancora": "My birthday is on December 1st.",
+        "texto": "My birthday is on December first.",
+        "src": "/audio/aula-27/lesson_027_audio_038.89c15a99.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_027_audio_039",
+        "alvo": "bloco",
+        "ancora": "Mia: When is your birthday?",
+        "texto": "When is your birthday?\nMy birthday is in July. It's on July seventh.\nWhat do you do on your birthday?\nI have dinner with my family.\nWhen is your birthday?\nMy birthday is in November. It's on November second.\nWhat do you do on your birthday?\nI go out with friends.",
+        "src": "/audio/aula-27/lesson_027_audio_039.e5dc76de.mp3",
+        "categoria": "DIALOGUE",
         "lento": true
       }
     }

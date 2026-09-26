@@ -2,51 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dizer a minha profissão com \"I'm a / an\" e perguntar a de outra pessoa com \"What do you do?\".",
+  "foco": "Nomear lugares da cidade e perguntar onde fazer cada coisa com \"Where can you...?\".",
   "conteudoAlvo": [
-    "nurse, driver, salesperson, chef, lawyer, student",
-    "a teacher, a doctor, an engineer, a cook",
-    "I'm + a / an + ___, I work in a school."
+    "drugstore, pharmacy, supermarket, bus stop, hotel",
+    "parking lot, aquarium, shopping mall, museum, park",
+    "movie theater, theater, library, bookstore",
+    "Where can you + buy / borrow / stay? In a + ___"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "go to the movies",
+    "Take the bus at the bus stop."
+  ],
   "comoIntegrar": [
-    "Pergunte \"What do you do?\" e peça a resposta com \"I'm a\" ou \"I'm an\" + profissão.",
-    "Troque o sujeito com o verbo ser que já sei: \"She's a nurse.\", \"He's a lawyer.\""
+    "Use \"There is\" e \"Are there\" da Aula 17: \"There is a museum near the park.\"",
+    "Use o \"-s\" da Aula 25 com lugares: \"She works in an office.\", \"He goes to the park.\""
   ],
   "regrasDaAula": [
-    "Antes da profissão sempre vem \"a\" ou \"an\": \"I'm a doctor.\", nunca \"I'm doctor.\""
+    "\"library\" é biblioteca, onde pego livro emprestado; \"bookstore\" é livraria, onde compro."
   ],
   "tiposDeExercicio": [
+    "identificar",
     "escolher",
-    "completar",
-    "traduzir"
+    "traduzir",
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha \"a\" ou \"an\": \"I'm ___ engineer.\"",
-      "respostaDeReferencia": "I'm an engineer."
-    },
-    {
-      "tipo": "completar",
-      "enunciado": "Complete com o lugar de trabalho do professor: \"I work in a ___.\"",
-      "respostaDeReferencia": "I work in a school."
+      "enunciado": "Escolha o lugar certo: \"We see plays at a ___.\" (\"theater\" ou \"movie theater\")",
+      "respostaDeReferencia": "We see plays at a theater."
     },
     {
       "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Ela é advogada.",
-      "respostaDeReferencia": "She's a lawyer."
+      "enunciado": "Traduza para o inglês: Eu compro remédio na farmácia.",
+      "respostaDeReferencia": "I buy medicine at the drugstore."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda só com o lugar: \"Where can you borrow books?\"",
+      "respostaDeReferencia": "In a library."
     }
   ],
   "limites": [
-    "Só as profissões da aula: sem \"office\", \"hospital\" nem outras profissões.",
-    "Sem o passado (\"I was a student.\"): só o presente."
+    "Sem direções (\"turn left\", \"go straight\", \"across from\"): elas vêm mais adiante.",
+    "Só \"Where can you...?\" pronto: \"can\" e \"can't\" com outros verbos vêm mais adiante."
   ],
-  "primeiraQuestao": "Vamos começar por mim. Complete: \"I'm ___ student.\" Entra \"a\" ou \"an\" no espaço?",
+  "primeiraQuestao": "Vamos começar pela cidade. \"Where can you buy food?\" Qual é o lugar em inglês?",
   "resumoAutorizado": [
-    "Profissões: \"nurse\", \"driver\", \"salesperson\", \"chef\", \"lawyer\", \"student\".",
-    "\"What do you do?\" e a resposta \"I'm a teacher.\", \"I'm an engineer.\"",
-    "Onde trabalho: \"I work in a school.\""
+    "Lugares: \"supermarket\", \"drugstore\", \"hotel\", \"museum\", \"bus stop\", \"park\".",
+    "\"library\" empresta, \"bookstore\" vende; \"theater\" peça, \"movie theater\" filme.",
+    "Pergunta e resposta: \"Where can you buy food?\", \"In a supermarket.\""
   ],
-  "resumoCurto": "Profissões: \"What do you do?\", \"I'm a nurse.\", \"I'm an engineer.\", \"I work in a school.\""
+  "resumoCurto": "Lugares da cidade (\"hotel\", \"library\", \"bookstore\") e a pergunta \"Where can you buy food?\" com \"In a supermarket.\""
 }

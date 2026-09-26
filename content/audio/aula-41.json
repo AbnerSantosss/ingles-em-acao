@@ -401,22 +401,6 @@
       "pagina": 3,
       "local": "Página 3 · table · b3",
       "alvo": "texto",
-      "ancora": "see",
-      "texto": "see",
-      "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
-      "velocidade": "natural",
-      "lento": false,
-      "prioridade": "P0",
-      "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
-    },
-    {
-      "id": "lesson_041_audio_023",
-      "pagina": 3,
-      "local": "Página 3 · table · b3",
-      "alvo": "texto",
       "ancora": "saw",
       "texto": "saw",
       "falas": null,
@@ -429,7 +413,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_041_audio_024",
+      "id": "lesson_041_audio_023",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -445,7 +429,7 @@
       "motivo": "Primeira apresentação no curso (mapa: estruturas)."
     },
     {
-      "id": "lesson_041_audio_025",
+      "id": "lesson_041_audio_024",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -461,7 +445,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_026",
+      "id": "lesson_041_audio_025",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -477,7 +461,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_027",
+      "id": "lesson_041_audio_026",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -493,7 +477,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_028",
+      "id": "lesson_041_audio_027",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -509,7 +493,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_029",
+      "id": "lesson_041_audio_028",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -525,7 +509,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_030",
+      "id": "lesson_041_audio_029",
       "pagina": 3,
       "local": "Página 3 · cards · b4",
       "alvo": "texto",
@@ -541,7 +525,7 @@
       "motivo": "Primeira apresentação no curso (mapa: estruturas)."
     },
     {
-      "id": "lesson_041_audio_031",
+      "id": "lesson_041_audio_030",
       "pagina": 4,
       "local": "Página 4 · cards · b3",
       "alvo": "texto",
@@ -557,7 +541,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_041_audio_032",
+      "id": "lesson_041_audio_031",
       "pagina": 4,
       "local": "Página 4 · cards · b3",
       "alvo": "texto",
@@ -573,7 +557,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_033",
+      "id": "lesson_041_audio_032",
       "pagina": 4,
       "local": "Página 4 · cards · b3",
       "alvo": "texto",
@@ -589,7 +573,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_041_audio_034",
+      "id": "lesson_041_audio_033",
       "pagina": 4,
       "local": "Página 4 · cards · b3",
       "alvo": "texto",
@@ -605,7 +589,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_035",
+      "id": "lesson_041_audio_034",
       "pagina": 4,
       "local": "Página 4 · cards · b3",
       "alvo": "texto",
@@ -621,7 +605,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_041_audio_036",
+      "id": "lesson_041_audio_035",
       "pagina": 10,
       "local": "Página 10 · chips · b4",
       "alvo": "texto",
@@ -637,7 +621,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_041_audio_037",
+      "id": "lesson_041_audio_036",
       "pagina": 10,
       "local": "Página 10 · chips · b4",
       "alvo": "texto",

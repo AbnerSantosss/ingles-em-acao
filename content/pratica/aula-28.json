@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Nomear roupas e dizer o que uso na rotina (\"wear\") e o que estou vestindo agora (\"I'm wearing\").",
+  "foco": "Dizer ordem e posição com os números ordinais: \"first\", \"second\", \"third\", em datas e andares.",
   "conteudoAlvo": [
-    "t-shirt, pants, jeans, dress, skirt, shoes, socks",
-    "jacket, coat, hat, shorts, glasses, a uniform",
-    "I + wear + ___; she wears",
-    "I'm + wearing + ___"
+    "1st first, 2nd second, 3rd third, 4th fourth",
+    "11th eleventh, 12th twelfth, 21st twenty-first",
+    "My birthday is on June 2nd. / the 2nd of June.",
+    "I'm the second one. It's on the third floor."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "When is Christmas?",
+    "What floor is your English class on?"
+  ],
   "comoIntegrar": [
-    "Use as cores da Aula 10 antes da roupa: \"a white t-shirt\", \"black shoes\".",
-    "Misture rotina e agora: \"I wear a uniform.\" e \"I'm wearing jeans.\""
+    "Use os meses da Aula 27 nas datas: \"Christmas is on December 25th.\", \"May 11th\".",
+    "Junte a família da Aula 07 com \"have\": \"I have two sisters.\", \"I'm the first one.\""
   ],
   "regrasDaAula": [
-    "A cor vem antes da roupa: \"a blue shirt\", nunca \"a shirt blue\"."
+    "Final 1, 2 ou 3 leva \"st\", \"nd\", \"rd\"; o resto leva \"th\". 11, 12 e 13 levam \"th\"."
   ],
   "tiposDeExercicio": [
     "escolher",
+    "completar",
     "traduzir",
-    "responder",
-    "corrigir"
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha a certa: \"She wear glasses.\" ou \"She wears glasses.\"",
-      "respostaDeReferencia": "She wears glasses."
+      "enunciado": "Escolha a forma certa para 12: \"12nd\" ou \"12th\"?",
+      "respostaDeReferencia": "12th"
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Estou usando uma camiseta branca.",
-      "respostaDeReferencia": "I'm wearing a white t-shirt."
+      "tipo": "completar",
+      "enunciado": "Complete a data britânica: \"My birthday is on the 2nd ___ June.\"",
+      "respostaDeReferencia": "My birthday is on the 2nd of June."
     },
     {
-      "tipo": "corrigir",
-      "enunciado": "Corrija: \"He is wearing a shirt blue.\"",
-      "respostaDeReferencia": "He is wearing a blue shirt."
+      "tipo": "responder",
+      "enunciado": "Responda com uma frase completa: \"What floor is your English class on?\"",
+      "respostaDeReferencia": "It's on the third floor."
     }
   ],
   "limites": [
-    "Só \"wear\" e \"wearing\": \"put on\", \"favorite\" e \"trousers\" ainda não estudei.",
-    "Sem clima e sem compras: só roupas, cores e o que eu visto."
+    "Sem datas só com números, como \"5/11\": eu escrevo sempre o mês por extenso.",
+    "Títulos e séculos só para ler: \"Elizabeth the Second\". Sem frases no passado."
   ],
-  "primeiraQuestao": "Vamos começar pelos pés. Como se diz sapatos em inglês?",
+  "primeiraQuestao": "Vamos começar pelo pódio. Como se diz primeiro, segundo e terceiro em inglês?",
   "resumoAutorizado": [
-    "\"t-shirt\", \"pants\", \"jeans\", \"dress\", \"skirt\", \"shoes\", \"socks\", \"jacket\".",
-    "\"coat\", \"hat\", \"shorts\", \"glasses\", \"a uniform\"; cor antes: \"a white t-shirt\".",
-    "\"I wear a uniform.\", \"She wears glasses.\", \"I'm wearing jeans.\""
+    "\"first\", \"second\", \"third\"; depois vem \"th\": \"fourth\", \"tenth\", \"hundredth\".",
+    "Casos especiais: \"11th\", \"12th\", \"13th\". Compostos: \"21st\", \"twenty-first\".",
+    "\"My birthday is on June 2nd.\", \"the 2nd of June\", \"It's on the third floor.\""
   ],
-  "resumoCurto": "Roupas (\"t-shirt\", \"jeans\", \"shoes\", \"jacket\") com \"I wear\" para rotina e \"I'm wearing\" para agora."
+  "resumoCurto": "Números ordinais: \"st\", \"nd\", \"rd\" e \"th\", posição (\"I'm the second one.\"), datas e andares."
 }

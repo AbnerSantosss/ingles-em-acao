@@ -123,25 +123,26 @@
       }
     },
     {
-      "pagina": 6,
+      "pagina": 7,
       "clip": {
         "id": "lesson_037_audio_012",
         "alvo": "texto",
-        "ancora": "a pencil",
-        "texto": "a pencil",
-        "src": "/audio/aula-37/lesson_037_audio_012.6ad7bad9.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "I usually drink some water when I go to the kitchen.",
+        "texto": "I usually drink some water when I go to the kitchen.",
+        "src": "/audio/aula-37/lesson_037_audio_012.5eef89ad.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
-      "pagina": 6,
+      "pagina": 7,
       "clip": {
         "id": "lesson_037_audio_013",
         "alvo": "texto",
-        "ancora": "an eraser",
-        "texto": "an eraser",
-        "src": "/audio/aula-37/lesson_037_audio_013.22b31626.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "There aren’t any bananas in this basket.",
+        "texto": "There aren't any bananas in this basket.",
+        "src": "/audio/aula-37/lesson_037_audio_013.59ec1aa3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -149,11 +150,10 @@
       "clip": {
         "id": "lesson_037_audio_014",
         "alvo": "texto",
-        "ancora": "I usually drink some water when I go to the kitchen.",
-        "texto": "I usually drink some water when I go to the kitchen.",
-        "src": "/audio/aula-37/lesson_037_audio_014.5eef89ad.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT",
-        "lento": true
+        "ancora": "There are some bananas on the table.",
+        "texto": "There are some bananas on the table.",
+        "src": "/audio/aula-37/lesson_037_audio_014.44c25964.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -161,31 +161,9 @@
       "clip": {
         "id": "lesson_037_audio_015",
         "alvo": "texto",
-        "ancora": "There aren’t any bananas in this basket.",
-        "texto": "There aren't any bananas in this basket.",
-        "src": "/audio/aula-37/lesson_037_audio_015.59ec1aa3.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
-      }
-    },
-    {
-      "pagina": 7,
-      "clip": {
-        "id": "lesson_037_audio_016",
-        "alvo": "texto",
-        "ancora": "There are some bananas on the table.",
-        "texto": "There are some bananas on the table.",
-        "src": "/audio/aula-37/lesson_037_audio_016.44c25964.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
-      }
-    },
-    {
-      "pagina": 7,
-      "clip": {
-        "id": "lesson_037_audio_017",
-        "alvo": "texto",
         "ancora": "Is there any orange juice in this cup?",
         "texto": "Is there any orange juice in this cup?",
-        "src": "/audio/aula-37/lesson_037_audio_017.55b7c4ae.mp3",
+        "src": "/audio/aula-37/lesson_037_audio_015.55b7c4ae.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT",
         "lento": true
       }
@@ -193,33 +171,55 @@
     {
       "pagina": 8,
       "clip": {
-        "id": "lesson_037_audio_018",
+        "id": "lesson_037_audio_016",
         "alvo": "texto",
         "ancora": "Do you have any lemons?",
         "texto": "Do you have any lemons?",
-        "src": "/audio/aula-37/lesson_037_audio_018.9b151be8.mp3",
+        "src": "/audio/aula-37/lesson_037_audio_016.9b151be8.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
       "pagina": 9,
       "clip": {
-        "id": "lesson_037_audio_019",
+        "id": "lesson_037_audio_017",
         "alvo": "texto",
         "ancora": "Question: Do you have any bananas?",
         "texto": "Do you have any bananas?",
-        "src": "/audio/aula-37/lesson_037_audio_019.497798c9.mp3",
+        "src": "/audio/aula-37/lesson_037_audio_017.497798c9.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
       "pagina": 9,
       "clip": {
-        "id": "lesson_037_audio_020",
+        "id": "lesson_037_audio_018",
         "alvo": "texto",
         "ancora": "Question: Do you have any water?",
         "texto": "Do you have any water?",
-        "src": "/audio/aula-37/lesson_037_audio_020.9775e76b.mp3",
+        "src": "/audio/aula-37/lesson_037_audio_018.9775e76b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_019",
+        "alvo": "texto",
+        "ancora": "A: Do you have any grapes?",
+        "texto": "Do you have any grapes?",
+        "src": "/audio/aula-37/lesson_037_audio_019.9ba227b1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 12,
+      "clip": {
+        "id": "lesson_037_audio_020",
+        "alvo": "texto",
+        "ancora": "B: Yes, we have some grapes.",
+        "texto": "Yes, we have some grapes.",
+        "src": "/audio/aula-37/lesson_037_audio_020.6de439e6.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -228,10 +228,11 @@
       "clip": {
         "id": "lesson_037_audio_021",
         "alvo": "texto",
-        "ancora": "A: Do you have any grapes?",
-        "texto": "Do you have any grapes?",
-        "src": "/audio/aula-37/lesson_037_audio_021.9ba227b1.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "A: I’d like a bag of rice, please.",
+        "texto": "I'd like a bag of rice, please.",
+        "src": "/audio/aula-37/lesson_037_audio_021.e3feac26.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
@@ -239,9 +240,9 @@
       "clip": {
         "id": "lesson_037_audio_022",
         "alvo": "texto",
-        "ancora": "B: Yes, we have some grapes.",
-        "texto": "Yes, we have some grapes.",
-        "src": "/audio/aula-37/lesson_037_audio_022.6de439e6.mp3",
+        "ancora": "A: Would you like some soup?",
+        "texto": "Would you like some soup?",
+        "src": "/audio/aula-37/lesson_037_audio_022.339ba0c2.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -250,11 +251,10 @@
       "clip": {
         "id": "lesson_037_audio_023",
         "alvo": "texto",
-        "ancora": "A: I’d like a bag of rice, please.",
-        "texto": "I'd like a bag of rice, please.",
-        "src": "/audio/aula-37/lesson_037_audio_023.e3feac26.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT",
-        "lento": true
+        "ancora": "B: Yes, please.",
+        "texto": "Yes, please.",
+        "src": "/audio/aula-37/lesson_037_audio_023.206f4597.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -262,9 +262,9 @@
       "clip": {
         "id": "lesson_037_audio_024",
         "alvo": "texto",
-        "ancora": "A: Would you like some soup?",
-        "texto": "Would you like some soup?",
-        "src": "/audio/aula-37/lesson_037_audio_024.339ba0c2.mp3",
+        "ancora": "B: Can I have some water, please?",
+        "texto": "Can I have some water, please?",
+        "src": "/audio/aula-37/lesson_037_audio_024.0e7747fc.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -273,31 +273,9 @@
       "clip": {
         "id": "lesson_037_audio_025",
         "alvo": "texto",
-        "ancora": "B: Yes, please.",
-        "texto": "Yes, please.",
-        "src": "/audio/aula-37/lesson_037_audio_025.206f4597.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
-      }
-    },
-    {
-      "pagina": 12,
-      "clip": {
-        "id": "lesson_037_audio_026",
-        "alvo": "texto",
-        "ancora": "B: Can I have some water, please?",
-        "texto": "Can I have some water, please?",
-        "src": "/audio/aula-37/lesson_037_audio_026.0e7747fc.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
-      }
-    },
-    {
-      "pagina": 12,
-      "clip": {
-        "id": "lesson_037_audio_027",
-        "alvo": "texto",
         "ancora": "lemons",
         "texto": "lemons",
-        "src": "/audio/aula-37/lesson_037_audio_027.016a01fd.mp3",
+        "src": "/audio/aula-37/lesson_037_audio_025.016a01fd.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     }

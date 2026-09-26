@@ -2,13 +2,13 @@
   "aula": 23,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_023_audio_001",
         "alvo": "texto",
-        "ancora": "bread",
-        "texto": "bread",
-        "src": "/audio/aula-23/lesson_023_audio_001.4240a720.mp3",
+        "ancora": "go to bed",
+        "texto": "go to bed",
+        "src": "/audio/aula-23/lesson_023_audio_001.7bd4434b.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -17,9 +17,9 @@
       "clip": {
         "id": "lesson_023_audio_002",
         "alvo": "texto",
-        "ancora": "rice",
-        "texto": "rice",
-        "src": "/audio/aula-23/lesson_023_audio_002.c39e546a.mp3",
+        "ancora": "wake up / get up",
+        "texto": "wake up. get up",
+        "src": "/audio/aula-23/lesson_023_audio_002.c2d88a6e.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -28,9 +28,9 @@
       "clip": {
         "id": "lesson_023_audio_003",
         "alvo": "texto",
-        "ancora": "beans",
-        "texto": "beans",
-        "src": "/audio/aula-23/lesson_023_audio_003.9eea1adf.mp3",
+        "ancora": "take a shower / take a bath",
+        "texto": "take a shower. take a bath",
+        "src": "/audio/aula-23/lesson_023_audio_003.f01b9a42.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -39,9 +39,9 @@
       "clip": {
         "id": "lesson_023_audio_004",
         "alvo": "texto",
-        "ancora": "chicken",
-        "texto": "chicken",
-        "src": "/audio/aula-23/lesson_023_audio_004.86f80e39.mp3",
+        "ancora": "have breakfast",
+        "texto": "have breakfast",
+        "src": "/audio/aula-23/lesson_023_audio_004.5aa2fcbe.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -50,9 +50,9 @@
       "clip": {
         "id": "lesson_023_audio_005",
         "alvo": "texto",
-        "ancora": "meat",
-        "texto": "meat",
-        "src": "/audio/aula-23/lesson_023_audio_005.09e8036a.mp3",
+        "ancora": "get dressed",
+        "texto": "get dressed",
+        "src": "/audio/aula-23/lesson_023_audio_005.d00708a2.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -61,9 +61,9 @@
       "clip": {
         "id": "lesson_023_audio_006",
         "alvo": "texto",
-        "ancora": "fish",
-        "texto": "fish",
-        "src": "/audio/aula-23/lesson_023_audio_006.5642f8fd.mp3",
+        "ancora": "brush your hair / comb your hair",
+        "texto": "brush your hair. comb your hair",
+        "src": "/audio/aula-23/lesson_023_audio_006.f6b13af5.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -72,10 +72,11 @@
       "clip": {
         "id": "lesson_023_audio_007",
         "alvo": "texto",
-        "ancora": "cheese",
-        "texto": "cheese",
-        "src": "/audio/aula-23/lesson_023_audio_007.e5c4269b.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "brush your teeth",
+        "texto": "brush your teeth",
+        "src": "/audio/aula-23/lesson_023_audio_007.fb7af3df.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
       }
     },
     {
@@ -83,86 +84,86 @@
       "clip": {
         "id": "lesson_023_audio_008",
         "alvo": "texto",
-        "ancora": "egg",
-        "texto": "egg",
-        "src": "/audio/aula-23/lesson_023_audio_008.04fa3934.mp3",
+        "ancora": "wake up",
+        "texto": "wake up",
+        "src": "/audio/aula-23/lesson_023_audio_008.2536a003.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_009",
         "alvo": "texto",
-        "ancora": "fruit",
-        "texto": "fruit",
-        "src": "/audio/aula-23/lesson_023_audio_009.fb56e854.mp3",
+        "ancora": "go to work",
+        "texto": "go to work",
+        "src": "/audio/aula-23/lesson_023_audio_009.d5aed516.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_010",
         "alvo": "texto",
-        "ancora": "salad",
-        "texto": "salad",
-        "src": "/audio/aula-23/lesson_023_audio_010.c84e7a66.mp3",
+        "ancora": "go to school",
+        "texto": "go to school",
+        "src": "/audio/aula-23/lesson_023_audio_010.3f1b0352.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_011",
         "alvo": "texto",
-        "ancora": "water",
-        "texto": "water",
-        "src": "/audio/aula-23/lesson_023_audio_011.91514b38.mp3",
+        "ancora": "have lunch",
+        "texto": "have lunch",
+        "src": "/audio/aula-23/lesson_023_audio_011.b1f7e43f.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_012",
         "alvo": "texto",
-        "ancora": "tea",
-        "texto": "tea",
-        "src": "/audio/aula-23/lesson_023_audio_012.9a5d9fa6.mp3",
+        "ancora": "have a snack",
+        "texto": "have a snack",
+        "src": "/audio/aula-23/lesson_023_audio_012.cfbc5812.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_013",
         "alvo": "texto",
-        "ancora": "juice",
-        "texto": "juice",
-        "src": "/audio/aula-23/lesson_023_audio_013.889a4e4b.mp3",
+        "ancora": "do homework",
+        "texto": "do homework",
+        "src": "/audio/aula-23/lesson_023_audio_013.39d34afd.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_014",
         "alvo": "texto",
-        "ancora": "milk",
-        "texto": "milk",
-        "src": "/audio/aula-23/lesson_023_audio_014.89ebfc3c.mp3",
+        "ancora": "go back home",
+        "texto": "go back home",
+        "src": "/audio/aula-23/lesson_023_audio_014.a59ef399.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 3,
       "clip": {
         "id": "lesson_023_audio_015",
         "alvo": "texto",
-        "ancora": "soda",
-        "texto": "soda",
-        "src": "/audio/aula-23/lesson_023_audio_015.baa7db53.mp3",
+        "ancora": "go home",
+        "texto": "go home",
+        "src": "/audio/aula-23/lesson_023_audio_015.6549721e.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -171,10 +172,10 @@
       "clip": {
         "id": "lesson_023_audio_016",
         "alvo": "texto",
-        "ancora": "I’d like a coffee, please.",
-        "texto": "I'd like a coffee, please.",
-        "src": "/audio/aula-23/lesson_023_audio_016.abf381f4.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "go to my house",
+        "texto": "go to my house",
+        "src": "/audio/aula-23/lesson_023_audio_016.e27fc08c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -182,10 +183,10 @@
       "clip": {
         "id": "lesson_023_audio_017",
         "alvo": "texto",
-        "ancora": "How much is it?",
-        "texto": "How much is it?",
-        "src": "/audio/aula-23/lesson_023_audio_017.8c7050aa.mp3",
-        "categoria": "FIXED_CHUNK"
+        "ancora": "go to my apartment",
+        "texto": "go to my apartment",
+        "src": "/audio/aula-23/lesson_023_audio_017.ed6dd474.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -193,10 +194,290 @@
       "clip": {
         "id": "lesson_023_audio_018",
         "alvo": "texto",
-        "ancora": "I like fish. / I don’t like soda.",
-        "texto": "I like fish. I don't like soda.",
-        "src": "/audio/aula-23/lesson_023_audio_018.32920db8.mp3",
+        "ancora": "MEALS",
+        "texto": "meals",
+        "src": "/audio/aula-23/lesson_023_audio_018.afb6bc07.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_023_audio_019",
+        "alvo": "texto",
+        "ancora": "have dinner",
+        "texto": "have dinner",
+        "src": "/audio/aula-23/lesson_023_audio_019.be0daaa6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_020",
+        "alvo": "texto",
+        "ancora": "go shopping",
+        "texto": "go shopping",
+        "src": "/audio/aula-23/lesson_023_audio_020.4cb978b6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_021",
+        "alvo": "texto",
+        "ancora": "go out with friends",
+        "texto": "go out with friends",
+        "src": "/audio/aula-23/lesson_023_audio_021.c02d17af.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_022",
+        "alvo": "texto",
+        "ancora": "watch TV",
+        "texto": "watch TV",
+        "src": "/audio/aula-23/lesson_023_audio_022.62701b08.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_023",
+        "alvo": "texto",
+        "ancora": "go biking",
+        "texto": "go biking",
+        "src": "/audio/aula-23/lesson_023_audio_023.a7dbe698.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_024",
+        "alvo": "texto",
+        "ancora": "walk the dog",
+        "texto": "walk the dog",
+        "src": "/audio/aula-23/lesson_023_audio_024.5bc5afd7.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_025",
+        "alvo": "texto",
+        "ancora": "see a movie",
+        "texto": "see a movie",
+        "src": "/audio/aula-23/lesson_023_audio_025.51bdabed.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_023_audio_026",
+        "alvo": "texto",
+        "ancora": "GO TO THE SHOPPING MALL",
+        "texto": "go to the shopping mall",
+        "src": "/audio/aula-23/lesson_023_audio_026.c8b54333.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_023_audio_027",
+        "alvo": "texto",
+        "ancora": "I live in New York.",
+        "texto": "I live in New York.",
+        "src": "/audio/aula-23/lesson_023_audio_027.4df3e683.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_023_audio_028",
+        "alvo": "texto",
+        "ancora": "They take the bus in the morning.",
+        "texto": "They take the bus in the morning.",
+        "src": "/audio/aula-23/lesson_023_audio_028.e4c026a4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_023_audio_029",
+        "alvo": "texto",
+        "ancora": "I like when we have lunch together.",
+        "texto": "I like when we have lunch together.",
+        "src": "/audio/aula-23/lesson_023_audio_029.d621a136.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_023_audio_030",
+        "alvo": "texto",
+        "ancora": "My friends and I study in the afternoon.",
+        "texto": "My friends and I study in the afternoon.",
+        "src": "/audio/aula-23/lesson_023_audio_030.958ca760.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_023_audio_031",
+        "alvo": "texto",
+        "ancora": "I don’t live in New York.",
+        "texto": "I don't live in New York.",
+        "src": "/audio/aula-23/lesson_023_audio_031.8dbdc965.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_023_audio_032",
+        "alvo": "texto",
+        "ancora": "I don’t like shopping.",
+        "texto": "I don't like shopping.",
+        "src": "/audio/aula-23/lesson_023_audio_032.58bfb2fa.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_023_audio_033",
+        "alvo": "texto",
+        "ancora": "We don’t work in an office.",
+        "texto": "We don't work in an office.",
+        "src": "/audio/aula-23/lesson_023_audio_033.50a48d4c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_023_audio_034",
+        "alvo": "texto",
+        "ancora": "You live in New York. → Do you live in New York?",
+        "texto": "You live in New York. Do you live in New York?",
+        "src": "/audio/aula-23/lesson_023_audio_034.112c7dbd.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_023_audio_035",
+        "alvo": "texto",
+        "ancora": "Do you like salad?",
+        "texto": "Do you like salad?",
+        "src": "/audio/aula-23/lesson_023_audio_035.34940361.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_023_audio_036",
+        "alvo": "texto",
+        "ancora": "Do you take photos every day?",
+        "texto": "Do you take photos every day?",
+        "src": "/audio/aula-23/lesson_023_audio_036.73575736.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_023_audio_037",
+        "alvo": "texto",
+        "ancora": "When do you study English?",
+        "texto": "When do you study English?",
+        "src": "/audio/aula-23/lesson_023_audio_037.a86235bc.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_023_audio_038",
+        "alvo": "texto",
+        "ancora": "Where do you live?",
+        "texto": "Where do you live?",
+        "src": "/audio/aula-23/lesson_023_audio_038.33ff0c53.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_023_audio_039",
+        "alvo": "bloco",
+        "ancora": "Lucas: What time do you get up?",
+        "texto": "What time do you get up?\nI get up at seven. I have breakfast and go to work.\nDo you have lunch at work?\nYes, I do. My friends and I have lunch together.\nDo you go out with friends?\nNo, I don't. I go home and watch TV.",
+        "src": "/audio/aula-23/lesson_023_audio_039.b01a5788.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_023_audio_040",
+        "alvo": "texto",
+        "ancora": "Do you have breakfast?",
+        "texto": "Do you have breakfast?",
+        "src": "/audio/aula-23/lesson_023_audio_040.35d0ddbd.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_023_audio_041",
+        "alvo": "texto",
+        "ancora": "Do you have lunch at home?",
+        "texto": "Do you have lunch at home?",
+        "src": "/audio/aula-23/lesson_023_audio_041.87bf8db5.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_023_audio_042",
+        "alvo": "texto",
+        "ancora": "Do you watch TV?",
+        "texto": "Do you watch TV?",
+        "src": "/audio/aula-23/lesson_023_audio_042.c315998f.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 10,
+      "clip": {
+        "id": "lesson_023_audio_043",
+        "alvo": "texto",
+        "ancora": "Do you go out with friends?",
+        "texto": "Do you go out with friends?",
+        "src": "/audio/aula-23/lesson_023_audio_043.76505b40.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     }
   ]

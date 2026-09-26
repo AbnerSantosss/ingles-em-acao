@@ -6,10 +6,10 @@
       "clip": {
         "id": "lesson_026_audio_001",
         "alvo": "texto",
-        "ancora": "I’m working now.",
-        "texto": "I'm working now.",
-        "src": "/audio/aula-26/lesson_026_audio_001.567c80d5.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Monday",
+        "texto": "Monday",
+        "src": "/audio/aula-26/lesson_026_audio_001.35d9daa4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -17,10 +17,10 @@
       "clip": {
         "id": "lesson_026_audio_002",
         "alvo": "texto",
-        "ancora": "It is raining.",
-        "texto": "It is raining.",
-        "src": "/audio/aula-26/lesson_026_audio_002.f12ce96a.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "MON",
+        "texto": "mon",
+        "src": "/audio/aula-26/lesson_026_audio_002.1d43557c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,65 +28,372 @@
       "clip": {
         "id": "lesson_026_audio_003",
         "alvo": "texto",
-        "ancora": "We’re waiting.",
-        "texto": "We're waiting.",
-        "src": "/audio/aula-26/lesson_026_audio_003.4d154560.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "Tuesday",
+        "texto": "Tuesday",
+        "src": "/audio/aula-26/lesson_026_audio_003.2226b4b1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_026_audio_004",
         "alvo": "texto",
-        "ancora": "work → working",
-        "texto": "work. working",
-        "src": "/audio/aula-26/lesson_026_audio_004.678187c0.mp3",
+        "ancora": "TUE",
+        "texto": "tue",
+        "src": "/audio/aula-26/lesson_026_audio_004.65c8f6dd.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_026_audio_005",
         "alvo": "texto",
-        "ancora": "write → writing",
-        "texto": "write. writing",
-        "src": "/audio/aula-26/lesson_026_audio_005.fe1eb2ca.mp3",
+        "ancora": "Wednesday",
+        "texto": "Wednesday",
+        "src": "/audio/aula-26/lesson_026_audio_005.34cb95cf.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_026_audio_006",
         "alvo": "texto",
-        "ancora": "run → running · sit → sitting",
-        "texto": "run. running. sit. sitting",
-        "src": "/audio/aula-26/lesson_026_audio_006.20081c14.mp3",
+        "ancora": "WED",
+        "texto": "wed",
+        "src": "/audio/aula-26/lesson_026_audio_006.d696beef.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_007",
+        "alvo": "texto",
+        "ancora": "Thursday",
+        "texto": "Thursday",
+        "src": "/audio/aula-26/lesson_026_audio_007.5b8b754e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_008",
+        "alvo": "texto",
+        "ancora": "THU",
+        "texto": "thu",
+        "src": "/audio/aula-26/lesson_026_audio_008.4d774de2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_009",
+        "alvo": "texto",
+        "ancora": "Friday",
+        "texto": "Friday",
+        "src": "/audio/aula-26/lesson_026_audio_009.c66c700a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_010",
+        "alvo": "texto",
+        "ancora": "FRI",
+        "texto": "fri",
+        "src": "/audio/aula-26/lesson_026_audio_010.1c7d6994.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_011",
+        "alvo": "texto",
+        "ancora": "Saturday",
+        "texto": "Saturday",
+        "src": "/audio/aula-26/lesson_026_audio_011.00e069b2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_012",
+        "alvo": "texto",
+        "ancora": "SAT",
+        "texto": "sat",
+        "src": "/audio/aula-26/lesson_026_audio_012.bf0d090c.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_013",
+        "alvo": "texto",
+        "ancora": "Sunday",
+        "texto": "Sunday",
+        "src": "/audio/aula-26/lesson_026_audio_013.a63b2790.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_026_audio_035",
+        "alvo": "texto",
+        "ancora": "SUN",
+        "texto": "sun",
+        "src": "/audio/aula-26/lesson_026_audio_035.f0324982.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
       "pagina": 3,
       "clip": {
-        "id": "lesson_026_audio_007",
+        "id": "lesson_026_audio_014",
         "alvo": "texto",
-        "ancora": "lie → lying",
-        "texto": "lie. lying",
-        "src": "/audio/aula-26/lesson_026_audio_007.0b96b308.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "DURING THE WEEK",
+        "texto": "during the week",
+        "src": "/audio/aula-26/lesson_026_audio_014.e8d00392.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_015",
+        "alvo": "texto",
+        "ancora": "ON THE WEEKEND",
+        "texto": "on the weekend",
+        "src": "/audio/aula-26/lesson_026_audio_015.e28ce98a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_016",
+        "alvo": "texto",
+        "ancora": "at the weekend",
+        "texto": "at the weekend",
+        "src": "/audio/aula-26/lesson_026_audio_016.b31ccff1.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_026_audio_017",
+        "alvo": "texto",
+        "ancora": "I work on Mondays, Tuesdays, Wednesdays, Thursdays and Fridays.",
+        "texto": "I work on Mondays, Tuesdays, Wednesdays, Thursdays and Fridays.",
+        "src": "/audio/aula-26/lesson_026_audio_017.5b5da5f5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
       "pagina": 4,
       "clip": {
-        "id": "lesson_026_audio_008",
+        "id": "lesson_026_audio_018",
         "alvo": "texto",
-        "ancora": "I am working now.",
-        "texto": "I am working now.",
-        "src": "/audio/aula-26/lesson_026_audio_008.e64d9182.mp3",
+        "ancora": "Sandra works during the week, but she doesn’t work on the weekend.",
+        "texto": "Sandra works during the week, but she doesn't work on the weekend.",
+        "src": "/audio/aula-26/lesson_026_audio_018.b883db9f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_026_audio_019",
+        "alvo": "texto",
+        "ancora": "Melissa goes to the beach on Sundays.",
+        "texto": "Melissa goes to the beach on Sundays.",
+        "src": "/audio/aula-26/lesson_026_audio_019.d095a0f4.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_026_audio_020",
+        "alvo": "texto",
+        "ancora": "She doesn’t go to the beach on Saturdays.",
+        "texto": "She doesn't go to the beach on Saturdays.",
+        "src": "/audio/aula-26/lesson_026_audio_020.0bf36677.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_026_audio_021",
+        "alvo": "texto",
+        "ancora": "When do you go to the beach?",
+        "texto": "When do you go to the beach?",
+        "src": "/audio/aula-26/lesson_026_audio_021.833da31d.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_022",
+        "alvo": "texto",
+        "ancora": "Josh visits his parents on Mondays, Wednesdays and Fridays.",
+        "texto": "Josh visits his parents on Mondays, Wednesdays and Fridays.",
+        "src": "/audio/aula-26/lesson_026_audio_022.c81b66e0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_023",
+        "alvo": "texto",
+        "ancora": "He doesn’t visit them every day.",
+        "texto": "He doesn't visit them every day.",
+        "src": "/audio/aula-26/lesson_026_audio_023.9fa077e0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_024",
+        "alvo": "texto",
+        "ancora": "Do you see your parents every day?",
+        "texto": "Do you see your parents every day?",
+        "src": "/audio/aula-26/lesson_026_audio_024.ae5ffd8e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_025",
+        "alvo": "texto",
+        "ancora": "Adam studies English on Tuesdays and Thursdays.",
+        "texto": "Adam studies English on Tuesdays and Thursdays.",
+        "src": "/audio/aula-26/lesson_026_audio_025.2517537e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_026",
+        "alvo": "texto",
+        "ancora": "He doesn’t study English every day.",
+        "texto": "He doesn't study English every day.",
+        "src": "/audio/aula-26/lesson_026_audio_026.bb3a672e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_027",
+        "alvo": "texto",
+        "ancora": "Do you study English every day?",
+        "texto": "Do you study English every day?",
+        "src": "/audio/aula-26/lesson_026_audio_027.65c2f123.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_028",
+        "alvo": "texto",
+        "ancora": "Samantha cleans her house on the weekend.",
+        "texto": "Samantha cleans her house on the weekend.",
+        "src": "/audio/aula-26/lesson_026_audio_028.bf8176a0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_029",
+        "alvo": "texto",
+        "ancora": "She doesn’t clean her house on Wednesdays.",
+        "texto": "She doesn't clean her house on Wednesdays.",
+        "src": "/audio/aula-26/lesson_026_audio_029.425c2907.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_026_audio_030",
+        "alvo": "texto",
+        "ancora": "Does she clean her house on Fridays?",
+        "texto": "Does she clean her house on Fridays?",
+        "src": "/audio/aula-26/lesson_026_audio_030.025fd69f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_026_audio_031",
+        "alvo": "bloco",
+        "ancora": "Mia: What’s your favorite day of the week?",
+        "texto": "What's your favorite day of the week?\nSaturday.\nWhat do you do on Saturdays?\nI go to the beach with my friends.\nDo you study English on the weekend?\nNo, I don't. I study English on Tuesdays and Thursdays.\nWhen do you have English classes?\nOn Tuesdays and Thursdays.",
+        "src": "/audio/aula-26/lesson_026_audio_031.c73010a5.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_026_audio_032",
+        "alvo": "texto",
+        "ancora": "What’s your favorite day of the week?",
+        "texto": "What's your favorite day of the week?",
+        "src": "/audio/aula-26/lesson_026_audio_032.bc24dbbd.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_026_audio_033",
+        "alvo": "texto",
+        "ancora": "When do you have English classes?",
+        "texto": "When do you have English classes?",
+        "src": "/audio/aula-26/lesson_026_audio_033.06603a45.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_026_audio_034",
+        "alvo": "texto",
+        "ancora": "Where do you go on the weekends?",
+        "texto": "Where do you go on the weekends?",
+        "src": "/audio/aula-26/lesson_026_audio_034.60151242.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     }
   ]

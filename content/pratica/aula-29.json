@@ -1,54 +1,54 @@
 {
   "versao": 1,
   "status": "pronta",
-  "tipo": "conteudo",
-  "foco": "Descrever o tempo com \"It's sunny.\" e \"It's raining.\" e nomear as quatro estações do ano.",
+  "tipo": "revisao",
+  "foco": "Descrever minha casa com \"There is\" e \"There are\" e dizer dia, data e hora com \"in\", \"on\" e \"at\".",
   "conteudoAlvo": [
-    "sunny, cloudy, rainy, windy, hot, warm, cold, cool",
-    "snowing, spring, summer, fall, autumn, winter",
-    "It's + ___, It's + ___ing"
+    "There is a / an ___; There are some ___",
+    "There isn't a / an ___; There aren't any ___",
+    "living room, kitchen, bedroom, bathroom, sofa, bed",
+    "on Sunday, on March 21st, in the morning, at 3:00"
   ],
-  "expressoesFixas": [
-    "What's the weather like today?"
-  ],
+  "expressoesFixas": [],
   "comoIntegrar": [
-    "Misture o tempo com os advérbios de frequência que já sei: \"It's always hot in summer.\"",
-    "Use o presente contínuo que já sei para o tempo de agora: \"It's raining now.\""
+    "Use cômodos e móveis da Aula 16: \"There is a sofa in the living room.\"",
+    "Pergunte com \"When\" e \"What time\" da Aula 22: \"When are you free?\", \"What time is it?\""
   ],
   "regrasDaAula": [
-    "Para falar do tempo, o sujeito é sempre \"it\": \"It's sunny.\", \"It's raining.\""
+    "\"on\" para dia e data, \"in\" para mês e \"in the morning\", \"at\" para a hora: \"at 3:00\"."
   ],
   "tiposDeExercicio": [
     "identificar",
-    "escolher",
-    "completar"
+    "completar",
+    "responder",
+    "corrigir"
   ],
   "exemplos": [
     {
       "tipo": "identificar",
-      "enunciado": "Qual destas palavras fala de frio: \"hot\", \"cold\" ou \"sunny\"?",
-      "respostaDeReferencia": "cold"
-    },
-    {
-      "tipo": "escolher",
-      "enunciado": "Escolha a frase certa: \"It's rain.\" ou \"It's raining.\"?",
-      "respostaDeReferencia": "It's raining."
+      "enunciado": "Na casa do Mark há três quartos. Verdadeiro ou falso: \"There are two bedrooms.\"",
+      "respostaDeReferencia": "False. There are three bedrooms."
     },
     {
       "tipo": "completar",
-      "enunciado": "Complete com a palavra de frio: \"In winter, it's ___.\"",
-      "respostaDeReferencia": "In winter, it's cold."
+      "enunciado": "Complete com \"in\" ou \"on\": \"My birthday is ___ March 21st.\"",
+      "respostaDeReferencia": "My birthday is on March 21st."
+    },
+    {
+      "tipo": "corrigir",
+      "enunciado": "Corrija os dois erros: \"I'm free at sunday.\"",
+      "respostaDeReferencia": "I'm free on Sunday."
     }
   ],
   "limites": [
-    "Só as palavras de tempo da aula: sem \"foggy\", \"stormy\" nem temperatura em graus.",
-    "Sem o passado (\"It was cold.\"): o tempo fica sempre no presente."
+    "Móveis que só vi no texto do Mark (\"wardrobe\", \"stove\", \"bathtub\"): não cobrar.",
+    "Sem lugares da cidade e sem passado (\"was\", \"were\"): ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pelo sol. Complete: \"It's ___.\" (está ensolarado). Qual palavra entra no espaço?",
+  "primeiraQuestao": "Vamos começar pela casa. Traduza para o inglês: Há três quartos na minha casa. Como fica?",
   "resumoAutorizado": [
-    "\"It's\" + adjetivo: \"It's sunny.\", \"It's cloudy.\", \"It's cold.\", \"It's hot.\"",
-    "\"It's\" + \"-ing\": \"It's raining.\", \"It's snowing.\"",
-    "Estações: \"spring\", \"summer\", \"fall\" ou \"autumn\", \"winter\"."
+    "Casa: \"There is a kitchen.\", \"There are three bedrooms.\", \"There isn't a TV.\"",
+    "\"on\" dia e data: \"on Sunday\", \"on March 21st\"; \"in March\", \"in the morning\".",
+    "\"at\" para a hora: \"at 3:00\"; pergunta: \"When are you free?\""
   ],
-  "resumoCurto": "Tempo e estações: \"It's sunny.\", \"It's raining.\", \"spring\", \"summer\", \"fall\", \"winter\"."
+  "resumoCurto": "Revisão: a casa com \"There is\" e \"There are\"; dias, meses, datas e horas com \"in\", \"on\" e \"at\"."
 }

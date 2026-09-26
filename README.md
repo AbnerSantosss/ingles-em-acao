@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <sub>42 aulas &nbsp;·&nbsp; 7 módulos &nbsp;·&nbsp; 309 páginas de e-book digital &nbsp;·&nbsp; feito primeiro para o celular</sub>
+  <sub>42 aulas &nbsp;·&nbsp; 7 módulos &nbsp;·&nbsp; 414 páginas de e-book digital &nbsp;·&nbsp; feito primeiro para o celular</sub>
 </p>
 
 ---
@@ -54,7 +54,7 @@ As 42 aulas aparecem em ordem, cada uma com número, título, subtítulo em port
 
 ### A aula: o e-book dentro do app
 
-Cada aula é uma sequência de páginas digitais (309 ao todo) pensadas para a tela do celular. Elas trazem títulos grandes, notas de apoio, cartões coloridos, tabelas, diálogos e ilustrações. Uma barra no topo mostra quanto falta, e os botões **Anterior** e **Próxima página** deixam o ritmo com você.
+Cada aula é uma sequência de páginas digitais (414 ao todo) pensadas para a tela do celular. Elas trazem títulos grandes, notas de apoio, cartões coloridos, tabelas, diálogos e ilustrações. Uma barra no topo mostra quanto falta, e os botões **Anterior** e **Próxima página** deixam o ritmo com você.
 
 <p align="center">
   <img src="docs/imagens/aula-desktop.png" alt="Primeira página da Aula 01 no computador: selo 'Aula 01', título 'Subject Pronouns', uma pergunta de abertura e a ilustração de um grupo de amigos conversando" width="600">
@@ -113,7 +113,7 @@ Assim o curso pode crescer e melhorar sem parar, direto pelo painel.
 
 ## 🧭 A jornada: 42 aulas em 7 módulos
 
-A trilha segue a progressão do método WSA English. Primeiro vêm as bases, como os pronomes e o *verb to be*. Depois, vocabulário do dia a dia intercalado com gramática, até chegar ao passado. As Aulas 05 e 42 são de revisão e ajudam a juntar tudo antes de seguir.
+A trilha segue a progressão do método WSA English. Primeiro vêm as bases, como os pronomes e o *verb to be*. Depois, vocabulário do dia a dia intercalado com gramática, até chegar ao passado. As Aulas 05, 29 e 42 são de revisão e ajudam a juntar tudo antes de seguir.
 
 <p align="center">
   <img src="public/lessons/capas/01.png" alt="Capa da Aula 01 — Subject Pronouns: um grupo de amigos conversando, com balões de ícones de pessoas sobre as cabeças" width="49%">
@@ -129,10 +129,10 @@ A trilha segue a progressão do método WSA English. Primeiro vêm as bases, com
 | Módulo | Aulas | O que você estuda | O que você passa a conseguir |
 |:---:|:---:|---|---|
 | **1** | 01–06 | Subject Pronouns · Verb to be (afirmativa, negativa, perguntas e revisão) · Countries and Nationalities | Dizer quem é quem, se apresentar e contar de onde você é |
-| **2** | 07–12 | Family · Numbers 1–100 · Days and Months · Colors and Shapes · Articles *a / an / the* · Plural Nouns | Falar da família, dizer idade, datas e preços e descrever objetos |
-| **3** | 13–18 | This / That / These / Those · Possessive Adjectives · There is / There are · Prepositions of Place · Simple Present (afirmativa e negativa) | Apontar e localizar coisas, dizer o que existe num lugar e começar a falar do seu dia a dia |
-| **4** | 19–24 | Simple Present (perguntas) · Adverbs of Frequency · Daily Routine · Telling the Time · Food and Drinks · Can / Can't | Perguntar sobre rotinas, dizer as horas e pedir comida e bebida |
-| **5** | 25–30 | Imperatives · Present Continuous (afirmativa e perguntas) · Clothes · Weather · Jobs | Dar instruções, contar o que está acontecendo agora e falar de roupas, do tempo e de profissões |
+| **2** | 07–12 | Family · Possessive *'S* · Possessive Adjectives · The Alphabet · School Vocabulary · Colors | Falar da família, dizer de quem é cada coisa, soletrar seu nome e usar as cores |
+| **3** | 13–18 | Articles *a / an* · Plural Nouns · Demonstratives · House and Furniture · There is / There are · Prepositions of Place | Falar de uma coisa ou de várias, apontar o que está perto e longe e dizer o que tem em cada cômodo |
+| **4** | 19–24 | Adjectives · Numbers · What time is it? · Question Words · Simple Present (*I, you, we, they*) · Jobs | Descrever pessoas e coisas, contar, dizer as horas, perguntar e falar do seu dia a dia |
+| **5** | 25–30 | Simple Present (*he, she, it*) · Days of the Week · Months of the Year · Ordinal Numbers · Unit Review · Places in a City | Contar a rotina de outra pessoa, marcar dias e datas e se virar pela cidade |
 | **6** | 31–36 | Directions · Like, Love, Dislike & Hate · How Often? · Can (habilidades) · Object Pronouns · Meals and Restaurant | Pedir e dar direções, falar do que gosta e fazer um pedido no restaurante |
 | **7** | 37–42 | Count and Noncount Nouns · A lot of / Many / Much · Simple Past (verb to be, verbos regulares e irregulares) · Unit Review 2 | Falar de quantidades e contar o que você fez |
 

@@ -2,53 +2,55 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Formar o plural das palavras mais comuns: as três regras de final e os plurais irregulares.",
+  "foco": "Dizer as dez cores em inglês e responder \"What color is it?\" com \"It's\" e a cor.",
   "conteudoAlvo": [
-    "books, cars, houses, bus, buses, box, boxes",
-    "watch, watches, potato, potatoes, city, cities",
-    "baby, babies, boy, boys, day, days, man, men",
-    "woman, women, child, person, people, foot, feet"
+    "black, blue, brown, white, gray",
+    "green, orange, pink, red, yellow",
+    "What color is it? It's blue. It's red.",
+    "What color is your bag? It's black."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What color is it?"
+  ],
   "comoIntegrar": [
-    "Use os números da Aula 08 com o plural: \"two books\", \"three cars\", \"five boxes\".",
-    "Misture \"the\" da Aula 11 com \"are\": \"The children are happy.\", \"The women are ready.\""
+    "Pergunte com \"Is it\" da Aula 04: \"Is it red?\", \"No, it isn't. It's orange.\"",
+    "Use objetos das Aulas 08 e 11: \"What color is your pen?\", \"My car is white.\""
   ],
   "regrasDaAula": [
-    "Irregulares mudam a palavra e não ganham s no fim: \"children\", \"people\", \"men\", \"feet\"."
+    "Respondo com \"It's\" + a cor: \"É azul.\" em inglês é \"It's blue.\""
   ],
   "tiposDeExercicio": [
     "identificar",
-    "escolher",
     "completar",
-    "transformar"
+    "traduzir",
+    "responder"
   ],
   "exemplos": [
     {
-      "tipo": "identificar",
-      "enunciado": "Qual palavra está no plural: \"box\" ou \"boxes\"?",
-      "respostaDeReferencia": "boxes"
-    },
-    {
       "tipo": "completar",
-      "enunciado": "Complete com o plural de \"child\": \"two ___\".",
-      "respostaDeReferencia": "two children"
+      "enunciado": "Complete com a cor da camiseta branca: \"It's ___.\"",
+      "respostaDeReferencia": "It's white."
     },
     {
-      "tipo": "transformar",
-      "enunciado": "Passe para o plural: \"city\".",
-      "respostaDeReferencia": "cities"
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: É cinza.",
+      "respostaDeReferencia": "It's gray."
+    },
+    {
+      "tipo": "responder",
+      "enunciado": "Responda com a cor do seu celular: \"What color is your phone?\"",
+      "respostaDeReferencia": "It's black."
     }
   ],
   "limites": [
-    "Sem \"There are\" e sem \"many\": ainda não estudei.",
-    "Sem \"country\" e \"countries\": use só os plurais desta aula e palavras já vistas."
+    "Só as dez cores da aula, sem \"purple\". Cor antes do nome (\"a red car\") vem mais adiante.",
+    "Expressões como \"feeling blue\" e \"a white lie\" são bônus: só reconhecer, sem me cobrar."
   ],
-  "primeiraQuestao": "Vamos começar pela regra geral. Qual é o plural de \"book\"?",
+  "primeiraQuestao": "Vamos começar pelas cores. Como se diz vermelho em inglês?",
   "resumoAutorizado": [
-    "Plural com s: \"books\", \"cars\", \"boys\", \"days\"; com es: \"buses\", \"boxes\".",
-    "Consoante antes do y final vira ies: \"city\" e \"cities\", \"baby\" e \"babies\".",
-    "Irregulares: \"men\", \"women\", \"children\", \"people\", \"feet\", \"teeth\", \"lives\"."
+    "Cores: \"black\", \"blue\", \"brown\", \"white\", \"gray\", \"green\".",
+    "Mais cores: \"orange\", \"pink\", \"red\", \"yellow\".",
+    "Pergunta e resposta: \"What color is it?\", \"It's blue.\", \"It's red.\""
   ],
-  "resumoCurto": "Plural com s, es e ies (\"books\", \"boxes\", \"cities\") e irregulares como \"people\" e \"children\"."
+  "resumoCurto": "Cores: as dez cores básicas, a pergunta \"What color is it?\" e a resposta \"It's blue.\""
 }

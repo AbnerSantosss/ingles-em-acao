@@ -2,55 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Perguntar no presente simples com \"do\" e \"does\", responder curto e usar \"where\", \"what\", \"when\", \"how\".",
+  "foco": "Descrever pessoas e coisas com adjetivos e escolher entre opções com \"the yellow one\" e \"the new ones\".",
   "conteudoAlvo": [
-    "Do + I / you / we / they + ___? live, speak",
-    "Does + he / she / it + ___? English, what, when",
-    "Yes / No, we do / don't; it does / doesn't",
-    "Where do you live? How do you go to work?"
+    "adjective + noun / noun + verb to be + adjective",
+    "big/small, fast/slow, hot/cold, expensive/cheap",
+    "young/old, tall/short, long/short hair, rich/poor",
+    "beautiful/pretty, handsome/ugly; the ___ one/ones"
   ],
   "expressoesFixas": [
-    "What do you do?"
+    "I like the yellow one.",
+    "I like the new ones."
   ],
   "comoIntegrar": [
-    "Pegue frases das Aulas 17 e 18 e peça que eu faça a pergunta com \"do\" ou \"does\".",
-    "Use dias, lugares e comida que já sei: \"on Sunday\", \"at home\", \"coffee\"."
+    "Use \"a\" e \"an\" da Aula 13 pelo som do adjetivo: \"a car\", \"an old car\".",
+    "Use \"These are\" da Aula 15 e escolha: \"These are bags. I like the black one.\""
   ],
   "regrasDaAula": [
-    "Depois de \"does\" o verbo fica sem \"-s\": \"Does she work?\""
+    "O adjetivo não vai para o plural. Só o substantivo muda: \"a big dog\", \"big dogs\"."
   ],
   "tiposDeExercicio": [
     "escolher",
-    "completar",
     "transformar",
-    "responder"
+    "traduzir",
+    "situacao"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha \"do\" ou \"does\": \"___ he work here?\"",
-      "respostaDeReferencia": "Does he work here?"
+      "enunciado": "Escolha a frase certa: \"It's a car new.\" ou \"It's a new car.\"",
+      "respostaDeReferencia": "It's a new car."
     },
     {
       "tipo": "transformar",
-      "enunciado": "Faça a pergunta: \"They study English.\"",
-      "respostaDeReferencia": "Do they study English?"
+      "enunciado": "Troque o substantivo por \"one\" ou \"ones\": \"I like the cheap sandals.\"",
+      "respostaDeReferencia": "I like the cheap ones."
     },
     {
-      "tipo": "responder",
-      "enunciado": "Responda de forma curta, com \"yes\": \"Do you like coffee?\"",
-      "respostaDeReferencia": "Yes, I do."
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Eles são carros caros.",
+      "respostaDeReferencia": "They're expensive cars."
     }
   ],
   "limites": [
-    "Palavras só as que já vi: \"music\", \"pizza\", \"soccer\" e \"what time\" ainda não estudei.",
-    "Sem perguntas com \"who\", \"why\" ou \"how much\": só \"where\", \"what\", \"when\" e \"how\"."
+    "Na escolha, só \"I like the ___ one/ones.\": sem \"which\", \"Do you like...?\" e \"likes\".",
+    "Sem comparar (\"bigger\", \"the biggest\") e sem \"good\" e \"bad\": ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"you\". Complete: \"___ you work?\" Qual palavra entra no espaço?",
+  "primeiraQuestao": "Vamos começar pela posição do adjetivo. Como se diz um carro novo em inglês?",
   "resumoAutorizado": [
-    "\"Do you work?\", \"Do they live here?\"; \"Does he work?\", \"Does she study English?\"",
-    "Curtas: \"Yes, I do.\", \"No, I don't.\", \"Yes, he does.\", \"No, he doesn't.\"",
-    "\"Where do you live?\", \"What do you do?\", \"How do you go to work?\""
+    "Pares: \"big/small, fast/slow, hot/cold, expensive/cheap, young/old, tall/short\"",
+    "Outros: \"rich/poor, long/short hair, beautiful, pretty, handsome, ugly\"",
+    "\"a new car\", \"This car is new.\", \"big dogs\", \"the yellow one\", \"the big ones\""
   ],
-  "resumoCurto": "Perguntas no presente simples com \"do\"/\"does\", respostas curtas e \"where\", \"what\", \"when\", \"how\"."
+  "resumoCurto": "Adjetivos para descrever: \"a new car\", \"This car is new.\", \"big dogs\", \"I like the big ones.\""
 }

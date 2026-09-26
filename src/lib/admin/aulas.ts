@@ -211,7 +211,7 @@ function filtroDeEstado(estado: EstadoDaAula | 'todas'): Prisma.LessonWhereInput
  * A busca livre: número, código, título ou slug.
  *
  * Um termo que é só dígito vira busca por número **e** continua valendo como
- * texto — "10" precisa achar a aula 10 e também "Numbers 1-100".
+ * texto — "20" precisa achar a aula 20 e também "Numbers".
  */
 function filtroDeBusca(busca: string): Prisma.LessonWhereInput | null {
   const termo = busca.trim();

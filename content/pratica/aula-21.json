@@ -2,53 +2,56 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Contar a minha rotina em ordem, com as ações do dia e \"first\", \"then\", \"after that\" e \"finally\".",
+  "foco": "Perguntar e dizer as horas com \"What time is it?\", \"o'clock\", \"half past\", \"quarter to\", \"a.m.\" e \"p.m.\".",
   "conteudoAlvo": [
-    "wake up, get up, take a shower, go to bed",
-    "have breakfast / lunch / dinner, get home",
-    "go to work, go to school",
-    "First, I wake up at 6. then, after that, finally"
+    "It's six o'clock. It's noon / midday / midnight.",
+    "It's half past / a quarter past / quarter to six.",
+    "a.m. / p.m.; in the morning / evening, at night",
+    "What time is the class? It's at eight o'clock."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What time is it?",
+    "What's the time?"
+  ],
   "comoIntegrar": [
-    "Use o presente simples com \"he\" e \"she\": \"She wakes up.\", \"He has lunch.\"",
-    "Misture os advérbios da Aula 20: \"I always have breakfast.\", \"I never get up late.\""
+    "Use os números da Aula 20 nos minutos: \"twenty past eight\" (8:20), \"ten to five\" (4:50).",
+    "Pergunte a hora de coisas já vistas: \"What time is the movie?\", \"It's at ten p.m.\""
   ],
   "regrasDaAula": [
-    "Conte em ordem: \"First\", \"Then\", \"After that\", \"Finally\"."
+    "\"It's\" para a hora agora; \"at\" para uma ação: \"What time do you get up?\" \"At six o'clock.\""
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
     "completar",
-    "traduzir"
+    "transformar",
+    "responder"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha a ação que vem primeiro: \"go to bed\" ou \"wake up\"?",
-      "respostaDeReferencia": "wake up"
+      "enunciado": "Escolha \"a.m.\" ou \"p.m.\" para sete da manhã: \"It's seven ___.\"",
+      "respostaDeReferencia": "It's seven a.m."
     },
     {
-      "tipo": "completar",
-      "enunciado": "Complete com \"depois disso\": \"___, I have breakfast.\"",
-      "respostaDeReferencia": "After that, I have breakfast."
+      "tipo": "transformar",
+      "enunciado": "Diga de outro jeito, com \"half past\": \"It's seven thirty.\"",
+      "respostaDeReferencia": "It's half past seven."
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: tomar banho.",
-      "respostaDeReferencia": "take a shower"
+      "tipo": "responder",
+      "enunciado": "A aula é às 8:00. Responda: \"What time is the class?\"",
+      "respostaDeReferencia": "It's at eight o'clock."
     }
   ],
   "limites": [
-    "Sem horas: \"at 6\" pode, mas \"o'clock\", \"half past\" e \"in the morning\" ainda não estudei.",
-    "Só o presente: nada de \"yesterday\" nem de verbos no passado."
+    "Verbo só \"get up\": \"wake up\", \"have lunch\" e \"go to bed\" vêm mais adiante.",
+    "Sem dias e datas: \"on Monday\" e \"What day is it?\" ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pelo começo do dia. Como se diz \"acordar\" em inglês?",
+  "primeiraQuestao": "Vamos começar pelas horas cheias. São 6:00. Como se diz isso em inglês, começando com \"It's\"?",
   "resumoAutorizado": [
-    "\"wake up\", \"get up\", \"take a shower\", \"have breakfast\", \"go to work\".",
-    "\"have lunch\", \"have dinner\", \"get home\", \"go to bed\".",
-    "\"First, I wake up at 6. Then I take a shower. After that, ... Finally, ...\""
+    "Perguntar: \"What time is it?\", \"What's the time?\"; hora cheia com \"o'clock\".",
+    ":30 \"half past\", :15 \"a quarter past\", :45 \"quarter to\"; \"noon\" é meio-dia.",
+    "\"a.m.\" antes do meio-dia, \"p.m.\" depois; \"It's\" é a hora, \"at\" é de uma ação."
   ],
-  "resumoCurto": "Rotina diária: \"wake up\", \"have breakfast\", \"go to work\", \"go to bed\" e \"first\", \"then\", \"finally\"."
+  "resumoCurto": "Horas: \"What time is it?\", \"o'clock\", \"half past\", \"quarter to\", \"a.m.\", \"p.m.\", \"It's\" e \"at\"."
 }

@@ -2,14 +2,14 @@
   "aula": 18,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_018_audio_001",
         "alvo": "texto",
-        "ancora": "I don’t work on Sunday.",
-        "texto": "I don't work on Sunday.",
-        "src": "/audio/aula-18/lesson_018_audio_001.c9c9e1ce.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "opposite",
+        "texto": "opposite",
+        "src": "/audio/aula-18/lesson_018_audio_001.de7439ca.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -17,10 +17,10 @@
       "clip": {
         "id": "lesson_018_audio_002",
         "alvo": "texto",
-        "ancora": "She doesn’t work here.",
-        "texto": "She doesn't work here.",
-        "src": "/audio/aula-18/lesson_018_audio_002.7db095a1.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT"
+        "ancora": "ABOVE",
+        "texto": "above",
+        "src": "/audio/aula-18/lesson_018_audio_002.a3b45ac0.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
@@ -28,9 +28,9 @@
       "clip": {
         "id": "lesson_018_audio_003",
         "alvo": "texto",
-        "ancora": "He doesn’t work here.",
-        "texto": "He doesn't work here.",
-        "src": "/audio/aula-18/lesson_018_audio_003.c772ed69.mp3",
+        "ancora": "The photo is above the side table.",
+        "texto": "The photo is above the side table.",
+        "src": "/audio/aula-18/lesson_018_audio_003.7bd369fa.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
@@ -39,9 +39,466 @@
       "clip": {
         "id": "lesson_018_audio_004",
         "alvo": "texto",
-        "ancora": "I don’t like coffee.",
-        "texto": "I don't like coffee.",
-        "src": "/audio/aula-18/lesson_018_audio_004.8deba7ae.mp3",
+        "ancora": "UNDER",
+        "texto": "under",
+        "src": "/audio/aula-18/lesson_018_audio_004.16422232.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_005",
+        "alvo": "texto",
+        "ancora": "The rug is under the coffee table.",
+        "texto": "The rug is under the coffee table.",
+        "src": "/audio/aula-18/lesson_018_audio_005.0a9121e3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_006",
+        "alvo": "texto",
+        "ancora": "What is above the side table?",
+        "texto": "What is above the side table?",
+        "src": "/audio/aula-18/lesson_018_audio_006.842a3e68.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 2,
+      "clip": {
+        "id": "lesson_018_audio_007",
+        "alvo": "texto",
+        "ancora": "What is under the coffee table?",
+        "texto": "What is under the coffee table?",
+        "src": "/audio/aula-18/lesson_018_audio_007.3bb52451.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_018_audio_008",
+        "alvo": "texto",
+        "ancora": "IN FRONT OF",
+        "texto": "in front of",
+        "src": "/audio/aula-18/lesson_018_audio_008.2e8054de.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_018_audio_009",
+        "alvo": "texto",
+        "ancora": "The person is in front of the box.",
+        "texto": "The person is in front of the box.",
+        "src": "/audio/aula-18/lesson_018_audio_009.6ce282fa.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_018_audio_010",
+        "alvo": "texto",
+        "ancora": "BEHIND",
+        "texto": "behind",
+        "src": "/audio/aula-18/lesson_018_audio_010.0226d0c2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_018_audio_011",
+        "alvo": "texto",
+        "ancora": "Bruno’s friends are behind him in this photo.",
+        "texto": "Bruno's friends are behind him in this photo.",
+        "src": "/audio/aula-18/lesson_018_audio_011.fabca10b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_018_audio_012",
+        "alvo": "texto",
+        "ancora": "Who is in front of the box?",
+        "texto": "Who is in front of the box?",
+        "src": "/audio/aula-18/lesson_018_audio_012.6ee3c3f0.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_018_audio_013",
+        "alvo": "texto",
+        "ancora": "Who is behind Bruno?",
+        "texto": "Who is behind Bruno?",
+        "src": "/audio/aula-18/lesson_018_audio_013.b3e0134c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_018_audio_014",
+        "alvo": "texto",
+        "ancora": "BETWEEN",
+        "texto": "between",
+        "src": "/audio/aula-18/lesson_018_audio_014.7b0f4f83.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_018_audio_015",
+        "alvo": "texto",
+        "ancora": "Juan is between Sarah and Julia.",
+        "texto": "Juan is between Sarah and Julia.",
+        "src": "/audio/aula-18/lesson_018_audio_015.ae45cb2d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_018_audio_016",
+        "alvo": "texto",
+        "ancora": "BESIDE",
+        "texto": "beside",
+        "src": "/audio/aula-18/lesson_018_audio_016.21bc149a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_018_audio_017",
+        "alvo": "texto",
+        "ancora": "The chair is beside the table.",
+        "texto": "The chair is beside the table.",
+        "src": "/audio/aula-18/lesson_018_audio_017.27dca929.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_018_audio_018",
+        "alvo": "texto",
+        "ancora": "Who is between Sarah and Julia?",
+        "texto": "Who is between Sarah and Julia?",
+        "src": "/audio/aula-18/lesson_018_audio_018.8dfd289f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_018_audio_019",
+        "alvo": "texto",
+        "ancora": "What is beside the table?",
+        "texto": "What is beside the table?",
+        "src": "/audio/aula-18/lesson_018_audio_019.8d0f7bdb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_020",
+        "alvo": "texto",
+        "ancora": "at",
+        "texto": "at",
+        "src": "/audio/aula-18/lesson_018_audio_020.fbd7ad06.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_021",
+        "alvo": "texto",
+        "ancora": "They are at the table.",
+        "texto": "They are at the table.",
+        "src": "/audio/aula-18/lesson_018_audio_021.6551764a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_022",
+        "alvo": "texto",
+        "ancora": "in the middle of",
+        "texto": "in the middle of",
+        "src": "/audio/aula-18/lesson_018_audio_022.3329ca67.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_023",
+        "alvo": "texto",
+        "ancora": "There is a rug in the middle of Sophia’s bedroom.",
+        "texto": "There is a rug in the middle of Sophia's bedroom.",
+        "src": "/audio/aula-18/lesson_018_audio_023.d15a6177.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_024",
+        "alvo": "texto",
+        "ancora": "on the right / on the left",
+        "texto": "on the right. on the left",
+        "src": "/audio/aula-18/lesson_018_audio_024.609974af.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_025",
+        "alvo": "texto",
+        "ancora": "Sarah is on the right.",
+        "texto": "Sarah is on the right.",
+        "src": "/audio/aula-18/lesson_018_audio_025.238a5892.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_018_audio_026",
+        "alvo": "texto",
+        "ancora": "Julia is on the left.",
+        "texto": "Julia is on the left.",
+        "src": "/audio/aula-18/lesson_018_audio_026.39d375da.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_027",
+        "alvo": "texto",
+        "ancora": "The ball is on the box.",
+        "texto": "The ball is on the box.",
+        "src": "/audio/aula-18/lesson_018_audio_027.cdaf8dc1.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_028",
+        "alvo": "texto",
+        "ancora": "The ball is above the box.",
+        "texto": "The ball is above the box.",
+        "src": "/audio/aula-18/lesson_018_audio_028.38af95ed.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_029",
+        "alvo": "texto",
+        "ancora": "The ball is in the box.",
+        "texto": "The ball is in the box.",
+        "src": "/audio/aula-18/lesson_018_audio_029.a38b1fc8.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_030",
+        "alvo": "texto",
+        "ancora": "The ball is under the box.",
+        "texto": "The ball is under the box.",
+        "src": "/audio/aula-18/lesson_018_audio_030.df3d7f20.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_031",
+        "alvo": "texto",
+        "ancora": "The ball is in front of the box.",
+        "texto": "The ball is in front of the box.",
+        "src": "/audio/aula-18/lesson_018_audio_031.2d2a76e4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_032",
+        "alvo": "texto",
+        "ancora": "The ball is behind the box.",
+        "texto": "The ball is behind the box.",
+        "src": "/audio/aula-18/lesson_018_audio_032.25f62f76.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_033",
+        "alvo": "texto",
+        "ancora": "The ball is beside the box.",
+        "texto": "The ball is beside the box.",
+        "src": "/audio/aula-18/lesson_018_audio_033.8075a535.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_018_audio_034",
+        "alvo": "texto",
+        "ancora": "The ball is near the box.",
+        "texto": "The ball is near the box.",
+        "src": "/audio/aula-18/lesson_018_audio_034.c35a412c.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_035",
+        "alvo": "texto",
+        "ancora": "INTO",
+        "texto": "into",
+        "src": "/audio/aula-18/lesson_018_audio_035.d6e843cc.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_036",
+        "alvo": "texto",
+        "ancora": "The ball goes into the box.",
+        "texto": "The ball goes into the box.",
+        "src": "/audio/aula-18/lesson_018_audio_036.fb27f2ef.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_037",
+        "alvo": "texto",
+        "ancora": "OUT OF",
+        "texto": "out of",
+        "src": "/audio/aula-18/lesson_018_audio_037.f8060675.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_038",
+        "alvo": "texto",
+        "ancora": "The ball comes out of the box.",
+        "texto": "The ball comes out of the box.",
+        "src": "/audio/aula-18/lesson_018_audio_038.2d2a97b3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_039",
+        "alvo": "texto",
+        "ancora": "THROUGH",
+        "texto": "through",
+        "src": "/audio/aula-18/lesson_018_audio_039.e8efebef.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_040",
+        "alvo": "texto",
+        "ancora": "The train goes through the tunnel.",
+        "texto": "The train goes through the tunnel.",
+        "src": "/audio/aula-18/lesson_018_audio_040.88af8a6f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_018_audio_041",
+        "alvo": "texto",
+        "ancora": "ball",
+        "texto": "ball",
+        "src": "/audio/aula-18/lesson_018_audio_041.2f97a0df.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_018_audio_042",
+        "alvo": "bloco",
+        "ancora": "The TV is on the wall.",
+        "texto": "The TV is on the wall.\nThe photo is above the side table.\nThe side table is under the photo.\nThere are some vases on the side table.\nThe sofa is opposite the TV.\nThe rug is under the coffee table.\nThe books are on the coffee table.\nThe pillows are beside each other.",
+        "src": "/audio/aula-18/lesson_018_audio_042.672ed858.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_018_audio_043",
+        "alvo": "bloco",
+        "ancora": "The window is near the sofa.",
+        "texto": "The window is near the sofa.\nThe lamp is on the side table.\nThe books are between the plant and the vase.\nThe plant is beside the window.\nThe vase is in front of the photo.\nThe painting is above the side table.\nThey are at the table.\nThe rug is in the middle of the room.\nThe sofa is opposite the TV.",
+        "src": "/audio/aula-18/lesson_018_audio_043.5db7ee78.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_018_audio_044",
+        "alvo": "bloco",
+        "ancora": "The dog is on the rug.",
+        "texto": "The dog is on the rug.\nThe backpack is beside the table.\nThe ball is under the TV stand.\nThe books are on the coffee table.\nThe pillows are on the sofa.\nThe TV is on the TV stand.\nThe books are above the side table.\nThe window is behind the sofa.\nThe plant is in front of the books.",
+        "src": "/audio/aula-18/lesson_018_audio_044.8f0d5093.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 9,
+      "clip": {
+        "id": "lesson_018_audio_045",
+        "alvo": "bloco",
+        "ancora": "Where is the dog?",
+        "texto": "Where is the dog?\nWhere are the books?\nWhere is the backpack?\nWhere is the plant?\nWhere is the window?",
+        "src": "/audio/aula-18/lesson_018_audio_045.b0e1ab4b.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     }

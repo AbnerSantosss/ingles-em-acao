@@ -2,53 +2,55 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Dizer os dias da semana, os meses e datas simples, com \"on\" para dias e \"in\" para meses.",
+  "foco": "Dizer de quem é algo com \"my\", \"your\", \"his\", \"her\", \"its\", \"our\" e \"their\" antes do substantivo.",
   "conteudoAlvo": [
-    "Monday, Tuesday, Wednesday, Thursday, Friday",
-    "Saturday, Sunday, weekend, weekdays, birthday",
-    "January, February, March, April, May, June, July",
-    "on Monday, in July, The class is on May 3rd."
+    "my / your / his / her / its / our / their + ___",
+    "My last name is ___, you have ___, it has ___",
+    "eyes, black, blue, yellow, logo, favorite, hobby",
+    "Mr., Mrs., Ms., Miss, classes, online, company"
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "Hi!"
+  ],
   "comoIntegrar": [
-    "Use \"my\" da Aula 07 e os números da Aula 08: \"My birthday is in July.\"",
-    "Misture dias e meses nas questões e me faça escolher entre \"on\" e \"in\"."
+    "Troque o nome pelo possessivo, como na Aula 08: \"Mike's car\" vira \"his car\".",
+    "Junte com a família da Aula 07: \"She is my sister. Her laptop is black.\""
   ],
   "regrasDaAula": [
-    "\"on\" com dia da semana ou data exata (\"on Monday\"); \"in\" com mês (\"in July\")."
+    "O possessivo vem antes do substantivo: \"its eyes\". Não confunda com \"it's\" (\"it is\")."
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
     "completar",
+    "transformar",
     "traduzir"
   ],
   "exemplos": [
     {
       "tipo": "escolher",
-      "enunciado": "Escolha \"in\" ou \"on\": \"___ March\".",
-      "respostaDeReferencia": "in March"
+      "enunciado": "Escolha \"It's\" ou \"Its\": \"It's an owl. ___ eyes are yellow.\"",
+      "respostaDeReferencia": "Its eyes are yellow."
     },
     {
       "tipo": "completar",
-      "enunciado": "Complete com a preposição: \"I study ___ Saturday.\"",
-      "respostaDeReferencia": "I study on Saturday."
+      "enunciado": "Complete com o possessivo de \"they\": \"___ English teacher is Mr. Peter.\"",
+      "respostaDeReferencia": "Their English teacher is Mr. Peter."
     },
     {
-      "tipo": "traduzir",
-      "enunciado": "Traduza para o inglês: Meu aniversário é em maio.",
-      "respostaDeReferencia": "My birthday is in May."
+      "tipo": "transformar",
+      "enunciado": "Reescreva com \"your\": \"You have black eyes.\"",
+      "respostaDeReferencia": "Your eyes are black."
     }
   ],
   "limites": [
-    "Sem horas e sem outros verbos além de \"study\": ainda não estudei.",
-    "Sem \"favorite\", sem \"at\" e sem perguntas com \"when\" ou \"what day\"."
+    "Sem \"mine\", \"yours\", \"hers\", \"him\" e \"them\": ainda não estudei.",
+    "Sem verbos novos e sem cores além de \"black\", \"blue\" e \"yellow\"."
   ],
-  "primeiraQuestao": "Vamos começar pela semana. Como se diz segunda-feira em inglês?",
+  "primeiraQuestao": "Vamos começar pela tabela. Se o pronome é \"he\", qual é o possessivo?",
   "resumoAutorizado": [
-    "Dias: \"Monday\", \"Tuesday\", \"Friday\", \"Sunday\"; \"weekend\" e \"weekdays\".",
-    "Meses: \"January\", \"March\", \"May\", \"July\", \"December\"; \"birthday\".",
-    "\"I study on Monday.\", \"My birthday is in July.\", \"The class is on May 3rd.\""
+    "Possessivos: \"my\", \"your\", \"his\", \"her\", \"its\", \"our\", \"their\".",
+    "Antes do substantivo: \"His car is yellow.\", \"Their teacher is Mr. Peter.\"",
+    "\"its\" é possessivo e \"it's\" é \"it is\". Títulos: \"Mr.\", \"Mrs.\", \"Ms.\", \"Miss\"."
   ],
-  "resumoCurto": "Dias da semana e meses com maiúscula, \"on Monday\", \"in July\" e datas como \"on May 3rd\"."
+  "resumoCurto": "Possessivos \"my\", \"your\", \"his\", \"her\", \"its\", \"our\" e \"their\" antes do substantivo: \"His car is yellow.\""
 }

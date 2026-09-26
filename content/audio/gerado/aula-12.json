@@ -2,14 +2,15 @@
   "aula": 12,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_012_audio_001",
-        "alvo": "texto",
-        "ancora": "car → cars · house → houses",
-        "texto": "car. cars. house. houses",
-        "src": "/audio/aula-12/lesson_012_audio_001.2e1c33e6.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "alvo": "bloco",
+        "ancora": "What color is it?",
+        "texto": "What color is it?\nIt's blue.",
+        "src": "/audio/aula-12/lesson_012_audio_001.a0f239fb.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     },
     {
@@ -17,9 +18,9 @@
       "clip": {
         "id": "lesson_012_audio_002",
         "alvo": "texto",
-        "ancora": "watch → watches · potato → potatoes",
-        "texto": "watch. watches. potato. potatoes",
-        "src": "/audio/aula-12/lesson_012_audio_002.9c1db4dc.mp3",
+        "ancora": "BROWN",
+        "texto": "brown",
+        "src": "/audio/aula-12/lesson_012_audio_002.faeff51c.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -28,64 +29,64 @@
       "clip": {
         "id": "lesson_012_audio_003",
         "alvo": "texto",
-        "ancora": "baby → babies",
-        "texto": "baby. babies",
-        "src": "/audio/aula-12/lesson_012_audio_003.896b4c90.mp3",
+        "ancora": "WHITE",
+        "texto": "white",
+        "src": "/audio/aula-12/lesson_012_audio_003.5056d994.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_012_audio_004",
         "alvo": "texto",
-        "ancora": "man",
-        "texto": "man",
-        "src": "/audio/aula-12/lesson_012_audio_004.68de2fe5.mp3",
+        "ancora": "GRAY",
+        "texto": "gray",
+        "src": "/audio/aula-12/lesson_012_audio_004.4752c757.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_012_audio_005",
         "alvo": "texto",
-        "ancora": "men",
-        "texto": "men",
-        "src": "/audio/aula-12/lesson_012_audio_005.fca20f0e.mp3",
+        "ancora": "GREEN",
+        "texto": "green",
+        "src": "/audio/aula-12/lesson_012_audio_005.d745aa19.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_012_audio_006",
         "alvo": "texto",
-        "ancora": "woman",
-        "texto": "woman",
-        "src": "/audio/aula-12/lesson_012_audio_006.5e04dc82.mp3",
+        "ancora": "ORANGE",
+        "texto": "orange",
+        "src": "/audio/aula-12/lesson_012_audio_006.c85b72db.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_012_audio_007",
         "alvo": "texto",
-        "ancora": "women",
-        "texto": "women",
-        "src": "/audio/aula-12/lesson_012_audio_007.27e5c07f.mp3",
+        "ancora": "PINK",
+        "texto": "pink",
+        "src": "/audio/aula-12/lesson_012_audio_007.1446cc01.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_012_audio_008",
         "alvo": "texto",
-        "ancora": "child",
-        "texto": "child",
-        "src": "/audio/aula-12/lesson_012_audio_008.4dc5249b.mp3",
+        "ancora": "RED",
+        "texto": "red",
+        "src": "/audio/aula-12/lesson_012_audio_008.e81ced52.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
@@ -94,10 +95,10 @@
       "clip": {
         "id": "lesson_012_audio_009",
         "alvo": "texto",
-        "ancora": "person",
-        "texto": "person",
-        "src": "/audio/aula-12/lesson_012_audio_009.4e6be7d8.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "What color is it?",
+        "texto": "What color is it?",
+        "src": "/audio/aula-12/lesson_012_audio_009.e8f20897.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
@@ -105,10 +106,10 @@
       "clip": {
         "id": "lesson_012_audio_010",
         "alvo": "texto",
-        "ancora": "people",
-        "texto": "people",
-        "src": "/audio/aula-12/lesson_012_audio_010.2ff945b2.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s black.",
+        "texto": "It's black.",
+        "src": "/audio/aula-12/lesson_012_audio_010.900f7428.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -116,10 +117,10 @@
       "clip": {
         "id": "lesson_012_audio_011",
         "alvo": "texto",
-        "ancora": "foot",
-        "texto": "foot",
-        "src": "/audio/aula-12/lesson_012_audio_011.f4e4b2c6.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s yellow.",
+        "texto": "It's yellow.",
+        "src": "/audio/aula-12/lesson_012_audio_011.91378035.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -127,10 +128,10 @@
       "clip": {
         "id": "lesson_012_audio_012",
         "alvo": "texto",
-        "ancora": "feet",
-        "texto": "feet",
-        "src": "/audio/aula-12/lesson_012_audio_012.58a38561.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s blue.",
+        "texto": "It's blue.",
+        "src": "/audio/aula-12/lesson_012_audio_012.35bac0f4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -138,45 +139,126 @@
       "clip": {
         "id": "lesson_012_audio_013",
         "alvo": "texto",
-        "ancora": "tooth",
-        "texto": "tooth",
-        "src": "/audio/aula-12/lesson_012_audio_013.bc2f223b.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "It’s green.",
+        "texto": "It's green.",
+        "src": "/audio/aula-12/lesson_012_audio_013.de9a476a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_012_audio_014",
         "alvo": "texto",
-        "ancora": "teeth",
-        "texto": "teeth",
-        "src": "/audio/aula-12/lesson_012_audio_014.289952f6.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
+        "ancora": "1 · A WHITE LIE",
+        "texto": "a white lie",
+        "src": "/audio/aula-12/lesson_012_audio_014.277b7250.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_012_audio_015",
+        "alvo": "texto",
+        "ancora": "It was just a white lie.",
+        "texto": "It was just a white lie.",
+        "src": "/audio/aula-12/lesson_012_audio_015.2bc48227.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_012_audio_016",
+        "alvo": "texto",
+        "ancora": "2 · THE BLACK SHEEP",
+        "texto": "the black sheep",
+        "src": "/audio/aula-12/lesson_012_audio_016.1934e937.mp3",
+        "categoria": "FIXED_CHUNK",
         "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
-        "id": "lesson_012_audio_015",
+        "id": "lesson_012_audio_017",
         "alvo": "texto",
-        "ancora": "life",
-        "texto": "life",
-        "src": "/audio/aula-12/lesson_012_audio_015.94c2d161.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "Uncle John is the black sheep of the family.",
+        "texto": "Uncle John is the black sheep of the family.",
+        "src": "/audio/aula-12/lesson_012_audio_017.b0d361ed.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
       }
     },
     {
-      "pagina": 3,
+      "pagina": 6,
       "clip": {
-        "id": "lesson_012_audio_016",
+        "id": "lesson_012_audio_018",
         "alvo": "texto",
-        "ancora": "lives",
-        "texto": "lives",
-        "src": "/audio/aula-12/lesson_012_audio_016.0bac87ac.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "FEELING BLUE",
+        "texto": "feeling blue",
+        "src": "/audio/aula-12/lesson_012_audio_018.bad6ecfd.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_012_audio_019",
+        "alvo": "texto",
+        "ancora": "GIVE THE GREEN LIGHT",
+        "texto": "give the green light",
+        "src": "/audio/aula-12/lesson_012_audio_019.223a6b82.mp3",
+        "categoria": "FIXED_CHUNK",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_012_audio_020",
+        "alvo": "texto",
+        "ancora": "The manager gave the green light to the project.",
+        "texto": "The manager gave the green light to the project.",
+        "src": "/audio/aula-12/lesson_012_audio_020.79a0bf9f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_012_audio_021",
+        "alvo": "texto",
+        "ancora": "RED CARPET TREATMENT",
+        "texto": "red carpet treatment",
+        "src": "/audio/aula-12/lesson_012_audio_021.9f1e3260.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_012_audio_022",
+        "alvo": "texto",
+        "ancora": "When my parents visit me, I give them the red carpet treatment.",
+        "texto": "When my parents visit me, I give them the red carpet treatment.",
+        "src": "/audio/aula-12/lesson_012_audio_022.dd7d1d8a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_012_audio_023",
+        "alvo": "bloco",
+        "ancora": "Ana: I like your bag!",
+        "texto": "I like your bag!\nThanks!\nWhat color is it?\nIt's blue.\nAnd your notebook?\nIt's black.",
+        "src": "/audio/aula-12/lesson_012_audio_023.d082a970.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

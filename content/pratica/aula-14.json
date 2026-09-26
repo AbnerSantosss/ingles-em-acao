@@ -2,49 +2,55 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Escolher o possessivo pelo dono, não pelo objeto: \"my\", \"your\", \"his\", \"her\", \"its\", \"our\" e \"their\".",
+  "foco": "Formar plurais em inglês (\"s\", \"es\", \"ies\", \"ves\" e irregulares) e falar de mais de uma coisa com \"They're ___\".",
   "conteudoAlvo": [
-    "its, our, their, name"
+    "girls, apples, cars, pencils, toys, monkeys",
+    "benches, dishes, buses, boxes, candies, puppies",
+    "knives, leaves, wolves, shelves, roofs, chiefs",
+    "They're children / men / women / people."
   ],
-  "expressoesFixas": [],
+  "expressoesFixas": [
+    "What are they?"
+  ],
   "comoIntegrar": [
-    "Parta dos pronomes da Aula 01: \"I\" vira \"my\", \"we\" vira \"our\", \"they\" vira \"their\".",
-    "Use família e objetos já vistos: \"his sister\", \"her brother\", \"our house\", \"their car\"."
+    "Use \"a\" e \"an\" da Aula 13 só no singular: \"It's an apple.\", \"They're apples.\"",
+    "Pergunte \"What are they?\" com objetos das Aulas 08 e 11: \"They're books.\""
   ],
   "regrasDaAula": [
-    "\"its\" é posse (\"its name\"); \"it's\" é \"it is\" (\"it's new\")."
+    "Olho a letra antes do \"y\": consoante vira \"ies\" (\"candies\"), vogal só ganha \"s\" (\"toys\")."
   ],
   "tiposDeExercicio": [
-    "identificar",
     "escolher",
-    "completar"
+    "completar",
+    "transformar",
+    "traduzir"
   ],
   "exemplos": [
     {
-      "tipo": "identificar",
-      "enunciado": "Em \"It's new.\" e \"its name\", qual deles é posse?",
-      "respostaDeReferencia": "its name"
-    },
-    {
       "tipo": "escolher",
-      "enunciado": "Marina e o irmão dela. Escolha: \"his brother\" ou \"her brother\".",
-      "respostaDeReferencia": "her brother"
+      "enunciado": "Qual é o plural de \"puppy\": \"puppys\" ou \"puppies\"?",
+      "respostaDeReferencia": "puppies"
     },
     {
-      "tipo": "completar",
-      "enunciado": "Complete: \"He is my friend. ___ name is Lucas.\"",
-      "respostaDeReferencia": "His name is Lucas."
+      "tipo": "transformar",
+      "enunciado": "Passe para o plural: \"It's a watch.\"",
+      "respostaDeReferencia": "They're watches."
+    },
+    {
+      "tipo": "traduzir",
+      "enunciado": "Traduza para o inglês: Eles são crianças.",
+      "respostaDeReferencia": "They're children."
     }
   ],
   "limites": [
-    "Sem \"big\", \"students\", \"school\" e \"parents\": ainda não estudei.",
-    "Sem \"mine\", \"yours\" e \"theirs\": só o possessivo antes do objeto."
+    "Sem números (\"two cars\") e sem \"these\" e \"those\": vêm mais adiante.",
+    "Irregulares só os da aula: nada de \"teeth\", \"feet\", \"mice\" ou \"fish\"."
   ],
-  "primeiraQuestao": "Vamos começar pelo dono. Rafael e a irmã dele: \"his sister\" ou \"her sister\"?",
+  "primeiraQuestao": "Vamos começar pela regra mais comum. Como fica \"pencil\" no plural?",
   "resumoAutorizado": [
-    "\"I\" e \"my\", \"you\" e \"your\", \"he\" e \"his\", \"she\" e \"her\".",
-    "\"it\" e \"its\", \"we\" e \"our\", \"they\" e \"their\": \"our house\", \"their car\".",
-    "O possessivo segue o dono: \"his sister\", \"her brother\"; \"its name\", \"it's new\"."
+    "Quase sempre \"s\": \"girls\", \"cars\", \"toys\"; com \"es\": \"benches\", \"boxes\".",
+    "Consoante + \"y\" vira \"ies\": \"puppies\"; alguns viram \"ves\": \"knives\", \"leaves\".",
+    "Irregulares: \"children\", \"men\", \"women\", \"people\"; \"They're\" para mais de um."
   ],
-  "resumoCurto": "Possessivos pelo dono (\"his sister\", \"her brother\") e a diferença entre \"its\" e \"it's\"."
+  "resumoCurto": "Plural com \"s\", \"es\", \"ies\" e \"ves\", os irregulares como \"children\" e a frase \"They're cars.\""
 }

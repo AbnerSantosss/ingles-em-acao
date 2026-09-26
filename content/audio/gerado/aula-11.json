@@ -6,10 +6,10 @@
       "clip": {
         "id": "lesson_011_audio_001",
         "alvo": "texto",
-        "ancora": "a university",
-        "texto": "a university",
-        "src": "/audio/aula-11/lesson_011_audio_001.cea95203.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "WHAT’S THIS?",
+        "texto": "What's this?",
+        "src": "/audio/aula-11/lesson_011_audio_001.1eb6f338.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
@@ -17,33 +17,32 @@
       "clip": {
         "id": "lesson_011_audio_002",
         "alvo": "texto",
-        "ancora": "an hour",
-        "texto": "an hour",
-        "src": "/audio/aula-11/lesson_011_audio_002.e6043069.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s a desk.",
+        "texto": "It's a desk.",
+        "src": "/audio/aula-11/lesson_011_audio_002.ea83e688.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_011_audio_003",
         "alvo": "texto",
-        "ancora": "I have a dog. The dog is small.",
-        "texto": "I have a dog. The dog is small.",
-        "src": "/audio/aula-11/lesson_011_audio_003.2dcab119.mp3",
-        "categoria": "GRAMMAR_IN_CONTEXT",
-        "lento": true
+        "ancora": "It’s a chair.",
+        "texto": "It's a chair.",
+        "src": "/audio/aula-11/lesson_011_audio_003.b1a92304.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_011_audio_004",
         "alvo": "texto",
-        "ancora": "The sun · The Eiffel Tower",
-        "texto": "The sun. The Eiffel Tower",
-        "src": "/audio/aula-11/lesson_011_audio_004.0f980203.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "WHO’S THIS?",
+        "texto": "Who's this?",
+        "src": "/audio/aula-11/lesson_011_audio_004.1873e6df.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
@@ -51,10 +50,337 @@
       "clip": {
         "id": "lesson_011_audio_005",
         "alvo": "texto",
-        "ancora": "The book on the table.",
-        "texto": "The book on the table.",
-        "src": "/audio/aula-11/lesson_011_audio_005.c91c27d7.mp3",
+        "ancora": "pen",
+        "texto": "pen",
+        "src": "/audio/aula-11/lesson_011_audio_005.0e26963a.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_006",
+        "alvo": "texto",
+        "ancora": "pencil",
+        "texto": "pencil",
+        "src": "/audio/aula-11/lesson_011_audio_006.de433702.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_007",
+        "alvo": "texto",
+        "ancora": "ruler",
+        "texto": "ruler",
+        "src": "/audio/aula-11/lesson_011_audio_007.f40c91e8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_008",
+        "alvo": "texto",
+        "ancora": "pencil case",
+        "texto": "pencil case",
+        "src": "/audio/aula-11/lesson_011_audio_008.b2e08055.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_009",
+        "alvo": "texto",
+        "ancora": "pencil sharpener",
+        "texto": "pencil sharpener",
+        "src": "/audio/aula-11/lesson_011_audio_009.a0f06f6b.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_010",
+        "alvo": "texto",
+        "ancora": "school bag",
+        "texto": "school bag",
+        "src": "/audio/aula-11/lesson_011_audio_010.0415002e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_011",
+        "alvo": "texto",
+        "ancora": "scissors",
+        "texto": "scissors",
+        "src": "/audio/aula-11/lesson_011_audio_011.934f7cc4.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_012",
+        "alvo": "texto",
+        "ancora": "This is a pen.",
+        "texto": "This is a pen.",
+        "src": "/audio/aula-11/lesson_011_audio_012.939e1b84.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_011_audio_013",
+        "alvo": "texto",
+        "ancora": "That’s an eraser.",
+        "texto": "That's an eraser.",
+        "src": "/audio/aula-11/lesson_011_audio_013.9d08127b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_011_audio_014",
+        "alvo": "texto",
+        "ancora": "Sit down.",
+        "texto": "Sit down.",
+        "src": "/audio/aula-11/lesson_011_audio_014.cb505dbc.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_011_audio_015",
+        "alvo": "texto",
+        "ancora": "Stand up.",
+        "texto": "Stand up.",
+        "src": "/audio/aula-11/lesson_011_audio_015.7d610ce8.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_011_audio_016",
+        "alvo": "texto",
+        "ancora": "Open your books.",
+        "texto": "Open your books.",
+        "src": "/audio/aula-11/lesson_011_audio_016.72d40160.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 4,
+      "clip": {
+        "id": "lesson_011_audio_017",
+        "alvo": "texto",
+        "ancora": "Close your books.",
+        "texto": "Close your books.",
+        "src": "/audio/aula-11/lesson_011_audio_017.d3c8230f.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_011_audio_018",
+        "alvo": "bloco",
+        "ancora": "Excuse me, may I drink some water, please?",
+        "texto": "Excuse me, may I drink some water, please?\nYes.",
+        "src": "/audio/aula-11/lesson_011_audio_018.25c55040.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_011_audio_019",
+        "alvo": "bloco",
+        "ancora": "Excuse me, how do you say this in English?",
+        "texto": "Excuse me, how do you say this in English?\nThat's an eraser.",
+        "src": "/audio/aula-11/lesson_011_audio_019.68470371.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_011_audio_020",
+        "alvo": "bloco",
+        "ancora": "Excuse me, can you repeat that, please?",
+        "texto": "Excuse me, can you repeat that, please?\nSure.",
+        "src": "/audio/aula-11/lesson_011_audio_020.4adba008.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_011_audio_021",
+        "alvo": "bloco",
+        "ancora": "Student: Excuse me, may I go to the bathroom, please?",
+        "texto": "Excuse me, may I go to the bathroom, please?\nYes, you may.",
+        "src": "/audio/aula-11/lesson_011_audio_021.16f39c4c.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_011_audio_022",
+        "alvo": "bloco",
+        "ancora": "Student: May I drink some water, please?",
+        "texto": "May I drink some water, please?\nYes, you may.",
+        "src": "/audio/aula-11/lesson_011_audio_022.74685182.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_011_audio_023",
+        "alvo": "texto",
+        "ancora": "May I open the window, please?",
+        "texto": "May I open the window, please?",
+        "src": "/audio/aula-11/lesson_011_audio_023.2ca39a6b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_024",
+        "alvo": "texto",
+        "ancora": "restroom",
+        "texto": "restroom",
+        "src": "/audio/aula-11/lesson_011_audio_024.a85f208e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_025",
+        "alvo": "texto",
+        "ancora": "bathroom",
+        "texto": "bathroom",
+        "src": "/audio/aula-11/lesson_011_audio_025.c1ddc1f8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_026",
+        "alvo": "texto",
+        "ancora": "toilet",
+        "texto": "toilet",
+        "src": "/audio/aula-11/lesson_011_audio_026.a82aca4f.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_027",
+        "alvo": "texto",
+        "ancora": "lavatory",
+        "texto": "lavatory",
+        "src": "/audio/aula-11/lesson_011_audio_027.62365b2d.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_028",
+        "alvo": "texto",
+        "ancora": "WC",
+        "texto": "wc",
+        "src": "/audio/aula-11/lesson_011_audio_028.b65acf8e.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_029",
+        "alvo": "texto",
+        "ancora": "Where’s the restroom?",
+        "texto": "Where's the restroom?",
+        "src": "/audio/aula-11/lesson_011_audio_029.9baf9328.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_030",
+        "alvo": "texto",
+        "ancora": "Where’s the bathroom?",
+        "texto": "Where's the bathroom?",
+        "src": "/audio/aula-11/lesson_011_audio_030.24bc7d66.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_031",
+        "alvo": "texto",
+        "ancora": "Where’s the men’s room?",
+        "texto": "Where's the men's room?",
+        "src": "/audio/aula-11/lesson_011_audio_031.f600dfdb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_011_audio_032",
+        "alvo": "texto",
+        "ancora": "Where’s the ladies’ room?",
+        "texto": "Where's the ladies' room?",
+        "src": "/audio/aula-11/lesson_011_audio_032.b8357c41.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_011_audio_033",
+        "alvo": "bloco",
+        "ancora": "Ana: Excuse me, Daniel. What’s this?",
+        "texto": "Excuse me, Daniel. What's this?\nIt's a pencil.\nHow do you spell it?\nP, ee, N, C, I, L.\nThanks!",
+        "src": "/audio/aula-11/lesson_011_audio_033.ca26b4b3.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_011_audio_034",
+        "alvo": "bloco",
+        "ancora": "Ana: Excuse me, teacher. Can you repeat that, please?",
+        "texto": "Excuse me, teacher. Can you repeat that, please?\nSure.\nMay I drink some water, please?\nYes, you may.",
+        "src": "/audio/aula-11/lesson_011_audio_034.2fa2da32.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

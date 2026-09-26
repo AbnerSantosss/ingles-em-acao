@@ -2,58 +2,58 @@
   "aula": 21,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_021_audio_001",
         "alvo": "texto",
-        "ancora": "wake up",
-        "texto": "wake up",
-        "src": "/audio/aula-21/lesson_021_audio_001.2536a003.mp3",
+        "ancora": "ASK",
+        "texto": "ask",
+        "src": "/audio/aula-21/lesson_021_audio_001.5d8ccda0.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_021_audio_002",
         "alvo": "texto",
-        "ancora": "get up",
-        "texto": "get up",
-        "src": "/audio/aula-21/lesson_021_audio_002.de7a1eea.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "What’s the time?",
+        "texto": "What's the time?",
+        "src": "/audio/aula-21/lesson_021_audio_002.b86463c6.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_021_audio_003",
         "alvo": "texto",
-        "ancora": "take a shower",
-        "texto": "take a shower",
-        "src": "/audio/aula-21/lesson_021_audio_003.53eb5409.mp3",
+        "ancora": "LOOK",
+        "texto": "look",
+        "src": "/audio/aula-21/lesson_021_audio_003.c0cc584c.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_021_audio_004",
         "alvo": "texto",
-        "ancora": "have breakfast",
-        "texto": "have breakfast",
-        "src": "/audio/aula-21/lesson_021_audio_004.5aa2fcbe.mp3",
+        "ancora": "SAY",
+        "texto": "say",
+        "src": "/audio/aula-21/lesson_021_audio_004.668facd1.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
       }
     },
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_021_audio_005",
         "alvo": "texto",
-        "ancora": "get home",
-        "texto": "get home",
-        "src": "/audio/aula-21/lesson_021_audio_005.fec6af47.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s ten twenty-five.",
+        "texto": "It's ten twenty-five.",
+        "src": "/audio/aula-21/lesson_021_audio_005.975848d4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -61,45 +61,43 @@
       "clip": {
         "id": "lesson_021_audio_006",
         "alvo": "texto",
-        "ancora": "go to bed",
-        "texto": "go to bed",
-        "src": "/audio/aula-21/lesson_021_audio_006.7bd4434b.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "What time is it?",
+        "texto": "What time is it?",
+        "src": "/audio/aula-21/lesson_021_audio_006.32b78905.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_021_audio_007",
         "alvo": "texto",
-        "ancora": "first",
-        "texto": "first",
-        "src": "/audio/aula-21/lesson_021_audio_007.7d50ec76.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION"
+        "ancora": "It’s six o’clock.",
+        "texto": "It's six o'clock.",
+        "src": "/audio/aula-21/lesson_021_audio_007.2dc0d87f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_021_audio_008",
         "alvo": "texto",
-        "ancora": "then",
-        "texto": "then",
-        "src": "/audio/aula-21/lesson_021_audio_008.3745abef.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "What time do you get up?",
+        "texto": "What time do you get up?",
+        "src": "/audio/aula-21/lesson_021_audio_008.22a1293d.mp3",
+        "categoria": "FIXED_CHUNK"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_021_audio_009",
         "alvo": "texto",
-        "ancora": "after that",
-        "texto": "after that",
-        "src": "/audio/aula-21/lesson_021_audio_009.bfb54d55.mp3",
-        "categoria": "VOCABULARY_PRONUNCIATION",
-        "lento": true
+        "ancora": "At six o’clock.",
+        "texto": "At six o'clock.",
+        "src": "/audio/aula-21/lesson_021_audio_009.643124fe.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
@@ -107,10 +105,395 @@
       "clip": {
         "id": "lesson_021_audio_010",
         "alvo": "texto",
-        "ancora": "finally",
-        "texto": "finally",
-        "src": "/audio/aula-21/lesson_021_audio_010.6e35d156.mp3",
+        "ancora": "a.m.",
+        "texto": "a.m.",
+        "src": "/audio/aula-21/lesson_021_audio_010.6e40b8f6.mp3",
         "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_011",
+        "alvo": "texto",
+        "ancora": "p.m.",
+        "texto": "p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_011.eaf8bfad.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_012",
+        "alvo": "texto",
+        "ancora": "MORNING",
+        "texto": "morning",
+        "src": "/audio/aula-21/lesson_021_audio_012.45b04360.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_013",
+        "alvo": "texto",
+        "ancora": "6:00 a.m.",
+        "texto": "six a.m.",
+        "src": "/audio/aula-21/lesson_021_audio_013.d8201db9.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_014",
+        "alvo": "texto",
+        "ancora": "It’s six o’clock in the morning.",
+        "texto": "It's six o'clock in the morning.",
+        "src": "/audio/aula-21/lesson_021_audio_014.486df124.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_015",
+        "alvo": "texto",
+        "ancora": "AFTERNOON",
+        "texto": "afternoon",
+        "src": "/audio/aula-21/lesson_021_audio_015.49473a23.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_016",
+        "alvo": "texto",
+        "ancora": "12:00 p.m.",
+        "texto": "twelve p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_016.301e137f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_017",
+        "alvo": "texto",
+        "ancora": "It’s twelve o’clock.",
+        "texto": "It's twelve o'clock.",
+        "src": "/audio/aula-21/lesson_021_audio_017.e93de6fb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_018",
+        "alvo": "texto",
+        "ancora": "It’s noon.",
+        "texto": "It's noon.",
+        "src": "/audio/aula-21/lesson_021_audio_018.feefd421.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_019",
+        "alvo": "texto",
+        "ancora": "It’s midday.",
+        "texto": "It's midday.",
+        "src": "/audio/aula-21/lesson_021_audio_019.0f14a5d4.mp3",
+        "categoria": "FIXED_CHUNK"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_020",
+        "alvo": "texto",
+        "ancora": "EVENING",
+        "texto": "evening",
+        "src": "/audio/aula-21/lesson_021_audio_020.390d9dc2.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_021",
+        "alvo": "texto",
+        "ancora": "6:00 p.m.",
+        "texto": "six p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_021.a0f2e14d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_022",
+        "alvo": "texto",
+        "ancora": "It’s six o’clock in the evening.",
+        "texto": "It's six o'clock in the evening.",
+        "src": "/audio/aula-21/lesson_021_audio_022.3e3f3550.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_023",
+        "alvo": "texto",
+        "ancora": "NIGHT",
+        "texto": "night",
+        "src": "/audio/aula-21/lesson_021_audio_023.155129c6.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_024",
+        "alvo": "texto",
+        "ancora": "10:00 p.m.",
+        "texto": "ten p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_024.44955397.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 3,
+      "clip": {
+        "id": "lesson_021_audio_025",
+        "alvo": "texto",
+        "ancora": "It’s ten o’clock at night.",
+        "texto": "It's ten o'clock at night.",
+        "src": "/audio/aula-21/lesson_021_audio_025.2113f60b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_021_audio_026",
+        "alvo": "texto",
+        "ancora": "HALF PAST",
+        "texto": "half past",
+        "src": "/audio/aula-21/lesson_021_audio_026.4407d0b8.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_021_audio_027",
+        "alvo": "texto",
+        "ancora": "It’s half past seven.",
+        "texto": "It's half past seven.",
+        "src": "/audio/aula-21/lesson_021_audio_027.d247ac67.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_021_audio_028",
+        "alvo": "texto",
+        "ancora": "A QUARTER PAST",
+        "texto": "a quarter past",
+        "src": "/audio/aula-21/lesson_021_audio_028.86766f80.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_021_audio_029",
+        "alvo": "texto",
+        "ancora": "It’s a quarter past nine.",
+        "texto": "It's a quarter past nine.",
+        "src": "/audio/aula-21/lesson_021_audio_029.d6a4cc1e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_021_audio_030",
+        "alvo": "texto",
+        "ancora": "9:15 → a quarter past nine",
+        "texto": "a quarter past nine",
+        "src": "/audio/aula-21/lesson_021_audio_030.07f5889d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_021_audio_031",
+        "alvo": "texto",
+        "ancora": "PAST",
+        "texto": "past",
+        "src": "/audio/aula-21/lesson_021_audio_031.dcce29f3.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_021_audio_032",
+        "alvo": "texto",
+        "ancora": "It’s twenty past eight.",
+        "texto": "It's twenty past eight.",
+        "src": "/audio/aula-21/lesson_021_audio_032.f6edcd39.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_021_audio_033",
+        "alvo": "texto",
+        "ancora": "TO",
+        "texto": "to",
+        "src": "/audio/aula-21/lesson_021_audio_033.6f2aa112.mp3",
+        "categoria": "VOCABULARY_PRONUNCIATION"
+      }
+    },
+    {
+      "pagina": 6,
+      "clip": {
+        "id": "lesson_021_audio_034",
+        "alvo": "texto",
+        "ancora": "It’s ten to five.",
+        "texto": "It's ten to five.",
+        "src": "/audio/aula-21/lesson_021_audio_034.4cc139fb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_035",
+        "alvo": "texto",
+        "ancora": "8:00 a.m.",
+        "texto": "eight a.m.",
+        "src": "/audio/aula-21/lesson_021_audio_035.7af204e6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_036",
+        "alvo": "texto",
+        "ancora": "It’s eight a.m.",
+        "texto": "It's eight a.m.",
+        "src": "/audio/aula-21/lesson_021_audio_036.6cca6231.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_037",
+        "alvo": "texto",
+        "ancora": "2:30 p.m.",
+        "texto": "two thirty p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_037.c35b475d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_038",
+        "alvo": "texto",
+        "ancora": "It’s two thirty p.m.",
+        "texto": "It's two thirty p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_038.5c7c70d2.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_039",
+        "alvo": "texto",
+        "ancora": "9:15 p.m.",
+        "texto": "nine fifteen p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_039.ef0ba2fa.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_040",
+        "alvo": "texto",
+        "ancora": "It’s nine fifteen p.m.",
+        "texto": "It's nine fifteen p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_040.a160e6aa.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_041",
+        "alvo": "texto",
+        "ancora": "7:00 a.m. → seven a.m.",
+        "texto": "seven a.m.",
+        "src": "/audio/aula-21/lesson_021_audio_041.4afb79eb.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 7,
+      "clip": {
+        "id": "lesson_021_audio_042",
+        "alvo": "texto",
+        "ancora": "6:45 p.m. → six forty-five p.m.",
+        "texto": "six forty-five p.m.",
+        "src": "/audio/aula-21/lesson_021_audio_042.6c402815.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_021_audio_043",
+        "alvo": "texto",
+        "ancora": "A: What time is the class?",
+        "texto": "What time is the class?",
+        "src": "/audio/aula-21/lesson_021_audio_043.1ab28ef6.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_021_audio_044",
+        "alvo": "texto",
+        "ancora": "B: It’s at eight o’clock.",
+        "texto": "It's at eight o'clock.",
+        "src": "/audio/aula-21/lesson_021_audio_044.bf137ce4.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_021_audio_045",
+        "alvo": "texto",
+        "ancora": "A: What time is the meeting?",
+        "texto": "What time is the meeting?",
+        "src": "/audio/aula-21/lesson_021_audio_045.abba245a.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
       }
     }
   ]
