@@ -1,0 +1,16 @@
+{
+  "aula": 2,
+  "vagas": {
+    "a2p1": {"pagina": 1, "recortes": ["01"], "alt": "Três amigos sorridentes olhando juntos para um tablet"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03"], "nota": "ícones decorativos de seção (check e relógio)"},
+    {"pagina": 2, "recortes": ["01", "02", "03", "04"], "nota": "selo 'it', apóstrofo fantasma e dois sinais de mais decorativos"},
+    {"pagina": 3, "recortes": ["03"], "nota": "selo decorativo com apóstrofo do aviso 'atenção ao apóstrofo'"},
+    {"pagina": 4, "recortes": ["01", "02", "03", "04"], "nota": "quatro sinais de mais decorativos ao lado dos exemplos de frase"},
+    {"pagina": 5, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "badges numerados 1 a 8 dos espaços da prática guiada"},
+    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05"], "nota": "ícone de check, dois sinais de mais, recorte de texto 'we/are' do gabarito e outro sinal de mais"},
+    {"pagina": 7, "recortes": ["01", "02", "03", "04"], "nota": "contornos decorativos dos números 1 a 4 das linhas de resposta"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05"], "nota": "selos de check (aula concluída/videoaula/prática), ícone de play e ícone de microfone"}
+  ]
+}

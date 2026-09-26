@@ -3,10 +3,11 @@
  *
  * ## O contrato com o editor de blocos (outro agente)
  *
- * Este componente devolve **`{ src, alt }`** — exatamente o par que os blocos
- * `image`, `profile`, `cards[]` e `steps[]` aceitam hoje em
+ * Este componente devolve **`{ src, alt, w?, h? }`** — exatamente os campos que
+ * os blocos `image`, `profile`, `cards[]` e `steps[]` aceitam hoje em
  * `src/lib/content/types.ts`. Não há tradução no meio: o que sai daqui entra no
- * JSON da página como está.
+ * JSON da página como está. `w`/`h` são o `width`/`height` da biblioteca e só
+ * vêm quando ela leu as dimensões do arquivo (ver `tamanhoDaMidia`).
  *
  * ```tsx
  * const [imagem, setImagem] = useState<MidiaSelecionada | null>(bloco.src ? { src: bloco.src, alt: bloco.alt ?? '' } : null)
@@ -81,6 +82,7 @@ import {
   TAMANHO_MAXIMO_ALT,
   TAMANHO_MAXIMO_IMAGEM,
   formatarBytes,
+  tamanhoDaMidia,
   type MidiaDaBiblioteca,
   type MidiaSelecionada,
 } from '@/lib/media/tipos';
@@ -208,7 +210,7 @@ export function SeletorDeMidia({
 
   function escolher(item: MidiaDaBiblioteca) {
     const alt = item.alt?.trim() || descricaoSugerida?.trim() || '';
-    aoEscolher({ src: item.src, alt });
+    aoEscolher({ src: item.src, alt, ...tamanhoDaMidia(item.width, item.height) });
     setAberto(false);
   }
 
@@ -267,7 +269,8 @@ export function SeletorDeMidia({
 
   function trocarAlt(texto: string) {
     if (!valor) return;
-    aoEscolher({ src: valor.src, alt: texto });
+    // Espalha o `valor` para não perder `w`/`h`: trocar o texto não troca o arquivo.
+    aoEscolher({ ...valor, alt: texto });
   }
 
   const altVazio = !semAlt && valor !== null && valor.alt.trim().length === 0;

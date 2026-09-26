@@ -3,12 +3,13 @@ import { CampoDeImagem } from './imagem';
 import { ligador } from './objeto';
 import type { PropsDoFormulario } from './tipos';
 
-const ORDEM = ['id', 'ph', 'src', 'alt'] as const;
+const ORDEM = ['id', 'ph', 'src', 'alt', 'w', 'h'] as const;
 
 /**
  * `image`: ilustração da aula. O `id` aqui não é chave de resposta, é o nome da
  * arte legada (`public/lessons/art/{id}.png`); o formulário não o troca para a
- * cópia não perder a arte. A imagem nova vem da biblioteca (`src` + `alt`).
+ * cópia não perder a arte. A imagem nova vem da biblioteca (`src` + `alt`,
+ * e o tamanho natural em `w`/`h`, gravado pelo seletor e sem campo próprio).
  */
 export function FormularioImage({ valor, aoMudar, erros }: PropsDoFormulario) {
   const definir = ligador(valor, aoMudar, ORDEM);

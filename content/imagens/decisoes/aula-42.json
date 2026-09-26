@@ -1,0 +1,39 @@
+{
+  "aula": 42,
+  "vagas": {
+    "a42p1": {"pagina": 1, "recortes": ["04"], "alt": "Colagem de cenas do dia a dia em um restaurante, um quarto de estudos, uma rua e uma feira"},
+
+    "a42p2a": {"pagina": 2, "caixa": [412, 266, 1024, 797], "alt": "Garçom anotando o pedido de uma cliente que segura o cardápio"},
+    "a42p2b": {"pagina": 2, "recortes": ["02"], "alt": "Cliente entregando o cartão para o garçom pagar a conta"},
+
+    "a42p3": {"manter": true},
+
+    "a42p4": {"pagina": 4, "caixa": [568, 310, 950, 547], "alt": "Rapaz sorridente comendo pipoca ao lado de outras pessoas no cinema"},
+
+    "a42p8": {"pagina": 8, "caixa": [585, 320, 945, 540], "alt": "Casal sorridente andando abraçado por um shopping com sacolas coloridas"},
+
+    "a42p9": {"pagina": 9, "caixa": [752, 337, 960, 639], "alt": "Moça pensativa com a mão no queixo, vestindo blusa azul"},
+
+    "a42p10": {"pagina": 10, "caixa": [650, 347, 968, 1043], "alt": "Casal em um shopping, rapaz no cinema com pipoca e pai ajudando a filha a cozinhar"},
+
+    "a42p11": {"pagina": 11, "recortes": ["01"], "alt": "Moça pensativa com a mão no queixo, olhando para o lado"},
+
+    "a42p12": {"pagina": 12, "recortes": ["02", "03"], "alt": "Moça pensativa ao lado de plateia animada assistindo a um filme no cinema"},
+
+    "a42p13": {"pagina": 13, "caixa": [56, 330, 954, 686], "alt": "Moça atenta ouvindo, ao lado de um casal sorridente conversando em um shopping"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01", "02", "03"], "nota": "fragmentos das letras do título UNIT REVIEW 2, sem vaga"},
+    {"pagina": 1, "recortes": ["05"], "nota": "ícone de lâmpada da seção Objetivo da Unidade, sem vaga"},
+    {"pagina": 4, "recortes": ["02", "03", "04", "05"], "nota": "ícones numerados (2, 4, 6, 8) da timeline de perguntas, sem vaga"},
+    {"pagina": 5, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"], "nota": "página de gabarito sem vaga de imagem; círculos numerados, checkmarks, traço decorativo e foto do cinema repetida (mesma de a42p3/a42p4), sem figura própria"},
+    {"pagina": 6, "recortes": ["01", "02"], "nota": "fragmento do número do título e traço decorativo, sem vaga"},
+    {"pagina": 7, "recortes": ["01", "02", "03"], "nota": "fragmento do número do título e traços decorativos, sem vaga"},
+    {"pagina": 8, "recortes": ["02", "03"], "nota": "ícones de checkmark decorativos da lista de opções, sem vaga"},
+    {"pagina": 9, "recortes": ["01"], "nota": "fragmento do número do título, sem vaga"},
+    {"pagina": 10, "recortes": ["01"], "nota": "fragmento do número do título, sem vaga"},
+    {"pagina": 11, "recortes": ["02", "03"], "nota": "traços decorativos em arco, sem vaga"},
+    {"pagina": 12, "recortes": ["01"], "nota": "fragmento do número do título, sem vaga"},
+    {"pagina": 14, "recortes": ["14"], "nota": "forma decorativa clara (sem figura), sem vaga"}
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "aula": 17,
+  "vagas": {
+    "w17p1": {"pagina": 1, "recortes": ["01"], "alt": "Sala de estar clara com sofá verde-petróleo, poltronas e estante de livros"},
+
+    "w17p2a": {"pagina": 2, "recortes": ["01"], "alt": "Lápis amarelo apontado com borracha rosa presa por anel metálico"},
+    "w17p2b": {"pagina": 2, "recortes": ["02"], "alt": "Sofá de dois lugares em tecido verde-petróleo com pés de madeira"},
+    "w17p2c": {"pagina": 2, "recortes": ["03"], "alt": "Cama de casal com cabeceira de madeira escura e colcha verde-petróleo"},
+    "w17p2d": {"pagina": 2, "recortes": ["04"], "alt": "Borracha escolar retangular rosa e azul vista de lado"},
+
+    "w17p3a": {"pagina": 3, "recortes": ["01"], "alt": "Mesa redonda de madeira clara com vaso de planta e cadeira verde-petróleo"},
+    "w17p3b": {"pagina": 3, "recortes": ["02"], "alt": "Banheiro com azulejo verde-água, box de vidro e bancada de madeira"},
+    "w17p3c": {"pagina": 3, "recortes": ["03"], "alt": "Sala de estar com sofá verde-petróleo e mesa de centro com livros"},
+    "w17p3d": {"pagina": 3, "recortes": ["04"], "alt": "Poltrona azul-escura ao lado de estante baixa cheia de livros"},
+
+    "w17p5a": {"pagina": 5, "recortes": ["01"], "alt": "Lava-louças aberto com cesto cheio de pratos brancos e verde-petróleo"},
+    "w17p5b": {"pagina": 5, "recortes": ["02"], "alt": "Cadeira estofada azul-marinho com encosto alto e pés de madeira"},
+    "w17p5c": {"pagina": 5, "recortes": ["03"], "alt": "Porta-lápis azul-marinho com quatro lápis amarelos apontados"},
+
+    "w17p8a": {"pagina": 8, "recortes": ["01"], "alt": "Poltrona verde-petróleo de encosto arredondado e braços largos"},
+    "w17p8b": {"pagina": 8, "caixa": [113, 592, 219, 704], "alt": "Duas cadeiras roxas iguais lado a lado, vistas de frente"},
+    "w17p8c": {"pagina": 8, "caixa": [115, 827, 221, 938], "alt": "Livro aberto dourado com páginas viradas para cima"},
+    "w17p8d": {"pagina": 8, "caixa": [109, 1045, 215, 1163], "alt": "Janela quadrada azul dividida em quatro vidraças"},
+
+    "w17p9": {"pagina": 9, "recortes": ["01"], "alt": "Sala de estar bege com sofá, mesa de centro e estante de livros"},
+
+    "w17p10": {"pagina": 10, "recortes": ["01"], "alt": "Casal sorridente olhando para tablet em cozinha e sala integradas"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02"], "nota": "ícone de pessoa do card ONE — singular"},
+    {"pagina": 1, "recortes": ["03"], "nota": "ícone de grupo do card MORE THAN ONE — plural"},
+    {"pagina": 1, "recortes": ["04"], "nota": "ícone de alerta da seção NÃO CONFUNDA"},
+    {"pagina": 1, "recortes": ["05"], "nota": "ícone de alvo da seção OBJETIVO"},
+
+    {"pagina": 3, "recortes": ["05"], "nota": "ícone de certo do bloco COMPARE"},
+    {"pagina": 3, "recortes": ["06"], "nota": "ícone de errado do bloco COMPARE"},
+    {"pagina": 3, "recortes": ["07"], "nota": "ícone de raio da seção ATALHO"},
+
+    {"pagina": 4, "recortes": ["01"], "nota": "ícone de interrogação do título IS THERE...?"},
+    {"pagina": 4, "recortes": ["03", "05", "08"], "nota": "círculos numerados 1, 2 e 3 das perguntas"},
+    {"pagina": 4, "recortes": ["02", "06", "09"], "nota": "ícones de certo das respostas Yes, there is"},
+    {"pagina": 4, "recortes": ["04", "07", "10"], "nota": "ícones de errado das respostas No, there isn't"},
+    {"pagina": 4, "recortes": ["11"], "nota": "ícone de sincronizar da seção MUDANÇA DE ORDEM"},
+    {"pagina": 4, "recortes": ["12"], "nota": "seta pequena entre as frases da seção MUDANÇA DE ORDEM"},
+    {"pagina": 4, "recortes": ["13"], "nota": "ícone de lâmpada da seção RESPONDA CURTO"},
+
+    {"pagina": 5, "recortes": ["04"], "nota": "ícone de balança da seção ONE × MORE THAN ONE"},
+
+    {"pagina": 6, "recortes": ["01"], "nota": "ícone de certo do bloco COMPARE"},
+    {"pagina": 6, "recortes": ["02"], "nota": "ícone de errado do bloco COMPARE"},
+    {"pagina": 6, "recortes": ["03"], "nota": "ícone de alvo da seção PADRÃO"},
+
+    {"pagina": 7, "recortes": ["01"], "nota": "ícone de interrogação do título ARE THERE...?"},
+    {"pagina": 7, "recortes": ["02"], "nota": "ícone de quebra-cabeça da seção ESTRUTURA"},
+    {"pagina": 7, "recortes": ["03", "06"], "nota": "círculos numerados 1 e 2 das perguntas"},
+    {"pagina": 7, "recortes": ["04", "07"], "nota": "ícones de certo das respostas Yes, there are"},
+    {"pagina": 7, "recortes": ["05", "08"], "nota": "ícones de errado das respostas No, there aren't"},
+    {"pagina": 7, "recortes": ["09"], "nota": "seta da seção AFIRMATIVA → PERGUNTA"},
+    {"pagina": 7, "recortes": ["10"], "nota": "ícone de lâmpada da seção DICA"},
+
+    {"pagina": 8, "recortes": ["02"], "nota": "ícone de prancheta da seção RESUMO OPERACIONAL"},
+    {"pagina": 8, "recortes": ["03"], "nota": "ícone de alerta da seção IMPORTANTE"},
+
+    {"pagina": 9, "recortes": ["02"], "nota": "ícone de alvo da seção SEGUNDO PASSO"},
+
+    {"pagina": 10, "recortes": ["02"], "nota": "ícone de estrela da seção YOUR TURN"},
+
+    {"pagina": 11, "recortes": ["01"], "nota": "ilustração decorativa de luminária, sofá e planta no topo"},
+    {"pagina": 11, "recortes": ["02"], "nota": "ícone de alvo da seção EU CONSIGO"},
+    {"pagina": 11, "recortes": ["03"], "nota": "ícone de play do card VIDEOAULA 17"},
+    {"pagina": 11, "recortes": ["04", "05", "06", "07", "08", "10", "11", "12"], "nota": "ícones de certo da lista EU CONSIGO"},
+    {"pagina": 11, "recortes": ["09"], "nota": "ícone de brilho do card PRATIQUE COM A IA"},
+    {"pagina": 11, "recortes": ["13"], "nota": "ícone de cérebro da seção MICRODESAFIO"},
+    {"pagina": 11, "recortes": ["14"], "nota": "ícone de gráfico da seção PROGRESSO"},
+    {"pagina": 11, "recortes": ["15"], "nota": "ícone de avançar da seção PRÓXIMA AULA"}
+  ]
+}

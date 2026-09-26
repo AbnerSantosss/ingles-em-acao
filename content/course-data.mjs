@@ -8,7 +8,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 01" },
         { t: "title", en: "SUBJECT PRONOUNS", pt: "Pronomes pessoais do sujeito" },
         { t: "note", v: "cream", bar: true, bold: true, text: "QUEM FALA? COM QUEM FALAMOS?\nDE QUEM ESTAMOS FALANDO?" },
-        { t: "image", id: "a1p1", ph: "Ilustração: grupo conversando na sala" },
+        { t: "image", id: "a1p1", src: "/lessons/aulas/aula-01/a1p1.webp", alt: "Grupo de quatro amigos conversando animadamente na sala", w: 881, h: 506, ph: "Ilustração: grupo conversando na sala" },
         { t: "lead", text: "Em poucos minutos, você aprenderá a escolher entre:" },
         { t: "chips", items: [
           { t: "I", c: "navy" }, { t: "YOU", c: "teal" }, { t: "HE", c: "purple" }, { t: "SHE", c: "teal" },
@@ -21,7 +21,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 01 · CONTINUAÇÃO" },
         { t: "title", en: "I e YOU", pt: "Os dois primeiros pronomes da sua conversa." },
         { t: "note", v: "gray", center: true, bold: true, text: "Eu falo sobre mim ou falo com alguém?" },
-        { t: "image", id: "a1p2", ph: "Ilustração: duas pessoas conversando" },
+        { t: "image", id: "a1p2", src: "/lessons/aulas/aula-01/a1p2.webp", alt: "Mulher de blusa amarela e homem de camisa azul conversando sentados", w: 862, h: 459, ph: "Ilustração: duas pessoas conversando" },
         { t: "pron", code: "I", pt: "EU", c: "navy", v: "gray", title: "Use I quando você fala sobre você.", body: "Pense: “eu”.", tag: "APONTE PARA SI: I" },
         { t: "pron", code: "YOU", pt: "VOCÊ", c: "teal", v: "mint", title: "Use YOU quando fala diretamente com outra pessoa.", body: "Também pode significar “vocês”." },
         { t: "mc", id: "a1mc1", title: "TESTE RELÂMPAGO", v: "cream", questions: [
@@ -33,7 +33,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 01 · CONTINUAÇÃO" },
         { t: "title", en: "HE, SHE e IT", pt: "Para falar sobre alguém ou alguma coisa." },
         { t: "note", v: "gray", center: true, bold: true, text: "Você não fala com eles. Você fala sobre eles." },
-        { t: "image", id: "a1p3", ph: "Ilustração: duas pessoas lendo e um cachorro" },
+        { t: "image", id: "a1p3", src: "/lessons/aulas/aula-01/a1p3.webp", alt: "Rapaz e moça sentados lendo livros, com um cachorro branco ao lado", w: 878, h: 420, ph: "Ilustração: duas pessoas lendo e um cachorro" },
         { t: "pron", code: "HE", pt: "ELE", c: "navy", v: "gray", title: "Use para um homem ou menino.", body: "Exemplo: Rafael → HE" },
         { t: "pron", code: "SHE", pt: "ELA", c: "teal", v: "mint", title: "Use para uma mulher ou menina.", body: "Exemplo: Marina → SHE" },
         { t: "pron", code: "IT", pt: "ISSO", c: "purple", v: "lilac", title: "Use para coisas e animais em geral.", body: "Exemplo: a backpack → IT", foot: "Para um pet conhecido, HE ou SHE também é possível." },
@@ -47,7 +47,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 01 · CONTINUAÇÃO" },
         { t: "title", en: "WE e THEY", pt: "Pronomes para falar de grupos." },
         { t: "note", v: "gray", center: true, bold: true, text: "Pergunta-chave: você faz parte desse grupo?" },
-        { t: "image", id: "a1p4", ph: "Ilustração: selfie em grupo e reunião de estudo" },
+        { t: "image", id: "a1p4", src: "/lessons/aulas/aula-01/a1p4.webp", alt: "Grupo tirando selfie e trio reunido estudando à mesa", w: 897, h: 420, ph: "Ilustração: selfie em grupo e reunião de estudo" },
         { t: "pron", code: "WE", pt: "NÓS", c: "teal", v: "mint", title: "Use quando você faz parte do grupo.", body: "Exemplo: eu + meus amigos → WE", tag: "VOCÊ ESTÁ INCLUÍDO" },
         { t: "pron", code: "THEY", pt: "ELES / ELAS", c: "purple", v: "lilac", title: "Use para um grupo do qual você não faz parte.", body: "Exemplo: Rafael + Marina → THEY" },
         { t: "mc", id: "a1mc3", title: "ESCOLHA EM 2 PASSOS", v: "cream", questions: [
@@ -118,7 +118,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 02" },
         { t: "title", en: "VERB TO BE", pt: "Frases afirmativas com am, is e are." },
         { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Quem você é? Onde você está?\nComo você se sente?" },
-        { t: "image", id: "a2p1", ph: "Ilustração: três pessoas olhando um tablet" },
+        { t: "image", id: "a2p1", src: "/lessons/aulas/aula-02/a2p1.webp", alt: "Três amigos sorridentes olhando juntos para um tablet", w: 894, h: 464, ph: "Ilustração: três pessoas olhando um tablet" },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
           { title: "I am Brazilian.", body: "Eu sou brasileiro(a).", v: "mint" },
@@ -233,7 +233,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 03" },
         { t: "title", en: "VERB TO BE", pt: "Frases negativas com am not, isn’t e aren’t." },
         { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Nem toda informação é verdadeira.\nComo você a corrige em inglês?" },
-        { t: "image", id: "a3p1", ph: "Ilustração: três pessoas estudando com tablet" },
+        { t: "image", id: "a3p1", src: "/lessons/aulas/aula-03/a3p1.webp", alt: "Três pessoas estudando juntas com um tablet mostrando certo e errado", w: 894, h: 464, ph: "Ilustração: três pessoas estudando com tablet" },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
           { title: "I’m not a teacher.", body: "Eu não sou professor(a).", v: "mint" },
@@ -307,7 +307,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 03", page: "PÁGINA 07" },
         { t: "title", en: "CORRIJA A INFORMAÇÃO", pt: "Leia o perfil. Algumas frases não combinam com ele." },
-        { t: "profile", name: "PERFIL: CAMILA", id: "a3camila", ph: "Foto: Camila no escritório", facts: ["She is Brazilian.", "She is a designer.", "She is in Recife."] },
+        { t: "profile", name: "PERFIL: CAMILA", id: "a3camila", src: "/lessons/aulas/aula-03/a3camila.webp", alt: "Camila sorridente em escritório com estante de livros e janela ao fundo", w: 435, h: 317, ph: "Foto: Camila no escritório", facts: ["She is Brazilian.", "She is a designer.", "She is in Recife."] },
         { t: "note", v: "gray", bold: true, text: "AS FRASES ABAIXO SÃO FALSAS. Escreva a correção em inglês usando is not ou isn’t." },
         { t: "fill", id: "a3e2", wide: true, items: [
           { pre: "1. Camila is from France.", answers: ["camila is not from france.", "camila isn't from france.", "camila isn’t from france."], v: "red" },
@@ -349,7 +349,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 04" },
         { t: "title", en: "VERB TO BE", pt: "Perguntas com am, is e are." },
         { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Você já sabe afirmar e negar.\nComo se pergunta em inglês?" },
-        { t: "image", id: "a4p1", ph: "Ilustração: duas pessoas conversando e fazendo perguntas" },
+        { t: "image", id: "a4p1", src: "/lessons/aulas/aula-04/a4p1.webp", alt: "Mulher de jaqueta jeans e homem de blusa azul conversando à mesa com laptop", w: 879, h: 415, ph: "Ilustração: duas pessoas conversando e fazendo perguntas" },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A PERGUNTAR:", c: "purple" },
         { t: "grid", cols: 3, items: [
           { title: "Are you Brazilian?", body: "Você é brasileiro(a)?", v: "mint" },
@@ -452,7 +452,7 @@ export const LESSONS = [
         { t: "title", en: "VERB TO BE: REVIEW", pt: "As três formas do verb to be em uma só aula." },
         { t: "kicker", text: "AFFIRMATIVE + NEGATIVE + INTERROGATIVE" },
         { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Nas aulas anteriores, você aprendeu a usar o verb to be nas formas afirmativa, negativa e interrogativa.\nAgora chegou a hora de juntar tudo e usar as três formas com confiança!" },
-        { t: "image", id: "a5p1", ph: "Foto: um rapaz de jaqueta jeans e uma moça de blusa amarela conversando sentados à mesa de um café, com copos de café e um caderno sobre a mesa." },
+        { t: "image", id: "a5p1", src: "/lessons/aulas/aula-05/a5p1.webp", alt: "Rapaz de jaqueta jeans e moça de blusa amarela conversando em um café", w: 925, h: 306, ph: "Foto: um rapaz de jaqueta jeans e uma moça de blusa amarela conversando sentados à mesa de um café, com copos de café e um caderno sobre a mesa." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
           { kicker: "AFIRMAR", title: "I am happy.", body: "Eu sou, ele é, ela é, nós somos, vocês são, eles são.", v: "mint", c: "teal" },
@@ -534,7 +534,7 @@ export const LESSONS = [
           { a: "Are we ready?", b: "Nós estamos prontos?", note: "we", v: "lilac" },
           { a: "Are they here?", b: "Eles estão aqui?", note: "they", v: "lilac" } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "Para escolher entre am, is e are, pense no sujeito da frase." },
-        { t: "image", id: "a5p3", ph: "Ilustração: menino de camiseta azul com a mão no queixo, pensando, e um balão de pensamento ao lado com as palavras I? he? they?" },
+        { t: "image", id: "a5p3", src: "/lessons/aulas/aula-05/a5p3.webp", alt: "Menino de camiseta azul pensativo, com balão de pensamento I? he? they?", w: 230, h: 156, ph: "Ilustração: menino de camiseta azul com a mão no queixo, pensando, e um balão de pensamento ao lado com as palavras I? he? they?" },
         { t: "rule", v: "cream", c: "yellow", kicker: "DICA RÁPIDA · 1", from: "I", to: "am", ex: "I am happy.", tr: "Eu estou feliz." },
         { t: "rule", v: "mint", c: "teal", kicker: "DICA RÁPIDA · 2", from: "he · she · it", to: "is", ex: "She is kind.", tr: "Ela é gentil." },
         { t: "rule", v: "lilac", c: "purple", kicker: "DICA RÁPIDA · 3", from: "you · we · they", to: "are", ex: "They are here.", tr: "Eles estão aqui." },
@@ -547,16 +547,16 @@ export const LESSONS = [
         { t: "lead", text: "A mesma situação pode ser afirmada, negada ou perguntada. Veja os exemplos abaixo:" },
         { t: "sec", text: "AFIRMAR (AFFIRMATIVE) · NEGAR (NEGATIVE) · PERGUNTAR (INTERROGATIVE)" },
         { t: "cards", cols: 1, items: [
-          { tag: "01 · AT HOME", c: "teal", v: "mint", id: "a5p4a", ph: "Foto: sala de estar clara e aconchegante, com sofá bege, almofadas, mesa de centro e plantas.",
+          { tag: "01 · AT HOME", c: "teal", v: "mint", id: "a5p4a", src: "/lessons/aulas/aula-05/a5p4a.webp", alt: "Sala de estar aconchegante com sofá bege, almofadas e plantas", w: 146, h: 117, ph: "Foto: sala de estar clara e aconchegante, com sofá bege, almofadas, mesa de centro e plantas.",
             lines: ["I am at home.", "I am not at home.", "Am I at home?"],
             note: "Eu estou em casa. · Eu não estou em casa. · Eu estou em casa?" },
-          { tag: "02 · HUNGRY", c: "purple", v: "lilac", id: "a5p4b", ph: "Foto: jovem de blusa amarela sentada à mesa, sorrindo enquanto come uma fatia de pizza.",
+          { tag: "02 · HUNGRY", c: "purple", v: "lilac", id: "a5p4b", src: "/lessons/aulas/aula-05/a5p4b.webp", alt: "Jovem de blusa amarela sorrindo enquanto come uma fatia de pizza", w: 145, h: 113, ph: "Foto: jovem de blusa amarela sentada à mesa, sorrindo enquanto come uma fatia de pizza.",
             lines: ["She is hungry.", "She isn’t hungry.", "Is she hungry?"],
             note: "Ela está com fome. · Ela não está com fome. · Ela está com fome?" },
-          { tag: "03 · FRIENDS", c: "teal", v: "mint", id: "a5p4c", ph: "Foto: dois rapazes sentados frente a frente conversando e sorrindo, um de jaqueta jeans e outro de moletom verde.",
+          { tag: "03 · FRIENDS", c: "teal", v: "mint", id: "a5p4c", src: "/lessons/aulas/aula-05/a5p4c.webp", alt: "Dois rapazes conversando e sorrindo, um de jaqueta jeans e outro de moletom verde", w: 145, h: 112, ph: "Foto: dois rapazes sentados frente a frente conversando e sorrindo, um de jaqueta jeans e outro de moletom verde.",
             lines: ["They are friends.", "They aren’t friends.", "Are they friends?"],
             note: "Eles são amigos. · Eles não são amigos. · Eles são amigos?" },
-          { tag: "04 · COLD", c: "purple", v: "lilac", id: "a5p4d", ph: "Foto: parque coberto de neve, com árvores sem folhas, um banco e um poste de luz.",
+          { tag: "04 · COLD", c: "purple", v: "lilac", id: "a5p4d", src: "/lessons/aulas/aula-05/a5p4d.webp", alt: "Parque coberto de neve com árvores sem folhas, banco e poste de luz", w: 145, h: 114, ph: "Foto: parque coberto de neve, com árvores sem folhas, um banco e um poste de luz.",
             lines: ["It is very cold.", "It isn’t very cold.", "Is it very cold?"],
             note: "Está muito frio. · Não está muito frio. · Está muito frio?" } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA IMPORTANTE", bold: true, text: "A intenção da frase muda a estrutura." },
@@ -564,7 +564,7 @@ export const LESSONS = [
           { text: "Afirmar → sujeito + am / is / are + complemento.", c: "teal" },
           { text: "Negar → sujeito + am / is / are + not + complemento.", c: "red" },
           { text: "Perguntar → am / is / are + sujeito + complemento?", c: "purple" } ] },
-        { t: "image", id: "a5p4e", ph: "Ilustração: menino de camiseta roxa sorrindo com o dedo indicador levantado e um balão de fala ao lado com a frase Mude a intenção, mude a forma!" },
+        { t: "image", id: "a5p4e", src: "/lessons/aulas/aula-05/a5p4e.webp", alt: "Menino de camiseta roxa sorrindo com o dedo indicador levantado", w: 148, h: 149, ph: "Ilustração: menino de camiseta roxa sorrindo com o dedo indicador levantado e um balão de fala ao lado com a frase Mude a intenção, mude a forma!" },
         { t: "mc", id: "a5mc2", title: "A · ESCOLHA A INTENÇÃO CORRETA PARA CADA SITUAÇÃO", v: "gray", questions: [
           { q: "01. Você quer saber se ele é professor.", options: ["Afirmar", "Negar", "Perguntar"], answer: 2, explain: "Você quer saber algo, então a frase vira pergunta: Is he a teacher?" },
           { q: "02. Você diz que não está cansado.", options: ["Afirmar", "Negar", "Perguntar"], answer: 1, explain: "Você nega algo: I am not tired." },
@@ -578,21 +578,21 @@ export const LESSONS = [
         { t: "title", en: "CONVERSAÇÃO REAL", pt: "As três formas do verb to be nas conversas do dia a dia." },
         { t: "lead", text: "Nas conversas do dia a dia, usamos as três formas do verb to be o tempo todo. Veja os diálogos abaixo:" },
         { t: "sec", text: "1 · EM CASA" },
-        { t: "image", id: "a5p5a", ph: "Foto: rapaz de moletom verde falando ao celular na rua, sorrindo, com prédios ao fundo." },
+        { t: "image", id: "a5p5a", src: "/lessons/aulas/aula-05/a5p5a.webp", alt: "Rapaz de moletom verde falando ao celular na rua", w: 368, h: 176, ph: "Foto: rapaz de moletom verde falando ao celular na rua, sorrindo, com prédios ao fundo." },
         { t: "dialogue", items: [
           { s: "a", text: "Are you at home?" },
           { s: "b", text: "No, I’m not. I’m at work." },
           { s: "a", text: "Is your brother home?" },
           { s: "b", text: "Yes, he is." } ] },
         { t: "sec", text: "2 · NO CAFÉ" },
-        { t: "image", id: "a5p5b", ph: "Foto: duas jovens conversando e sorrindo em um café, cada uma com um copo de café na mão." },
+        { t: "image", id: "a5p5b", src: "/lessons/aulas/aula-05/a5p5b.webp", alt: "Duas jovens conversando e sorrindo em um café, com copos na mão", w: 370, h: 176, ph: "Foto: duas jovens conversando e sorrindo em um café, cada uma com um copo de café na mão." },
         { t: "dialogue", items: [
           { s: "a", text: "Is this coffee hot?" },
           { s: "b", text: "No, it isn’t. It’s warm." },
           { s: "a", text: "Are you ready to order?" },
           { s: "b", text: "Yes, we are." } ] },
         { t: "sec", text: "3 · NA ESCOLA" },
-        { t: "image", id: "a5p5c", ph: "Foto: três rapazes sentados à mesa de uma sala de aula, conversando com cadernos abertos à frente." },
+        { t: "image", id: "a5p5c", src: "/lessons/aulas/aula-05/a5p5c.webp", alt: "Três rapazes sentados à mesa conversando com cadernos abertos", w: 337, h: 174, ph: "Foto: três rapazes sentados à mesa de uma sala de aula, conversando com cadernos abertos à frente." },
         { t: "dialogue", items: [
           { s: "a", text: "Are they your classmates?" },
           { s: "b", text: "Yes, they are." },
@@ -608,7 +608,7 @@ export const LESSONS = [
           { pre: "05. A:", answers: ["Is"], post: "he at the gym now?", v: "mint" },
           { pre: "05. B: Yes, he", answers: ["is"], post: ".", v: "mint" } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA RÁPIDA", bold: true, text: "Para conversar bem, pratique as três formas: afirmar (.), negar (n’t) e perguntar (?).\nAssim, você se entende em qualquer situação!" },
-        { t: "image", id: "a5p5d", ph: "Ilustração: menina de camiseta roxa com o dedo indicador levantado e um balão de fala ao lado com as frases Yes, I am. No, I’m not. Are you ready?" },
+        { t: "image", id: "a5p5d", src: "/lessons/aulas/aula-05/a5p5d.webp", alt: "Menina de camiseta roxa sorrindo com o dedo indicador levantado", w: 152, h: 146, ph: "Ilustração: menina de camiseta roxa com o dedo indicador levantado e um balão de fala ao lado com as frases Yes, I am. No, I’m not. Are you ready?" },
         { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Vamos encontrar e corrigir erros comuns com o verb to be." } ] },
 
       { blocks: [
@@ -634,7 +634,7 @@ export const LESSONS = [
           { t: "1. QUEM É O SUJEITO?", c: "blue" },
           { t: "2. QUAL FORMA USAR?", c: "purple" },
           { t: "3. AFIRMAR, NEGAR OU PERGUNTAR?", c: "teal" } ] },
-        { t: "image", id: "a5p6", ph: "Ilustração: troféu dourado com brilhos ao redor, ao lado dos três passos para escolher a forma do verb to be." },
+        { t: "image", id: "a5p6", src: "/lessons/aulas/aula-05/a5p6.webp", alt: "Troféu dourado com brilhos ao redor", w: 61, h: 108, ph: "Ilustração: troféu dourado com brilhos ao redor, ao lado dos três passos para escolher a forma do verb to be." },
         { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai escolher a forma correta do verb to be de acordo com a intenção da frase." } ] },
 
       { blocks: [
@@ -647,19 +647,19 @@ export const LESSONS = [
           { kicker: "PERGUNTAR", title: "Você quer saber algo.", v: "lilac", c: "purple" } ] },
         { t: "note", v: "cream", bar: true, bold: true, text: "Pense na situação e escolha a melhor intenção!" },
         { t: "steps", items: [
-          { n: "1", tag: "SITUAÇÃO 01", c: "teal", v: "mint", id: "a5p7a", ph: "Foto: mulher sentada no sofá da sala, lendo um livro aberto, com uma planta ao fundo.",
+          { n: "1", tag: "SITUAÇÃO 01", c: "teal", v: "mint", id: "a5p7a", src: "/lessons/aulas/aula-05/a5p7a.webp", alt: "Mulher sentada no sofá lendo um livro, com uma planta ao fundo", w: 155, h: 137, ph: "Foto: mulher sentada no sofá da sala, lendo um livro aberto, com uma planta ao fundo.",
             lines: ["Você quer dizer que está em casa agora."],
             note: "A · Afirmar: I ____ at home now.   B · Negar: I ____ at home now.   C · Perguntar: ____ I at home now?" },
-          { n: "2", tag: "SITUAÇÃO 02", c: "purple", v: "lilac", id: "a5p7b", ph: "Foto: rapaz de casaco e mochila em pé na calçada, olhando para o lado, com árvores desfocadas ao fundo.",
+          { n: "2", tag: "SITUAÇÃO 02", c: "purple", v: "lilac", id: "a5p7b", src: "/lessons/aulas/aula-05/a5p7b.webp", alt: "Rapaz de casaco e mochila na calçada, olhando para o lado", w: 156, h: 126, ph: "Foto: rapaz de casaco e mochila em pé na calçada, olhando para o lado, com árvores desfocadas ao fundo.",
             lines: ["Você quer dizer que não está com fome."],
             note: "A · Afirmar: I ____ hungry.   B · Negar: I ____ hungry.   C · Perguntar: ____ I hungry?" },
-          { n: "3", tag: "SITUAÇÃO 03", c: "teal", v: "mint", id: "a5p7c", ph: "Foto: duas mulheres conversando e sorrindo em uma mesa de café ao ar livre, uma apontando para a outra.",
+          { n: "3", tag: "SITUAÇÃO 03", c: "teal", v: "mint", id: "a5p7c", src: "/lessons/aulas/aula-05/a5p7c.webp", alt: "Duas mulheres conversando e sorrindo em uma mesa de café, uma apontando", w: 156, h: 125, ph: "Foto: duas mulheres conversando e sorrindo em uma mesa de café ao ar livre, uma apontando para a outra.",
             lines: ["Você quer saber se ela é sua amiga."],
             note: "A · Afirmar: She ____ your friend.   B · Negar: She ____ your friend.   C · Perguntar: ____ she your friend?" },
-          { n: "4", tag: "SITUAÇÃO 04", c: "purple", v: "lilac", id: "a5p7d", ph: "Foto: homem de óculos e camisa azul trabalhando em um notebook sobre a mesa, concentrado.",
+          { n: "4", tag: "SITUAÇÃO 04", c: "purple", v: "lilac", id: "a5p7d", src: "/lessons/aulas/aula-05/a5p7d.webp", alt: "Homem de óculos e camisa azul trabalhando em um notebook", w: 156, h: 125, ph: "Foto: homem de óculos e camisa azul trabalhando em um notebook sobre a mesa, concentrado.",
             lines: ["Você quer dizer que eles não estão no trabalho hoje."],
             note: "A · Afirmar: They ____ at work today.   B · Negar: They ____ at work today.   C · Perguntar: ____ they at work today?" },
-          { n: "5", tag: "SITUAÇÃO 05", c: "teal", v: "mint", id: "a5p7e", ph: "Foto: mulher de touca e cachecol na rua em um dia de neve, abraçando os próprios braços de frio.",
+          { n: "5", tag: "SITUAÇÃO 05", c: "teal", v: "mint", id: "a5p7e", src: "/lessons/aulas/aula-05/a5p7e.webp", alt: "Mulher de touca e cachecol na rua em um dia de neve", w: 156, h: 125, ph: "Foto: mulher de touca e cachecol na rua em um dia de neve, abraçando os próprios braços de frio.",
             lines: ["Você quer saber se ele está com frio."],
             note: "A · Afirmar: He ____ cold.   B · Negar: He ____ cold.   C · Perguntar: ____ he cold?" } ] },
         { t: "mc", id: "a5mc3", title: "1 · ESCOLHA A MELHOR INTENÇÃO PARA CADA SITUAÇÃO", v: "gray", questions: [
@@ -679,14 +679,14 @@ export const LESSONS = [
           { text: "Quero afirmar? → uso am / is / are.", c: "teal" },
           { text: "Quero negar? → uso am not / isn’t / aren’t.", c: "red" },
           { text: "Quero perguntar? → coloco am / is / are antes do sujeito.", c: "purple" } ] },
-        { t: "image", id: "a5p7f", ph: "Ilustração: menino de camiseta azul com a mão no queixo e um balão de pensamento ao lado com a frase O que eu quero fazer com esta frase?" },
+        { t: "image", id: "a5p7f", src: "/lessons/aulas/aula-05/a5p7f.webp", alt: "Menino de camiseta azul pensativo, com a mão no queixo", w: 88, h: 143, ph: "Ilustração: menino de camiseta azul com a mão no queixo e um balão de pensamento ao lado com a frase O que eu quero fazer com esta frase?" },
         { t: "note", v: "lilac", kicker: "VAMOS PRATICAR!", text: "Na próxima página, complete diálogos usando as três formas do verb to be." },
         { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai completar diálogos reais com afirmar, negar e perguntar." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 05", page: "PÁGINA 08" },
         { t: "title", en: "DESAFIO INTEGRADO", pt: "Use tudo junto: complete, transforme e escreva." },
-        { t: "image", id: "a5p8", ph: "Foto: três jovens sentados à mesa de uma biblioteca, conversando e sorrindo, com livros e cadernos abertos e um copo de café sobre a mesa." },
+        { t: "image", id: "a5p8", src: "/lessons/aulas/aula-05/a5p8.webp", alt: "Três jovens conversando em uma mesa de biblioteca com livros e café", w: 379, h: 230, ph: "Foto: três jovens sentados à mesa de uma biblioteca, conversando e sorrindo, com livros e cadernos abertos e um copo de café sobre a mesa." },
         { t: "lead", text: "Agora é a hora de usar tudo junto! Complete diálogos, transforme frases e escreva com as três formas do verb to be." },
         { t: "fill", id: "a5e5", title: "A · COMPLETE OS DIÁLOGOS 01 A 03 COM A FORMA CORRETA DO VERB TO BE", items: [
           { pre: "01. A:", answers: ["Are"], post: "you a student?", v: "mint" },
@@ -732,7 +732,7 @@ export const LESSONS = [
           { n: "5", kicker: "INTERROGATIVA", prefix: "Are you…?", ideas: "Ex.: Are you ready?", v: "lilac", c: "purple" },
           { n: "6", kicker: "INTERROGATIVA", prefix: "Is she…?", ideas: "Escreva outra pergunta.", v: "lilac", c: "purple" } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA DE OURO", bold: true, text: "A intenção da frase define a estrutura. Afirme, negue e pergunte com clareza." },
-        { t: "image", id: "a5p8b", ph: "Ilustração: menina de camiseta roxa com o dedo indicador levantado e um balão de fala ao lado com a frase Você já domina as três formas! Continue praticando!" },
+        { t: "image", id: "a5p8b", src: "/lessons/aulas/aula-05/a5p8b.webp", alt: "Menina de camiseta roxa sorrindo com o dedo indicador levantado", w: 124, h: 111, ph: "Ilustração: menina de camiseta roxa com o dedo indicador levantado e um balão de fala ao lado com a frase Você já domina as três formas! Continue praticando!" },
         { t: "note", v: "lilac", kicker: "VAMOS PRATICAR!", text: "Na próxima página, você vai revisar rapidamente o que aprendeu na Aula 05." },
         { t: "note", v: "gray", kicker: "NA PRÓXIMA AULA", text: "Na Aula 06, você vai aprender a falar sobre países e nacionalidades." } ] },
 
@@ -765,7 +765,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 06" },
         { t: "title", en: "COUNTRIES AND NATIONALITIES", pt: "De onde você é?" },
         { t: "lead", text: "Nesta aula, você vai aprender a falar sobre países e nacionalidades e a perguntar e responder de onde as pessoas são. Vamos lá?" },
-        { t: "image", id: "a6p1", ph: "Ilustração: Ana e Leo conversando em pé ao ar livre, com prédios da cidade ao fundo. Ana, de camiseta azul-turquesa e mochila, acena com a mão aberta. Leo, de moletom roxo e mochila, sorri de frente para ela. Quatro balões de fala saem dos dois." },
+        { t: "image", id: "a6p1", src: "/lessons/aulas/aula-06/a6p1.webp", alt: "Ana acenando para Leo enquanto os dois conversam ao ar livre com prédios ao fundo", w: 924, h: 530, ph: "Ilustração: Ana e Leo conversando em pé ao ar livre, com prédios da cidade ao fundo. Ana, de camiseta azul-turquesa e mochila, acena com a mão aberta. Leo, de moletom roxo e mochila, sorri de frente para ela. Quatro balões de fala saem dos dois." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Hi! I’m Ana." },
           { s: "b", text: "Leo: Hi! I’m Leo." },
@@ -783,12 +783,12 @@ export const LESSONS = [
         { t: "badge", label: "AULA 06", page: "PÁGINA 02" },
         { t: "title", en: "COUNTRY × NATIONALITY", pt: "País e nacionalidade não são a mesma coisa." },
         { t: "cards", cols: 2, items: [
-          { tag: "COUNTRY", c: "teal", v: "mint", id: "a6p2a", ph: "Ilustração: globo terrestre azul com a América do Sul virada para a frente e o Brasil destacado em verde, com a bandeira do Brasil ao lado.", lines: ["Brazil"], note: "= country (país)" },
-          { tag: "NATIONALITY", c: "purple", v: "lilac", id: "a6p2b", ph: "Ilustração: menino de moletom roxo sorrindo e apontando para si mesmo com o polegar, com a bandeira do Brasil ao lado.", lines: ["Brazilian"], note: "= nationality (nacionalidade)" } ] },
+          { tag: "COUNTRY", c: "teal", v: "mint", id: "a6p2a", src: "/lessons/aulas/aula-06/a6p2a.webp", alt: "Globo terrestre com o Brasil destacado em verde e a bandeira do Brasil ao lado", w: 232, h: 162, ph: "Ilustração: globo terrestre azul com a América do Sul virada para a frente e o Brasil destacado em verde, com a bandeira do Brasil ao lado.", lines: ["Brazil"], note: "= country (país)" },
+          { tag: "NATIONALITY", c: "purple", v: "lilac", id: "a6p2b", src: "/lessons/aulas/aula-06/a6p2b.webp", alt: "Menino de moletom roxo apontando para si mesmo, com a bandeira do Brasil ao lado", w: 260, h: 158, ph: "Ilustração: menino de moletom roxo sorrindo e apontando para si mesmo com o polegar, com a bandeira do Brasil ao lado.", lines: ["Brazilian"], note: "= nationality (nacionalidade)" } ] },
         { t: "sec", text: "MODELOS:" },
         { t: "cards", cols: 2, items: [
-          { tag: "ORIGEM", c: "teal", v: "mint", id: "a6p2c", ph: "Ilustração: Ana, de camiseta azul-turquesa e mochila, sorrindo com o dedo indicador levantado, e um balão de fala grande ao lado dela.", lines: ["I’m from Brazil."], note: "Usamos para dizer de onde somos." },
-          { tag: "NACIONALIDADE", c: "purple", v: "lilac", id: "a6p2d", ph: "Ilustração: Leo, de moletom roxo, sorrindo com a mão no peito, e um balão de fala grande ao lado dele.", lines: ["I’m Brazilian."], note: "Usamos para dizer qual é a nossa nacionalidade." } ] },
+          { tag: "ORIGEM", c: "teal", v: "mint", id: "a6p2c", src: "/lessons/aulas/aula-06/a6p2c.webp", alt: "Ana sorrindo com o dedo indicador levantado, de camiseta azul-turquesa e mochila", w: 202, h: 182, ph: "Ilustração: Ana, de camiseta azul-turquesa e mochila, sorrindo com o dedo indicador levantado, e um balão de fala grande ao lado dela.", lines: ["I’m from Brazil."], note: "Usamos para dizer de onde somos." },
+          { tag: "NACIONALIDADE", c: "purple", v: "lilac", id: "a6p2d", src: "/lessons/aulas/aula-06/a6p2d.webp", alt: "Leo sorrindo com o dedo indicador levantado, vestindo moletom roxo", w: 182, h: 190, ph: "Ilustração: Leo, de moletom roxo, sorrindo com a mão no peito, e um balão de fala grande ao lado dele.", lines: ["I’m Brazilian."], note: "Usamos para dizer qual é a nossa nacionalidade." } ] },
         { t: "sec", text: "MAIS EXEMPLOS:" },
         { t: "table", head: ["COUNTRY · PAÍS", "NATIONALITY · NACIONALIDADE"], rows: [
           { a: "Canada", b: "Canadian", v: "mint" },
@@ -819,8 +819,8 @@ export const LESSONS = [
         { t: "note", v: "cream", bar: true, kicker: "LEMBRE-SE", bold: true, text: "United Kingdom e England não são a mesma coisa.\nUnited Kingdom é o país. England é uma parte dele." },
         { t: "sec", text: "MODELOS:" },
         { t: "cards", cols: 2, items: [
-          { tag: "MODELO 1", c: "teal", v: "mint", id: "a6p3a", ph: "Ilustração: menina de camiseta azul-turquesa e mochila sorrindo com o polegar levantado, com a bandeira do Brasil ao lado e um balão de fala.", lines: ["I’m from Brazil.", "I’m Brazilian."] },
-          { tag: "MODELO 2", c: "purple", v: "lilac", id: "a6p3b", ph: "Ilustração: menino de camiseta azul acenando, com a bandeira do Japão ao lado e um balão de fala.", lines: ["She’s from Japan.", "She’s Japanese."] } ] },
+          { tag: "MODELO 1", c: "teal", v: "mint", id: "a6p3a", src: "/lessons/aulas/aula-06/a6p3a.webp", alt: "Menina de camiseta azul-turquesa e mochila sorrindo alegremente", w: 158, h: 155, ph: "Ilustração: menina de camiseta azul-turquesa e mochila sorrindo com o polegar levantado, com a bandeira do Brasil ao lado e um balão de fala.", lines: ["I’m from Brazil.", "I’m Brazilian."] },
+          { tag: "MODELO 2", c: "purple", v: "lilac", id: "a6p3b", src: "/lessons/aulas/aula-06/a6p3b.webp", alt: "Menino de camiseta azul sorrindo alegremente", w: 150, h: 155, ph: "Ilustração: menino de camiseta azul acenando, com a bandeira do Japão ao lado e um balão de fala.", lines: ["She’s from Japan.", "She’s Japanese."] } ] },
         { t: "sec", text: "VAMOS PRATICAR?" },
         { t: "match", id: "a6match2", title: "1 · LIGUE COM A NACIONALIDADE CORRETA",
           left: ["Brazil", "Japan", "Portugal"],
@@ -842,7 +842,7 @@ export const LESSONS = [
           { a: "United States", b: "American", v: "mint" },
           { a: "Russia", b: "Russian", v: "lilac" } ] },
         { t: "sec", text: "VAMOS PRATICAR?" },
-        { t: "image", id: "a6p4a", ph: "Ilustração: quatro bandeiras retangulares em fila, numeradas de 1 a 4: China, Itália, França e Estados Unidos." },
+        { t: "image", id: "a6p4a", src: "/lessons/aulas/aula-06/a6p4a.webp", alt: "Quatro bandeiras numeradas: China, Itália, França e Estados Unidos", w: 833, h: 50, ph: "Ilustração: quatro bandeiras retangulares em fila, numeradas de 1 a 4: China, Itália, França e Estados Unidos." },
         { t: "fill", id: "a6e2", title: "1 · OBSERVE A BANDEIRA E COMPLETE COM O PAÍS OU A NACIONALIDADE", items: [
           { pre: "1. I’m from", answers: ["China"], post: ".", note: "bandeira da China", v: "mint" },
           { pre: "1. I’m", answers: ["Chinese"], post: ".", v: "mint" },
@@ -854,8 +854,8 @@ export const LESSONS = [
           { pre: "4. I’m", answers: ["American"], post: ".", v: "mint" } ] },
         { t: "sec", text: "MODELOS:" },
         { t: "cards", cols: 2, items: [
-          { tag: "MODELO 1", c: "teal", v: "mint", id: "a6p4b", ph: "Ilustração: menina de camiseta azul-turquesa e mochila sorrindo, com a bandeira da Itália ao lado e um balão de fala.", lines: ["I’m from Italy.", "I’m Italian."] },
-          { tag: "MODELO 2", c: "purple", v: "lilac", id: "a6p4c", ph: "Ilustração: menino de moletom roxo sorrindo, com a bandeira dos Estados Unidos ao lado e um balão de fala.", lines: ["He’s from the United States.", "He’s American."] } ] },
+          { tag: "MODELO 1", c: "teal", v: "mint", id: "a6p4b", src: "/lessons/aulas/aula-06/a6p4b.webp", alt: "Menina de camiseta azul-turquesa sorrindo, com mochila nas costas", w: 159, h: 130, ph: "Ilustração: menina de camiseta azul-turquesa e mochila sorrindo, com a bandeira da Itália ao lado e um balão de fala.", lines: ["I’m from Italy.", "I’m Italian."] },
+          { tag: "MODELO 2", c: "purple", v: "lilac", id: "a6p4c", src: "/lessons/aulas/aula-06/a6p4c.webp", alt: "Menino de moletom roxo com balão de fala e a bandeira dos Estados Unidos", w: 423, h: 153, ph: "Ilustração: menino de moletom roxo sorrindo, com a bandeira dos Estados Unidos ao lado e um balão de fala.", lines: ["He’s from the United States.", "He’s American."] } ] },
         { t: "note", v: "cream", bar: true, kicker: "LEMBRE-SE", bold: true, text: "O nome do país pode ser bem diferente do nome da nacionalidade." },
         { t: "key", v: "cream", text: "Quanto mais você praticar, mais rápido vai memorizar!" } ] },
 
@@ -874,7 +874,7 @@ export const LESSONS = [
           { title: "I’m from Brazil.", body: "= origem, o país", v: "mint", c: "teal" },
           { title: "I’m Brazilian.", body: "= nacionalidade", v: "lilac", c: "purple" } ] },
         { t: "sec", text: "VAMOS VER UM DIÁLOGO:" },
-        { t: "image", id: "a6p5", ph: "Ilustração: dois quadros lado a lado. No primeiro, uma menina de camiseta azul-turquesa e mochila acena para um rapaz ruivo de moletom verde. No segundo, os dois continuam conversando de frente um para o outro, com prédios da cidade ao fundo." },
+        { t: "image", id: "a6p5", src: "/lessons/aulas/aula-06/a6p5.webp", alt: "Menina acena para um rapaz ruivo e os dois conversam com prédios ao fundo", w: 932, h: 178, ph: "Ilustração: dois quadros lado a lado. No primeiro, uma menina de camiseta azul-turquesa e mochila acena para um rapaz ruivo de moletom verde. No segundo, os dois continuam conversando de frente um para o outro, com prédios da cidade ao fundo." },
         { t: "dialogue", items: [
           { s: "a", text: "Hi! Where are you from?" },
           { s: "b", text: "I’m from Canada." },
@@ -901,7 +901,7 @@ export const LESSONS = [
           { a: "Where is she from?", b: "She’s from Japan. She’s Japanese.", v: "lilac" },
           { a: "Where are they from?", b: "They’re from China. They’re Chinese.", v: "cream" } ] },
         { t: "sec", text: "2 · PERGUNTA E RESPOSTA SOBRE OBJETOS (ORIGEM)" },
-        { t: "image", id: "a6p6a", ph: "Ilustração: câmera fotográfica vermelha vista de frente, com a bandeira do Japão ao lado." },
+        { t: "image", id: "a6p6a", src: "/lessons/aulas/aula-06/a6p6a.webp", alt: "Câmera fotográfica vermelha com balão de fala dizendo que é do Japão", w: 199, h: 80, ph: "Ilustração: câmera fotográfica vermelha vista de frente, com a bandeira do Japão ao lado." },
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
           { a: "Where is it from?", b: "It’s from Japan.", note: "country of origin", v: "mint" } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA!", bold: true, text: "Objetos têm origem (country of origin), não nationality." },
@@ -912,7 +912,7 @@ export const LESSONS = [
           { a: "they", b: "eles / elas", v: "cream" },
           { a: "it", b: "ele / ela para coisas, objetos e animais (quando apropriado)", v: "gray" } ] },
         { t: "sec", text: "4 · VAMOS VER UM DIÁLOGO!" },
-        { t: "image", id: "a6p6b", ph: "Ilustração: em três quadros, uma menina de camiseta azul-turquesa conversa com um rapaz ruivo de moletom verde, apontando para a foto de um terceiro rapaz, com prédios da cidade ao fundo." },
+        { t: "image", id: "a6p6b", src: "/lessons/aulas/aula-06/a6p6b.webp", alt: "Menina conversa com um rapaz ruivo mostrando a foto de outro rapaz", w: 926, h: 268, ph: "Ilustração: em três quadros, uma menina de camiseta azul-turquesa conversa com um rapaz ruivo de moletom verde, apontando para a foto de um terceiro rapaz, com prédios da cidade ao fundo." },
         { t: "dialogue", items: [
           { s: "a", text: "Hi! Who is he?" },
           { s: "b", text: "He’s Ken." },
@@ -934,7 +934,7 @@ export const LESSONS = [
         { t: "title", en: "LET’S TALK!", pt: "Agora vamos usar o inglês em pequenas conversas." },
         { t: "note", v: "cream", bar: true, bold: true, text: "Lembre-se: use cumprimentos, nome, país e nacionalidade para conversar de forma simples e natural." },
         { t: "sec", text: "1 · DIALOGUE 1: FIRST MEETING" },
-        { t: "image", id: "a6p7a", ph: "Ilustração: Sofia, de camiseta azul-turquesa e mochila, acena para Daniel, de moletom verde e mochila, em um parque com prédios ao fundo. Balões de fala saem dos dois." },
+        { t: "image", id: "a6p7a", src: "/lessons/aulas/aula-06/a6p7a.webp", alt: "Sofia acena para Daniel enquanto conversam em um parque com prédios ao fundo", w: 927, h: 353, ph: "Ilustração: Sofia, de camiseta azul-turquesa e mochila, acena para Daniel, de moletom verde e mochila, em um parque com prédios ao fundo. Balões de fala saem dos dois." },
         { t: "dialogue", items: [
           { s: "a", text: "Sofia: Hi! I’m Sofia. What’s your name?" },
           { s: "b", text: "Daniel: I’m Daniel. Nice to meet you." },
@@ -942,12 +942,12 @@ export const LESSONS = [
           { s: "b", text: "Daniel: I’m from Canada. I’m Canadian. How about you?" },
           { s: "a", text: "Sofia: I’m from Brazil. I’m Brazilian." } ] },
         { t: "sec", text: "2 · DIALOGUE 2: TALKING ABOUT OTHERS" },
-        { t: "image", id: "a6p7b", ph: "Ilustração: duas meninas conversam na calçada, uma de camiseta azul-turquesa e outra de camiseta rosa, com o retrato de um rapaz japonês e a bandeira do Japão ao lado." },
+        { t: "image", id: "a6p7b", src: "/lessons/aulas/aula-06/a6p7b.webp", alt: "Duas meninas conversam com o retrato de um rapaz japonês e a bandeira do Japão", w: 452, h: 261, ph: "Ilustração: duas meninas conversam na calçada, uma de camiseta azul-turquesa e outra de camiseta rosa, com o retrato de um rapaz japonês e a bandeira do Japão ao lado." },
         { t: "dialogue", items: [
           { s: "a", text: "Who is he?" },
           { s: "b", text: "He’s Ken." },
           { s: "b", text: "He’s from Japan. He’s Japanese." } ] },
-        { t: "image", id: "a6p7c", ph: "Ilustração: as mesmas duas meninas conversam na calçada, com o retrato de um casal de jovens chineses e a bandeira da China ao lado." },
+        { t: "image", id: "a6p7c", src: "/lessons/aulas/aula-06/a6p7c.webp", alt: "As mesmas meninas conversam com o retrato de um casal chinês e a bandeira da China", w: 467, h: 266, ph: "Ilustração: as mesmas duas meninas conversam na calçada, com o retrato de um casal de jovens chineses e a bandeira da China ao lado." },
         { t: "dialogue", items: [
           { s: "a", text: "Where are they from?" },
           { s: "b", text: "They’re from China. They’re Chinese." } ] },
@@ -985,7 +985,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 07", page: "PÁGINA 01" },
         { t: "title", en: "FAMILY", pt: "Conheça os membros da família" },
         { t: "note", v: "gray", text: "Nesta aula, você vai aprender os principais membros da família em inglês e começar a falar sobre eles!" },
-        { t: "image", id: "a7p1", ph: "Ilustração: a família da Ana reunida na sala de casa, com janela, quadro e estante ao fundo. Da esquerda para a direita: Ana acenando, de camiseta azul-turquesa; o pai barbudo de polo azul, com a etiqueta roxa Dad (father); a irmã menor de camiseta rosa e tiara, com a etiqueta Sister; a mãe de blusa amarela, com a etiqueta Mom (mother); o irmão de moletom verde, com a etiqueta Brother; e um cachorro caramelo. Balão de fala branco saindo da Ana com o texto Hi! I’m Ana. This is my family." },
+        { t: "image", id: "a7p1", src: "/lessons/aulas/aula-07/a7p1.webp", alt: "Família reunida na sala com a Ana, o pai, a mãe, os irmãos e o cachorro", w: 952, h: 675, ph: "Ilustração: a família da Ana reunida na sala de casa, com janela, quadro e estante ao fundo. Da esquerda para a direita: Ana acenando, de camiseta azul-turquesa; o pai barbudo de polo azul, com a etiqueta roxa Dad (father); a irmã menor de camiseta rosa e tiara, com a etiqueta Sister; a mãe de blusa amarela, com a etiqueta Mom (mother); o irmão de moletom verde, com a etiqueta Brother; e um cachorro caramelo. Balão de fala branco saindo da Ana com o texto Hi! I’m Ana. This is my family." },
         { t: "dialogue", items: [
           { s: "a", text: "Hi! I’m Ana." },
           { s: "a", text: "This is my family." } ] },
@@ -1000,7 +1000,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 07", page: "PÁGINA 02" },
         { t: "title", en: "MY FAMILY", pt: "Os membros mais próximos da família" },
         { t: "note", v: "gray", text: "Estas são algumas pessoas da família. Observe os nomes e as relações." },
-        { t: "image", id: "a7p2", ph: "Ilustração: cinco pessoas lado a lado, cada uma com uma etiqueta roxa acima da cabeça. Da esquerda para a direita: Dad (father), o pai barbudo de polo azul; Mom (mother), a mãe de blusa amarela; Brother, o irmão de moletom verde; Sister, a irmã de camiseta rosa e tiara; Me, a Ana de camiseta azul-turquesa acenando. Embaixo, linhas de árvore genealógica ligam os cinco a um balão amarelo com a frase We are a family! e um coração rosa." },
+        { t: "image", id: "a7p2", src: "/lessons/aulas/aula-07/a7p2.webp", alt: "Cinco pessoas da família lado a lado com as etiquetas Dad, Mom, Brother, Sister e Me", w: 1000, h: 566, ph: "Ilustração: cinco pessoas lado a lado, cada uma com uma etiqueta roxa acima da cabeça. Da esquerda para a direita: Dad (father), o pai barbudo de polo azul; Mom (mother), a mãe de blusa amarela; Brother, o irmão de moletom verde; Sister, a irmã de camiseta rosa e tiara; Me, a Ana de camiseta azul-turquesa acenando. Embaixo, linhas de árvore genealógica ligam os cinco a um balão amarelo com a frase We are a family! e um coração rosa." },
         { t: "table", head: ["INGLÊS", "PORTUGUÊS"], rows: [
           { a: "dad", note: "(father)", b: "pai", v: "mint" },
           { a: "mom", note: "(mother)", b: "mãe", v: "lilac" },
@@ -1013,17 +1013,17 @@ export const LESSONS = [
           { t: "Mom = Mother", c: "purple" } ] },
         { t: "sec", text: "EXEMPLOS", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "FATHER", c: "teal", v: "mint", id: "a7p2a", ph: "Ilustração: retrato circular do pai barbudo de polo azul, sobre fundo azul-claro", lines: ["He is my father."] },
-          { tag: "MOTHER", c: "purple", v: "lilac", id: "a7p2b", ph: "Ilustração: retrato circular da mãe de cabelo castanho e blusa amarela, sobre fundo amarelo-claro", lines: ["She is my mother."] },
-          { tag: "BROTHER", c: "navy", v: "gray", id: "a7p2c", ph: "Ilustração: retrato circular do irmão de moletom verde, sobre fundo verde-claro", lines: ["He is my brother."] },
-          { tag: "SISTER", c: "yellow", v: "cream", id: "a7p2d", ph: "Ilustração: retrato circular da irmã de camiseta rosa e tiara, sobre fundo rosa-claro", lines: ["She is my sister."] } ] },
+          { tag: "FATHER", c: "teal", v: "mint", id: "a7p2a", src: "/lessons/aulas/aula-07/a7p2a.webp", alt: "Homem barbudo de camisa azul sorrindo em retrato circular", w: 149, h: 165, ph: "Ilustração: retrato circular do pai barbudo de polo azul, sobre fundo azul-claro", lines: ["He is my father."] },
+          { tag: "MOTHER", c: "purple", v: "lilac", id: "a7p2b", src: "/lessons/aulas/aula-07/a7p2b.webp", alt: "Mulher de cabelo castanho e blusa amarela sorrindo em retrato circular", w: 152, h: 158, ph: "Ilustração: retrato circular da mãe de cabelo castanho e blusa amarela, sobre fundo amarelo-claro", lines: ["She is my mother."] },
+          { tag: "BROTHER", c: "navy", v: "gray", id: "a7p2c", src: "/lessons/aulas/aula-07/a7p2c.webp", alt: "Menino de moletom verde sorrindo em retrato circular", w: 151, h: 158, ph: "Ilustração: retrato circular do irmão de moletom verde, sobre fundo verde-claro", lines: ["He is my brother."] },
+          { tag: "SISTER", c: "yellow", v: "cream", id: "a7p2d", src: "/lessons/aulas/aula-07/a7p2d.webp", alt: "Menina de tiara e camiseta rosa sorrindo em retrato circular", w: 152, h: 159, ph: "Ilustração: retrato circular da irmã de camiseta rosa e tiara, sobre fundo rosa-claro", lines: ["She is my sister."] } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA!", text: "Use he para pessoas do sexo masculino e she para pessoas do sexo feminino." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 07", page: "PÁGINA 03" },
         { t: "title", en: "MY BIG FAMILY", pt: "Outros membros da família" },
         { t: "note", v: "gray", text: "Agora vamos conhecer mais pessoas da família." },
-        { t: "image", id: "a7p3", ph: "Ilustração: árvore genealógica em dois níveis. Em cima, dois retratos circulares ligados por uma linha roxa: Grandpa (grandfather), senhor de óculos, cabelo e bigode brancos e suéter verde; e Grandma (grandmother), senhora de óculos, coque grisalho e blusa roxa. Do meio da linha descem três setas roxas para Uncle (uncle), homem de camisa verde; Aunt (aunt), mulher de blusa amarela; e Cousin (cousin), menino de camiseta vermelha acenando." },
+        { t: "image", id: "a7p3", src: "/lessons/aulas/aula-07/a7p3.webp", alt: "Árvore genealógica com avô, avó, tio, tia e primo ligados por linhas roxas", w: 805, h: 575, ph: "Ilustração: árvore genealógica em dois níveis. Em cima, dois retratos circulares ligados por uma linha roxa: Grandpa (grandfather), senhor de óculos, cabelo e bigode brancos e suéter verde; e Grandma (grandmother), senhora de óculos, coque grisalho e blusa roxa. Do meio da linha descem três setas roxas para Uncle (uncle), homem de camisa verde; Aunt (aunt), mulher de blusa amarela; e Cousin (cousin), menino de camiseta vermelha acenando." },
         { t: "table", head: ["INGLÊS", "PORTUGUÊS"], rows: [
           { a: "grandpa", note: "(grandfather)", b: "avô", v: "mint" },
           { a: "grandma", note: "(grandmother)", b: "avó", v: "lilac" },
@@ -1036,18 +1036,18 @@ export const LESSONS = [
           { t: "Grandma = Grandmother", c: "purple" } ] },
         { t: "sec", text: "EXEMPLOS", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "GRANDFATHER", c: "teal", v: "mint", id: "a7p3a", ph: "Ilustração: retrato circular do avô de óculos, cabelo branco e suéter verde, sobre fundo azul-claro", lines: ["He is my grandfather."] },
-          { tag: "GRANDMOTHER", c: "purple", v: "lilac", id: "a7p3b", ph: "Ilustração: retrato circular da avó de óculos, coque grisalho e blusa roxa, sobre fundo rosa-claro", lines: ["She is my grandmother."] },
-          { tag: "UNCLE", c: "navy", v: "gray", id: "a7p3c", ph: "Ilustração: retrato circular do tio de camisa verde, sobre fundo verde-claro", lines: ["He is my uncle."] },
-          { tag: "AUNT", c: "yellow", v: "cream", id: "a7p3d", ph: "Ilustração: retrato circular da tia de blusa amarela e cabelo castanho comprido, sobre fundo amarelo-claro", lines: ["She is my aunt."] },
-          { tag: "COUSIN", c: "teal", v: "mint", id: "a7p3e", ph: "Ilustração: retrato circular do primo, menino de camiseta vermelha acenando, sobre fundo azul-claro", lines: ["He is my cousin.", "She is my cousin."] } ] },
+          { tag: "GRANDFATHER", c: "teal", v: "mint", id: "a7p3a", src: "/lessons/aulas/aula-07/a7p3a.webp", alt: "Senhor de óculos e suéter verde sorrindo em retrato circular", w: 122, h: 122, ph: "Ilustração: retrato circular do avô de óculos, cabelo branco e suéter verde, sobre fundo azul-claro", lines: ["He is my grandfather."] },
+          { tag: "GRANDMOTHER", c: "purple", v: "lilac", id: "a7p3b", src: "/lessons/aulas/aula-07/a7p3b.webp", alt: "Senhora de óculos e blusa roxa sorrindo em retrato circular", w: 122, h: 123, ph: "Ilustração: retrato circular da avó de óculos, coque grisalho e blusa roxa, sobre fundo rosa-claro", lines: ["She is my grandmother."] },
+          { tag: "UNCLE", c: "navy", v: "gray", id: "a7p3c", src: "/lessons/aulas/aula-07/a7p3c.webp", alt: "Homem de camisa verde sorrindo em retrato circular", w: 116, h: 119, ph: "Ilustração: retrato circular do tio de camisa verde, sobre fundo verde-claro", lines: ["He is my uncle."] },
+          { tag: "AUNT", c: "yellow", v: "cream", id: "a7p3d", src: "/lessons/aulas/aula-07/a7p3d.webp", alt: "Mulher de blusa amarela sorrindo em retrato circular", w: 117, h: 119, ph: "Ilustração: retrato circular da tia de blusa amarela e cabelo castanho comprido, sobre fundo amarelo-claro", lines: ["She is my aunt."] },
+          { tag: "COUSIN", c: "teal", v: "mint", id: "a7p3e", src: "/lessons/aulas/aula-07/a7p3e.webp", alt: "Menino de camiseta vermelha acenando em retrato circular", w: 120, h: 112, ph: "Ilustração: retrato circular do primo, menino de camiseta vermelha acenando, sobre fundo azul-claro", lines: ["He is my cousin.", "She is my cousin."] } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA!", text: "Use he para pessoas do sexo masculino e she para pessoas do sexo feminino." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 07", page: "PÁGINA 04" },
         { t: "title", en: "A FAMILY GROWS", pt: "Novos membros da família" },
         { t: "note", v: "gray", text: "Agora vamos conhecer mais pessoas da família." },
-        { t: "image", id: "a7p4", ph: "Ilustração: árvore genealógica em três níveis, com etiquetas roxas ligadas por linhas. No topo, Husband (marido), homem barbudo de polo azul, ao lado de Wife (esposa), mulher de blusa amarela. No meio, Son (filho), rapaz de moletom verde, e Daughter (filha), menina de camiseta rosa e tiara. Embaixo, Grandson (neto), menino de camiseta vermelha acenando, e Granddaughter (neta), menina de laço rosa e jardineira roxa acenando; uma chave liga os dois à etiqueta Grandchildren (netos / netas)." },
+        { t: "image", id: "a7p4", src: "/lessons/aulas/aula-07/a7p4.webp", alt: "Árvore genealógica com marido, esposa, filho, filha, neto e neta ligados por linhas roxas", w: 890, h: 740, ph: "Ilustração: árvore genealógica em três níveis, com etiquetas roxas ligadas por linhas. No topo, Husband (marido), homem barbudo de polo azul, ao lado de Wife (esposa), mulher de blusa amarela. No meio, Son (filho), rapaz de moletom verde, e Daughter (filha), menina de camiseta rosa e tiara. Embaixo, Grandson (neto), menino de camiseta vermelha acenando, e Granddaughter (neta), menina de laço rosa e jardineira roxa acenando; uma chave liga os dois à etiqueta Grandchildren (netos / netas)." },
         { t: "table", head: ["INGLÊS", "PORTUGUÊS"], rows: [
           { a: "husband", b: "marido", v: "mint" },
           { a: "wife", b: "esposa", v: "lilac" },
@@ -1058,26 +1058,26 @@ export const LESSONS = [
           { a: "grandchildren", b: "netos / netas", v: "mint" } ] },
         { t: "sec", text: "EXEMPLOS", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "HUSBAND", c: "teal", v: "mint", id: "a7p4a", ph: "Ilustração: retrato circular do marido, homem barbudo de polo azul, sobre fundo azul-claro", lines: ["He is the husband."] },
-          { tag: "WIFE", c: "purple", v: "lilac", id: "a7p4b", ph: "Ilustração: retrato circular da esposa, mulher de blusa amarela, sobre fundo amarelo-claro", lines: ["She is the wife."] },
-          { tag: "SON", c: "navy", v: "gray", id: "a7p4c", ph: "Ilustração: retrato circular do filho, rapaz de moletom verde, sobre fundo verde-claro", lines: ["He is the son."] },
-          { tag: "DAUGHTER", c: "yellow", v: "cream", id: "a7p4d", ph: "Ilustração: retrato circular da filha, menina de camiseta rosa e tiara, sobre fundo rosa-claro", lines: ["She is the daughter."] },
-          { tag: "GRANDSON", c: "teal", v: "mint", id: "a7p4e", ph: "Ilustração: retrato circular do neto, menino de camiseta vermelha acenando, sobre fundo azul-claro", lines: ["He is the grandson."] },
-          { tag: "GRANDDAUGHTER", c: "purple", v: "lilac", id: "a7p4f", ph: "Ilustração: retrato circular da neta, menina de laço rosa e jardineira roxa acenando, sobre fundo rosa-claro", lines: ["She is the granddaughter."] },
-          { tag: "GRANDCHILDREN", c: "navy", v: "gray", id: "a7p4g", ph: "Ilustração: retrato do neto e da neta juntos, os dois acenando", lines: ["They are the grandchildren."] } ] },
+          { tag: "HUSBAND", c: "teal", v: "mint", id: "a7p4a", src: "/lessons/aulas/aula-07/a7p4a.webp", alt: "Homem barbudo de camisa azul sorrindo em retrato circular", w: 114, h: 118, ph: "Ilustração: retrato circular do marido, homem barbudo de polo azul, sobre fundo azul-claro", lines: ["He is the husband."] },
+          { tag: "WIFE", c: "purple", v: "lilac", id: "a7p4b", src: "/lessons/aulas/aula-07/a7p4b.webp", alt: "Mulher de blusa amarela sorrindo em retrato circular", w: 115, h: 117, ph: "Ilustração: retrato circular da esposa, mulher de blusa amarela, sobre fundo amarelo-claro", lines: ["She is the wife."] },
+          { tag: "SON", c: "navy", v: "gray", id: "a7p4c", src: "/lessons/aulas/aula-07/a7p4c.webp", alt: "Rapaz de moletom verde sorrindo em retrato circular", w: 111, h: 115, ph: "Ilustração: retrato circular do filho, rapaz de moletom verde, sobre fundo verde-claro", lines: ["He is the son."] },
+          { tag: "DAUGHTER", c: "yellow", v: "cream", id: "a7p4d", src: "/lessons/aulas/aula-07/a7p4d.webp", alt: "Menina de tiara e camiseta rosa sorrindo em retrato circular", w: 114, h: 115, ph: "Ilustração: retrato circular da filha, menina de camiseta rosa e tiara, sobre fundo rosa-claro", lines: ["She is the daughter."] },
+          { tag: "GRANDSON", c: "teal", v: "mint", id: "a7p4e", src: "/lessons/aulas/aula-07/a7p4e.webp", alt: "Menino de camiseta vermelha acenando em retrato circular", w: 115, h: 114, ph: "Ilustração: retrato circular do neto, menino de camiseta vermelha acenando, sobre fundo azul-claro", lines: ["He is the grandson."] },
+          { tag: "GRANDDAUGHTER", c: "purple", v: "lilac", id: "a7p4f", src: "/lessons/aulas/aula-07/a7p4f.webp", alt: "Menina de laço rosa e jardineira roxa acenando em retrato circular", w: 121, h: 115, ph: "Ilustração: retrato circular da neta, menina de laço rosa e jardineira roxa acenando, sobre fundo rosa-claro", lines: ["She is the granddaughter."] },
+          { tag: "GRANDCHILDREN", c: "navy", v: "gray", id: "a7p4g", src: "/lessons/aulas/aula-07/a7p4g.webp", alt: "Menino e menina acenando juntos lado a lado", w: 178, h: 91, ph: "Ilustração: retrato do neto e da neta juntos, os dois acenando", lines: ["They are the grandchildren."] } ] },
         { t: "note", v: "cream", bar: true, kicker: "DICA!", text: "Grandchildren é o plural de grandson e granddaughter: netos / netas." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 07", page: "PÁGINA 05" },
         { t: "title", en: "FAMILY CONNECTIONS", pt: "Mais relações da família" },
         { t: "note", v: "gray", text: "Agora vamos completar o vocabulário da família e praticar um pouco." },
-        { t: "image", id: "a7p5", ph: "Ilustração: árvore genealógica. No topo, Husband (marido), homem barbudo de polo azul, ligado a Wife (esposa), mulher de blusa amarela. Abaixo, dois casais de retratos circulares: Son (filho), rapaz de moletom verde, ao lado da nora de camiseta rosa; e Daughter (filha), moça de jardineira roxa e laço rosa, ao lado do genro de camisa verde-água. Chaves roxas apontam para as etiquetas Son-in-law (genro) e Daughter-in-law (nora). Embaixo, duas caixas com os retratos do genro e da nora e as frases He is the son-in-law. e She is the daughter-in-law." },
+        { t: "image", id: "a7p5", src: "/lessons/aulas/aula-07/a7p5.webp", alt: "Árvore genealógica com marido, esposa, filho, nora, filha e genro ligados por linhas roxas", w: 865, h: 505, ph: "Ilustração: árvore genealógica. No topo, Husband (marido), homem barbudo de polo azul, ligado a Wife (esposa), mulher de blusa amarela. Abaixo, dois casais de retratos circulares: Son (filho), rapaz de moletom verde, ao lado da nora de camiseta rosa; e Daughter (filha), moça de jardineira roxa e laço rosa, ao lado do genro de camisa verde-água. Chaves roxas apontam para as etiquetas Son-in-law (genro) e Daughter-in-law (nora). Embaixo, duas caixas com os retratos do genro e da nora e as frases He is the son-in-law. e She is the daughter-in-law." },
         { t: "table", head: ["INGLÊS", "PORTUGUÊS"], rows: [
           { a: "son-in-law", b: "genro", v: "mint" },
           { a: "daughter-in-law", b: "nora", v: "lilac" } ] },
         { t: "cards", cols: 2, items: [
-          { tag: "SON-IN-LAW", c: "teal", v: "mint", id: "a7p5a", ph: "Ilustração: retrato circular do genro, rapaz de camisa verde-água, sobre fundo azul-claro", lines: ["He is the son-in-law."] },
-          { tag: "DAUGHTER-IN-LAW", c: "purple", v: "lilac", id: "a7p5b", ph: "Ilustração: retrato circular da nora, moça de laço rosa e jardineira roxa, sobre fundo rosa-claro", lines: ["She is the daughter-in-law."] } ] },
+          { tag: "SON-IN-LAW", c: "teal", v: "mint", id: "a7p5a", src: "/lessons/aulas/aula-07/a7p5a.webp", alt: "Rapaz sorridente de camisa verde-água em retrato circular", w: 133, h: 141, ph: "Ilustração: retrato circular do genro, rapaz de camisa verde-água, sobre fundo azul-claro", lines: ["He is the son-in-law."] },
+          { tag: "DAUGHTER-IN-LAW", c: "purple", v: "lilac", id: "a7p5b", src: "/lessons/aulas/aula-07/a7p5b.webp", alt: "Moça de laço rosa e jardineira roxa sorrindo em retrato circular", w: 148, h: 154, ph: "Ilustração: retrato circular da nora, moça de laço rosa e jardineira roxa, sobre fundo rosa-claro", lines: ["She is the daughter-in-law."] } ] },
         { t: "sec", text: "VAMOS PRATICAR!", c: "purple" },
         { t: "mc", id: "a7mc2", title: "1 · CHOOSE.", v: "gray", questions: [
           { q: "1. He is my ________ .", options: ["brother", "uncle", "son-in-law"], answer: 2, explain: "Son-in-law é o genro: o marido da filha." },
@@ -1096,7 +1096,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 07", page: "PÁGINA 06" },
         { t: "title", en: "LET’S TALK!", pt: "This is my family" },
         { t: "note", v: "gray", text: "Leia o diálogo e veja a família da Emma." },
-        { t: "image", id: "a7p6", ph: "Ilustração: quatro pessoas sentadas no sofá da sala, com janela, plantas e estante ao fundo. Da esquerda para a direita, cada uma com etiqueta roxa: Emma, menina de laço rosa e jardineira roxa acenando; Alex, menino de moletom verde; Lisa, mulher de blusa amarela; Mark, homem barbudo de polo azul." },
+        { t: "image", id: "a7p6", src: "/lessons/aulas/aula-07/a7p6.webp", alt: "Quatro pessoas no sofá da sala com as etiquetas Emma, Alex, Lisa e Mark", w: 924, h: 391, ph: "Ilustração: quatro pessoas sentadas no sofá da sala, com janela, plantas e estante ao fundo. Da esquerda para a direita, cada uma com etiqueta roxa: Emma, menina de laço rosa e jardineira roxa acenando; Alex, menino de moletom verde; Lisa, mulher de blusa amarela; Mark, homem barbudo de polo azul." },
         { t: "dialogue", items: [
           { s: "a", text: "Emma: Hi! I’m Emma." },
           { s: "a", text: "Emma: I’m from Canada. I’m Canadian." },
@@ -1106,7 +1106,7 @@ export const LESSONS = [
           { s: "a", text: "Emma: They are my family." } ] },
         { t: "sec", text: "AGORA É SUA VEZ!", c: "purple" },
         { t: "lead", text: "Observe a família e apresente 3 pessoas." },
-        { t: "image", id: "a7p6b", ph: "Ilustração: família de seis pessoas posando na sala. Atrás, o avô de óculos e suéter verde, a avó de óculos e blusa roxa, a mãe de blusa laranja e o pai de polo verde-água. Na frente, um menino de camiseta listrada azul e uma menina de camiseta amarela com tiara." },
+        { t: "image", id: "a7p6b", src: "/lessons/aulas/aula-07/a7p6b.webp", alt: "Família de seis pessoas posando juntas na sala", w: 467, h: 281, ph: "Ilustração: família de seis pessoas posando na sala. Atrás, o avô de óculos e suéter verde, a avó de óculos e blusa roxa, a mãe de blusa laranja e o pai de polo verde-água. Na frente, um menino de camiseta listrada azul e uma menina de camiseta amarela com tiara." },
         { t: "fill", id: "a7e3", title: "APRESENTE TRÊS PESSOAS", items: [
           { pre: "1. He is my", answers: ["father", "brother"], post: ".", v: "mint" },
           { pre: "2. She is my", answers: ["mother", "sister"], post: ".", v: "lilac" },
@@ -1129,7 +1129,7 @@ export const LESSONS = [
           "diferenciar uncle, aunt e cousin.",
           "reconhecer relações como husband, wife, son e daughter.",
           "apresentar membros de uma família com frases simples." ] },
-        { t: "image", id: "a7p7", ph: "Ilustração: a família inteira reunida e sorrindo, com estante e quadro ao fundo. Atrás, o avô de óculos e suéter verde, a avó de óculos e blusa roxa, o pai barbudo de polo azul e a mãe de blusa amarela. Na frente, o irmão de moletom verde, a irmã de camiseta rosa e tiara, a Ana de camiseta azul-turquesa acenando e o cachorro caramelo. Balão de fala com um coração rosa e o texto That’s our family! We love each other!" },
+        { t: "image", id: "a7p7", src: "/lessons/aulas/aula-07/a7p7.webp", alt: "Família reunida sorrindo com balão de coração e frase de carinho", w: 513, h: 488, ph: "Ilustração: a família inteira reunida e sorrindo, com estante e quadro ao fundo. Atrás, o avô de óculos e suéter verde, a avó de óculos e blusa roxa, o pai barbudo de polo azul e a mãe de blusa amarela. Na frente, o irmão de moletom verde, a irmã de camiseta rosa e tiara, a Ana de camiseta azul-turquesa acenando e o cachorro caramelo. Balão de fala com um coração rosa e o texto That’s our family! We love each other!" },
         { t: "key", v: "lilac", text: "That’s our family! We love each other!" },
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "VIDEOAULA 07 · FAMILY", body: "Assista à videoaula completa e revise tudo o que você aprendeu nesta aula.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
@@ -1159,26 +1159,20 @@ export const LESSONS = [
         { t: "note", v: "cream", bar: true, bold: true, kicker: "PENSE ASSIM:", text: "nome da pessoa\n+ ’s\n+ coisa ou relação" },
         { t: "sec", text: "VEJA ESTE EXEMPLO:", c: "purple" },
         { t: "steps", items: [
-          { tag: "MIKE", c: "teal", v: "mint", id: "w08p1a", alt: "Retrato de Mike sorrindo",
-            ph: "Foto: retrato circular de um rapaz branco de cabelo castanho curto, camisa verde-oliva aberta sobre camiseta branca, sorrindo de frente para a câmera, com o ambiente interno de uma cafeteria desfocado ao fundo.",
+          { tag: "MIKE", c: "teal", v: "mint", id: "w08p1a", src: "/lessons/aulas/aula-08/w08p1a.webp", alt: "Rapaz de camisa verde-oliva sorrindo em uma cafeteria desfocada", w: 197, h: 214, ph: "Foto: retrato circular de um rapaz branco de cabelo castanho curto, camisa verde-oliva aberta sobre camiseta branca, sorrindo de frente para a câmera, com o ambiente interno de uma cafeteria desfocado ao fundo.",
             lines: ["Mike"] },
-          { tag: "WATCH", c: "yellow", v: "cream", id: "w08p1b", alt: "Relógio de pulso com pulseira de couro marrom",
-            ph: "Foto: recorte circular de um relógio de pulso analógico de mostrador preto, caixa prateada e pulseira de couro marrom, apoiado sobre fundo claro.",
+          { tag: "WATCH", c: "yellow", v: "cream", id: "w08p1b", src: "/lessons/aulas/aula-08/w08p1b.webp", alt: "Relógio analógico com pulseira de couro marrom sobre fundo bege", w: 197, h: 210, ph: "Foto: recorte circular de um relógio de pulso analógico de mostrador preto, caixa prateada e pulseira de couro marrom, apoiado sobre fundo claro.",
             lines: ["watch"], note: "(relógio)" },
-          { tag: "MIKE’S WATCH", c: "purple", v: "lilac", id: "w08p1c", alt: "Mike segurando o relógio de couro marrom",
-            ph: "Foto: recorte circular do mesmo rapaz de camisa verde-oliva sorrindo e segurando na mão direita, à altura do rosto, o relógio de pulseira de couro marrom.",
+          { tag: "MIKE’S WATCH", c: "purple", v: "lilac", id: "w08p1c", src: "/lessons/aulas/aula-08/w08p1c.webp", alt: "Rapaz de camisa verde-oliva sorrindo e segurando um relógio de couro", w: 226, h: 227, ph: "Foto: recorte circular do mesmo rapaz de camisa verde-oliva sorrindo e segurando na mão direita, à altura do rosto, o relógio de pulseira de couro marrom.",
             lines: ["Mike’s watch"] } ] },
         { t: "key", v: "cream", text: "Mike’s watch = o relógio de Mike." },
         { t: "sec", text: "TAMBÉM USAMOS ’S PARA RELAÇÕES ENTRE PESSOAS." },
         { t: "steps", items: [
-          { tag: "ANNA", c: "teal", v: "mint", id: "w08p1d", alt: "Retrato de Anna de perfil, sorrindo",
-            ph: "Foto: retrato circular de uma jovem branca de cabelo castanho comprido e suéter azul-claro, vista de perfil, sorrindo e olhando para a direita.",
+          { tag: "ANNA", c: "teal", v: "mint", id: "w08p1d", src: "/lessons/aulas/aula-08/w08p1d.webp", alt: "Jovem de suéter azul-claro sorrindo e olhando para o lado", w: 155, h: 158, ph: "Foto: retrato circular de uma jovem branca de cabelo castanho comprido e suéter azul-claro, vista de perfil, sorrindo e olhando para a direita.",
             lines: ["Anna"] },
-          { tag: "BROTHER", c: "yellow", v: "cream", id: "w08p1e", alt: "Retrato de um rapaz de moletom escuro, sorrindo",
-            ph: "Foto: retrato circular de um rapaz branco de cabelo castanho curto e moletom azul-marinho escuro, sorrindo e olhando para a esquerda.",
+          { tag: "BROTHER", c: "yellow", v: "cream", id: "w08p1e", src: "/lessons/aulas/aula-08/w08p1e.webp", alt: "Rapaz de moletom azul-marinho sorrindo e olhando para o lado", w: 145, h: 156, ph: "Foto: retrato circular de um rapaz branco de cabelo castanho curto e moletom azul-marinho escuro, sorrindo e olhando para a esquerda.",
             lines: ["brother"], note: "(irmão)" },
-          { tag: "ANNA’S BROTHER", c: "purple", v: "lilac", id: "w08p1f", alt: "Anna e o irmão juntos, sorrindo",
-            ph: "Foto: recorte circular da jovem de suéter azul-claro e do rapaz de moletom azul-marinho lado a lado, muito próximos, os dois sorrindo e olhando um para o outro.",
+          { tag: "ANNA’S BROTHER", c: "purple", v: "lilac", id: "w08p1f", src: "/lessons/aulas/aula-08/w08p1f.webp", alt: "Jovem de suéter azul e rapaz de moletom azul sorrindo lado a lado", w: 204, h: 157, ph: "Foto: recorte circular da jovem de suéter azul-claro e do rapaz de moletom azul-marinho lado a lado, muito próximos, os dois sorrindo e olhando um para o outro.",
             lines: ["Anna’s brother"], note: "= o irmão da Anna." } ] },
         { t: "sec", text: "NESTA AULA, VOCÊ VAI:", c: "purple" },
         { t: "grid", cols: 2, items: [
@@ -1196,47 +1190,37 @@ export const LESSONS = [
         { t: "note", v: "cream", bar: true, bold: true, kicker: "PADRÃO PRINCIPAL:", text: "nome da pessoa\n+ ’s\n+ objeto ou relação" },
         { t: "key", v: "cream", text: "A pessoa vem primeiro. Depois, adicionamos ’s. Em seguida, vem o objeto ou relação." },
         { t: "steps", items: [
-          { tag: "RICHARD", c: "teal", v: "mint", id: "w08p2a", alt: "Retrato de Richard sorrindo",
-            ph: "Foto: retrato circular de um homem branco de barba curta, cabelo castanho e camisa verde-oliva sobre camiseta branca, sorrindo de frente para a câmera.",
+          { tag: "RICHARD", c: "teal", v: "mint", id: "w08p2a", src: "/lessons/aulas/aula-08/w08p2a.webp", alt: "Homem de barba curta e camisa verde-oliva sorrindo de frente", w: 132, h: 132, ph: "Foto: retrato circular de um homem branco de barba curta, cabelo castanho e camisa verde-oliva sobre camiseta branca, sorrindo de frente para a câmera.",
             lines: ["Richard"] },
           { tag: "’S", c: "purple", v: "lilac", lines: ["’s"] },
-          { tag: "SMARTPHONE", c: "navy", v: "gray", id: "w08p2b", alt: "Smartphone preto visto de frente",
-            ph: "Foto: recorte circular de um smartphone preto deitado sobre superfície clara, visto de cima, com a tela desligada.",
+          { tag: "SMARTPHONE", c: "navy", v: "gray", id: "w08p2b", src: "/lessons/aulas/aula-08/w08p2b.webp", alt: "Smartphone preto deitado sobre superfície clara, visto de cima", w: 119, h: 113, ph: "Foto: recorte circular de um smartphone preto deitado sobre superfície clara, visto de cima, com a tela desligada.",
             lines: ["smartphone"] },
           { tag: "RICHARD’S SMARTPHONE", c: "yellow", v: "cream", lines: ["Richard’s smartphone"] } ] },
         { t: "steps", items: [
-          { tag: "KATIE", c: "teal", v: "mint", id: "w08p2c", alt: "Retrato de Katie sorrindo",
-            ph: "Foto: retrato circular de uma mulher branca de cabelo castanho-claro ondulado na altura dos ombros, blusa clara, sorrindo de frente para a câmera.",
+          { tag: "KATIE", c: "teal", v: "mint", id: "w08p2c", src: "/lessons/aulas/aula-08/w08p2c.webp", alt: "Mulher de cabelo castanho-claro ondulado sorrindo de frente", w: 131, h: 131, ph: "Foto: retrato circular de uma mulher branca de cabelo castanho-claro ondulado na altura dos ombros, blusa clara, sorrindo de frente para a câmera.",
             lines: ["Katie"] },
           { tag: "’S", c: "purple", v: "lilac", lines: ["’s"] },
-          { tag: "DOG", c: "navy", v: "gray", id: "w08p2d", alt: "Cachorro golden retriever com a língua de fora",
-            ph: "Foto: recorte circular de um cachorro golden retriever adulto, pelo dourado, de língua para fora, sentado em um gramado ao ar livre.",
+          { tag: "DOG", c: "navy", v: "gray", id: "w08p2d", src: "/lessons/aulas/aula-08/w08p2d.webp", alt: "Cachorro golden retriever sentado na grama com a língua de fora", w: 121, h: 127, ph: "Foto: recorte circular de um cachorro golden retriever adulto, pelo dourado, de língua para fora, sentado em um gramado ao ar livre.",
             lines: ["dog"] },
           { tag: "KATIE’S DOG", c: "yellow", v: "cream", lines: ["Katie’s dog"] } ] },
         { t: "sec", text: "EXEMPLOS", c: "purple" },
         { t: "steps", items: [
-          { n: "1", tag: "RICHARD’S SMARTPHONE", c: "purple", v: "lilac", id: "w08p2e", alt: "Richard segurando o smartphone",
-            ph: "Foto: homem de barba curta e camisa verde-oliva sorrindo e segurando um smartphone preto na mão direita, à altura do peito, em ambiente interno desfocado.",
+          { n: "1", tag: "RICHARD’S SMARTPHONE", c: "purple", v: "lilac", id: "w08p2e", src: "/lessons/aulas/aula-08/w08p2e.webp", alt: "Homem de camisa verde-oliva sorrindo segurando um smartphone preto", w: 149, h: 206, ph: "Foto: homem de barba curta e camisa verde-oliva sorrindo e segurando um smartphone preto na mão direita, à altura do peito, em ambiente interno desfocado.",
             lines: ["Richard’s smartphone"], note: "o smartphone do Richard" },
-          { n: "2", tag: "KATIE’S DOG", c: "teal", v: "mint", id: "w08p2f", alt: "Katie abraçada ao seu golden retriever",
-            ph: "Foto: mulher de cabelo castanho-claro ondulado e suéter bege sorrindo ao lado de um golden retriever de língua para fora, os dois ao ar livre com vegetação desfocada ao fundo.",
+          { n: "2", tag: "KATIE’S DOG", c: "teal", v: "mint", id: "w08p2f", src: "/lessons/aulas/aula-08/w08p2f.webp", alt: "Mulher sorrindo ao lado de um golden retriever ao ar livre", w: 172, h: 222, ph: "Foto: mulher de cabelo castanho-claro ondulado e suéter bege sorrindo ao lado de um golden retriever de língua para fora, os dois ao ar livre com vegetação desfocada ao fundo.",
             lines: ["Katie’s dog"], note: "o cachorro da Katie" },
-          { n: "3", tag: "SARAH’S HOUSE", c: "purple", v: "lilac", id: "w08p2g", alt: "Sarah em frente à casa dela",
-            ph: "Foto: jovem de cabelo castanho comprido e suéter bege sorrindo em pé no jardim, tendo atrás dela uma casa americana de madeira clara com telhado de duas águas e varanda.",
+          { n: "3", tag: "SARAH’S HOUSE", c: "purple", v: "lilac", id: "w08p2g", src: "/lessons/aulas/aula-08/w08p2g.webp", alt: "Jovem sorrindo em um jardim com uma casa americana ao fundo", w: 170, h: 222, ph: "Foto: jovem de cabelo castanho comprido e suéter bege sorrindo em pé no jardim, tendo atrás dela uma casa americana de madeira clara com telhado de duas águas e varanda.",
             lines: ["Sarah’s house"], note: "a casa da Sarah" },
-          { n: "4", tag: "PETER’S BOOK", c: "teal", v: "mint", id: "w08p2h", alt: "Peter lendo um livro",
-            ph: "Foto: homem de óculos, barba curta e camisa jeans azul sorrindo enquanto lê um livro aberto de capa escura, com uma estante e plantas desfocadas ao fundo.",
+          { n: "4", tag: "PETER’S BOOK", c: "teal", v: "mint", id: "w08p2h", src: "/lessons/aulas/aula-08/w08p2h.webp", alt: "Homem de óculos sorrindo enquanto lê um livro aberto", w: 166, h: 222, ph: "Foto: homem de óculos, barba curta e camisa jeans azul sorrindo enquanto lê um livro aberto de capa escura, com uma estante e plantas desfocadas ao fundo.",
             lines: ["Peter’s book"], note: "o livro do Peter" } ] },
         { t: "sec", text: "COMPLETE O PADRÃO", c: "purple" },
         { t: "steps", items: [
-          { tag: "SARAH", c: "teal", v: "mint", id: "w08p2i", alt: "Retrato de Sarah sorrindo",
-            ph: "Foto: retrato circular de uma jovem branca de cabelo castanho comprido e suéter bege, sorrindo de frente para a câmera, com fundo claro desfocado.",
+          { tag: "SARAH", c: "teal", v: "mint", id: "w08p2i", src: "/lessons/aulas/aula-08/w08p2i.webp", alt: "Jovem de cabelo castanho comprido sorrindo de frente", w: 105, h: 108, ph: "Foto: retrato circular de uma jovem branca de cabelo castanho comprido e suéter bege, sorrindo de frente para a câmera, com fundo claro desfocado.",
             lines: ["Sarah"] },
           { tag: "HOUSE", c: "yellow", v: "cream", lines: ["house"] },
           { tag: "SARAH’S HOUSE", c: "purple", v: "lilac", lines: ["Sarah’s house"] } ] },
         { t: "steps", items: [
-          { tag: "PETER", c: "teal", v: "mint", id: "w08p2j", alt: "Retrato de Peter de óculos, sorrindo",
-            ph: "Foto: retrato circular de um homem branco de óculos de armação escura, barba curta e camisa jeans azul sobre camiseta branca, sorrindo de frente para a câmera.",
+          { tag: "PETER", c: "teal", v: "mint", id: "w08p2j", src: "/lessons/aulas/aula-08/w08p2j.webp", alt: "Homem de óculos e barba curta sorrindo de frente", w: 92, h: 104, ph: "Foto: retrato circular de um homem branco de óculos de armação escura, barba curta e camisa jeans azul sobre camiseta branca, sorrindo de frente para a câmera.",
             lines: ["Peter"] },
           { tag: "BOOK", c: "yellow", v: "cream", lines: ["book"] },
           { tag: "PETER’S BOOK", c: "purple", v: "lilac", lines: ["Peter’s book"] } ] },
@@ -1252,29 +1236,23 @@ export const LESSONS = [
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
           { a: "Whose watch is this?", b: "It’s Mike’s watch.", v: "lilac" } ] },
         { t: "sec", text: "DIÁLOGO", c: "purple" },
-        { t: "image", id: "w08p3a", alt: "Ana mostra um relógio e Brian responde",
-          ph: "Foto: dois retratos circulares lado a lado. À esquerda, Ana, jovem de cabelo castanho ondulado comprido e suéter bege, sorrindo e segurando um relógio de pulso entre os dedos. À direita, Brian, rapaz de cabelo castanho curto e camisa jeans azul sobre camiseta branca, sorrindo de perfil. Balões de fala saem dos dois." },
+        { t: "image", id: "w08p3a", src: "/lessons/aulas/aula-08/w08p3a.webp", alt: "Ana segurando um relógio e Brian sorrindo, lado a lado", w: 682, h: 221, ph: "Foto: dois retratos circulares lado a lado. À esquerda, Ana, jovem de cabelo castanho ondulado comprido e suéter bege, sorrindo e segurando um relógio de pulso entre os dedos. À direita, Brian, rapaz de cabelo castanho curto e camisa jeans azul sobre camiseta branca, sorrindo de perfil. Balões de fala saem dos dois." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Whose watch is this?" },
           { s: "b", text: "Brian: It’s Mike’s watch." } ] },
-        { t: "image", id: "w08p3b", alt: "Ana mostra um smartphone e Brian responde",
-          ph: "Foto: dois retratos circulares lado a lado. À esquerda, a mesma Ana de suéter bege segurando um smartphone preto na mão. À direita, Brian de camisa jeans azul, sorrindo de perfil. Balões de fala saem dos dois." },
+        { t: "image", id: "w08p3b", src: "/lessons/aulas/aula-08/w08p3b.webp", alt: "Ana segurando um smartphone e Brian sorrindo, lado a lado", w: 659, h: 383, ph: "Foto: dois retratos circulares lado a lado. À esquerda, a mesma Ana de suéter bege segurando um smartphone preto na mão. À direita, Brian de camisa jeans azul, sorrindo de perfil. Balões de fala saem dos dois." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Whose smartphone is this?" },
           { s: "b", text: "Brian: It’s Richard’s smartphone." } ] },
         { t: "sec", text: "MAIS EXEMPLOS", c: "purple" },
         { t: "steps", items: [
-          { n: "1", tag: "LAPTOP", c: "purple", v: "lilac", id: "w08p3c", alt: "Laptop aberto sobre uma mesa de madeira",
-            ph: "Foto: laptop prateado aberto sobre uma mesa de madeira clara, visto de frente, com plantas e janela desfocadas ao fundo.",
+          { n: "1", tag: "LAPTOP", c: "purple", v: "lilac", id: "w08p3c", src: "/lessons/aulas/aula-08/w08p3c.webp", alt: "Laptop prateado aberto sobre uma mesa de madeira clara", w: 165, h: 131, ph: "Foto: laptop prateado aberto sobre uma mesa de madeira clara, visto de frente, com plantas e janela desfocadas ao fundo.",
             lines: ["Whose laptop is this?", "It’s Peter’s laptop."], note: "É o laptop do Peter." },
-          { n: "2", tag: "BAG", c: "teal", v: "mint", id: "w08p3d", alt: "Bolsa de couro marrom sobre a mesa",
-            ph: "Foto: bolsa de couro marrom com alças e alça de ombro, apoiada de frente sobre uma mesa de madeira, com parede clara desfocada ao fundo.",
+          { n: "2", tag: "BAG", c: "teal", v: "mint", id: "w08p3d", src: "/lessons/aulas/aula-08/w08p3d.webp", alt: "Bolsa de couro marrom apoiada sobre uma mesa de madeira", w: 165, h: 131, ph: "Foto: bolsa de couro marrom com alças e alça de ombro, apoiada de frente sobre uma mesa de madeira, com parede clara desfocada ao fundo.",
             lines: ["Whose bag is this?", "It’s Sarah’s bag."], note: "É a bolsa da Sarah." },
-          { n: "3", tag: "BOOK", c: "purple", v: "lilac", id: "w08p3e", alt: "Livro de capa azul-escura fechado sobre a mesa",
-            ph: "Foto: livro grosso de capa dura azul-escura, fechado, apoiado sobre uma mesa de madeira clara.",
+          { n: "3", tag: "BOOK", c: "purple", v: "lilac", id: "w08p3e", src: "/lessons/aulas/aula-08/w08p3e.webp", alt: "Livro de capa dura azul-escura fechado sobre uma mesa", w: 161, h: 131, ph: "Foto: livro grosso de capa dura azul-escura, fechado, apoiado sobre uma mesa de madeira clara.",
             lines: ["Whose book is this?", "It’s Emma’s book."], note: "É o livro da Emma." },
-          { n: "4", tag: "DOG", c: "teal", v: "mint", id: "w08p3f", alt: "Golden retriever sentado na grama",
-            ph: "Foto: cachorro golden retriever adulto de pelo dourado, sentado na grama de um parque, de língua para fora, com árvores desfocadas ao fundo.",
+          { n: "4", tag: "DOG", c: "teal", v: "mint", id: "w08p3f", src: "/lessons/aulas/aula-08/w08p3f.webp", alt: "Cachorro golden retriever sentado na grama de um parque", w: 165, h: 131, ph: "Foto: cachorro golden retriever adulto de pelo dourado, sentado na grama de um parque, de língua para fora, com árvores desfocadas ao fundo.",
             lines: ["Whose dog is this?", "It’s Katie’s dog."], note: "É o cachorro da Katie." } ] },
         { t: "sec", text: "PRATIQUE", c: "purple" },
         { t: "rows", items: [
@@ -1290,22 +1268,17 @@ export const LESSONS = [
         { t: "note", v: "cream", bar: true, bold: true, kicker: "LEMBRE-SE:", text: "’s mostra que algo pertence a alguém ou que existe uma relação." },
         { t: "sec", text: "VAMOS VER OUTROS EXEMPLOS COM COISAS E LUGARES", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "THE CAR", c: "purple", v: "lilac", id: "w08p4a", alt: "Carro sedã cinza estacionado na rua",
-            ph: "Foto: carro sedã cinza-escuro visto de três quartos na frente, parado em uma rua arborizada de cidade, com prédios desfocados ao fundo.",
+          { tag: "THE CAR", c: "purple", v: "lilac", id: "w08p4a", src: "/lessons/aulas/aula-08/w08p4a.webp", alt: "Carro sedã cinza-escuro estacionado em uma rua arborizada", w: 275, h: 206, ph: "Foto: carro sedã cinza-escuro visto de três quartos na frente, parado em uma rua arborizada de cidade, com prédios desfocados ao fundo.",
             lines: ["John’s car"], note: "(o carro) = o carro de John." },
-          { tag: "THE HOUSE", c: "purple", v: "lilac", id: "w08p4b", alt: "Casa moderna de dois andares",
-            ph: "Foto: casa moderna de dois andares, fachada branca e bege com detalhes de madeira, garagem escura, palmeiras e jardim na frente, sob céu azul.",
+          { tag: "THE HOUSE", c: "purple", v: "lilac", id: "w08p4b", src: "/lessons/aulas/aula-08/w08p4b.webp", alt: "Casa moderna de dois andares com jardim e palmeiras", w: 285, h: 202, ph: "Foto: casa moderna de dois andares, fachada branca e bege com detalhes de madeira, garagem escura, palmeiras e jardim na frente, sob céu azul.",
             lines: ["Mary’s house"], note: "(a casa) = a casa da Mary." },
-          { tag: "THE BOOK", c: "purple", v: "lilac", id: "w08p4c", alt: "Livro antigo de capa azul-escura sobre a mesa",
-            ph: "Foto: livro antigo de capa dura azul-escura com letras douradas, The Adventures of Sherlock Holmes, de Arthur Conan Doyle, fechado sobre uma mesa de madeira escura.",
+          { tag: "THE BOOK", c: "purple", v: "lilac", id: "w08p4c", src: "/lessons/aulas/aula-08/w08p4c.webp", alt: "Livro antigo de capa azul-escura com letras douradas", w: 264, h: 205, ph: "Foto: livro antigo de capa dura azul-escura com letras douradas, The Adventures of Sherlock Holmes, de Arthur Conan Doyle, fechado sobre uma mesa de madeira escura.",
             lines: ["Tom’s book"], note: "(o livro) = o livro do Tom." } ] },
         { t: "sec", text: "AGORA, VAMOS VER O ’S USADO ENTRE PESSOAS DE FORMA SIMPLES.", c: "teal" },
         { t: "cards", cols: 2, items: [
-          { tag: "MY FRIEND", c: "teal", v: "mint", id: "w08p4d", alt: "Rapaz sorrindo ao ar livre, de jaqueta jeans",
-            ph: "Foto: rapaz branco de barba curta, jaqueta jeans sobre moletom cinza com capuz e mochila nas costas, sorrindo ao ar livre, com prédios e árvores desfocados ao fundo.",
+          { tag: "MY FRIEND", c: "teal", v: "mint", id: "w08p4d", src: "/lessons/aulas/aula-08/w08p4d.webp", alt: "Rapaz de jaqueta jeans e mochila sorrindo ao ar livre", w: 270, h: 200, ph: "Foto: rapaz branco de barba curta, jaqueta jeans sobre moletom cinza com capuz e mochila nas costas, sorrindo ao ar livre, com prédios e árvores desfocados ao fundo.",
             lines: ["my friend’s name"], note: "(meu amigo) = o nome do meu amigo." },
-          { tag: "MY SISTER", c: "teal", v: "mint", id: "w08p4e", alt: "Jovem sorrindo com a mão no rosto",
-            ph: "Foto: jovem branca de cabelo castanho comprido e suéter bege, sentada com a mão apoiada no rosto, sorrindo, com estante e planta desfocadas ao fundo.",
+          { tag: "MY SISTER", c: "teal", v: "mint", id: "w08p4e", src: "/lessons/aulas/aula-08/w08p4e.webp", alt: "Jovem sorrindo com a mão apoiada no rosto", w: 270, h: 200, ph: "Foto: jovem branca de cabelo castanho comprido e suéter bege, sentada com a mão apoiada no rosto, sorrindo, com estante e planta desfocadas ao fundo.",
             lines: ["my sister’s phone"], note: "(minha irmã) = o celular da minha irmã." } ] },
         { t: "sec", text: "OBSERVE:", c: "teal" },
         { t: "rows", items: [
@@ -1324,19 +1297,15 @@ export const LESSONS = [
         { t: "note", v: "gray", bar: true, kicker: "OBSERVE BEM OS EXEMPLOS!", text: "O significado é sempre de posse ou relação." },
         { t: "sec", text: "EXEMPLOS", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "THE DOG’S TOY", c: "purple", v: "lilac", id: "w08p5a", alt: "Cachorro deitado no tapete com um brinquedo de corda",
-            ph: "Foto: golden retriever deitado no tapete claro da sala, de língua para fora, com um brinquedo de corda azul entre as patas da frente.",
+          { tag: "THE DOG’S TOY", c: "purple", v: "lilac", id: "w08p5a", src: "/lessons/aulas/aula-08/w08p5a.webp", alt: "Golden retriever deitado com um brinquedo de corda azul", w: 270, h: 249, ph: "Foto: golden retriever deitado no tapete claro da sala, de língua para fora, com um brinquedo de corda azul entre as patas da frente.",
             lines: ["the dog’s toy"], note: "o brinquedo do cachorro" },
-          { tag: "THE MOVIE’S ENDING", c: "purple", v: "lilac", id: "w08p5b", alt: "Televisão exibindo THE END numa sala",
-            ph: "Foto: televisão de tela plana sobre um rack de madeira em sala com luz baixa, exibindo em letras brancas sobre fundo escuro a frase THE END, com abajur e planta ao lado.",
+          { tag: "THE MOVIE’S ENDING", c: "purple", v: "lilac", id: "w08p5b", src: "/lessons/aulas/aula-08/w08p5b.webp", alt: "Televisão exibindo a frase the end em uma sala", w: 270, h: 209, ph: "Foto: televisão de tela plana sobre um rack de madeira em sala com luz baixa, exibindo em letras brancas sobre fundo escuro a frase THE END, com abajur e planta ao lado.",
             lines: ["the movie’s ending"], note: "o final do filme" },
-          { tag: "MY FRIEND’S BIRTHDAY", c: "purple", v: "lilac", id: "w08p5c", alt: "Calendário com um coração e um bilhete escrito BIRTHDAY!",
-            ph: "Foto: calendário de mesa aberto com um dia circulado por um coração rosa e um bilhete adesivo bege escrito BIRTHDAY!, ao lado de uma caneta rosé e uma xícara de café.",
+          { tag: "MY FRIEND’S BIRTHDAY", c: "purple", v: "lilac", id: "w08p5c", src: "/lessons/aulas/aula-08/w08p5c.webp", alt: "Calendário de mesa com um dia marcado e bilhete de aniversário", w: 255, h: 245, ph: "Foto: calendário de mesa aberto com um dia circulado por um coração rosa e um bilhete adesivo bege escrito BIRTHDAY!, ao lado de uma caneta rosé e uma xícara de café.",
             lines: ["my friend’s birthday"], note: "o aniversário do meu amigo" } ] },
         { t: "sec", text: "NA PRÁTICA", c: "teal" },
         { t: "lead", text: "Veja este diálogo:" },
-        { t: "image", id: "w08p5d", alt: "Sara e Tom conversando à mesa ao lado de uma mochila",
-          ph: "Foto: jovem de jaqueta jeans e camiseta branca, cabelo castanho comprido, sorrindo e apontando para uma mochila bege sobre a mesa de madeira; ao lado dela, um rapaz de suéter verde-escuro sorri olhando para a mochila. Sobre a mesa há também um caderno azul e um copo de café, com janela e plantas desfocadas ao fundo." },
+        { t: "image", id: "w08p5d", src: "/lessons/aulas/aula-08/w08p5d.webp", alt: "Jovem apontando para uma mochila enquanto um rapaz sorri ao lado", w: 514, h: 396, ph: "Foto: jovem de jaqueta jeans e camiseta branca, cabelo castanho comprido, sorrindo e apontando para uma mochila bege sobre a mesa de madeira; ao lado dela, um rapaz de suéter verde-escuro sorri olhando para a mochila. Sobre a mesa há também um caderno azul e um copo de café, com janela e plantas desfocadas ao fundo." },
         { t: "dialogue", items: [
           { s: "a", text: "Sara: What is this?" },
           { s: "b", text: "Tom: It’s Sarah’s backpack." },
@@ -1358,11 +1327,9 @@ export const LESSONS = [
         { t: "lead", text: "Observe a posição do apóstrofo quando o possuidor está no singular ou no plural." },
         { t: "note", v: "cream", bar: true, bold: true, kicker: "FOCO DE HOJE", text: "Nesta página, o mais importante é perceber onde o apóstrofo fica." },
         { t: "cards", cols: 2, items: [
-          { tag: "1. SINGULAR", c: "purple", v: "lilac", id: "w08p6a", alt: "Um bebê em pé no berço, sorrindo",
-            ph: "Foto: um bebê de body bege claro, em pé segurando a grade de um berço de madeira clara, sorrindo de boca aberta, em um quarto com quadro de arco-íris, quadro de estrela e planta ao fundo.",
+          { tag: "1. SINGULAR", c: "purple", v: "lilac", id: "w08p6a", src: "/lessons/aulas/aula-08/w08p6a.webp", alt: "Bebê sorrindo em pé segurando a grade de um berço", w: 422, h: 294, ph: "Foto: um bebê de body bege claro, em pé segurando a grade de um berço de madeira clara, sorrindo de boca aberta, em um quarto com quadro de arco-íris, quadro de estrela e planta ao fundo.",
             lines: ["one baby → the baby’s crib"], note: "(o berço do bebê) · Singular → adicione ’s." },
-          { tag: "2. PLURAL", c: "teal", v: "mint", id: "w08p6b", alt: "Dois bebês em pé no mesmo berço, sorrindo",
-            ph: "Foto: dois bebês em pé lado a lado segurando a grade de um berço de madeira clara, um de body bege e outro de body verde-claro, os dois sorrindo, em um quarto com quadros de balão e de nuvens e uma planta ao fundo.",
+          { tag: "2. PLURAL", c: "teal", v: "mint", id: "w08p6b", src: "/lessons/aulas/aula-08/w08p6b.webp", alt: "Dois bebês sorrindo em pé lado a lado em um berço", w: 433, h: 295, ph: "Foto: dois bebês em pé lado a lado segurando a grade de um berço de madeira clara, um de body bege e outro de body verde-claro, os dois sorrindo, em um quarto com quadros de balão e de nuvens e uma planta ao fundo.",
             lines: ["two babies → the babies’ crib"], note: "(o berço dos bebês) · Plural já terminado em s → adicione apenas ’." } ] },
         { t: "sec", text: "ATENÇÃO!", c: "red" },
         { t: "compare", items: [
@@ -1385,8 +1352,7 @@ export const LESSONS = [
         { t: "title", en: "NAMES ENDING IN S", pt: "E quando o nome já termina em s?" },
         { t: "lead", text: "Nesta aula, vamos usar a forma mais prática para iniciantes: nome + ’s." },
         { t: "note", v: "cream", bar: true, bold: true, kicker: "REGRA DE HOJE", text: "Quando um nome termina em s, neste curso usaremos nome + ’s." },
-        { t: "image", id: "w08p7a", alt: "Lucas sorrindo à mesa diante de um prato de massa",
-          ph: "Foto: rapaz branco de cabelo castanho cacheado e barba curta, camisa verde-escura sobre camiseta branca, sentado à mesa sorrindo para a câmera, com um garfo na mão e uma tigela branca de espaguete ao molho de tomate à sua frente." },
+        { t: "image", id: "w08p7a", src: "/lessons/aulas/aula-08/w08p7a.webp", alt: "Rapaz sorrindo à mesa com um garfo perto de uma tigela de espaguete", w: 308, h: 350, ph: "Foto: rapaz branco de cabelo castanho cacheado e barba curta, camisa verde-escura sobre camiseta branca, sentado à mesa sorrindo para a câmera, com um garfo na mão e uma tigela branca de espaguete ao molho de tomate à sua frente." },
         { t: "note", v: "cream", bold: true, text: "Lucas’s food\nExemplo: a comida de Lucas." },
         { t: "grid", cols: 3, items: [
           { kicker: "1 DONO", title: "the dog’s food", v: "lilac", c: "purple" },
@@ -1412,8 +1378,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 08", page: "PÁGINA 08" },
         { t: "title", en: "LET’S TALK!", pt: "Use possessive ’s em diálogos curtos." },
-        { t: "image", id: "w08p8a", alt: "Ana, Daniel e Emma conversando na biblioteca ao lado de uma mochila",
-          ph: "Foto: três jovens sentados a uma mesa de madeira em uma biblioteca. À esquerda, Ana, de jaqueta jeans e camiseta branca, cabelo castanho comprido; ao centro, Daniel, de moletom verde-escuro, sorrindo; à direita, Emma, loira de suéter branco com listras pretas. Sobre a mesa há um laptop aberto, um smartphone preto, um caderno com caneta e uma mochila verde-oliva no centro. Cada pessoa tem uma etiqueta branca com o seu nome." },
+        { t: "image", id: "w08p8a", src: "/lessons/aulas/aula-08/w08p8a.webp", alt: "Ana, Daniel e Emma sorrindo sentados à mesa com uma mochila", w: 550, h: 430, ph: "Foto: três jovens sentados a uma mesa de madeira em uma biblioteca. À esquerda, Ana, de jaqueta jeans e camiseta branca, cabelo castanho comprido; ao centro, Daniel, de moletom verde-escuro, sorrindo; à direita, Emma, loira de suéter branco com listras pretas. Sobre a mesa há um laptop aberto, um smartphone preto, um caderno com caneta e uma mochila verde-oliva no centro. Cada pessoa tem uma etiqueta branca com o seu nome." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Hi, Daniel!" },
           { s: "b", text: "Daniel: Hi, Ana!" },
@@ -1424,8 +1389,7 @@ export const LESSONS = [
         { t: "note", v: "lilac", text: "Observe como usamos possessive ’s para objetos e relações familiares." },
         { t: "sec", text: "YOUR TURN", c: "teal" },
         { t: "lead", text: "Observe a cena e responda usando possessive ’s." },
-        { t: "image", id: "w08p8b", alt: "Emma, Lucas e Sofia à mesa da biblioteca com celular, mochila e livro",
-          ph: "Foto: três jovens sentados a uma mesa de madeira em uma biblioteca. À esquerda, Emma, de cabelo louro-escuro e suéter bege; ao centro, Lucas, de cabelo castanho cacheado e moletom azul-marinho, segurando um smartphone preto; à direita, Sofia, de cabelo castanho comprido e jaqueta jeans. Sobre a mesa há um livro de capa escura e uma mochila bege. Cada pessoa tem uma etiqueta branca com o seu nome." },
+        { t: "image", id: "w08p8b", src: "/lessons/aulas/aula-08/w08p8b.webp", alt: "Emma, Lucas e Sofia sorrindo sentados à mesa com um smartphone", w: 558, h: 366, ph: "Foto: três jovens sentados a uma mesa de madeira em uma biblioteca. À esquerda, Emma, de cabelo louro-escuro e suéter bege; ao centro, Lucas, de cabelo castanho cacheado e moletom azul-marinho, segurando um smartphone preto; à direita, Sofia, de cabelo castanho comprido e jaqueta jeans. Sobre a mesa há um livro de capa escura e uma mochila bege. Cada pessoa tem uma etiqueta branca com o seu nome." },
         { t: "free", id: "w08f1", items: [
           { n: "1", kicker: "RESPONDA", prefix: "Whose phone is this?", ideas: "", v: "mint", c: "teal" },
           { n: "2", kicker: "RESPONDA", prefix: "Whose bag is this?", ideas: "", v: "lilac", c: "purple" },
@@ -1443,8 +1407,7 @@ export const LESSONS = [
           { kicker: "REGRA DE OURO", title: "Pessoas e relações → ’s", body: "Objetos, lugares, animais e ideias → ’", v: "gray", c: "navy" } ] },
         { t: "note", v: "gray", kicker: "EXEMPLOS RÁPIDOS:", text: "my friend’s phone (o celular do meu amigo)\nthe dog (o cachorro)\nthe idea (a ideia)" },
         { t: "sec", text: "EXERCÍCIO FINAL", c: "purple" },
-        { t: "image", id: "w08p9a", alt: "Rapaz estudando com caderno e laptop",
-          ph: "Foto: rapaz branco de cabelo castanho cacheado e camiseta azul-marinho, sentado à mesa de madeira, escrevendo com uma caneta em um caderno aberto ao lado de um laptop aberto, com estante e plantas desfocadas ao fundo." },
+        { t: "image", id: "w08p9a", src: "/lessons/aulas/aula-08/w08p9a.webp", alt: "Rapaz escrevendo em um caderno ao lado de um laptop aberto", w: 348, h: 440, ph: "Foto: rapaz branco de cabelo castanho cacheado e camiseta azul-marinho, sentado à mesa de madeira, escrevendo com uma caneta em um caderno aberto ao lado de um laptop aberto, com estante e plantas desfocadas ao fundo." },
         { t: "fill", id: "w08e5", sub: "Complete as frases com ’s ou ’.", wide: true, items: [
           { pre: "1. This is Maria", answers: ["’s"], post: " backpack.", v: "lilac" },
           { pre: "2. I love my sister", answers: ["’s"], post: " smile.", v: "lilac" },
@@ -1476,7 +1439,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 09" },
           { t: "title", en: "POSSESSIVE ADJECTIVES", pt: "De quem estamos falando?" },
           { t: "lead", text: "Usamos possessive adjectives para indicar a quem algo pertence ou com quem algo está relacionado." },
-          { t: "image", id: "w09p1", ph: "Foto: uma moça de jaqueta jeans e um rapaz de suéter verde sentados lado a lado à mesa de uma cafeteria, sorrindo e conversando, com um notebook aberto e um copo de café sobre a mesa.", alt: "Dupla conversando numa cafeteria" },
+          { t: "image", id: "w09p1", src: "/lessons/aulas/aula-09/w09p1.webp", alt: "Moça de jaqueta jeans e rapaz de suéter verde sorrindo lado a lado numa cafeteria", w: 605, h: 383, ph: "Foto: uma moça de jaqueta jeans e um rapaz de suéter verde sentados lado a lado à mesa de uma cafeteria, sorrindo e conversando, com um notebook aberto e um copo de café sobre a mesa." },
           { t: "note", v: "navy", bold: true, kicker: "LEMBRE-SE", text: "Possessive adjective + substantivo." },
           { t: "note", v: "cream", bar: true, bold: true, text: "Eles vêm antes do substantivo." },
           { t: "sec", text: "CORRESPONDÊNCIA ENTRE SUBJECT PRONOUNS E POSSESSIVE ADJECTIVES" },
@@ -1493,8 +1456,8 @@ export const LESSONS = [
           { t: "sec", text: "PONTE DA AULA ANTERIOR:", c: "purple" },
           { t: "lead", text: "Na Aula 08, vimos a ideia de posse usando ’s (apóstrofo + s)." },
           { t: "cards", cols: 2, items: [
-            { tag: "MIKE", c: "teal", v: "mint", id: "w09p1a", ph: "Foto: rapaz de camisa jeans sobre camiseta branca, sorrindo, sentado ao ar livre numa praça arborizada.", alt: "Mike sorrindo ao ar livre", lines: ["Mike’s car", "his car"], note: "Mike’s car = o carro do Mike · his car = o carro dele" },
-            { tag: "ANNA", c: "purple", v: "lilac", id: "w09p1b", ph: "Foto: moça de óculos e blusa bege segurando livros diante das estantes de uma biblioteca.", alt: "Anna com livros na biblioteca", lines: ["Anna’s book", "her book"], note: "Anna’s book = o livro da Anna · her book = o livro dela" } ] },
+            { tag: "MIKE", c: "teal", v: "mint", id: "w09p1a", src: "/lessons/aulas/aula-09/w09p1a.webp", alt: "Mike, rapaz de camisa jeans, sorrindo sentado numa praça arborizada", w: 221, h: 196, ph: "Foto: rapaz de camisa jeans sobre camiseta branca, sorrindo, sentado ao ar livre numa praça arborizada.", lines: ["Mike’s car", "his car"], note: "Mike’s car = o carro do Mike · his car = o carro dele" },
+            { tag: "ANNA", c: "purple", v: "lilac", id: "w09p1b", src: "/lessons/aulas/aula-09/w09p1b.webp", alt: "Anna, moça de óculos e blusa bege, segurando livros na biblioteca", w: 209, h: 196, ph: "Foto: moça de óculos e blusa bege segurando livros diante das estantes de uma biblioteca.", lines: ["Anna’s book", "her book"], note: "Anna’s book = o livro da Anna · her book = o livro dela" } ] },
           { t: "note", v: "navy", bar: true, bold: true, text: "Nesta aula, você vai aprender a evitar repetição de nomes usando my, your, his, her, its, our e their antes dos substantivos!" } ] },
 
         { blocks: [
@@ -1504,21 +1467,21 @@ export const LESSONS = [
             { title: "I → my", v: "mint", c: "teal" },
             { title: "you → your", v: "lilac", c: "purple" } ] },
           { t: "steps", items: [
-            { n: "1", tag: "EXEMPLO 1", c: "teal", v: "mint", id: "w09p2a", ph: "Foto: moça de jaqueta jeans sobre camiseta branca, sorrindo para a câmera, sentada à mesa de uma cafeteria com um caderno e um copo de café.", alt: "Kelly sorrindo na cafeteria", lines: ["Hi!", "I’m Kelly.", "My last name is Silva."] },
-            { n: "2", tag: "EXEMPLO 2", c: "purple", v: "lilac", id: "w09p2b", ph: "Foto: moça de suéter bege segurando um copo de café e rapaz de suéter verde sorrindo, olhando um para o outro numa cafeteria.", alt: "Dupla conversando numa cafeteria", lines: ["You have black eyes.", "Your eyes are black."] },
-            { n: "3", tag: "EXEMPLO 3", c: "navy", v: "gray", id: "w09p2c", ph: "Foto: celular preto deitado sobre uma mesa de madeira, com um vasinho de planta ao lado.", alt: "Celular preto sobre a mesa", lines: ["My phone is black."] },
-            { n: "4", tag: "EXEMPLO 4", c: "yellow", v: "cream", id: "w09p2d", ph: "Foto: mochila azul-marinho apoiada no encosto de uma cadeira de madeira.", alt: "Mochila azul numa cadeira", lines: ["Your bag is blue."] } ] },
+            { n: "1", tag: "EXEMPLO 1", c: "teal", v: "mint", id: "w09p2a", src: "/lessons/aulas/aula-09/w09p2a.webp", alt: "Moça de jaqueta jeans sorrindo à mesa de uma cafeteria com caderno e café", w: 461, h: 294, ph: "Foto: moça de jaqueta jeans sobre camiseta branca, sorrindo para a câmera, sentada à mesa de uma cafeteria com um caderno e um copo de café.", lines: ["Hi!", "I’m Kelly.", "My last name is Silva."] },
+            { n: "2", tag: "EXEMPLO 2", c: "purple", v: "lilac", id: "w09p2b", src: "/lessons/aulas/aula-09/w09p2b.webp", alt: "Moça de suéter bege e rapaz de suéter verde conversando com um café", w: 501, h: 275, ph: "Foto: moça de suéter bege segurando um copo de café e rapaz de suéter verde sorrindo, olhando um para o outro numa cafeteria.", lines: ["You have black eyes.", "Your eyes are black."] },
+            { n: "3", tag: "EXEMPLO 3", c: "navy", v: "gray", id: "w09p2c", src: "/lessons/aulas/aula-09/w09p2c.webp", alt: "Celular preto sobre mesa de madeira ao lado de um vasinho de planta", w: 223, h: 182, ph: "Foto: celular preto deitado sobre uma mesa de madeira, com um vasinho de planta ao lado.", lines: ["My phone is black."] },
+            { n: "4", tag: "EXEMPLO 4", c: "yellow", v: "cream", id: "w09p2d", src: "/lessons/aulas/aula-09/w09p2d.webp", alt: "Mochila azul-marinho apoiada no encosto de uma cadeira de madeira", w: 251, h: 185, ph: "Foto: mochila azul-marinho apoiada no encosto de uma cadeira de madeira.", lines: ["Your bag is blue."] } ] },
           { t: "note", v: "cream", bar: true, kicker: "LEMBRE-SE:", text: "Use my para coisas relacionadas a você (I)\ne your para coisas relacionadas ao seu ouvinte (you)." } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 09", page: "PÁGINA 03" },
           { t: "title", en: "HIS × HER", pt: "Use his para falar de algo relacionado a ele e her para falar de algo relacionado a ela." },
           { t: "cards", cols: 2, items: [
-            { tag: "HE → HIS", c: "teal", v: "mint", id: "w09p3a", ph: "Foto: retrato circular de um rapaz de camisa azul-marinho, de braços cruzados e sorrindo, sobre fundo azul-claro.", alt: "Retrato de rapaz de braços cruzados", note: "Use his para falar de algo relacionado a ele." },
-            { tag: "SHE → HER", c: "purple", v: "lilac", id: "w09p3b", ph: "Foto: retrato circular de uma moça de blusa verde-azulada, de braços cruzados e sorrindo, sobre fundo azul-claro.", alt: "Retrato de moça de braços cruzados", note: "Use her para falar de algo relacionado a ela." } ] },
+            { tag: "HE → HIS", c: "teal", v: "mint", id: "w09p3a", src: "/lessons/aulas/aula-09/w09p3a.webp", alt: "Ilustração de rapaz de camisa azul-marinho de braços cruzados sorrindo", w: 194, h: 236, ph: "Foto: retrato circular de um rapaz de camisa azul-marinho, de braços cruzados e sorrindo, sobre fundo azul-claro.", note: "Use his para falar de algo relacionado a ele." },
+            { tag: "SHE → HER", c: "purple", v: "lilac", id: "w09p3b", src: "/lessons/aulas/aula-09/w09p3b.webp", alt: "Ilustração de moça de blusa verde-azulada de braços cruzados sorrindo", w: 192, h: 227, ph: "Foto: retrato circular de uma moça de blusa verde-azulada, de braços cruzados e sorrindo, sobre fundo azul-claro.", note: "Use her para falar de algo relacionado a ela." } ] },
           { t: "steps", items: [
-            { n: "1", tag: "EXEMPLO 1", c: "teal", v: "mint", id: "w09p3c", ph: "Foto: homem sorridente de camisa azul-marinho e relógio de pulso, de braços cruzados, em pé na rua diante de um táxi amarelo.", alt: "Taxista ao lado do táxi amarelo", lines: ["He’s a taxi driver.", "His car is yellow."] },
-            { n: "2", tag: "EXEMPLO 2", c: "purple", v: "lilac", id: "w09p3d", ph: "Foto: cantora no palco com microfone na mão e jaqueta brilhante, sob luzes coloridas, com um letreiro de neon rosa escrito POP ao fundo.", alt: "Cantora no palco com letreiro POP", lines: ["Lisa is a singer.", "Her favorite kind of music is pop."] } ] },
+            { n: "1", tag: "EXEMPLO 1", c: "teal", v: "mint", id: "w09p3c", src: "/lessons/aulas/aula-09/w09p3c.webp", alt: "Homem de camisa azul-marinho e braços cruzados diante de um táxi amarelo", w: 375, h: 311, ph: "Foto: homem sorridente de camisa azul-marinho e relógio de pulso, de braços cruzados, em pé na rua diante de um táxi amarelo.", lines: ["He’s a taxi driver.", "His car is yellow."] },
+            { n: "2", tag: "EXEMPLO 2", c: "purple", v: "lilac", id: "w09p3d", src: "/lessons/aulas/aula-09/w09p3d.webp", alt: "Cantora com microfone sob luzes coloridas e letreiro de neon POP", w: 349, h: 287, ph: "Foto: cantora no palco com microfone na mão e jaqueta brilhante, sob luzes coloridas, com um letreiro de neon rosa escrito POP ao fundo.", lines: ["Lisa is a singer.", "Her favorite kind of music is pop."] } ] },
           { t: "note", v: "gray", kicker: "LÓGICA:", text: "O pronome pessoal (he / she) sempre vira o possessivo (his / her)." },
           { t: "table", head: ["NOME", "PRONOME → POSSESSIVE ADJECTIVE"], rows: [
             { a: "Daniel", b: "he → his", v: "mint" },
@@ -1527,20 +1490,20 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 09", page: "PÁGINA 04" },
           { t: "title", en: "IT → ITS", pt: "Use its para falar de algo relacionado a coisas, animais ou seres quando usamos it." },
-          { t: "image", id: "w09p4", ph: "Foto: coruja marrom e bege de olhos amarelos pousada num galho coberto de musgo, olhando para a frente, com o fundo desfocado.", alt: "Coruja de olhos amarelos num galho" },
+          { t: "image", id: "w09p4", src: "/lessons/aulas/aula-09/w09p4.webp", alt: "Coruja de olhos amarelos pousada em um galho com o fundo desfocado", w: 451, h: 884, ph: "Foto: coruja marrom e bege de olhos amarelos pousada num galho coberto de musgo, olhando para a frente, com o fundo desfocado." },
           { t: "cards", items: [
             { tag: "EXEMPLO 1", c: "teal", v: "mint", lines: ["It’s an owl.", "Its eyes are yellow."] } ] },
           { t: "note", v: "gray", kicker: "ATENÇÃO", text: "it’s = it is\nits = possessive adjective" },
           { t: "cards", items: [
-            { tag: "EXEMPLO 2", c: "yellow", v: "cream", id: "w09p4a", ph: "Foto: logotipo azul da empresa Global Solutions, com um símbolo circular e o nome escrito embaixo.", alt: "Logotipo azul da Global Solutions", lines: ["The company has a logo.", "Its logo is blue."] } ] } ] },
+            { tag: "EXEMPLO 2", c: "yellow", v: "cream", id: "w09p4a", src: "/lessons/aulas/aula-09/w09p4a.webp", alt: "Logotipo azul da Global Solutions com ícone circular de gráfico", w: 174, h: 160, ph: "Foto: logotipo azul da empresa Global Solutions, com um símbolo circular e o nome escrito embaixo.", lines: ["The company has a logo.", "Its logo is blue."] } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 09", page: "PÁGINA 05" },
           { t: "title", en: "OUR, YOUR & THEIR", pt: "Agora vamos falar de posse ou relação com we, you e they." },
           { t: "cards", items: [
-            { tag: "WE → OUR", c: "teal", v: "mint", id: "w09p5a", ph: "Foto: moça de jaqueta jeans e rapaz de suéter verde sentados à mesa de um parque, sorrindo um para o outro, com copos de café na mesa e árvores ao fundo.", alt: "Dois amigos conversando no parque", lines: ["We’re friends.", "Our favorite hobby is playing in the park."] },
-            { tag: "YOU → YOUR", c: "purple", v: "lilac", id: "w09p5b", ph: "Foto: moça de suéter bege e rapaz de óculos e camisa jeans estudando juntos diante de um notebook aberto, numa sala com estantes ao fundo.", alt: "Dois estudantes diante de um notebook", lines: ["You’re students.", "Your English classes are online."] },
-            { tag: "THEY → THEIR", c: "navy", v: "gray", id: "w09p5c", ph: "Foto: dois alunos sentados à mesa com cadernos abertos conversando com um professor de camisa azul-clara e tablet na mão, com um quadro branco escrito ENGLISH ao fundo.", alt: "Alunos e professor numa sala de aula", lines: ["Bob and Stephany are students.", "Their English teacher is Mr. Peter."] } ] },
+            { tag: "WE → OUR", c: "teal", v: "mint", id: "w09p5a", src: "/lessons/aulas/aula-09/w09p5a.webp", alt: "Moça de jaqueta jeans e rapaz de suéter verde sorrindo à mesa de um parque", w: 369, h: 288, ph: "Foto: moça de jaqueta jeans e rapaz de suéter verde sentados à mesa de um parque, sorrindo um para o outro, com copos de café na mesa e árvores ao fundo.", lines: ["We’re friends.", "Our favorite hobby is playing in the park."] },
+            { tag: "YOU → YOUR", c: "purple", v: "lilac", id: "w09p5b", src: "/lessons/aulas/aula-09/w09p5b.webp", alt: "Moça de suéter bege e rapaz de óculos estudando diante de um notebook", w: 369, h: 278, ph: "Foto: moça de suéter bege e rapaz de óculos e camisa jeans estudando juntos diante de um notebook aberto, numa sala com estantes ao fundo.", lines: ["You’re students.", "Your English classes are online."] },
+            { tag: "THEY → THEIR", c: "navy", v: "gray", id: "w09p5c", src: "/lessons/aulas/aula-09/w09p5c.webp", alt: "Dois alunos conversando com um professor de camisa azul-clara e tablet", w: 376, h: 276, ph: "Foto: dois alunos sentados à mesa com cadernos abertos conversando com um professor de camisa azul-clara e tablet na mão, com um quadro branco escrito ENGLISH ao fundo.", lines: ["Bob and Stephany are students.", "Their English teacher is Mr. Peter."] } ] },
           { t: "sec", text: "VOCABULÁRIO AUXILIAR · TÍTULOS E TRATAMENTOS", c: "purple" },
           { t: "table", head: ["TRATAMENTO", "SIGNIFICADO"], rows: [
             { a: "Mr.", b: "senhor (usado antes do sobrenome de um homem)", v: "mint" },
@@ -1590,7 +1553,7 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 09", page: "PÁGINA 08" },
           { t: "title", en: "LET’S TALK!", pt: "My, your, his, her…" },
-          { t: "image", id: "w09p8", ph: "Foto: moça de jaqueta jeans gesticulando enquanto conversa com um rapaz de suéter verde diante de um notebook aberto, numa cafeteria movimentada com outras pessoas estudando ao fundo.", alt: "Ana e Daniel conversando na cafeteria" },
+          { t: "image", id: "w09p8", src: "/lessons/aulas/aula-09/w09p8.webp", alt: "Moça gesticulando ao conversar com um rapaz diante de um notebook aberto", w: 934, h: 380, ph: "Foto: moça de jaqueta jeans gesticulando enquanto conversa com um rapaz de suéter verde diante de um notebook aberto, numa cafeteria movimentada com outras pessoas estudando ao fundo." },
           { t: "dialogue", items: [
             { s: "a", text: "Ana: Hi, Daniel! Is this your laptop?" },
             { s: "b", text: "Daniel: Yes. My laptop is new." },
@@ -1633,7 +1596,7 @@ export const LESSONS = [
           { t: "title", en: "THE ALPHABET", pt: "Spell it!" },
           { t: "lead", text: "Aprenda a reconhecer, pronunciar e soletrar letras em inglês." },
           { t: "note", v: "mint", kicker: "ANTES DE COMEÇAR", text: "Você já precisou soletrar seu nome em um cadastro, hotel ou aeroporto?" },
-          { t: "image", id: "w10p1", src: "/lessons/fotos/aula_10_pagina_01_foto_01.jpg", alt: "Atendente e passageiro conversando no balcão do aeroporto", ph: "Foto: balcão de atendimento de um aeroporto. Atrás do balcão, uma atendente sorridente de cabelo preso, blazer azul-marinho, camisa branca e lenço no pescoço. Na frente, um rapaz de cabelo castanho cacheado, camisa bege e mochila nas costas, sorrindo para ela. Ao fundo, uma placa com o símbolo de avião, painéis de voo e janelas amplas. Dois balões de fala brancos sobre a foto: um com A: What’s your name? e outro com B: My name is Robert Clarkson Wilson." },
+          { t: "image", id: "w10p1", src: "/lessons/fotos/aula_10_pagina_01_foto_01.jpg", alt: "Atendente e passageiro conversando no balcão do aeroporto", w: 621, h: 413, ph: "Foto: balcão de atendimento de um aeroporto. Atrás do balcão, uma atendente sorridente de cabelo preso, blazer azul-marinho, camisa branca e lenço no pescoço. Na frente, um rapaz de cabelo castanho cacheado, camisa bege e mochila nas costas, sorrindo para ela. Ao fundo, uma placa com o símbolo de avião, painéis de voo e janelas amplas. Dois balões de fala brancos sobre a foto: um com A: What’s your name? e outro com B: My name is Robert Clarkson Wilson." },
           { t: "dialogue", items: [
             { s: "a", text: "What’s your name?" },
             { s: "b", text: "My name is Robert Clarkson Wilson." } ] },
@@ -1649,7 +1612,7 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 10", page: "PÁGINA 02" },
           { t: "title", en: "FIRST, MIDDLE & LAST NAME", pt: "Aprenda a identificar as partes de um nome completo." },
-          { t: "image", id: "w10p2", alt: "Recepcionista sorrindo sob a placa COURSE REGISTRATION", ph: "Foto: recepcionista de cabelo preso e blazer azul-marinho com camisa branca e lenço, sorrindo de perfil atrás do balcão de atendimento, com a mão no teclado. Acima dela, uma placa azul-escura com os dizeres COURSE REGISTRATION. Ao fundo, uma planta e janelas amplas." },
+          { t: "image", id: "w10p2", src: "/lessons/aulas/aula-10/w10p2.webp", alt: "Recepcionista de blazer azul-marinho sorrindo atrás do balcão de registro", w: 334, h: 520, ph: "Foto: recepcionista de cabelo preso e blazer azul-marinho com camisa branca e lenço, sorrindo de perfil atrás do balcão de atendimento, com a mão no teclado. Acima dela, uma placa azul-escura com os dizeres COURSE REGISTRATION. Ao fundo, uma planta e janelas amplas." },
           { t: "sec", text: "REGISTRATION" },
           { t: "lead", text: "Full name (as in your ID or passport)" },
           { t: "key", v: "gray", text: "Robert Clarkson Wilson" },
@@ -1669,7 +1632,7 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 10", page: "PÁGINA 03" },
           { t: "title", en: "HOW DO YOU SPELL YOUR NAME?", pt: "Aprenda a perguntar e responder como se soletra um nome." },
-          { t: "image", id: "w10p3a", alt: "Diálogo em balões sobre a foto do balcão do aeroporto", ph: "Foto: o mesmo balcão do aeroporto. A atendente de blazer azul-marinho sorri atrás do balcão e o rapaz de camisa bege e mochila conversa com ela. Ao fundo, a placa com o símbolo de avião, um painel de voo e janelas. Sobre a foto, seis balões de fala brancos com o diálogo completo, alternando A e B." },
+          { t: "image", id: "w10p3a", src: "/lessons/aulas/aula-10/w10p3a.webp", alt: "Atendente e passageiro no balcão do aeroporto com balões mostrando o diálogo sobre soletrar o nome", w: 911, h: 497, ph: "Foto: o mesmo balcão do aeroporto. A atendente de blazer azul-marinho sorri atrás do balcão e o rapaz de camisa bege e mochila conversa com ela. Ao fundo, a placa com o símbolo de avião, um painel de voo e janelas. Sobre a foto, seis balões de fala brancos com o diálogo completo, alternando A e B." },
           { t: "dialogue", items: [
             { s: "a", text: "What’s your name?" },
             { s: "b", text: "My name is Robert Clarkson Wilson." },
@@ -1776,7 +1739,7 @@ export const LESSONS = [
             { t: "Can you spell that?", c: "purple" },
             { t: "How do you spell it?", c: "purple" } ] },
           { t: "sec", text: "YOUR TURN", c: "purple" },
-          { t: "image", id: "w10p7", src: "/lessons/fotos/aula_10_pagina_07_foto_01.jpg", alt: "Recepção de um coworking com a atendente e o visitante", ph: "Foto: recepção de um espaço de coworking, com parede de tijolos, luminárias pendentes e as letras COWORKING SPACE na parede. Atrás do balcão, uma moça de cabelo preso, camiseta preta e crachá no cordão, sorrindo. Na frente, o rapaz de camisa bege e mochila, apoiado no balcão. Vasos de planta sobre o balcão e ao fundo." },
+          { t: "image", id: "w10p7", src: "/lessons/fotos/aula_10_pagina_07_foto_01.jpg", alt: "Recepção de um coworking com a atendente e o visitante", w: 495, h: 467, ph: "Foto: recepção de um espaço de coworking, com parede de tijolos, luminárias pendentes e as letras COWORKING SPACE na parede. Atrás do balcão, uma moça de cabelo preso, camiseta preta e crachá no cordão, sorrindo. Na frente, o rapaz de camisa bege e mochila, apoiado no balcão. Vasos de planta sobre o balcão e ao fundo." },
           { t: "lead", text: "Imagine you are at a coworking reception. The receptionist asks:" },
           { t: "free", id: "w10f1", cols: 2, items: [
             { n: "1", kicker: "RESPONDA", prefix: "What’s your name?", ideas: "Escreva a sua resposta em inglês.", v: "mint", c: "teal" },
@@ -1811,8 +1774,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 11" },
         { t: "title", en: "SCHOOL VOCABULARY", pt: "Around the classroom" },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Você consegue identificar objetos e pedir ajuda em inglês dentro da sala de aula?" },
-        { t: "image", id: "w11p1a", alt: "Professor e quatro alunos numa sala de aula, com o quadro branco escrito Classroom language.",
-          ph: "Ilustração: sala de aula clara com janelas grandes e prédios ao fundo. O professor, de camisa verde-escura e calça bege, sorri em pé e aponta com a caneta para o quadro branco, onde está escrito à mão “Classroom language / Open your book. / Take out your notebook. / Work in pairs. / Any questions?”. À esquerda, um cartaz com LEARN PRACTICE SPEAK REPEAT e uma aluna de jaqueta jeans sentada com livro e copo de café; ao lado dela, um rapaz de camiseta verde-oliva e óculos com um notebook. De costas, um aluno de camiseta azul-marinho; à direita, uma aluna de blusa amarela com caneta na mão. Sobre as mesas há livros abertos, garrafa térmica e estojo roxo; no mural, um post-it amarelo com You’ve got this!." },
+        { t: "image", id: "w11p1a", src: "/lessons/aulas/aula-11/w11p1a.webp", alt: "Professor sorridente aponta para o quadro branco cercado de alunos atentos", w: 872, h: 469, ph: "Ilustração: sala de aula clara com janelas grandes e prédios ao fundo. O professor, de camisa verde-escura e calça bege, sorri em pé e aponta com a caneta para o quadro branco, onde está escrito à mão “Classroom language / Open your book. / Take out your notebook. / Work in pairs. / Any questions?”. À esquerda, um cartaz com LEARN PRACTICE SPEAK REPEAT e uma aluna de jaqueta jeans sentada com livro e copo de café; ao lado dela, um rapaz de camiseta verde-oliva e óculos com um notebook. De costas, um aluno de camiseta azul-marinho; à direita, uma aluna de blusa amarela com caneta na mão. Sobre as mesas há livros abertos, garrafa térmica e estojo roxo; no mural, um post-it amarelo com You’ve got this!." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A:", c: "purple" },
         { t: "grid", cols: 3, items: [
           { title: "identificar objetos da sala.", v: "mint", c: "teal" },
@@ -1825,8 +1787,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 11", page: "PÁGINA 02" },
         { t: "title", en: "IN THE CLASSROOM", pt: "Objetos e pessoas da sala" },
-        { t: "image", id: "w11p2a", alt: "Sala de aula com etiquetas apontando os objetos e as pessoas em inglês.",
-          ph: "Ilustração: a mesma sala de aula, agora com etiquetas brancas ligadas por um fio a cada elemento: windows (as janelas à esquerda), shelf (a estante de livros), whiteboard (o quadro branco com o texto Classroom language), teacher (o professor de camisa verde-escura apontando para o quadro), world map (o mapa-múndi na parede à direita), books (os livros da estante), pupils (o aluno de camiseta azul-marinho visto de costas), desk (a mesa da aluna de jaqueta jeans) e chair (a cadeira preta em primeiro plano)." },
+        { t: "image", id: "w11p2a", src: "/lessons/aulas/aula-11/w11p2a.webp", alt: "Sala de aula com etiquetas indicando janelas, quadro, professor e mesas", w: 885, h: 639, ph: "Ilustração: a mesma sala de aula, agora com etiquetas brancas ligadas por um fio a cada elemento: windows (as janelas à esquerda), shelf (a estante de livros), whiteboard (o quadro branco com o texto Classroom language), teacher (o professor de camisa verde-escura apontando para o quadro), world map (o mapa-múndi na parede à direita), books (os livros da estante), pupils (o aluno de camiseta azul-marinho visto de costas), desk (a mesa da aluna de jaqueta jeans) e chair (a cadeira preta em primeiro plano)." },
         { t: "note", v: "mint", text: "pupils = alunos (termo mais escolar)\nstudents = termo mais geral" },
         { t: "sec", text: "OBSERVE E APRENDA", c: "purple" },
         { t: "cards", cols: 2, items: [
@@ -1837,17 +1798,16 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 11", page: "PÁGINA 03" },
         { t: "title", en: "SCHOOL SUPPLIES", pt: "Materiais escolares do dia a dia" },
-        { t: "image", id: "w11p3a", alt: "Mesa de madeira com mochila, livros, caderno e material escolar.",
-          ph: "Foto: mesa de madeira clara vista de cima e de frente, com uma mochila azul-marinho ao centro, uma pilha de livros amarelo e verde, um caderno espiral aberto com caneta preta, um lápis amarelo, uma borracha rosa, uma régua metálica, um apontador azul, um estojo azul-marinho, uma tesoura de cabo azul e um porta-lápis de tela preta. À esquerda, um vaso de planta verde e uma caneca azul-marinho; à direita, uma suculenta e um quadro com LEARN PRACTICE SPEAK REPEAT; ao fundo, uma janela com luz do dia." },
+        { t: "image", id: "w11p3a", src: "/lessons/aulas/aula-11/w11p3a.webp", alt: "Mesa com mochila, livros, estojo e outros materiais escolares organizados", w: 892, h: 415, ph: "Foto: mesa de madeira clara vista de cima e de frente, com uma mochila azul-marinho ao centro, uma pilha de livros amarelo e verde, um caderno espiral aberto com caneta preta, um lápis amarelo, uma borracha rosa, uma régua metálica, um apontador azul, um estojo azul-marinho, uma tesoura de cabo azul e um porta-lápis de tela preta. À esquerda, um vaso de planta verde e uma caneca azul-marinho; à direita, uma suculenta e um quadro com LEARN PRACTICE SPEAK REPEAT; ao fundo, uma janela com luz do dia." },
         { t: "cards", cols: 2, items: [
-          { tag: "pen", c: "teal", v: "mint", id: "w11p3b", alt: "Caneta esferográfica preta.", ph: "Foto: caneta esferográfica preta de ponta retrátil, na diagonal, sobre fundo branco." },
-          { tag: "pencil", c: "purple", v: "lilac", id: "w11p3c", alt: "Lápis amarelo de grafite.", ph: "Foto: lápis amarelo de grafite com ponta apontada, na diagonal, sobre fundo branco." },
-          { tag: "eraser / rubber", c: "yellow", v: "cream", id: "w11p3d", alt: "Borracha escolar rosa.", ph: "Foto: borracha escolar retangular rosa, vista de lado, sobre fundo branco." },
-          { tag: "ruler", c: "teal", v: "mint", id: "w11p3e", alt: "Régua metálica com escala.", ph: "Foto: régua metálica prateada com a escala em centímetros, na diagonal, sobre fundo branco." },
-          { tag: "pencil case", c: "purple", v: "lilac", id: "w11p3f", alt: "Estojo azul-marinho fechado.", ph: "Foto: estojo de tecido azul-marinho fechado, com zíper e puxador de couro, sobre fundo branco." },
-          { tag: "pencil sharpener", c: "yellow", v: "cream", id: "w11p3g", alt: "Apontador de plástico azul.", ph: "Foto: apontador de plástico azul translúcido com lâmina metálica, visto de frente, sobre fundo branco." },
-          { tag: "school bag", c: "teal", v: "mint", id: "w11p3h", alt: "Mochila escolar azul-marinho.", ph: "Foto: mochila escolar azul-marinho de frente, com alça superior e bolso frontal com zíper, sobre fundo branco." },
-          { tag: "scissors", c: "purple", v: "lilac", id: "w11p3i", alt: "Tesoura com cabo azul.", ph: "Foto: tesoura aberta com lâminas prateadas e cabo azul, sobre fundo branco." } ] },
+          { tag: "pen", c: "teal", v: "mint", id: "w11p3b", src: "/lessons/aulas/aula-11/w11p3b.webp", alt: "Caneta esferográfica preta na diagonal sobre fundo branco", w: 133, h: 71, ph: "Foto: caneta esferográfica preta de ponta retrátil, na diagonal, sobre fundo branco." },
+          { tag: "pencil", c: "purple", v: "lilac", id: "w11p3c", src: "/lessons/aulas/aula-11/w11p3c.webp", alt: "Lápis amarelo com ponta apontada na diagonal", w: 155, h: 91, ph: "Foto: lápis amarelo de grafite com ponta apontada, na diagonal, sobre fundo branco." },
+          { tag: "eraser / rubber", c: "yellow", v: "cream", id: "w11p3d", src: "/lessons/aulas/aula-11/w11p3d.webp", alt: "Borracha retangular rosa vista de lado", w: 78, h: 66, ph: "Foto: borracha escolar retangular rosa, vista de lado, sobre fundo branco." },
+          { tag: "ruler", c: "teal", v: "mint", id: "w11p3e", src: "/lessons/aulas/aula-11/w11p3e.webp", alt: "Régua metálica prateada com escala em centímetros", w: 189, h: 89, ph: "Foto: régua metálica prateada com a escala em centímetros, na diagonal, sobre fundo branco." },
+          { tag: "pencil case", c: "purple", v: "lilac", id: "w11p3f", src: "/lessons/aulas/aula-11/w11p3f.webp", alt: "Estojo de tecido azul marinho fechado com zíper", w: 160, h: 88, ph: "Foto: estojo de tecido azul-marinho fechado, com zíper e puxador de couro, sobre fundo branco." },
+          { tag: "pencil sharpener", c: "yellow", v: "cream", id: "w11p3g", src: "/lessons/aulas/aula-11/w11p3g.webp", alt: "Apontador azul translúcido com lâmina metálica", w: 88, h: 84, ph: "Foto: apontador de plástico azul translúcido com lâmina metálica, visto de frente, sobre fundo branco." },
+          { tag: "school bag", c: "teal", v: "mint", id: "w11p3h", src: "/lessons/aulas/aula-11/w11p3h.webp", alt: "Mochila escolar azul marinho vista de frente", w: 101, h: 117, ph: "Foto: mochila escolar azul-marinho de frente, com alça superior e bolso frontal com zíper, sobre fundo branco." },
+          { tag: "scissors", c: "purple", v: "lilac", id: "w11p3i", src: "/lessons/aulas/aula-11/w11p3i.webp", alt: "Tesoura aberta com lâminas prateadas e cabo azul", w: 143, h: 78, ph: "Foto: tesoura aberta com lâminas prateadas e cabo azul, sobre fundo branco." } ] },
         { t: "sec", text: "DICA RÁPIDA", c: "purple" },
         { t: "cards", cols: 2, items: [
           { tag: "AMERICAN × BRITISH", c: "purple", v: "lilac", lines: ["eraser = mais comum no inglês americano", "rubber = forma comum no inglês britânico"] },
@@ -1862,10 +1822,10 @@ export const LESSONS = [
         { t: "badge", label: "AULA 11", page: "PÁGINA 04" },
         { t: "title", en: "CLASSROOM COMMANDS", pt: "Entenda instruções simples em sala" },
         { t: "cards", cols: 2, items: [
-          { tag: "COMANDO 1", c: "teal", v: "mint", id: "w11p4a", alt: "Professor pede que os alunos se sentem.", ph: "Ilustração: o professor de camisa verde-escura, em pé diante do quadro branco, sorri e aponta com a mão para baixo. Três alunos estão sentados nas carteiras: a aluna de jaqueta jeans, o aluno de camiseta azul-marinho de costas e a aluna de blusa amarela. No fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e um vaso de planta.", lines: ["Sit down."], note: "sente-se" },
-          { tag: "COMANDO 2", c: "purple", v: "lilac", id: "w11p4b", alt: "Professor pede que os alunos fiquem de pé.", ph: "Ilustração: o professor de camisa verde-escura, em pé diante do quadro branco, levanta o dedo indicador. Três alunos estão de pé, de costas para quem vê: a aluna de blusa amarela, o aluno de camiseta azul-marinho e a aluna de jaqueta jeans. No fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e o post-it You’ve got this!.", lines: ["Stand up."], note: "levante-se" },
-          { tag: "COMANDO 3", c: "yellow", v: "cream", id: "w11p4c", alt: "Três alunos com os livros abertos sobre a mesa.", ph: "Ilustração: três alunos sentados lado a lado numa mesa de madeira, com os livros abertos à frente: a aluna de jaqueta jeans, o aluno de camiseta azul-marinho e a aluna de blusa amarela, todos sorrindo e olhando para as páginas. Ao fundo, o cartaz LEARN PRACTICE SPEAK REPEAT, uma estante e um copo de café sobre a mesa.", lines: ["Open your books."], note: "abra seus livros" },
-          { tag: "COMANDO 4", c: "teal", v: "mint", id: "w11p4d", alt: "Três alunos com os livros fechados sobre a mesa.", ph: "Ilustração: os mesmos três alunos sentados à mesa, agora com as mãos sobre os livros verde-azulados fechados: a aluna de jaqueta jeans, o aluno de camiseta azul-marinho e a aluna de blusa amarela, todos sorrindo. Ao fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e a estante de livros.", lines: ["Close your books."], note: "feche seus livros" } ] },
+          { tag: "COMANDO 1", c: "teal", v: "mint", id: "w11p4a", src: "/lessons/aulas/aula-11/w11p4a.webp", alt: "Professor aponta para baixo enquanto três alunos sentados escrevem", w: 428, h: 284, ph: "Ilustração: o professor de camisa verde-escura, em pé diante do quadro branco, sorri e aponta com a mão para baixo. Três alunos estão sentados nas carteiras: a aluna de jaqueta jeans, o aluno de camiseta azul-marinho de costas e a aluna de blusa amarela. No fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e um vaso de planta.", lines: ["Sit down."], note: "sente-se" },
+          { tag: "COMANDO 2", c: "purple", v: "lilac", id: "w11p4b", src: "/lessons/aulas/aula-11/w11p4b.webp", alt: "Professor levanta o dedo com três alunos de pé de costas", w: 430, h: 278, ph: "Ilustração: o professor de camisa verde-escura, em pé diante do quadro branco, levanta o dedo indicador. Três alunos estão de pé, de costas para quem vê: a aluna de blusa amarela, o aluno de camiseta azul-marinho e a aluna de jaqueta jeans. No fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e o post-it You’ve got this!.", lines: ["Stand up."], note: "levante-se" },
+          { tag: "COMANDO 3", c: "yellow", v: "cream", id: "w11p4c", src: "/lessons/aulas/aula-11/w11p4c.webp", alt: "Três alunos sorridentes com os livros abertos sobre a mesa", w: 428, h: 250, ph: "Ilustração: três alunos sentados lado a lado numa mesa de madeira, com os livros abertos à frente: a aluna de jaqueta jeans, o aluno de camiseta azul-marinho e a aluna de blusa amarela, todos sorrindo e olhando para as páginas. Ao fundo, o cartaz LEARN PRACTICE SPEAK REPEAT, uma estante e um copo de café sobre a mesa.", lines: ["Open your books."], note: "abra seus livros" },
+          { tag: "COMANDO 4", c: "teal", v: "mint", id: "w11p4d", src: "/lessons/aulas/aula-11/w11p4d.webp", alt: "Três alunos com as mãos sobre os livros fechados na mesa", w: 430, h: 251, ph: "Ilustração: os mesmos três alunos sentados à mesa, agora com as mãos sobre os livros verde-azulados fechados: a aluna de jaqueta jeans, o aluno de camiseta azul-marinho e a aluna de blusa amarela, todos sorrindo. Ao fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e a estante de livros.", lines: ["Close your books."], note: "feche seus livros" } ] },
         { t: "mc", id: "w11mc1", title: "LISTEN & DO", v: "gray", questions: [
           { q: "1. Quando o professor diz “Stand up.”, você…", options: ["senta", "levanta"], answer: 1 },
           { q: "2. Quando o professor diz ‘Open your books.’, você…", options: ["abre", "fecha"], answer: 0 } ] },
@@ -1874,8 +1834,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 11", page: "PÁGINA 05" },
         { t: "title", en: "EXCUSE ME…", pt: "Pedindo ajuda com educação" },
-        { t: "image", id: "w11p5a", alt: "Aluna levanta a mão na sala enquanto o professor escreve no quadro.",
-          ph: "Ilustração: sala de aula com janelas amplas e prédios ao fundo. Uma aluna de jaqueta jeans, sentada, levanta a mão e sorri. Ao lado dela, dois rapazes sentados (um de camiseta azul-marinho e outro de camiseta verde-oliva e óculos) e, à direita, uma aluna de blusa amarela. O professor, de camisa verde-escura, sorri em pé junto ao quadro branco, onde está escrito à mão “Classroom language / Be polite. / Ask with respect. / Help and learn together.”. À esquerda, o cartaz LEARN PRACTICE SPEAK REPEAT; sobre as mesas, cadernos, garrafa térmica e estojo roxo." },
+        { t: "image", id: "w11p5a", src: "/lessons/aulas/aula-11/w11p5a.webp", alt: "Aluna levanta a mão em sala de aula enquanto o professor sorri", w: 865, h: 363, ph: "Ilustração: sala de aula com janelas amplas e prédios ao fundo. Uma aluna de jaqueta jeans, sentada, levanta a mão e sorri. Ao lado dela, dois rapazes sentados (um de camiseta azul-marinho e outro de camiseta verde-oliva e óculos) e, à direita, uma aluna de blusa amarela. O professor, de camisa verde-escura, sorri em pé junto ao quadro branco, onde está escrito à mão “Classroom language / Be polite. / Ask with respect. / Help and learn together.”. À esquerda, o cartaz LEARN PRACTICE SPEAK REPEAT; sobre as mesas, cadernos, garrafa térmica e estojo roxo." },
         { t: "dialogue", items: [
           { s: "a", text: "Excuse me, may I drink some water, please?" },
           { s: "b", text: "Yes." } ] },
@@ -1899,8 +1858,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 11", page: "PÁGINA 06" },
         { t: "title", en: "MAY I…?", pt: "Pedindo permissão" },
-        { t: "image", id: "w11p6a", alt: "Professor conversa com dois alunos sentados à mesa.",
-          ph: "Ilustração: o professor de camisa verde-escura, à direita, sorri e fala com a mão aberta em gesto de explicação, com uma caneca branca escrita WSA ao lado. À esquerda, uma aluna de jaqueta jeans sorri e olha para ele; ao lado dela, um rapaz de camiseta verde-oliva, cabelo cacheado e óculos, segura uma caneta sobre um caderno aberto, com um notebook à frente. Ao fundo, janela com prédios, o cartaz LEARN PRACTICE SPEAK REPEAT, o quadro branco e vasos de planta." },
+        { t: "image", id: "w11p6a", src: "/lessons/aulas/aula-11/w11p6a.webp", alt: "Professor explica com a mão aberta para dois alunos atentos", w: 882, h: 325, ph: "Ilustração: o professor de camisa verde-escura, à direita, sorri e fala com a mão aberta em gesto de explicação, com uma caneca branca escrita WSA ao lado. À esquerda, uma aluna de jaqueta jeans sorri e olha para ele; ao lado dela, um rapaz de camiseta verde-oliva, cabelo cacheado e óculos, segura uma caneta sobre um caderno aberto, com um notebook à frente. Ao fundo, janela com prédios, o cartaz LEARN PRACTICE SPEAK REPEAT, o quadro branco e vasos de planta." },
         { t: "dialogue", items: [
           { s: "a", text: "Student: Excuse me, may I go to the bathroom, please?" },
           { s: "b", text: "Teacher: Yes, you may." } ] },
@@ -1921,13 +1879,12 @@ export const LESSONS = [
         { t: "badge", label: "AULA 11", page: "PÁGINA 07" },
         { t: "title", en: "BATHROOM, RESTROOM, TOILET…?", pt: "Variações comuns em contextos diferentes" },
         { t: "cards", cols: 2, items: [
-          { tag: "USA", c: "teal", v: "mint", id: "w11p7a", alt: "Bandeira dos Estados Unidos em um círculo.", ph: "Ilustração: ícone circular com a bandeira dos Estados Unidos, listras vermelhas e brancas e o cantão azul com estrelas.", lines: ["restroom", "bathroom"] },
-          { tag: "UK", c: "purple", v: "lilac", id: "w11p7b", alt: "Bandeira do Reino Unido em um círculo.", ph: "Ilustração: ícone circular com a bandeira do Reino Unido, cruzes vermelhas e brancas sobre fundo azul.", lines: ["toilet"] },
-          { tag: "AIRPLANE / FORMAL", c: "yellow", v: "cream", id: "w11p7c", alt: "Ícone de avião amarelo.", ph: "Ilustração: ícone de avião visto de cima, desenhado em traço amarelo sobre fundo creme.", lines: ["lavatory"] },
-          { tag: "SIGNS", c: "teal", v: "mint", id: "w11p7d", alt: "Ícone circular com a sigla WC.", ph: "Ilustração: círculo azul-petróleo com as letras WC em branco, no estilo das placas de sinalização.", lines: ["WC"] } ] },
+          { tag: "USA", c: "teal", v: "mint", id: "w11p7a", src: "/lessons/aulas/aula-11/w11p7a.webp", alt: "Ícone circular com a bandeira dos Estados Unidos", w: 75, h: 73, ph: "Ilustração: ícone circular com a bandeira dos Estados Unidos, listras vermelhas e brancas e o cantão azul com estrelas.", lines: ["restroom", "bathroom"] },
+          { tag: "UK", c: "purple", v: "lilac", id: "w11p7b", src: "/lessons/aulas/aula-11/w11p7b.webp", alt: "Ícone circular com a bandeira do Reino Unido", w: 75, h: 75, ph: "Ilustração: ícone circular com a bandeira do Reino Unido, cruzes vermelhas e brancas sobre fundo azul.", lines: ["toilet"] },
+          { tag: "AIRPLANE / FORMAL", c: "yellow", v: "cream", id: "w11p7c", src: "/lessons/aulas/aula-11/w11p7c.webp", alt: "Ícone de avião em traço amarelo sobre fundo creme", w: 51, h: 52, ph: "Ilustração: ícone de avião visto de cima, desenhado em traço amarelo sobre fundo creme.", lines: ["lavatory"] },
+          { tag: "SIGNS", c: "teal", v: "mint", id: "w11p7d", src: "/lessons/aulas/aula-11/w11p7d.webp", alt: "Círculo azul petróleo com as letras WC em branco", w: 83, h: 84, ph: "Ilustração: círculo azul-petróleo com as letras WC em branco, no estilo das placas de sinalização.", lines: ["WC"] } ] },
         { t: "note", v: "mint", text: "WC ainda aparece em placas e sinalização, especialmente em alguns países europeus." },
-        { t: "image", id: "w11p7e", alt: "Placa de banheiro e sinalização de aeroporto indicando os restrooms.",
-          ph: "Foto: imagem dividida em duas partes. À esquerda, uma placa azul-marinho na parede com os pictogramas de homem e mulher, a palavra Restrooms e uma seta apontando para a direita. À direita, o saguão de um aeroporto com pé-direito alto e paredes de vidro: painéis de voos pretos no teto, uma placa amarela com “↑ Gates A1–A12 / Baggage Claim / Restrooms →” e passageiros de costas caminhando com mochilas e malas." },
+        { t: "image", id: "w11p7e", src: "/lessons/aulas/aula-11/w11p7e.webp", alt: "Placa de restroom e saguão de aeroporto com sinalização em inglês", w: 850, h: 358, ph: "Foto: imagem dividida em duas partes. À esquerda, uma placa azul-marinho na parede com os pictogramas de homem e mulher, a palavra Restrooms e uma seta apontando para a direita. À direita, o saguão de um aeroporto com pé-direito alto e paredes de vidro: painéis de voos pretos no teto, uma placa amarela com “↑ Gates A1–A12 / Baggage Claim / Restrooms →” e passageiros de costas caminhando com mochilas e malas." },
         { t: "sec", text: "PERGUNTAS ÚTEIS", c: "purple" },
         { t: "rows", items: [
           { text: "Where’s the restroom?", c: "purple" },
@@ -1939,8 +1896,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 11", page: "PÁGINA 08" },
         { t: "title", en: "LET’S TALK!", pt: "Usando o vocabulário em contexto" },
-        { t: "image", id: "w11p8a", alt: "Ana, Daniel e o professor conversam à mesa com livros abertos.",
-          ph: "Ilustração: três pessoas sentadas à mesa de madeira, com etiquetas roxas com os nomes. À esquerda, Ana, de jaqueta jeans e brincos de argola, sorri e aponta para o lápis. Ao centro, Daniel, de camiseta verde-oliva, cabelo cacheado e óculos, segura um lápis amarelo levantado. À direita, Teacher, o professor de camisa verde-escura, sorri com as mãos entrelaçadas sobre a mesa. Sobre a mesa há livros abertos, um copo de café, um livro azul fechado e uma garrafa térmica preta. Ao fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e o quadro branco com o texto “Classroom language / Excuse me. / Can you repeat that, please? / May I…? / Yes, you may.”." },
+        { t: "image", id: "w11p8a", src: "/lessons/aulas/aula-11/w11p8a.webp", alt: "Ana, Daniel e o professor conversam sorrindo à mesa da sala", w: 867, h: 480, ph: "Ilustração: três pessoas sentadas à mesa de madeira, com etiquetas roxas com os nomes. À esquerda, Ana, de jaqueta jeans e brincos de argola, sorri e aponta para o lápis. Ao centro, Daniel, de camiseta verde-oliva, cabelo cacheado e óculos, segura um lápis amarelo levantado. À direita, Teacher, o professor de camisa verde-escura, sorri com as mãos entrelaçadas sobre a mesa. Sobre a mesa há livros abertos, um copo de café, um livro azul fechado e uma garrafa térmica preta. Ao fundo, o cartaz LEARN PRACTICE SPEAK REPEAT e o quadro branco com o texto “Classroom language / Excuse me. / Can you repeat that, please? / May I…? / Yes, you may.”." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Excuse me, Daniel. What’s this?" },
           { s: "b", text: "Daniel: It’s a pencil." },
@@ -1986,11 +1942,11 @@ export const LESSONS = [
           { t: "badge", label: "AULA 12" },
           { t: "title", en: "COLORS", pt: "What color is it?" },
           { t: "lead", text: "Nesta aula, você vai aprender a reconhecer e dizer cores em inglês." },
-          { t: "image", id: "w12p1a", alt: "Dois amigos conversando na mesa de um café", ph: "Foto: dois amigos sentados à mesa de um café, de frente para um notebook prateado. À esquerda, uma mulher de blusa lilás segura uma caneca azul; à direita, um homem de camisa verde aponta para a tela. Sobre a mesa há um vaso de planta, um caderno preto, um livro aberto, um caderno azul com um celular verde em cima, uma garrafa térmica amarela e um estojo vermelho. Ao fundo, parede roxa, prateleiras e janelas grandes." },
+          { t: "image", id: "w12p1a", src: "/lessons/aulas/aula-12/w12p1a.webp", alt: "Amiga de blusa lilás e amigo de camisa verde conversam à mesa de um café", w: 847, h: 492, ph: "Foto: dois amigos sentados à mesa de um café, de frente para um notebook prateado. À esquerda, uma mulher de blusa lilás segura uma caneca azul; à direita, um homem de camisa verde aponta para a tela. Sobre a mesa há um vaso de planta, um caderno preto, um livro aberto, um caderno azul com um celular verde em cima, uma garrafa térmica amarela e um estojo vermelho. Ao fundo, parede roxa, prateleiras e janelas grandes." },
           { t: "dialogue", items: [
             { s: "a", text: "What color is it?" },
             { s: "b", text: "It’s blue." } ] },
-          { t: "image", id: "w12p1b", alt: "Caneca azul vista de lado", ph: "Foto: caneca de cerâmica azul-royal vista de lado, com a alça virada para a direita, sobre fundo lilás claro, com três risquinhos roxos de destaque no canto superior direito." },
+          { t: "image", id: "w12p1b", src: "/lessons/aulas/aula-12/w12p1b.webp", alt: "Caneca de cerâmica azul-royal com três risquinhos roxos de destaque ao lado", w: 282, h: 196, ph: "Foto: caneca de cerâmica azul-royal vista de lado, com a alça virada para a direita, sobre fundo lilás claro, com três risquinhos roxos de destaque no canto superior direito." },
           { t: "sec", text: "CORES QUE VOCÊ VAI APRENDER:", c: "purple" },
           { t: "chips", items: [
             { t: "black", c: "navy" },
@@ -2010,16 +1966,16 @@ export const LESSONS = [
           { t: "title", en: "10 COLORS YOU NEED TO KNOW", pt: "What color is it?" },
           { t: "lead", text: "Estas são as cores básicas mais usadas no inglês do dia a dia." },
           { t: "cards", cols: 2, items: [
-            { tag: "BLACK", c: "navy", v: "gray", id: "w12p2a", alt: "Celular preto", ph: "Foto: celular preto de costas, em pé e levemente inclinado, mostrando o bloco de três câmeras, sobre fundo branco." },
-            { tag: "BLUE", c: "blue", v: "mint", id: "w12p2b", alt: "Mochila azul", ph: "Foto: mochila de tecido azul-marinho, de frente, com alças pretas e um zíper vertical no bolso da frente, sobre fundo branco." },
-            { tag: "BROWN", c: "cream", v: "cream", id: "w12p2c", alt: "Caneca marrom com café", ph: "Foto: caneca de cerâmica marrom cheia de café preto, vista de lado com a alça à direita, sobre fundo branco." },
-            { tag: "WHITE", c: "white", v: "gray", id: "w12p2d", alt: "Camiseta branca", ph: "Foto: camiseta branca de manga curta, estendida de frente, sobre fundo branco." },
-            { tag: "GRAY", c: "gray", v: "gray", id: "w12p2e", alt: "Notebook cinza", ph: "Foto: notebook cinza aberto, visto de trás e de lado, sobre fundo branco." },
-            { tag: "GREEN", c: "green", v: "mint", id: "w12p2f", alt: "Planta verde em vaso", ph: "Foto: planta de folhas verdes largas em um vaso bege claro, sobre fundo branco." },
-            { tag: "ORANGE", c: "orange", v: "cream", id: "w12p2g", alt: "Laranja com folha", ph: "Foto: uma laranja inteira com uma folha verde presa ao cabinho, sobre fundo branco." },
-            { tag: "PINK", c: "lilac", v: "lilac", id: "w12p2h", alt: "Caderno rosa espiral", ph: "Foto: caderno de capa rosa com espiral dourada, levemente inclinado, sobre fundo branco." },
-            { tag: "RED", c: "red", v: "gray", id: "w12p2i", alt: "Carro vermelho", ph: "Foto: carro sedã vermelho visto de frente e de três quartos, sobre fundo branco." },
-            { tag: "YELLOW", c: "yellow", v: "cream", id: "w12p2j", alt: "Garrafa térmica amarela", ph: "Foto: garrafa térmica amarela em pé, com tampa preta e alça de rosca, sobre fundo branco." } ] },
+            { tag: "BLACK", c: "navy", v: "gray", id: "w12p2a", src: "/lessons/aulas/aula-12/w12p2a.webp", alt: "Celular preto visto de costas, em pé e levemente inclinado", w: 135, h: 244, ph: "Foto: celular preto de costas, em pé e levemente inclinado, mostrando o bloco de três câmeras, sobre fundo branco." },
+            { tag: "BLUE", c: "blue", v: "mint", id: "w12p2b", src: "/lessons/aulas/aula-12/w12p2b.webp", alt: "Mochila de tecido azul-marinho vista de frente sobre fundo branco", w: 136, h: 250, ph: "Foto: mochila de tecido azul-marinho, de frente, com alças pretas e um zíper vertical no bolso da frente, sobre fundo branco." },
+            { tag: "BROWN", c: "cream", v: "cream", id: "w12p2c", src: "/lessons/aulas/aula-12/w12p2c.webp", alt: "Caneca de cerâmica marrom cheia de café, vista de lado", w: 141, h: 147, ph: "Foto: caneca de cerâmica marrom cheia de café preto, vista de lado com a alça à direita, sobre fundo branco." },
+            { tag: "WHITE", c: "white", v: "gray", id: "w12p2d", src: "/lessons/aulas/aula-12/w12p2d.webp", alt: "Camiseta branca de manga curta estendida de frente", w: 166, h: 246, ph: "Foto: camiseta branca de manga curta, estendida de frente, sobre fundo branco." },
+            { tag: "GRAY", c: "gray", v: "gray", id: "w12p2e", src: "/lessons/aulas/aula-12/w12p2e.webp", alt: "Notebook cinza aberto, visto de trás e de lado", w: 165, h: 252, ph: "Foto: notebook cinza aberto, visto de trás e de lado, sobre fundo branco." },
+            { tag: "GREEN", c: "green", v: "mint", id: "w12p2f", src: "/lessons/aulas/aula-12/w12p2f.webp", alt: "Planta de folhas verdes largas em vaso bege claro", w: 143, h: 210, ph: "Foto: planta de folhas verdes largas em um vaso bege claro, sobre fundo branco." },
+            { tag: "ORANGE", c: "orange", v: "cream", id: "w12p2g", src: "/lessons/aulas/aula-12/w12p2g.webp", alt: "Laranja inteira com uma folha verde presa ao cabinho", w: 129, h: 149, ph: "Foto: uma laranja inteira com uma folha verde presa ao cabinho, sobre fundo branco." },
+            { tag: "PINK", c: "lilac", v: "lilac", id: "w12p2h", src: "/lessons/aulas/aula-12/w12p2h.webp", alt: "Caderno de capa rosa com espiral dourada, levemente inclinado", w: 137, h: 142, ph: "Foto: caderno de capa rosa com espiral dourada, levemente inclinado, sobre fundo branco." },
+            { tag: "RED", c: "red", v: "gray", id: "w12p2i", src: "/lessons/aulas/aula-12/w12p2i.webp", alt: "Carro sedã vermelho visto de frente e de três quartos", w: 168, h: 155, ph: "Foto: carro sedã vermelho visto de frente e de três quartos, sobre fundo branco." },
+            { tag: "YELLOW", c: "yellow", v: "cream", id: "w12p2j", src: "/lessons/aulas/aula-12/w12p2j.webp", alt: "Garrafa térmica amarela em pé, com tampa preta", w: 66, h: 214, ph: "Foto: garrafa térmica amarela em pé, com tampa preta e alça de rosca, sobre fundo branco." } ] },
           { t: "note", v: "lilac", kicker: "DICA", text: "Aprenda as cores com objetos reais.\nIsso ajuda você a memorizar mais rápido." } ] },
 
         { blocks: [
@@ -2029,10 +1985,10 @@ export const LESSONS = [
           { t: "table", head: ["QUESTION", "ANSWER"], rows: [
             { a: "What color is it?", b: "It’s + color.", v: "lilac" } ] },
           { t: "steps", items: [
-            { n: "1", tag: "WHAT COLOR IS IT?", c: "purple", v: "lilac", lines: ["It’s black."], id: "w12p3a", alt: "Celular preto sobre a mesa", ph: "Foto: celular preto deitado de costas sobre uma superfície branca, levemente inclinado, mostrando o bloco de três câmeras." },
-            { n: "2", tag: "WHAT COLOR IS IT?", c: "yellow", v: "cream", lines: ["It’s yellow."], id: "w12p3b", alt: "Garrafa térmica amarela sobre a mesa", ph: "Foto: garrafa térmica amarela com tampa preta em pé sobre uma mesa de madeira clara, com parede branca e uma plantinha ao fundo." },
-            { n: "3", tag: "WHAT COLOR IS IT?", c: "blue", v: "mint", lines: ["It’s blue."], id: "w12p3c", alt: "Caderno azul sobre a mesa", ph: "Foto: caderno de capa azul com espiral, fechado sobre uma mesa de madeira clara, com uma caneta preta ao lado." },
-            { n: "4", tag: "WHAT COLOR IS IT?", c: "green", v: "mint", lines: ["It’s green."], id: "w12p3d", alt: "Planta verde em vaso sobre a mesa", ph: "Foto: planta de folhas verdes largas em vaso bege claro, sobre uma mesinha redonda de madeira, com uma estante desfocada ao fundo." } ] },
+            { n: "1", tag: "WHAT COLOR IS IT?", c: "purple", v: "lilac", lines: ["It’s black."], id: "w12p3a", src: "/lessons/aulas/aula-12/w12p3a.webp", alt: "Celular preto deitado de costas sobre superfície branca", w: 296, h: 180, ph: "Foto: celular preto deitado de costas sobre uma superfície branca, levemente inclinado, mostrando o bloco de três câmeras." },
+            { n: "2", tag: "WHAT COLOR IS IT?", c: "yellow", v: "cream", lines: ["It’s yellow."], id: "w12p3b", src: "/lessons/aulas/aula-12/w12p3b.webp", alt: "Garrafa térmica amarela em pé sobre mesa de madeira clara", w: 327, h: 165, ph: "Foto: garrafa térmica amarela com tampa preta em pé sobre uma mesa de madeira clara, com parede branca e uma plantinha ao fundo." },
+            { n: "3", tag: "WHAT COLOR IS IT?", c: "blue", v: "mint", lines: ["It’s blue."], id: "w12p3c", src: "/lessons/aulas/aula-12/w12p3c.webp", alt: "Caderno de capa azul com espiral, fechado sobre mesa de madeira", w: 324, h: 170, ph: "Foto: caderno de capa azul com espiral, fechado sobre uma mesa de madeira clara, com uma caneta preta ao lado." },
+            { n: "4", tag: "WHAT COLOR IS IT?", c: "green", v: "mint", lines: ["It’s green."], id: "w12p3d", src: "/lessons/aulas/aula-12/w12p3d.webp", alt: "Planta de folhas verdes largas em vaso bege claro sobre mesa", w: 326, h: 197, ph: "Foto: planta de folhas verdes largas em vaso bege claro, sobre uma mesinha redonda de madeira, com uma estante desfocada ao fundo." } ] },
           { t: "note", v: "cream", bar: true, kicker: "ESTRUTURA", text: "What color is it? = Que cor é isso?\nIt’s blue. = É azul." },
           { t: "sec", text: "LEIA EM VOZ ALTA", c: "purple" },
           { t: "rows", items: [
@@ -2045,12 +2001,12 @@ export const LESSONS = [
           { t: "title", en: "YOUR TURN", pt: "Colors in real life" },
           { t: "lead", text: "Agora é a sua vez de observar e dizer cores." },
           { t: "cards", cols: 2, items: [
-            { tag: "1", c: "purple", v: "mint", note: "What color is it?", id: "w12p4a", alt: "Celular verde em pé", ph: "Foto: celular verde-escuro apoiado em pé sobre uma mesa de madeira, visto de costas, com a parede clara ao fundo." },
-            { tag: "2", c: "purple", v: "lilac", note: "What color is it?", id: "w12p4b", alt: "Mochila azul-marinho", ph: "Foto: mochila de tecido azul-marinho com fivelas e alças de couro caramelo, apoiada no chão, com uma planta e a parede clara ao fundo." },
-            { tag: "3", c: "purple", v: "cream", note: "What color is it?", id: "w12p4c", alt: "Carro branco na rua", ph: "Foto: carro utilitário branco parado na rua, visto de frente e de três quartos, com árvores e prédios ao fundo." },
-            { tag: "4", c: "purple", v: "mint", note: "What color is it?", id: "w12p4d", alt: "Caneca amarela sobre a mesa", ph: "Foto: caneca de cerâmica amarela vista de lado, com a alça à direita, sobre uma mesa de madeira, com a sala desfocada ao fundo." },
-            { tag: "5", c: "purple", v: "lilac", note: "What color is it?", id: "w12p4e", alt: "Camiseta rosa no cabide", ph: "Foto: camiseta rosa-escura de manga curta pendurada em um cabide de madeira, sobre fundo claro." },
-            { tag: "6", c: "purple", v: "cream", note: "What color is it?", id: "w12p4f", alt: "Planta verde em vaso sobre a mesa", ph: "Foto: planta de folhas verdes largas em vaso bege claro, sobre uma mesa de madeira, com um quadro colorido na parede ao fundo." } ] },
+            { tag: "1", c: "purple", v: "mint", note: "What color is it?", id: "w12p4a", src: "/lessons/aulas/aula-12/w12p4a.webp", alt: "Celular verde-escuro apoiado em pé sobre mesa de madeira", w: 242, h: 267, ph: "Foto: celular verde-escuro apoiado em pé sobre uma mesa de madeira, visto de costas, com a parede clara ao fundo." },
+            { tag: "2", c: "purple", v: "lilac", note: "What color is it?", id: "w12p4b", src: "/lessons/aulas/aula-12/w12p4b.webp", alt: "Mochila azul-marinho com fivelas e alças de couro caramelo", w: 255, h: 291, ph: "Foto: mochila de tecido azul-marinho com fivelas e alças de couro caramelo, apoiada no chão, com uma planta e a parede clara ao fundo." },
+            { tag: "3", c: "purple", v: "cream", note: "What color is it?", id: "w12p4c", src: "/lessons/aulas/aula-12/w12p4c.webp", alt: "Carro utilitário branco parado na rua, visto de frente", w: 289, h: 291, ph: "Foto: carro utilitário branco parado na rua, visto de frente e de três quartos, com árvores e prédios ao fundo." },
+            { tag: "4", c: "purple", v: "mint", note: "What color is it?", id: "w12p4d", src: "/lessons/aulas/aula-12/w12p4d.webp", alt: "Caneca de cerâmica amarela vista de lado sobre mesa de madeira", w: 258, h: 282, ph: "Foto: caneca de cerâmica amarela vista de lado, com a alça à direita, sobre uma mesa de madeira, com a sala desfocada ao fundo." },
+            { tag: "5", c: "purple", v: "lilac", note: "What color is it?", id: "w12p4e", src: "/lessons/aulas/aula-12/w12p4e.webp", alt: "Camiseta rosa-escura pendurada em um cabide de madeira", w: 255, h: 279, ph: "Foto: camiseta rosa-escura de manga curta pendurada em um cabide de madeira, sobre fundo claro." },
+            { tag: "6", c: "purple", v: "cream", note: "What color is it?", id: "w12p4f", src: "/lessons/aulas/aula-12/w12p4f.webp", alt: "Planta de folhas verdes largas em vaso bege claro sobre mesa", w: 281, h: 282, ph: "Foto: planta de folhas verdes largas em vaso bege claro, sobre uma mesa de madeira, com um quadro colorido na parede ao fundo." } ] },
           { t: "fill", id: "w12e1", title: "COMPLETE COM A COR DE CADA OBJETO", items: [
             { pre: "1. It’s", answers: ["green"], post: ".", note: "celular verde", v: "mint" },
             { pre: "2. It’s", answers: ["blue"], post: ".", note: "mochila azul-marinho", v: "lilac" },
@@ -2072,8 +2028,8 @@ export const LESSONS = [
           { t: "title", en: "IDIOMS WITH COLORS", pt: "Expressões com cores" },
           { t: "note", v: "gray", text: "Idiom = expressão cujo significado não é apenas a tradução literal das palavras." },
           { t: "cards", items: [
-            { tag: "1 · A WHITE LIE", c: "teal", v: "mint", lines: ["It was just a white lie."], note: "uma pequena mentira, geralmente dita para não magoar alguém.", id: "w12p5a", src: "/lessons/fotos/aula_12_pagina_02_foto_01.jpg", alt: "Duas amigas conversando no sofá", ph: "Foto: duas amigas sentadas no sofá da sala. À esquerda, uma mulher de suéter verde com a mão no peito segura uma xícara branca; à direita, uma mulher de blusa lilás com o cabelo preso escuta sorrindo, apoiada na mão. Um balão de fala saindo da mulher de verde diz “Your new hairstyle looks amazing!”. Ao fundo, abajur aceso, estante e quadro na parede." },
-            { tag: "2 · THE BLACK SHEEP", c: "purple", v: "lilac", lines: ["Uncle John is the black sheep of the family."], note: "a pessoa considerada diferente do restante do grupo ou da família.", id: "w12p5b", src: "/lessons/fotos/aula_12_pagina_02_foto_02.jpg", alt: "Família reunida à mesa com um bolo de aniversário", ph: "Foto: família de cinco pessoas reunida à mesa, à noite, em volta de um bolo com uma vela acesa. Da esquerda para a direita: senhora de cabelo branco e blusa creme, senhor grisalho de suéter laranja, moça de cabelo castanho e blusa creme, rapaz de jaqueta de couro preta com estampa de banda, e mulher de blusa azul. Sobre a mesa, canecas azuis e um vasinho de planta; ao fundo, luzinhas penduradas." } ] },
+            { tag: "1 · A WHITE LIE", c: "teal", v: "mint", lines: ["It was just a white lie."], note: "uma pequena mentira, geralmente dita para não magoar alguém.", id: "w12p5a", src: "/lessons/fotos/aula_12_pagina_02_foto_01.jpg", alt: "Duas amigas conversando no sofá", w: 554, h: 407, ph: "Foto: duas amigas sentadas no sofá da sala. À esquerda, uma mulher de suéter verde com a mão no peito segura uma xícara branca; à direita, uma mulher de blusa lilás com o cabelo preso escuta sorrindo, apoiada na mão. Um balão de fala saindo da mulher de verde diz “Your new hairstyle looks amazing!”. Ao fundo, abajur aceso, estante e quadro na parede." },
+            { tag: "2 · THE BLACK SHEEP", c: "purple", v: "lilac", lines: ["Uncle John is the black sheep of the family."], note: "a pessoa considerada diferente do restante do grupo ou da família.", id: "w12p5b", src: "/lessons/fotos/aula_12_pagina_02_foto_02.jpg", alt: "Família reunida à mesa com um bolo de aniversário", w: 575, h: 401, ph: "Foto: família de cinco pessoas reunida à mesa, à noite, em volta de um bolo com uma vela acesa. Da esquerda para a direita: senhora de cabelo branco e blusa creme, senhor grisalho de suéter laranja, moça de cabelo castanho e blusa creme, rapaz de jaqueta de couro preta com estampa de banda, e mulher de blusa azul. Sobre a mesa, canecas azuis e um vasinho de planta; ao fundo, luzinhas penduradas." } ] },
           { t: "note", v: "lilac", text: "Estas expressões são um bônus cultural desta aula." } ] },
 
         { blocks: [
@@ -2081,15 +2037,15 @@ export const LESSONS = [
           { t: "kicker", text: "BONUS" },
           { t: "title", en: "MORE IDIOMS WITH COLORS", pt: "Mais expressões com cores" },
           { t: "steps", items: [
-            { n: "1", tag: "FEELING BLUE", c: "purple", v: "lilac", lines: ["Erik feels blue when he is alone."], note: "sentir-se triste ou para baixo.", id: "w12p6a", alt: "Rapaz triste sentado no sofá", ph: "Foto: rapaz de moletom azul sentado sozinho no sofá azul da sala, com a cabeça apoiada na mão e olhar cabisbaixo. Sobre a mesinha à frente, uma caneca azul e um caderno azul; ao fundo, janela à noite com a cidade acesa, estante de livros e um abajur." },
-            { n: "2", tag: "GIVE THE GREEN LIGHT", c: "teal", v: "mint", lines: ["The manager gave the green light to the project."], note: "aprovar ou dar permissão para alguma coisa.", id: "w12p6b", alt: "Dupla no escritório aprovando um projeto no tablet", ph: "Foto: no escritório, uma mulher de blazer bege sentada à mesa sorri para um homem de camisa verde em pé ao lado. Os dois seguram um tablet que mostra um círculo verde com um sinal de confirmação e a etiqueta “PROJECT APPROVED”. Sobre a mesa, notebook, caneca azul e um caderno aberto com caneta." },
-            { n: "3", tag: "RED CARPET TREATMENT", c: "yellow", v: "cream", lines: ["When my parents visit me, I give them the red carpet treatment."], note: "tratar alguém de forma muito especial.", id: "w12p6c", alt: "Homem recebendo os pais na porta de casa", ph: "Foto: homem de camisa vermelha recebe os pais na porta de casa, com o braço estendido em sinal de boas-vindas. A mãe, de cabelo branco e casaco bege, e o pai, de suéter azul-marinho, entram por um tapete vermelho no corredor. Ao fundo, luzinhas penduradas e plantas." } ] },
+            { n: "1", tag: "FEELING BLUE", c: "purple", v: "lilac", lines: ["Erik feels blue when he is alone."], note: "sentir-se triste ou para baixo.", id: "w12p6a", src: "/lessons/aulas/aula-12/w12p6a.webp", alt: "Rapaz de moletom azul sentado sozinho no sofá, olhar cabisbaixo", w: 467, h: 341, ph: "Foto: rapaz de moletom azul sentado sozinho no sofá azul da sala, com a cabeça apoiada na mão e olhar cabisbaixo. Sobre a mesinha à frente, uma caneca azul e um caderno azul; ao fundo, janela à noite com a cidade acesa, estante de livros e um abajur." },
+            { n: "2", tag: "GIVE THE GREEN LIGHT", c: "teal", v: "mint", lines: ["The manager gave the green light to the project."], note: "aprovar ou dar permissão para alguma coisa.", id: "w12p6b", src: "/lessons/aulas/aula-12/w12p6b.webp", alt: "Mulher de blazer bege e homem de camisa verde sorriem com um tablet", w: 468, h: 323, ph: "Foto: no escritório, uma mulher de blazer bege sentada à mesa sorri para um homem de camisa verde em pé ao lado. Os dois seguram um tablet que mostra um círculo verde com um sinal de confirmação e a etiqueta “PROJECT APPROVED”. Sobre a mesa, notebook, caneca azul e um caderno aberto com caneta." },
+            { n: "3", tag: "RED CARPET TREATMENT", c: "yellow", v: "cream", lines: ["When my parents visit me, I give them the red carpet treatment."], note: "tratar alguém de forma muito especial.", id: "w12p6c", src: "/lessons/aulas/aula-12/w12p6c.webp", alt: "Homem de camisa vermelha recebe os pais na porta de casa", w: 464, h: 330, ph: "Foto: homem de camisa vermelha recebe os pais na porta de casa, com o braço estendido em sinal de boas-vindas. A mãe, de cabelo branco e casaco bege, e o pai, de suéter azul-marinho, entram por um tapete vermelho no corredor. Ao fundo, luzinhas penduradas e plantas." } ] },
           { t: "note", v: "lilac", bar: true, text: "Você não precisa decorar todos agora.\nO objetivo é começar a reconhecê-los." } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 12", page: "PÁGINA 07" },
           { t: "title", en: "LET’S TALK!", pt: "Colors around us" },
-          { t: "image", id: "w12p7", alt: "Ana e Daniel conversando sobre a mochila azul no café", ph: "Foto: Ana e Daniel sentados à mesa de um café. Ana, de camiseta amarela e cabelo preso, aponta para a mochila azul-marinho que Daniel, de camisa verde, segura sobre a mesa. Sobre a mesa há um livro aberto, uma caneca verde, um vaso de planta, um caderno preto e um notebook prateado. Ao fundo, parede roxa, estantes e outras pessoas trabalhando." },
+          { t: "image", id: "w12p7", src: "/lessons/aulas/aula-12/w12p7.webp", alt: "Ana e Daniel conversam à mesa de um café sobre a mochila azul", w: 859, h: 466, ph: "Foto: Ana e Daniel sentados à mesa de um café. Ana, de camiseta amarela e cabelo preso, aponta para a mochila azul-marinho que Daniel, de camisa verde, segura sobre a mesa. Sobre a mesa há um livro aberto, uma caneca verde, um vaso de planta, um caderno preto e um notebook prateado. Ao fundo, parede roxa, estantes e outras pessoas trabalhando." },
           { t: "dialogue", items: [
             { s: "a", text: "Ana: I like your bag!" },
             { s: "b", text: "Daniel: Thanks!" },
@@ -2139,21 +2095,16 @@ export const LESSONS = [
         { t: "badge", label: "AULA 13" },
         { t: "title", en: "ARTICLES: A / AN", pt: "Use a before a consonant sound. Use an before a vowel sound." },
         { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Você escolhe pelo som ou pela letra?" },
-        { t: "image", id: "w13p1", alt: "Dois estudantes conversando com um notebook sobre a mesa de um café",
-          ph: "Ilustração: dois estudantes sentados lado a lado à mesa de madeira de um café-biblioteca, sorrindo e conversando. À esquerda, uma jovem de cabelo escuro preso, blusa lilás e brincos de argola segura um lápis; à direita, um rapaz de barba curta e camisa verde aponta para a tela de um notebook prateado aberto entre os dois. Sobre a mesa: vaso de planta, copo de café para viagem, livro aberto, cadernos azul-marinho com bloco de notas amarelo, maçã verde, fone de ouvido preto, garrafa térmica azul-marinho, estojo preto e lápis coloridos. Ao fundo, janelas grandes com árvores, luminárias pendentes e estantes de livros." },
+        { t: "image", id: "w13p1", src: "/lessons/aulas/aula-13/w13p1.webp", alt: "Dois estudantes sorrindo conversam à mesa com notebook e café", w: 878, h: 504, ph: "Ilustração: dois estudantes sentados lado a lado à mesa de madeira de um café-biblioteca, sorrindo e conversando. À esquerda, uma jovem de cabelo escuro preso, blusa lilás e brincos de argola segura um lápis; à direita, um rapaz de barba curta e camisa verde aponta para a tela de um notebook prateado aberto entre os dois. Sobre a mesa: vaso de planta, copo de café para viagem, livro aberto, cadernos azul-marinho com bloco de notas amarelo, maçã verde, fone de ouvido preto, garrafa térmica azul-marinho, estojo preto e lápis coloridos. Ao fundo, janelas grandes com árvores, luminárias pendentes e estantes de livros." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "PENCIL", c: "teal", v: "mint", id: "w13p1a", alt: "Lápis amarelo apontado",
-            ph: "Ilustração: lápis amarelo apontado, na diagonal, com borracha rosa na ponta e grafite preto.",
+          { tag: "PENCIL", c: "teal", v: "mint", id: "w13p1a", src: "/lessons/aulas/aula-13/w13p1a.webp", alt: "Lápis amarelo apontado na diagonal com borracha rosa na ponta", w: 91, h: 99, ph: "Ilustração: lápis amarelo apontado, na diagonal, com borracha rosa na ponta e grafite preto.",
             lines: ["a pencil"], note: "um lápis" },
-          { tag: "APPLE", c: "purple", v: "lilac", id: "w13p1b", alt: "Maçã vermelha com folha verde",
-            ph: "Ilustração: maçã vermelha brilhante vista de frente, com cabinho marrom e uma folha verde, sobre fundo branco.",
+          { tag: "APPLE", c: "purple", v: "lilac", id: "w13p1b", src: "/lessons/aulas/aula-13/w13p1b.webp", alt: "Maçã vermelha brilhante com cabinho marrom e folha verde", w: 86, h: 94, ph: "Ilustração: maçã vermelha brilhante vista de frente, com cabinho marrom e uma folha verde, sobre fundo branco.",
             lines: ["an apple"], note: "uma maçã" },
-          { tag: "UNIVERSITY", c: "teal", v: "mint", id: "w13p1c", alt: "Prédio histórico de universidade",
-            ph: "Ilustração: prédio histórico de universidade em tijolo avermelhado, com colunas brancas na entrada e árvores verdes nas laterais, sobre fundo branco.",
+          { tag: "UNIVERSITY", c: "teal", v: "mint", id: "w13p1c", src: "/lessons/aulas/aula-13/w13p1c.webp", alt: "Prédio histórico de universidade em tijolo com colunas brancas e árvores", w: 180, h: 67, ph: "Ilustração: prédio histórico de universidade em tijolo avermelhado, com colunas brancas na entrada e árvores verdes nas laterais, sobre fundo branco.",
             lines: ["a university"], note: "uma universidade" },
-          { tag: "HOUR", c: "purple", v: "lilac", id: "w13p1d", alt: "Relógio de parede redondo",
-            ph: "Ilustração: relógio de parede redondo com aro preto, mostrador branco, números de 1 a 12 e ponteiros pretos.",
+          { tag: "HOUR", c: "purple", v: "lilac", id: "w13p1d", src: "/lessons/aulas/aula-13/w13p1d.webp", alt: "Relógio de parede redondo branco com aro preto e ponteiros pretos", w: 109, h: 110, ph: "Ilustração: relógio de parede redondo com aro preto, mostrador branco, números de 1 a 12 e ponteiros pretos.",
             lines: ["an hour"], note: "uma hora" } ] },
         { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Escolher corretamente entre a e an ouvindo o som inicial da palavra." },
         { t: "meta", label: "TEMPO ESTIMADO", value: "15–20 min" },
@@ -2165,23 +2116,17 @@ export const LESSONS = [
         { t: "title", en: "A + CONSONANT SOUND", pt: "Use a before a consonant sound." },
         { t: "note", v: "mint", bar: true, bold: true, kicker: "RULE", text: "Use a before words that begin with a consonant sound." },
         { t: "cards", cols: 2, items: [
-          { tag: "PENCIL", c: "teal", v: "mint", id: "w13p2a", alt: "Lápis amarelo apontado",
-            ph: "Ilustração: lápis amarelo apontado, na diagonal, com borracha rosa na ponta e grafite preto, sobre fundo branco.",
+          { tag: "PENCIL", c: "teal", v: "mint", id: "w13p2a", src: "/lessons/aulas/aula-13/w13p2a.webp", alt: "Lápis amarelo apontado na diagonal com borracha rosa na ponta", w: 140, h: 114, ph: "Ilustração: lápis amarelo apontado, na diagonal, com borracha rosa na ponta e grafite preto, sobre fundo branco.",
             lines: ["a pencil"], note: "um lápis" },
-          { tag: "HOUSE", c: "purple", v: "lilac", id: "w13p2b", alt: "Casa moderna de dois andares",
-            ph: "Ilustração: casa moderna de dois andares com fachada bege e azul-marinho, janelas grandes iluminadas, caminho de pedra, grama verde e arbustos na frente.",
+          { tag: "HOUSE", c: "purple", v: "lilac", id: "w13p2b", src: "/lessons/aulas/aula-13/w13p2b.webp", alt: "Casa moderna de dois andares com fachada bege e azul-marinho", w: 206, h: 166, ph: "Ilustração: casa moderna de dois andares com fachada bege e azul-marinho, janelas grandes iluminadas, caminho de pedra, grama verde e arbustos na frente.",
             lines: ["a house"], note: "uma casa" },
-          { tag: "LAPTOP", c: "teal", v: "mint", id: "w13p2c", alt: "Notebook prateado aberto",
-            ph: "Ilustração: notebook prateado aberto, visto de frente e um pouco de lado, com a tela preta desligada e o teclado à mostra, sobre fundo branco.",
+          { tag: "LAPTOP", c: "teal", v: "mint", id: "w13p2c", src: "/lessons/aulas/aula-13/w13p2c.webp", alt: "Notebook prateado aberto com tela preta desligada", w: 199, h: 198, ph: "Ilustração: notebook prateado aberto, visto de frente e um pouco de lado, com a tela preta desligada e o teclado à mostra, sobre fundo branco.",
             lines: ["a laptop"], note: "um laptop" },
-          { tag: "BOOK", c: "purple", v: "lilac", id: "w13p2d", alt: "Livro fechado de capa dura azul-marinho",
-            ph: "Ilustração: livro fechado de capa dura azul-marinho, visto de lado, com as páginas amareladas aparecendo, sobre fundo branco.",
+          { tag: "BOOK", c: "purple", v: "lilac", id: "w13p2d", src: "/lessons/aulas/aula-13/w13p2d.webp", alt: "Livro fechado de capa dura azul-marinho visto de lado", w: 200, h: 158, ph: "Ilustração: livro fechado de capa dura azul-marinho, visto de lado, com as páginas amareladas aparecendo, sobre fundo branco.",
             lines: ["a book"], note: "um livro" },
-          { tag: "SCHOOL BAG", c: "teal", v: "mint", id: "w13p2e", alt: "Mochila escolar azul-marinho",
-            ph: "Ilustração: mochila escolar azul-marinho de frente, com alças acolchoadas, bolso frontal com zíper e etiqueta de couro marrom na base.",
+          { tag: "SCHOOL BAG", c: "teal", v: "mint", id: "w13p2e", src: "/lessons/aulas/aula-13/w13p2e.webp", alt: "Mochila azul-marinho com bolso frontal e etiqueta de couro", w: 169, h: 201, ph: "Ilustração: mochila escolar azul-marinho de frente, com alças acolchoadas, bolso frontal com zíper e etiqueta de couro marrom na base.",
             lines: ["a school bag"], note: "uma mochila" },
-          { tag: "PAINTER", c: "purple", v: "lilac", id: "w13p2f", alt: "Pintora diante do cavalete",
-            ph: "Ilustração: mulher de cabelo preso em coque, camiseta cinza e avental marrom, segurando pincel e paleta de cores, pintando manchas coloridas numa tela sobre um cavalete de madeira.",
+          { tag: "PAINTER", c: "purple", v: "lilac", id: "w13p2f", src: "/lessons/aulas/aula-13/w13p2f.webp", alt: "Mulher pintando uma tela colorida sobre cavalete de madeira", w: 216, h: 215, ph: "Ilustração: mulher de cabelo preso em coque, camiseta cinza e avental marrom, segurando pincel e paleta de cores, pintando manchas coloridas numa tela sobre um cavalete de madeira.",
             lines: ["a painter"], note: "uma pintora" } ] },
         { t: "note", v: "mint", bar: true, bold: true, kicker: "LEMBRE-SE", text: "Escute o primeiro som da palavra." },
         { t: "sec", text: "DIGA EM VOZ ALTA", c: "purple" },
@@ -2196,23 +2141,17 @@ export const LESSONS = [
         { t: "title", en: "AN + VOWEL SOUND", pt: "Use an before a vowel sound." },
         { t: "note", v: "white", bold: true, text: "Use an before words that begin with a vowel sound." },
         { t: "cards", cols: 2, items: [
-          { tag: "APARTMENT", c: "teal", v: "mint", id: "w13p3a", alt: "Prédio de apartamentos moderno",
-            ph: "Ilustração: prédio de apartamentos moderno de cinco andares, com sacadas de vidro, madeira clara e concreto cinza, céu azul e árvores na calçada.",
+          { tag: "APARTMENT", c: "teal", v: "mint", id: "w13p3a", src: "/lessons/aulas/aula-13/w13p3a.webp", alt: "Prédio de apartamentos moderno com sacadas de vidro e árvores", w: 283, h: 245, ph: "Ilustração: prédio de apartamentos moderno de cinco andares, com sacadas de vidro, madeira clara e concreto cinza, céu azul e árvores na calçada.",
             lines: ["an apartment"], note: "um apartamento" },
-          { tag: "APPLE", c: "purple", v: "lilac", id: "w13p3b", alt: "Maçã vermelha com folha verde",
-            ph: "Ilustração: maçã vermelha brilhante vista de frente, com cabinho marrom e uma folha verde inclinada, sobre fundo branco.",
+          { tag: "APPLE", c: "purple", v: "lilac", id: "w13p3b", src: "/lessons/aulas/aula-13/w13p3b.webp", alt: "Maçã vermelha brilhante com cabinho marrom e folha inclinada", w: 173, h: 199, ph: "Ilustração: maçã vermelha brilhante vista de frente, com cabinho marrom e uma folha verde inclinada, sobre fundo branco.",
             lines: ["an apple"], note: "uma maçã" },
-          { tag: "ANIMAL", c: "teal", v: "mint", id: "w13p3c", alt: "Cachorro golden retriever sentado",
-            ph: "Ilustração: cachorro golden retriever sentado de frente, pelo dourado, boca aberta e língua para fora, sobre fundo branco.",
+          { tag: "ANIMAL", c: "teal", v: "mint", id: "w13p3c", src: "/lessons/aulas/aula-13/w13p3c.webp", alt: "Cachorro golden retriever sentado com a língua para fora", w: 134, h: 231, ph: "Ilustração: cachorro golden retriever sentado de frente, pelo dourado, boca aberta e língua para fora, sobre fundo branco.",
             lines: ["an animal"], note: "um animal" },
-          { tag: "ELEPHANT", c: "purple", v: "lilac", id: "w13p3d", alt: "Elefante na savana",
-            ph: "Ilustração: elefante africano adulto de perfil, com presas brancas e orelhas abertas, caminhando na savana de capim seco, com árvores e morros ao fundo.",
+          { tag: "ELEPHANT", c: "purple", v: "lilac", id: "w13p3d", src: "/lessons/aulas/aula-13/w13p3d.webp", alt: "Elefante africano caminhando na savana com árvores ao fundo", w: 282, h: 244, ph: "Ilustração: elefante africano adulto de perfil, com presas brancas e orelhas abertas, caminhando na savana de capim seco, com árvores e morros ao fundo.",
             lines: ["an elephant"], note: "um elefante" },
-          { tag: "UMBRELLA", c: "teal", v: "mint", id: "w13p3e", alt: "Guarda-chuva azul aberto",
-            ph: "Ilustração: guarda-chuva azul-marinho aberto, apoiado de lado, com cabo curvo preto, sobre fundo branco.",
+          { tag: "UMBRELLA", c: "teal", v: "mint", id: "w13p3e", src: "/lessons/aulas/aula-13/w13p3e.webp", alt: "Guarda-chuva azul-marinho aberto apoiado de lado", w: 197, h: 143, ph: "Ilustração: guarda-chuva azul-marinho aberto, apoiado de lado, com cabo curvo preto, sobre fundo branco.",
             lines: ["an umbrella"], note: "um guarda-chuva" },
-          { tag: "ENGINEER", c: "purple", v: "lilac", id: "w13p3f", alt: "Engenheiro de capacete com um tablet",
-            ph: "Ilustração: engenheiro de capacete branco, óculos e camisa azul-marinho, sorrindo e segurando um tablet, em frente a uma obra com guindaste e estrutura de concreto ao fundo.",
+          { tag: "ENGINEER", c: "purple", v: "lilac", id: "w13p3f", src: "/lessons/aulas/aula-13/w13p3f.webp", alt: "Engenheiro de capacete branco sorrindo e segurando um tablet", w: 279, h: 244, ph: "Ilustração: engenheiro de capacete branco, óculos e camisa azul-marinho, sorrindo e segurando um tablet, em frente a uma obra com guindaste e estrutura de concreto ao fundo.",
             lines: ["an engineer"], note: "um engenheiro" } ] },
         { t: "note", v: "mint", bar: true, kicker: "DICA", text: "a escolha depende do som, não apenas da letra." },
         { t: "sec", text: "DIGA EM VOZ ALTA", c: "purple" },
@@ -2226,11 +2165,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 13", page: "PÁGINA 04" },
         { t: "title", en: "LISTEN TO THE SOUND!", pt: "The sound decides." },
         { t: "cards", cols: 2, items: [
-          { tag: "A UNIVERSITY", c: "purple", v: "lilac", id: "w13p4a", alt: "Ícone roxo de prédio de universidade entre ondas sonoras",
-            ph: "Ilustração: círculo roxo com o desenho branco da fachada de uma universidade (colunas, frontão e bandeirinha no topo), com ondas sonoras lilás saindo dos dois lados do círculo.",
+          { tag: "A UNIVERSITY", c: "purple", v: "lilac", id: "w13p4a", src: "/lessons/aulas/aula-13/w13p4a.webp", alt: "Círculo roxo com ícone de universidade e ondas sonoras lilás", w: 369, h: 158, ph: "Ilustração: círculo roxo com o desenho branco da fachada de uma universidade (colunas, frontão e bandeirinha no topo), com ondas sonoras lilás saindo dos dois lados do círculo.",
             lines: ["a university", "/juː.../ = sounds like ‘you’"], note: "Começa com som consonantal. Por isso usamos a." },
-          { tag: "AN HOUR", c: "teal", v: "mint", id: "w13p4b", alt: "Ícone azul-esverdeado de relógio entre ondas sonoras",
-            ph: "Ilustração: círculo azul-esverdeado com o desenho branco de um relógio redondo marcando as horas, com ondas sonoras azul-esverdeadas saindo dos dois lados do círculo.",
+          { tag: "AN HOUR", c: "teal", v: "mint", id: "w13p4b", src: "/lessons/aulas/aula-13/w13p4b.webp", alt: "Círculo azul-esverdeado com ícone de relógio e ondas sonoras", w: 423, h: 159, ph: "Ilustração: círculo azul-esverdeado com o desenho branco de um relógio redondo marcando as horas, com ondas sonoras azul-esverdeadas saindo dos dois lados do círculo.",
             lines: ["an hour", "/aʊər/ = the h is silent"], note: "Começa com som vocálico. Por isso usamos an." } ] },
         { t: "objective", v: "navy", title: "NÃO OLHE SÓ PARA A LETRA.", text: "ESCUTE O SOM INICIAL." },
         { t: "sec", text: "COMPARE", c: "teal" },
@@ -2243,17 +2180,13 @@ export const LESSONS = [
         { t: "badge", label: "AULA 13", page: "PÁGINA 05" },
         { t: "title", en: "A OR AN? PEOPLE & JOBS", pt: "Use a or an with singular nouns." },
         { t: "cards", cols: 2, items: [
-          { tag: "VETERINARIAN", c: "teal", v: "mint", id: "w13p5a", alt: "Veterinária de uniforme verde ao lado de um cachorro",
-            ph: "Ilustração: veterinária sorrindo, de uniforme verde-esmeralda e estetoscópio no pescoço, cabelo preso, ao lado de um golden retriever sentado. Ao fundo, o consultório com cartazes de anatomia de cães.",
+          { tag: "VETERINARIAN", c: "teal", v: "mint", id: "w13p5a", src: "/lessons/aulas/aula-13/w13p5a.webp", alt: "Veterinária sorridente de uniforme verde ao lado de um cão", w: 423, h: 281, ph: "Ilustração: veterinária sorrindo, de uniforme verde-esmeralda e estetoscópio no pescoço, cabelo preso, ao lado de um golden retriever sentado. Ao fundo, o consultório com cartazes de anatomia de cães.",
             lines: ["I’m a veterinarian."], note: "Eu sou veterinária." },
-          { tag: "ENGINEER", c: "purple", v: "lilac", id: "w13p5b", alt: "Engenheiro de braços cruzados no escritório",
-            ph: "Ilustração: engenheiro sorrindo, de óculos e camisa azul-marinho, braços cruzados. Ao fundo, monitores com gráficos, plantas de projeto na parede e um capacete branco sobre a bancada.",
+          { tag: "ENGINEER", c: "purple", v: "lilac", id: "w13p5b", src: "/lessons/aulas/aula-13/w13p5b.webp", alt: "Engenheiro sorridente de óculos e braços cruzados no escritório", w: 430, h: 293, ph: "Ilustração: engenheiro sorrindo, de óculos e camisa azul-marinho, braços cruzados. Ao fundo, monitores com gráficos, plantas de projeto na parede e um capacete branco sobre a bancada.",
             lines: ["I’m an engineer."], note: "Eu sou engenheiro." },
-          { tag: "PAINTER", c: "teal", v: "mint", id: "w13p5c", alt: "Pintor com pincel diante de uma tela",
-            ph: "Ilustração: pintor de barba e cabelo cacheado, camiseta escura e avental manchado de tinta, sorrindo enquanto pinta uma tela colorida com o pincel na mão. Ao fundo, o ateliê com quadros pendurados.",
+          { tag: "PAINTER", c: "teal", v: "mint", id: "w13p5c", src: "/lessons/aulas/aula-13/w13p5c.webp", alt: "Pintor sorridente pinta uma tela colorida com o pincel na mão", w: 431, h: 245, ph: "Ilustração: pintor de barba e cabelo cacheado, camiseta escura e avental manchado de tinta, sorrindo enquanto pinta uma tela colorida com o pincel na mão. Ao fundo, o ateliê com quadros pendurados.",
             lines: ["I’m a painter."], note: "Eu sou pintor." },
-          { tag: "ARTIST", c: "purple", v: "lilac", id: "w13p5d", alt: "Artista no ateliê diante do cavalete",
-            ph: "Ilustração: artista de cabelo preso em coque, camisa branca aberta e pincel na mão, olhando para a tela sobre o cavalete. Ao fundo, o ateliê com quadros coloridos, plantas e potes de pincéis.",
+          { tag: "ARTIST", c: "purple", v: "lilac", id: "w13p5d", src: "/lessons/aulas/aula-13/w13p5d.webp", alt: "Artista sorridente segura um pincel em frente ao cavalete", w: 438, h: 245, ph: "Ilustração: artista de cabelo preso em coque, camisa branca aberta e pincel na mão, olhando para a tela sobre o cavalete. Ao fundo, o ateliê com quadros coloridos, plantas e potes de pincéis.",
             lines: ["She’s an artist."], note: "Ela é artista." } ] },
         { t: "grid", cols: 2, items: [
           { title: "What do you do?", v: "mint", c: "teal" },
@@ -2270,23 +2203,17 @@ export const LESSONS = [
         { t: "badge", label: "AULA 13", page: "PÁGINA 06" },
         { t: "title", en: "A OR AN? OBJECTS AROUND US", pt: "Look at the next word." },
         { t: "cards", cols: 2, items: [
-          { tag: "BOOK", c: "teal", v: "mint", id: "w13p6a", alt: "Livro aberto",
-            ph: "Ilustração: livro aberto ao meio, de capa dura azul, com as páginas creme cheias de texto e um marcador azul-claro, sobre fundo branco.",
+          { tag: "BOOK", c: "teal", v: "mint", id: "w13p6a", src: "/lessons/aulas/aula-13/w13p6a.webp", alt: "Livro aberto ao meio com páginas creme e marcador azul-claro", w: 250, h: 99, ph: "Ilustração: livro aberto ao meio, de capa dura azul, com as páginas creme cheias de texto e um marcador azul-claro, sobre fundo branco.",
             lines: ["a book"] },
-          { tag: "SCHOOL BAG", c: "purple", v: "lilac", id: "w13p6b", alt: "Mochila escolar azul-marinho",
-            ph: "Ilustração: mochila escolar azul-marinho de frente, com alças acolchoadas, bolso frontal com zíper, losango laranja no centro e base de couro marrom.",
+          { tag: "SCHOOL BAG", c: "purple", v: "lilac", id: "w13p6b", src: "/lessons/aulas/aula-13/w13p6b.webp", alt: "Mochila escolar azul-marinho com bolso frontal e zíper", w: 197, h: 237, ph: "Ilustração: mochila escolar azul-marinho de frente, com alças acolchoadas, bolso frontal com zíper, losango laranja no centro e base de couro marrom.",
             lines: ["a school bag"] },
-          { tag: "PENCIL CASE", c: "teal", v: "mint", id: "w13p6c", alt: "Estojo azul-marinho fechado",
-            ph: "Ilustração: estojo retangular azul-marinho fechado, visto de lado, com zíper preto ao longo da tampa, sobre fundo branco.",
+          { tag: "PENCIL CASE", c: "teal", v: "mint", id: "w13p6c", src: "/lessons/aulas/aula-13/w13p6c.webp", alt: "Estojo retangular azul-marinho fechado com zíper preto", w: 283, h: 159, ph: "Ilustração: estojo retangular azul-marinho fechado, visto de lado, com zíper preto ao longo da tampa, sobre fundo branco.",
             lines: ["a pencil case"] },
-          { tag: "UMBRELLA", c: "purple", v: "lilac", id: "w13p6d", alt: "Guarda-chuva azul aberto",
-            ph: "Ilustração: guarda-chuva azul-marinho aberto, apoiado de lado, com cabo curvo de madeira, sobre fundo branco.",
+          { tag: "UMBRELLA", c: "purple", v: "lilac", id: "w13p6d", src: "/lessons/aulas/aula-13/w13p6d.webp", alt: "Guarda-chuva azul-marinho aberto apoiado de lado", w: 281, h: 263, ph: "Ilustração: guarda-chuva azul-marinho aberto, apoiado de lado, com cabo curvo de madeira, sobre fundo branco.",
             lines: ["an umbrella"] },
-          { tag: "ELEPHANT", c: "teal", v: "mint", id: "w13p6e", alt: "Elefante de corpo inteiro",
-            ph: "Ilustração: elefante africano cinza de corpo inteiro, visto de lado, com presas brancas, tromba baixa e orelhas abertas, sobre fundo branco.",
+          { tag: "ELEPHANT", c: "teal", v: "mint", id: "w13p6e", src: "/lessons/aulas/aula-13/w13p6e.webp", alt: "Elefante cinza de corpo inteiro visto de lado", w: 221, h: 216, ph: "Ilustração: elefante africano cinza de corpo inteiro, visto de lado, com presas brancas, tromba baixa e orelhas abertas, sobre fundo branco.",
             lines: ["an elephant"] },
-          { tag: "ORANGE PENCIL CASE", c: "purple", v: "lilac", id: "w13p6f", alt: "Estojo laranja fechado",
-            ph: "Ilustração: estojo retangular laranja fechado, visto de lado, com zíper preto ao longo da tampa, sobre fundo branco.",
+          { tag: "ORANGE PENCIL CASE", c: "purple", v: "lilac", id: "w13p6f", src: "/lessons/aulas/aula-13/w13p6f.webp", alt: "Estojo retangular laranja fechado com zíper preto", w: 227, h: 150, ph: "Ilustração: estojo retangular laranja fechado, visto de lado, com zíper preto ao longo da tampa, sobre fundo branco.",
             lines: ["an orange pencil case"] } ] },
         { t: "note", v: "mint", bar: true, bold: true, kicker: "ATENÇÃO", text: "a pencil case → an orange pencil case\nO artigo acompanha a palavra seguinte." },
         { t: "sec", text: "MINI-PRACTICE", c: "purple" },
@@ -2300,17 +2227,13 @@ export const LESSONS = [
         { t: "title", en: "EXTRA DA VIDEOAULA: THE", pt: "Specific or known in the context." },
         { t: "note", v: "mint", text: "Usamos the quando a pessoa entende qual coisa específica estamos mencionando ou quando ela é identificável no contexto." },
         { t: "cards", cols: 2, items: [
-          { tag: "SUN", c: "teal", v: "mint", id: "w13p7a", alt: "Sol brilhando no céu azul",
-            ph: "Ilustração: sol brilhando forte no meio de um céu azul, com raios de luz se abrindo e nuvens brancas embaixo.",
+          { tag: "SUN", c: "teal", v: "mint", id: "w13p7a", src: "/lessons/aulas/aula-13/w13p7a.webp", alt: "Sol brilhando forte num céu azul com nuvens brancas", w: 389, h: 243, ph: "Ilustração: sol brilhando forte no meio de um céu azul, com raios de luz se abrindo e nuvens brancas embaixo.",
             lines: ["the sun"] },
-          { tag: "MOON", c: "teal", v: "mint", id: "w13p7b", alt: "Lua cheia no céu noturno",
-            ph: "Ilustração: lua cheia branca e detalhada num céu noturno azul-escuro estrelado, com nuvens escuras passando embaixo dela.",
+          { tag: "MOON", c: "teal", v: "mint", id: "w13p7b", src: "/lessons/aulas/aula-13/w13p7b.webp", alt: "Lua cheia num céu noturno estrelado com nuvens escuras", w: 402, h: 249, ph: "Ilustração: lua cheia branca e detalhada num céu noturno azul-escuro estrelado, com nuvens escuras passando embaixo dela.",
             lines: ["the moon"] },
-          { tag: "DOOR", c: "teal", v: "mint", id: "w13p7c", alt: "Porta azul de uma casa branca",
-            ph: "Ilustração: porta de madeira azul-esverdeada fechada numa parede branca, com uma lanterna preta de parede ao lado, um vaso de planta verde no chão e sombras de folhas na parede.",
+          { tag: "DOOR", c: "teal", v: "mint", id: "w13p7c", src: "/lessons/aulas/aula-13/w13p7c.webp", alt: "Porta de madeira azul-esverdeada com lanterna e vaso de planta", w: 382, h: 230, ph: "Ilustração: porta de madeira azul-esverdeada fechada numa parede branca, com uma lanterna preta de parede ao lado, um vaso de planta verde no chão e sombras de folhas na parede.",
             lines: ["the door"], note: "quando sabemos qual porta" },
-          { tag: "BOOK", c: "teal", v: "mint", id: "w13p7d", alt: "Livro azul sobre a mesa de madeira",
-            ph: "Ilustração: livro fechado de capa dura azul-marinho apoiado numa mesa de madeira clara, com um vaso de planta desfocado ao fundo.",
+          { tag: "BOOK", c: "teal", v: "mint", id: "w13p7d", src: "/lessons/aulas/aula-13/w13p7d.webp", alt: "Livro fechado apoiado numa mesa de madeira clara", w: 389, h: 229, ph: "Ilustração: livro fechado de capa dura azul-marinho apoiado numa mesa de madeira clara, com um vaso de planta desfocado ao fundo.",
             lines: ["the book"], note: "quando falamos de um livro específico" } ] },
         { t: "key", v: "cream", text: "FOCO PRINCIPAL DA AULA: a / an" } ] },
 
@@ -2343,8 +2266,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 13", page: "PÁGINA 09" },
         { t: "title", en: "LET’S TALK!", pt: "Using a and an in real life." },
-        { t: "image", id: "w13p9a", alt: "Ana mostra um estojo laranja para Daniel na mesa do café",
-          ph: "Ilustração: Ana e Daniel sentados à mesa de madeira de um café, um de frente para o outro, com etiquetas brancas com os nomes Ana e Daniel acima de cada um. Ana, de camisa lilás por cima de camiseta branca, cabelo preso e brincos de argola, segura um estojo laranja e mostra para Daniel, de camisa verde aberta e camiseta branca, que sorri olhando para ela. Sobre a mesa: livro aberto, caneca azul, notebook prateado aberto, cadernos azul e verde com caneta e um celular. Ao fundo, janelas grandes com árvores, plantas, luminárias pendentes e outra cliente sentada." },
+        { t: "image", id: "w13p9a", src: "/lessons/aulas/aula-13/w13p9a.webp", alt: "Ana e Daniel sentados à mesa de um café mostrando um estojo laranja", w: 852, h: 471, ph: "Ilustração: Ana e Daniel sentados à mesa de madeira de um café, um de frente para o outro, com etiquetas brancas com os nomes Ana e Daniel acima de cada um. Ana, de camisa lilás por cima de camiseta branca, cabelo preso e brincos de argola, segura um estojo laranja e mostra para Daniel, de camisa verde aberta e camiseta branca, que sorri olhando para ela. Sobre a mesa: livro aberto, caneca azul, notebook prateado aberto, cadernos azul e verde com caneta e um celular. Ao fundo, janelas grandes com árvores, plantas, luminárias pendentes e outra cliente sentada." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: What’s this?" },
           { s: "b", text: "Daniel: It’s a pencil case." },
@@ -2386,7 +2308,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 14" },
           { t: "title", en: "PLURAL NOUNS", pt: "One or more? Aprenda a formar plurais em inglês." },
           { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Quando existe mais de uma coisa, como a palavra muda em inglês?" },
-          { t: "image", id: "w14p1a", alt: "Três jovens conversando à mesa com livros, lápis e mochilas", ph: "Ilustração: três jovens sentados a uma mesa de madeira em um espaço de estudo claro. À esquerda, uma moça de cabelo castanho ondulado preso em rabo de cavalo, camisa verde sobre blusa branca e argolas douradas, segura um lápis amarelo; à frente dela, um notebook prateado aberto, um copo de café para viagem e um livro azul-marinho. No centro, um rapaz de cabelo escuro cacheado e camisa jeans sobre camiseta branca segura um porta-lápis preto telado cheio de lápis coloridos, com uma pilha de livros à frente. À direita, uma moça negra de cabelo cacheado preso, suéter amarelo e argolas douradas, segura uma mochila bege; ao lado dela, uma mochila azul-marinho sobre a mesa. Ao fundo, estantes de livros, plantas, luminárias pendentes e janelas grandes com prédios da cidade." },
+          { t: "image", id: "w14p1a", src: "/lessons/aulas/aula-14/w14p1a.webp", alt: "Três jovens estudando juntos à mesa com livros e lápis", w: 899, h: 448, ph: "Ilustração: três jovens sentados a uma mesa de madeira em um espaço de estudo claro. À esquerda, uma moça de cabelo castanho ondulado preso em rabo de cavalo, camisa verde sobre blusa branca e argolas douradas, segura um lápis amarelo; à frente dela, um notebook prateado aberto, um copo de café para viagem e um livro azul-marinho. No centro, um rapaz de cabelo escuro cacheado e camisa jeans sobre camiseta branca segura um porta-lápis preto telado cheio de lápis coloridos, com uma pilha de livros à frente. À direita, uma moça negra de cabelo cacheado preso, suéter amarelo e argolas douradas, segura uma mochila bege; ao lado dela, uma mochila azul-marinho sobre a mesa. Ao fundo, estantes de livros, plantas, luminárias pendentes e janelas grandes com prédios da cidade." },
           { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ:", c: "purple" },
           { t: "grid", cols: 3, items: [
             { title: "girl → girls", body: "Plural com -s.", v: "mint", c: "teal" },
@@ -2401,10 +2323,10 @@ export const LESSONS = [
           { t: "title", en: "MOST NOUNS: +S", pt: "Na maioria dos casos, basta adicionar -s." },
           { t: "note", v: "gray", bar: true, bold: true, kicker: "REGRA PRINCIPAL", text: "Para a maioria dos substantivos, adicionamos -s para formar o plural." },
           { t: "cards", cols: 2, items: [
-            { tag: "GIRL", c: "purple", v: "lilac", lines: ["girl → girls"], id: "w14p2a", alt: "Moça de camisa verde vista de perfil", ph: "Ilustração: moça de cabelo castanho ondulado preso em rabo de cavalo, camisa verde sobre blusa branca e argolas douradas, vista de perfil e sorrindo, sobre fundo lilás claro." },
-            { tag: "APPLE", c: "teal", v: "mint", lines: ["apple → apples"], id: "w14p2b", alt: "Maçã vermelha com uma folha verde", ph: "Ilustração: uma maçã vermelha brilhante, inteira, com o cabinho marrom e uma folha verde presa nele, sobre fundo azul bem claro." },
-            { tag: "CAR", c: "yellow", v: "cream", lines: ["car → cars"], id: "w14p2c", alt: "Carro azul visto de frente", ph: "Ilustração: carro sedã azul visto de frente e levemente de três quartos, com faróis acesos e rodas prateadas, sobre fundo creme." },
-            { tag: "PENCIL", c: "purple", v: "lilac", lines: ["pencil → pencils"], id: "w14p2d", alt: "Lápis amarelo apontado", ph: "Ilustração: lápis amarelo apontado, na diagonal, com ponta de grafite escura e borracha rosa presa por um anel metálico, sobre fundo lilás claro." } ] },
+            { tag: "GIRL", c: "purple", v: "lilac", lines: ["girl → girls"], id: "w14p2a", src: "/lessons/aulas/aula-14/w14p2a.webp", alt: "Moça de cabelo castanho sorrindo, vista de perfil", w: 180, h: 222, ph: "Ilustração: moça de cabelo castanho ondulado preso em rabo de cavalo, camisa verde sobre blusa branca e argolas douradas, vista de perfil e sorrindo, sobre fundo lilás claro." },
+            { tag: "APPLE", c: "teal", v: "mint", lines: ["apple → apples"], id: "w14p2b", src: "/lessons/aulas/aula-14/w14p2b.webp", alt: "Maçã vermelha brilhante com folha verde no cabinho", w: 123, h: 149, ph: "Ilustração: uma maçã vermelha brilhante, inteira, com o cabinho marrom e uma folha verde presa nele, sobre fundo azul bem claro." },
+            { tag: "CAR", c: "yellow", v: "cream", lines: ["car → cars"], id: "w14p2c", src: "/lessons/aulas/aula-14/w14p2c.webp", alt: "Carro sedã azul visto de frente com faróis acesos", w: 207, h: 141, ph: "Ilustração: carro sedã azul visto de frente e levemente de três quartos, com faróis acesos e rodas prateadas, sobre fundo creme." },
+            { tag: "PENCIL", c: "purple", v: "lilac", lines: ["pencil → pencils"], id: "w14p2d", src: "/lessons/aulas/aula-14/w14p2d.webp", alt: "Lápis amarelo apontado com borracha rosa na ponta", w: 111, h: 159, ph: "Ilustração: lápis amarelo apontado, na diagonal, com ponta de grafite escura e borracha rosa presa por um anel metálico, sobre fundo lilás claro." } ] },
           { t: "sec", text: "EM FRASES", c: "purple" },
           { t: "steps", items: [
             { n: "1", tag: "CAR", c: "teal", v: "mint", lines: ["It’s a car.", "They’re cars."] },
@@ -2417,11 +2339,11 @@ export const LESSONS = [
           { t: "note", v: "gray", bar: true, bold: true, kicker: "QUANDO USAR", text: "Se a palavra termina em ch, sh, s, x ou z, geralmente usamos -es." },
           { t: "sec", text: "VEJA OS EXEMPLOS:", c: "purple" },
           { t: "cards", cols: 1, items: [
-            { tag: "BENCH", c: "teal", v: "mint", lines: ["bench → benches"], id: "w14p3a", alt: "Banco de praça de madeira", ph: "Ilustração: banco de praça com ripas de madeira clara e laterais de ferro preto, visto de três quartos, com um pequeno tufo de folhas verdes ao lado esquerdo, sobre fundo branco." },
-            { tag: "DISH", c: "purple", v: "lilac", lines: ["dish → dishes"], id: "w14p3b", alt: "Pilha de pratos com uma tigela em cima", ph: "Ilustração: pilha de pratos brancos e bege empilhados, com uma tigela funda verde-acinzentada em cima, sobre fundo branco." },
-            { tag: "BUS", c: "yellow", v: "cream", lines: ["bus → buses"], id: "w14p3c", alt: "Ônibus urbano azul", ph: "Ilustração: ônibus urbano azul visto de frente e de três quartos, com faixa preta de janelas, para-brisa grande e painel de destino iluminado, sobre fundo branco." },
-            { tag: "BOX", c: "teal", v: "mint", lines: ["box → boxes"], id: "w14p3d", alt: "Caixa de papelão fechada", ph: "Ilustração: caixa de papelão marrom fechada, vista de três quartos, com as abas do topo dobradas, sobre fundo branco." },
-            { tag: "WATCH", c: "purple", v: "lilac", lines: ["watch → watches"], id: "w14p3e", alt: "Relógio de pulso com pulseira de couro", ph: "Ilustração: relógio de pulso com caixa prateada, mostrador azul-marinho com números e ponteiros claros, e pulseira de couro marrom aberta em curva, sobre fundo branco." } ] },
+            { tag: "BENCH", c: "teal", v: "mint", lines: ["bench → benches"], id: "w14p3a", src: "/lessons/aulas/aula-14/w14p3a.webp", alt: "Banco de praça com ripas de madeira clara e laterais pretas", w: 221, h: 114, ph: "Ilustração: banco de praça com ripas de madeira clara e laterais de ferro preto, visto de três quartos, com um pequeno tufo de folhas verdes ao lado esquerdo, sobre fundo branco." },
+            { tag: "DISH", c: "purple", v: "lilac", lines: ["dish → dishes"], id: "w14p3b", src: "/lessons/aulas/aula-14/w14p3b.webp", alt: "Pilha de pratos com uma tigela funda por cima", w: 163, h: 107, ph: "Ilustração: pilha de pratos brancos e bege empilhados, com uma tigela funda verde-acinzentada em cima, sobre fundo branco." },
+            { tag: "BUS", c: "yellow", v: "cream", lines: ["bus → buses"], id: "w14p3c", src: "/lessons/aulas/aula-14/w14p3c.webp", alt: "Ônibus urbano azul visto de frente", w: 226, h: 128, ph: "Ilustração: ônibus urbano azul visto de frente e de três quartos, com faixa preta de janelas, para-brisa grande e painel de destino iluminado, sobre fundo branco." },
+            { tag: "BOX", c: "teal", v: "mint", lines: ["box → boxes"], id: "w14p3d", src: "/lessons/aulas/aula-14/w14p3d.webp", alt: "Caixa de papelão marrom fechada", w: 161, h: 120, ph: "Ilustração: caixa de papelão marrom fechada, vista de três quartos, com as abas do topo dobradas, sobre fundo branco." },
+            { tag: "WATCH", c: "purple", v: "lilac", lines: ["watch → watches"], id: "w14p3e", src: "/lessons/aulas/aula-14/w14p3e.webp", alt: "Relógio de pulso prateado com pulseira de couro marrom", w: 107, h: 133, ph: "Ilustração: relógio de pulso com caixa prateada, mostrador azul-marinho com números e ponteiros claros, e pulseira de couro marrom aberta em curva, sobre fundo branco." } ] },
           { t: "objective", v: "navy", title: "DICA IMPORTANTE", text: "Observe a última letra ou grupo de letras antes de escolher o plural." } ] },
 
         { blocks: [
@@ -2430,10 +2352,10 @@ export const LESSONS = [
           { t: "cards", cols: 2, items: [
             { tag: "CONSONANT + Y", c: "purple", v: "lilac", lines: ["Troque y por ies."] },
             { tag: "VOWEL + Y", c: "teal", v: "mint", lines: ["Apenas adicione s."] },
-            { tag: "CANDY", c: "purple", v: "lilac", lines: ["candy → candies"], id: "w14p4a", alt: "Pirulito em espiral vermelho e branco", ph: "Ilustração: pirulito redondo com espiral vermelha e branca, preso a um cabinho branco, inclinado para a esquerda, sobre fundo lilás claro." },
-            { tag: "TOY", c: "teal", v: "mint", lines: ["toy → toys"], id: "w14p4b", alt: "Robô de brinquedo azul", ph: "Ilustração: robô de brinquedo azul de corda, com chave amarela nas costas da cabeça, olhos redondos, mãos e pés vermelhos e uma telinha com um gráfico no peito, sobre fundo azul bem claro." },
-            { tag: "PUPPY", c: "purple", v: "lilac", lines: ["puppy → puppies"], id: "w14p4c", alt: "Filhote de cachorro sentado", ph: "Ilustração: filhote de golden retriever de pelo dourado sentado de frente, com a língua para fora e orelhas caídas, sobre fundo lilás claro." },
-            { tag: "MONKEY", c: "teal", v: "mint", lines: ["monkey → monkeys"], id: "w14p4d", alt: "Macaco pendurado em um galho", ph: "Ilustração: macaquinho marrom pendurado por um braço em um galho verde com folhas, sorrindo, com o rabo enrolado para cima, sobre fundo azul bem claro." } ] },
+            { tag: "CANDY", c: "purple", v: "lilac", lines: ["candy → candies"], id: "w14p4a", src: "/lessons/aulas/aula-14/w14p4a.webp", alt: "Pirulito redondo com espiral vermelha e branca", w: 84, h: 154, ph: "Ilustração: pirulito redondo com espiral vermelha e branca, preso a um cabinho branco, inclinado para a esquerda, sobre fundo lilás claro." },
+            { tag: "TOY", c: "teal", v: "mint", lines: ["toy → toys"], id: "w14p4b", src: "/lessons/aulas/aula-14/w14p4b.webp", alt: "Robô de brinquedo azul de corda com chave nas costas", w: 95, h: 133, ph: "Ilustração: robô de brinquedo azul de corda, com chave amarela nas costas da cabeça, olhos redondos, mãos e pés vermelhos e uma telinha com um gráfico no peito, sobre fundo azul bem claro." },
+            { tag: "PUPPY", c: "purple", v: "lilac", lines: ["puppy → puppies"], id: "w14p4c", src: "/lessons/aulas/aula-14/w14p4c.webp", alt: "Filhote de golden retriever sentado com a língua de fora", w: 105, h: 138, ph: "Ilustração: filhote de golden retriever de pelo dourado sentado de frente, com a língua para fora e orelhas caídas, sobre fundo lilás claro." },
+            { tag: "MONKEY", c: "teal", v: "mint", lines: ["monkey → monkeys"], id: "w14p4d", src: "/lessons/aulas/aula-14/w14p4d.webp", alt: "Macaquinho marrom pendurado em um galho, sorrindo", w: 93, h: 156, ph: "Ilustração: macaquinho marrom pendurado por um braço em um galho verde com folhas, sorrindo, com o rabo enrolado para cima, sobre fundo azul bem claro." } ] },
           { t: "note", v: "cream", center: true, bold: true, text: "Consonant + y  ≠  Vowel + y" },
           { t: "note", v: "mint", bold: true, text: "Primeiro observe a letra antes do y." } ] },
 
@@ -2442,34 +2364,34 @@ export const LESSONS = [
           { t: "title", en: "SOME -F / -FE → -VES", pt: "Algumas palavras mudam mais." },
           { t: "note", v: "gray", bar: true, bold: true, kicker: "ATENÇÃO", text: "Alguns substantivos terminados em -f ou -fe mudam para -ves." },
           { t: "cards", cols: 2, items: [
-            { tag: "KNIFE", c: "teal", v: "mint", lines: ["knife → knives"], id: "w14p5a", alt: "Faca de cozinha com cabo preto", ph: "Ilustração: faca de cozinha com lâmina prateada larga e cabo preto com três rebites, na diagonal, sobre fundo azul bem claro." },
-            { tag: "LEAF", c: "teal", v: "mint", lines: ["leaf → leaves"], id: "w14p5b", alt: "Folha verde", ph: "Ilustração: uma folha verde grande e lisa, com nervuras visíveis e cabinho marrom, inclinada para a direita, sobre fundo azul bem claro." },
-            { tag: "WOLF", c: "teal", v: "mint", lines: ["wolf → wolves"], id: "w14p5c", alt: "Cabeça de lobo cinza", ph: "Ilustração: cabeça de lobo cinza vista de frente, com pelo cinza e branco, orelhas em pé e olhos âmbar, sobre fundo azul bem claro." },
-            { tag: "CALF", c: "teal", v: "mint", lines: ["calf → calves"], id: "w14p5d", alt: "Bezerro preto e branco", ph: "Ilustração: bezerro preto e branco em pé, visto de perfil com a cabeça virada para a frente, sobre fundo azul bem claro." },
-            { tag: "SHELF", c: "teal", v: "mint", lines: ["shelf → shelves"], id: "w14p5e", alt: "Prateleira de madeira com livros e uma planta", ph: "Ilustração: prateleira de madeira presa à parede, com quatro livros coloridos em pé à esquerda, um vasinho branco com planta verde no centro e um porta-retrato pequeno à direita, sobre fundo azul bem claro." },
-            { tag: "THIEF", c: "teal", v: "mint", lines: ["thief → thieves"], id: "w14p5f", alt: "Ladrão de máscara carregando um saco", ph: "Ilustração: ladrão de desenho vestido de preto, com gorro preto e máscara sobre os olhos, correndo curvado enquanto carrega um saco marrom nas costas, sobre fundo azul bem claro." } ] },
+            { tag: "KNIFE", c: "teal", v: "mint", lines: ["knife → knives"], id: "w14p5a", src: "/lessons/aulas/aula-14/w14p5a.webp", alt: "Faca de cozinha com lâmina prateada e cabo preto", w: 177, h: 118, ph: "Ilustração: faca de cozinha com lâmina prateada larga e cabo preto com três rebites, na diagonal, sobre fundo azul bem claro." },
+            { tag: "LEAF", c: "teal", v: "mint", lines: ["leaf → leaves"], id: "w14p5b", src: "/lessons/aulas/aula-14/w14p5b.webp", alt: "Folha verde grande com nervuras bem marcadas", w: 95, h: 100, ph: "Ilustração: uma folha verde grande e lisa, com nervuras visíveis e cabinho marrom, inclinada para a direita, sobre fundo azul bem claro." },
+            { tag: "WOLF", c: "teal", v: "mint", lines: ["wolf → wolves"], id: "w14p5c", src: "/lessons/aulas/aula-14/w14p5c.webp", alt: "Cabeça de lobo cinza vista de frente", w: 120, h: 144, ph: "Ilustração: cabeça de lobo cinza vista de frente, com pelo cinza e branco, orelhas em pé e olhos âmbar, sobre fundo azul bem claro." },
+            { tag: "CALF", c: "teal", v: "mint", lines: ["calf → calves"], id: "w14p5d", src: "/lessons/aulas/aula-14/w14p5d.webp", alt: "Bezerro preto e branco em pé, visto de perfil", w: 168, h: 136, ph: "Ilustração: bezerro preto e branco em pé, visto de perfil com a cabeça virada para a frente, sobre fundo azul bem claro." },
+            { tag: "SHELF", c: "teal", v: "mint", lines: ["shelf → shelves"], id: "w14p5e", src: "/lessons/aulas/aula-14/w14p5e.webp", alt: "Prateleira de madeira com livros, planta e porta-retrato", w: 186, h: 95, ph: "Ilustração: prateleira de madeira presa à parede, com quatro livros coloridos em pé à esquerda, um vasinho branco com planta verde no centro e um porta-retrato pequeno à direita, sobre fundo azul bem claro." },
+            { tag: "THIEF", c: "teal", v: "mint", lines: ["thief → thieves"], id: "w14p5f", src: "/lessons/aulas/aula-14/w14p5f.webp", alt: "Ladrão de desenho animado carregando um saco nas costas", w: 129, h: 132, ph: "Ilustração: ladrão de desenho vestido de preto, com gorro preto e máscara sobre os olhos, correndo curvado enquanto carrega um saco marrom nas costas, sobre fundo azul bem claro." } ] },
           { t: "sec", text: "NEM TODAS", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "ROOF", c: "purple", v: "lilac", lines: ["roof → roofs"], id: "w14p5g", alt: "Telhado de telhas vermelhas com chaminé", ph: "Ilustração: telhado de telhas vermelhas de uma casa, visto de frente e de lado, com uma chaminé de tijolos à esquerda e as paredes de madeira clara logo abaixo, sobre fundo lilás claro." },
-            { tag: "CHIEF", c: "purple", v: "lilac", lines: ["chief → chiefs"], id: "w14p5h", alt: "Medalha dourada com uma estrela", ph: "Ilustração: medalha dourada redonda com uma estrela azul-escura no centro, borda serrilhada e duas fitas douradas embaixo, sobre fundo lilás claro." } ] },
+            { tag: "ROOF", c: "purple", v: "lilac", lines: ["roof → roofs"], id: "w14p5g", src: "/lessons/aulas/aula-14/w14p5g.webp", alt: "Telhado de telhas vermelhas com chaminé de tijolos", w: 205, h: 85, ph: "Ilustração: telhado de telhas vermelhas de uma casa, visto de frente e de lado, com uma chaminé de tijolos à esquerda e as paredes de madeira clara logo abaixo, sobre fundo lilás claro." },
+            { tag: "CHIEF", c: "purple", v: "lilac", lines: ["chief → chiefs"], id: "w14p5h", src: "/lessons/aulas/aula-14/w14p5h.webp", alt: "Medalha dourada redonda com uma estrela azul escura", w: 84, h: 97, ph: "Ilustração: medalha dourada redonda com uma estrela azul-escura no centro, borda serrilhada e duas fitas douradas embaixo, sobre fundo lilás claro." } ] },
           { t: "note", v: "cream", bold: true, text: "Use esta regra com cuidado:\nela não vale para todas as palavras." } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 14", page: "PÁGINA 06" },
           { t: "title", en: "IRREGULAR PLURALS", pt: "Nem todos os plurais seguem uma regra previsível." },
           { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Algumas palavras mudam completamente no plural." },
-          { t: "image", id: "w14p6a", alt: "Grupo de pessoas de várias idades caminhando em um parque", ph: "Ilustração: sete pessoas caminhando lado a lado por um parque arborizado, com prédios da cidade ao fundo. Da esquerda para a direita: menina negra de maria-chiquinha, camiseta amarela e jardineira jeans, de mãos dadas com um homem barbudo de camiseta verde-azulada; mulher de cabelo escuro comprido, camiseta roxa e calça bege; senhor de cabelo e barba brancos, óculos e cardigã marrom; senhora de cabelo branco curto e suéter azul-marinho segurando um copo de café; moça negra de cabelo cacheado preso e blusa amarela, gesticulando; rapaz de camisa verde e camiseta branca com mochila nas costas." },
+          { t: "image", id: "w14p6a", src: "/lessons/aulas/aula-14/w14p6a.webp", alt: "Sete pessoas caminhando lado a lado em um parque", w: 893, h: 429, ph: "Ilustração: sete pessoas caminhando lado a lado por um parque arborizado, com prédios da cidade ao fundo. Da esquerda para a direita: menina negra de maria-chiquinha, camiseta amarela e jardineira jeans, de mãos dadas com um homem barbudo de camiseta verde-azulada; mulher de cabelo escuro comprido, camiseta roxa e calça bege; senhor de cabelo e barba brancos, óculos e cardigã marrom; senhora de cabelo branco curto e suéter azul-marinho segurando um copo de café; moça negra de cabelo cacheado preso e blusa amarela, gesticulando; rapaz de camisa verde e camiseta branca com mochila nas costas." },
           { t: "cards", cols: 2, items: [
-            { tag: "CHILD", c: "teal", v: "mint", lines: ["child → children"], id: "w14p6b", alt: "Ícone de uma menina e um menino", ph: "Ilustração: ícone chapado roxo de duas crianças lado a lado (uma menina de maria-chiquinha e um menino), sorrindo, sobre fundo verde-água bem claro." },
-            { tag: "MAN", c: "purple", v: "lilac", lines: ["man → men"], id: "w14p6c", alt: "Ícone de dois homens", ph: "Ilustração: ícone chapado roxo de dois homens adultos lado a lado, sorrindo, sobre fundo lilás bem claro." },
-            { tag: "WOMAN", c: "yellow", v: "cream", lines: ["woman → women"], id: "w14p6d", alt: "Ícone de duas mulheres", ph: "Ilustração: ícone chapado roxo de duas mulheres lado a lado (uma de cabelo solto e outra de coque), sorrindo, sobre fundo creme." },
-            { tag: "PERSON", c: "teal", v: "mint", lines: ["person → people"], id: "w14p6e", alt: "Ícone de três pessoas", ph: "Ilustração: ícone chapado roxo de três silhuetas de pessoas lado a lado, sem traços no rosto, sobre fundo verde-menta bem claro." } ] },
+            { tag: "CHILD", c: "teal", v: "mint", lines: ["child → children"], id: "w14p6b", src: "/lessons/aulas/aula-14/w14p6b.webp", alt: "Ícone roxo de duas crianças sorrindo lado a lado", w: 114, h: 70, ph: "Ilustração: ícone chapado roxo de duas crianças lado a lado (uma menina de maria-chiquinha e um menino), sorrindo, sobre fundo verde-água bem claro." },
+            { tag: "MAN", c: "purple", v: "lilac", lines: ["man → men"], id: "w14p6c", src: "/lessons/aulas/aula-14/w14p6c.webp", alt: "Ícone roxo de dois homens sorrindo lado a lado", w: 119, h: 80, ph: "Ilustração: ícone chapado roxo de dois homens adultos lado a lado, sorrindo, sobre fundo lilás bem claro." },
+            { tag: "WOMAN", c: "yellow", v: "cream", lines: ["woman → women"], id: "w14p6d", src: "/lessons/aulas/aula-14/w14p6d.webp", alt: "Ícone roxo de duas mulheres sorrindo lado a lado", w: 120, h: 83, ph: "Ilustração: ícone chapado roxo de duas mulheres lado a lado (uma de cabelo solto e outra de coque), sorrindo, sobre fundo creme." },
+            { tag: "PERSON", c: "teal", v: "mint", lines: ["person → people"], id: "w14p6e", src: "/lessons/aulas/aula-14/w14p6e.webp", alt: "Ícone roxo de três silhuetas de pessoa lado a lado", w: 110, h: 72, ph: "Ilustração: ícone chapado roxo de três silhuetas de pessoas lado a lado, sem traços no rosto, sobre fundo verde-menta bem claro." } ] },
           { t: "sec", text: "NESTA AULA, VOCÊ VAI USAR ASSIM:", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "CHILDREN", c: "teal", v: "mint", lines: ["They’re children."], id: "w14p6f", alt: "Ícone de uma menina e um menino", ph: "Ilustração: ícone chapado roxo de duas crianças lado a lado (uma menina de maria-chiquinha e um menino), sorrindo, sobre fundo verde-água bem claro." },
-            { tag: "MEN", c: "purple", v: "lilac", lines: ["They’re men."], id: "w14p6g", alt: "Ícone de dois homens", ph: "Ilustração: ícone chapado roxo de dois homens adultos lado a lado, sorrindo, sobre fundo lilás bem claro." },
-            { tag: "WOMEN", c: "yellow", v: "cream", lines: ["They’re women."], id: "w14p6h", alt: "Ícone de duas mulheres", ph: "Ilustração: ícone chapado roxo de duas mulheres lado a lado (uma de cabelo solto e outra de coque), sorrindo, sobre fundo creme." },
-            { tag: "PEOPLE", c: "teal", v: "mint", lines: ["They’re people."], id: "w14p6i", alt: "Ícone de três pessoas", ph: "Ilustração: ícone chapado roxo de três silhuetas de pessoas lado a lado, sem traços no rosto, sobre fundo verde-menta bem claro." } ] },
+            { tag: "CHILDREN", c: "teal", v: "mint", lines: ["They’re children."], id: "w14p6f", src: "/lessons/aulas/aula-14/w14p6f.webp", alt: "Ícone roxo de duas crianças sorrindo lado a lado", w: 113, h: 68, ph: "Ilustração: ícone chapado roxo de duas crianças lado a lado (uma menina de maria-chiquinha e um menino), sorrindo, sobre fundo verde-água bem claro." },
+            { tag: "MEN", c: "purple", v: "lilac", lines: ["They’re men."], id: "w14p6g", src: "/lessons/aulas/aula-14/w14p6g.webp", alt: "Ícone roxo de dois homens sorrindo lado a lado", w: 115, h: 75, ph: "Ilustração: ícone chapado roxo de dois homens adultos lado a lado, sorrindo, sobre fundo lilás bem claro." },
+            { tag: "WOMEN", c: "yellow", v: "cream", lines: ["They’re women."], id: "w14p6h", src: "/lessons/aulas/aula-14/w14p6h.webp", alt: "Ícone roxo de duas mulheres sorrindo lado a lado", w: 119, h: 81, ph: "Ilustração: ícone chapado roxo de duas mulheres lado a lado (uma de cabelo solto e outra de coque), sorrindo, sobre fundo creme." },
+            { tag: "PEOPLE", c: "teal", v: "mint", lines: ["They’re people."], id: "w14p6i", src: "/lessons/aulas/aula-14/w14p6i.webp", alt: "Ícone roxo de três silhuetas de pessoa lado a lado", w: 94, h: 57, ph: "Ilustração: ícone chapado roxo de três silhuetas de pessoas lado a lado, sem traços no rosto, sobre fundo verde-menta bem claro." } ] },
           { t: "note", v: "navy", bold: true, text: "Esses plurais precisam ser memorizados.\nNão seguem uma regra, mas são muito comuns!" },
           { t: "meta", label: "TEMPO ESTIMADO", value: "15–18 min" } ] },
 
@@ -2477,14 +2399,14 @@ export const LESSONS = [
           { t: "badge", label: "AULA 14", page: "PÁGINA 07" },
           { t: "title", en: "SINGULAR × PLURAL IN SENTENCES", pt: "Veja como o plural aparece em frases simples." },
           { t: "cards", cols: 2, items: [
-            { tag: "1 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a car."], note: "É um carro.", id: "w14p7a", alt: "Um carro azul", ph: "Ilustração: um carro hatch azul visto de frente e de três quartos, com faróis acesos, sobre fundo azul bem claro." },
-            { tag: "1 · PLURAL", c: "purple", v: "lilac", lines: ["They’re cars."], note: "Eles são carros.", id: "w14p7b", alt: "Dois carros lado a lado", ph: "Ilustração: dois carros lado a lado, um hatch azul à frente e um sedã branco atrás, vistos de frente e de três quartos, sobre fundo lilás claro." },
-            { tag: "2 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a pencil."], note: "É um lápis.", id: "w14p7c", alt: "Um lápis amarelo", ph: "Ilustração: um lápis amarelo apontado, deitado na diagonal, com borracha rosa na ponta, sobre fundo azul bem claro." },
-            { tag: "2 · PLURAL", c: "purple", v: "lilac", lines: ["They’re pencils."], note: "Eles são lápis.", id: "w14p7d", alt: "Três lápis coloridos", ph: "Ilustração: três lápis apontados deitados em leque (um amarelo, um azul e um verde), cada um com borracha na ponta, sobre fundo lilás claro." },
-            { tag: "3 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a bench."], note: "É um banco.", id: "w14p7e", alt: "Um banco de praça", ph: "Ilustração: um banco de praça de ripas de madeira clara com laterais de ferro preto, visto de três quartos, sobre fundo azul bem claro." },
-            { tag: "3 · PLURAL", c: "purple", v: "lilac", lines: ["They’re benches."], note: "Eles são bancos.", id: "w14p7f", alt: "Dois bancos de praça", ph: "Ilustração: dois bancos de praça de ripas de madeira clara com laterais de ferro preto, lado a lado e levemente afastados, sobre fundo lilás claro." },
-            { tag: "4 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a watch."], note: "É um relógio.", id: "w14p7g", alt: "Um relógio de pulso", ph: "Ilustração: um relógio de pulso com caixa prateada, mostrador azul-marinho e pulseira azul-escura, visto de frente, sobre fundo azul bem claro." },
-            { tag: "4 · PLURAL", c: "purple", v: "lilac", lines: ["They’re watches."], note: "Eles são relógios.", id: "w14p7h", alt: "Dois relógios de pulso", ph: "Ilustração: dois relógios de pulso lado a lado (um de mostrador preto com pulseira escura e outro de mostrador branco com pulseira de couro marrom), sobre fundo lilás claro." } ] },
+            { tag: "1 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a car."], note: "É um carro.", id: "w14p7a", src: "/lessons/aulas/aula-14/w14p7a.webp", alt: "Carro hatch azul visto de frente com faróis acesos", w: 195, h: 96, ph: "Ilustração: um carro hatch azul visto de frente e de três quartos, com faróis acesos, sobre fundo azul bem claro." },
+            { tag: "1 · PLURAL", c: "purple", v: "lilac", lines: ["They’re cars."], note: "Eles são carros.", id: "w14p7b", src: "/lessons/aulas/aula-14/w14p7b.webp", alt: "Dois carros lado a lado, um azul e um branco", w: 348, h: 102, ph: "Ilustração: dois carros lado a lado, um hatch azul à frente e um sedã branco atrás, vistos de frente e de três quartos, sobre fundo lilás claro." },
+            { tag: "2 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a pencil."], note: "É um lápis.", id: "w14p7c", src: "/lessons/aulas/aula-14/w14p7c.webp", alt: "Lápis amarelo apontado deitado na diagonal", w: 121, h: 68, ph: "Ilustração: um lápis amarelo apontado, deitado na diagonal, com borracha rosa na ponta, sobre fundo azul bem claro." },
+            { tag: "2 · PLURAL", c: "purple", v: "lilac", lines: ["They’re pencils."], note: "Eles são lápis.", id: "w14p7d", src: "/lessons/aulas/aula-14/w14p7d.webp", alt: "Três lápis apontados em leque, amarelo azul e verde", w: 266, h: 74, ph: "Ilustração: três lápis apontados deitados em leque (um amarelo, um azul e um verde), cada um com borracha na ponta, sobre fundo lilás claro." },
+            { tag: "3 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a bench."], note: "É um banco.", id: "w14p7e", src: "/lessons/aulas/aula-14/w14p7e.webp", alt: "Banco de praça de madeira clara visto de três quartos", w: 149, h: 87, ph: "Ilustração: um banco de praça de ripas de madeira clara com laterais de ferro preto, visto de três quartos, sobre fundo azul bem claro." },
+            { tag: "3 · PLURAL", c: "purple", v: "lilac", lines: ["They’re benches."], note: "Eles são bancos.", id: "w14p7f", src: "/lessons/aulas/aula-14/w14p7f.webp", alt: "Dois bancos de praça lado a lado levemente afastados", w: 310, h: 90, ph: "Ilustração: dois bancos de praça de ripas de madeira clara com laterais de ferro preto, lado a lado e levemente afastados, sobre fundo lilás claro." },
+            { tag: "4 · SINGULAR", c: "teal", v: "mint", lines: ["It’s a watch."], note: "É um relógio.", id: "w14p7g", src: "/lessons/aulas/aula-14/w14p7g.webp", alt: "Relógio de pulso com mostrador azul marinho", w: 119, h: 115, ph: "Ilustração: um relógio de pulso com caixa prateada, mostrador azul-marinho e pulseira azul-escura, visto de frente, sobre fundo azul bem claro." },
+            { tag: "4 · PLURAL", c: "purple", v: "lilac", lines: ["They’re watches."], note: "Eles são relógios.", id: "w14p7h", src: "/lessons/aulas/aula-14/w14p7h.webp", alt: "Dois relógios de pulso lado a lado, preto e marrom", w: 175, h: 112, ph: "Ilustração: dois relógios de pulso lado a lado (um de mostrador preto com pulseira escura e outro de mostrador branco com pulseira de couro marrom), sobre fundo lilás claro." } ] },
           { t: "note", v: "cream", bar: true, bold: true, text: "It’s = uma coisa.\nThey’re = mais de uma." },
           { t: "meta", label: "TEMPO ESTIMADO", value: "15–18 min" } ] },
 
@@ -2510,7 +2432,7 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 14", page: "PÁGINA 09" },
           { t: "title", en: "LET’S TALK! ONE OR MORE?", pt: "Use singular e plural em um contexto real." },
-          { t: "image", id: "w14p9a", alt: "Ana e Daniel conversando sobre livros na biblioteca", ph: "Ilustração: Ana e Daniel sentados a uma mesa de madeira dentro de uma biblioteca. Ana, de cabelo castanho ondulado preso, camisa verde sobre blusa branca e argolas douradas, aponta com o dedo para o livro verde que Daniel segura. Daniel tem cabelo escuro cacheado e usa camisa jeans sobre camiseta branca. Sobre a mesa há uma pilha de livros amarelo, verde e azul, um copo de café para viagem, um porta-lápis preto telado com lápis amarelos e um caderno azul-marinho com uma caneta em cima. Ao fundo, estantes cheias de livros com uma placa escrita “New Arrivals”, luminárias pendentes pretas, plantas e uma janela grande com árvores." },
+          { t: "image", id: "w14p9a", src: "/lessons/aulas/aula-14/w14p9a.webp", alt: "Ana e Daniel conversando à mesa com livros e café", w: 531, h: 677, ph: "Ilustração: Ana e Daniel sentados a uma mesa de madeira dentro de uma biblioteca. Ana, de cabelo castanho ondulado preso, camisa verde sobre blusa branca e argolas douradas, aponta com o dedo para o livro verde que Daniel segura. Daniel tem cabelo escuro cacheado e usa camisa jeans sobre camiseta branca. Sobre a mesa há uma pilha de livros amarelo, verde e azul, um copo de café para viagem, um porta-lápis preto telado com lápis amarelos e um caderno azul-marinho com uma caneta em cima. Ao fundo, estantes cheias de livros com uma placa escrita “New Arrivals”, luminárias pendentes pretas, plantas e uma janela grande com árvores." },
           { t: "dialogue", items: [
             { s: "a", text: "Ana: What is it?" },
             { s: "b", text: "Daniel: It’s a book." },
@@ -2523,9 +2445,9 @@ export const LESSONS = [
           { t: "sec", text: "YOUR TURN", c: "purple" },
           { t: "lead", text: "Look at the pictures and complete the sentences." },
           { t: "cards", cols: 2, items: [
-            { tag: "1", c: "teal", v: "mint", lines: ["It’s a ______."], id: "w14p9b", alt: "Mochila azul-marinho", ph: "Ilustração: mochila de tecido azul-marinho vista de lado, com alças pretas acolchoadas, bolso frontal com zíper e alça de mão no topo, sobre fundo branco." },
-            { tag: "2", c: "teal", v: "mint", lines: ["They’re ______."], id: "w14p9c", alt: "Dois cadernos espirais, um verde e um amarelo", ph: "Ilustração: dois cadernos de espiral sobrepostos, um de capa verde por baixo e um de capa amarela por cima, vistos de cima e levemente inclinados, sobre fundo branco." },
-            { tag: "3", c: "teal", v: "mint", lines: ["They’re ______."], id: "w14p9d", alt: "Três estudantes conversando no corredor", ph: "Ilustração: três estudantes conversando em pé no corredor de uma escola. À esquerda, um rapaz de moletom verde com mochila nas costas; no centro, uma moça de cabelo cacheado e blusa listrada segurando um livro verde; à direita, uma moça de jaqueta jeans segurando um copo de café e cadernos. Ao fundo, parede clara e janelas." } ] },
+            { tag: "1", c: "teal", v: "mint", lines: ["It’s a ______."], id: "w14p9b", src: "/lessons/aulas/aula-14/w14p9b.webp", alt: "Mochila de tecido azul marinho com bolso frontal", w: 128, h: 152, ph: "Ilustração: mochila de tecido azul-marinho vista de lado, com alças pretas acolchoadas, bolso frontal com zíper e alça de mão no topo, sobre fundo branco." },
+            { tag: "2", c: "teal", v: "mint", lines: ["They’re ______."], id: "w14p9c", src: "/lessons/aulas/aula-14/w14p9c.webp", alt: "Dois cadernos de espiral, um verde e um amarelo", w: 190, h: 144, ph: "Ilustração: dois cadernos de espiral sobrepostos, um de capa verde por baixo e um de capa amarela por cima, vistos de cima e levemente inclinados, sobre fundo branco." },
+            { tag: "3", c: "teal", v: "mint", lines: ["They’re ______."], id: "w14p9d", src: "/lessons/aulas/aula-14/w14p9d.webp", alt: "Três estudantes conversando no corredor da escola", w: 262, h: 170, ph: "Ilustração: três estudantes conversando em pé no corredor de uma escola. À esquerda, um rapaz de moletom verde com mochila nas costas; no centro, uma moça de cabelo cacheado e blusa listrada segurando um livro verde; à direita, uma moça de jaqueta jeans segurando um copo de café e cadernos. Ao fundo, parede clara e janelas." } ] },
           { t: "free", id: "w14f1", items: [
             { n: "1", kicker: "PICTURE", prefix: "It’s a ______.", ideas: "", v: "mint", c: "teal" },
             { n: "2", kicker: "PICTURE", prefix: "They’re ______.", ideas: "", v: "lilac", c: "purple" },
@@ -2561,8 +2483,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 15" },
         { t: "title", en: "DEMONSTRATIVES", pt: "This, that, these e those." },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Quando algo está perto ou longe,\ncomo você mostra isso em inglês?" },
-        { t: "image", id: "w15p1a", alt: "Dois amigos conversando à mesa de um café enquanto uma mulher aponta para a rua",
-          ph: "Ilustração: mesa de um café com fachada de vidro aberta para a calçada. À esquerda, uma mulher de cabelo castanho comprido, brincos de argola dourados e camiseta laranja-terracota sorri e aponta o dedo indicador para o celular que o rapaz segura. Ao lado dela, um rapaz de óculos, barba curta e camisa verde-oliva sobre camiseta branca segura um celular preto e sorri. Sobre a mesa de madeira: um notebook prateado aberto, uma caneca azul-marinho, um vaso com suculenta e uma pilha de dois livros (verde e amarelo). Ao fundo, na calçada, uma mulher de blusa bege, calça jeans e bolsa marrom no ombro aponta para a rua, onde passam carros branco e vermelho e há prédios e árvores. À direita, outra mesa redonda com uma mochila azul-marinho e uma pilha de livros vermelho, azul e amarelo." },
+        { t: "image", id: "w15p1a", src: "/lessons/aulas/aula-15/w15p1a.webp", alt: "Casal sorrindo em mesa de café enquanto ele mostra o celular a ela", w: 833, h: 415, ph: "Ilustração: mesa de um café com fachada de vidro aberta para a calçada. À esquerda, uma mulher de cabelo castanho comprido, brincos de argola dourados e camiseta laranja-terracota sorri e aponta o dedo indicador para o celular que o rapaz segura. Ao lado dela, um rapaz de óculos, barba curta e camisa verde-oliva sobre camiseta branca segura um celular preto e sorri. Sobre a mesa de madeira: um notebook prateado aberto, uma caneca azul-marinho, um vaso com suculenta e uma pilha de dois livros (verde e amarelo). Ao fundo, na calçada, uma mulher de blusa bege, calça jeans e bolsa marrom no ombro aponta para a rua, onde passam carros branco e vermelho e há prédios e árvores. À direita, outra mesa redonda com uma mochila azul-marinho e uma pilha de livros vermelho, azul e amarelo." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 2, items: [
           { title: "This is a phone.", body: "Este é um telefone.", v: "mint", c: "teal" },
@@ -2580,17 +2501,13 @@ export const LESSONS = [
         { t: "note", v: "gray", bar: true, bold: true, kicker: "IDEIA-CHAVE", text: "Primeiro veja se é um ou mais de um.\nDepois veja se está perto ou longe." },
         { t: "sec", text: "MAPA RÁPIDO" },
         { t: "cards", cols: 2, items: [
-          { tag: "SINGULAR + PERTO", c: "teal", v: "mint", id: "w15p2a", alt: "Mulher segurando um celular perto do corpo e apontando para ele",
-            ph: "Ilustração recortada sobre fundo azul-claro: mulher de cabelo castanho ondulado, brincos de argola e camiseta laranja-terracota, vista da cintura para cima. Ela segura um celular preto na mão direita, junto ao corpo, e aponta para ele com o indicador da mão esquerda, sorrindo.",
+          { tag: "SINGULAR + PERTO", c: "teal", v: "mint", id: "w15p2a", src: "/lessons/aulas/aula-15/w15p2a.webp", alt: "Mulher de cabelo castanho aponta e segura um celular perto do corpo", w: 261, h: 147, ph: "Ilustração recortada sobre fundo azul-claro: mulher de cabelo castanho ondulado, brincos de argola e camiseta laranja-terracota, vista da cintura para cima. Ela segura um celular preto na mão direita, junto ao corpo, e aponta para ele com o indicador da mão esquerda, sorrindo.",
             lines: ["THIS"], note: "This is a phone." },
-          { tag: "SINGULAR + LONGE", c: "purple", v: "lilac", id: "w15p2b", alt: "Homem apontando para um celular sobre uma mesa distante",
-            ph: "Ilustração sobre fundo lilás-claro: rapaz de óculos, barba curta e camisa verde-oliva, de perfil, com o braço esticado apontando para a direita. Uma seta pontilhada roxa sai do dedo dele e chega a um celular preto em pé sobre uma mesinha redonda de madeira, do outro lado do quadro.",
+          { tag: "SINGULAR + LONGE", c: "purple", v: "lilac", id: "w15p2b", src: "/lessons/aulas/aula-15/w15p2b.webp", alt: "Rapaz de camisa verde aponta para um celular sobre mesa distante", w: 381, h: 152, ph: "Ilustração sobre fundo lilás-claro: rapaz de óculos, barba curta e camisa verde-oliva, de perfil, com o braço esticado apontando para a direita. Uma seta pontilhada roxa sai do dedo dele e chega a um celular preto em pé sobre uma mesinha redonda de madeira, do outro lado do quadro.",
             lines: ["THAT"], note: "That is a phone." },
-          { tag: "PLURAL + PERTO", c: "yellow", v: "cream", id: "w15p2c", alt: "Pilha de três livros vista de perto",
-            ph: "Ilustração sobre fundo amarelo-claro: pilha de três livros grossos empilhados, vistos de lado e bem de perto: o de cima verde, o do meio vermelho-alaranjado e o de baixo azul-marinho, com as páginas brancas à mostra.",
+          { tag: "PLURAL + PERTO", c: "yellow", v: "cream", id: "w15p2c", src: "/lessons/aulas/aula-15/w15p2c.webp", alt: "Pilha de três livros coloridos vista de lado sobre fundo claro", w: 238, h: 105, ph: "Ilustração sobre fundo amarelo-claro: pilha de três livros grossos empilhados, vistos de lado e bem de perto: o de cima verde, o do meio vermelho-alaranjado e o de baixo azul-marinho, com as páginas brancas à mostra.",
             lines: ["THESE"], note: "These are books." },
-          { tag: "PLURAL + LONGE", c: "green", v: "green", id: "w15p2d", alt: "Mulher apontando para livros sobre uma mesa distante",
-            ph: "Ilustração sobre fundo verde-claro: mulher de cabelo castanho comprido e camiseta laranja-terracota, de perfil, com o braço esticado apontando para a direita. Uma seta tracejada verde sai do dedo dela e chega a uma pilha de três livros (verde, vermelho e azul) sobre uma mesinha redonda de madeira.",
+          { tag: "PLURAL + LONGE", c: "green", v: "green", id: "w15p2d", src: "/lessons/aulas/aula-15/w15p2d.webp", alt: "Mulher aponta para pilha de livros sobre uma mesa distante", w: 417, h: 132, ph: "Ilustração sobre fundo verde-claro: mulher de cabelo castanho comprido e camiseta laranja-terracota, de perfil, com o braço esticado apontando para a direita. Uma seta tracejada verde sai do dedo dela e chega a uma pilha de três livros (verde, vermelho e azul) sobre uma mesinha redonda de madeira.",
             lines: ["THOSE"], note: "Those are books." } ] },
         { t: "note", v: "blue", text: "NEAR E FAR DEPENDEM DA POSIÇÃO DE QUEM FALA." },
         { t: "sec", text: "REGRA RÁPIDA", c: "yellow" },
@@ -2605,19 +2522,15 @@ export const LESSONS = [
         { t: "title", en: "THIS × THAT", pt: "Uma coisa: perto ou longe." },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "SINGULAR", text: "Use THIS para algo perto de você.\nUse THAT para algo mais longe." },
         { t: "cards", cols: 2, items: [
-          { tag: "NEAR", c: "teal", v: "mint", id: "w15p3a", alt: "Mulher sentada à mesa apontando para o celular na sua frente",
-            ph: "Ilustração: mulher de cabelo castanho comprido, brincos de argola e camiseta laranja-terracota, sentada a uma mesa de madeira dentro de um café. Ela olha para baixo, sorrindo, e toca com o indicador um celular preto deitado na mesa, ao lado de uma caneca azul-marinho e de um notebook prateado. Ao fundo, desfocado, um rapaz de camisa verde trabalha em um notebook.",
+          { tag: "NEAR", c: "teal", v: "mint", id: "w15p3a", src: "/lessons/aulas/aula-15/w15p3a.webp", alt: "Mulher sorridente toca o celular sobre a mesa de um café", w: 403, h: 394, ph: "Ilustração: mulher de cabelo castanho comprido, brincos de argola e camiseta laranja-terracota, sentada a uma mesa de madeira dentro de um café. Ela olha para baixo, sorrindo, e toca com o indicador um celular preto deitado na mesa, ao lado de uma caneca azul-marinho e de um notebook prateado. Ao fundo, desfocado, um rapaz de camisa verde trabalha em um notebook.",
             lines: ["This is a phone."], note: "Este é um telefone." },
-          { tag: "FAR", c: "teal", v: "cream", id: "w15p3b", alt: "Homem de costas olhando para uma bolsa sobre uma mesa ao longe",
-            ph: "Ilustração: rapaz de camisa verde-oliva e calça jeans, visto de costas, em pé no salão de um café com janelas grandes para a rua. Ao fundo, sobre uma mesa redonda de madeira junto à janela, está uma bolsa azul-marinho de alças. Em primeiro plano, outra mesa com um caderno branco fechado e uma caneta preta, e um vaso de planta pequeno.",
+          { tag: "FAR", c: "teal", v: "cream", id: "w15p3b", src: "/lessons/aulas/aula-15/w15p3b.webp", alt: "Rapaz de costas em café com bolsa azul-marinho sobre a mesa ao fundo", w: 404, h: 394, ph: "Ilustração: rapaz de camisa verde-oliva e calça jeans, visto de costas, em pé no salão de um café com janelas grandes para a rua. Ao fundo, sobre uma mesa redonda de madeira junto à janela, está uma bolsa azul-marinho de alças. Em primeiro plano, outra mesa com um caderno branco fechado e uma caneta preta, e um vaso de planta pequeno.",
             lines: ["That is a bag."], note: "Aquela é uma bolsa." } ] },
         { t: "sec", text: "OUTROS EXEMPLOS", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "THIS", c: "teal", v: "white", id: "w15p3c", alt: "Rapaz apontando para o irmão que está ao lado dele",
-            ph: "Ilustração: dois rapazes em pé, lado a lado e bem próximos. O da frente, de óculos, camisa verde-oliva e camiseta branca, sorri e aponta com o polegar para o rapaz ao lado, de camisa jeans azul e calça escura, que também sorri.",
+          { tag: "THIS", c: "teal", v: "white", id: "w15p3c", src: "/lessons/aulas/aula-15/w15p3c.webp", alt: "Dois rapazes sorridentes, um aponta o polegar para o outro", w: 204, h: 183, ph: "Ilustração: dois rapazes em pé, lado a lado e bem próximos. O da frente, de óculos, camisa verde-oliva e camiseta branca, sorri e aponta com o polegar para o rapaz ao lado, de camisa jeans azul e calça escura, que também sorri.",
             lines: ["This is", "my brother."], note: "Este é meu irmão." },
-          { tag: "THAT", c: "teal", v: "white", id: "w15p3d", alt: "Rapaz de costas olhando para o irmão que acena de longe",
-            ph: "Ilustração: à esquerda, o rapaz de camisa verde-oliva visto de costas, olhando para frente. À direita, ao longe e em tamanho menor, o irmão de camisa jeans azul e calça bege acena com a mão levantada, de corpo inteiro.",
+          { tag: "THAT", c: "teal", v: "white", id: "w15p3d", src: "/lessons/aulas/aula-15/w15p3d.webp", alt: "Rapaz de costas enquanto o irmão acena de longe à direita", w: 212, h: 188, ph: "Ilustração: à esquerda, o rapaz de camisa verde-oliva visto de costas, olhando para frente. À direita, ao longe e em tamanho menor, o irmão de camisa jeans azul e calça bege acena com a mão levantada, de corpo inteiro.",
             lines: ["That is", "my brother."], note: "Aquele é\nmeu irmão." } ] },
         { t: "note", v: "mint", text: "AMBOS FALAM DE UMA COISA SÓ." } ] },
 
@@ -2627,19 +2540,15 @@ export const LESSONS = [
         { t: "title", en: "THESE × THOSE", pt: "Mais de uma coisa." },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "PLURAL", text: "Use THESE para coisas perto.\nUse THOSE para coisas mais longe." },
         { t: "cards", cols: 2, items: [
-          { tag: "NEAR", c: "teal", v: "gray", id: "w15p4a", alt: "Pilha de livros sobre uma mesa de escritório, bem perto de quem olha",
-            ph: "Ilustração: pilha de três livros (verde por cima, vermelho no meio, azul-marinho embaixo) sobre uma mesa de madeira clara, em primeiro plano. Ao lado, uma caneca azul-marinho, um vaso com suculenta e a lateral de um notebook prateado aberto. Ao fundo, desfocado, um escritório com mesas, cadeiras pretas e plantas.",
+          { tag: "NEAR", c: "teal", v: "gray", id: "w15p4a", src: "/lessons/aulas/aula-15/w15p4a.webp", alt: "Pilha de livros com caneca e planta sobre mesa em escritório", w: 404, h: 362, ph: "Ilustração: pilha de três livros (verde por cima, vermelho no meio, azul-marinho embaixo) sobre uma mesa de madeira clara, em primeiro plano. Ao lado, uma caneca azul-marinho, um vaso com suculenta e a lateral de um notebook prateado aberto. Ao fundo, desfocado, um escritório com mesas, cadeiras pretas e plantas.",
             lines: ["These are books."], note: "Estes são livros." },
-          { tag: "FAR", c: "teal", v: "gray", id: "w15p4b", alt: "Carros passando na avenida vistos da mesa de uma calçada",
-            ph: "Ilustração: avenida movimentada vista de uma calçada. Vários carros (branco, vermelho, preto e prata) trafegam pela pista; ao fundo, prédios altos envidraçados e árvores verdes. Em primeiro plano, à direita, uma mesa redonda de madeira com um vaso de planta pequeno e duas cadeiras pretas de metal.",
+          { tag: "FAR", c: "teal", v: "gray", id: "w15p4b", src: "/lessons/aulas/aula-15/w15p4b.webp", alt: "Avenida com carros em movimento vista de mesa de café", w: 406, h: 371, ph: "Ilustração: avenida movimentada vista de uma calçada. Vários carros (branco, vermelho, preto e prata) trafegam pela pista; ao fundo, prédios altos envidraçados e árvores verdes. Em primeiro plano, à direita, uma mesa redonda de madeira com um vaso de planta pequeno e duas cadeiras pretas de metal.",
             lines: ["Those are cars."], note: "Aqueles são carros." } ] },
         { t: "sec", text: "OUTROS EXEMPLOS", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "THESE", c: "teal", v: "white", id: "w15p4c", alt: "Tigela de maçãs vermelhas sobre a mesa, bem perto",
-            ph: "Ilustração: tigela de madeira clara cheia de maçãs vermelhas brilhantes, sobre uma mesa de madeira, em primeiro plano. Ao fundo, desfocado, um ambiente interno claro.",
+          { tag: "THESE", c: "teal", v: "white", id: "w15p4c", src: "/lessons/aulas/aula-15/w15p4c.webp", alt: "Tigela de madeira cheia de maçãs vermelhas brilhantes", w: 225, h: 183, ph: "Ilustração: tigela de madeira clara cheia de maçãs vermelhas brilhantes, sobre uma mesa de madeira, em primeiro plano. Ao fundo, desfocado, um ambiente interno claro.",
             lines: ["These are", "apples."], note: "Estes são\nmaçãs." },
-          { tag: "THOSE", c: "teal", v: "white", id: "w15p4d", alt: "Maçãs sobre uma mesa de piquenique distante em um parque",
-            ph: "Ilustração: parque com gramado verde e árvores altas; ao fundo, prédios da cidade. No centro, ao longe, uma mesa de piquenique de madeira com bancos, e sobre ela um pequeno prato com maçãs vermelhas.",
+          { tag: "THOSE", c: "teal", v: "white", id: "w15p4d", src: "/lessons/aulas/aula-15/w15p4d.webp", alt: "Mesa de piquenique ao longe em parque com prédios ao fundo", w: 232, h: 180, ph: "Ilustração: parque com gramado verde e árvores altas; ao fundo, prédios da cidade. No centro, ao longe, uma mesa de piquenique de madeira com bancos, e sobre ela um pequeno prato com maçãs vermelhas.",
             lines: ["Those are", "apples."], note: "Aqueles são\nmaçãs." } ] },
         { t: "key", v: "navy", text: "THESE e THOSE sempre combinam com ARE." } ] },
 
@@ -2661,24 +2570,18 @@ export const LESSONS = [
         { t: "title", en: "LOOK & CHOOSE", pt: "Formas e demonstratives." },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "OBSERVE", text: "Veja o número e a distância antes de escolher." },
         { t: "cards", cols: 2, items: [
-          { tag: "THIS", c: "teal", v: "white", id: "w15p6a", alt: "Homem apontando para um triângulo sobre a mesa ao lado dele",
-            ph: "Ilustração: rapaz de óculos e camisa verde-oliva, visto de costas e de perfil, aponta com o indicador para um triângulo azul-petróleo apoiado em uma mesa de madeira clara encostada na parede. Na parede, um quadro abstrato claro; ao lado da mesa, um vaso com planta verde.",
+          { tag: "THIS", c: "teal", v: "white", id: "w15p6a", src: "/lessons/aulas/aula-15/w15p6a.webp", alt: "Rapaz aponta para um triângulo azul sobre mesa de madeira", w: 402, h: 238, ph: "Ilustração: rapaz de óculos e camisa verde-oliva, visto de costas e de perfil, aponta com o indicador para um triângulo azul-petróleo apoiado em uma mesa de madeira clara encostada na parede. Na parede, um quadro abstrato claro; ao lado da mesa, um vaso com planta verde.",
             lines: ["This is a triangle."] },
-          { tag: "THAT", c: "teal", v: "white", id: "w15p6b", alt: "Homem apontando para um painel retangular roxo do outro lado da praça",
-            ph: "Ilustração: o mesmo rapaz de camisa verde-oliva, de costas, na praça de um centro urbano, com o braço esticado apontando para frente. Ao longe, um grande painel retangular roxo instalado no calçadão. Ao redor, prédios envidraçados e árvores.",
+          { tag: "THAT", c: "teal", v: "white", id: "w15p6b", src: "/lessons/aulas/aula-15/w15p6b.webp", alt: "Rapaz de costas aponta para painel retangular roxo ao longe", w: 418, h: 238, ph: "Ilustração: o mesmo rapaz de camisa verde-oliva, de costas, na praça de um centro urbano, com o braço esticado apontando para frente. Ao longe, um grande painel retangular roxo instalado no calçadão. Ao redor, prédios envidraçados e árvores.",
             lines: ["That is a rectangle."] },
-          { tag: "THESE", c: "teal", v: "white", id: "w15p6c", alt: "Mulher apontando para dois triângulos sobre a mesa ao lado dela",
-            ph: "Ilustração: mulher de cabelo castanho comprido e camiseta laranja-terracota, sentada, sorrindo e apontando com o indicador para dois triângulos azul-petróleo lado a lado sobre uma mesa de madeira clara. Ao fundo, parede clara com um quadro abstrato e um vaso com planta.",
+          { tag: "THESE", c: "teal", v: "white", id: "w15p6c", src: "/lessons/aulas/aula-15/w15p6c.webp", alt: "Mulher aponta para dois triângulos azuis sobre a mesa", w: 402, h: 229, ph: "Ilustração: mulher de cabelo castanho comprido e camiseta laranja-terracota, sentada, sorrindo e apontando com o indicador para dois triângulos azul-petróleo lado a lado sobre uma mesa de madeira clara. Ao fundo, parede clara com um quadro abstrato e um vaso com planta.",
             lines: ["These are triangles."] },
-          { tag: "THOSE", c: "teal", v: "white", id: "w15p6d", alt: "Mulher apontando para dois painéis retangulares roxos ao longe",
-            ph: "Ilustração: a mesma mulher de camiseta laranja-terracota, vista de costas, na praça, com o braço esticado apontando para frente. Ao longe, dois grandes painéis retangulares roxos lado a lado no calçadão, entre prédios envidraçados e árvores.",
+          { tag: "THOSE", c: "teal", v: "white", id: "w15p6d", src: "/lessons/aulas/aula-15/w15p6d.webp", alt: "Mulher de costas aponta para dois painéis roxos ao longe", w: 418, h: 230, ph: "Ilustração: a mesma mulher de camiseta laranja-terracota, vista de costas, na praça, com o braço esticado apontando para frente. Ao longe, dois grandes painéis retangulares roxos lado a lado no calçadão, entre prédios envidraçados e árvores.",
             lines: ["Those are rectangles."] } ] },
         { t: "cards", cols: 2, items: [
-          { tag: "THIS", c: "teal", v: "white", id: "w15p6e", alt: "Homem apontando para um círculo sobre a mesa ao lado dele",
-            ph: "Ilustração pequena: rapaz de óculos e camisa verde-oliva, de perfil, apontando para um círculo azul-petróleo apoiado em uma mesa de madeira clara junto à parede, com dois vasinhos de planta ao lado.",
+          { tag: "THIS", c: "teal", v: "white", id: "w15p6e", src: "/lessons/aulas/aula-15/w15p6e.webp", alt: "Rapaz aponta para um círculo azul pequeno sobre a mesa", w: 233, h: 173, ph: "Ilustração pequena: rapaz de óculos e camisa verde-oliva, de perfil, apontando para um círculo azul-petróleo apoiado em uma mesa de madeira clara junto à parede, com dois vasinhos de planta ao lado.",
             lines: ["This is a", "circle."] },
-          { tag: "THAT", c: "teal", v: "white", id: "w15p6f", alt: "Homem apontando para uma placa quadrada ao longe na praça",
-            ph: "Ilustração pequena: rapaz de camisa verde-oliva, de costas, apontando para frente na praça; ao longe, uma placa quadrada azul-petróleo entre prédios envidraçados e árvores.",
+          { tag: "THAT", c: "teal", v: "white", id: "w15p6f", src: "/lessons/aulas/aula-15/w15p6f.webp", alt: "Rapaz de costas aponta para uma placa quadrada ao longe", w: 213, h: 173, ph: "Ilustração pequena: rapaz de camisa verde-oliva, de costas, apontando para frente na praça; ao longe, uma placa quadrada azul-petróleo entre prédios envidraçados e árvores.",
             lines: ["That is a", "square."] } ] },
         { t: "note", v: "cream", bar: true, bold: true, text: "PERTO + UM = THIS | LONGE + UM = THAT\nPERTO + MAIS DE UM = THESE | LONGE + MAIS DE UM = THOSE" } ] },
 
@@ -2688,23 +2591,17 @@ export const LESSONS = [
         { t: "title", en: "THIS, THAT, THESE OR THOSE?", pt: "Pessoas e objetos do dia a dia." },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "PENSE ASSIM", text: "Primeiro: é um ou mais de um?\nDepois: está perto ou longe?" },
         { t: "steps", items: [
-          { n: "1", tag: "THIS", c: "teal", v: "white", id: "w15p7a", alt: "Rapaz de moletom verde apontando para si mesmo, dentro de casa",
-            ph: "Ilustração: rapaz jovem de cabelo castanho encaracolado e moletom verde-escuro, sorrindo dentro de uma sala clara, apontando com o polegar para o lado do próprio corpo. Ao fundo, um quadro na parede e um vaso com planta.",
+          { n: "1", tag: "THIS", c: "teal", v: "white", id: "w15p7a", src: "/lessons/aulas/aula-15/w15p7a.webp", alt: "Rapaz sorridente aponta o polegar para o próprio peito", w: 392, h: 224, ph: "Ilustração: rapaz jovem de cabelo castanho encaracolado e moletom verde-escuro, sorrindo dentro de uma sala clara, apontando com o polegar para o lado do próprio corpo. Ao fundo, um quadro na parede e um vaso com planta.",
             lines: ["This is my brother."] },
-          { n: "2", tag: "THAT", c: "teal", v: "white", id: "w15p7b", alt: "Rapaz de costas olhando o irmão que acena de longe no parque",
-            ph: "Ilustração: à esquerda, o rapaz de moletom verde visto de costas, olhando para frente. Ao longe, no calçadão de um parque com árvores e prédios ao fundo, o irmão de camiseta clara, jaqueta verde e calça jeans acena com a mão levantada.",
+          { n: "2", tag: "THAT", c: "teal", v: "white", id: "w15p7b", src: "/lessons/aulas/aula-15/w15p7b.webp", alt: "Rapaz de costas enquanto o irmão acena ao longe no parque", w: 401, h: 224, ph: "Ilustração: à esquerda, o rapaz de moletom verde visto de costas, olhando para frente. Ao longe, no calçadão de um parque com árvores e prédios ao fundo, o irmão de camiseta clara, jaqueta verde e calça jeans acena com a mão levantada.",
             lines: ["That is my brother."] },
-          { n: "3", tag: "THIS", c: "teal", v: "white", id: "w15p7c", alt: "Mulher segurando uma maçã vermelha na mão, perto do rosto",
-            ph: "Ilustração: mulher de cabelo castanho ondulado, brincos de argola e camiseta laranja-terracota, sorrindo dentro de um café, segurando uma maçã vermelha brilhante ao lado do rosto. Pequenos traços amarelos de brilho saem da maçã. Ao fundo, plantas e mesas de madeira.",
+          { n: "3", tag: "THIS", c: "teal", v: "white", id: "w15p7c", src: "/lessons/aulas/aula-15/w15p7c.webp", alt: "Mulher sorridente segura uma maçã brilhante perto do rosto", w: 392, h: 202, ph: "Ilustração: mulher de cabelo castanho ondulado, brincos de argola e camiseta laranja-terracota, sorrindo dentro de um café, segurando uma maçã vermelha brilhante ao lado do rosto. Pequenos traços amarelos de brilho saem da maçã. Ao fundo, plantas e mesas de madeira.",
             lines: ["This is an apple."] },
-          { n: "4", tag: "THAT", c: "teal", v: "white", id: "w15p7d", alt: "Mulher de costas apontando para uma maçã sobre uma mesa distante",
-            ph: "Ilustração: a mesma mulher de camiseta laranja-terracota, vista de costas, aponta com o indicador para uma maçã vermelha sozinha sobre uma mesa redonda de madeira do outro lado do café, perto das janelas.",
+          { n: "4", tag: "THAT", c: "teal", v: "white", id: "w15p7d", src: "/lessons/aulas/aula-15/w15p7d.webp", alt: "Mulher de costas aponta para maçã sozinha sobre mesa distante", w: 401, h: 202, ph: "Ilustração: a mesma mulher de camiseta laranja-terracota, vista de costas, aponta com o indicador para uma maçã vermelha sozinha sobre uma mesa redonda de madeira do outro lado do café, perto das janelas.",
             lines: ["That is an apple."] },
-          { n: "5", tag: "THESE", c: "teal", v: "white", id: "w15p7e", alt: "Três maçãs vermelhas em um prato de madeira, bem perto",
-            ph: "Ilustração: três maçãs vermelhas grandes e brilhantes em um prato raso de madeira, sobre uma mesa de madeira, em primeiro plano. Ao fundo, um vaso com planta verde.",
+          { n: "5", tag: "THESE", c: "teal", v: "white", id: "w15p7e", src: "/lessons/aulas/aula-15/w15p7e.webp", alt: "Três maçãs vermelhas grandes em prato de madeira", w: 401, h: 177, ph: "Ilustração: três maçãs vermelhas grandes e brilhantes em um prato raso de madeira, sobre uma mesa de madeira, em primeiro plano. Ao fundo, um vaso com planta verde.",
             lines: ["These are apples."] },
-          { n: "6", tag: "THOSE", c: "teal", v: "white", id: "w15p7f", alt: "Caixote de maçãs sobre uma mesa ao longe no café",
-            ph: "Ilustração: caixote de madeira cheio de maçãs vermelhas sobre uma mesa redonda de madeira, mais ao fundo do café, junto às janelas. À esquerda, um vaso com planta verde.",
+          { n: "6", tag: "THOSE", c: "teal", v: "white", id: "w15p7f", src: "/lessons/aulas/aula-15/w15p7f.webp", alt: "Caixote de madeira cheio de maçãs vermelhas ao fundo do café", w: 401, h: 177, ph: "Ilustração: caixote de madeira cheio de maçãs vermelhas sobre uma mesa redonda de madeira, mais ao fundo do café, junto às janelas. À esquerda, um vaso com planta verde.",
             lines: ["Those are apples."] } ] },
         { t: "note", v: "cream", bar: true, bold: true, text: "SINGULAR: this / that  •  PLURAL: these / those" } ] },
 
@@ -2714,17 +2611,13 @@ export const LESSONS = [
         { t: "title", en: "ASKING QUESTIONS", pt: "Is this...? Are those...?" },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "ESTRUTURA", text: "SINGULAR: Is this/that + noun? → Yes, it is.\nPLURAL: Are these/those + noun? → Yes, they are." },
         { t: "steps", items: [
-          { n: "1", tag: "Is this a clock?", c: "teal", v: "white", id: "w15p8a", alt: "Mulher apontando para um relógio em cima da mesa ao lado dela",
-            ph: "Ilustração: mulher de cabelo castanho comprido, brincos de argola e camiseta laranja-terracota, sorrindo e apontando com o indicador para um relógio redondo de mesa, de moldura preta e ponteiros pretos, sobre uma mesinha de madeira. Ao lado, um vaso branco com planta verde.",
+          { n: "1", tag: "Is this a clock?", c: "teal", v: "white", id: "w15p8a", src: "/lessons/aulas/aula-15/w15p8a.webp", alt: "Mulher aponta para relógio redondo sobre mesinha de madeira", w: 398, h: 218, ph: "Ilustração: mulher de cabelo castanho comprido, brincos de argola e camiseta laranja-terracota, sorrindo e apontando com o indicador para um relógio redondo de mesa, de moldura preta e ponteiros pretos, sobre uma mesinha de madeira. Ao lado, um vaso branco com planta verde.",
             lines: ["Yes, it is."] },
-          { n: "2", tag: "Is that a clock?", c: "teal", v: "white", id: "w15p8b", alt: "Homem apontando para um relógio pendurado na parede ao longe",
-            ph: "Ilustração: rapaz de óculos e camisa verde-oliva sobre camiseta branca, de perfil, com o braço esticado apontando para um relógio redondo de parede, de moldura preta, pendurado na parede à direita. Abaixo, um aparador de madeira com livros e um vaso com planta.",
+          { n: "2", tag: "Is that a clock?", c: "teal", v: "white", id: "w15p8b", src: "/lessons/aulas/aula-15/w15p8b.webp", alt: "Rapaz aponta para relógio redondo pendurado na parede", w: 404, h: 220, ph: "Ilustração: rapaz de óculos e camisa verde-oliva sobre camiseta branca, de perfil, com o braço esticado apontando para um relógio redondo de parede, de moldura preta, pendurado na parede à direita. Abaixo, um aparador de madeira com livros e um vaso com planta.",
             lines: ["Yes, it is."] },
-          { n: "3", tag: "Are these old cars?", c: "teal", v: "white", id: "w15p8c", alt: "Mulher apontando para dois carros antigos estacionados ao lado dela",
-            ph: "Ilustração: mulher de coque, blusa branca e bolsa marrom a tiracolo, de perfil, apontando para dois carros antigos estacionados bem à frente dela: um azul-petróleo e um vermelho-escuro, com para-choques cromados. Ao fundo, prédios da cidade e árvores.",
+          { n: "3", tag: "Are these old cars?", c: "teal", v: "white", id: "w15p8c", src: "/lessons/aulas/aula-15/w15p8c.webp", alt: "Mulher aponta para dois carros antigos estacionados perto", w: 397, h: 189, ph: "Ilustração: mulher de coque, blusa branca e bolsa marrom a tiracolo, de perfil, apontando para dois carros antigos estacionados bem à frente dela: um azul-petróleo e um vermelho-escuro, com para-choques cromados. Ao fundo, prédios da cidade e árvores.",
             lines: ["Yes, they are."] },
-          { n: "4", tag: "Are those old cars?", c: "teal", v: "white", id: "w15p8d", alt: "Homem de costas apontando para dois carros antigos ao longe",
-            ph: "Ilustração: rapaz de óculos e camisa verde-oliva, visto de costas, apontando para frente em um estacionamento. Ao longe, dois carros antigos (um verde e um bege) estacionados lado a lado, com prédios e árvores ao fundo.",
+          { n: "4", tag: "Are those old cars?", c: "teal", v: "white", id: "w15p8d", src: "/lessons/aulas/aula-15/w15p8d.webp", alt: "Rapaz de costas aponta para dois carros antigos ao longe", w: 407, h: 189, ph: "Ilustração: rapaz de óculos e camisa verde-oliva, visto de costas, apontando para frente em um estacionamento. Ao longe, dois carros antigos (um verde e um bege) estacionados lado a lado, com prédios e árvores ao fundo.",
             lines: ["Yes, they are."] } ] },
         { t: "key", v: "navy", text: "IS + singular  •  ARE + plural" },
         { t: "note", v: "gray", center: true, text: "resposta curta: it / they" } ] },
@@ -2734,8 +2627,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 15", page: "PÁGINA 09" },
         { t: "title", en: "LET’S TALK!", pt: "Near or far?" },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "VAMOS CONVERSAR", text: "Use this, that, these e those\nem uma situação real." },
-        { t: "image", id: "w15p9a", alt: "Ana e Daniel conversando à mesa de um café com cadernos, canetas e livros",
-          ph: "Ilustração: Ana, de cabelo castanho comprido, brincos de argola e camiseta laranja-terracota, sentada à esquerda de uma mesa redonda de madeira, sorri e aponta com o indicador para os objetos da mesa. À direita, Daniel, de óculos, barba curta e camisa verde-oliva sobre camiseta branca, escreve em um caderno com uma caneta e sorri para ela. Sobre a mesa: um caderno espiral cinza fechado, um estojo azul-marinho, três canetas (verde, vermelha e azul) e uma pilha de livros verde, vermelho e azul. Ao lado da cadeira de Daniel, uma mochila azul-marinho. Ao fundo, o salão do café com luminárias pendentes, plantas, janelas grandes e outros clientes." },
+        { t: "image", id: "w15p9a", src: "/lessons/aulas/aula-15/w15p9a.webp", alt: "Ana e Daniel conversam à mesa com cadernos, canetas e livros", w: 488, h: 615, ph: "Ilustração: Ana, de cabelo castanho comprido, brincos de argola e camiseta laranja-terracota, sentada à esquerda de uma mesa redonda de madeira, sorri e aponta com o indicador para os objetos da mesa. À direita, Daniel, de óculos, barba curta e camisa verde-oliva sobre camiseta branca, escreve em um caderno com uma caneta e sorri para ela. Sobre a mesa: um caderno espiral cinza fechado, um estojo azul-marinho, três canetas (verde, vermelha e azul) e uma pilha de livros verde, vermelho e azul. Ao lado da cadeira de Daniel, uma mochila azul-marinho. Ao fundo, o salão do café com luminárias pendentes, plantas, janelas grandes e outros clientes." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Is this your notebook?" },
           { s: "b", text: "Daniel: Yes, it is." },
@@ -2775,8 +2667,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 16" },
         { t: "title", en: "HOUSE AND FURNITURE", pt: "Explore rooms, furniture and objects around the house." },
         { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Você já sabe dizer o nome de\nalguns cômodos e móveis em inglês?" },
-        { t: "image", id: "w16p1a", alt: "Casa moderna em corte, mostrando todos os cômodos por dentro.",
-          ph: "Foto: casa moderna de dois andares vista em corte, como uma casa de bonecas, com a fachada aberta. No andar de cima, da esquerda para a direita: escritório de parede verde-oliva com escrivaninha de madeira, cadeira preta e estantes de livros; quarto bege com cama de casal de roupa de cama verde, abajur e planta; banheiro de porcelanato claro com box de vidro, chuveiro preto, espelho redondo e pia com bancada. No andar de baixo: sala de estar com sofá cinza-claro em L, TV grande sobre rack de madeira, mesa de centro e janelão; cozinha verde-escura com ilha, dois banquinhos de madeira, coifa, fogão e geladeira inox; e, à direita, uma pequena lavanderia com máquina de lavar. Do lado de fora, jardim com grama, arbustos, flores roxas, árvores, caminho de pedra e varanda com mesa e cadeiras verdes." },
+        { t: "image", id: "w16p1a", src: "/lessons/aulas/aula-16/w16p1a.webp", alt: "Casa de dois andares em corte com quarto, escritório, banheiro, sala e cozinha", w: 876, h: 446, ph: "Foto: casa moderna de dois andares vista em corte, como uma casa de bonecas, com a fachada aberta. No andar de cima, da esquerda para a direita: escritório de parede verde-oliva com escrivaninha de madeira, cadeira preta e estantes de livros; quarto bege com cama de casal de roupa de cama verde, abajur e planta; banheiro de porcelanato claro com box de vidro, chuveiro preto, espelho redondo e pia com bancada. No andar de baixo: sala de estar com sofá cinza-claro em L, TV grande sobre rack de madeira, mesa de centro e janelão; cozinha verde-escura com ilha, dois banquinhos de madeira, coifa, fogão e geladeira inox; e, à direita, uma pequena lavanderia com máquina de lavar. Do lado de fora, jardim com grama, arbustos, flores roxas, árvores, caminho de pedra e varanda com mesa e cadeiras verdes." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
           { title: "This is a house.", body: "Esta é uma casa.", v: "mint", c: "teal" },
@@ -2789,8 +2680,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 02" },
         { t: "title", en: "THE HOUSE & GARDEN", pt: "Primeiro, vamos reconhecer a casa e a área externa." },
-        { t: "image", id: "w16p2a", alt: "Fachada de uma casa moderna com jardim florido, com as etiquetas house e garden.",
-          ph: "Foto: fachada de uma casa moderna de dois andares em dia de céu azul com nuvens. Paredes de concreto claro e ripado de madeira, janelões escuros, sacada com guarda-corpo de vidro e vasos de plantas, porta de entrada alta de madeira. À frente, gramado verde cortado por um caminho de placas retangulares de concreto, canteiros com flores roxas, rosas e brancas, arbustos e árvores dos dois lados. Duas etiquetas brancas com fio e bolinha: “house”, apontando para a parte de cima da casa, e “garden”, apontando para o canteiro de flores à direita." },
+        { t: "image", id: "w16p2a", src: "/lessons/aulas/aula-16/w16p2a.webp", alt: "Fachada de casa moderna com etiquetas house e garden apontando a casa e o jardim", w: 887, h: 697, ph: "Foto: fachada de uma casa moderna de dois andares em dia de céu azul com nuvens. Paredes de concreto claro e ripado de madeira, janelões escuros, sacada com guarda-corpo de vidro e vasos de plantas, porta de entrada alta de madeira. À frente, gramado verde cortado por um caminho de placas retangulares de concreto, canteiros com flores roxas, rosas e brancas, arbustos e árvores dos dois lados. Duas etiquetas brancas com fio e bolinha: “house”, apontando para a parte de cima da casa, e “garden”, apontando para o canteiro de flores à direita." },
         { t: "note", v: "lilac", bar: true, bold: true, kicker: "LOOK AND SAY", text: "What’s this? It’s a house.\nWhat’s that? It’s the garden." },
         { t: "sec", text: "PALAVRAS-CHAVE", c: "purple" },
         { t: "rows", items: [
@@ -2801,8 +2691,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 03" },
         { t: "title", en: "THE LIVING ROOM", pt: "Aprenda palavras úteis para falar da sala de estar." },
-        { t: "image", id: "w16p3a", alt: "Sala de estar com sofá, mesa de centro, poltrona e janela, com etiquetas em inglês.",
-          ph: "Foto: sala de estar moderna com parede verde-oliva à esquerda, TV grande de tela plana presa na parede, soundbar e rack de madeira ripada com livros e revistas embaixo. Estante embutida iluminada com livros, vasos e porta-retratos. No centro, sofá bege de três lugares com almofadas verde, laranja e estampada; à frente, mesa de centro retangular de madeira com estrutura preta, com vasinho de planta, livros empilhados, xícara e cesto na prateleira de baixo. À direita, janelão do chão ao teto com cortinas bege e árvores lá fora, mesa lateral redonda preta com vasinhos, poltrona verde-oliva de estrutura preta com almofada cinza-escura e plantas grandes em vasos. Tapete claro sobre piso de madeira e quadros abstratos nas paredes. Seis etiquetas brancas apontam para: “living room”, “window”, “sofa / couch”, “side table”, “coffee table” e “chair”." },
+        { t: "image", id: "w16p3a", src: "/lessons/aulas/aula-16/w16p3a.webp", alt: "Sala de estar com sofá, mesa de centro e poltrona com etiquetas nomeando os móveis", w: 934, h: 731, ph: "Foto: sala de estar moderna com parede verde-oliva à esquerda, TV grande de tela plana presa na parede, soundbar e rack de madeira ripada com livros e revistas embaixo. Estante embutida iluminada com livros, vasos e porta-retratos. No centro, sofá bege de três lugares com almofadas verde, laranja e estampada; à frente, mesa de centro retangular de madeira com estrutura preta, com vasinho de planta, livros empilhados, xícara e cesto na prateleira de baixo. À direita, janelão do chão ao teto com cortinas bege e árvores lá fora, mesa lateral redonda preta com vasinhos, poltrona verde-oliva de estrutura preta com almofada cinza-escura e plantas grandes em vasos. Tapete claro sobre piso de madeira e quadros abstratos nas paredes. Seis etiquetas brancas apontam para: “living room”, “window”, “sofa / couch”, “side table”, “coffee table” e “chair”." },
         { t: "note", v: "lilac", kicker: "VOCAB TIP", text: "Sofa and couch are both correct." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
@@ -2814,8 +2703,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 04" },
         { t: "title", en: "THE KITCHEN", pt: "Conheça os principais itens da cozinha em inglês." },
-        { t: "image", id: "w16p4a", alt: "Cozinha moderna com ilha, geladeira e armários, com etiquetas em inglês.",
-          ph: "Foto: cozinha moderna com armários superiores verde-escuros e armários inferiores de madeira clara, bancada branca e revestimento de azulejos brancos. Ao centro, coifa inox embutida em capa escura, fogão com panela preta, tábua de madeira e potes com utensílios. Duas luminárias pendentes pretas em forma de cúpula. À esquerda, janela com plantas, cuba com torneira preta e lava-louças inox embutido sob a bancada. À direita, geladeira inox de duas portas com dispenser de água e uma planta grande em vaso preto. No meio da cozinha, ilha escura com tampo de pedra clara, fruteira com limões e dois banquinhos altos de assento de madeira e pés pretos. Piso de madeira clara. Cinco etiquetas brancas apontam para: “kitchen”, “cooker hood”, “cabinets”, “refrigerator” e “dishwasher”." },
+        { t: "image", id: "w16p4a", src: "/lessons/aulas/aula-16/w16p4a.webp", alt: "Cozinha moderna com ilha, geladeira e armários com etiquetas em inglês", w: 869, h: 611, ph: "Foto: cozinha moderna com armários superiores verde-escuros e armários inferiores de madeira clara, bancada branca e revestimento de azulejos brancos. Ao centro, coifa inox embutida em capa escura, fogão com panela preta, tábua de madeira e potes com utensílios. Duas luminárias pendentes pretas em forma de cúpula. À esquerda, janela com plantas, cuba com torneira preta e lava-louças inox embutido sob a bancada. À direita, geladeira inox de duas portas com dispenser de água e uma planta grande em vaso preto. No meio da cozinha, ilha escura com tampo de pedra clara, fruteira com limões e dois banquinhos altos de assento de madeira e pés pretos. Piso de madeira clara. Cinco etiquetas brancas apontam para: “kitchen”, “cooker hood”, “cabinets”, “refrigerator” e “dishwasher”." },
         { t: "note", v: "lilac", kicker: "LOOK CLOSELY", text: "Leia os rótulos e aponte\ncada objeto na imagem." },
         { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
@@ -2828,15 +2716,13 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 05" },
         { t: "title", en: "BEDROOM & STUDY AREA", pt: "Agora vamos observar o quarto e a área de estudo." },
-        { t: "image", id: "w16p5a", alt: "Quarto com cama e, ao lado, área de estudo com escrivaninha e computador.",
-          ph: "Foto: ambiente dividido em dois. À esquerda, o quarto: parede azul-petróleo, cama de casal com cabeceira de madeira, roupa de cama verde e almofadas verdes e brancas, dois quadros abstratos em tons de azul e amarelo, criado-mudo de madeira com abajur preto, janela com cortina clara, planta em vaso e tapete claro sobre piso de madeira. No meio, uma estante alta de madeira e azul-escuro com livros, vasos e plantas pendentes. À direita, a área de estudo: prateleiras de madeira suspensas com livros, vasos e plantas, bancada de madeira com monitor preto, teclado, mouse, luminária de mesa preta e vasinhos, gavetas azul-escuras embaixo e cadeira de escritório preta com rodinhas. Quatro etiquetas brancas apontam para: “bedroom”, “bed”, “desk” e “computer”." },
+        { t: "image", id: "w16p5a", src: "/lessons/aulas/aula-16/w16p5a.webp", alt: "Quarto e área de estudo com cama, escrivaninha e computador com etiquetas em inglês", w: 881, h: 577, ph: "Foto: ambiente dividido em dois. À esquerda, o quarto: parede azul-petróleo, cama de casal com cabeceira de madeira, roupa de cama verde e almofadas verdes e brancas, dois quadros abstratos em tons de azul e amarelo, criado-mudo de madeira com abajur preto, janela com cortina clara, planta em vaso e tapete claro sobre piso de madeira. No meio, uma estante alta de madeira e azul-escuro com livros, vasos e plantas pendentes. À direita, a área de estudo: prateleiras de madeira suspensas com livros, vasos e plantas, bancada de madeira com monitor preto, teclado, mouse, luminária de mesa preta e vasinhos, gavetas azul-escuras embaixo e cadeira de escritório preta com rodinhas. Quatro etiquetas brancas apontam para: “bedroom”, “bed”, “desk” e “computer”." },
         { t: "sec", text: "PRACTICE", c: "purple" },
         { t: "grid", cols: 3, items: [
           { title: "This is the bed.", body: "Esta é a cama.", v: "mint", c: "teal" },
           { title: "That is the desk.", body: "Aquela é a mesa de estudos.", v: "lilac", c: "purple" },
           { title: "It’s a computer.", body: "É um computador.", v: "cream", c: "yellow" } ] },
-        { t: "image", id: "w16p5b", alt: "Duas pessoas conversando, com balões de fala.",
-          ph: "Ilustração: uma mulher de pele morena, cabelo cacheado preso, brincos de argola dourados e blusa amarela conversa com um homem de cabelo cacheado escuro e barba, de camisa azul-petróleo aberta sobre camiseta branca. Ela fala com a mão aberta à frente. Entre os dois, um balão roxo com um ponto de interrogação e um balão azul-turquesa com reticências." },
+        { t: "image", id: "w16p5b", src: "/lessons/aulas/aula-16/w16p5b.webp", alt: "Mulher pergunta algo a homem de camisa azul entre balões roxo e turquesa de diálogo", w: 391, h: 183, ph: "Ilustração: uma mulher de pele morena, cabelo cacheado preso, brincos de argola dourados e blusa amarela conversa com um homem de cabelo cacheado escuro e barba, de camisa azul-petróleo aberta sobre camiseta branca. Ela fala com a mão aberta à frente. Entre os dois, um balão roxo com um ponto de interrogação e um balão azul-turquesa com reticências." },
         { t: "dialogue", items: [
           { s: "a", text: "What’s this?" },
           { s: "b", text: "It’s a desk." } ] },
@@ -2845,8 +2731,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 06" },
         { t: "title", en: "THE BATHROOM", pt: "Veja como nomear itens básicos do banheiro." },
-        { t: "image", id: "w16p6a", alt: "Banheiro com box de vidro, vaso sanitário e pia, com etiquetas em inglês.",
-          ph: "Foto: banheiro moderno revestido de porcelanato cinza. À esquerda, box de vidro com porta de correr e perfis pretos, ducha de teto redonda, nicho na parede com plantinha e frascos, e uma toalha azul pendurada em um gancho preto do lado de fora. No centro, vaso sanitário branco suspenso com papel higiênico na parede e um quadro abstrato em tons de azul acima, ao lado de uma planta em vaso. À direita, gabinete de madeira escura com duas gavetas, bancada branca com cuba integrada, torneira preta alta, saboneteira âmbar, planta pequena, espelho redondo grande com moldura preta e luz por trás, e uma luminária pendente preta. No chão, tapete cinza-escuro. Quatro etiquetas brancas apontam para: “shower”, “sink”, “toilet” e “bathroom”." },
+        { t: "image", id: "w16p6a", src: "/lessons/aulas/aula-16/w16p6a.webp", alt: "Banheiro moderno com box, vaso sanitário e pia com etiquetas em inglês", w: 882, h: 715, ph: "Foto: banheiro moderno revestido de porcelanato cinza. À esquerda, box de vidro com porta de correr e perfis pretos, ducha de teto redonda, nicho na parede com plantinha e frascos, e uma toalha azul pendurada em um gancho preto do lado de fora. No centro, vaso sanitário branco suspenso com papel higiênico na parede e um quadro abstrato em tons de azul acima, ao lado de uma planta em vaso. À direita, gabinete de madeira escura com duas gavetas, bancada branca com cuba integrada, torneira preta alta, saboneteira âmbar, planta pequena, espelho redondo grande com moldura preta e luz por trás, e uma luminária pendente preta. No chão, tapete cinza-escuro. Quatro etiquetas brancas apontam para: “shower”, “sink”, “toilet” e “bathroom”." },
         { t: "note", v: "white", bar: true, kicker: "LOOK AND SAY", text: "This is the sink.\nThat is the shower.\nThis is the toilet." },
         { t: "sec", text: "VOCABULARY SUPPORT", c: "purple" },
         { t: "rows", items: [
@@ -2861,16 +2746,14 @@ export const LESSONS = [
         { t: "title", en: "YOUR TURN!", pt: "Agora é a sua vez de praticar o vocabulário da aula." },
         { t: "sec", text: "1 · MATCH THE ROOM", c: "purple" },
         { t: "lead", text: "Faça as combinações corretas." },
-        { t: "image", id: "w16p7a", alt: "Dez miniaturas em duas colunas, com móveis à esquerda e cômodos à direita.",
-          ph: "Foto: dez miniaturas em cartões brancos, organizadas em duas colunas ligadas por bolinhas roxas, com uma seta roxa da primeira linha da esquerda para a primeira da direita. Coluna da esquerda, de cima para baixo: sofá bege de três lugares com almofada verde, ao lado da palavra “sofa”; geladeira inox de duas portas, “refrigerator”; cama de madeira com roupa de cama verde e dois criados-mudos, “bed”; box de banheiro de vidro com ducha preta, “shower”; escrivaninha de madeira com notebook, cadeira de escritório preta e uma plantinha, “desk”. Coluna da direita, de cima para baixo: foto de uma sala de estar com sofá e quadros, “living room”; cozinha verde-escura com ilha e banquinhos, “kitchen”; quarto com cama de roupa de cama verde e abajur, “bedroom”; banheiro com box de vidro, espelho redondo e gabinete de madeira, “bathroom”; área de estudo com estante, escrivaninha e cadeira preta, “study area”." },
+        { t: "image", id: "w16p7a", src: "/lessons/aulas/aula-16/w16p7a.webp", alt: "Dez cartões ligando móveis como sofá e cama aos cômodos correspondentes da casa", w: 890, h: 577, ph: "Foto: dez miniaturas em cartões brancos, organizadas em duas colunas ligadas por bolinhas roxas, com uma seta roxa da primeira linha da esquerda para a primeira da direita. Coluna da esquerda, de cima para baixo: sofá bege de três lugares com almofada verde, ao lado da palavra “sofa”; geladeira inox de duas portas, “refrigerator”; cama de madeira com roupa de cama verde e dois criados-mudos, “bed”; box de banheiro de vidro com ducha preta, “shower”; escrivaninha de madeira com notebook, cadeira de escritório preta e uma plantinha, “desk”. Coluna da direita, de cima para baixo: foto de uma sala de estar com sofá e quadros, “living room”; cozinha verde-escura com ilha e banquinhos, “kitchen”; quarto com cama de roupa de cama verde e abajur, “bedroom”; banheiro com box de vidro, espelho redondo e gabinete de madeira, “bathroom”; área de estudo com estante, escrivaninha e cadeira preta, “study area”." },
         { t: "match", id: "w16match1", title: "MATCH THE ROOM",
           left: ["sofa", "refrigerator", "bed", "shower", "desk"],
           right: ["living room", "kitchen", "bedroom", "bathroom", "study area"],
           answer: [0, 1, 2, 3, 4] },
         { t: "sec", text: "2 · NAME IT!", c: "purple" },
         { t: "lead", text: "Observe as imagens e responda em inglês." },
-        { t: "image", id: "w16p7b", alt: "Quatro fotos de objetos da casa: poltrona, luminária, almofadas e cadeiras.",
-          ph: "Foto: quatro cartões brancos lado a lado, cada um com um objeto recortado em fundo branco. 1) Poltrona verde-escura de encosto alto com pés de madeira. 2) Luminária pendente preta em forma de cúpula, com o interior dourado. 3) Duas almofadas quadradas encostadas, uma bege-clara atrás e uma verde-escura à frente. 4) Duas cadeiras de madeira com assento claro, uma ao lado da outra." },
+        { t: "image", id: "w16p7b", src: "/lessons/aulas/aula-16/w16p7b.webp", alt: "Quatro cartões com poltrona verde, luminária preta, almofadas e cadeiras de madeira", w: 890, h: 136, ph: "Foto: quatro cartões brancos lado a lado, cada um com um objeto recortado em fundo branco. 1) Poltrona verde-escura de encosto alto com pés de madeira. 2) Luminária pendente preta em forma de cúpula, com o interior dourado. 3) Duas almofadas quadradas encostadas, uma bege-clara atrás e uma verde-escura à frente. 4) Duas cadeiras de madeira com assento claro, uma ao lado da outra." },
         { t: "free", id: "w16f1", cols: 2, items: [
           { n: "1", kicker: "POLTRONA VERDE", prefix: "What’s this?", ideas: "", v: "mint", c: "teal" },
           { n: "2", kicker: "LUMINÁRIA PENDENTE", prefix: "What’s that?", ideas: "", v: "lilac", c: "purple" },
@@ -2881,8 +2764,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 16", page: "PÁGINA 08" },
         { t: "title", en: "LET’S TALK!", pt: "Use o vocabulário da casa em uma conversa simples." },
-        { t: "image", id: "w16p8a", alt: "Ana e Daniel conversando na sala de um apartamento moderno.",
-          ph: "Ilustração: Ana, mulher de cabelo escuro comprido, camisa creme aberta sobre blusa branca, calça jeans e bolsa marrom a tiracolo, conversa gesticulando com Daniel, homem de cabelo castanho cacheado e barba, camisa verde aberta sobre camiseta branca e calça preta, que aponta com a mão direita. Ao fundo, um apartamento moderno de planta aberta: à esquerda, porta de vidro para a varanda com prédios da cidade; no centro, sofá bege com almofadas verdes, mesa de centro redonda escura com livros e planta e tapete claro; à direita, mesa de jantar de madeira com cadeiras verdes e a cozinha com armários verde-escuros, ilha com banquinhos, três luminárias pendentes douradas e geladeira inox. Plantas em vasos e um quadro abstrato na parede." },
+        { t: "image", id: "w16p8a", src: "/lessons/aulas/aula-16/w16p8a.webp", alt: "Ana e Daniel conversam na sala de estar com a cozinha ao fundo", w: 880, h: 422, ph: "Ilustração: Ana, mulher de cabelo escuro comprido, camisa creme aberta sobre blusa branca, calça jeans e bolsa marrom a tiracolo, conversa gesticulando com Daniel, homem de cabelo castanho cacheado e barba, camisa verde aberta sobre camiseta branca e calça preta, que aponta com a mão direita. Ao fundo, um apartamento moderno de planta aberta: à esquerda, porta de vidro para a varanda com prédios da cidade; no centro, sofá bege com almofadas verdes, mesa de centro redonda escura com livros e planta e tapete claro; à direita, mesa de jantar de madeira com cadeiras verdes e a cozinha com armários verde-escuros, ilha com banquinhos, três luminárias pendentes douradas e geladeira inox. Plantas em vasos e um quadro abstrato na parede." },
         { t: "dialogue", items: [
           { s: "a", text: "Ana: Is this the living room?" },
           { s: "b", text: "Daniel: Yes, it is." },
@@ -2927,7 +2809,7 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 17" },
           { t: "title", en: "THERE IS / THERE ARE", pt: "What is there? Falando sobre o que existe em um lugar." },
-          { t: "image", id: "w17p1", alt: "Sala de estar com sofá verde, poltronas e estante de livros", ph: "Foto: sala de estar ampla e iluminada. No centro, um sofá de três lugares em tecido verde-petróleo com uma almofada bege e outra laranja. À esquerda, uma poltrona bege com almofada azul-marinho e, atrás dela, uma estante alta de prateleiras de madeira com estrutura de metal preto, cheia de livros, vasinhos e objetos de cerâmica, com uma luminária articulada preta presa a uma das prateleiras. À direita, uma poltrona azul e uma planta grande de folhas largas em vaso branco, junto a uma janela de esquadria preta com árvores lá fora. Ao centro, uma mesa de centro de madeira com livros empilhados, uma plantinha em vaso branco e uma caneca azul-marinho, sobre um tapete claro. Na parede do fundo, um quadro abstrato em azul, bege e laranja, e uma luminária pendente preta de cúpula arredondada." },
+          { t: "image", id: "w17p1", src: "/lessons/aulas/aula-17/w17p1.webp", alt: "Sala de estar clara com sofá verde-petróleo, poltronas e estante de livros", w: 864, h: 442, ph: "Foto: sala de estar ampla e iluminada. No centro, um sofá de três lugares em tecido verde-petróleo com uma almofada bege e outra laranja. À esquerda, uma poltrona bege com almofada azul-marinho e, atrás dela, uma estante alta de prateleiras de madeira com estrutura de metal preto, cheia de livros, vasinhos e objetos de cerâmica, com uma luminária articulada preta presa a uma das prateleiras. À direita, uma poltrona azul e uma planta grande de folhas largas em vaso branco, junto a uma janela de esquadria preta com árvores lá fora. Ao centro, uma mesa de centro de madeira com livros empilhados, uma plantinha em vaso branco e uma caneca azul-marinho, sobre um tapete claro. Na parede do fundo, um quadro abstrato em azul, bege e laranja, e uma luminária pendente preta de cúpula arredondada." },
           { t: "note", v: "lilac", bar: true, bold: true, kicker: "A IDEIA PRINCIPAL", text: "Usamos THERE IS / THERE ARE para dizer que algo existe ou está presente em um lugar." },
           { t: "cards", cols: 2, items: [
             { tag: "ONE · singular", c: "green", v: "mint", lines: ["THERE IS", "There is a sofa."] },
@@ -2942,10 +2824,10 @@ export const LESSONS = [
           { t: "title", en: "THERE IS: ONE THING", pt: "Afirmativa no singular." },
           { t: "note", v: "lilac", bar: true, bold: true, kicker: "ESTRUTURA", text: "THERE IS + A/AN + SINGULAR NOUN" },
           { t: "cards", cols: 1, items: [
-            { tag: "PENCIL", c: "teal", v: "mint", id: "w17p2a", alt: "Lápis amarelo apontado", ph: "Ilustração: lápis amarelo apontado, inclinado na diagonal, com ponta de grafite escura e borracha rosa presa por um anel metálico na outra extremidade, dentro de um círculo branco.", lines: ["There is a pencil on this table."] },
-            { tag: "SOFA", c: "teal", v: "mint", id: "w17p2b", alt: "Sofá verde-petróleo de dois lugares", ph: "Ilustração: sofá de dois lugares em tecido verde-petróleo, visto de frente, com duas almofadas de encosto, braços arredondados e pés curtos de madeira, dentro de um círculo branco.", lines: ["There is a sofa in the living room."] },
-            { tag: "BED", c: "teal", v: "mint", id: "w17p2c", alt: "Cama de casal com cabeceira de madeira", ph: "Ilustração: cama de casal vista de lado, com cabeceira e pés de madeira escura, colchão branco, colcha verde-petróleo dobrada sobre os pés e dois travesseiros azul-claros, dentro de um círculo branco.", lines: ["There is a bed in the bedroom."] },
-            { tag: "ERASER", c: "teal", v: "mint", id: "w17p2d", alt: "Borracha escolar rosa e azul", ph: "Ilustração: borracha escolar retangular vista de lado e levemente inclinada, com a parte de baixo rosa e a de cima azul, dentro de um círculo branco.", lines: ["There is an eraser on this table."] } ] },
+            { tag: "PENCIL", c: "teal", v: "mint", id: "w17p2a", src: "/lessons/aulas/aula-17/w17p2a.webp", alt: "Lápis amarelo apontado com borracha rosa presa por anel metálico", w: 50, h: 50, ph: "Ilustração: lápis amarelo apontado, inclinado na diagonal, com ponta de grafite escura e borracha rosa presa por um anel metálico na outra extremidade, dentro de um círculo branco.", lines: ["There is a pencil on this table."] },
+            { tag: "SOFA", c: "teal", v: "mint", id: "w17p2b", src: "/lessons/aulas/aula-17/w17p2b.webp", alt: "Sofá de dois lugares em tecido verde-petróleo com pés de madeira", w: 101, h: 51, ph: "Ilustração: sofá de dois lugares em tecido verde-petróleo, visto de frente, com duas almofadas de encosto, braços arredondados e pés curtos de madeira, dentro de um círculo branco.", lines: ["There is a sofa in the living room."] },
+            { tag: "BED", c: "teal", v: "mint", id: "w17p2c", src: "/lessons/aulas/aula-17/w17p2c.webp", alt: "Cama de casal com cabeceira de madeira escura e colcha verde-petróleo", w: 105, h: 73, ph: "Ilustração: cama de casal vista de lado, com cabeceira e pés de madeira escura, colchão branco, colcha verde-petróleo dobrada sobre os pés e dois travesseiros azul-claros, dentro de um círculo branco.", lines: ["There is a bed in the bedroom."] },
+            { tag: "ERASER", c: "teal", v: "mint", id: "w17p2d", src: "/lessons/aulas/aula-17/w17p2d.webp", alt: "Borracha escolar retangular rosa e azul vista de lado", w: 77, h: 65, ph: "Ilustração: borracha escolar retangular vista de lado e levemente inclinada, com a parte de baixo rosa e a de cima azul, dentro de um círculo branco.", lines: ["There is an eraser on this table."] } ] },
           { t: "note", v: "cream", bar: true, kicker: "LEMBRE-SE", text: "Use a antes de som consonantal: a sofa, a bed.\nUse an antes de som vocálico: an eraser." },
           { t: "key", v: "cream", text: "ONE → THERE IS" },
           { t: "note", v: "blue", bar: true, kicker: "FALE EM VOZ ALTA", text: "Repita os quatro exemplos antes de seguir." } ] },
@@ -2955,10 +2837,10 @@ export const LESSONS = [
           { t: "title", en: "THERE ISN’T: ONE THING", pt: "Negativa no singular." },
           { t: "note", v: "lilac", bar: true, bold: true, kicker: "ESTRUTURA", text: "THERE ISN’T + A/AN + SINGULAR NOUN" },
           { t: "cards", cols: 1, items: [
-            { tag: "EXEMPLO 1", c: "red", v: "gray", id: "w17p3a", alt: "Mesa redonda de madeira com um vaso de planta", ph: "Foto: mesa redonda de madeira clara com um vaso branco de plantinha verde no centro do tampo, vista de cima e de lado. Ao lado direito, uma cadeira estofada verde-petróleo com pés de madeira. A mesa está sobre um tapete claro, com a parede branca ao fundo. Não há nenhum livro sobre a mesa.", lines: ["There isn’t a book on this table."] },
-            { tag: "EXEMPLO 2", c: "red", v: "gray", id: "w17p3b", alt: "Banheiro com box de vidro, pia e espelho redondo", ph: "Foto: banheiro com paredes de azulejo verde-água. À esquerda, um box de vidro com chuveiro de teto. À direita, uma bancada estreita de madeira com pia branca de louça, um sabonete líquido e uma plantinha, espelho redondo de moldura fina dourada na parede e uma toalha verde-clara pendurada na lateral da bancada. No chão, ladrilho estampado em azul-escuro e branco.", lines: ["There isn’t a bed in the bathroom."] },
-            { tag: "EXEMPLO 3", c: "red", v: "gray", id: "w17p3c", alt: "Sala com sofá verde e planta em vaso", ph: "Foto: sala de estar com um sofá de três lugares em tecido verde-petróleo, com almofadas bege e laranja. À frente, uma mesa de centro redonda de madeira com livros empilhados, uma plantinha em vaso branco e uma caneca azul-marinho. À direita, uma planta grande de folhas largas em vaso de fibra. Na parede do fundo, um quadro emoldurado. Não há geladeira nenhuma na sala.", lines: ["There isn’t a refrigerator in the living room."] },
-            { tag: "EXEMPLO 4", c: "red", v: "gray", id: "w17p3d", alt: "Poltrona azul ao lado de uma estante de livros", ph: "Foto: canto de sala com uma poltrona azul-escura de madeira com almofada bege. Ao lado, uma estante baixa de madeira cheia de livros coloridos, com vasinhos de planta e livros empilhados em cima. À esquerda, um abajur de chão preto de haste fina e cúpula arredondada. Parede branca ao fundo e piso de madeira clara. Não há computador nenhum no ambiente.", lines: ["There isn’t a computer in my living room."] } ] },
+            { tag: "EXEMPLO 1", c: "red", v: "gray", id: "w17p3a", src: "/lessons/aulas/aula-17/w17p3a.webp", alt: "Mesa redonda de madeira clara com vaso de planta e cadeira verde-petróleo", w: 327, h: 151, ph: "Foto: mesa redonda de madeira clara com um vaso branco de plantinha verde no centro do tampo, vista de cima e de lado. Ao lado direito, uma cadeira estofada verde-petróleo com pés de madeira. A mesa está sobre um tapete claro, com a parede branca ao fundo. Não há nenhum livro sobre a mesa.", lines: ["There isn’t a book on this table."] },
+            { tag: "EXEMPLO 2", c: "red", v: "gray", id: "w17p3b", src: "/lessons/aulas/aula-17/w17p3b.webp", alt: "Banheiro com azulejo verde-água, box de vidro e bancada de madeira", w: 313, h: 157, ph: "Foto: banheiro com paredes de azulejo verde-água. À esquerda, um box de vidro com chuveiro de teto. À direita, uma bancada estreita de madeira com pia branca de louça, um sabonete líquido e uma plantinha, espelho redondo de moldura fina dourada na parede e uma toalha verde-clara pendurada na lateral da bancada. No chão, ladrilho estampado em azul-escuro e branco.", lines: ["There isn’t a bed in the bathroom."] },
+            { tag: "EXEMPLO 3", c: "red", v: "gray", id: "w17p3c", src: "/lessons/aulas/aula-17/w17p3c.webp", alt: "Sala de estar com sofá verde-petróleo e mesa de centro com livros", w: 326, h: 163, ph: "Foto: sala de estar com um sofá de três lugares em tecido verde-petróleo, com almofadas bege e laranja. À frente, uma mesa de centro redonda de madeira com livros empilhados, uma plantinha em vaso branco e uma caneca azul-marinho. À direita, uma planta grande de folhas largas em vaso de fibra. Na parede do fundo, um quadro emoldurado. Não há geladeira nenhuma na sala.", lines: ["There isn’t a refrigerator in the living room."] },
+            { tag: "EXEMPLO 4", c: "red", v: "gray", id: "w17p3d", src: "/lessons/aulas/aula-17/w17p3d.webp", alt: "Poltrona azul-escura ao lado de estante baixa cheia de livros", w: 304, h: 151, ph: "Foto: canto de sala com uma poltrona azul-escura de madeira com almofada bege. Ao lado, uma estante baixa de madeira cheia de livros coloridos, com vasinhos de planta e livros empilhados em cima. À esquerda, um abajur de chão preto de haste fina e cúpula arredondada. Parede branca ao fundo e piso de madeira clara. Não há computador nenhum no ambiente.", lines: ["There isn’t a computer in my living room."] } ] },
           { t: "sec", text: "COMPARE", c: "yellow" },
           { t: "rows", items: [
             { n: "✓", text: "There is a bed.", c: "green" },
@@ -2982,9 +2864,9 @@ export const LESSONS = [
           { t: "title", en: "THERE ARE: MORE THAN ONE", pt: "Afirmativa no plural." },
           { t: "note", v: "lilac", bar: true, bold: true, kicker: "ESTRUTURA", text: "THERE ARE + SOME + PLURAL NOUN" },
           { t: "cards", cols: 1, items: [
-            { tag: "EXEMPLO 1", c: "teal", v: "blue", id: "w17p5a", alt: "Lava-louças aberto com pratos dentro", ph: "Ilustração: lava-louças de aço prateado com a porta aberta e abaixada, mostrando o cesto cheio de pratos brancos e verde-petróleo em pé. No painel superior, botões e um visor pequeno.", lines: ["There are some plates in the dishwasher."] },
-            { tag: "EXEMPLO 2", c: "teal", v: "blue", id: "w17p5b", alt: "Cadeira estofada azul de encosto alto", ph: "Ilustração: cadeira estofada azul-marinho vista de frente, com encosto alto e acolchoado, braços baixos e arredondados, assento largo e quatro pés finos de madeira escura inclinados para fora.", lines: ["There are some chairs in the dining room."] },
-            { tag: "EXEMPLO 3", c: "teal", v: "blue", id: "w17p5c", alt: "Porta-lápis azul com quatro lápis amarelos", ph: "Ilustração: porta-lápis cilíndrico azul-marinho com quatro lápis amarelos apontados dentro, com as pontas de grafite viradas para cima e borrachas rosa à mostra.", lines: ["There are 4 pencils on this table."] } ] },
+            { tag: "EXEMPLO 1", c: "teal", v: "blue", id: "w17p5a", src: "/lessons/aulas/aula-17/w17p5a.webp", alt: "Lava-louças aberto com cesto cheio de pratos brancos e verde-petróleo", w: 131, h: 105, ph: "Ilustração: lava-louças de aço prateado com a porta aberta e abaixada, mostrando o cesto cheio de pratos brancos e verde-petróleo em pé. No painel superior, botões e um visor pequeno.", lines: ["There are some plates in the dishwasher."] },
+            { tag: "EXEMPLO 2", c: "teal", v: "blue", id: "w17p5b", src: "/lessons/aulas/aula-17/w17p5b.webp", alt: "Cadeira estofada azul-marinho com encosto alto e pés de madeira", w: 125, h: 143, ph: "Ilustração: cadeira estofada azul-marinho vista de frente, com encosto alto e acolchoado, braços baixos e arredondados, assento largo e quatro pés finos de madeira escura inclinados para fora.", lines: ["There are some chairs in the dining room."] },
+            { tag: "EXEMPLO 3", c: "teal", v: "blue", id: "w17p5c", src: "/lessons/aulas/aula-17/w17p5c.webp", alt: "Porta-lápis azul-marinho com quatro lápis amarelos apontados", w: 76, h: 145, ph: "Ilustração: porta-lápis cilíndrico azul-marinho com quatro lápis amarelos apontados dentro, com as pontas de grafite viradas para cima e borrachas rosa à mostra.", lines: ["There are 4 pencils on this table."] } ] },
           { t: "note", v: "cream", bar: true, bold: true, kicker: "ONE × MORE THAN ONE", text: "There is a chair.\nThere are some chairs." },
           { t: "note", v: "cream", text: "Nesta aula, some aparece em frases afirmativas no plural." },
           { t: "note", v: "blue", bar: true, bold: true, kicker: "CHAVE", text: "Plural → THERE ARE." } ] },
@@ -3020,17 +2902,17 @@ export const LESSONS = [
           { t: "badge", label: "AULA 17", page: "PÁGINA 08" },
           { t: "title", en: "A / AN, SOME OR ANY?", pt: "Organizando as escolhas dentro de THERE IS / THERE ARE." },
           { t: "cards", cols: 1, items: [
-            { tag: "SINGULAR · AFFIRMATIVE", c: "teal", v: "mint", id: "w17p8a", alt: "Ícone de poltrona verde", ph: "Ilustração: ícone de poltrona verde-petróleo, vista de frente, com encosto arredondado e braços largos, dentro de um círculo de borda fina verde-petróleo.", lines: ["a/an", "There is a sofa.", "There is an eraser."] },
-            { tag: "PLURAL · AFFIRMATIVE", c: "purple", v: "lilac", id: "w17p8b", alt: "Ícone de duas cadeiras roxas", ph: "Ilustração: ícone roxo de duas cadeiras iguais lado a lado, vistas de frente, com encosto alto e pés retos, dentro de um círculo de borda fina roxa.", lines: ["some", "There are some chairs.", "There are some plates."] },
-            { tag: "PLURAL · NEGATIVE", c: "yellow", v: "cream", id: "w17p8c", alt: "Ícone de livro aberto amarelo", ph: "Ilustração: ícone amarelo-dourado de livro aberto ao meio, com as páginas viradas para cima, dentro de um círculo de borda fina amarela.", lines: ["any", "There aren’t any chairs.", "There aren’t any books."] },
-            { tag: "PLURAL · QUESTION", c: "blue", v: "blue", id: "w17p8d", alt: "Ícone de janela azul de quatro vidraças", ph: "Ilustração: ícone azul de janela quadrada dividida em quatro vidraças por caixilhos em cruz, dentro de um círculo de borda fina azul.", lines: ["any", "Are there any chairs?", "Are there any windows?"] } ] },
+            { tag: "SINGULAR · AFFIRMATIVE", c: "teal", v: "mint", id: "w17p8a", src: "/lessons/aulas/aula-17/w17p8a.webp", alt: "Poltrona verde-petróleo de encosto arredondado e braços largos", w: 86, h: 65, ph: "Ilustração: ícone de poltrona verde-petróleo, vista de frente, com encosto arredondado e braços largos, dentro de um círculo de borda fina verde-petróleo.", lines: ["a/an", "There is a sofa.", "There is an eraser."] },
+            { tag: "PLURAL · AFFIRMATIVE", c: "purple", v: "lilac", id: "w17p8b", src: "/lessons/aulas/aula-17/w17p8b.webp", alt: "Duas cadeiras roxas iguais lado a lado, vistas de frente", w: 106, h: 112, ph: "Ilustração: ícone roxo de duas cadeiras iguais lado a lado, vistas de frente, com encosto alto e pés retos, dentro de um círculo de borda fina roxa.", lines: ["some", "There are some chairs.", "There are some plates."] },
+            { tag: "PLURAL · NEGATIVE", c: "yellow", v: "cream", id: "w17p8c", src: "/lessons/aulas/aula-17/w17p8c.webp", alt: "Livro aberto dourado com páginas viradas para cima", w: 106, h: 111, ph: "Ilustração: ícone amarelo-dourado de livro aberto ao meio, com as páginas viradas para cima, dentro de um círculo de borda fina amarela.", lines: ["any", "There aren’t any chairs.", "There aren’t any books."] },
+            { tag: "PLURAL · QUESTION", c: "blue", v: "blue", id: "w17p8d", src: "/lessons/aulas/aula-17/w17p8d.webp", alt: "Janela quadrada azul dividida em quatro vidraças", w: 106, h: 118, ph: "Ilustração: ícone azul de janela quadrada dividida em quatro vidraças por caixilhos em cruz, dentro de um círculo de borda fina azul.", lines: ["any", "Are there any chairs?", "Are there any windows?"] } ] },
           { t: "note", v: "cream", bar: true, kicker: "RESUMO OPERACIONAL", text: "a/an → singular  ·  some → plural afirmativo  ·  any → plural negativo/perguntas" },
           { t: "note", v: "blue", bar: true, kicker: "IMPORTANTE", text: "Este é o uso necessário para esta aula.\nNão é ainda uma teoria completa de some/any." } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 17", page: "PÁGINA 09" },
           { t: "title", en: "YOUR TURN: WHAT IS THERE?", pt: "Complete as frases e depois confira a lógica." },
-          { t: "image", id: "w17p9", alt: "Sala de estar com sofá bege e janela com vista da cidade", ph: "Foto: sala de estar com um sofá de três lugares em tecido bege, com uma almofada azul-marinho e outra laranja. À frente, uma mesa de centro de madeira com livros empilhados, uma plantinha em vaso branco e uma caneca azul-escura, sobre um tapete claro. À esquerda, uma planta alta de folhas largas em vaso de cerâmica bege e um abajur de chão preto de cúpula arredondada; na parede bege, um quadro emoldurado com formas abstratas em bege, azul-escuro e laranja. Ao centro e à direita, uma estante alta de prateleiras de madeira com estrutura de metal preto, com livros, vasos e plantinhas, e uma janela grande com vista para árvores e prédios da cidade. Junto à janela, uma poltrona azul-escura de madeira e um aparador com um abajur aceso." },
+          { t: "image", id: "w17p9", src: "/lessons/aulas/aula-17/w17p9.webp", alt: "Sala de estar bege com sofá, mesa de centro e estante de livros", w: 878, h: 435, ph: "Foto: sala de estar com um sofá de três lugares em tecido bege, com uma almofada azul-marinho e outra laranja. À frente, uma mesa de centro de madeira com livros empilhados, uma plantinha em vaso branco e uma caneca azul-escura, sobre um tapete claro. À esquerda, uma planta alta de folhas largas em vaso de cerâmica bege e um abajur de chão preto de cúpula arredondada; na parede bege, um quadro emoldurado com formas abstratas em bege, azul-escuro e laranja. Ao centro e à direita, uma estante alta de prateleiras de madeira com estrutura de metal preto, com livros, vasos e plantinhas, e uma janela grande com vista para árvores e prédios da cidade. Junto à janela, uma poltrona azul-escura de madeira e um aparador com um abajur aceso." },
           { t: "fill", id: "w17e1", title: "COMPLETE", items: [
             { pre: "1.", answers: ["There is"], post: "a sofa in the living room.", v: "mint" },
             { pre: "2.", answers: ["There isn’t"], post: "a refrigerator in the bedroom.", v: "lilac" },
@@ -3050,7 +2932,7 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 17", page: "PÁGINA 10" },
           { t: "title", en: "LET’S TALK! MY HOME", pt: "Use a nova estrutura em uma conversa curta." },
-          { t: "image", id: "w17p10", alt: "Casal olhando um tablet dentro de um apartamento", ph: "Foto: dentro de um apartamento integrado, uma mulher de cabelo castanho comprido, camiseta bege e bolsa de couro a tiracolo aponta para a tela de um tablet preto segurado por um homem de barba e cabelo escuro cacheado, de camisa jeans azul-escura aberta sobre camiseta branca e relógio no pulso. Os dois sorriem olhando para o tablet. À esquerda, a sala com sofá bege, almofada azul, mesa de centro com livros e uma plantinha, quadro colorido na parede e uma janela grande com vista da cidade. À direita, a cozinha com armários claros, luminárias pendentes pretas, geladeira de inox e uma mesa de jantar de madeira com cadeiras azuis e um vaso de planta no centro." },
+          { t: "image", id: "w17p10", src: "/lessons/aulas/aula-17/w17p10.webp", alt: "Casal sorridente olhando para tablet em cozinha e sala integradas", w: 879, h: 479, ph: "Foto: dentro de um apartamento integrado, uma mulher de cabelo castanho comprido, camiseta bege e bolsa de couro a tiracolo aponta para a tela de um tablet preto segurado por um homem de barba e cabelo escuro cacheado, de camisa jeans azul-escura aberta sobre camiseta branca e relógio no pulso. Os dois sorriem olhando para o tablet. À esquerda, a sala com sofá bege, almofada azul, mesa de centro com livros e uma plantinha, quadro colorido na parede e uma janela grande com vista da cidade. À direita, a cozinha com armários claros, luminárias pendentes pretas, geladeira de inox e uma mesa de jantar de madeira com cadeiras azuis e um vaso de planta no centro." },
           { t: "dialogue", items: [
             { s: "a", text: "Ana: Is there a living room?" },
             { s: "b", text: "Daniel: Yes, there is." },
@@ -3093,22 +2975,22 @@ export const LESSONS = [
           { t: "badge", label: "AULA 18" },
           { t: "title", en: "PREPOSITIONS OF PLACE", pt: "Where is it?" },
           { t: "lead", text: "Prepositions of place são palavras que usamos para dizer onde as pessoas e as coisas estão." },
-          { t: "image", id: "w18p1a", alt: "Sala de estar clara com sofá bege, mesa de centro e janela para o jardim", ph: "Foto: sala de estar clara e ensolarada vista de frente. No centro, um sofá bege de três lugares com almofadas azul-marinho, estampada em preto e branco e laranja-queimado. À direita, janelas do chão ao teto com cortina bege mostram o jardim verde; ao lado do sofá, um abajur de tripé de madeira com cúpula branca e uma planta grande de folhas verdes em vaso. Na parede bege, um quadro abstrato em bege, preto e azul com moldura clara. À frente, uma mesa de centro oval de madeira escura com uma pilha de livros e um vaso preto redondo com uma plantinha; embaixo dela, um tapete bege de pelo alto sobre piso de madeira." },
+          { t: "image", id: "w18p1a", src: "/lessons/aulas/aula-18/w18p1a.webp", alt: "Sala de estar clara com sofá bege, mesa de centro e luminária de chão", w: 984, h: 903, ph: "Foto: sala de estar clara e ensolarada vista de frente. No centro, um sofá bege de três lugares com almofadas azul-marinho, estampada em preto e branco e laranja-queimado. À direita, janelas do chão ao teto com cortina bege mostram o jardim verde; ao lado do sofá, um abajur de tripé de madeira com cúpula branca e uma planta grande de folhas verdes em vaso. Na parede bege, um quadro abstrato em bege, preto e azul com moldura clara. À frente, uma mesa de centro oval de madeira escura com uma pilha de livros e um vaso preto redondo com uma plantinha; embaixo dela, um tapete bege de pelo alto sobre piso de madeira." },
           { t: "note", v: "gray", kicker: "PENSE ASSIM", text: "Você já sabe o que existe com “There is” e “There are”.\nAgora vamos aprender onde está cada coisa!" },
           { t: "sec", text: "O QUE VOCÊ VAI APRENDER", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "on", note: "em cima", c: "teal", v: "mint", id: "w18p1b", alt: "Ícone de bola laranja em cima de um cubo", ph: "Ilustração: ícone plano com contorno escuro de um cubo azul-petróleo em perspectiva, com uma bola laranja apoiada em cima da face superior." },
-            { tag: "above", note: "acima de", c: "purple", v: "lilac", id: "w18p1c", alt: "Ícone de bola laranja flutuando acima de um cubo", ph: "Ilustração: ícone plano de um cubo azul-petróleo em perspectiva com uma bola laranja flutuando acima dele, ligada ao cubo por uma linha vertical tracejada." },
-            { tag: "under", note: "embaixo de", c: "yellow", v: "cream", id: "w18p1d", alt: "Ícone de bola laranja embaixo de uma mesa", ph: "Ilustração: ícone plano de uma mesa azul-petróleo de quatro pernas vista de frente, com uma bola laranja embaixo do tampo." },
-            { tag: "in / inside", note: "dentro de", c: "teal", v: "mint", id: "w18p1e", alt: "Ícone de bola laranja dentro de uma caixa aberta", ph: "Ilustração: ícone plano de uma caixa azul-petróleo aberta vista de frente, com uma bola laranja dentro dela aparecendo na abertura." },
-            { tag: "in front of", note: "na frente de", c: "purple", v: "lilac", id: "w18p1f", alt: "Ícone de bola laranja na frente de um cubo", ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja posicionada à frente da face do cubo, no canto inferior esquerdo." },
-            { tag: "behind", note: "atrás de", c: "yellow", v: "cream", id: "w18p1g", alt: "Ícone de bola laranja atrás de um cubo", ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja atrás dele, aparecendo só pela metade na lateral direita." },
-            { tag: "between", note: "entre", c: "teal", v: "mint", id: "w18p1h", alt: "Ícone de bola laranja entre dois cubos", ph: "Ilustração: ícone plano de dois cubos azul-petróleo lado a lado com uma bola laranja no espaço entre eles." },
-            { tag: "beside", note: "ao lado de", c: "purple", v: "lilac", id: "w18p1i", alt: "Ícone de bola laranja ao lado de um cubo", ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja encostada na base da lateral direita." },
-            { tag: "near", note: "perto de", c: "yellow", v: "cream", id: "w18p1j", alt: "Ícone de bola laranja perto de um cubo", ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja um pouco afastada à direita, próxima mas sem encostar." },
-            { tag: "opposite", note: "em frente a", c: "teal", v: "mint", id: "w18p1k", alt: "Ícone de poltrona em frente a uma TV", ph: "Ilustração: ícone plano de uma poltrona azul-petróleo à esquerda e uma televisão preta de tela plana à direita, com uma seta horizontal de duas pontas ligando as duas." },
-            { tag: "at", note: "à mesa / no lugar", c: "purple", v: "lilac", id: "w18p1l", alt: "Ícone de mesa com vaso e cadeira ao lado", ph: "Ilustração: ícone plano de uma mesa azul-petróleo com um vasinho de planta em cima e uma cadeira de madeira clara de costas ao lado direito." },
-            { tag: "in the middle of", note: "no meio de", c: "yellow", v: "cream", id: "w18p1m", alt: "Ícone de bola laranja no meio de um tapete", ph: "Ilustração: ícone plano de um tapete marrom retangular visto em perspectiva, com uma bola laranja no centro dele." } ] },
+            { tag: "on", note: "em cima", c: "teal", v: "mint", id: "w18p1b", src: "/lessons/aulas/aula-18/w18p1b.webp", alt: "Cubo azul-petróleo com uma bola laranja apoiada em cima", w: 84, h: 90, ph: "Ilustração: ícone plano com contorno escuro de um cubo azul-petróleo em perspectiva, com uma bola laranja apoiada em cima da face superior." },
+            { tag: "above", note: "acima de", c: "purple", v: "lilac", id: "w18p1c", src: "/lessons/aulas/aula-18/w18p1c.webp", alt: "Bola laranja acima de um cubo azul-petróleo, ligada por linha tracejada", w: 70, h: 101, ph: "Ilustração: ícone plano de um cubo azul-petróleo em perspectiva com uma bola laranja flutuando acima dele, ligada ao cubo por uma linha vertical tracejada." },
+            { tag: "under", note: "embaixo de", c: "yellow", v: "cream", id: "w18p1d", src: "/lessons/aulas/aula-18/w18p1d.webp", alt: "Mesa azul-petróleo de quatro pernas com uma bola laranja embaixo", w: 112, h: 71, ph: "Ilustração: ícone plano de uma mesa azul-petróleo de quatro pernas vista de frente, com uma bola laranja embaixo do tampo." },
+            { tag: "in / inside", note: "dentro de", c: "teal", v: "mint", id: "w18p1e", src: "/lessons/aulas/aula-18/w18p1e.webp", alt: "Caixa azul-petróleo aberta com uma bola laranja dentro", w: 84, h: 83, ph: "Ilustração: ícone plano de uma caixa azul-petróleo aberta vista de frente, com uma bola laranja dentro dela aparecendo na abertura." },
+            { tag: "in front of", note: "na frente de", c: "purple", v: "lilac", id: "w18p1f", src: "/lessons/aulas/aula-18/w18p1f.webp", alt: "Cubo azul-petróleo com uma bola laranja na frente dele", w: 85, h: 86, ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja posicionada à frente da face do cubo, no canto inferior esquerdo." },
+            { tag: "behind", note: "atrás de", c: "yellow", v: "cream", id: "w18p1g", src: "/lessons/aulas/aula-18/w18p1g.webp", alt: "Cubo azul-petróleo com uma bola laranja aparecendo atrás dele", w: 89, h: 80, ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja atrás dele, aparecendo só pela metade na lateral direita." },
+            { tag: "between", note: "entre", c: "teal", v: "mint", id: "w18p1h", src: "/lessons/aulas/aula-18/w18p1h.webp", alt: "Dois cubos azul-petróleo com uma bola laranja entre eles", w: 139, h: 64, ph: "Ilustração: ícone plano de dois cubos azul-petróleo lado a lado com uma bola laranja no espaço entre eles." },
+            { tag: "beside", note: "ao lado de", c: "purple", v: "lilac", id: "w18p1i", src: "/lessons/aulas/aula-18/w18p1i.webp", alt: "Cubo azul-petróleo com uma bola laranja encostada ao lado", w: 86, h: 66, ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja encostada na base da lateral direita." },
+            { tag: "near", note: "perto de", c: "yellow", v: "cream", id: "w18p1j", src: "/lessons/aulas/aula-18/w18p1j.webp", alt: "Cubo azul-petróleo com uma bola laranja perto, sem encostar", w: 97, h: 77, ph: "Ilustração: ícone plano de um cubo azul-petróleo com uma bola laranja um pouco afastada à direita, próxima mas sem encostar." },
+            { tag: "opposite", note: "em frente a", c: "teal", v: "mint", id: "w18p1k", src: "/lessons/aulas/aula-18/w18p1k.webp", alt: "Poltrona e televisão ligadas por uma seta dupla horizontal", w: 140, h: 50, ph: "Ilustração: ícone plano de uma poltrona azul-petróleo à esquerda e uma televisão preta de tela plana à direita, com uma seta horizontal de duas pontas ligando as duas." },
+            { tag: "at", note: "à mesa / no lugar", c: "purple", v: "lilac", id: "w18p1l", src: "/lessons/aulas/aula-18/w18p1l.webp", alt: "Mesa azul-petróleo com vasinho de planta ao lado de uma cadeira", w: 105, h: 67, ph: "Ilustração: ícone plano de uma mesa azul-petróleo com um vasinho de planta em cima e uma cadeira de madeira clara de costas ao lado direito." },
+            { tag: "in the middle of", note: "no meio de", c: "yellow", v: "cream", id: "w18p1m", src: "/lessons/aulas/aula-18/w18p1m.webp", alt: "Tapete visto de cima com uma bola laranja no centro", w: 137, h: 53, ph: "Ilustração: ícone plano de um tapete marrom retangular visto em perspectiva, com uma bola laranja no centro dele." } ] },
           { t: "grid", cols: 2, items: [
             { kicker: "VOCÊ JÁ SABE", title: "We use “There is” and “There are” to say what exists.", body: "There is a sofa.\nThere are two chairs.", v: "mint", c: "teal" },
             { kicker: "AGORA VAMOS AVANÇAR!", title: "Vamos descrever onde tudo está usando as prepositions of place.", body: "There is a rug under the coffee table.", v: "lilac", c: "purple" } ] },
@@ -3119,7 +3001,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 18", page: "PÁGINA 02" },
           { t: "title", en: "ON × ABOVE × UNDER", pt: "Entenda a diferença" },
           { t: "lead", text: "Essas três preposições descrevem posições no espaço. A chave é lembrar o contato e a relação entre os objetos." },
-          { t: "image", id: "w18p2a", alt: "Sala com quadro na parede, mesa lateral, sofá e mesa de centro com um livro", ph: "Foto: sala de estar clara vista em diagonal. Na parede bege, um quadro em preto e branco de uma árvore solitária num campo, com moldura preta; ao lado, uma luminária pendente preta em forma de cúpula. À esquerda, uma mesa lateral redonda preta de duas prateleiras, com um vasinho de planta e uma tigela de madeira em cima e livros embaixo. Ao centro-direita, um sofá bege com almofadas azul-marinho e estampada em preto e branco, e uma almofada laranja-queimado. À frente, uma mesa de centro redonda de madeira escura com um livro verde fechado da KINFOLK e um vaso preto redondo com planta. Embaixo da mesa, um tapete bege de tricô sobre piso de madeira clara; à direita, uma planta grande e a janela com cortina." },
+          { t: "image", id: "w18p2a", src: "/lessons/aulas/aula-18/w18p2a.webp", alt: "Sala de estar com quadro na parede, sofá bege e mesa de centro redonda", w: 707, h: 1334, ph: "Foto: sala de estar clara vista em diagonal. Na parede bege, um quadro em preto e branco de uma árvore solitária num campo, com moldura preta; ao lado, uma luminária pendente preta em forma de cúpula. À esquerda, uma mesa lateral redonda preta de duas prateleiras, com um vasinho de planta e uma tigela de madeira em cima e livros embaixo. Ao centro-direita, um sofá bege com almofadas azul-marinho e estampada em preto e branco, e uma almofada laranja-queimado. À frente, uma mesa de centro redonda de madeira escura com um livro verde fechado da KINFOLK e um vaso preto redondo com planta. Embaixo da mesa, um tapete bege de tricô sobre piso de madeira clara; à direita, uma planta grande e a janela com cortina." },
           { t: "steps", items: [
             { n: "1", tag: "ON", c: "teal", v: "mint", note: "Usamos ON para indicar contato. Algo está em cima de uma superfície.", lines: ["The book is on the table.", "O livro está em cima da mesa."] },
             { n: "2", tag: "ABOVE", c: "purple", v: "lilac", note: "Usamos ABOVE para indicar que algo está acima de outra coisa, sem contato.", lines: ["The photo is above the side table.", "A foto está acima da mesa lateral."] },
@@ -3136,12 +3018,12 @@ export const LESSONS = [
           { t: "badge", label: "AULA 18", page: "PÁGINA 03" },
           { t: "title", en: "IN / INSIDE × IN FRONT OF × BEHIND", pt: "Veja a posição com clareza" },
           { t: "lead", text: "Essas expressões mostram se algo está dentro, à frente ou atrás de outra coisa. Observe a relação entre pessoas e objetos." },
-          { t: "image", id: "w18p3a", alt: "Bruno na frente e dois amigos atrás dele, com uma caixa sobre a mesa", ph: "Foto: ambiente claro de escritório ou sala de estar. Em primeiro plano, Bruno, homem de cabelo castanho cacheado, barba curta e camiseta verde-escura, sorri de frente com a mão no bolso da calça bege e um relógio no pulso esquerdo. Atrás dele, à esquerda, uma mulher de cabelo castanho ondulado, suéter bege claro e calça jeans, de braços cruzados e sorrindo; à direita, um homem de óculos, cabelo cacheado, camisa marrom-clara aberta sobre camiseta creme e calça escura, com as mãos nos bolsos. Sobre a mesa de madeira à frente, uma caixa de papelão aberta com um fone de ouvido preto dentro, a tampa da caixa encostada atrás, um caderno verde-escuro com espiral e uma caneca preta. Ao fundo, prateleiras com livros e plantas e um quadro na parede." },
+          { t: "image", id: "w18p3a", src: "/lessons/aulas/aula-18/w18p3a.webp", alt: "Bruno sorri em pé com dois amigos atrás dele perto de uma mesa com caixa", w: 685, h: 1251, ph: "Foto: ambiente claro de escritório ou sala de estar. Em primeiro plano, Bruno, homem de cabelo castanho cacheado, barba curta e camiseta verde-escura, sorri de frente com a mão no bolso da calça bege e um relógio no pulso esquerdo. Atrás dele, à esquerda, uma mulher de cabelo castanho ondulado, suéter bege claro e calça jeans, de braços cruzados e sorrindo; à direita, um homem de óculos, cabelo cacheado, camisa marrom-clara aberta sobre camiseta creme e calça escura, com as mãos nos bolsos. Sobre a mesa de madeira à frente, uma caixa de papelão aberta com um fone de ouvido preto dentro, a tampa da caixa encostada atrás, um caderno verde-escuro com espiral e uma caneca preta. Ao fundo, prateleiras com livros e plantas e um quadro na parede." },
           { t: "steps", items: [
             { n: "1", tag: "IN / INSIDE", c: "teal", v: "mint", note: "Usamos IN / INSIDE para indicar que algo está dentro de um espaço ou recipiente.", lines: ["The object is in the box.", "O objeto está dentro da caixa."] },
             { n: "2", tag: "IN FRONT OF", c: "purple", v: "lilac", note: "Usamos IN FRONT OF para indicar que algo está à frente de outra coisa.", lines: ["The person is in front of the box.", "A pessoa está na frente da caixa."] },
             { n: "3", tag: "BEHIND", c: "teal", v: "mint", note: "Usamos BEHIND para indicar que algo está atrás de outra coisa.", lines: ["Bruno’s friends are behind him in this photo.", "Os amigos de Bruno estão atrás dele nesta foto."] } ] },
-          { t: "image", id: "w18p3b", alt: "Dois quadros lado a lado: câmera dentro da caixa e mulher na frente da caixa", ph: "Foto: dois quadros lado a lado com etiquetas no topo. À esquerda, a etiqueta azul-marinho “IN / INSIDE” sobre a foto de uma caixa de papelão aberta vista de cima e de frente, com uma câmera fotográfica preta dentro dela, sobre piso de madeira e parede clara. À direita, a etiqueta roxa “IN FRONT OF” sobre a foto de uma mulher de cabelo castanho, suéter bege claro, calça jeans e tênis branco, em pé e sorrindo bem na frente de uma caixa de papelão fechada que fica atrás das pernas dela, junto à parede clara." },
+          { t: "image", id: "w18p3b", src: "/lessons/aulas/aula-18/w18p3b.webp", alt: "Duas fotos lado a lado: câmera em uma caixa e moça em frente a uma caixa", w: 283, h: 240, ph: "Foto: dois quadros lado a lado com etiquetas no topo. À esquerda, a etiqueta azul-marinho “IN / INSIDE” sobre a foto de uma caixa de papelão aberta vista de cima e de frente, com uma câmera fotográfica preta dentro dela, sobre piso de madeira e parede clara. À direita, a etiqueta roxa “IN FRONT OF” sobre a foto de uma mulher de cabelo castanho, suéter bege claro, calça jeans e tênis branco, em pé e sorrindo bem na frente de uma caixa de papelão fechada que fica atrás das pernas dela, junto à parede clara." },
           { t: "note", v: "navy", kicker: "REPARE NA DIFERENÇA", bold: true, text: "IN / INSIDE = dentro\nIN FRONT OF = na frente de\nBEHIND = atrás de" },
           { t: "sec", text: "OBSERVE E RESPONDA", c: "teal" },
           { t: "lead", text: "Olhe para as imagens e responda:" },
@@ -3154,7 +3036,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 18", page: "PÁGINA 04" },
           { t: "title", en: "BETWEEN × BESIDE × NEAR", pt: "Entenda relações de proximidade" },
           { t: "lead", text: "Essas preposições de lugar mostram como as coisas e as pessoas estão posicionadas em relação umas às outras." },
-          { t: "image", id: "w18p4a", alt: "Três amigos numa mesa de café, com etiquetas BETWEEN, BESIDE e NEAR", ph: "Foto: café moderno com pé-direito alto, luminárias pendentes e parede de ripas de madeira ao fundo. Numa mesa redonda de madeira estão três pessoas: à esquerda, Sarah, de cabelo loiro comprido e suéter creme, segura um copo de café com tampa preta; ao centro, Juan, de cabelo escuro cacheado, barba e camisa verde-escura, sorri atrás de um notebook aberto; à direita, Julia, de cabelo castanho escuro e cardigã creme, segura uma caneca preta. Sobre a mesa há também um vasinho de planta e um caderno preto. À direita, janelas grandes dão para a rua, com uma poltrona verde-azulada e uma mesinha redonda perto da janela; em primeiro plano à direita, uma cadeira de madeira de encosto curvo ao lado da mesa. Etiquetas brancas com balões apontam para a cena: “BETWEEN: Juan is between Sarah and Julia.” no alto ao centro, “NEAR: The chair is near the window.” no alto à direita e “BESIDE: The chair is beside the table.” embaixo à direita." },
+          { t: "image", id: "w18p4a", src: "/lessons/aulas/aula-18/w18p4a.webp", alt: "Sarah, Juan e Julia sentados a uma mesa redonda em um café", w: 743, h: 982, ph: "Foto: café moderno com pé-direito alto, luminárias pendentes e parede de ripas de madeira ao fundo. Numa mesa redonda de madeira estão três pessoas: à esquerda, Sarah, de cabelo loiro comprido e suéter creme, segura um copo de café com tampa preta; ao centro, Juan, de cabelo escuro cacheado, barba e camisa verde-escura, sorri atrás de um notebook aberto; à direita, Julia, de cabelo castanho escuro e cardigã creme, segura uma caneca preta. Sobre a mesa há também um vasinho de planta e um caderno preto. À direita, janelas grandes dão para a rua, com uma poltrona verde-azulada e uma mesinha redonda perto da janela; em primeiro plano à direita, uma cadeira de madeira de encosto curvo ao lado da mesa. Etiquetas brancas com balões apontam para a cena: “BETWEEN: Juan is between Sarah and Julia.” no alto ao centro, “NEAR: The chair is near the window.” no alto à direita e “BESIDE: The chair is beside the table.” embaixo à direita." },
           { t: "steps", items: [
             { n: "1", tag: "BETWEEN", c: "teal", v: "mint", note: "Usamos BETWEEN para indicar que algo ou alguém está entre duas pessoas, objetos ou lugares.", lines: ["Juan is between Sarah and Julia.", "Juan está entre Sarah e Julia."] },
             { n: "2", tag: "BESIDE", c: "purple", v: "lilac", note: "Usamos BESIDE para indicar que algo está ao lado de outra coisa.", lines: ["The chair is beside the table.", "A cadeira está ao lado da mesa."] },
@@ -3169,12 +3051,12 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 18", page: "PÁGINA 05" },
           { t: "title", en: "OPPOSITE", pt: "Veja posições em contextos reais" },
-          { t: "image", id: "w18p5a", alt: "Sala com o sofá de um lado e a TV do outro, ligados por uma seta", ph: "Foto: sala de estar clara vista de frente. À esquerda, um sofá bege com almofadas azul-marinho e laranja-queimado, com a etiqueta branca “sofa” apontando para ele; atrás, janelas altas com o jardim verde e um abajur de tripé com cúpula branca. Ao centro, uma mesa de centro oval de madeira escura com uma pilha de livros e um vaso preto com planta, sobre um tapete bege. À direita, um rack de madeira com uma televisão preta de tela plana em cima, com a etiqueta branca “TV” apontando para ela, ao lado de uma estante de madeira com livros e vasos e de plantas grandes. Na parede bege há dois quadros abstratos. Uma seta pontilhada de duas pontas atravessa a sala ligando o sofá à TV, e no centro uma tarja branca traz “The TV is opposite the sofa.” e, em itálico, “A TV está em frente ao sofá.”" },
+          { t: "image", id: "w18p5a", src: "/lessons/aulas/aula-18/w18p5a.webp", alt: "Sala de estar com sofá bege em frente a uma televisão na parede", w: 930, h: 489, ph: "Foto: sala de estar clara vista de frente. À esquerda, um sofá bege com almofadas azul-marinho e laranja-queimado, com a etiqueta branca “sofa” apontando para ele; atrás, janelas altas com o jardim verde e um abajur de tripé com cúpula branca. Ao centro, uma mesa de centro oval de madeira escura com uma pilha de livros e um vaso preto com planta, sobre um tapete bege. À direita, um rack de madeira com uma televisão preta de tela plana em cima, com a etiqueta branca “TV” apontando para ela, ao lado de uma estante de madeira com livros e vasos e de plantas grandes. Na parede bege há dois quadros abstratos. Uma seta pontilhada de duas pontas atravessa a sala ligando o sofá à TV, e no centro uma tarja branca traz “The TV is opposite the sofa.” e, em itálico, “A TV está em frente ao sofá.”" },
           { t: "note", v: "gray", kicker: "LEMBRE-SE!", text: "OPPOSITE = em frente / em frente a" },
           { t: "steps", items: [
-            { n: "1", tag: "at", c: "teal", v: "mint", lines: ["They are at the table.", "Eles estão à mesa."], id: "w18p5b", alt: "Três amigos sentados à mesa redonda de um café", ph: "Foto: três amigos sentados a uma mesa redonda de madeira num café. À esquerda, uma mulher loira de suéter creme segura um copo de café; ao centro, um homem de barba e camisa verde-escura sorri; à direita, uma mulher de cabelo castanho e cardigã creme segura uma caneca preta. Sobre a mesa, um vasinho de planta e um caderno preto; ao fundo, o balcão do café com plantas e prateleiras de madeira." },
-            { n: "2", tag: "in the middle of", c: "purple", v: "lilac", lines: ["There is a rug in the middle of Sophia’s bedroom.", "Há um tapete no meio do quarto da Sophia."], id: "w18p5c", alt: "Quarto claro com um tapete redondo no meio do piso", ph: "Foto: quarto claro e arrumado. À esquerda, uma cama de casal com roupa de cama rosa-claro e pêssego e almofadas; na parede acima, dois quadrinhos e prateleiras com objetos. À direita, uma janela com cortina bege, uma escrivaninha branca com cadeira clara e um espelho redondo na parede. No centro do piso de madeira, um tapete redondo bege de pelo alto, com uma linha pontilhada descendo até o ponto roxo no meio dele." },
-            { n: "3", tag: "on the right / on the left", c: "teal", v: "mint", lines: ["Sarah is on the right.", "Julia is on the left.", "Sarah está à direita.", "Julia está à esquerda."], id: "w18p5d", alt: "Duas mulheres lado a lado com etiquetas de esquerda e direita", ph: "Foto: duas jovens em pé lado a lado, sorrindo, diante de uma parede clara. À esquerda, Julia, de cabelo castanho escuro comprido, jaqueta jeans sobre camiseta branca e calça jeans. À direita, Sarah, de cabelo loiro escuro, suéter verde-oliva e calça jeans. Embaixo de cada uma há uma etiqueta branca: “Julia (left)” à esquerda e “Sarah (right)” à direita, ligadas às moças por linhas pontilhadas." } ] },
+            { n: "1", tag: "at", c: "teal", v: "mint", lines: ["They are at the table.", "Eles estão à mesa."], id: "w18p5b", src: "/lessons/aulas/aula-18/w18p5b.webp", alt: "Três amigos sentados a uma mesa de café, com xícaras e caderno", w: 295, h: 347, ph: "Foto: três amigos sentados a uma mesa redonda de madeira num café. À esquerda, uma mulher loira de suéter creme segura um copo de café; ao centro, um homem de barba e camisa verde-escura sorri; à direita, uma mulher de cabelo castanho e cardigã creme segura uma caneca preta. Sobre a mesa, um vasinho de planta e um caderno preto; ao fundo, o balcão do café com plantas e prateleiras de madeira." },
+            { n: "2", tag: "in the middle of", c: "purple", v: "lilac", lines: ["There is a rug in the middle of Sophia’s bedroom.", "Há um tapete no meio do quarto da Sophia."], id: "w18p5c", src: "/lessons/aulas/aula-18/w18p5c.webp", alt: "Quarto claro com cama de casal e tapete redondo no centro", w: 298, h: 341, ph: "Foto: quarto claro e arrumado. À esquerda, uma cama de casal com roupa de cama rosa-claro e pêssego e almofadas; na parede acima, dois quadrinhos e prateleiras com objetos. À direita, uma janela com cortina bege, uma escrivaninha branca com cadeira clara e um espelho redondo na parede. No centro do piso de madeira, um tapete redondo bege de pelo alto, com uma linha pontilhada descendo até o ponto roxo no meio dele." },
+            { n: "3", tag: "on the right / on the left", c: "teal", v: "mint", lines: ["Sarah is on the right.", "Julia is on the left.", "Sarah está à direita.", "Julia está à esquerda."], id: "w18p5d", src: "/lessons/aulas/aula-18/w18p5d.webp", alt: "Julia e Sarah sorrindo lado a lado diante de uma parede clara", w: 303, h: 303, ph: "Foto: duas jovens em pé lado a lado, sorrindo, diante de uma parede clara. À esquerda, Julia, de cabelo castanho escuro comprido, jaqueta jeans sobre camiseta branca e calça jeans. À direita, Sarah, de cabelo loiro escuro, suéter verde-oliva e calça jeans. Embaixo de cada uma há uma etiqueta branca: “Julia (left)” à esquerda e “Sarah (right)” à direita, ligadas às moças por linhas pontilhadas." } ] },
           { t: "note", v: "lilac", bar: true, kicker: "FOQUE NA POSIÇÃO!", text: "Use opposite para dizer que algo está em frente de outra coisa.\nObserve bem as imagens e pratique em voz alta!" } ] },
 
         { blocks: [
@@ -3183,14 +3065,14 @@ export const LESSONS = [
           { t: "title", en: "BOX CHALLENGE!", pt: "Vamos revisar todas as posições usando uma caixa e uma bola." },
           { t: "lead", text: "Veja as imagens com atenção. Depois, tente descrever cada posição em voz alta!" },
           { t: "steps", items: [
-            { n: "1", tag: "ON", note: "em cima de", c: "teal", v: "mint", lines: ["The ball is on the box."], id: "w18p6a", alt: "Bola laranja em cima de uma caixa de papelão", ph: "Foto: caixa de papelão fechada sobre uma mesa de madeira clara, com uma bola laranja apoiada bem no centro da tampa. Ao fundo, uma sala desfocada com estante de madeira e plantas." },
-            { n: "2", tag: "ABOVE", note: "acima de", c: "purple", v: "lilac", lines: ["The ball is above the box."], id: "w18p6b", alt: "Bola laranja no ar, acima de uma caixa aberta", ph: "Foto: caixa de papelão aberta sobre uma mesa de madeira clara, com uma bola laranja suspensa no ar bem acima dela, sem encostar. Ao fundo, parede clara e uma planta desfocada." },
-            { n: "3", tag: "IN / INSIDE", note: "dentro de", c: "orange", v: "cream", lines: ["The ball is in the box."], id: "w18p6c", alt: "Bola laranja dentro de uma caixa de papelão aberta", ph: "Foto: caixa de papelão aberta sobre uma mesa de madeira clara, vista de cima e de frente, com uma bola laranja dentro dela, encostada no canto do fundo. Ao fundo, uma planta e uma estante desfocadas." },
-            { n: "4", tag: "UNDER", note: "embaixo de", c: "teal", v: "mint", lines: ["The ball is under the box."], id: "w18p6d", alt: "Caixa de papelão apoiada em cima de uma bola laranja", ph: "Foto: caixa de papelão inclinada sobre uma mesa de madeira clara, apoiada em cima de uma bola laranja que fica embaixo dela, aparecendo pela lateral. Ao fundo, uma planta e uma estante desfocadas." },
-            { n: "5", tag: "IN FRONT OF", note: "na frente de", c: "purple", v: "lilac", lines: ["The ball is in front of the box."], id: "w18p6e", alt: "Bola laranja na frente de uma caixa de papelão", ph: "Foto: caixa de papelão aberta sobre uma mesa de madeira clara, com uma bola laranja no chão da mesa bem à frente da caixa, mais próxima da câmera. Ao fundo, sala desfocada com plantas e quadros." },
-            { n: "6", tag: "BEHIND", note: "atrás de", c: "orange", v: "cream", lines: ["The ball is behind the box."], id: "w18p6f", alt: "Bola laranja escondida atrás de uma caixa de papelão", ph: "Foto: caixa de papelão sobre uma mesa de madeira clara, com uma bola laranja atrás dela, aparecendo só em parte pela lateral direita. Ao fundo, parede clara com quadros desfocados." },
-            { n: "7", tag: "BESIDE", note: "ao lado de", c: "teal", v: "mint", lines: ["The ball is beside the box."], id: "w18p6g", alt: "Bola laranja encostada ao lado de uma caixa de papelão", ph: "Foto: caixa de papelão fechada sobre uma mesa de madeira clara, com uma bola laranja encostada na lateral direita da caixa. Ao fundo, uma planta em vaso e uma estante desfocadas." },
-            { n: "8", tag: "NEAR", note: "perto de", c: "purple", v: "lilac", lines: ["The ball is near the box."], id: "w18p6h", alt: "Bola laranja perto de uma caixa de papelão, sem encostar", ph: "Foto: caixa de papelão fechada sobre uma mesa de madeira clara, com uma bola laranja à direita, próxima da caixa mas sem encostar nela. Ao fundo, uma planta em vaso e uma estante desfocadas." } ] },
+            { n: "1", tag: "ON", note: "em cima de", c: "teal", v: "mint", lines: ["The ball is on the box."], id: "w18p6a", src: "/lessons/aulas/aula-18/w18p6a.webp", alt: "Bola laranja apoiada em cima de uma caixa de papelão fechada", w: 233, h: 281, ph: "Foto: caixa de papelão fechada sobre uma mesa de madeira clara, com uma bola laranja apoiada bem no centro da tampa. Ao fundo, uma sala desfocada com estante de madeira e plantas." },
+            { n: "2", tag: "ABOVE", note: "acima de", c: "purple", v: "lilac", lines: ["The ball is above the box."], id: "w18p6b", src: "/lessons/aulas/aula-18/w18p6b.webp", alt: "Bola laranja acima de uma caixa de papelão aberta, ligada por linha", w: 231, h: 284, ph: "Foto: caixa de papelão aberta sobre uma mesa de madeira clara, com uma bola laranja suspensa no ar bem acima dela, sem encostar. Ao fundo, parede clara e uma planta desfocada." },
+            { n: "3", tag: "IN / INSIDE", note: "dentro de", c: "orange", v: "cream", lines: ["The ball is in the box."], id: "w18p6c", src: "/lessons/aulas/aula-18/w18p6c.webp", alt: "Bola laranja dentro de uma caixa de papelão aberta", w: 234, h: 264, ph: "Foto: caixa de papelão aberta sobre uma mesa de madeira clara, vista de cima e de frente, com uma bola laranja dentro dela, encostada no canto do fundo. Ao fundo, uma planta e uma estante desfocadas." },
+            { n: "4", tag: "UNDER", note: "embaixo de", c: "teal", v: "mint", lines: ["The ball is under the box."], id: "w18p6d", src: "/lessons/aulas/aula-18/w18p6d.webp", alt: "Caixa de papelão inclinada apoiada sobre uma bola laranja embaixo", w: 236, h: 200, ph: "Foto: caixa de papelão inclinada sobre uma mesa de madeira clara, apoiada em cima de uma bola laranja que fica embaixo dela, aparecendo pela lateral. Ao fundo, uma planta e uma estante desfocadas." },
+            { n: "5", tag: "IN FRONT OF", note: "na frente de", c: "purple", v: "lilac", lines: ["The ball is in front of the box."], id: "w18p6e", src: "/lessons/aulas/aula-18/w18p6e.webp", alt: "Bola laranja no chão à frente de uma caixa de papelão aberta", w: 233, h: 261, ph: "Foto: caixa de papelão aberta sobre uma mesa de madeira clara, com uma bola laranja no chão da mesa bem à frente da caixa, mais próxima da câmera. Ao fundo, sala desfocada com plantas e quadros." },
+            { n: "6", tag: "BEHIND", note: "atrás de", c: "orange", v: "cream", lines: ["The ball is behind the box."], id: "w18p6f", src: "/lessons/aulas/aula-18/w18p6f.webp", alt: "Bola laranja aparecendo atrás de uma caixa de papelão", w: 231, h: 175, ph: "Foto: caixa de papelão sobre uma mesa de madeira clara, com uma bola laranja atrás dela, aparecendo só em parte pela lateral direita. Ao fundo, parede clara com quadros desfocados." },
+            { n: "7", tag: "BESIDE", note: "ao lado de", c: "teal", v: "mint", lines: ["The ball is beside the box."], id: "w18p6g", src: "/lessons/aulas/aula-18/w18p6g.webp", alt: "Bola laranja encostada ao lado de uma caixa de papelão fechada", w: 236, h: 254, ph: "Foto: caixa de papelão fechada sobre uma mesa de madeira clara, com uma bola laranja encostada na lateral direita da caixa. Ao fundo, uma planta em vaso e uma estante desfocadas." },
+            { n: "8", tag: "NEAR", note: "perto de", c: "purple", v: "lilac", lines: ["The ball is near the box."], id: "w18p6h", src: "/lessons/aulas/aula-18/w18p6h.webp", alt: "Bola laranja perto de uma caixa de papelão, sem encostar", w: 237, h: 263, ph: "Foto: caixa de papelão fechada sobre uma mesa de madeira clara, com uma bola laranja à direita, próxima da caixa mas sem encostar nela. Ao fundo, uma planta em vaso e uma estante desfocadas." } ] },
           { t: "note", v: "gray", kicker: "DICA!", text: "As preposições de lugar nos ajudam a falar com clareza onde as coisas estão em relação a outras." },
           { t: "note", v: "lilac", kicker: "DESAFIO RÁPIDO", text: "Feche o livro e tente lembrar todas as posições.\nDepois, descreva-as sem olhar!\nVocê consegue?" },
           { t: "key", v: "cream", text: "Muito bem! Você dominou as posições básicas.\nNa próxima página, vamos ver como elas aparecem na vida real!" } ] },
@@ -3201,13 +3083,13 @@ export const LESSONS = [
           { t: "title", en: "MOVEMENT", pt: "Estas preposições indicam movimento. Observe a direção!" },
           { t: "note", v: "teal", kicker: "IMPORTANTE!", text: "Into, out of e through mostram que algo está se movendo.\nNão é uma posição parada." },
           { t: "steps", items: [
-            { n: "1", tag: "INTO", note: "para dentro", c: "purple", v: "lilac", lines: ["The ball goes into the box."], id: "w18p7a", alt: "Bola azul entrando em uma caixa de papelão", ph: "Foto: dois quadros lado a lado, separados por um corte diagonal branco. No primeiro, uma bola azul está sobre a mesa de madeira, à esquerda de uma caixa de papelão aberta, e uma seta roxa curva sai da bola e entra na caixa. No segundo, a mesma caixa aparece com a bola azul já dentro dela. Ao fundo, prateleiras de madeira com plantas e potes, desfocadas." },
-            { n: "2", tag: "OUT OF", note: "para fora", c: "orange", v: "cream", lines: ["The ball comes out of the box."], id: "w18p7b", alt: "Bola azul saindo de uma caixa de papelão", ph: "Foto: dois quadros lado a lado, separados por um corte diagonal branco. No primeiro, uma caixa de papelão aberta sobre a mesa de madeira com a bola azul dentro dela. No segundo, a caixa está vazia e uma seta laranja curva sai de dentro dela apontando para a bola azul, agora sobre a mesa à direita. Ao fundo, prateleiras de madeira com plantas e potes, desfocadas." },
-            { n: "3", tag: "THROUGH", note: "através de", c: "teal", v: "mint", lines: ["The train goes through the tunnel."], id: "w18p7c", alt: "Trem atravessando um túnel de pedra", ph: "Foto: trem azul e branco saindo em velocidade de um túnel de arco feito de blocos de pedra, coberto de vegetação verde. Os trilhos aparecem em primeiro plano e o movimento do trem deixa um rastro borrado. Uma seta horizontal azul-petróleo atravessa a imagem da esquerda para a direita, saindo de dentro do túnel." } ] },
+            { n: "1", tag: "INTO", note: "para dentro", c: "purple", v: "lilac", lines: ["The ball goes into the box."], id: "w18p7a", src: "/lessons/aulas/aula-18/w18p7a.webp", alt: "Bola azul entrando em caixa de papelão, seta indicando o movimento", w: 576, h: 261, ph: "Foto: dois quadros lado a lado, separados por um corte diagonal branco. No primeiro, uma bola azul está sobre a mesa de madeira, à esquerda de uma caixa de papelão aberta, e uma seta roxa curva sai da bola e entra na caixa. No segundo, a mesma caixa aparece com a bola azul já dentro dela. Ao fundo, prateleiras de madeira com plantas e potes, desfocadas." },
+            { n: "2", tag: "OUT OF", note: "para fora", c: "orange", v: "cream", lines: ["The ball comes out of the box."], id: "w18p7b", src: "/lessons/aulas/aula-18/w18p7b.webp", alt: "Bola azul saindo de caixa de papelão, seta indicando o movimento", w: 581, h: 251, ph: "Foto: dois quadros lado a lado, separados por um corte diagonal branco. No primeiro, uma caixa de papelão aberta sobre a mesa de madeira com a bola azul dentro dela. No segundo, a caixa está vazia e uma seta laranja curva sai de dentro dela apontando para a bola azul, agora sobre a mesa à direita. Ao fundo, prateleiras de madeira com plantas e potes, desfocadas." },
+            { n: "3", tag: "THROUGH", note: "através de", c: "teal", v: "mint", lines: ["The train goes through the tunnel."], id: "w18p7c", src: "/lessons/aulas/aula-18/w18p7c.webp", alt: "Trem passando por dentro de um túnel de pedra coberto de vegetação", w: 571, h: 259, ph: "Foto: trem azul e branco saindo em velocidade de um túnel de arco feito de blocos de pedra, coberto de vegetação verde. Os trilhos aparecem em primeiro plano e o movimento do trem deixa um rastro borrado. Uma seta horizontal azul-petróleo atravessa a imagem da esquerda para a direita, saindo de dentro do túnel." } ] },
           { t: "cards", cols: 2, items: [
-            { tag: "VOCABULÁRIO", lines: ["box"], note: "caixa", c: "purple", v: "lilac", id: "w18p7d", alt: "Ícone de caixa de papelão aberta", ph: "Ilustração: ícone de linha roxa, sobre fundo branco, de uma caixa de papelão aberta vista em perspectiva, com as quatro abas viradas para fora." },
-            { tag: "VOCABULÁRIO", lines: ["ball"], note: "bola", c: "orange", v: "cream", id: "w18p7e", alt: "Ícone de bola", ph: "Ilustração: ícone de linha laranja, sobre fundo branco, de uma bola redonda com as linhas curvas de gomos desenhadas por cima." },
-            { tag: "VOCABULÁRIO", lines: ["tunnel"], note: "túnel", c: "teal", v: "mint", id: "w18p7f", alt: "Ícone de túnel em arco", ph: "Ilustração: ícone de linha azul-petróleo, sobre fundo branco, de um túnel em arco visto de frente, com a boca escura no centro e a base apoiada no chão." } ] },
+            { tag: "VOCABULÁRIO", lines: ["box"], note: "caixa", c: "purple", v: "lilac", id: "w18p7d", src: "/lessons/aulas/aula-18/w18p7d.webp", alt: "Ícone de linha roxa de uma caixa de papelão aberta", w: 96, h: 75, ph: "Ilustração: ícone de linha roxa, sobre fundo branco, de uma caixa de papelão aberta vista em perspectiva, com as quatro abas viradas para fora." },
+            { tag: "VOCABULÁRIO", lines: ["ball"], note: "bola", c: "orange", v: "cream", id: "w18p7e", src: "/lessons/aulas/aula-18/w18p7e.webp", alt: "Ícone de linha laranja de uma bola com gomos", w: 87, h: 87, ph: "Ilustração: ícone de linha laranja, sobre fundo branco, de uma bola redonda com as linhas curvas de gomos desenhadas por cima." },
+            { tag: "VOCABULÁRIO", lines: ["tunnel"], note: "túnel", c: "teal", v: "mint", id: "w18p7f", src: "/lessons/aulas/aula-18/w18p7f.webp", alt: "Ícone de linha azul-petróleo de um túnel em arco", w: 99, h: 87, ph: "Ilustração: ícone de linha azul-petróleo, sobre fundo branco, de um túnel em arco visto de frente, com a boca escura no centro e a base apoiada no chão." } ] },
           { t: "note", v: "gray", kicker: "RESUMINDO", text: "Into = movimento para dentro\nOut of = movimento para fora\nThrough = movimento através de algo" },
           { t: "sec", text: "VAMOS PRATICAR?", c: "teal" },
           { t: "lead", text: "Em voz alta, descreva estas ações usando as preposições:" },
@@ -3215,14 +3097,14 @@ export const LESSONS = [
             { n: "1", text: "The dog jumps into the box.", c: "purple" },
             { n: "2", text: "The cat comes out of the box.", c: "orange" },
             { n: "3", text: "The car goes through the tunnel.", c: "teal" } ] },
-          { t: "image", id: "w18p7g", alt: "Rapaz sorrindo com o balão de fala “Let’s practice!”", ph: "Foto: rapaz jovem de cabelo escuro curto e camiseta verde-oliva, visto de perfil da cintura para cima, sorrindo e olhando para a esquerda. Ao lado da cabeça dele, um balão de fala branco arredondado com o texto “Let’s practice!” em letras escuras e um pequeno ícone de balão de conversa laranja." },
+          { t: "image", id: "w18p7g", src: "/lessons/aulas/aula-18/w18p7g.webp", alt: "Rapaz sorrindo de perfil com balão de fala dizendo Let's practice", w: 208, h: 200, ph: "Foto: rapaz jovem de cabelo escuro curto e camiseta verde-oliva, visto de perfil da cintura para cima, sorrindo e olhando para a esquerda. Ao lado da cabeça dele, um balão de fala branco arredondado com o texto “Let’s practice!” em letras escuras e um pequeno ícone de balão de conversa laranja." },
           { t: "key", v: "navy", text: "BOA! VOCÊ JÁ ENTENDEU COMO AS COISAS SE MOVEM.\nNa próxima página, veremos essas preposições em situações reais!" } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 18", page: "PÁGINA 08" },
           { t: "title", en: "PREPOSITIONS IN A REAL ROOM", pt: "Veja como usamos as preposições para descrever onde as coisas estão no dia a dia!" },
           { t: "note", v: "gray", kicker: "OBSERVE A CENA!", text: "Todas as frases se referem a esta sala. Leia com atenção e veja cada posição." },
-          { t: "image", id: "w18p8a", alt: "Sala de estar com etiquetas apontando as preposições de lugar", ph: "Foto: sala de estar com parede de tijolinho claro. À esquerda, uma televisão preta de tela plana presa na parede, acima de um rack de madeira com portas, livros e vasos de cerâmica; ao lado do rack, vasos e uma planta no chão. Na parede há quadros em preto e branco e, mais ao centro, um quadro abstrato. Ao fundo à direita, uma janela alta com cortina bege mostra árvores, e abaixo dela uma mesa lateral redonda de metal com dois vasinhos de planta. À direita, um sofá bege em L com almofadas azul-marinho, laranja-queimado e estampada em preto e branco. Ao centro, uma mesa de centro retangular de madeira com pés pretos, com uma pilha de livros de arquitetura, um vasinho de planta e uma tigela de madeira em cima; embaixo dela, um tapete bege estampado sobre piso de madeira. Etiquetas brancas com linhas coloridas apontam para os objetos: “ON: The TV is on the wall.”, “ABOVE: The photo is above the side table.”, “ON: There are some vases on the side table.”, “OPPOSITE: The sofa is opposite the TV.”, “UNDER: The side table is under the photo.”, “UNDER: The rug is under the coffee table.”, “ON: The books are on the coffee table.” e “BESIDE: The pillows are beside each other.”" },
+          { t: "image", id: "w18p8a", src: "/lessons/aulas/aula-18/w18p8a.webp", alt: "Sala de estar com etiquetas indicando a posição de móveis e objetos", w: 1024, h: 670, ph: "Foto: sala de estar com parede de tijolinho claro. À esquerda, uma televisão preta de tela plana presa na parede, acima de um rack de madeira com portas, livros e vasos de cerâmica; ao lado do rack, vasos e uma planta no chão. Na parede há quadros em preto e branco e, mais ao centro, um quadro abstrato. Ao fundo à direita, uma janela alta com cortina bege mostra árvores, e abaixo dela uma mesa lateral redonda de metal com dois vasinhos de planta. À direita, um sofá bege em L com almofadas azul-marinho, laranja-queimado e estampada em preto e branco. Ao centro, uma mesa de centro retangular de madeira com pés pretos, com uma pilha de livros de arquitetura, um vasinho de planta e uma tigela de madeira em cima; embaixo dela, um tapete bege estampado sobre piso de madeira. Etiquetas brancas com linhas coloridas apontam para os objetos: “ON: The TV is on the wall.”, “ABOVE: The photo is above the side table.”, “ON: There are some vases on the side table.”, “OPPOSITE: The sofa is opposite the TV.”, “UNDER: The side table is under the photo.”, “UNDER: The rug is under the coffee table.”, “ON: The books are on the coffee table.” e “BESIDE: The pillows are beside each other.”" },
           { t: "grid", cols: 2, items: [
             { kicker: "ON", title: "The TV is on the wall.", v: "white", c: "teal" },
             { kicker: "ABOVE", title: "The photo is above the side table.", v: "white", c: "purple" },
@@ -3250,7 +3132,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 18", page: "PÁGINA 09" },
           { t: "title", en: "REVISÃO COMPLETA: POSIÇÕES E MOVIMENTOS", pt: "Você aprendeu muitas preposições! Agora, veja tudo junto em uma cena completa." },
           { t: "note", v: "gray", kicker: "FOQUE E USE!", text: "Observe, leia e tente descrever a cena em voz alta usando as preposições que aprendeu." },
-          { t: "image", id: "w18p9a", alt: "Sala de estar numerada de 1 a 9 com cachorro, mochila, bola e sofá", ph: "Foto: sala de estar aconchegante. À esquerda, um rack de madeira com uma televisão de tela plana em cima mostrando uma paisagem de montanhas e lago; dentro do rack, cestos e caixas. No chão, encostados no rack, uma mochila azul-marinho e uma bola de futebol preta e branca. Ao centro-esquerda, uma estante de madeira com livros, plantas e um porta-retrato, e uma mesa lateral com vasinhos. Ao centro, uma mesa de centro redonda de madeira com pés pretos, com um vaso branco de planta verde, uma pilha de livros e uma caneca azul; embaixo, um tapete bege claro. À direita, um sofá bege de três lugares com almofadas verde-escura, mostarda e estampada em preto e branco; atrás dele, uma janela com cortina clara mostrando árvores, e um abajur de tripé com cúpula bege. Deitado no tapete, à frente do sofá, um cachorro golden retriever com a língua para fora. Marcadores redondos numerados de 1 a 9 estão espalhados pela cena, apontando para o cachorro, a mochila, a bola, os livros, as almofadas, a TV, os livros da estante, a janela e a planta." },
+          { t: "image", id: "w18p9a", src: "/lessons/aulas/aula-18/w18p9a.webp", alt: "Sala de estar com cachorro no tapete e marcadores numerados nos objetos", w: 960, h: 478, ph: "Foto: sala de estar aconchegante. À esquerda, um rack de madeira com uma televisão de tela plana em cima mostrando uma paisagem de montanhas e lago; dentro do rack, cestos e caixas. No chão, encostados no rack, uma mochila azul-marinho e uma bola de futebol preta e branca. Ao centro-esquerda, uma estante de madeira com livros, plantas e um porta-retrato, e uma mesa lateral com vasinhos. Ao centro, uma mesa de centro redonda de madeira com pés pretos, com um vaso branco de planta verde, uma pilha de livros e uma caneca azul; embaixo, um tapete bege claro. À direita, um sofá bege de três lugares com almofadas verde-escura, mostarda e estampada em preto e branco; atrás dele, uma janela com cortina clara mostrando árvores, e um abajur de tripé com cúpula bege. Deitado no tapete, à frente do sofá, um cachorro golden retriever com a língua para fora. Marcadores redondos numerados de 1 a 9 estão espalhados pela cena, apontando para o cachorro, a mochila, a bola, os livros, as almofadas, a TV, os livros da estante, a janela e a planta." },
           { t: "sec", text: "DESCREVA USANDO AS PREPOSIÇÕES:", c: "teal" },
           { t: "rows", items: [
             { n: "1", text: "The dog is on the rug.", c: "purple" },
@@ -3270,7 +3152,7 @@ export const LESSONS = [
             { n: "3", text: "Where is the backpack?", c: "teal" },
             { n: "4", text: "Where is the plant?", c: "purple" },
             { n: "5", text: "Where is the window?", c: "teal" } ] },
-          { t: "image", id: "w18p9b", alt: "Rapaz sorrindo com o balão de fala “I can describe everything!”", ph: "Foto: rapaz jovem de cabelo escuro curto e camiseta verde-oliva, visto de perfil da cintura para cima, sorrindo e olhando para a esquerda. Ao lado da cabeça dele, um balão de fala branco arredondado com o texto “I can describe everything!” em letras escuras, com a palavra “everything” em destaque." },
+          { t: "image", id: "w18p9b", src: "/lessons/aulas/aula-18/w18p9b.webp", alt: "Rapaz sorrindo de perfil com balão de fala dizendo I can describe everything", w: 261, h: 229, ph: "Foto: rapaz jovem de cabelo escuro curto e camiseta verde-oliva, visto de perfil da cintura para cima, sorrindo e olhando para a esquerda. Ao lado da cabeça dele, um balão de fala branco arredondado com o texto “I can describe everything!” em letras escuras, com a palavra “everything” em destaque." },
           { t: "sec", text: "PARA MEMORIZAR", c: "yellow" },
           { t: "grid", cols: 1, items: [
             { title: "Preposições de lugar mostram onde as coisas estão.", v: "mint", c: "teal" },
@@ -3294,7 +3176,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 19" },
           { t: "title", en: "ADJECTIVES", pt: "Describe it!" },
           { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Adjectives descrevem pessoas, animais, objetos ou coisas." },
-          { t: "image", id: "w19p1a", alt: "Mulher numa loja com etiquetas de adjetivos apontando para os objetos", ph: "Ilustração: dentro de um showroom claro, com janelas grandes do chão ao teto, coluna de concreto e um lounge ao fundo: sofá bege com almofadas azul-petróleo, poltrona azul, mesa de centro de madeira, abajur de pé de cúpula clara e um quadro abstrato grande em azul e dourado na parede. À direita, em pé, uma mulher jovem de pele morena, cabelo escuro preso em coque, brincos de argola dourados, colares finos, blazer bege sobre blusa branca, jeans e cinto preto, segurando um copo de café com tampa e com uma bolsa preta de alça comprida a tiracolo. À esquerda dela, um SUV preto; na frente, uma mesa de madeira com um vaso de planta verde, uma câmera fotográfica antiga prateada e preta, um livro verde, uma suculenta num vaso branco e uma bolsa preta matelassê de corrente dourada com monograma dourado. Seis etiquetas brancas arredondadas, cada uma com um ícone colorido e uma linha de chamada terminando em bolinha branca, apontam para a cena: “big” (ícone teal de setas de expandir) aponta para o SUV preto; “small” (ícone azul de lupa) aponta para a câmera antiga; “new” (ícone roxo de brilho) aponta para o blazer bege da mulher; “old” (ícone laranja de relógio) aponta para o quadro abstrato na parede; “beautiful” (ícone vermelho de coração) aponta para o lounge, com a linha terminando na mesa de centro ao lado do sofá; “expensive” (ícone teal de diamante) aponta para a bolsa preta de corrente dourada." },
+          { t: "image", id: "w19p1a", src: "/lessons/aulas/aula-19/w19p1a.webp", alt: "Mulher em showroom com etiquetas apontando carro, câmera, blazer e bolsa", w: 851, h: 546, ph: "Ilustração: dentro de um showroom claro, com janelas grandes do chão ao teto, coluna de concreto e um lounge ao fundo: sofá bege com almofadas azul-petróleo, poltrona azul, mesa de centro de madeira, abajur de pé de cúpula clara e um quadro abstrato grande em azul e dourado na parede. À direita, em pé, uma mulher jovem de pele morena, cabelo escuro preso em coque, brincos de argola dourados, colares finos, blazer bege sobre blusa branca, jeans e cinto preto, segurando um copo de café com tampa e com uma bolsa preta de alça comprida a tiracolo. À esquerda dela, um SUV preto; na frente, uma mesa de madeira com um vaso de planta verde, uma câmera fotográfica antiga prateada e preta, um livro verde, uma suculenta num vaso branco e uma bolsa preta matelassê de corrente dourada com monograma dourado. Seis etiquetas brancas arredondadas, cada uma com um ícone colorido e uma linha de chamada terminando em bolinha branca, apontam para a cena: “big” (ícone teal de setas de expandir) aponta para o SUV preto; “small” (ícone azul de lupa) aponta para a câmera antiga; “new” (ícone roxo de brilho) aponta para o blazer bege da mulher; “old” (ícone laranja de relógio) aponta para o quadro abstrato na parede; “beautiful” (ícone vermelho de coração) aponta para o lounge, com a linha terminando na mesa de centro ao lado do sofá; “expensive” (ícone teal de diamante) aponta para a bolsa preta de corrente dourada." },
           { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DESCREVER:", c: "purple" },
           { t: "grid", cols: 3, items: [
             { title: "a new car", v: "mint", c: "teal" },
@@ -3309,10 +3191,10 @@ export const LESSONS = [
           { t: "title", en: "WHERE DOES THE ADJECTIVE GO?", pt: "Before the noun ou after the verb to be." },
           { t: "note", v: "gray", bar: true, text: "Você pode usar o adjective de duas maneiras em inglês.\nVeja os exemplos." },
           { t: "cards", cols: 2, items: [
-            { tag: "1 · BEFORE THE NOUN", note: "Adjective + Noun", c: "teal", v: "mint", id: "w19p2a", alt: "Tigela de morangos vermelhos sobre a mesa", ph: "Foto: uma tigela branca de cerâmica cheia de morangos vermelhos com cabinhos verdes, sobre uma mesa de madeira com um pano xadrez azul e branco ao lado, com luz do sol entrando.", lines: ["This is a red strawberry."] },
-            { tag: "2 · AFTER THE VERB TO BE", note: "Noun + Verb to be + Adjective", c: "purple", v: "lilac", id: "w19p2b", alt: "Um morango sozinho num pratinho", ph: "Foto: um único morango vermelho com o cabinho verde, no centro de um pratinho de cerâmica clara, sobre mesa de madeira. Ao fundo, desfocados, um vaso de planta e uma caneca bege.", lines: ["This strawberry is red."] },
-            { tag: "BEFORE THE NOUN", c: "teal", v: "mint", id: "w19p2c", alt: "Carro sedã azul novo em frente a um prédio de vidro", ph: "Foto: carro sedã azul-escuro novo, visto de frente e de três quartos, parado no estacionamento de um prédio de fachada de vidro, com árvores de folhas amareladas ao fundo e céu azul.", lines: ["It’s a new car."] },
-            { tag: "AFTER THE VERB TO BE", c: "purple", v: "lilac", id: "w19p2d", alt: "O mesmo carro sedã azul num enquadramento mais aberto", ph: "Foto: o mesmo carro sedã azul-escuro, na mesma pose de três quartos dianteiro, num enquadramento um pouco mais aberto (a árvore da esquerda aparece inteira e vê-se mais da calçada), parado em frente ao mesmo prédio de fachada de vidro, com céu azul ao fundo.", lines: ["This car is new."] } ] },
+            { tag: "1 · BEFORE THE NOUN", note: "Adjective + Noun", c: "teal", v: "mint", id: "w19p2a", src: "/lessons/aulas/aula-19/w19p2a.webp", alt: "Tigela de morangos vermelhos sobre mesa de madeira com pano xadrez", w: 377, h: 220, ph: "Foto: uma tigela branca de cerâmica cheia de morangos vermelhos com cabinhos verdes, sobre uma mesa de madeira com um pano xadrez azul e branco ao lado, com luz do sol entrando.", lines: ["This is a red strawberry."] },
+            { tag: "2 · AFTER THE VERB TO BE", note: "Noun + Verb to be + Adjective", c: "purple", v: "lilac", id: "w19p2b", src: "/lessons/aulas/aula-19/w19p2b.webp", alt: "Morango vermelho único num pratinho de cerâmica sobre mesa de madeira", w: 390, h: 221, ph: "Foto: um único morango vermelho com o cabinho verde, no centro de um pratinho de cerâmica clara, sobre mesa de madeira. Ao fundo, desfocados, um vaso de planta e uma caneca bege.", lines: ["This strawberry is red."] },
+            { tag: "BEFORE THE NOUN", c: "teal", v: "mint", id: "w19p2c", src: "/lessons/aulas/aula-19/w19p2c.webp", alt: "Carro sedã azul escuro novo estacionado em frente a prédio de vidro", w: 376, h: 222, ph: "Foto: carro sedã azul-escuro novo, visto de frente e de três quartos, parado no estacionamento de um prédio de fachada de vidro, com árvores de folhas amareladas ao fundo e céu azul.", lines: ["It’s a new car."] },
+            { tag: "AFTER THE VERB TO BE", c: "purple", v: "lilac", id: "w19p2d", src: "/lessons/aulas/aula-19/w19p2d.webp", alt: "Mesmo carro sedã azul escuro visto de um ângulo um pouco mais aberto", w: 390, h: 223, ph: "Foto: o mesmo carro sedã azul-escuro, na mesma pose de três quartos dianteiro, num enquadramento um pouco mais aberto (a árvore da esquerda aparece inteira e vê-se mais da calçada), parado em frente ao mesmo prédio de fachada de vidro, com céu azul ao fundo.", lines: ["This car is new."] } ] },
           { t: "note", v: "lilac", bar: true, kicker: "TIP!", text: "O meaning é o mesmo.\nA posição do adjective muda, mas a ideia não muda." },
           { t: "key", v: "mint", text: "Adjectives descrevem e deixam tudo mais claro e interessante." } ] },
 
@@ -3321,79 +3203,79 @@ export const LESSONS = [
           { t: "title", en: "BIG × SMALL • FAST × SLOW", pt: "Adjectives describe size and speed." },
           { t: "sec", text: "1 · BIG × SMALL", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "BIG", c: "teal", v: "mint", id: "w19p3a", alt: "Golden retriever grande em pé na grama", ph: "Foto: um golden retriever adulto de pelo dourado, em pé de perfil sobre a grama de um parque, com a língua para fora, olhando para a câmera. Ao fundo, árvores verdes iluminadas pelo sol.", lines: ["This dog is big."] },
-            { tag: "SMALL", c: "purple", v: "lilac", id: "w19p3b", alt: "Gato pequeno sentado no sofá", ph: "Foto: um gato cinza rajado, pequeno, sentado sobre o assento de um sofá cinza, olhando de frente para a câmera. Atrás dele, duas almofadas verdes e uma estante desfocada.", lines: ["This cat is small."] } ] },
+            { tag: "BIG", c: "teal", v: "mint", id: "w19p3a", src: "/lessons/aulas/aula-19/w19p3a.webp", alt: "Golden retriever grande em pé na grama de um parque", w: 452, h: 384, ph: "Foto: um golden retriever adulto de pelo dourado, em pé de perfil sobre a grama de um parque, com a língua para fora, olhando para a câmera. Ao fundo, árvores verdes iluminadas pelo sol.", lines: ["This dog is big."] },
+            { tag: "SMALL", c: "purple", v: "lilac", id: "w19p3b", src: "/lessons/aulas/aula-19/w19p3b.webp", alt: "Gato cinza pequeno sentado no sofá da sala", w: 416, h: 386, ph: "Foto: um gato cinza rajado, pequeno, sentado sobre o assento de um sofá cinza, olhando de frente para a câmera. Atrás dele, duas almofadas verdes e uma estante desfocada.", lines: ["This cat is small."] } ] },
           { t: "sec", text: "2 · FAST × SLOW", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "FAST", c: "teal", v: "mint", id: "w19p3c", alt: "Carro esportivo vermelho em alta velocidade numa estrada", ph: "Foto: carro esportivo vermelho, baixo e aerodinâmico, correndo por uma estrada de montanha; o fundo verde aparece borrado pelo movimento.", lines: ["They’re fast cars."] },
-            { tag: "SLOW", c: "purple", v: "lilac", id: "w19p3d", alt: "Carrinho amarelo antigo parado numa rua de paralelepípedos", ph: "Foto: um carrinho amarelo antigo, tipo Fiat 500, com teto de lona preta, parado numa ladeira de paralelepípedos de uma cidade europeia, entre vasos de plantas e prédios coloridos com janelas floridas.", lines: ["They’re slow cars."] } ] } ] },
+            { tag: "FAST", c: "teal", v: "mint", id: "w19p3c", src: "/lessons/aulas/aula-19/w19p3c.webp", alt: "Carro esportivo vermelho em alta velocidade numa estrada de montanha", w: 451, h: 343, ph: "Foto: carro esportivo vermelho, baixo e aerodinâmico, correndo por uma estrada de montanha; o fundo verde aparece borrado pelo movimento.", lines: ["They’re fast cars."] },
+            { tag: "SLOW", c: "purple", v: "lilac", id: "w19p3d", src: "/lessons/aulas/aula-19/w19p3d.webp", alt: "Carrinho amarelo antigo parado numa ladeira de paralelepípedos", w: 417, h: 343, ph: "Foto: um carrinho amarelo antigo, tipo Fiat 500, com teto de lona preta, parado numa ladeira de paralelepípedos de uma cidade europeia, entre vasos de plantas e prédios coloridos com janelas floridas.", lines: ["They’re slow cars."] } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 19", page: "PÁGINA 04" },
           { t: "title", en: "HOT × COLD • NEW × OLD • EXPENSIVE × CHEAP", pt: "More adjectives for everyday things." },
           { t: "sec", text: "1 · HOT × COLD", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "HOT", c: "teal", v: "mint", id: "w19p4a", alt: "Xícara de café quente fumegando", ph: "Foto: xícara de cerâmica clara cheia de café preto, com fumacinha subindo, sobre uma mesa de madeira escura. Ao lado, grãos de café espalhados e um saco de estopa.", lines: ["hot coffee"] },
-            { tag: "COLD", c: "purple", v: "lilac", id: "w19p4b", alt: "Copo de suco de laranja gelado", ph: "Foto: copo alto de suco de laranja com gelo e uma rodela de laranja na borda, sobre uma mesa de madeira ao ar livre, com folhagem verde desfocada ao fundo.", lines: ["cold juice"] } ] },
+            { tag: "HOT", c: "teal", v: "mint", id: "w19p4a", src: "/lessons/aulas/aula-19/w19p4a.webp", alt: "Xícara de café preto fumegante sobre mesa de madeira", w: 414, h: 241, ph: "Foto: xícara de cerâmica clara cheia de café preto, com fumacinha subindo, sobre uma mesa de madeira escura. Ao lado, grãos de café espalhados e um saco de estopa.", lines: ["hot coffee"] },
+            { tag: "COLD", c: "purple", v: "lilac", id: "w19p4b", src: "/lessons/aulas/aula-19/w19p4b.webp", alt: "Copo de suco de laranja gelado com rodela de laranja na borda", w: 413, h: 241, ph: "Foto: copo alto de suco de laranja com gelo e uma rodela de laranja na borda, sobre uma mesa de madeira ao ar livre, com folhagem verde desfocada ao fundo.", lines: ["cold juice"] } ] },
           { t: "sec", text: "2 · NEW × OLD", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "NEW", c: "teal", v: "mint", id: "w19p4c", alt: "Carro sedã azul novo em frente a um prédio de vidro", ph: "Foto: carro sedã azul-escuro novo e brilhante, visto de frente e de três quartos, parado na calçada em frente a um prédio de fachada de vidro, com árvores ao fundo.", lines: ["This car is new.", "It’s a new car."] },
-            { tag: "OLD", c: "purple", v: "lilac", id: "w19p4d", alt: "Carro verde antigo e desgastado estacionado na rua", ph: "Foto: carro verde antigo, com pintura desbotada e ferrugem, para-choques cromados e faróis redondos, estacionado numa rua com prédios velhos e palmeiras ao fundo.", lines: ["This car is old.", "It’s an old car."] } ] },
+            { tag: "NEW", c: "teal", v: "mint", id: "w19p4c", src: "/lessons/aulas/aula-19/w19p4c.webp", alt: "Carro sedã azul escuro novo e brilhante parado na calçada", w: 416, h: 209, ph: "Foto: carro sedã azul-escuro novo e brilhante, visto de frente e de três quartos, parado na calçada em frente a um prédio de fachada de vidro, com árvores ao fundo.", lines: ["This car is new.", "It’s a new car."] },
+            { tag: "OLD", c: "purple", v: "lilac", id: "w19p4d", src: "/lessons/aulas/aula-19/w19p4d.webp", alt: "Carro verde antigo com pintura desbotada e ferrugem estacionado na rua", w: 415, h: 209, ph: "Foto: carro verde antigo, com pintura desbotada e ferrugem, para-choques cromados e faróis redondos, estacionado numa rua com prédios velhos e palmeiras ao fundo.", lines: ["This car is old.", "It’s an old car."] } ] },
           { t: "sec", text: "3 · EXPENSIVE × CHEAP", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "EXPENSIVE", c: "teal", v: "mint", id: "w19p4e", alt: "Sandálias de couro caras numa vitrine", ph: "Foto: par de sandálias de couro marrom com fivelas douradas, expostas sobre uma base de madeira numa vitrine iluminada. Atrás, uma placa escrita “LEATHER ATELIER” e, na frente, uma etiqueta bege escrita “PREMIUM COLLECTION $$$”.", lines: ["They’re expensive sandals."] },
-            { tag: "CHEAP", c: "purple", v: "lilac", id: "w19p4f", alt: "Chinelos de dedo baratos numa banca de rua", ph: "Foto: par de chinelos de dedo pretos sobre uma mesa de madeira de uma banca de rua, com roupas coloridas desfocadas ao fundo e uma plaquinha de papelão ao lado escrita “GREAT VALUE $”.", lines: ["They’re cheap sandals."] } ] } ] },
+            { tag: "EXPENSIVE", c: "teal", v: "mint", id: "w19p4e", src: "/lessons/aulas/aula-19/w19p4e.webp", alt: "Sandálias de couro marrom com fivela dourada expostas numa vitrine", w: 414, h: 220, ph: "Foto: par de sandálias de couro marrom com fivelas douradas, expostas sobre uma base de madeira numa vitrine iluminada. Atrás, uma placa escrita “LEATHER ATELIER” e, na frente, uma etiqueta bege escrita “PREMIUM COLLECTION $$$”.", lines: ["They’re expensive sandals."] },
+            { tag: "CHEAP", c: "purple", v: "lilac", id: "w19p4f", src: "/lessons/aulas/aula-19/w19p4f.webp", alt: "Chinelos pretos sobre mesa de madeira com placa de preço ao lado", w: 415, h: 221, ph: "Foto: par de chinelos de dedo pretos sobre uma mesa de madeira de uma banca de rua, com roupas coloridas desfocadas ao fundo e uma plaquinha de papelão ao lado escrita “GREAT VALUE $”.", lines: ["They’re cheap sandals."] } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 19", page: "PÁGINA 05" },
           { t: "title", en: "DESCRIBING PEOPLE", pt: "Young, old, tall, short, long hair and short hair." },
           { t: "sec", text: "1 · YOUNG × OLD", c: "purple" },
-          { t: "image", id: "w19p5a", src: "/lessons/fotos/aula_19_pagina_05_foto_01.jpg", alt: "Mulher jovem e mulher idosa lado a lado", ph: "Ilustração: dois retratos lado a lado. À esquerda, uma mulher jovem de pele morena, cabelo escuro preso em coque, brincos de argola dourados e blazer bege sobre blusa branca, com colares finos, olhando de lado e sorrindo, dentro de um escritório claro com janela e planta. À direita, uma senhora de cabelo branco ondulado na altura do queixo, cardigã bege claro e colar fino, sorrindo de frente para a câmera na sala de casa, com porta-retratos, abajur e planta ao fundo." },
+          { t: "image", id: "w19p5a", src: "/lessons/fotos/aula_19_pagina_05_foto_01.jpg", alt: "Mulher jovem e mulher idosa lado a lado", w: 847, h: 259, ph: "Ilustração: dois retratos lado a lado. À esquerda, uma mulher jovem de pele morena, cabelo escuro preso em coque, brincos de argola dourados e blazer bege sobre blusa branca, com colares finos, olhando de lado e sorrindo, dentro de um escritório claro com janela e planta. À direita, uma senhora de cabelo branco ondulado na altura do queixo, cardigã bege claro e colar fino, sorrindo de frente para a câmera na sala de casa, com porta-retratos, abajur e planta ao fundo." },
           { t: "cards", cols: 2, items: [
             { tag: "YOUNG", c: "teal", v: "mint", lines: ["She is young.", "She is a young woman."] },
             { tag: "OLD", c: "purple", v: "lilac", lines: ["She is old.", "She is an old woman."] } ] },
           { t: "sec", text: "2 · TALL × SHORT", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "TALL", c: "teal", v: "mint", id: "w19p5b", src: "/lessons/fotos/aula_19_pagina_05_foto_02.jpg", alt: "Homem alto em pé num escritório", ph: "Foto: homem alto, de barba curta e cabelo escuro, em pé de frente para a câmera com as mãos nos bolsos, usando camisa azul-marinho de manga comprida, cinto preto e calça bege. Ao fundo, um escritório claro com divisórias de vidro, mesas de madeira e vasos de plantas.", lines: ["He is tall."] },
-            { tag: "SHORT", c: "purple", v: "lilac", id: "w19p5c", src: "/lessons/fotos/aula_19_pagina_05_foto_03.jpg", alt: "Homem baixo em pé na sala de casa", ph: "Foto: homem asiático de óculos, cabelo curto escuro, sorrindo de frente para a câmera com os braços soltos, usando jaqueta camisa verde-oliva sobre camiseta branca. Ao fundo, uma sala com estante de livros, quadro na parede, abajur aceso, poltrona amarela e uma planta.", lines: ["He is short."] } ] },
+            { tag: "TALL", c: "teal", v: "mint", id: "w19p5b", src: "/lessons/fotos/aula_19_pagina_05_foto_02.jpg", alt: "Homem alto em pé num escritório", w: 412, h: 258, ph: "Foto: homem alto, de barba curta e cabelo escuro, em pé de frente para a câmera com as mãos nos bolsos, usando camisa azul-marinho de manga comprida, cinto preto e calça bege. Ao fundo, um escritório claro com divisórias de vidro, mesas de madeira e vasos de plantas.", lines: ["He is tall."] },
+            { tag: "SHORT", c: "purple", v: "lilac", id: "w19p5c", src: "/lessons/fotos/aula_19_pagina_05_foto_03.jpg", alt: "Homem baixo em pé na sala de casa", w: 433, h: 274, ph: "Foto: homem asiático de óculos, cabelo curto escuro, sorrindo de frente para a câmera com os braços soltos, usando jaqueta camisa verde-oliva sobre camiseta branca. Ao fundo, uma sala com estante de livros, quadro na parede, abajur aceso, poltrona amarela e uma planta.", lines: ["He is short."] } ] },
           { t: "sec", text: "3 · LONG × SHORT HAIR", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "LONG HAIR", c: "teal", v: "mint", id: "w19p5d", src: "/lessons/fotos/aula_19_pagina_05_foto_04.jpg", alt: "Mulher de cabelo longo e ondulado", ph: "Foto: mulher jovem de cabelo castanho comprido e ondulado caindo sobre os ombros, camisa branca aberta, olhando de frente para a câmera com um sorriso leve. Ao fundo, a sala de casa com quadro na parede, sofá bege e uma planta.", lines: ["Her hair is long.", "She has long hair."] },
-            { tag: "SHORT HAIR", c: "purple", v: "lilac", id: "w19p5e", src: "/lessons/fotos/aula_19_pagina_05_foto_05.jpg", alt: "Mulher de cabelo curto estilo pixie", ph: "Foto: mulher de cabelo castanho bem curto, estilo pixie, brinco de argola dourado e blusa preta de gola alta, vista de perfil olhando para o lado. Ao fundo, parede clara com espelho redondo, um aparador de madeira e uma planta.", lines: ["Her hair is short."] } ] } ] },
+            { tag: "LONG HAIR", c: "teal", v: "mint", id: "w19p5d", src: "/lessons/fotos/aula_19_pagina_05_foto_04.jpg", alt: "Mulher de cabelo longo e ondulado", w: 409, h: 224, ph: "Foto: mulher jovem de cabelo castanho comprido e ondulado caindo sobre os ombros, camisa branca aberta, olhando de frente para a câmera com um sorriso leve. Ao fundo, a sala de casa com quadro na parede, sofá bege e uma planta.", lines: ["Her hair is long.", "She has long hair."] },
+            { tag: "SHORT HAIR", c: "purple", v: "lilac", id: "w19p5e", src: "/lessons/fotos/aula_19_pagina_05_foto_05.jpg", alt: "Mulher de cabelo curto estilo pixie", w: 433, h: 243, ph: "Foto: mulher de cabelo castanho bem curto, estilo pixie, brinco de argola dourado e blusa preta de gola alta, vista de perfil olhando para o lado. Ao fundo, parede clara com espelho redondo, um aparador de madeira e uma planta.", lines: ["Her hair is short."] } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 19", page: "PÁGINA 06" },
           { t: "title", en: "MORE ADJECTIVES", pt: "Beautiful, pretty, handsome, ugly, rich and poor." },
           { t: "sec", text: "1 · BEAUTIFUL × PRETTY", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "BEAUTIFUL", c: "teal", v: "mint", id: "w19p6a", alt: "Casa moderna iluminada com piscina", ph: "Foto: casa moderna de dois andares ao anoitecer, com grandes janelas de vidro iluminadas por dentro, paredes de concreto claro, jardim com plantas tropicais e uma piscina refletindo as luzes.", lines: ["It’s a beautiful house."] },
-            { tag: "PRETTY", c: "purple", v: "lilac", id: "w19p6b", alt: "Mulher jovem sorrindo dentro de casa", ph: "Ilustração: mulher jovem de pele morena, cabelo escuro preso em coque, brincos de argola dourados, colares finos e blazer bege sobre blusa branca, olhando de lado com um sorriso discreto. Ao fundo, parede clara com quadro, uma planta verde e uma janela.", lines: ["She is pretty."] } ] },
+            { tag: "BEAUTIFUL", c: "teal", v: "mint", id: "w19p6a", src: "/lessons/aulas/aula-19/w19p6a.webp", alt: "Casa moderna iluminada ao anoitecer com piscina no jardim", w: 424, h: 275, ph: "Foto: casa moderna de dois andares ao anoitecer, com grandes janelas de vidro iluminadas por dentro, paredes de concreto claro, jardim com plantas tropicais e uma piscina refletindo as luzes.", lines: ["It’s a beautiful house."] },
+            { tag: "PRETTY", c: "purple", v: "lilac", id: "w19p6b", src: "/lessons/aulas/aula-19/w19p6b.webp", alt: "Mulher sorrindo de lado num ambiente claro com planta ao fundo", w: 407, h: 276, ph: "Ilustração: mulher jovem de pele morena, cabelo escuro preso em coque, brincos de argola dourados, colares finos e blazer bege sobre blusa branca, olhando de lado com um sorriso discreto. Ao fundo, parede clara com quadro, uma planta verde e uma janela.", lines: ["She is pretty."] } ] },
           { t: "sec", text: "2 · HANDSOME × UGLY", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "HANDSOME", c: "teal", v: "mint", id: "w19p6c", alt: "Homem de terno sorrindo num ambiente elegante", ph: "Foto: homem de cabelo escuro e barba curta, sorrindo de frente para a câmera, usando terno azul-marinho sobre camisa escura, sentado num ambiente elegante com abajures acesos, poltronas e plantas ao fundo.", lines: ["He is handsome."] },
-            { tag: "UGLY", c: "purple", v: "lilac", id: "w19p6d", alt: "Poltrona velha e rasgada num canto da sala", ph: "Foto: poltrona antiga de tecido verde-acinzentado, com o estofado rasgado e manchado, num canto de parede descascada, sobre um tapete gasto, ao lado de um abajur de pé com cúpula bege.", lines: ["This chair is ugly."] } ] },
+            { tag: "HANDSOME", c: "teal", v: "mint", id: "w19p6c", src: "/lessons/aulas/aula-19/w19p6c.webp", alt: "Homem sorridente de terno azul marinho num ambiente elegante", w: 424, h: 249, ph: "Foto: homem de cabelo escuro e barba curta, sorrindo de frente para a câmera, usando terno azul-marinho sobre camisa escura, sentado num ambiente elegante com abajures acesos, poltronas e plantas ao fundo.", lines: ["He is handsome."] },
+            { tag: "UGLY", c: "purple", v: "lilac", id: "w19p6d", src: "/lessons/aulas/aula-19/w19p6d.webp", alt: "Poltrona antiga rasgada e manchada num canto de parede descascada", w: 398, h: 250, ph: "Foto: poltrona antiga de tecido verde-acinzentado, com o estofado rasgado e manchado, num canto de parede descascada, sobre um tapete gasto, ao lado de um abajur de pé com cúpula bege.", lines: ["This chair is ugly."] } ] },
           { t: "sec", text: "3 · RICH × POOR", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "RICH", c: "teal", v: "mint", id: "w19p6e", alt: "Homem de terno sentado num escritório com vista para a cidade", ph: "Foto: homem grisalho de óculos, terno escuro e camisa branca, sentado numa poltrona de couro marrom num escritório alto, com janelas panorâmicas mostrando os prédios da cidade, uma mesa de madeira com livros e um vaso dourado.", lines: ["He is rich.", "He is a rich man."] },
-            { tag: "POOR", c: "purple", v: "lilac", id: "w19p6f", alt: "Homem simples sentado à mesa segurando uma caneca", ph: "Foto: homem de boné e jaqueta cinza gasta, sentado a uma mesa simples de madeira segurando uma caneca branca, com uma parede de concreto sem acabamento ao fundo e alguns potes e garrafas sobre a mesa.", lines: ["This man is poor.", "He is a poor man."] } ] } ] },
+            { tag: "RICH", c: "teal", v: "mint", id: "w19p6e", src: "/lessons/aulas/aula-19/w19p6e.webp", alt: "Homem grisalho de terno sentado em escritório com vista da cidade", w: 424, h: 222, ph: "Foto: homem grisalho de óculos, terno escuro e camisa branca, sentado numa poltrona de couro marrom num escritório alto, com janelas panorâmicas mostrando os prédios da cidade, uma mesa de madeira com livros e um vaso dourado.", lines: ["He is rich.", "He is a rich man."] },
+            { tag: "POOR", c: "purple", v: "lilac", id: "w19p6f", src: "/lessons/aulas/aula-19/w19p6f.webp", alt: "Homem de boné sentado à mesa segurando uma caneca branca", w: 398, h: 223, ph: "Foto: homem de boné e jaqueta cinza gasta, sentado a uma mesa simples de madeira segurando uma caneca branca, com uma parede de concreto sem acabamento ao fundo e alguns potes e garrafas sobre a mesa.", lines: ["This man is poor.", "He is a poor man."] } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 19", page: "PÁGINA 07" },
           { t: "title", en: "ADJECTIVES DON’T CHANGE!", pt: "Adjectives do not have a plural form." },
           { t: "sec", text: "1 · NEW", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "SINGULAR", c: "teal", v: "mint", id: "w19p7a", alt: "Um carro cinza novo na concessionária", ph: "Foto: um carro sedã cinza novo, visto de frente e de três quartos, exposto no salão de uma concessionária com piso brilhante, janelas grandes e vasos de plantas ao fundo.", lines: ["a new car"] },
-            { tag: "PLURAL", c: "purple", v: "lilac", id: "w19p7b", alt: "Vários carros novos enfileirados na concessionária", ph: "Foto: três carros novos enfileirados lado a lado no salão de uma concessionária (um preto, um cinza e um prata), com piso espelhado e janelas grandes mostrando palmeiras lá fora. Entre esta foto e a anterior, um círculo branco com a palavra “VS”.", lines: ["new cars"] } ] },
+            { tag: "SINGULAR", c: "teal", v: "mint", id: "w19p7a", src: "/lessons/aulas/aula-19/w19p7a.webp", alt: "Carro sedã cinza novo exposto no salão de uma concessionária", w: 411, h: 190, ph: "Foto: um carro sedã cinza novo, visto de frente e de três quartos, exposto no salão de uma concessionária com piso brilhante, janelas grandes e vasos de plantas ao fundo.", lines: ["a new car"] },
+            { tag: "PLURAL", c: "purple", v: "lilac", id: "w19p7b", src: "/lessons/aulas/aula-19/w19p7b.webp", alt: "Três carros novos enfileirados no salão de uma concessionária", w: 413, h: 190, ph: "Foto: três carros novos enfileirados lado a lado no salão de uma concessionária (um preto, um cinza e um prata), com piso espelhado e janelas grandes mostrando palmeiras lá fora. Entre esta foto e a anterior, um círculo branco com a palavra “VS”.", lines: ["new cars"] } ] },
           { t: "note", v: "cream", center: true, bold: true, text: "NEW stays NEW." },
           { t: "sec", text: "2 · EXPENSIVE", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "SINGULAR", c: "teal", v: "mint", id: "w19p7c", alt: "Uma sandália de salto dourada", ph: "Foto: uma única sandália de salto alto dourada, com tiras de brilhantes, em pé sobre uma superfície clara, com um vaso de planta e um abajur dourado desfocados ao fundo.", lines: ["an expensive sandal"] },
-            { tag: "PLURAL", c: "purple", v: "lilac", id: "w19p7d", alt: "Várias sandálias de salto enfileiradas", ph: "Foto: cinco sandálias de salto enfileiradas lado a lado (douradas, prateadas e pretas, com tiras de brilhantes) sobre uma superfície clara, com plantas e um móvel bege ao fundo. Entre esta foto e a anterior, um círculo branco com a palavra “VS”.", lines: ["expensive sandals"] } ] },
+            { tag: "SINGULAR", c: "teal", v: "mint", id: "w19p7c", src: "/lessons/aulas/aula-19/w19p7c.webp", alt: "Sandália de salto alto dourada com tiras de brilhantes", w: 388, h: 173, ph: "Foto: uma única sandália de salto alto dourada, com tiras de brilhantes, em pé sobre uma superfície clara, com um vaso de planta e um abajur dourado desfocados ao fundo.", lines: ["an expensive sandal"] },
+            { tag: "PLURAL", c: "purple", v: "lilac", id: "w19p7d", src: "/lessons/aulas/aula-19/w19p7d.webp", alt: "Cinco sandálias de salto em cores douradas, prateadas e pretas", w: 391, h: 173, ph: "Foto: cinco sandálias de salto enfileiradas lado a lado (douradas, prateadas e pretas, com tiras de brilhantes) sobre uma superfície clara, com plantas e um móvel bege ao fundo. Entre esta foto e a anterior, um círculo branco com a palavra “VS”.", lines: ["expensive sandals"] } ] },
           { t: "note", v: "cream", center: true, bold: true, text: "EXPENSIVE stays EXPENSIVE." },
           { t: "sec", text: "3 · BIG", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "SINGULAR", c: "teal", v: "mint", id: "w19p7e", alt: "Um golden retriever sentado na sala", ph: "Foto: um golden retriever sentado sobre um tapete claro na sala de casa, com a língua para fora, olhando para a câmera. Ao fundo, poltrona cinza, parede branca e um vaso de planta.", lines: ["a big dog"] },
-            { tag: "PLURAL", c: "purple", v: "lilac", id: "w19p7f", alt: "Três cachorros grandes sentados lado a lado", ph: "Foto: três cachorros grandes sentados lado a lado no tapete da sala (um golden retriever, um labrador preto e um labrador amarelo), todos olhando para a câmera, com poltrona e plantas ao fundo. Entre esta foto e a anterior, um círculo branco com a palavra “VS”.", lines: ["big dogs"] } ] },
+            { tag: "SINGULAR", c: "teal", v: "mint", id: "w19p7e", src: "/lessons/aulas/aula-19/w19p7e.webp", alt: "Golden retriever sentado num tapete claro na sala de casa", w: 411, h: 172, ph: "Foto: um golden retriever sentado sobre um tapete claro na sala de casa, com a língua para fora, olhando para a câmera. Ao fundo, poltrona cinza, parede branca e um vaso de planta.", lines: ["a big dog"] },
+            { tag: "PLURAL", c: "purple", v: "lilac", id: "w19p7f", src: "/lessons/aulas/aula-19/w19p7f.webp", alt: "Três cachorros grandes sentados lado a lado num tapete da sala", w: 412, h: 172, ph: "Foto: três cachorros grandes sentados lado a lado no tapete da sala (um golden retriever, um labrador preto e um labrador amarelo), todos olhando para a câmera, com poltrona e plantas ao fundo. Entre esta foto e a anterior, um círculo branco com a palavra “VS”.", lines: ["big dogs"] } ] },
           { t: "note", v: "cream", center: true, bold: true, text: "BIG stays BIG." },
           { t: "note", v: "navy", bar: true, bold: true, text: "SINGULAR: adjective + noun\nPLURAL: adjective + noun\nOnly the noun changes." } ] },
 
@@ -3401,8 +3283,8 @@ export const LESSONS = [
           { t: "badge", label: "AULA 19", page: "PÁGINA 08" },
           { t: "title", en: "ONE", pt: "Don’t repeat the noun in the singular." },
           { t: "steps", items: [
-            { n: "1", tag: "SAME NOUN, SHORTER SENTENCE", c: "purple", v: "mint", id: "w19p8a", alt: "Cinco smartphones coloridos expostos numa loja", ph: "Foto: cinco smartphones em pé, lado a lado, sobre a mesa de madeira clara de uma loja de eletrônicos, vistos de costas: preto, branco, amarelo, rosa e verde. Ao fundo, prateleiras, telas e uma planta desfocadas.", lines: ["I like the yellow smartphone. → I like the yellow one."] },
-            { n: "2", tag: "ANOTHER EXAMPLE", c: "purple", v: "lilac", id: "w19p8b", alt: "Arara de camisetas numa loja de roupas", ph: "Foto: arara preta com camisetas penduradas em cabides de madeira, em degradê do branco ao preto, passando por bege, verde-militar e azul-escuro. Ao fundo, prateleiras de roupas dobradas e uma planta.", lines: ["These are t-shirts. → I like the black one."] } ] },
+            { n: "1", tag: "SAME NOUN, SHORTER SENTENCE", c: "purple", v: "mint", id: "w19p8a", src: "/lessons/aulas/aula-19/w19p8a.webp", alt: "Cinco smartphones em pé sobre mesa de loja vistos de costas", w: 842, h: 258, ph: "Foto: cinco smartphones em pé, lado a lado, sobre a mesa de madeira clara de uma loja de eletrônicos, vistos de costas: preto, branco, amarelo, rosa e verde. Ao fundo, prateleiras, telas e uma planta desfocadas.", lines: ["I like the yellow smartphone. → I like the yellow one."] },
+            { n: "2", tag: "ANOTHER EXAMPLE", c: "purple", v: "lilac", id: "w19p8b", src: "/lessons/aulas/aula-19/w19p8b.webp", alt: "Arara com camisetas penduradas em degradê do branco ao preto", w: 842, h: 247, ph: "Foto: arara preta com camisetas penduradas em cabides de madeira, em degradê do branco ao preto, passando por bege, verde-militar e azul-escuro. Ao fundo, prateleiras de roupas dobradas e uma planta.", lines: ["These are t-shirts. → I like the black one."] } ] },
           { t: "sec", text: "3 · HOW TO USE ONE", c: "purple" },
           { t: "note", v: "mint", bar: true, bold: true, text: "Use ONE to replace a singular noun you said before." },
           { t: "grid", cols: 3, items: [
@@ -3415,8 +3297,8 @@ export const LESSONS = [
           { t: "badge", label: "AULA 19", page: "PÁGINA 09" },
           { t: "title", en: "ONES", pt: "Use ONES to avoid repeating plural nouns." },
           { t: "steps", items: [
-            { n: "1", tag: "SAME NOUN, SHORTER SENTENCE", c: "purple", v: "mint", id: "w19p9a", src: "/lessons/fotos/aula_19_pagina_09_foto_01.jpg", alt: "Quatro cachorros na sala de casa", ph: "Foto: quatro cachorros na sala de casa, sobre um tapete claro: um golden retriever deitado à esquerda, um border collie preto e branco deitado no centro, um labrador amarelo sentado atrás e um poodle caramelo pequeno deitado à direita. Ao fundo, sofá cinza, quadro abstrato, estante e vasos de plantas.", lines: ["These are dogs.", "↓", "I like the big ones."] },
-            { n: "2", tag: "ANOTHER EXAMPLE", c: "purple", v: "lilac", id: "w19p9b", src: "/lessons/fotos/aula_19_pagina_09_foto_02.jpg", alt: "Notebooks enfileirados numa loja de eletrônicos", ph: "Foto: fileira de notebooks abertos sobre uma bancada de madeira clara numa loja de eletrônicos, todos com papéis de parede coloridos na tela. Ao fundo, prateleiras iluminadas, telas e o letreiro da loja, desfocados.", lines: ["These are computers.", "↓", "I like the new ones."] } ] },
+            { n: "1", tag: "SAME NOUN, SHORTER SENTENCE", c: "purple", v: "mint", id: "w19p9a", src: "/lessons/fotos/aula_19_pagina_09_foto_01.jpg", alt: "Quatro cachorros na sala de casa", w: 559, h: 344, ph: "Foto: quatro cachorros na sala de casa, sobre um tapete claro: um golden retriever deitado à esquerda, um border collie preto e branco deitado no centro, um labrador amarelo sentado atrás e um poodle caramelo pequeno deitado à direita. Ao fundo, sofá cinza, quadro abstrato, estante e vasos de plantas.", lines: ["These are dogs.", "↓", "I like the big ones."] },
+            { n: "2", tag: "ANOTHER EXAMPLE", c: "purple", v: "lilac", id: "w19p9b", src: "/lessons/fotos/aula_19_pagina_09_foto_02.jpg", alt: "Notebooks enfileirados numa loja de eletrônicos", w: 538, h: 269, ph: "Foto: fileira de notebooks abertos sobre uma bancada de madeira clara numa loja de eletrônicos, todos com papéis de parede coloridos na tela. Ao fundo, prateleiras iluminadas, telas e o letreiro da loja, desfocados.", lines: ["These are computers.", "↓", "I like the new ones."] } ] },
           { t: "note", v: "lilac", bar: true, bold: true, kicker: "HOW TO USE ONES", text: "Use ONES to replace a plural noun you said before." },
           { t: "grid", cols: 3, items: [
             { title: "ONES = plural", v: "gray", c: "teal" },
@@ -3436,8 +3318,8 @@ export const LESSONS = [
             { pre: "5. Are they", answers: ["happy"], post: "children?", note: "(happy)", v: "lilac" } ] },
           { t: "sec", text: "2 · DESCRIBE & CHOOSE", c: "purple" },
           { t: "cards", cols: 2, items: [
-            { tag: "SMARTPHONES", c: "purple", v: "lilac", id: "w19p10a", alt: "Três smartphones coloridos expostos numa loja", ph: "Foto: três smartphones em pé sobre suportes brancos, na mesa de madeira clara de uma loja de eletrônicos, vistos de costas: amarelo, preto e azul-claro. Ao fundo, telas e prateleiras desfocadas.", lines: ["These are smartphones.", "↓", "I like the yellow one."] },
-            { tag: "COMPUTERS", c: "teal", v: "mint", id: "w19p10b", alt: "Notebooks enfileirados numa loja de informática", ph: "Foto: quatro notebooks abertos enfileirados sobre uma bancada de madeira clara numa loja de informática, com papéis de parede coloridos nas telas. Ao fundo, prateleiras iluminadas e uma placa escrita “LAPTOPS”.", lines: ["These are computers.", "↓", "I like the new ones."] } ] },
+            { tag: "SMARTPHONES", c: "purple", v: "lilac", id: "w19p10a", src: "/lessons/aulas/aula-19/w19p10a.webp", alt: "Três smartphones em pé sobre suportes brancos numa loja", w: 409, h: 254, ph: "Foto: três smartphones em pé sobre suportes brancos, na mesa de madeira clara de uma loja de eletrônicos, vistos de costas: amarelo, preto e azul-claro. Ao fundo, telas e prateleiras desfocadas.", lines: ["These are smartphones.", "↓", "I like the yellow one."] },
+            { tag: "COMPUTERS", c: "teal", v: "mint", id: "w19p10b", src: "/lessons/aulas/aula-19/w19p10b.webp", alt: "Quatro notebooks abertos enfileirados numa loja de informática", w: 409, h: 265, ph: "Foto: quatro notebooks abertos enfileirados sobre uma bancada de madeira clara numa loja de informática, com papéis de parede coloridos nas telas. Ao fundo, prateleiras iluminadas e uma placa escrita “LAPTOPS”.", lines: ["These are computers.", "↓", "I like the new ones."] } ] },
           { t: "note", v: "gray", bar: true, kicker: "Adjective + noun", text: "one = singular  /  ones = plural" } ] },
 
         { blocks: [
@@ -3472,7 +3354,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 20" },
           { t: "title", en: "NUMBERS", pt: "Numbers are everywhere." },
           { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Os números aparecem o tempo todo no inglês do dia a dia." },
-          { t: "image", id: "w20p1a", alt: "Homem no café mexendo no celular, cercado de cartões com números", ph: "Foto: homem jovem de cabelo escuro cacheado e barba curta, com jaqueta verde-escura por cima de uma camiseta branca, sentado a uma mesa de madeira de uma cafeteria, segurando um celular branco com as duas mãos e sorrindo para a tela. Em volta dele flutuam cartões brancos: no alto à esquerda, um cartão de contato com ícone redondo azul-petróleo de pessoa e o texto “Daniel Alves · (11) 98765-4321”; no alto à direita, um quadrado roxo com “AGE 18”; à esquerda, uma etiqueta de preço com “COFFEE BEANS · 500g · $ 18.45”; à direita, um cupom com “TOTAL · 2,357 points · Thank you!”. Sobre a mesa há um pacote preto de café “COFFEE ROASTERS”, uma caneca azul-escura, um lápis e um caderno verde; à direita, um vaso de planta e, ao fundo, prateleiras com plantas e a vitrine da loja." },
+          { t: "image", id: "w20p1a", src: "/lessons/aulas/aula-20/w20p1a.webp", alt: "Homem sorridente com celular numa cafeteria cercado por cartões de contato, idade e preço", w: 876, h: 526, ph: "Foto: homem jovem de cabelo escuro cacheado e barba curta, com jaqueta verde-escura por cima de uma camiseta branca, sentado a uma mesa de madeira de uma cafeteria, segurando um celular branco com as duas mãos e sorrindo para a tela. Em volta dele flutuam cartões brancos: no alto à esquerda, um cartão de contato com ícone redondo azul-petróleo de pessoa e o texto “Daniel Alves · (11) 98765-4321”; no alto à direita, um quadrado roxo com “AGE 18”; à esquerda, uma etiqueta de preço com “COFFEE BEANS · 500g · $ 18.45”; à direita, um cupom com “TOTAL · 2,357 points · Thank you!”. Sobre a mesa há um pacote preto de café “COFFEE ROASTERS”, uma caneca azul-escura, um lápis e um caderno verde; à direita, um vaso de planta e, ao fundo, prateleiras com plantas e a vitrine da loja." },
           { t: "sec", text: "VOCÊ VERÁ NÚMEROS EM MUITAS SITUAÇÕES:", c: "purple" },
           { t: "grid", cols: 3, items: [
             { title: "Contatos", body: "(11) 98765-4321", foot: "Phone numbers", v: "mint", c: "teal" },
@@ -3484,7 +3366,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 20", page: "PÁGINA 02" },
           { t: "title", en: "NUMBERS", pt: "Numbers are everywhere." },
           { t: "lead", text: "Números fazem parte do nosso dia a dia em muitas situações: no celular, na idade, nos preços, nos endereços e muito mais." },
-          { t: "image", id: "w20p2a", alt: "Homem sorrindo no café com celular e café, cercado de cartões de telefone, idade, preço e endereço", ph: "Foto: homem jovem de cabelo castanho e barba curta, com jaqueta jeans azul-marinho por cima de uma camiseta branca, sentado a uma mesa de café. Ele sorri olhando para o lado, segura um celular preto na mão direita e um copo de papel de café na mão esquerda. Sobre a mesa há um notebook fechado, dois livros empilhados e um prato com um croissant. Flutuando sobre a foto: um cartão branco com ícone de telefone azul-petróleo e o texto “PHONE NUMBER · 90765-0023”; um cartão roxo “AGE” com “I’m 24 years old.”; um cartão amarelo “PRICE” com “$45.90”; e um cartão branco com alfinete de mapa azul-petróleo e o texto “ADDRESS · Av. Brasil, 250 · Campina Grande - PB”. Ao fundo, a cafeteria com luminárias penduradas e um quadro-negro de menu." },
+          { t: "image", id: "w20p2a", src: "/lessons/aulas/aula-20/w20p2a.webp", alt: "Homem sorri ao celular numa cafeteria com café na mão e cartões de telefone, idade e preço", w: 554, h: 635, ph: "Foto: homem jovem de cabelo castanho e barba curta, com jaqueta jeans azul-marinho por cima de uma camiseta branca, sentado a uma mesa de café. Ele sorri olhando para o lado, segura um celular preto na mão direita e um copo de papel de café na mão esquerda. Sobre a mesa há um notebook fechado, dois livros empilhados e um prato com um croissant. Flutuando sobre a foto: um cartão branco com ícone de telefone azul-petróleo e o texto “PHONE NUMBER · 90765-0023”; um cartão roxo “AGE” com “I’m 24 years old.”; um cartão amarelo “PRICE” com “$45.90”; e um cartão branco com alfinete de mapa azul-petróleo e o texto “ADDRESS · Av. Brasil, 250 · Campina Grande - PB”. Ao fundo, a cafeteria com luminárias penduradas e um quadro-negro de menu." },
           { t: "sec", text: "NESTA AULA, VOCÊ VAI APRENDER A:", c: "purple" },
           { t: "rows", items: [
             { text: "reconhecer e dizer os números de 0 até milhares;", c: "teal" },
@@ -3520,7 +3402,7 @@ export const LESSONS = [
             { n: "17", text: "seventeen", c: "purple" },
             { n: "18", text: "eighteen", c: "purple" },
             { n: "19", text: "nineteen", c: "purple" } ] },
-          { t: "image", id: "w20p3a", alt: "Jovem estudando na biblioteca entre estantes numeradas", ph: "Foto: jovem de cabelo castanho comprido e solto, com jaqueta verde-oliva por cima de uma blusa branca, sentada a uma mesa de madeira de uma biblioteca. Ela escreve em um caderno com uma caneta e tem um notebook aberto à direita e um copo de papel de café à esquerda. Atrás dela, estantes de livros com placas verticais numeradas 10, 17 e 19; ao fundo, outro estudante sentado." },
+          { t: "image", id: "w20p3a", src: "/lessons/aulas/aula-20/w20p3a.webp", alt: "Jovem escreve no caderno numa biblioteca com notebook, café e estantes numeradas ao fundo", w: 451, h: 586, ph: "Foto: jovem de cabelo castanho comprido e solto, com jaqueta verde-oliva por cima de uma blusa branca, sentada a uma mesa de madeira de uma biblioteca. Ela escreve em um caderno com uma caneta e tem um notebook aberto à direita e um copo de papel de café à esquerda. Atrás dela, estantes de livros com placas verticais numeradas 10, 17 e 19; ao fundo, outro estudante sentado." },
           { t: "sec", text: "EXAMPLES", c: "purple" },
           { t: "rows", items: [
             { text: "Room ten.", c: "purple" },
@@ -3551,7 +3433,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 20", page: "PÁGINA 04" },
           { t: "title", en: "NUMBERS", pt: "20–99: Build the number" },
           { t: "lead", text: "Em inglês, números entre 20 e 99 são formados com dezenas + unidades. Lembra? Usamos hífen (-) para conectar!" },
-          { t: "image", id: "w20p4a", alt: "Homem escolhendo roupa na loja diante de uma placa de preço", ph: "Foto: homem jovem de cabelo escuro cacheado e barba curta, com jaqueta verde-escura por cima de uma camiseta branca, em pé dentro de uma loja de roupas. Ele segura na mão direita um cabide com um suéter bege e na esquerda o celular, sorrindo. Atrás dele, uma arara com camisas e calças jeans e uma pilha de roupas dobradas; à direita, uma placa preta de quadro-negro com o texto “NEW COLLECTION · FROM $21.99”." },
+          { t: "image", id: "w20p4a", src: "/lessons/aulas/aula-20/w20p4a.webp", alt: "Homem sorridente experimenta suéter numa loja de roupas com placa de promoção ao fundo", w: 487, h: 364, ph: "Foto: homem jovem de cabelo escuro cacheado e barba curta, com jaqueta verde-escura por cima de uma camiseta branca, em pé dentro de uma loja de roupas. Ele segura na mão direita um cabide com um suéter bege e na esquerda o celular, sorrindo. Atrás dele, uma arara com camisas e calças jeans e uma pilha de roupas dobradas; à direita, uma placa preta de quadro-negro com o texto “NEW COLLECTION · FROM $21.99”." },
           { t: "sec", text: "AS DEZENAS", c: "teal" },
           { t: "rows", items: [
             { n: "20", text: "twenty", c: "teal" },
@@ -3574,10 +3456,10 @@ export const LESSONS = [
           { t: "note", v: "cream", bar: true, kicker: "REGRINHA DE OURO", text: "Usamos o hífen (-) em todos os números compostos de 21 a 99, EXCETO nas dezenas exatas:\n20, 30, 40, 50, 60, 70, 80 e 90." },
           { t: "sec", text: "NUMBERS IN REAL LIFE", c: "teal" },
           { t: "cards", cols: 2, items: [
-            { tag: "Bus 25", lines: ["twenty-five"], c: "teal", v: "mint", id: "w20p4b", alt: "Ônibus urbano azul com o número 25", ph: "Foto: ônibus urbano azul com a frente inferior amarela, visto de frente, parado numa rua, com o número 25 em laranja no letreiro eletrônico acima do para-brisa. Ao fundo, carros, árvores e prédios desfocados." },
-            { tag: "Room 305", lines: ["three hundred five"], c: "purple", v: "lilac", id: "w20p4c", alt: "Placa de porta de hotel com o número 305", ph: "Foto: placa quadrada preta com moldura dourada, presa num nicho de parede bege clara, com “ROOM” em letras douradas pequenas na parte de cima e “305” em letras douradas grandes embaixo." },
-            { tag: "Table 48", lines: ["forty-eight"], c: "yellow", v: "cream", id: "w20p4d", alt: "Numerador de mesa com o número 48", ph: "Foto: cartão branco dobrado em cavalete, em pé sobre uma mesa de madeira clara, impresso com o número 48 em preto. Ao fundo, o interior desfocado de uma cafeteria." },
-            { tag: "Price $79.90", lines: ["seventy-nine dollars and ninety cents"], c: "teal", v: "mint", id: "w20p4e", alt: "Etiqueta de preço de 79,90 dólares com código de barras", ph: "Foto: etiqueta de papel branca presa por um cordão preto a uma peça de malha bege, impressa com “$79.90” em letras grandes e um código de barras abaixo, sobre uma tábua de madeira clara." } ] },
+            { tag: "Bus 25", lines: ["twenty-five"], c: "teal", v: "mint", id: "w20p4b", src: "/lessons/aulas/aula-20/w20p4b.webp", alt: "Ônibus urbano azul visto de frente com o número 25 no letreiro eletrônico", w: 138, h: 131, ph: "Foto: ônibus urbano azul com a frente inferior amarela, visto de frente, parado numa rua, com o número 25 em laranja no letreiro eletrônico acima do para-brisa. Ao fundo, carros, árvores e prédios desfocados." },
+            { tag: "Room 305", lines: ["three hundred five"], c: "purple", v: "lilac", id: "w20p4c", src: "/lessons/aulas/aula-20/w20p4c.webp", alt: "Placa dourada de quarto de hotel presa à parede mostrando o número 305", w: 128, h: 128, ph: "Foto: placa quadrada preta com moldura dourada, presa num nicho de parede bege clara, com “ROOM” em letras douradas pequenas na parte de cima e “305” em letras douradas grandes embaixo." },
+            { tag: "Table 48", lines: ["forty-eight"], c: "yellow", v: "cream", id: "w20p4d", src: "/lessons/aulas/aula-20/w20p4d.webp", alt: "Cartão de mesa em cavalete com o número 48 numa cafeteria", w: 138, h: 132, ph: "Foto: cartão branco dobrado em cavalete, em pé sobre uma mesa de madeira clara, impresso com o número 48 em preto. Ao fundo, o interior desfocado de uma cafeteria." },
+            { tag: "Price $79.90", lines: ["seventy-nine dollars and ninety cents"], c: "teal", v: "mint", id: "w20p4e", src: "/lessons/aulas/aula-20/w20p4e.webp", alt: "Etiqueta de preço presa a uma peça de roupa mostrando 79 dólares e 90 centavos", w: 144, h: 125, ph: "Foto: etiqueta de papel branca presa por um cordão preto a uma peça de malha bege, impressa com “$79.90” em letras grandes e um código de barras abaixo, sobre uma tábua de madeira clara." } ] },
           { t: "sec", text: "PRACTICE!", c: "teal" },
           { t: "lead", text: "Leia os números em voz alta. Depois, pratique com a IA!" },
           { t: "grid", cols: 2, items: [
@@ -3595,7 +3477,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 20", page: "PÁGINA 05" },
           { t: "title", en: "NUMBERS", pt: "How old are you? + 100" },
           { t: "lead", text: "Agora vamos usar números para falar da idade e conhecer 100." },
-          { t: "image", id: "w20p5a", alt: "Dois amigos conversando no café sobre idade", ph: "Foto: mulher de cabelo castanho comprido e suéter bege, à esquerda, segurando uma xícara branca, e homem de cabelo escuro e jaqueta verde, à direita, segurando uma caneca preta, sentados frente a frente à mesa de madeira de uma cafeteria. Três balões de fala brancos sobre a cena: “How old are you?” acima da mulher, “I’m twenty-four.” saindo do homem e “I’m twenty-four years old.” logo abaixo. Sobre a mesa, um caderno com caneta e um vasinho de planta; ao fundo, o balcão da cafeteria com prateleiras e quadro-negro." },
+          { t: "image", id: "w20p5a", src: "/lessons/aulas/aula-20/w20p5a.webp", alt: "Casal sorri à mesa de cafeteria com balões de fala perguntando e dizendo a idade", w: 536, h: 400, ph: "Foto: mulher de cabelo castanho comprido e suéter bege, à esquerda, segurando uma xícara branca, e homem de cabelo escuro e jaqueta verde, à direita, segurando uma caneca preta, sentados frente a frente à mesa de madeira de uma cafeteria. Três balões de fala brancos sobre a cena: “How old are you?” acima da mulher, “I’m twenty-four.” saindo do homem e “I’m twenty-four years old.” logo abaixo. Sobre a mesa, um caderno com caneta e um vasinho de planta; ao fundo, o balcão da cafeteria com prateleiras e quadro-negro." },
           { t: "dialogue", items: [
             { s: "a", text: "How old are you?" },
             { s: "b", text: "I’m twenty-four." },
@@ -3632,7 +3514,7 @@ export const LESSONS = [
           { t: "sec", text: "PRACTICE TIME!", c: "teal" },
           { t: "lead", text: "Fale a sua idade (fictícia)! Escreva e depois pratique em voz alta." },
           { t: "steps", items: [
-            { n: "1", tag: "Choose an age.", lines: ["12 · 21 · 33 · 47 · 60"], c: "teal", v: "mint", id: "w20p5b", alt: "Cinco velas de aniversário com os números 12, 21, 33, 47 e 60", ph: "Ilustração: cinco velinhas de aniversário lado a lado, cada uma com listras de uma cor diferente (amarela, roxa, azul-petróleo escuro, laranja e azul-petróleo) e a chama amarela acesa no topo. Embaixo de cada vela, um número grande na mesma cor da vela: 12, 21, 33, 47 e 60." },
+            { n: "1", tag: "Choose an age.", lines: ["12 · 21 · 33 · 47 · 60"], c: "teal", v: "mint", id: "w20p5b", src: "/lessons/aulas/aula-20/w20p5b.webp", alt: "Cinco velinhas de aniversário coloridas acesas com os números 12, 21, 33, 47 e 60", w: 340, h: 83, ph: "Ilustração: cinco velinhas de aniversário lado a lado, cada uma com listras de uma cor diferente (amarela, roxa, azul-petróleo escuro, laranja e azul-petróleo) e a chama amarela acesa no topo. Embaixo de cada vela, um número grande na mesma cor da vela: 12, 21, 33, 47 e 60." },
             { n: "2", tag: "Write.", lines: ["I’m __________.", "I’m __________ years old."], c: "purple", v: "lilac" },
             { n: "3", tag: "Say it!", c: "yellow", v: "cream" } ] },
           { t: "free", id: "w20f1", cols: 2, items: [
@@ -3648,7 +3530,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 20", page: "PÁGINA 06" },
           { t: "title", en: "NUMBERS", pt: "OVER 100 · 101–199 and more" },
           { t: "lead", text: "Vamos formar números acima de 100 e entender a diferença entre American English e British English." },
-          { t: "image", id: "w20p6a", alt: "Recepção de hotel com a placa do quarto 142", ph: "Foto: balcão de check-in de um hotel. À esquerda, um homem de cabelo escuro e jaqueta verde entrega um cartão; à direita, atrás do balcão, uma recepcionista de cabelo castanho preso e blazer escuro sorri ao recebê-lo, com um computador ao lado. Na parede de ripas de madeira ao fundo, uma placa preta com “CHECK-IN” e, ao lado, um painel grande com “ROOM 142 · Floor 1”. À direita, um vaso de planta." },
+          { t: "image", id: "w20p6a", src: "/lessons/aulas/aula-20/w20p6a.webp", alt: "Hóspede entrega cartão à recepcionista num balcão de check-in com painel do quarto 142", w: 498, h: 372, ph: "Foto: balcão de check-in de um hotel. À esquerda, um homem de cabelo escuro e jaqueta verde entrega um cartão; à direita, atrás do balcão, uma recepcionista de cabelo castanho preso e blazer escuro sorri ao recebê-lo, com um computador ao lado. Na parede de ripas de madeira ao fundo, uma placa preta com “CHECK-IN” e, ao lado, um painel grande com “ROOM 142 · Floor 1”. À direita, um vaso de planta." },
           { t: "note", v: "navy", bold: true, text: "Os números acima de 100 seguem uma lógica: hundred + o restante do número." },
           { t: "sec", text: "CONSTRUINDO NÚMEROS ACIMA DE 100", c: "purple" },
           { t: "rows", items: [
@@ -3689,16 +3571,16 @@ export const LESSONS = [
             { title: "199", body: "a hundred ninety-nine", v: "mint", c: "teal" } ] },
           { t: "note", v: "cream", bar: true, kicker: "THINK ABOUT IT!", text: "Tente encontrar números acima de 100 no seu dia a dia: número do quarto do hotel, do assento do avião, da casa, da sala, etc." },
           { t: "cards", cols: 2, items: [
-            { tag: "Quarto", c: "purple", v: "lilac", id: "w20p6b", alt: "Ícone de placa de quarto de hotel 305", ph: "Ilustração: ícone circular roxo-claro com uma porta roxa escura vista de frente; na porta, uma plaquinha com a palavra “ROOM” e, embaixo, o número “305” em letras brancas." },
-            { tag: "Assento 24A", c: "teal", v: "mint", id: "w20p6c", alt: "Ícone de poltrona de avião", ph: "Ilustração: ícone circular azul-petróleo com uma poltrona de avião creme vista de frente, com encosto de cabeça branco e braços arredondados; à direita da poltrona, uma janelinha oval azul-escura." },
-            { tag: "Casa 178", c: "orange", v: "cream", id: "w20p6d", alt: "Ícone de casa", ph: "Ilustração: ícone circular laranja com uma casinha de paredes creme vista de frente, telhado triangular vermelho-alaranjado, porta marrom-avermelhada no centro e um pequeno óculo redondo acima da porta." },
-            { tag: "Sala 12", c: "green", v: "mint", id: "w20p6e", alt: "Ícone de porta de sala", ph: "Ilustração: ícone circular verde com uma porta entreaberta: à esquerda, o batente creme com uma plaquinha verde; à direita, a folha da porta em verde-escuro com um visor oval claro." } ] } ] },
+            { tag: "Quarto", c: "purple", v: "lilac", id: "w20p6b", src: "/lessons/aulas/aula-20/w20p6b.webp", alt: "Ícone de porta roxa com plaquinha indicando o número do quarto 305", w: 74, h: 70, ph: "Ilustração: ícone circular roxo-claro com uma porta roxa escura vista de frente; na porta, uma plaquinha com a palavra “ROOM” e, embaixo, o número “305” em letras brancas." },
+            { tag: "Assento 24A", c: "teal", v: "mint", id: "w20p6c", src: "/lessons/aulas/aula-20/w20p6c.webp", alt: "Ícone de poltrona de avião creme com janelinha ao lado", w: 76, h: 70, ph: "Ilustração: ícone circular azul-petróleo com uma poltrona de avião creme vista de frente, com encosto de cabeça branco e braços arredondados; à direita da poltrona, uma janelinha oval azul-escura." },
+            { tag: "Casa 178", c: "orange", v: "cream", id: "w20p6d", src: "/lessons/aulas/aula-20/w20p6d.webp", alt: "Ícone de casinha laranja com telhado triangular e porta central", w: 74, h: 70, ph: "Ilustração: ícone circular laranja com uma casinha de paredes creme vista de frente, telhado triangular vermelho-alaranjado, porta marrom-avermelhada no centro e um pequeno óculo redondo acima da porta." },
+            { tag: "Sala 12", c: "green", v: "mint", id: "w20p6e", src: "/lessons/aulas/aula-20/w20p6e.webp", alt: "Ícone de porta entreaberta verde com visor oval", w: 74, h: 70, ph: "Ilustração: ícone circular verde com uma porta entreaberta: à esquerda, o batente creme com uma plaquinha verde; à direita, a folha da porta em verde-escuro com um visor oval claro." } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 20", page: "PÁGINA 07" },
           { t: "title", en: "NUMBERS", pt: "HUNDREDS · 200–999 and more" },
           { t: "lead", text: "Depois de 100, usamos “hundred” para formar centenas e números maiores." },
-          { t: "image", id: "w20p7a", alt: "Homem trabalhando na varanda com vista para a cidade", ph: "Foto: homem jovem negro, de cabelo crespo curto e barba, com camisa jeans azul-clara por cima de uma camiseta branca e fones de ouvido brancos, sentado a uma mesa de madeira na varanda de um apartamento, digitando em um notebook e sorrindo. Sobre a mesa, uma caneca cinza-escura, um caderno com caneta e um vasinho de planta. Ao fundo, a vista dos prédios da cidade. Um balão de fala branco à direita diz: “In my city, there are 682 cafés and 245 parks!”." },
+          { t: "image", id: "w20p7a", src: "/lessons/aulas/aula-20/w20p7a.webp", alt: "Homem com fones de ouvido digita no notebook na varanda com balão de fala sobre números da cidade", w: 528, h: 341, ph: "Foto: homem jovem negro, de cabelo crespo curto e barba, com camisa jeans azul-clara por cima de uma camiseta branca e fones de ouvido brancos, sentado a uma mesa de madeira na varanda de um apartamento, digitando em um notebook e sorrindo. Sobre a mesa, uma caneca cinza-escura, um caderno com caneta e um vasinho de planta. Ao fundo, a vista dos prédios da cidade. Um balão de fala branco à direita diz: “In my city, there are 682 cafés and 245 parks!”." },
           { t: "dialogue", items: [
             { s: "a", text: "In my city, there are 682 cafés and 245 parks!" } ] },
           { t: "note", v: "navy", kicker: "REGRA GERAL", text: "[number] + hundred + [restante do número]" },
@@ -3738,18 +3620,18 @@ export const LESSONS = [
             { title: "999", body: "nine hundred ninety-nine", v: "lilac", c: "purple" } ] },
           { t: "sec", text: "NUMBERS IN REAL LIFE", c: "teal" },
           { t: "cards", cols: 2, items: [
-            { tag: "Bus 512", lines: ["five hundred twelve"], c: "teal", v: "mint", id: "w20p7b", alt: "Frente de um ônibus azul com o número 512", ph: "Foto: frente de um ônibus urbano moderno, azul com faixas brancas e prateadas, parado sob a cobertura de uma estação, com o número 512 em amarelo no letreiro eletrônico acima do para-brisa e os faróis acesos." },
-            { tag: "720 items", lines: ["seven hundred twenty"], c: "yellow", v: "cream", id: "w20p7c", alt: "Caixa de papelão com a etiqueta 720 Items", ph: "Foto: caixa de papelão fechada, vista de canto, sobre um piso de madeira, com uma placa branca presa na frente escrita “720” em números grandes pretos e “Items” abaixo." },
-            { tag: "Room 389", lines: ["three hundred eighty-nine"], c: "purple", v: "lilac", id: "w20p7d", alt: "Placa de porta com o número 389", ph: "Foto: placa quadrada preta com moldura dourada, presa a um painel de madeira clara, com “ROOM” em letras douradas pequenas e “389” em letras grandes cor de creme." },
-            { tag: "872 subscribers", lines: ["eight hundred seventy-two"], c: "blue", v: "mint", id: "w20p7e", alt: "Tela mostrando 872 inscritos", ph: "Foto: televisor de moldura preta pendurado numa parede cinza-clara, com a tela preta mostrando o número “872” em azul vivo e a palavra “Subscribers” logo abaixo, em azul menor." },
-            { tag: "Section 999", lines: ["nine hundred ninety-nine"], c: "navy", v: "gray", id: "w20p7f", alt: "Placa de estádio com a seção 999", ph: "Foto: placa retangular verde-escura presa no alto de um poste dentro de um estádio, com “SECTION” em letras brancas pequenas e “999” em letras brancas grandes; ao fundo, o gramado e as arquibancadas." } ] },
+            { tag: "Bus 512", lines: ["five hundred twelve"], c: "teal", v: "mint", id: "w20p7b", src: "/lessons/aulas/aula-20/w20p7b.webp", alt: "Ônibus urbano moderno parado numa estação com o número 512 no letreiro", w: 137, h: 112, ph: "Foto: frente de um ônibus urbano moderno, azul com faixas brancas e prateadas, parado sob a cobertura de uma estação, com o número 512 em amarelo no letreiro eletrônico acima do para-brisa e os faróis acesos." },
+            { tag: "720 items", lines: ["seven hundred twenty"], c: "yellow", v: "cream", id: "w20p7c", src: "/lessons/aulas/aula-20/w20p7c.webp", alt: "Caixa de papelão com etiqueta mostrando o número 720 e a palavra items", w: 125, h: 105, ph: "Foto: caixa de papelão fechada, vista de canto, sobre um piso de madeira, com uma placa branca presa na frente escrita “720” em números grandes pretos e “Items” abaixo." },
+            { tag: "Room 389", lines: ["three hundred eighty-nine"], c: "purple", v: "lilac", id: "w20p7d", src: "/lessons/aulas/aula-20/w20p7d.webp", alt: "Placa dourada de quarto de hotel mostrando o número 389", w: 117, h: 111, ph: "Foto: placa quadrada preta com moldura dourada, presa a um painel de madeira clara, com “ROOM” em letras douradas pequenas e “389” em letras grandes cor de creme." },
+            { tag: "872 subscribers", lines: ["eight hundred seventy-two"], c: "blue", v: "mint", id: "w20p7e", src: "/lessons/aulas/aula-20/w20p7e.webp", alt: "Televisor de tela preta mostrando o número 872 e a palavra subscribers", w: 121, h: 108, ph: "Foto: televisor de moldura preta pendurado numa parede cinza-clara, com a tela preta mostrando o número “872” em azul vivo e a palavra “Subscribers” logo abaixo, em azul menor." },
+            { tag: "Section 999", lines: ["nine hundred ninety-nine"], c: "navy", v: "gray", id: "w20p7f", src: "/lessons/aulas/aula-20/w20p7f.webp", alt: "Placa verde num poste de estádio mostrando a palavra section e o número 999", w: 142, h: 113, ph: "Foto: placa retangular verde-escura presa no alto de um poste dentro de um estádio, com “SECTION” em letras brancas pequenas e “999” em letras brancas grandes; ao fundo, o gramado e as arquibancadas." } ] },
           { t: "note", v: "mint", kicker: "FUN FACT!", text: "Números grandes fazem parte do nosso dia a dia: tecnologia, esportes, transporte, lojas e muito mais!" } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 20", page: "PÁGINA 08" },
           { t: "title", en: "NUMBERS", pt: "THOUSANDS · 1,000–9,999" },
           { t: "lead", text: "Nesta aula, seguimos principalmente o padrão americano sem ‘and’." },
-          { t: "image", id: "w20p8a", alt: "Estudante na biblioteca falando sobre os 2.357 alunos da universidade", ph: "Foto: jovem de cabelo castanho comprido, com jaqueta jeans azul por cima de uma blusa branca, sentada a uma mesa de biblioteca escrevendo em um caderno, com um notebook aberto à frente e um copo de papel de café ao lado. À direita, uma pilha de livros com as lombadas escritas “WORLD ATLAS”, “SCIENCE TODAY” e “HISTORY OF CITIES”; ao fundo, estantes de livros e uma janela grande. Um balão de fala branco no alto diz: “My university has 2,357 students from 28 countries!”." },
+          { t: "image", id: "w20p8a", src: "/lessons/aulas/aula-20/w20p8a.webp", alt: "Jovem escreve no caderno numa biblioteca com notebook, livros e balão de fala sobre a universidade", w: 533, h: 296, ph: "Foto: jovem de cabelo castanho comprido, com jaqueta jeans azul por cima de uma blusa branca, sentada a uma mesa de biblioteca escrevendo em um caderno, com um notebook aberto à frente e um copo de papel de café ao lado. À direita, uma pilha de livros com as lombadas escritas “WORLD ATLAS”, “SCIENCE TODAY” e “HISTORY OF CITIES”; ao fundo, estantes de livros e uma janela grande. Um balão de fala branco no alto diz: “My university has 2,357 students from 28 countries!”." },
           { t: "dialogue", items: [
             { s: "a", text: "My university has 2,357 students from 28 countries!" } ] },
           { t: "note", v: "navy", kicker: "REGRA GERAL", text: "[number] + thousand + [restante do número]" },
@@ -3793,7 +3675,7 @@ export const LESSONS = [
           { t: "badge", label: "AULA 20", page: "PÁGINA 09" },
           { t: "title", en: "YOUR TURN!", pt: "Numbers in real life." },
           { t: "lead", text: "Agora é sua vez de usar números em situações reais." },
-          { t: "image", id: "w20p9a", alt: "Homem no café com cartões de telefone, idade e preços", ph: "Foto: recorte da cena da cafeteria: homem jovem de cabelo escuro cacheado e jaqueta verde-escura, sentado à mesa de madeira olhando para o celular que segura com as duas mãos. Sobre a foto, o quadrado roxo “AGE 18” no alto à direita, a ponta do cartão de contato com o final do número “…321” à esquerda, o cupom “TOTAL 2,357” à direita e, na frente, um cartão branco com o texto “REAL-LIFE NUMBERS · phone • age • prices”. Ao fundo, prateleiras com plantas." },
+          { t: "image", id: "w20p9a", src: "/lessons/aulas/aula-20/w20p9a.webp", alt: "Homem olha o celular numa cafeteria com cartão de idade, cupom de pontos e aviso sobre números reais", w: 470, h: 330, ph: "Foto: recorte da cena da cafeteria: homem jovem de cabelo escuro cacheado e jaqueta verde-escura, sentado à mesa de madeira olhando para o celular que segura com as duas mãos. Sobre a foto, o quadrado roxo “AGE 18” no alto à direita, a ponta do cartão de contato com o final do número “…321” à esquerda, o cupom “TOTAL 2,357” à direita e, na frente, um cartão branco com o texto “REAL-LIFE NUMBERS · phone • age • prices”. Ao fundo, prateleiras com plantas." },
           { t: "sec", text: "1 · LISTEN & WRITE", c: "purple" },
           { t: "lead", text: "Ouça e escreva os números ditados." },
           { t: "note", v: "gray", text: "Na prática com áudio, você ouvirá 5 números." },
@@ -3862,7 +3744,9 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p1a",
-            alt: "Homem em uma estação de trem olhando o relógio de pulso.",
+            src: "/lessons/aulas/aula-21/w21p1a.webp",
+            alt: "Homem observa o relógio de pulso no saguão da estação, painel mostra 10:25 e horários dos trens",
+            w: 984, h: 738,
             ph: "Foto: homem jovem de cabelo castanho ondulado, camisa jaqueta verde-oliva sobre camiseta branca e mochila de couro marrom no ombro, dentro do saguão envidraçado de uma estação de trem, olhando para o relógio de pulso preto. À direita, um painel eletrônico preto mostra um relógio analógico, o horário 10:25 em branco e PLATFORM 3 em amarelo, e abaixo a lista de destinos: New York 10:40, Boston 11:15, Washington 11:45. Ao fundo, passageiros caminhando e o teto de vidro da estação.",
           },
           { t: "sec", text: "NESTE AULA, VOCÊ VAI:" },
@@ -3880,7 +3764,9 @@ export const LESSONS = [
               v: "lilac",
               note: "Olhe o relógio.",
               id: "w21p1b",
-              alt: "Relógio analógico marcando dez horas e vinte e cinco minutos.",
+              src: "/lessons/aulas/aula-21/w21p1b.webp",
+              alt: "Relógio azul-marinho marcando 10:25 com setas pontilhadas ligando pergunta e resposta",
+              w: 201, h: 188,
               ph: "Ilustração: relógio analógico redondo com aro azul-marinho grosso e mostrador branco, números de 1 a 12 em azul-marinho, ponteiro das horas no 10 e ponteiro dos minutos no 5 (10:25). Setas pontilhadas verde-azulada e roxa entram e saem do relógio, ligando o balão da pergunta ao balão da resposta.",
             },
             { n: "3", tag: "SAY", c: "yellow", v: "cream", note: "Diga a hora em inglês.", lines: ["It’s ten twenty-five."] } ] },
@@ -3899,7 +3785,9 @@ export const LESSONS = [
               c: "teal",
               v: "mint",
               id: "w21p2a",
-              alt: "Homem sentado à mesa olhando o relógio de pulso.",
+              src: "/lessons/aulas/aula-21/w21p2a.webp",
+              alt: "Homem sentado à mesa à noite olhando o relógio de pulso, caneca e livro aberto ao lado",
+              w: 503, h: 450,
               ph: "Ilustração em estilo pintura digital: homem de cabelo castanho ondulado, camisa jaqueta verde-oliva sobre camiseta branca, sentado a uma mesa de madeira à noite, olhando para o relógio de pulso preto no braço esquerdo. Sobre a mesa, uma caneca azul-marinho e um livro aberto. Ao fundo, luminária acesa, planta verde e estante com livros e vasos.",
               lines: ["What time is it?", "It’s six o’clock."],
             },
@@ -3908,7 +3796,9 @@ export const LESSONS = [
               c: "purple",
               v: "lilac",
               id: "w21p2b",
-              alt: "Mulher se espreguiçando na cama ao acordar.",
+              src: "/lessons/aulas/aula-21/w21p2b.webp",
+              alt: "Mulher se espreguiçando na cama ao amanhecer, com abajur aceso e planta ao lado",
+              w: 500, h: 425,
               ph: "Ilustração em estilo pintura digital: mulher de cabelo preto preso em coque, camiseta amarelo-clara, sentada na cama com os dois braços esticados para cima se espreguiçando e os olhos fechados, sorrindo. Edredom azul-petróleo, travesseiros claros e cabeceira de madeira. Ao lado, criado-mudo com abajur aceso e um vaso de planta; cortina branca com luz do amanhecer entrando pela janela.",
               lines: ["What time do you get up?", "At six o’clock."],
             } ] },
@@ -3925,7 +3815,9 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p3a",
-            alt: "Ícone de sol para a.m. e ícone de lua com estrelas para p.m.",
+            src: "/lessons/aulas/aula-21/w21p3a.webp",
+            alt: "Círculo verde-azulado com sol ao lado de círculo roxo com lua e estrelas",
+            w: 581, h: 103,
             ph: "Ilustração: dois ícones redondos lado a lado dentro de uma faixa branca. À esquerda, um círculo verde-azulado cheio com um sol de traço branco (raios ao redor), que acompanha o texto a.m. À direita, um círculo roxo cheio com uma lua crescente branca e três estrelinhas, que acompanha o texto p.m. Uma linha vertical cinza-clara separa os dois.",
           },
           { t: "grid", cols: 2, items: [
@@ -3938,7 +3830,9 @@ export const LESSONS = [
               c: "teal",
               v: "mint",
               id: "w21p3b",
-              alt: "Amanhecer na cidade com um relógio marcando seis horas.",
+              src: "/lessons/aulas/aula-21/w21p3b.webp",
+              alt: "Relógio verde-azulado marcando seis horas sobre foto de amanhecer num deck à beira d'água",
+              w: 240, h: 459,
               ph: "Foto: amanhecer visto de um deck de madeira à beira d’água, com uma mesa redonda, um vaso de planta e uma xícara de café branca em primeiro plano; o sol nasce entre os prédios da cidade ao fundo, com o céu laranja e dourado. Sobre a foto, um relógio analógico com aro verde-azulado marcando seis horas em ponto.",
               lines: ["6:00 a.m.", "It’s six o’clock in the morning."],
             },
@@ -3947,7 +3841,9 @@ export const LESSONS = [
               c: "blue",
               v: "gray",
               id: "w21p3c",
-              alt: "Parque ensolarado ao meio-dia com um relógio marcando doze horas.",
+              src: "/lessons/aulas/aula-21/w21p3c.webp",
+              alt: "Relógio azul marcando doze horas sobre foto de calçada arborizada de um parque à tarde",
+              w: 244, h: 459,
               ph: "Foto: calçada de um parque urbano à tarde, com árvores verdes, bancos de madeira e arranha-céus de vidro ao fundo sob um céu azul com nuvens brancas. Sobre a foto, um relógio analógico com aro azul marcando doze horas em ponto.",
               lines: ["12:00 p.m.", "It’s twelve o’clock.", "It’s noon.", "It’s midday."],
             },
@@ -3956,7 +3852,9 @@ export const LESSONS = [
               c: "orange",
               v: "cream",
               id: "w21p3d",
-              alt: "Pôr do sol na cidade com um relógio marcando seis horas.",
+              src: "/lessons/aulas/aula-21/w21p3d.webp",
+              alt: "Relógio laranja marcando seis horas sobre foto de pôr do sol num terraço com mesa posta",
+              w: 241, h: 459,
               ph: "Foto: pôr do sol alaranjado sobre a silhueta dos prédios da cidade, vista de um terraço com uma mesa posta, taças de vinho e uma vela acesa em primeiro plano. Sobre a foto, um relógio analógico com aro laranja marcando seis horas em ponto.",
               lines: ["6:00 p.m.", "It’s six o’clock in the evening."],
             },
@@ -3965,7 +3863,9 @@ export const LESSONS = [
               c: "purple",
               v: "lilac",
               id: "w21p3e",
-              alt: "Cidade iluminada à noite com um relógio marcando dez horas.",
+              src: "/lessons/aulas/aula-21/w21p3e.webp",
+              alt: "Relógio roxo marcando dez horas sobre foto da cidade iluminada à noite",
+              w: 251, h: 465,
               ph: "Foto: cidade à noite, com arranha-céus iluminados refletidos na água escura e céu azul-escuro. Sobre a foto, um relógio analógico com aro roxo marcando dez horas em ponto.",
               lines: ["10:00 p.m.", "It’s ten o’clock at night."],
             } ] },
@@ -3989,14 +3889,18 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p4a",
-            alt: "Homem em um café olhando o relógio de pulso.",
+            src: "/lessons/aulas/aula-21/w21p4a.webp",
+            alt: "Homem sentado num café olhando o relógio de pulso, com café para viagem e planta ao lado",
+            w: 495, h: 485,
             ph: "Foto: homem de cabelo castanho ondulado, camisa jaqueta verde-oliva sobre camiseta branca, sentado a uma mesa de madeira de um café claro, com um caderno aberto e um lápis à frente, olhando para o relógio de pulso preto. Ao lado, um copo de café para viagem e um vaso de planta; ao fundo, janelas grandes com a rua e estantes com livros.",
           },
           { t: "sec", text: "HORAS CHEIAS" },
           {
             t: "image",
             id: "w21p4b",
-            alt: "Três relógios analógicos marcando uma, seis e nove horas.",
+            src: "/lessons/aulas/aula-21/w21p4b.webp",
+            alt: "Três relógios azul-marinho marcando uma, seis e nove horas, com o horário escrito acima",
+            w: 846, h: 248,
             ph: "Ilustração: três relógios analógicos iguais em fila, com aro azul-marinho grosso, mostrador branco e números de 1 a 12. O primeiro marca uma hora em ponto (1:00), o segundo marca seis horas em ponto (6:00) e o terceiro marca nove horas em ponto (9:00). Acima de cada relógio, o horário escrito em verde-azulado.",
           },
           { t: "grid", cols: 3, items: [
@@ -4009,7 +3913,9 @@ export const LESSONS = [
               c: "yellow",
               v: "cream",
               id: "w21p4c",
-              alt: "Relógio marcando doze horas ao lado de um desenho de sol e cidade.",
+              src: "/lessons/aulas/aula-21/w21p4c.webp",
+              alt: "Relógio dourado marcando meio-dia ao lado de desenho amarelo de uma cidade",
+              w: 839, h: 204,
               ph: "Ilustração: relógio analógico com aro amarelo-dourado, mostrador branco e os dois ponteiros juntos apontando para o 12 (12:00). Ao lado, desenho de traço amarelo com sol, nuvens, prédios e árvores de uma cidade.",
               lines: ["12:00 p.m.", "It’s noon.", "It’s midday."],
             } ] },
@@ -4029,7 +3935,9 @@ export const LESSONS = [
               c: "purple",
               v: "lilac",
               id: "w21p5a",
-              alt: "Relógio marcando sete e meia e homem olhando o relógio de pulso.",
+              src: "/lessons/aulas/aula-21/w21p5a.webp",
+              alt: "Relógio roxo marcando sete e meia sobre foto de homem olhando o relógio num café",
+              w: 387, h: 536,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro roxo marcando sete e meia (ponteiro das horas entre o 7 e o 8, ponteiro dos minutos no 6). Embaixo, foto de um homem de cabelo castanho ondulado, camisa jaqueta verde-oliva sobre camiseta branca, sentado a uma mesa de café olhando para o relógio de pulso preto, com um copo de café para viagem ao lado.",
               lines: ["It’s half past seven."],
               note: "Também podemos dizer: It’s seven thirty.",
@@ -4039,7 +3947,9 @@ export const LESSONS = [
               c: "teal",
               v: "mint",
               id: "w21p5b",
-              alt: "Relógio marcando nove e quinze e mulher olhando o relógio de pulso.",
+              src: "/lessons/aulas/aula-21/w21p5b.webp",
+              alt: "Relógio verde-azulado marcando nove e quinze sobre foto de mulher sorrindo num café",
+              w: 428, h: 553,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro verde-azulado marcando nove e quinze (ponteiro das horas no 9, ponteiro dos minutos no 3). Embaixo, foto de uma mulher de cabelo preto comprido e jaqueta jeans, sentada junto à janela de um café, sorrindo e olhando para o relógio de pulso preto, com uma xícara branca sobre a mesa de madeira.",
               lines: ["It’s a quarter past nine."],
               note: "Também podemos dizer: It’s nine fifteen.",
@@ -4060,7 +3970,9 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p6a",
-            alt: "Linha do tempo mostrando quando usar past e quando usar to.",
+            src: "/lessons/aulas/aula-21/w21p6a.webp",
+            alt: "Linha do tempo com relógio central e setas roxa e verde-azulada marcando past e to",
+            w: 915, h: 85,
             ph: "Ilustração: faixa branca com um relógio analógico pequeno no centro e a legenda A HORA embaixo dele. À esquerda, uma seta roxa apontando para fora com os marcos :30, :10, :20 e :05 e o rótulo Minutos depois da hora = past. À direita, uma seta verde-azulada apontando para fora com os marcos :05, :10, :20 e :25 e o rótulo Minutos antes da próxima hora = to.",
           },
           { t: "cards", cols: 2, items: [
@@ -4069,7 +3981,9 @@ export const LESSONS = [
               c: "purple",
               v: "lilac",
               id: "w21p6b",
-              alt: "Relógio marcando oito e vinte e homem olhando o relógio de pulso.",
+              src: "/lessons/aulas/aula-21/w21p6b.webp",
+              alt: "Relógio roxo marcando oito e vinte sobre foto de homem olhando o relógio num café",
+              w: 407, h: 524,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro roxo marcando oito e vinte (ponteiro das horas no 8, ponteiro dos minutos no 4). Embaixo, foto de um homem de cabelo castanho ondulado, camisa jaqueta verde-oliva sobre camiseta branca, sentado a uma mesa de café olhando para o relógio de pulso, com papéis e uma caneca ao lado.",
               lines: ["It’s twenty past eight."],
               note: "Também podemos dizer: It’s eight twenty.",
@@ -4079,7 +3993,9 @@ export const LESSONS = [
               c: "teal",
               v: "mint",
               id: "w21p6c",
-              alt: "Relógio marcando dez para as cinco e mulher olhando o relógio de pulso.",
+              src: "/lessons/aulas/aula-21/w21p6c.webp",
+              alt: "Relógio verde-azulado marcando dez para as cinco sobre foto de mulher num escritório",
+              w: 409, h: 526,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro verde-azulado marcando dez para as cinco (ponteiro das horas perto do 5, ponteiro dos minutos no 10). Embaixo, foto de uma mulher de cabelo castanho comprido, blazer bege e bolsa de couro no ombro, em pé num escritório claro, sorrindo e olhando para o relógio de pulso.",
               lines: ["It’s ten to five."],
               note: "Também podemos dizer: It’s four fifty.",
@@ -4100,7 +4016,9 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p7a",
-            alt: "Linha do tempo de 00:00 a 23:59 dividida entre a.m. e p.m.",
+            src: "/lessons/aulas/aula-21/w21p7a.webp",
+            alt: "Linha do tempo com sol, lua e relógios pequenos marcando meio-dia e meia-noite",
+            w: 932, h: 223,
             ph: "Ilustração: faixa branca com um sol de traço verde-azulado à esquerda e uma lua crescente de traço roxo com duas estrelinhas à direita. No meio, uma linha do tempo horizontal com bolinhas nas pontas: a metade esquerda verde-azulada, com o rótulo 00:00–11:59 = a.m. acima, e a metade direita roxa, com o rótulo 12:00–23:59 = p.m. acima; embaixo da linha, os marcos 00:00, 11:59, 12:00 e 23:59. Abaixo de tudo, uma faixa cinza-clara com dois relógios analógicos pequenos: um de aro verde-azulado ao lado de 12:00 p.m. = noon e um de aro roxo ao lado de 12:00 a.m. = midnight.",
           },
           { t: "cards", cols: 2, items: [
@@ -4109,7 +4027,9 @@ export const LESSONS = [
               c: "teal",
               v: "mint",
               id: "w21p7b",
-              alt: "Homem andando na rua de manhã com um copo de café.",
+              src: "/lessons/aulas/aula-21/w21p7b.webp",
+              alt: "Relógio verde-azulado marcando oito horas sobre foto de homem com café andando na rua",
+              w: 261, h: 410,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro verde-azulado marcando oito horas em ponto. Embaixo, foto de um homem de cabelo castanho ondulado, camisa jaqueta verde-oliva sobre camiseta branca e mochila no ombro, caminhando por uma calçada de manhã com um copo de café para viagem na mão, prédios de vidro ao fundo.",
               lines: ["8:00 a.m.", "It’s eight a.m."],
             },
@@ -4118,7 +4038,9 @@ export const LESSONS = [
               c: "purple",
               v: "lilac",
               id: "w21p7c",
-              alt: "Homem e mulher estudando juntos no notebook à tarde.",
+              src: "/lessons/aulas/aula-21/w21p7c.webp",
+              alt: "Relógio roxo marcando duas e meia sobre foto de casal trabalhando num notebook",
+              w: 270, h: 409,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro roxo marcando duas e meia. Embaixo, foto de uma mulher de suéter bege e um homem de camisa jeans azul sentados lado a lado a uma mesa, olhando para a tela de um notebook prateado, com caderno, caneta e caneca por perto; ambiente claro de escritório ou café.",
               lines: ["2:30 p.m.", "It’s two thirty p.m."],
             },
@@ -4127,7 +4049,9 @@ export const LESSONS = [
               c: "navy",
               v: "gray",
               id: "w21p7d",
-              alt: "Mulher jantando à noite em um ambiente iluminado.",
+              src: "/lessons/aulas/aula-21/w21p7d.webp",
+              alt: "Relógio verde-azulado marcando nove e quinze sobre foto de mulher jantando à noite",
+              w: 273, h: 410,
               ph: "Ilustração e foto no mesmo cartão: em cima, relógio analógico com aro verde-azulado marcando nove e quinze. Embaixo, foto de uma mulher de cabelo castanho comprido e suéter bege, sentada à mesa de jantar à noite, sorrindo diante de um prato de massa e um copo d’água; ao fundo, abajur aceso, sofá e a janela com as luzes da cidade.",
               lines: ["9:15 p.m.", "It’s nine fifteen p.m."],
             } ] },
@@ -4149,7 +4073,9 @@ export const LESSONS = [
               c: "teal",
               v: "white",
               id: "w21p8a",
-              alt: "Dois estudantes conversando no corredor da escola.",
+              src: "/lessons/aulas/aula-21/w21p8a.webp",
+              alt: "Rapaz de mochila conversando com moça de caderno no saguão de uma escola, ao lado relógio verde marcando oito horas",
+              w: 647, h: 327,
               ph: "Foto: rapaz de camisa jaqueta verde-oliva e mochila conversando com uma moça de cabelo preto comprido, suéter bege e caderno azul-marinho no braço, no saguão envidraçado de uma escola, com outros estudantes ao fundo. Ao lado do diálogo, ilustração de um relógio analógico com aro verde-azulado marcando oito horas em ponto.",
               lines: ["A: What time is the class?", "B: It’s at eight o’clock."],
               note: "8:00 a.m.",
@@ -4159,7 +4085,9 @@ export const LESSONS = [
               c: "purple",
               v: "white",
               id: "w21p8b",
-              alt: "Colegas de trabalho conversando diante de um notebook.",
+              src: "/lessons/aulas/aula-21/w21p8b.webp",
+              alt: "Colegas sorrindo conversando à mesa com notebook, ao lado relógio roxo marcando três e quinze",
+              w: 645, h: 322,
               ph: "Foto: mulher de blazer bege, sentada com um caderno e uma caneta, conversando e sorrindo com um homem de suéter azul-marinho que gesticula com as mãos, os dois em uma mesa de escritório com notebook prateado, caneca e um vaso pequeno de planta; colegas ao fundo. Ao lado do diálogo, ilustração de um relógio analógico com aro roxo marcando três e quinze.",
               lines: ["A: What time is the meeting?", "B: It’s at quarter past three."],
               note: "3:15 p.m.",
@@ -4169,7 +4097,9 @@ export const LESSONS = [
               c: "teal",
               v: "white",
               id: "w21p8c",
-              alt: "Casal conversando na entrada do cinema com pipoca e refrigerante.",
+              src: "/lessons/aulas/aula-21/w21p8c.webp",
+              alt: "Rapaz com pipoca e moça com refrigerante conversando no saguão de um cinema, ao lado relógio verde marcando quinze para as oito",
+              w: 636, h: 289,
               ph: "Foto: rapaz de jaqueta jeans com capuz segurando um balde de pipoca escrito CINEMA e uma moça de jaqueta de couro preta segurando um copo vermelho, os dois conversando no saguão de um cinema, com cartazes iluminados ao fundo. Ao lado do diálogo, ilustração de um relógio analógico com aro verde-azulado marcando quinze para as oito.",
               lines: ["A: What time is the movie?", "B: It’s at quarter to eight."],
               note: "7:45 p.m.",
@@ -4181,7 +4111,9 @@ export const LESSONS = [
               c: "teal",
               v: "mint",
               id: "w21p8d",
-              alt: "Relógio analógico marcando seis horas.",
+              src: "/lessons/aulas/aula-21/w21p8d.webp",
+              alt: "Relógio verde-azulado marcando seis horas com a etiqueta 6:00 a.m.",
+              w: 125, h: 152,
               ph: "Ilustração: relógio analógico pequeno com aro verde-azulado, mostrador branco e números de 1 a 12, marcando seis horas em ponto; abaixo dele, a etiqueta verde-azulada 6:00 a.m.",
             },
             {
@@ -4189,7 +4121,9 @@ export const LESSONS = [
               c: "purple",
               v: "lilac",
               id: "w21p8e",
-              alt: "Relógio analógico marcando doze e meia.",
+              src: "/lessons/aulas/aula-21/w21p8e.webp",
+              alt: "Relógio roxo marcando doze e meia com a etiqueta 12:30 p.m.",
+              w: 121, h: 139,
               ph: "Ilustração: relógio analógico pequeno com aro roxo, mostrador branco e números de 1 a 12, marcando doze e meia; abaixo dele, a etiqueta roxa 12:30 p.m.",
             },
             {
@@ -4197,7 +4131,9 @@ export const LESSONS = [
               c: "yellow",
               v: "cream",
               id: "w21p8f",
-              alt: "Relógio analógico marcando nove e quinze.",
+              src: "/lessons/aulas/aula-21/w21p8f.webp",
+              alt: "Relógio dourado marcando nove e quinze com a etiqueta 9:15 p.m.",
+              w: 115, h: 139,
               ph: "Ilustração: relógio analógico pequeno com aro amarelo-dourado, mostrador branco e números de 1 a 12, marcando nove e quinze; abaixo dele, a etiqueta amarela 9:15 p.m.",
             } ] },
           { t: "note", v: "cream", bar: true, bold: true, text: "Diga as horas em voz alta usando: o’clock, half past, quarter past ou a.m./p.m." },
@@ -4212,14 +4148,18 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p9a",
-            alt: "Homem e mulher escrevendo em cadernos em um café.",
+            src: "/lessons/aulas/aula-21/w21p9a.webp",
+            alt: "Casal sorridente escrevendo em cadernos numa mesa de café com notebook e relógio de parede",
+            w: 1024, h: 441,
             ph: "Foto: homem de cabelo castanho ondulado e camisa jaqueta verde-oliva e mulher de cabelo castanho comprido e jaqueta jeans, sentados lado a lado a uma mesa de madeira de um café, os dois sorrindo e escrevendo em cadernos abertos. Sobre a mesa, um notebook, um copo de café para viagem e um vaso de planta; ao fundo, outras pessoas, um quadro-negro escrito COFFEE FOCUS IDEAS TIME e um relógio de parede redondo.",
           },
           { t: "sec", text: "OLHE E COMPLETE", c: "purple" },
           {
             t: "image",
             id: "w21p9b",
-            alt: "Quatro relógios analógicos numerados de 1 a 4.",
+            src: "/lessons/aulas/aula-21/w21p9b.webp",
+            alt: "Quatro relógios numerados marcando três horas, seis e quinze, oito e meia e quinze para as dez",
+            w: 927, h: 202,
             ph: "Ilustração: quatro relógios analógicos em fila dentro de uma caixa branca de borda roxa, separados por linhas pontilhadas verticais. Cada relógio tem um círculo roxo numerado no canto superior esquerdo (1, 2, 3 e 4; os quatro círculos são roxos). O relógio 1 tem aro roxo e marca três horas em ponto; o 2 tem aro verde-azulado e marca seis e quinze; o 3 tem aro roxo e marca oito e meia; o 4 tem aro verde-azulado e marca quinze para as dez. Todos têm mostrador branco, números de 1 a 12 em preto e ponteiros pretos grossos.",
           },
           { t: "fill", id: "w21e1", title: "1 · OLHE O RELÓGIO E COMPLETE A EXPRESSÃO", items: [
@@ -4251,7 +4191,9 @@ export const LESSONS = [
           {
             t: "image",
             id: "w21p10a",
-            alt: "Desenho de relógio de parede, calendário e relógio digital.",
+            src: "/lessons/aulas/aula-21/w21p10a.webp",
+            alt: "Relógio de parede, calendário de mesa, relógio digital 10:25 e vaso de planta em traço fino",
+            w: 232, h: 210,
             ph: "Ilustração de traço verde-azulado sobre fundo azul-claro: um relógio de parede redondo com ponteiros marcando cerca de dez e dez, ao lado de um calendário de mesa com argolas, um relógio digital mostrando 10:25 e um vaso com uma plantinha.",
           },
           { t: "check", id: "w21c1", title: "EU CONSIGO...", items: [
@@ -4281,8 +4223,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 22" },
         { t: "title", en: "QUESTION WORDS", pt: "A pergunta certa leva à informação certa." },
-        { t: "image", id: "w22p1a", alt: "Um homem e uma mulher conversando em uma mesa de café.",
-          ph: "Foto: um homem jovem branco, de cabelo castanho cacheado e barba por fazer, camisa jeans azul e camiseta branca por baixo, com os braços apoiados na mesa de madeira, sorri de perfil para uma mulher jovem de cabelo castanho longo e suéter amarelo-mostarda de gola V, que sorri de volta e gesticula com a mão aberta. Sobre a mesa há um caderno espiral aberto com uma caneta e um copo de café para viagem com tampa preta. Ao fundo, um café claro com uma planta de folhas largas, luminárias pretas suspensas e uma janela. Dois balões de fala brancos no alto: o da esquerda, acima do homem, diz “What’s your name?” (com “What’s” em azul); o da direita, acima da mulher, diz “I’m Adam.”." },
+        { t: "image", id: "w22p1a", src: "/lessons/aulas/aula-22/w22p1a.webp", alt: "Homem de camisa jeans conversa sorrindo com uma mulher de suéter amarelo em uma cafeteria", w: 616, h: 649, ph: "Foto: um homem jovem branco, de cabelo castanho cacheado e barba por fazer, camisa jeans azul e camiseta branca por baixo, com os braços apoiados na mesa de madeira, sorri de perfil para uma mulher jovem de cabelo castanho longo e suéter amarelo-mostarda de gola V, que sorri de volta e gesticula com a mão aberta. Sobre a mesa há um caderno espiral aberto com uma caneta e um copo de café para viagem com tampa preta. Ao fundo, um café claro com uma planta de folhas largas, luminárias pretas suspensas e uma janela. Dois balões de fala brancos no alto: o da esquerda, acima do homem, diz “What’s your name?” (com “What’s” em azul); o da direita, acima da mulher, diz “I’m Adam.”." },
         { t: "sec", text: "VOCÊ JÁ CONHECE ALGUMAS DELAS", c: "navy" },
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
           { a: "What’s your name?", b: "I’m Adam.", v: "mint" },
@@ -4299,15 +4240,13 @@ export const LESSONS = [
           { title: "relacionar cada question word ao tipo de informação esperado;", c: "orange", v: "cream" },
           { title: "escolher a question word correta;", c: "blue", v: "white" },
           { title: "formular e responder perguntas simples.", c: "purple", v: "lilac" } ] },
-        { t: "image", id: "w22p1b", alt: "Prancheta com uma lista de itens marcados e um lápis.",
-          ph: "Ilustração: prancheta azul-marinho vista de frente, com uma folha branca presa por um clipe prateado. Na folha há três linhas cinzas, cada uma com um visto verde à esquerda. Um lápis amarelo apontado está apoiado na diagonal sobre a borda direita da prancheta." } ] },
+        { t: "image", id: "w22p1b", src: "/lessons/aulas/aula-22/w22p1b.webp", alt: "Prancheta azul-marinho com lista de tarefas marcadas e um lápis apoiado", w: 177, h: 212, ph: "Ilustração: prancheta azul-marinho vista de frente, com uma folha branca presa por um clipe prateado. Na folha há três linhas cinzas, cada uma com um visto verde à esquerda. Um lápis amarelo apontado está apoiado na diagonal sobre a borda direita da prancheta." } ] },
 
       // ── página 02 (impressa 02) — QUAL INFORMAÇÃO VOCÊ QUER? ────────────
       { blocks: [
         { t: "badge", label: "AULA 22", page: "PÁGINA 02" },
         { t: "title", en: "QUAL INFORMAÇÃO VOCÊ QUER?", pt: "Cada question word aponta para um tipo de resposta." },
-        { t: "image", id: "w22p2a", alt: "Bússola sobre um mapa-múndi cercada de balões com pontos de interrogação.",
-          ph: "Ilustração: bússola de bolso com aro azul-marinho e rosa dos ventos azul e amarela, vista de frente, sobre um mapa-múndi pontilhado em azul claro. Ao redor da bússola há quatro balões de fala arredondados com um ponto de interrogação branco dentro: roxo em cima à direita, laranja à direita, azul embaixo à direita e verde à esquerda, ligados por linhas tracejadas azuis." },
+        { t: "image", id: "w22p2a", src: "/lessons/aulas/aula-22/w22p2a.webp", alt: "Bússola de bolso azul-marinho sobre mapa-múndi, com balões de interrogação roxo, laranja e azul ao redor", w: 302, h: 312, ph: "Ilustração: bússola de bolso com aro azul-marinho e rosa dos ventos azul e amarela, vista de frente, sobre um mapa-múndi pontilhado em azul claro. Ao redor da bússola há quatro balões de fala arredondados com um ponto de interrogação branco dentro: roxo em cima à direita, laranja à direita, azul embaixo à direita e verde à esquerda, ligados por linhas tracejadas azuis." },
         { t: "grid", cols: 2, items: [
           { title: "What", body: "coisas", c: "teal", v: "mint" },
           { title: "What time", body: "horário específico", c: "orange", v: "cream" },
@@ -4323,16 +4262,14 @@ export const LESSONS = [
           { n: "2", tag: "IDENTIFIQUE", lines: ["o tipo de resposta que você espera receber."], c: "navy", v: "white" },
           { n: "3", tag: "ESCOLHA", lines: ["a question word que combina com essa informação."], c: "navy", v: "white" } ] },
         { t: "note", v: "cream", bar: true, kicker: "ATENÇÃO", text: "Não escolha apenas pela tradução.\nObserve principalmente o tipo de informação que a resposta deve trazer." },
-        { t: "image", id: "w22p2b", alt: "Silhueta de uma pessoa pensando com um balão de interrogação.",
-          ph: "Ilustração: silhueta azul-marinho do busto de um homem de perfil, com a mão fechada apoiada no queixo em gesto de quem pensa. À direita da cabeça sai um balão de pensamento branco com contorno azul e um grande ponto de interrogação azul dentro, precedido por duas bolinhas menores." },
+        { t: "image", id: "w22p2b", src: "/lessons/aulas/aula-22/w22p2b.webp", alt: "Silhueta de um homem pensativo com a mão no queixo e balão de pensamento com interrogação", w: 215, h: 141, ph: "Ilustração: silhueta azul-marinho do busto de um homem de perfil, com a mão fechada apoiada no queixo em gesto de quem pensa. À direita da cabeça sai um balão de pensamento branco com contorno azul e um grande ponto de interrogação azul dentro, precedido por duas bolinhas menores." },
         { t: "key", v: "blue", text: "Dominar as question words é dar o primeiro passo para fazer perguntas melhores e entender respostas com clareza!" } ] },
 
       // ── página 03 (impressa 03) — WHAT × WHAT TIME ──────────────────────
       { blocks: [
         { t: "badge", label: "AULA 22", page: "PÁGINA 03" },
         { t: "title", en: "WHAT × WHAT TIME", pt: "Coisas × horário específico." },
-        { t: "image", id: "w22p3a", alt: "Um homem e uma mulher conversando sentados em um sofá.",
-          ph: "Foto: um homem negro jovem, de camisa jeans azul-clara, sorri de perfil à esquerda; à direita, de costas em primeiro plano, uma mulher loira de suéter bege sorri olhando para ele. Os dois estão sentados em um sofá cinza claro de sala, com vasos de plantas e uma janela iluminada ao fundo." },
+        { t: "image", id: "w22p3a", src: "/lessons/aulas/aula-22/w22p3a.webp", alt: "Homem sorri de perfil ao lado de uma mulher loira de suéter bege, sentados no sofá", w: 491, h: 476, ph: "Foto: um homem negro jovem, de camisa jeans azul-clara, sorri de perfil à esquerda; à direita, de costas em primeiro plano, uma mulher loira de suéter bege sorri olhando para ele. Os dois estão sentados em um sofá cinza claro de sala, com vasos de plantas e uma janela iluminada ao fundo." },
         { t: "sec", text: "WHAT", c: "teal" },
         { t: "note", v: "mint", text: "Use para buscar informação sobre coisas." },
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
@@ -4353,8 +4290,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 22", page: "PÁGINA 04" },
         { t: "title", en: "WHERE × WHEN", pt: "Lugar × momento ou data." },
-        { t: "image", id: "w22p4a", alt: "Um casal de viajantes conversando sobre um mapa aberto na mesa.",
-          ph: "Foto: um homem jovem de jaqueta verde-militar e mochila azul, à esquerda, olha sorrindo para uma mulher jovem de jaqueta jeans que gesticula com a mão aberta. Sobre a mesa de madeira há um mapa rodoviário aberto, uma câmera fotográfica preta, um passaporte azul-marinho e um caderno espiral. Ao fundo, uma mala de viagem e uma parede de tijolos com plantas." },
+        { t: "image", id: "w22p4a", src: "/lessons/aulas/aula-22/w22p4a.webp", alt: "Casal sorridente observa um mapa aberto sobre a mesa, com câmera e passaporte ao lado", w: 498, h: 610, ph: "Foto: um homem jovem de jaqueta verde-militar e mochila azul, à esquerda, olha sorrindo para uma mulher jovem de jaqueta jeans que gesticula com a mão aberta. Sobre a mesa de madeira há um mapa rodoviário aberto, uma câmera fotográfica preta, um passaporte azul-marinho e um caderno espiral. Ao fundo, uma mala de viagem e uma parede de tijolos com plantas." },
         { t: "sec", text: "WHERE", c: "teal" },
         { t: "note", v: "mint", text: "Pergunta por informação relacionada a um lugar." },
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
@@ -4377,8 +4313,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 22", page: "PÁGINA 05" },
         { t: "title", en: "WHO × WHY", pt: "Pessoa × motivo." },
-        { t: "image", id: "w22p5a", alt: "Três amigos conversando à mesa com uma pizza.",
-          ph: "Foto: três jovens sorrindo e conversando ao redor de uma mesa de madeira em um restaurante. À esquerda, um rapaz de cabelo escuro cacheado, jaqueta jeans e camiseta branca gesticula com as duas mãos; no centro, uma moça de cabelo longo castanho e suéter bege apoia os braços na mesa e sorri de frente; à direita, de perfil, outra moça de cabelo ondulado castanho-claro e jaqueta verde-militar gesticula com a mão aberta. No centro da mesa há uma pizza inteira com tomate-cereja e folhas de manjericão sobre uma tábua redonda de madeira, um copo de água à esquerda, um copo de refrigerante escuro à direita e a borda de um prato redondo escuro na frente. Ao fundo, o salão do restaurante com luminárias pendentes e plantas." },
+        { t: "image", id: "w22p5a", src: "/lessons/aulas/aula-22/w22p5a.webp", alt: "Três amigos sorriem conversando à mesa de um restaurante, com uma pizza ao centro", w: 498, h: 620, ph: "Foto: três jovens sorrindo e conversando ao redor de uma mesa de madeira em um restaurante. À esquerda, um rapaz de cabelo escuro cacheado, jaqueta jeans e camiseta branca gesticula com as duas mãos; no centro, uma moça de cabelo longo castanho e suéter bege apoia os braços na mesa e sorri de frente; à direita, de perfil, outra moça de cabelo ondulado castanho-claro e jaqueta verde-militar gesticula com a mão aberta. No centro da mesa há uma pizza inteira com tomate-cereja e folhas de manjericão sobre uma tábua redonda de madeira, um copo de água à esquerda, um copo de refrigerante escuro à direita e a borda de um prato redondo escuro na frente. Ao fundo, o salão do restaurante com luminárias pendentes e plantas." },
         { t: "sec", text: "WHO", c: "teal" },
         { t: "note", v: "mint", text: "Usamos quando queremos identificar uma pessoa." },
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
@@ -4399,8 +4334,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 22", page: "PÁGINA 06" },
         { t: "title", en: "HOW × HOW OLD", pt: "Estado ou maneira × idade." },
-        { t: "image", id: "w22p6a", alt: "Um homem e uma mulher conversando sentados em um sofá.",
-          ph: "Foto: a mesma cena da página 03: um homem negro jovem, de camisa jeans azul-clara, sorri de perfil à esquerda e, à direita, uma mulher loira de suéter bege o observa sorrindo. Os dois estão sentados em um sofá cinza de sala, com vasos de plantas e uma janela clara ao fundo." },
+        { t: "image", id: "w22p6a", src: "/lessons/aulas/aula-22/w22p6a.webp", alt: "Homem de camisa jeans sorri de perfil enquanto a mulher ao lado o observa sorrindo", w: 496, h: 534, ph: "Foto: a mesma cena da página 03: um homem negro jovem, de camisa jeans azul-clara, sorri de perfil à esquerda e, à direita, uma mulher loira de suéter bege o observa sorrindo. Os dois estão sentados em um sofá cinza de sala, com vasos de plantas e uma janela clara ao fundo." },
         { t: "sec", text: "HOW", c: "teal" },
         { t: "note", v: "mint", text: "Para esta aula:\nHOW → maneira / estado" },
         { t: "table", head: ["PERGUNTA", "RESPOSTA"], rows: [
@@ -4461,8 +4395,7 @@ export const LESSONS = [
           { t: "What", c: "purple" },
           { t: "What time", c: "purple" },
           { t: "How", c: "purple" } ] },
-        { t: "image", id: "w22p8a", alt: "Menino pensativo com um balão de interrogação.",
-          ph: "Ilustração: menino de cabelo castanho curto e moletom azul-marinho, visto do peito para cima, com a mão fechada apoiada no queixo e o olhar voltado para cima, em gesto de quem pensa. À esquerda da cabeça dele há um balão de fala branco com contorno azul-turquesa e um ponto de interrogação azul-turquesa dentro." },
+        { t: "image", id: "w22p8a", src: "/lessons/aulas/aula-22/w22p8a.webp", alt: "Menino pensativo com a mão no queixo e balão de fala com ponto de interrogação", w: 258, h: 235, ph: "Ilustração: menino de cabelo castanho curto e moletom azul-marinho, visto do peito para cima, com a mão fechada apoiada no queixo e o olhar voltado para cima, em gesto de quem pensa. À esquerda da cabeça dele há um balão de fala branco com contorno azul-turquesa e um ponto de interrogação azul-turquesa dentro." },
         { t: "key", v: "lilac", text: "ÓTIMO! Você está aprendendo a identificar e escolher a question word certa." } ] },
 
       // ── página 09 (impressa 09) — YOUR TURN! ────────────────────────────
@@ -4493,8 +4426,7 @@ export const LESSONS = [
           { text: "When’s your birthday?", c: "purple" },
           { text: "How are you?", c: "teal" },
           { text: "How old are you?", c: "purple" } ] },
-        { t: "image", id: "w22p10a", alt: "Três amigos conversando à mesa de um restaurante.",
-          ph: "Foto: recorte horizontal da mesma cena da página 05: três jovens sorrindo e conversando ao redor de uma mesa de madeira. À esquerda, um rapaz de cabelo escuro cacheado e jaqueta jeans gesticula; no centro, uma moça de suéter bege e cabelo castanho longo sorri de frente; à direita, de perfil, outra moça de jaqueta verde-militar gesticula com a mão aberta. A borda da pizza aparece cortada na parte de baixo do recorte." },
+        { t: "image", id: "w22p10a", src: "/lessons/aulas/aula-22/w22p10a.webp", alt: "Três amigos sorriem conversando à mesa, com a borda de uma pizza aparecendo embaixo", w: 329, h: 228, ph: "Foto: recorte horizontal da mesma cena da página 05: três jovens sorrindo e conversando ao redor de uma mesa de madeira. À esquerda, um rapaz de cabelo escuro cacheado e jaqueta jeans gesticula; no centro, uma moça de suéter bege e cabelo castanho longo sorri de frente; à direita, de perfil, outra moça de jaqueta verde-militar gesticula com a mão aberta. A borda da pizza aparece cortada na parte de baixo do recorte." },
         { t: "note", v: "mint", bar: true, text: "Escolha 4 perguntas.\nPergunte e responda. Depois troque os papéis.\nVocê pode usar informações fictícias." } ] },
 
       // ── página 11 (impressa 11) — AULA CONCLUÍDA! ───────────────────────
@@ -4525,14 +4457,14 @@ export const LESSONS = [
           { t: "title", en: "SIMPLE PRESENT", pt: "I, YOU, WE, THEY" },
           { t: "note", v: "mint", bar: true, bold: true, text: "We use the Simple Present to talk about routine." },
           { t: "lead", text: "Usamos o Simple Present para falar de ações e hábitos que fazem parte da nossa rotina." },
-          { t: "image", id: "w23p1a", alt: "Mulher se espreguiçando na cama ao acordar", ph: "Foto: mulher jovem de cabelo castanho ondulado sentada na cama ao acordar, de regata branca e calça de moletom cinza, com os dois braços esticados para cima e as mãos unidas, olhos fechados e sorriso no rosto. Edredom branco amassado à frente; à direita, janela com persiana e luz forte da manhã, vaso de planta, caneca verde-azulada e livros sobre a mesa de cabeceira." },
+          { t: "image", id: "w23p1a", src: "/lessons/aulas/aula-23/w23p1a.webp", alt: "Moça se espreguiçando na cama ao acordar, com a janela iluminada ao fundo", w: 415, h: 621, ph: "Foto: mulher jovem de cabelo castanho ondulado sentada na cama ao acordar, de regata branca e calça de moletom cinza, com os dois braços esticados para cima e as mãos unidas, olhos fechados e sorriso no rosto. Edredom branco amassado à frente; à direita, janela com persiana e luz forte da manhã, vaso de planta, caneca verde-azulada e livros sobre a mesa de cabeceira." },
           { t: "sec", text: "EXAMPLES OF ROUTINE", c: "navy" },
           { t: "steps", items: [
-            { tag: "wake up", c: "teal", v: "mint", id: "w23p1b", alt: "Mulher se espreguiçando ao acordar", ph: "Foto em recorte redondo: mulher de camiseta branca sentada na cama de lençóis claros, espreguiçando-se com os braços abertos e um sorriso, em quarto iluminado pela janela." },
-            { tag: "have breakfast", c: "purple", v: "lilac", id: "w23p1c", alt: "Tigela de cereal com frutas e suco de laranja", ph: "Foto em recorte redondo: tigela branca de cereal com mirtilos e morangos sobre a mesa do café da manhã, com dois copos altos de suco de laranja ao lado." },
-            { tag: "go to work / school", c: "teal", v: "mint", id: "w23p1d", alt: "Rapaz de mochila andando pela calçada", ph: "Foto em recorte redondo: rapaz de camiseta branca e mochila azul visto de costas, caminhando por uma calçada arborizada da cidade, com pessoas desfocadas ao fundo." },
-            { tag: "have dinner", c: "purple", v: "lilac", id: "w23p1e", alt: "Prato de salmão com arroz e salada", ph: "Foto em recorte redondo: prato branco visto de cima com salmão grelhado, arroz e salada de folhas verdes com tomate." },
-            { tag: "go to bed", c: "teal", v: "mint", id: "w23p1f", alt: "Mulher dormindo na cama", ph: "Foto em recorte redondo: mulher de camiseta branca dormindo de lado sobre o travesseiro branco, com os olhos fechados e o cabelo cacheado solto." } ] },
+            { tag: "wake up", c: "teal", v: "mint", id: "w23p1b", src: "/lessons/aulas/aula-23/w23p1b.webp", alt: "Moça sorrindo se espreguiçando na cama ao acordar", w: 179, h: 173, ph: "Foto em recorte redondo: mulher de camiseta branca sentada na cama de lençóis claros, espreguiçando-se com os braços abertos e um sorriso, em quarto iluminado pela janela." },
+            { tag: "have breakfast", c: "purple", v: "lilac", id: "w23p1c", src: "/lessons/aulas/aula-23/w23p1c.webp", alt: "Tigela de cereal com frutas vermelhas ao lado de dois copos de suco de laranja", w: 140, h: 184, ph: "Foto em recorte redondo: tigela branca de cereal com mirtilos e morangos sobre a mesa do café da manhã, com dois copos altos de suco de laranja ao lado." },
+            { tag: "go to work / school", c: "teal", v: "mint", id: "w23p1d", src: "/lessons/aulas/aula-23/w23p1d.webp", alt: "Rapaz de mochila azul caminhando de costas por uma calçada arborizada", w: 144, h: 184, ph: "Foto em recorte redondo: rapaz de camiseta branca e mochila azul visto de costas, caminhando por uma calçada arborizada da cidade, com pessoas desfocadas ao fundo." },
+            { tag: "have dinner", c: "purple", v: "lilac", id: "w23p1e", src: "/lessons/aulas/aula-23/w23p1e.webp", alt: "Prato com salmão grelhado, arroz e salada de folhas verdes", w: 152, h: 183, ph: "Foto em recorte redondo: prato branco visto de cima com salmão grelhado, arroz e salada de folhas verdes com tomate." },
+            { tag: "go to bed", c: "teal", v: "mint", id: "w23p1f", src: "/lessons/aulas/aula-23/w23p1f.webp", alt: "Moça dormindo de lado sobre o travesseiro branco", w: 192, h: 166, ph: "Foto em recorte redondo: mulher de camiseta branca dormindo de lado sobre o travesseiro branco, com os olhos fechados e o cabelo cacheado solto." } ] },
           { t: "sec", text: "NESTA AULA, VOCÊ VAI:", c: "purple" },
           { t: "grid", cols: 3, items: [
             { title: "aprender ações comuns da rotina;", v: "mint", c: "teal" },
@@ -4540,12 +4472,12 @@ export const LESSONS = [
             { title: "usar don’t para negar;", v: "mint", c: "teal" },
             { title: "usar do para fazer perguntas;", v: "lilac", c: "purple" },
             { title: "falar sobre sua própria rotina.", v: "cream", c: "yellow" } ] },
-          { t: "image", id: "w23p1g", alt: "Dois estudantes escrevendo juntos à mesa", ph: "Foto: dois estudantes sorrindo um para o outro à mesa de estudo. À esquerda, rapaz de cabelo cacheado, jaqueta jeans e fone de ouvido branco no pescoço, escrevendo num caderno com caneta azul; à direita, moça de cabelo cacheado e camiseta listrada preta e branca, também escrevendo. Sobre a mesa, cadernos abertos, livros, um copo de café com tampa branca e um notebook prateado. Ao fundo, cozinha clara com prateleiras de madeira." } ] },
+          { t: "image", id: "w23p1g", src: "/lessons/aulas/aula-23/w23p1g.webp", alt: "Dois estudantes sorrindo e escrevendo em cadernos à mesa", w: 544, h: 378, ph: "Foto: dois estudantes sorrindo um para o outro à mesa de estudo. À esquerda, rapaz de cabelo cacheado, jaqueta jeans e fone de ouvido branco no pescoço, escrevendo num caderno com caneta azul; à direita, moça de cabelo cacheado e camiseta listrada preta e branca, também escrevendo. Sobre a mesa, cadernos abertos, livros, um copo de café com tampa branca e um notebook prateado. Ao fundo, cozinha clara com prateleiras de madeira." } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 23", page: "PÁGINA 02" },
           { t: "title", en: "MORNING ROUTINE", pt: "Como o dia começa." },
-          { t: "image", id: "w23p2a", alt: "Mulher se espreguiçando na cama diante da janela", ph: "Foto: mulher de regata branca e calça cinza sentada na cama, vista de costas, com os dois braços erguidos ao se espreguiçar diante da janela de cortina branca. Lençol verde-acinzentado amassado sobre a cama; ao fundo, mesa branca de trabalho e cadeira branca." },
+          { t: "image", id: "w23p2a", src: "/lessons/aulas/aula-23/w23p2a.webp", alt: "Mulher de costas se espreguiçando na cama diante da janela", w: 470, h: 394, ph: "Foto: mulher de regata branca e calça cinza sentada na cama, vista de costas, com os dois braços erguidos ao se espreguiçar diante da janela de cortina branca. Lençol verde-acinzentado amassado sobre a cama; ao fundo, mesa branca de trabalho e cadeira branca." },
           { t: "sec", text: "MORNING", c: "teal" },
           { t: "rows", items: [
             { text: "wake up / get up", c: "teal" },
@@ -4556,9 +4488,9 @@ export const LESSONS = [
             { text: "brush your hair / comb your hair", c: "purple" },
             { text: "brush your teeth", c: "teal" } ] },
           { t: "cards", cols: 2, items: [
-            { tag: "take a shower / take a bath", c: "teal", v: "mint", id: "w23p2b", alt: "Homem tomando banho de chuveiro", ph: "Foto: homem de barba por fazer debaixo do chuveiro, com o rosto virado para cima e os olhos fechados enquanto a água cai sobre ele, em box de azulejos brancos com ducha prateada." },
-            { tag: "have breakfast", c: "purple", v: "lilac", id: "w23p2c", alt: "Mulher tomando café da manhã", ph: "Foto: mulher de cabelo castanho e regata branca sentada à mesa do café da manhã, segurando uma xícara branca em uma das mãos e uma cafeteira italiana de alumínio na outra. Sobre a mesa, copo de suco de laranja, croissants numa travessa e maçãs verdes; ao fundo, um monitor escuro." },
-            { tag: "get dressed", c: "yellow", v: "cream", id: "w23p2d", alt: "Homem abotoando a camisa branca", ph: "Foto: homem careca de camisa social branca em pé sobre fundo cinza-claro, abotoando a camisa com as duas mãos e olhando para a câmera." } ] },
+            { tag: "take a shower / take a bath", c: "teal", v: "mint", id: "w23p2b", src: "/lessons/aulas/aula-23/w23p2b.webp", alt: "Homem tomando banho de chuveiro com os olhos fechados", w: 268, h: 275, ph: "Foto: homem de barba por fazer debaixo do chuveiro, com o rosto virado para cima e os olhos fechados enquanto a água cai sobre ele, em box de azulejos brancos com ducha prateada." },
+            { tag: "have breakfast", c: "purple", v: "lilac", id: "w23p2c", src: "/lessons/aulas/aula-23/w23p2c.webp", alt: "Mulher servindo café à mesa do café da manhã", w: 276, h: 278, ph: "Foto: mulher de cabelo castanho e regata branca sentada à mesa do café da manhã, segurando uma xícara branca em uma das mãos e uma cafeteira italiana de alumínio na outra. Sobre a mesa, copo de suco de laranja, croissants numa travessa e maçãs verdes; ao fundo, um monitor escuro." },
+            { tag: "get dressed", c: "yellow", v: "cream", id: "w23p2d", src: "/lessons/aulas/aula-23/w23p2d.webp", alt: "Homem careca abotoando a camisa social branca e olhando para a câmera", w: 264, h: 264, ph: "Foto: homem careca de camisa social branca em pé sobre fundo cinza-claro, abotoando a camisa com as duas mãos e olhando para a câmera." } ] },
           { t: "sec", text: "WAKE UP × GET UP", c: "purple" },
           { t: "grid", cols: 2, items: [
             { title: "wake up", body: "→ acordar", v: "mint", c: "teal" },
@@ -4567,8 +4499,8 @@ export const LESSONS = [
         { blocks: [
           { t: "badge", label: "AULA 23", page: "PÁGINA 03" },
           { t: "title", en: "DURING THE DAY", pt: "Estudo, trabalho e refeições." },
-          { t: "image", id: "w23p3a", alt: "Cinco pessoas de roupa social caminhando em frente a um prédio", ph: "Foto: cinco pessoas de roupa social caminhando lado a lado pela calçada em frente a um prédio de escritórios de vidro. Da esquerda para a direita: mulher de blazer preto, homem de terno escuro e gravata, mulher de blusa branca e saia preta, homem de terno azul-royal e mulher de blazer branco e saia azul." },
-          { t: "image", id: "w23p3b", alt: "Mesa de refeição em família com pratos sendo passados", ph: "Foto: mesa de refeição em família vista de perto, com toalha branca bordada em dourado. Duas mãos passam um prato com costeletas de cordeiro, arroz e salada. Ao redor, travessas com pão, omelete, tâmaras e saladas; ao fundo, pessoas sentadas à mesa, desfocadas." },
+          { t: "image", id: "w23p3a", src: "/lessons/aulas/aula-23/w23p3a.webp", alt: "Cinco colegas de terno caminhando lado a lado em frente a um prédio", w: 442, h: 320, ph: "Foto: cinco pessoas de roupa social caminhando lado a lado pela calçada em frente a um prédio de escritórios de vidro. Da esquerda para a direita: mulher de blazer preto, homem de terno escuro e gravata, mulher de blusa branca e saia preta, homem de terno azul-royal e mulher de blazer branco e saia azul." },
+          { t: "image", id: "w23p3b", src: "/lessons/aulas/aula-23/w23p3b.webp", alt: "Mãos passando um prato de comida em uma mesa farta", w: 458, h: 320, ph: "Foto: mesa de refeição em família vista de perto, com toalha branca bordada em dourado. Duas mãos passam um prato com costeletas de cordeiro, arroz e salada. Ao redor, travessas com pão, omelete, tâmaras e saladas; ao fundo, pessoas sentadas à mesa, desfocadas." },
           { t: "chips", items: [
             { t: "go to work", c: "teal" },
             { t: "go to school", c: "purple" },
@@ -4578,7 +4510,7 @@ export const LESSONS = [
             { t: "go back home", c: "purple" },
             { t: "go home", c: "teal" } ] },
           { t: "cards", cols: 2, items: [
-            { tag: "GO HOME", c: "purple", v: "lilac", lines: ["go home", "go to my house", "go to my apartment"], id: "w23p3c", alt: "Casa moderna de dois andares", ph: "Foto: casa moderna de dois andares com fachada branca e detalhes de madeira clara, varanda com guarda-corpo preto, janelas grandes e céu azul com nuvens ao fundo." },
+            { tag: "GO HOME", c: "purple", v: "lilac", lines: ["go home", "go to my house", "go to my apartment"], id: "w23p3c", src: "/lessons/aulas/aula-23/w23p3c.webp", alt: "Casa moderna de dois andares com varanda e fachada branca", w: 322, h: 100, ph: "Foto: casa moderna de dois andares com fachada branca e detalhes de madeira clara, varanda com guarda-corpo preto, janelas grandes e céu azul com nuvens ao fundo." },
             { tag: "MEALS", c: "yellow", v: "cream", lines: ["have breakfast", "have lunch", "have dinner"] } ] },
           { t: "sec", text: "SEQUÊNCIA DO DIA", c: "teal" },
           { t: "steps", items: [
@@ -4590,10 +4522,10 @@ export const LESSONS = [
           { t: "badge", label: "AULA 23", page: "PÁGINA 04" },
           { t: "title", en: "FREE TIME & EVENING", pt: "Lazer e final do dia." },
           { t: "cards", cols: 2, items: [
-            { tag: "go shopping", c: "teal", v: "mint", id: "w23p4a", alt: "Três amigas com sacolas diante de uma vitrine", ph: "Foto: três amigas com muitas sacolas de compras coloridas paradas diante de uma vitrine do shopping. A da direita, de blusa vermelha, aponta para alguma coisa na vitrine enquanto as outras duas, de vestido vermelho e blusa rosa, olham na mesma direção." },
-            { tag: "go out with friends", c: "purple", v: "lilac", id: "w23p4b", alt: "Três amigos abraçados à noite na rua", ph: "Foto: três amigos jovens abraçados à noite, ao ar livre, com as luzes da cidade desfocadas e um guarda-corpo de metal ao fundo. À esquerda, moça asiática de cabelo escuro comprido, casaco claro e cachecol xadrez; no meio, rapaz negro de cabelo black power volumoso, casaco preto sobre camisa amarela; à direita, moça branca sardenta de cabelo louro-avermelhado bem cacheado, jaqueta jeans sobre casaco marrom, sorrindo para a câmera." },
-            { tag: "watch TV", c: "teal", v: "mint", id: "w23p4c", alt: "Família e amigos assistindo a um jogo na TV", ph: "Foto: família e amigos reunidos no sofá cinza da sala assistindo a um jogo de futebol americano na televisão. Alguns comemoram com os braços erguidos; há copos de bebida e petiscos na mesinha de centro, uma planta grande no canto e janelas com parede de tijolos ao fundo." },
-            { tag: "go to bed / sleep", c: "purple", v: "lilac", id: "w23p4d", alt: "Mulher dormindo à noite", ph: "Foto: mulher dormindo de lado na cama à noite, com o rosto apoiado no travesseiro e o edredom estampado de espirais puxado até o ombro, sob luz azulada do abajur." } ] },
+            { tag: "go shopping", c: "teal", v: "mint", id: "w23p4a", src: "/lessons/aulas/aula-23/w23p4a.webp", alt: "Três amigas com sacolas de compras coloridas diante de uma vitrine", w: 446, h: 263, ph: "Foto: três amigas com muitas sacolas de compras coloridas paradas diante de uma vitrine do shopping. A da direita, de blusa vermelha, aponta para alguma coisa na vitrine enquanto as outras duas, de vestido vermelho e blusa rosa, olham na mesma direção." },
+            { tag: "go out with friends", c: "purple", v: "lilac", id: "w23p4b", src: "/lessons/aulas/aula-23/w23p4b.webp", alt: "Três amigos abraçados sorrindo à noite com luzes da cidade ao fundo", w: 446, h: 263, ph: "Foto: três amigos jovens abraçados à noite, ao ar livre, com as luzes da cidade desfocadas e um guarda-corpo de metal ao fundo. À esquerda, moça asiática de cabelo escuro comprido, casaco claro e cachecol xadrez; no meio, rapaz negro de cabelo black power volumoso, casaco preto sobre camisa amarela; à direita, moça branca sardenta de cabelo louro-avermelhado bem cacheado, jaqueta jeans sobre casaco marrom, sorrindo para a câmera." },
+            { tag: "watch TV", c: "teal", v: "mint", id: "w23p4c", src: "/lessons/aulas/aula-23/w23p4c.webp", alt: "Família reunida no sofá assistindo a um jogo de futebol na televisão", w: 446, h: 263, ph: "Foto: família e amigos reunidos no sofá cinza da sala assistindo a um jogo de futebol americano na televisão. Alguns comemoram com os braços erguidos; há copos de bebida e petiscos na mesinha de centro, uma planta grande no canto e janelas com parede de tijolos ao fundo." },
+            { tag: "go to bed / sleep", c: "purple", v: "lilac", id: "w23p4d", src: "/lessons/aulas/aula-23/w23p4d.webp", alt: "Mulher dormindo de lado na cama sob luz azulada", w: 446, h: 263, ph: "Foto: mulher dormindo de lado na cama à noite, com o rosto apoiado no travesseiro e o edredom estampado de espirais puxado até o ombro, sob luz azulada do abajur." } ] },
           { t: "chips", items: [
             { t: "go biking", c: "teal" },
             { t: "walk the dog", c: "purple" },
@@ -4613,9 +4545,9 @@ export const LESSONS = [
             { t: "You live", c: "purple" },
             { t: "We live", c: "teal" },
             { t: "They live", c: "purple" } ] },
-          { t: "image", id: "w23p5a", alt: "Estátua da Liberdade sobre fundo preto", ph: "Foto: Estátua da Liberdade vista de perto, do busto para cima, com a coroa de pontas e o braço erguido segurando a tocha, recortada sobre fundo preto." },
-          { t: "image", id: "w23p5b", alt: "Estudantes entrando no ônibus escolar", ph: "Foto: fila de estudantes com mochilas coloridas entrando em um ônibus escolar amarelo parado na rua, vista de trás, com árvores e placa de trânsito ao fundo." },
-          { t: "image", id: "w23p5c", alt: "Família de braços abertos diante da casa nova", ph: "Foto: casal com uma criança visto de costas, de braços abertos diante de uma casa bege de dois andares. O homem usa camisa azul-clara; a mulher, vestido listrado e chapéu de palha; a menina está entre os dois." },
+          { t: "image", id: "w23p5a", src: "/lessons/aulas/aula-23/w23p5a.webp", alt: "Estátua da Liberdade vista de perto contra fundo escuro", w: 182, h: 300, ph: "Foto: Estátua da Liberdade vista de perto, do busto para cima, com a coroa de pontas e o braço erguido segurando a tocha, recortada sobre fundo preto." },
+          { t: "image", id: "w23p5b", src: "/lessons/aulas/aula-23/w23p5b.webp", alt: "Estudantes com mochilas entrando em um ônibus escolar amarelo", w: 316, h: 300, ph: "Foto: fila de estudantes com mochilas coloridas entrando em um ônibus escolar amarelo parado na rua, vista de trás, com árvores e placa de trânsito ao fundo." },
+          { t: "image", id: "w23p5c", src: "/lessons/aulas/aula-23/w23p5c.webp", alt: "Casal com uma criança de braços abertos diante de uma casa bege", w: 288, h: 207, ph: "Foto: casal com uma criança visto de costas, de braços abertos diante de uma casa bege de dois andares. O homem usa camisa azul-clara; a mulher, vestido listrado e chapéu de palha; a menina está entre os dois." },
           { t: "rows", items: [
             { text: "I live in New York.", c: "teal" },
             { text: "They take the bus in the morning.", c: "purple" },
@@ -4628,9 +4560,9 @@ export const LESSONS = [
           { t: "title", en: "SIMPLE PRESENT: NEGATIVE", pt: "Frases negativas com don’t." },
           { t: "note", v: "lilac", kicker: "DO NOT = DON’T", bold: true, text: "SUBJECT + DON’T + VERB" },
           { t: "cards", cols: 2, items: [
-            { tag: "1", c: "purple", v: "lilac", lines: ["I don’t live in New York."], id: "w23p6a", alt: "Estátua da Liberdade sobre fundo preto", ph: "Foto: Estátua da Liberdade vista de perto, do busto para cima, com a coroa de pontas e o braço erguido segurando a tocha, recortada sobre fundo preto." },
-            { tag: "2", c: "purple", v: "lilac", lines: ["I don’t like shopping."], id: "w23p6b", alt: "Mulher desanimada segurando sacolas de compras", ph: "Foto: mulher de cabelo cacheado castanho, camisa listrada clara e brincos vermelhos, com expressão de desânimo, segurando várias sacolas de compras coloridas nas duas mãos, sobre fundo rosa-magenta." },
-            { tag: "3", c: "purple", v: "lilac", lines: ["We don’t work in an office."], id: "w23p6c", alt: "Três trabalhadores de capacete e colete refletivo", ph: "Foto: três trabalhadores de capacete (branco e amarelos), colete refletivo e máscara no rosto, de braços cruzados, em pé diante de um campo de painéis solares sob céu azul com nuvens." } ] },
+            { tag: "1", c: "purple", v: "lilac", lines: ["I don’t live in New York."], id: "w23p6a", src: "/lessons/aulas/aula-23/w23p6a.webp", alt: "Estátua da Liberdade vista de perto contra fundo escuro", w: 260, h: 262, ph: "Foto: Estátua da Liberdade vista de perto, do busto para cima, com a coroa de pontas e o braço erguido segurando a tocha, recortada sobre fundo preto." },
+            { tag: "2", c: "purple", v: "lilac", lines: ["I don’t like shopping."], id: "w23p6b", src: "/lessons/aulas/aula-23/w23p6b.webp", alt: "Mulher desanimada segurando várias sacolas de compras coloridas", w: 280, h: 254, ph: "Foto: mulher de cabelo cacheado castanho, camisa listrada clara e brincos vermelhos, com expressão de desânimo, segurando várias sacolas de compras coloridas nas duas mãos, sobre fundo rosa-magenta." },
+            { tag: "3", c: "purple", v: "lilac", lines: ["We don’t work in an office."], id: "w23p6c", src: "/lessons/aulas/aula-23/w23p6c.webp", alt: "Três trabalhadores de capacete e colete diante de painéis solares", w: 280, h: 262, ph: "Foto: três trabalhadores de capacete (branco e amarelos), colete refletivo e máscara no rosto, de braços cruzados, em pé diante de um campo de painéis solares sob céu azul com nuvens." } ] },
           { t: "sec", text: "COMPARE", c: "teal" },
           { t: "grid", cols: 2, items: [
             { title: "I live in New York.", body: "→ afirmativa", v: "mint", c: "teal" },
@@ -4642,9 +4574,9 @@ export const LESSONS = [
           { t: "title", en: "DO YOU…?", pt: "Agora vamos transformar afirmações em perguntas." },
           { t: "note", v: "mint", kicker: "DO + SUBJECT + VERB + ?", bold: true, text: "You live in New York. → Do you live in New York?" },
           { t: "cards", items: [
-            { tag: "1", c: "purple", v: "gray", lines: ["Do they have a child?"], note: "Yes, they do.   No, they don’t.", id: "w23p7a", alt: "Casal com uma menina no colo em um parque", ph: "Foto: família negra sorrindo ao ar livre em um parque gramado, com árvores verdes ao fundo. A mulher tem cabelo cacheado volumoso e usa jaqueta jeans azul-clara sobre camiseta amarela; o homem, de barba curta, usa camisa cinza aberta sobre camiseta branca e carrega no colo uma menina pequena de cabelo cacheado, com vestido rosa-claro de babados." },
-            { tag: "2", c: "teal", v: "gray", lines: ["Do you like salad?"], note: "Yes, I do.   No, I don’t.", id: "w23p7b", alt: "Mulher segurando uma tigela de salada", ph: "Foto: mulher sorridente de blusa clara segurando com as duas mãos uma tigela branca de salada de folhas verdes, pepino e tomate, em uma cozinha de parede rosa desfocada." },
-            { tag: "3", c: "purple", v: "gray", lines: ["Do you take photos every day?"], note: "Yes, I do.   No, I don’t.", id: "w23p7c", alt: "Fotógrafo com a câmera diante do rosto", ph: "Foto: fotógrafo de blusa preta segurando uma câmera fotográfica grande diante do rosto, com a lente apontada para a câmera, sobre fundo escuro." } ] } ] },
+            { tag: "1", c: "purple", v: "gray", lines: ["Do they have a child?"], note: "Yes, they do.   No, they don’t.", id: "w23p7a", src: "/lessons/aulas/aula-23/w23p7a.webp", alt: "Casal sorrindo ao ar livre segurando a filha pequena no colo", w: 266, h: 212, ph: "Foto: família negra sorrindo ao ar livre em um parque gramado, com árvores verdes ao fundo. A mulher tem cabelo cacheado volumoso e usa jaqueta jeans azul-clara sobre camiseta amarela; o homem, de barba curta, usa camisa cinza aberta sobre camiseta branca e carrega no colo uma menina pequena de cabelo cacheado, com vestido rosa-claro de babados." },
+            { tag: "2", c: "teal", v: "gray", lines: ["Do you like salad?"], note: "Yes, I do.   No, I don’t.", id: "w23p7b", src: "/lessons/aulas/aula-23/w23p7b.webp", alt: "Mulher sorrindo segurando uma tigela de salada de folhas verdes", w: 266, h: 219, ph: "Foto: mulher sorridente de blusa clara segurando com as duas mãos uma tigela branca de salada de folhas verdes, pepino e tomate, em uma cozinha de parede rosa desfocada." },
+            { tag: "3", c: "purple", v: "gray", lines: ["Do you take photos every day?"], note: "Yes, I do.   No, I don’t.", id: "w23p7c", src: "/lessons/aulas/aula-23/w23p7c.webp", alt: "Fotógrafo segurando uma câmera grande com a lente apontada para frente", w: 261, h: 219, ph: "Foto: fotógrafo de blusa preta segurando uma câmera fotográfica grande diante do rosto, com a lente apontada para a câmera, sobre fundo escuro." } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 23", page: "PÁGINA 08" },
@@ -4656,14 +4588,14 @@ export const LESSONS = [
             { t: "VERB", c: "teal" },
             { t: "?", c: "purple" } ] },
           { t: "cards", items: [
-            { tag: "1", c: "teal", v: "gray", lines: ["When do you study English?"], note: "I study English on Mondays.", id: "w23p8a", alt: "Professora apontando com uma bandeira dos Estados Unidos na mão", ph: "Foto: mulher loira de óculos redondos e batom vermelho, cabelo preso, sentada à mesa de madeira entre duas pilhas de livros, com um caderno aberto à frente. Usa blazer marrom-camelo sobre blusa bege, aponta para a frente com o dedo indicador e segura uma bandeirinha dos Estados Unidos na outra mão, sobre fundo amarelo." },
-            { tag: "2", c: "purple", v: "gray", lines: ["Where do you live?"], note: "I live in Egypt.", id: "w23p8b", alt: "Vista aérea do Cairo com o rio Nilo", ph: "Foto: vista aérea do Cairo, com o rio Nilo atravessando a cidade, uma ponte, prédios modernos altos e mesquitas de cúpula clara, sob céu azul com nuvens brancas." },
-            { tag: "3", c: "teal", v: "gray", lines: ["What time do you get up?"], note: "I get up at 6:00.", id: "w23p8c", alt: "Despertador vermelho e mulher esticando o braço para desligá-lo", ph: "Foto: despertador vermelho de dois sinos em primeiro plano sobre a cama e, ao fundo desfocado, mulher deitada de lado esticando o braço para desligá-lo, em quarto claro." } ] } ] },
+            { tag: "1", c: "teal", v: "gray", lines: ["When do you study English?"], note: "I study English on Mondays.", id: "w23p8a", src: "/lessons/aulas/aula-23/w23p8a.webp", alt: "Professora apontando e segurando uma bandeirinha dos Estados Unidos", w: 276, h: 232, ph: "Foto: mulher loira de óculos redondos e batom vermelho, cabelo preso, sentada à mesa de madeira entre duas pilhas de livros, com um caderno aberto à frente. Usa blazer marrom-camelo sobre blusa bege, aponta para a frente com o dedo indicador e segura uma bandeirinha dos Estados Unidos na outra mão, sobre fundo amarelo." },
+            { tag: "2", c: "purple", v: "gray", lines: ["Where do you live?"], note: "I live in Egypt.", id: "w23p8b", src: "/lessons/aulas/aula-23/w23p8b.webp", alt: "Vista aérea do Cairo com o rio Nilo cortando a cidade", w: 276, h: 236, ph: "Foto: vista aérea do Cairo, com o rio Nilo atravessando a cidade, uma ponte, prédios modernos altos e mesquitas de cúpula clara, sob céu azul com nuvens brancas." },
+            { tag: "3", c: "teal", v: "gray", lines: ["What time do you get up?"], note: "I get up at 6:00.", id: "w23p8c", src: "/lessons/aulas/aula-23/w23p8c.webp", alt: "Despertador vermelho em primeiro plano com mulher deitada ao fundo", w: 252, h: 211, ph: "Foto: despertador vermelho de dois sinos em primeiro plano sobre a cama e, ao fundo desfocado, mulher deitada de lado esticando o braço para desligá-lo, em quarto claro." } ] } ] },
 
         { blocks: [
           { t: "badge", label: "AULA 23", page: "PÁGINA 09" },
           { t: "title", en: "LET’S TALK ABOUT ROUTINE", pt: "Lucas e Emma conversam sobre a rotina." },
-          { t: "image", id: "w23p9", alt: "Casal brindando com taças de vinho no jantar", ph: "Foto: casal jantando em um restaurante à noite, brindando com taças de vinho tinto por cima da mesa. Ele, de barba castanha e camisa estampada em tons de vinho; ela, de vestido preto e cabelo castanho escuro liso. Sobre a mesa branca, pratos de massa, uma garrafa de vinho, velas e flores; ao fundo, cortina amarela e janelas escuras." },
+          { t: "image", id: "w23p9", src: "/lessons/aulas/aula-23/w23p9.webp", alt: "Casal brindando com taças de vinho tinto em um jantar romântico", w: 928, h: 410, ph: "Foto: casal jantando em um restaurante à noite, brindando com taças de vinho tinto por cima da mesa. Ele, de barba castanha e camisa estampada em tons de vinho; ela, de vestido preto e cabelo castanho escuro liso. Sobre a mesa branca, pratos de massa, uma garrafa de vinho, velas e flores; ao fundo, cortina amarela e janelas escuras." },
           { t: "dialogue", items: [
             { s: "a", text: "Lucas: What time do you get up?" },
             { s: "b", text: "Emma: I get up at 7:00. I have breakfast and go to work." },
@@ -4690,7 +4622,7 @@ export const LESSONS = [
             { text: "Do you have lunch at home?", c: "teal" },
             { text: "Do you watch TV?", c: "purple" },
             { text: "Do you go out with friends?", c: "teal" } ] },
-          { t: "image", id: "w23p10", alt: "Três amigos abraçados à noite na rua", ph: "Foto: três amigos jovens abraçados à noite, ao ar livre, com as luzes da cidade desfocadas e um guarda-corpo de metal ao fundo. À esquerda, moça asiática de cabelo escuro comprido, casaco claro e cachecol xadrez; no meio, rapaz negro de cabelo black power volumoso, casaco preto sobre camisa amarela; à direita, moça branca sardenta de cabelo louro-avermelhado bem cacheado, jaqueta jeans sobre casaco marrom, sorrindo para a câmera." },
+          { t: "image", id: "w23p10", src: "/lessons/aulas/aula-23/w23p10.webp", alt: "Três amigos jovens abraçados sorrindo à noite ao ar livre", w: 282, h: 154, ph: "Foto: três amigos jovens abraçados à noite, ao ar livre, com as luzes da cidade desfocadas e um guarda-corpo de metal ao fundo. À esquerda, moça asiática de cabelo escuro comprido, casaco claro e cachecol xadrez; no meio, rapaz negro de cabelo black power volumoso, casaco preto sobre camisa amarela; à direita, moça branca sardenta de cabelo louro-avermelhado bem cacheado, jaqueta jeans sobre casaco marrom, sorrindo para a câmera." },
           { t: "note", v: "mint", text: "Você pode usar informações fictícias." } ] },
 
         { blocks: [
@@ -4738,14 +4670,10 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 24" },
         { t: "title", en: "JOBS", pt: "Talking about occupations." },
-        { t: "image", id: "w24p1a", alt: "Professora sorrindo em uma sala de aula com crianças ao fundo",
-          ph: "Foto: professora de pele morena, cabelo preso, camisa vermelha e cardigã bege tricotado, de braços cruzados e relógio preto no pulso, sorrindo para a câmera. Ao fundo, uma sala de aula com lousa branca interativa, mapa na parede e crianças sentadas em mesas coloridas desenhando." },
-        { t: "image", id: "w24p1b", alt: "Um médico e uma médica de jaleco branco sorrindo",
-          ph: "Foto: em primeiro plano e em foco, um médico jovem de barba curta castanha, jaleco branco por cima de um pijama cirúrgico azul-claro e estetoscópio preto no pescoço, sorrindo para a câmera. Atrás dele, à esquerda e desfocada, uma médica de cabelo claro preso, também de jaleco branco sobre pijama azul e estetoscópio no pescoço. Ao fundo, prateleiras e armários desfocados de consultório." },
-        { t: "image", id: "w24p1c", alt: "Mão de um contador apertando as teclas de uma calculadora",
-          ph: "Foto: em close, a mão esquerda de uma pessoa de camisa branca aperta as teclas de uma calculadora branca e cinza (com uma tecla rosa) sobre uma mesa de madeira clara. A mão direita da mesma pessoa está no teclado de um notebook prateado, ao fundo. Em volta, planilhas e gráficos impressos em azul e branco e uma caneta grafite de clipe prateado sobre uma das folhas." },
-        { t: "image", id: "w24p1d", alt: "Padeiro de uniforme branco segurando um saco de pães",
-          ph: "Foto: padeiro sorridente de uniforme branco de chef e chapéu alto de cozinheiro segurando com um braço um saco de papel pardo cheio de pães e baguetes, e fazendo sinal de positivo com a outra mão. Ao fundo, uma parede de tijolos à vista, a bancada da padaria com mais pães e um rolo de massa." },
+        { t: "image", id: "w24p1a", src: "/lessons/aulas/aula-24/w24p1a.webp", alt: "Professora de camisa vermelha sorrindo de braços cruzados na sala de aula", w: 542, h: 540, ph: "Foto: professora de pele morena, cabelo preso, camisa vermelha e cardigã bege tricotado, de braços cruzados e relógio preto no pulso, sorrindo para a câmera. Ao fundo, uma sala de aula com lousa branca interativa, mapa na parede e crianças sentadas em mesas coloridas desenhando." },
+        { t: "image", id: "w24p1b", src: "/lessons/aulas/aula-24/w24p1b.webp", alt: "Médico jovem de jaleco branco sorrindo, com colega desfocada ao fundo", w: 356, h: 164, ph: "Foto: em primeiro plano e em foco, um médico jovem de barba curta castanha, jaleco branco por cima de um pijama cirúrgico azul-claro e estetoscópio preto no pescoço, sorrindo para a câmera. Atrás dele, à esquerda e desfocada, uma médica de cabelo claro preso, também de jaleco branco sobre pijama azul e estetoscópio no pescoço. Ao fundo, prateleiras e armários desfocados de consultório." },
+        { t: "image", id: "w24p1c", src: "/lessons/aulas/aula-24/w24p1c.webp", alt: "Mãos usando calculadora e notebook sobre planilhas na mesa", w: 356, h: 164, ph: "Foto: em close, a mão esquerda de uma pessoa de camisa branca aperta as teclas de uma calculadora branca e cinza (com uma tecla rosa) sobre uma mesa de madeira clara. A mão direita da mesma pessoa está no teclado de um notebook prateado, ao fundo. Em volta, planilhas e gráficos impressos em azul e branco e uma caneta grafite de clipe prateado sobre uma das folhas." },
+        { t: "image", id: "w24p1d", src: "/lessons/aulas/aula-24/w24p1d.webp", alt: "Padeiro sorridente com chapéu de chef segurando pães e fazendo positivo", w: 356, h: 168, ph: "Foto: padeiro sorridente de uniforme branco de chef e chapéu alto de cozinheiro segurando com um braço um saco de papel pardo cheio de pães e baguetes, e fazendo sinal de positivo com a outra mão. Ao fundo, uma parede de tijolos à vista, a bancada da padaria com mais pães e um rolo de massa." },
         { t: "note", v: "lilac", kicker: "What do you do?", bold: true, text: "I teach. I’m a teacher." },
         { t: "check", id: "w24c1", title: "NESTA AULA, VOCÊ VAI:", items: [
           "conhecer diferentes ocupações;",
@@ -4760,29 +4688,22 @@ export const LESSONS = [
         { t: "title", en: "PEOPLE & PROFESSIONS", pt: "Education, office and health." },
         { t: "sec", text: "EDUCATION" },
         { t: "cards", cols: 2, items: [
-          { tag: "teacher", c: "teal", v: "mint", id: "w24p2a", alt: "Professora sorrindo na sala de aula",
-            ph: "Foto: professora de camisa vermelha e cardigã bege, de braços cruzados, sorrindo em uma sala de aula com lousa branca e crianças sentadas em mesas coloridas ao fundo.",
+          { tag: "teacher", c: "teal", v: "mint", id: "w24p2a", src: "/lessons/aulas/aula-24/w24p2a.webp", alt: "Professora de braços cruzados sorrindo em sala de aula com lousa branca", w: 435, h: 205, ph: "Foto: professora de camisa vermelha e cardigã bege, de braços cruzados, sorrindo em uma sala de aula com lousa branca e crianças sentadas em mesas coloridas ao fundo.",
             lines: ["I’m a teacher."] },
-          { tag: "student", c: "purple", v: "lilac", id: "w24p2b", alt: "Estudante sorrindo segurando um caderno na rua",
-            ph: "Foto: jovem estudante de cabelo preto comprido, blusa estampada em azul, preto e amarelo e mochila branca no ombro, sorrindo enquanto segura um caderno aberto. Ao fundo, a fachada bege de um prédio antigo.",
+          { tag: "student", c: "purple", v: "lilac", id: "w24p2b", src: "/lessons/aulas/aula-24/w24p2b.webp", alt: "Jovem estudante sorridente segurando caderno com mochila no ombro", w: 310, h: 211, ph: "Foto: jovem estudante de cabelo preto comprido, blusa estampada em azul, preto e amarelo e mochila branca no ombro, sorrindo enquanto segura um caderno aberto. Ao fundo, a fachada bege de um prédio antigo.",
             lines: ["I’m a student."] } ] },
         { t: "sec", text: "OFFICE", c: "purple" },
         { t: "cards", cols: 2, items: [
-          { tag: "manager", c: "purple", v: "lilac", id: "w24p2c", alt: "Ícone de maleta de trabalho",
-            ph: "Ilustração: ícone de maleta de trabalho desenhada em traço roxo fino, com alça retangular no topo, centralizada sobre um fundo lilás claro." },
-          { tag: "accountant", c: "teal", v: "mint", id: "w24p2d", alt: "Mão de um contador apertando as teclas de uma calculadora",
-            ph: "Foto: mão de pessoa de camisa branca apertando as teclas de uma calculadora branca e cinza sobre uma mesa de madeira clara, ao lado de planilhas com gráficos em azul, uma caneta grafite de clipe prateado e um notebook prateado aberto.",
+          { tag: "manager", c: "purple", v: "lilac", id: "w24p2c", src: "/lessons/aulas/aula-24/w24p2c.webp", alt: "Ícone de maleta de trabalho em traço roxo sobre fundo lilás", w: 99, h: 83, ph: "Ilustração: ícone de maleta de trabalho desenhada em traço roxo fino, com alça retangular no topo, centralizada sobre um fundo lilás claro." },
+          { tag: "accountant", c: "teal", v: "mint", id: "w24p2d", src: "/lessons/aulas/aula-24/w24p2d.webp", alt: "Mão apertando teclas de calculadora ao lado de planilhas e notebook", w: 435, h: 132, ph: "Foto: mão de pessoa de camisa branca apertando as teclas de uma calculadora branca e cinza sobre uma mesa de madeira clara, ao lado de planilhas com gráficos em azul, uma caneta grafite de clipe prateado e um notebook prateado aberto.",
             lines: ["I’m an accountant."] } ] },
         { t: "sec", text: "HEALTH & SCIENCE" },
         { t: "cards", cols: 2, items: [
-          { tag: "doctor", c: "teal", v: "mint", id: "w24p2e", alt: "Médico e médica de jaleco branco sorrindo",
-            ph: "Foto: em primeiro plano, um médico jovem de barba curta castanha, jaleco branco sobre pijama cirúrgico azul-claro e estetoscópio preto no pescoço, sorrindo. Atrás, desfocada, uma médica de cabelo claro preso, também de jaleco branco; ao fundo, prateleiras desfocadas de consultório.",
+          { tag: "doctor", c: "teal", v: "mint", id: "w24p2e", src: "/lessons/aulas/aula-24/w24p2e.webp", alt: "Médico jovem sorridente de jaleco branco e estetoscópio no consultório", w: 356, h: 164, ph: "Foto: em primeiro plano, um médico jovem de barba curta castanha, jaleco branco sobre pijama cirúrgico azul-claro e estetoscópio preto no pescoço, sorrindo. Atrás, desfocada, uma médica de cabelo claro preso, também de jaleco branco; ao fundo, prateleiras desfocadas de consultório.",
             lines: ["I’m a doctor."] },
-          { tag: "dentist", c: "purple", v: "lilac", id: "w24p2f", alt: "Dentista atendendo uma paciente na cadeira",
-            ph: "Foto: dentista de jaleco branco, máscara e luvas, inclinada sobre uma paciente deitada na cadeira odontológica. A paciente, de cabelo escuro, está de boca aberta enquanto a dentista trabalha com os instrumentos.",
+          { tag: "dentist", c: "purple", v: "lilac", id: "w24p2f", src: "/lessons/aulas/aula-24/w24p2f.webp", alt: "Dentista de luvas e máscara examinando paciente na cadeira odontológica", w: 277, h: 132, ph: "Foto: dentista de jaleco branco, máscara e luvas, inclinada sobre uma paciente deitada na cadeira odontológica. A paciente, de cabelo escuro, está de boca aberta enquanto a dentista trabalha com os instrumentos.",
             lines: ["I’m a dentist."] },
-          { tag: "scientist", c: "teal", v: "mint", id: "w24p2g", alt: "Cientista pipetando líquido em um tubo de ensaio",
-            ph: "Foto: cientista de jaleco branco, óculos de proteção transparentes, touca e luvas azuis, pingando líquido com uma pipeta em um tubo de ensaio. Ao fundo, a bancada do laboratório com frascos desfocados.",
+          { tag: "scientist", c: "teal", v: "mint", id: "w24p2g", src: "/lessons/aulas/aula-24/w24p2g.webp", alt: "Cientista de jaleco e óculos de proteção usando pipeta em tubo de ensaio", w: 280, h: 211, ph: "Foto: cientista de jaleco branco, óculos de proteção transparentes, touca e luvas azuis, pingando líquido com uma pipeta em um tubo de ensaio. Ao fundo, a bancada do laboratório com frascos desfocados.",
             lines: ["I’m a scientist."] } ] } ] },
 
       // ── PÁGINA 03 (impressa 03) — creative & media jobs ─────────────────
@@ -4790,20 +4711,15 @@ export const LESSONS = [
         { t: "badge", label: "AULA 24", page: "PÁGINA 03" },
         { t: "title", en: "CREATIVE & MEDIA JOBS", pt: "Creative work and communication." },
         { t: "cards", items: [
-          { tag: "explorer", c: "teal", v: "mint", id: "w24p3a", alt: "Explorador com mochila diante de um vale de montanhas",
-            ph: "Foto: explorador de casaco vermelho e mochila grande de pé sobre uma rocha, de costas para a câmera, olhando um vale de montanhas escuras cortado por um rio, sob um céu carregado de nuvens.",
+          { tag: "explorer", c: "teal", v: "mint", id: "w24p3a", src: "/lessons/aulas/aula-24/w24p3a.webp", alt: "Explorador de casaco vermelho observando vale de montanhas com mochila", w: 264, h: 176, ph: "Foto: explorador de casaco vermelho e mochila grande de pé sobre uma rocha, de costas para a câmera, olhando um vale de montanhas escuras cortado por um rio, sob um céu carregado de nuvens.",
             lines: ["I’m an explorer."] },
-          { tag: "artist", c: "purple", v: "lilac", id: "w24p3b", alt: "Artista segurando uma tela com pintura colorida",
-            ph: "Foto sobre fundo branco: homem de cabelo escuro cacheado, barba, óculos redondos de armação preta, boina preta e blusa preta de gola alta, sorrindo de lado e segurando na altura do peito, com as duas mãos, uma placa branca com pinceladas coloridas em azul-claro, turquesa, rosa e magenta.",
+          { tag: "artist", c: "purple", v: "lilac", id: "w24p3b", src: "/lessons/aulas/aula-24/w24p3b.webp", alt: "Homem de boina segurando placa com pinceladas coloridas, sorrindo", w: 158, h: 169, ph: "Foto sobre fundo branco: homem de cabelo escuro cacheado, barba, óculos redondos de armação preta, boina preta e blusa preta de gola alta, sorrindo de lado e segurando na altura do peito, com as duas mãos, uma placa branca com pinceladas coloridas em azul-claro, turquesa, rosa e magenta.",
             lines: ["I paint. I’m an artist."] },
-          { tag: "photographer", c: "teal", v: "mint", id: "w24p3c", alt: "Fotógrafo com câmera no tripé entre um guarda-chuva e um rebatedor",
-            ph: "Foto sobre fundo branco: homem jovem de barba escura e camisa xadrez vermelha e azul-marinho, curvado com o olho na câmera fotográfica profissional preta montada em um tripé prateado. Atrás dele, à esquerda, um guarda-chuva difusor preto aberto; à direita, uma softbox branca de estúdio no pedestal.",
+          { tag: "photographer", c: "teal", v: "mint", id: "w24p3c", src: "/lessons/aulas/aula-24/w24p3c.webp", alt: "Fotógrafo de camisa xadrez fotografando com câmera em tripé e softbox", w: 238, h: 176, ph: "Foto sobre fundo branco: homem jovem de barba escura e camisa xadrez vermelha e azul-marinho, curvado com o olho na câmera fotográfica profissional preta montada em um tripé prateado. Atrás dele, à esquerda, um guarda-chuva difusor preto aberto; à direita, uma softbox branca de estúdio no pedestal.",
             lines: ["I take pictures of people, places and events. I’m a photographer."] },
-          { tag: "filmmaker", c: "purple", v: "lilac", id: "w24p3d", alt: "Cineasta segurando uma claquete de cinema",
-            ph: "Foto sobre fundo vermelho: jovem mulher de cabelo castanho comprido, suéter felpudo amarelo e calça amarela, de olhos fechados e boca aberta comemorando. Ela segura uma claquete de cinema preta e branca com o braço estendido para a esquerda de quem vê e fecha a outra mão em punho, com um relógio no pulso.",
+          { tag: "filmmaker", c: "purple", v: "lilac", id: "w24p3d", src: "/lessons/aulas/aula-24/w24p3d.webp", alt: "Mulher de suéter amarelo comemorando segurando claquete de cinema", w: 254, h: 171, ph: "Foto sobre fundo vermelho: jovem mulher de cabelo castanho comprido, suéter felpudo amarelo e calça amarela, de olhos fechados e boca aberta comemorando. Ela segura uma claquete de cinema preta e branca com o braço estendido para a esquerda de quem vê e fecha a outra mão em punho, com um relógio no pulso.",
             lines: ["I make films. I’m a filmmaker."] },
-          { tag: "writer", c: "teal", v: "mint", id: "w24p3e", alt: "Escritor diante de uma máquina de escrever antiga",
-            ph: "Foto em tom sépia: homem jovem de óculos, camisa branca, suspensórios azuis e gravata-borboleta azul, com um cachimbo na boca, sentado à mesa diante de uma máquina de escrever antiga azul-escura com uma folha de papel presa. A fumaça do cachimbo sobe e se espalha à esquerda; fundo bege esfumaçado.",
+          { tag: "writer", c: "teal", v: "mint", id: "w24p3e", src: "/lessons/aulas/aula-24/w24p3e.webp", alt: "Homem de suspensórios fumando cachimbo diante de máquina de escrever antiga", w: 262, h: 171, ph: "Foto em tom sépia: homem jovem de óculos, camisa branca, suspensórios azuis e gravata-borboleta azul, com um cachimbo na boca, sentado à mesa diante de uma máquina de escrever antiga azul-escura com uma folha de papel presa. A fumaça do cachimbo sobe e se espalha à esquerda; fundo bege esfumaçado.",
             lines: ["I write books. I’m a writer."] } ] } ] },
 
       // ── PÁGINA 04 (impressa 04) — service, travel & technical ───────────
@@ -4811,27 +4727,20 @@ export const LESSONS = [
         { t: "badge", label: "AULA 24", page: "PÁGINA 04" },
         { t: "title", en: "SERVICE, TRAVEL &", pt: "TECHNICAL JOBS" },
         { t: "cards", items: [
-          { tag: "waiter / waitress / server", c: "teal", v: "mint", id: "w24p4a", alt: "Garçom e garçonete de uniforme, de braços cruzados",
-            ph: "Foto: um garçom e uma garçonete lado a lado, os dois de camisa branca, colete preto e gravata-borboleta preta, de braços cruzados e sorrindo. Ao fundo, o salão desfocado de um restaurante.",
+          { tag: "waiter / waitress / server", c: "teal", v: "mint", id: "w24p4a", src: "/lessons/aulas/aula-24/w24p4a.webp", alt: "Garçom e garçonete de colete preto sorrindo de braços cruzados", w: 332, h: 193, ph: "Foto: um garçom e uma garçonete lado a lado, os dois de camisa branca, colete preto e gravata-borboleta preta, de braços cruzados e sorrindo. Ao fundo, o salão desfocado de um restaurante.",
             lines: ["waiter", "waitress", "server"] } ] },
         { t: "cards", cols: 2, items: [
-          { tag: "baker", c: "teal", v: "mint", id: "w24p4b", alt: "Padeiro segurando um saco de pães",
-            ph: "Foto: padeiro sorridente de uniforme branco e chapéu de cozinheiro, segurando um saco de papel pardo cheio de pães e baguetes e fazendo sinal de positivo. Ao fundo, parede de tijolos à vista.",
+          { tag: "baker", c: "teal", v: "mint", id: "w24p4b", src: "/lessons/aulas/aula-24/w24p4b.webp", alt: "Padeiro sorridente segurando saco de pães e fazendo sinal de positivo", w: 266, h: 120, ph: "Foto: padeiro sorridente de uniforme branco e chapéu de cozinheiro, segurando um saco de papel pardo cheio de pães e baguetes e fazendo sinal de positivo. Ao fundo, parede de tijolos à vista.",
             lines: ["I work in a bakery. I’m a baker."] },
-          { tag: "sailor", c: "purple", v: "lilac", id: "w24p4c", alt: "Marinheiro de barba grisalha e camiseta listrada segurando um cachimbo",
-            ph: "Foto sobre fundo preto: homem de barba e bigode grisalhos, quepe branco de capitão com faixa preta, camiseta de listras azuis e brancas e casaco verde-oliva, segurando um cachimbo escuro junto à boca com a mão direita.",
+          { tag: "sailor", c: "purple", v: "lilac", id: "w24p4c", src: "/lessons/aulas/aula-24/w24p4c.webp", alt: "Marinheiro de quepe branco fumando cachimbo sobre fundo preto", w: 165, h: 120, ph: "Foto sobre fundo preto: homem de barba e bigode grisalhos, quepe branco de capitão com faixa preta, camiseta de listras azuis e brancas e casaco verde-oliva, segurando um cachimbo escuro junto à boca com a mão direita.",
             lines: ["I sail a ship. I’m a sailor."] },
-          { tag: "pilot", c: "teal", v: "mint", id: "w24p4d", alt: "Farda azul-marinho de piloto com asas douradas",
-            ph: "Foto: detalhe do uniforme de um piloto: paletó azul-marinho de botões dourados em fila dupla, com o distintivo de asas douradas preso acima do bolso. Ao fundo, o céu azul desfocado.",
+          { tag: "pilot", c: "teal", v: "mint", id: "w24p4d", src: "/lessons/aulas/aula-24/w24p4d.webp", alt: "Detalhe do paletó azul-marinho de piloto com distintivo de asas douradas", w: 262, h: 113, ph: "Foto: detalhe do uniforme de um piloto: paletó azul-marinho de botões dourados em fila dupla, com o distintivo de asas douradas preso acima do bolso. Ao fundo, o céu azul desfocado.",
             lines: ["I fly an airplane. I’m a pilot."] },
-          { tag: "driver", c: "purple", v: "lilac", id: "w24p4e", alt: "Motorista ao lado de um caminhão vermelho com carreta azul",
-            ph: "Foto: caminhoneiro de camisa xadrez vermelha e calça jeans de pé ao lado de um caminhão vermelho com carreta baú azul, em um pátio aberto sob céu claro.",
+          { tag: "driver", c: "purple", v: "lilac", id: "w24p4e", src: "/lessons/aulas/aula-24/w24p4e.webp", alt: "Caminhoneiro de camisa xadrez ao lado de caminhão vermelho e azul", w: 266, h: 116, ph: "Foto: caminhoneiro de camisa xadrez vermelha e calça jeans de pé ao lado de um caminhão vermelho com carreta baú azul, em um pátio aberto sob céu claro.",
             lines: ["I drive a truck. I’m a driver."] },
-          { tag: "engineer", c: "teal", v: "mint", id: "w24p4f", alt: "Engenheira de capacete branco e colete segurando um tablet",
-            ph: "Foto: engenheira de óculos, capacete branco de obra, camisa quadriculada e colete laranja refletivo, sorrindo enquanto segura um tablet. Ao fundo, a estrutura de concreto de uma construção.",
+          { tag: "engineer", c: "teal", v: "mint", id: "w24p4f", src: "/lessons/aulas/aula-24/w24p4f.webp", alt: "Engenheira de capacete e colete laranja segurando tablet na obra", w: 266, h: 120, ph: "Foto: engenheira de óculos, capacete branco de obra, camisa quadriculada e colete laranja refletivo, sorrindo enquanto segura um tablet. Ao fundo, a estrutura de concreto de uma construção.",
             lines: ["I plan, design and build buildings. I’m an engineer."] },
-          { tag: "UNEMPLOYED", c: "yellow", v: "cream", id: "w24p4g", alt: "Homem sentado em uma escada lendo o jornal",
-            ph: "Foto: homem de camisa xadrez e calça jeans sentado em uma escadaria de concreto, lendo um jornal aberto, com um copo descartável de café ao lado no degrau.",
+          { tag: "UNEMPLOYED", c: "yellow", v: "cream", id: "w24p4g", src: "/lessons/aulas/aula-24/w24p4g.webp", alt: "Homem sentado na escada lendo jornal com copo de café ao lado", w: 268, h: 91, ph: "Foto: homem de camisa xadrez e calça jeans sentado em uma escadaria de concreto, lendo um jornal aberto, com um copo descartável de café ao lado no degrau.",
             lines: ["I’m not working right now."], note: "unemployed → sem trabalho no momento" } ] },
         { t: "note", v: "lilac", bold: true, text: "Todas essas palavras descrevem ocupações ou uma situação profissional." } ] },
 
@@ -4845,14 +4754,10 @@ export const LESSONS = [
         { t: "lead", text: "Ambas podem perguntar sobre a ocupação de alguém." },
         { t: "sec", text: "RESPOSTAS-MODELO" },
         { t: "cards", cols: 2, items: [
-          { tag: "I’m a teacher.", c: "teal", v: "mint", id: "w24p5a", alt: "Professora sorrindo na sala de aula",
-            ph: "Foto: professora de camisa vermelha e cardigã bege, de braços cruzados, sorrindo em uma sala de aula com lousa branca ao fundo." },
-          { tag: "I’m an accountant.", c: "purple", v: "lilac", id: "w24p5b", alt: "Mão apertando as teclas de uma calculadora",
-            ph: "Foto em recorte vertical: mão de pessoa de camisa branca apertando as teclas de uma calculadora branca e cinza sobre a mesa de madeira clara, ao lado de planilhas com gráficos em azul e de um notebook prateado aberto." },
-          { tag: "I’m an engineer.", c: "teal", v: "mint", id: "w24p5c", alt: "Engenheira de capacete branco segurando um tablet",
-            ph: "Foto: engenheira de óculos, capacete branco de obra e colete laranja refletivo, sorrindo com um tablet nas mãos, diante da estrutura de concreto de uma construção." },
-          { tag: "I’m an artist.", c: "purple", v: "lilac", id: "w24p5d", alt: "Mão segurando uma tela com pintura colorida",
-            ph: "Foto sobre fundo branco, em recorte vertical bem fechado (a mesma foto do artista da página 03, aqui cortada acima do rosto): vê-se a boina preta no alto, a blusa preta e a mão direita segurando na altura do peito uma placa branca com pinceladas coloridas em turquesa, azul-claro, rosa e magenta." } ] },
+          { tag: "I’m a teacher.", c: "teal", v: "mint", id: "w24p5a", src: "/lessons/aulas/aula-24/w24p5a.webp", alt: "Professora de braços cruzados sorrindo em sala de aula", w: 160, h: 212, ph: "Foto: professora de camisa vermelha e cardigã bege, de braços cruzados, sorrindo em uma sala de aula com lousa branca ao fundo." },
+          { tag: "I’m an accountant.", c: "purple", v: "lilac", id: "w24p5b", src: "/lessons/aulas/aula-24/w24p5b.webp", alt: "Mão em calculadora ao lado de planilhas e notebook aberto, recorte vertical", w: 160, h: 212, ph: "Foto em recorte vertical: mão de pessoa de camisa branca apertando as teclas de uma calculadora branca e cinza sobre a mesa de madeira clara, ao lado de planilhas com gráficos em azul e de um notebook prateado aberto." },
+          { tag: "I’m an engineer.", c: "teal", v: "mint", id: "w24p5c", src: "/lessons/aulas/aula-24/w24p5c.webp", alt: "Engenheira de capacete e colete laranja sorrindo segurando tablet", w: 160, h: 200, ph: "Foto: engenheira de óculos, capacete branco de obra e colete laranja refletivo, sorrindo com um tablet nas mãos, diante da estrutura de concreto de uma construção." },
+          { tag: "I’m an artist.", c: "purple", v: "lilac", id: "w24p5d", src: "/lessons/aulas/aula-24/w24p5d.webp", alt: "Mão segurando placa colorida, com boina preta à mostra acima", w: 121, h: 131, ph: "Foto sobre fundo branco, em recorte vertical bem fechado (a mesma foto do artista da página 03, aqui cortada acima do rosto): vê-se a boina preta no alto, a blusa preta e a mão direita segurando na altura do peito uma placa branca com pinceladas coloridas em turquesa, azul-claro, rosa e magenta." } ] },
         { t: "chips", items: [
           { t: "a teacher", c: "teal" },
           { t: "an accountant", c: "purple" },
@@ -4879,10 +4784,8 @@ export const LESSONS = [
         { t: "badge", label: "AULA 24", page: "PÁGINA 07" },
         { t: "title", en: "LET’S TALK ABOUT JOBS", pt: "Leo e Mia conversam sobre trabalho." },
         { t: "cards", cols: 2, items: [
-          { tag: "LEO", c: "purple", v: "lilac", id: "w24p7a", alt: "Leo, padeiro de uniforme branco, segurando um saco de pães",
-            ph: "Foto com a etiqueta roxa escrita LEO no canto superior esquerdo, por cima da imagem: padeiro sorridente de barba e bigode castanhos curtos, uniforme branco de chef e chapéu alto de cozinheiro, segurando com o braço esquerdo um saco de papel pardo cheio de pães e baguetes e fazendo sinal de positivo com a mão direita. Ao fundo, parede de tijolos à vista, janelas de esquadria escura e a bancada da padaria com mais pães e um rolo de massa." },
-          { tag: "MIA", c: "teal", v: "mint", id: "w24p7b", alt: "Fotógrafo de camisa xadrez vermelha com o olho na câmera montada em tripé",
-            ph: "Foto sobre fundo branco, com a etiqueta verde-azulada escrita MIA no canto superior esquerdo, por cima da imagem: homem jovem de barba escura e camisa xadrez vermelha e azul-marinho, curvado com o olho na câmera fotográfica profissional preta montada em um tripé prateado. Atrás dele, à esquerda, um guarda-chuva difusor preto aberto; à direita, uma softbox branca de estúdio no pedestal. Atenção: a arte da página traz este homem barbudo sob a etiqueta MIA, a mesma foto do fotógrafo da página 03." } ] },
+          { tag: "LEO", c: "purple", v: "lilac", id: "w24p7a", src: "/lessons/aulas/aula-24/w24p7a.webp", alt: "Padeiro sorridente segurando saco de pães diante de parede de tijolos", w: 452, h: 264, ph: "Foto com a etiqueta roxa escrita LEO no canto superior esquerdo, por cima da imagem: padeiro sorridente de barba e bigode castanhos curtos, uniforme branco de chef e chapéu alto de cozinheiro, segurando com o braço esquerdo um saco de papel pardo cheio de pães e baguetes e fazendo sinal de positivo com a mão direita. Ao fundo, parede de tijolos à vista, janelas de esquadria escura e a bancada da padaria com mais pães e um rolo de massa." },
+          { tag: "MIA", c: "teal", v: "mint", id: "w24p7b", src: "/lessons/aulas/aula-24/w24p7b.webp", alt: "Fotógrafo de camisa xadrez fotografando com câmera em tripé e softbox", w: 238, h: 176, ph: "Foto sobre fundo branco, com a etiqueta verde-azulada escrita MIA no canto superior esquerdo, por cima da imagem: homem jovem de barba escura e camisa xadrez vermelha e azul-marinho, curvado com o olho na câmera fotográfica profissional preta montada em um tripé prateado. Atrás dele, à esquerda, um guarda-chuva difusor preto aberto; à direita, uma softbox branca de estúdio no pedestal. Atenção: a arte da página traz este homem barbudo sob a etiqueta MIA, a mesma foto do fotógrafo da página 03." } ] },
         { t: "dialogue", items: [
           { s: "a", text: "Mia: What do you do?" },
           { s: "b", text: "Leo: I work in a bakery. I’m a baker." },
@@ -4910,8 +4813,7 @@ export const LESSONS = [
         { t: "title", en: "YOUR TURN!", pt: "Agora é a sua vez!" },
         { t: "sec", text: "PARTE 1: CHOOSE A JOB" },
         { t: "lead", text: "Escolha uma ocupação da aula." },
-        { t: "image", id: "w24p9a", alt: "Estudante sorrindo segurando um caderno na rua",
-          ph: "Foto: jovem de cabelo preto comprido, blusa estampada em azul, preto e amarelo e mochila branca no ombro, sorrindo enquanto segura um caderno aberto. Ao fundo, a fachada bege de um prédio antigo com sacada." },
+        { t: "image", id: "w24p9a", src: "/lessons/aulas/aula-24/w24p9a.webp", alt: "Jovem sorridente com mochila branca segurando caderno aberto na rua", w: 404, h: 409, ph: "Foto: jovem de cabelo preto comprido, blusa estampada em azul, preto e amarelo e mochila branca no ombro, sorrindo enquanto segura um caderno aberto. Ao fundo, a fachada bege de um prédio antigo com sacada." },
         { t: "sec", text: "PARTE 2: ASK", c: "purple" },
         { t: "grid", cols: 1, items: [
           { title: "What do you do?", v: "lilac", c: "purple" },
@@ -4922,8 +4824,7 @@ export const LESSONS = [
           { title: "I’m a/an ________.", v: "mint", c: "teal" },
           { title: "Yes, I am.", v: "mint", c: "teal" },
           { title: "No, I’m not. I’m a/an ________.", v: "mint", c: "teal" } ] },
-        { t: "image", id: "w24p9b", alt: "Mão apertando as teclas de uma calculadora ao lado de um notebook",
-          ph: "Foto (a mesma da página 01, em recorte mais largo): a mão de uma pessoa de camisa branca aperta as teclas de uma calculadora branca e cinza, com uma tecla rosa, sobre a mesa de madeira clara; a outra mão está no teclado do notebook prateado, no alto à direita. Em volta, planilhas impressas com gráficos de barras em azul e uma caneta grafite de clipe prateado deitada sobre uma das folhas." },
+        { t: "image", id: "w24p9b", src: "/lessons/aulas/aula-24/w24p9b.webp", alt: "Mãos em calculadora e notebook cercadas de planilhas com gráficos azuis", w: 406, h: 400, ph: "Foto (a mesma da página 01, em recorte mais largo): a mão de uma pessoa de camisa branca aperta as teclas de uma calculadora branca e cinza, com uma tecla rosa, sobre a mesa de madeira clara; a outra mão está no teclado do notebook prateado, no alto à direita. Em volta, planilhas impressas com gráficos de barras em azul e uma caneta grafite de clipe prateado deitada sobre uma das folhas." },
         { t: "note", v: "mint", kicker: "AÇÕES DE APOIO", text: "I teach.\nI make films.\nI write books.\nI drive a truck." },
         { t: "note", v: "cream", bar: true, bold: true, text: "Você pode usar informações fictícias." } ] },
 
@@ -4960,13 +4861,19 @@ export const LESSONS = [
         { t: "title", en: "SIMPLE PRESENT", pt: "HE, SHE, IT" },
         { t: "cards", cols: 2, items: [
           { tag: "HE", c: "teal", v: "mint", id: "w25p1a",
-            alt: "Policial acenando",
+            src: "/lessons/aulas/aula-25/w25p1a.webp",
+            alt: "Policial jovem de farda azul acenando com a mão, sobre fundo preto",
+            w: 228, h: 225,
             ph: "Foto: homem jovem de barba curta e cabelo escuro, com uniforme de policial azul-claro, gravata preta e cinto tático, acenando com a mão direita aberta, de corpo até a cintura, sobre fundo preto." },
           { tag: "SHE", c: "purple", v: "lilac", id: "w25p1b",
-            alt: "Mulher de óculos sorrindo",
+            src: "/lessons/aulas/aula-25/w25p1b.webp",
+            alt: "Mulher de óculos e camisa xadrez azul sorrindo para a câmera",
+            w: 216, h: 236,
             ph: "Foto: mulher jovem de cabelo escuro liso e comprido e óculos de armação preta, com camisa xadrez azul, sorrindo de frente para a câmera, sobre fundo branco." },
           { tag: "IT", c: "yellow", v: "cream", id: "w25p1c",
-            alt: "Carro perua antigo laranja",
+            src: "/lessons/aulas/aula-25/w25p1c.webp",
+            alt: "Carro perua antigo laranja visto de três quartos, sobre fundo preto",
+            w: 252, h: 221,
             ph: "Foto: carro perua antigo cor de laranja, visto de três quartos pela frente, com bagageiro no teto, faróis retangulares e calotas prateadas, sobre fundo preto." } ] },
         { t: "note", v: "lilac", kicker: "I / YOU / WE / THEY", bold: true, text: "Agora: HE / SHE / IT" },
         { t: "note", v: "cream", bar: true, bold: true, text: "Com he, she e it, o Simple Present muda." },
@@ -5020,15 +4927,21 @@ export const LESSONS = [
         { t: "title", en: "AFFIRMATIVE IN ACTION", pt: "Veja a regra funcionando." },
         { t: "cards", cols: 1, items: [
           { tag: "work → works", c: "teal", v: "mint", id: "w25p4a",
-            alt: "Policial acenando",
+            src: "/lessons/aulas/aula-25/w25p4a.webp",
+            alt: "Policial de farda azul acenando, sorrindo para a câmera",
+            w: 237, h: 278,
             ph: "Foto: homem jovem de barba curta, com uniforme de policial azul-claro, gravata preta e cinto tático, acenando com a mão direita aberta, sobre fundo preto.",
             lines: ["He works as a police officer."] },
           { tag: "like → likes", c: "purple", v: "lilac", id: "w25p4b",
-            alt: "Macaco comendo uma banana",
+            src: "/lessons/aulas/aula-25/w25p4b.webp",
+            alt: "Macaco cinza esverdeado segurando e mordendo uma banana",
+            w: 344, h: 294,
             ph: "Foto: macaco de pelo cinza-esverdeado e topete alaranjado, sentado sobre um deque de madeira clara, segurando e mordendo uma banana descascada; ao fundo, uma janela desfocada.",
             lines: ["It likes bananas."] },
           { tag: "study → studies", c: "teal", v: "mint", id: "w25p4c",
-            alt: "Mulher de óculos sorrindo",
+            src: "/lessons/aulas/aula-25/w25p4c.webp",
+            alt: "Mulher de óculos e cabelo escuro sorrindo, camisa xadrez azul",
+            w: 295, h: 294,
             ph: "Foto: mulher jovem de cabelo escuro comprido e óculos de armação preta, com camisa xadrez azul, sorrindo de frente para a câmera, sobre fundo branco.",
             lines: ["My sister studies at home."] } ] } ] },
 
@@ -5038,23 +4951,33 @@ export const LESSONS = [
         { t: "title", en: "MORE AFFIRMATIVE FORMS", pt: "Mais verbos com he, she e it." },
         { t: "cards", cols: 1, items: [
           { tag: "cry → cries", note: "watch → watches", c: "teal", v: "mint", id: "w25p5a",
-            alt: "Mulher chorando diante do notebook",
+            src: "/lessons/aulas/aula-25/w25p5a.webp",
+            alt: "Mulher de suéter chorando à noite diante de um notebook aberto",
+            w: 238, h: 160,
             ph: "Foto: mulher de óculos e suéter listrado chorando à noite diante de um notebook aberto, enxugando o rosto com um lenço de papel, num quarto escuro com luminária acesa e luzinhas amarelas ao fundo.",
             lines: ["Karen cries when she watches sad movies."] },
           { tag: "wash → washes", c: "purple", v: "lilac", id: "w25p5b",
-            alt: "Homem lavando a louça abraçado pela esposa",
+            src: "/lessons/aulas/aula-25/w25p5b.webp",
+            alt: "Casal sorrindo na cozinha enquanto ele lava a louça na pia",
+            w: 238, h: 164,
             ph: "Foto: casal na cozinha branca; o homem de camiseta branca e braços tatuados lava a louça na pia enquanto a mulher o abraça por trás, os dois rindo.",
             lines: ["My husband washes the dishes every day."] },
           { tag: "go → goes", c: "teal", v: "mint", id: "w25p5c",
-            alt: "Mergulhador sobre um recife de corais",
+            src: "/lessons/aulas/aula-25/w25p5c.webp",
+            alt: "Mergulhador nadando sobre um recife de corais coloridos",
+            w: 238, h: 164,
             ph: "Foto: mergulhador com cilindro, máscara e roupa preta nadando sobre um recife de corais amarelos e rosados, com peixinhos alaranjados ao redor, em água azul-turquesa.",
             lines: ["My uncle goes scuba diving on the weekends."] },
           { tag: "do → does", c: "purple", v: "lilac", id: "w25p5d",
-            alt: "Homem de terno sorrindo diante do notebook",
+            src: "/lessons/aulas/aula-25/w25p5d.webp",
+            alt: "Homem de terno sorrindo com as mãos levantadas à mesa",
+            w: 234, h: 164,
             ph: "Foto: homem negro de barba, terno escuro e camisa branca, sentado a uma mesa clara diante de um notebook aberto, com as duas mãos levantadas e sorrindo; ao lado, um copo de café para viagem.",
             lines: ["He does his homework in the afternoon."] },
           { tag: "have → has", c: "teal", v: "mint", id: "w25p5e",
-            alt: "Família sentada no sofá",
+            src: "/lessons/aulas/aula-25/w25p5e.webp",
+            alt: "Família de quatro sorrindo juntos no sofá da sala",
+            w: 238, h: 164,
             ph: "Foto: família de quatro sentada junta no sofá da sala (o pai de camisa cinza com um bebê de macacão azul no colo, uma menina de camiseta listrada e a mãe de blusa clara), todos sorrindo.",
             lines: ["Lessie has a beautiful house."] } ] },
         { t: "chips", items: [
@@ -5074,15 +4997,21 @@ export const LESSONS = [
           { tag: "HE / SHE / IT", c: "purple", v: "lilac", lines: ["→ DOESN’T"] } ] },
         { t: "note", v: "gray", bold: true, text: "HE / SHE / IT + DOESN’T + BASE VERB" },
         { t: "image", id: "w25p6a",
-          alt: "Carro perua antigo laranja",
+          src: "/lessons/aulas/aula-25/w25p6a.webp",
+          alt: "Carro perua antigo laranja visto de três quartos",
+          w: 164, h: 125,
           ph: "Foto: carro perua antigo cor de laranja, visto de três quartos pela frente, com bagageiro no teto e faróis retangulares, sobre fundo preto." },
         { t: "key", v: "mint", text: "He doesn’t have a modern car." },
         { t: "image", id: "w25p6b",
-          alt: "Mulher de óculos sorrindo",
+          src: "/lessons/aulas/aula-25/w25p6b.webp",
+          alt: "Mulher de óculos e camisa xadrez azul sorrindo de frente",
+          w: 141, h: 144,
           ph: "Foto: mulher jovem de cabelo escuro comprido e óculos de armação preta, com camisa xadrez azul, sorrindo de frente para a câmera, sobre fundo branco." },
         { t: "key", v: "white", text: "She teaches English." },
         { t: "image", id: "w25p6c",
-          alt: "Mulher de óculos sorrindo",
+          src: "/lessons/aulas/aula-25/w25p6c.webp",
+          alt: "Mesma mulher de óculos sorrindo, camisa xadrez azul",
+          w: 141, h: 144,
           ph: "Foto: a mesma mulher de cabelo escuro comprido e óculos de armação preta, com camisa xadrez azul, sorrindo de frente para a câmera, sobre fundo branco." },
         { t: "key", v: "lilac", text: "She doesn’t teach Japanese." },
         { t: "note", v: "cream", bar: true, bold: true, text: "Depois de doesn’t, o verbo volta à forma-base." },
@@ -5098,11 +5027,15 @@ export const LESSONS = [
         { t: "key", v: "mint", text: "Do you live in New York? → Does he live in New York?" },
         { t: "cards", cols: 1, items: [
           { tag: "Does she speak English?", c: "navy", v: "gray", id: "w25p7a",
-            alt: "Mulher de óculos sorrindo",
+            src: "/lessons/aulas/aula-25/w25p7a.webp",
+            alt: "Mulher de óculos sorrindo, camisa xadrez azul, fundo branco",
+            w: 181, h: 220,
             ph: "Foto: mulher jovem de cabelo escuro comprido e óculos de armação preta, com camisa xadrez azul, sorrindo de frente para a câmera, sobre fundo branco.",
             lines: ["Yes, she does.", "No, she doesn’t."] },
           { tag: "Does he like coffee?", c: "navy", v: "gray", id: "w25p7b",
-            alt: "Homem de moletom azul apontando para o lado",
+            src: "/lessons/aulas/aula-25/w25p7b.webp",
+            alt: "Homem de barba apontando para o lado, sobre fundo preto",
+            w: 139, h: 212,
             ph: "Foto: homem jovem de barba e cabelo curto, com blusa de moletom azul-royal, apontando para o lado com o dedo indicador, sobre fundo preto.",
             lines: ["Yes, he does.", "No, he doesn’t."] } ] },
         { t: "note", v: "cream", bar: true, bold: true, text: "Depois de DOES: BASE VERB." },
@@ -5116,23 +5049,33 @@ export const LESSONS = [
         { t: "note", v: "lilac", bold: true, text: "QUESTION WORD + DOES + HE / SHE / IT + BASE VERB + ?" },
         { t: "cards", cols: 1, items: [
           { tag: "Where does she work?", c: "teal", v: "mint", id: "w25p8a",
-            alt: "Garçonete com bandeja de taças",
+            src: "/lessons/aulas/aula-25/w25p8a.webp",
+            alt: "Garçonete sorridente segurando bandeja com taças de vinho",
+            w: 189, h: 151,
             ph: "Foto: garçonete sorridente de camisa branca e gravata-borboleta preta, segurando uma bandeja redonda com duas taças de vinho branco, num restaurante com luzes douradas desfocadas ao fundo.",
             lines: ["She works in a restaurant."] },
           { tag: "What does he do?", c: "purple", v: "lilac", id: "w25p8b",
-            alt: "Enfermeiro anotando numa prancheta",
+            src: "/lessons/aulas/aula-25/w25p8b.webp",
+            alt: "Enfermeiro de uniforme azul sentado com prancheta no hospital",
+            w: 182, h: 136,
             ph: "Foto: enfermeiro de uniforme azul e estetoscópio no pescoço, sentado com uma prancheta na mão num quarto de hospital; ao fundo, uma paciente na cama e outra profissional de saúde.",
             lines: ["He’s a nurse."] },
           { tag: "When does she study English?", c: "teal", v: "mint", id: "w25p8c",
-            alt: "Mulher de óculos sorrindo",
+            src: "/lessons/aulas/aula-25/w25p8c.webp",
+            alt: "Mulher de óculos e cabelo escuro sorrindo, fundo branco",
+            w: 153, h: 144,
             ph: "Foto: mulher jovem de cabelo escuro comprido e óculos de armação preta, com camisa xadrez azul, sorrindo de frente para a câmera, sobre fundo branco.",
             lines: ["She studies English on Fridays."] },
           { tag: "Who does he live with?", c: "purple", v: "lilac", id: "w25p8d",
-            alt: "Família sentada no sofá",
+            src: "/lessons/aulas/aula-25/w25p8d.webp",
+            alt: "Família sorrindo junta no sofá, pai com bebê no colo",
+            w: 182, h: 140,
             ph: "Foto: família de quatro sentada junta no sofá da sala (o pai de camisa cinza com um bebê no colo, uma menina de camiseta listrada e a mãe de blusa clara), todos sorrindo.",
             lines: ["He lives with his wife and his children."] },
           { tag: "Why does he study English?", c: "teal", v: "mint", id: "w25p8e",
-            alt: "Homem de moletom azul apontando para o lado",
+            src: "/lessons/aulas/aula-25/w25p8e.webp",
+            alt: "Homem de moletom azul apontando para o lado, fundo preto",
+            w: 90, h: 139,
             ph: "Foto: homem jovem de barba e blusa de moletom azul-royal, apontando para o lado com o dedo indicador, sobre fundo preto.",
             lines: ["Because he wants to travel around the world."] } ] },
         { t: "chips", items: [
@@ -5158,7 +5101,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 25", page: "PÁGINA 10" },
         { t: "title", en: "LET’S TALK ABOUT SOMEONE", pt: "Mia e Leo falam sobre o irmão do Leo." },
         { t: "image", id: "w25p10a",
-          alt: "Homem tomando café da manhã, com dois retratos menores sobrepostos",
+          src: "/lessons/aulas/aula-25/w25p10a.webp",
+          alt: "Homem sorridente tomando café da manhã, com retratos sobrepostos no canto",
+          w: 928, h: 420,
           ph: "Foto: homem de barba e camisa jeans clara sentado à mesa do café da manhã, sorrindo para a câmera e estendendo uma xícara branca; na mesa há pães, um ovo cozido e uma jarra de água, e ao fundo a cozinha desfocada. Sobrepostos no canto superior esquerdo, dois retratos menores, sem legenda: a mulher de cabelo escuro comprido, óculos de armação preta e camisa xadrez azul, sobre fundo branco, e o homem de barba e moletom azul-royal apontando para o lado, sobre fundo preto." },
         { t: "dialogue", items: [
           { s: "a", text: "Mia: What does your brother do?" },
@@ -5175,7 +5120,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 25", page: "PÁGINA 11" },
         { t: "title", en: "TALK ABOUT A PERSON", pt: "Fale sobre a rotina de uma pessoa." },
         { t: "image", id: "w25p11a",
-          alt: "Dupla conversando com cadernos abertos sobre a mesa",
+          src: "/lessons/aulas/aula-25/w25p11a.webp",
+          alt: "Casal sorridente escrevendo em cadernos à mesa, com café e planta",
+          w: 653, h: 297,
           ph: "Foto: uma mulher de camisa jeans e cabelo castanho ondulado e um homem de camisa verde-oliva com a mão no queixo, sentados lado a lado a uma mesa branca; cada um tem um caderno aberto e uma caneta na mão, e os dois conversam sorrindo. Ao fundo, um vaso de planta e uma caneca preta sobre a mesa." },
         { t: "sec", text: "PARTE 1 · CHOOSE", c: "teal" },
         { t: "chips", title: "Escolha:", items: [
@@ -5202,7 +5149,9 @@ export const LESSONS = [
         { t: "title", en: "YOUR TURN!", pt: "Complete as frases com a forma correta do Simple Present." },
         { t: "kicker", text: "PARTE 1" },
         { t: "image", id: "w25p12a",
-          alt: "Moça escrevendo num caderno",
+          src: "/lessons/aulas/aula-25/w25p12a.webp",
+          alt: "Moça de suéter bege escrevendo em um caderno à mesa",
+          w: 472, h: 508,
           ph: "Foto: moça de cabelo castanho comprido e suéter bege, sentada a uma mesa clara, escrevendo com uma caneta preta em um caderno aberto; ao fundo, uma estante desfocada com um vaso de planta." },
         { t: "fill", id: "w25e1", title: "COMPLETE AS FRASES COM A FORMA CORRETA DO SIMPLE PRESENT.", items: [
           { pre: "1. She", answers: ["doesn’t", "does not", "doesn't"], note: "(not / speak)", v: "lilac" },
@@ -5220,7 +5169,9 @@ export const LESSONS = [
         { t: "title", en: "YOUR TURN!", pt: "Complete as frases com a forma correta do Simple Present." },
         { t: "kicker", text: "PARTE 2" },
         { t: "image", id: "w25p13a",
-          alt: "Rapaz de óculos escrevendo num caderno",
+          src: "/lessons/aulas/aula-25/w25p13a.webp",
+          alt: "Rapaz de óculos escrevendo em um caderno à mesa",
+          w: 451, h: 468,
           ph: "Foto: rapaz de óculos de armação preta, camisa jeans azul por cima de uma camiseta branca, sentado a uma mesa clara escrevendo com uma caneta em um caderno aberto; ao fundo, uma estante branca com um vaso de planta." },
         { t: "fill", id: "w25e2", title: "COMPLETE AS FRASES COM A FORMA CORRETA DO SIMPLE PRESENT.", items: [
           { pre: "6. Mary and Josh", answers: ["live"], post: "together.", note: "(live)", v: "mint" },
@@ -5275,7 +5226,9 @@ export const LESSONS = [
           { t: "Saturday", c: "cream" },
           { t: "Sunday", c: "cream" } ] },
         { t: "image", id: "w26p1a",
-          alt: "Homem de camisa jeans escrevendo num caderno ao lado do notebook.",
+          src: "/lessons/aulas/aula-26/w26p1a.webp",
+          alt: "Rapaz de camisa jeans azul sorrindo e escrevendo num caderno à mesa",
+          w: 928, h: 385,
           ph: "Foto: homem jovem, cabelo escuro e barba curta, de camisa jeans azul aberta sobre camiseta branca, sentado a uma mesa de madeira clara numa sala muito iluminada. Ele sorri olhando para baixo e escreve com a mão direita num caderno aberto; ao lado, um notebook cinza aberto e um celular sobre a mesa. Ao fundo, uma estante branca com vasos de plantas verdes e objetos de decoração, tudo desfocado." },
         { t: "check", id: "w26c1", title: "NESTA AULA, VOCÊ VAI:", items: [
           "aprender os sete dias da semana;",
@@ -5328,11 +5281,15 @@ export const LESSONS = [
         // `steps` desenha bolinhas 1, 2, 3 que a página não tem).
         { t: "cards", cols: 1, items: [
           { tag: "Sandra", c: "teal", v: "mint", id: "w26p4a",
-            alt: "Mulher de óculos e blazer bege trabalhando no notebook.",
+            src: "/lessons/aulas/aula-26/w26p4a.webp",
+            alt: "Mulher de blazer bege e óculos sorrindo diante de um notebook",
+            w: 380, h: 422,
             ph: "Foto: mulher jovem de cabelos escuros presos em coque, óculos de armação grossa escura, blazer bege claro sobre blusa branca de gola V, sentada a uma mesa clara e sorrindo enquanto usa um notebook cinza. Sobre a mesa, um caderno e uma caneta preta; ao fundo, uma planta em vaso e prateleiras claras desfocadas.",
             lines: ["Sandra works during the week, but she doesn’t work on the weekend."] },
           { tag: "Melissa", c: "purple", v: "cream", id: "w26p4b",
-            alt: "Mulher de chapéu de palha e óculos escuros sentada na praia.",
+            src: "/lessons/aulas/aula-26/w26p4b.webp",
+            alt: "Mulher de chapéu de palha e óculos escuros sorrindo na praia",
+            w: 380, h: 500,
             ph: "Foto: mulher jovem de cabelos longos castanhos, chapéu de palha com faixa preta, óculos escuros e top de biquíni cinza-escuro, sentada na areia abraçando os joelhos e sorrindo de lado. Ao fundo, o mar azul-turquesa com a espuma branca das ondas quebrando.",
             lines: [
               "Melissa goes to the beach on Sundays.",
@@ -5346,21 +5303,27 @@ export const LESSONS = [
         // Mesma razão da página 04: foto antes do texto e sem numeração.
         { t: "cards", cols: 1, items: [
           { tag: "JOSH", c: "teal", v: "mint", id: "w26p5a",
-            alt: "Dois homens sentados lado a lado, sorrindo um para o outro.",
+            src: "/lessons/aulas/aula-26/w26p5a.webp",
+            alt: "Dois homens sorrindo sentados lado a lado à mesa",
+            w: 276, h: 306,
             ph: "Foto: dois homens sentados lado a lado a uma mesa clara, em casa. À esquerda, um rapaz de cabelo escuro, barba curta e camisa preta; à direita, um senhor de cabelo grisalho e camisa social azul-clara, de relógio no pulso. Os dois se olham e sorriem; ao fundo, uma parede clara e prateleiras desfocadas.",
             lines: [
               "Josh visits his parents on Mondays, Wednesdays and Fridays.",
               "He doesn’t visit them every day.",
               "Do you see your parents every day?"] },
           { tag: "ADAM", c: "purple", v: "lilac", id: "w26p5b",
-            alt: "Homem de fones de ouvido escrevendo num caderno.",
+            src: "/lessons/aulas/aula-26/w26p5b.webp",
+            alt: "Rapaz de fones de ouvido escrevendo num caderno à mesa",
+            w: 276, h: 306,
             ph: "Foto: homem jovem de cabelo escuro e barba curta, com fones de ouvido grandes pretos e suéter verde-musgo, sentado a uma mesa clara escrevendo num caderno aberto com uma caneta. Usa um relógio escuro no pulso esquerdo; ao fundo, uma sala clara com planta desfocada.",
             lines: [
               "Adam studies English on Tuesdays and Thursdays.",
               "He doesn’t study English every day.",
               "Do you study English every day?"] },
           { tag: "SAMANTHA", c: "yellow", v: "cream", id: "w26p5c",
-            alt: "Mulher de avental e luvas limpando a mesa da cozinha.",
+            src: "/lessons/aulas/aula-26/w26p5c.webp",
+            alt: "Mulher de luvas azuis limpando uma bancada de madeira",
+            w: 276, h: 306,
             ph: "Foto: mulher de cabelo escuro preso, cardigã bege claro e avental preto, usando luvas de borracha azuis, inclinada sobre uma bancada de madeira clara enquanto limpa. Ao fundo, uma planta verde em vaso e a cozinha clara desfocada.",
             lines: [
               "Samantha cleans her house on the weekend.",
@@ -5435,8 +5398,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 27", page: "PÁGINA 01" },
         { t: "title", en: "MONTHS OF THE YEAR", pt: "Organize o ano em inglês." },
-        { t: "image", id: "w27p1a", alt: "Mulher escrevendo o planejamento do ano em um caderno.",
-          ph: "Foto: jovem de coque e jaqueta bege clara, sentada a uma mesa de madeira perto de uma janela, escrevendo com caneta preta em um caderno espiral. Na página do caderno está escrito à mão My Year e, abaixo, uma tabela de doze quadradinhos com JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC. Colado na página, um post-it rosa com a frase Plan Dream Do e um coraçãozinho. Ao lado, uma caneca azul-escura, óculos de grau e uma planta ao fundo." },
+        { t: "image", id: "w27p1a", src: "/lessons/aulas/aula-27/w27p1a.webp", alt: "Mulher escrevendo em caderno com tabela dos doze meses, caneca e óculos ao lado", w: 489, h: 555, ph: "Foto: jovem de coque e jaqueta bege clara, sentada a uma mesa de madeira perto de uma janela, escrevendo com caneta preta em um caderno espiral. Na página do caderno está escrito à mão My Year e, abaixo, uma tabela de doze quadradinhos com JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC. Colado na página, um post-it rosa com a frase Plan Dream Do e um coraçãozinho. Ao lado, uma caneca azul-escura, óculos de grau e uma planta ao fundo." },
         { t: "sec", text: "Leia e repita os meses em voz alta.", c: "teal" },
         { t: "rows", items: [
           { n: "1", text: "January", c: "purple" },
@@ -5470,28 +5432,22 @@ export const LESSONS = [
         { t: "steps", items: [
           { n: "1", tag: "JANUARY", c: "teal", v: "mint",
             lines: ["New Year’s Day is on January 1st.", "New Year’s Day is in January."],
-            id: "w27p2a", alt: "Fogos de artifício sobre a cidade na virada do ano.",
-            ph: "Foto redonda: fogos de artifício coloridos explodindo no céu noturno sobre os prédios iluminados de uma cidade, na virada do ano. Entre a foto e o texto, um pictograma chapado turquesa de fogos de artifício estourando sobre a silhueta branca de prédios." },
+            id: "w27p2a", src: "/lessons/aulas/aula-27/w27p2a.webp", alt: "Fogos de artifício coloridos explodindo sobre o horizonte iluminado de uma cidade à noite", w: 141, h: 143, ph: "Foto redonda: fogos de artifício coloridos explodindo no céu noturno sobre os prédios iluminados de uma cidade, na virada do ano. Entre a foto e o texto, um pictograma chapado turquesa de fogos de artifício estourando sobre a silhueta branca de prédios." },
           { n: "2", tag: "FEBRUARY", c: "purple", v: "lilac",
             lines: ["Valentine’s Day is on February 14th.", "Valentine’s Day is in February."],
-            id: "w27p2b", alt: "Dois corações vermelhos sobre pétalas de rosa.",
-            ph: "Foto redonda: dois corações vermelhos de tecido, lado a lado sobre uma mesa clara, cercados por pétalas de rosa vermelhas espalhadas. Entre a foto e o texto, um pictograma chapado roxo de coração." },
+            id: "w27p2b", src: "/lessons/aulas/aula-27/w27p2b.webp", alt: "Dois corações vermelhos de tecido sobre a mesa, cercados por pétalas de rosa", w: 139, h: 141, ph: "Foto redonda: dois corações vermelhos de tecido, lado a lado sobre uma mesa clara, cercados por pétalas de rosa vermelhas espalhadas. Entre a foto e o texto, um pictograma chapado roxo de coração." },
           { n: "3", tag: "MARCH", c: "teal", v: "mint",
             lines: ["International Women’s Day is on March 8th.", "International Women’s Day is in March."],
-            id: "w27p2c", alt: "Três mulheres sorrindo juntas com um buquê de flores.",
-            ph: "Foto redonda: três mulheres jovens de etnias diferentes, abraçadas e sorrindo para a câmera; a da direita, de blusa rosa, segura um buquê de flores roxas. Entre a foto e o texto, um pictograma chapado turquesa do símbolo feminino (círculo com cruz embaixo) dentro de um quadrado de cantos arredondados." },
+            id: "w27p2c", src: "/lessons/aulas/aula-27/w27p2c.webp", alt: "Três mulheres se abraçando e sorrindo, uma segurando um buquê de flores roxas", w: 140, h: 141, ph: "Foto redonda: três mulheres jovens de etnias diferentes, abraçadas e sorrindo para a câmera; a da direita, de blusa rosa, segura um buquê de flores roxas. Entre a foto e o texto, um pictograma chapado turquesa do símbolo feminino (círculo com cruz embaixo) dentro de um quadrado de cantos arredondados." },
           { n: "4", tag: "APRIL", c: "red", v: "red",
             lines: ["My vacation starts on April 10th.", "My vacation starts in April."],
-            id: "w27p2d", alt: "Mala amarela e chapéu diante da janela do aeroporto.",
-            ph: "Foto redonda: mala de viagem amarela com um chapéu de palha em cima, diante da janela de um aeroporto; do lado de fora, um avião decolando em um céu azul com nuvens. Entre a foto e o texto, um pictograma chapado rosa-magenta de mala de viagem com alça." },
+            id: "w27p2d", src: "/lessons/aulas/aula-27/w27p2d.webp", alt: "Mala amarela com chapéu de palha em frente à janela do aeroporto e avião decolando", w: 139, h: 140, ph: "Foto redonda: mala de viagem amarela com um chapéu de palha em cima, diante da janela de um aeroporto; do lado de fora, um avião decolando em um céu azul com nuvens. Entre a foto e o texto, um pictograma chapado rosa-magenta de mala de viagem com alça." },
           { n: "5", tag: "MAY", c: "green", v: "green",
             lines: ["Labor Day in Brazil is on May 1st.", "Labor Day in Brazil is in May."],
-            id: "w27p2e", alt: "Bandeira do Brasil tremulando no mastro.",
-            ph: "Foto redonda: bandeira do Brasil tremulando no alto de um mastro, com céu azul e nuvens brancas ao fundo. Entre a foto e o texto, um pictograma chapado verde de um grupo de três pessoas." },
+            id: "w27p2e", src: "/lessons/aulas/aula-27/w27p2e.webp", alt: "Bandeira do Brasil tremulando no alto de um mastro contra o céu azul", w: 142, h: 145, ph: "Foto redonda: bandeira do Brasil tremulando no alto de um mastro, com céu azul e nuvens brancas ao fundo. Entre a foto e o texto, um pictograma chapado verde de um grupo de três pessoas." },
           { n: "6", tag: "JUNE", c: "orange", v: "cream",
             lines: ["Valentine’s Day in Brazil is on June 12th.", "Valentine’s Day in Brazil is in June."],
-            id: "w27p2f", alt: "Presente com laço vermelho cercado de corações.",
-            ph: "Foto redonda vista de cima: caixa de presente de papel kraft bege com um laço grande de fita vermelha no topo, sobre uma superfície clara, cercada por corações vermelhos espalhados. Entre a foto e o texto, um pictograma chapado laranja de coração com contorno branco por dentro." } ] },
+            id: "w27p2f", src: "/lessons/aulas/aula-27/w27p2f.webp", alt: "Caixa de presente kraft com laço vermelho, cercada por corações espalhados", w: 139, h: 141, ph: "Foto redonda vista de cima: caixa de presente de papel kraft bege com um laço grande de fita vermelha no topo, sobre uma superfície clara, cercada por corações vermelhos espalhados. Entre a foto e o texto, um pictograma chapado laranja de coração com contorno branco por dentro." } ] },
         { t: "note", v: "gray", bar: true, text: "Use in com meses para falar de períodos.\nUse on com datas para falar de dias específicos." } ] },
 
       // ───────────────────────────── página impressa 03 ─────────────────────────────
@@ -5507,28 +5463,22 @@ export const LESSONS = [
         { t: "steps", items: [
           { n: "7", tag: "JULY", c: "teal", v: "mint",
             lines: ["When’s your birthday?", "It’s in July.", "It’s on July 7th."],
-            id: "w27p3a", alt: "Cupcake de aniversário com uma vela acesa.",
-            ph: "Foto redonda: cupcake com cobertura branca e granulado colorido, com uma vela fina acesa em cima, sobre fundo azul desfocado com luzes de festa. Entre a foto e o texto, um pictograma chapado turquesa de bolo de aniversário com três velas acesas." },
+            id: "w27p3a", src: "/lessons/aulas/aula-27/w27p3a.webp", alt: "Cupcake com cobertura branca, granulado colorido e uma vela acesa", w: 132, h: 135, ph: "Foto redonda: cupcake com cobertura branca e granulado colorido, com uma vela fina acesa em cima, sobre fundo azul desfocado com luzes de festa. Entre a foto e o texto, um pictograma chapado turquesa de bolo de aniversário com três velas acesas." },
           { n: "8", tag: "AUGUST", c: "purple", v: "lilac",
             lines: ["Father’s Day in Brazil is in August."],
-            id: "w27p3b", alt: "Dois homens abraçados e sorrindo ao ar livre.",
-            ph: "Foto redonda: dois homens adultos de barba, ao ar livre em um dia claro; o de trás abraça o outro por cima dos ombros e os dois sorriem. Entre a foto e o texto, um pictograma chapado roxo de duas pessoas se abraçando com um coração acima delas." },
+            id: "w27p3b", src: "/lessons/aulas/aula-27/w27p3b.webp", alt: "Dois homens sorrindo e se abraçando ao ar livre", w: 131, h: 134, ph: "Foto redonda: dois homens adultos de barba, ao ar livre em um dia claro; o de trás abraça o outro por cima dos ombros e os dois sorriem. Entre a foto e o texto, um pictograma chapado roxo de duas pessoas se abraçando com um coração acima delas." },
           { n: "9", tag: "SEPTEMBER", c: "teal", v: "mint",
             lines: ["Independence Day in Brazil is on September 7th.", "Independence Day in Brazil is in September."],
-            id: "w27p3c", alt: "Bandeira do Brasil tremulando contra o céu azul.",
-            ph: "Foto redonda: bandeira do Brasil aberta e tremulando ao vento, presa a um mastro, com céu azul e nuvens brancas ao fundo. Entre a foto e o texto, um pictograma chapado turquesa de bandeira lisa em um mastro." },
+            id: "w27p3c", src: "/lessons/aulas/aula-27/w27p3c.webp", alt: "Bandeira do Brasil tremulando ao vento contra o céu azul", w: 131, h: 136, ph: "Foto redonda: bandeira do Brasil aberta e tremulando ao vento, presa a um mastro, com céu azul e nuvens brancas ao fundo. Entre a foto e o texto, um pictograma chapado turquesa de bandeira lisa em um mastro." },
           { n: "10", tag: "OCTOBER", c: "purple", v: "lilac",
             lines: ["Halloween is on October 31st.", "Halloween is in October."],
-            id: "w27p3d", alt: "Abóbora de Halloween iluminada por dentro.",
-            ph: "Foto redonda: abóbora de Halloween esculpida com cara sorridente e vela acesa por dentro, em um ambiente escuro com luzes alaranjadas e folhas secas ao redor. Entre a foto e o texto, um pictograma chapado roxo de fantasminha com os olhos e a boca vazados em branco." },
+            id: "w27p3d", src: "/lessons/aulas/aula-27/w27p3d.webp", alt: "Abóbora de Halloween esculpida com vela acesa por dentro", w: 132, h: 135, ph: "Foto redonda: abóbora de Halloween esculpida com cara sorridente e vela acesa por dentro, em um ambiente escuro com luzes alaranjadas e folhas secas ao redor. Entre a foto e o texto, um pictograma chapado roxo de fantasminha com os olhos e a boca vazados em branco." },
           { n: "11", tag: "NOVEMBER", c: "teal", v: "mint",
             lines: ["Katarine’s birthday is on November 2nd.", "Katarine’s birthday is in November."],
-            id: "w27p3e", alt: "Balões brancos e rosa de festa de aniversário.",
-            ph: "Foto redonda: buquê de balões brancos e rosa-claro de festa de aniversário, com fitas soltas, sobre fundo rosa suave. Entre a foto e o texto, um pictograma chapado turquesa de bolo de aniversário com três velas acesas (o mesmo de JULY)." },
+            id: "w27p3e", src: "/lessons/aulas/aula-27/w27p3e.webp", alt: "Buquê de balões brancos e rosa claro sobre fundo rosa suave", w: 130, h: 133, ph: "Foto redonda: buquê de balões brancos e rosa-claro de festa de aniversário, com fitas soltas, sobre fundo rosa suave. Entre a foto e o texto, um pictograma chapado turquesa de bolo de aniversário com três velas acesas (o mesmo de JULY)." },
           { n: "12", tag: "DECEMBER", c: "purple", v: "lilac",
             lines: ["Christmas is on December 25th.", "Christmas is in December."],
-            id: "w27p3f", alt: "Árvore de Natal decorada com presentes embaixo.",
-            ph: "Foto redonda: árvore de Natal decorada com luzes douradas e bolas vermelhas, dentro de uma sala aconchegante, com caixas de presente embrulhadas no chão. Entre a foto e o texto, um pictograma chapado roxo de árvore de Natal com uma estrela no topo." } ] },
+            id: "w27p3f", src: "/lessons/aulas/aula-27/w27p3f.webp", alt: "Árvore de Natal decorada com luzes douradas e presentes embrulhados", w: 131, h: 134, ph: "Foto redonda: árvore de Natal decorada com luzes douradas e bolas vermelhas, dentro de uma sala aconchegante, com caixas de presente embrulhadas no chão. Entre a foto e o texto, um pictograma chapado roxo de árvore de Natal com uma estrela no topo." } ] },
         { t: "note", v: "cream", bar: true, text: "Use in para falar de meses e períodos.\nUse on para falar de datas específicas." } ] },
 
       // ───────────────────────────── página impressa 04 ─────────────────────────────
@@ -5538,18 +5488,15 @@ export const LESSONS = [
         { t: "cards", cols: 2, items: [
           { tag: "IN + MONTH", c: "teal", v: "mint",
             lines: ["Usamos in para falar de meses e períodos.", "My birthday is in December."],
-            id: "w27p4a", alt: "Calendário azul-turquesa com um selo de confirmação.",
-            ph: "Ilustração: calendário de mesa desenhado em traço azul-turquesa, com a grade de dias em cinza e um círculo turquesa com um visto branco no canto inferior direito. No centro da página, entre este calendário e o roxo do lado, um círculo azul-marinho com a palavra VS." },
+            id: "w27p4a", src: "/lessons/aulas/aula-27/w27p4a.webp", alt: "Calendário de mesa em traço turquesa com grade de dias e visto de confirmação", w: 164, h: 174, ph: "Ilustração: calendário de mesa desenhado em traço azul-turquesa, com a grade de dias em cinza e um círculo turquesa com um visto branco no canto inferior direito. No centro da página, entre este calendário e o roxo do lado, um círculo azul-marinho com a palavra VS." },
           { tag: "ON + DATE", c: "purple", v: "lilac",
             lines: ["Usamos on para falar de datas específicas.", "My birthday is on December 1st."],
-            id: "w27p4b", alt: "Calendário roxo com o dia 1 destacado e um selo de confirmação.",
-            ph: "Ilustração: calendário de mesa desenhado em traço roxo, com a grade de dias em cinza, o quadradinho do dia 1 preenchido de roxo com o número 1 em branco e um círculo roxo com um visto branco no canto inferior direito." } ] },
+            id: "w27p4b", src: "/lessons/aulas/aula-27/w27p4b.webp", alt: "Calendário de mesa em traço roxo com o dia um marcado e visto de confirmação", w: 164, h: 174, ph: "Ilustração: calendário de mesa desenhado em traço roxo, com a grade de dias em cinza, o quadradinho do dia 1 preenchido de roxo com o número 1 em branco e um círculo roxo com um visto branco no canto inferior direito." } ] },
         { t: "chips", items: [
           { t: "IN → MONTH", c: "teal" },
           { t: "ON → DATE", c: "purple" } ] },
         { t: "sec", text: "LET’S TALK ABOUT BIRTHDAYS", c: "teal" },
-        { t: "image", id: "w27p4c", alt: "Mia e Leo conversando em uma cafeteria.",
-          ph: "Foto: uma moça de cabelo castanho longo e suéter bege claro, sentada à mesa de madeira de uma cafeteria, conversa sorrindo com um rapaz de jaqueta jeans e camiseta branca. Sobre a mesa há duas xícaras de café e um caderno espiral com uma caneta. Ao fundo, luminárias pendentes e plantas." },
+        { t: "image", id: "w27p4c", src: "/lessons/aulas/aula-27/w27p4c.webp", alt: "Casal sorrindo à mesa de uma cafeteria, com café e caderno espiral", w: 384, h: 515, ph: "Foto: uma moça de cabelo castanho longo e suéter bege claro, sentada à mesa de madeira de uma cafeteria, conversa sorrindo com um rapaz de jaqueta jeans e camiseta branca. Sobre a mesa há duas xícaras de café e um caderno espiral com uma caneta. Ao fundo, luminárias pendentes e plantas." },
         { t: "dialogue", items: [
           { s: "a", text: "Mia: When is your birthday?" },
           { s: "b", text: "Leo: My birthday is in July. It’s on July 7th." },
@@ -5568,8 +5515,7 @@ export const LESSONS = [
         { t: "cards", cols: 2, items: [
           { tag: "IN + MONTH", c: "teal", v: "mint", lines: ["Usamos in para meses e períodos.", "in July"] },
           { tag: "ON + DATE", c: "purple", v: "lilac", lines: ["Usamos on para datas específicas.", "on July 7th"] } ] },
-        { t: "image", id: "w27p5a", alt: "Caderno com a lista Important Dates, caneta e xícara de café.",
-          ph: "Foto vista de cima: caderno espiral aberto sobre uma mesa branca, com o título escrito à mão Important Dates e, abaixo, quatro itens marcados com vistos coloridos: Birthday, Vacation, Holidays e Special days. Ao lado do caderno, uma caneta azul-petróleo, um vaso pequeno com suculenta e uma xícara azul-clara com café preto." },
+        { t: "image", id: "w27p5a", src: "/lessons/aulas/aula-27/w27p5a.webp", alt: "Caderno com lista Important Dates, caneta azul, suculenta e xícara de café", w: 259, h: 805, ph: "Foto vista de cima: caderno espiral aberto sobre uma mesa branca, com o título escrito à mão Important Dates e, abaixo, quatro itens marcados com vistos coloridos: Birthday, Vacation, Holidays e Special days. Ao lado do caderno, uma caneta azul-petróleo, um vaso pequeno com suculenta e uma xícara azul-clara com café preto." },
         { t: "fill", id: "w27e1", title: "COMPLETE AS FRASES COM IN OU ON", items: [
           { pre: "1. My birthday is", answers: ["in"], post: "December.", note: "bolo de aniversário", v: "mint" },
           { pre: "2. Christmas is", answers: ["on"], post: "December 25th.", note: "árvore de Natal", v: "lilac" },
@@ -5586,8 +5532,7 @@ export const LESSONS = [
         { t: "cards", cols: 2, items: [
           { tag: "IN + MONTH", c: "teal", v: "mint", lines: ["Usamos in para meses e períodos.", "in May"] },
           { tag: "ON + DATE", c: "purple", v: "lilac", lines: ["Usamos on para datas específicas.", "on May 10th"] } ] },
-        { t: "image", id: "w27p6a", alt: "Planner aberto com os doze meses do ano, caneta e recado colado.",
-          ph: "Foto vista de cima: caderno espiral aberto sobre uma mesa clara, com o título escrito à mão MY PLANNER e, abaixo, uma grade de doze quadros vazios com os nomes dos meses em cores diferentes: JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC. Ao lado, uma caneta verde-menta, um vaso com planta e um post-it verde-claro com a frase Make Good Memories! e um coração desenhado." },
+        { t: "image", id: "w27p6a", src: "/lessons/aulas/aula-27/w27p6a.webp", alt: "Caderno com planner dos doze meses do ano, caneta verde e vaso de planta", w: 412, h: 966, ph: "Foto vista de cima: caderno espiral aberto sobre uma mesa clara, com o título escrito à mão MY PLANNER e, abaixo, uma grade de doze quadros vazios com os nomes dos meses em cores diferentes: JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC. Ao lado, uma caneta verde-menta, um vaso com planta e um post-it verde-claro com a frase Make Good Memories! e um coração desenhado." },
         { t: "free", id: "w27f1", items: [
           { n: "1", kicker: "MY BIRTHDAY", prefix: "When is your birthday?", ideas: "My birthday is in ______.  ·  My birthday is on ______ ______.", v: "mint", c: "teal" },
           { n: "2", kicker: "MY VACATION", prefix: "My vacation is in ______.", ideas: "My vacation starts on ______ ______.", v: "lilac", c: "purple" },
@@ -5613,8 +5558,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 27", page: "PÁGINA 07" },
         { t: "title", en: "MONTHS OF THE YEAR", pt: "Agora você já sabe usar in com meses e on com datas para falar sobre o ano." },
-        { t: "image", id: "w27p7a", alt: "Calendário de mesa com os doze meses do ano.",
-          ph: "Ilustração: calendário de mesa apoiado em um cavalete azul-petróleo em forma de A, sobre uma superfície branca. No quadro do calendário, os doze meses abreviados em quadrinhos coloridos, em quatro linhas de três: JAN, FEB, MAR / APR, MAY, JUN / JUL, AUG, SEP / OCT, NOV, DEC. Ao lado, uma caneta verde-menta deitada e um vaso bege salpicado de branco com uma planta verde." },
+        { t: "image", id: "w27p7a", src: "/lessons/aulas/aula-27/w27p7a.webp", alt: "Calendário de mesa com os doze meses do ano, caneta e vaso de planta ao lado", w: 454, h: 367, ph: "Ilustração: calendário de mesa apoiado em um cavalete azul-petróleo em forma de A, sobre uma superfície branca. No quadro do calendário, os doze meses abreviados em quadrinhos coloridos, em quatro linhas de três: JAN, FEB, MAR / APR, MAY, JUN / JUL, AUG, SEP / OCT, NOV, DEC. Ao lado, uma caneta verde-menta deitada e um vaso bege salpicado de branco com uma planta verde." },
         { t: "check", id: "w27c1", title: "EU CONSIGO...", items: [
           "reconhecer os 12 meses do ano;",
           "dizer os meses em sequência;",
@@ -5643,8 +5587,7 @@ export const LESSONS = [
         { t: "badge", label: "AULA 28" },
         { t: "title", en: "ORDINAL NUMBERS", pt: "Talking about order and position." },
         { t: "lead", text: "Os números ordinais indicam ordem ou posição em uma lista." },
-        { t: "image", id: "w28p1a", alt: "Três estudantes sorrindo e caminhando juntos com livros nos braços",
-          ph: "Foto: três jovens estudantes caminhando lado a lado ao ar livre, diante de um prédio moderno de vidro com árvores ao fundo. À esquerda, uma moça de cabelo castanho longo, jaqueta jeans sobre camiseta branca, abraçando um caderno verde-azulado. No centro, um rapaz de cabelo escuro cacheado, camiseta verde-oliva e mochila preta, segurando um livro azul-escuro. À direita, uma moça de cabelo castanho ondulado, suéter amarelo-mostarda e mochila, segurando um livro roxo. Os três estão sorrindo e olhando um para o outro." },
+        { t: "image", id: "w28p1a", src: "/lessons/aulas/aula-28/w28p1a.webp", alt: "Três jovens estudantes sorridentes caminhando juntos segurando cadernos", w: 848, h: 609, ph: "Foto: três jovens estudantes caminhando lado a lado ao ar livre, diante de um prédio moderno de vidro com árvores ao fundo. À esquerda, uma moça de cabelo castanho longo, jaqueta jeans sobre camiseta branca, abraçando um caderno verde-azulado. No centro, um rapaz de cabelo escuro cacheado, camiseta verde-oliva e mochila preta, segurando um livro azul-escuro. À direita, uma moça de cabelo castanho ondulado, suéter amarelo-mostarda e mochila, segurando um livro roxo. Os três estão sorrindo e olhando um para o outro." },
         { t: "grid", cols: 2, items: [
           { title: "An ordinal number tells the position of something in a sequence.", v: "white", c: "teal" },
           { title: "Um número ordinal indica a posição de algo em uma sequência.", v: "white", c: "navy" } ] },
@@ -5731,8 +5674,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 28", page: "PÁGINA 03" },
         { t: "title", en: "COMPOUND ORDINALS & POSITION", pt: "Usamos números ordinais para indicar ordem e posição." },
-        { t: "image", id: "w28p3a", alt: "Homem escrevendo em um caderno ao lado de um notebook",
-          ph: "Foto: homem jovem de camisa jeans sobre camiseta branca, cabelo escuro curto, sentado a uma mesa de madeira clara perto de uma janela. Ele sorri enquanto escreve com uma caneta em um caderno aberto; à direita, um notebook prateado aberto; à esquerda, um copo de café para viagem com tampa marrom. Ao fundo, prateleiras e uma planta verde." },
+        { t: "image", id: "w28p3a", src: "/lessons/aulas/aula-28/w28p3a.webp", alt: "Rapaz de camisa jeans sorrindo enquanto escreve em um caderno à mesa", w: 412, h: 369, ph: "Foto: homem jovem de camisa jeans sobre camiseta branca, cabelo escuro curto, sentado a uma mesa de madeira clara perto de uma janela. Ele sorri enquanto escreve com uma caneta em um caderno aberto; à direita, um notebook prateado aberto; à esquerda, um copo de café para viagem com tampa marrom. Ao fundo, prateleiras e uma planta verde." },
         { t: "sec", text: "1 · COMPOUND ORDINALS", c: "purple" },
         { t: "lead", text: "Em números compostos, somente a última parte fica na forma ordinal." },
         { t: "cards", cols: 2, items: [
@@ -5740,11 +5682,9 @@ export const LESSONS = [
           { tag: "221st", c: "purple", v: "lilac", lines: ["two hundred twenty-first"], note: "221 → two hundred twenty-first" } ] },
         { t: "sec", text: "2 · POSITION IN CONTEXT" },
         { t: "cards", cols: 2, items: [
-          { tag: "IN THE ALPHABET", c: "teal", v: "mint", id: "w28p3b", alt: "Letra K verde apoiada em uma pilha de livros",
-            ph: "Foto: uma letra K grande, de madeira pintada de verde, em pé sobre uma mesa de madeira clara, encostada em uma pilha de três livros. À esquerda, um pequeno vaso branco com uma planta verde; parede branca ao fundo.",
+          { tag: "IN THE ALPHABET", c: "teal", v: "mint", id: "w28p3b", src: "/lessons/aulas/aula-28/w28p3b.webp", alt: "Letra K verde apoiada em uma pilha de livros sobre a mesa", w: 353, h: 242, ph: "Foto: uma letra K grande, de madeira pintada de verde, em pé sobre uma mesa de madeira clara, encostada em uma pilha de três livros. À esquerda, um pequeno vaso branco com uma planta verde; parede branca ao fundo.",
             lines: ["K is the eleventh letter of the alphabet.", "11th · eleventh"], note: "11th = eleventh (11º)" },
-          { tag: "IN THE FAMILY", c: "purple", v: "lilac", id: "w28p3c", alt: "Família de cinco pessoas sentada sorrindo em um sofá",
-            ph: "Foto: família de cinco pessoas sentada em um sofá bege-claro, todos sorrindo e olhando uns para os outros. Da esquerda para a direita: um menino de camiseta amarelo-mostarda, em primeiro plano; o pai, de barba curta e camisa verde-escura, logo atrás dele; uma menina de camiseta rosa; uma menina maior de camiseta listrada preto e branco; e a mãe, de suéter bege claro. Parede clara ao fundo.",
+          { tag: "IN THE FAMILY", c: "purple", v: "lilac", id: "w28p3c", src: "/lessons/aulas/aula-28/w28p3c.webp", alt: "Família de cinco sorrindo junta no sofá, todos se olhando", w: 510, h: 304, ph: "Foto: família de cinco pessoas sentada em um sofá bege-claro, todos sorrindo e olhando uns para os outros. Da esquerda para a direita: um menino de camiseta amarelo-mostarda, em primeiro plano; o pai, de barba curta e camisa verde-escura, logo atrás dele; uma menina de camiseta rosa; uma menina maior de camiseta listrada preto e branco; e a mãe, de suéter bege claro. Parede clara ao fundo.",
             lines: ["My parents have three children.", "I’m the second one.", "2nd · second"], note: "2nd = second (2º)" } ] },
         { t: "note", v: "cream", bar: true, bold: true, kicker: "LEMBRE-SE!", text: "Os números ordinais ajudam a dizer a posição de algo na ordem." },
         { t: "steps", items: [
@@ -5757,8 +5697,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 28", page: "PÁGINA 04" },
         { t: "title", en: "ORDINAL NUMBERS IN DATES", pt: "Usamos números ordinais para dizer datas em inglês." },
-        { t: "image", id: "w28p4a", alt: "Calendário de mesa de abril de 2024 com o dia 10 circulado",
-          ph: "Foto: calendário de mesa branco com espiral metálica, em pé sobre uma mesa de madeira clara. Na folha, o título APRIL 2024 em azul-petróleo, a grade dos dias da semana (SUN a SAT) e o número 10 circulado em vermelho. À esquerda, um pequeno vaso branco com suculenta; à frente, uma caneta prateada sobre uma folha de papel; à direita, uma caneca azul-acinzentada." },
+        { t: "image", id: "w28p4a", src: "/lessons/aulas/aula-28/w28p4a.webp", alt: "Calendário de mesa de abril com o dia dez circulado em vermelho", w: 481, h: 235, ph: "Foto: calendário de mesa branco com espiral metálica, em pé sobre uma mesa de madeira clara. Na folha, o título APRIL 2024 em azul-petróleo, a grade dos dias da semana (SUN a SAT) e o número 10 circulado em vermelho. À esquerda, um pequeno vaso branco com suculenta; à frente, uma caneta prateada sobre uma folha de papel; à direita, uma caneca azul-acinzentada." },
         { t: "sec", text: "1 · AMERICAN ENGLISH" },
         { t: "cards", cols: 2, items: [
           { tag: "FORMA ESCRITA", c: "teal", v: "mint", lines: ["April 10, 2024"] },
@@ -5795,18 +5734,15 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 28", page: "PÁGINA 05" },
         { t: "title", en: "OTHER USES OF ORDINAL NUMBERS", pt: "Os números ordinais também aparecem em títulos, séculos e andares." },
-        { t: "image", id: "w28p5a", alt: "Big Ben e o Parlamento de Londres com a bandeira do Reino Unido",
-          ph: "Foto: a torre do relógio Big Ben e o Palácio de Westminster, em Londres, vistos de baixo sob um céu azul com nuvens brancas. Em primeiro plano, à esquerda, a bandeira do Reino Unido (Union Jack) tremulando em um mastro dourado." },
+        { t: "image", id: "w28p5a", src: "/lessons/aulas/aula-28/w28p5a.webp", alt: "Torre do Big Ben com a bandeira do Reino Unido tremulando ao vento", w: 531, h: 325, ph: "Foto: a torre do relógio Big Ben e o Palácio de Westminster, em Londres, vistos de baixo sob um céu azul com nuvens brancas. Em primeiro plano, à esquerda, a bandeira do Reino Unido (Union Jack) tremulando em um mastro dourado." },
         { t: "sec", text: "1 · TÍTULOS", c: "purple" },
         { t: "lead", text: "Usamos ordinais para ler títulos de reis, rainhas, papas, etc." },
-        { t: "image", id: "w28p5b", alt: "Retrato da rainha Elizabeth II com tiara e colar de pérolas",
-          ph: "Foto: retrato circular da rainha Elizabeth II, idosa, de cabelos brancos, usando uma tiara de diamantes, brincos de diamante, colar de pérolas e vestido creme com faixa azul e insígnias honoríficas. Ela sorri levemente; fundo marrom-escuro." },
+        { t: "image", id: "w28p5b", src: "/lessons/aulas/aula-28/w28p5b.webp", alt: "Retrato circular da rainha Elizabeth II usando tiara e colar de pérolas", w: 215, h: 249, ph: "Foto: retrato circular da rainha Elizabeth II, idosa, de cabelos brancos, usando uma tiara de diamantes, brincos de diamante, colar de pérolas e vestido creme com faixa azul e insígnias honoríficas. Ela sorri levemente; fundo marrom-escuro." },
         { t: "cards", cols: 1, items: [
           { tag: "Historical example", c: "purple", v: "lilac", lines: ["Elizabeth II", "→ Elizabeth the Second"], note: "Exemplo histórico." } ] },
         { t: "sec", text: "2 · SÉCULOS" },
         { t: "lead", text: "Usamos ordinais para falar sobre séculos." },
-        { t: "image", id: "w28p5c", alt: "Arranha-céus de vidro refletidos em um rio sob céu azul",
-          ph: "Foto: skyline de uma cidade moderna, com arranha-céus de vidro azul sob um céu ensolarado. À frente, um rio calmo refletindo os prédios, uma passarela para pedestres e árvores verdes ao longo da margem." },
+        { t: "image", id: "w28p5c", src: "/lessons/aulas/aula-28/w28p5c.webp", alt: "Skyline de cidade moderna com arranha-céus de vidro à beira de um rio", w: 420, h: 261, ph: "Foto: skyline de uma cidade moderna, com arranha-céus de vidro azul sob um céu ensolarado. À frente, um rio calmo refletindo os prédios, uma passarela para pedestres e árvores verdes ao longo da margem." },
         { t: "cards", cols: 1, items: [
           { tag: "21st century", c: "teal", v: "mint", lines: ["twenty-first century"], note: "Ex.: We live in the twenty-first century. · Vivemos no século XXI." } ] },
         { t: "sec", text: "3 · ANDARES" },
@@ -5814,8 +5750,7 @@ export const LESSONS = [
         { t: "cards", cols: 2, items: [
           { tag: "ground floor", c: "teal", v: "mint", lines: ["(térreo)"], note: "É o andar de entrada do prédio." },
           { tag: "1st floor", c: "teal", v: "mint", lines: ["(primeiro andar)"], note: "Vem depois do ground floor." } ] },
-        { t: "image", id: "w28p5d", alt: "Prédio moderno de três andares com grandes janelas de vidro",
-          ph: "Ilustração: render 3D de um prédio moderno de três pavimentos, com fachada cinza-escura, grandes janelas de vidro e interiores iluminados onde se veem móveis, plantas nas varandas e arbustos verdes na entrada. Na página impressa ele fica no centro do quadro ANDARES: pontos azul-petróleo à esquerda ligam-no às caixas BRITISH ENGLISH e pontos roxos à direita, às caixas AMERICAN ENGLISH, marcando a altura de cada andar." },
+        { t: "image", id: "w28p5d", src: "/lessons/aulas/aula-28/w28p5d.webp", alt: "Prédio moderno de três andares com fachada cinza e janelas iluminadas", w: 175, h: 274, ph: "Ilustração: render 3D de um prédio moderno de três pavimentos, com fachada cinza-escura, grandes janelas de vidro e interiores iluminados onde se veem móveis, plantas nas varandas e arbustos verdes na entrada. Na página impressa ele fica no centro do quadro ANDARES: pontos azul-petróleo à esquerda ligam-no às caixas BRITISH ENGLISH e pontos roxos à direita, às caixas AMERICAN ENGLISH, marcando a altura de cada andar." },
         { t: "sec", text: "AMERICAN ENGLISH", c: "purple" },
         { t: "cards", cols: 2, items: [
           { tag: "1st floor", c: "purple", v: "lilac", lines: ["(primeiro andar)"], note: "Corresponde ao ground floor britânico." },
@@ -5829,8 +5764,7 @@ export const LESSONS = [
         { t: "title", en: "ORDINAL NUMBERS", pt: "Your turn!" },
         { t: "sec", text: "1 · READ ALOUD!" },
         { t: "lead", text: "Leia os números ordinais em voz alta." },
-        { t: "image", id: "w28p6a", alt: "Dois jovens sorrindo lado a lado estudando com caderno e notebook",
-          ph: "Foto: uma jovem de cabelo castanho longo e jaqueta jeans e um rapaz de cabelo escuro cacheado e suéter verde-oliva sentados lado a lado a uma mesa, sorrindo e olhando um para o outro. Sobre a mesa, um caderno aberto com um lápis na mão dela, um notebook prateado aberto, um caderno preto e um copo de café para viagem com tampa marrom. Ao fundo, janelas amplas e uma planta." },
+        { t: "image", id: "w28p6a", src: "/lessons/aulas/aula-28/w28p6a.webp", alt: "Jovem casal sorrindo à mesa com caderno, notebook e café para viagem", w: 518, h: 455, ph: "Foto: uma jovem de cabelo castanho longo e jaqueta jeans e um rapaz de cabelo escuro cacheado e suéter verde-oliva sentados lado a lado a uma mesa, sorrindo e olhando um para o outro. Sobre a mesa, um caderno aberto com um lápis na mão dela, um notebook prateado aberto, um caderno preto e um copo de café para viagem com tampa marrom. Ao fundo, janelas amplas e uma planta." },
         { t: "rows", items: [
           { n: "1", text: "25th", c: "purple" },
           { n: "2", text: "46th", c: "purple" },
@@ -5891,10 +5825,14 @@ export const LESSONS = [
           { t: "DATES", c: "navy" },
           { t: "PREPOSITIONS", c: "navy" } ] },
         { t: "image", id: "w29p1a",
-          alt: "Casa de três andares em corte, mostrando todos os cômodos mobiliados.",
+          src: "/lessons/aulas/aula-29/w29p1a.webp",
+          alt: "Casa em corte mostrando quarto, closet, cozinha, sala e banheiro",
+          w: 549, h: 650,
           ph: "Foto: maquete realista de uma casa de dois andares mais térreo, vista em corte lateral, como uma casa de bonecas aberta de frente. Telhado escuro de duas águas com chaminé de tijolos, céu azul com nuvens brancas e gramado verde com arbustos e um caminho de pedras na frente. No andar de cima, à esquerda, um quarto com cama de casal e colcha azul-marinho, abajures acesos e quadro na parede; à direita, um closet de madeira clara com roupas penduradas e um vaso de planta. No andar do meio, à esquerda, uma cozinha branca com geladeira de inox, fogão, coifa, ilha com dois banquinhos e plantas; à direita, uma sala de estar com sofá cinza, poltrona, mesa de centro de madeira, luminária de chão e uma planta grande. No térreo, à esquerda, um banheiro com box de vidro, vaso sanitário, bancada com cuba e espelho redondo; à direita, um segundo quarto com cama de solteiro, criado-mudo e quadro na parede. Toda a casa está com as luzes acesas em tom quente." },
         { t: "image", id: "w29p1b",
-          alt: "Calendário de mesa ao lado de um caderno com caneta e um relógio azul.",
+          src: "/lessons/aulas/aula-29/w29p1b.webp",
+          alt: "Calendário de mesa, caderno com caneta e despertador azul sobre a mesa",
+          w: 604, h: 676,
           ph: "Foto: sobre uma mesa de madeira clara, um calendário de mesa espiralado em pé, com o cabeçalho SUN MON TUE WED THU FRI SAT em faixa azul-marinho e os domingos em vermelho, mostrando os dias de 1 a 31. À frente, um caderno pautado aberto com uma caneta preta apoiada sobre as folhas. À direita, um relógio despertador redondo de moldura azul-marinho e mostrador branco, marcando cerca de 10h10. Ao fundo, um vaso branco com uma planta verde e uma cortina clara desfocada." },
         { t: "cards", cols: 2, items: [
           { tag: "HOME", c: "teal", v: "mint", lines: ["House & Furniture", "There is / There are"] },
@@ -5909,19 +5847,27 @@ export const LESSONS = [
         { t: "note", v: "mint", bar: true, text: "My name is Mark. I live in a house. In my house there isn’t a dining room but there is a living room and a kitchen. There are three bedrooms and two bathrooms. There isn’t a garage in my house." },
         { t: "note", v: "lilac", bar: true, text: "In my bedroom there is a double bed, a bedside table, a wardrobe, a dresser, a TV and a mirror." },
         { t: "image", id: "w29p2a",
-          alt: "Quarto com cama de casal, criados-mudos e abajures acesos.",
+          src: "/lessons/aulas/aula-29/w29p2a.webp",
+          alt: "Quarto de casal claro com cabeceira estofada bege e cortina clara",
+          w: 364, h: 329,
           ph: "Foto: quarto de casal amplo e claro, com parede verde-acinzentada e um quadro abstrato em moldura clara acima da cabeceira. Cama de casal com cabeceira estofada bege, colcha branca e almofadas cinza e brancas. De cada lado, um criado-mudo de madeira escura com um abajur de cúpula branca aceso. À direita, uma janela alta com cortina bege clara e um vaso com planta verde no chão. Piso de madeira clara." },
         { t: "note", v: "mint", bar: true, text: "In my kitchen there are some cupboards, a stove with a large oven, a sink, a microwave oven and a refrigerator." },
         { t: "image", id: "w29p2b",
-          alt: "Cozinha branca com fogão, coifa e mesa redonda de jantar.",
+          src: "/lessons/aulas/aula-29/w29p2b.webp",
+          alt: "Cozinha branca com mesa redonda de madeira e quatro cadeiras cinza",
+          w: 364, h: 273,
           ph: "Foto: cozinha clara com armários brancos até o teto, coifa de inox sobre o fogão e forno embutido, bancada branca com potes, tábua e plantinhas. Luminária pendente preta sobre uma mesa redonda de madeira com quatro cadeiras estofadas cinza-escuras e uma fruteira com maçãs verdes no centro. À direita, uma janela com vista clara e um vaso com planta verde grande. Piso de madeira clara." },
         { t: "note", v: "lilac", bar: true, text: "In my living room there is another TV, two armchairs, a sofa, curtains, and a coffee table. There are also some pictures on the wall." },
         { t: "image", id: "w29p2c",
-          alt: "Sala de estar com sofá, mesa de centro e TV sobre um rack de madeira.",
+          src: "/lessons/aulas/aula-29/w29p2c.webp",
+          alt: "Sala de estar bege com sofá, mesa de centro e rack com TV",
+          w: 364, h: 231,
           ph: "Foto: sala de estar clara com sofá bege e almofada azul-marinho à esquerda, mesa de centro retangular de tampo claro e estrutura preta sobre um tapete cinza, com uma revista e um vasinho de suculenta em cima. À direita, um rack baixo de madeira com uma televisão de tela grande desligada, um vaso com planta pequena ao lado e uma planta alta em vaso de cimento no canto. Parede bege lisa e piso de madeira clara." },
         { t: "note", v: "mint", bar: true, text: "In my bathroom there is a bathtub, a shower, a toilet, a rug, two sinks, two cabinets and two mirrors" },
         { t: "image", id: "w29p2d",
-          alt: "Banheiro com banheira embutida e bancada com duas cubas e dois espelhos.",
+          src: "/lessons/aulas/aula-29/w29p2d.webp",
+          alt: "Banheiro bege com banheira embutida e bancada com duas cubas",
+          w: 364, h: 265,
           ph: "Foto: banheiro revestido de porcelanato bege claro. À esquerda, uma banheira retangular embutida com torneira de parede e um nicho na parede com uma plantinha verde. À direita, uma bancada de madeira clara com duas cubas quadradas brancas de apoio, duas torneiras e dois espelhos grandes na parede, com uma plantinha em vaso branco entre as cubas. Iluminação quente e difusa." } ] },
 
       // ───────────────────────── página impressa 03 ─────────────────────────
@@ -5968,10 +5914,14 @@ export const LESSONS = [
         { t: "note", v: "lilac", bar: true, bold: true, text: "There are 11 mistakes. Find and correct them on the next page." },
         { t: "cards", cols: 2, items: [
           { tag: "MARK", c: "teal", v: "mint", id: "w29p5a",
-            alt: "Retrato do Mark, rapaz de camisa jeans, sorrindo.",
+            src: "/lessons/aulas/aula-29/w29p5a.webp",
+            alt: "Rapaz de camisa jeans azul sorrindo de lado, em recorte circular",
+            w: 142, h: 145,
             ph: "Foto em recorte circular: rapaz jovem de pele clara, cabelo escuro ondulado e curto, vestindo camisa jeans azul aberta sobre camiseta branca. Ele sorri de lado, olhando para fora do quadro. Ao fundo, uma estante de madeira desfocada em tons quentes." },
           { tag: "NANCY", c: "purple", v: "lilac", id: "w29p5b",
-            alt: "Retrato da Nancy, moça de blusa rosa, sorrindo.",
+            src: "/lessons/aulas/aula-29/w29p5b.webp",
+            alt: "Moça de blusa rosa e cabelo castanho sorrindo, em recorte circular",
+            w: 143, h: 146,
             ph: "Foto em recorte circular: moça jovem de pele clara, cabelo castanho longo e liso solto sobre os ombros, vestindo blusa de tricô rosa claro. Ela sorri olhando para fora do quadro. Ao fundo, uma parede clara com uma planta verde desfocada." } ] },
         { t: "dialogue", items: [
           { s: "a", text: "Mark: Hi, Nancy! What are you doing March the 21st?" },
@@ -6022,7 +5972,9 @@ export const LESSONS = [
         { t: "sec", text: "1 · HOME", c: "teal" },
         { t: "note", v: "mint", text: "Write three sentences about your home. Use there is / there are." },
         { t: "image", id: "w29p7a",
-          alt: "Sala de estar com sofá claro, mesa de centro e plantas.",
+          src: "/lessons/aulas/aula-29/w29p7a.webp",
+          alt: "Sala de estar clara com sofá bege, mesa de centro e tapete cinza",
+          w: 335, h: 216,
           ph: "Foto: sala de estar clara e aconchegante, com sofá de três lugares em tecido bege e almofadas verde-escuras, mesa de centro redonda de madeira com um vaso de suculenta e uma xícara, tapete cinza claro no chão. À esquerda, uma luminária de chão preta e um vaso grande com planta de folhas largas; ao fundo, um quadro emoldurado com paisagem de montanhas e uma estante de madeira com vários vasos brancos de plantas. Piso de madeira clara." },
         { t: "free", id: "w29f1", cols: 1, items: [
           { n: "1", kicker: "HOME", prefix: "(There is…)", ideas: "", v: "mint", c: "teal" },
@@ -6031,21 +5983,27 @@ export const LESSONS = [
         { t: "sec", text: "2 · DATE", c: "purple" },
         { t: "note", v: "lilac", text: "Complete the sentence. Use a month and an ordinal number." },
         { t: "image", id: "w29p7b",
-          alt: "Calendário de mesa entre um vaso de planta e um vaso decorativo.",
+          src: "/lessons/aulas/aula-29/w29p7b.webp",
+          alt: "Calendário de mesa espiralado sobre uma mesa de madeira clara",
+          w: 335, h: 159,
           ph: "Foto: calendário de mesa espiralado, de papel branco, apoiado sobre uma mesa de madeira clara, mostrando a grade de dias do mês em letras pequenas e cinza. À esquerda, um vaso branco com uma planta verde de folhas pequenas; à direita, um vaso bege claro com ramos secos. Parede de fundo branca e iluminação suave." },
         { t: "free", id: "w29f2", cols: 1, items: [
           { n: "1", kicker: "DATE", prefix: "My birthday is on", ideas: "", v: "lilac", c: "purple" } ] },
         { t: "sec", text: "3 · DAY & TIME", c: "yellow" },
         { t: "note", v: "cream", text: "Answer the question. Use a day and a time." },
         { t: "image", id: "w29p7c",
-          alt: "Relógio despertador de madeira sobre uma mesa, ao lado de uma plantinha.",
+          src: "/lessons/aulas/aula-29/w29p7c.webp",
+          alt: "Despertador redondo de moldura clara marcando dez e dez",
+          w: 335, h: 143,
           ph: "Foto: relógio despertador redondo com moldura de madeira clara e mostrador branco com números pretos de 1 a 12, marcando cerca de 10h10, apoiado sobre uma superfície clara. À direita, um vaso branco com uma plantinha verde. Ao fundo, uma parede clara e uma janela desfocada com luz natural." },
         { t: "note", v: "cream", bold: true, text: "When are you free?" },
         { t: "free", id: "w29f3", cols: 1, items: [
           { n: "1", kicker: "DAY", prefix: "I’m free on", ideas: "(day)", v: "cream", c: "yellow" },
           { n: "2", kicker: "TIME", prefix: "at", ideas: "(time)", v: "cream", c: "yellow" } ] },
         { t: "image", id: "w29p7d",
-          alt: "Rapaz de camisa jeans sorrindo enquanto escreve em um caderno.",
+          src: "/lessons/aulas/aula-29/w29p7d.webp",
+          alt: "Rapaz sorrindo enquanto escreve em um caderno, com porta lápis ao lado",
+          w: 376, h: 172,
           ph: "Foto: rapaz jovem de cabelo escuro ondulado, camisa jeans azul aberta sobre camiseta branca, sentado a uma mesa branca em uma sala clara. Ele sorri olhando para baixo enquanto escreve com a mão direita em um caderno aberto. À direita, um porta-lápis preto com lápis e canetas; ao fundo, prateleiras desfocadas com livros e plantas." },
         { t: "key", v: "cream", text: "KEEP GOING! You can use what you know. Practice a little every day. Great job!" } ] },
 
@@ -6054,7 +6012,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 29", page: "PÁGINA 08" },
         { t: "title", en: "GREAT JOB!", pt: "Você concluiu o Unit Review." },
         { t: "image", id: "w29p8a",
-          alt: "Rapaz e moça batendo um high five por cima da mesa de estudos.",
+          src: "/lessons/aulas/aula-29/w29p8a.webp",
+          alt: "Rapaz e moça sorrindo e batendo as mãos em um high five à mesa",
+          w: 491, h: 322,
           ph: "Foto: um rapaz de camisa jeans azul sobre camiseta branca e uma moça de blusa rosa claro, sentados lado a lado a uma mesa de madeira, sorrindo e batendo as mãos em um high five no alto. Sobre a mesa, um livro aberto e outro livro fechado; ao fundo, uma estante clara com livros e um vaso com planta verde." },
         { t: "kicker", text: "You completed the Unit Review. Let’s see what you can do now." },
         { t: "check", id: "w29c1", title: "EU CONSIGO...", items: [
@@ -6067,7 +6027,9 @@ export const LESSONS = [
           "Fazer e responder perguntas com what e when.",
           "Identificar e corrigir erros comuns em frases." ] },
         { t: "image", id: "w29p8b",
-          alt: "Casa de dois andares ao lado de um calendário de mesa e um relógio de parede.",
+          src: "/lessons/aulas/aula-29/w29p8b.webp",
+          alt: "Casa iluminada, calendário com datas circuladas e relógio de parede",
+          w: 346, h: 438,
           ph: "Ilustração: composição em 3D realista sobre fundo branco. No alto, uma casa de dois andares com paredes bege claro, telhado escuro de duas águas, porta de madeira, janelas iluminadas em amarelo, garagem e um jardim verde com arbustos e uma árvore na base. Logo abaixo, um calendário de mesa espiralado com o cabeçalho SUN MON TUE WED THU FRI SAT, com os números 15 e 21 circulados em roxo, e, à frente dele, um relógio de parede redondo de moldura preta e mostrador branco, com ponteiros pretos e ponteiro de segundos vermelho, marcando cerca de 10h10." },
         { t: "cta", items: [
           { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 29", body: "AULA 29: UNIT REVIEW. Revise os conteúdos desta aula assistindo à videoaula completa.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
@@ -6087,55 +6049,84 @@ export const LESSONS = [
         { t: "badge", label: "AULA 30" },
         { t: "title", en: "PLACES IN A CITY", pt: "CITY VOCABULARY" },
         { t: "lead", text: "In this lesson, you will learn the names of some important places in a city." },
-        { t: "image", id: "w30p1a", alt: "Vista panorâmica de uma cidade grande com arranha-céus, rio e parque.",
-          ph: "Foto: vista aérea de uma cidade grande em dia de sol. À direita, um conjunto de arranha-céus de vidro azul; ao centro, um rio largo atravessado por uma ponte de concreto; à esquerda e em primeiro plano, um parque arborizado verde com avenidas e carros. Céu azul com nuvens brancas." },
+        { t: "image", id: "w30p1a", src: "/lessons/aulas/aula-30/w30p1a.webp", alt: "Parque à beira de um rio com ponte, avenida movimentada e prédios ao fundo", w: 1024, h: 107, ph: "Foto: vista aérea de uma cidade grande em dia de sol. À direita, um conjunto de arranha-céus de vidro azul; ao centro, um rio largo atravessado por uma ponte de concreto; à esquerda e em primeiro plano, um parque arborizado verde com avenidas e carros. Céu azul com nuvens brancas." },
         { t: "sec", text: "MEET THE PLACES" },
         { t: "lead", text: "Look, listen and repeat." },
         { t: "steps", items: [
           { n: "1", tag: "UNIVERSITY", c: "purple", v: "white", id: "w30v01",
-            alt: "Prédio histórico de uma universidade com colunas.",
+            src: "/lessons/aulas/aula-30/w30v01.webp",
+            alt: "Prédio histórico de universidade com colunas e escadaria, alunos passando",
+            w: 176, h: 184,
             ph: "Foto: fachada de um prédio histórico de universidade, em pedra clara, com escadaria, colunas e frontão triangular. Gramado verde e árvores na frente, alunos caminhando." },
           { n: "2", tag: "DRUGSTORE / PHARMACY", c: "purple", v: "white", id: "w30v02",
-            alt: "Fachada de uma farmácia com letreiro verde PHARMACY.",
+            src: "/lessons/aulas/aula-30/w30v02.webp",
+            alt: "Fachada de farmácia verde com vitrine de remédios coloridos",
+            w: 176, h: 164,
             ph: "Foto: fachada de farmácia com letreiro verde escrito PHARMACY e uma cruz branca ao lado. Vitrine de vidro mostrando prateleiras cheias de caixas de remédios coloridas." },
           { n: "3", tag: "SUPERMARKET", c: "purple", v: "white", id: "w30v03",
-            alt: "Corredor de supermercado com frutas e um carrinho.",
+            src: "/lessons/aulas/aula-30/w30v03.webp",
+            alt: "Corredor de supermercado com frutas, verduras e um carrinho de compras",
+            w: 177, h: 184,
             ph: "Foto: corredor de supermercado com prateleiras verdes de frutas e verduras dos dois lados, laranjas e maçãs em destaque, e um carrinho de compras vazio parado no meio do corredor." },
           { n: "4", tag: "BUS STOP", c: "purple", v: "white", id: "w30v04",
-            alt: "Pessoas esperando em um ponto de ônibus enquanto um ônibus azul chega.",
+            src: "/lessons/aulas/aula-30/w30v04.webp",
+            alt: "Ponto de ônibus coberto com pessoas esperando e ônibus azul se aproximando",
+            w: 177, h: 184,
             ph: "Foto: ponto de ônibus coberto, de vidro, com quatro pessoas em pé esperando. Um ônibus urbano azul se aproxima pela rua. Árvores verdes e céu azul ao fundo." },
           { n: "5", tag: "PARK", c: "purple", v: "white", id: "w30v05",
-            alt: "Parque arborizado com gramado e pessoas sentadas.",
+            src: "/lessons/aulas/aula-30/w30v05.webp",
+            alt: "Parque arborizado com caminho e pessoas sentadas na grama ao sol",
+            w: 176, h: 187,
             ph: "Foto: parque com fileiras de árvores altas e copas verdes, caminho de pedestres ao centro e gramado dos lados, com grupos de pessoas sentadas na grama em dia ensolarado." },
           { n: "6", tag: "PARKING LOT", c: "purple", v: "white", id: "w30v06",
-            alt: "Estacionamento com carros enfileirados e placa azul com a letra P.",
+            src: "/lessons/aulas/aula-30/w30v06.webp",
+            alt: "Estacionamento com carros enfileirados e placa azul de estacionamento",
+            w: 176, h: 180,
             ph: "Foto: estacionamento ao ar livre com carros prateados e cinzas enfileirados nas vagas demarcadas. Uma placa azul quadrada com a letra P branca fica à direita, e há árvores ao fundo." },
           { n: "7", tag: "AQUARIUM", c: "purple", v: "white", id: "w30v07",
-            alt: "Visitantes diante de um grande túnel de aquário.",
+            src: "/lessons/aulas/aula-30/w30v07.webp",
+            alt: "Visitantes observam arraia e peixes em túnel de vidro de aquário",
+            w: 176, h: 182,
             ph: "Foto: interior escuro de um aquário. Um grande painel de vidro curvo, iluminado em azul, mostra uma arraia e peixes nadando. Quatro visitantes em silhueta observam de costas." },
           { n: "8", tag: "SHOPPING MALL", c: "purple", v: "white", id: "w30v08",
-            alt: "Interior de um shopping com escadas rolantes e lojas.",
+            src: "/lessons/aulas/aula-30/w30v08.webp",
+            alt: "Átrio de shopping com escadas rolantes cruzadas e claraboia",
+            w: 177, h: 182,
             ph: "Foto: interior claro de um shopping center de vários andares, com escadas rolantes cruzadas ao centro, corrimãos de vidro, clarabóia no teto e pessoas caminhando entre as lojas." },
           { n: "9", tag: "OFFICE", c: "purple", v: "white", id: "w30v09",
-            alt: "Escritório com mesas, computadores e cadeiras.",
+            src: "/lessons/aulas/aula-30/w30v09.webp",
+            alt: "Escritório moderno e claro com mesas, computadores e plantas",
+            w: 176, h: 179,
             ph: "Foto: escritório moderno e claro, com mesas brancas enfileiradas, monitores de computador, cadeiras pretas de rodinhas e grandes janelas com vista para árvores." },
           { n: "10", tag: "MOVIE THEATER", c: "purple", v: "white", id: "w30v10",
-            alt: "Fachada de cinema com letreiro de neon vermelho escrito CINEMA.",
+            src: "/lessons/aulas/aula-30/w30v10.webp",
+            alt: "Fachada de cinema à noite com letreiro neon vermelho CINEMA",
+            w: 176, h: 182,
             ph: "Foto: fachada de cinema à noite, com letreiro de neon vermelho escrito CINEMA sobre a marquise e cartazes de filmes iluminados na parede." },
           { n: "11", tag: "THEATER", c: "purple", v: "white", id: "w30v11",
-            alt: "Palco de teatro com cortina vermelha e poltronas vermelhas.",
+            src: "/lessons/aulas/aula-30/w30v11.webp",
+            alt: "Palco de teatro iluminado com cortina vermelha e poltronas vazias",
+            w: 170, h: 187,
             ph: "Foto: interior de teatro visto da plateia, com palco iluminado e grande cortina vermelha franzida ao fundo, e fileiras de poltronas vermelhas vazias em primeiro plano." },
           { n: "12", tag: "HOTEL", c: "purple", v: "white", id: "w30v12",
-            alt: "Recepção de hotel com placa HOTEL e recepcionistas.",
+            src: "/lessons/aulas/aula-30/w30v12.webp",
+            alt: "Recepção de hotel com balcão de madeira e recepcionistas de terno",
+            w: 176, h: 172,
             ph: "Foto: recepção de hotel com balcão de madeira, placa iluminada escrita HOTEL na parede, dois recepcionistas de terno escuro atrás do balcão e uma mala de viagem no chão." },
           { n: "13", tag: "MUSEUM", c: "purple", v: "white", id: "w30v13",
-            alt: "Salão de museu com esqueleto de dinossauro e visitantes.",
+            src: "/lessons/aulas/aula-30/w30v13.webp",
+            alt: "Salão de museu com esqueleto de dinossauro montado ao centro",
+            w: 175, h: 177,
             ph: "Foto: salão amplo de museu de história natural, com um grande esqueleto de dinossauro montado ao centro, sob luz alta, e visitantes pequenos olhando de baixo." },
           { n: "14", tag: "LIBRARY", c: "purple", v: "white", id: "w30v14",
-            alt: "Biblioteca com estantes altas de livros e mesas de leitura.",
+            src: "/lessons/aulas/aula-30/w30v14.webp",
+            alt: "Biblioteca com estantes de madeira e pessoas lendo em mesas compridas",
+            w: 176, h: 177,
             ph: "Foto: biblioteca com estantes de madeira altas e cheias de livros, janela arqueada ao fundo e pessoas sentadas lendo em mesas compridas de madeira." },
           { n: "15", tag: "BOOKSTORE", c: "purple", v: "white", id: "w30v15",
-            alt: "Livraria com mesas de livros e uma cliente folheando um exemplar.",
+            src: "/lessons/aulas/aula-30/w30v15.webp",
+            alt: "Livraria com estantes cheias de livros e mesas de exposição",
+            w: 176, h: 178,
             ph: "Foto: interior de livraria com estantes cheias de livros ao fundo e mesas de exposição com livros empilhados. Uma pessoa está em pé folheando um exemplar." } ] },
         { t: "note", v: "cream", bar: true, bold: true, text: "A city has many places.\nYou will see these places in real life and use them when you talk in English!" } ] },
 
@@ -6145,19 +6136,27 @@ export const LESSONS = [
         { t: "title", en: "STUDY, WORK & BOOKS", pt: "Lugares de estudo, de trabalho e de livros." },
         { t: "cards", cols: 2, items: [
           { tag: "UNIVERSITY", c: "teal", v: "white", id: "w30p2a",
-            alt: "Prédio de universidade com estudantes caminhando no gramado.",
+            src: "/lessons/aulas/aula-30/w30p2a.webp",
+            alt: "Prédio de universidade em tijolo com colunas e estudantes no caminho",
+            w: 416, h: 300,
             ph: "Foto: prédio histórico de universidade em tijolo vermelho, com colunas brancas e escadaria. Em primeiro plano, um caminho de pedra cortando o gramado verde, com estudantes de mochila caminhando entre as árvores.",
             lines: ["There is a university near my house."] },
           { tag: "OFFICE", c: "purple", v: "white", id: "w30p2b",
-            alt: "Escritório moderno com pessoas trabalhando em notebooks.",
+            src: "/lessons/aulas/aula-30/w30p2b.webp",
+            alt: "Escritório com vista da cidade, mulher de blazer digitando em notebook",
+            w: 416, h: 301,
             ph: "Foto: escritório moderno com grandes janelas de vidro e vista para prédios da cidade. Uma mulher de blazer bege digita em um notebook em primeiro plano; ao fundo, colegas trabalham em mesas compridas de madeira, com plantas e xícaras de café.",
             lines: ["My sister is a lawyer. She works in an office."] },
           { tag: "LIBRARY", c: "purple", v: "white", id: "w30p2c",
-            alt: "Biblioteca com corredores de estantes e pessoas lendo.",
+            src: "/lessons/aulas/aula-30/w30p2c.webp",
+            alt: "Biblioteca com estantes de madeira e rapaz lendo à mesa",
+            w: 414, h: 300,
             ph: "Foto: biblioteca com dois corredores de estantes de madeira cheias de livros e uma janela arqueada ao fundo. Um rapaz de camisa cinza lê sentado à mesa, com livros empilhados à sua frente, e outras pessoas leem ao fundo.",
             lines: ["You borrow books from a library."] },
           { tag: "BOOKSTORE", c: "teal", v: "white", id: "w30p2d",
-            alt: "Livraria com mesas de livros e uma cliente folheando um livro.",
+            src: "/lessons/aulas/aula-30/w30p2d.webp",
+            alt: "Livraria aconchegante com mulher de jaqueta jeans folheando um livro",
+            w: 416, h: 258,
             ph: "Foto: livraria aconchegante com luminárias pendentes, estantes cheias de livros e mesas de exposição com pilhas de livros. Uma mulher de jaqueta jeans e bolsa a tiracolo folheia um livro em primeiro plano; outros clientes olham as prateleiras ao fundo.",
             lines: ["You buy books in a bookstore."] } ] } ] },
 
@@ -6167,19 +6166,27 @@ export const LESSONS = [
         { t: "title", en: "EVERYDAY PLACES", pt: "Lugares do dia a dia." },
         { t: "cards", cols: 2, items: [
           { tag: "DRUGSTORE / PHARMACY", c: "teal", v: "white", id: "w30p3a",
-            alt: "Cliente sendo atendida por um farmacêutico no balcão da farmácia.",
+            src: "/lessons/aulas/aula-30/w30p3a.webp",
+            alt: "Cliente conversa com farmacêutico de jaleco branco no balcão da farmácia",
+            w: 414, h: 245,
             ph: "Foto: interior de farmácia com prateleiras cheias de caixas coloridas de remédios. Uma cliente de jaqueta jeans e bolsa, de costas, conversa no balcão com um farmacêutico de jaleco branco, que sorri e mostra uma caixa de remédio.",
             lines: ["I buy medicine at the drugstore."] },
           { tag: "SUPERMARKET", c: "purple", v: "white", id: "w30p3b",
-            alt: "Homem empurrando um carrinho cheio no corredor do supermercado.",
+            src: "/lessons/aulas/aula-30/w30p3b.webp",
+            alt: "Homem empurra carrinho cheio de frutas e legumes no supermercado",
+            w: 415, h: 255,
             ph: "Foto: corredor de supermercado com prateleiras de frutas, verduras e produtos dos dois lados. Um homem de jaqueta verde-escura empurra um carrinho de compras cheio de frutas e legumes.",
             lines: ["We do our weekly shopping on Saturdays."] },
           { tag: "SHOPPING MALL", c: "purple", v: "white", id: "w30p3c",
-            alt: "Amigas caminhando com sacolas dentro de um shopping.",
+            src: "/lessons/aulas/aula-30/w30p3c.webp",
+            alt: "Duas amigas caminham sorrindo com sacolas de compras no shopping",
+            w: 414, h: 228,
             ph: "Foto: interior de shopping center com piso claro e corrimãos de vidro. Duas amigas caminham sorrindo, com sacolas de compras coloridas nas mãos; outras pessoas passam ao fundo.",
             lines: ["Sarah goes to the shopping mall on Saturdays."] },
           { tag: "HOTEL", c: "teal", v: "white", id: "w30p3d",
-            alt: "Hóspede fazendo check-in com a recepcionista do hotel.",
+            src: "/lessons/aulas/aula-30/w30p3d.webp",
+            alt: "Hóspede com mala conversa com recepcionista no balcão do hotel",
+            w: 414, h: 285,
             ph: "Foto: recepção de hotel com balcão de mármore, abajur aceso, plantas e quatro estrelas douradas na parede. Um hóspede de casaco bege, com uma mala de rodinhas, conversa com a recepcionista de terno escuro, que sorri atrás do balcão.",
             lines: ["You check in at a hotel."] } ] } ] },
 
@@ -6189,22 +6196,30 @@ export const LESSONS = [
         { t: "title", en: "GETTING AROUND & FREE TIME", pt: "Places in our city for transport and leisure." },
         { t: "steps", items: [
           { n: "1", tag: "BUS STOP", c: "purple", v: "lilac", id: "w30p4a",
-            alt: "Mulher esperando no ponto de ônibus enquanto um ônibus azul chega.",
+            src: "/lessons/aulas/aula-30/w30p4a.webp",
+            alt: "Mulher sorri com o celular na mão em um ponto de ônibus coberto",
+            w: 452, h: 263,
             ph: "Foto: mulher de jaqueta jeans e mochila, com o celular na mão, sorri em pé num ponto de ônibus coberto de vidro. À direita, um ônibus azul com o letreiro CITY BUS se aproxima pela rua.",
             lines: ["I take the bus at the bus stop."],
             note: "Take the bus at the bus stop." },
           { n: "2", tag: "PARKING LOT", c: "purple", v: "lilac", id: "w30p4b",
-            alt: "Homem destravando o carro em um estacionamento.",
+            src: "/lessons/aulas/aula-30/w30p4b.webp",
+            alt: "Homem sorridente abre a porta do carro em um estacionamento",
+            w: 454, h: 263,
             ph: "Foto: homem de camisa jeans, sorrindo, abre a porta de um carro escuro em um estacionamento ao ar livre com vários carros enfileirados e árvores verdes ao fundo.",
             lines: ["I park my car in the parking lot."],
             note: "Park your car in the parking lot." },
           { n: "3", tag: "PARK", c: "purple", v: "lilac", id: "w30p4c",
-            alt: "Mulher caminhando por uma trilha arborizada do parque.",
+            src: "/lessons/aulas/aula-30/w30p4c.webp",
+            alt: "Mulher de camiseta lilás caminha por um caminho arborizado no parque",
+            w: 455, h: 277,
             ph: "Foto: mulher de camiseta lilás e calça de ginástica caminha sorrindo por um caminho de terra clara em um parque, entre árvores altas de copas verdes iluminadas pelo sol.",
             lines: ["I walk in the park in the morning."],
             note: "Walk in the park." },
           { n: "4", tag: "AQUARIUM", c: "purple", v: "lilac", id: "w30p4d",
-            alt: "Visitante observando peixes e corais em um grande aquário.",
+            src: "/lessons/aulas/aula-30/w30p4d.webp",
+            alt: "Mulher observa peixes coloridos em um grande painel de aquário",
+            w: 456, h: 278,
             ph: "Foto: mulher de jaqueta jeans e mochila, de perfil, olha sorrindo para um grande painel de vidro iluminado em azul, com peixes coloridos e corais rosados e verdes.",
             lines: ["There is a large aquarium in my city."],
             note: "Visit the aquarium." } ] },
@@ -6216,16 +6231,22 @@ export const LESSONS = [
         { t: "title", en: "MOVIES, PLAYS & HISTORY", pt: "Cinema, teatro e museu." },
         { t: "cards", cols: 1, items: [
           { tag: "MOVIE THEATER", c: "teal", v: "mint", id: "w30p5a",
-            alt: "Amigas rindo no cinema com óculos 3D e baldes de pipoca.",
+            src: "/lessons/aulas/aula-30/w30p5a.webp",
+            alt: "Duas jovens riem com óculos 3D e baldes de pipoca no cinema",
+            w: 513, h: 329,
             ph: "Foto: duas jovens sentadas em poltronas vermelhas de cinema, usando óculos 3D escuros e segurando baldes amarelos de pipoca, rindo. Atrás delas, outros espectadores também de óculos 3D.",
             lines: ["We watch movies at home.", "We see movies at a movie theater."],
             note: "go to the movies" },
           { tag: "THEATER", c: "purple", v: "lilac", id: "w30p5b",
-            alt: "Plateia vazia de um teatro vista de cima, com poltronas vermelhas.",
+            src: "/lessons/aulas/aula-30/w30p5b.webp",
+            alt: "Teatro visto do alto com fileiras de poltronas vermelhas vazias",
+            w: 501, h: 211,
             ph: "Foto: interior de um teatro visto do alto, com fileiras de poltronas vermelhas vazias, mesa de som ao centro, refletores no teto e a estrutura escura do palco ao fundo.",
             lines: ["We see plays at a theater."] },
           { tag: "MUSEUM", c: "yellow", v: "cream", id: "w30p5c",
-            alt: "Visitante observando um grande quadro na parede de um museu.",
+            src: "/lessons/aulas/aula-30/w30p5c.webp",
+            alt: "Visitante observa quadro antigo de patinação no gelo em um museu",
+            w: 465, h: 213,
             ph: "Foto: sala clara de museu com um grande quadro antigo emoldurado na parede branca, retratando uma paisagem de inverno cheia de pessoas patinando no gelo. De costas, uma visitante de camiseta branca e bolsa de pano observa a obra.",
             lines: ["Are there good museums in your city?"] } ] } ] },
 
@@ -6236,19 +6257,27 @@ export const LESSONS = [
         { t: "note", v: "blue", text: "Nesta aula, use Where can you...? como uma pergunta completa para descobrir em que lugar uma atividade acontece." },
         { t: "cards", cols: 2, items: [
           { tag: "SUPERMARKET", c: "teal", v: "white", id: "w30p6a",
-            alt: "Mulher escolhendo uma maçã na seção de frutas do supermercado.",
+            src: "/lessons/aulas/aula-30/w30p6a.webp",
+            alt: "Mulher escolhe uma maçã na seção de hortifrúti do supermercado",
+            w: 422, h: 341,
             ph: "Foto: mulher de suéter bege escolhe uma maçã vermelha na seção de hortifrúti do supermercado, empurrando um carrinho cheio de frutas e verduras. Prateleiras coloridas de frutas dos dois lados.",
             lines: ["Where can you buy food?"], note: "Supermarket." },
           { tag: "OFFICE", c: "teal", v: "white", id: "w30p6b",
-            alt: "Equipe trabalhando em notebooks num escritório com vista para a cidade.",
+            src: "/lessons/aulas/aula-30/w30p6b.webp",
+            alt: "Mulher de blazer digita em notebook em escritório com vista da cidade",
+            w: 418, h: 339,
             ph: "Foto: escritório moderno com janelas do chão ao teto e vista para arranha-céus. Uma mulher de blazer bege digita em um notebook em primeiro plano; ao fundo, colegas trabalham em mesas de madeira, com plantas verdes ao redor.",
             lines: ["Where can you work?"], note: "Office." },
           { tag: "LIBRARY", c: "teal", v: "white", id: "w30p6c",
-            alt: "Homem lendo um livro em pé entre as estantes da biblioteca.",
+            src: "/lessons/aulas/aula-30/w30p6c.webp",
+            alt: "Homem lê um livro em pé ao lado de estantes altas na biblioteca",
+            w: 418, h: 323,
             ph: "Foto: homem de camisa clara lê um livro aberto em pé, ao lado de uma estante alta cheia de livros em uma biblioteca. Ao fundo, outras pessoas procuram livros e leem sentadas, sob uma grande janela.",
             lines: ["Where can you borrow books?"], note: "Library." },
           { tag: "HOTEL", c: "teal", v: "white", id: "w30p6d",
-            alt: "Quarto de hotel com cama arrumada e mala de viagem.",
+            src: "/lessons/aulas/aula-30/w30p6d.webp",
+            alt: "Quarto de hotel claro com cama arrumada, poltrona e mala ao lado",
+            w: 417, h: 322,
             ph: "Foto: quarto de hotel claro, com cama de casal arrumada com lençóis brancos, abajures acesos dos dois lados, poltrona, escrivaninha, televisão e uma mala de rodinhas preta ao lado da cama, com cortinas claras na janela.",
             lines: ["Where can you stay when you travel?"], note: "Hotel." } ] } ] },
 
@@ -6256,8 +6285,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 30", page: "PÁGINA 07" },
         { t: "title", en: "WHERE CAN YOU...?", pt: "FIND THE PLACE." },
-        { t: "image", id: "w30p7a", alt: "Arranha-céus de vidro à beira de um lago, vistos de um calçadão arborizado.",
-          ph: "Foto: conjunto de arranha-céus de vidro azul refletindo o sol do fim de tarde, à beira de um lago calmo. Em primeiro plano, um calçadão de pedra com canteiros, árvores verdes e guarda-corpo metálico." },
+        { t: "image", id: "w30p7a", src: "/lessons/aulas/aula-30/w30p7a.webp", alt: "Arranha-céus de vidro à beira de um lago com calçadão arborizado", w: 968, h: 396, ph: "Foto: conjunto de arranha-céus de vidro azul refletindo o sol do fim de tarde, à beira de um lago calmo. Em primeiro plano, um calçadão de pedra com canteiros, árvores verdes e guarda-corpo metálico." },
         { t: "fill", id: "w30e1", wide: true, title: "WHERE CAN YOU...? FIND THE PLACE.", items: [
           { pre: "1. Where can you see movies?", answers: ["Movie theater"], v: "mint" },
           { pre: "2. Where can you see a play?", answers: ["Theater"], v: "mint" },
@@ -6272,8 +6300,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 30", page: "PÁGINA 08" },
         { t: "title", en: "CHECK YOUR ANSWERS", pt: "Confira o gabarito da página anterior." },
-        { t: "image", id: "w30p8a", alt: "Calçadão arborizado à beira do rio entre prédios de vidro.",
-          ph: "Foto: calçadão largo de pedra à beira de um rio, com bancos de madeira, luminárias altas, canteiros de plantas e árvores jovens de um lado; do outro, um guarda-corpo de cabos de aço sobre a água. Ao fundo, arranha-céus de vidro azul sob céu claro." },
+        { t: "image", id: "w30p8a", src: "/lessons/aulas/aula-30/w30p8a.webp", alt: "Calçadão à beira do rio com bancos, luminárias e arranha-céus ao fundo", w: 921, h: 525, ph: "Foto: calçadão largo de pedra à beira de um rio, com bancos de madeira, luminárias altas, canteiros de plantas e árvores jovens de um lado; do outro, um guarda-corpo de cabos de aço sobre a água. Ao fundo, arranha-céus de vidro azul sob céu claro." },
         { t: "answers", title: "WHERE CAN YOU...?", items: [
           { k: "1. Where can you see movies?", a: "Movie theater", c: "teal" },
           { k: "2. Where can you see a play?", a: "Theater", c: "teal" },
@@ -6288,8 +6315,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 30", page: "PÁGINA 09" },
         { t: "title", en: "A DAY IN THE CITY", pt: "READ AND FIND THE PLACES." },
-        { t: "image", id: "w30p9a", alt: "Casal conversando à mesa de um café com vista para a cidade.",
-          ph: "Foto: uma mulher de jaqueta jeans, cabelo castanho, segura uma xícara branca e sorri olhando para um rapaz de suéter azul-marinho, que está com a mão no queixo. Eles estão sentados a uma mesa de madeira com um caderno e uma caneta e uma caneca preta. Atrás deles, uma janela grande com vista para prédios da cidade e uma planta verde." },
+        { t: "image", id: "w30p9a", src: "/lessons/aulas/aula-30/w30p9a.webp", alt: "Casal sorri em uma mesa com café e caderno perto de janela da cidade", w: 475, h: 498, ph: "Foto: uma mulher de jaqueta jeans, cabelo castanho, segura uma xícara branca e sorri olhando para um rapaz de suéter azul-marinho, que está com a mão no queixo. Eles estão sentados a uma mesa de madeira com um caderno e uma caneta e uma caneca preta. Atrás deles, uma janela grande com vista para prédios da cidade e uma planta verde." },
         { t: "dialogue", items: [
           { s: "a", text: "A: Are there good museums in your city?" },
           { s: "b", text: "B: Yes, there are. There is a museum near the park." },
@@ -6298,15 +6324,13 @@ export const LESSONS = [
           { s: "a", text: "A: Where can you see movies?" },
           { s: "b", text: "B: In a movie theater." },
           { s: "a", text: "A: Great. I go there on Saturdays." } ] },
-        { t: "image", id: "w30p9b", alt: "Mapa ilustrado de um bairro com seis lugares identificados por etiquetas.",
-          ph: "Ilustração: mapa isométrico colorido de um bairro, visto de cima, com ruas, calçadas e muitas árvores. Seis etiquetas brancas arredondadas identificam os lugares: University sobre um prédio antigo de tijolos com colunas, no alto à esquerda; Park sobre uma praça arborizada com chafariz redondo de água azul, no alto ao centro; Museum sobre um edifício neoclássico com cúpula verde, no alto à direita; Bookstore sobre uma loja de dois andares com vitrines iluminadas, embaixo à esquerda; Movie theater sobre um cinema art déco escuro com faixas vermelhas e marquise iluminada, embaixo ao centro; e Supermarket sobre uma loja grande e clara com estacionamento, embaixo à direita." } ] },
+        { t: "image", id: "w30p9b", src: "/lessons/aulas/aula-30/w30p9b.webp", alt: "Mapa isométrico de bairro com etiquetas indicando lugares da cidade", w: 926, h: 575, ph: "Ilustração: mapa isométrico colorido de um bairro, visto de cima, com ruas, calçadas e muitas árvores. Seis etiquetas brancas arredondadas identificam os lugares: University sobre um prédio antigo de tijolos com colunas, no alto à esquerda; Park sobre uma praça arborizada com chafariz redondo de água azul, no alto ao centro; Museum sobre um edifício neoclássico com cúpula verde, no alto à direita; Bookstore sobre uma loja de dois andares com vitrines iluminadas, embaixo à esquerda; Movie theater sobre um cinema art déco escuro com faixas vermelhas e marquise iluminada, embaixo ao centro; e Supermarket sobre uma loja grande e clara com estacionamento, embaixo à direita." } ] },
 
       // ── página impressa 10 ───────────────────────────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 30", page: "PÁGINA 10" },
         { t: "title", en: "PLACES IN A CITY", pt: "Você já sabe falar sobre os lugares de uma cidade." },
-        { t: "image", id: "w30p10a", alt: "Mulher de jaqueta jeans conversando e sorrindo com um homem diante de uma janela com vista para a cidade.",
-          ph: "Foto recortada em moldura arredondada: uma mulher jovem de cabelo castanho longo e solto, jaqueta jeans sobre camiseta branca, sorri de perfil enquanto fala com a mão aberta à frente, palma para cima. À direita, cortado pela borda do quadro, um homem de suéter verde-oliva a escuta sorrindo. Entre os dois, uma janela grande e clara com vista desfocada para prédios e árvores da cidade." },
+        { t: "image", id: "w30p10a", src: "/lessons/aulas/aula-30/w30p10a.webp", alt: "Mulher de jaqueta jeans fala sorrindo perto de janela com vista da cidade", w: 241, h: 176, ph: "Foto recortada em moldura arredondada: uma mulher jovem de cabelo castanho longo e solto, jaqueta jeans sobre camiseta branca, sorri de perfil enquanto fala com a mão aberta à frente, palma para cima. À direita, cortado pela borda do quadro, um homem de suéter verde-oliva a escuta sorrindo. Entre os dois, uma janela grande e clara com vista desfocada para prédios e árvores da cidade." },
         { t: "check", id: "w30c1", title: "EU CONSIGO...", items: [
           "nomear lugares comuns de uma cidade",
           "relacionar lugares a atividades cotidianas",
@@ -6329,16 +6353,16 @@ export const LESSONS = [
         { t: "badge", label: "AULA 31 · DIRECTIONS" },
         { t: "title", en: "NEAR OR FAR?", pt: "We use words to say how far places are from each other." },
         { t: "cards", items: [
-          { tag: "NEAR / CLOSE TO", c: "teal", v: "mint", id: "a31p1a", ph: "Foto: museu ao lado do parque, com etiquetas PARK e MUSEUM",
+          { tag: "NEAR / CLOSE TO", c: "teal", v: "mint", id: "a31p1a", src: "/lessons/aulas/aula-31/a31p1a.webp", alt: "Museu ao lado do parque, com as placas PARK e MUSEUM", w: 1024, h: 391, ph: "Foto: museu ao lado do parque, com etiquetas PARK e MUSEUM",
             lines: ["The museum is near the park.", "The museum is close to the park."] },
-          { tag: "FAR FROM / DISTANT FROM", c: "purple", v: "lilac", id: "a31p1b", ph: "Foto: hotel de um lado e aquário do outro, com seta dupla entre eles",
+          { tag: "FAR FROM / DISTANT FROM", c: "purple", v: "lilac", id: "a31p1b", src: "/lessons/aulas/aula-31/a31p1b.webp", alt: "Hotel de um lado e aquário do outro, com seta dupla indicando a distância", w: 1024, h: 263, ph: "Foto: hotel de um lado e aquário do outro, com seta dupla entre eles",
             lines: ["The hotel is far from the aquarium.", "The hotel is distant from the aquarium."] } ] },
         { t: "note", v: "mint", bar: true, text: "We use near / close to for places that are not far.\nWe use far from / distant from for places that are far away." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 31" },
         { t: "title", en: "ASKING FOR DIRECTIONS", pt: "Três formas de pedir informação na rua." },
-        { t: "image", id: "a31p2", ph: "Foto: mulher pedindo informação a um homem na rua. Balão: “Excuse me.”" },
+        { t: "image", id: "a31p2", src: "/lessons/aulas/aula-31/a31p2.webp", alt: "Mulher pedindo informação a um homem na rua, dizendo Excuse me", w: 993, h: 703, ph: "Foto: mulher pedindo informação a um homem na rua. Balão: “Excuse me.”" },
         { t: "rows", items: [
           { text: "Where is the drugstore?", c: "teal" },
           { text: "Is there a drugstore near here?", c: "purple" },
@@ -6353,26 +6377,26 @@ export const LESSONS = [
           { kicker: "S", title: "South", body: "The bottom of the map.", c: "purple", v: "lilac" },
           { kicker: "E", title: "East", body: "The right side of the map.", c: "purple", v: "lilac" },
           { kicker: "W", title: "West", body: "The left side of the map.", c: "teal", v: "mint" } ] },
-        { t: "image", id: "a31p3", ph: "Mapa ilustrado com museu, parque, biblioteca, livraria, café e ponto de ônibus (NORTH / SOUTH / EAST / WEST)" },
+        { t: "image", id: "a31p3", src: "/lessons/aulas/aula-31/a31p3.webp", alt: "Mapa da cidade com museu, parque, biblioteca, livraria, café e ponto de ônibus", w: 641, h: 686, ph: "Mapa ilustrado com museu, parque, biblioteca, livraria, café e ponto de ônibus (NORTH / SOUTH / EAST / WEST)" },
         { t: "cards", items: [
-          { tag: "ACROSS FROM", c: "teal", v: "mint", id: "a31p3a", ph: "Foto: livraria em frente ao museu, do outro lado da rua",
+          { tag: "ACROSS FROM", c: "teal", v: "mint", id: "a31p3a", src: "/lessons/aulas/aula-31/a31p3a.webp", alt: "Livraria bem em frente ao museu, do outro lado da rua", w: 438, h: 216, ph: "Foto: livraria em frente ao museu, do outro lado da rua",
             lines: ["The bookstore is across from the museum."], note: "Across from = on the opposite side of the street." },
-          { tag: "CORNER", c: "purple", v: "lilac", id: "a31p3b", ph: "Foto: hotel na esquina, com placas A Street e 15th Avenue",
+          { tag: "CORNER", c: "purple", v: "lilac", id: "a31p3b", src: "/lessons/aulas/aula-31/a31p3b.webp", alt: "Hotel na esquina da A Street com a 15th Avenue", w: 444, h: 218, ph: "Foto: hotel na esquina, com placas A Street e 15th Avenue",
             lines: ["The hotel is on the corner of A Street and 15th Avenue."], note: "On the corner of = at the place where two streets meet." } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 31" },
         { t: "title", en: "BASIC MOVES", pt: "As quatro instruções que resolvem qualquer rota." },
         { t: "cards", items: [
-          { tag: "TURN RIGHT", c: "teal", v: "mint", id: "a31p4a", ph: "Vista aérea: rota virando à direita depois da escola", lines: ["Turn right after the school."] },
-          { tag: "TURN LEFT", c: "purple", v: "lilac", id: "a31p4b", ph: "Vista aérea: rota virando à esquerda na segunda rua", lines: ["Turn left on the second street."] },
-          { tag: "GO STRAIGHT", c: "teal", v: "mint", id: "a31p4c", ph: "Vista aérea: avenida reta com seta para frente", lines: ["Go straight.", "Go straight ahead."] },
-          { tag: "TAKE", c: "purple", v: "lilac", id: "a31p4d", ph: "Vista aérea: rota entrando numa rua e seguindo em frente", lines: ["Take this street and go straight ahead."] } ] } ] },
+          { tag: "TURN RIGHT", c: "teal", v: "mint", id: "a31p4a", src: "/lessons/aulas/aula-31/a31p4a.webp", alt: "Vista aérea de uma escola com seta virando à direita na esquina", w: 533, h: 400, ph: "Vista aérea: rota virando à direita depois da escola", lines: ["Turn right after the school."] },
+          { tag: "TURN LEFT", c: "purple", v: "lilac", id: "a31p4b", src: "/lessons/aulas/aula-31/a31p4b.webp", alt: "Vista aérea de quarteirão residencial com seta virando à esquerda", w: 533, h: 321, ph: "Vista aérea: rota virando à esquerda na segunda rua", lines: ["Turn left on the second street."] },
+          { tag: "GO STRAIGHT", c: "teal", v: "mint", id: "a31p4c", src: "/lessons/aulas/aula-31/a31p4c.webp", alt: "Vista aérea de avenida arborizada reta com seta azul em frente", w: 422, h: 322, ph: "Vista aérea: avenida reta com seta para frente", lines: ["Go straight.", "Go straight ahead."] },
+          { tag: "TAKE", c: "purple", v: "lilac", id: "a31p4d", src: "/lessons/aulas/aula-31/a31p4d.webp", alt: "Vista aérea de rua com seta roxa entrando e seguindo até o cruzamento", w: 455, h: 319, ph: "Vista aérea: rota entrando numa rua e seguindo em frente", lines: ["Take this street and go straight ahead."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 31" },
         { t: "title", en: "KEEP MOVING", pt: "Seguir, passar e atravessar." },
-        { t: "image", id: "a31p5", ph: "Vista aérea: calçada até o parque, passando pela livraria e faixa de pedestres" },
+        { t: "image", id: "a31p5", src: "/lessons/aulas/aula-31/a31p5.webp", alt: "Mulher caminhando rumo ao parque, passando pela livraria até a faixa de pedestres", w: 924, h: 1167, ph: "Vista aérea: calçada até o parque, passando pela livraria e faixa de pedestres" },
         { t: "steps", items: [
           { tag: "GO TOWARD", c: "teal", v: "mint", lines: ["Go toward the park."], note: "go in the direction of" },
           { tag: "GO PAST", c: "purple", v: "lilac", lines: ["Go past the bookstore."] },
@@ -6382,18 +6406,18 @@ export const LESSONS = [
         { t: "badge", label: "AULA 31 · DIRECTIONS" },
         { t: "title", en: "TURN AND TAKE", pt: "Use these words to change direction or choose a street." },
         { t: "steps", items: [
-          { tag: "TURN LEFT", c: "teal", v: "gray", lines: ["Turn left at the corner."], id: "a31p6a", ph: "Foto: esquina de avenida arborizada com seta virando à esquerda", note: "left = the side where your heart is." },
-          { tag: "TURN RIGHT", c: "teal", v: "gray", lines: ["Turn right after the museum."], id: "a31p6b", ph: "Foto: museu com colunas e seta virando à direita", note: "right = the opposite side of left." },
-          { tag: "GO STRAIGHT", c: "teal", v: "gray", lines: ["Go straight for two blocks."], id: "a31p6c", ph: "Foto: rua reta com seta para frente (2 blocks)", note: "straight = continue in the same direction." },
-          { tag: "TAKE", c: "teal", v: "gray", lines: ["Take Oak Street.", "Take the first street on your right."], id: "a31p6d", ph: "Foto: placa de rua OAK STREET na esquina", note: "take = choose a street." },
-          { tag: "THE FIRST / NEXT", c: "teal", v: "gray", lines: ["Turn right at the first street.", "Turn left at the next street."], id: "a31p6e", ph: "Dois mapinhas: FIRST STREET e NEXT STREET", note: "first = the one closest to you. next = the one after the first." } ] },
+          { tag: "TURN LEFT", c: "teal", v: "gray", lines: ["Turn left at the corner."], id: "a31p6a", src: "/lessons/aulas/aula-31/a31p6a.webp", alt: "Esquina de avenida arborizada com seta curva virando à esquerda", w: 317, h: 300, ph: "Foto: esquina de avenida arborizada com seta virando à esquerda", note: "left = the side where your heart is." },
+          { tag: "TURN RIGHT", c: "teal", v: "gray", lines: ["Turn right after the museum."], id: "a31p6b", src: "/lessons/aulas/aula-31/a31p6b.webp", alt: "Museu de colunas na esquina com seta virando à direita", w: 318, h: 300, ph: "Foto: museu com colunas e seta virando à direita", note: "right = the opposite side of left." },
+          { tag: "GO STRAIGHT", c: "teal", v: "gray", lines: ["Go straight for two blocks."], id: "a31p6c", src: "/lessons/aulas/aula-31/a31p6c.webp", alt: "Avenida reta e arborizada com seta azul apontando em frente", w: 567, h: 197, ph: "Foto: rua reta com seta para frente (2 blocks)", note: "straight = continue in the same direction." },
+          { tag: "TAKE", c: "teal", v: "gray", lines: ["Take Oak Street.", "Take the first street on your right."], id: "a31p6d", src: "/lessons/aulas/aula-31/a31p6d.webp", alt: "Placa de rua OAK STREET na esquina de um prédio", w: 285, h: 200, ph: "Foto: placa de rua OAK STREET na esquina", note: "take = choose a street." },
+          { tag: "THE FIRST / NEXT", c: "teal", v: "gray", lines: ["Turn right at the first street.", "Turn left at the next street."], id: "a31p6e", src: "/lessons/aulas/aula-31/a31p6e.webp", alt: "Dois mapinhas aéreos: rota pela first street e pela next street", w: 482, h: 116, ph: "Dois mapinhas: FIRST STREET e NEXT STREET", note: "first = the one closest to you. next = the one after the first." } ] },
         { t: "note", v: "cream", bar: true, bold: true, kicker: "REMEMBER", text: "Turn left or turn right to change direction.\nGo straight to continue in the same direction.\nTake a street and follow the route." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 31 · DIRECTIONS" },
         { t: "title", en: "FOLLOW THE ROUTE", pt: "Let’s read and practice asking for and giving directions." },
         { t: "steps", items: [
-          { tag: "READ THE DIALOGUE", c: "teal", v: "gray", lines: ["Anna is asking for directions."], id: "a31p7a", ph: "Foto: duas mulheres conversando na rua + mapa com a rota até o museu" } ] },
+          { tag: "READ THE DIALOGUE", c: "teal", v: "gray", lines: ["Anna is asking for directions."], id: "a31p7a", src: "/lessons/aulas/aula-31/a31p7a.webp", alt: "Duas mulheres conversando na rua e mapa com a rota até o museu", w: 939, h: 421, ph: "Foto: duas mulheres conversando na rua + mapa com a rota até o museu" } ] },
         { t: "dialogue", items: [
           { s: "a", text: "Excuse me, where is the museum?" },
           { s: "b", text: "Go straight for two blocks. Then turn right at the first street. The museum is on your left." } ] },
@@ -6402,7 +6426,7 @@ export const LESSONS = [
         { t: "chips", items: [
           { t: "Go straight", c: "teal" }, { t: "turn left", c: "teal" },
           { t: "first street", c: "teal" }, { t: "on your right", c: "teal" } ] },
-        { t: "image", id: "a31p7b", ph: "Mapa: rota até a livraria, com marcador YOU ARE HERE" },
+        { t: "image", id: "a31p7b", src: "/lessons/aulas/aula-31/a31p7b.webp", alt: "Mapa de rua com a rota até a livraria e o marcador you are here", w: 339, h: 372, ph: "Mapa: rota até a livraria, com marcador YOU ARE HERE" },
         { t: "fill", id: "a31e1", title: "A: WHERE IS THE BOOKSTORE?", v: "cream", items: [
           { pre: "B: 1.", answers: ["go straight"], post: "for two blocks.", v: "white" },
           { pre: "Then 2.", answers: ["turn left"], post: "at the", v: "white" },
@@ -6413,8 +6437,8 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 31" },
         { t: "title", en: "ASK & ANSWER", pt: "Um diálogo completo na rua." },
-        { t: "image", id: "a31p8a", ph: "Foto: mulher e homem conversando na calçada" },
-        { t: "image", id: "a31p8b", ph: "Mapa: livraria, parque, semáforo e supermercado" },
+        { t: "image", id: "a31p8a", src: "/lessons/aulas/aula-31/a31p8a.webp", alt: "Mulher e homem conversando na calçada de uma cidade", w: 550, h: 475, ph: "Foto: mulher e homem conversando na calçada" },
+        { t: "image", id: "a31p8b", src: "/lessons/aulas/aula-31/a31p8b.webp", alt: "Mapa com livraria, parque, semáforo e supermercado", w: 346, h: 471, ph: "Mapa: livraria, parque, semáforo e supermercado" },
         { t: "dialogue", items: [
           { s: "a", text: "Excuse me. How do I get to the bookstore?" },
           { s: "b", text: "Go straight ahead. Turn left at the traffic light." },
@@ -6426,7 +6450,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 31 · PRATIQUE" },
         { t: "title", en: "GIVE DIRECTIONS", pt: "USE THE MAP." },
-        { t: "image", id: "a31p9", ph: "Mapa ilustrado: universidade, parque, hotel, museu, livraria, supermercado, ponto de ônibus e cinema" },
+        { t: "image", id: "a31p9", src: "/lessons/aulas/aula-31/a31p9.webp", alt: "Mapa da cidade com universidade, parque, hotel, museu, livraria, supermercado, ponto de ônibus e cinema", w: 876, h: 669, ph: "Mapa ilustrado: universidade, parque, hotel, museu, livraria, supermercado, ponto de ônibus e cinema" },
         { t: "free", id: "a31f1", items: [
           { n: "1", kicker: "RESPONDA", prefix: "How do I get to the museum?", ideas: "Use go straight, turn right / turn left, across from…", c: "teal", v: "mint" },
           { n: "2", kicker: "RESPONDA", prefix: "Where is the hotel?", ideas: "Diga a direção e depois onde o lugar fica.", c: "purple", v: "lilac" },
@@ -6439,7 +6463,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 31 · FINAL" },
         { t: "title", en: "EU CONSIGO…", pt: "Marque o que você já consegue fazer em inglês." },
-        { t: "image", id: "a31p10", ph: "Foto: homem de mochila olhando a rua" },
+        { t: "image", id: "a31p10", src: "/lessons/aulas/aula-31/a31p10.webp", alt: "Homem de mochila olhando para a rua da cidade", w: 314, h: 208, ph: "Foto: homem de mochila olhando a rua" },
         { t: "check", id: "a31c1", title: "AO FINAL DESTA AULA, EU CONSIGO:", items: [
           "pedir uma direção educadamente",
           "dizer se um lugar está perto ou longe",
@@ -6468,17 +6492,17 @@ export const LESSONS = [
         { t: "chips", items: [
           { t: "LOVE", c: "purple" }, { t: "LIKE", c: "blue" }, { t: "DISLIKE", c: "orange" }, { t: "HATE", c: "red" } ] },
         { t: "cards", items: [
-          { tag: "LOVE · BOOKS", c: "purple", v: "lilac", id: "a32p1a", src: "/lessons/fotos/aula_32_pagina_01_foto_01.jpg", alt: "Homem sorrindo abraçado a uma pilha de livros", ph: "Foto: homem abraçando uma pilha de livros", lines: ["He loves books."] },
-          { tag: "LIKE · ANIMALS", c: "blue", v: "blue", id: "a32p1b", src: "/lessons/fotos/aula_32_pagina_01_foto_03.jpg", alt: "Mulher sorrindo abraçada a um golden retriever", ph: "Foto: mulher abraçando um cachorro; cão e gato ao lado", lines: ["He likes animals."] },
-          { tag: "DISLIKE · COFFEE", c: "orange", v: "cream", id: "a32p1c", src: "/lessons/fotos/aula_32_pagina_01_foto_05.jpg", alt: "Mulher com cara de desagrado segurando uma caneca preta", ph: "Foto: mulher com cara de desagrado segurando caneca; xícara de café", lines: ["She dislikes coffee."] },
-          { tag: "HATE · ONIONS", c: "red", v: "red", id: "a32p1d", src: "/lessons/fotos/aula_32_pagina_01_foto_06.jpg", alt: "Homem fazendo careta e recusando com a mão", ph: "Foto: homem recusando com a mão; cebolas ao lado", lines: ["He hates onions."] } ] },
+          { tag: "LOVE · BOOKS", c: "purple", v: "lilac", id: "a32p1a", src: "/lessons/fotos/aula_32_pagina_01_foto_01.jpg", alt: "Homem sorrindo abraçado a uma pilha de livros", w: 250, h: 217, ph: "Foto: homem abraçando uma pilha de livros", lines: ["He loves books."] },
+          { tag: "LIKE · ANIMALS", c: "blue", v: "blue", id: "a32p1b", src: "/lessons/fotos/aula_32_pagina_01_foto_03.jpg", alt: "Mulher sorrindo abraçada a um golden retriever", w: 301, h: 214, ph: "Foto: mulher abraçando um cachorro; cão e gato ao lado", lines: ["He likes animals."] },
+          { tag: "DISLIKE · COFFEE", c: "orange", v: "cream", id: "a32p1c", src: "/lessons/fotos/aula_32_pagina_01_foto_05.jpg", alt: "Mulher com cara de desagrado segurando uma caneca preta", w: 243, h: 198, ph: "Foto: mulher com cara de desagrado segurando caneca; xícara de café", lines: ["She dislikes coffee."] },
+          { tag: "HATE · ONIONS", c: "red", v: "red", id: "a32p1d", src: "/lessons/fotos/aula_32_pagina_01_foto_06.jpg", alt: "Homem fazendo careta e recusando com a mão", w: 259, h: 187, ph: "Foto: homem recusando com a mão; cebolas ao lado", lines: ["He hates onions."] } ] },
         { t: "note", v: "mint", bar: true, bold: true, text: "Use love, like, dislike and hate + noun to say what you really enjoy or what you really can’t stand!" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 32" },
         { t: "title", en: "VERB + -ING", pt: "PREFERENCES + ACTIVITIES" },
         { t: "key", v: "gray", text: "love / like / dislike / hate + verb-ing" },
-        { t: "image", id: "a32p2", ph: "Foto: homem de fones de ouvido sorrindo, com selos LOVE / LIKE / DISLIKE / HATE" },
+        { t: "image", id: "a32p2", src: "/lessons/aulas/aula-32/a32p2.webp", alt: "Jovem sorridente ouvindo música com fones, ao lado de selos coloridos de preferência", w: 697, h: 350, ph: "Foto: homem de fones de ouvido sorrindo, com selos LOVE / LIKE / DISLIKE / HATE" },
         { t: "rows", items: [
           { text: "Mike loves listening to music.", c: "purple" },
           { text: "Mike likes listening to music.", c: "blue" },
@@ -6494,7 +6518,7 @@ export const LESSONS = [
         { t: "table", head: ["BASE VERB", "+ -ING"], rows: [
           { a: "buy", b: "buying", v: "lilac" }, { a: "play", b: "playing", v: "lilac" }, { a: "do", b: "doing", v: "lilac" },
           { a: "cook", b: "cooking", v: "lilac" }, { a: "eat", b: "eating", v: "lilac" }, { a: "speak", b: "speaking", v: "lilac" } ] },
-        { t: "image", id: "a32p3a", ph: "Foto: mulher cozinhando e mexendo uma salada" },
+        { t: "image", id: "a32p3a", src: "/lessons/aulas/aula-32/a32p3a.webp", alt: "Mulher sorridente cozinhando, misturando uma salada em uma tigela de madeira", w: 350, h: 415, ph: "Foto: mulher cozinhando e mexendo uma salada" },
         { t: "note", v: "lilac", text: "These are very common verbs. Try to remember them!" },
         { t: "sec", text: "2 · VERBS ENDING IN -E: DROP THE -E AND ADD -ING" },
         { t: "table", head: ["BASE VERB", "-ING FORM"], rows: [
@@ -6512,28 +6536,28 @@ export const LESSONS = [
         { t: "badge", label: "AULA 32" },
         { t: "title", en: "PREFERENCES IN ACTION", pt: "Preferências em frases reais." },
         { t: "cards", items: [
-          { tag: "LIKE", c: "purple", v: "lilac", id: "a32p4a", ph: "Foto: mulher andando de bicicleta no parque", lines: ["She likes riding a bike."] },
-          { tag: "LOVE", c: "blue", v: "blue", id: "a32p4b", ph: "Foto: amigos jogando futebol no fim da tarde", lines: ["My friends and I love playing soccer."] },
-          { tag: "LIKE", c: "blue", v: "blue", id: "a32p4c", ph: "Foto: padeiro sovando pão na padaria", lines: ["Anthony is a baker.", "He likes making bread."] },
-          { tag: "HATE", c: "red", v: "red", id: "a32p4d", ph: "Foto: homem cansado e desanimado na academia", lines: ["I hate going to the gym."] },
-          { tag: "DISLIKE", c: "orange", v: "cream", id: "a32p4e", ph: "Foto: moça tímida afastada de um grupo conversando", lines: ["My cousin is very shy.", "She dislikes meeting new people."] } ] } ] },
+          { tag: "LIKE", c: "purple", v: "lilac", id: "a32p4a", src: "/lessons/aulas/aula-32/a32p4a.webp", alt: "Mulher sorridente andando de bicicleta em um parque arborizado", w: 515, h: 311, ph: "Foto: mulher andando de bicicleta no parque", lines: ["She likes riding a bike."] },
+          { tag: "LOVE", c: "blue", v: "blue", id: "a32p4b", src: "/lessons/aulas/aula-32/a32p4b.webp", alt: "Quatro amigos jogando futebol em um campo ao entardecer", w: 557, h: 245, ph: "Foto: amigos jogando futebol no fim da tarde", lines: ["My friends and I love playing soccer."] },
+          { tag: "LIKE", c: "blue", v: "blue", id: "a32p4c", src: "/lessons/aulas/aula-32/a32p4c.webp", alt: "Padeiro sorridente sovando pão em uma padaria", w: 490, h: 242, ph: "Foto: padeiro sovando pão na padaria", lines: ["Anthony is a baker.", "He likes making bread."] },
+          { tag: "HATE", c: "red", v: "red", id: "a32p4d", src: "/lessons/aulas/aula-32/a32p4d.webp", alt: "Homem cansado sentado em banco de academia, apoiando a cabeça na mão", w: 574, h: 208, ph: "Foto: homem cansado e desanimado na academia", lines: ["I hate going to the gym."] },
+          { tag: "DISLIKE", c: "orange", v: "cream", id: "a32p4e", src: "/lessons/aulas/aula-32/a32p4e.webp", alt: "Mulher tímida cabisbaixa, com um grupo de amigos conversando ao fundo", w: 496, h: 229, ph: "Foto: moça tímida afastada de um grupo conversando", lines: ["My cousin is very shy.", "She dislikes meeting new people."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 32" },
         { t: "title", en: "NEGATIVE PREFERENCES", pt: "DON’T / DOESN’T LIKE" },
         { t: "key", v: "gray", text: "I / you / we / they → don’t like + verb-ing\nhe / she / it → doesn’t like + verb-ing" },
         { t: "cards", items: [
-          { tag: "DOESN’T LIKE", c: "teal", v: "mint", id: "a32p5a", ph: "Foto: rapaz no sofá com controle de TV, sem interesse", lines: ["William doesn’t like watching TV."] },
-          { tag: "DOESN’T LIKE / LIKES", c: "purple", v: "lilac", id: "a32p5b", ph: "Foto: rapaz cantando no microfone e tocando guitarra", lines: ["He doesn’t like singing.", "He likes playing the guitar."] },
-          { tag: "DON’T LIKE", c: "orange", v: "cream", id: "a32p5c", ph: "Foto: moça escrevendo uma carta à mesa", lines: ["My friends don’t like sending letters."] },
-          { tag: "DOESN’T LIKE", c: "teal", v: "mint", id: "a32p5d", ph: "Foto: homem recusando um prato de legumes", lines: ["He doesn’t hate vegetables. He just doesn’t like eating vegetables."] } ] } ] },
+          { tag: "DOESN’T LIKE", c: "teal", v: "mint", id: "a32p5a", src: "/lessons/aulas/aula-32/a32p5a.webp", alt: "Rapaz sentado no sofá trocando de canal com o controle remoto", w: 375, h: 212, ph: "Foto: rapaz no sofá com controle de TV, sem interesse", lines: ["William doesn’t like watching TV."] },
+          { tag: "DOESN’T LIKE / LIKES", c: "purple", v: "lilac", id: "a32p5b", src: "/lessons/aulas/aula-32/a32p5b.webp", alt: "Dois amigos cantando e tocando violão juntos", w: 427, h: 248, ph: "Foto: rapaz cantando no microfone e tocando guitarra", lines: ["He doesn’t like singing.", "He likes playing the guitar."] },
+          { tag: "DON’T LIKE", c: "orange", v: "cream", id: "a32p5c", src: "/lessons/aulas/aula-32/a32p5c.webp", alt: "Moça sorridente escrevendo uma carta à mesa", w: 385, h: 205, ph: "Foto: moça escrevendo uma carta à mesa", lines: ["My friends don’t like sending letters."] },
+          { tag: "DOESN’T LIKE", c: "teal", v: "mint", id: "a32p5d", src: "/lessons/aulas/aula-32/a32p5d.webp", alt: "Homem fazendo sinal de recusa diante de um prato de legumes", w: 370, h: 222, ph: "Foto: homem recusando um prato de legumes", lines: ["He doesn’t hate vegetables. He just doesn’t like eating vegetables."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 32" },
         { t: "title", en: "ASK ABOUT PREFERENCES", pt: "Do / Does + like + verb-ing." },
         { t: "cards", items: [
-          { tag: "1 · DOES HE LIKE DRINKING COFFEE?", c: "teal", v: "mint", id: "a32p6a", ph: "Foto: homem tomando café na cafeteria", lines: ["Yes, he does.", "No, he doesn’t."] },
-          { tag: "2 · DO THEY LIKE PLAYING VIDEO GAMES?", c: "purple", v: "lilac", id: "a32p6b", ph: "Foto: dois amigos jogando videogame", lines: ["Yes, they do.", "No, they don’t."] } ] },
+          { tag: "1 · DOES HE LIKE DRINKING COFFEE?", c: "teal", v: "mint", id: "a32p6a", src: "/lessons/aulas/aula-32/a32p6a.webp", alt: "Homem tomando café em uma cafeteria", w: 478, h: 506, ph: "Foto: homem tomando café na cafeteria", lines: ["Yes, he does.", "No, he doesn’t."] },
+          { tag: "2 · DO THEY LIKE PLAYING VIDEO GAMES?", c: "purple", v: "lilac", id: "a32p6b", src: "/lessons/aulas/aula-32/a32p6b.webp", alt: "Dois amigos sorridentes jogando videogame juntos", w: 403, h: 504, ph: "Foto: dois amigos jogando videogame", lines: ["Yes, they do.", "No, they don’t."] } ] },
         { t: "mc", id: "a32mc1", title: "ESCOLHA A RESPOSTA CERTA", v: "cream", questions: [
           { q: "Does she like cooking?", options: ["Yes, she does.", "Yes, she do."], answer: 0, explain: "Com he / she / it usamos does." },
           { q: "Do you like playing soccer?", options: ["No, I doesn’t.", "No, I don’t."], answer: 1, explain: "Com I / you / we / they usamos do." } ] } ] },
@@ -6541,7 +6565,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 32" },
         { t: "title", en: "LET’S TALK", pt: "Um diálogo sobre tempo livre." },
-        { t: "image", id: "a32p7", ph: "Foto: dois amigos conversando numa cafeteria" },
+        { t: "image", id: "a32p7", src: "/lessons/aulas/aula-32/a32p7.webp", alt: "Dois amigos sorridentes conversando em uma cafeteria", w: 1024, h: 473, ph: "Foto: dois amigos conversando numa cafeteria" },
         { t: "dialogue", items: [
           { s: "a", text: "What do you like doing in your free time?" },
           { s: "b", text: "I like listening to music and cooking. I love playing soccer on Saturdays." },
@@ -6553,12 +6577,12 @@ export const LESSONS = [
         { t: "badge", label: "AULA 32 · PRATIQUE" },
         { t: "title", en: "YOUR PREFERENCES", pt: "CHOOSE, ASK & COMPARE" },
         { t: "cards", cols: 2, items: [
-          { tag: "LISTENING TO MUSIC", c: "purple", v: "lilac", id: "a32p8a", ph: "Foto: mulher ouvindo música com fones" },
-          { tag: "RIDING A BIKE", c: "teal", v: "mint", id: "a32p8b", ph: "Foto: homem pedalando à beira do rio" },
-          { tag: "PLAYING SOCCER", c: "orange", v: "cream", id: "a32p8c", ph: "Foto: dois homens jogando futebol" },
-          { tag: "COOKING", c: "orange", v: "cream", id: "a32p8d", ph: "Foto: mulher cozinhando" },
-          { tag: "WATCHING TV", c: "teal", v: "mint", id: "a32p8e", ph: "Foto: homem assistindo TV no sofá" },
-          { tag: "PLAYING VIDEO GAMES", c: "purple", v: "lilac", id: "a32p8f", ph: "Foto: rapaz jogando videogame" } ] },
+          { tag: "LISTENING TO MUSIC", c: "purple", v: "lilac", id: "a32p8a", src: "/lessons/aulas/aula-32/a32p8a.webp", alt: "Mulher sorridente de olhos fechados ouvindo música em fones de ouvido", w: 200, h: 229, ph: "Foto: mulher ouvindo música com fones" },
+          { tag: "RIDING A BIKE", c: "teal", v: "mint", id: "a32p8b", src: "/lessons/aulas/aula-32/a32p8b.webp", alt: "Homem andando de bicicleta em uma ciclovia à beira do rio", w: 189, h: 230, ph: "Foto: homem pedalando à beira do rio" },
+          { tag: "PLAYING SOCCER", c: "orange", v: "cream", id: "a32p8c", src: "/lessons/aulas/aula-32/a32p8c.webp", alt: "Dois homens disputando a bola em uma partida de futebol", w: 184, h: 230, ph: "Foto: dois homens jogando futebol" },
+          { tag: "COOKING", c: "orange", v: "cream", id: "a32p8d", src: "/lessons/aulas/aula-32/a32p8d.webp", alt: "Mulher sorridente preparando uma salada de legumes", w: 185, h: 209, ph: "Foto: mulher cozinhando" },
+          { tag: "WATCHING TV", c: "teal", v: "mint", id: "a32p8e", src: "/lessons/aulas/aula-32/a32p8e.webp", alt: "Homem sentado no sofá assistindo TV com o controle remoto na mão", w: 193, h: 210, ph: "Foto: homem assistindo TV no sofá" },
+          { tag: "PLAYING VIDEO GAMES", c: "purple", v: "lilac", id: "a32p8f", src: "/lessons/aulas/aula-32/a32p8f.webp", alt: "Rapaz sorridente jogando videogame com fone de ouvido e controle", w: 182, h: 210, ph: "Foto: rapaz jogando videogame" } ] },
         { t: "free", id: "a32f1", items: [
           { n: "1", kicker: "COMPLETE", prefix: "I love…", ideas: "Use uma atividade com verbo + -ing.", c: "purple", v: "lilac" },
           { n: "2", kicker: "COMPLETE", prefix: "I like…", ideas: "", c: "teal", v: "mint" },
@@ -6572,7 +6596,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 32 · FINAL" },
         { t: "title", en: "EU CONSIGO…", pt: "Marque o que você já consegue fazer em inglês." },
-        { t: "image", id: "a32p9", ph: "Foto: três amigos estudando juntos à mesa" },
+        { t: "image", id: "a32p9", src: "/lessons/aulas/aula-32/a32p9.webp", alt: "Três amigos sorridentes estudando juntos à mesa", w: 926, h: 332, ph: "Foto: três amigos estudando juntos à mesa" },
         { t: "check", id: "a32c1", title: "AO FINAL DESTA AULA, EU CONSIGO:", items: [
           "expressar preferências com substantivos",
           "usar love / like / dislike / hate + verb-ing",
@@ -6596,9 +6620,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 33" },
         { t: "title", en: "HOW OFTEN?", pt: "ADVERBS & EXPRESSIONS OF FREQUENCY" },
         { t: "cards", items: [
-          { tag: "HOW OFTEN DOES HE VISIT HIS GRANDPA?", c: "teal", v: "mint", id: "a33p1a", ph: "Foto: neto e avô conversando à mesa com café",
+          { tag: "HOW OFTEN DOES HE VISIT HIS GRANDPA?", c: "teal", v: "mint", id: "a33p1a", src: "/lessons/aulas/aula-33/a33p1a.webp", alt: "Avô de suéter bege e neto sorrindo conversando à mesa com café", w: 437, h: 250, ph: "Foto: neto e avô conversando à mesa com café",
             lines: ["ADVERB · He usually visits his grandpa.", "EXPRESSION · He visits his grandpa once a week.", "EXPRESSION · He visits his grandpa every Sunday."] },
-          { tag: "HOW OFTEN DO YOU GO TO THE BEACH?", c: "purple", v: "lilac", id: "a33p1b", ph: "Foto: casal sentado na praia conversando",
+          { tag: "HOW OFTEN DO YOU GO TO THE BEACH?", c: "purple", v: "lilac", id: "a33p1b", src: "/lessons/aulas/aula-33/a33p1b.webp", alt: "Casal sorridente sentado na areia da praia conversando", w: 430, h: 478, ph: "Foto: casal sentado na praia conversando",
             lines: ["ADVERB · I rarely go to the beach.", "EXPRESSION · I go to the beach twice a year."] } ] } ] },
 
       { blocks: [
@@ -6614,7 +6638,7 @@ export const LESSONS = [
           { kicker: "20%", title: "NOT OFTEN", body: "It doesn’t happen very often.", c: "orange", v: "cream" },
           { kicker: "10%", title: "RARELY", body: "It happens almost never.", c: "orange", v: "cream" },
           { kicker: "0%", title: "NEVER", body: "It doesn’t happen.", c: "red", v: "red" } ] },
-        { t: "image", id: "a33p2", ph: "Fotos: rotinas do dia a dia (ler, tomar café, correr, assistir TV, dormir)" },
+        { t: "image", id: "a33p2", src: "/lessons/aulas/aula-33/a33p2.webp", alt: "Mulher sorrindo sentada no sofá lendo um livro", w: 272, h: 101, ph: "Fotos: rotinas do dia a dia (ler, tomar café, correr, assistir TV, dormir)" },
         { t: "note", v: "gray", bar: true, text: "Remember: these percentages are approximate. People’s routines can be different!" },
         { t: "sec", text: "EXAMPLES IN CONTEXT" },
         { t: "rows", items: [
@@ -6631,11 +6655,11 @@ export const LESSONS = [
         { t: "badge", label: "AULA 33" },
         { t: "title", en: "WHERE DOES THE ADVERB GO?", pt: "MAIN VERB × VERB TO BE" },
         { t: "cards", items: [
-          { tag: "SUBJECT + ADVERB + MAIN VERB", c: "teal", v: "mint", id: "a33p3a", ph: "Fotos pequenas: mulher lendo, casal comendo, homem bebendo suco",
+          { tag: "SUBJECT + ADVERB + MAIN VERB", c: "teal", v: "mint", id: "a33p3a", src: "/lessons/aulas/aula-33/a33p3a.webp", alt: "Mulher de blusa clara lendo um livro em casa", w: 120, h: 123, ph: "Fotos pequenas: mulher lendo, casal comendo, homem bebendo suco",
             lines: ["She always reads books in the morning.", "They usually eat chocolate.", "He often drinks fruit juice for breakfast.", "She often gets up late on weekends."] },
-          { tag: "SUBJECT + BE + ADVERB", c: "purple", v: "lilac", id: "a33p3b", ph: "Fotos pequenas: homem olhando o relógio, moça resfriada no inverno",
+          { tag: "SUBJECT + BE + ADVERB", c: "purple", v: "lilac", id: "a33p3b", src: "/lessons/aulas/aula-33/a33p3b.webp", alt: "Homem de jaqueta jeans olhando as horas no relógio de pulso", w: 147, h: 179, ph: "Fotos pequenas: homem olhando o relógio, moça resfriada no inverno",
             lines: ["He is always late.", "My cousin is often sick in the winter."] } ] },
-        { t: "image", id: "a33p3c", ph: "Foto: mulher ouvindo música com fones à noite" },
+        { t: "image", id: "a33p3c", src: "/lessons/aulas/aula-33/a33p3c.webp", alt: "Mulher sorrindo com fones de ouvido à noite", w: 249, h: 220, ph: "Foto: mulher ouvindo música com fones à noite" },
         { t: "rows", items: [
           { text: "I sometimes listen to music at night.", c: "purple" },
           { text: "Sometimes I listen to music at night.", c: "teal" } ] } ] },
@@ -6648,13 +6672,13 @@ export const LESSONS = [
           { tag: "ONCE", c: "purple", v: "lilac", lines: ["once a day", "once a week", "once a month", "once a year"] },
           { tag: "TWICE", c: "orange", v: "cream", lines: ["twice a day", "twice a week", "twice a month", "twice a year"] },
           { tag: "THREE / FOUR TIMES", c: "navy", v: "gray", lines: ["three times a week", "four times a year"] } ] },
-        { t: "image", id: "a33p4", ph: "Ilustração: relógio e calendário semanal marcados" },
+        { t: "image", id: "a33p4", src: "/lessons/aulas/aula-33/a33p4.webp", alt: "Relógio e calendário semanal com dias marcados", w: 332, h: 666, ph: "Ilustração: relógio e calendário semanal marcados" },
         { t: "key", v: "gray", text: "every hour = once an hour" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 33" },
         { t: "title", en: "AT THE END OF THE SENTENCE", pt: "Expressions of frequency usually go at the end of the sentence." },
-        { t: "image", id: "a33p5", ph: "Foto: planner semanal sobre a mesa com caneta e café" },
+        { t: "image", id: "a33p5", src: "/lessons/aulas/aula-33/a33p5.webp", alt: "Planner semanal sobre a mesa de madeira com caneta e xícara de café", w: 362, h: 780, ph: "Foto: planner semanal sobre a mesa com caneta e café" },
         { t: "rows", items: [
           { text: "I sleep at 10:00 p.m. every day.", c: "teal" },
           { text: "I don’t watch TV every day.", c: "purple" },
@@ -6665,7 +6689,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 33" },
         { t: "title", en: "HOW OFTEN IN REAL LIFE", pt: "Um diálogo sobre rotina." },
-        { t: "image", id: "a33p6", ph: "Foto: dois amigos conversando numa cafeteria" },
+        { t: "image", id: "a33p6", src: "/lessons/aulas/aula-33/a33p6.webp", alt: "Duas pessoas sorrindo conversando em uma cafeteria", w: 924, h: 450, ph: "Foto: dois amigos conversando numa cafeteria" },
         { t: "dialogue", items: [
           { s: "a", text: "How often do you go to the gym?" },
           { s: "b", text: "I usually go in the evening. I go three times a week." },
@@ -6676,7 +6700,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 33 · PRATIQUE" },
         { t: "title", en: "PRACTICE A", pt: "CHOOSE THE ADVERB" },
-        { t: "image", id: "a33p7", ph: "Fotos: casal jantando fora, homem comendo bolo, moça recusando carne, rapaz atrasado para a aula" },
+        { t: "image", id: "a33p7", src: "/lessons/aulas/aula-33/a33p7.webp", alt: "Casal sorridente jantando fora em um restaurante", w: 355, h: 245, ph: "Fotos: casal jantando fora, homem comendo bolo, moça recusando carne, rapaz atrasado para a aula" },
         { t: "mc", id: "a33mc1", title: "ESCOLHA O ADVÉRBIO", v: "cream", questions: [
           { q: "1. James and I ________ go out to dinner together. (≈50%)", options: ["always", "sometimes", "never"], answer: 1 },
           { q: "2. Dan ________ has chocolate cake for dessert. (100%)", options: ["always", "three times", "often"], answer: 0 },
@@ -6686,7 +6710,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 33 · PRATIQUE" },
         { t: "title", en: "PRACTICE B", pt: "CHOOSE THE EXPRESSION" },
-        { t: "image", id: "a33p8", ph: "Fotos: homem estudando à noite, mulher na academia, homem assistindo TV" },
+        { t: "image", id: "a33p8", src: "/lessons/aulas/aula-33/a33p8.webp", alt: "Homem estudando à noite escrevendo em um caderno ao lado do notebook", w: 390, h: 304, ph: "Fotos: homem estudando à noite, mulher na academia, homem assistindo TV" },
         { t: "mc", id: "a33mc2", title: "ESCOLHA A EXPRESSÃO", v: "cream", questions: [
           { q: "5. He ________ does his homework on time. (≈85%)", options: ["not often", "sometimes", "usually"], answer: 2 },
           { q: "6. I go to the gym ________. (Monday · Wednesday · Friday)", options: ["once a week", "every day", "three times a week"], answer: 2 },
@@ -6711,7 +6735,7 @@ export const LESSONS = [
           { n: "3", kicker: "PLAY SOCCER", prefix: "I play soccer ________.", ideas: "once a week · twice a month · every day", c: "orange", v: "cream" },
           { n: "4", kicker: "GO TO THE GYM", prefix: "I go to the gym ________.", ideas: "", c: "teal", v: "mint" },
           { n: "5", kicker: "RIDE A BIKE", prefix: "I ride a bike ________.", ideas: "", c: "purple", v: "lilac" } ] },
-        { t: "image", id: "a33p10", ph: "Foto: dois amigos conversando (mesma cena do diálogo)" },
+        { t: "image", id: "a33p10", src: "/lessons/aulas/aula-33/a33p10.webp", alt: "Mulher e homem sorrindo conversando em uma cafeteria", w: 430, h: 365, ph: "Foto: dois amigos conversando (mesma cena do diálogo)" },
         { t: "note", v: "lilac", bar: true, bold: true, text: "How often do you ____________ ?" },
         { t: "free", id: "a33f2", items: [
           { n: "6", kicker: "SUA PERGUNTA", prefix: "How often do you…?", ideas: "Escreva a pergunta e depois a sua resposta.", c: "purple", v: "lilac" } ] } ] },
@@ -6719,7 +6743,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 33 · FINAL" },
         { t: "title", en: "EU CONSIGO…", pt: "Marque o que você já consegue fazer em inglês." },
-        { t: "image", id: "a33p11", ph: "Foto: dupla de estudantes sorrindo e anotando" },
+        { t: "image", id: "a33p11", src: "/lessons/aulas/aula-33/a33p11.webp", alt: "Dupla de estudantes sorrindo enquanto anotam algo", w: 324, h: 477, ph: "Foto: dupla de estudantes sorrindo e anotando" },
         { t: "check", id: "a33c1", title: "AO FINAL DESTA AULA, EU CONSIGO:", items: [
           "perguntar sobre frequência com How often…?",
           "usar always, usually, often, sometimes, not often, rarely e never",
@@ -6745,18 +6769,18 @@ export const LESSONS = [
         { t: "key", v: "gray", text: "CAN + BASE VERB\nI / you / he / she / it / we / they + can + verb" },
         { t: "note", v: "lilac", center: true, bold: true, text: "CAN DOESN’T CHANGE." },
         { t: "cards", cols: 2, items: [
-          { tag: "PLAY", c: "teal", v: "mint", id: "a34p1a", ph: "Foto: homem tocando guitarra na sala", lines: ["My husband can play the guitar."] },
-          { tag: "PAINT", c: "purple", v: "lilac", id: "a34p1b", ph: "Foto: mulher pintando a parede com rolo", lines: ["She can paint the wall."] },
-          { tag: "COOK", c: "teal", v: "mint", id: "a34p1c", ph: "Foto: casal cozinhando juntos", lines: ["They can cook."] } ] } ] },
+          { tag: "PLAY", c: "teal", v: "mint", id: "a34p1a", src: "/lessons/aulas/aula-34/a34p1a.webp", alt: "Homem tocando violão sentado na sala de estar", w: 286, h: 441, ph: "Foto: homem tocando guitarra na sala", lines: ["My husband can play the guitar."] },
+          { tag: "PAINT", c: "purple", v: "lilac", id: "a34p1b", src: "/lessons/aulas/aula-34/a34p1b.webp", alt: "Mulher de macacão pintando a parede de azul com rolo", w: 286, h: 445, ph: "Foto: mulher pintando a parede com rolo", lines: ["She can paint the wall."] },
+          { tag: "COOK", c: "teal", v: "mint", id: "a34p1c", src: "/lessons/aulas/aula-34/a34p1c.webp", alt: "Casal sorridente cozinhando juntos na cozinha", w: 286, h: 443, ph: "Foto: casal cozinhando juntos", lines: ["They can cook."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 34" },
         { t: "title", en: "CAN’T", pt: "TALK ABOUT LIMITATIONS" },
         { t: "key", v: "gray", text: "SUBJECT + CAN’T + BASE VERB\ncan’t = cannot" },
         { t: "cards", cols: 2, items: [
-          { tag: "SPEAK", c: "teal", v: "mint", id: "a34p2a", ph: "Foto: mulher confusa lendo um livro", lines: ["I can’t speak Japanese."] },
-          { tag: "COOK", c: "purple", v: "lilac", id: "a34p2b", ph: "Foto: homem preocupado com a panela queimando", lines: ["He can’t cook."] },
-          { tag: "PLAY", c: "red", v: "red", id: "a34p2c", ph: "Foto: tenista com dor no ombro", lines: ["She can’t play tennis."] } ] },
+          { tag: "SPEAK", c: "teal", v: "mint", id: "a34p2a", src: "/lessons/aulas/aula-34/a34p2a.webp", alt: "Mulher com a mão na cabeça parecendo confusa lendo um livro", w: 286, h: 397, ph: "Foto: mulher confusa lendo um livro", lines: ["I can’t speak Japanese."] },
+          { tag: "COOK", c: "purple", v: "lilac", id: "a34p2b", src: "/lessons/aulas/aula-34/a34p2b.webp", alt: "Homem preocupado com a mão na cabeça vendo a panela pegar fogo", w: 286, h: 399, ph: "Foto: homem preocupado com a panela queimando", lines: ["He can’t cook."] },
+          { tag: "PLAY", c: "red", v: "red", id: "a34p2c", src: "/lessons/aulas/aula-34/a34p2c.webp", alt: "Tenista com dor no ombro segurando a raquete", w: 286, h: 398, ph: "Foto: tenista com dor no ombro", lines: ["She can’t play tennis."] } ] },
         { t: "note", v: "lilac", bar: true, kicker: "CAN × CAN’T", text: "Na fala, can é curto e can’t é mais forte. Ouça a diferença com atenção." } ] },
 
       { blocks: [
@@ -6764,9 +6788,9 @@ export const LESSONS = [
         { t: "title", en: "CAN YOU…?", pt: "QUESTIONS & SHORT ANSWERS" },
         { t: "key", v: "gray", text: "Can + subject + base verb?" },
         { t: "cards", items: [
-          { tag: "CAN YOU RUN?", c: "teal", v: "mint", id: "a34p3a", ph: "Foto: homem correndo na orla", lines: ["Yes, I can.", "No, I can’t."] },
-          { tag: "CAN HE PLAY TENNIS?", c: "purple", v: "lilac", id: "a34p3b", ph: "Foto: homem jogando tênis", lines: ["Yes, he can.", "No, he can’t."] },
-          { tag: "CAN EAGLES FLY?", c: "teal", v: "mint", id: "a34p3c", ph: "Foto: águia voando no céu azul", lines: ["Yes, they can."] } ] } ] },
+          { tag: "CAN YOU RUN?", c: "teal", v: "mint", id: "a34p3a", src: "/lessons/aulas/aula-34/a34p3a.webp", alt: "Homem correndo na orla à beira-mar", w: 558, h: 417, ph: "Foto: homem correndo na orla", lines: ["Yes, I can.", "No, I can’t."] },
+          { tag: "CAN HE PLAY TENNIS?", c: "purple", v: "lilac", id: "a34p3b", src: "/lessons/aulas/aula-34/a34p3b.webp", alt: "Homem jogando tênis rebatendo a bola em quadra", w: 408, h: 300, ph: "Foto: homem jogando tênis", lines: ["Yes, he can.", "No, he can’t."] },
+          { tag: "CAN EAGLES FLY?", c: "teal", v: "mint", id: "a34p3c", src: "/lessons/aulas/aula-34/a34p3c.webp", alt: "Águia de asas abertas voando no céu azul", w: 457, h: 263, ph: "Foto: águia voando no céu azul", lines: ["Yes, they can."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 34" },
@@ -6777,17 +6801,17 @@ export const LESSONS = [
           { title: "quite well", body: "", c: "yellow", v: "cream" },
           { title: "not very well", body: "", c: "orange", v: "cream" },
           { title: "not at all", body: "", c: "red", v: "red" } ] },
-        { t: "image", id: "a34p4a", ph: "Foto: homem andando a cavalo" },
+        { t: "image", id: "a34p4a", src: "/lessons/aulas/aula-34/a34p4a.webp", alt: "Homem sorridente andando a cavalo com capacete de equitação", w: 454, h: 468, ph: "Foto: homem andando a cavalo" },
         { t: "key", v: "navy", text: "James can ride a horse very well." },
         { t: "cards", cols: 2, items: [
-          { tag: "SKATEBOARD", c: "teal", v: "mint", id: "a34p4b", ph: "Foto: rapaz andando de skate", lines: ["My brother can skateboard well."] },
-          { tag: "SING", c: "purple", v: "lilac", id: "a34p4c", ph: "Foto: moça cantando no microfone", lines: ["I can sing quite well."] },
+          { tag: "SKATEBOARD", c: "teal", v: "mint", id: "a34p4b", src: "/lessons/aulas/aula-34/a34p4b.webp", alt: "Rapaz andando de skate em uma praça ao ar livre", w: 144, h: 139, ph: "Foto: rapaz andando de skate", lines: ["My brother can skateboard well."] },
+          { tag: "SING", c: "purple", v: "lilac", id: "a34p4c", src: "/lessons/aulas/aula-34/a34p4c.webp", alt: "Moça cantando em um microfone usando fone de ouvido", w: 144, h: 142, ph: "Foto: moça cantando no microfone", lines: ["I can sing quite well."] },
           { tag: "CAN’T SING", c: "red", v: "red", lines: ["I can’t sing at all."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 34" },
         { t: "title", en: "CAN × BE GOOD AT", pt: "TWO WAYS TO TALK ABOUT ABILITY" },
-        { t: "image", id: "a34p5", ph: "Foto: mulher desenhando um retrato no ateliê" },
+        { t: "image", id: "a34p5", src: "/lessons/aulas/aula-34/a34p5.webp", alt: "Mulher de coque desenhando em um caderno de esboços", w: 489, h: 656, ph: "Foto: mulher desenhando um retrato no ateliê" },
         { t: "cards", items: [
           { tag: "CAN + BASE VERB", c: "teal", v: "mint", lines: ["My daughter can draw very well."] },
           { tag: "BE GOOD AT + NOUN / VERB + -ING", c: "purple", v: "lilac", lines: ["My daughter is good at drawing."] } ] },
@@ -6798,7 +6822,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 34" },
         { t: "title", en: "LET’S TALK", pt: "WHAT CAN YOU DO?" },
-        { t: "image", id: "a34p6", ph: "Foto: dois amigos conversando numa cafeteria" },
+        { t: "image", id: "a34p6", src: "/lessons/aulas/aula-34/a34p6.webp", alt: "Dois amigos sorrindo conversando em uma cafeteria", w: 924, h: 400, ph: "Foto: dois amigos conversando numa cafeteria" },
         { t: "dialogue", items: [
           { s: "a", text: "Can you play the guitar?" },
           { s: "b", text: "Yes, I can. I can play quite well." },
@@ -6811,7 +6835,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 34 · PRATIQUE" },
         { t: "title", en: "CAN OR CAN’T?", pt: "CHOOSE THE CORRECT FORM" },
-        { t: "image", id: "a34p7", ph: "Fotos: pintora, bebê, músico com guitarra, jogador de basquete" },
+        { t: "image", id: "a34p7", src: "/lessons/aulas/aula-34/a34p7.webp", alt: "Colagem de mulher pintando um quadro, homem tocando violão e jogador de basquete", w: 928, h: 1141, ph: "Fotos: pintora, bebê, músico com guitarra, jogador de basquete" },
         { t: "fill", id: "a34e1", title: "COMPLETE COM CAN OU CAN’T", v: "cream", items: [
           { pre: "1. Tom is an artist. He", answers: ["can"], post: "draw well.", v: "mint" },
           { pre: "2. My little brother is seven months old. He", answers: ["can't", "cant", "cannot"], post: "run at all.", v: "lilac" },
@@ -6853,7 +6877,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 35" },
         { t: "title", en: "OBJECT PRONOUNS", pt: "SUBJECT × OBJECT" },
-        { t: "image", id: "a35p1", ph: "Foto: grupo de amigos assistindo futebol no sofá com pipoca" },
+        { t: "image", id: "a35p1", src: "/lessons/aulas/aula-35/a35p1.webp", alt: "Grupo de amigos comemorando gol assistindo futebol no sofá", w: 924, h: 345, ph: "Foto: grupo de amigos assistindo futebol no sofá com pipoca" },
         { t: "cards", items: [
           { tag: "SUBJECT PRONOUN", c: "teal", v: "mint", lines: ["My friends and I love soccer.", "We watch soccer together every Sunday."] },
           { tag: "OBJECT PRONOUN", c: "purple", v: "lilac", lines: ["O subject pronoun pratica a ação. O object pronoun recebe a ação."] } ] } ] },
@@ -6862,8 +6886,8 @@ export const LESSONS = [
         { t: "badge", label: "AULA 35" },
         { t: "title", en: "WHERE DOES THE OBJECT PRONOUN GO?", pt: "AFTER A VERB × AFTER A PREPOSITION" },
         { t: "cards", items: [
-          { tag: "AFTER A VERB", c: "purple", v: "lilac", id: "a35p2a", ph: "Foto: filho beijando a mãe no rosto", lines: ["I love my mom.", "→ I love her."] },
-          { tag: "AFTER A PREPOSITION", c: "teal", v: "mint", id: "a35p2b", ph: "Foto: neto e avó tomando café juntos", lines: ["I live with my grandma.", "→ I live with her."] } ] } ] },
+          { tag: "AFTER A VERB", c: "purple", v: "lilac", id: "a35p2a", src: "/lessons/aulas/aula-35/a35p2a.webp", alt: "Filho beijando o rosto da mãe sorridente em casa", w: 534, h: 477, ph: "Foto: filho beijando a mãe no rosto", lines: ["I love my mom.", "→ I love her."] },
+          { tag: "AFTER A PREPOSITION", c: "teal", v: "mint", id: "a35p2b", src: "/lessons/aulas/aula-35/a35p2b.webp", alt: "Neto e avó sorrindo enquanto tomam café juntos", w: 534, h: 480, ph: "Foto: neto e avó tomando café juntos", lines: ["I live with my grandma.", "→ I live with her."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 35" },
@@ -6874,23 +6898,23 @@ export const LESSONS = [
           { a: "they", b: "them", v: "mint" } ] },
         { t: "sec", text: "HER × HER", c: "purple" },
         { t: "cards", items: [
-          { tag: "OBJECT PRONOUN", c: "purple", v: "lilac", id: "a35p3a", ph: "Foto: duas mulheres conversando no sofá", lines: ["I live with her."] },
-          { tag: "POSSESSIVE ADJECTIVE", c: "teal", v: "mint", id: "a35p3b", ph: "Foto: caderno com a frase “her lessons”", lines: ["her lessons"] } ] } ] },
+          { tag: "OBJECT PRONOUN", c: "purple", v: "lilac", id: "a35p3a", src: "/lessons/aulas/aula-35/a35p3a.webp", alt: "Duas amigas sorrindo e conversando no sofá com xícaras de café", w: 248, h: 188, ph: "Foto: duas mulheres conversando no sofá", lines: ["I live with her."] },
+          { tag: "POSSESSIVE ADJECTIVE", c: "teal", v: "mint", id: "a35p3b", src: "/lessons/aulas/aula-35/a35p3b.webp", alt: "Caderno com a frase her lessons escrita à mão sobre a mesa", w: 260, h: 198, ph: "Foto: caderno com a frase “her lessons”", lines: ["her lessons"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 35" },
         { t: "title", en: "REPLACE THE NOUN", pt: "OBJECT PRONOUNS IN CONTEXT" },
         { t: "cards", items: [
-          { tag: "IT", c: "purple", v: "lilac", id: "a35p4a", ph: "Foto: mulher almoçando frango", lines: ["My mother likes chicken.", "→ My mother likes it."] },
-          { tag: "THEM", c: "teal", v: "mint", id: "a35p4b", ph: "Foto: homem olhando os vizinhos com desconfiança", lines: ["He doesn’t like his neighbors.", "→ He doesn’t like them."] },
-          { tag: "US", c: "purple", v: "lilac", id: "a35p4c", ph: "Foto: casal pedindo ajuda na recepção", lines: ["Can you help my boyfriend and me?", "→ Can you help us?"] },
-          { tag: "HIM", c: "teal", v: "mint", id: "a35p4d", ph: "Foto: neto abraçando o avô", lines: ["My grandpa is awesome.", "→ I love him."] },
-          { tag: "HIM / YOU", c: "purple", v: "lilac", id: "a35p4e", ph: "Fotos: homem ajudando outro no parque; mulher apontando para a câmera", lines: ["Let’s help him.", "I love you."] } ] } ] },
+          { tag: "IT", c: "purple", v: "lilac", id: "a35p4a", src: "/lessons/aulas/aula-35/a35p4a.webp", alt: "Mulher sorridente almoçando frango à mesa", w: 426, h: 340, ph: "Foto: mulher almoçando frango", lines: ["My mother likes chicken.", "→ My mother likes it."] },
+          { tag: "THEM", c: "teal", v: "mint", id: "a35p4b", src: "/lessons/aulas/aula-35/a35p4b.webp", alt: "Homem de braços cruzados olhando os vizinhos com desconfiança", w: 190, h: 260, ph: "Foto: homem olhando os vizinhos com desconfiança", lines: ["He doesn’t like his neighbors.", "→ He doesn’t like them."] },
+          { tag: "US", c: "purple", v: "lilac", id: "a35p4c", src: "/lessons/aulas/aula-35/a35p4c.webp", alt: "Casal sorridente pedindo informações no balcão de recepção", w: 206, h: 260, ph: "Foto: casal pedindo ajuda na recepção", lines: ["Can you help my boyfriend and me?", "→ Can you help us?"] },
+          { tag: "HIM", c: "teal", v: "mint", id: "a35p4d", src: "/lessons/aulas/aula-35/a35p4d.webp", alt: "Neto abraçando o avô sorridente por trás", w: 358, h: 215, ph: "Foto: neto abraçando o avô", lines: ["My grandpa is awesome.", "→ I love him."] },
+          { tag: "HIM / YOU", c: "purple", v: "lilac", id: "a35p4e", src: "/lessons/aulas/aula-35/a35p4e.webp", alt: "Homem ajudando outro a se levantar no parque ao lado de mulher sorridente", w: 923, h: 165, ph: "Fotos: homem ajudando outro no parque; mulher apontando para a câmera", lines: ["Let’s help him.", "I love you."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 35 · PRATIQUE" },
         { t: "title", en: "YOUR TURN", pt: "CHOOSE THE OBJECT PRONOUN" },
-        { t: "image", id: "a35p5", ph: "Fotos: amigas vendo fotos, rapaz de moletom, homem sorrindo, mulher com bicicleta, mãe e filha cozinhando" },
+        { t: "image", id: "a35p5", src: "/lessons/aulas/aula-35/a35p5.webp", alt: "Colagem de amigas vendo fotos, rapaz de moletom, homem sorrindo, ciclista e mãe com filha cozinhando", w: 924, h: 1045, ph: "Fotos: amigas vendo fotos, rapaz de moletom, homem sorrindo, mulher com bicicleta, mãe e filha cozinhando" },
         { t: "fill", id: "a35e1", title: "COMPLETE COM O OBJECT PRONOUN", v: "cream", items: [
           { pre: "1. They like photos. → They like", answers: ["them"], post: ".", v: "mint" },
           { pre: "2. I like superheroes. → I like", answers: ["them"], post: ".", v: "lilac" },
@@ -6905,12 +6929,12 @@ export const LESSONS = [
           { k: "1", a: "photos → them", c: "teal" }, { k: "2", a: "superheroes → them", c: "purple" },
           { k: "3", a: "the superhero → him", c: "purple" }, { k: "4", a: "bike → it", c: "teal" },
           { k: "5", a: "daughter → her", c: "purple" } ] },
-        { t: "image", id: "a35p6", ph: "Ilustrações: fotos instantâneas, super-heróis, bicicleta, mãe e filha" } ] },
+        { t: "image", id: "a35p6", src: "/lessons/aulas/aula-35/a35p6.webp", alt: "Pilha de fotos instantâneas ao lado da dupla de super-heróis no telhado", w: 689, h: 670, ph: "Ilustrações: fotos instantâneas, super-heróis, bicicleta, mãe e filha" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 35" },
         { t: "title", en: "OBJECT PRONOUNS", pt: "IN REAL LIFE" },
-        { t: "image", id: "a35p7", ph: "Foto: dois amigos conversando numa cafeteria" },
+        { t: "image", id: "a35p7", src: "/lessons/aulas/aula-35/a35p7.webp", alt: "Dois amigos sorrindo e conversando em uma cafeteria", w: 924, h: 372, ph: "Foto: dois amigos conversando numa cafeteria" },
         { t: "dialogue", items: [
           { s: "a", text: "Do you know Anna and Leo?" },
           { s: "b", text: "Yes, I know them. I work with them." },
@@ -6923,7 +6947,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 35 · PRATIQUE" },
         { t: "title", en: "CORRECT THE PRONOUNS", pt: "Reescreva o texto com os pronomes certos." },
-        { t: "image", id: "a35p8", ph: "Foto: família nas férias (imagem de apoio do texto)" },
+        { t: "image", id: "a35p8", src: "/lessons/aulas/aula-35/a35p8.webp", alt: "Fundo desfocado em tons de pele sugerindo cena de família reunida", w: 1024, h: 110, ph: "Foto: família nas férias (imagem de apoio do texto)" },
         { t: "free", id: "a35f1", items: [
           { n: "1", kicker: "CORRIJA", prefix: "I’m Nathaly. I’m 15. On vacation, I always spend a week at my cousins’ house. Them names are Juan and Karen.", ideas: "Dica: “Them names” → possessivo.", c: "purple", v: "lilac" },
           { n: "2", kicker: "CORRIJA", prefix: "Them are siblings. Him is 27 and her is 29. Their parents’ names are Mark and Linda. Juan and Karen live with they.", ideas: "Dica: sujeito × objeto.", c: "teal", v: "mint" },
@@ -6933,7 +6957,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 35 · GABARITO" },
         { t: "title", en: "CORRECTED VERSION", pt: "Compare com a sua correção." },
-        { t: "image", id: "a35p9", ph: "Foto: adolescente estudando no quarto com um poodle ao lado" },
+        { t: "image", id: "a35p9", src: "/lessons/aulas/aula-35/a35p9.webp", alt: "Adolescente sorridente escrevendo no quarto com um poodle ao lado", w: 925, h: 502, ph: "Foto: adolescente estudando no quarto com um poodle ao lado" },
         { t: "rows", items: [
           { text: "I’m Nathaly. I’m 15. On vacation, I always spend a week at my cousins’ house. Their names are Juan and Karen.", c: "purple" },
           { text: "They are siblings. He’s 27 and she’s 29. Their parents’ names are Mark and Linda. Juan and Karen live with them.", c: "teal" },
@@ -6944,12 +6968,12 @@ export const LESSONS = [
         { t: "badge", label: "AULA 35 · PRATIQUE" },
         { t: "title", en: "SAY IT WITH A PRONOUN", pt: "PEOPLE & THINGS" },
         { t: "cards", cols: 2, items: [
-          { tag: "MARIA → HER", c: "teal", v: "mint", id: "a35p10a", ph: "Foto: mulher com bicicleta" },
-          { tag: "DANIEL → HIM", c: "purple", v: "lilac", id: "a35p10b", ph: "Foto: rapaz de óculos sorrindo" },
-          { tag: "ANNA AND LEO → THEM", c: "teal", v: "mint", id: "a35p10c", ph: "Foto: casal conversando na cafeteria" },
-          { tag: "MY PHONE → IT", c: "purple", v: "lilac", id: "a35p10d", ph: "Ilustração: celular" },
-          { tag: "MY FRIEND AND ME → US", c: "teal", v: "mint", id: "a35p10e", ph: "Foto: casal conversando com uma amiga" },
-          { tag: "YOU → YOU", c: "purple", v: "lilac", id: "a35p10f", ph: "Foto: mulher apontando para a câmera" } ] },
+          { tag: "MARIA → HER", c: "teal", v: "mint", id: "a35p10a", src: "/lessons/aulas/aula-35/a35p10a.webp", alt: "Mulher sorridente ajustando a roda de uma bicicleta azul", w: 290, h: 172, ph: "Foto: mulher com bicicleta" },
+          { tag: "DANIEL → HIM", c: "purple", v: "lilac", id: "a35p10b", src: "/lessons/aulas/aula-35/a35p10b.webp", alt: "Rapaz de óculos sorrindo com a cabeça baixa", w: 290, h: 170, ph: "Foto: rapaz de óculos sorrindo" },
+          { tag: "ANNA AND LEO → THEM", c: "teal", v: "mint", id: "a35p10c", src: "/lessons/aulas/aula-35/a35p10c.webp", alt: "Casal sorrindo e conversando em uma cafeteria", w: 294, h: 170, ph: "Foto: casal conversando na cafeteria" },
+          { tag: "MY PHONE → IT", c: "purple", v: "lilac", id: "a35p10d", src: "/lessons/aulas/aula-35/a35p10d.webp", alt: "Silhueta simples de um celular em contorno escuro", w: 105, h: 155, ph: "Ilustração: celular" },
+          { tag: "MY FRIEND AND ME → US", c: "teal", v: "mint", id: "a35p10e", src: "/lessons/aulas/aula-35/a35p10e.webp", alt: "Casal sorridente conversando com uma amiga em casa", w: 289, h: 170, ph: "Foto: casal conversando com uma amiga" },
+          { tag: "YOU → YOU", c: "purple", v: "lilac", id: "a35p10f", src: "/lessons/aulas/aula-35/a35p10f.webp", alt: "Mulher sorridente apontando para a câmera", w: 294, h: 171, ph: "Foto: mulher apontando para a câmera" } ] },
         { t: "free", id: "a35f2", items: [
           { n: "1", kicker: "COMPLETE", prefix: "I know ________.", ideas: "Use her, him, them, it, us ou you.", c: "teal", v: "mint" },
           { n: "2", kicker: "COMPLETE", prefix: "I work with ________.", ideas: "", c: "purple", v: "lilac" },
@@ -6982,15 +7006,15 @@ export const LESSONS = [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "MEALS AND RESTAURANT VOCABULARY", pt: "BREAKFAST · LUNCH · DINNER · SNACK" },
         { t: "cards", cols: 2, items: [
-          { tag: "BREAKFAST · MORNING", c: "teal", v: "mint", id: "a36p1a", ph: "Foto: café, torrada, ovos mexidos e tigela de cereal com frutas" },
-          { tag: "LUNCH · AFTERNOON", c: "purple", v: "lilac", id: "a36p1b", ph: "Foto: prato de arroz, feijão e salada" },
-          { tag: "DINNER · EVENING", c: "navy", v: "gray", id: "a36p1c", ph: "Foto: salmão grelhado com brócolis e purê" },
-          { tag: "SNACK", c: "yellow", v: "cream", id: "a36p1d", ph: "Foto: tigela de frutas com cereais" } ] } ] },
+          { tag: "BREAKFAST · MORNING", c: "teal", v: "mint", id: "a36p1a", src: "/lessons/aulas/aula-36/a36p1a.webp", alt: "Xícara de café, tigela de cereal com frutas, torrada com manteiga e ovos mexidos", w: 573, h: 918, ph: "Foto: café, torrada, ovos mexidos e tigela de cereal com frutas" },
+          { tag: "LUNCH · AFTERNOON", c: "purple", v: "lilac", id: "a36p1b", src: "/lessons/aulas/aula-36/a36p1b.webp", alt: "Prato de arroz e feijão com salada verde e tomate", w: 324, h: 290, ph: "Foto: prato de arroz, feijão e salada" },
+          { tag: "DINNER · EVENING", c: "navy", v: "gray", id: "a36p1c", src: "/lessons/aulas/aula-36/a36p1c.webp", alt: "Filé de salmão grelhado com brócolis e purê de batata", w: 359, h: 349, ph: "Foto: salmão grelhado com brócolis e purê" },
+          { tag: "SNACK", c: "yellow", v: "cream", id: "a36p1d", src: "/lessons/aulas/aula-36/a36p1d.webp", alt: "Tigela de frutas frescas com potinho de granola ao lado", w: 309, h: 215, ph: "Foto: tigela de frutas com cereais" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "BREAKFAST", pt: "MORNING FOOD & DRINKS" },
-        { t: "image", id: "a36p2", ph: "Composição com etiquetas: coffee, waffles, milk, pancakes, cheese, sausage, cereal, bread" },
+        { t: "image", id: "a36p2", src: "/lessons/aulas/aula-36/a36p2.webp", alt: "Painel com café, waffles, leite, panquecas, queijo, salsicha, cereal e pães etiquetados", w: 926, h: 1081, ph: "Composição com etiquetas: coffee, waffles, milk, pancakes, cheese, sausage, cereal, bread" },
         { t: "chips", title: "BREAKFAST WORDS", items: [
           { t: "coffee", c: "teal" }, { t: "waffles", c: "navy" }, { t: "milk", c: "purple" },
           { t: "pancakes", c: "teal" }, { t: "cheese", c: "navy" }, { t: "sausage", c: "purple" },
@@ -7000,17 +7024,17 @@ export const LESSONS = [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "BREAKFAST IN CONTEXT", pt: "FRUIT, CROISSANTS & BREAD" },
         { t: "cards", cols: 2, items: [
-          { tag: "FRUIT", c: "teal", v: "mint", id: "a36p3a", ph: "Foto: tigela de frutas com suco de laranja", lines: ["I have fruit for breakfast."] },
-          { tag: "CROISSANT", c: "purple", v: "lilac", id: "a36p3b", ph: "Foto: croissants com café e geleia", lines: ["She has croissants and coffee for breakfast."] } ] },
+          { tag: "FRUIT", c: "teal", v: "mint", id: "a36p3a", src: "/lessons/aulas/aula-36/a36p3a.webp", alt: "Tigela de frutas com copo de suco de laranja", w: 448, h: 387, ph: "Foto: tigela de frutas com suco de laranja", lines: ["I have fruit for breakfast."] },
+          { tag: "CROISSANT", c: "purple", v: "lilac", id: "a36p3b", src: "/lessons/aulas/aula-36/a36p3b.webp", alt: "Croissants com xícara de café e potinho de geleia", w: 450, h: 390, ph: "Foto: croissants com café e geleia", lines: ["She has croissants and coffee for breakfast."] } ] },
         { t: "cards", cols: 2, items: [
-          { tag: "A HAMBURGER BUN", c: "teal", v: "mint", id: "a36p3c", ph: "Foto: pão de hambúrguer com gergelim" },
-          { tag: "A ROLL", c: "purple", v: "lilac", id: "a36p3d", ph: "Foto: pãozinho redondo rústico" },
-          { tag: "FRENCH BREAD / A BAGUETTE", c: "navy", v: "gray", id: "a36p3e", ph: "Foto: baguete fatiada" } ] } ] },
+          { tag: "A HAMBURGER BUN", c: "teal", v: "mint", id: "a36p3c", src: "/lessons/aulas/aula-36/a36p3c.webp", alt: "Pão de hambúrguer com gergelim", w: 270, h: 224, ph: "Foto: pão de hambúrguer com gergelim" },
+          { tag: "A ROLL", c: "purple", v: "lilac", id: "a36p3d", src: "/lessons/aulas/aula-36/a36p3d.webp", alt: "Pãozinho redondo rústico artesanal", w: 245, h: 218, ph: "Foto: pãozinho redondo rústico" },
+          { tag: "FRENCH BREAD / A BAGUETTE", c: "navy", v: "gray", id: "a36p3e", src: "/lessons/aulas/aula-36/a36p3e.webp", alt: "Baguete fatiada sobre tábua de madeira", w: 260, h: 197, ph: "Foto: baguete fatiada" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "LUNCH", pt: "WHAT DO YOU USUALLY HAVE?" },
-        { t: "image", id: "a36p4", src: "/lessons/fotos/aula_36_pagina_04_foto_01.jpg", alt: "Prato de arroz, feijão e carne com salada, batata frita e macarrão", ph: "Foto: almoço completo (arroz, feijão, carne, salada, batata frita, macarrão)" },
+        { t: "image", id: "a36p4", src: "/lessons/fotos/aula_36_pagina_04_foto_01.jpg", alt: "Prato de arroz, feijão e carne com salada, batata frita e macarrão", w: 936, h: 506, ph: "Foto: almoço completo (arroz, feijão, carne, salada, batata frita, macarrão)" },
         { t: "chips", title: "LUNCH WORDS", items: [
           { t: "rice", c: "teal" }, { t: "carrots", c: "purple" }, { t: "beans", c: "teal" }, { t: "pasta", c: "purple" },
           { t: "salad", c: "teal" }, { t: "French fries", c: "purple" }, { t: "meat", c: "teal" }, { t: "stroganoff", c: "purple" } ] },
@@ -7022,37 +7046,37 @@ export const LESSONS = [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "SNACK & DINNER", pt: "Lanche e jantar." },
         { t: "cards", cols: 2, items: [
-          { tag: "A BLT", c: "purple", v: "lilac", id: "a36p5a", ph: "Foto: sanduíche de bacon, alface e tomate", note: "BLT = bacon, lettuce and tomato." },
-          { tag: "CAKE", c: "teal", v: "mint", id: "a36p5b", ph: "Foto: fatia de bolo de chocolate" },
-          { tag: "COOKIES", c: "purple", v: "lilac", id: "a36p5c", ph: "Foto: biscoitos com gotas de chocolate" },
-          { tag: "FRUIT", c: "teal", v: "mint", id: "a36p5d", ph: "Foto: tigela de frutas picadas" },
-          { tag: "PIZZA", c: "navy", v: "gray", id: "a36p5e", ph: "Foto: pizza inteira" },
-          { tag: "SOUP", c: "teal", v: "mint", id: "a36p5f", ph: "Foto: prato de sopa" },
-          { tag: "HAMBURGER", c: "navy", v: "gray", id: "a36p5g", ph: "Foto: hambúrguer completo" } ] } ] },
+          { tag: "A BLT", c: "purple", v: "lilac", id: "a36p5a", src: "/lessons/aulas/aula-36/a36p5a.webp", alt: "Sanduíche com bacon, alface e tomate", w: 461, h: 250, ph: "Foto: sanduíche de bacon, alface e tomate", note: "BLT = bacon, lettuce and tomato." },
+          { tag: "CAKE", c: "teal", v: "mint", id: "a36p5b", src: "/lessons/aulas/aula-36/a36p5b.webp", alt: "Fatia de bolo de chocolate no prato", w: 224, h: 177, ph: "Foto: fatia de bolo de chocolate" },
+          { tag: "COOKIES", c: "purple", v: "lilac", id: "a36p5c", src: "/lessons/aulas/aula-36/a36p5c.webp", alt: "Prato de biscoitos com gotas de chocolate", w: 190, h: 156, ph: "Foto: biscoitos com gotas de chocolate" },
+          { tag: "FRUIT", c: "teal", v: "mint", id: "a36p5d", src: "/lessons/aulas/aula-36/a36p5d.webp", alt: "Tigela de frutas picadas variadas", w: 206, h: 160, ph: "Foto: tigela de frutas picadas" },
+          { tag: "PIZZA", c: "navy", v: "gray", id: "a36p5e", src: "/lessons/aulas/aula-36/a36p5e.webp", alt: "Pizza inteira com pepperoni e manjericão", w: 207, h: 214, ph: "Foto: pizza inteira" },
+          { tag: "SOUP", c: "teal", v: "mint", id: "a36p5f", src: "/lessons/aulas/aula-36/a36p5f.webp", alt: "Prato de sopa quente com colher ao lado", w: 188, h: 129, ph: "Foto: prato de sopa" },
+          { tag: "HAMBURGER", c: "navy", v: "gray", id: "a36p5g", src: "/lessons/aulas/aula-36/a36p5g.webp", alt: "Hambúrguer completo com queijo e salada", w: 229, h: 150, ph: "Foto: hambúrguer completo" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "IN A RESTAURANT", pt: "APPETIZERS · DESSERTS · DRINKS" },
         { t: "cards", items: [
-          { tag: "APPETIZERS", c: "teal", v: "mint", id: "a36p6a", ph: "Foto: pastéis com salada de entrada" },
-          { tag: "DESSERTS", c: "purple", v: "lilac", id: "a36p6b", ph: "Fotos: sorvete, bolo de chocolate e pudim", lines: ["ice cream", "chocolate cake", "pudding"] },
-          { tag: "DRINKS", c: "navy", v: "gray", id: "a36p6c", ph: "Fotos: refrigerante, água, suco e cerveja", lines: ["soda", "water", "juice", "beer"] } ] } ] },
+          { tag: "APPETIZERS", c: "teal", v: "mint", id: "a36p6a", src: "/lessons/aulas/aula-36/a36p6a.webp", alt: "Pastéis dourados com salada de entrada", w: 560, h: 552, ph: "Foto: pastéis com salada de entrada" },
+          { tag: "DESSERTS", c: "purple", v: "lilac", id: "a36p6b", src: "/lessons/aulas/aula-36/a36p6b.webp", alt: "Painel de sobremesas com sorvete, bolo de chocolate e pudim", w: 348, h: 742, ph: "Fotos: sorvete, bolo de chocolate e pudim", lines: ["ice cream", "chocolate cake", "pudding"] },
+          { tag: "DRINKS", c: "navy", v: "gray", id: "a36p6c", src: "/lessons/aulas/aula-36/a36p6c.webp", alt: "Painel de bebidas com refrigerante, água, suco e cerveja", w: 944, h: 346, ph: "Fotos: refrigerante, água, suco e cerveja", lines: ["soda", "water", "juice", "beer"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "MEAT & FISH", pt: "Carnes e peixe." },
         { t: "cards", cols: 2, items: [
-          { tag: "CHICKEN LEGS", c: "teal", v: "mint", id: "a36p7a", ph: "Foto: coxas de frango assadas" },
-          { tag: "CHICKEN BREAST", c: "purple", v: "lilac", id: "a36p7b", ph: "Foto: filé de peito de frango grelhado" },
-          { tag: "SAUSAGES", c: "navy", v: "gray", id: "a36p7c", ph: "Foto: linguiças grelhadas com molho" },
-          { tag: "TWO STEAKS", c: "purple", v: "lilac", id: "a36p7d", ph: "Foto: dois bifes grelhados" },
-          { tag: "GRILLED SKEWERS WITH MEAT AND VEGETABLES", c: "navy", v: "gray", id: "a36p7e", ph: "Foto: espetinhos de carne com legumes" },
-          { tag: "FISH", c: "teal", v: "mint", id: "a36p7f", ph: "Foto: posta de peixe grelhado com limão" } ] } ] },
+          { tag: "CHICKEN LEGS", c: "teal", v: "mint", id: "a36p7a", src: "/lessons/aulas/aula-36/a36p7a.webp", alt: "Coxas de frango assadas com raminho de alecrim", w: 554, h: 492, ph: "Foto: coxas de frango assadas" },
+          { tag: "CHICKEN BREAST", c: "purple", v: "lilac", id: "a36p7b", src: "/lessons/aulas/aula-36/a36p7b.webp", alt: "Filé de peito de frango grelhado no prato", w: 354, h: 210, ph: "Foto: filé de peito de frango grelhado" },
+          { tag: "SAUSAGES", c: "navy", v: "gray", id: "a36p7c", src: "/lessons/aulas/aula-36/a36p7c.webp", alt: "Linguiças grelhadas com molho de acompanhamento", w: 324, h: 224, ph: "Foto: linguiças grelhadas com molho" },
+          { tag: "TWO STEAKS", c: "purple", v: "lilac", id: "a36p7d", src: "/lessons/aulas/aula-36/a36p7d.webp", alt: "Dois bifes grelhados no prato", w: 363, h: 280, ph: "Foto: dois bifes grelhados" },
+          { tag: "GRILLED SKEWERS WITH MEAT AND VEGETABLES", c: "navy", v: "gray", id: "a36p7e", src: "/lessons/aulas/aula-36/a36p7e.webp", alt: "Espetinhos de carne grelhada com pimentão e legumes", w: 250, h: 455, ph: "Foto: espetinhos de carne com legumes" },
+          { tag: "FISH", c: "teal", v: "mint", id: "a36p7f", src: "/lessons/aulas/aula-36/a36p7f.webp", alt: "Posta de peixe grelhado com fatia de limão", w: 196, h: 418, ph: "Foto: posta de peixe grelhado com limão" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 36 · PRATIQUE" },
         { t: "title", en: "MEAL INTERVIEW", pt: "WHAT DO YOU USUALLY HAVE?" },
-        { t: "image", id: "a36p8", ph: "Foto: dois amigos conversando na cafeteria com café e croissant" },
+        { t: "image", id: "a36p8", src: "/lessons/aulas/aula-36/a36p8.webp", alt: "Casal sorrindo à mesa da cafeteria com café e croissant", w: 924, h: 509, ph: "Foto: dois amigos conversando na cafeteria com café e croissant" },
         { t: "free", id: "a36f1", items: [
           { n: "1", kicker: "BREAKFAST", prefix: "I usually have ________ for breakfast.", ideas: "coffee · bread · fruit · cereal", c: "teal", v: "mint" },
           { n: "2", kicker: "LUNCH", prefix: "I usually have ________ for lunch.", ideas: "rice · beans · meat · salad", c: "purple", v: "lilac" },
@@ -7062,7 +7086,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 36" },
         { t: "title", en: "AT A RESTAURANT", pt: "ORDERING FOOD" },
-        { t: "image", id: "a36p9", ph: "Foto: garçom anotando o pedido de uma cliente com menu" },
+        { t: "image", id: "a36p9", src: "/lessons/aulas/aula-36/a36p9.webp", alt: "Garçom anotando pedido do cliente com cardápio", w: 322, h: 450, ph: "Foto: garçom anotando o pedido de uma cliente com menu" },
         { t: "dialogue", items: [
           { s: "b", text: "SERVER: Are you ready to order?" },
           { s: "a", text: "CUSTOMER: Yes. I’d like a cheeseburger, please." },
@@ -7081,7 +7105,7 @@ export const LESSONS = [
           { tag: "FOOD", c: "navy", v: "gray", lines: ["cheeseburger", "pizza", "soup", "pasta", "fish"] },
           { tag: "DESSERTS", c: "purple", v: "lilac", lines: ["ice cream", "chocolate cake", "pudding"] },
           { tag: "DRINKS", c: "teal", v: "mint", lines: ["water", "juice", "soda"] } ] },
-        { t: "image", id: "a36p10", ph: "Foto: casal à mesa no restaurante" },
+        { t: "image", id: "a36p10", src: "/lessons/aulas/aula-36/a36p10.webp", alt: "Casal à mesa do restaurante conversando", w: 317, h: 498, ph: "Foto: casal à mesa no restaurante" },
         { t: "fill", id: "a36e1", title: "COMPLETE O ROLE-PLAY", v: "cream", items: [
           { pre: "A: Are you ready to order?  B: Yes. I’d like", answers: ["pizza", "a cheeseburger", "soup", "pasta", "fish"], post: ", please.", v: "white" },
           { pre: "A: Anything to drink?  B: Could I have", answers: ["water", "juice", "soda", "a glass of soda"], post: ", please?", v: "white" },
@@ -7114,26 +7138,26 @@ export const LESSONS = [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "COUNT AND NONCOUNT NOUNS", pt: "A/AN · SOME · ANY" },
         { t: "cards", cols: 2, items: [
-          { tag: "COUNTABLE", c: "teal", v: "mint", id: "a37p1a", ph: "Foto: uma maçã e duas maçãs", lines: ["an apple → two apples"] },
-          { tag: "UNCOUNTABLE", c: "purple", v: "lilac", id: "a37p1b", ph: "Foto: arroz numa tigela e um copo de água", lines: ["rice", "water"] } ] } ] },
+          { tag: "COUNTABLE", c: "teal", v: "mint", id: "a37p1a", src: "/lessons/aulas/aula-37/a37p1a.webp", alt: "Maçã única ao lado de duas maçãs vermelhas", w: 500, h: 302, ph: "Foto: uma maçã e duas maçãs", lines: ["an apple → two apples"] },
+          { tag: "UNCOUNTABLE", c: "purple", v: "lilac", id: "a37p1b", src: "/lessons/aulas/aula-37/a37p1b.webp", alt: "Arroz cru dentro de uma tigela de madeira", w: 360, h: 320, ph: "Foto: arroz numa tigela e um copo de água", lines: ["rice", "water"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "COUNTABLE NOUNS", pt: "SINGULAR → PLURAL" },
         { t: "key", v: "gray", text: "Countable nouns have a singular and a plural form." },
         { t: "cards", cols: 2, items: [
-          { tag: "AN APPLE → TWO APPLES", c: "teal", v: "mint", id: "a37p2a", ph: "Foto: uma maçã e depois duas maçãs" },
-          { tag: "AN ORANGE → TWO ORANGES", c: "purple", v: "lilac", id: "a37p2b", ph: "Foto: uma laranja e depois duas laranjas" },
-          { tag: "A CHAIR → TWO CHAIRS", c: "teal", v: "mint", id: "a37p2c", ph: "Foto: uma cadeira e depois duas cadeiras" } ] } ] },
+          { tag: "AN APPLE → TWO APPLES", c: "teal", v: "mint", id: "a37p2a", src: "/lessons/aulas/aula-37/a37p2a.webp", alt: "Uma maçã vermelha ao lado de duas maçãs vermelhas", w: 916, h: 280, ph: "Foto: uma maçã e depois duas maçãs" },
+          { tag: "AN ORANGE → TWO ORANGES", c: "purple", v: "lilac", id: "a37p2b", src: "/lessons/aulas/aula-37/a37p2b.webp", alt: "Uma laranja ao lado de duas laranjas", w: 588, h: 205, ph: "Foto: uma laranja e depois duas laranjas" },
+          { tag: "A CHAIR → TWO CHAIRS", c: "teal", v: "mint", id: "a37p2c", src: "/lessons/aulas/aula-37/a37p2c.webp", alt: "Uma cadeira branca e, em seguida, duas cadeiras brancas iguais", w: 252, h: 404, ph: "Foto: uma cadeira e depois duas cadeiras" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "UNCOUNTABLE NOUNS", pt: "Substantivos não contáveis." },
         { t: "key", v: "gray", text: "Uncountable nouns are used as singular nouns and do not normally have a plural form in these meanings." },
         { t: "cards", cols: 2, items: [
-          { tag: "MEAT", c: "purple", v: "lilac", id: "a37p3a", ph: "Foto: carne crua em tigela de madeira" },
-          { tag: "CHOCOLATE", c: "purple", v: "lilac", id: "a37p3b", ph: "Foto: barras de chocolate" },
-          { tag: "SUGAR", c: "purple", v: "lilac", id: "a37p3c", ph: "Foto: açúcar em tigela de madeira" } ] } ] },
+          { tag: "MEAT", c: "purple", v: "lilac", id: "a37p3a", src: "/lessons/aulas/aula-37/a37p3a.webp", alt: "Cubos de carne crua em uma tigela de madeira", w: 352, h: 345, ph: "Foto: carne crua em tigela de madeira" },
+          { tag: "CHOCOLATE", c: "purple", v: "lilac", id: "a37p3b", src: "/lessons/aulas/aula-37/a37p3b.webp", alt: "Barras de chocolate ao leite empilhadas", w: 462, h: 135, ph: "Foto: barras de chocolate" },
+          { tag: "SUGAR", c: "purple", v: "lilac", id: "a37p3c", src: "/lessons/aulas/aula-37/a37p3c.webp", alt: "Açúcar em uma tigela de madeira", w: 298, h: 134, ph: "Foto: açúcar em tigela de madeira" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37" },
@@ -7143,17 +7167,17 @@ export const LESSONS = [
           { a: "grapes", b: "flour", v: "lilac" },
           { a: "tomato", b: "tomato sauce", v: "mint" },
           { a: "dollars", b: "money", v: "lilac" } ] },
-        { t: "image", id: "a37p4", ph: "Fotos em pares: laranja/suco, uvas/farinha, tomate/molho, dólares/dinheiro" } ] },
+        { t: "image", id: "a37p4", src: "/lessons/aulas/aula-37/a37p4.webp", alt: "Quatro pares de fotos: laranja e suco, uvas e farinha, tomate e molho, dólares e dinheiro", w: 924, h: 1050, ph: "Fotos em pares: laranja/suco, uvas/farinha, tomate/molho, dólares/dinheiro" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "WE COUNT THE CONTAINER", pt: "UNCOUNTABLE NOUN + COUNTABLE UNIT" },
         { t: "key", v: "gray", text: "The food or drink stays uncountable. We count the container or unit." },
         { t: "cards", items: [
-          { tag: "RICE → A BAG OF RICE", c: "purple", v: "lilac", id: "a37p5a", ph: "Foto: arroz na tigela e um saco de arroz" },
-          { tag: "WATER → TWO BOTTLES OF WATER", c: "teal", v: "mint", id: "a37p5b", ph: "Foto: copo de água e duas garrafas de água" },
-          { tag: "SODA → A CAN OF SODA", c: "purple", v: "lilac", id: "a37p5c", ph: "Foto: copo de refrigerante e uma lata" },
-          { tag: "BREAD → A SLICE OF BREAD", c: "teal", v: "mint", id: "a37p5d", ph: "Foto: pão fatiado e uma fatia no prato" } ] },
+          { tag: "RICE → A BAG OF RICE", c: "purple", v: "lilac", id: "a37p5a", src: "/lessons/aulas/aula-37/a37p5a.webp", alt: "Monte de arroz cru com um pacote de arroz ao lado", w: 342, h: 283, ph: "Foto: arroz na tigela e um saco de arroz" },
+          { tag: "WATER → TWO BOTTLES OF WATER", c: "teal", v: "mint", id: "a37p5b", src: "/lessons/aulas/aula-37/a37p5b.webp", alt: "Duas garrafas de água mineral lado a lado", w: 425, h: 122, ph: "Foto: copo de água e duas garrafas de água" },
+          { tag: "SODA → A CAN OF SODA", c: "purple", v: "lilac", id: "a37p5c", src: "/lessons/aulas/aula-37/a37p5c.webp", alt: "Lata de refrigerante vermelha com gotas de água", w: 369, h: 119, ph: "Foto: copo de refrigerante e uma lata" },
+          { tag: "BREAD → A SLICE OF BREAD", c: "teal", v: "mint", id: "a37p5d", src: "/lessons/aulas/aula-37/a37p5d.webp", alt: "Fatia de pão em um prato", w: 457, h: 119, ph: "Foto: pão fatiado e uma fatia no prato" } ] },
         { t: "chips", items: [
           { t: "water = uncountable", c: "purple" }, { t: "bottles = countable", c: "teal" },
           { t: "bread = uncountable", c: "purple" }, { t: "slice = countable", c: "teal" } ] } ] },
@@ -7164,38 +7188,38 @@ export const LESSONS = [
         { t: "cards", cols: 2, items: [
           { tag: "A + CONSONANT SOUND", c: "teal", v: "mint", lines: ["a pencil", "a book", "a university"] },
           { tag: "AN + VOWEL SOUND", c: "purple", v: "lilac", lines: ["an eraser", "an apple", "an hour"] } ] },
-        { t: "image", id: "a37p6", ph: "Fotos: lápis, livro, borracha, maçã, universidade e relógio" },
+        { t: "image", id: "a37p6", src: "/lessons/aulas/aula-37/a37p6.webp", alt: "Lápis, livro, borracha, maçã, fachada de universidade e relógio de parede", w: 924, h: 835, ph: "Fotos: lápis, livro, borracha, maçã, universidade e relógio" },
         { t: "key", v: "navy", text: "sound > spelling" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "SOME / ANY", pt: "Afirmativas × negativas e perguntas." },
         { t: "cards", cols: 2, items: [
-          { tag: "SOME: FOR AFFIRMATIVE SENTENCES", c: "teal", v: "mint", id: "a37p7a", ph: "Foto: copo de água na cozinha", lines: ["I usually drink some water when I go to the kitchen."] },
-          { tag: "ANY: FOR NEGATIVES AND QUESTIONS", c: "purple", v: "lilac", id: "a37p7b", ph: "Foto: cesta de frutas vazia", lines: ["There aren’t any bananas in this basket."] },
-          { tag: "SOME BANANAS", c: "teal", v: "mint", id: "a37p7c", ph: "Foto: bananas no prato", lines: ["There are some bananas on the table."] },
-          { tag: "ANY ORANGE JUICE", c: "purple", v: "lilac", id: "a37p7d", ph: "Foto: caneca de suco de laranja", lines: ["Is there any orange juice in this cup?"] } ] } ] },
+          { tag: "SOME: FOR AFFIRMATIVE SENTENCES", c: "teal", v: "mint", id: "a37p7a", src: "/lessons/aulas/aula-37/a37p7a.webp", alt: "Copo de água em uma cozinha", w: 426, h: 298, ph: "Foto: copo de água na cozinha", lines: ["I usually drink some water when I go to the kitchen."] },
+          { tag: "ANY: FOR NEGATIVES AND QUESTIONS", c: "purple", v: "lilac", id: "a37p7b", src: "/lessons/aulas/aula-37/a37p7b.webp", alt: "Cesta de vime vazia sobre uma mesa", w: 429, h: 298, ph: "Foto: cesta de frutas vazia", lines: ["There aren’t any bananas in this basket."] },
+          { tag: "SOME BANANAS", c: "teal", v: "mint", id: "a37p7c", src: "/lessons/aulas/aula-37/a37p7c.webp", alt: "Bananas em um prato de madeira", w: 425, h: 251, ph: "Foto: bananas no prato", lines: ["There are some bananas on the table."] },
+          { tag: "ANY ORANGE JUICE", c: "purple", v: "lilac", id: "a37p7d", src: "/lessons/aulas/aula-37/a37p7d.webp", alt: "Suco de laranja em uma caneca de vidro", w: 430, h: 251, ph: "Foto: caneca de suco de laranja", lines: ["Is there any orange juice in this cup?"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37" },
         { t: "title", en: "ANY", pt: "NEGATIVE SENTENCES + QUESTIONS" },
         { t: "key", v: "gray", text: "Use any with plural countable nouns and uncountable nouns in negative sentences and questions." },
         { t: "cards", cols: 2, items: [
-          { tag: "NEGATIVE", c: "purple", v: "lilac", id: "a37p8a", ph: "Foto: cesta de frutas", lines: ["There aren’t any bananas in this basket.", "We don’t have any juice for breakfast."] },
-          { tag: "QUESTIONS", c: "navy", v: "gray", id: "a37p8b", ph: "Fotos: caneca de suco e limões", lines: ["Is there any orange juice in this cup?", "Do you have any lemons?"] } ] } ] },
+          { tag: "NEGATIVE", c: "purple", v: "lilac", id: "a37p8a", src: "/lessons/aulas/aula-37/a37p8a.webp", alt: "Cesta de vime com frutas variadas", w: 156, h: 106, ph: "Foto: cesta de frutas", lines: ["There aren’t any bananas in this basket.", "We don’t have any juice for breakfast."] },
+          { tag: "QUESTIONS", c: "navy", v: "gray", id: "a37p8b", src: "/lessons/aulas/aula-37/a37p8b.webp", alt: "Limões amarelos amontoados", w: 454, h: 179, ph: "Fotos: caneca de suco e limões", lines: ["Is there any orange juice in this cup?", "Do you have any lemons?"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37 · MAPA" },
         { t: "title", en: "A/AN · SOME · ANY", pt: "THE COMPLETE MAP" },
         { t: "cards", items: [
-          { tag: "SINGULAR COUNTABLE", c: "teal", v: "mint", id: "a37p9a", ph: "Foto: uma maçã", lines: ["Affirmative: I have an apple.", "Negative: I don’t have an apple.", "Question: Do you have an apple?"] },
-          { tag: "PLURAL COUNTABLE", c: "navy", v: "blue", id: "a37p9b", ph: "Foto: bananas", lines: ["Affirmative: I have some bananas.", "Negative: I don’t have any bananas.", "Question: Do you have any bananas?"] },
-          { tag: "UNCOUNTABLE", c: "purple", v: "lilac", id: "a37p9c", ph: "Foto: copo de água", lines: ["Affirmative: I have some water.", "Negative: I don’t have any water.", "Question: Do you have any water?"] } ] } ] },
+          { tag: "SINGULAR COUNTABLE", c: "teal", v: "mint", id: "a37p9a", src: "/lessons/aulas/aula-37/a37p9a.webp", alt: "Uma maçã vermelha com folha verde", w: 155, h: 183, ph: "Foto: uma maçã", lines: ["Affirmative: I have an apple.", "Negative: I don’t have an apple.", "Question: Do you have an apple?"] },
+          { tag: "PLURAL COUNTABLE", c: "navy", v: "blue", id: "a37p9b", src: "/lessons/aulas/aula-37/a37p9b.webp", alt: "Cacho de bananas amarelas", w: 250, h: 229, ph: "Foto: bananas", lines: ["Affirmative: I have some bananas.", "Negative: I don’t have any bananas.", "Question: Do you have any bananas?"] },
+          { tag: "UNCOUNTABLE", c: "purple", v: "lilac", id: "a37p9c", src: "/lessons/aulas/aula-37/a37p9c.webp", alt: "Copo de água sobre uma mesa de madeira", w: 250, h: 273, ph: "Foto: copo de água", lines: ["Affirmative: I have some water.", "Negative: I don’t have any water.", "Question: Do you have any water?"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 37 · PRATIQUE" },
         { t: "title", en: "YOUR TURN", pt: "A / AN / SOME" },
-        { t: "image", id: "a37p10", ph: "Composição numerada: pão, ovo, sal, fatias de pão, uvas, mel, lata de refrigerante, sopa" },
+        { t: "image", id: "a37p10", src: "/lessons/aulas/aula-37/a37p10.webp", alt: "Painel numerado com pão, ovo, sal, fatias de pão, uvas, mel, lata de refrigerante e sopa", w: 924, h: 420, ph: "Composição numerada: pão, ovo, sal, fatias de pão, uvas, mel, lata de refrigerante, sopa" },
         { t: "fill", id: "a37e1", title: "COMPLETE COM A, AN OU SOME", v: "cream", items: [
           { pre: "1. I’d like", answers: ["some"], post: "bread.", v: "white" },
           { pre: "2. I’d like", answers: ["an"], post: "egg.", v: "white" },
@@ -7219,9 +7243,9 @@ export const LESSONS = [
         { t: "badge", label: "AULA 37 · PRATIQUE" },
         { t: "title", en: "SHOP & ORDER", pt: "USE A/AN, SOME & ANY" },
         { t: "cards", cols: 2, items: [
-          { tag: "STORE", c: "teal", v: "mint", id: "a37p12a", ph: "Foto: carrinho de compras com frutas, pão e água",
+          { tag: "STORE", c: "teal", v: "mint", id: "a37p12a", src: "/lessons/aulas/aula-37/a37p12a.webp", alt: "Carrinho de compras com frutas, pão e água", w: 385, h: 220, ph: "Foto: carrinho de compras com frutas, pão e água",
             lines: ["A: Do you have any grapes?", "B: Yes, we have some grapes.", "A: I’d like a bag of rice, please."] },
-          { tag: "RESTAURANT", c: "purple", v: "lilac", id: "a37p12b", ph: "Foto: casal conversando no restaurante",
+          { tag: "RESTAURANT", c: "purple", v: "lilac", id: "a37p12b", src: "/lessons/aulas/aula-37/a37p12b.webp", alt: "Casal sorridente conversando em um restaurante", w: 394, h: 219, ph: "Foto: casal conversando no restaurante",
             lines: ["A: Would you like some soup?", "B: Yes, please.", "B: Can I have some water, please?"] } ] },
         { t: "note", v: "navy", center: true, bold: true, text: "Choose items and create your own shopping or restaurant conversation." },
         { t: "chips", items: [
@@ -7258,7 +7282,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 38" },
         { t: "title", en: "A LOT OF / MANY / MUCH", pt: "QUANTITIES · HOW MANY · HOW MUCH" },
-        { t: "image", id: "a38p1", ph: "Foto: sacola de compras com frutas, pão, água, café e açúcar" },
+        { t: "image", id: "a38p1", src: "/lessons/aulas/aula-38/a38p1.webp", alt: "Sacola de compras com pepino, folhas verdes, uvas, maçãs, água e pão", w: 629, h: 385, ph: "Foto: sacola de compras com frutas, pão, água, café e açúcar" },
         { t: "cards", cols: 2, items: [
           { tag: "COUNTABLE", c: "teal", v: "mint", lines: ["APPLES · BOTTLES · VEGETABLES"] },
           { tag: "UNCOUNTABLE", c: "purple", v: "lilac", lines: ["WATER · COFFEE · SUGAR"] } ] } ] },
@@ -7267,37 +7291,37 @@ export const LESSONS = [
         { t: "badge", label: "AULA 38" },
         { t: "title", en: "A LOT OF / LOTS OF", pt: "COUNTABLE + UNCOUNTABLE" },
         { t: "cards", items: [
-          { tag: "PLURAL COUNTABLE NOUNS", c: "purple", v: "lilac", id: "a38p2a", ph: "Foto: hotéis modernos com piscina ao anoitecer", lines: ["There are a lot of / lots of good hotels near here."] },
-          { tag: "UNCOUNTABLE NOUNS", c: "teal", v: "mint", id: "a38p2b", ph: "Foto: copo de água, peixe grelhado, açúcar e café", lines: ["I drink a lot of water during the day.", "We eat a lot of fish.", "My uncle puts a lot of / lots of sugar in his coffee."] } ] } ] },
+          { tag: "PLURAL COUNTABLE NOUNS", c: "purple", v: "lilac", id: "a38p2a", src: "/lessons/aulas/aula-38/a38p2a.webp", alt: "Prédios de hotel iluminados ao entardecer, com piscina e espreguiçadeiras", w: 586, h: 517, ph: "Foto: hotéis modernos com piscina ao anoitecer", lines: ["There are a lot of / lots of good hotels near here."] },
+          { tag: "UNCOUNTABLE NOUNS", c: "teal", v: "mint", id: "a38p2b", src: "/lessons/aulas/aula-38/a38p2b.webp", alt: "Peixe grelhado com limão, copo de água, açúcar e café sobre a mesa", w: 582, h: 518, ph: "Foto: copo de água, peixe grelhado, açúcar e café", lines: ["I drink a lot of water during the day.", "We eat a lot of fish.", "My uncle puts a lot of / lots of sugar in his coffee."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 38" },
         { t: "title", en: "MANY OR MUCH?", pt: "COUNTABLE × UNCOUNTABLE" },
         { t: "cards", items: [
-          { tag: "MANY / NOT MANY: PLURAL COUNTABLE", c: "purple", v: "lilac", id: "a38p3a", ph: "Foto: hambúrgueres e cesta de legumes", lines: ["I don’t eat many hamburgers.", "Are there many vegetables in the basket?"] },
-          { tag: "MUCH / NOT MUCH: UNCOUNTABLE", c: "teal", v: "mint", id: "a38p3b", ph: "Foto: suco, café e açúcar sobre a mesa", lines: ["I don’t drink much coffee in the morning.", "Is there much sugar in this orange juice?"] } ] } ] },
+          { tag: "MANY / NOT MANY: PLURAL COUNTABLE", c: "purple", v: "lilac", id: "a38p3a", src: "/lessons/aulas/aula-38/a38p3a.webp", alt: "Hambúrgueres artesanais ao lado de uma cesta com legumes frescos", w: 572, h: 572, ph: "Foto: hambúrgueres e cesta de legumes", lines: ["I don’t eat many hamburgers.", "Are there many vegetables in the basket?"] },
+          { tag: "MUCH / NOT MUCH: UNCOUNTABLE", c: "teal", v: "mint", id: "a38p3b", src: "/lessons/aulas/aula-38/a38p3b.webp", alt: "Suco de laranja, pote de açúcar e xícara de café sobre a mesa", w: 503, h: 503, ph: "Foto: suco, café e açúcar sobre a mesa", lines: ["I don’t drink much coffee in the morning.", "Is there much sugar in this orange juice?"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 38" },
         { t: "title", en: "HOW MANY OR HOW MUCH?", pt: "Perguntando quantidade." },
         { t: "cards", items: [
-          { tag: "HOW MANY + PLURAL COUNTABLE", c: "purple", v: "lilac", id: "a38p4a", ph: "Foto: cesta de morangos e família no sofá", lines: ["How many strawberries are there in this basket?", "How many children do you have?"] },
-          { tag: "HOW MUCH + UNCOUNTABLE", c: "teal", v: "mint", id: "a38p4b", ph: "Foto: colher de açúcar sobre a xícara de café", lines: ["How much sugar do you put in your coffee?"] },
-          { tag: "PRICE", c: "navy", v: "gray", id: "a38p4c", ph: "Foto: livro fechado sobre a mesa", lines: ["How much is this book?", "It’s $20.00."] } ] } ] },
+          { tag: "HOW MANY + PLURAL COUNTABLE", c: "purple", v: "lilac", id: "a38p4a", src: "/lessons/aulas/aula-38/a38p4a.webp", alt: "Cesta de morangos ao lado de mãe e filhos sorrindo no sofá", w: 466, h: 590, ph: "Foto: cesta de morangos e família no sofá", lines: ["How many strawberries are there in this basket?", "How many children do you have?"] },
+          { tag: "HOW MUCH + UNCOUNTABLE", c: "teal", v: "mint", id: "a38p4b", src: "/lessons/aulas/aula-38/a38p4b.webp", alt: "Colher despejando açúcar em xícara de café, com pote de açúcar ao lado", w: 496, h: 270, ph: "Foto: colher de açúcar sobre a xícara de café", lines: ["How much sugar do you put in your coffee?"] },
+          { tag: "PRICE", c: "navy", v: "gray", id: "a38p4c", src: "/lessons/aulas/aula-38/a38p4c.webp", alt: "Livro de capa dura fechado sobre uma mesa de mármore", w: 530, h: 270, ph: "Foto: livro fechado sobre a mesa", lines: ["How much is this book?", "It’s $20.00."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 38 · MAPA" },
         { t: "title", en: "THE QUANTITY MAP", pt: "AFFIRMATIVE · NEGATIVE · QUESTIONS" },
         { t: "cards", cols: 2, items: [
-          { tag: "COUNTABLE", c: "teal", v: "mint", id: "a38p5a", ph: "Foto: cesta com frutas, pão e água",
+          { tag: "COUNTABLE", c: "teal", v: "mint", id: "a38p5a", src: "/lessons/aulas/aula-38/a38p5a.webp", alt: "Cesta com alface, pepino, uvas, maçãs, pão e garrafa de água", w: 401, h: 327, ph: "Foto: cesta com frutas, pão e água",
             lines: ["AFFIRMATIVE · a lot of", "NEGATIVE · a lot of / not many", "QUESTIONS · a lot of / many"] },
-          { tag: "UNCOUNTABLE", c: "purple", v: "lilac", id: "a38p5b", ph: "Foto: água, café e açúcar",
+          { tag: "UNCOUNTABLE", c: "purple", v: "lilac", id: "a38p5b", src: "/lessons/aulas/aula-38/a38p5b.webp", alt: "Copo de água, xícara de café e pote de açúcar mascavo", w: 438, h: 330, ph: "Foto: água, café e açúcar",
             lines: ["AFFIRMATIVE · a lot of", "NEGATIVE · a lot of / not much", "QUESTIONS · a lot of / much"] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 38" },
         { t: "title", en: "QUANTITIES IN REAL LIFE", pt: "Mia e Leo na cozinha." },
-        { t: "image", id: "a38p6", ph: "Foto: casal na cozinha com compras sobre a bancada" },
+        { t: "image", id: "a38p6", src: "/lessons/aulas/aula-38/a38p6.webp", alt: "Casal sorridente na cozinha com compras sobre a bancada", w: 599, h: 1031, ph: "Foto: casal na cozinha com compras sobre a bancada" },
         { t: "dialogue", items: [
           { s: "a", text: "Mia: We need a lot of food for dinner." },
           { s: "b", text: "Leo: How many tomatoes do we need?" },
@@ -7309,7 +7333,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 38 · PRATIQUE" },
         { t: "title", en: "YOUR TURN", pt: "CHOOSE THE BEST EXPRESSION" },
-        { t: "image", id: "a38p7", ph: "Foto: flores, açúcar, café, farinha, tomates e carne sobre a mesa" },
+        { t: "image", id: "a38p7", src: "/lessons/aulas/aula-38/a38p7.webp", alt: "Vaso de flores, pote de sal, café, farinha e carne sobre a mesa", w: 300, h: 1050, ph: "Foto: flores, açúcar, café, farinha, tomates e carne sobre a mesa" },
         { t: "fill", id: "a38e1", title: "COMPLETE COM A LOT OF, MANY, MUCH, HOW MANY OU HOW MUCH", v: "cream", items: [
           { pre: "1. There are", answers: ["a lot of", "lots of", "many"], post: "flowers in the garden.", v: "white" },
           { pre: "2. Please, don’t put", answers: ["a lot of", "much", "lots of"], post: "salt in my food.", v: "white" },
@@ -7372,7 +7396,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 38 · PRATIQUE" },
         { t: "title", en: "ASK YOUR PARTNER", pt: "REAL QUANTITIES" },
-        { t: "image", id: "a38p12", ph: "Foto: casal na cozinha conversando com as compras" },
+        { t: "image", id: "a38p12", src: "/lessons/aulas/aula-38/a38p12.webp", alt: "Casal sorridente conversando na cozinha com as compras", w: 460, h: 695, ph: "Foto: casal na cozinha conversando com as compras" },
         { t: "rows", items: [
           { text: "How much water do you drink during the day?", c: "teal" },
           { text: "How many cups of coffee do you drink every day?", c: "purple" },
@@ -7426,9 +7450,9 @@ export const LESSONS = [
           { tag: "I · HE · SHE · IT → WAS", c: "teal", v: "mint", lines: ["WAS"] },
           { tag: "YOU · WE · THEY → WERE", c: "purple", v: "lilac", lines: ["WERE"] } ] },
         { t: "cards", cols: 2, items: [
-          { tag: "WAS", c: "teal", v: "mint", id: "a39p2a", ph: "Foto: templo japonês com o Monte Fuji", lines: ["I was in Japan two years ago."] },
-          { tag: "WAS", c: "teal", v: "mint", id: "a39p2b", ph: "Foto: mulher resfriada no sofá", lines: ["Rafaela was sick yesterday."] },
-          { tag: "WERE", c: "purple", v: "lilac", id: "a39p2c", ph: "Foto: Coliseu em Roma", lines: ["They were in Italy last week."] } ] } ] },
+          { tag: "WAS", c: "teal", v: "mint", id: "a39p2a", src: "/lessons/aulas/aula-39/a39p2a.webp", alt: "Templo japonês tradicional com o Monte Fuji nevado ao fundo", w: 292, h: 182, ph: "Foto: templo japonês com o Monte Fuji", lines: ["I was in Japan two years ago."] },
+          { tag: "WAS", c: "teal", v: "mint", id: "a39p2b", src: "/lessons/aulas/aula-39/a39p2b.webp", alt: "Mulher enrolada em cobertor no sofá, espirrando em um lenço de papel", w: 285, h: 190, ph: "Foto: mulher resfriada no sofá", lines: ["Rafaela was sick yesterday."] },
+          { tag: "WERE", c: "purple", v: "lilac", id: "a39p2c", src: "/lessons/aulas/aula-39/a39p2c.webp", alt: "Coliseu de Roma sob céu azul", w: 299, h: 189, ph: "Foto: Coliseu em Roma", lines: ["They were in Italy last week."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 39" },
@@ -7437,7 +7461,7 @@ export const LESSONS = [
           { tag: "YESTERDAY", c: "teal", v: "mint", lines: ["yesterday"] },
           { tag: "LAST", c: "purple", v: "lilac", lines: ["last night", "last Sunday", "last week", "last month", "last year"] },
           { tag: "AGO", c: "yellow", v: "cream", lines: ["two days ago", "three months ago", "four years ago"] } ] },
-        { t: "image", id: "a39p3", ph: "Foto: ampulheta sobre a mesa" } ] },
+        { t: "image", id: "a39p3", src: "/lessons/aulas/aula-39/a39p3.webp", alt: "Ampulheta de madeira sobre uma mesa, com um vaso de planta ao fundo", w: 386, h: 337, ph: "Foto: ampulheta sobre a mesa" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 39" },
@@ -7446,9 +7470,9 @@ export const LESSONS = [
           { tag: "WAS NOT = WASN’T", c: "teal", v: "mint", lines: ["I · he · she · it → wasn’t"] },
           { tag: "WERE NOT = WEREN’T", c: "purple", v: "lilac", lines: ["you · we · they → weren’t"] } ] },
         { t: "cards", cols: 2, items: [
-          { tag: "WEREN’T", c: "purple", v: "lilac", id: "a39p4a", ph: "Foto: Muralha da China", lines: ["They weren’t in China last month."] },
-          { tag: "WASN’T", c: "teal", v: "mint", id: "a39p4b", ph: "Foto: homem cansado no escritório", lines: ["I wasn’t at work yesterday."] },
-          { tag: "WASN’T", c: "purple", v: "lilac", id: "a39p4c", ph: "Foto: filhote de golden retriever", lines: ["My dog wasn’t ugly when it was a puppy. It was cute."] } ] } ] },
+          { tag: "WEREN’T", c: "purple", v: "lilac", id: "a39p4a", src: "/lessons/aulas/aula-39/a39p4a.webp", alt: "Muralha da China serpenteando por montanhas verdes", w: 300, h: 202, ph: "Foto: Muralha da China", lines: ["They weren’t in China last month."] },
+          { tag: "WASN’T", c: "teal", v: "mint", id: "a39p4b", src: "/lessons/aulas/aula-39/a39p4b.webp", alt: "Homem sentado à mesa de escritório com a mão no rosto, parecendo cansado", w: 290, h: 225, ph: "Foto: homem cansado no escritório", lines: ["I wasn’t at work yesterday."] },
+          { tag: "WASN’T", c: "purple", v: "lilac", id: "a39p4c", src: "/lessons/aulas/aula-39/a39p4c.webp", alt: "Filhote de golden retriever sentado e sorrindo no chão", w: 290, h: 225, ph: "Foto: filhote de golden retriever", lines: ["My dog wasn’t ugly when it was a puppy. It was cute."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 39" },
@@ -7457,15 +7481,15 @@ export const LESSONS = [
           { tag: "WAS + I / HE / SHE / IT …?", c: "teal", v: "mint" },
           { tag: "WERE + YOU / WE / THEY …?", c: "purple", v: "lilac" } ] },
         { t: "cards", items: [
-          { tag: "1 · WERE KATE AND HER DAUGHTER AT HOME LAST NIGHT?", c: "teal", v: "mint", id: "a39p5a", ph: "Foto: mãe e filha lendo no sofá", lines: ["Yes, they were.", "No, they weren’t."] },
-          { tag: "2 · WERE THEY AT THE MOVIES LAST SATURDAY EVENING?", c: "purple", v: "lilac", id: "a39p5b", ph: "Foto: plateia no cinema", lines: ["Yes, they were.", "No, they weren’t."] },
-          { tag: "3 · WAS THE CLOWN FUNNY?", c: "teal", v: "mint", id: "a39p5c", ph: "Foto: palhaço no parque", lines: ["Yes, he was.", "No, he wasn’t."] } ] } ] },
+          { tag: "1 · WERE KATE AND HER DAUGHTER AT HOME LAST NIGHT?", c: "teal", v: "mint", id: "a39p5a", src: "/lessons/aulas/aula-39/a39p5a.webp", alt: "Mãe e filha sentadas no sofá lendo um livro juntas", w: 300, h: 224, ph: "Foto: mãe e filha lendo no sofá", lines: ["Yes, they were.", "No, they weren’t."] },
+          { tag: "2 · WERE THEY AT THE MOVIES LAST SATURDAY EVENING?", c: "purple", v: "lilac", id: "a39p5b", src: "/lessons/aulas/aula-39/a39p5b.webp", alt: "Plateia sentada em uma sala de cinema escura assistindo à tela", w: 308, h: 232, ph: "Foto: plateia no cinema", lines: ["Yes, they were.", "No, they weren’t."] },
+          { tag: "3 · WAS THE CLOWN FUNNY?", c: "teal", v: "mint", id: "a39p5c", src: "/lessons/aulas/aula-39/a39p5c.webp", alt: "Palhaço sorridente com maquiagem colorida em uma festa à noite", w: 302, h: 225, ph: "Foto: palhaço no parque", lines: ["Yes, he was.", "No, he wasn’t."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 39" },
         { t: "title", en: "WHERE? / WHEN?", pt: "PAST QUESTIONS" },
         { t: "cards", items: [
-          { tag: "WHERE WERE YOU LAST NIGHT?", c: "teal", v: "mint", id: "a39p6", ph: "Foto: festa de casamento ao ar livre com luzes", lines: ["I was at a wedding party."] },
+          { tag: "WHERE WERE YOU LAST NIGHT?", c: "teal", v: "mint", id: "a39p6", src: "/lessons/aulas/aula-39/a39p6.webp", alt: "Homem de terno em festa de casamento ao ar livre à noite, com luzes penduradas", w: 329, h: 360, ph: "Foto: festa de casamento ao ar livre com luzes", lines: ["I was at a wedding party."] },
           { tag: "WHEN WERE YOU BORN?", c: "purple", v: "lilac", lines: ["I was born in 2000."] } ] },
         { t: "note", v: "mint", bar: true, kicker: "BORN", text: "Em I was born…, born faz parte de uma expressão muito comum. A forma passada do verb to be continua sendo was/were." } ] },
 
@@ -7475,12 +7499,12 @@ export const LESSONS = [
         { t: "cards", cols: 2, items: [
           { tag: "I · HE · SHE · IT → WAS", c: "teal", v: "mint", lines: ["AFFIRMATIVE · was", "NEGATIVE · wasn’t", "QUESTIONS · Was…?"] },
           { tag: "YOU · WE · THEY → WERE", c: "purple", v: "lilac", lines: ["AFFIRMATIVE · were", "NEGATIVE · weren’t", "QUESTIONS · Were…?"] } ] },
-        { t: "image", id: "a39p7", ph: "Foto: festa de casamento (imagem de apoio do mapa)" } ] },
+        { t: "image", id: "a39p7", src: "/lessons/aulas/aula-39/a39p7.webp", alt: "Convidados em festa de casamento à noite, com luzes penduradas e seta decorativa do mapa", w: 824, h: 328, ph: "Foto: festa de casamento (imagem de apoio do mapa)" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 39 · PRATIQUE" },
         { t: "title", en: "LISTEN AND COMPLETE", pt: "BIRTHDAY CONVERSATION" },
-        { t: "image", id: "a39p8", ph: "Foto: casal com bolo de aniversário e presente" },
+        { t: "image", id: "a39p8", src: "/lessons/aulas/aula-39/a39p8.webp", alt: "Casal sorridente sentado à mesa com bolo de aniversário decorado com velas", w: 333, h: 574, ph: "Foto: casal com bolo de aniversário e presente" },
         { t: "fill", id: "a39e1", title: "COMPLETE O DIÁLOGO (H = HANNAH · T = TYLER)", v: "cream", items: [
           { pre: "T: Hey Hannah. It was your birthday", answers: ["yesterday"], post: ", right?", v: "white" },
           { pre: "T:", answers: ["happy birthday"], post: ".", v: "white" },
@@ -7494,7 +7518,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 39 · GABARITO" },
         { t: "title", en: "CHECK THE DIALOGUE", pt: "H = Hannah · T = Tyler" },
-        { t: "image", id: "a39p9", ph: "Foto: casal com bolo de aniversário" },
+        { t: "image", id: "a39p9", src: "/lessons/aulas/aula-39/a39p9.webp", alt: "Casal sorridente ao lado de um bolo de aniversário com velas acesas", w: 397, h: 535, ph: "Foto: casal com bolo de aniversário" },
         { t: "dialogue", items: [
           { s: "a", text: "T: Hey Hannah. It was your birthday yesterday, right?" },
           { s: "b", text: "H: Yes, it was." },
@@ -7512,7 +7536,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 39 · PRATIQUE" },
         { t: "title", en: "YOUR TURN", pt: "COMPLETE WITH WAS / WERE / WASN’T / WEREN’T" },
-        { t: "image", id: "a39p10", ph: "Foto: rapaz estudando e escrevendo no caderno" },
+        { t: "image", id: "a39p10", src: "/lessons/aulas/aula-39/a39p10.webp", alt: "Rapaz sentado à mesa escrevendo em um caderno", w: 311, h: 217, ph: "Foto: rapaz estudando e escrevendo no caderno" },
         { t: "fill", id: "a39e2", title: "COMPLETE AS FRASES", v: "cream", items: [
           { pre: "1. The test", answers: ["wasn't", "wasnt", "was not"], post: "difficult. It was easy.", v: "white" },
           { pre: "2. How many people", answers: ["were"], post: "at the party yesterday?", v: "white" },
@@ -7537,7 +7561,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 39 · PRATIQUE" },
         { t: "title", en: "ASK YOUR PARTNER", pt: "WHERE WERE YOU?" },
-        { t: "image", id: "a39p12", ph: "Foto: casal conversando com bolo de aniversário" },
+        { t: "image", id: "a39p12", src: "/lessons/aulas/aula-39/a39p12.webp", alt: "Casal sorridente conversando à mesa com bolo de aniversário e um presente", w: 390, h: 590, ph: "Foto: casal conversando com bolo de aniversário" },
         { t: "rows", items: [
           { text: "Where were you yesterday morning?", c: "teal" },
           { text: "Where were you yesterday afternoon?", c: "purple" },
@@ -7555,7 +7579,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 39 · FINAL" },
         { t: "title", en: "EU CONSIGO…", pt: "Marque o que você já consegue fazer em inglês." },
-        { t: "image", id: "a39p13", ph: "Foto: casal com bolo de aniversário" },
+        { t: "image", id: "a39p13", src: "/lessons/aulas/aula-39/a39p13.webp", alt: "Casal se olhando sorridente ao lado de um bolo de aniversário iluminado por velas", w: 330, h: 439, ph: "Foto: casal com bolo de aniversário" },
         { t: "check", id: "a39c1", title: "AO FINAL DESTA AULA, EU CONSIGO:", items: [
           "usar was e were para falar sobre o passado",
           "usar wasn’t e weren’t em frases negativas",
@@ -7574,7 +7598,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 40" },
         { t: "title", en: "SIMPLE PAST: REGULAR VERBS", pt: "AFFIRMATIVE" },
-        { t: "image", id: "a40p1", ph: "Foto: mulher olhando o relógio a caminho do trabalho" },
+        { t: "image", id: "a40p1", src: "/lessons/aulas/aula-40/a40p1.webp", alt: "Mulher de blazer bege olhando o relógio de pulso apressada", w: 494, h: 617, ph: "Foto: mulher olhando o relógio a caminho do trabalho" },
         { t: "cards", items: [
           { tag: "QUANDO USAR", c: "teal", v: "mint", lines: ["We use the Simple Past to talk about actions that started and finished in the past."] },
           { tag: "EXEMPLO", c: "purple", v: "lilac", lines: ["She arrived ten minutes late for work."] } ] },
@@ -7590,7 +7614,7 @@ export const LESSONS = [
           { tag: "LAST", c: "purple", v: "lilac", lines: ["last night", "last Sunday", "last week", "last month", "last Christmas", "last year"] },
           { tag: "AGO", c: "teal", v: "mint", lines: ["ten minutes ago", "an hour ago", "two days ago", "a week ago", "a month ago", "a year ago"] },
           { tag: "IN", c: "purple", v: "lilac", lines: ["in May", "in 2015", "in 1978"] } ] },
-        { t: "image", id: "a40p2", ph: "Foto: pôr do sol no lago com deque de madeira" } ] },
+        { t: "image", id: "a40p2", src: "/lessons/aulas/aula-40/a40p2.webp", alt: "Pôr do sol sobre o lago visto de um deque de madeira", w: 339, h: 722, ph: "Foto: pôr do sol no lago com deque de madeira" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 40" },
@@ -7600,7 +7624,7 @@ export const LESSONS = [
           { text: "I worked", c: "teal" }, { text: "You worked", c: "purple" },
           { text: "He / She / It worked", c: "teal" }, { text: "We worked", c: "purple" },
           { text: "They worked", c: "teal" } ] },
-        { t: "image", id: "a40p3", ph: "Foto: mulher caminhando na orla da cidade" },
+        { t: "image", id: "a40p3", src: "/lessons/aulas/aula-40/a40p3.webp", alt: "Mulher de moletom verde caminhando na orla da cidade ao entardecer", w: 373, h: 792, ph: "Foto: mulher caminhando na orla da cidade" },
         { t: "cards", items: [
           { tag: "EXEMPLOS", c: "teal", v: "mint", lines: ["Patricia showed a beautiful photo to her family.", "She walked 5 km this morning."] } ] } ] },
 
@@ -7610,7 +7634,7 @@ export const LESSONS = [
         { t: "table", head: ["BASE FORM", "SIMPLE PAST"], rows: [
           { a: "decide", b: "decided", v: "mint" }, { a: "die", b: "died", v: "lilac" },
           { a: "receive", b: "received", v: "mint" }, { a: "like", b: "liked", v: "lilac" } ] },
-        { t: "image", id: "a40p4", ph: "Foto: mulher recebendo um buquê de flores" },
+        { t: "image", id: "a40p4", src: "/lessons/aulas/aula-40/a40p4.webp", alt: "Mulher sorridente sentada recebendo um buquê de flores", w: 432, h: 660, ph: "Foto: mulher recebendo um buquê de flores" },
         { t: "cards", items: [
           { tag: "EXEMPLOS", c: "teal", v: "mint", lines: ["She received some flowers from her daughter.", "I lived in Brazil when I was a child.", "Ana’s grandma died two years ago."] } ] } ] },
 
@@ -7620,7 +7644,7 @@ export const LESSONS = [
         { t: "table", head: ["BASE FORM", "SIMPLE PAST"], rows: [
           { a: "study", b: "studied", v: "mint" }, { a: "try", b: "tried", v: "lilac" },
           { a: "cry", b: "cried", v: "mint" }, { a: "play", b: "played", note: "(vogal + y)", v: "lilac" } ] },
-        { t: "image", id: "a40p5", ph: "Foto: mulher chorando ao assistir a um filme triste" },
+        { t: "image", id: "a40p5", src: "/lessons/aulas/aula-40/a40p5.webp", alt: "Mulher enrolada em cobertor chorando ao assistir a um filme à noite", w: 440, h: 687, ph: "Foto: mulher chorando ao assistir a um filme triste" },
         { t: "cards", items: [
           { tag: "EXEMPLOS", c: "teal", v: "mint", lines: ["He cried because he watched a sad movie.", "She studied a lot this morning."] } ] } ] },
 
@@ -7632,14 +7656,14 @@ export const LESSONS = [
           { a: "stop", b: "stopped", v: "mint" }, { a: "plan", b: "planned", v: "mint" },
           { a: "prefer", b: "preferred", v: "mint" }, { a: "admit", b: "admitted", v: "mint" },
           { a: "listen", b: "listened", note: "(sílaba final não tônica)", v: "lilac" } ] },
-        { t: "image", id: "a40p6", ph: "Foto: mulher correndo na esteira da academia" },
+        { t: "image", id: "a40p6", src: "/lessons/aulas/aula-40/a40p6.webp", alt: "Mulher correndo na esteira da academia usando fone de ouvido", w: 374, h: 290, ph: "Foto: mulher correndo na esteira da academia" },
         { t: "cards", items: [
           { tag: "EXEMPLOS", c: "teal", v: "mint", lines: ["The bus stopped at the bus stop.", "He admitted that he was wrong.", "When Mary was a student, she preferred math to history.", "I listened to music this morning."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 40" },
         { t: "title", en: "THE -ED SOUNDS", pt: "/d/ · /t/ · /ɪd/" },
-        { t: "image", id: "a40p7", ph: "Foto: mulher ouvindo música com fones" },
+        { t: "image", id: "a40p7", src: "/lessons/aulas/aula-40/a40p7.webp", alt: "Mulher de perfil ouvindo música com fones de ouvido, braços cruzados", w: 529, h: 510, ph: "Foto: mulher ouvindo música com fones" },
         { t: "cards", items: [
           { tag: "/d/: AFTER A VOICED SOUND, EXCEPT /d/", c: "teal", v: "mint", lines: ["arrived", "listened", "loved", "planned"] },
           { tag: "/t/: AFTER A VOICELESS SOUND, EXCEPT /t/", c: "purple", v: "lilac", lines: ["liked", "stopped", "watched", "washed"] },
@@ -7650,14 +7674,14 @@ export const LESSONS = [
         { t: "title", en: "YESTERDAY", pt: "REGULAR VERBS IN CONTEXT" },
         { t: "key", v: "cream", text: "Yesterday was a busy day." },
         { t: "cards", items: [
-          { tag: "MORNING", c: "teal", v: "mint", id: "a40p8a", ph: "Foto: mulher trabalhando no notebook", lines: ["I worked in the morning."] },
-          { tag: "AFTERNOON", c: "purple", v: "lilac", id: "a40p8b", ph: "Foto: rapaz estudando com caderno", lines: ["In the afternoon, I studied English and listened to music."] },
-          { tag: "EVENING", c: "teal", v: "mint", id: "a40p8c", ph: "Foto: família assistindo a um filme no cinema", lines: ["In the evening, I watched a movie with my family. I liked the movie."] } ] } ] },
+          { tag: "MORNING", c: "teal", v: "mint", id: "a40p8a", src: "/lessons/aulas/aula-40/a40p8a.webp", alt: "Mulher pensativa com caneta na boca sentada à mesa com notebook", w: 389, h: 257, ph: "Foto: mulher trabalhando no notebook", lines: ["I worked in the morning."] },
+          { tag: "AFTERNOON", c: "purple", v: "lilac", id: "a40p8b", src: "/lessons/aulas/aula-40/a40p8b.webp", alt: "Rapaz escrevendo em caderno à mesa com notebook ao lado", w: 386, h: 253, ph: "Foto: rapaz estudando com caderno", lines: ["In the afternoon, I studied English and listened to music."] },
+          { tag: "EVENING", c: "teal", v: "mint", id: "a40p8c", src: "/lessons/aulas/aula-40/a40p8c.webp", alt: "Grupo de amigas sorridentes assistindo a um filme no cinema", w: 382, h: 255, ph: "Foto: família assistindo a um filme no cinema", lines: ["In the evening, I watched a movie with my family. I liked the movie."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 40 · PRATIQUE" },
         { t: "title", en: "YOUR TURN (1)", pt: "PUT THE VERBS IN PARENTHESES INTO THE SIMPLE PAST" },
-        { t: "image", id: "a40p9", ph: "Foto: mulher escrevendo no caderno junto à janela" },
+        { t: "image", id: "a40p9", src: "/lessons/aulas/aula-40/a40p9.webp", alt: "Mulher escrevendo em caderno à mesa perto da janela com café", w: 624, h: 324, ph: "Foto: mulher escrevendo no caderno junto à janela" },
         { t: "fill", id: "a40e1", title: "COMPLETE COM O SIMPLE PAST", v: "cream", items: [
           { pre: "1. I", answers: ["visited"], post: "a farm two weeks ago. (visit)", v: "white" },
           { pre: "2. My parents", answers: ["liked"], post: "the movie. (like)", v: "white" },
@@ -7671,7 +7695,7 @@ export const LESSONS = [
           { pre: "5. My sister", answers: ["moved"], post: "to a new house. (move)", v: "white" },
           { pre: "6. Nancy", answers: ["watched"], post: "TV last night. (watch)", v: "white" },
           { pre: "7. The boys", answers: ["studied"], post: "until eight o’clock. (study)", v: "white" } ] },
-        { t: "image", id: "a40p10", ph: "Foto: mulher escrevendo no caderno" } ] },
+        { t: "image", id: "a40p10", src: "/lessons/aulas/aula-40/a40p10.webp", alt: "Mulher sorridente escrevendo em caderno perto da janela", w: 502, h: 339, ph: "Foto: mulher escrevendo no caderno" } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 40 · GABARITO" },
@@ -7688,7 +7712,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 40 · PRATIQUE" },
         { t: "title", en: "MY YESTERDAY", pt: "REGULAR PAST IN REAL LIFE" },
-        { t: "image", id: "a40p12", ph: "Foto: duas pessoas conversando à mesa com cadernos" },
+        { t: "image", id: "a40p12", src: "/lessons/aulas/aula-40/a40p12.webp", alt: "Casal sorridente conversando à mesa com cadernos e xícara de café", w: 418, h: 570, ph: "Foto: duas pessoas conversando à mesa com cadernos" },
         { t: "chips", title: "VERBOS PARA USAR", items: [
           { t: "worked", c: "teal" }, { t: "studied", c: "purple" }, { t: "listened", c: "teal" },
           { t: "watched", c: "purple" }, { t: "walked", c: "teal" }, { t: "visited", c: "purple" }, { t: "helped", c: "teal" } ] },
@@ -7724,7 +7748,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 41" },
         { t: "title", en: "SIMPLE PAST: IRREGULAR VERBS", pt: "AFFIRMATIVE" },
-        { t: "image", id: "a41p1", ph: "Foto de abertura: pessoas conversando sobre o fim de semana" },
+        { t: "image", id: "a41p1", src: "/lessons/aulas/aula-41/a41p1.webp", alt: "Mulher sorridente tomando café da manhã na cama com bandeja de frutas", w: 731, h: 803, ph: "Foto de abertura: pessoas conversando sobre o fim de semana" },
         { t: "cards", items: [
           { tag: "REGULAR × IRREGULAR", c: "teal", v: "mint", lines: ["Verbos regulares: base form + -ed.", "Verbos irregulares: forma própria no passado."] },
           { tag: "EXEMPLO", c: "purple", v: "lilac", lines: ["go → went", "have → had", "see → saw"] } ] } ] },
@@ -7738,7 +7762,7 @@ export const LESSONS = [
           { a: "drink", b: "drank", v: "mint" }, { a: "find", b: "found", v: "lilac" },
           { a: "get", b: "got", v: "mint" } ] },
         { t: "cards", items: [
-          { tag: "EXEMPLOS", c: "teal", v: "mint", id: "a41p2", ph: "Fotos: mãe com filho, senhor correndo, casal limpando a casa, crianças com suco, casal de noivos",
+          { tag: "EXEMPLOS", c: "teal", v: "mint", id: "a41p2", src: "/lessons/aulas/aula-41/a41p2.webp", alt: "Mãe com filho, senhor correndo, casal limpando a casa, crianças tomando suco e noivos abraçados", w: 234, h: 989, ph: "Fotos: mãe com filho, senhor correndo, casal limpando a casa, crianças com suco, casal de noivos",
             lines: ["Suzy became a mother four years ago.", "My uncle could run really fast when he was young.", "It cost only $40.00.", "My wife and I did housework yesterday.", "They drank orange juice for breakfast.", "I found my keys under the boxes.", "They got married two years ago."] } ] },
         { t: "key", v: "lilac", text: "CAN → COULD = PAST ABILITY" } ] },
 
@@ -7751,27 +7775,27 @@ export const LESSONS = [
           { a: "make", b: "made", v: "mint" }, { a: "meet", b: "met", v: "lilac" },
           { a: "see", b: "saw", v: "mint" } ] },
         { t: "cards", items: [
-          { tag: "EXEMPLOS", c: "purple", v: "lilac", id: "a41p3", ph: "Fotos: casal no shopping e plateia no cinema",
+          { tag: "EXEMPLOS", c: "purple", v: "lilac", id: "a41p3", src: "/lessons/aulas/aula-41/a41p3.webp", alt: "Casal sorridente conversando dentro de um shopping", w: 339, h: 230, ph: "Fotos: casal no shopping e plateia no cinema",
             lines: ["They went to the shopping mall together.", "I had a lot of friends when I was a child.", "Their mom heard when they talked to each other.", "She knew very well what she wanted.", "They made lunch together.", "Lisa met her best friend a long time ago.", "They saw a great movie last night."] } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 41" },
         { t: "title", en: "THREE MORE IRREGULAR VERBS", pt: "TAKE · COME · READ" },
         { t: "cards", items: [
-          { tag: "TAKE → TOOK", c: "teal", v: "mint", id: "a41p4a", ph: "Foto: homem tomando banho de chuveiro", lines: ["My son took a shower a few minutes ago."] },
-          { tag: "COME → CAME", c: "purple", v: "lilac", id: "a41p4b", ph: "Foto: amigos chegando na porta de casa", lines: ["They came to my house last Friday."] },
-          { tag: "READ → READ", c: "yellow", v: "cream", id: "a41p4c", ph: "Foto: mulher lendo no sofá", lines: ["She read those books last year."], note: "Past pronunciation: /red/" } ] } ] },
+          { tag: "TAKE → TOOK", c: "teal", v: "mint", id: "a41p4a", src: "/lessons/aulas/aula-41/a41p4a.webp", alt: "Homem tomando banho de chuveiro com os olhos fechados", w: 308, h: 260, ph: "Foto: homem tomando banho de chuveiro", lines: ["My son took a shower a few minutes ago."] },
+          { tag: "COME → CAME", c: "purple", v: "lilac", id: "a41p4b", src: "/lessons/aulas/aula-41/a41p4b.webp", alt: "Amigos cumprimentando uma mulher na porta de casa", w: 349, h: 260, ph: "Foto: amigos chegando na porta de casa", lines: ["They came to my house last Friday."] },
+          { tag: "READ → READ", c: "yellow", v: "cream", id: "a41p4c", src: "/lessons/aulas/aula-41/a41p4c.webp", alt: "Mulher lendo um livro no sofá enrolada em um cobertor", w: 368, h: 260, ph: "Foto: mulher lendo no sofá", lines: ["She read those books last year."], note: "Past pronunciation: /red/" } ] } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 41" },
         { t: "title", en: "A BUSY SATURDAY", pt: "IRREGULAR VERBS IN CONTEXT" },
-        { t: "image", id: "a41p5", ph: "Fotos: casal no shopping, plateia no cinema e mão com chaves" },
+        { t: "image", id: "a41p5", src: "/lessons/aulas/aula-41/a41p5.webp", alt: "Plateia de cinema comendo pipoca ao lado de mão segurando uma chave", w: 890, h: 299, ph: "Fotos: casal no shopping, plateia no cinema e mão com chaves" },
         { t: "key", v: "gray", text: "Last Saturday, Mia and Leo went to the mall. They met a friend and had lunch together. Later, they saw a movie. At home, they made dinner and drank orange juice. Mia found her keys under the sofa, and Leo heard a noise outside." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 41 · PRATIQUE" },
         { t: "title", en: "YOUR TURN (1)", pt: "COMPLETE WITH THE SIMPLE PAST" },
-        { t: "image", id: "a41p6", ph: "Foto: mulher segurando as chaves de casa" },
+        { t: "image", id: "a41p6", src: "/lessons/aulas/aula-41/a41p6.webp", alt: "Mulher sorridente segurando um molho de chaves", w: 387, h: 454, ph: "Foto: mulher segurando as chaves de casa" },
         { t: "fill", id: "a41e1", title: "COMPLETE COM O SIMPLE PAST", v: "cream", items: [
           { pre: "1. My son", answers: ["took"], post: "a shower a few minutes ago. (take)", v: "white" },
           { pre: "2. We", answers: ["did"], post: "nothing the whole day. (do)", v: "white" },
@@ -7783,7 +7807,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 41 · PRATIQUE" },
         { t: "title", en: "YOUR TURN (2)", pt: "COMPLETE WITH THE SIMPLE PAST" },
-        { t: "image", id: "a41p7", ph: "Foto: mulher com a mão no ouvido, escutando" },
+        { t: "image", id: "a41p7", src: "/lessons/aulas/aula-41/a41p7.webp", alt: "Mulher com a mão no ouvido, atenta a um som", w: 349, h: 277, ph: "Foto: mulher com a mão no ouvido, escutando" },
         { t: "fill", id: "a41e2", title: "CONTINUE COMPLETANDO", v: "cream", items: [
           { pre: "7. They", answers: ["came"], post: "to my house last Friday. (come)", v: "white" },
           { pre: "8. Julian", answers: ["became"], post: "a doctor last month. (become)", v: "white" },
@@ -7817,7 +7841,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 41 · PRATIQUE" },
         { t: "title", en: "TELL YOUR STORY", pt: "IRREGULAR PAST IN REAL LIFE" },
-        { t: "image", id: "a41p10", ph: "Foto: casal limpando a cozinha juntos" },
+        { t: "image", id: "a41p10", src: "/lessons/aulas/aula-41/a41p10.webp", alt: "Casal sorrindo enquanto limpa a cozinha juntos", w: 441, h: 291, ph: "Foto: casal limpando a cozinha juntos" },
         { t: "chips", title: "VERBOS PARA USAR", items: [
           { t: "went", c: "teal" }, { t: "had", c: "purple" }, { t: "saw", c: "teal" }, { t: "made", c: "purple" },
           { t: "drank", c: "teal" }, { t: "met", c: "purple" }, { t: "found", c: "teal" }, { t: "got", c: "purple" },
@@ -7849,7 +7873,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · UNIT REVIEW 2" },
         { t: "title", en: "UNIT REVIEW 2", pt: "RESTAURANT · ROUTINE · PLACES · QUANTITIES · PAST" },
-        { t: "image", id: "a42p1", ph: "Foto de abertura da revisão (restaurante, rotina e passeio)" },
+        { t: "image", id: "a42p1", src: "/lessons/aulas/aula-42/a42p1.webp", alt: "Colagem de cenas do dia a dia em um restaurante, um quarto de estudos, uma rua e uma feira", w: 1024, h: 891, ph: "Foto de abertura da revisão (restaurante, rotina e passeio)" },
         { t: "cards", cols: 2, items: [
           { tag: "RESTAURANT", c: "teal", v: "mint", lines: ["pedir comida e bebida", "pedir a conta"] },
           { tag: "ROUTINE & FREQUENCY", c: "purple", v: "lilac", lines: ["always · usually · sometimes", "every day · twice a week"] },
@@ -7862,7 +7886,7 @@ export const LESSONS = [
         { t: "title", en: "AT THE RESTAURANT", pt: "BEFORE AND AFTER THE MEAL" },
         { t: "lead", text: "Veja como um cliente faz seu pedido e depois, ao final da refeição, pede a conta e realiza o pagamento." },
         { t: "sec", text: "BEFORE THE MEAL" },
-        { t: "image", id: "a42p2a", ph: "Foto: garçom anotando o pedido da cliente com o menu" },
+        { t: "image", id: "a42p2a", src: "/lessons/aulas/aula-42/a42p2a.webp", alt: "Garçom anotando o pedido de uma cliente que segura o cardápio", w: 612, h: 531, ph: "Foto: garçom anotando o pedido da cliente com o menu" },
         { t: "dialogue", items: [
           { s: "b", text: "W: Good evening. Are you ready to order?" },
           { s: "a", text: "C: Yes, please. I’d like a ham and cheese sandwich, please." },
@@ -7875,7 +7899,7 @@ export const LESSONS = [
           { s: "b", text: "W: Any appetizers?" },
           { s: "a", text: "C: No, thanks. I’m fine." } ] },
         { t: "sec", text: "AFTER THE MEAL", c: "purple" },
-        { t: "image", id: "a42p2b", ph: "Foto: cliente pagando a conta com cartão" },
+        { t: "image", id: "a42p2b", src: "/lessons/aulas/aula-42/a42p2b.webp", alt: "Cliente entregando o cartão para o garçom pagar a conta", w: 631, h: 481, ph: "Foto: cliente pagando a conta com cartão" },
         { t: "dialogue", items: [
           { s: "b", text: "W: How was your sandwich?" },
           { s: "a", text: "C: It was great." },
@@ -7890,7 +7914,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42" },
         { t: "title", en: "BRIAN’S WEEKDAY", pt: "READING: DAILY ROUTINE" },
-        { t: "image", id: "a42p3", src: "/lessons/fotos/aula_42_pagina_03_foto_01.jpg", alt: "Rapaz surpreso comendo pipoca no cinema", ph: "Foto: rapaz no cinema com pipoca" },
+        { t: "image", id: "a42p3", src: "/lessons/fotos/aula_42_pagina_03_foto_01.jpg", alt: "Rapaz surpreso comendo pipoca no cinema", w: 307, h: 311, ph: "Foto: rapaz no cinema com pipoca" },
         { t: "key", v: "gray", text: "My name is Brian. I’m 16 years old. On a weekday I usually get up at 6:00 a.m. I take a shower, get dressed, brush my teeth and have breakfast. I don’t drink coffee, but I sometimes drink orange juice for breakfast. I always have a cheese and ham sandwich. After breakfast I go to school. I study near my house at ABC School." },
         { t: "rows", items: [
           { text: "At noon I go back home and have lunch.", c: "teal" },
@@ -7900,7 +7924,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
         { t: "title", en: "CHECK YOUR READING", pt: "ANSWER THE QUESTIONS" },
-        { t: "image", id: "a42p4", src: "/lessons/fotos/aula_42_pagina_03_foto_01.jpg", alt: "Rapaz surpreso comendo pipoca no cinema", ph: "Foto: rapaz no cinema com pipoca" },
+        { t: "image", id: "a42p4", src: "/lessons/aulas/aula-42/a42p4.webp", alt: "Rapaz sorridente comendo pipoca ao lado de outras pessoas no cinema", w: 382, h: 237, ph: "Foto: rapaz no cinema com pipoca" },
         { t: "free", id: "a42f1", items: [
           { n: "1", kicker: "RESPONDA", prefix: "How old is Brian?", ideas: "", c: "teal", v: "mint" },
           { n: "2", kicker: "RESPONDA", prefix: "How often does Brian get up at 6:00 a.m.?", ideas: "", c: "purple", v: "lilac" },
@@ -7953,13 +7977,13 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · GABARITO" },
         { t: "title", en: "CHECK THE TEXT", pt: "THE BEST OPTIONS" },
-        { t: "image", id: "a42p8", ph: "Foto: casal com sacolas no shopping" },
+        { t: "image", id: "a42p8", src: "/lessons/aulas/aula-42/a42p8.webp", alt: "Casal sorridente andando abraçado por um shopping com sacolas coloridas", w: 360, h: 220, ph: "Foto: casal com sacolas no shopping" },
         { t: "key", v: "gray", text: "I live near the gym. If you take my street toward the shopping mall, you’ll see it on the left after three blocks. It’s across from a big supermarket. I hate going to the gym in the afternoon. That’s why I always go in the evening. Nathaly and I started playing the piano last year. She learns fast, and I love listening to her when she plays. The piano is not easy for me. I can’t play many songs very well. Our teacher told us that we have to practice at least twice a week, but I don’t have much free time to practice. But Nathaly practices every day. That’s why she can play a lot of songs pretty well." } ] },
 
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
         { t: "title", en: "PUT IT IN THE PAST (1)", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
-        { t: "image", id: "a42p9", ph: "Foto: moça pensativa" },
+        { t: "image", id: "a42p9", src: "/lessons/aulas/aula-42/a42p9.webp", alt: "Moça pensativa com a mão no queixo, vestindo blusa azul", w: 208, h: 302, ph: "Foto: moça pensativa" },
         { t: "free", id: "a42f2", items: [
           { n: "1", kicker: "REESCREVA NO PASSADO", prefix: "I’m Molly. Yesterday I have a really busy day. I get up at 7:00, take a shower, brush my teeth and have breakfast.", ideas: "", c: "teal", v: "mint" },
           { n: "2", kicker: "REESCREVA NO PASSADO", prefix: "I drink orange juice and have some fruit and cereal. After breakfast I go to school.", ideas: "", c: "purple", v: "lilac" },
@@ -7968,7 +7992,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
         { t: "title", en: "PUT IT IN THE PAST (2)", pt: "CHANGE THE VERBS TO THE SIMPLE PAST" },
-        { t: "image", id: "a42p10", ph: "Fotos: casal no shopping, cinema e pai e filha cozinhando" },
+        { t: "image", id: "a42p10", src: "/lessons/aulas/aula-42/a42p10.webp", alt: "Casal em um shopping, rapaz no cinema com pipoca e pai ajudando a filha a cozinhar", w: 318, h: 696, ph: "Fotos: casal no shopping, cinema e pai e filha cozinhando" },
         { t: "free", id: "a42f3", items: [
           { n: "4", kicker: "REESCREVA NO PASSADO", prefix: "I do a lot of homework after lunch. I work on my homework the whole afternoon. But when I finish it I can play video games.", ideas: "", c: "teal", v: "mint" },
           { n: "5", kicker: "REESCREVA NO PASSADO", prefix: "I play for 2 hours, then I meet a friend at the shopping mall. We see a movie together. After the movie, he come to my home for dinner.", ideas: "", c: "purple", v: "lilac" },
@@ -7977,7 +8001,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · GABARITO" },
         { t: "title", en: "YESTERDAY: ANSWERS 1", pt: "MOLLY’S BUSY DAY" },
-        { t: "image", id: "a42p11", ph: "Foto: moça pensativa" },
+        { t: "image", id: "a42p11", src: "/lessons/aulas/aula-42/a42p11.webp", alt: "Moça pensativa com a mão no queixo, olhando para o lado", w: 263, h: 340, ph: "Foto: moça pensativa" },
         { t: "rows", items: [
           { text: "I’m Molly. Yesterday I had a really busy day. I got up at 7:00, took a shower, brushed my teeth and had breakfast.", c: "teal" },
           { text: "I drank orange juice and had some fruit and cereal. After breakfast I went to school.", c: "purple" },
@@ -7986,7 +8010,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · GABARITO" },
         { t: "title", en: "YESTERDAY: ANSWERS 2", pt: "MOLLY’S BUSY DAY" },
-        { t: "image", id: "a42p12", ph: "Fotos: moça pensativa e plateia no cinema" },
+        { t: "image", id: "a42p12", src: "/lessons/aulas/aula-42/a42p12.webp", alt: "Moça pensativa ao lado de plateia animada assistindo a um filme no cinema", w: 716, h: 341, ph: "Fotos: moça pensativa e plateia no cinema" },
         { t: "rows", items: [
           { text: "I did a lot of homework after lunch. I worked on my homework the whole afternoon. But when I finished it I could play video games.", c: "teal" },
           { text: "I played for 2 hours, then I met a friend at the shopping mall. We saw a movie together. After the movie, he came to my home for dinner.", c: "purple" },
@@ -7995,7 +8019,7 @@ export const LESSONS = [
       { blocks: [
         { t: "badge", label: "AULA 42 · PRATIQUE" },
         { t: "title", en: "FINAL SPEAKING CHALLENGE", pt: "USE WHAT YOU KNOW" },
-        { t: "image", id: "a42p13", ph: "Fotos: pessoa escutando e casal no shopping" },
+        { t: "image", id: "a42p13", src: "/lessons/aulas/aula-42/a42p13.webp", alt: "Moça atenta ouvindo, ao lado de um casal sorridente conversando em um shopping", w: 898, h: 356, ph: "Fotos: pessoa escutando e casal no shopping" },
         { t: "free", id: "a42f4", items: [
           { n: "1", kicker: "ORDER A MEAL AND A DRINK", prefix: "I’d like…", ideas: "", c: "teal", v: "mint" },
           { n: "2", kicker: "ASK FOR THE BILL", prefix: "Could I have the bill, please?", ideas: "Escreva sua versão do pedido.", c: "purple", v: "lilac" },

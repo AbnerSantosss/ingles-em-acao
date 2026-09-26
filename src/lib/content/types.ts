@@ -121,6 +121,13 @@ export interface ImageBlock {
   src?: string
   /** Texto alternativo da biblioteca do admin. Ausente → usa `ph`. */
   alt?: string
+  /**
+   * Largura natural do arquivo, em px (inteiro positivo). Com `h`, a tela mostra a
+   * figura inteira na proporção dela; ausente → a caixa de proporção fixa de sempre.
+   */
+  w?: number
+  /** Altura natural do arquivo, em px (inteiro positivo). Anda junto com `w`. */
+  h?: number
 }
 
 /** Fileira de pastilhas coloridas (vocabulário, pronomes, formas verbais). */
@@ -284,6 +291,13 @@ export interface ProfileBlock {
   src?: string
   /** Texto alternativo da biblioteca do admin. Ausente → usa `ph`. */
   alt?: string
+  /**
+   * Largura natural do arquivo, em px (inteiro positivo). Com `h`, a tela mostra a
+   * figura inteira na proporção dela; ausente → a caixa de proporção fixa de sempre.
+   */
+  w?: number
+  /** Altura natural do arquivo, em px (inteiro positivo). Anda junto com `w`. */
+  h?: number
 }
 
 /** Chamada para a próxima aula ao fim da página. */
@@ -329,6 +343,13 @@ export interface CardItem {
   src?: string
   /** Texto alternativo da biblioteca do admin. Ausente → usa `ph`. */
   alt?: string
+  /**
+   * Largura natural do arquivo, em px (inteiro positivo). Com `h`, a tela mostra a
+   * figura inteira na proporção dela; ausente → a caixa de proporção fixa de sempre.
+   */
+  w?: number
+  /** Altura natural do arquivo, em px (inteiro positivo). Anda junto com `w`. */
+  h?: number
   /** Cor da etiqueta. Ausente → #0E9BAE. */
   c?: AccentName
   /** Ausente → `gray`. */
@@ -372,6 +393,13 @@ export interface StepItem {
   src?: string
   /** Texto alternativo da biblioteca do admin. Ausente → usa `ph`. */
   alt?: string
+  /**
+   * Largura natural do arquivo, em px (inteiro positivo). Com `h`, a tela mostra a
+   * figura inteira na proporção dela; ausente → a caixa de proporção fixa de sempre.
+   */
+  w?: number
+  /** Altura natural do arquivo, em px (inteiro positivo). Anda junto com `w`. */
+  h?: number
   /** Cor da etiqueta. Ausente → #0E9BAE. */
   c?: AccentName
   /** Ausente → `gray`. */

@@ -1,0 +1,47 @@
+{
+  "aula": 40,
+  "vagas": {
+    "a40p1": {"pagina": 1, "caixa": [530, 432, 1024, 1049], "alt": "Mulher de blazer bege olhando o relógio de pulso apressada"},
+
+    "a40p2": {"pagina": 2, "recortes": ["01"], "alt": "Pôr do sol sobre o lago visto de um deque de madeira"},
+
+    "a40p3": {"pagina": 3, "caixa": [651, 356, 1024, 1148], "alt": "Mulher de moletom verde caminhando na orla da cidade ao entardecer"},
+
+    "a40p4": {"pagina": 4, "caixa": [588, 340, 1020, 1000], "alt": "Mulher sorridente sentada recebendo um buquê de flores"},
+
+    "a40p5": {"pagina": 5, "recortes": ["02"], "alt": "Mulher enrolada em cobertor chorando ao assistir a um filme à noite"},
+
+    "a40p6": {"pagina": 6, "recortes": ["01"], "alt": "Mulher correndo na esteira da academia usando fone de ouvido"},
+
+    "a40p7": {"pagina": 7, "caixa": [472, 260, 1001, 770], "alt": "Mulher de perfil ouvindo música com fones de ouvido, braços cruzados"},
+
+    "a40p8a": {"pagina": 8, "recortes": ["01"], "alt": "Mulher pensativa com caneta na boca sentada à mesa com notebook"},
+    "a40p8b": {"pagina": 8, "recortes": ["02"], "alt": "Rapaz escrevendo em caderno à mesa com notebook ao lado"},
+    "a40p8c": {"pagina": 8, "recortes": ["03"], "alt": "Grupo de amigas sorridentes assistindo a um filme no cinema"},
+
+    "a40p9": {"pagina": 9, "caixa": [400, 1111, 1024, 1435], "alt": "Mulher escrevendo em caderno à mesa perto da janela com café"},
+
+    "a40p10": {"pagina": 10, "recortes": ["02"], "alt": "Mulher sorridente escrevendo em caderno perto da janela"},
+
+    "a40p12": {"pagina": 12, "recortes": ["01"], "alt": "Casal sorridente conversando à mesa com cadernos e xícara de café"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01"], "nota": "recorte inclui os dois cartões (mint e lilac) com o texto de QUANDO USAR e EXEMPLO sobrepostos à foto; a mulher foi recortada direto da página (caixa) para excluir o texto"},
+    {"pagina": 1, "recortes": ["02", "03"], "nota": "seta decorativa e ícone de relógio da linha do tempo Aula 39/Aula 40, não são vaga"},
+    {"pagina": 2, "recortes": ["02", "03"], "nota": "recorte 02 é a palavra IN (texto), recorte 03 é a pontinha da dobra decorativa da mesma foto do pôr do sol"},
+    {"pagina": 3, "recortes": ["01"], "nota": "recorte inclui o final da frase 'to her family.' do cartão de exemplo colado no rodapé da foto; a mulher foi recortada direto da página (caixa) até antes do texto"},
+    {"pagina": 3, "recortes": ["02", "03", "04"], "nota": "recorte 02 é a palavra We (texto da lista), 03 e 04 são ícones (fotos, pessoa andando) dos exemplos, sem vaga"},
+    {"pagina": 4, "recortes": ["01", "02", "04", "05", "06", "07", "08", "09", "10"], "nota": "letras E/D do título, setas de transformação do verbo e ícones dos exemplos (flor, vela, palmeira), sem vaga"},
+    {"pagina": 4, "recortes": ["03"], "nota": "recorte pega o rodapé da frase 'from her daughter.' colado no canto inferior da foto; a foto foi recortada direto da página (caixa) até antes do texto"},
+    {"pagina": 5, "recortes": ["01", "03", "04", "05"], "nota": "ícone de chuva e setas de transformação do verbo, sem vaga"},
+    {"pagina": 6, "recortes": ["02"], "nota": "seta curva decorativa, não é vaga"},
+    {"pagina": 7, "recortes": ["07"], "nota": "recorte pega o final do título 'SOUNDS' e as barras de onda de som coladas no topo da foto; a foto foi recortada direto da página (caixa) abaixo do título"},
+    {"pagina": 8, "recortes": ["04"], "nota": "seta curva decorativa, não é vaga"},
+    {"pagina": 9, "recortes": ["01", "02"], "nota": "número 1 do título e a palavra We (texto), sem vaga"},
+    {"pagina": 9, "recortes": ["03"], "nota": "recorte pega o enfeite de bolinhas e o número de página '09' do rodapé da página, colado no canto inferior direito da foto; a foto foi recortada direto da página (caixa) antes do enfeite"},
+    {"pagina": 10, "recortes": ["01"], "nota": "número 2 do título, não é vaga"},
+    {"pagina": 11, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "página de gabarito sem vaga de imagem; ícones de check/estrela do fundo, sem figura própria"},
+    {"pagina": 12, "recortes": ["02", "03", "04", "05"], "nota": "ícones de balão de conversa e checkmark da lista de frases, sem vaga"},
+    {"pagina": 13, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"], "nota": "página de prática de conversação sem vaga de imagem; ícones e numeração das perguntas, sem figura própria"}
+  ]
+}

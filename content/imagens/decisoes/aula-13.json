@@ -1,0 +1,73 @@
+{
+  "aula": 13,
+  "vagas": {
+    "w13p1": {"pagina": 1, "recortes": ["01"], "alt": "Dois estudantes sorrindo conversam à mesa com notebook e café"},
+    "w13p1a": {"pagina": 1, "recortes": ["02"], "alt": "Lápis amarelo apontado na diagonal com borracha rosa na ponta"},
+    "w13p1b": {"pagina": 1, "recortes": ["03"], "alt": "Maçã vermelha brilhante com cabinho marrom e folha verde"},
+    "w13p1c": {"pagina": 1, "recortes": ["04"], "alt": "Prédio histórico de universidade em tijolo com colunas brancas e árvores"},
+    "w13p1d": {"pagina": 1, "recortes": ["05"], "alt": "Relógio de parede redondo branco com aro preto e ponteiros pretos"},
+
+    "w13p2a": {"pagina": 2, "recortes": ["03"], "alt": "Lápis amarelo apontado na diagonal com borracha rosa na ponta"},
+    "w13p2b": {"pagina": 2, "recortes": ["02"], "alt": "Casa moderna de dois andares com fachada bege e azul-marinho"},
+    "w13p2c": {"pagina": 2, "caixa": [87, 713, 286, 911], "alt": "Notebook prateado aberto com tela preta desligada"},
+    "w13p2d": {"pagina": 2, "recortes": ["07"], "alt": "Livro fechado de capa dura azul-marinho visto de lado"},
+    "w13p2e": {"pagina": 2, "caixa": [91, 963, 260, 1164], "alt": "Mochila azul-marinho com bolso frontal e etiqueta de couro"},
+    "w13p2f": {"pagina": 2, "recortes": ["09"], "alt": "Mulher pintando uma tela colorida sobre cavalete de madeira"},
+
+    "w13p3a": {"pagina": 3, "caixa": [67, 456, 350, 701], "alt": "Prédio de apartamentos moderno com sacadas de vidro e árvores"},
+    "w13p3b": {"pagina": 3, "recortes": ["03"], "alt": "Maçã vermelha brilhante com cabinho marrom e folha inclinada"},
+    "w13p3c": {"pagina": 3, "recortes": ["04"], "alt": "Cachorro golden retriever sentado com a língua para fora"},
+    "w13p3d": {"pagina": 3, "caixa": [67, 819, 349, 1063], "alt": "Elefante africano caminhando na savana com árvores ao fundo"},
+    "w13p3e": {"pagina": 3, "recortes": ["06"], "alt": "Guarda-chuva azul-marinho aberto apoiado de lado"},
+    "w13p3f": {"pagina": 3, "caixa": [675, 819, 954, 1063], "alt": "Engenheiro de capacete branco sorrindo e segurando um tablet"},
+
+    "w13p4a": {"pagina": 4, "recortes": ["01"], "alt": "Círculo roxo com ícone de universidade e ondas sonoras lilás"},
+    "w13p4b": {"pagina": 4, "caixa": [521, 392, 944, 551], "alt": "Círculo azul-esverdeado com ícone de relógio e ondas sonoras"},
+
+    "w13p5a": {"pagina": 5, "recortes": ["01"], "alt": "Veterinária sorridente de uniforme verde ao lado de um cão"},
+    "w13p5b": {"pagina": 5, "recortes": ["02"], "alt": "Engenheiro sorridente de óculos e braços cruzados no escritório"},
+    "w13p5c": {"pagina": 5, "caixa": [74, 778, 505, 1023], "alt": "Pintor sorridente pinta uma tela colorida com o pincel na mão"},
+    "w13p5d": {"pagina": 5, "caixa": [510, 778, 948, 1023], "alt": "Artista sorridente segura um pincel em frente ao cavalete"},
+
+    "w13p6a": {"pagina": 6, "recortes": ["02"], "alt": "Livro aberto ao meio com páginas creme e marcador azul-claro"},
+    "w13p6b": {"pagina": 6, "recortes": ["01"], "alt": "Mochila escolar azul-marinho com bolso frontal e zíper"},
+    "w13p6c": {"pagina": 6, "caixa": [664, 463, 947, 622], "alt": "Estojo retangular azul-marinho fechado com zíper preto"},
+    "w13p6d": {"pagina": 6, "caixa": [68, 730, 349, 993], "alt": "Guarda-chuva azul-marinho aberto apoiado de lado"},
+    "w13p6e": {"pagina": 6, "recortes": ["03"], "alt": "Elefante cinza de corpo inteiro visto de lado"},
+    "w13p6f": {"pagina": 6, "recortes": ["04"], "alt": "Estojo retangular laranja fechado com zíper preto"},
+
+    "w13p7a": {"pagina": 7, "caixa": [101, 632, 490, 875], "alt": "Sol brilhando forte num céu azul com nuvens brancas"},
+    "w13p7b": {"pagina": 7, "caixa": [533, 626, 935, 875], "alt": "Lua cheia num céu noturno estrelado com nuvens escuras"},
+    "w13p7c": {"pagina": 7, "recortes": ["06", "07"], "alt": "Porta de madeira azul-esverdeada com lanterna e vaso de planta"},
+    "w13p7d": {"pagina": 7, "recortes": ["08"], "alt": "Livro fechado apoiado numa mesa de madeira clara"},
+
+    "w13p9a": {"pagina": 9, "recortes": ["01"], "alt": "Ana e Daniel sentados à mesa de um café mostrando um estojo laranja"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["06", "07"], "nota": "ícones de check do objetivo da aula e de estrela da dica final"},
+    {"pagina": 2, "recortes": ["01"], "nota": "ícone de alto-falante do quadro RULE"},
+    {"pagina": 2, "recortes": ["04", "05", "06", "08", "10", "11"], "nota": "glifos decorativos da letra a que acompanham cada rótulo de card"},
+    {"pagina": 2, "recortes": ["12"], "nota": "ícone de check do quadro LEMBRE-SE"},
+    {"pagina": 2, "recortes": ["13"], "nota": "ícone de microfone do quadro DIGA EM VOZ ALTA"},
+    {"pagina": 2, "recortes": ["14", "15", "16"], "nota": "selos numerados 1, 2 e 3 da lista DIGA EM VOZ ALTA"},
+    {"pagina": 3, "recortes": ["01"], "nota": "ícone de check da regra do topo da página"},
+    {"pagina": 3, "recortes": ["08"], "nota": "ícone de lâmpada do quadro Dica"},
+    {"pagina": 3, "recortes": ["09"], "nota": "ícone de microfone do quadro DIGA EM VOZ ALTA"},
+    {"pagina": 3, "recortes": ["10", "11", "12"], "nota": "selos numerados 1, 2 e 3 da lista DIGA EM VOZ ALTA"},
+    {"pagina": 4, "recortes": ["03", "06"], "nota": "glifos decorativos da letra a ao lado dos títulos university"},
+    {"pagina": 4, "recortes": ["04", "05"], "nota": "ícones de check dos blocos som consonantal/vocálico"},
+    {"pagina": 5, "recortes": ["05"], "nota": "ícone de balão de pergunta do quadro What do you do?"},
+    {"pagina": 5, "recortes": ["06"], "nota": "ícone de orelha do quadro OUÇA O COMEÇO"},
+    {"pagina": 6, "recortes": ["05"], "nota": "ícone de exclamação do quadro ATENÇÃO"},
+    {"pagina": 6, "recortes": ["06"], "nota": "ícone de balão de fala do quadro MINI-PRACTICE"},
+    {"pagina": 7, "recortes": ["01"], "nota": "ícone de lâmpada do quadro explicativo sobre the"},
+    {"pagina": 7, "recortes": ["02", "03", "04"], "nota": "recortes do céu com sol; a junção deixava um buraco de transparência no meio, então w13p7a usa caixa direto da página"},
+    {"pagina": 7, "recortes": ["05"], "nota": "recorte só do disco da lua; w13p7b usa caixa direto da página para pegar a cena toda com nuvens"},
+    {"pagina": 7, "recortes": ["09"], "nota": "ícone de alvo do bloco FOCO PRINCIPAL DA AULA"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06"], "nota": "página sem vagas de imagem; ícones de checagem ao lado de cada lacuna do exercício"},
+    {"pagina": 8, "recortes": ["07"], "nota": "ícone de lâmpada do quadro CHECK YOUR ANSWERS"},
+    {"pagina": 9, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09"], "nota": "ícones de balão de fala que ilustram cada fala do diálogo Ana/Daniel"},
+    {"pagina": 9, "recortes": ["10"], "nota": "ícone de lápis do bloco YOUR TURN"},
+    {"pagina": 10, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"], "nota": "página sem vagas de imagem; ícones de checklist, progresso e navegação da aula concluída"}
+  ]
+}

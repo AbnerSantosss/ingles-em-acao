@@ -54,6 +54,8 @@ export const SEM_ERROS: Erros = criarErros([]);
 const TIPO_ESPERADO: Record<string, string> = {
   string: 'um texto',
   number: 'um número',
+  // `z.number().int()` (tamanho da imagem em `w`/`h`): veio número com fração.
+  int: 'um número inteiro',
   boolean: 'sim/não (true ou false)',
   array: 'uma lista [ … ]',
   object: 'um objeto { … }',
@@ -109,6 +111,10 @@ function traduzir(problema: z.core.$ZodIssue, candidato: Objeto): Entrada[] {
               minimo === 1 ? 'Precisa de pelo menos 1 item.' : `Precisa de pelo menos ${minimo} itens.`,
           },
         ];
+      }
+      // `positive()` é mínimo exclusivo: 0 não vale, então "maior que 0", não "mínimo 0".
+      if (problema.origin === 'number' && problema.inclusive === false) {
+        return [{ caminho, mensagem: `Precisa ser maior que ${String(problema.minimum)}.` }];
       }
       return [{ caminho, mensagem: `Abaixo do mínimo (${String(problema.minimum)}).` }];
     }

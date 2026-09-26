@@ -45,6 +45,7 @@ import {
   FORMATOS_EM_TEXTO,
   TAMANHO_MAXIMO_IMAGEM,
   formatarBytes,
+  tamanhoDaMidia,
   urlDoCaminho,
   type ErrosDeCampo,
   type EstadoDoFormulario,
@@ -290,7 +291,8 @@ export async function enviarImagemDoSeletorAction(
   const alvo = lerAlvoDeImagem(dados.get('uso'));
   return {
     ok: true,
-    midia: { src: imagem.src, alt: imagem.alt },
+    // `w`/`h` só quando as dimensões foram lidas: o bloco nunca herda medida inventada.
+    midia: { src: imagem.src, alt: imagem.alt, ...tamanhoDaMidia(imagem.width, imagem.height) },
     nome: imagem.nome,
     avisos: alvo
       ? avisosDaImagem(alvo, { width: imagem.width, height: imagem.height, bytes: imagem.bytes })

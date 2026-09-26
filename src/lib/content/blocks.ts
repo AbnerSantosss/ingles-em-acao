@@ -57,14 +57,20 @@ const numerador = z.union([texto, z.number()]);
 const umaOuDuasColunas = z.union([z.literal(1), z.literal(2)]);
 const ateTresColunas = z.union([z.literal(1), z.literal(2), z.literal(3)]);
 
+/** Medida em pixels do arquivo: inteiro positivo (0, negativo, fração e texto são erro). */
+const pixels = z.number().int().positive();
+
 /**
  * Mídia vinda da biblioteca do admin (BACKOFFICE Fase 0 / §4).
  * `src` é a URL do arquivo; `id`/`ph` continuam sendo o caminho legado
- * (`public/lessons/art/{id}.png`) e o texto do placeholder.
+ * (`public/lessons/art/{id}.png`) e o texto do placeholder. `w`/`h` são o tamanho
+ * natural do arquivo: com os dois, a tela mostra a figura inteira na proporção dela.
  */
 const midiaDaBiblioteca = {
   src: texto.optional(),
   alt: texto.optional(),
+  w: pixels.optional(),
+  h: pixels.optional(),
 };
 
 // ─────────────────────────── blocos estáticos ──────────────────────────
@@ -524,7 +530,19 @@ function ler(valor: unknown, chave: PropertyKey): unknown {
 function nomeDoTipo(valor: unknown): string {
   if (valor === null) return 'null';
   if (Array.isArray(valor)) return 'lista';
+  // `NaN` e `Infinity` são `number` para o JS, mas não para o esquema: diz qual veio.
+  if (typeof valor === 'number' && !Number.isFinite(valor)) return String(valor);
   return typeof valor;
+}
+
+/**
+ * O valor cru no caminho do problema. O zod 4 não devolve o valor recebido no
+ * problema (`input` vem vazio), e sem ele todo tipo errado viraria "ausente".
+ */
+function valorNoCaminho(raiz: unknown, caminho: Caminho): unknown {
+  let atual: unknown = raiz;
+  for (const parte of caminho) atual = ler(atual, parte);
+  return atual;
 }
 
 /** "questions[0].answer" — os índices aqui são os do arquivo, contados a partir de zero. */
@@ -537,16 +555,26 @@ function formatarCampo(caminho: Caminho): string {
   return saida;
 }
 
-/** Traduz o problema do zod para uma frase que continua "campo `x` …". */
-function frase(problema: Problema): string {
+/**
+ * Traduz o problema do zod para uma frase que continua "campo `x` …".
+ * `bruto` é o valor que estava no caminho (ver {@link valorNoCaminho}).
+ */
+function frase(problema: Problema, bruto: unknown): string {
   switch (problema.code) {
     case 'invalid_type':
-      return problema.input === undefined
-        ? 'ausente'
-        : `deveria ser ${problema.expected}, mas veio ${nomeDoTipo(problema.input)}`;
+      if (bruto === undefined) return 'ausente';
+      // `int` é o `z.number().int()`: o valor é número, mas com fração.
+      return problema.expected === 'int'
+        ? `deveria ser um número inteiro, mas veio ${String(bruto)}`
+        : `deveria ser ${problema.expected}, mas veio ${nomeDoTipo(bruto)}`;
     case 'invalid_value':
       return `tem valor inválido. Aceitos: ${problema.values.map((v) => JSON.stringify(v)).join(' | ')}`;
     case 'too_small':
+      if (problema.origin === 'number') {
+        return problema.inclusive === false
+          ? `deveria ser maior que ${String(problema.minimum)}`
+          : `deveria ser no mínimo ${String(problema.minimum)}`;
+      }
       return problema.origin === 'string' && Number(problema.minimum) <= 1
         ? 'não pode ficar vazio'
         : `é curto demais (mínimo ${String(problema.minimum)})`;
@@ -658,9 +686,8 @@ export function descreverErros(
       return `${alvo}: campo(s) desconhecido(s): ${problema.keys.map((k) => `\`${k}\``).join(', ')}`;
     }
 
-    return campo === ''
-      ? `${prefixo}: ${frase(problema)}`
-      : `${prefixo}: campo \`${campo}\` ${frase(problema)}`;
+    const texto = frase(problema, problema.input ?? valorNoCaminho(raiz, problema.path));
+    return campo === '' ? `${prefixo}: ${texto}` : `${prefixo}: campo \`${campo}\` ${texto}`;
   });
 }
 

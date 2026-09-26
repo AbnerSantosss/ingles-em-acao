@@ -1,0 +1,41 @@
+{
+  "aula": 32,
+  "vagas": {
+    "a32p1a": {"manter": true},
+    "a32p1b": {"manter": true},
+    "a32p1c": {"manter": true},
+    "a32p1d": {"manter": true},
+    "a32p2": {"pagina": 2, "recortes": ["02"], "alt": "Jovem sorridente ouvindo música com fones, ao lado de selos coloridos de preferência"},
+    "a32p3a": {"pagina": 3, "recortes": ["03"], "alt": "Mulher sorridente cozinhando, misturando uma salada em uma tigela de madeira"},
+    "a32p4a": {"pagina": 4, "caixa": [49, 196, 564, 507], "alt": "Mulher sorridente andando de bicicleta em um parque arborizado"},
+    "a32p4b": {"pagina": 4, "caixa": [417, 520, 974, 765], "alt": "Quatro amigos jogando futebol em um campo ao entardecer"},
+    "a32p4c": {"pagina": 4, "caixa": [50, 777, 540, 1019], "alt": "Padeiro sorridente sovando pão em uma padaria"},
+    "a32p4d": {"pagina": 4, "caixa": [399, 1026, 973, 1234], "alt": "Homem cansado sentado em banco de academia, apoiando a cabeça na mão"},
+    "a32p4e": {"pagina": 4, "caixa": [49, 1234, 545, 1463], "alt": "Mulher tímida cabisbaixa, com um grupo de amigos conversando ao fundo"},
+    "a32p5a": {"pagina": 5, "caixa": [105, 438, 480, 650], "alt": "Rapaz sentado no sofá trocando de canal com o controle remoto"},
+    "a32p5b": {"pagina": 5, "caixa": [125, 682, 552, 930], "alt": "Dois amigos cantando e tocando violão juntos"},
+    "a32p5c": {"pagina": 5, "caixa": [589, 963, 974, 1168], "alt": "Moça sorridente escrevendo uma carta à mesa"},
+    "a32p5d": {"pagina": 5, "caixa": [110, 1200, 480, 1422], "alt": "Homem fazendo sinal de recusa diante de um prato de legumes"},
+    "a32p6a": {"pagina": 6, "caixa": [500, 258, 978, 764], "alt": "Homem tomando café em uma cafeteria"},
+    "a32p6b": {"pagina": 6, "caixa": [575, 800, 978, 1304], "alt": "Dois amigos sorridentes jogando videogame juntos"},
+    "a32p7": {"pagina": 7, "caixa": [0, 241, 1024, 714], "alt": "Dois amigos sorridentes conversando em uma cafeteria"},
+    "a32p8a": {"pagina": 8, "caixa": [149, 331, 349, 560], "alt": "Mulher sorridente de olhos fechados ouvindo música em fones de ouvido"},
+    "a32p8b": {"pagina": 8, "caixa": [458, 330, 647, 560], "alt": "Homem andando de bicicleta em uma ciclovia à beira do rio"},
+    "a32p8c": {"pagina": 8, "caixa": [752, 330, 936, 560], "alt": "Dois homens disputando a bola em uma partida de futebol"},
+    "a32p8d": {"pagina": 8, "caixa": [163, 610, 348, 819], "alt": "Mulher sorridente preparando uma salada de legumes"},
+    "a32p8e": {"pagina": 8, "caixa": [454, 610, 647, 820], "alt": "Homem sentado no sofá assistindo TV com o controle remoto na mão"},
+    "a32p8f": {"pagina": 8, "caixa": [752, 610, 934, 820], "alt": "Rapaz sorridente jogando videogame com fone de ouvido e controle"},
+    "a32p9": {"pagina": 9, "recortes": ["01"], "alt": "Três amigos sorridentes estudando juntos à mesa"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"], "nota": "vagas resolvidas via imagem já existente (manter); recortes desta página não foram necessários"},
+    {"pagina": 2, "recortes": ["01", "03", "04", "05", "06", "07"], "nota": "marca d'água, colchete decorativo e selos de amostra love/like/dislike/hate que o app já renderiza"},
+    {"pagina": 3, "recortes": ["01", "02", "04", "05", "06", "07", "08", "09", "10", "11"], "nota": "ícones numéricos e fotos de homem escrevendo e homem correndo, sem vaga correspondente nesta página"},
+    {"pagina": 4, "recortes": ["02"], "nota": "selo de coração (like) que o app já renderiza; as fotos desta página foram recortadas direto da página (caixa) para excluir selos e textos sobrepostos"},
+    {"pagina": 5, "recortes": ["02", "04"], "nota": "selos de dislike que o app já renderiza; as fotos foram recortadas direto da página (caixa) para excluir o selo sobreposto no canto de cada uma"},
+    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05"], "nota": "ícones numéricos e fragmento de fundo; nenhum recorte desta página é foto completa, as duas fotos foram recortadas direto da página (caixa)"},
+    {"pagina": 7, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09"], "nota": "fragmentos de fundo, caneta e ícones de avatar A:/B: dos balões de diálogo já renderizados pelo app; a foto foi recortada direto da página (caixa) excluindo os balões de texto"},
+    {"pagina": 8, "recortes": ["04", "06", "08", "09", "10", "11"], "nota": "selos de categoria (música, bicicleta, futebol etc.) que o app já renderiza; as fotos foram recortadas direto da página (caixa) para excluir o selo sobreposto no canto"},
+    {"pagina": 9, "recortes": ["02", "03", "04"], "nota": "ícones de progresso e próxima aula, sem vaga correspondente nesta página"}
+  ]
+}

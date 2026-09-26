@@ -1,0 +1,63 @@
+{
+  "aula": 8,
+  "vagas": {
+    "w08p1a": {"pagina": 1, "recortes": ["03"], "alt": "Rapaz de camisa verde-oliva sorrindo em uma cafeteria desfocada"},
+    "w08p1b": {"pagina": 1, "caixa": [376, 497, 573, 707], "alt": "Relógio analógico com pulseira de couro marrom sobre fundo bege"},
+    "w08p1c": {"pagina": 1, "recortes": ["04"], "alt": "Rapaz de camisa verde-oliva sorrindo e segurando um relógio de couro"},
+    "w08p1d": {"pagina": 1, "recortes": ["08"], "alt": "Jovem de suéter azul-claro sorrindo e olhando para o lado"},
+    "w08p1e": {"pagina": 1, "recortes": ["10"], "alt": "Rapaz de moletom azul-marinho sorrindo e olhando para o lado"},
+    "w08p1f": {"pagina": 1, "recortes": ["12"], "alt": "Jovem de suéter azul e rapaz de moletom azul sorrindo lado a lado"},
+
+    "w08p2a": {"pagina": 2, "recortes": ["07"], "alt": "Homem de barba curta e camisa verde-oliva sorrindo de frente"},
+    "w08p2b": {"pagina": 2, "recortes": ["11"], "alt": "Smartphone preto deitado sobre superfície clara, visto de cima"},
+    "w08p2c": {"pagina": 2, "recortes": ["12"], "alt": "Mulher de cabelo castanho-claro ondulado sorrindo de frente"},
+    "w08p2d": {"pagina": 2, "recortes": ["14"], "alt": "Cachorro golden retriever sentado na grama com a língua de fora"},
+    "w08p2e": {"pagina": 2, "caixa": [104, 874, 253, 1080], "alt": "Homem de camisa verde-oliva sorrindo segurando um smartphone preto"},
+    "w08p2f": {"pagina": 2, "caixa": [330, 874, 502, 1096], "alt": "Mulher sorrindo ao lado de um golden retriever ao ar livre"},
+    "w08p2g": {"pagina": 2, "caixa": [572, 874, 742, 1096], "alt": "Jovem sorrindo em um jardim com uma casa americana ao fundo"},
+    "w08p2h": {"pagina": 2, "caixa": [810, 874, 976, 1096], "alt": "Homem de óculos sorrindo enquanto lê um livro aberto"},
+    "w08p2i": {"pagina": 2, "recortes": ["20"], "alt": "Jovem de cabelo castanho comprido sorrindo de frente"},
+    "w08p2j": {"pagina": 2, "recortes": ["25"], "alt": "Homem de óculos e barba curta sorrindo de frente"},
+
+    "w08p3a": {"pagina": 3, "recortes": ["05", "06"], "alt": "Ana segurando um relógio e Brian sorrindo, lado a lado"},
+    "w08p3b": {"pagina": 3, "recortes": ["07", "06"], "alt": "Ana segurando um smartphone e Brian sorrindo, lado a lado"},
+    "w08p3c": {"pagina": 3, "caixa": [90, 1007, 255, 1138], "alt": "Laptop prateado aberto sobre uma mesa de madeira clara"},
+    "w08p3d": {"pagina": 3, "caixa": [328, 1007, 493, 1138], "alt": "Bolsa de couro marrom apoiada sobre uma mesa de madeira"},
+    "w08p3e": {"pagina": 3, "caixa": [566, 1007, 727, 1138], "alt": "Livro de capa dura azul-escura fechado sobre uma mesa"},
+    "w08p3f": {"pagina": 3, "caixa": [804, 1007, 969, 1138], "alt": "Cachorro golden retriever sentado na grama de um parque"},
+
+    "w08p4a": {"pagina": 4, "recortes": ["02"], "alt": "Carro sedã cinza-escuro estacionado em uma rua arborizada"},
+    "w08p4b": {"pagina": 4, "recortes": ["03"], "alt": "Casa moderna de dois andares com jardim e palmeiras"},
+    "w08p4c": {"pagina": 4, "caixa": [690, 425, 954, 630], "alt": "Livro antigo de capa azul-escura com letras douradas"},
+    "w08p4d": {"pagina": 4, "caixa": [52, 911, 322, 1111], "alt": "Rapaz de jaqueta jeans e mochila sorrindo ao ar livre"},
+    "w08p4e": {"pagina": 4, "caixa": [362, 911, 632, 1111], "alt": "Jovem sorrindo com a mão apoiada no rosto"},
+
+    "w08p5a": {"pagina": 5, "recortes": ["03"], "alt": "Golden retriever deitado com um brinquedo de corda azul"},
+    "w08p5b": {"pagina": 5, "recortes": ["05"], "alt": "Televisão exibindo a frase the end em uma sala"},
+    "w08p5c": {"pagina": 5, "recortes": ["04"], "alt": "Calendário de mesa com um dia marcado e bilhete de aniversário"},
+    "w08p5d": {"pagina": 5, "caixa": [455, 840, 969, 1236], "alt": "Jovem apontando para uma mochila enquanto um rapaz sorri ao lado"},
+
+    "w08p6a": {"pagina": 6, "recortes": ["03"], "alt": "Bebê sorrindo em pé segurando a grade de um berço"},
+    "w08p6b": {"pagina": 6, "recortes": ["04"], "alt": "Dois bebês sorrindo em pé lado a lado em um berço"},
+
+    "w08p7a": {"pagina": 7, "caixa": [378, 282, 686, 632], "alt": "Rapaz sorrindo à mesa com um garfo perto de uma tigela de espaguete"},
+
+    "w08p8a": {"pagina": 8, "recortes": ["02"], "alt": "Ana, Daniel e Emma sorrindo sentados à mesa com uma mochila"},
+    "w08p8b": {"pagina": 8, "recortes": ["07"], "alt": "Emma, Lucas e Sofia sorrindo sentados à mesa com um smartphone"},
+
+    "w08p9a": {"pagina": 9, "recortes": ["06"], "alt": "Rapaz escrevendo em um caderno ao lado de um laptop aberto"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01", "02", "05", "06", "07", "09", "11", "13", "14", "15", "16", "17", "18"], "nota": "ícones decorativos (apóstrofo, mais, seta, estrela, alvo, balão, pessoas, check) e selo do número da página"},
+    {"pagina": 2, "recortes": ["01", "02", "03", "04", "05", "06", "08", "09", "10", "13", "15", "16", "21", "22", "23", "24", "26", "27", "28", "29", "30", "31"], "nota": "ícones decorativos (mais, seta, apóstrofo, estrela), textos de exemplo reutilizados (house/book/Sarah's house/Peter's book) e selo do número da página"},
+    {"pagina": 3, "recortes": ["01", "02", "03", "04", "13", "14", "15", "16", "17", "18"], "nota": "ícones decorativos e balões de resposta (It's Mike's watch/Whose bag/It's Sarah's bag/It's Emma's book), estrela e selo da página"},
+    {"pagina": 3, "recortes": ["08"], "nota": "recorte mesclou miniaturas de Ana e Brian com o texto da pergunta (Whose smartphone is this?); não dá para usar sem pegar texto, por isso w08p3b junta os recortes 07 e 06"},
+    {"pagina": 4, "recortes": ["01", "05", "06", "09", "10", "11", "12", "13", "14", "15", "16"], "nota": "ícones decorativos (apóstrofo, seta, check, lâmpada, estrela) e selo da página"},
+    {"pagina": 5, "recortes": ["01", "02", "07", "08", "09", "10"], "nota": "ícones decorativos (lápis, lupa, estrela, pessoa, bolsa)"},
+    {"pagina": 6, "recortes": ["01", "02", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"], "nota": "ícones decorativos (apóstrofo, seta, check, atenção, X, estrela, números, alvo)"},
+    {"pagina": 7, "recortes": ["01"], "nota": "recorte inclui a foto e o texto Lucas's food colados num só bloco opaco; w08p7a usa caixa direto da página só na área da foto, sem o texto"},
+    {"pagina": 7, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17"], "nota": "ícones decorativos (pessoa, pessoas, S, olho, números, estrela, seta, alvo) e selo da página"},
+    {"pagina": 8, "recortes": ["01", "03", "04", "05", "06", "08", "09", "10", "11", "12"], "nota": "ícones decorativos (lápis, lâmpada), avatares em miniatura do diálogo, números e selo da página"},
+    {"pagina": 9, "recortes": ["01", "02", "03", "04", "05", "07", "08", "09", "10"], "nota": "ícones decorativos (pessoa, maleta, balança, lâmpada, lápis, play, balão, informação) e selo da página"}
+  ]
+}

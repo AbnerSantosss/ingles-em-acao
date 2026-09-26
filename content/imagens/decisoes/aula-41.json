@@ -1,0 +1,35 @@
+{
+  "aula": 41,
+  "vagas": {
+    "a41p1": {"pagina": 1, "recortes": ["01"], "alt": "Mulher sorridente tomando café da manhã na cama com bandeja de frutas"},
+
+    "a41p2": {"pagina": 2, "caixa": [738, 338, 972, 1327], "alt": "Mãe com filho, senhor correndo, casal limpando a casa, crianças tomando suco e noivos abraçados"},
+
+    "a41p3": {"pagina": 3, "recortes": ["02"], "alt": "Casal sorridente conversando dentro de um shopping"},
+
+    "a41p4a": {"pagina": 4, "recortes": ["01", "02"], "alt": "Homem tomando banho de chuveiro com os olhos fechados"},
+    "a41p4b": {"pagina": 4, "recortes": ["03"], "alt": "Amigos cumprimentando uma mulher na porta de casa"},
+    "a41p4c": {"pagina": 4, "recortes": ["04"], "alt": "Mulher lendo um livro no sofá enrolada em um cobertor"},
+
+    "a41p5": {"pagina": 5, "recortes": ["03", "02"], "alt": "Plateia de cinema comendo pipoca ao lado de mão segurando uma chave"},
+
+    "a41p6": {"pagina": 6, "recortes": ["01"], "alt": "Mulher sorridente segurando um molho de chaves"},
+
+    "a41p7": {"pagina": 7, "recortes": ["02"], "alt": "Mulher com a mão no ouvido, atenta a um som"},
+
+    "a41p10": {"pagina": 10, "recortes": ["10"], "alt": "Casal sorrindo enquanto limpa a cozinha juntos"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03", "04", "05", "06", "07", "08"], "nota": "ícones de seção da introdução (estrela, lâmpada, alvo, livro, balões, lápis, fala), não são vaga"},
+    {"pagina": 2, "recortes": ["01"], "nota": "número 1 do título, não é vaga"},
+    {"pagina": 2, "recortes": ["02", "03", "04", "05"], "nota": "o recorte 02 pega o final da etiqueta 'CAN → COULD = PAST ABILITY' colado na borda esquerda da foto do senhor correndo; a coluna de 5 fotos foi recortada direto da página (caixa) um pouco mais à direita, antes do texto da etiqueta"},
+    {"pagina": 3, "recortes": ["01"], "nota": "número 2 do título, não é vaga"},
+    {"pagina": 3, "recortes": ["03"], "nota": "plateia do cinema; na página 3 fica 668 px abaixo do casal do shopping (recorte 02), separada por 7 linhas de texto dos EXEMPLOS. Juntar os dois recortes cria uma figura de 339×1048 com um vão transparente enorme no meio (quase 80% da altura), quebrando o card; por isso a vaga usa só o casal no shopping. Ver dúvida em duvidas."},
+    {"pagina": 5, "recortes": ["01"], "nota": "recorte do casal no shopping inclui o canto do card com o texto 'went to the'/'had lunch' da história sobreposto; como o ph também pedia a plateia do cinema e a mão com a chave, a vaga usou só esses dois recortes limpos, sem texto"},
+    {"pagina": 6, "recortes": ["02", "03", "04"], "nota": "bolinhas numeradas (1, 2, 5) com fragmento do texto do exercício 'complete with the simple past', não são vaga"},
+    {"pagina": 7, "recortes": ["01"], "nota": "número 2 do título, não é vaga"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04"], "nota": "página de gabarito sem vaga de imagem; número 1 do título e enfeites decorativos de canto, sem figura própria"},
+    {"pagina": 9, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "página de gabarito sem vaga de imagem; número 2 do título, ícones de check e enfeite decorativo, sem figura própria"},
+    {"pagina": 11, "recortes": ["01", "02", "03"], "nota": "página final 'EU CONSIGO' sem vaga de imagem; ícone de check, badge e enfeite decorativo, sem figura própria"}
+  ]
+}

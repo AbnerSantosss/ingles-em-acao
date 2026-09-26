@@ -1,0 +1,40 @@
+{
+  "aula": 34,
+  "vagas": {
+    "a34p1a": {"pagina": 1, "recortes": ["02"], "alt": "Homem tocando violão sentado na sala de estar"},
+    "a34p1b": {"pagina": 1, "recortes": ["01"], "alt": "Mulher de macacão pintando a parede de azul com rolo"},
+    "a34p1c": {"pagina": 1, "recortes": ["03"], "alt": "Casal sorridente cozinhando juntos na cozinha"},
+
+    "a34p2a": {"pagina": 2, "recortes": ["01"], "alt": "Mulher com a mão na cabeça parecendo confusa lendo um livro"},
+    "a34p2b": {"pagina": 2, "recortes": ["02"], "alt": "Homem preocupado com a mão na cabeça vendo a panela pegar fogo"},
+    "a34p2c": {"pagina": 2, "recortes": ["03"], "alt": "Tenista com dor no ombro segurando a raquete"},
+
+    "a34p3a": {"pagina": 3, "recortes": ["02"], "alt": "Homem correndo na orla à beira-mar"},
+    "a34p3b": {"pagina": 3, "recortes": ["03"], "alt": "Homem jogando tênis rebatendo a bola em quadra"},
+    "a34p3c": {"pagina": 3, "recortes": ["04"], "alt": "Águia de asas abertas voando no céu azul"},
+
+    "a34p4a": {"pagina": 4, "recortes": ["01"], "alt": "Homem sorridente andando a cavalo com capacete de equitação"},
+    "a34p4b": {"pagina": 4, "recortes": ["03"], "alt": "Rapaz andando de skate em uma praça ao ar livre"},
+    "a34p4c": {"pagina": 4, "recortes": ["04"], "alt": "Moça cantando em um microfone usando fone de ouvido"},
+
+    "a34p5": {"pagina": 5, "caixa": [485, 316, 974, 972], "alt": "Mulher de coque desenhando em um caderno de esboços"},
+
+    "a34p6": {"pagina": 6, "recortes": ["06"], "alt": "Dois amigos sorrindo conversando em uma cafeteria"},
+
+    "a34p7": {"pagina": 8, "recortes": ["01", "03", "05"], "alt": "Colagem de mulher pintando um quadro, homem tocando violão e jogador de basquete"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["04", "05", "06"], "nota": "bolinhas coloridas decorativas de progresso, não são fotos"},
+    {"pagina": 3, "recortes": ["01"], "nota": "ícone de interrogação decorativo do título CAN YOU...?, não é foto"},
+    {"pagina": 4, "recortes": ["02"], "nota": "continuação da foto do cavaleiro com o texto do card colado na imagem, já coberta pelo recorte 01 usado em a34p4a"},
+    {"pagina": 4, "recortes": ["05"], "nota": "ícone de microfone decorativo, não é foto"},
+    {"pagina": 5, "recortes": ["01"], "nota": "ícone X decorativo do título CAN X BE GOOD AT, não é foto"},
+    {"pagina": 5, "recortes": ["02"], "nota": "recorte traz colados os cards de texto can + base verb e be good at sobre a foto; a34p5 usa corte direto da página sem esses cards"},
+    {"pagina": 5, "recortes": ["03"], "nota": "linha pontilhada decorativa que liga verbo e substantivo, não é foto"},
+    {"pagina": 7, "recortes": ["01"], "nota": "mesma foto da pintora já usada em a34p7 a partir da página 8 (recorte mais limpo, sem ícones vizinhos colados)"},
+    {"pagina": 7, "recortes": ["02", "03"], "nota": "recortes de músico e jogador de basquete trazem colados na borda o ícone de termômetro e o de proveta dos itens vizinhos do exercício; a34p7 usa os recortes equivalentes da página 8, sem esses ícones"},
+    {"pagina": 7, "recortes": ["04"], "nota": "bolinha numerada do exercício, não é foto"},
+    {"pagina": 8, "recortes": ["02", "04", "06"], "nota": "bolinhas numeradas do gabarito e ícone de violão são elementos de interface, não fotos"},
+    {"pagina": 9, "recortes": ["01", "02", "03", "04", "05", "06", "07"], "nota": "página final da aula: ícones de checklist, microfone da prática com IA, progresso e seta são elementos fixos do app, não fotos de conteúdo"}
+  ]
+}

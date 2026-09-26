@@ -14,7 +14,7 @@ import type { PropsDoFormulario } from './tipos';
 import type { Erros } from './validacao';
 
 const ORDEM = ['items', 'cols'] as const;
-const ORDEM_DO_ITEM = ['tag', 'lines', 'note', 'id', 'ph', 'src', 'alt', 'c', 'v'] as const;
+const ORDEM_DO_ITEM = ['tag', 'lines', 'note', 'id', 'ph', 'src', 'alt', 'w', 'h', 'c', 'v'] as const;
 
 /** Cartão novo herda as cores do último, que é o que o admin quase sempre quer. */
 function novoCartao(lista: readonly unknown[]): Objeto {

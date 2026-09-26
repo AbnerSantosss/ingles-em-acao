@@ -1,0 +1,56 @@
+{
+  "aula": 31,
+  "vagas": {
+    "a31p1a": {"pagina": 1, "caixa": [0, 277, 1024, 668], "alt": "Museu ao lado do parque, com as placas PARK e MUSEUM"},
+    "a31p1b": {"pagina": 1, "caixa": [0, 957, 1024, 1220], "alt": "Hotel de um lado e aquário do outro, com seta dupla indicando a distância"},
+
+    "a31p2": {"pagina": 2, "caixa": [31, 335, 1024, 1038], "alt": "Mulher pedindo informação a um homem na rua, dizendo Excuse me"},
+
+    "a31p3": {"pagina": 3, "recortes": ["01"], "alt": "Mapa da cidade com museu, parque, biblioteca, livraria, café e ponto de ônibus"},
+    "a31p3a": {"pagina": 3, "recortes": ["07"], "alt": "Livraria bem em frente ao museu, do outro lado da rua"},
+    "a31p3b": {"pagina": 3, "recortes": ["08"], "alt": "Hotel na esquina da A Street com a 15th Avenue"},
+
+    "a31p4a": {"pagina": 4, "caixa": [450, 236, 983, 636], "alt": "Vista aérea de uma escola com seta virando à direita na esquina"},
+    "a31p4b": {"pagina": 4, "caixa": [450, 636, 983, 957], "alt": "Vista aérea de quarteirão residencial com seta virando à esquerda"},
+    "a31p4c": {"pagina": 4, "caixa": [51, 1131, 473, 1453], "alt": "Vista aérea de avenida arborizada reta com seta azul em frente"},
+    "a31p4d": {"pagina": 4, "caixa": [518, 1135, 973, 1454], "alt": "Vista aérea de rua com seta roxa entrando e seguindo até o cruzamento"},
+
+    "a31p5": {"pagina": 5, "recortes": ["05"], "alt": "Mulher caminhando rumo ao parque, passando pela livraria até a faixa de pedestres"},
+
+    "a31p6a": {"pagina": 6, "caixa": [178, 362, 495, 662], "alt": "Esquina de avenida arborizada com seta curva virando à esquerda"},
+    "a31p6b": {"pagina": 6, "caixa": [660, 362, 978, 662], "alt": "Museu de colunas na esquina com seta virando à direita"},
+    "a31p6c": {"pagina": 6, "caixa": [205, 772, 772, 969], "alt": "Avenida reta e arborizada com seta azul apontando em frente"},
+    "a31p6d": {"pagina": 6, "recortes": ["07"], "alt": "Placa de rua OAK STREET na esquina de um prédio"},
+    "a31p6e": {"pagina": 6, "recortes": ["10", "11"], "alt": "Dois mapinhas aéreos: rota pela first street e pela next street"},
+
+    "a31p7a": {"pagina": 7, "recortes": ["01", "02"], "alt": "Duas mulheres conversando na rua e mapa com a rota até o museu"},
+    "a31p7b": {"pagina": 7, "caixa": [634, 892, 973, 1264], "alt": "Mapa de rua com a rota até a livraria e o marcador you are here"},
+
+    "a31p8a": {"pagina": 8, "recortes": ["01"], "alt": "Mulher e homem conversando na calçada de uma cidade"},
+    "a31p8b": {"pagina": 8, "recortes": ["02"], "alt": "Mapa com livraria, parque, semáforo e supermercado"},
+
+    "a31p9": {"pagina": 9, "recortes": ["01"], "alt": "Mapa da cidade com universidade, parque, hotel, museu, livraria, supermercado, ponto de ônibus e cinema"},
+
+    "a31p10": {"pagina": 10, "recortes": ["01"], "alt": "Homem de mochila olhando para a rua da cidade"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01", "04"], "nota": "ícones de lâmpada decorativos do título e da dica final, não são vaga"},
+    {"pagina": 1, "recortes": ["02", "03"], "nota": "recortes trazem a etiqueta NEAR/CLOSE TO ou a legenda do card impressas na própria foto; a31p1a e a31p1b usam caixa recortada direto da página para excluir esse texto duplicado"},
+    {"pagina": 2, "recortes": ["01"], "nota": "recorte inclui a lista de três perguntas sobreposta na parte inferior da foto; a31p2 usa caixa recortada direto da página, mais estreita, para excluir essa lista"},
+    {"pagina": 2, "recortes": ["02", "03", "04"], "nota": "ícones de pino das três perguntas da lista, texto e ícone são renderizados pelo próprio app"},
+    {"pagina": 3, "recortes": ["02", "03", "04", "05", "06"], "nota": "rosa dos ventos e selos N/S/E/W do bloco de rosa dos ventos, sem vaga correspondente"},
+    {"pagina": 3, "recortes": ["09", "10"], "nota": "ícones de lâmpada das dicas ACROSS FROM e CORNER"},
+    {"pagina": 4, "recortes": ["01", "02", "03"], "nota": "recortes trazem a etiqueta e a legenda do card impressas na própria foto; a31p4a-d usam caixa recortada direto da página para excluir esse texto duplicado"},
+    {"pagina": 6, "recortes": ["01", "02", "03"], "nota": "recortes trazem a etiqueta e/ou a dica de lâmpada impressas na própria foto; a31p6a-c usam caixa recortada direto da página para excluir esse texto duplicado"},
+    {"pagina": 6, "recortes": ["04", "05", "06"], "nota": "pinos do quadro FOR EXAMPLE (you are here / 1 block / 2 blocks), sem vaga correspondente"},
+    {"pagina": 6, "recortes": ["08", "09"], "nota": "ícones de lâmpada das dicas take e first/next"},
+    {"pagina": 6, "recortes": ["12", "13", "14", "15"], "nota": "ícone de lâmpada e checks decorativos do quadro REMEMBER"},
+    {"pagina": 6, "recortes": ["16"], "nota": "pino decorativo de rota, sem vaga correspondente"},
+    {"pagina": 7, "recortes": ["03", "04", "05", "06", "08", "10", "11", "12"], "nota": "selos numerados e checks da atividade PRACTICE THE DIALOGUE, página sem vaga de imagem ali"},
+    {"pagina": 7, "recortes": ["07"], "nota": "ícone de lâmpada da dica TIP"},
+    {"pagina": 7, "recortes": ["09"], "nota": "placa GO STRAIGHT/TURN LEFT/TURN RIGHT do quadro TIP, sem vaga correspondente"},
+    {"pagina": 9, "recortes": ["02", "03", "04"], "nota": "selos numerados 1 a 3 da lista de perguntas, sem vaga correspondente"},
+    {"pagina": 10, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09"], "nota": "ícones de check da lista EU CONSIGO"},
+    {"pagina": 10, "recortes": ["10", "11"], "nota": "metades do ícone de microfone do botão PRATIQUE COM A IA"}
+  ]
+}

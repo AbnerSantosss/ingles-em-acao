@@ -13,7 +13,7 @@ import type { PropsDoFormulario } from './tipos';
 import type { Erros } from './validacao';
 
 const ORDEM = ['items'] as const;
-const ORDEM_DO_ITEM = ['n', 'tag', 'lines', 'note', 'id', 'ph', 'src', 'alt', 'c', 'v'] as const;
+const ORDEM_DO_ITEM = ['n', 'tag', 'lines', 'note', 'id', 'ph', 'src', 'alt', 'w', 'h', 'c', 'v'] as const;
 
 /** Passo novo herda as cores do último e segue a numeração. */
 function novoPasso(lista: readonly unknown[]): Objeto {

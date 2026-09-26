@@ -1,0 +1,30 @@
+{
+  "aula": 16,
+  "vagas": {
+    "w16p1a": {"pagina": 1, "recortes": ["01"], "alt": "Casa de dois andares em corte com quarto, escritório, banheiro, sala e cozinha"},
+
+    "w16p2a": {"pagina": 2, "recortes": ["02"], "alt": "Fachada de casa moderna com etiquetas house e garden apontando a casa e o jardim"},
+
+    "w16p3a": {"pagina": 3, "recortes": ["03"], "alt": "Sala de estar com sofá, mesa de centro e poltrona com etiquetas nomeando os móveis"},
+
+    "w16p4a": {"pagina": 4, "recortes": ["01"], "alt": "Cozinha moderna com ilha, geladeira e armários com etiquetas em inglês"},
+
+    "w16p5a": {"pagina": 5, "recortes": ["01"], "alt": "Quarto e área de estudo com cama, escrivaninha e computador com etiquetas em inglês"},
+    "w16p5b": {"pagina": 5, "recortes": ["02", "03", "04"], "alt": "Mulher pergunta algo a homem de camisa azul entre balões roxo e turquesa de diálogo"},
+
+    "w16p6a": {"pagina": 6, "recortes": ["01"], "alt": "Banheiro moderno com box, vaso sanitário e pia com etiquetas em inglês"},
+
+    "w16p7a": {"pagina": 7, "caixa": [65, 385, 955, 962], "alt": "Dez cartões ligando móveis como sofá e cama aos cômodos correspondentes da casa"},
+    "w16p7b": {"pagina": 7, "caixa": [65, 1090, 955, 1226], "alt": "Quatro cartões com poltrona verde, luminária preta, almofadas e cadeiras de madeira"},
+
+    "w16p8a": {"pagina": 8, "recortes": ["01"], "alt": "Ana e Daniel conversam na sala de estar com a cozinha ao fundo"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03"], "nota": "ícones do objetivo da aula (check) e do tempo estimado (relógio)"},
+    {"pagina": 4, "recortes": ["02"], "nota": "ícone de tempo estimado (relógio)"},
+    {"pagina": 6, "recortes": ["02", "03", "04", "05"], "nota": "ícones de ouvir pronúncia e de tempo estimado"},
+    {"pagina": 7, "recortes": ["01", "12"], "nota": "selos numerados 1 e 2 das seções MATCH THE ROOM e NAME IT"},
+    {"pagina": 8, "recortes": ["02", "03"], "nota": "ícone de balão do YOUR TURN e de alto-falante da instrução final"},
+    {"pagina": 9, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"], "nota": "página sem vagas de imagem; ícones de checklist, cards de ação e navegação da aula concluída"}
+  ]
+}

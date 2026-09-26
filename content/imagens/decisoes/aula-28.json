@@ -1,0 +1,63 @@
+{
+  "aula": 28,
+  "vagas": {
+    "w28p1a": {"pagina": 1, "recortes": ["01"], "alt": "Três jovens estudantes sorridentes caminhando juntos segurando cadernos"},
+
+    "w28p3a": {"pagina": 3, "recortes": ["01"], "alt": "Rapaz de camisa jeans sorrindo enquanto escreve em um caderno à mesa"},
+    "w28p3b": {"pagina": 3, "recortes": ["04"], "alt": "Letra K verde apoiada em uma pilha de livros sobre a mesa"},
+    "w28p3c": {"pagina": 3, "recortes": ["05"], "alt": "Família de cinco sorrindo junta no sofá, todos se olhando"},
+
+    "w28p4a": {"pagina": 4, "recortes": ["01"], "alt": "Calendário de mesa de abril com o dia dez circulado em vermelho"},
+
+    "w28p5a": {"pagina": 5, "recortes": ["01"], "alt": "Torre do Big Ben com a bandeira do Reino Unido tremulando ao vento"},
+    "w28p5b": {"pagina": 5, "recortes": ["02"], "alt": "Retrato circular da rainha Elizabeth II usando tiara e colar de pérolas"},
+    "w28p5c": {"pagina": 5, "recortes": ["05"], "alt": "Skyline de cidade moderna com arranha-céus de vidro à beira de um rio"},
+    "w28p5d": {"pagina": 5, "caixa": [414, 970, 589, 1244], "alt": "Prédio moderno de três andares com fachada cinza e janelas iluminadas"},
+
+    "w28p6a": {"pagina": 6, "recortes": ["02"], "alt": "Jovem casal sorrindo à mesa com caderno, notebook e café para viagem"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02"], "nota": "ícone de alvo do card de definição do número ordinal"},
+    {"pagina": 1, "recortes": ["03", "04", "05"], "nota": "selos de medalha 1º 2º 3º ao lado dos números ordinais"},
+    {"pagina": 1, "recortes": ["06"], "nota": "ícone de calendário do lembrete da Aula 27"},
+    {"pagina": 1, "recortes": ["07", "08", "09", "10", "11", "12", "13", "14", "15"], "nota": "ícones de check da lista NESTA AULA VOCÊ VAI"},
+    {"pagina": 1, "recortes": ["16"], "nota": "ícone de foguete do rodapé"},
+
+    {"pagina": 2, "recortes": ["01"], "nota": "fragmento do título NÚMEROS ORDINAIS PRINCIPAIS"},
+    {"pagina": 2, "recortes": ["02", "03", "04", "05"], "nota": "selos numerados 1, 2, 3 e 4+ das regras de sufixo"},
+    {"pagina": 2, "recortes": ["06", "09", "11"], "nota": "fragmentos de texto do sufixo rd repetidos na página"},
+    {"pagina": 2, "recortes": ["07"], "nota": "ícone de alerta dos casos especiais"},
+    {"pagina": 2, "recortes": ["08"], "nota": "ícone de lâmpada do card LEMBRE-SE"},
+    {"pagina": 2, "recortes": ["10"], "nota": "ícone de estrela do card DICA"},
+
+    {"pagina": 3, "recortes": ["02"], "nota": "ícone de quebra-cabeça da seção COMPOUND ORDINALS"},
+    {"pagina": 3, "recortes": ["03"], "nota": "selo numerado 2 da seção POSITION IN CONTEXT"},
+    {"pagina": 3, "recortes": ["06"], "nota": "ícone de lâmpada do card LEMBRE-SE"},
+    {"pagina": 3, "recortes": ["07", "08", "09"], "nota": "selos numerados 1, 2 e 3 de first second third"},
+    {"pagina": 3, "recortes": ["10"], "nota": "ícone de alvo do rodapé"},
+
+    {"pagina": 4, "recortes": ["02", "03"], "nota": "setas decorativas entre forma escrita e leitura"},
+    {"pagina": 4, "recortes": ["04"], "nota": "ícone de alerta do ALERTA IMPORTANTE"},
+    {"pagina": 4, "recortes": ["05"], "nota": "ícone de balão do card PRACTICE"},
+    {"pagina": 4, "recortes": ["06"], "nota": "ícone de estrela do rodapé"},
+
+    {"pagina": 5, "recortes": ["03", "04", "06", "07"], "nota": "ícones de seção (coroa e relógio) de TÍTULOS e SÉCULOS"},
+    {"pagina": 5, "recortes": ["08"], "nota": "selo numerado 3 da seção ANDARES"},
+    {"pagina": 5, "recortes": ["10"], "nota": "ícone de alerta do aviso sobre numeração de andares"},
+    {"pagina": 5, "recortes": ["11"], "nota": "ícone de lâmpada do card LEMBRE-SE"},
+    {"pagina": 5, "recortes": ["09"], "nota": "recorte do prédio veio com texto do quadro AMERICAN ENGLISH colado; w28p5d usa corte direto da página"},
+    {"pagina": 5, "recortes": ["12"], "nota": "ícone de prédios do rodapé"},
+
+    {"pagina": 6, "recortes": ["01", "11"], "nota": "balões de fala decorativos do título e do LET'S TALK"},
+    {"pagina": 6, "recortes": ["03", "04", "05", "06", "07", "08", "09"], "nota": "selos numerados 1 a 7 dos números para ler em voz alta"},
+    {"pagina": 6, "recortes": ["10", "12", "15", "16", "17", "19", "20", "22"], "nota": "etiquetas Mia: e Leo: do diálogo"},
+    {"pagina": 6, "recortes": ["13", "14"], "nota": "ícones de pessoas decorativos ao lado do diálogo"},
+    {"pagina": 6, "recortes": ["18"], "nota": "ícone de bolo de aniversário ao lado do diálogo"},
+    {"pagina": 6, "recortes": ["21"], "nota": "ícone de prédio ao lado do diálogo"},
+    {"pagina": 6, "recortes": ["23"], "nota": "ícone de lâmpada do card DICA"},
+
+    {"pagina": 7, "recortes": ["01"], "nota": "ícone de alvo do card EU CONSIGO"},
+    {"pagina": 7, "recortes": ["02"], "nota": "ícone de gráfico do card PROGRESSO"},
+    {"pagina": 7, "recortes": ["03"], "nota": "ícone de avançar do card PRÓXIMA AULA"}
+  ]
+}

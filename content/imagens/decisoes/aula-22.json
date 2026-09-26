@@ -1,0 +1,26 @@
+{
+  "aula": 22,
+  "vagas": {
+    "w22p1a": {"pagina": 1, "recortes": ["01"], "alt": "Homem de camisa jeans conversa sorrindo com uma mulher de suéter amarelo em uma cafeteria"},
+    "w22p1b": {"pagina": 1, "recortes": ["11"], "alt": "Prancheta azul-marinho com lista de tarefas marcadas e um lápis apoiado"},
+    "w22p2a": {"pagina": 2, "caixa": [698, 53, 1000, 365], "alt": "Bússola de bolso azul-marinho sobre mapa-múndi, com balões de interrogação roxo, laranja e azul ao redor"},
+    "w22p2b": {"pagina": 2, "caixa": [700, 1214, 915, 1355], "alt": "Silhueta de um homem pensativo com a mão no queixo e balão de pensamento com interrogação"},
+    "w22p3a": {"pagina": 3, "recortes": ["03"], "alt": "Homem sorri de perfil ao lado de uma mulher loira de suéter bege, sentados no sofá"},
+    "w22p4a": {"pagina": 4, "recortes": ["02"], "alt": "Casal sorridente observa um mapa aberto sobre a mesa, com câmera e passaporte ao lado"},
+    "w22p5a": {"pagina": 5, "recortes": ["02"], "alt": "Três amigos sorriem conversando à mesa de um restaurante, com uma pizza ao centro"},
+    "w22p6a": {"pagina": 6, "recortes": ["06"], "alt": "Homem de camisa jeans sorri de perfil enquanto a mulher ao lado o observa sorrindo"},
+    "w22p8a": {"pagina": 8, "recortes": ["13", "14"], "alt": "Menino pensativo com a mão no queixo e balão de fala com ponto de interrogação"},
+    "w22p10a": {"pagina": 10, "recortes": ["05"], "alt": "Três amigos sorriem conversando à mesa, com a borda de uma pizza aparecendo embaixo"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13"], "nota": "ícones das perguntas de exemplo, da cadeia pergunta/informação/resposta e do checklist NESTA AULA VOCÊ VAI"},
+    {"pagina": 2, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17"], "nota": "ícones dos oito cartões de question words, círculos numerados do mapa COMO USAR ESTE MAPA (olho, lupa, alvo) e lâmpada e estrela dos avisos finais"},
+    {"pagina": 4, "recortes": ["01", "03", "04"], "nota": "ícone X do título e ícones de pin e de balança dos boxes PORTANTO e COMPARE"},
+    {"pagina": 5, "recortes": ["01", "03"], "nota": "ícone X do título e lâmpada do box PISTA IMPORTANTE"},
+    {"pagina": 7, "recortes": ["01", "02", "03"], "nota": "ícone de lápis da instrução e lâmpada do box pense primeiro na resposta"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "15"], "nota": "círculos numerados 1 a 7 com os ícones das respostas do exercício, lâmpada da DICA RÁPIDA e estrela do ÓTIMO final"},
+    {"pagina": 9, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "círculos numerados 6 a 10 dos espaços em branco e três círculos coloridos do rodapé"},
+    {"pagina": 10, "recortes": ["01", "02", "03", "04", "06", "07", "08"], "nota": "círculos numerados 1 a 4 das perguntas e três pontinhos decorativos do rodapé"},
+    {"pagina": 11, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"], "nota": "ícones de check da lista EU CONSIGO e ícones de videoaula, pratique com IA, progresso e próxima aula"}
+  ]
+}

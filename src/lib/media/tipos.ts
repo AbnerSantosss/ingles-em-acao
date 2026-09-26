@@ -7,8 +7,8 @@
  * são módulos de servidor — importá-los de um componente `'use client'`
  * quebraria o bundle do navegador.
  *
- * O contrato mais importante daqui é {@link MidiaSelecionada}: `{ src, alt }` é
- * exatamente o par que os blocos `image`, `profile`, `cards[]` e `steps[]`
+ * O contrato mais importante daqui é {@link MidiaSelecionada}: `{ src, alt, w, h }`
+ * são exatamente os campos que os blocos `image`, `profile`, `cards[]` e `steps[]`
  * aceitam (ver `src/lib/content/types.ts`). O seletor de mídia devolve isso, e
  * o editor de blocos grava isso no JSON da página — sem tradução no meio.
  */
@@ -89,8 +89,12 @@ export function caminhoDaUrl(src: string): string | null {
  * alternativo **desta ocorrência**, que começa igual ao `alt` do asset e pode
  * ser ajustado para o contexto do bloco (a mesma foto pode ilustrar duas coisas
  * diferentes em duas aulas).
+ *
+ * `w`/`h` são o tamanho natural do arquivo em px, copiados de `width`/`height`
+ * da biblioteca. Só vêm os dois juntos, e só quando a biblioteca leu as
+ * dimensões (ver {@link tamanhoDaMidia}); ausentes, o bloco fica sem tamanho.
  */
-export type MidiaSelecionada = { src: string; alt: string };
+export type MidiaSelecionada = { src: string; alt: string; w?: number; h?: number };
 
 /** Tipo do asset. Espelha o enum `MediaKind` do Prisma sem importar o client. */
 export type TipoDeMidia = 'IMAGE' | 'VIDEO';
@@ -157,6 +161,21 @@ export function formatarBytes(bytes: number): string {
 
   const mb = kb / 1024;
   return `${mb.toFixed(1).replace('.', ',')} MB`;
+}
+
+/**
+ * `{ w, h }` para gravar no bloco a partir de `width`/`height` da biblioteca —
+ * ou `{}` quando falta uma das duas ou alguma não é inteiro positivo (dimensão
+ * não lida). É o que garante que o tamanho de uma imagem nunca fica colado em
+ * outra: sem medida confiável, o bloco simplesmente não recebe `w`/`h`.
+ */
+export function tamanhoDaMidia(
+  width: number | null | undefined,
+  height: number | null | undefined,
+): { w?: number; h?: number } {
+  const valido = (n: number | null | undefined): n is number =>
+    typeof n === 'number' && Number.isInteger(n) && n > 0;
+  return valido(width) && valido(height) ? { w: width, h: height } : {};
 }
 
 /** "1200 × 800 px", ou `null` quando as dimensões não foram lidas. */

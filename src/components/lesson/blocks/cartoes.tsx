@@ -44,7 +44,10 @@ function numero(n: string | number | undefined, i: number): string | number {
   return n === undefined || n === "" ? i + 1 : n;
 }
 
-/** Ilustração da aula em proporção 16/9. */
+/**
+ * Ilustração da aula. Com `w`/`h`, a figura inteira na proporção dela, na fatia
+ * da coluna que ocupava no e-book; sem eles, a caixa 16/9 de sempre.
+ */
 export function BlocoImage({ bloco }: { bloco: ImageBlock }) {
   return (
     <Ilustracao
@@ -52,6 +55,9 @@ export function BlocoImage({ bloco }: { bloco: ImageBlock }) {
       ph={bloco.ph}
       src={bloco.src}
       alt={bloco.alt}
+      w={bloco.w}
+      h={bloco.h}
+      encaixe="coluna"
       proporcao="16 / 9"
       raio={18}
     />
@@ -92,6 +98,8 @@ export function BlocoCards({ bloco }: { bloco: CardsBlock }) {
                     ph={c.ph}
                     src={c.src}
                     alt={c.alt}
+                    w={c.w}
+                    h={c.h}
                     proporcao="16 / 10"
                     raio={14}
                   />
@@ -167,6 +175,8 @@ export function BlocoSteps({ bloco }: { bloco: StepsBlock }) {
                     ph={s.ph}
                     src={s.src}
                     alt={s.alt}
+                    w={s.w}
+                    h={s.h}
                     proporcao="16 / 10"
                     raio={14}
                   />
@@ -378,6 +388,8 @@ export function BlocoProfile({ bloco }: { bloco: ProfileBlock }) {
           ph={bloco.ph}
           src={bloco.src}
           alt={bloco.alt}
+          w={bloco.w}
+          h={bloco.h}
           altura={190}
           raio={14}
         />

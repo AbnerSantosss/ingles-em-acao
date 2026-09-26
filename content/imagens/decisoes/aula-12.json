@@ -1,0 +1,48 @@
+{
+  "aula": 12,
+  "vagas": {
+    "w12p1a": { "pagina": 1, "recortes": ["01"], "alt": "Amiga de blusa lilás e amigo de camisa verde conversam à mesa de um café" },
+    "w12p1b": { "pagina": 1, "caixa": [586, 902, 868, 1098], "alt": "Caneca de cerâmica azul-royal com três risquinhos roxos de destaque ao lado" },
+
+    "w12p2a": { "pagina": 4, "caixa": [83, 508, 218, 752], "alt": "Celular preto visto de costas, em pé e levemente inclinado" },
+    "w12p2b": { "pagina": 4, "caixa": [272, 508, 408, 758], "alt": "Mochila de tecido azul-marinho vista de frente sobre fundo branco" },
+    "w12p2c": { "pagina": 4, "recortes": ["01"], "alt": "Caneca de cerâmica marrom cheia de café, vista de lado" },
+    "w12p2d": { "pagina": 4, "caixa": [622, 512, 788, 758], "alt": "Camiseta branca de manga curta estendida de frente" },
+    "w12p2e": { "pagina": 4, "caixa": [800, 508, 965, 760], "alt": "Notebook cinza aberto, visto de trás e de lado" },
+    "w12p2f": { "pagina": 4, "recortes": ["04"], "alt": "Planta de folhas verdes largas em vaso bege claro" },
+    "w12p2g": { "pagina": 4, "recortes": ["06"], "alt": "Laranja inteira com uma folha verde presa ao cabinho" },
+    "w12p2h": { "pagina": 4, "recortes": ["07"], "alt": "Caderno de capa rosa com espiral dourada, levemente inclinado" },
+    "w12p2i": { "pagina": 4, "recortes": ["08"], "alt": "Carro sedã vermelho visto de frente e de três quartos" },
+    "w12p2j": { "pagina": 4, "recortes": ["05"], "alt": "Garrafa térmica amarela em pé, com tampa preta" },
+
+    "w12p3a": { "pagina": 5, "caixa": [172, 495, 468, 675], "alt": "Celular preto deitado de costas sobre superfície branca" },
+    "w12p3b": { "pagina": 5, "caixa": [577, 503, 904, 668], "alt": "Garrafa térmica amarela em pé sobre mesa de madeira clara" },
+    "w12p3c": { "pagina": 5, "caixa": [160, 798, 484, 968], "alt": "Caderno de capa azul com espiral, fechado sobre mesa de madeira" },
+    "w12p3d": { "pagina": 5, "caixa": [577, 798, 903, 995], "alt": "Planta de folhas verdes largas em vaso bege claro sobre mesa" },
+
+    "w12p4a": { "pagina": 6, "recortes": ["01"], "alt": "Celular verde-escuro apoiado em pé sobre mesa de madeira" },
+    "w12p4b": { "pagina": 6, "caixa": [363, 349, 618, 640], "alt": "Mochila azul-marinho com fivelas e alças de couro caramelo" },
+    "w12p4c": { "pagina": 6, "recortes": ["02"], "alt": "Carro utilitário branco parado na rua, visto de frente" },
+    "w12p4d": { "pagina": 6, "recortes": ["03"], "alt": "Caneca de cerâmica amarela vista de lado sobre mesa de madeira" },
+    "w12p4e": { "pagina": 6, "recortes": ["04"], "alt": "Camiseta rosa-escura pendurada em um cabide de madeira" },
+    "w12p4f": { "pagina": 6, "recortes": ["05"], "alt": "Planta de folhas verdes largas em vaso bege claro sobre mesa" },
+
+    "w12p5a": { "manter": true },
+    "w12p5b": { "manter": true },
+
+    "w12p6a": { "pagina": 8, "recortes": ["02"], "alt": "Rapaz de moletom azul sentado sozinho no sofá, olhar cabisbaixo" },
+    "w12p6b": { "pagina": 8, "recortes": ["04"], "alt": "Mulher de blazer bege e homem de camisa verde sorriem com um tablet" },
+    "w12p6c": { "pagina": 8, "recortes": ["05"], "alt": "Homem de camisa vermelha recebe os pais na porta de casa" },
+
+    "w12p7": { "pagina": 7, "recortes": ["01"], "alt": "Ana e Daniel conversam à mesa de um café sobre a mochila azul" }
+  },
+  "sobras": [
+    { "pagina": 1, "recortes": ["02", "03", "04"], "nota": "ícones de alternativa (A/B) e marca de certo, não são fotos" },
+    { "pagina": 2, "recortes": ["02", "03", "04", "06", "07"], "nota": "ícones pequenos das seções de idioms" },
+    { "pagina": 3, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"], "nota": "ícones da tela de conclusão da aula, página sem vagas" },
+    { "pagina": 4, "recortes": ["02", "03", "09"], "nota": "fragmento residual e ícone de dica, não são fotos de produto" },
+    { "pagina": 6, "recortes": ["06", "07", "08", "09", "10"], "nota": "ícones de instrução (olho, alto-falante, marcadores de lista)" },
+    { "pagina": 7, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09"], "nota": "ícones numerados das perguntas de conversação" },
+    { "pagina": 8, "recortes": ["01", "03", "06", "07"], "nota": "ícones de marcador de exercício" }
+  ]
+}

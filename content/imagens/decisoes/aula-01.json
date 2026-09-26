@@ -1,0 +1,15 @@
+{
+  "aula": 1,
+  "vagas": {
+    "a1p1": {"pagina": 1, "recortes": ["01"], "alt": "Grupo de quatro amigos conversando animadamente na sala"},
+    "a1p2": {"pagina": 2, "recortes": ["01", "02"], "alt": "Mulher de blusa amarela e homem de camisa azul conversando sentados"},
+    "a1p3": {"pagina": 3, "caixa": [100, 415, 978, 835], "alt": "Rapaz e moça sentados lendo livros, com um cachorro branco ao lado"},
+    "a1p4": {"pagina": 4, "recortes": ["01"], "alt": "Grupo tirando selfie e trio reunido estudando à mesa"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03"], "nota": "ícones decorativos de seção (check e relógio)"},
+    {"pagina": 2, "recortes": ["03", "04"], "nota": "selo do teste relâmpago (letra I) e ícone de alerta do macete"},
+    {"pagina": 3, "recortes": ["01", "02", "03", "04"], "nota": "o recorte 01 traz só o rapaz e o 02 só o cachorro (a moça do meio não foi recortada); a vaga a1p3 usa caixa direto da página para pegar a cena completa com os dois e o cachorro. 03 e 04 são o selo do rótulo IT e as miniaturas de texto HE/SHE da caixa pense rapidamente"},
+    {"pagina": 4, "recortes": ["02", "03", "04", "05"], "nota": "badges numerados 1 e 2, selo WE e ícone de mais da caixa escolha em 2 passos"}
+  ]
+}

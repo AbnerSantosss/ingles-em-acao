@@ -3,12 +3,13 @@ import { CampoDeImagem } from './imagem';
 import { ligador } from './objeto';
 import type { PropsDoFormulario } from './tipos';
 
-const ORDEM = ['name', 'id', 'ph', 'facts', 'src', 'alt'] as const;
+const ORDEM = ['name', 'id', 'ph', 'facts', 'src', 'alt', 'w', 'h'] as const;
 
 /**
  * `profile`: cartão de personagem — foto ao lado de nome e fatos. Como no
  * `image`, o `id` é o nome da arte legada e não se troca aqui; a foto nova vem
- * da biblioteca (`src` + `alt`), enviada ali mesmo se preciso.
+ * da biblioteca (`src` + `alt`, e `w`/`h` gravados pelo seletor), enviada ali
+ * mesmo se preciso.
  */
 export function FormularioProfile({ valor, aoMudar, erros }: PropsDoFormulario) {
   const definir = ligador(valor, aoMudar, ORDEM);

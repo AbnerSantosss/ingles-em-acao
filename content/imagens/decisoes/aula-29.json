@@ -1,0 +1,52 @@
+{
+  "aula": 29,
+  "vagas": {
+    "w29p1a": {"pagina": 1, "recortes": ["01"], "alt": "Casa em corte mostrando quarto, closet, cozinha, sala e banheiro"},
+    "w29p1b": {"pagina": 1, "recortes": ["02"], "alt": "Calendário de mesa, caderno com caneta e despertador azul sobre a mesa"},
+
+    "w29p2a": {"pagina": 2, "recortes": ["01"], "alt": "Quarto de casal claro com cabeceira estofada bege e cortina clara"},
+    "w29p2b": {"pagina": 2, "recortes": ["02"], "alt": "Cozinha branca com mesa redonda de madeira e quatro cadeiras cinza"},
+    "w29p2c": {"pagina": 2, "caixa": [620, 917, 984, 1148], "alt": "Sala de estar bege com sofá, mesa de centro e rack com TV"},
+    "w29p2d": {"pagina": 2, "caixa": [620, 1148, 984, 1413], "alt": "Banheiro bege com banheira embutida e bancada com duas cubas"},
+
+    "w29p5a": {"pagina": 5, "recortes": ["02"], "alt": "Rapaz de camisa jeans azul sorrindo de lado, em recorte circular"},
+    "w29p5b": {"pagina": 5, "recortes": ["04"], "alt": "Moça de blusa rosa e cabelo castanho sorrindo, em recorte circular"},
+
+    "w29p7a": {"pagina": 7, "recortes": ["03"], "alt": "Sala de estar clara com sofá bege, mesa de centro e tapete cinza"},
+    "w29p7b": {"pagina": 7, "recortes": ["08"], "alt": "Calendário de mesa espiralado sobre uma mesa de madeira clara"},
+    "w29p7c": {"pagina": 7, "recortes": ["10"], "alt": "Despertador redondo de moldura clara marcando dez e dez"},
+    "w29p7d": {"pagina": 7, "caixa": [603, 1295, 979, 1467], "alt": "Rapaz sorrindo enquanto escreve em um caderno, com porta lápis ao lado"},
+
+    "w29p8a": {"pagina": 8, "recortes": ["01"], "alt": "Rapaz e moça sorrindo e batendo as mãos em um high five à mesa"},
+    "w29p8b": {"pagina": 8, "caixa": [646, 364, 992, 802], "alt": "Casa iluminada, calendário com datas circuladas e relógio de parede"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["03", "04"], "nota": "ícones das seções HOME e CALENDAR & TIME"},
+    {"pagina": 1, "recortes": ["05", "06", "07", "08", "09", "10"], "nota": "ícones dos itens das listas (sofá, check, calendários e localização)"},
+    {"pagina": 1, "recortes": ["11"], "nota": "número decorativo da página (01)"},
+
+    {"pagina": 3, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18"], "nota": "quadradinhos de marcar (checkbox) das 10 questões True or False"},
+
+    {"pagina": 5, "recortes": ["01"], "nota": "ícone de lupa do título CORRECT THE MISTAKES"},
+    {"pagina": 5, "recortes": ["03", "05"], "nota": "fragmentos decorativos de balão de fala"},
+    {"pagina": 5, "recortes": ["06", "08", "10", "12", "14"], "nota": "mesma foto do Mark repetida como avatar em cada balão (já usada em w29p5a)"},
+    {"pagina": 5, "recortes": ["07", "09", "11", "13", "15"], "nota": "mesma foto da Nancy repetida como avatar em cada balão (já usada em w29p5b)"},
+    {"pagina": 5, "recortes": ["16"], "nota": "ícone de lâmpada da dica FIND THE MISTAKES"},
+
+    {"pagina": 6, "recortes": ["01", "02", "03", "04"], "nota": "ícones de check das categorias corrigidas (Dates, Questions, Articles & Capital Letters, Prepositions)"},
+
+    {"pagina": 7, "recortes": ["01"], "nota": "ícone de lápis do título USE WHAT YOU KNOW"},
+    {"pagina": 7, "recortes": ["02", "05", "06"], "nota": "selos numerados 1, 2 e 3 (versão pequena) das partes do exercício"},
+    {"pagina": 7, "recortes": ["04", "07"], "nota": "selos numerados 1 e 3 duplicados ao lado das linhas de resposta"},
+    {"pagina": 7, "recortes": ["09"], "nota": "selo numerado 2 duplicado (cor lilás) ao lado da pergunta"},
+    {"pagina": 7, "recortes": ["11"], "nota": "ícone de troféu do KEEP GOING"},
+
+    {"pagina": 8, "recortes": ["02"], "nota": "ícone de estrela do título EU CONSIGO"},
+    {"pagina": 8, "recortes": ["04", "05", "06", "07", "08", "09", "10", "11"], "nota": "ícones de check da lista EU CONSIGO"},
+    {"pagina": 8, "recortes": ["12"], "nota": "ícone de vídeo da videoaula"},
+    {"pagina": 8, "recortes": ["13"], "nota": "ícone de microfone de Pratique com a IA"},
+    {"pagina": 8, "recortes": ["14", "15"], "nota": "ícones de cadeado dos recursos exclusivos"},
+    {"pagina": 8, "recortes": ["16"], "nota": "ícone de gráfico do progresso"},
+    {"pagina": 8, "recortes": ["17"], "nota": "ícone de mapa da próxima aula"}
+  ]
+}

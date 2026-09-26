@@ -1,0 +1,26 @@
+{
+  "aula": 26,
+  "vagas": {
+    "w26p1a": {"pagina": 1, "recortes": ["01"], "alt": "Rapaz de camisa jeans azul sorrindo e escrevendo num caderno à mesa"},
+
+    "w26p4a": {"pagina": 4, "recortes": ["01"], "alt": "Mulher de blazer bege e óculos sorrindo diante de um notebook"},
+    "w26p4b": {"pagina": 4, "recortes": ["02"], "alt": "Mulher de chapéu de palha e óculos escuros sorrindo na praia"},
+
+    "w26p5a": {"pagina": 5, "recortes": ["01"], "alt": "Dois homens sorrindo sentados lado a lado à mesa"},
+    "w26p5b": {"pagina": 5, "recortes": ["02"], "alt": "Rapaz de fones de ouvido escrevendo num caderno à mesa"},
+    "w26p5c": {"pagina": 5, "recortes": ["03"], "alt": "Mulher de luvas azuis limpando uma bancada de madeira"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03", "04", "05", "06", "07"], "nota": "ícones de check da lista NESTA AULA VOCÊ VAI"},
+    {"pagina": 1, "recortes": ["08"], "nota": "número decorativo da página"},
+    {"pagina": 2, "recortes": ["01"], "nota": "ícone de letra A do quadro de dica"},
+    {"pagina": 2, "recortes": ["02"], "nota": "ícone de play do quadro leia em voz alta"},
+    {"pagina": 2, "recortes": ["03", "04"], "nota": "bolinhas decorativas ao lado do texto"},
+    {"pagina": 7, "recortes": ["01", "02", "03"], "nota": "ícones de interrogação das perguntas da PARTE 2"},
+    {"pagina": 7, "recortes": ["04"], "nota": "ícone de régua do quadro de dica"},
+    {"pagina": 8, "recortes": ["01"], "nota": "ícone de play do bloco videoaula"},
+    {"pagina": 8, "recortes": ["02", "03", "04", "05", "06", "07", "09", "10"], "nota": "ícones de check da lista EU CONSIGO"},
+    {"pagina": 8, "recortes": ["08"], "nota": "ícone AI do bloco pratique com a IA"},
+    {"pagina": 8, "recortes": ["11"], "nota": "ícone de seta para a próxima aula"}
+  ]
+}

@@ -11,6 +11,7 @@
  * - trocar o valor de um campo existente mantém a posição dele;
  * - campo novo entra na posição da ordem de referência do tipo, não no fim.
  */
+import type { MidiaSelecionada } from '@/lib/media/tipos';
 
 export type Objeto = Record<string, unknown>;
 
@@ -74,6 +75,28 @@ export function semCampo(objeto: Objeto, chave: string): Objeto {
   const saida: Objeto = {};
   for (const [k, v] of Object.entries(objeto)) if (k !== chave) saida[k] = v;
   return saida;
+}
+
+/**
+ * Grava a escolha do seletor de mídia no objeto (bloco `image`, `profile`, item
+ * de `cards`/`steps`). `null` remove `src`, `alt`, `w` e `h`.
+ *
+ * `w`/`h` andam com o arquivo: a escolha sem tamanho (biblioteca que não leu as
+ * dimensões) **apaga** o `w`/`h` que estava ali — o `comCampo` com `undefined`
+ * remove a chave. Se ficassem, a imagem nova seria mostrada na proporção da antiga.
+ */
+export function comImagem(
+  objeto: Objeto,
+  escolha: MidiaSelecionada | null,
+  ordem: readonly string[],
+): Objeto {
+  if (escolha === null) {
+    return semCampo(semCampo(semCampo(semCampo(objeto, 'src'), 'alt'), 'w'), 'h');
+  }
+  let saida = comCampo(objeto, 'src', escolha.src, ordem);
+  saida = comCampo(saida, 'alt', escolha.alt, ordem);
+  saida = comCampo(saida, 'w', escolha.w, ordem);
+  return comCampo(saida, 'h', escolha.h, ordem);
 }
 
 /** Chaves do objeto que o formulário não desenha (ficam intactas, listadas à parte). */

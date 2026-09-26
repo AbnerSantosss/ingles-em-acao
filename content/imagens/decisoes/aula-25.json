@@ -1,0 +1,59 @@
+{
+  "aula": 25,
+  "vagas": {
+    "w25p1a": {"pagina": 1, "recortes": ["01"], "alt": "Policial jovem de farda azul acenando com a mão, sobre fundo preto"},
+    "w25p1b": {"pagina": 1, "recortes": ["02"], "alt": "Mulher de óculos e camisa xadrez azul sorrindo para a câmera"},
+    "w25p1c": {"pagina": 1, "recortes": ["03"], "alt": "Carro perua antigo laranja visto de três quartos, sobre fundo preto"},
+
+    "w25p4a": {"pagina": 4, "recortes": ["01"], "alt": "Policial de farda azul acenando, sorrindo para a câmera"},
+    "w25p4b": {"pagina": 4, "recortes": ["02"], "alt": "Macaco cinza esverdeado segurando e mordendo uma banana"},
+    "w25p4c": {"pagina": 4, "recortes": ["03"], "alt": "Mulher de óculos e cabelo escuro sorrindo, camisa xadrez azul"},
+
+    "w25p5a": {"pagina": 5, "recortes": ["01"], "alt": "Mulher de suéter chorando à noite diante de um notebook aberto"},
+    "w25p5b": {"pagina": 5, "recortes": ["02"], "alt": "Casal sorrindo na cozinha enquanto ele lava a louça na pia"},
+    "w25p5c": {"pagina": 5, "recortes": ["03"], "alt": "Mergulhador nadando sobre um recife de corais coloridos"},
+    "w25p5d": {"pagina": 5, "recortes": ["04"], "alt": "Homem de terno sorrindo com as mãos levantadas à mesa"},
+    "w25p5e": {"pagina": 5, "recortes": ["05"], "alt": "Família de quatro sorrindo juntos no sofá da sala"},
+
+    "w25p6a": {"pagina": 6, "recortes": ["01"], "alt": "Carro perua antigo laranja visto de três quartos"},
+    "w25p6b": {"pagina": 6, "recortes": ["02"], "alt": "Mulher de óculos e camisa xadrez azul sorrindo de frente"},
+    "w25p6c": {"pagina": 6, "recortes": ["03"], "alt": "Mesma mulher de óculos sorrindo, camisa xadrez azul"},
+
+    "w25p7a": {"pagina": 7, "recortes": ["02"], "alt": "Mulher de óculos sorrindo, camisa xadrez azul, fundo branco"},
+    "w25p7b": {"pagina": 7, "recortes": ["03"], "alt": "Homem de barba apontando para o lado, sobre fundo preto"},
+
+    "w25p8a": {"pagina": 8, "caixa": [60, 458, 249, 609], "alt": "Garçonete sorridente segurando bandeja com taças de vinho"},
+    "w25p8b": {"pagina": 8, "recortes": ["01"], "alt": "Enfermeiro de uniforme azul sentado com prancheta no hospital"},
+    "w25p8c": {"pagina": 8, "recortes": ["02"], "alt": "Mulher de óculos e cabelo escuro sorrindo, fundo branco"},
+    "w25p8d": {"pagina": 8, "recortes": ["03"], "alt": "Família sorrindo junta no sofá, pai com bebê no colo"},
+    "w25p8e": {"pagina": 8, "recortes": ["04"], "alt": "Homem de moletom azul apontando para o lado, fundo preto"},
+
+    "w25p10a": {"pagina": 10, "recortes": ["10"], "alt": "Homem sorridente tomando café da manhã, com retratos sobrepostos no canto"},
+
+    "w25p11a": {"pagina": 11, "caixa": [359, 297, 1012, 594], "alt": "Casal sorridente escrevendo em cadernos à mesa, com café e planta"},
+
+    "w25p12a": {"pagina": 12, "caixa": [520, 69, 992, 577], "alt": "Moça de suéter bege escrevendo em um caderno à mesa"},
+
+    "w25p13a": {"pagina": 13, "caixa": [560, 22, 1011, 490], "alt": "Rapaz de óculos escrevendo em um caderno à mesa"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["04", "05", "06", "07", "08", "09"], "nota": "ícones de check da lista NESTA AULA VOCÊ VAI"},
+    {"pagina": 1, "recortes": ["10"], "nota": "número decorativo da página"},
+    {"pagina": 3, "recortes": ["03"], "nota": "fragmento do próprio título HE SHE IT, não é figura"},
+    {"pagina": 6, "recortes": ["04"], "nota": "ícone de X decorativo ao lado do exemplo errado"},
+    {"pagina": 7, "recortes": ["01"], "nota": "ícone de interrogação decorativo do título"},
+    {"pagina": 11, "recortes": ["02"], "nota": "ícone de pessoa da PARTE 1"},
+    {"pagina": 11, "recortes": ["03"], "nota": "pílula com a palavra he"},
+    {"pagina": 11, "recortes": ["04"], "nota": "pílula com a palavra she"},
+    {"pagina": 11, "recortes": ["05"], "nota": "ícone de lápis da PARTE 2"},
+    {"pagina": 11, "recortes": ["06"], "nota": "selo PARTE 2"},
+    {"pagina": 11, "recortes": ["07"], "nota": "ícone de balão de pergunta da PARTE 3"},
+    {"pagina": 11, "recortes": ["08"], "nota": "ícone de estrela da dica final"},
+    {"pagina": 12, "recortes": ["02", "03", "04", "05", "06"], "nota": "selos numerados 1 a 5 dos exercícios"},
+    {"pagina": 13, "recortes": ["02", "03", "04", "05"], "nota": "selos numerados 6 a 9 dos exercícios"},
+    {"pagina": 14, "recortes": ["01"], "nota": "ícone de check do progresso"},
+    {"pagina": 14, "recortes": ["02"], "nota": "ícone de vídeo da videoaula"},
+    {"pagina": 14, "recortes": ["03", "04", "05", "06", "07", "08", "09", "10", "11", "12"], "nota": "ícones de check da lista EU CONSIGO"},
+    {"pagina": 14, "recortes": ["13"], "nota": "ícone de seta para a próxima aula"}
+  ]
+}

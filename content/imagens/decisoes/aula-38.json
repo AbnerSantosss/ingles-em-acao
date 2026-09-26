@@ -1,0 +1,28 @@
+{
+  "aula": 38,
+  "vagas": {
+    "a38p1": { "pagina": 1, "caixa": [395, 692, 1024, 1077], "alt": "Sacola de compras com pepino, folhas verdes, uvas, maçãs, água e pão" },
+    "a38p2a": { "pagina": 2, "caixa": [438, 460, 1024, 977], "alt": "Prédios de hotel iluminados ao entardecer, com piscina e espreguiçadeiras" },
+    "a38p2b": { "pagina": 2, "recortes": ["02"], "alt": "Peixe grelhado com limão, copo de água, açúcar e café sobre a mesa" },
+    "a38p3a": { "pagina": 3, "caixa": [452, 369, 1024, 941], "alt": "Hambúrgueres artesanais ao lado de uma cesta com legumes frescos" },
+    "a38p3b": { "pagina": 3, "recortes": ["02"], "alt": "Suco de laranja, pote de açúcar e xícara de café sobre a mesa" },
+    "a38p4a": { "pagina": 4, "caixa": [558, 349, 1024, 939], "alt": "Cesta de morangos ao lado de mãe e filhos sorrindo no sofá" },
+    "a38p4b": { "pagina": 4, "caixa": [528, 939, 1024, 1209], "alt": "Colher despejando açúcar em xícara de café, com pote de açúcar ao lado" },
+    "a38p4c": { "pagina": 4, "caixa": [396, 1228, 926, 1498], "alt": "Livro de capa dura fechado sobre uma mesa de mármore" },
+    "a38p5a": { "pagina": 5, "caixa": [68, 557, 469, 884], "alt": "Cesta com alface, pepino, uvas, maçãs, pão e garrafa de água" },
+    "a38p5b": { "pagina": 5, "caixa": [537, 557, 975, 887], "alt": "Copo de água, xícara de café e pote de açúcar mascavo" },
+    "a38p6": { "pagina": 6, "caixa": [425, 395, 1024, 1426], "alt": "Casal sorridente na cozinha com compras sobre a bancada" },
+    "a38p7": { "pagina": 7, "caixa": [724, 413, 1024, 1463], "alt": "Vaso de flores, pote de sal, café, farinha e carne sobre a mesa" },
+    "a38p12": { "pagina": 12, "caixa": [530, 433, 990, 1128], "alt": "Casal sorridente conversando na cozinha com as compras" }
+  },
+  "sobras": [
+    { "pagina": 2, "recortes": ["03"], "nota": "fragmento recortado do selo de texto 'PLURAL COUNTABLE NOUNS', não é vaga de foto" },
+    { "pagina": 3, "recortes": ["03"], "nota": "closeup decorativo de cubo de açúcar, duplicado do pote já usado em a38p3b, sem vaga própria" },
+    { "pagina": 5, "recortes": ["03", "04", "05", "06", "07", "08", "09"], "nota": "ícones decorativos do diagrama afirmativo/negativo/perguntas (setas, check, interrogação), não são vagas de foto" },
+    { "pagina": 7, "recortes": ["01", "03", "04"], "nota": "ícones circulares pequenos de marcação do exercício, não são vagas de foto" },
+    { "pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"], "nota": "selos/ícones numerados do gabarito; página 8 não tem vaga de imagem" },
+    { "pagina": 9, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09"], "nota": "selos numerados e faixa de texto com as frases corrigidas do exercício; página 9 não tem vaga de imagem" },
+    { "pagina": 10, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09"], "nota": "selos numerados e faixa de texto com as frases corrigidas do exercício; página 10 não tem vaga de imagem" },
+    { "pagina": 11, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09"], "nota": "marcadores circulares pequenos e bloco de texto com as respostas do gabarito; página 11 não tem vaga de imagem" }
+  ]
+}

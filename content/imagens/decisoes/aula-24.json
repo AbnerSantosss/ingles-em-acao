@@ -1,0 +1,51 @@
+{
+  "aula": 24,
+  "vagas": {
+    "w24p1a": {"pagina": 1, "recortes": ["01"], "alt": "Professora de camisa vermelha sorrindo de braços cruzados na sala de aula"},
+    "w24p1b": {"pagina": 1, "recortes": ["02"], "alt": "Médico jovem de jaleco branco sorrindo, com colega desfocada ao fundo"},
+    "w24p1c": {"pagina": 1, "recortes": ["03"], "alt": "Mãos usando calculadora e notebook sobre planilhas na mesa"},
+    "w24p1d": {"pagina": 1, "recortes": ["04"], "alt": "Padeiro sorridente com chapéu de chef segurando pães e fazendo positivo"},
+
+    "w24p2a": {"pagina": 2, "recortes": ["01"], "alt": "Professora de braços cruzados sorrindo em sala de aula com lousa branca"},
+    "w24p2b": {"pagina": 2, "recortes": ["02"], "alt": "Jovem estudante sorridente segurando caderno com mochila no ombro"},
+    "w24p2c": {"pagina": 2, "recortes": ["04"], "alt": "Ícone de maleta de trabalho em traço roxo sobre fundo lilás"},
+    "w24p2d": {"pagina": 2, "recortes": ["03"], "alt": "Mão apertando teclas de calculadora ao lado de planilhas e notebook"},
+    "w24p2e": {"pagina": 1, "recortes": ["02"], "alt": "Médico jovem sorridente de jaleco branco e estetoscópio no consultório"},
+    "w24p2f": {"pagina": 2, "recortes": ["05"], "alt": "Dentista de luvas e máscara examinando paciente na cadeira odontológica"},
+    "w24p2g": {"pagina": 2, "recortes": ["06"], "alt": "Cientista de jaleco e óculos de proteção usando pipeta em tubo de ensaio"},
+
+    "w24p3a": {"pagina": 3, "recortes": ["01"], "alt": "Explorador de casaco vermelho observando vale de montanhas com mochila"},
+    "w24p3b": {"pagina": 3, "recortes": ["02"], "alt": "Homem de boina segurando placa com pinceladas coloridas, sorrindo"},
+    "w24p3c": {"pagina": 3, "recortes": ["03"], "alt": "Fotógrafo de camisa xadrez fotografando com câmera em tripé e softbox"},
+    "w24p3d": {"pagina": 3, "recortes": ["04"], "alt": "Mulher de suéter amarelo comemorando segurando claquete de cinema"},
+    "w24p3e": {"pagina": 3, "recortes": ["05"], "alt": "Homem de suspensórios fumando cachimbo diante de máquina de escrever antiga"},
+
+    "w24p4a": {"pagina": 4, "caixa": [60, 300, 392, 493], "alt": "Garçom e garçonete de colete preto sorrindo de braços cruzados"},
+    "w24p4b": {"pagina": 4, "recortes": ["01"], "alt": "Padeiro sorridente segurando saco de pães e fazendo sinal de positivo"},
+    "w24p4c": {"pagina": 4, "recortes": ["02"], "alt": "Marinheiro de quepe branco fumando cachimbo sobre fundo preto"},
+    "w24p4d": {"pagina": 4, "caixa": [690, 560, 952, 673], "alt": "Detalhe do paletó azul-marinho de piloto com distintivo de asas douradas"},
+    "w24p4e": {"pagina": 4, "recortes": ["04"], "alt": "Caminhoneiro de camisa xadrez ao lado de caminhão vermelho e azul"},
+    "w24p4f": {"pagina": 4, "recortes": ["05"], "alt": "Engenheira de capacete e colete laranja segurando tablet na obra"},
+    "w24p4g": {"pagina": 4, "recortes": ["06"], "alt": "Homem sentado na escada lendo jornal com copo de café ao lado"},
+
+    "w24p5a": {"pagina": 5, "recortes": ["01"], "alt": "Professora de braços cruzados sorrindo em sala de aula"},
+    "w24p5b": {"pagina": 5, "recortes": ["02"], "alt": "Mão em calculadora ao lado de planilhas e notebook aberto, recorte vertical"},
+    "w24p5c": {"pagina": 5, "recortes": ["03"], "alt": "Engenheira de capacete e colete laranja sorrindo segurando tablet"},
+    "w24p5d": {"pagina": 5, "recortes": ["04"], "alt": "Mão segurando placa colorida, com boina preta à mostra acima"},
+
+    "w24p7a": {"pagina": 7, "recortes": ["02"], "alt": "Padeiro sorridente segurando saco de pães diante de parede de tijolos"},
+    "w24p7b": {"pagina": 3, "recortes": ["03"], "alt": "Fotógrafo de camisa xadrez fotografando com câmera em tripé e softbox"},
+
+    "w24p9a": {"pagina": 9, "recortes": ["01"], "alt": "Jovem sorridente com mochila branca segurando caderno aberto na rua"},
+    "w24p9b": {"pagina": 9, "recortes": ["02"], "alt": "Mãos em calculadora e notebook cercadas de planilhas com gráficos azuis"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["05", "06", "07", "08", "09"], "nota": "ícones de check da lista NESTA AULA VOCÊ VAI e número decorativo 01 da página, não são vaga"},
+    {"pagina": 4, "recortes": ["03"], "nota": "fragmento residual da mão com o cachimbo do marinheiro, já incluído inteiro no recorte 02"},
+    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05"], "nota": "ícones numerados de instrução da atividade de associar descrição à profissão, página sem vaga de imagem"},
+    {"pagina": 7, "recortes": ["01"], "nota": "foto do fotógrafo já com a etiqueta MIA desenhada dentro do recorte; a vaga w24p7b usa o mesmo fotógrafo sem etiqueta, recorte 03 da página 3"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05"], "nota": "ícones numerados de instrução da atividade de escolher a profissão certa, página sem vaga de imagem"},
+    {"pagina": 9, "recortes": ["03"], "nota": "recorte do canto do notebook, já contido dentro do recorte 02 usado na vaga w24p9b"},
+    {"pagina": 10, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09"], "nota": "ícones de check da lista Eu consigo e círculos decorativos de videoaula/pratique, página sem vaga de imagem"}
+  ]
+}

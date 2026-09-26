@@ -24,6 +24,26 @@
  * remotePatterns, e qualquer URL fora do previsto vira erro de runtime. Aqui
  * a imagem já vive dentro de uma caixa de proporção fixa com `object-fit`,
  * que é exatamente o que o `next/image` faria — sem o risco.
+ *
+ * ## Com tamanho natural (`w`/`h`)
+ *
+ * Os recortes do e-book vão de 60×60 a 900×450 px, muitos com fundo
+ * transparente. Na caixa fixa com `object-cover` eles seriam cortados e
+ * ampliados. Com `src` **e** `w`/`h` válidos, a figura aparece inteira, na
+ * proporção dela, centralizada, sem fundo cinza e sem canto arredondado (o
+ * recorte já traz o desenho do e-book):
+ *
+ * - `encaixe="coluna"` (bloco `image`): a largura é a fatia da coluna que a
+ *   figura ocupava na página do e-book — `w / 900` da coluna, no máximo 100% —
+ *   e a altura segue a proporção, com teto de 420 px (passou, a largura encolhe
+ *   junto). Um ícone de 60 px não vira um borrão de tela inteira.
+ * - `encaixe="caixa"` (cards, steps, profile): a área encolhe para o tamanho da
+ *   figura, sem passar de `w`×`h` px CSS nem da altura da caixa (`altura`, no
+ *   profile, ou 280 px). A área fixa de antes deixava uma miniatura de 146 px
+ *   no meio de um vão de 440 px nos cartões de uma coluna.
+ *
+ * Sem `w`/`h` (ou só com um dos dois), nada muda: caixa fixa, `object-cover`,
+ * fundo cinza — e o placeholder "EM BREVE" quando não há arquivo.
  */
 
 /* eslint-disable @next/next/no-img-element -- ver justificativa no cabeçalho */
@@ -43,7 +63,60 @@ export type IlustracaoProps = {
   altura?: number;
   /** Raio da caixa em px. */
   raio: number;
+  /** Largura natural do arquivo em px. Só vale junto com `h` e com `src`. */
+  w?: number;
+  /** Altura natural do arquivo em px. Só vale junto com `w` e com `src`. */
+  h?: number;
+  /**
+   * Como a figura com `w`/`h` ocupa o espaço: `coluna` (bloco `image`, largura
+   * pela fatia da coluna do e-book) ou `caixa` (cartões, passos e perfil, no
+   * tamanho natural com teto de altura). Sem `w`/`h`, não tem efeito.
+   */
+  encaixe?: "coluna" | "caixa";
 };
+
+/**
+ * Largura útil da página do e-book, em px: a figura recortada com essa largura
+ * ocupa a coluna inteira; uma de 450 px, metade dela.
+ */
+export const LARGURA_UTIL_DO_EBOOK = 900;
+
+/** Teto de altura da figura no bloco `image`, em px. Passou, a largura encolhe junto. */
+export const ALTURA_MAXIMA_DA_FIGURA = 420;
+
+/** Teto de altura da figura em cartões e passos, em px. O profile usa a `altura` dele. */
+export const ALTURA_MAXIMA_NA_CAIXA = 280;
+
+/** Casas decimais do percentual no CSS — o suficiente para não sobrar resto visível. */
+const CASAS_DO_PERCENTUAL = 3;
+
+/** Tamanho em px vindo do conteúdo: só inteiro positivo conta (a leitura estática não passa pelo esquema). */
+function ehPixel(n: number | undefined): n is number {
+  return typeof n === "number" && Number.isInteger(n) && n > 0;
+}
+
+/** Número curto para o CSS (`33.333` em vez de `33.333333333333336`). */
+function paraCss(n: number): number {
+  return Number(n.toFixed(CASAS_DO_PERCENTUAL));
+}
+
+/**
+ * Largura CSS da figura no bloco `image`: a menor entre a coluna inteira, a
+ * fatia que ela ocupava no e-book e a largura que leva a altura ao teto.
+ */
+export function larguraNaColuna(w: number, h: number): string {
+  const fatia = paraCss((w / LARGURA_UTIL_DO_EBOOK) * 100);
+  const pelaAltura = paraCss((ALTURA_MAXIMA_DA_FIGURA * w) / h);
+  return `min(100%, ${fatia}%, ${pelaAltura}px)`;
+}
+
+/**
+ * Largura CSS da figura em cartões, passos e perfil: a menor entre a largura
+ * disponível, a natural e a que leva a altura ao teto.
+ */
+export function larguraNaCaixa(w: number, h: number, teto: number): string {
+  return `min(100%, ${w}px, ${paraCss((teto * w) / h)}px)`;
+}
 
 /**
  * Id do bloco → arquivo em `public/lessons/art/`. Os 14 arquivos antigos da
@@ -74,6 +147,9 @@ export function Ilustracao({
   proporcao = "16 / 9",
   altura,
   raio,
+  w,
+  h,
+  encaixe = "caixa",
 }: IlustracaoProps) {
   const legado = id ? ARTE_LEGADA.get(id) : undefined;
   const arquivo = src ?? (legado ? `/lessons/art/${legado}` : null);
@@ -83,6 +159,28 @@ export function Ilustracao({
     borderRadius: `${raio}px`,
     ...(altura ? { height: `${altura}px` } : { aspectRatio: proporcao }),
   };
+
+  // Figura com tamanho natural: só com arquivo do admin (`src`) e os dois lados válidos.
+  if (src && ehPixel(w) && ehPixel(h)) {
+    const largura =
+      encaixe === "coluna"
+        ? larguraNaColuna(w, h)
+        : larguraNaCaixa(w, h, altura ?? ALTURA_MAXIMA_NA_CAIXA);
+    return (
+      <div className="w-full">
+        <img
+          src={src}
+          alt={descricao}
+          width={w}
+          height={h}
+          loading="lazy"
+          decoding="async"
+          className="mx-auto block h-auto"
+          style={{ width: largura, aspectRatio: `${w} / ${h}` }}
+        />
+      </div>
+    );
+  }
 
   if (arquivo) {
     return (

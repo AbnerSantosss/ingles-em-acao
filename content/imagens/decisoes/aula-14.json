@@ -1,0 +1,67 @@
+{
+  "aula": 14,
+  "vagas": {
+    "w14p1a": { "pagina": 1, "recortes": ["01"], "alt": "Três jovens estudando juntos à mesa com livros e lápis" },
+
+    "w14p2a": { "pagina": 2, "recortes": ["01"], "alt": "Moça de cabelo castanho sorrindo, vista de perfil" },
+    "w14p2b": { "pagina": 2, "recortes": ["02"], "alt": "Maçã vermelha brilhante com folha verde no cabinho" },
+    "w14p2c": { "pagina": 2, "recortes": ["03"], "alt": "Carro sedã azul visto de frente com faróis acesos" },
+    "w14p2d": { "pagina": 2, "recortes": ["04"], "alt": "Lápis amarelo apontado com borracha rosa na ponta" },
+
+    "w14p3a": { "pagina": 3, "recortes": ["04"], "alt": "Banco de praça com ripas de madeira clara e laterais pretas" },
+    "w14p3b": { "pagina": 3, "recortes": ["06"], "alt": "Pilha de pratos com uma tigela funda por cima" },
+    "w14p3c": { "pagina": 3, "recortes": ["08"], "alt": "Ônibus urbano azul visto de frente" },
+    "w14p3d": { "pagina": 3, "recortes": ["10"], "alt": "Caixa de papelão marrom fechada" },
+    "w14p3e": { "pagina": 3, "recortes": ["11"], "alt": "Relógio de pulso prateado com pulseira de couro marrom" },
+
+    "w14p4a": { "pagina": 4, "caixa": [88, 696, 172, 850], "alt": "Pirulito redondo com espiral vermelha e branca" },
+    "w14p4b": { "pagina": 4, "recortes": ["03"], "alt": "Robô de brinquedo azul de corda com chave nas costas" },
+    "w14p4c": { "pagina": 4, "recortes": ["07"], "alt": "Filhote de golden retriever sentado com a língua de fora" },
+    "w14p4d": { "pagina": 4, "recortes": ["06"], "alt": "Macaquinho marrom pendurado em um galho, sorrindo" },
+
+    "w14p5a": { "pagina": 5, "caixa": [113, 532, 290, 650], "alt": "Faca de cozinha com lâmina prateada e cabo preto" },
+    "w14p5b": { "pagina": 5, "recortes": ["02"], "alt": "Folha verde grande com nervuras bem marcadas" },
+    "w14p5c": { "pagina": 5, "recortes": ["03"], "alt": "Cabeça de lobo cinza vista de frente" },
+    "w14p5d": { "pagina": 5, "caixa": [104, 795, 272, 931], "alt": "Bezerro preto e branco em pé, visto de perfil" },
+    "w14p5e": { "pagina": 5, "recortes": ["04"], "alt": "Prateleira de madeira com livros, planta e porta-retrato" },
+    "w14p5f": { "pagina": 5, "recortes": ["05"], "alt": "Ladrão de desenho animado carregando um saco nas costas" },
+    "w14p5g": { "pagina": 5, "recortes": ["07"], "alt": "Telhado de telhas vermelhas com chaminé de tijolos" },
+    "w14p5h": { "pagina": 5, "recortes": ["06"], "alt": "Medalha dourada redonda com uma estrela azul escura" },
+
+    "w14p6a": { "pagina": 6, "recortes": ["01"], "alt": "Sete pessoas caminhando lado a lado em um parque" },
+    "w14p6b": { "pagina": 6, "caixa": [100, 992, 214, 1062], "alt": "Ícone roxo de duas crianças sorrindo lado a lado" },
+    "w14p6c": { "pagina": 6, "caixa": [328, 986, 447, 1066], "alt": "Ícone roxo de dois homens sorrindo lado a lado" },
+    "w14p6d": { "pagina": 6, "caixa": [556, 982, 676, 1065], "alt": "Ícone roxo de duas mulheres sorrindo lado a lado" },
+    "w14p6e": { "pagina": 6, "caixa": [792, 988, 902, 1060], "alt": "Ícone roxo de três silhuetas de pessoa lado a lado" },
+    "w14p6f": { "pagina": 6, "caixa": [101, 1227, 214, 1295], "alt": "Ícone roxo de duas crianças sorrindo lado a lado" },
+    "w14p6g": { "pagina": 6, "caixa": [331, 1223, 446, 1298], "alt": "Ícone roxo de dois homens sorrindo lado a lado" },
+    "w14p6h": { "pagina": 6, "caixa": [557, 1218, 676, 1299], "alt": "Ícone roxo de duas mulheres sorrindo lado a lado" },
+    "w14p6i": { "pagina": 6, "recortes": ["06"], "alt": "Ícone roxo de três silhuetas de pessoa lado a lado" },
+
+    "w14p7a": { "pagina": 7, "recortes": ["03"], "alt": "Carro hatch azul visto de frente com faróis acesos" },
+    "w14p7b": { "pagina": 7, "caixa": [559, 470, 907, 572], "alt": "Dois carros lado a lado, um azul e um branco" },
+    "w14p7c": { "pagina": 7, "recortes": ["07"], "alt": "Lápis amarelo apontado deitado na diagonal" },
+    "w14p7d": { "pagina": 7, "recortes": ["08", "09", "10"], "alt": "Três lápis apontados em leque, amarelo azul e verde" },
+    "w14p7e": { "pagina": 7, "recortes": ["13"], "alt": "Banco de praça de madeira clara visto de três quartos" },
+    "w14p7f": { "pagina": 7, "recortes": ["14", "15"], "alt": "Dois bancos de praça lado a lado levemente afastados" },
+    "w14p7g": { "pagina": 7, "recortes": ["17"], "alt": "Relógio de pulso com mostrador azul marinho" },
+    "w14p7h": { "pagina": 7, "recortes": ["19", "20"], "alt": "Dois relógios de pulso lado a lado, preto e marrom" },
+
+    "w14p9a": { "pagina": 9, "recortes": ["01"], "alt": "Ana e Daniel conversando à mesa com livros e café" },
+    "w14p9b": { "pagina": 9, "recortes": ["04"], "alt": "Mochila de tecido azul marinho com bolso frontal" },
+    "w14p9c": { "pagina": 9, "caixa": [406, 1136, 596, 1280], "alt": "Dois cadernos de espiral, um verde e um amarelo" },
+    "w14p9d": { "pagina": 9, "caixa": [686, 1120, 948, 1290], "alt": "Três estudantes conversando no corredor da escola" }
+  },
+  "sobras": [
+    { "pagina": 1, "recortes": ["02", "03", "04"], "nota": "Ícones de checkmark, relógio e lâmpada (instrução/dica), não são vagas" },
+    { "pagina": 2, "recortes": ["05", "06", "07"], "nota": "Selos numéricos 1 e 2 e ícone de lâmpada (dica), não são vagas" },
+    { "pagina": 3, "recortes": ["01", "02", "03", "05", "07", "09", "12", "13", "14"], "nota": "Letras de destaque do título (S, X, Z), setas de exemplo e ícone de lâmpada (dica), não são vagas" },
+    { "pagina": 4, "recortes": ["01", "02", "04", "05", "08", "09", "10", "11", "12"], "nota": "Ícones de repetição/soma, setas, sinal de diferente, ícone de lâmpada e letra y de destaque, não são vagas" },
+    { "pagina": 5, "recortes": ["01", "08"], "nota": "Seta do título da regra e ícone de exclamação (alerta), não são vagas" },
+    { "pagina": 6, "recortes": ["02", "03", "04", "05", "07", "08"], "nota": "Setas entre singular e plural e ícones de lâmpada e relógio (dica/tempo), não são vagas" },
+    { "pagina": 7, "recortes": ["01", "02", "04", "05", "06", "11", "12", "16", "18", "21", "22"], "nota": "Ícone de X, selos numéricos de passo a passo, setas e ícones de lâmpada e relógio, não são vagas" },
+    { "pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"], "nota": "Página sem vagas: círculos numerados do exercício e das respostas e ícone de estrela, todos decorativos" },
+    { "pagina": 9, "recortes": ["02", "03", "05", "06"], "nota": "Recortes 02 e 05 trazem o selo numérico (3 e 2) colado no canto da foto/ilustração, por isso foram refeitos como caixa sem o selo; selo numérico 1 (recorte 03) e ícone de lâmpada (recorte 06) não são vagas" },
+    { "pagina": 10, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"], "nota": "Página sem vagas: ícones de checklist de conclusão da aula (check, caixas de seleção, alerta, play, microfone e setas de navegação)" }
+  ]
+}

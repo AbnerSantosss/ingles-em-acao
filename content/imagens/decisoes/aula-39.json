@@ -1,0 +1,36 @@
+{
+  "aula": 39,
+  "vagas": {
+    "a39p1": { "sem": "A página 1 enviada para a Aula 39 é, na verdade, a página final (\"EU CONSIGO...\") da Aula 38 (título \"AULA 38\", videoaula \"A LOT OF / MANY / MUCH\", chamada para \"PRÓXIMA AULA: AULA 39\"). Não existe foto de abertura da Aula 39 no material recebido; nenhum recorte da página 1 corresponde a esta vaga." },
+    "a39p2a": { "pagina": 2, "recortes": ["04"], "alt": "Templo japonês tradicional com o Monte Fuji nevado ao fundo" },
+    "a39p2b": { "pagina": 2, "recortes": ["05"], "alt": "Mulher enrolada em cobertor no sofá, espirrando em um lenço de papel" },
+    "a39p2c": { "pagina": 2, "recortes": ["06"], "alt": "Coliseu de Roma sob céu azul" },
+    "a39p3": { "pagina": 3, "recortes": ["01"], "alt": "Ampulheta de madeira sobre uma mesa, com um vaso de planta ao fundo" },
+    "a39p4a": { "pagina": 4, "recortes": ["02"], "alt": "Muralha da China serpenteando por montanhas verdes" },
+    "a39p4b": { "pagina": 4, "recortes": ["03"], "alt": "Homem sentado à mesa de escritório com a mão no rosto, parecendo cansado" },
+    "a39p4c": { "pagina": 4, "recortes": ["01"], "alt": "Filhote de golden retriever sentado e sorrindo no chão" },
+    "a39p5a": { "pagina": 5, "recortes": ["04"], "alt": "Mãe e filha sentadas no sofá lendo um livro juntas" },
+    "a39p5b": { "pagina": 5, "caixa": [660, 926, 968, 1158], "alt": "Plateia sentada em uma sala de cinema escura assistindo à tela" },
+    "a39p5c": { "pagina": 5, "recortes": ["07"], "alt": "Palhaço sorridente com maquiagem colorida em uma festa à noite" },
+    "a39p6": { "pagina": 6, "caixa": [636, 335, 965, 695], "alt": "Homem de terno em festa de casamento ao ar livre à noite, com luzes penduradas" },
+    "a39p7": { "pagina": 7, "recortes": ["02"], "alt": "Convidados em festa de casamento à noite, com luzes penduradas e seta decorativa do mapa" },
+    "a39p8": { "pagina": 8, "caixa": [630, 320, 963, 894], "alt": "Casal sorridente sentado à mesa com bolo de aniversário decorado com velas" },
+    "a39p9": { "pagina": 9, "caixa": [568, 295, 965, 830], "alt": "Casal sorridente ao lado de um bolo de aniversário com velas acesas" },
+    "a39p10": { "pagina": 10, "recortes": ["10"], "alt": "Rapaz sentado à mesa escrevendo em um caderno" },
+    "a39p12": { "pagina": 12, "caixa": [565, 300, 955, 890], "alt": "Casal sorridente conversando à mesa com bolo de aniversário e um presente" },
+    "a39p13": { "pagina": 13, "caixa": [625, 295, 955, 734], "alt": "Casal se olhando sorridente ao lado de um bolo de aniversário iluminado por velas" }
+  },
+  "sobras": [
+    { "pagina": 1, "recortes": ["01", "02", "03", "04"], "nota": "Página 1 é na verdade a página final da Aula 38 (selo de conclusão, ícone de microfone em duas partes e foto de caderno com caneta e café); nenhum desses recortes pertence à Aula 39." },
+    { "pagina": 2, "recortes": ["01", "02", "03"], "nota": "Marcas de gráfico e círculos laranja decorativos ao lado dos rótulos WAS/WERE, sem vaga correspondente." },
+    { "pagina": 3, "recortes": ["02", "03", "04"], "nota": "Linhas diagonais e arco decorativos ao redor da linha do tempo, sem vaga correspondente." },
+    { "pagina": 5, "recortes": ["01", "02", "03", "05", "06", "08"], "nota": "Ícone de interrogação, setas circulares decorativas e bolhas numeradas (1, 2, 3) que identificam as perguntas; não são figuras de vaga." },
+    { "pagina": 6, "recortes": ["06"], "nota": "Recorte 06 tem os textos \"were you last night?\" e \"wedding party.\" sobrepostos na própria foto; usei um recorte direto da página (caixa) na área limpa à direita para a vaga a39p6." },
+    { "pagina": 7, "recortes": ["01"], "nota": "Glifo decorativo \"IT\" do rótulo I·HE·SHE·IT, sem vaga correspondente." },
+    { "pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"], "nota": "01, 03–13 são os ícones circulares com as iniciais T (Tyler) e H/K (Hannah) que identificam as falas do diálogo, decorativos. O recorte 02 (foto do casal com bolo) tinha a caixa larga demais e pegava as barras decorativas verde/roxa do card nas bordas; usei caixa direta da página, mais apertada, para a vaga a39p8." },
+    { "pagina": 9, "recortes": ["09"], "nota": "Recorte 09 (foto do casal com bolo) começava dentro da faixa do título \"CHECK THE DIALOGUE\" e pegava as barras decorativas verde/roxa nas laterais; usei caixa direta da página, abaixo do título e mais apertada, para a vaga a39p9." },
+    { "pagina": 11, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "Página de gabarito sem vagas: recorte 01 duplica a foto do rapaz escrevendo (já usada em a39p10) e os demais são selos de certo decorativos ao lado de cada resposta." },
+    { "pagina": 12, "recortes": ["12"], "nota": "Recorte 12 (foto do casal com bolo) começava dentro do título \"ASK YOUR PARTNER\" e pegava as barras decorativas verde/roxa nas laterais; usei caixa direta da página, abaixo do título e mais apertada, para a vaga a39p12." },
+    { "pagina": 13, "recortes": ["01", "02", "03"], "nota": "O recorte 01 (foto do casal com bolo) começava dentro da faixa do título \"EU CONSIGO...\" e pegava as barras decorativas verde/roxa nas laterais; usei caixa direta da página, abaixo do título e mais apertada, para a vaga a39p13. Os recortes 02 e 03 são partes do ícone de microfone do bloco \"Pratique com a IA\", decorativo, sem vaga correspondente." }
+  ]
+}

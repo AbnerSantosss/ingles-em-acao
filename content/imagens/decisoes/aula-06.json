@@ -1,0 +1,37 @@
+{
+  "aula": 6,
+  "vagas": {
+    "a6p1": {"pagina": 1, "recortes": ["11"], "alt": "Ana acenando para Leo enquanto os dois conversam ao ar livre com prédios ao fundo"},
+
+    "a6p2a": {"pagina": 2, "caixa": [60, 300, 292, 462], "alt": "Globo terrestre com o Brasil destacado em verde e a bandeira do Brasil ao lado"},
+    "a6p2b": {"pagina": 2, "caixa": [498, 302, 758, 460], "alt": "Menino de moletom roxo apontando para si mesmo, com a bandeira do Brasil ao lado"},
+    "a6p2c": {"pagina": 2, "caixa": [33, 533, 235, 715], "alt": "Ana sorrindo com o dedo indicador levantado, de camiseta azul-turquesa e mochila"},
+    "a6p2d": {"pagina": 2, "caixa": [766, 526, 948, 716], "alt": "Leo sorrindo com o dedo indicador levantado, vestindo moletom roxo"},
+
+    "a6p3a": {"pagina": 3, "caixa": [40, 1080, 198, 1235], "alt": "Menina de camiseta azul-turquesa e mochila sorrindo alegremente"},
+    "a6p3b": {"pagina": 3, "caixa": [512, 1080, 662, 1235], "alt": "Menino de camiseta azul sorrindo alegremente"},
+
+    "a6p4a": {"pagina": 4, "caixa": [42, 1054, 875, 1104], "alt": "Quatro bandeiras numeradas: China, Itália, França e Estados Unidos"},
+    "a6p4b": {"pagina": 4, "caixa": [38, 1220, 197, 1350], "alt": "Menina de camiseta azul-turquesa sorrindo, com mochila nas costas"},
+    "a6p4c": {"pagina": 4, "recortes": ["24"], "alt": "Menino de moletom roxo com balão de fala e a bandeira dos Estados Unidos"},
+
+    "a6p5": {"pagina": 5, "recortes": ["14", "15"], "alt": "Menina acena para um rapaz ruivo e os dois conversam com prédios ao fundo"},
+
+    "a6p6a": {"pagina": 6, "recortes": ["06"], "alt": "Câmera fotográfica vermelha com balão de fala dizendo que é do Japão"},
+    "a6p6b": {"pagina": 6, "recortes": ["09"], "alt": "Menina conversa com um rapaz ruivo mostrando a foto de outro rapaz"},
+
+    "a6p7a": {"pagina": 7, "recortes": ["02"], "alt": "Sofia acena para Daniel enquanto conversam em um parque com prédios ao fundo"},
+    "a6p7b": {"pagina": 7, "recortes": ["03"], "alt": "Duas meninas conversam com o retrato de um rapaz japonês e a bandeira do Japão"},
+    "a6p7c": {"pagina": 7, "recortes": ["04"], "alt": "As mesmas meninas conversam com o retrato de um casal chinês e a bandeira da China"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16"], "nota": "ícones decorativos do cabeçalho e da lista 'nesta aula você vai aprender', mais lâmpada, estrela e seta"},
+    {"pagina": 2, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"], "nota": "01-03 são detecções falsas sobre o título; 04 é a bandeira do Brasil do menino, cujo conteúdo já está incluso na caixa de a6p2b; 05-08 são as setas dos exemplos Canada/Japan/Italy/France; 09 é a ilustração final da menina com joinha (sem vaga); 10-11 são estrela e badge de navegação"},
+    {"pagina": 3, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"], "nota": "01-20 são os 8 pares país/nacionalidade do topo (sem vaga própria); 21 é o bloco grande com os dois MODELOS, cujo conteúdo já está incluso nas caixas de a6p3a e a6p3b; 22-25 são badges e ícones finais (lâmpada, estrela, seta)"},
+    {"pagina": 4, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "25", "26", "27", "28"], "nota": "01-19 são os 8 pares país/nacionalidade do topo (sem vaga própria); 20-23 são as quatro bandeiras numeradas do exercício, cujo conteúdo já está incluso na caixa de a6p4a; 25 é a bandeira da Itália do MODELO 1, não incluída por ficar colada ao balão de fala com o mesmo texto do item; 26-28 são lâmpada, estrela e seta"},
+    {"pagina": 5, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27"], "nota": "ícones decorativos de seção, avatares em miniatura dos balões de diálogo e setas; nenhum corresponde a vaga própria"},
+    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05", "07", "08", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"], "nota": "01-04 são bandeiras e badges da tabela he/she/they; 05 é a câmera isolada sem o balão (a6p6a usa o recorte 06, que já traz o balão 'It's from Japan'); 07 é a lâmpada da DICA; demais são ícones/setas da seção de prática"},
+    {"pagina": 7, "recortes": ["01", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17"], "nota": "ícones decorativos de seção e avatares em miniatura; nenhum corresponde a vaga própria"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"], "nota": "página de checklist de conclusão da aula, sem vaga de imagem"}
+  ]
+}

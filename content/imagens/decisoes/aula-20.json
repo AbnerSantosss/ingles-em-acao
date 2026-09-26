@@ -1,0 +1,48 @@
+{
+  "aula": 20,
+  "vagas": {
+    "w20p1a": {"pagina": 1, "recortes": ["01"], "alt": "Homem sorridente com celular numa cafeteria cercado por cartões de contato, idade e preço"},
+
+    "w20p2a": {"pagina": 2, "caixa": [470, 0, 1024, 635], "alt": "Homem sorri ao celular numa cafeteria com café na mão e cartões de telefone, idade e preço"},
+
+    "w20p3a": {"pagina": 3, "caixa": [541, 102, 992, 688], "alt": "Jovem escreve no caderno numa biblioteca com notebook, café e estantes numeradas ao fundo"},
+
+    "w20p4a": {"pagina": 4, "recortes": ["01"], "alt": "Homem sorridente experimenta suéter numa loja de roupas com placa de promoção ao fundo"},
+    "w20p4b": {"pagina": 4, "recortes": ["06"], "alt": "Ônibus urbano azul visto de frente com o número 25 no letreiro eletrônico"},
+    "w20p4c": {"pagina": 4, "recortes": ["07"], "alt": "Placa dourada de quarto de hotel presa à parede mostrando o número 305"},
+    "w20p4d": {"pagina": 4, "recortes": ["08"], "alt": "Cartão de mesa em cavalete com o número 48 numa cafeteria"},
+    "w20p4e": {"pagina": 4, "recortes": ["09"], "alt": "Etiqueta de preço presa a uma peça de roupa mostrando 79 dólares e 90 centavos"},
+
+    "w20p5a": {"pagina": 5, "recortes": ["01"], "alt": "Casal sorri à mesa de cafeteria com balões de fala perguntando e dizendo a idade"},
+    "w20p5b": {"pagina": 5, "caixa": [58, 1265, 398, 1348], "alt": "Cinco velinhas de aniversário coloridas acesas com os números 12, 21, 33, 47 e 60"},
+
+    "w20p6a": {"pagina": 6, "caixa": [505, 28, 1003, 400], "alt": "Hóspede entrega cartão à recepcionista num balcão de check-in com painel do quarto 142"},
+    "w20p6b": {"pagina": 6, "caixa": [535, 1402, 609, 1472], "alt": "Ícone de porta roxa com plaquinha indicando o número do quarto 305"},
+    "w20p6c": {"pagina": 6, "caixa": [649, 1402, 725, 1472], "alt": "Ícone de poltrona de avião creme com janelinha ao lado"},
+    "w20p6d": {"pagina": 6, "caixa": [763, 1402, 837, 1472], "alt": "Ícone de casinha laranja com telhado triangular e porta central"},
+    "w20p6e": {"pagina": 6, "caixa": [874, 1402, 948, 1472], "alt": "Ícone de porta entreaberta verde com visor oval"},
+
+    "w20p7a": {"pagina": 7, "caixa": [470, 34, 998, 375], "alt": "Homem com fones de ouvido digita no notebook na varanda com balão de fala sobre números da cidade"},
+    "w20p7b": {"pagina": 7, "recortes": ["04"], "alt": "Ônibus urbano moderno parado numa estação com o número 512 no letreiro"},
+    "w20p7c": {"pagina": 7, "recortes": ["05"], "alt": "Caixa de papelão com etiqueta mostrando o número 720 e a palavra items"},
+    "w20p7d": {"pagina": 7, "recortes": ["06"], "alt": "Placa dourada de quarto de hotel mostrando o número 389"},
+    "w20p7e": {"pagina": 7, "recortes": ["07"], "alt": "Televisor de tela preta mostrando o número 872 e a palavra subscribers"},
+    "w20p7f": {"pagina": 7, "recortes": ["08"], "alt": "Placa verde num poste de estádio mostrando a palavra section e o número 999"},
+
+    "w20p8a": {"pagina": 8, "caixa": [466, 12, 999, 308], "alt": "Jovem escreve no caderno numa biblioteca com notebook, livros e balão de fala sobre a universidade"},
+
+    "w20p9a": {"pagina": 9, "recortes": ["01"], "alt": "Homem olha o celular numa cafeteria com cartão de idade, cupom de pontos e aviso sobre números reais"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["02", "03", "04", "05"], "nota": "ícones de telefone, pessoa, etiqueta de preço e alvo da lista de exemplos abaixo da foto"},
+    {"pagina": 2, "recortes": ["01", "02", "03", "04", "05", "06", "07"], "nota": "recorte principal com o fim do título e do parágrafo colados (substituído por caixa direto da página) e ícones decorativos pequenos do preview de números"},
+    {"pagina": 3, "recortes": ["01", "02", "03", "04", "05", "06", "07"], "nota": "recorte principal com o selo EXAMPLES colado embaixo (substituído por caixa direto da página) e ícones decorativos das placas numeradas e do card de dica"},
+    {"pagina": 4, "recortes": ["02", "03", "04", "05", "10", "11", "12", "13"], "nota": "ícones decorativos (sinal de mais, dígitos, alto-falante, estrela) e balões de exemplo de dezena mais unidade"},
+    {"pagina": 5, "recortes": ["02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"], "nota": "recortes individuais das cinco velas (as das idades 47 e 60 vieram sem a chama, por isso a vela foi recortada direto da página como uma caixa única) e ícones decorativos (alto-falante, corrida, globo, estrela, lâmpada, lápis, badges numerados) da explicação e da prática"},
+    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"], "nota": "recorte principal com o banner de dica colado embaixo (substituído por caixa) e os ícones dos 4 cards com a legenda em português colada (recortados como caixa só do ícone); também o card de comparação americano x britânico, estrela e checks de dica"},
+    {"pagina": 7, "recortes": ["01", "02", "03", "09", "10"], "nota": "recorte principal com o banner de regra geral colado embaixo (substituído por caixa) e ícones decorativos (estrela, alto-falante, balão de fun fact)"},
+    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05"], "nota": "recorte principal com o banner de regra geral colado embaixo (substituído por caixa) e ícones decorativos (estrela, alto-falante, badges numerados)"},
+    {"pagina": 9, "recortes": ["02", "03", "04", "05", "06", "07", "08"], "nota": "ícones decorativos (celular, pessoas, etiquetas de preço duplicadas e alto-falante)"},
+    {"pagina": 10, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"], "nota": "ícones do checklist de conclusão da aula; página sem vagas de imagem"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "aula": 35,
+  "vagas": {
+    "a35p1": {"pagina": 1, "caixa": [50, 315, 974, 660], "alt": "Grupo de amigos comemorando gol assistindo futebol no sofá"},
+
+    "a35p2a": {"pagina": 2, "recortes": ["01"], "alt": "Filho beijando o rosto da mãe sorridente em casa"},
+    "a35p2b": {"pagina": 2, "recortes": ["02"], "alt": "Neto e avó sorrindo enquanto tomam café juntos"},
+
+    "a35p3a": {"pagina": 3, "recortes": ["02"], "alt": "Duas amigas sorrindo e conversando no sofá com xícaras de café"},
+    "a35p3b": {"pagina": 3, "caixa": [668, 960, 928, 1158], "alt": "Caderno com a frase her lessons escrita à mão sobre a mesa"},
+
+    "a35p4a": {"pagina": 4, "recortes": ["01"], "alt": "Mulher sorridente almoçando frango à mesa"},
+    "a35p4b": {"pagina": 4, "recortes": ["02"], "alt": "Homem de braços cruzados olhando os vizinhos com desconfiança"},
+    "a35p4c": {"pagina": 4, "recortes": ["03"], "alt": "Casal sorridente pedindo informações no balcão de recepção"},
+    "a35p4d": {"pagina": 4, "recortes": ["04"], "alt": "Neto abraçando o avô sorridente por trás"},
+    "a35p4e": {"pagina": 4, "recortes": ["05", "06"], "alt": "Homem ajudando outro a se levantar no parque ao lado de mulher sorridente"},
+
+    "a35p5": {"pagina": 5, "recortes": ["01", "04", "05", "08", "09"], "alt": "Colagem de amigas vendo fotos, rapaz de moletom, homem sorrindo, ciclista e mãe com filha cozinhando"},
+
+    "a35p6": {"pagina": 6, "recortes": ["02", "05"], "alt": "Pilha de fotos instantâneas ao lado da dupla de super-heróis no telhado"},
+
+    "a35p7": {"pagina": 7, "recortes": ["07"], "alt": "Dois amigos sorrindo e conversando em uma cafeteria"},
+
+    "a35p8": {"pagina": 8, "caixa": [0, 220, 1024, 330], "alt": "Fundo desfocado em tons de pele sugerindo cena de família reunida"},
+
+    "a35p9": {"pagina": 9, "recortes": ["09"], "alt": "Adolescente sorridente escrevendo no quarto com um poodle ao lado"},
+
+    "a35p10a": {"pagina": 10, "recortes": ["01"], "alt": "Mulher sorridente ajustando a roda de uma bicicleta azul"},
+    "a35p10b": {"pagina": 10, "recortes": ["02"], "alt": "Rapaz de óculos sorrindo com a cabeça baixa"},
+    "a35p10c": {"pagina": 10, "recortes": ["03"], "alt": "Casal sorrindo e conversando em uma cafeteria"},
+    "a35p10d": {"pagina": 10, "caixa": [145, 578, 250, 733], "alt": "Silhueta simples de um celular em contorno escuro"},
+    "a35p10e": {"pagina": 10, "recortes": ["04"], "alt": "Casal sorridente conversando com uma amiga em casa"},
+    "a35p10f": {"pagina": 10, "recortes": ["05"], "alt": "Mulher sorridente apontando para a câmera"}
+  },
+  "sobras": [
+    {"pagina": 1, "recortes": ["01", "02", "03", "04"], "nota": "recorte 01 traz as etiquetas SUBJECT PRONOUN/OBJECT PRONOUN coladas na propria foto (interface, nao so a cena); a35p1 foi recortado direto da pagina (caixa) sem essa faixa. 02/03/04 sao bolinhas decorativas do diagrama"},
+    {"pagina": 2, "recortes": ["03"], "nota": "bolinha amarela decorativa entre os cards"},
+    {"pagina": 3, "recortes": ["01", "03", "04"], "nota": "icone X do titulo HER x HER e fragmentos do mesmo caderno ja coberto pela caixa de a35p3b"},
+    {"pagina": 5, "recortes": ["02", "03", "06", "07", "10"], "nota": "bolinhas numeradas de 1 a 5 do exercicio, nao sao fotos"},
+    {"pagina": 6, "recortes": ["01", "03", "04", "06"], "nota": "bolinhas numeradas do gabarito e recorte duplicado do mesmo monte de fotos ja usado no recorte 02"},
+    {"pagina": 6, "recortes": ["07", "08", "09"], "nota": "bicicleta e mae com filha ficaram de fora: os recortes trazem o texto do gabarito colado na propria imagem (nao dava para separar sem cortar a foto) e a ferramenta nao junta caixa com recortes na mesma vaga; o recorte 07 (super-heroi solo em silhueta) e uma segunda opcao para o mesmo conceito de super-herois ja coberto pelo recorte 05 (dupla em pe)"},
+    {"pagina": 10, "recortes": ["06"], "nota": "balao do exercicio de completar frase, elemento de interface e nao foto"},
+    {"pagina": 11, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "pagina 11 nao tem vaga de imagem: sao check-list, thumbnail de video e icones de componentes fixos do app, nao conteudo proprio da Aula 35"}
+  ]
+}
