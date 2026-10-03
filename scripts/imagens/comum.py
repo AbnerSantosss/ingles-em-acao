@@ -27,7 +27,6 @@ URL_PUBLICA = '/lessons/aulas'
 # Aula 04: a página 4 do e-book não entrou no app (pendência 26).
 # Aula 38: a página 13 do app é o fechamento padrão, que o e-book não tem.
 MAPA_ESPECIAL = {
-    4: {4: 5, 5: 6, 6: 7, 7: 8},
     38: {13: None},
 }
 

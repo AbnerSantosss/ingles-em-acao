@@ -326,12 +326,15 @@
         "friends",
         "a doctor",
         "I'm",
+        "it's",
         "I + am + ___",
         "he / she / it + is + ___",
         "you / we / they + are + ___",
         "not",
         "a teacher",
-        "new",
+        "a singer",
+        "tired",
+        "at home",
         "late",
         "I'm not",
         "isn't",
@@ -350,28 +353,38 @@
         },
         {
           "pagina": 2,
-          "bloco": 5,
-          "tipoDeTexto": "exemplo"
-        },
-        {
-          "pagina": 2,
-          "bloco": 6,
-          "tipoDeTexto": "exemplo"
-        },
-        {
-          "pagina": 2,
-          "bloco": 7,
+          "bloco": 8,
           "tipoDeTexto": "exemplo"
         },
         {
           "pagina": 3,
           "bloco": 4,
-          "tipoDeTexto": "lista"
+          "tipoDeTexto": "exemplo"
         },
         {
           "pagina": 4,
-          "bloco": 4,
+          "bloco": 5,
           "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 5,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 5,
+          "bloco": 6,
+          "tipoDeTexto": "exemplo"
+        },
+        {
+          "pagina": 6,
+          "bloco": 4,
+          "tipoDeTexto": "lista"
+        },
+        {
+          "pagina": 8,
+          "bloco": 5,
+          "tipoDeTexto": "dialogo"
         }
       ]
     },
@@ -745,21 +758,16 @@
         {
           "pagina": 2,
           "bloco": 5,
-          "tipoDeTexto": "lista"
-        },
-        {
-          "pagina": 2,
-          "bloco": 6,
           "tipoDeTexto": "texto"
         },
         {
           "pagina": 2,
-          "bloco": 7,
+          "bloco": 6,
           "tipoDeTexto": "lista"
         },
         {
           "pagina": 2,
-          "bloco": 9,
+          "bloco": 8,
           "tipoDeTexto": "exemplo"
         },
         {

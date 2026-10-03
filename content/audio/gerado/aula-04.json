@@ -2,91 +2,246 @@
   "aula": 4,
   "clips": [
     {
-      "pagina": 2,
+      "pagina": 1,
       "clip": {
         "id": "lesson_004_audio_001",
         "alvo": "texto",
-        "ancora": "Am I late?",
-        "texto": "Am I late?",
-        "src": "/audio/aula-04/lesson_004_audio_001.405ba70e.mp3",
+        "ancora": "Are you tired?",
+        "texto": "Are you tired?",
+        "src": "/audio/aula-04/lesson_004_audio_001.621d39fc.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 1,
       "clip": {
         "id": "lesson_004_audio_002",
         "alvo": "texto",
-        "ancora": "Yes, you are. / No, you aren’t.",
-        "texto": "Yes, you are. No, you aren't.",
-        "src": "/audio/aula-04/lesson_004_audio_002.ef216f92.mp3",
+        "ancora": "Is she at home?",
+        "texto": "Is she at home?",
+        "src": "/audio/aula-04/lesson_004_audio_002.e7980051.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 1,
       "clip": {
         "id": "lesson_004_audio_003",
         "alvo": "texto",
-        "ancora": "Yes, I am. / No, I’m not.",
-        "texto": "Yes, I am. No, I'm not.",
-        "src": "/audio/aula-04/lesson_004_audio_003.66da646e.mp3",
+        "ancora": "Are they ready?",
+        "texto": "Are they ready?",
+        "src": "/audio/aula-04/lesson_004_audio_003.4d46f574.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 2,
       "clip": {
         "id": "lesson_004_audio_004",
         "alvo": "texto",
-        "ancora": "Yes, he is. / No, he isn’t.",
-        "texto": "Yes, he is. No, he isn't.",
-        "src": "/audio/aula-04/lesson_004_audio_004.072a5db6.mp3",
+        "ancora": "Are you a student?",
+        "texto": "Are you a student?",
+        "src": "/audio/aula-04/lesson_004_audio_004.ffaa22f3.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_004_audio_005",
         "alvo": "texto",
-        "ancora": "Yes, she is. / No, she isn’t.",
-        "texto": "Yes, she is. No, she isn't.",
-        "src": "/audio/aula-04/lesson_004_audio_005.a459fff3.mp3",
+        "ancora": "Is it hot today?",
+        "texto": "Is it hot today?",
+        "src": "/audio/aula-04/lesson_004_audio_005.0521ce44.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_004_audio_006",
         "alvo": "texto",
-        "ancora": "Yes, it is. / No, it isn’t.",
-        "texto": "Yes, it is. No, it isn't.",
-        "src": "/audio/aula-04/lesson_004_audio_006.6652cd82.mp3",
+        "ancora": "Are you studying?",
+        "texto": "Are you studying?",
+        "src": "/audio/aula-04/lesson_004_audio_006.3177ac5f.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 4,
       "clip": {
         "id": "lesson_004_audio_007",
         "alvo": "texto",
-        "ancora": "Yes, we are. / No, we aren’t.",
-        "texto": "Yes, we are. No, we aren't.",
-        "src": "/audio/aula-04/lesson_004_audio_007.3ec211b5.mp3",
+        "ancora": "Is he a teacher?",
+        "texto": "Is he a teacher?",
+        "src": "/audio/aula-04/lesson_004_audio_007.84d6c25f.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
       }
     },
     {
-      "pagina": 3,
+      "pagina": 5,
       "clip": {
         "id": "lesson_004_audio_008",
         "alvo": "texto",
-        "ancora": "Yes, they are. / No, they aren’t.",
-        "texto": "Yes, they are. No, they aren't.",
-        "src": "/audio/aula-04/lesson_004_audio_008.5d93a346.mp3",
+        "ancora": "Yes, I am.",
+        "texto": "Yes, I am.",
+        "src": "/audio/aula-04/lesson_004_audio_008.d909333e.mp3",
         "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_009",
+        "alvo": "texto",
+        "ancora": "No, I’m not.",
+        "texto": "No, I'm not.",
+        "src": "/audio/aula-04/lesson_004_audio_009.2efcf98b.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_010",
+        "alvo": "texto",
+        "ancora": "Yes, you are.",
+        "texto": "Yes, you are.",
+        "src": "/audio/aula-04/lesson_004_audio_010.a36efba5.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_011",
+        "alvo": "texto",
+        "ancora": "No, you aren’t.",
+        "texto": "No, you aren't.",
+        "src": "/audio/aula-04/lesson_004_audio_011.da4c86ae.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_012",
+        "alvo": "texto",
+        "ancora": "Yes, he is.",
+        "texto": "Yes, he is.",
+        "src": "/audio/aula-04/lesson_004_audio_012.1fabccf3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_013",
+        "alvo": "texto",
+        "ancora": "No, he isn’t.",
+        "texto": "No, he isn't.",
+        "src": "/audio/aula-04/lesson_004_audio_013.72fdec97.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_014",
+        "alvo": "texto",
+        "ancora": "Yes, she is.",
+        "texto": "Yes, she is.",
+        "src": "/audio/aula-04/lesson_004_audio_014.35cd7c20.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_015",
+        "alvo": "texto",
+        "ancora": "No, she isn’t.",
+        "texto": "No, she isn't.",
+        "src": "/audio/aula-04/lesson_004_audio_015.7d806246.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_016",
+        "alvo": "texto",
+        "ancora": "Yes, it is.",
+        "texto": "Yes, it is.",
+        "src": "/audio/aula-04/lesson_004_audio_016.4cf4410d.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_017",
+        "alvo": "texto",
+        "ancora": "No, it isn’t.",
+        "texto": "No, it isn't.",
+        "src": "/audio/aula-04/lesson_004_audio_017.574ad76f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_018",
+        "alvo": "texto",
+        "ancora": "Yes, we are.",
+        "texto": "Yes, we are.",
+        "src": "/audio/aula-04/lesson_004_audio_018.5751f0d3.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_019",
+        "alvo": "texto",
+        "ancora": "No, we aren’t.",
+        "texto": "No, we aren't.",
+        "src": "/audio/aula-04/lesson_004_audio_019.07bcb95f.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_020",
+        "alvo": "texto",
+        "ancora": "Yes, they are.",
+        "texto": "Yes, they are.",
+        "src": "/audio/aula-04/lesson_004_audio_020.5ea5131e.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 5,
+      "clip": {
+        "id": "lesson_004_audio_021",
+        "alvo": "texto",
+        "ancora": "No, they aren’t.",
+        "texto": "No, they aren't.",
+        "src": "/audio/aula-04/lesson_004_audio_021.92e09f41.mp3",
+        "categoria": "GRAMMAR_IN_CONTEXT"
+      }
+    },
+    {
+      "pagina": 8,
+      "clip": {
+        "id": "lesson_004_audio_022",
+        "alvo": "bloco",
+        "ancora": "Lucas: Are you free this afternoon?",
+        "texto": "Are you free this afternoon?\nYes, I am. Why?\nIs the meeting at three p.m.?\nNo, it isn't. It is at four p.m.\nAre they coming with us?\nYes, they are.\nGreat! Is the place far?\nNo, it isn't. It's near.",
+        "src": "/audio/aula-04/lesson_004_audio_022.7491f3f8.mp3",
+        "categoria": "DIALOGUE",
+        "lento": true
       }
     }
   ]

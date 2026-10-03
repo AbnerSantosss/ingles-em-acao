@@ -2,7 +2,7 @@
   "versao": 1,
   "status": "pronta",
   "tipo": "conteudo",
-  "foco": "Fazer perguntas com \"am\", \"is\" e \"are\" e responder de forma curta: \"Yes, I am.\" e \"No, I'm not.\"",
+  "foco": "Fazer perguntas pondo \"am\", \"is\" ou \"are\" antes do sujeito e responder curto: \"Yes, I am.\"",
   "conteudoAlvo": [
     "Am I? / Is he, she, it? / Are you, we, they?",
     "Yes, I am. / No, I'm not.",
@@ -11,11 +11,11 @@
   ],
   "expressoesFixas": [],
   "comoIntegrar": [
-    "Transforme frases das Aulas 02 e 03 em perguntas, como \"Are you Brazilian?\".",
-    "Misture respostas com \"yes\" e com \"no\" e troque o sujeito a cada pergunta."
+    "Transforme frases das Aulas 02 e 03 em perguntas, como \"Are you tired?\".",
+    "Pergunte com \"you\" e me faça responder com \"I\": \"Are you ready?\", \"Yes, I am.\""
   ],
   "regrasDaAula": [
-    "Na resposta com \"yes\" não contraia: \"Yes, I am.\", nunca \"Yes, I'm.\""
+    "Na pergunta, o verbo vem antes do sujeito: \"Is she at home?\", nunca \"She is at home?\""
   ],
   "tiposDeExercicio": [
     "escolher",
@@ -25,28 +25,28 @@
   ],
   "exemplos": [
     {
-      "tipo": "completar",
-      "enunciado": "Complete com \"Am\", \"Is\" ou \"Are\": \"___ they friends?\"",
-      "respostaDeReferencia": "Are they friends?"
+      "tipo": "escolher",
+      "enunciado": "Escolha a pergunta certa: \"Is they at home?\" ou \"Are they at home?\"",
+      "respostaDeReferencia": "Are they at home?"
     },
     {
       "tipo": "transformar",
-      "enunciado": "Passe para pergunta: \"She is happy.\"",
-      "respostaDeReferencia": "Is she happy?"
+      "enunciado": "Passe para pergunta: \"He is a doctor.\"",
+      "respostaDeReferencia": "Is he a doctor?"
     },
     {
       "tipo": "responder",
-      "enunciado": "Responda com a forma curta negativa: \"Is he a teacher?\"",
-      "respostaDeReferencia": "No, he isn't."
+      "enunciado": "Responda com a forma curta negativa: \"Is she happy?\"",
+      "respostaDeReferencia": "No, she isn't."
     }
   ],
   "limites": [
-    "Sem \"do\" e \"does\" nas perguntas, e sem \"where\" ou \"what\": ainda não estudei.",
-    "Sem \"from\", \"my\" e \"your\": use só palavras que já vi até aqui."
+    "Sem \"do\" e \"does\" nas perguntas: com o verb to be uso só \"am\", \"is\" e \"are\".",
+    "Sem \"where\" ou \"what\" no começo da pergunta: ainda não estudei."
   ],
-  "primeiraQuestao": "Vamos começar pelo \"I\". Complete a pergunta: \"___ I late?\" Qual forma do verbo entra no espaço?",
+  "primeiraQuestao": "Vamos começar pelo \"you\". Passe para pergunta: \"You are a student.\" Como fica?",
   "resumoAutorizado": [
-    "Verbo antes do sujeito: \"Am I late?\", \"Is she a doctor?\", \"Are you ready?\"",
+    "Verbo antes do sujeito: \"Am I late?\", \"Is she at home?\", \"Are you ready?\"",
     "Respostas curtas: \"Yes, I am.\", \"No, I'm not.\", \"Yes, he is.\", \"No, he isn't.\"",
     "Plural: \"Are they friends?\", \"Yes, they are.\", \"No, they aren't.\""
   ],

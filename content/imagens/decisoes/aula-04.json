@@ -1,16 +1,40 @@
 {
   "aula": 4,
   "vagas": {
-    "a4p1": {"pagina": 1, "recortes": ["01"], "alt": "Mulher de jaqueta jeans e homem de blusa azul conversando à mesa com laptop"}
+    "w04p1a": {"pagina": 1, "recortes": ["01"], "alt": "Moça de jaqueta jeans escrevendo num caderno e rapaz de suéter azul apontando para ela, os dois sorrindo à mesa com laptop, livros e caneca"},
+
+    "w04p2a": {"pagina": 2, "recortes": ["03"], "alt": "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado"},
+
+    "w04p3a": {"pagina": 3, "recortes": ["04"], "alt": "Menino de cabelo castanho curto e camiseta roxa sorrindo com o dedo indicador levantado"},
+
+    "w04p4a": {"pagina": 4, "recortes": ["01"], "alt": "Moça de camisa jeans diante do laptop, de olhos fechados e esfregando o olho, cansada"},
+    "w04p4b": {"pagina": 4, "recortes": ["02"], "alt": "Moça de suéter bege sorrindo e acenando na porta de casa"},
+    "w04p4c": {"pagina": 4, "recortes": ["03"], "alt": "Dois rapazes de mochila caminhando e sorrindo por um caminho de parque arborizado"},
+    "w04p4d": {"pagina": 4, "recortes": ["04"], "alt": "Praia de areia clara e mar azul-turquesa sob céu azul, com coqueiro à direita"},
+    "w04p4e": {"pagina": 4, "recortes": ["05"], "alt": "Rapaz de camisa jeans sentado à mesa escrevendo num caderno, com livros empilhados ao lado"},
+    "w04p4f": {"pagina": 4, "caixa": [511, 913, 741, 1097], "alt": "Professor de camisa bege diante do quadro branco e alunos sentados de costas levantando a mão"},
+    "w04p4g": {"pagina": 4, "recortes": ["07"], "alt": "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado"},
+
+    "w04p5a": {"pagina": 5, "caixa": [79, 962, 320, 1102], "alt": "Menino de camiseta azul-petróleo e mochila e menina de blusa roxa segurando livros, sorrindo um para o outro"},
+    "w04p5b": {"pagina": 5, "recortes": ["07"], "alt": "Menina de cabelo castanho comprido e blusa amarela sorrindo de olhos fechados"},
+    "w04p5c": {"pagina": 5, "caixa": [662, 962, 951, 1102], "alt": "Pai de barba, menino e mãe sentados juntos no sofá da sala, todos sorrindo"},
+    "w04p5d": {"pagina": 5, "recortes": ["15"], "alt": "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado"},
+
+    "w04p6a": {"pagina": 6, "recortes": ["31"], "alt": "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado"},
+
+    "w04p7a": {"pagina": 7, "recortes": ["01"], "alt": "Moça de camisa jeans sorrindo e escrevendo num caderno à mesa com livros, caneca branca e planta"},
+
+    "w04p8a": {"pagina": 8, "recortes": ["01"], "alt": "Rapaz de camisa verde-oliva e moça de camisa jeans sorrindo frente a frente numa mesa de café, segurando xícaras brancas"},
+    "w04p8b": {"pagina": 8, "caixa": [780, 1195, 935, 1305], "alt": "Menino de cabelo castanho curto e camiseta roxa sorrindo com o dedo indicador levantado"}
   },
   "sobras": [
-    {"pagina": 1, "recortes": ["02", "03"], "nota": "ícones decorativos de seção (check e relógio)"},
-    {"pagina": 2, "recortes": ["01", "02", "03", "04", "05", "06", "07"], "nota": "seta, lâmpada, mascote apontando, foguete, alerta, chave e estrela decorativos; a página não tem vaga de imagem"},
-    {"pagina": 3, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08"], "nota": "cartão de tradução, avatares de pronomes (pessoa e gato), foto pequena de exemplo dentro do card e ícones de lâmpada, estrela, alvo e seta"},
-    {"pagina": 4, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"], "nota": "a página 4 do e-book não entrou no app (pulada); fotos de situações reais (mulher no laptop, moça acenando, dois rapazes andando, praia, rapaz estudando, sala de aula) e ícones (mascote, lâmpada, alerta, sinal don't/doesn't, seta) ficam sem vaga"},
-    {"pagina": 5, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"], "nota": "cabeçalho da tabela, avatares de pronomes (pessoa, mulher, gato), fotinho de exemplo dentro do card e selos de check/x/lâmpada/seta decorativos"},
-    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34"], "nota": "avatares de pronomes, setas, checks/x da tabela de respostas curtas, fotos pequenas de exemplo dentro dos cards, mascote apontando, lâmpada, estrela, alvo e seta"},
-    {"pagina": 7, "recortes": ["01", "02", "03"], "nota": "foto de exemplo (moça estudando) dentro do card de desafio, além de ícones de lâmpada e seta; a página não tem vaga de imagem"},
-    {"pagina": 8, "recortes": ["01", "02", "03", "04", "05", "06"], "nota": "foto de exemplo do casal no café, avatar do mascote e ícones de lâmpada, alvo, estrela e seta decorativos"}
+    {"pagina": 1, "recortes": ["02", "03"], "nota": "ícones decorativos (check do objetivo, relógio da duração)"},
+    {"pagina": 2, "recortes": ["01", "02", "04", "05", "06", "07"], "nota": "ícones decorativos (seta, lâmpada, foguete, exclamação, chave, estrela)"},
+    {"pagina": 3, "recortes": ["01", "02", "03", "05", "06", "07", "08"], "nota": "recorte 01 é pedaço da coluna TRADUÇÃO da tabela (texto); demais são ícones (pessoa, gato, lâmpada, estrela, alvo, seta)"},
+    {"pagina": 4, "recortes": ["06", "08", "09", "10", "11"], "nota": "recorte 06 corta o topo da foto da sala de aula, por isso w04p4f usa caixa; demais são ícones (lâmpada, exclamação, selo proibido don't/doesn't, seta)"},
+    {"pagina": 5, "recortes": ["01", "02", "03", "04", "05", "06", "08", "09", "10", "11", "12", "13", "14", "16"], "nota": "recorte 01 é a faixa do cabeçalho da tabela; 06 e 08 juntam a ilustração com o botão Yes, I am / Yes, they are, por isso w04p5a e w04p5c usam caixa; demais são ícones (pronomes, gato, check, x, lâmpada, seta)"},
+    {"pagina": 6, "recortes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "32", "33", "34"], "nota": "ícones da tabela (pronomes, gato, setas, check, x) e ícones decorativos (lâmpada, foguete, alvo, seta)"},
+    {"pagina": 7, "recortes": ["02", "03"], "nota": "ícones decorativos (lâmpada, seta)"},
+    {"pagina": 8, "recortes": ["02", "03", "04", "05", "06"], "nota": "recorte 03 corta a mão com o dedo levantado do menino, por isso w04p8b usa caixa; demais são ícones (lâmpada, alvo, estrela, seta)"}
   ]
 }

@@ -31,71 +31,7 @@
     {
       "id": "lesson_007_audio_002",
       "pagina": 2,
-      "local": "Página 2 · table · b5",
-      "alvo": "texto",
-      "ancora": "dad",
-      "texto": "dad",
-      "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
-      "velocidade": "natural",
-      "lento": false,
-      "prioridade": "P0",
-      "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
-    },
-    {
-      "id": "lesson_007_audio_003",
-      "pagina": 2,
-      "local": "Página 2 · table · b5",
-      "alvo": "texto",
-      "ancora": "mom",
-      "texto": "mom",
-      "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
-      "velocidade": "natural",
-      "lento": false,
-      "prioridade": "P0",
-      "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
-    },
-    {
-      "id": "lesson_007_audio_004",
-      "pagina": 2,
-      "local": "Página 2 · table · b5",
-      "alvo": "texto",
-      "ancora": "brother",
-      "texto": "brother",
-      "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
-      "velocidade": "natural",
-      "lento": true,
-      "prioridade": "P0",
-      "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
-    },
-    {
-      "id": "lesson_007_audio_005",
-      "pagina": 2,
-      "local": "Página 2 · table · b5",
-      "alvo": "texto",
-      "ancora": "sister",
-      "texto": "sister",
-      "falas": null,
-      "categoria": "VOCABULARY_PRONUNCIATION",
-      "voz": "F1",
-      "velocidade": "natural",
-      "lento": false,
-      "prioridade": "P0",
-      "obrigatorio": true,
-      "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
-    },
-    {
-      "id": "lesson_007_audio_006",
-      "pagina": 2,
-      "local": "Página 2 · key · b6",
+      "local": "Página 2 · key · b5",
       "alvo": "texto",
       "ancora": "We are a family!",
       "texto": "We are a family!",
@@ -109,9 +45,9 @@
       "motivo": "Frase da ilustração que fecha a árvore genealógica da página."
     },
     {
-      "id": "lesson_007_audio_007",
+      "id": "lesson_007_audio_003",
       "pagina": 2,
-      "local": "Página 2 · chips · b7",
+      "local": "Página 2 · chips · b6",
       "alvo": "texto",
       "ancora": "Dad = Father",
       "texto": "Dad. Father",
@@ -125,9 +61,9 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_008",
+      "id": "lesson_007_audio_004",
       "pagina": 2,
-      "local": "Página 2 · chips · b7",
+      "local": "Página 2 · chips · b6",
       "alvo": "texto",
       "ancora": "Mom = Mother",
       "texto": "Mom. Mother",
@@ -141,9 +77,9 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_009",
+      "id": "lesson_007_audio_005",
       "pagina": 2,
-      "local": "Página 2 · cards · b9",
+      "local": "Página 2 · cards · b8",
       "alvo": "texto",
       "ancora": "FATHER",
       "texto": "father",
@@ -157,9 +93,9 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_010",
+      "id": "lesson_007_audio_006",
       "pagina": 2,
-      "local": "Página 2 · cards · b9",
+      "local": "Página 2 · cards · b8",
       "alvo": "texto",
       "ancora": "He is my father.",
       "texto": "He is my father.",
@@ -173,9 +109,9 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_011",
+      "id": "lesson_007_audio_007",
       "pagina": 2,
-      "local": "Página 2 · cards · b9",
+      "local": "Página 2 · cards · b8",
       "alvo": "texto",
       "ancora": "MOTHER",
       "texto": "mother",
@@ -189,9 +125,9 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_012",
+      "id": "lesson_007_audio_008",
       "pagina": 2,
-      "local": "Página 2 · cards · b9",
+      "local": "Página 2 · cards · b8",
       "alvo": "texto",
       "ancora": "She is my mother.",
       "texto": "She is my mother.",
@@ -205,9 +141,9 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_013",
+      "id": "lesson_007_audio_009",
       "pagina": 2,
-      "local": "Página 2 · cards · b9",
+      "local": "Página 2 · cards · b8",
       "alvo": "texto",
       "ancora": "He is my brother.",
       "texto": "He is my brother.",
@@ -221,9 +157,9 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_014",
+      "id": "lesson_007_audio_010",
       "pagina": 2,
-      "local": "Página 2 · cards · b9",
+      "local": "Página 2 · cards · b8",
       "alvo": "texto",
       "ancora": "She is my sister.",
       "texto": "She is my sister.",
@@ -237,7 +173,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_015",
+      "id": "lesson_007_audio_011",
       "pagina": 3,
       "local": "Página 3 · table · b5",
       "alvo": "texto",
@@ -253,7 +189,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_016",
+      "id": "lesson_007_audio_012",
       "pagina": 3,
       "local": "Página 3 · table · b5",
       "alvo": "texto",
@@ -269,7 +205,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_017",
+      "id": "lesson_007_audio_013",
       "pagina": 3,
       "local": "Página 3 · table · b5",
       "alvo": "texto",
@@ -285,7 +221,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_018",
+      "id": "lesson_007_audio_014",
       "pagina": 3,
       "local": "Página 3 · table · b5",
       "alvo": "texto",
@@ -301,7 +237,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_019",
+      "id": "lesson_007_audio_015",
       "pagina": 3,
       "local": "Página 3 · table · b5",
       "alvo": "texto",
@@ -317,7 +253,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_020",
+      "id": "lesson_007_audio_016",
       "pagina": 3,
       "local": "Página 3 · chips · b7",
       "alvo": "texto",
@@ -333,7 +269,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_021",
+      "id": "lesson_007_audio_017",
       "pagina": 3,
       "local": "Página 3 · chips · b7",
       "alvo": "texto",
@@ -349,7 +285,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_022",
+      "id": "lesson_007_audio_018",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -365,7 +301,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_023",
+      "id": "lesson_007_audio_019",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -381,7 +317,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_024",
+      "id": "lesson_007_audio_020",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -397,7 +333,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_025",
+      "id": "lesson_007_audio_021",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -413,7 +349,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_026",
+      "id": "lesson_007_audio_022",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -429,7 +365,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_027",
+      "id": "lesson_007_audio_023",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -445,7 +381,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_028",
+      "id": "lesson_007_audio_024",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -461,7 +397,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_029",
+      "id": "lesson_007_audio_025",
       "pagina": 3,
       "local": "Página 3 · cards · b9",
       "alvo": "texto",
@@ -477,7 +413,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_030",
+      "id": "lesson_007_audio_026",
       "pagina": 4,
       "local": "Página 4 · table · b5",
       "alvo": "bloco",
@@ -522,7 +458,7 @@
       "motivo": "Ouvir todos: a coluna em inglês da tabela, na ordem da tela. Os itens ficam só neste player por causa do teto."
     },
     {
-      "id": "lesson_007_audio_031",
+      "id": "lesson_007_audio_027",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -538,7 +474,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_032",
+      "id": "lesson_007_audio_028",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -554,7 +490,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_033",
+      "id": "lesson_007_audio_029",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -570,7 +506,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_034",
+      "id": "lesson_007_audio_030",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -586,7 +522,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_035",
+      "id": "lesson_007_audio_031",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -602,7 +538,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_036",
+      "id": "lesson_007_audio_032",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -618,7 +554,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_037",
+      "id": "lesson_007_audio_033",
       "pagina": 4,
       "local": "Página 4 · cards · b7",
       "alvo": "texto",
@@ -634,7 +570,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_038",
+      "id": "lesson_007_audio_034",
       "pagina": 5,
       "local": "Página 5 · table · b5",
       "alvo": "texto",
@@ -650,7 +586,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_039",
+      "id": "lesson_007_audio_035",
       "pagina": 5,
       "local": "Página 5 · table · b5",
       "alvo": "texto",
@@ -666,7 +602,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_040",
+      "id": "lesson_007_audio_036",
       "pagina": 5,
       "local": "Página 5 · cards · b6",
       "alvo": "texto",
@@ -682,7 +618,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_041",
+      "id": "lesson_007_audio_037",
       "pagina": 5,
       "local": "Página 5 · cards · b6",
       "alvo": "texto",
@@ -698,7 +634,7 @@
       "motivo": "Exemplo com conteúdo novo desta aula."
     },
     {
-      "id": "lesson_007_audio_042",
+      "id": "lesson_007_audio_038",
       "pagina": 6,
       "local": "Página 6 · dialogue · b5",
       "alvo": "bloco",
@@ -739,7 +675,7 @@
       "motivo": "Emma apresenta a família inteira sozinha: uma voz só, F2."
     },
     {
-      "id": "lesson_007_audio_043",
+      "id": "lesson_007_audio_039",
       "pagina": 6,
       "local": "Página 6 · chips · b10",
       "alvo": "texto",
@@ -755,7 +691,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_044",
+      "id": "lesson_007_audio_040",
       "pagina": 6,
       "local": "Página 6 · chips · b10",
       "alvo": "texto",
@@ -771,7 +707,7 @@
       "motivo": "Primeira apresentação no curso (mapa: vocabulario)."
     },
     {
-      "id": "lesson_007_audio_045",
+      "id": "lesson_007_audio_041",
       "pagina": 7,
       "local": "Página 7 · key · b5",
       "alvo": "texto",

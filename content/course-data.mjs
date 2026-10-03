@@ -343,103 +343,207 @@ export const LESSONS = [
   }
   ,{
     id: 4, code: "AULA 04", title: "Verb to be: Interrogative", sub: "Perguntas com am, is e are.",
-    time: "13 minutos",
+    time: "15 a 18 minutos",
     pages: [
+      // ───────────────────────── página impressa 01 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04" },
-        { t: "title", en: "VERB TO BE", pt: "Perguntas com am, is e are." },
-        { t: "note", v: "gray", bar: true, kicker: "ANTES DE COMEÇAR", bold: true, text: "Você já sabe afirmar e negar.\nComo se pergunta em inglês?" },
-        { t: "image", id: "a4p1", src: "/lessons/aulas/aula-04/a4p1.webp", alt: "Mulher de jaqueta jeans e homem de blusa azul conversando à mesa com laptop", w: 879, h: 415, ph: "Ilustração: duas pessoas conversando e fazendo perguntas" },
-        { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A PERGUNTAR:", c: "purple" },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "ANTES DE COMEÇAR", text: "Você já sabe fazer frases afirmativas com o verb to be.\nAgora vamos aprender a transformá-las em perguntas." },
+        { t: "image", id: "w04p1a", src: "/lessons/aulas/aula-04/w04p1a.webp", alt: "Moça de jaqueta jeans escrevendo num caderno e rapaz de suéter azul apontando para ela, os dois sorrindo à mesa com laptop, livros e caneca", w: 879, h: 415, ph: "Foto: uma moça de cabelo castanho comprido, jaqueta jeans e camiseta branca, sorrindo e escrevendo num caderno aberto, e um rapaz de cabelo cacheado, barba curta e suéter azul-petróleo, sorrindo e apontando para ela. Os dois estão sentados à mesa de madeira com um laptop aberto, uma pilha de livros e uma caneca azul, num ambiente com estante, plantas e luminária pendente." },
+        { t: "sec", text: "NESTA AULA, VOCÊ APRENDERÁ A DIZER:", c: "purple" },
         { t: "grid", cols: 3, items: [
-          { title: "Are you Brazilian?", body: "Você é brasileiro(a)?", v: "mint" },
-          { title: "Is she a doctor?", body: "Ela é médica?", v: "lilac" },
-          { title: "Are they friends?", body: "Eles são amigos?", v: "cream" } ] },
-        { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Fazer perguntas simples com o verb to be e responder de forma curta." },
-        { t: "meta", label: "TEMPO ESTIMADO", value: "13 min" },
-        { t: "note", v: "gray", bold: true, text: "A mudança é só de ordem.\nO verbo passa na frente do sujeito." } ] },
+          { title: "Are you tired?", body: "Você está cansado(a)?", v: "blue" },
+          { title: "Is she at home?", body: "Ela está em casa?", v: "lilac" },
+          { title: "Are they ready?", body: "Eles estão prontos?", v: "cream" } ] },
+        { t: "objective", v: "navy", title: "OBJETIVO DA AULA", text: "Aprender a fazer perguntas com o verb to be e responder corretamente com respostas curtas." },
+        { t: "meta", label: "DURAÇÃO ESTIMADA", value: "15 a 18 minutos" },
+        { t: "note", v: "gray", bold: true, text: "Uma pergunta abre muitas portas.\nVocê está dando o próximo passo para se comunicar de verdade em inglês." } ] },
 
+      // ───────────────────────── página impressa 02 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04", page: "PÁGINA 02" },
-        { t: "title", en: "A REGRA DA PERGUNTA", pt: "Inverta: primeiro o verbo, depois o sujeito." },
-        { t: "note", v: "gray", bar: true, kicker: "REGRA CENTRAL", bold: true, text: "Afirmação: You are ready.\nPergunta: Are you ready?" },
-        { t: "chips", items: [
-          { t: "AM / IS / ARE", c: "lilac" }, { t: "SUJEITO", c: "mint" }, { t: "INFORMAÇÃO", c: "cream" }, { t: "?", c: "yellow" } ] },
-        { t: "rule", v: "cream", c: "yellow", kicker: "1 · EU", from: "I am", to: "Am I…?", ex: "Am I late?", tr: "Eu estou atrasado(a)?" },
-        { t: "rule", v: "mint", c: "teal", kicker: "2 · ELE • ELA • ISTO/ISSO", from: "he · she · it is", to: "Is he…?", ex: "Is she a doctor?", tr: "Ela é médica?" },
-        { t: "rule", v: "lilac", c: "purple", kicker: "3 · VOCÊ • NÓS • ELES/ELAS", from: "you · we · they are", to: "Are you…?", ex: "Are they friends?", tr: "Eles são amigos?" },
-        { t: "dnd", id: "a4d1", title: "MONTE A PERGUNTA", sub: "Arraste ou toque nas peças na ordem correta.",
-          slots: ["verb to be", "sujeito", "informação"],
-          tokens: ["a doctor?", "Is", "she"], answer: ["Is", "she", "a doctor?"] } ] },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "A REGRA PRINCIPAL", text: "Para fazer perguntas com o verb to be, colocamos am, is ou are antes do sujeito." },
+        { t: "table", head: ["AFFIRMATIVE (afirmativa) · Sujeito + am/is/are", "INTERROGATIVE (pergunta) · Am/Is/Are + sujeito?"], rows: [
+          { a: "You are a student.", b: "Are you a student?", v: "lilac" },
+          { a: "She is at home.", b: "Is she at home?", v: "lilac" },
+          { a: "They are ready.", b: "Are they ready?", v: "lilac" } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "PENSE ASSIM:", text: "Na frase afirmativa, o verbo vem depois do sujeito.\nNa pergunta, o verbo vem antes do sujeito." },
+        { t: "image", id: "w04p2a", src: "/lessons/aulas/aula-04/w04p2a.webp", alt: "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado", w: 164, h: 180, ph: "Ilustração: menina de cabelo castanho comprido e camiseta roxa, sorrindo, com o dedo indicador levantado, ao lado do quadro PENSE ASSIM." },
+        { t: "sec", text: "EXEMPLOS RÁPIDOS", c: "purple" },
+        { t: "rows", items: [
+          { text: "I am happy. → Am I happy?", c: "purple" },
+          { text: "He is a teacher. → Is he a teacher?", c: "purple" },
+          { text: "We are friends. → Are we friends?", c: "purple" } ] },
+        { t: "note", v: "red", bar: true, bold: true, kicker: "ATENÇÃO!", text: "Na pergunta, sempre usamos am, is ou are antes do sujeito.\nEssa é a chave para uma pergunta correta!" },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você verá a estrutura completa de perguntas com todos os pronomes." } ] },
 
+      // ───────────────────────── página impressa 03 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04", page: "PÁGINA 03" },
-        { t: "title", en: "RESPOSTAS CURTAS", pt: "Yes, I am. / No, I'm not." },
-        { t: "note", v: "gray", bold: true, text: "Em inglês, ninguém responde só “yes” ou “no”.\nA resposta curta repete o verbo." },
-        { t: "table", head: ["PERGUNTA", "RESPOSTA CURTA"], rows: [
-          { a: "Am I late?", b: "Yes, you are. / No, you aren’t.", v: "cream" },
-          { a: "Are you Brazilian?", b: "Yes, I am. / No, I’m not.", v: "mint" },
-          { a: "Is he a teacher?", b: "Yes, he is. / No, he isn’t.", v: "lilac" },
-          { a: "Is she happy?", b: "Yes, she is. / No, she isn’t.", v: "mint" },
-          { a: "Is it new?", b: "Yes, it is. / No, it isn’t.", v: "cream" },
-          { a: "Are we ready?", b: "Yes, we are. / No, we aren’t.", v: "lilac" },
-          { a: "Are they friends?", b: "Yes, they are. / No, they aren’t.", v: "mint" } ] },
-        { t: "objective", v: "red", title: "ATENÇÃO À CONTRAÇÃO", text: "Na resposta afirmativa, não contraia. Diga: Yes, I am. Nunca: Yes, I’m." },
-        { t: "match", id: "a4match1", title: "LIGUE A PERGUNTA À RESPOSTA CURTA (AULA 04)",
-          left: ["Are you tired?", "Is he your brother?", "Are they students?", "Is it new?"],
-          right: ["Yes, they are.", "Yes, I am.", "No, it isn’t.", "Yes, he is."],
-          answer: [1, 3, 0, 2] } ] },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "ESTRUTURA COMPLETA", text: "Observe como fazemos perguntas com o verb to be para todos os pronomes pessoais." },
+        { t: "grid", cols: 2, items: [
+          { kicker: "I", title: "Am I ...?", body: "Eu sou / estou ...?", foot: "Yes, I am. / No, I’m not.", v: "lilac", c: "purple" },
+          { kicker: "YOU", title: "Are you ...?", body: "Você é / está ...?", foot: "Yes, you are. / No, you aren’t.", v: "lilac", c: "purple" },
+          { kicker: "HE", title: "Is he ...?", body: "Ele é / está ...?", foot: "Yes, he is. / No, he isn’t.", v: "lilac", c: "purple" },
+          { kicker: "SHE", title: "Is she ...?", body: "Ela é / está ...?", foot: "Yes, she is. / No, she isn’t.", v: "lilac", c: "purple" },
+          { kicker: "IT", title: "Is it ...?", body: "Ele / ela (objeto/animal) é / está ...?", foot: "Yes, it is. / No, it isn’t.", v: "lilac", c: "purple" },
+          { kicker: "WE", title: "Are we ...?", body: "Nós somos / estamos ...?", foot: "Yes, we are. / No, we aren’t.", v: "lilac", c: "purple" },
+          { kicker: "YOU (PLURAL)", title: "Are you ...?", body: "Vocês são / estão ...?", foot: "Yes, you are. / No, you aren’t.", v: "lilac", c: "purple" },
+          { kicker: "THEY", title: "Are they ...?", body: "Eles / elas são / estão ...?", foot: "Yes, they are. / No, they aren’t.", v: "lilac", c: "purple" } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "DICA IMPORTANTE", text: "A forma da pergunta depende do pronome que usamos.\nA resposta curta repete o mesmo verbo da pergunta." },
+        { t: "image", id: "w04p3a", src: "/lessons/aulas/aula-04/w04p3a.webp", alt: "Menino de cabelo castanho curto e camiseta roxa sorrindo com o dedo indicador levantado", w: 199, h: 137, ph: "Ilustração: menino de cabelo castanho curto e camiseta roxa, sorrindo, com o dedo indicador levantado, ao lado do quadro DICA IMPORTANTE." },
+        { t: "note", v: "lilac", bar: true, bold: true, kicker: "BOA NOTÍCIA", text: "Você já conhece todos os pronomes pessoais!\nAgora é só praticar para fazer perguntas naturalmente." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Vamos ver exemplos de perguntas em situações do dia a dia." } ] },
 
+      // ───────────────────────── página impressa 04 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04", page: "PÁGINA 04" },
-        { t: "title", en: "ATENÇÃO, BRASILEIRO!", pt: "Um erro comum tem uma correção simples." },
-        { t: "objective", v: "red", title: "NÃO USE do / does", text: "para perguntar com am, is ou are." },
-        { t: "compare", items: [
-          { wrong: "Do you are Brazilian?", note: "O verb to be já forma a pergunta.", right: "Are you Brazilian?", rnote: "Você é brasileiro(a)?" },
-          { wrong: "Does she is a doctor?", right: "Is she a doctor?", rnote: "Ela é médica?" } ] },
-        { t: "mc", id: "a4mc1", title: "ESCOLHA A PERGUNTA CORRETA", v: "gray", questions: [
-          { q: "Eles estão prontos?", options: ["Do they are ready?", "Are they ready?"], answer: 1, explain: "Com o verb to be, o próprio verbo vai para a frente." },
-          { q: "Você é professor?", options: ["Are you a teacher?", "Does you a teacher?"], answer: 0 },
-          { q: "Isto é novo?", options: ["Is it new?", "It is new?"], answer: 0, explain: "A ordem muda: verbo primeiro." } ] },
-        { t: "key", v: "navy", text: "Viu am, is ou are? A pergunta começa pelo verbo." } ] },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "PERGUNTAR PARA SABER", text: "Usamos o verb to be em perguntas para obter informações sobre pessoas, lugares, objetos e situações.\nVeja alguns exemplos do dia a dia." },
+        { t: "sec", text: "EXEMPLOS EM SITUAÇÕES REAIS", c: "purple" },
+        { t: "cards", cols: 2, items: [
+          { tag: "Are you tired?", c: "purple", v: "lilac", id: "w04p4a", src: "/lessons/aulas/aula-04/w04p4a.webp", alt: "Moça de camisa jeans diante do laptop, de olhos fechados e esfregando o olho, cansada", w: 223, h: 187, ph: "Foto: moça de cabelo castanho solto e camisa jeans, sentada diante de um laptop aberto, com os olhos fechados e esfregando um olho com a mão, cansada, num ambiente claro com janela e planta ao fundo.",
+            lines: ["Yes, I am.", "No, I’m not."] },
+          { tag: "Is she at home?", c: "purple", v: "lilac", id: "w04p4b", src: "/lessons/aulas/aula-04/w04p4b.webp", alt: "Moça de suéter bege sorrindo e acenando na porta de casa", w: 222, h: 187, ph: "Foto: moça de cabelo castanho comprido e suéter bege, sorrindo e acenando com a mão aberta na porta de madeira de casa.",
+            lines: ["Yes, she is.", "No, she isn’t."] },
+          { tag: "Are they ready?", c: "purple", v: "lilac", id: "w04p4c", src: "/lessons/aulas/aula-04/w04p4c.webp", alt: "Dois rapazes de mochila caminhando e sorrindo por um caminho de parque arborizado", w: 223, h: 185, ph: "Foto: dois rapazes de mochila nas costas, um de camiseta verde e outro de camiseta azul-marinho, caminhando e sorrindo por um caminho de parque arborizado.",
+            lines: ["Yes, they are.", "No, they aren’t."] },
+          { tag: "Is it hot today?", c: "purple", v: "lilac", id: "w04p4d", src: "/lessons/aulas/aula-04/w04p4d.webp", alt: "Praia de areia clara e mar azul-turquesa sob céu azul, com coqueiro à direita", w: 230, h: 185, ph: "Foto: praia de areia clara e mar azul-turquesa sob céu azul com nuvens, com um coqueiro à direita.",
+            lines: ["Yes, it is.", "No, it isn’t."] },
+          { tag: "Are you studying?", c: "purple", v: "lilac", id: "w04p4e", src: "/lessons/aulas/aula-04/w04p4e.webp", alt: "Rapaz de camisa jeans sentado à mesa escrevendo num caderno, com livros empilhados ao lado", w: 223, h: 185, ph: "Foto: rapaz de cabelo escuro e camisa jeans, sentado à mesa, escrevendo num caderno aberto, com livros empilhados ao lado.",
+            lines: ["Yes, I am.", "No, I’m not."] },
+          { tag: "Is he a teacher?", c: "purple", v: "lilac", id: "w04p4f", src: "/lessons/aulas/aula-04/w04p4f.webp", alt: "Professor de camisa bege diante do quadro branco e alunos sentados de costas levantando a mão", w: 230, h: 184, ph: "Foto: professor de camisa bege em pé diante de um quadro branco, numa sala de aula, com vários alunos sentados de costas levantando a mão.",
+            lines: ["Yes, he is.", "No, he isn’t."] } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "LEMBRE-SE", text: "A pergunta sempre começa com am, is ou are.\nDepois vem o sujeito e, em seguida, o restante da pergunta." },
+        { t: "image", id: "w04p4g", src: "/lessons/aulas/aula-04/w04p4g.webp", alt: "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado", w: 142, h: 141, ph: "Ilustração: menina de cabelo castanho comprido e camiseta roxa, sorrindo, com o dedo indicador levantado, ao lado do quadro LEMBRE-SE." },
+        { t: "note", v: "lilac", bar: true, bold: true, kicker: "ATENÇÃO!", text: "Não usamos don’t / doesn’t com o verb to be.\nVamos usar am, is e are para fazer perguntas." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai aprender como responder às perguntas com respostas curtas." } ] },
 
+      // ───────────────────────── página impressa 05 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04", page: "PÁGINA 05" },
-        { t: "title", en: "PRÁTICA GUIADA", pt: "Complete a pergunta com Am, Is ou Are." },
-        { t: "note", v: "gray", bold: true, text: "LEMBRETE:   I → Am      he / she / it → Is      you / we / they → Are" },
-        { t: "fill", id: "a4e1", title: "COMPLETE AS PERGUNTAS", items: [
-          { pre: "1.", post: "you from Brazil?", answers: ["are"], v: "mint" },
-          { pre: "2.", post: "he a student?", answers: ["is"], v: "lilac" },
-          { pre: "3.", post: "I late?", answers: ["am"], v: "cream" },
-          { pre: "4.", post: "she your teacher?", answers: ["is"], v: "mint" },
-          { pre: "5.", post: "they at home?", answers: ["are"], v: "lilac" },
-          { pre: "6.", post: "it a good film?", answers: ["is"], v: "cream" },
-          { pre: "7.", post: "we ready?", answers: ["are"], v: "mint" } ] },
-        { t: "objective", v: "navy", title: "CHECKPOINT", text: "Leia cada pergunta em voz alta, subindo a entonação no final." } ] },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "RESPOSTAS CURTAS", text: "Quando respondemos a perguntas com o verb to be, usamos respostas curtas para confirmar ou negar.\nElas repetem o verbo da pergunta." },
+        { t: "table", head: ["RESPOSTAS AFIRMATIVAS", "RESPOSTAS NEGATIVAS"], rows: [
+          { a: "Yes, I am.", b: "No, I’m not.", note: "I", v: "mint" },
+          { a: "Yes, you are.", b: "No, you aren’t.", note: "you", v: "lilac" },
+          { a: "Yes, he is.", b: "No, he isn’t.", note: "he", v: "mint" },
+          { a: "Yes, she is.", b: "No, she isn’t.", note: "she", v: "lilac" },
+          { a: "Yes, it is.", b: "No, it isn’t.", note: "it", v: "mint" },
+          { a: "Yes, we are.", b: "No, we aren’t.", note: "we", v: "lilac" },
+          { a: "Yes, you are.", b: "No, you aren’t.", note: "you (plural)", v: "mint" },
+          { a: "Yes, they are.", b: "No, they aren’t.", note: "they", v: "lilac" } ] },
+        { t: "sec", text: "EXEMPLOS", c: "purple" },
+        { t: "cards", cols: 2, items: [
+          { tag: "Are you a student?", c: "purple", v: "lilac", id: "w04p5a", src: "/lessons/aulas/aula-04/w04p5a.webp", alt: "Menino de camiseta azul-petróleo e mochila e menina de blusa roxa segurando livros, sorrindo um para o outro", w: 241, h: 140, ph: "Ilustração: um menino de camiseta azul-petróleo e mochila nas costas e uma menina de blusa roxa segurando livros, os dois sorrindo, de frente um para o outro.",
+            lines: ["Yes, I am.", "No, I’m not."] },
+          { tag: "Is she happy?", c: "purple", v: "lilac", id: "w04p5b", src: "/lessons/aulas/aula-04/w04p5b.webp", alt: "Menina de cabelo castanho comprido e blusa amarela sorrindo de olhos fechados", w: 162, h: 140, ph: "Ilustração: menina de cabelo castanho comprido e blusa amarela, sorrindo com os olhos fechados, sobre um círculo azul-claro.",
+            lines: ["Yes, she is.", "No, she isn’t."] },
+          { tag: "Are they at home?", c: "purple", v: "lilac", id: "w04p5c", src: "/lessons/aulas/aula-04/w04p5c.webp", alt: "Pai de barba, menino e mãe sentados juntos no sofá da sala, todos sorrindo", w: 289, h: 140, ph: "Ilustração: família sentada num sofá da sala, um pai de barba e camiseta verde, um menino de camiseta azul e uma mãe de blusa rosa, todos sorrindo, com plantas e um quadro ao fundo.",
+            lines: ["Yes, they are.", "No, they aren’t."] } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "DICA IMPORTANTE", text: "Em inglês, é comum usar respostas curtas em conversas.\nElas tornam a comunicação mais natural e rápida." },
+        { t: "image", id: "w04p5d", src: "/lessons/aulas/aula-04/w04p5d.webp", alt: "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado", w: 182, h: 143, ph: "Ilustração: menina de cabelo castanho comprido e camiseta roxa, sorrindo, com o dedo indicador levantado, ao lado do quadro DICA IMPORTANTE." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Veja como relacionar a pergunta à resposta correta passo a passo." } ] },
 
+      // ───────────────────────── página impressa 06 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04", page: "PÁGINA 06" },
-        { t: "title", en: "AGORA É COM VOCÊ", pt: "Escreva perguntas e responda de forma curta." },
-        { t: "note", v: "gray", bold: true, text: "USE O MODELO\nAm / Is / Are + sujeito + informação + ?" },
-        { t: "free", id: "a4f1", cols: 2, items: [
-          { n: "1", kicker: "PERGUNTE SOBRE ALGUÉM", prefix: "Is he / Is she…?", ideas: "Ideias: a teacher • Brazilian • happy", v: "mint", c: "teal" },
-          { n: "2", kicker: "PERGUNTE SOBRE UM GRUPO", prefix: "Are they…?", ideas: "Ideias: friends • students • ready", v: "lilac", c: "purple" },
-          { n: "3", kicker: "PERGUNTE PARA ALGUÉM", prefix: "Are you…?", ideas: "Ideias: from Brazil • tired • a doctor", v: "cream", c: "yellow" },
-          { n: "4", kicker: "RESPONDA A PERGUNTA 3", prefix: "Yes, I am. / No, I’m not.", ideas: "Escreva a resposta curta completa.", v: "gray", c: "navy" } ] },
-        { t: "objective", v: "navy", title: "DESAFIO ORAL", text: "Leia sua pergunta e sua resposta em voz alta, como em uma conversa real." } ] },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "PERGUNTA + RESPOSTA", text: "Cada pergunta pede uma resposta curta.\nVeja como elas se conectam." },
+        { t: "table", head: ["PERGUNTA", "RESPOSTA CURTA"], rows: [
+          { a: "Am I a student?", b: "Yes, I am. / No, I’m not.", v: "lilac" },
+          { a: "Are you a student?", b: "Yes, you are. / No, you aren’t.", v: "lilac" },
+          { a: "Is he a student?", b: "Yes, he is. / No, he isn’t.", v: "lilac" },
+          { a: "Is she a student?", b: "Yes, she is. / No, she isn’t.", v: "lilac" },
+          { a: "Is it a cat?", b: "Yes, it is. / No, it isn’t.", v: "lilac" },
+          { a: "Are we friends?", b: "Yes, we are. / No, we aren’t.", v: "lilac" },
+          { a: "Are you friends?", b: "Yes, you are. / No, you aren’t.", note: "you (plural)", v: "lilac" },
+          { a: "Are they friends?", b: "Yes, they are. / No, they aren’t.", v: "lilac" } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "FIQUE LIGADO!", text: "Quando perguntamos com you, respondemos com I na resposta.\nEx.: Are you Brazilian? → Yes, I am." },
+        { t: "image", id: "w04p6a", src: "/lessons/aulas/aula-04/w04p6a.webp", alt: "Menina de cabelo castanho comprido e camiseta roxa sorrindo com o dedo indicador levantado", w: 149, h: 153, ph: "Ilustração: menina de cabelo castanho comprido e camiseta roxa, sorrindo, com o dedo indicador levantado, ao lado do quadro FIQUE LIGADO!." },
+        { t: "note", v: "lilac", bar: true, bold: true, kicker: "VAMOS PRATICAR?", text: "Na próxima página, você vai relacionar cada pergunta com a resposta correta." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Exercício: conecte cada pergunta à resposta adequada." } ] },
 
+      // ───────────────────────── página impressa 07 ─────────────────────────
       { blocks: [
         { t: "badge", label: "AULA 04", page: "PÁGINA 07" },
-        { t: "title", en: "VOCÊ JÁ SABE PERGUNTAR EM INGLÊS.", pt: "Use este checklist antes de avançar." },
-        { t: "check", id: "a4c1", title: "EU CONSIGO...", items: [
-          "começar a pergunta com Am, Is ou Are.",
-          "usar respostas curtas: Yes, I am. / No, I’m not.",
-          "não usar do / does com o verb to be.",
-          "perguntar sobre pessoas, grupos e coisas." ] },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "VAMOS PRATICAR!", text: "Agora é a sua vez!\nTransforme as frases afirmativas em perguntas usando am, is ou are." },
+        { t: "image", id: "w04p7a", src: "/lessons/aulas/aula-04/w04p7a.webp", alt: "Moça de camisa jeans sorrindo e escrevendo num caderno à mesa com livros, caneca branca e planta", w: 387, h: 213, ph: "Foto: moça de cabelo castanho comprido e camisa jeans, sorrindo e escrevendo num caderno aberto, sentada à mesa de madeira com livros empilhados, uma caneca branca e uma planta, com estante e janela ao fundo." },
+        { t: "mc", id: "w04mc1", title: "A. COPIE A PERGUNTA CORRETA.", v: "gray", questions: [
+          { q: "01. You are a teacher.", options: ["Are you a teacher?", "Is you a teacher?"], answer: 0 },
+          { q: "02. She is happy.", options: ["Is she happy?", "Are she happy?"], answer: 0 },
+          { q: "03. They are at home.", options: ["Is they at home?", "Are they at home?"], answer: 1 },
+          { q: "04. I am a student.", options: ["Are I a student?", "Am I a student?"], answer: 1 },
+          { q: "05. It is a cat.", options: ["Are it a cat?", "Is it a cat?"], answer: 1 },
+          { q: "06. We are friends.", options: ["Is we friends?", "Are we friends?"], answer: 1 },
+          { q: "07. He is tired.", options: ["Is he tired?", "Are he tired?"], answer: 0 } ] },
+        { t: "fill", id: "w04e1", title: "B. REESCREVA AS FRASES ABAIXO EM FORMA DE PERGUNTA.", wide: true, items: [
+          { pre: "01. You are from Brazil.", answers: ["Are you from Brazil?"], v: "cream" },
+          { pre: "02. She is my sister.", answers: ["Is she my sister?"], v: "cream" },
+          { pre: "03. They are ready.", answers: ["Are they ready?"], v: "cream" },
+          { pre: "04. I am at home.", answers: ["Am I at home?"], v: "cream" },
+          { pre: "05. He is a doctor.", answers: ["Is he a doctor?"], v: "cream" },
+          { pre: "06. It is a pen.", answers: ["Is it a pen?"], v: "cream" },
+          { pre: "07. We are in the classroom.", answers: ["Are we in the classroom?"], v: "cream" } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "DICA DE OURO", text: "Na pergunta, o verbo (am, is ou are) sempre vem antes do sujeito." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Você vai praticar ainda mais com exercícios completos." } ] },
+
+      // ───────────────────────── página impressa 08 ─────────────────────────
+      { blocks: [
+        { t: "badge", label: "AULA 04", page: "PÁGINA 08" },
+        { t: "title", en: "VERB TO BE: INTERROGATIVE", pt: "Perguntas com am, is e are." },
+        { t: "note", v: "gray", bar: true, bold: true, kicker: "LEITURA GUIADA", text: "Leia o diálogo abaixo e observe como as perguntas com o verb to be são usadas no dia a dia." },
+        { t: "image", id: "w04p8a", src: "/lessons/aulas/aula-04/w04p8a.webp", alt: "Rapaz de camisa verde-oliva e moça de camisa jeans sorrindo frente a frente numa mesa de café, segurando xícaras brancas", w: 360, h: 321, ph: "Foto: rapaz de cabelo cacheado, barba e camisa verde-oliva sobre camiseta branca, e moça de cabelo castanho comprido e camisa jeans, sentados frente a frente numa mesa de madeira de um café, sorrindo e segurando xícaras brancas, com um vasinho de planta entre eles." },
+        { t: "dialogue", items: [
+          { s: "a", text: "Lucas: Are you free this afternoon?" },
+          { s: "b", text: "Ana: Yes, I am. Why?" },
+          { s: "a", text: "Lucas: Is the meeting at 3 p.m.?" },
+          { s: "b", text: "Ana: No, it isn’t. It is at 4 p.m." },
+          { s: "a", text: "Lucas: Are they coming with us?" },
+          { s: "b", text: "Ana: Yes, they are." },
+          { s: "a", text: "Lucas: Great! Is the place far?" },
+          { s: "b", text: "Ana: No, it isn’t. It’s near." } ] },
+        { t: "fill", id: "w04e2", title: "A. COMPLETE AS PERGUNTAS COM AM, IS OU ARE.", items: [
+          { pre: "01.", post: "I your friend?", answers: ["Am"], v: "lilac" },
+          { pre: "02.", post: "she from Canada?", answers: ["Is"], v: "lilac" },
+          { pre: "03.", post: "they at the park?", answers: ["Are"], v: "lilac" },
+          { pre: "04.", post: "it a book?", answers: ["Is"], v: "lilac" },
+          { pre: "05.", post: "we ready?", answers: ["Are"], v: "lilac" },
+          { pre: "06.", post: "you a singer?", answers: ["Are"], v: "lilac" },
+          { pre: "07.", post: "he happy today?", answers: ["Is"], v: "lilac" },
+          { pre: "08.", post: "the class big?", answers: ["Is"], v: "lilac" } ] },
+        { t: "fill", id: "w04e3", title: "B. TRANSFORME AS FRASES EM PERGUNTAS.", wide: true, items: [
+          { pre: "01. You are late.", answers: ["Are you late?"], v: "cream" },
+          { pre: "02. She is my teacher.", answers: ["Is she my teacher?"], v: "cream" },
+          { pre: "03. They are from Mexico.", answers: ["Are they from Mexico?"], v: "cream" },
+          { pre: "04. It is very cold today.", answers: ["Is it very cold today?"], v: "cream" },
+          { pre: "05. We are happy.", answers: ["Are we happy?"], v: "cream" },
+          { pre: "06. He is at home.", answers: ["Is he at home?"], v: "cream" },
+          { pre: "07. You are right.", answers: ["Are you right?"], v: "cream" },
+          { pre: "08. The movie is interesting.", answers: ["Is the movie interesting?"], v: "cream" } ] },
+        { t: "note", v: "cream", bar: true, bold: true, kicker: "DICA IMPORTANTE", text: "Lembre-se da ordem:\nAm / Is / Are + sujeito + complemento?" },
+        { t: "image", id: "w04p8b", src: "/lessons/aulas/aula-04/w04p8b.webp", alt: "Menino de cabelo castanho curto e camiseta roxa sorrindo com o dedo indicador levantado", w: 155, h: 110, ph: "Ilustração: menino de cabelo castanho curto e camiseta roxa, sorrindo, com o dedo indicador levantado, ao lado do quadro DICA IMPORTANTE." },
+        { t: "note", v: "lilac", bar: true, bold: true, kicker: "BOA PRÁTICA", text: "Pratique fazer perguntas e respostas todos os dias.\nAssim, elas se tornam naturais e automáticas." },
+        { t: "note", v: "gray", kicker: "NA PRÓXIMA PÁGINA", text: "Vamos ver perguntas e respostas em situações do dia a dia." } ] },
+
+      // ──────────── fechamento do app (o e-book não tem esta página) ────────────
+      { blocks: [
+        { t: "badge", label: "AULA 04", page: "PÁGINA 09" },
+        { t: "title", en: "AULA CONCLUÍDA!", pt: "VERB TO BE: INTERROGATIVE" },
+        { t: "check", id: "w04c1", title: "EU CONSIGO...", items: [
+          "fazer perguntas colocando am, is ou are antes do sujeito.",
+          "responder com respostas curtas: Yes, I am. / No, I’m not.",
+          "responder com I quando a pergunta usa you.",
+          "lembrar que não usamos don’t / doesn’t com o verb to be." ] },
         { t: "cta", items: [
-          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 04", body: "Veja a entonação das perguntas com o professor.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
-          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça três perguntas e receba feedback de pronúncia.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
-        { t: "next", kicker: "PRÓXIMA AULA", title: "Aula 05 · Verb to be: Review", body: "As três formas juntas: afirmativa, negativa e interrogativa." } ] }
+          { icon: "play", v: "teal", title: "ASSISTA À VIDEOAULA 04", body: "Aprofunde com o professor.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "ASSISTIR", c: "white" },
+          { icon: "mic", v: "purple", title: "PRATIQUE COM A IA", body: "Faça perguntas com am, is e are e responda com respostas curtas.", plan: "EXCLUSIVO DO WSA PREMIUM", btn: "INICIAR PRÁTICA ORAL", c: "yellow" } ] },
+        { t: "next", kicker: "PRÓXIMA AULA", title: "AULA 05 · VERB TO BE: REVIEW" },
+        { t: "bar", label: "PROGRESSO", value: "04 DE 42 AULAS", pct: "10%" } ] }
     ]
   },
 
@@ -1001,12 +1105,6 @@ export const LESSONS = [
         { t: "title", en: "MY FAMILY", pt: "Os membros mais próximos da família" },
         { t: "note", v: "gray", text: "Estas são algumas pessoas da família. Observe os nomes e as relações." },
         { t: "image", id: "a7p2", src: "/lessons/aulas/aula-07/a7p2.webp", alt: "Cinco pessoas da família lado a lado com as etiquetas Dad, Mom, Brother, Sister e Me", w: 1000, h: 566, ph: "Ilustração: cinco pessoas lado a lado, cada uma com uma etiqueta roxa acima da cabeça. Da esquerda para a direita: Dad (father), o pai barbudo de polo azul; Mom (mother), a mãe de blusa amarela; Brother, o irmão de moletom verde; Sister, a irmã de camiseta rosa e tiara; Me, a Ana de camiseta azul-turquesa acenando. Embaixo, linhas de árvore genealógica ligam os cinco a um balão amarelo com a frase We are a family! e um coração rosa." },
-        { t: "table", head: ["INGLÊS", "PORTUGUÊS"], rows: [
-          { a: "dad", note: "(father)", b: "pai", v: "mint" },
-          { a: "mom", note: "(mother)", b: "mãe", v: "lilac" },
-          { a: "brother", b: "irmão", v: "cream" },
-          { a: "sister", b: "irmã", v: "mint" },
-          { a: "me", b: "eu", v: "lilac" } ] },
         { t: "key", v: "cream", text: "We are a family!" },
         { t: "chips", title: "EQUIVALÊNCIAS ÚTEIS", items: [
           { t: "Dad = Father", c: "teal" },

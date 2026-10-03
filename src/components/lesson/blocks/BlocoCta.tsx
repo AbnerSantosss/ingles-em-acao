@@ -50,6 +50,12 @@ const TEXTOS_DA_PRATICA = {
     'No ChatGPT, toque no botão de voz e responda falando.',
     'Quando terminar, volte ao app e siga para a próxima aula.',
   ],
+  /** Prompt grande demais para o link: o primeiro passo avisa que é preciso colar. */
+  passosSemLink: [
+    'Toque em "Conversar no ChatGPT". O prompt desta aula é copiado e o ChatGPT abre em branco.',
+    'Cole o prompt na conversa do ChatGPT e envie.',
+    'Toque no botão de voz e responda falando. Quando terminar, volte ao app e siga para a próxima aula.',
+  ],
   aviso: 'O ChatGPT é de outra empresa. A conversa fica na sua conta de lá.',
   semLink: 'O ChatGPT vai abrir em branco. O prompt já está copiado: é só colar.',
   /** Acréscimo do pacote 06 ao contrato: a área de transferência recusou a cópia. */
@@ -356,7 +362,7 @@ function CartaoDePratica({
   return (
     <CascaDoCartao item={item}>
       <ol className="mb-4 list-decimal space-y-1 pl-5 text-[15px]" style={{ color: corDoTexto }}>
-        {TEXTOS_DA_PRATICA.passos.map((passo) => (
+        {(urlDoChatGPT ? TEXTOS_DA_PRATICA.passos : TEXTOS_DA_PRATICA.passosSemLink).map((passo) => (
           <li key={passo}>{passo}</li>
         ))}
       </ol>
