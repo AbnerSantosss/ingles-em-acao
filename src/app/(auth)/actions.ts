@@ -25,7 +25,7 @@
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-import { safeNext } from '@/lib/auth/next-url';
+import { DESTINO_PADRAO, safeNext } from '@/lib/auth/next-url';
 import { hashPassword, precisaRehash, verifyPassword } from '@/lib/auth/password';
 import { ipDosCabecalhos, isRateLimited, recordLoginAttempt } from '@/lib/auth/rate-limit';
 import {
@@ -173,7 +173,7 @@ export async function entrarAction(
   }
 
   const { email, senha, lembrar, next } = validacao.dados;
-  const destino = safeNext(next);
+  let destino = safeNext(next);
   const devolver: ValoresDoFormulario = { email, lembrar };
 
   try {
@@ -218,6 +218,13 @@ export async function entrarAction(
     // BACKOFFICE §1.2: "lembrar-me" é ignorado para ADMIN — a sessão do painel
     // não ganha os 30 dias nem cookie persistente, marque-se o que for.
     await createSession(usuario.id, lembrar && usuario.role !== 'ADMIN');
+
+    // Tela de entrada com a escolha "Sou aluno / Sou admin": quem marca "admin"
+    // sem ter o papel não é mandado para um 404 — vai para o início do aluno.
+    // O painel continua guardado pelo `requireAdminNaTela()`; isto é só destino.
+    if (usuario.role !== 'ADMIN' && (destino === '/admin' || destino.startsWith('/admin/'))) {
+      destino = DESTINO_PADRAO;
+    }
   } catch {
     return { erros: { _form: ERRO_INESPERADO }, valores: devolver };
   }

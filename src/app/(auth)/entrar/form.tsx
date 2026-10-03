@@ -8,7 +8,7 @@
  * e-mail, senha e "lembrar-me" no lugar do campo único de nome.
  */
 import Link from 'next/link';
-import { useActionState, useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef, useState } from 'react';
 import { useFormStatus } from 'react-dom';
 
 import { Button } from '@/components/ui/Button';
@@ -27,6 +27,21 @@ export type FormularioDeEntradaProps = {
   linkCriarConta: string;
   linkEsqueciSenha: string;
 };
+
+/** Raiz do painel: é para onde vai quem escolhe "Sou admin". */
+const PAINEL = '/admin';
+const INICIO_DO_ALUNO = '/inicio';
+
+type Perfil = 'aluno' | 'admin';
+
+const PERFIS: { valor: Perfil; rotulo: string }[] = [
+  { valor: 'aluno', rotulo: 'Sou aluno' },
+  { valor: 'admin', rotulo: 'Sou admin' },
+];
+
+function ehDoPainel(caminho: string): boolean {
+  return caminho === PAINEL || caminho.startsWith(`${PAINEL}/`);
+}
 
 /**
  * Botão de envio.
@@ -71,6 +86,14 @@ export function FormularioDeEntrada({
 
   const formRef = useRef<HTMLFormElement>(null);
 
+  // A escolha só decide para onde a pessoa vai DEPOIS de entrar. Quem manda no
+  // acesso continua sendo o papel da conta: aluno que marca "admin" cai no
+  // início do aluno (`entrarAction`), e o painel segue fechado para ele.
+  const veioDoPainel = ehDoPainel(next);
+  const [perfil, setPerfil] = useState<Perfil>(veioDoPainel ? 'admin' : 'aluno');
+  const destino =
+    perfil === 'admin' ? (veioDoPainel ? next : PAINEL) : veioDoPainel ? INICIO_DO_ALUNO : next;
+
   // ⚠️ O React **reseta** o formulário assim que a ação começa
   // (`requestFormReset`), e o reset devolve cada campo ao seu `defaultValue`.
   // Por isso os valores que a ação devolve entram como `defaultValue`: no mesmo
@@ -106,8 +129,34 @@ export function FormularioDeEntrada({
       </h1>
 
       <p className="mt-2 text-[17px] leading-[1.45] text-muted sm:text-[18px]">
-        Entre para continuar sua trilha de 42 aulas.
+        {perfil === 'admin'
+          ? 'Entre com a conta de administrador para abrir o painel.'
+          : 'Entre para continuar sua trilha de 42 aulas.'}
       </p>
+
+      <div
+        role="radiogroup"
+        aria-label="Como você quer entrar"
+        className="mt-5 grid grid-cols-2 gap-1 rounded-[16px] border-[1.5px] border-border bg-surface p-1"
+      >
+        {PERFIS.map(({ valor, rotulo }) => {
+          const ativo = perfil === valor;
+          return (
+            <button
+              key={valor}
+              type="button"
+              role="radio"
+              aria-checked={ativo}
+              onClick={() => setPerfil(valor)}
+              className={`min-h-[44px] cursor-pointer rounded-[12px] text-[15px] font-extrabold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy ${
+                ativo ? 'bg-navy text-white' : 'text-muted-3 hover:text-navy'
+              }`}
+            >
+              {rotulo}
+            </button>
+          );
+        })}
+      </div>
 
       {sessaoExpirada ? (
         <p
@@ -130,7 +179,7 @@ export function FormularioDeEntrada({
       ) : null}
 
       <form ref={formRef} action={acao} noValidate className="mt-6 flex flex-col gap-5">
-        <input type="hidden" name="next" value={next} />
+        <input type="hidden" name="next" value={destino} />
 
         {erroGeral ? (
           <p
