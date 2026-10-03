@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "site.proxserverabner.inglesemacao.twa",
+        "sha256_cert_fingerprints": ["C2:F5:78:33:66:66:FB:B3:B8:12:C0:95:AE:DA:E9:F1:B1:6D:47:AF:B4:39:79:1B:11:1B:2C:E8:95:FF:6A:84"]
+      }
+    }]
