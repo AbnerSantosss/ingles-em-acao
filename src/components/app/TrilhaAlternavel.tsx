@@ -10,6 +10,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 import { cn } from '@/lib/ui/cn';
+import type { AvancoDaAula as Avanco } from '@/lib/lesson/avanco';
+import { AvancoDaAula } from './AvancoDaAula';
 
 export type EstadoDaAula = 'concluida' | 'proxima' | 'aberta';
 
@@ -20,6 +22,7 @@ export type ItemDaTrilha = {
   subtitulo: string;
   tempo: string;
   estado: EstadoDaAula;
+  progresso: Avanco;
 };
 
 export type ModuloDaTrilha = {
@@ -159,7 +162,7 @@ export function TrilhaAlternavel({
                         estilo.tagCor,
                       )}
                     >
-                      {estilo.tag}
+                      {item.progresso.iniciada && item.estado !== 'concluida' ? 'EM ANDAMENTO' : estilo.tag}
                     </span>
                     <span className="block text-[17px] font-extrabold text-navy text-pretty lg:text-[21px]">
                       {item.titulo}
@@ -167,9 +170,10 @@ export function TrilhaAlternavel({
                     <span className="mt-0.5 block text-[14px] text-muted lg:text-[16px]">
                       {item.subtitulo}
                     </span>
+                    {item.progresso.iniciada ? <AvancoDaAula progresso={item.progresso} titulo={item.titulo} /> : null}
                   </span>
 
-                  <span className="hidden items-center gap-[9px] text-navy min-[420px]:flex">
+                  <span className="hidden items-center gap-[9px] text-navy lg:flex">
                     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
                       <circle cx="12" cy="12" r="8.5" />
                       <path d="M12 7.5V12l3 2" />
@@ -188,7 +192,7 @@ export function TrilhaAlternavel({
           })}
         </ul>
       ) : (
-        <ul className="m-0 grid list-none grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-3.5 p-0">
+        <ul className="m-0 grid list-none grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))] gap-3.5 p-0">
           {modulos.map((modulo) => {
             const pct = modulo.total > 0 ? Math.round((modulo.concluidas / modulo.total) * 100) : 0;
 

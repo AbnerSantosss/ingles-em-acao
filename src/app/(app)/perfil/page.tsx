@@ -66,7 +66,7 @@ const LINHAS_DO_APRENDIZADO: Linha[] = [
 ];
 
 /* Medidas repetidas do design. */
-const CARTAO = 'rounded-[20px] bg-white px-6 py-[22px] shadow-[0_6px_22px_rgba(11,31,75,.05)]';
+const CARTAO = 'rounded-[20px] border border-[#D5E0EE] bg-white px-6 py-[22px] shadow-[0_6px_22px_rgba(11,31,75,.06)]';
 const FOCO = 'focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-blue';
 
 function primeiroNome(nome: string): string {
@@ -238,7 +238,12 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
         totalDeAulas: progresso.total,
       }}
     >
-      <div className="flex flex-col gap-4">
+      <div className="relative isolate flex flex-col gap-4">
+        {/* Fundo restrito ao perfil, com contraste suave para os cartões brancos. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-[calc(84px+env(safe-area-inset-top))] -bottom-[calc(90px+env(safe-area-inset-bottom))] left-1/2 -z-10 w-screen -translate-x-1/2 bg-[#EAF0F7] lg:-top-[102px] lg:-bottom-[60px]"
+        />
         {outrasEncerradas ? (
           <p
             role="status"
@@ -249,7 +254,7 @@ export default async function PerfilPage({ searchParams }: PerfilProps) {
         ) : null}
 
         {/* Apresentação: avatar + saudação + frase manuscrita. */}
-        <section className="flex flex-wrap items-center gap-[34px] rounded-[22px] bg-white px-[34px] py-[30px] shadow-[0_6px_22px_rgba(11,31,75,.05)]">
+        <section className="flex flex-wrap items-center gap-[34px] rounded-[22px] border border-[#D5E0EE] bg-white px-[34px] py-[30px] shadow-[0_6px_22px_rgba(11,31,75,.06)]">
           <div className="relative size-[158px] flex-none">
             <div className="absolute inset-0 grid place-items-center overflow-hidden rounded-full border-[7px] border-solid border-[#E8F0FB] bg-navy">
               {usuario.photoUrl ? (

@@ -108,6 +108,8 @@ export async function salvarPaginaAction(slug: string, pagina: number): Promise<
   // Clamp contra uma página que não existe mais (BACKOFFICE §6.4, regra 2).
   const destino = Math.min(paginaValidada.data, Math.max(aula.pages.length - 1, 0));
   await gravarPagina(usuario.id, aula.id, destino);
+  revalidatePath('/inicio');
+  revalidatePath('/trilha');
 }
 
 /**

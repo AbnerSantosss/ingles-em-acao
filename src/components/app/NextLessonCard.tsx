@@ -3,11 +3,13 @@ import Link from 'next/link';
 
 import type { LessonSummary } from '@/lib/content/lessons';
 import { cn } from '@/lib/ui/cn';
+import type { AvancoDaAula as Avanco } from '@/lib/lesson/avanco';
+import { AvancoDaAula } from './AvancoDaAula';
 
 /**
  * O card navy de "próxima aula" da Home, fiel ao design do Claude Designer:
  * a capa da aula ao fundo (`cover`, cadastrada no painel ou a arte estática),
- * com a foto do Big Ben do design como reserva quando a aula ainda não tem
+ * com a paisagem de Nova York como reserva quando a aula ainda não tem
  * capa; gradiente por cima para o texto continuar legível, o CTA amarelo e, à
  * direita, a pílula de tempo e o "Small steps big results" manuscrito.
  *
@@ -22,6 +24,7 @@ export type NextLessonCardProps = {
   /** Rótulo do botão. Padrão: "CONTINUAR AULA". */
   label?: string;
   className?: string;
+  progresso?: Avanco;
 };
 
 /** Gradiente que garante contraste do texto sobre a foto (design). */
@@ -33,6 +36,7 @@ export function NextLessonCard({
   href,
   label = 'CONTINUAR AULA',
   className,
+  progresso,
 }: NextLessonCardProps) {
   const destino = href ?? `/aula/${lesson.slug}`;
   const capa = lesson.cover ?? null;
@@ -45,7 +49,7 @@ export function NextLessonCard({
       )}
     >
       <Image
-        src={capa ?? '/brand/bigben.png'}
+        src={capa ?? '/brand/aluno-new-york.webp'}
         alt=""
         fill
         priority
@@ -60,7 +64,7 @@ export function NextLessonCard({
       <div className="absolute inset-0" style={{ background: VEU }} />
 
       <div className="relative flex flex-wrap items-start gap-5 px-6 pb-7 pt-6 lg:px-[34px] lg:pb-9 lg:pt-[34px]">
-        <div className="min-w-[240px] flex-1 lg:min-w-[260px]">
+        <div className="min-w-0 flex-1 basis-[240px] lg:min-w-[260px]">
           <p className="m-0 mb-3 text-[14px] font-extrabold tracking-[0.14em] text-yellow lg:text-[17px]">
             PRÓXIMA AULA
           </p>
@@ -69,15 +73,17 @@ export function NextLessonCard({
             {lesson.code}: {lesson.title}
           </h2>
 
-          <p className="m-0 mb-[26px] text-[16px] text-[#C9D6EC] lg:text-[19px]">
+          <p className="m-0 mb-3 text-[16px] text-[#C9D6EC] lg:text-[19px]">
             {lesson.subtitle}
           </p>
+
+          {progresso?.iniciada ? <div className="mb-5"><AvancoDaAula progresso={progresso} titulo={lesson.title} escuro /></div> : <div className="h-3" />}
 
           <Link
             href={destino}
             className={cn(
-              'inline-flex items-center gap-4 rounded-pill bg-yellow px-[22px] py-4 lg:px-[26px] lg:py-[18px]',
-              'text-[16px] font-black tracking-[0.02em] text-navy lg:text-[19px]',
+              'inline-flex items-center gap-2 rounded-pill bg-yellow px-4 py-4 lg:gap-4 lg:px-[26px] lg:py-[18px]',
+              'text-[14px] font-black tracking-[0.02em] text-navy lg:text-[19px]',
               'shadow-[0_10px_26px_rgba(246,201,69,0.34)]',
               'transition-colors duration-150 hover:bg-[#FFD75C] hover:text-navy',
             )}
@@ -96,7 +102,7 @@ export function NextLessonCard({
               strokeLinecap="round"
               strokeLinejoin="round"
               aria-hidden="true"
-              className="ml-2.5"
+              className="flex-none lg:ml-2.5"
             >
               <path d="M4 12h15" />
               <path d="m13 6 6 6-6 6" />
@@ -124,7 +130,7 @@ export function NextLessonCard({
             </span>
           </div>
 
-          <div aria-hidden="true" className="rotate-[-7deg] text-center">
+          <div aria-hidden="true" className="hidden rotate-[-7deg] text-center lg:block">
             <div className="manuscrito text-[30px] leading-[1.05] text-white lg:text-[38px]">
               Small
               <br />

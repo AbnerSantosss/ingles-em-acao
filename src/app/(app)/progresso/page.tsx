@@ -105,7 +105,7 @@ function AnelDeProgresso({ pct, done, total }: { pct: number; done: number; tota
       </svg>
       <div
         aria-hidden="true"
-        className="absolute inset-0 grid place-items-center text-[34px] font-black text-[#0A1F4E]"
+        className="absolute inset-0 grid place-items-center text-[34px] font-black text-white"
       >
         {percentual}%
       </div>
@@ -206,24 +206,25 @@ export default async function ProgressoPage() {
   return (
     <div className="flex flex-col gap-4">
       <section
-        className={`flex flex-wrap items-center gap-[34px] rounded-[22px] bg-white px-6 py-7 sm:px-[34px] sm:py-[30px] ${SOMBRA_DO_CARTAO}`}
+        className={`flex flex-wrap items-center gap-5 overflow-hidden rounded-[22px] bg-navy px-6 py-7 sm:gap-[34px] sm:px-[34px] sm:py-[30px] ${SOMBRA_DO_CARTAO}`}
+        style={{ backgroundImage: 'linear-gradient(90deg, rgba(10,31,78,.98), rgba(10,31,78,.88) 52%, rgba(10,31,78,.45)), url(/brand/aluno-new-york.webp)', backgroundSize: 'cover', backgroundPosition: 'center 58%' }}
       >
         <AnelDeProgresso pct={pct} done={done} total={total} />
 
         <div className="min-w-[250px] flex-1 max-[400px]:min-w-0 max-[400px]:basis-full">
-          <p className="m-0 mb-2 text-[15px] font-extrabold tracking-[0.14em] text-[#5B6B7F]">
+          <p className="m-0 mb-2 text-[15px] font-extrabold tracking-[0.14em] text-yellow">
             SEU PROGRESSO
           </p>
-          <h1 className="m-0 mb-2.5 text-[42px] font-black leading-[1.04] tracking-[-0.025em] text-[#0A1F4E] max-[400px]:text-[36px]">
+          <h1 className="m-0 mb-2.5 text-[42px] font-black leading-[1.04] tracking-[-0.025em] text-white max-[400px]:text-[36px]">
             {done} de {total} aulas
           </h1>
-          <p className="m-0 text-[19px] leading-[1.45] text-[#5B6B7F]">
+          <p className="m-0 text-[17px] leading-[1.45] text-[#E0E9F8]">
             {incentivo(emAndamento, pct)}
           </p>
         </div>
 
         <div aria-hidden="true" className="flex-none rotate-[-6deg] text-center">
-          <p className="manuscrito m-0 max-w-[210px] text-[30px] leading-[1.15] text-[#1B3A6B]">
+          <p className="manuscrito m-0 max-w-[210px] text-[30px] leading-[1.15] text-yellow">
             Um passo por dia já é progresso!
           </p>
           <svg width="180" height="16" viewBox="0 0 180 16" fill="none" className="mt-0.5">
@@ -315,7 +316,7 @@ export default async function ProgressoPage() {
         )}
       </section>
 
-      <section className={`rounded-[20px] bg-white p-6 ${SOMBRA_DO_CARTAO}`}>
+      <section className="rounded-[20px] border border-[#C9D6EC] bg-[#E3ECF8] p-4 sm:p-6">
         <h2 className="m-0 mb-1 text-[19px] font-black tracking-[-0.01em] text-[#0A1F4E]">
           Progresso por módulo
         </h2>
@@ -325,7 +326,7 @@ export default async function ProgressoPage() {
             : 'As aulas que estão no ar, na ordem da trilha.'}
         </p>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-3.5">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,240px),1fr))] gap-3.5">
           {grupos.map(({ chave, rotulo, titulo, aulas }) => {
             const concluidas = aulas.filter((aula) => statusDa(aula.id) === 'COMPLETED').length;
             const percentualDoModulo =
@@ -334,7 +335,7 @@ export default async function ProgressoPage() {
             return (
               <div
                 key={chave}
-                className="rounded-[16px] border-[1.5px] border-solid border-[#DCE6F2] p-[18px]"
+                className="rounded-[16px] border-[1.5px] border-solid border-[#DCE6F2] bg-white p-[18px] shadow-[0_3px_12px_rgba(11,31,75,.04)]"
               >
                 {rotulo ? (
                   <p className="m-0 text-[13px] font-extrabold tracking-[0.1em] text-[#1B6BE3]">

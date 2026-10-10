@@ -5,7 +5,10 @@
  */
 import type { EstadoDaAula, ItemDaTrilha, ModuloDaTrilha } from '@/components/app/TrilhaAlternavel';
 import { aulasEmOrdem, carregarTrilhaPublicada } from '@/lib/content/publicado';
-import { getLessonStatuses } from '@/lib/progress';
+import { getLessonRecords } from '@/lib/progress';
+import { getLessonSummaryByNumber } from '@/lib/content/lessons';
+import { prisma } from '@/lib/db';
+import { calcularAvancoDaAula } from '@/lib/lesson/avanco';
 
 export type TrilhaDoAluno = {
   itens: ItemDaTrilha[];
@@ -15,14 +18,21 @@ export type TrilhaDoAluno = {
 };
 
 export async function montarTrilhaDoAluno(userId: string): Promise<TrilhaDoAluno> {
-  const [trilha, statuses] = await Promise.all([
+  const [trilha, registros, contagens] = await Promise.all([
     carregarTrilhaPublicada(),
-    getLessonStatuses(userId),
+    getLessonRecords(userId),
+    // Conta no Postgres: não transporta o JSON das 42 aulas para a Home.
+    prisma.$queryRaw<{ number: number; total: number }[]>`
+      SELECT "number", CASE WHEN jsonb_typeof("pages") = 'array'
+        THEN jsonb_array_length("pages") ELSE 0 END AS total
+      FROM "Lesson" WHERE "published" = true AND "archivedAt" IS NULL
+    `.catch(() => []),
   ]);
+  const paginasPorAula = new Map(contagens.map((linha) => [linha.number, linha.total]));
 
   // A mesma ordem da "próxima aula" da Home (ver `aulasEmOrdem`).
   const emOrdem = aulasEmOrdem(trilha);
-  const concluiu = (id: number) => statuses.get(id) === 'COMPLETED';
+  const concluiu = (id: number) => registros.get(id)?.status === 'COMPLETED';
 
   // A "próxima" é a primeira ainda não concluída; com tudo concluído, nenhuma.
   const proxima = emOrdem.find((aula) => !concluiu(aula.id))?.id ?? null;
@@ -40,6 +50,9 @@ export async function montarTrilhaDoAluno(userId: string): Promise<TrilhaDoAluno
       subtitulo: aula.subtitle,
       tempo: aula.time,
       estado,
+      progresso: calcularAvancoDaAula(registros.get(aula.id), aula.fonte === 'estatico'
+        ? getLessonSummaryByNumber(aula.id)?.pageCount ?? 0
+        : paginasPorAula.get(aula.id) ?? 0),
     };
   });
 
