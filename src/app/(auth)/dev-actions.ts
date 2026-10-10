@@ -3,9 +3,10 @@
 /**
  * Entrada rápida de desenvolvimento: "Entrar como aluno" / "Entrar como admin".
  *
- * ⚠️ TEMPORÁRIO e SÓ EM DESENVOLVIMENTO. Server Action exportada é alcançável por
- * POST mesmo sem o botão na tela, então a trava de ambiente está **aqui dentro**,
- * não só no componente. Em produção a ação lança antes de tocar no banco.
+ * ⚠️ TEMPORÁRIO. Server Action exportada é alcançável por POST mesmo sem o botão
+ * na tela, então a trava está **aqui dentro**, não só no componente. Em produção
+ * a ação lança antes de tocar no banco, a não ser que `ENTRADA_DEMO=aberta`
+ * (ver `@/lib/auth/entrada-demo`).
  *
  * Cria (ou reaproveita) contas fixas com senha aleatória que ninguém conhece —
  * não há como entrar nelas pelo formulário, só por aqui. Uma por plano, para
@@ -13,6 +14,7 @@
  */
 import { redirect } from 'next/navigation';
 
+import { entradaDemoLiberada } from '@/lib/auth/entrada-demo';
 import { hashPassword } from '@/lib/auth/password';
 import { createSession } from '@/lib/auth/session';
 import { generateToken } from '@/lib/auth/tokens';
@@ -45,7 +47,7 @@ const CONTAS_DEMO = {
 } as const;
 
 export async function entradaDemoAction(papel: PapelDemo): Promise<void> {
-  if (process.env.NODE_ENV === 'production') {
+  if (!entradaDemoLiberada()) {
     throw new Error('Entrada de demonstração desativada em produção.');
   }
 

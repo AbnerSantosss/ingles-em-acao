@@ -13,6 +13,8 @@ import {
   safeNext,
 } from '@/lib/auth/next-url';
 
+import { entradaDemoLiberada } from '@/lib/auth/entrada-demo';
+
 import { EntradaDemo } from './entrada-demo';
 import { FormularioDeEntrada } from './form';
 
@@ -61,8 +63,8 @@ export default async function PaginaEntrar({
         linkCriarConta={`/criar-conta${carona}`}
         linkEsqueciSenha={`/esqueci-senha${carona}`}
       />
-      {/* TEMPORÁRIO: acesso rápido de desenvolvimento. Nunca em produção. */}
-      {process.env.NODE_ENV !== 'production' ? <EntradaDemo /> : null}
+      {/* TEMPORÁRIO: acesso rápido. Em produção só com ENTRADA_DEMO=aberta. */}
+      {entradaDemoLiberada() ? <EntradaDemo /> : null}
     </>
   );
 }

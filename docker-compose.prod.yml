@@ -61,6 +61,12 @@ services:
       ALUNO_NAME: ${ALUNO_NAME:-}
       ALUNO_PASSWORD: ${ALUNO_PASSWORD:-}
 
+      # --- Acesso rápido sem senha ("Entrar como aluno / admin") --------------
+      # ⚠️ "aberta" deixa QUALQUER visitante entrar como admin sem senha. Ligado
+      # por decisão do dono em 2026-10-10, só para a fase de validação. Para
+      # fechar: cadastre ENTRADA_DEMO=fechada na stack e refaça o deploy.
+      ENTRADA_DEMO: ${ENTRADA_DEMO:-aberta}
+
       # --- Biblioteca de mídia (imagens das aulas) ----------------------------
       # Decisão D6: imagem vai para VOLUME DOCKER, não para bucket. São ~150
       # arquivos, 30–80 MB, e um volume nomeado sobrevive a `down && up`, a troca

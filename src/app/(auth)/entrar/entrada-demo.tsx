@@ -1,10 +1,10 @@
 'use client';
 
 /**
- * Botões "Entrar como aluno" / "Entrar como admin" — TEMPORÁRIO, só em dev.
+ * Botões "Entrar como aluno" / "Entrar como admin" — TEMPORÁRIO.
  * "Entrar como aluno" é o WSA Premium; o botão de baixo entra no WSA Essencial.
- * A página só renderiza este bloco fora de produção, e a ação recusa em
- * produção de qualquer forma (ver `../dev-actions.ts`).
+ * A página só renderiza este bloco quando `entradaDemoLiberada()` deixa, e a
+ * ação confere a mesma chave de qualquer forma (ver `../dev-actions.ts`).
  */
 import { useFormStatus } from 'react-dom';
 
@@ -30,13 +30,13 @@ function Botao({
 export function EntradaDemo() {
   return (
     <section
-      aria-label="Acesso rápido de desenvolvimento"
+      aria-label="Acesso rápido"
       className="mt-6 rounded-[16px] border-[1.5px] border-dashed border-navy/30 p-4"
     >
       <p className="mb-3 text-center text-[13px] font-bold uppercase tracking-[0.06em] text-muted">
-        Acesso rápido (só em desenvolvimento)
+        Acesso rápido
       </p>
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <div className="flex flex-col gap-3">
         <form action={entradaDemoAction.bind(null, 'aluno')} className="flex-1">
           <Botao>ENTRAR COMO ALUNO</Botao>
         </form>
@@ -44,7 +44,7 @@ export function EntradaDemo() {
           <Botao>ENTRAR COMO ADMIN</Botao>
         </form>
       </div>
-      <div className="mt-2 flex flex-col gap-2 sm:flex-row">
+      <div className="mt-2 flex flex-col gap-2">
         <form action={entradaDemoAction.bind(null, 'essencial')} className="flex-1">
           <Botao variant="ghost">ALUNO ESSENCIAL</Botao>
         </form>
