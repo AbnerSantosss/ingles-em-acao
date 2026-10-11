@@ -1,104 +1,65 @@
-/**
- * Landing page pública — o planejamento está em `docs/LANDING.md`.
- *
- * Componente de servidor, sem nenhum JS de cliente: o FAQ usa `<details>` nativo
- * (abre por teclado, é anunciado como expandido/recolhido e funciona sem script).
- *
- * ⚠️ COPY: nenhuma frase nasce aqui — tudo vem de `copy.ts`.
- *
- * ⚠️ PRIMEIRA DOBRA ESCURA. Cabeçalho e hero dividem um bloco navy com a arte da
- * marca ao fundo (`public/brand/hero-*.webp`). O `<header>` fica FORA do `<main>`
- * (landmarks corretos) e é posicionado por cima do hero com `absolute`; por isso o
- * hero reserva o espaço dele com `pt-24`. Mudou a altura do cabeçalho? Mude lá.
- * Todo link sobre o escuro leva cor própria de hover e de foco: o `a:hover` global
- * é navy e o anel de foco global é azul — os dois somem nesse fundo.
- *
- * ⚠️ TRÊS CTAs, TRÊS RÓTULOS. Um leitor de tela lista os links da página; três
- * "CRIAR CONTA" iguais seriam indistinguíveis. Cada um diz para onde leva.
- *
- * ⚠️ D26 — dois modos, uma condição: sem nenhum link de checkout a página diz que
- * preço ainda não existe e manda para o cadastro; com link, cada plano ganha o
- * botão de compra, a nota muda e a garantia legal aparece.
- */
+/** Landing pública. Copy centralizada; chats ilustram a prática na IA escolhida. */
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { LogoWSA } from '@/components/ui/LogoWSA';
+import { GlobePulse } from '@/components/ui/component';
 import { NOME_DO_PLANO, type Plano } from '@/lib/planos';
 
 import { copyDaLanding as copy } from './copy';
 import {
-  CelularDaAula,
-  Icone,
-  type NomeDoIcone,
-  OndaDoHero,
-  RetratoDoProfessor,
-  SkylineDeLondres,
-  TrilhaDas42,
-} from './ilustracoes';
+  CelularDeConversa,
+  ChatDaLanding,
+  FotosDaEstudante,
+  PraticaVisual,
+} from './Experiencias';
+import { BarraDeProgresso } from './BarraDeProgresso';
+import { BalaoComPerspectiva, RevealOnScroll } from './Interacoes';
+import { Icone, PaisagemDeLondres, TrilhaDas42 } from './ilustracoes';
+import styles from './landing.module.css';
+import { copyDosExemplos as visual } from './visual-copy';
 
 export type PlanoDaLanding = Plano;
-
-/** O link de compra de cada plano, já resolvido (o do plano ou o global). */
 export type OfertasDaLanding = Record<PlanoDaLanding, string | null>;
 
-const ICONES_DA_DOR: NomeDoIcone[] = ['relogio', 'grafico', 'balao', 'porta'];
-
-const PASSOS: { icone: NomeDoIcone; cor: string; cartao: string }[] = [
-  { icone: 'livro', cor: 'bg-teal text-white', cartao: 'border-teal/40 bg-mint-1' },
-  { icone: 'lapis', cor: 'bg-blue text-white', cartao: 'border-blue/30 bg-[#EAF2FE]' },
-  { icone: 'degraus', cor: 'bg-yellow text-navy', cartao: 'border-yellow/60 bg-[#FEF7E0]' },
-];
-
-const ICONES_DO_METODO: NomeDoIcone[] = ['bussola', 'degraus', 'lapis', 'relogio'];
-
-const VISUAL_DO_PLANO: Record<PlanoDaLanding, { icone: NomeDoIcone; faixa: string; cartao: string; icon: string }> = {
-  ESSENCIAL: { icone: 'livro', faixa: 'bg-navy', cartao: 'border-border bg-surface', icon: 'bg-navy text-white' },
-  PREMIUM: { icone: 'microfone', faixa: 'bg-purple', cartao: 'border-purple/50 bg-[#F3EEFC]', icon: 'bg-purple text-white' },
-};
-
-/* ------------------------------------------------------------------ peças */
+const CONTAINER = 'mx-auto w-full max-w-6xl px-5 sm:px-8';
 
 function CtaPrincipal({
   rotulo,
+  href = '/criar-conta',
   className = '',
-  comSeta = false,
 }: {
   rotulo: string;
+  href?: string;
   className?: string;
-  /** Seta → à direita do rótulo (hero). Decorativa: o rótulo já diz para onde leva. */
-  comSeta?: boolean;
 }) {
   return (
     <Link
-      href="/criar-conta"
-      className={`inline-flex min-h-13 w-full items-center justify-center gap-3 rounded-pill bg-yellow px-8 text-center text-[15px] font-black tracking-wide text-navy shadow-card transition-colors hover:bg-yellow-hover sm:w-auto ${className}`}
+      href={href}
+      className={`inline-flex min-h-13 items-center justify-center gap-3 rounded-pill bg-yellow px-7 py-3 text-center text-[14px] font-extrabold text-navy shadow-card transition-colors hover:bg-yellow-hover ${className}`}
     >
       {rotulo}
-      {comSeta ? (
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2.5}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-          className="size-5 shrink-0"
-        >
-          <path d="M4 12h16M14 6l6 6-6 6" />
-        </svg>
-      ) : null}
+      <span className={styles.ctaSeta} aria-hidden="true">
+        →
+      </span>
     </Link>
   );
 }
 
-function TituloDeSecao({ id, children, claro = false }: { id: string; children: ReactNode; claro?: boolean }) {
+function TituloDeSecao({
+  id,
+  children,
+  claro = false,
+}: {
+  id: string;
+  children: ReactNode;
+  claro?: boolean;
+}) {
   return (
     <h2
       id={id}
-      className={`max-w-3xl text-[28px] leading-tight font-black text-balance sm:text-[34px] ${claro ? 'text-white' : 'text-navy'}`}
+      className={`${styles.tituloDeSecao} max-w-3xl text-[29px] leading-[1.15] font-black text-balance sm:text-[38px] ${claro ? 'text-white' : 'text-navy'}`}
     >
       {children}
     </h2>
@@ -106,45 +67,67 @@ function TituloDeSecao({ id, children, claro = false }: { id: string; children: 
 }
 
 function Abertura({ children }: { children: ReactNode }) {
-  return <p className="max-w-2xl text-[17px] leading-relaxed text-muted-3 text-pretty">{children}</p>;
+  return (
+    <p className="max-w-2xl text-[17px] leading-relaxed text-muted-3 text-pretty">
+      {children}
+    </p>
+  );
 }
 
-/* ----------------------------------------------------------------- página */
+function MarcaDeInclusao({ incluido }: { incluido: boolean }) {
+  return (
+    <>
+      <span
+        aria-hidden="true"
+        className={incluido ? styles.marcaSim : styles.marcaNao}
+      >
+        {incluido ? '✔' : '✖'}
+      </span>
+      <span className="sr-only">
+        {incluido ? copy.recebe.incluido : copy.recebe.naoIncluido}
+      </span>
+    </>
+  );
+}
 
 export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
   const ano = new Date().getFullYear();
-  const vendendo = copy.planos.lista.some((plano) => Boolean(ofertas[plano.chave]));
+  const vendendo = copy.planos.lista.some((plano) =>
+    Boolean(ofertas[plano.chave]),
+  );
 
   return (
-    <div className="relative flex min-h-dvh flex-col overflow-x-hidden bg-bg">
-      {/* ⚠️ Amarelo, não navy: o que fica atrás dele agora é o hero escuro. */}
+    <div className="relative flex min-h-dvh flex-col overflow-x-clip bg-bg">
       <a
         href="#conteudo"
-        className="absolute top-3 left-3 z-50 inline-flex min-h-11 -translate-y-[200%] items-center rounded-pill bg-yellow px-5 text-[15px] font-bold text-navy focus:translate-y-0 focus-visible:outline-white"
+        className="absolute top-3 left-3 z-50 inline-flex min-h-11 -translate-y-[200%] items-center rounded-pill bg-yellow px-5 text-[15px] font-bold text-navy focus:translate-y-0"
       >
         {copy.a11y.pular}
       </a>
-
-      {/* ------------------------------------------------------- cabeçalho */}
-      {/* ⚠️ `absolute`: flutua sobre o bloco escuro do hero (ver o topo do arquivo). */}
-      <header className="absolute inset-x-0 top-0 z-20">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8 lg:py-5">
+      <header className="bg-navy text-white">
+        <div
+          className={`${CONTAINER} flex items-center justify-between gap-4 py-4`}
+        >
           <Link
             href="/"
             aria-label="WSA English, início"
-            className="inline-flex min-h-11 items-center rounded-card focus-visible:outline-yellow"
+            className="inline-flex min-h-11 items-center focus-visible:outline-yellow"
           >
-            {/* ⚠️ A altura vai inline no componente; é o `!` que deixa o `lg:` vencer. */}
-            <LogoWSA fundo="escuro" altura={40} compacta prioridade className="h-8! lg:h-10!" />
+            <LogoWSA
+              fundo="escuro"
+              altura={40}
+              compacta
+              prioridade
+              className="h-8! sm:h-10!"
+            />
           </Link>
-
-          <nav aria-label={copy.a11y.navegacao} className="hidden lg:block">
-            <ul className="flex items-center gap-1">
+          <nav aria-label={copy.a11y.navegacao} className="hidden xl:block">
+            <ul className="flex items-center gap-5">
               {copy.nav.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="inline-flex min-h-11 items-center rounded-pill px-3 text-[15px] font-semibold text-white hover:bg-white/10 hover:text-white focus-visible:outline-yellow"
+                    className="inline-flex min-h-11 items-center text-[13px] font-semibold text-white hover:text-yellow focus-visible:outline-yellow"
                   >
                     {item.rotulo}
                   </a>
@@ -152,134 +135,109 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
               ))}
             </ul>
           </nav>
-
           <Link
             href="/entrar"
-            className="inline-flex min-h-11 items-center rounded-pill border-2 border-yellow bg-navy/85 px-5 text-[15px] font-bold text-white transition-colors hover:bg-navy hover:text-white focus-visible:outline-yellow"
+            className="inline-flex min-h-11 items-center rounded-pill border border-white/35 px-6 text-sm font-bold text-white transition-colors hover:bg-white/10 hover:text-yellow focus-visible:outline-yellow"
           >
             {copy.entrar}
           </Link>
         </div>
       </header>
 
-      <main id="conteudo" className="relative z-10 flex flex-1 flex-col">
-        {/* ------------------------------------------------------------ hero */}
-        {/* `bg-navy` é o fallback: o texto já é legível antes de a arte chegar. */}
-        <section aria-labelledby="hero-titulo" className="relative isolate overflow-hidden bg-navy text-white">
-          {/*
-            Arte de fundo, decorativa. `<picture>` puro para o navegador baixar só um
-            dos dois arquivos (já são WebP de ~60 KB; o otimizador não ganharia nada).
-            ⚠️ Ancorada à DIREITA: globo e Big Ben moram lá e não podem ser cortados.
-          */}
-          <picture>
-            <source media="(min-width: 1024px)" srcSet="/brand/hero-desktop.webp" />
-            <img
-              src="/brand/hero-mobile.webp"
-              alt=""
-              aria-hidden="true"
-              fetchPriority="high"
-              decoding="async"
-              className="absolute inset-0 -z-20 size-full max-w-none object-cover object-right"
-            />
-          </picture>
-          {/*
-            ⚠️ CONTRASTE AA — véu do desktop: protege só a coluna da esquerda e some
-            antes do globo. O do celular fica dentro da coluna de texto, logo abaixo.
-          */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 -z-10 hidden bg-linear-to-r from-navy/85 from-35% via-navy/40 via-55% to-transparent to-70% lg:block"
-          />
-
-          <div className="mx-auto w-full max-w-6xl px-4 pt-24 sm:px-6 lg:px-8 lg:pt-32">
-            <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-end lg:gap-12">
-              <div className="relative flex flex-col items-start gap-5 lg:self-center lg:pb-20">
-                {/*
-                  ⚠️ CONTRASTE AA — véu do celular. A dobra é mais alta que a arte, o
-                  `cover` amplia o globo e ele passa por baixo do texto. O véu cobre a
-                  largura toda (do cabeçalho ao fim da nota) e esmaece no pé, sem risca.
-                */}
-                <div
-                  aria-hidden="true"
-                  className="absolute -inset-x-4 -top-24 -bottom-10 -z-10 bg-linear-to-r from-navy/90 via-navy/85 to-navy/75 [mask-image:linear-gradient(to_bottom,black_88%,transparent)] sm:-inset-x-6 lg:hidden"
-                />
-
-                <span className="inline-flex max-w-full items-center rounded-pill border-2 border-yellow/80 px-4 py-2 text-[12px] font-extrabold tracking-[0.08em] text-yellow uppercase">
-                  {copy.hero.selo}
-                </span>
-
+      <main id="conteudo" className="flex flex-1 flex-col">
+        <section
+          aria-labelledby="hero-titulo"
+          className="relative isolate overflow-hidden bg-navy text-white"
+        >
+          <div className={styles.heroBackground} aria-hidden="true" />
+          <div className={styles.heroGlobe} aria-hidden="true">
+            <GlobePulse />
+          </div>
+          <div className={`${CONTAINER} ${styles.heroGrid}`}>
+            <div className={styles.heroCopy}>
+              <div className={styles.sectionIntro}>
                 <h1
                   id="hero-titulo"
-                  className="max-w-2xl text-[36px] leading-[1.08] font-black text-balance text-white sm:text-[48px] lg:text-[52px] xl:text-[58px]"
+                  className="max-w-2xl text-[32px] leading-[1.08] font-black text-balance text-white sm:text-[40px] lg:text-[44px]"
                 >
-                  {copy.hero.titulo.antes} <span className="text-yellow">{copy.hero.titulo.destaque}</span>
+                  {copy.hero.titulo.antes}{' '}
+                  <span className="text-yellow">
+                    {copy.hero.titulo.destaque}
+                  </span>
                 </h1>
-
-                <p className="max-w-xl text-[18px] leading-relaxed text-[#C9D6EC] text-pretty">{copy.hero.subtitulo}</p>
-
-                <div className="flex w-full flex-col items-stretch gap-2 pt-1 sm:w-auto sm:flex-row sm:items-center sm:gap-3">
-                  <CtaPrincipal rotulo={copy.hero.cta} comSeta className="focus-visible:outline-white" />
-                  <Link
-                    href="/entrar"
-                    className="inline-flex min-h-11 items-center justify-center rounded-pill px-4 text-[15px] font-semibold text-white underline underline-offset-4 hover:text-yellow focus-visible:outline-yellow"
-                  >
-                    {copy.hero.jaTenhoConta}
-                  </Link>
-                </div>
-
-                <p className="text-[14px] text-[#C9D6EC]">{copy.hero.nota}</p>
+                <p className="max-w-xl text-[17px] leading-relaxed text-[#d9e4f5]">
+                  {copy.hero.subtitulo}
+                </p>
               </div>
-
-              {/* Celular, com as duas assinaturas da marca por cima (em inglês). */}
-              <div className="mx-auto w-full max-w-[420px]">
-                {/* ⚠️ No desktop esta coluna cai em cima do globo dourado: o cartão navy garante o AA. */}
-                <div className="mb-3 flex items-end justify-between gap-4 lg:rounded-card lg:bg-navy/80 lg:px-5 lg:py-4 lg:backdrop-blur-sm">
-                  <p lang="en" className="text-[12px] leading-[1.9] font-semibold tracking-[0.3em] text-[#C9D6EC] uppercase">
-                    {/* Uma palavra por linha é só arte: o leitor de tela ouve a frase inteira. */}
-                    <span className="sr-only">{copy.hero.lema}</span>
-                    <span aria-hidden="true">
-                      {copy.hero.lema.split(' ').map((palavra, i) => (
-                        <span key={`${i}-${palavra}`} className="block">
-                          {palavra.replace(/[.,]/g, '')}
-                        </span>
-                      ))}
-                      <span className="mt-2 block h-0.5 w-10 rounded-pill bg-yellow" />
-                    </span>
-                  </p>
-                  <p
-                    lang="en"
-                    className="manuscrito max-w-[7ch] -rotate-6 border-b-2 border-yellow/70 pb-1 text-center text-[34px] text-[#C9D6EC] sm:text-[40px]"
-                  >
-                    {copy.hero.assinatura}
-                  </p>
-                </div>
-                <CelularDaAula className="block h-auto w-full" />
+              <div className="flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <CtaPrincipal
+                  rotulo={copy.hero.cta}
+                  className={`${styles.ctaMobile} focus-visible:outline-white`}
+                />
+                <a
+                  href="#conversa-ia"
+                  className="inline-flex min-h-13 items-center justify-center rounded-pill border border-white/40 px-6 py-3 text-center text-[14px] font-bold text-white hover:bg-white/10 hover:text-yellow focus-visible:outline-yellow"
+                >
+                  {copy.hero.ctaConversa}
+                </a>
               </div>
             </div>
+            <CelularDeConversa />
           </div>
+          <div className="relative z-10 border-t border-white/15 bg-navy/90">
+            <ul className={`${CONTAINER} grid grid-cols-3 gap-3 py-4 sm:gap-8`}>
+              {copy.hero.recursos.map((item) => (
+                <li
+                  key={item.icone}
+                  className="flex flex-col items-center gap-3 text-center sm:flex-row sm:text-left"
+                >
+                  <Image
+                    src={`/brand/icone-${item.icone}.webp`}
+                    alt=""
+                    width={40}
+                    height={40}
+                    className="size-9 shrink-0"
+                  />
+                  <div>
+                    <p className="text-[13px] font-extrabold text-white sm:text-[15px]">
+                      {item.titulo}
+                    </p>
+                    <p className="mt-1 text-xs text-[#c9d6ec] sm:text-sm">
+                      {item.corpo}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
-          {/* Faixa de recursos. ⚠️ `-mt-10`: a onda sobe por cima do pé do celular. */}
-          <div className="relative z-10 -mt-10">
-            <OndaDoHero className="block h-14 w-full" />
-            <div className="bg-navy pt-2 pb-8">
-              {/* ⚠️ 320px: três colunas só cabem com o texto SOB o ícone; lado a lado a partir de 480px. */}
-              <ul className="mx-auto grid w-full max-w-6xl grid-cols-3 gap-2 px-4 sm:gap-6 sm:px-6 lg:px-8">
-                {copy.hero.recursos.map((item) => (
-                  <li
-                    key={item.icone}
-                    className="flex min-w-0 flex-col items-center gap-2 text-center min-[480px]:flex-row min-[480px]:gap-3 min-[480px]:text-left lg:justify-center"
-                  >
-                    <Image
-                      src={`/brand/icone-${item.icone}.webp`}
-                      alt=""
-                      width={48}
-                      height={48}
-                      className="size-11 shrink-0 sm:size-12"
-                    />
-                    <div className="min-w-0">
-                      <p className="text-[13px] leading-tight font-extrabold text-white sm:text-[15px]">{item.titulo}</p>
-                      <p className="mt-0.5 text-[12px] leading-snug text-[#C9D6EC] sm:text-[14px]">{item.corpo}</p>
-                    </div>
+        <section
+          aria-labelledby="dor"
+          className={`${styles.dorSection} bg-surface py-12 sm:py-16`}
+        >
+          <div
+            className={`${CONTAINER} grid items-center gap-10 md:grid-cols-[.85fr_1.15fr] md:gap-16`}
+          >
+            <FotosDaEstudante />
+            <div className={styles.dorConteudo}>
+              <div className={styles.sectionIntro}>
+                <TituloDeSecao id="dor">{copy.dor.titulo}</TituloDeSecao>
+                <Abertura>{copy.dor.corpo}</Abertura>
+              </div>
+              <ul className="mt-2 flex flex-col gap-3">
+                {copy.dor.itens.map((item) => (
+                  <li key={item.titulo} className={styles.dorBalao}>
+                    <h3 className={styles.dorChip}>{item.titulo}</h3>
+                    <blockquote className="text-lg leading-tight font-bold text-navy sm:text-xl">
+                      “{item.fala}”
+                    </blockquote>
+                    <p className="mt-1 text-sm leading-snug text-muted">
+                      {item.corpo}
+                    </p>
+                    {item.respostaIA ? (
+                      <p className={styles.fraseBrilho}>{item.respostaIA}</p>
+                    ) : null}
                   </li>
                 ))}
               </ul>
@@ -287,295 +245,563 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
           </div>
         </section>
 
-        {/* Garantias: faixa de transição, já no fundo claro, entre o hero e a dor. */}
-        <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-          <ul className="grid gap-3 sm:grid-cols-3">
-            {copy.hero.garantias.map((item) => (
-              <li key={item.titulo} className="flex gap-3 rounded-card border border-border bg-surface p-4 shadow-card">
-                <Icone nome="check" className="bg-teal text-white" tamanho="size-9" />
-                <div>
-                  <h3 className="text-[16px] font-extrabold text-navy">{item.titulo}</h3>
-                  <p className="mt-0.5 text-[14px] leading-snug text-muted">{item.corpo}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* ------------------------------------------------------------- dor */}
-        <section aria-labelledby="dor" className="bg-surface py-14">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 sm:px-6 lg:px-8">
-            <TituloDeSecao id="dor">{copy.dor.titulo}</TituloDeSecao>
-            <Abertura>{copy.dor.corpo}</Abertura>
-            <ul className="grid gap-4 sm:grid-cols-2">
-              {copy.dor.itens.map((item, i) => (
-                <li key={item.titulo} className="flex gap-4 rounded-card border border-border bg-bg p-5">
-                  <Icone nome={ICONES_DA_DOR[i]} className="bg-[#FDE8EA] text-danger" />
-                  <div>
-                    <h3 className="text-[17px] font-extrabold text-navy">{item.titulo}</h3>
-                    <p className="mt-1 text-[15px] leading-relaxed text-muted">{item.corpo}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* ------------------------------------ o que você vai conseguir dizer */}
-        <section
-          id="o-que-voce-vai-dizer"
-          aria-labelledby="conquistas-titulo"
-          className="scroll-mt-6 bg-navy py-14 text-white"
-        >
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 sm:px-6 lg:px-8">
-            <TituloDeSecao id="conquistas-titulo" claro>
-              {copy.conquistas.titulo}
-            </TituloDeSecao>
-            <p className="max-w-2xl text-[17px] leading-relaxed text-[#C9D6EC]">{copy.conquistas.corpo}</p>
-
-            <div className="rounded-card bg-surface px-3 py-4 sm:px-6">
-              <TrilhaDas42 className="h-auto w-full" />
-            </div>
-
-            <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {copy.conquistas.marcos.map((marco) => (
-                <li key={marco.aulas} className="flex flex-col gap-2 rounded-card border border-white/15 bg-navy-light/60 p-5">
-                  <span className="text-[12px] font-extrabold tracking-[0.08em] text-yellow uppercase">{marco.aulas}</span>
-                  <h3 className="text-[18px] leading-snug font-extrabold">{marco.titulo}</h3>
-                  <p lang="en" className="manuscrito text-[22px] text-[#8FE3D6]">
-                    “{marco.exemplo}”
-                  </p>
-                </li>
-              ))}
-            </ol>
-            <p className="text-[14px] text-[#C9D6EC]">{copy.conquistas.nota}</p>
-          </div>
-        </section>
-
-        {/* ---------------------------------------------------- como funciona */}
         <section
           id="como-funciona"
           aria-labelledby="como-funciona-titulo"
-          className="mx-auto flex w-full max-w-6xl scroll-mt-6 flex-col gap-5 px-4 py-14 sm:px-6 lg:px-8"
+          className={`${CONTAINER} ${styles.sectionSpace} scroll-mt-8`}
         >
-          <TituloDeSecao id="como-funciona-titulo">{copy.comoFunciona.titulo}</TituloDeSecao>
-          <Abertura>{copy.comoFunciona.corpo}</Abertura>
-          <ol className="grid gap-4 sm:grid-cols-3">
+          <div className={`${styles.sectionIntro} mb-10`}>
+            <TituloDeSecao id="como-funciona-titulo">
+              {copy.comoFunciona.titulo}
+            </TituloDeSecao>
+            <Abertura>{copy.comoFunciona.corpo}</Abertura>
+          </div>
+          <ol className={styles.passos}>
             {copy.comoFunciona.passos.map((passo, i) => (
-              <li key={passo.titulo} className={`flex flex-col gap-3 rounded-card border p-5 ${PASSOS[i].cartao}`}>
-                <div className="flex items-center gap-3">
-                  <Icone nome={PASSOS[i].icone} className={PASSOS[i].cor} />
-                  <span className="text-[13px] font-extrabold tracking-[0.08em] text-muted uppercase">Passo {i + 1}</span>
-                </div>
-                <h3 className="text-[20px] font-black text-navy">{passo.titulo}</h3>
-                <p className="text-[15px] leading-relaxed text-muted-3">{passo.corpo}</p>
+              <li key={passo.titulo} className={styles.passoItem}>
+                <BalaoComPerspectiva className={styles.passo} todasAsMargens>
+                  <Image
+                    src={`/brand/passo-${['aprenda', 'pratique', 'avance'][i]}.webp`}
+                    alt=""
+                    fill
+                    sizes="(max-width: 767px) 90vw, 33vw"
+                    unoptimized
+                    className={styles.passoFoto}
+                  />
+                  <span className={styles.passoNumero}>
+                    <span className="sr-only">{visual.passo} </span>
+                    {i + 1}
+                  </span>
+                  <div className={styles.passoTexto}>
+                    <h3 className="text-[28px] font-black text-white">
+                      {passo.titulo}
+                    </h3>
+                    <p className="text-[15px] leading-snug text-white">
+                      {passo.corpo}
+                    </p>
+                    {i === 2 ? (
+                      <div className={styles.passoProgresso}>
+                        <p>{visual.avancar.titulo}</p>
+                        <BarraDeProgresso />
+                      </div>
+                    ) : (
+                      <PraticaVisual passo={i} />
+                    )}
+                  </div>
+                </BalaoComPerspectiva>
               </li>
             ))}
           </ol>
         </section>
 
-        {/* ----------------------------------------------------------- método */}
-        <section id="metodo" aria-labelledby="metodo-titulo" className="scroll-mt-6 bg-surface py-14">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 sm:px-6 lg:px-8">
-            <TituloDeSecao id="metodo-titulo">{copy.metodo.titulo}</TituloDeSecao>
-            <Abertura>{copy.metodo.corpo}</Abertura>
-            <ul className="grid gap-4 sm:grid-cols-2">
+        <section
+          id="conversa-ia"
+          aria-labelledby="ia-titulo"
+          className={`${styles.iaSection} relative scroll-mt-8 overflow-hidden text-white`}
+        >
+          <Image
+            src="/brand/conversa-ia-campus.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            unoptimized
+            className={styles.iaFoto}
+          />
+          <div className={styles.iaTextura} aria-hidden="true" />
+          <div className={`${CONTAINER} relative`}>
+            <div className={styles.iaGrid}>
+              <div className="flex flex-col items-start gap-4">
+                <span className="text-xs font-extrabold tracking-[.08em] text-yellow uppercase">
+                  {copy.ia.selo}
+                </span>
+                <div className={styles.sectionIntro}>
+                  <TituloDeSecao id="ia-titulo" claro>
+                    {copy.ia.titulo}
+                  </TituloDeSecao>
+                  <p className="text-[17px] leading-relaxed text-[#eee5fb]">
+                    {copy.ia.corpo}
+                  </p>
+                </div>
+                <ul className="my-1 flex flex-col gap-4">
+                  {copy.ia.pontos.map((ponto) => (
+                    <li key={ponto.titulo} className="flex gap-3">
+                      <Icone
+                        nome="check"
+                        className="bg-yellow text-purple"
+                        tamanho="size-8"
+                      />
+                      <div>
+                        <h3 className="text-base font-extrabold text-white">
+                          {ponto.titulo}
+                        </h3>
+                        <p className="mt-1 text-sm leading-relaxed text-[#eee5fb]">
+                          {ponto.corpo}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <CtaPrincipal
+                  rotulo={copy.ia.cta}
+                  href="#planos"
+                  className="focus-visible:outline-white"
+                />
+                <p className="text-[14px] leading-relaxed text-[#eee5fb]">
+                  {copy.ia.nota}
+                </p>
+              </div>
+              <div className={styles.iaChat}>
+                <ChatDaLanding />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="o-que-voce-vai-dizer"
+          aria-labelledby="conquistas-titulo"
+          className={`${CONTAINER} ${styles.sectionSpace} scroll-mt-8`}
+        >
+          <div className={`${styles.sectionIntro} mb-8`}>
+            <TituloDeSecao id="conquistas-titulo">
+              {copy.conquistas.titulo}
+            </TituloDeSecao>
+            <Abertura>{copy.conquistas.corpo}</Abertura>
+          </div>
+          <div
+            className={`${styles.trilhaScroll} mb-6 rounded-card px-3 py-5 sm:px-6`}
+          >
+            <TrilhaDas42 className={styles.trilha} />
+          </div>
+          <div
+            className={styles.marcosJanela}
+            tabIndex={0}
+            role="region"
+            aria-label={visual.marcosLegenda}
+          >
+            <ol className={styles.marcosSlide}>
+              {[0, 1].flatMap((copia) =>
+                copy.conquistas.marcos.map((marco) => (
+                  <li
+                    key={`${copia}-${marco.aulas}`}
+                    aria-hidden={copia === 1 ? true : undefined}
+                  >
+                    <BalaoComPerspectiva className={styles.conquistaBalao}>
+                      <span className="text-[12px] font-extrabold tracking-wide text-purple uppercase">
+                        {marco.aulas}
+                      </span>
+                      <h3 className="mt-2 text-[17px] font-extrabold text-navy">
+                        {marco.titulo}
+                      </h3>
+                      <p
+                        lang="en"
+                        className="manuscrito mt-2 text-[23px] text-navy"
+                      >
+                        “{marco.exemplo}”
+                      </p>
+                    </BalaoComPerspectiva>
+                  </li>
+                )),
+              )}
+            </ol>
+          </div>
+        </section>
+
+        <section
+          id="metodo"
+          aria-labelledby="metodo-titulo"
+          className={`${styles.sectionSpace} ${styles.metodoSection} scroll-mt-8 bg-surface`}
+        >
+          <PaisagemDeLondres className={styles.metodoPaisagem} />
+          <div className={`${CONTAINER} relative`}>
+            <div className={`${styles.sectionIntro} mb-8`}>
+              <TituloDeSecao id="metodo-titulo">
+                {copy.metodo.titulo}
+              </TituloDeSecao>
+              <Abertura>{copy.metodo.corpo}</Abertura>
+            </div>
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {copy.metodo.pilares.map((pilar, i) => (
-                <li key={pilar.titulo} className="flex gap-4 rounded-card border border-border bg-bg p-5">
-                  <Icone nome={ICONES_DO_METODO[i]} className="bg-rail text-navy" />
-                  <div>
-                    <h3 className="text-[17px] font-extrabold text-navy">{pilar.titulo}</h3>
-                    <p className="mt-1 text-[15px] leading-relaxed text-muted">{pilar.corpo}</p>
-                  </div>
+                <li key={pilar.selo}>
+                  <RevealOnScroll delay={i * 150} className={styles.metodoCard}>
+                    <span aria-hidden="true" className={styles.metodoNumero}>
+                      0{i + 1}
+                    </span>
+                    <h3 className="mt-3 text-[21px] leading-tight font-black text-white">
+                      {pilar.selo}
+                    </h3>
+                    {i === 0 ? (
+                      <p className="mt-3 text-sm font-bold text-white">
+                        {pilar.titulo}
+                      </p>
+                    ) : null}
+                    <p className="mt-3 text-sm leading-[1.45] text-white">
+                      {pilar.corpo}
+                    </p>
+                  </RevealOnScroll>
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col gap-3 rounded-card border-2 border-teal bg-mint-1 p-5 sm:flex-row sm:gap-4 sm:p-6">
-              <Icone nome="escudo" className="bg-teal text-white" />
+            <div className={styles.garantiaMetodo}>
+              <Icone
+                nome="check"
+                className={styles.seloGarantia}
+                tamanho="size-14"
+              />
               <div>
-                <h3 className="text-[18px] font-black text-navy">{copy.metodo.firewallTitulo}</h3>
-                <p className="mt-1 text-[15px] leading-relaxed text-muted-3">{copy.metodo.firewallCorpo}</p>
+                <span className="text-[11px] font-extrabold tracking-wide text-yellow uppercase">
+                  {copy.metodo.garantiaSelo}
+                </span>
+                <h3 className="mt-1 text-[21px] leading-tight font-black text-white">
+                  {copy.metodo.firewallTitulo}
+                </h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-[#d9e4f5]">
+                  {copy.metodo.firewallCorpo}
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ------------------------------------------------- o que você recebe */}
         <section
           aria-labelledby="recebe-titulo"
-          className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-14 sm:px-6 lg:px-8"
+          className={`${CONTAINER} ${styles.compactSection}`}
         >
-          <TituloDeSecao id="recebe-titulo">{copy.recebe.titulo}</TituloDeSecao>
-          <Abertura>{copy.recebe.corpo}</Abertura>
-          <ul className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
-            {copy.recebe.itens.map((item) => (
-              <li key={item.titulo} className="flex gap-3">
-                <Icone nome="check" className="mt-0.5 bg-navy text-white" tamanho="size-7" />
-                <div>
-                  <h3 className="text-[17px] font-extrabold text-navy">{item.titulo}</h3>
-                  <p className="mt-1 text-[15px] leading-relaxed text-muted">{item.corpo}</p>
-                  <span
-                    className={`mt-2 inline-flex rounded-pill px-3 py-1 text-[12px] font-bold ${item.premium ? 'bg-[#F3EEFC] text-purple' : 'bg-rail text-navy'}`}
+          <div className={`${styles.sectionIntro} mb-5`}>
+            <TituloDeSecao id="recebe-titulo">
+              {copy.recebe.titulo}
+            </TituloDeSecao>
+            <Abertura>{copy.recebe.corpo}</Abertura>
+          </div>
+          <div className="overflow-hidden rounded-card border border-border bg-white shadow-card">
+            <table className={styles.comparativo}>
+              <caption className="sr-only">{copy.recebe.tabelaLegenda}</caption>
+              <thead>
+                <tr>
+                  <th scope="col">{visual.planos.recurso}</th>
+                  <th scope="col">{visual.planos.essencial}</th>
+                  <th scope="col">{visual.planos.premium}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {copy.recebe.itens.map((item) => (
+                  <tr
+                    key={item.titulo}
+                    className={item.premium ? styles.exclusivo : ''}
                   >
-                    {item.plano}
-                  </span>
-                </div>
-              </li>
-            ))}
-          </ul>
+                    <th scope="row">
+                      {item.titulo}
+                      <p>{item.corpo}</p>
+                    </th>
+                    <td>
+                      <MarcaDeInclusao incluido={item.essencial} />
+                    </td>
+                    <td>
+                      <MarcaDeInclusao incluido={item.premiumIncluso} />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </section>
 
-        {/* ------------------------------------------------------- professor */}
-        <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 lg:px-8" aria-labelledby="professor-titulo">
-          <div className="flex flex-col items-start gap-6 rounded-hero border border-border bg-surface p-6 shadow-hero sm:flex-row sm:items-center sm:gap-10 sm:p-8">
-            <RetratoDoProfessor rotulo={copy.professor.retratoAlt} className="h-auto w-44 shrink-0 sm:w-56" />
-            <div className="flex flex-col gap-3">
-              <span className="text-[12px] font-extrabold tracking-[0.08em] text-teal-texto uppercase">{copy.professor.rotulo}</span>
-              <h2 id="professor-titulo" className="text-[28px] font-black text-navy sm:text-[34px]">
-                {copy.professor.nome}
-              </h2>
-              <p className="text-[15px] font-semibold text-muted">{copy.professor.papel}</p>
-              <p className="text-[17px] leading-relaxed text-muted-3">{copy.professor.corpo}</p>
-              <p className="text-[17px] leading-relaxed text-muted-3">{copy.professor.corpo2}</p>
+        <section
+          aria-labelledby="professor-titulo"
+          className={`${styles.professorSection} bg-surface`}
+        >
+          <div className={`${CONTAINER} ${styles.professorGrid}`}>
+            <div className={styles.professorRetrato}>
+              <Image
+                src="/brand/wsa-globo.webp"
+                alt=""
+                width={256}
+                height={253}
+                className={styles.professorGlobo}
+              />
+              <Image
+                src="/brand/walber-santana-atualizada.webp"
+                alt={copy.professor.retratoAlt}
+                width={900}
+                height={900}
+                sizes="(max-width: 767px) 224px, 270px"
+                unoptimized
+                className={styles.professorFoto}
+              />
+            </div>
+            <div className={styles.professorTexto}>
+              <div className={styles.sectionIntro}>
+                <span className="text-xs font-extrabold tracking-wide text-purple uppercase">
+                  {copy.professor.rotulo}
+                </span>
+                <TituloDeSecao id="professor-titulo">
+                  {copy.professor.nome}
+                </TituloDeSecao>
+                <p className="text-[18px] font-extrabold text-navy">
+                  {copy.professor.papel}
+                </p>
+              </div>
+              <p className="text-[16px] leading-relaxed text-muted-3">
+                {copy.professor.alunos}
+              </p>
+              <p className="text-[16px] leading-relaxed text-muted-3">
+                {copy.professor.corpo}
+              </p>
+              <blockquote className="mt-2 border-l-4 border-yellow pl-5 text-[23px] leading-snug font-bold text-navy">
+                “{copy.professor.citacao}”
+              </blockquote>
             </div>
           </div>
         </section>
 
-        {/* ----------------------------------------------------------- planos */}
-        <section id="planos" aria-labelledby="planos-titulo" className="scroll-mt-6 bg-surface py-14">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 sm:px-6 lg:px-8">
-            <TituloDeSecao id="planos-titulo">{copy.planos.titulo}</TituloDeSecao>
+        <section
+          id="planos"
+          aria-labelledby="planos-titulo"
+          className={`${CONTAINER} ${styles.planosSection} scroll-mt-6`}
+        >
+          <div className={`${styles.sectionIntro} mb-6`}>
+            <TituloDeSecao id="planos-titulo">
+              {copy.planos.titulo}
+            </TituloDeSecao>
             <Abertura>{copy.planos.corpo}</Abertura>
-
-            <ul className="grid gap-4 md:grid-cols-2">
-              {copy.planos.lista.map((plano) => {
-                const visual = VISUAL_DO_PLANO[plano.chave];
-                const link = ofertas[plano.chave];
-                return (
-                  <li key={plano.chave} className={`flex flex-col gap-3 rounded-card border-2 p-5 ${visual.cartao}`}>
-                    <span aria-hidden="true" className={`h-1.5 w-12 rounded-pill ${visual.faixa}`} />
-                    <div className="flex items-center gap-3">
-                      <Icone nome={visual.icone} className={visual.icon} />
-                      <div>
-                        <h3 className="text-[20px] font-black text-navy">{NOME_DO_PLANO[plano.chave]}</h3>
-                        <p className="text-[14px] font-semibold text-muted">{plano.subtitulo}</p>
+          </div>
+          <ul className={styles.planosGrid}>
+            {copy.planos.lista.map((plano) => {
+              const premium = plano.chave === 'PREMIUM';
+              const link = ofertas[plano.chave];
+              const botao = `${styles.planoBotao} inline-flex min-h-11 items-center justify-center rounded-pill px-6 py-2 text-center text-[15px] font-extrabold transition-colors ${premium ? 'bg-purple text-white hover:bg-[#43158e] hover:text-white' : 'mt-auto bg-navy text-white hover:bg-navy-light hover:text-white'}`;
+              const titulo = (
+                <div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <h3 className="flex items-center gap-2 text-[24px] font-black text-navy">
+                      <Image
+                        src="/brand/wsa-globo.webp"
+                        alt=""
+                        width={30}
+                        height={30}
+                        className={`size-[30px] shrink-0 ${premium ? '' : styles.globoPrateado}`}
+                      />
+                      {NOME_DO_PLANO[plano.chave]}
+                    </h3>
+                    {plano.seloIA ? (
+                      <span className="rounded-pill bg-purple/10 px-3 py-1 text-[10px] font-extrabold text-purple">
+                        {plano.seloIA}
+                      </span>
+                    ) : null}
+                  </div>
+                  <p
+                    className={`mt-2 text-[16px] leading-snug font-bold ${premium ? 'text-purple' : 'text-navy'}`}
+                  >
+                    {plano.subtitulo}
+                  </p>
+                </div>
+              );
+              const beneficios = (
+                <ul className="flex flex-col gap-3">
+                  {plano.itens.map((texto) => (
+                    <li
+                      key={texto}
+                      className="flex gap-2 text-[15px] leading-snug text-navy"
+                    >
+                      <Icone
+                        nome="check"
+                        className={
+                          premium
+                            ? 'bg-purple/10 text-purple'
+                            : 'bg-rail text-navy'
+                        }
+                        tamanho="size-6"
+                      />
+                      <span>{texto}</span>
+                    </li>
+                  ))}
+                </ul>
+              );
+              const cta = link ? (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={botao}
+                >
+                  {plano.cta}
+                  <span className="sr-only">{copy.a11y.abreEmOutraAba}</span>
+                </a>
+              ) : (
+                <Link href="/criar-conta" className={botao}>
+                  {plano.cta}
+                </Link>
+              );
+              return (
+                <li
+                  key={plano.chave}
+                  className={`${styles.planoCard} ${premium ? styles.planoPremium : ''}`}
+                >
+                  {plano.selo ? (
+                    <span className="absolute -top-3 left-7 rounded-pill bg-yellow px-4 py-1 text-[11px] font-extrabold text-navy">
+                      {plano.selo}
+                    </span>
+                  ) : null}
+                  {premium ? (
+                    <div className={styles.premiumLayout}>
+                      <div className={styles.premiumVisual}>
+                        <Image
+                          src="/brand/robo-wsa-apontando.webp"
+                          alt=""
+                          width={700}
+                          height={719}
+                          sizes="(max-width: 767px) 240px, 260px"
+                          unoptimized
+                          className={styles.roboPremium}
+                        />
+                        <ChatDaLanding compacto seuGPT />
+                      </div>
+                      <div className={styles.premiumConteudo}>
+                        <div className={styles.premiumCabecalho}>{titulo}</div>
+                        <div className={styles.premiumInfo}>
+                          {beneficios}
+                          {plano.destaque ? (
+                            <div className={styles.premiumEvolucao}>
+                              <p>
+                                {visual.planos.de} “{plano.destaque.antes}”
+                              </p>
+                              <strong>
+                                {visual.planos.para} “{plano.destaque.depois}”
+                              </strong>
+                            </div>
+                          ) : null}
+                          {cta}
+                        </div>
                       </div>
                     </div>
-                    <p className="text-[15px] leading-relaxed text-muted-3">{plano.corpo}</p>
-                    <ul className="flex flex-col gap-2">
-                      {plano.itens.map((texto) => (
-                        <li key={texto} className="flex gap-2 text-[15px] leading-relaxed text-navy">
-                          <Icone nome="check" className="mt-0.5 bg-navy text-white" tamanho="size-6" />
-                          <span>{texto}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    {link ? (
-                      <a
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-auto inline-flex min-h-12 items-center justify-center rounded-pill bg-navy px-6 text-center text-[14px] font-black tracking-wide text-white transition-colors hover:bg-navy-light"
-                      >
-                        {copy.planos.comprar}
-                        <span className="sr-only">
-                          {`: ${NOME_DO_PLANO[plano.chave]}`}
-                          {copy.a11y.abreEmOutraAba}
-                        </span>
-                      </a>
-                    ) : null}
-                  </li>
-                );
-              })}
-            </ul>
-
-            <p className="text-[14px] text-muted">{vendendo ? copy.planos.notaComLink : copy.planos.notaSemLink}</p>
-
-            {vendendo ? (
-              <div className="flex gap-4 rounded-card border border-border bg-bg p-5">
-                <Icone nome="escudo" className="bg-teal text-white" />
-                <div>
-                  <h3 className="text-[17px] font-extrabold text-navy">{copy.garantia.titulo}</h3>
-                  <p className="mt-1 text-[15px] leading-relaxed text-muted">{copy.garantia.corpo}</p>
-                </div>
+                  ) : (
+                    <>
+                      {titulo}
+                      {beneficios}
+                      {cta}
+                    </>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          {vendendo ? (
+            <p className="mt-4 text-[14px] leading-relaxed text-muted">
+              {copy.planos.notaComLink}
+            </p>
+          ) : null}
+          {vendendo ? (
+            <div className={styles.garantiaCompra}>
+              <Icone nome="escudo" className="bg-teal-texto text-white" />
+              <div>
+                <h3 className="text-base font-extrabold text-navy">
+                  {copy.garantia.titulo}
+                </h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted">
+                  {copy.garantia.corpo}
+                </p>
               </div>
-            ) : (
-              <CtaPrincipal rotulo={copy.planos.escolher} className="self-start" />
-            )}
-          </div>
+            </div>
+          ) : null}
         </section>
 
-        {/* -------------------------------------------------------- perguntas */}
         <section
           id="perguntas"
           aria-labelledby="perguntas-titulo"
-          className="mx-auto flex w-full max-w-4xl scroll-mt-6 flex-col gap-5 px-4 py-14 sm:px-6 lg:px-8"
+          className={`${styles.faqSection} scroll-mt-6 bg-surface`}
         >
-          <TituloDeSecao id="perguntas-titulo">{copy.faq.titulo}</TituloDeSecao>
-          <ul className="flex flex-col gap-3">
-            {copy.faq.itens.map((item) => (
-              <li key={item.p}>
-                <details className="group rounded-card border border-border bg-surface px-5 shadow-card">
-                  <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 py-4 text-[17px] font-extrabold text-navy [&::-webkit-details-marker]:hidden">
-                    {item.p}
-                    <span
-                      aria-hidden="true"
-                      className="inline-flex size-7 shrink-0 items-center justify-center rounded-pill bg-rail text-navy transition-transform group-open:rotate-45"
-                    >
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" className="size-4">
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="pb-5 text-[15px] leading-relaxed text-muted">{item.r}</p>
-                </details>
-              </li>
-            ))}
-          </ul>
+          <div className={`${CONTAINER} flex flex-col gap-5`}>
+            <TituloDeSecao id="perguntas-titulo">
+              {copy.faq.titulo}
+            </TituloDeSecao>
+            <ul className={styles.faqLista}>
+              {copy.faq.itens.map((item) => (
+                <li key={item.p} className="border-b border-border">
+                  <details className="group">
+                    <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[16px] font-extrabold text-navy [&::-webkit-details-marker]:hidden">
+                      {item.p}
+                      <span
+                        aria-hidden="true"
+                        className="inline-flex size-7 shrink-0 items-center justify-center rounded-pill bg-rail text-xl text-navy transition-transform group-open:rotate-45"
+                      >
+                        +
+                      </span>
+                    </summary>
+                    <p className="max-w-2xl pb-6 text-sm leading-relaxed text-muted">
+                      {item.r}
+                    </p>
+                  </details>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
 
-        {/* ------------------------------------------------------------ fecho */}
-        <section aria-labelledby="fecho" className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-6 overflow-hidden rounded-hero bg-navy px-6 pt-8 sm:px-10 sm:pt-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]">
-            <div className="flex flex-col items-start gap-5 lg:pb-10">
-              <TituloDeSecao id="fecho" claro>
-                {copy.fecho.titulo}
-              </TituloDeSecao>
-              <p className="max-w-xl text-[17px] leading-relaxed text-[#C9D6EC]">{copy.fecho.corpo}</p>
-              <CtaPrincipal rotulo={copy.fecho.cta} />
+        <section
+          aria-labelledby="fecho"
+          className={`${styles.fechoTextura} bg-navy py-12 sm:py-14`}
+        >
+          <div className={`${CONTAINER} ${styles.fechoGrid}`}>
+            <Image
+              src="/brand/robo-wsa-celular.webp"
+              alt=""
+              width={600}
+              height={556}
+              sizes="(max-width: 767px) 180px, 300px"
+              unoptimized
+              className={styles.fechoRobo}
+            />
+            <div className={styles.fechoConteudo}>
+              <div className={styles.sectionIntro}>
+                <TituloDeSecao id="fecho" claro>
+                  {copy.fecho.titulo}
+                </TituloDeSecao>
+                <p className="max-w-xl text-[17px] leading-relaxed text-[#c9d6ec]">
+                  {copy.fecho.corpo}
+                </p>
+              </div>
+              <CtaPrincipal
+                rotulo={copy.fecho.cta}
+                className={`${styles.ctaMobile} ${styles.botaoNeon} focus-visible:outline-white`}
+              />
               <p lang="en" className="manuscrito text-[24px] text-yellow">
                 {copy.fecho.assinatura}
               </p>
             </div>
-            <SkylineDeLondres className="h-auto w-full self-end" />
           </div>
         </section>
       </main>
 
-      {/* -------------------------------------------------------------- rodapé */}
       <footer className="border-t border-border bg-surface">
-        <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-            <div className="flex flex-col gap-5">
-              <LogoWSA fundo="claro" altura={40} className="h-8! lg:h-10! self-start" />
-              <p className="max-w-xs text-[14px] leading-relaxed text-muted">{copy.rodape.tagline}</p>
+        <div className={`${CONTAINER} ${styles.footerConteudo}`}>
+          <div className={styles.footerGrid}>
+            <div className={styles.footerMarca}>
+              <LogoWSA fundo="claro" altura={40} className="h-8! self-start" />
+              <p className="max-w-xs text-sm leading-relaxed text-muted">
+                {copy.rodape.tagline}
+              </p>
             </div>
-
-            <div className="flex flex-col gap-2">
-              <h2 className="text-[12px] font-extrabold tracking-[0.08em] text-navy uppercase">{copy.rodape.colunaPagina}</h2>
+            <div className={styles.footerPagina}>
+              <h2 className="mb-3 text-xs font-extrabold tracking-wide text-navy uppercase">
+                {copy.rodape.colunaPagina}
+              </h2>
               <ul>
                 {copy.nav.map((item) => (
                   <li key={item.href}>
-                    <a href={item.href} className="inline-flex min-h-11 items-center text-[15px] font-semibold text-navy underline underline-offset-4">
+                    <a
+                      href={item.href}
+                      className="inline-flex min-h-10 items-center text-sm font-semibold text-navy hover:underline"
+                    >
                       {item.rotulo}
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
-
-            <div className="flex flex-col gap-2">
-              <h2 className="text-[12px] font-extrabold tracking-[0.08em] text-navy uppercase">{copy.rodape.colunaConta}</h2>
+            <div className={styles.footerConta}>
+              <h2 className="mb-3 text-xs font-extrabold tracking-wide text-navy uppercase">
+                {copy.rodape.colunaConta}
+              </h2>
               <ul>
                 {[
                   { href: '/criar-conta', rotulo: copy.rodape.criarConta },
@@ -583,23 +809,30 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                   { href: '/esqueci-senha', rotulo: copy.rodape.esqueci },
                 ].map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="inline-flex min-h-11 items-center text-[15px] font-semibold text-navy underline underline-offset-4">
+                    <Link
+                      href={item.href}
+                      className="inline-flex min-h-10 items-center text-sm font-semibold text-navy hover:underline"
+                    >
                       {item.rotulo}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-
-            <div className="flex flex-col gap-2">
-              <h2 className="text-[12px] font-extrabold tracking-[0.08em] text-navy uppercase">{copy.rodape.colunaLegal}</h2>
+            <div className={styles.footerLegal}>
+              <h2 className="mb-3 text-xs font-extrabold tracking-wide text-navy uppercase">
+                {copy.rodape.colunaLegal}
+              </h2>
               <ul>
                 {[
                   { href: '/termos', rotulo: copy.rodape.termos },
                   { href: '/privacidade', rotulo: copy.rodape.privacidade },
                 ].map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="inline-flex min-h-11 items-center text-[15px] font-semibold text-navy underline underline-offset-4">
+                    <Link
+                      href={item.href}
+                      className="inline-flex min-h-10 items-center text-sm font-semibold text-navy hover:underline"
+                    >
                       {item.rotulo}
                     </Link>
                   </li>
@@ -607,7 +840,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                 <li>
                   <a
                     href={`mailto:${copy.rodape.email}`}
-                    className="inline-flex min-h-11 items-center text-[15px] font-semibold text-navy underline underline-offset-4"
+                    className="inline-flex min-h-10 items-center text-sm font-semibold text-navy hover:underline"
                   >
                     {copy.rodape.contato}
                   </a>
@@ -615,8 +848,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
               </ul>
             </div>
           </div>
-
-          <div className="mt-8 flex flex-col gap-1 border-t border-border pt-6 text-[14px] text-muted sm:flex-row sm:items-center sm:justify-between">
+          <div className={styles.footerDireitos}>
             <p>{copy.rodape.direitos(ano)}</p>
             <p>{copy.rodape.feitoNo}</p>
           </div>

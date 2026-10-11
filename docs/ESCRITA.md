@@ -36,8 +36,8 @@ um aluno adulto?** Se a frase soa como slogan, palestra ou texto gerado, reescre
 As travas de conteúdo continuam acima do estilo:
 
 - **LOCK 25:** nunca prometer fluência nem prazo.
-- **Sem prova social:** não existe depoimento, nota ou número de alunos.
-- **Só prometer o que existe no app.** A prática com IA é um prompt pronto que o aluno leva para a IA que preferir.
-- **Três CTAs, três rótulos diferentes** na landing (leitor de tela).
+- **Sem prova social inventada:** não existem depoimentos nem avaliações. Os dados do professor devem ser confirmados pelo responsável pelo projeto.
+- **Só prometer o que existe no app.** A prática com IA é um roteiro pronto que o aluno leva para a IA que preferir. "Prompt" fica reservado ao código e à documentação técnica.
+- **CTAs identificam o próximo passo:** hero e fecho usam "ASSISTIR PRIMEIRA AULA"; os planos usam rótulos próprios.
 - Texto jurídico (`/termos`, `/privacidade`, garantia do CDC) não se reescreve por
   estilo; depende de revisão jurídica.

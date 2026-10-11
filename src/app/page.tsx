@@ -16,9 +16,9 @@ import { getCurrentUser } from '@/lib/auth/session';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'WSA English: inglês do zero em 42 aulas curtas',
+  title: 'WSA English: inglês do zero e conversa com IA',
   description:
-    'Do zero a falar de você em inglês: se apresentar, falar da família e da rotina, contar o que fez ontem. 42 aulas curtas do método WSA English, no seu ritmo.',
+    'Do zero ao inglês que você usa de verdade, em 42 aulas curtas. No WSA Premium, pratique conversação com roteiros para abrir na IA que preferir.',
 };
 
 export default async function RaizPage() {

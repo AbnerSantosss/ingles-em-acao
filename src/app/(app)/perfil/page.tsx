@@ -37,7 +37,7 @@ type PerfilProps = {
 
 const DESCRICAO_DO_PLANO: Record<Plano, string> = {
   ESSENCIAL: 'As 42 aulas no app, com exercícios, áudios, revisões e progresso.',
-  PREMIUM: 'Tudo do WSA Essencial, mais as videoaulas e os prompts prontos de prática com IA.',
+  PREMIUM: 'Tudo do WSA Essencial, mais as videoaulas e os roteiros prontos para conversar com a IA.',
 };
 
 /** O degrau seguinte de cada plano. O WSA Premium não tem para onde subir. */

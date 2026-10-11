@@ -43,27 +43,27 @@ import { useInteracao } from '../interacao';
 /** Textos fixos do cartão de prática (contrato 01, seção 3.4). Não vêm do conteúdo. */
 const TEXTOS_DA_PRATICA = {
   botaoPrincipal: 'CONVERSAR NO CHATGPT',
-  botaoSecundario: 'COPIAR O PROMPT',
-  copiado: 'Prompt copiado. Cole na IA que você preferir.',
+  botaoSecundario: 'COPIAR O ROTEIRO',
+  copiado: 'Roteiro copiado. Cole na IA que você preferir.',
   passos: [
-    'Toque em "Conversar no ChatGPT". O prompt desta aula já vai junto.',
+    'Toque em "Conversar no ChatGPT". O roteiro desta aula já vai junto.',
     'No ChatGPT, toque no botão de voz e responda falando.',
     'Quando terminar, volte ao app e siga para a próxima aula.',
   ],
   /** Prompt grande demais para o link: o primeiro passo avisa que é preciso colar. */
   passosSemLink: [
-    'Toque em "Conversar no ChatGPT". O prompt desta aula é copiado e o ChatGPT abre em branco.',
-    'Cole o prompt na conversa do ChatGPT e envie.',
+    'Toque em "Conversar no ChatGPT". O roteiro desta aula é copiado e o ChatGPT abre em branco.',
+    'Cole o roteiro na conversa do ChatGPT e envie.',
     'Toque no botão de voz e responda falando. Quando terminar, volte ao app e siga para a próxima aula.',
   ],
   aviso: 'O ChatGPT é de outra empresa. A conversa fica na sua conta de lá.',
-  semLink: 'O ChatGPT vai abrir em branco. O prompt já está copiado: é só colar.',
+  semLink: 'O ChatGPT vai abrir em branco. O roteiro já está copiado: é só colar.',
   /** Acréscimo do pacote 06 ao contrato: a área de transferência recusou a cópia. */
-  falhouACopia: 'Não foi possível copiar. Abra "Ver o prompt" abaixo, selecione o texto e copie.',
+  falhouACopia: 'Não foi possível copiar. Abra "Ver o roteiro" abaixo, selecione o texto e copie.',
   emPreparacao: 'A prática desta aula está em preparação.',
   semPlano: 'A prática com IA faz parte do WSA Premium.',
   conhecerPremium: 'Conhecer o WSA Premium',
-  verOPrompt: 'Ver o prompt',
+  verOPrompt: 'Ver o roteiro',
 } as const;
 
 /** Mensagens do cartão de videoaula, sem travessão e com o nome novo do plano. */
