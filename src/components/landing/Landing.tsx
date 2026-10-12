@@ -15,9 +15,11 @@ import {
   PraticaVisual,
 } from './Experiencias';
 import { BarraDeProgresso } from './BarraDeProgresso';
+import { ConversaComRobo } from './ConversaComRobo';
 import { BalaoComPerspectiva, RevealOnScroll } from './Interacoes';
-import { Icone, PaisagemDeLondres, TrilhaDas42 } from './ilustracoes';
+import { Icone, PaisagemDeLondres } from './ilustracoes';
 import styles from './landing.module.css';
+import { TrilhaAnimada } from './TrilhaAnimada';
 import { copyDosExemplos as visual } from './visual-copy';
 
 export type PlanoDaLanding = Plano;
@@ -281,8 +283,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                     </p>
                     {i === 2 ? (
                       <div className={styles.passoProgresso}>
-                        <p>{visual.avancar.titulo}</p>
-                        <BarraDeProgresso />
+                        <BarraDeProgresso rotulo={visual.avancar.titulo} />
                       </div>
                     ) : (
                       <PraticaVisual passo={i} />
@@ -351,7 +352,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                 </p>
               </div>
               <div className={styles.iaChat}>
-                <ChatDaLanding />
+                <ConversaComRobo />
               </div>
             </div>
           </div>
@@ -368,11 +369,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
             </TituloDeSecao>
             <Abertura>{copy.conquistas.corpo}</Abertura>
           </div>
-          <div
-            className={`${styles.trilhaScroll} mb-6 rounded-card px-3 py-5 sm:px-6`}
-          >
-            <TrilhaDas42 className={styles.trilha} />
-          </div>
+          <TrilhaAnimada className="mb-6 rounded-card" />
           <div
             className={styles.marcosJanela}
             tabIndex={0}

@@ -91,6 +91,35 @@
   min-height: 630px;
   box-shadow: 12px 25px 70px #0004;
 }
+.celular .chatTopo {
+  padding: 11px 18px;
+}
+.celular .mensagens {
+  gap: 10px;
+  padding: 12px 16px;
+}
+.celular .mensagem {
+  width: 90%;
+}
+.celular .aluno {
+  width: 72%;
+}
+.celular .transcricao {
+  font-size: 14px;
+  font-weight: 650;
+}
+/* A IA aparece falando: só a onda dela se mexe. */
+.celular .ia .audioOnda span {
+  animation: pulsarVoz 640ms ease-in-out infinite alternate;
+}
+.celular .ia .audioOnda span:nth-child(3n) {
+  animation-duration: 520ms;
+  animation-delay: -180ms;
+}
+.celular .ia .audioOnda span:nth-child(3n + 1) {
+  animation-duration: 760ms;
+  animation-delay: -410ms;
+}
 .camera {
   position: absolute;
   top: 10px;
@@ -448,6 +477,40 @@
   background: #f6c945;
   opacity: 0.85;
   max-height: 22px;
+  transition: opacity 320ms ease;
+}
+.ondaVoz .ondaApagada {
+  opacity: 0.3;
+}
+.vozFalando .ondaVoz span {
+  animation: pulsarVoz 800ms ease-in-out infinite alternate;
+}
+@keyframes pulsarVoz {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.vozTempo {
+  min-width: 24px;
+  font-variant-numeric: tabular-nums;
+}
+.vozMicrofone {
+  display: inline-flex;
+  border-radius: 50%;
+}
+.vozFalando .vozMicrofone {
+  animation: ouvirVoz 1.4s ease-out infinite;
+}
+@keyframes ouvirVoz {
+  from {
+    box-shadow: 0 0 0 0 #f6c94573;
+  }
+  to {
+    box-shadow: 0 0 0 8px #f6c94500;
+  }
 }
 .fotos {
   position: relative;
@@ -642,15 +705,468 @@
 .iaChat .mensagem {
   font-size: 14px;
 }
-.trilhaScroll {
-  overflow-x: auto;
+/* Conversa com o robô: ele flutua sobre o cartão e reage a cada fala. */
+.conversaRobo {
+  display: flex;
+  flex-direction: column;
+}
+.roboConversa {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  width: 190px;
+  max-width: 62%;
+  margin-bottom: -26px;
+  pointer-events: none;
+  animation: flutuarRobo 4s ease-in-out infinite;
+}
+.roboConversa::after {
+  content: '';
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: 8px;
+  z-index: -1;
+  height: 18px;
+  border-radius: 50%;
+  background: #f6c945;
+  filter: blur(16px);
+  opacity: 0.35;
+  transition: opacity 400ms ease;
+}
+.roboConversa:has(.roboFalando)::after {
+  opacity: 0.75;
+}
+.roboConversa img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: 50% 82%;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.roboConversa .roboFalando {
+  animation: falarRobo 720ms ease-in-out infinite;
+}
+.roboConversa .roboEscutando {
+  transform: rotate(5deg) translateY(2px);
+}
+@keyframes falarRobo {
+  0%,
+  100% {
+    transform: rotate(-2.5deg) scale(1);
+  }
+  50% {
+    transform: rotate(2.5deg) scale(1.035);
+  }
+}
+/*
+ * Até o primeiro toque em "Ouvir", o robô sai do centro, para em cima do botão
+ * e aponta para ele. 116px: do centro do botão à borda do cartão (51px) mais da
+ * mão direita ao centro do robô (65px).
+ */
+.roboConversa {
+  left: 0;
+  transition: left 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.chamandoParaOuvir .roboConversa {
+  left: calc(50% - 116px);
+}
+.chamandoParaOuvir .roboConversa img {
+  transform: rotate(9deg) translateY(4px);
+  animation: apontarRobo 1100ms ease-in-out infinite;
+}
+@keyframes apontarRobo {
+  50% {
+    translate: 0 6px;
+  }
+}
+/* O balão sai do lado da cabeça do robô, no espaço que ele deixou ao ir para o botão. */
+.balaoDoRobo {
+  position: absolute;
+  top: 9%;
+  right: 77%;
+  width: max-content;
+  max-width: 112px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 22px -10px #0a0420cc;
+  color: #0a1f4e;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  text-wrap: balance;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.6);
+  transform-origin: 100% 78%;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    visibility 0s 180ms;
+}
+.balaoDoRobo::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  bottom: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: inherit;
+  transform: rotate(45deg);
+}
+/* Aparece depois que o robô chega ao botão. */
+.chamandoParaOuvir .balaoDoRobo {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+  transition:
+    opacity 240ms ease 520ms,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1) 520ms,
+    visibility 0s 520ms;
+}
+.conversaRobo .mensagem {
+  transform-origin: 0 100%;
+  transition:
+    opacity 320ms ease,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.conversaRobo .aluno {
+  transform-origin: 100% 100%;
+}
+.conversaRobo .falaOculta {
+  opacity: 0;
+  transform: translateY(12px) scale(0.92);
+}
+.conversaSaindo .mensagem {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.falaPorVir {
+  visibility: hidden;
+}
+.conversaRobo .audioOnda span {
+  transition: opacity 160ms ease;
+}
+.conversaRobo .barraApagada {
+  opacity: 0.3;
+}
+.falaTocando .audioOnda span {
+  animation: pulsarVoz 600ms ease-in-out infinite alternate;
+}
+.audioPausa {
+  width: 7px;
+  height: 8px;
+  border-inline: 2.5px solid currentColor;
+}
+.somDaConversa {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  padding: 6px 11px 6px 9px;
+  border: 1.5px solid #ded4f0;
+  border-radius: 99px;
+  background: #fff;
+  color: #0a1f4e;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease;
+}
+/* 44px de toque sem engordar o topo do cartão. */
+.somDaConversa::after {
+  content: '';
+  position: absolute;
+  inset: 50% 0 auto;
+  height: 44px;
+  transform: translateY(-50%);
+}
+.somDaConversa svg {
+  width: 15px;
+  height: 15px;
+}
+.somDaConversa:hover {
+  border-color: #0a1f4e;
+  background: #f4effc;
+}
+.somLigado,
+.somLigado:hover {
+  border-color: #0a1f4e;
+  background: #0a1f4e;
+  color: #fff;
+}
+/* O convite para ouvir: o botão pulsa e solta um anel, como um toque de chamada. */
+.chamandoParaOuvir .somDaConversa {
+  border-color: #0a1f4e;
+  animation: pulsarBotaoDeSom 1500ms ease-in-out infinite;
+}
+.chamandoParaOuvir .somDaConversa::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border: 2px solid #46208c;
+  border-radius: inherit;
+  pointer-events: none;
+  animation: anelDoBotaoDeSom 1500ms cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+@keyframes pulsarBotaoDeSom {
+  30% {
+    transform: scale(1.07);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+@keyframes anelDoBotaoDeSom {
+  from {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.28, 1.75);
+  }
+}
+.trilhaCartao {
+  position: relative;
+  overflow: hidden;
   background: #0a1f4e;
   border: 1px solid #1c3769;
 }
-.trilha {
-  width: 100%;
+.trilhaScroll {
+  position: relative;
+  overflow-x: auto;
+}
+.trilhaEmCena .trilhaScroll {
+  overflow: hidden;
+}
+/*
+ * A câmera: o JS aproxima e desloca este quadro até o marco da vez.
+ * Os tempos da trilha cabem nos 320ms de cada cidade (PARADA, em TrilhaAnimada.tsx).
+ */
+.trilhaCamera {
   min-width: 700px;
+  transform-origin: 0 0;
+  transition:
+    transform 240ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 160ms ease;
+}
+.trilhaNoDestino .trilhaCamera {
+  opacity: 0.28;
+}
+.trilha {
+  display: block;
+  width: 100%;
   height: auto;
+}
+/* Panorama da cidade da vez, atrás da trilha e fora da rolagem. */
+.trilhaFundo {
+  position: absolute;
+  inset: 0;
+  color: #5d7fcb;
+  pointer-events: none;
+}
+.trilhaPanorama {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(1.5%) scale(1.06);
+  transform-origin: 50% 100%;
+  transition: opacity 180ms ease;
+}
+.trilhaPanorama[data-ativa] {
+  opacity: 0.42;
+}
+/* O traço da cidade se desenha ao entrar e só volta ao zero depois de sumir. */
+.trilhaPanorama > path,
+.trilhaPanorama > circle {
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1300;
+  transition: stroke-dashoffset 0s 200ms;
+}
+.trilhaPanorama[data-ativa] > path,
+.trilhaPanorama[data-ativa] > circle {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 260ms cubic-bezier(0.3, 0, 0.2, 1);
+}
+.trilhaPanorama[data-ativa] > :nth-child(n + 5) {
+  transition-delay: 25ms;
+}
+.trilhaPanorama[data-ativa] > :nth-child(n + 8) {
+  transition-delay: 50ms;
+}
+.trilhaPanorama > g {
+  transform: translateY(36px);
+  transition: transform 0s 200ms;
+}
+.trilhaPanorama[data-ativa] > g {
+  transform: none;
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Nome da cidade em letras grandes, atrás da trilha. */
+.trilhaLetreiro {
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  display: flex;
+  flex-direction: column-reverse;
+  white-space: nowrap;
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  transform: translateX(-5%);
+  transition:
+    opacity 160ms ease,
+    clip-path 0s 170ms,
+    transform 0s 170ms;
+}
+.trilhaLetreiro[data-ativa] {
+  opacity: 1;
+  clip-path: inset(0 -20% 0 0);
+  transform: translateX(3%);
+  transition:
+    opacity 110ms ease,
+    clip-path 180ms cubic-bezier(0.65, 0, 0.35, 1),
+    transform 420ms linear;
+}
+.trilhaLetreiro span {
+  display: block;
+  font-size: clamp(44px, 10vw, 116px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: rgb(255 255 255 / 0.07);
+}
+.trilhaLetreiro small {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #8fa9e0;
+}
+/* Cena final: a trilha recua e o destino ocupa o cartão. */
+.trilhaDestino {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  background: radial-gradient(
+    closest-side,
+    rgb(246 201 69 / 0.16),
+    transparent
+  );
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease;
+}
+.trilhaDestino[data-ativa] {
+  opacity: 1;
+  transition: opacity 180ms ease 40ms;
+}
+.trilhaDestino span {
+  font-size: clamp(40px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #f6c945;
+  transform: scale(0.9);
+  transition:
+    transform 0s 150ms,
+    letter-spacing 0s 150ms;
+}
+.trilhaDestino[data-ativa] span {
+  letter-spacing: -0.02em;
+  transform: none;
+  transition:
+    transform 380ms cubic-bezier(0.22, 1, 0.36, 1) 40ms,
+    letter-spacing 380ms cubic-bezier(0.22, 1, 0.36, 1) 40ms;
+}
+.trilhaDestino small {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.trilhaRodando .trilhaPanorama {
+  animation: derivarCidade 13s ease-in-out infinite alternate;
+}
+@keyframes derivarCidade {
+  to {
+    transform: translateX(-1.5%) scale(1.06);
+  }
+}
+.trilhaLinha {
+  opacity: 0;
+  transition: opacity 140ms ease;
+}
+.trilhaAcesa .trilhaLinha {
+  opacity: 1;
+  transition:
+    opacity 140ms ease,
+    stroke-dashoffset 240ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+/*
+ * O avião voa na ponta da linha, no mesmo tempo e na mesma curva dela. Fica
+ * aceso a viagem inteira: piscar a cada cidade, nesse ritmo, vira tremedeira.
+ */
+.trilhaAviao {
+  opacity: 0;
+  offset-rotate: auto;
+}
+.trilhaAcesa .trilhaAviao {
+  opacity: 1;
+  transition:
+    offset-distance 240ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 120ms ease;
+}
+.trilhaNoDestino .trilhaAviao {
+  opacity: 0;
+}
+.trilhaCidade {
+  transition: fill 160ms ease;
+}
+.trilhaAcesa .trilhaCidade[data-ativa] {
+  fill: #f6c945;
+}
+.trilhaPulso {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.trilhaAcesa .trilhaPulso {
+  animation: pulsarMarco 300ms ease-out 170ms infinite;
+}
+/* No destino a palavra fica sozinha em cena. */
+.trilhaAcesa.trilhaNoDestino .trilhaPulso {
+  animation: none;
+}
+@keyframes pulsarMarco {
+  from {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.6);
+  }
 }
 .conquistaBalao {
   position: relative;
@@ -1146,6 +1662,23 @@
     grid-template-columns: 0.8fr 1.2fr;
   }
 }
+/* Com duas colunas apertadas o cartão é estreito e o balão ao lado cairia sobre o título: ele sobe para cima da cabeça. */
+@media (min-width: 768px) and (max-width: 899px) {
+  .balaoDoRobo {
+    top: auto;
+    right: auto;
+    bottom: 96%;
+    left: 58%;
+    max-width: none;
+    translate: -50% 0;
+    transform-origin: 50% 100%;
+  }
+  .balaoDoRobo::after {
+    right: auto;
+    bottom: -4px;
+    left: calc(50% - 6px);
+  }
+}
 @media (max-width: 767px) {
   .sectionIntro {
     width: 100%;
@@ -1399,6 +1932,33 @@
     opacity: 1;
   }
   .progresso {
+    animation: none;
+  }
+  .vozFalando .ondaVoz span,
+  .vozFalando .vozMicrofone {
+    animation: none;
+  }
+  .roboConversa,
+  .roboConversa .roboFalando,
+  .celular .ia .audioOnda span,
+  .falaTocando .audioOnda span {
+    animation: none;
+  }
+  /* O robô já aparece parado em cima do botão, e o botão fica só com a borda forte. */
+  .roboConversa,
+  .balaoDoRobo,
+  .chamandoParaOuvir .balaoDoRobo {
+    transition: none;
+  }
+  .chamandoParaOuvir .roboConversa img,
+  .chamandoParaOuvir .somDaConversa {
+    animation: none;
+  }
+  .chamandoParaOuvir .somDaConversa::before {
+    content: none;
+  }
+  .trilhaRodando .trilhaPanorama,
+  .trilhaAcesa .trilhaPulso {
     animation: none;
   }
   .botaoNeon::before {

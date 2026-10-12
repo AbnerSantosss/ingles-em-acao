@@ -31,25 +31,29 @@ export const copyDaLanding = {
     // Duas partes porque a segunda sai em amarelo. Lidas em sequência formam uma
     // frase só; o leitor de tela não percebe a emenda.
     titulo: {
-      antes: 'Aprenda inglês do zero e',
-      destaque: 'converse de verdade com a IA, desde as primeiras aulas.',
+      antes: 'Aprenda inglês do zero e pratique',
+      destaque: 'conversando por voz com uma IA de última geração.',
     },
     subtitulo:
-      '42 aulas curtas + prática de conversação com IA, orientada pelo que você já estudou.',
-    cta: 'ASSISTIR PRIMEIRA AULA',
-    ctaConversa: 'Ver como funciona a conversa',
+      'Depois de cada aula, você conversa em voz alta com a IA sobre o que acabou de estudar. Ela responde na hora e você treina sem ninguém olhando.',
+    cta: 'QUERO COMEÇAR A FALAR INGLÊS',
+    ctaConversa: 'Ouvir uma conversa de exemplo',
     jaTenhoConta: 'Já tenho conta · Entrar',
     nota: 'Cadastro em menos de um minuto. A Aula 01 abre logo em seguida.',
     // Faixa do pé da primeira dobra. `icone` é o nome do arquivo em
     // `public/brand/icone-<nome>.webp`.
     recursos: [
+      {
+        icone: 'estrela',
+        titulo: 'Conversa por voz',
+        corpo: 'Com IA, no WSA Premium',
+      },
       { icone: 'raio', titulo: 'Aulas curtas', corpo: 'De 8 a 15 minutos' },
       {
         icone: 'progresso',
         titulo: 'Seu progresso',
         corpo: 'Veja o que já sabe',
       },
-      { icone: 'estrela', titulo: 'Conversa com IA', corpo: 'No WSA Premium' },
     ],
     // Em inglês de propósito: são as assinaturas da marca, decorativas na arte.
     lema: 'Small steps, big results',

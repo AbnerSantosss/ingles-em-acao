@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { copyDaLanding as copy } from './copy';
 import { Icone } from './ilustracoes';
 import styles from './landing.module.css';
+import { OndaDeVoz } from './OndaDeVoz';
 import { copyDosExemplos as visual } from './visual-copy';
 
 /** Exemplo estático: a conversa real acontece na IA escolhida pelo aluno. */
@@ -15,6 +16,8 @@ export function ChatDaLanding({
   celular?: boolean;
   seuGPT?: boolean;
 }) {
+  /* No celular da primeira dobra e no "SEU GPT" as falas são áudios com transcrição. */
+  const porVoz = seuGPT || celular;
   return (
     <figure
       className={`${styles.chat} ${compacto ? styles.chatCompacto : ''} ${celular ? styles.celular : ''} ${seuGPT ? styles.chatSeuGpt : ''}`}
@@ -33,7 +36,7 @@ export function ChatDaLanding({
           </span>
         ) : (
           <Icone
-            nome="balao"
+            nome={celular ? 'microfone' : 'balao'}
             className="bg-purple text-white"
             tamanho={compacto ? 'size-8' : 'size-11'}
           />
@@ -63,9 +66,16 @@ export function ChatDaLanding({
               <span className={styles.autor}>
                 {mensagem.autor === 'aluno' ? visual.aluno : visual.ia}
               </span>
-              {seuGPT ? (
+              {porVoz ? (
                 <div className={styles.audioMensagem} aria-hidden="true">
-                  <span className={styles.audioPlay}>▶</span>
+                  <span className={styles.audioPlay}>
+                    {/* No celular a IA aparece falando: pausa no lugar do play. */}
+                    {celular && mensagem.autor !== 'aluno' ? (
+                      <i className={styles.audioPausa} />
+                    ) : (
+                      '▶'
+                    )}
+                  </span>
                   <div className={styles.audioOnda}>
                     {[
                       6, 12, 18, 9, 15, 20, 11, 7, 17, 13, 8, 19, 12, 6, 15, 10,
@@ -80,8 +90,8 @@ export function ChatDaLanding({
                   </span>
                 </div>
               ) : null}
-              <p lang="en" className={seuGPT ? styles.transcricao : undefined}>
-                {seuGPT ? (
+              <p lang="en" className={porVoz ? styles.transcricao : undefined}>
+                {porVoz ? (
                   <span className="sr-only">
                     {visual.audioChat.transcricao}{' '}
                   </span>
@@ -130,19 +140,7 @@ export function PraticaVisual({ passo }: { passo: number }) {
   ) : (
     <div className={styles.passoMidia} aria-hidden="true">
       <span className={styles.midiaRotulo}>{visual.voz.rotulo}</span>
-      <div className={styles.videoLinha}>
-        <span className={styles.midiaPlay}>▶</span>
-        <div className={styles.ondaVoz}>
-          {[
-            9, 17, 25, 12, 30, 21, 13, 26, 34, 15, 23, 11, 29, 18, 32, 20, 10,
-            25, 15, 28, 18, 9,
-          ].map((altura, i) => (
-            <span key={i} style={{ height: altura }} />
-          ))}
-        </div>
-        <span className={styles.midiaTempo}>{visual.voz.tempo}</span>
-        <Icone nome="microfone" className="text-yellow" tamanho="size-6" />
-      </div>
+      <OndaDeVoz tempo={visual.voz.tempo} />
     </div>
   );
 }

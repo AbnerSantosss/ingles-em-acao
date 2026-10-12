@@ -38,6 +38,6 @@ As travas de conteúdo continuam acima do estilo:
 - **LOCK 25:** nunca prometer fluência nem prazo.
 - **Sem prova social inventada:** não existem depoimentos nem avaliações. Os dados do professor devem ser confirmados pelo responsável pelo projeto.
 - **Só prometer o que existe no app.** A prática com IA é um roteiro pronto que o aluno leva para a IA que preferir. "Prompt" fica reservado ao código e à documentação técnica.
-- **CTAs identificam o próximo passo:** hero e fecho usam "ASSISTIR PRIMEIRA AULA"; os planos usam rótulos próprios.
+- **CTAs identificam o próximo passo:** o hero usa "QUERO COMEÇAR A FALAR INGLÊS" e o fecho, "ASSISTIR PRIMEIRA AULA"; os planos usam rótulos próprios.
 - Texto jurídico (`/termos`, `/privacidade`, garantia do CDC) não se reescreve por
   estilo; depende de revisão jurídica.

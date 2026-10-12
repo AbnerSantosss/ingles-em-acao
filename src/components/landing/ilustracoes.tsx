@@ -341,14 +341,53 @@ export function OndaDoHero({ className }: { className?: string }) {
  * As 42 aulas em trilha: um ponto por aula, bandeiras nos seis marcos e as duas
  * revisões (30 e 42) destacadas em amarelo.
  */
-export function TrilhaDas42({ className }: { className?: string }) {
-  const largura = 840;
+export const LARGURA_DA_TRILHA = 840;
+export const AULAS_DOS_MARCOS = [5, 9, 20, 29, 39, 42];
+
+/** Posição horizontal do ponto de uma aula, na escala do viewBox. */
+export function xDaAula(aula: number) {
+  return 24 + ((aula - 1) * (LARGURA_DA_TRILHA - 48)) / 41;
+}
+
+/**
+ * `viagem` liga a versão animada: a linha acende até o marco `ate`, o avião
+ * voa na ponta dela e o marco pulsa. Sem ela o desenho é o estático de sempre.
+ */
+export function TrilhaDas42({
+  className,
+  viagem,
+}: {
+  className?: string;
+  viagem?: {
+    /** Índice do marco de chegada; -1 antes da partida. */
+    ate: number;
+    /** Fim da viagem: todas as cidades ficam destacadas. */
+    todas: boolean;
+    classeDaLinha: string;
+    classeDoAviao: string;
+    classeDoPulso: string;
+    classeDaCidade: string;
+  };
+}) {
+  const largura = LARGURA_DA_TRILHA;
   const pontos = Array.from({ length: 42 }, (_, i) => {
-    const x = 24 + (i * (largura - 48)) / 41;
-    const y = 90 + Math.sin(i / 4.2) * 22;
+    /* Arredondados: o último dígito do seno difere entre o Node e o navegador,
+       e agora o desenho também é montado no cliente. */
+    const x = Math.round(xDaAula(i + 1) * 100) / 100;
+    const y = Math.round((90 + Math.sin(i / 4.2) * 22) * 100) / 100;
     return { x, y, aula: i + 1 };
   });
-  const marcos = new Set([5, 9, 20, 29, 39, 42]);
+  const marcos = new Set(AULAS_DOS_MARCOS);
+  const percorrido = [0];
+  for (let i = 1; i < pontos.length; i++) {
+    percorrido.push(
+      percorrido[i - 1] +
+        Math.hypot(pontos[i].x - pontos[i - 1].x, pontos[i].y - pontos[i - 1].y),
+    );
+  }
+  const extensao = percorrido[41];
+  const aulaAtiva = viagem ? AULAS_DOS_MARCOS[viagem.ate] : undefined;
+  const chegada = aulaAtiva ? percorrido[aulaAtiva - 1] : 0;
   const cidades: Record<number, string> = {
     5: 'Londres',
     9: 'Nova York',
@@ -378,11 +417,36 @@ export function TrilhaDas42({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+      {viagem ? (
+        <path
+          d={caminho}
+          fill="none"
+          stroke={AMARELO}
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray={extensao.toFixed(1)}
+          strokeDashoffset={(extensao - chegada).toFixed(1)}
+          className={viagem.classeDaLinha}
+        />
+      ) : null}
       {pontos.map((p) => {
         const marco = marcos.has(p.aula);
         const revisao = revisoes.has(p.aula);
+        const ativa = p.aula === aulaAtiva;
         return (
           <g key={p.aula}>
+            {ativa ? (
+              <circle
+                cx={p.x}
+                cy={p.y}
+                r="9"
+                fill="none"
+                stroke={AMARELO}
+                strokeWidth="2"
+                className={viagem?.classeDoPulso}
+              />
+            ) : null}
             {marco ? (
               <>
                 <line
@@ -406,6 +470,8 @@ export function TrilhaDas42({ className }: { className?: string }) {
                   fontSize="15"
                   fontWeight="800"
                   textAnchor={p.aula === 42 ? 'end' : 'middle'}
+                  className={viagem?.classeDaCidade}
+                  data-ativa={ativa || viagem?.todas ? '' : undefined}
                 >
                   {cidades[p.aula]}
                 </text>
@@ -422,6 +488,24 @@ export function TrilhaDas42({ className }: { className?: string }) {
           </g>
         );
       })}
+      {viagem ? (
+        <g
+          className={viagem.classeDoAviao}
+          data-voo={viagem.ate < 0 ? undefined : viagem.ate % 2}
+          style={{
+            offsetPath: `path('${caminho}')`,
+            offsetDistance: `${((chegada / extensao) * 100).toFixed(2)}%`,
+          }}
+        >
+          <path
+            d="M13 0-9 9-4 0-9-9z"
+            fill={AMARELO}
+            stroke={NAVY}
+            strokeWidth="2"
+            strokeLinejoin="round"
+          />
+        </g>
+      ) : null}
       <g transform="translate(14 138)">
         <rect width="92" height="29" rx="14.5" fill="none" stroke={AMARELO} />
         <text

@@ -50,24 +50,34 @@ pessoa vai conseguir fazer, e não quanto tempo vai levar. O conteúdo das 42 au
 | pedir direções, dizer do que gosta e falar das refeições | 31–39 |
 | contar o que fez no passado | 40–42 |
 
-**H1:** "Aprenda inglês do zero e converse de verdade com a IA, desde as primeiras aulas."
+Desde 2026-10-12 a primeira dobra vende a **conversa por voz com a IA**, que é o
+que o resto da página mostra. O número de aulas saiu do subtítulo.
 
-**Subtítulo:** "42 aulas curtas + prática de conversação com IA, orientada pelo que
-você já estudou."
+**H1:** "Aprenda inglês do zero e pratique conversando por voz com uma IA de última
+geração."
+
+**Subtítulo:** "Depois de cada aula, você conversa em voz alta com a IA sobre o que
+acabou de estudar. Ela responde na hora e você treina sem ninguém olhando."
 
 O chip "NOVO: converse em inglês com a IA" e a nota sob os botões foram removidos.
 A explicação de como **Praticar a aula** abre o ChatGPT na conta do aluno permanece
 na seção de conversa e no FAQ.
 
-**CTA 1:** "ASSISTIR PRIMEIRA AULA", levando a `/criar-conta`.
+**CTA 1:** "QUERO COMEÇAR A FALAR INGLÊS", levando a `/criar-conta`.
 
-**CTA secundário:** "Ver como funciona a conversa", âncora para `#conversa-ia`.
+**CTA secundário:** "Ouvir uma conversa de exemplo", âncora para `#conversa-ia`,
+onde fica a conversa com as duas vozes e o botão "Ouvir".
+
+A faixa de recursos abre por "Conversa por voz · Com IA, no WSA Premium". É ela,
+junto com a etiqueta do celular, que avisa que a conversa é do Premium.
 
 Os três blocos de garantias após a faixa de recursos foram removidos.
 
 A hero tem pouco espaço acima da headline, com texto e botões alinhados ao topo.
 O celular aparece cortado, mostrando só as duas falas iniciais do exemplo:
-"Hi! What’s your name?" → "I’m Ana.". O corte inferior é seco e demarcado por
+"Hi! What’s your name?" → "I’m Ana.". As falas são áudios com transcrição, o
+topo traz o microfone e "Conversa por voz · Aula 01", e a onda da IA pulsa
+(parada com movimento reduzido). O corte inferior é seco e demarcado por
 uma linha roxa mais larga que o aparelho; não há fade.
 
 No desktop, o fundo `hero-desktop-sem-globo.webp` mantém o cenário da marca,
@@ -115,7 +125,8 @@ não controles de reprodução; as frases permanecem como transcrições.
   As falas da seção de dor são exemplos de preocupações, sem nomes ou atribuição a
   alunos reais. Os selos descrevem o método e os recursos, sem certificação externa.
 - **CTAs identificam o próximo passo:**
-  - hero e fecho: "ASSISTIR PRIMEIRA AULA", no desktop e no celular;
+  - hero: "QUERO COMEÇAR A FALAR INGLÊS"; fecho: "ASSISTIR PRIMEIRA AULA"; no
+    desktop e no celular;
   - planos: "Quero o Essencial" e "Quero praticar com IA";
   - os destinos de cadastro e checkout continuam seguindo as regras abaixo.
 - **Sem dark pattern:**

@@ -1,0 +1,34 @@
+{
+  "src": "/audio/landing/conversa.23fd407b.mp3",
+  "duracaoMs": 6420,
+  "falas": [
+    {
+      "autor": "ia",
+      "voz": "am_michael",
+      "texto": "Hi! What’s your name?",
+      "inicioMs": 120,
+      "duracaoMs": 1390
+    },
+    {
+      "autor": "aluno",
+      "voz": "af_heart",
+      "texto": "I’m Ana.",
+      "inicioMs": 1860,
+      "duracaoMs": 760
+    },
+    {
+      "autor": "ia",
+      "voz": "am_michael",
+      "texto": "Nice to meet you, Ana!",
+      "inicioMs": 2970,
+      "duracaoMs": 1580
+    },
+    {
+      "autor": "aluno",
+      "voz": "af_heart",
+      "texto": "Nice to meet you, too!",
+      "inicioMs": 4900,
+      "duracaoMs": 1400
+    }
+  ]
+}
