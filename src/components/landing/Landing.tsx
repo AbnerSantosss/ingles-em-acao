@@ -312,7 +312,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
           <div className={`${CONTAINER} relative`}>
             <div className={styles.iaGrid}>
               <div className="flex flex-col items-start gap-4">
-                <span className="text-xs font-extrabold tracking-[.08em] text-yellow uppercase">
+                <span className="text-xs font-extrabold tracking-[.08em] text-yellow uppercase max-md:self-center max-md:text-center">
                   {copy.ia.selo}
                 </span>
                 <div className={styles.sectionIntro}>
@@ -345,7 +345,7 @@ export function Landing({ ofertas }: { ofertas: OfertasDaLanding }) {
                 <CtaPrincipal
                   rotulo={copy.ia.cta}
                   href="#planos"
-                  className="focus-visible:outline-white"
+                  className={`${styles.semSetaNoMobile} max-md:self-center focus-visible:outline-white`}
                 />
                 <p className="text-[14px] leading-relaxed text-[#eee5fb]">
                   {copy.ia.nota}

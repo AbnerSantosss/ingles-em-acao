@@ -24,7 +24,7 @@ export function ChatDaLanding({
     >
       {celular ? <div className={styles.camera} aria-hidden="true" /> : null}
       <div className={styles.chatTopo}>
-        {seuGPT ? (
+        {seuGPT || celular ? (
           <span className={styles.avatarGpt}>
             <Image
               src="/brand/robo-wsa-apontando.webp"
@@ -36,14 +36,14 @@ export function ChatDaLanding({
           </span>
         ) : (
           <Icone
-            nome={celular ? 'microfone' : 'balao'}
+            nome="balao"
             className="bg-purple text-white"
             tamanho={compacto ? 'size-8' : 'size-11'}
           />
         )}
         <div>
           <p className="font-extrabold text-navy">
-            {seuGPT ? visual.seuGPT : visual.premium}
+            {seuGPT || celular ? visual.seuGPT : visual.premium}
           </p>
           {!seuGPT ? (
             <p className="text-xs text-muted">{visual.chatContexto}</p>

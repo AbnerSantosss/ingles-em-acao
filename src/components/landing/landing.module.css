@@ -294,6 +294,14 @@
   transform: translateY(6px) scale(1.5);
   transform-origin: top center;
 }
+.celular .avatarGpt {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+}
+.celular .avatarGpt img {
+  width: 52px;
+}
 .trilho {
   height: 10px;
   width: 100%;
@@ -949,6 +957,21 @@
 }
 .trilhaEmCena .trilhaScroll {
   overflow: hidden;
+}
+/*
+ * No desktop o cartão ganha altura para a câmera aproximar sem cortar a
+ * trilha: o zoom é a altura livre dividida pela do desenho (TrilhaAnimada.tsx).
+ * Com movimento reduzido não há câmera e o cartão fica do tamanho do desenho.
+ */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .trilhaScroll {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 3 / 1;
+  }
+  .trilhaCamera {
+    flex: 1 1 auto;
+  }
 }
 /*
  * A câmera: o JS aproxima e desloca este quadro até o marco da vez.
@@ -1685,6 +1708,14 @@
     align-items: center;
     text-align: center;
   }
+  /* Na dor, o título abre a seção e a foto vem depois dele. */
+  .dorConteudo {
+    display: contents;
+  }
+  .dorConteudo .sectionIntro {
+    order: -1;
+    margin-bottom: -16px;
+  }
   .tituloDeSecao {
     width: 100%;
     text-align: center;
@@ -1718,7 +1749,8 @@
     font-size: 12px;
     line-height: 1.3;
   }
-  .ctaMobile .ctaSeta {
+  .ctaMobile .ctaSeta,
+  .semSetaNoMobile .ctaSeta {
     display: none;
   }
   .heroVisual {

@@ -126,23 +126,34 @@ export function TrilhaAnimada({ className = '' }: { className?: string }) {
     const desenho = quadro.offsetWidth;
     const altura = quadro.offsetHeight;
     const cabe = desenho <= largura + 1;
+    /* Altura livre da janela. No desktop o CSS dá mais altura que o desenho,
+       e é ela que limita o zoom: a trilha nunca é cortada em cima ou embaixo. */
+    const vao = Math.max(
+      altura,
+      janela.clientHeight -
+        parseFloat(estilo.paddingTop) -
+        parseFloat(estilo.paddingBottom),
+    );
+    /* O desenho fica centrado na janela; o transform parte dessa folga. */
+    const folga = (vao - altura) / 2;
 
     let zoom: number;
     let x: number;
     let y: number;
     if (viagem.cena >= 0 && viagem.cena <= ULTIMA) {
       const aula = AULAS_DOS_MARCOS[viagem.cena];
-      zoom = cabe ? 1.6 : 1.2;
+      zoom = folga > 1 ? Math.min(1.6, vao / altura) : cabe ? 1.6 : 1.2;
       const alvoX = (xDaAula(aula) / LARGURA_DA_TRILHA) * desenho;
       /* Mira um pouco acima do ponto, para a bandeira e o nome caberem. */
       const alvoY = ((yDaAula(aula) - 14) / ALTURA_DA_TRILHA) * altura;
       x = Math.min(0, Math.max(largura - zoom * desenho, largura / 2 - zoom * alvoX));
-      y = Math.min(0, Math.max(altura - zoom * altura, altura / 2 - zoom * alvoY));
+      y = Math.min(0, Math.max(vao - zoom * altura, vao / 2 - zoom * alvoY));
     } else {
       zoom = Math.min(1, largura / desenho);
       x = 0;
-      y = (altura - zoom * altura) / 2;
+      y = (vao - zoom * altura) / 2;
     }
+    y -= folga;
     quadro.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px) scale(${zoom.toFixed(3)})`;
   }, [emCena, viagem.cena]);
 

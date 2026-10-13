@@ -32,10 +32,10 @@ export const copyDaLanding = {
     // frase só; o leitor de tela não percebe a emenda.
     titulo: {
       antes: 'Aprenda inglês do zero e pratique',
-      destaque: 'conversando por voz com uma IA de última geração.',
+      destaque: 'conversação por voz com uma IA de última geração.',
     },
     subtitulo:
-      'Depois de cada aula, você conversa em voz alta com a IA sobre o que acabou de estudar. Ela responde na hora e você treina sem ninguém olhando.',
+      'Depois de cada aula, você conversa em voz alta com a IA sobre o que acabou de estudar.',
     cta: 'QUERO COMEÇAR A FALAR INGLÊS',
     ctaConversa: 'Ouvir uma conversa de exemplo',
     jaTenhoConta: 'Já tenho conta · Entrar',
@@ -61,7 +61,7 @@ export const copyDaLanding = {
   },
 
   dor: {
-    titulo: 'Você já tentou e travou',
+    titulo: 'Você já tentou e travou?',
     corpo:
       'O problema quase nunca é você. É o curso que não foi feito para a sua rotina.',
     itens: [

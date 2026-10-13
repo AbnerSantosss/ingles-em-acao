@@ -53,11 +53,11 @@ pessoa vai conseguir fazer, e não quanto tempo vai levar. O conteúdo das 42 au
 Desde 2026-10-12 a primeira dobra vende a **conversa por voz com a IA**, que é o
 que o resto da página mostra. O número de aulas saiu do subtítulo.
 
-**H1:** "Aprenda inglês do zero e pratique conversando por voz com uma IA de última
+**H1:** "Aprenda inglês do zero e pratique conversação por voz com uma IA de última
 geração."
 
 **Subtítulo:** "Depois de cada aula, você conversa em voz alta com a IA sobre o que
-acabou de estudar. Ela responde na hora e você treina sem ninguém olhando."
+acabou de estudar."
 
 O chip "NOVO: converse em inglês com a IA" e a nota sob os botões foram removidos.
 A explicação de como **Praticar a aula** abre o ChatGPT na conta do aluno permanece
@@ -76,7 +76,7 @@ Os três blocos de garantias após a faixa de recursos foram removidos.
 A hero tem pouco espaço acima da headline, com texto e botões alinhados ao topo.
 O celular aparece cortado, mostrando só as duas falas iniciais do exemplo:
 "Hi! What’s your name?" → "I’m Ana.". As falas são áudios com transcrição, o
-topo traz o microfone e "Conversa por voz · Aula 01", e a onda da IA pulsa
+topo traz o robô mascote e "Conversa por voz · Aula 01", e a onda da IA pulsa
 (parada com movimento reduzido). O corte inferior é seco e demarcado por
 uma linha roxa mais larga que o aparelho; não há fade.
 
@@ -97,7 +97,7 @@ tipografia e o alinhamento anteriores.
 |---|---|---|---|
 | 0 | Cabeçalho | Logo WSA, âncoras (a partir de `xl`) e "Entrar" | Logo real da marca sobre navy |
 | 1 | **Hero** | Promessa, dois CTAs e faixa de recursos | Dobra compacta, celular com duas falas, corte com linha roxa e globo dourado animado no desktop |
-| 2 | Dor | "Você já tentou e travou": falas que descrevem as dores | Balões com entrelinhas compactas e chips transparentes, com contorno e texto navy; brilho a cada 3 s na resposta sobre IA. As três fotos mantêm corte seco de 1 s e contorno roxo. Robô pensando sobreposto ao canto inferior direito, flutuando suavemente num ciclo de 4 s |
+| 2 | Dor | "Você já tentou e travou?": falas que descrevem as dores. No celular o título e a abertura ficam acima da foto | Balões com entrelinhas compactas e chips transparentes, com contorno e texto navy; brilho a cada 3 s na resposta sobre IA. As três fotos mantêm corte seco de 1 s e contorno roxo. Robô pensando sobreposto ao canto inferior direito, flutuando suavemente num ciclo de 4 s |
 | 3 | Como funciona | Aprenda → Pratique → Avance | Fotos com perspectiva nas quatro margens no desktop e títulos alinhados, amarelos no hover. Ilustrações de vídeo, voz e progresso completam os cards. Sem setas entre os cards, tanto no desktop quanto no celular |
 | 4 | **Conversa com IA** | "Estudou a aula? Agora converse sobre ela." | Roxo escuro, textura quadriculada à esquerda, chat ilustrativo e foto da universitária no campus à direita, com degradê de opacidade |
 | 5 | **O que você vai conseguir dizer** | A promessa detalhada: 6 marcos da trilha | Card navy com bandeiras roxas, chips Aula 01/42 e cidades; balões em uma faixa contínua que pausa no hover ou foco, com títulos menores roxos |
